@@ -1,6 +1,6 @@
 {
   "schema_version": "mattersyn.reader-collection/1",
-  "material_families": 1218,
+  "material_families": 1222,
   "material_family_definition": "Distinct directly synthesized material systems; component-only cross-links excluded.",
   "material_systems": [
     "(4-FPEA)4AgBiI8",
@@ -29,9 +29,11 @@
     "Ag",
     "Ag + InP/ZnSe/ZnS",
     "Ag / Ag–PVP; Ag2S after aging",
+    "Ag-HgTe",
     "Ag-In-Ga-Zn-S",
     "Ag/Ag2Se",
     "Ag/CQD",
+    "Ag/Fe3O4",
     "Ag/Si",
     "Ag/SiO2",
     "Ag/SiO2–CdSe/ZnS",
@@ -101,6 +103,7 @@
     "Au-Cu2O",
     "Au-PPy",
     "Au-Si",
+    "Au/Ag",
     "Au/CdS",
     "Au/CdSe-ZnS",
     "Au/CdTe",
@@ -162,6 +165,7 @@
     "C, O, N, S",
     "C, O, Zn",
     "C, S, N",
+    "C,N",
     "C-Cl",
     "C-CsPbI3",
     "C-F",
@@ -1222,12 +1226,12 @@
     "γ-Fe2O3/HgS",
     "γ-Fe2O3/ZnS"
   ],
-  "contributing_papers": 2916,
+  "contributing_papers": 2922,
   "source_coverage": {
-    "total_contributing_papers": 2916,
+    "total_contributing_papers": 2922,
     "reviewed_contributing_papers": 244,
     "audited_contributing_papers": 244,
-    "machine_extracted_contributing_papers": 2672,
+    "machine_extracted_contributing_papers": 2678,
     "audited_primary_dois": [
       "10.1002/1521-4095(20021002)14:19<1405::aid-adma1405>3.0.co;2-b",
       "10.1002/adfm.200500603",
@@ -1846,6 +1850,7 @@
       "10.1021/acs.chemmater.5c03273",
       "10.1021/acs.chemmater.6b00208",
       "10.1021/acs.chemmater.6b01577",
+      "10.1021/acs.chemmater.6b01681",
       "10.1021/acs.chemmater.6b01793",
       "10.1021/acs.chemmater.6b02638",
       "10.1021/acs.chemmater.6b02666",
@@ -1916,6 +1921,7 @@
       "10.1021/acs.inorgchem.9b01980",
       "10.1021/acs.inorgchem.9b02154",
       "10.1021/acs.jafc.6c00865",
+      "10.1021/acs.jchemed.3c00155",
       "10.1021/acs.jchemed.7b00144",
       "10.1021/acs.jchemed.7b00593",
       "10.1021/acs.jchemed.8b00735",
@@ -1982,6 +1988,7 @@
       "10.1021/acs.jpclett.4c01527",
       "10.1021/acs.jpclett.4c01982",
       "10.1021/acs.jpclett.5b00689",
+      "10.1021/acs.jpclett.5c00019",
       "10.1021/acs.jpclett.5c00188",
       "10.1021/acs.jpclett.5c00219",
       "10.1021/acs.jpclett.5c01007",
@@ -1998,6 +2005,7 @@
       "10.1021/acs.langmuir.0c02477",
       "10.1021/acs.langmuir.0c02886",
       "10.1021/acs.langmuir.0c02966",
+      "10.1021/acs.langmuir.1c01286",
       "10.1021/acs.langmuir.1c01773",
       "10.1021/acs.langmuir.2c00236",
       "10.1021/acs.langmuir.2c02459",
@@ -2182,6 +2190,7 @@
       "10.1021/acsanm.5c02386",
       "10.1021/acsanm.5c03041",
       "10.1021/acsanm.5c03233",
+      "10.1021/acsanm.5c03254",
       "10.1021/acsanm.5c03261",
       "10.1021/acsanm.5c03620",
       "10.1021/acsanm.5c03641",
@@ -2696,6 +2705,7 @@
       "10.1021/jacs.4c11172",
       "10.1021/jacs.4c13568",
       "10.1021/jacs.4c13692",
+      "10.1021/jacs.4c17283",
       "10.1021/jacs.5b04765",
       "10.1021/jacs.5c00423",
       "10.1021/jacs.5c11775",
@@ -4150,14 +4160,14 @@
     ],
     "count_definition": "Distinct primary sources represented in regular material pages, separated by review status. Each paper counts once regardless of variants; supporting citations do not add papers. Source-extracted contributions are not independently audited or training eligible."
   },
-  "synthesis_structure_pairs": 4744,
+  "synthesis_structure_pairs": 4758,
   "audited_synthesis_structure_pairs": 864,
-  "source_extracted_record_pairs": 3880,
+  "source_extracted_record_pairs": 3894,
   "more_comprehensive_pairs": 6,
-  "partial_pairs": 4738,
+  "partial_pairs": 4752,
   "count_definition": "Audited recipe/sample rows retain their existing definition and identifiers. The display also includes one row per additional source-linked record, including supporting and assembly records. Missing product or structural details remain blank. Multiple measurements do not add rows. This display count does not grant training eligibility or establish independent physical batches.",
   "documentation_rubric": "More comprehensive means at least two source-backed quantified synthesis inputs, two source-located operations, reported temperature and duration, sample-linked phase, morphology and dimensions, and an available reference unit cell. Partial pairs lack one or more of these categories. Neither category implies a complete laboratory SOP or training readiness.",
-  "all_records": 6865,
+  "all_records": 6879,
   "experimental_series_rows": 100,
   "pairs": [
     {
@@ -303268,6 +303278,197 @@
       }
     },
     {
+      "pair_row_id": "almeida2025-acsanm-5c03254-n-c-qds-1::display",
+      "record_id": "almeida2025-acsanm-5c03254-n-c-qds-1",
+      "record_page_path": "records/almeida2025-acsanm-5c03254-n-c-qds-1.html",
+      "source_group": "almeida2025-acsanm-5c03254",
+      "title": "João Paulo de Almeida; Jackson Rodrigo Silva; José Roberto Sabino-Júnior; Vinícius A. Carvalho; Willian Toito Suarez; Miguel M. Erenas; Luis Fermin Capitán-Vallvey; Severino Carlos Oliveira; Vagner Bezerra dos Santos (2025): N,C-QDs",
+      "doi": "10.1021/acsanm.5c03254",
+      "year": 2025,
+      "method": "Synthesis as described in the source",
+      "recipe_label": "João Paulo de Almeida; Jackson Rodrigo Silva; José Roberto Sabino-Júnior; Vinícius A. Carvalho; Willian Toito Suarez; Miguel M. Erenas; Luis Fermin Capitán-Vallvey; Severino Carlos Oliveira; Vagner Bezerra dos Santos (2025): N,C-QDs",
+      "sample_id": "almeida2025-acsanm-5c03254-n-c-qds-1--product",
+      "source_sample_label": "N,C-QDs",
+      "composition": {
+        "value": "C,N",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "almeida2025-acsanm-5c03254",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "recipe_link_evidence": [
+        {
+          "source_id": "almeida2025-acsanm-5c03254",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "product_structure_fields": [
+        {
+          "kind": "phase",
+          "value": {
+            "value": "amorphous",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "almeida2025-acsanm-5c03254",
+                "locator": "Main PDF p.6"
+              }
+            ],
+            "note": ""
+          }
+        },
+        {
+          "kind": "morphology",
+          "value": {
+            "value": "sphere",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "almeida2025-acsanm-5c03254",
+                "locator": "Main PDF p.6"
+              }
+            ],
+            "note": ""
+          }
+        }
+      ],
+      "structural_measurements": [
+        {
+          "measurement_id": "almeida2025-acsanm-5c03254-n-c-qds-1--size",
+          "property": "diameter",
+          "descriptor_field": "morphology.dimensions",
+          "value": {
+            "value": 5.02,
+            "minimum": null,
+            "maximum": null,
+            "unit": "nm",
+            "status": "reported",
+            "approximate": false,
+            "qualifier": "",
+            "basis": "",
+            "raw_text": "5.02 nm",
+            "evidence": [
+              {
+                "source_id": "almeida2025-acsanm-5c03254",
+                "locator": "Main PDF p.6"
+              }
+            ],
+            "derivation": null
+          },
+          "technique": "TEM",
+          "conditions": "",
+          "evidence": [
+            {
+              "source_id": "almeida2025-acsanm-5c03254",
+              "locator": "Main PDF p.6"
+            }
+          ]
+        }
+      ],
+      "review_status": "source_extracted",
+      "display_pair_basis": "one_record",
+      "cross_record_sample_deduplication": "not_assessed",
+      "documentation": {
+        "category": "partial",
+        "checks": {
+          "quantified_recipe_and_ordered_conditions": true,
+          "reported_phase": true,
+          "reported_morphology": true,
+          "reported_dimensions": true,
+          "reference_unit_cell_available": false
+        },
+        "missing_categories": [
+          "reference_unit_cell_available"
+        ],
+        "reference_ids": [],
+        "quantified_input_evidence": {
+          "material_ids": [
+            "almeida2025-acsanm-5c03254-n-c-qds-1--citric-acid",
+            "almeida2025-acsanm-5c03254-n-c-qds-1--ethylenediamine",
+            "almeida2025-acsanm-5c03254-n-c-qds-1--glycerol"
+          ],
+          "fields": [
+            {
+              "material_id": "almeida2025-acsanm-5c03254-n-c-qds-1--citric-acid",
+              "pointer": "/materials/0/quantities/mass",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 2,
+                "minimum": null,
+                "maximum": null,
+                "unit": "g",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "2 g",
+                "evidence": [
+                  {
+                    "source_id": "almeida2025-acsanm-5c03254",
+                    "locator": "Main PDF p.3"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "almeida2025-acsanm-5c03254-n-c-qds-1--ethylenediamine",
+              "pointer": "/materials/1/quantities/mass",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 8,
+                "minimum": null,
+                "maximum": null,
+                "unit": "g",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "8 g",
+                "evidence": [
+                  {
+                    "source_id": "almeida2025-acsanm-5c03254",
+                    "locator": "Main PDF p.3"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "almeida2025-acsanm-5c03254-n-c-qds-1--glycerol",
+              "pointer": "/materials/2/quantities/mass",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 10,
+                "minimum": null,
+                "maximum": null,
+                "unit": "g",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "10 g",
+                "evidence": [
+                  {
+                    "source_id": "almeida2025-acsanm-5c03254",
+                    "locator": "Main PDF p.3"
+                  }
+                ],
+                "derivation": null
+              }
+            }
+          ],
+          "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
+        },
+        "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
+      }
+    },
+    {
       "pair_row_id": "alonso-alvarez2008-1-2978243-50-inas-gaas-quantum-dot-layers-with-gap-1::display",
       "record_id": "alonso-alvarez2008-1-2978243-50-inas-gaas-quantum-dot-layers-with-gap-1",
       "record_page_path": "records/alonso-alvarez2008-1-2978243-50-inas-gaas-quantum-dot-layers-with-gap-1.html",
@@ -382157,6 +382358,97 @@
         },
         "missing_categories": [
           "quantified_recipe_and_ordered_conditions",
+          "reported_morphology",
+          "reference_unit_cell_available"
+        ],
+        "reference_ids": [],
+        "quantified_input_evidence": {
+          "material_ids": [],
+          "fields": [],
+          "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
+        },
+        "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
+      }
+    },
+    {
+      "pair_row_id": "eom2025-acs-jpclett-5c00019-ag-hgte-colloidal-quantum-dots-cqds-1::display",
+      "record_id": "eom2025-acs-jpclett-5c00019-ag-hgte-colloidal-quantum-dots-cqds-1",
+      "record_page_path": "records/eom2025-acs-jpclett-5c00019-ag-hgte-colloidal-quantum-dots-cqds-1.html",
+      "source_group": "eom2025-acs-jpclett-5c00019",
+      "title": "So Young Eom; Haemin Song; Jin Hyeok Lee; Yoon Seo Jung; Gahyeon Kim; Dongsun Choi; Woong Kim; Kwang Seob Jeong (2025): Ag-HgTe colloidal quantum dots (CQDs)",
+      "doi": "10.1021/acs.jpclett.5c00019",
+      "year": 2025,
+      "method": "Cation exchange",
+      "recipe_label": "So Young Eom; Haemin Song; Jin Hyeok Lee; Yoon Seo Jung; Gahyeon Kim; Dongsun Choi; Woong Kim; Kwang Seob Jeong (2025): Ag-HgTe colloidal quantum dots (CQDs)",
+      "sample_id": "eom2025-acs-jpclett-5c00019-ag-hgte-colloidal-quantum-dots-cqds-1--product",
+      "source_sample_label": "Ag-HgTe colloidal quantum dots (CQDs)",
+      "composition": {
+        "value": "Ag-HgTe",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "eom2025-acs-jpclett-5c00019",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "recipe_link_evidence": [
+        {
+          "source_id": "eom2025-acs-jpclett-5c00019",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "product_structure_fields": [],
+      "structural_measurements": [
+        {
+          "measurement_id": "eom2025-acs-jpclett-5c00019-ag-hgte-colloidal-quantum-dots-cqds-1--size",
+          "property": "diameter",
+          "descriptor_field": "morphology.dimensions",
+          "value": {
+            "value": 10.8,
+            "minimum": null,
+            "maximum": null,
+            "unit": "nm",
+            "status": "reported",
+            "approximate": false,
+            "qualifier": "",
+            "basis": "",
+            "raw_text": "10.8 nm",
+            "evidence": [
+              {
+                "source_id": "eom2025-acs-jpclett-5c00019",
+                "locator": "Main PDF p.3"
+              }
+            ],
+            "derivation": null
+          },
+          "technique": "TEM",
+          "conditions": "",
+          "evidence": [
+            {
+              "source_id": "eom2025-acs-jpclett-5c00019",
+              "locator": "Main PDF p.3"
+            }
+          ]
+        }
+      ],
+      "review_status": "source_extracted",
+      "display_pair_basis": "one_record",
+      "cross_record_sample_deduplication": "not_assessed",
+      "documentation": {
+        "category": "partial",
+        "checks": {
+          "quantified_recipe_and_ordered_conditions": false,
+          "reported_phase": false,
+          "reported_morphology": false,
+          "reported_dimensions": true,
+          "reference_unit_cell_available": false
+        },
+        "missing_categories": [
+          "quantified_recipe_and_ordered_conditions",
+          "reported_phase",
           "reported_morphology",
           "reference_unit_cell_available"
         ],
@@ -469483,6 +469775,841 @@
       }
     },
     {
+      "pair_row_id": "kong2021-acs-langmuir-1c01286-ps-capped-ag-cncs-1::display",
+      "record_id": "kong2021-acs-langmuir-1c01286-ps-capped-ag-cncs-1",
+      "record_page_path": "records/kong2021-acs-langmuir-1c01286-ps-capped-ag-cncs-1.html",
+      "source_group": "kong2021-acs-langmuir-1c01286",
+      "title": "Huimin Kong; Wenjie Zhang; Ge Shi; Zhe Cui; Peng Fu; Minying Liu; Yanjie He; Xiaoguang Qiao; Xinchang Pang (2021): PS-capped Ag CNCs",
+      "doi": "10.1021/acs.langmuir.1c01286",
+      "year": 2021,
+      "method": "Solvothermal",
+      "recipe_label": "Huimin Kong; Wenjie Zhang; Ge Shi; Zhe Cui; Peng Fu; Minying Liu; Yanjie He; Xiaoguang Qiao; Xinchang Pang (2021): PS-capped Ag CNCs",
+      "sample_id": "kong2021-acs-langmuir-1c01286-ps-capped-ag-cncs-1--product",
+      "source_sample_label": "PS-capped Ag CNCs",
+      "composition": {
+        "value": "Ag",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "kong2021-acs-langmuir-1c01286",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "recipe_link_evidence": [
+        {
+          "source_id": "kong2021-acs-langmuir-1c01286",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "product_structure_fields": [
+        {
+          "kind": "phase",
+          "value": {
+            "value": "metallic",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "kong2021-acs-langmuir-1c01286",
+                "locator": "Main PDF p.3"
+              }
+            ],
+            "note": ""
+          }
+        },
+        {
+          "kind": "morphology",
+          "value": {
+            "value": "sphere",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "kong2021-acs-langmuir-1c01286",
+                "locator": "Main PDF p.5"
+              }
+            ],
+            "note": ""
+          }
+        }
+      ],
+      "structural_measurements": [
+        {
+          "measurement_id": "kong2021-acs-langmuir-1c01286-ps-capped-ag-cncs-1--size",
+          "property": "diameter",
+          "descriptor_field": "morphology.dimensions",
+          "value": {
+            "value": 24,
+            "minimum": null,
+            "maximum": null,
+            "unit": "nm",
+            "status": "reported",
+            "approximate": false,
+            "qualifier": "",
+            "basis": "",
+            "raw_text": "24 nm",
+            "evidence": [
+              {
+                "source_id": "kong2021-acs-langmuir-1c01286",
+                "locator": "Main PDF p.5"
+              }
+            ],
+            "derivation": null
+          },
+          "technique": "TEM",
+          "conditions": "",
+          "evidence": [
+            {
+              "source_id": "kong2021-acs-langmuir-1c01286",
+              "locator": "Main PDF p.5"
+            }
+          ]
+        }
+      ],
+      "review_status": "source_extracted",
+      "display_pair_basis": "one_record",
+      "cross_record_sample_deduplication": "not_assessed",
+      "documentation": {
+        "category": "partial",
+        "checks": {
+          "quantified_recipe_and_ordered_conditions": false,
+          "reported_phase": true,
+          "reported_morphology": true,
+          "reported_dimensions": true,
+          "reference_unit_cell_available": false
+        },
+        "missing_categories": [
+          "quantified_recipe_and_ordered_conditions",
+          "reference_unit_cell_available"
+        ],
+        "reference_ids": [],
+        "quantified_input_evidence": {
+          "material_ids": [
+            "kong2021-acs-langmuir-1c01286-ps-capped-ag-cncs-1--agno3"
+          ],
+          "fields": [
+            {
+              "material_id": "kong2021-acs-langmuir-1c01286-ps-capped-ag-cncs-1--agno3",
+              "pointer": "/materials/0/quantities/mass",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 2.8,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mg",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "2.8 mg",
+                "evidence": [
+                  {
+                    "source_id": "kong2021-acs-langmuir-1c01286",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            }
+          ],
+          "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
+        },
+        "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
+      }
+    },
+    {
+      "pair_row_id": "kong2021-acs-langmuir-1c01286-ps-capped-ag-fe3o4-hybrid-cncs-5::display",
+      "record_id": "kong2021-acs-langmuir-1c01286-ps-capped-ag-fe3o4-hybrid-cncs-5",
+      "record_page_path": "records/kong2021-acs-langmuir-1c01286-ps-capped-ag-fe3o4-hybrid-cncs-5.html",
+      "source_group": "kong2021-acs-langmuir-1c01286",
+      "title": "Huimin Kong; Wenjie Zhang; Ge Shi; Zhe Cui; Peng Fu; Minying Liu; Yanjie He; Xiaoguang Qiao; Xinchang Pang (2021): PS-capped Ag/Fe3O4 hybrid CNCs",
+      "doi": "10.1021/acs.langmuir.1c01286",
+      "year": 2021,
+      "method": "Synthesis as described in the source",
+      "recipe_label": "Huimin Kong; Wenjie Zhang; Ge Shi; Zhe Cui; Peng Fu; Minying Liu; Yanjie He; Xiaoguang Qiao; Xinchang Pang (2021): PS-capped Ag/Fe3O4 hybrid CNCs",
+      "sample_id": "kong2021-acs-langmuir-1c01286-ps-capped-ag-fe3o4-hybrid-cncs-5--product",
+      "source_sample_label": "PS-capped Ag/Fe3O4 hybrid CNCs",
+      "composition": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "recipe_link_evidence": [
+        {
+          "source_id": "kong2021-acs-langmuir-1c01286",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "product_structure_fields": [],
+      "structural_measurements": [],
+      "review_status": "source_extracted",
+      "display_pair_basis": "one_record",
+      "cross_record_sample_deduplication": "not_assessed",
+      "documentation": {
+        "category": "partial",
+        "checks": {
+          "quantified_recipe_and_ordered_conditions": false,
+          "reported_phase": false,
+          "reported_morphology": false,
+          "reported_dimensions": false,
+          "reference_unit_cell_available": false
+        },
+        "missing_categories": [
+          "quantified_recipe_and_ordered_conditions",
+          "reported_phase",
+          "reported_morphology",
+          "reported_dimensions",
+          "reference_unit_cell_available"
+        ],
+        "reference_ids": [],
+        "quantified_input_evidence": {
+          "material_ids": [
+            "kong2021-acs-langmuir-1c01286-ps-capped-ag-fe3o4-hybrid-cncs-5--agno3",
+            "kong2021-acs-langmuir-1c01286-ps-capped-ag-fe3o4-hybrid-cncs-5--fecl24h2o",
+            "kong2021-acs-langmuir-1c01286-ps-capped-ag-fe3o4-hybrid-cncs-5--fecl36h2o",
+            "kong2021-acs-langmuir-1c01286-ps-capped-ag-fe3o4-hybrid-cncs-5--nh3h2o",
+            "kong2021-acs-langmuir-1c01286-ps-capped-ag-fe3o4-hybrid-cncs-5--tbab"
+          ],
+          "fields": [
+            {
+              "material_id": "kong2021-acs-langmuir-1c01286-ps-capped-ag-fe3o4-hybrid-cncs-5--agno3",
+              "pointer": "/materials/0/quantities/mass",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.9,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mg",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.9 mg",
+                "evidence": [
+                  {
+                    "source_id": "kong2021-acs-langmuir-1c01286",
+                    "locator": "Main PDF p.3"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "kong2021-acs-langmuir-1c01286-ps-capped-ag-fe3o4-hybrid-cncs-5--fecl24h2o",
+              "pointer": "/materials/1/quantities/mass",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.194,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mg",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.194 mg",
+                "evidence": [
+                  {
+                    "source_id": "kong2021-acs-langmuir-1c01286",
+                    "locator": "Main PDF p.3"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "kong2021-acs-langmuir-1c01286-ps-capped-ag-fe3o4-hybrid-cncs-5--fecl36h2o",
+              "pointer": "/materials/2/quantities/mass",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.263,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mg",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.263 mg",
+                "evidence": [
+                  {
+                    "source_id": "kong2021-acs-langmuir-1c01286",
+                    "locator": "Main PDF p.3"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "kong2021-acs-langmuir-1c01286-ps-capped-ag-fe3o4-hybrid-cncs-5--tbab",
+              "pointer": "/materials/3/quantities/mass",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 1.5,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mg",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "1.5 mg",
+                "evidence": [
+                  {
+                    "source_id": "kong2021-acs-langmuir-1c01286",
+                    "locator": "Main PDF p.3"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "kong2021-acs-langmuir-1c01286-ps-capped-ag-fe3o4-hybrid-cncs-5--nh3h2o",
+              "pointer": "/materials/4/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 20,
+                "minimum": null,
+                "maximum": null,
+                "unit": "µL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "20 µL",
+                "evidence": [
+                  {
+                    "source_id": "kong2021-acs-langmuir-1c01286",
+                    "locator": "Main PDF p.3"
+                  }
+                ],
+                "derivation": null
+              }
+            }
+          ],
+          "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
+        },
+        "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
+      }
+    },
+    {
+      "pair_row_id": "kong2021-acs-langmuir-1c01286-ps-capped-au-ag-hybrid-cncs-6::display",
+      "record_id": "kong2021-acs-langmuir-1c01286-ps-capped-au-ag-hybrid-cncs-6",
+      "record_page_path": "records/kong2021-acs-langmuir-1c01286-ps-capped-au-ag-hybrid-cncs-6.html",
+      "source_group": "kong2021-acs-langmuir-1c01286",
+      "title": "Huimin Kong; Wenjie Zhang; Ge Shi; Zhe Cui; Peng Fu; Minying Liu; Yanjie He; Xiaoguang Qiao; Xinchang Pang (2021): PS-capped Au/Ag hybrid CNCs",
+      "doi": "10.1021/acs.langmuir.1c01286",
+      "year": 2021,
+      "method": "Synthesis as described in the source",
+      "recipe_label": "Huimin Kong; Wenjie Zhang; Ge Shi; Zhe Cui; Peng Fu; Minying Liu; Yanjie He; Xiaoguang Qiao; Xinchang Pang (2021): PS-capped Au/Ag hybrid CNCs",
+      "sample_id": "kong2021-acs-langmuir-1c01286-ps-capped-au-ag-hybrid-cncs-6--product",
+      "source_sample_label": "PS-capped Au/Ag hybrid CNCs",
+      "composition": {
+        "value": "Au/Ag",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "kong2021-acs-langmuir-1c01286",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "recipe_link_evidence": [
+        {
+          "source_id": "kong2021-acs-langmuir-1c01286",
+          "locator": "Main PDF p.6"
+        }
+      ],
+      "product_structure_fields": [],
+      "structural_measurements": [],
+      "review_status": "source_extracted",
+      "display_pair_basis": "one_record",
+      "cross_record_sample_deduplication": "not_assessed",
+      "documentation": {
+        "category": "partial",
+        "checks": {
+          "quantified_recipe_and_ordered_conditions": false,
+          "reported_phase": false,
+          "reported_morphology": false,
+          "reported_dimensions": false,
+          "reference_unit_cell_available": false
+        },
+        "missing_categories": [
+          "quantified_recipe_and_ordered_conditions",
+          "reported_phase",
+          "reported_morphology",
+          "reported_dimensions",
+          "reference_unit_cell_available"
+        ],
+        "reference_ids": [],
+        "quantified_input_evidence": {
+          "material_ids": [
+            "kong2021-acs-langmuir-1c01286-ps-capped-au-ag-hybrid-cncs-6--agno3",
+            "kong2021-acs-langmuir-1c01286-ps-capped-au-ag-hybrid-cncs-6--haucl43h2o",
+            "kong2021-acs-langmuir-1c01286-ps-capped-au-ag-hybrid-cncs-6--tbab"
+          ],
+          "fields": [
+            {
+              "material_id": "kong2021-acs-langmuir-1c01286-ps-capped-au-ag-hybrid-cncs-6--agno3",
+              "pointer": "/materials/0/quantities/mass",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 1.4,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mg",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "1.4 mg",
+                "evidence": [
+                  {
+                    "source_id": "kong2021-acs-langmuir-1c01286",
+                    "locator": "Main PDF p.3"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "kong2021-acs-langmuir-1c01286-ps-capped-au-ag-hybrid-cncs-6--haucl43h2o",
+              "pointer": "/materials/1/quantities/mass",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.44,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mg",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.44 mg",
+                "evidence": [
+                  {
+                    "source_id": "kong2021-acs-langmuir-1c01286",
+                    "locator": "Main PDF p.3"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "kong2021-acs-langmuir-1c01286-ps-capped-au-ag-hybrid-cncs-6--tbab",
+              "pointer": "/materials/2/quantities/mass",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 1.5,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mg",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "1.5 mg",
+                "evidence": [
+                  {
+                    "source_id": "kong2021-acs-langmuir-1c01286",
+                    "locator": "Main PDF p.3"
+                  }
+                ],
+                "derivation": null
+              }
+            }
+          ],
+          "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
+        },
+        "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
+      }
+    },
+    {
+      "pair_row_id": "kong2021-acs-langmuir-1c01286-ps-capped-cdse-cncs-4::display",
+      "record_id": "kong2021-acs-langmuir-1c01286-ps-capped-cdse-cncs-4",
+      "record_page_path": "records/kong2021-acs-langmuir-1c01286-ps-capped-cdse-cncs-4.html",
+      "source_group": "kong2021-acs-langmuir-1c01286",
+      "title": "Huimin Kong; Wenjie Zhang; Ge Shi; Zhe Cui; Peng Fu; Minying Liu; Yanjie He; Xiaoguang Qiao; Xinchang Pang (2021): PS-capped CdSe CNCs",
+      "doi": "10.1021/acs.langmuir.1c01286",
+      "year": 2021,
+      "method": "Solvothermal",
+      "recipe_label": "Huimin Kong; Wenjie Zhang; Ge Shi; Zhe Cui; Peng Fu; Minying Liu; Yanjie He; Xiaoguang Qiao; Xinchang Pang (2021): PS-capped CdSe CNCs",
+      "sample_id": "kong2021-acs-langmuir-1c01286-ps-capped-cdse-cncs-4--product",
+      "source_sample_label": "PS-capped CdSe CNCs",
+      "composition": {
+        "value": "CdSe",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "kong2021-acs-langmuir-1c01286",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "recipe_link_evidence": [
+        {
+          "source_id": "kong2021-acs-langmuir-1c01286",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "product_structure_fields": [
+        {
+          "kind": "morphology",
+          "value": {
+            "value": "sphere",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "kong2021-acs-langmuir-1c01286",
+                "locator": "Main PDF p.5"
+              }
+            ],
+            "note": ""
+          }
+        }
+      ],
+      "structural_measurements": [],
+      "review_status": "source_extracted",
+      "display_pair_basis": "one_record",
+      "cross_record_sample_deduplication": "not_assessed",
+      "documentation": {
+        "category": "partial",
+        "checks": {
+          "quantified_recipe_and_ordered_conditions": false,
+          "reported_phase": false,
+          "reported_morphology": true,
+          "reported_dimensions": false,
+          "reference_unit_cell_available": false
+        },
+        "missing_categories": [
+          "quantified_recipe_and_ordered_conditions",
+          "reported_phase",
+          "reported_dimensions",
+          "reference_unit_cell_available"
+        ],
+        "reference_ids": [],
+        "quantified_input_evidence": {
+          "material_ids": [
+            "kong2021-acs-langmuir-1c01286-ps-capped-cdse-cncs-4--cd-ch3coo-2",
+            "kong2021-acs-langmuir-1c01286-ps-capped-cdse-cncs-4--nahse"
+          ],
+          "fields": [
+            {
+              "material_id": "kong2021-acs-langmuir-1c01286-ps-capped-cdse-cncs-4--cd-ch3coo-2",
+              "pointer": "/materials/0/quantities/mass",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.896,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mg",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.896 mg",
+                "evidence": [
+                  {
+                    "source_id": "kong2021-acs-langmuir-1c01286",
+                    "locator": "Main PDF p.3"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "kong2021-acs-langmuir-1c01286-ps-capped-cdse-cncs-4--nahse",
+              "pointer": "/materials/1/quantities/mass",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.4,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mg",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.4 mg",
+                "evidence": [
+                  {
+                    "source_id": "kong2021-acs-langmuir-1c01286",
+                    "locator": "Main PDF p.3"
+                  }
+                ],
+                "derivation": null
+              }
+            }
+          ],
+          "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
+        },
+        "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
+      }
+    },
+    {
+      "pair_row_id": "kong2021-acs-langmuir-1c01286-ps-capped-cu2o-cncs-2::display",
+      "record_id": "kong2021-acs-langmuir-1c01286-ps-capped-cu2o-cncs-2",
+      "record_page_path": "records/kong2021-acs-langmuir-1c01286-ps-capped-cu2o-cncs-2.html",
+      "source_group": "kong2021-acs-langmuir-1c01286",
+      "title": "Huimin Kong; Wenjie Zhang; Ge Shi; Zhe Cui; Peng Fu; Minying Liu; Yanjie He; Xiaoguang Qiao; Xinchang Pang (2021): PS-capped Cu2O CNCs",
+      "doi": "10.1021/acs.langmuir.1c01286",
+      "year": 2021,
+      "method": "Synthesis as described in the source",
+      "recipe_label": "Huimin Kong; Wenjie Zhang; Ge Shi; Zhe Cui; Peng Fu; Minying Liu; Yanjie He; Xiaoguang Qiao; Xinchang Pang (2021): PS-capped Cu2O CNCs",
+      "sample_id": "kong2021-acs-langmuir-1c01286-ps-capped-cu2o-cncs-2--product",
+      "source_sample_label": "PS-capped Cu2O CNCs",
+      "composition": {
+        "value": "Cu2O",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "kong2021-acs-langmuir-1c01286",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "recipe_link_evidence": [
+        {
+          "source_id": "kong2021-acs-langmuir-1c01286",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "product_structure_fields": [],
+      "structural_measurements": [],
+      "review_status": "source_extracted",
+      "display_pair_basis": "one_record",
+      "cross_record_sample_deduplication": "not_assessed",
+      "documentation": {
+        "category": "partial",
+        "checks": {
+          "quantified_recipe_and_ordered_conditions": true,
+          "reported_phase": false,
+          "reported_morphology": false,
+          "reported_dimensions": false,
+          "reference_unit_cell_available": false
+        },
+        "missing_categories": [
+          "reported_phase",
+          "reported_morphology",
+          "reported_dimensions",
+          "reference_unit_cell_available"
+        ],
+        "reference_ids": [],
+        "quantified_input_evidence": {
+          "material_ids": [
+            "kong2021-acs-langmuir-1c01286-ps-capped-cu2o-cncs-2--cucl22h2o",
+            "kong2021-acs-langmuir-1c01286-ps-capped-cu2o-cncs-2--naoh"
+          ],
+          "fields": [
+            {
+              "material_id": "kong2021-acs-langmuir-1c01286-ps-capped-cu2o-cncs-2--cucl22h2o",
+              "pointer": "/materials/0/quantities/mass",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.66,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mg",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.66 mg",
+                "evidence": [
+                  {
+                    "source_id": "kong2021-acs-langmuir-1c01286",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "kong2021-acs-langmuir-1c01286-ps-capped-cu2o-cncs-2--naoh",
+              "pointer": "/materials/1/quantities/mass",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 1.56,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mg",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "1.56 mg",
+                "evidence": [
+                  {
+                    "source_id": "kong2021-acs-langmuir-1c01286",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            }
+          ],
+          "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
+        },
+        "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
+      }
+    },
+    {
+      "pair_row_id": "kong2021-acs-langmuir-1c01286-ps-capped-fe3o4-cncs-3::display",
+      "record_id": "kong2021-acs-langmuir-1c01286-ps-capped-fe3o4-cncs-3",
+      "record_page_path": "records/kong2021-acs-langmuir-1c01286-ps-capped-fe3o4-cncs-3.html",
+      "source_group": "kong2021-acs-langmuir-1c01286",
+      "title": "Huimin Kong; Wenjie Zhang; Ge Shi; Zhe Cui; Peng Fu; Minying Liu; Yanjie He; Xiaoguang Qiao; Xinchang Pang (2021): PS-capped Fe3O4 CNCs",
+      "doi": "10.1021/acs.langmuir.1c01286",
+      "year": 2021,
+      "method": "Solvothermal",
+      "recipe_label": "Huimin Kong; Wenjie Zhang; Ge Shi; Zhe Cui; Peng Fu; Minying Liu; Yanjie He; Xiaoguang Qiao; Xinchang Pang (2021): PS-capped Fe3O4 CNCs",
+      "sample_id": "kong2021-acs-langmuir-1c01286-ps-capped-fe3o4-cncs-3--product",
+      "source_sample_label": "PS-capped Fe3O4 CNCs",
+      "composition": {
+        "value": "Fe3O4",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "kong2021-acs-langmuir-1c01286",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "recipe_link_evidence": [
+        {
+          "source_id": "kong2021-acs-langmuir-1c01286",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "product_structure_fields": [
+        {
+          "kind": "morphology",
+          "value": {
+            "value": "sphere",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "kong2021-acs-langmuir-1c01286",
+                "locator": "Main PDF p.5"
+              }
+            ],
+            "note": ""
+          }
+        }
+      ],
+      "structural_measurements": [],
+      "review_status": "source_extracted",
+      "display_pair_basis": "one_record",
+      "cross_record_sample_deduplication": "not_assessed",
+      "documentation": {
+        "category": "partial",
+        "checks": {
+          "quantified_recipe_and_ordered_conditions": true,
+          "reported_phase": false,
+          "reported_morphology": true,
+          "reported_dimensions": false,
+          "reference_unit_cell_available": false
+        },
+        "missing_categories": [
+          "reported_phase",
+          "reported_dimensions",
+          "reference_unit_cell_available"
+        ],
+        "reference_ids": [],
+        "quantified_input_evidence": {
+          "material_ids": [
+            "kong2021-acs-langmuir-1c01286-ps-capped-fe3o4-cncs-3--fecl24h2o",
+            "kong2021-acs-langmuir-1c01286-ps-capped-fe3o4-cncs-3--fecl36h2o",
+            "kong2021-acs-langmuir-1c01286-ps-capped-fe3o4-cncs-3--nh3h2o"
+          ],
+          "fields": [
+            {
+              "material_id": "kong2021-acs-langmuir-1c01286-ps-capped-fe3o4-cncs-3--fecl24h2o",
+              "pointer": "/materials/0/quantities/mass",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.387,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mg",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.387 mg",
+                "evidence": [
+                  {
+                    "source_id": "kong2021-acs-langmuir-1c01286",
+                    "locator": "Main PDF p.3"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "kong2021-acs-langmuir-1c01286-ps-capped-fe3o4-cncs-3--fecl36h2o",
+              "pointer": "/materials/1/quantities/mass",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.525,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mg",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.525 mg",
+                "evidence": [
+                  {
+                    "source_id": "kong2021-acs-langmuir-1c01286",
+                    "locator": "Main PDF p.3"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "kong2021-acs-langmuir-1c01286-ps-capped-fe3o4-cncs-3--nh3h2o",
+              "pointer": "/materials/2/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 20,
+                "minimum": null,
+                "maximum": null,
+                "unit": "µL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "20 µL",
+                "evidence": [
+                  {
+                    "source_id": "kong2021-acs-langmuir-1c01286",
+                    "locator": "Main PDF p.3"
+                  }
+                ],
+                "derivation": null
+              }
+            }
+          ],
+          "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
+        },
+        "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
+      }
+    },
+    {
       "pair_row_id": "konrad1999-1-371177-nanocrystalline-cubic-y2o3-eu-1::display",
       "record_id": "konrad1999-1-371177-nanocrystalline-cubic-y2o3-eu-1",
       "record_page_path": "records/konrad1999-1-371177-nanocrystalline-cubic-y2o3-eu-1.html",
@@ -552451,6 +553578,458 @@
       }
     },
     {
+      "pair_row_id": "ondry2016-acs-chemmater-6b01681-cds-nanocrystals-1::display",
+      "record_id": "ondry2016-acs-chemmater-6b01681-cds-nanocrystals-1",
+      "record_page_path": "records/ondry2016-acs-chemmater-6b01681-cds-nanocrystals-1.html",
+      "source_group": "ondry2016-acs-chemmater-6b01681",
+      "title": "Justin C. Ondry; Shauna Robbennolt; Hyeyeon Kang; Yan Yan; Sarah H. Tolbert (2016): CdS nanocrystals",
+      "doi": "10.1021/acs.chemmater.6b01681",
+      "year": 2016,
+      "method": "Heat-up",
+      "recipe_label": "Justin C. Ondry; Shauna Robbennolt; Hyeyeon Kang; Yan Yan; Sarah H. Tolbert (2016): CdS nanocrystals",
+      "sample_id": "ondry2016-acs-chemmater-6b01681-cds-nanocrystals-1--product",
+      "source_sample_label": "CdS nanocrystals",
+      "composition": {
+        "value": "CdS",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "ondry2016-acs-chemmater-6b01681",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "recipe_link_evidence": [
+        {
+          "source_id": "ondry2016-acs-chemmater-6b01681",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "product_structure_fields": [
+        {
+          "kind": "phase",
+          "value": {
+            "value": "zinc blende",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "ondry2016-acs-chemmater-6b01681",
+                "locator": "Main PDF p.7"
+              }
+            ],
+            "note": ""
+          }
+        },
+        {
+          "kind": "morphology",
+          "value": {
+            "value": "sphere",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "ondry2016-acs-chemmater-6b01681",
+                "locator": "Main PDF p.7"
+              }
+            ],
+            "note": ""
+          }
+        }
+      ],
+      "structural_measurements": [
+        {
+          "measurement_id": "ondry2016-acs-chemmater-6b01681-cds-nanocrystals-1--size",
+          "property": "particle_size",
+          "descriptor_field": "morphology.dimensions",
+          "value": {
+            "value": 5.0,
+            "minimum": null,
+            "maximum": null,
+            "unit": "nm",
+            "status": "reported",
+            "approximate": false,
+            "qualifier": "",
+            "basis": "",
+            "raw_text": "5 nm",
+            "evidence": [
+              {
+                "source_id": "ondry2016-acs-chemmater-6b01681",
+                "locator": "Main PDF p.3"
+              }
+            ],
+            "derivation": null
+          },
+          "technique": "not reported",
+          "conditions": "",
+          "evidence": [
+            {
+              "source_id": "ondry2016-acs-chemmater-6b01681",
+              "locator": "Main PDF p.3"
+            }
+          ]
+        }
+      ],
+      "review_status": "source_extracted",
+      "display_pair_basis": "one_record",
+      "cross_record_sample_deduplication": "not_assessed",
+      "documentation": {
+        "category": "partial",
+        "checks": {
+          "quantified_recipe_and_ordered_conditions": false,
+          "reported_phase": true,
+          "reported_morphology": true,
+          "reported_dimensions": true,
+          "reference_unit_cell_available": false
+        },
+        "missing_categories": [
+          "quantified_recipe_and_ordered_conditions",
+          "reference_unit_cell_available"
+        ],
+        "reference_ids": [],
+        "quantified_input_evidence": {
+          "material_ids": [
+            "ondry2016-acs-chemmater-6b01681-cds-nanocrystals-1--cadmium-acetate-dihydrate",
+            "ondry2016-acs-chemmater-6b01681-cds-nanocrystals-1--sulfur",
+            "ondry2016-acs-chemmater-6b01681-cds-nanocrystals-1--tetradecanoic-acid",
+            "ondry2016-acs-chemmater-6b01681-cds-nanocrystals-1--tetraethylthiuram-disulfide"
+          ],
+          "fields": [
+            {
+              "material_id": "ondry2016-acs-chemmater-6b01681-cds-nanocrystals-1--cadmium-acetate-dihydrate",
+              "pointer": "/materials/0/quantities/amount",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 1.0,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mmol",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "1 mmol",
+                "evidence": [
+                  {
+                    "source_id": "ondry2016-acs-chemmater-6b01681",
+                    "locator": "Main PDF p.3"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "ondry2016-acs-chemmater-6b01681-cds-nanocrystals-1--sulfur",
+              "pointer": "/materials/1/quantities/amount",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.5,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mmol",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.5 mmol",
+                "evidence": [
+                  {
+                    "source_id": "ondry2016-acs-chemmater-6b01681",
+                    "locator": "Main PDF p.3"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "ondry2016-acs-chemmater-6b01681-cds-nanocrystals-1--tetradecanoic-acid",
+              "pointer": "/materials/2/quantities/amount",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 2.0,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mmol",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "2 mmol",
+                "evidence": [
+                  {
+                    "source_id": "ondry2016-acs-chemmater-6b01681",
+                    "locator": "Main PDF p.3"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "ondry2016-acs-chemmater-6b01681-cds-nanocrystals-1--tetraethylthiuram-disulfide",
+              "pointer": "/materials/3/quantities/amount",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.06,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mmol",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.06 mmol",
+                "evidence": [
+                  {
+                    "source_id": "ondry2016-acs-chemmater-6b01681",
+                    "locator": "Main PDF p.3"
+                  }
+                ],
+                "derivation": null
+              }
+            }
+          ],
+          "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
+        },
+        "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
+      }
+    },
+    {
+      "pair_row_id": "ondry2016-acs-chemmater-6b01681-cdse-nanocrystals-2::display",
+      "record_id": "ondry2016-acs-chemmater-6b01681-cdse-nanocrystals-2",
+      "record_page_path": "records/ondry2016-acs-chemmater-6b01681-cdse-nanocrystals-2.html",
+      "source_group": "ondry2016-acs-chemmater-6b01681",
+      "title": "Justin C. Ondry; Shauna Robbennolt; Hyeyeon Kang; Yan Yan; Sarah H. Tolbert (2016): CdSe nanocrystals",
+      "doi": "10.1021/acs.chemmater.6b01681",
+      "year": 2016,
+      "method": "Heat-up",
+      "recipe_label": "Justin C. Ondry; Shauna Robbennolt; Hyeyeon Kang; Yan Yan; Sarah H. Tolbert (2016): CdSe nanocrystals",
+      "sample_id": "ondry2016-acs-chemmater-6b01681-cdse-nanocrystals-2--product",
+      "source_sample_label": "CdSe nanocrystals",
+      "composition": {
+        "value": "CdSe",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "ondry2016-acs-chemmater-6b01681",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "recipe_link_evidence": [
+        {
+          "source_id": "ondry2016-acs-chemmater-6b01681",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "product_structure_fields": [
+        {
+          "kind": "phase",
+          "value": {
+            "value": "zinc blende",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "ondry2016-acs-chemmater-6b01681",
+                "locator": "Main PDF p.7"
+              }
+            ],
+            "note": ""
+          }
+        },
+        {
+          "kind": "morphology",
+          "value": {
+            "value": "sphere",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "ondry2016-acs-chemmater-6b01681",
+                "locator": "Main PDF p.7"
+              }
+            ],
+            "note": ""
+          }
+        }
+      ],
+      "structural_measurements": [
+        {
+          "measurement_id": "ondry2016-acs-chemmater-6b01681-cdse-nanocrystals-2--size",
+          "property": "particle_size",
+          "descriptor_field": "morphology.dimensions",
+          "value": {
+            "value": 3.0,
+            "minimum": null,
+            "maximum": null,
+            "unit": "nm",
+            "status": "reported",
+            "approximate": false,
+            "qualifier": "",
+            "basis": "",
+            "raw_text": "3 nm",
+            "evidence": [
+              {
+                "source_id": "ondry2016-acs-chemmater-6b01681",
+                "locator": "Main PDF p.3"
+              }
+            ],
+            "derivation": null
+          },
+          "technique": "not reported",
+          "conditions": "",
+          "evidence": [
+            {
+              "source_id": "ondry2016-acs-chemmater-6b01681",
+              "locator": "Main PDF p.3"
+            }
+          ]
+        }
+      ],
+      "review_status": "source_extracted",
+      "display_pair_basis": "one_record",
+      "cross_record_sample_deduplication": "not_assessed",
+      "documentation": {
+        "category": "partial",
+        "checks": {
+          "quantified_recipe_and_ordered_conditions": false,
+          "reported_phase": true,
+          "reported_morphology": true,
+          "reported_dimensions": true,
+          "reference_unit_cell_available": false
+        },
+        "missing_categories": [
+          "quantified_recipe_and_ordered_conditions",
+          "reference_unit_cell_available"
+        ],
+        "reference_ids": [],
+        "quantified_input_evidence": {
+          "material_ids": [],
+          "fields": [],
+          "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
+        },
+        "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
+      }
+    },
+    {
+      "pair_row_id": "ondry2016-acs-chemmater-6b01681-pbs-cds-core-shell-nanocrystals-3::display",
+      "record_id": "ondry2016-acs-chemmater-6b01681-pbs-cds-core-shell-nanocrystals-3",
+      "record_page_path": "records/ondry2016-acs-chemmater-6b01681-pbs-cds-core-shell-nanocrystals-3.html",
+      "source_group": "ondry2016-acs-chemmater-6b01681",
+      "title": "Justin C. Ondry; Shauna Robbennolt; Hyeyeon Kang; Yan Yan; Sarah H. Tolbert (2016): PbS/CdS core/shell nanocrystals",
+      "doi": "10.1021/acs.chemmater.6b01681",
+      "year": 2016,
+      "method": "Heat-up",
+      "recipe_label": "Justin C. Ondry; Shauna Robbennolt; Hyeyeon Kang; Yan Yan; Sarah H. Tolbert (2016): PbS/CdS core/shell nanocrystals",
+      "sample_id": "ondry2016-acs-chemmater-6b01681-pbs-cds-core-shell-nanocrystals-3--product",
+      "source_sample_label": "PbS/CdS core/shell nanocrystals",
+      "composition": {
+        "value": "PbS/CdS",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "ondry2016-acs-chemmater-6b01681",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "recipe_link_evidence": [
+        {
+          "source_id": "ondry2016-acs-chemmater-6b01681",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "product_structure_fields": [
+        {
+          "kind": "phase",
+          "value": {
+            "value": "zinc blende",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "ondry2016-acs-chemmater-6b01681",
+                "locator": "Main PDF p.7"
+              }
+            ],
+            "note": ""
+          }
+        },
+        {
+          "kind": "morphology",
+          "value": {
+            "value": "sphere",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "ondry2016-acs-chemmater-6b01681",
+                "locator": "Main PDF p.7"
+              }
+            ],
+            "note": ""
+          }
+        }
+      ],
+      "structural_measurements": [
+        {
+          "measurement_id": "ondry2016-acs-chemmater-6b01681-pbs-cds-core-shell-nanocrystals-3--size",
+          "property": "particle_size",
+          "descriptor_field": "morphology.dimensions",
+          "value": {
+            "value": 3.0,
+            "minimum": null,
+            "maximum": null,
+            "unit": "nm",
+            "status": "reported",
+            "approximate": false,
+            "qualifier": "",
+            "basis": "",
+            "raw_text": "3 nm",
+            "evidence": [
+              {
+                "source_id": "ondry2016-acs-chemmater-6b01681",
+                "locator": "Main PDF p.3"
+              }
+            ],
+            "derivation": null
+          },
+          "technique": "not reported",
+          "conditions": "",
+          "evidence": [
+            {
+              "source_id": "ondry2016-acs-chemmater-6b01681",
+              "locator": "Main PDF p.3"
+            }
+          ]
+        }
+      ],
+      "review_status": "source_extracted",
+      "display_pair_basis": "one_record",
+      "cross_record_sample_deduplication": "not_assessed",
+      "documentation": {
+        "category": "partial",
+        "checks": {
+          "quantified_recipe_and_ordered_conditions": false,
+          "reported_phase": true,
+          "reported_morphology": true,
+          "reported_dimensions": true,
+          "reference_unit_cell_available": false
+        },
+        "missing_categories": [
+          "quantified_recipe_and_ordered_conditions",
+          "reference_unit_cell_available"
+        ],
+        "reference_ids": [],
+        "quantified_input_evidence": {
+          "material_ids": [],
+          "fields": [],
+          "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
+        },
+        "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
+      }
+    },
+    {
       "pair_row_id": "ondry2024-acsnano-3c09490-in1xgaxas-nanocrystals-1::display",
       "record_id": "ondry2024-acsnano-3c09490-in1xgaxas-nanocrystals-1",
       "record_page_path": "records/ondry2024-acsnano-3c09490-in1xgaxas-nanocrystals-1.html",
@@ -596071,6 +597650,150 @@
         "quantified_input_evidence": {
           "material_ids": [],
           "fields": [],
+          "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
+        },
+        "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
+      }
+    },
+    {
+      "pair_row_id": "ryswyk2023-acs-jchemed-3c00155-pbs-qds-synthesized-with-0-3-ml-of-oleic-1::display",
+      "record_id": "ryswyk2023-acs-jchemed-3c00155-pbs-qds-synthesized-with-0-3-ml-of-oleic-1",
+      "record_page_path": "records/ryswyk2023-acs-jchemed-3c00155-pbs-qds-synthesized-with-0-3-ml-of-oleic-1.html",
+      "source_group": "ryswyk2023-acs-jchemed-3c00155",
+      "title": "Hal Van Ryswyk; Hanna Z. Porter; Connor K. M. Seto; Ixchel Lopez; Emma Dy (2023): PbS QDs synthesized with 0.3 mL of oleic acid",
+      "doi": "10.1021/acs.jchemed.3c00155",
+      "year": 2023,
+      "method": "Hot injection",
+      "recipe_label": "Hal Van Ryswyk; Hanna Z. Porter; Connor K. M. Seto; Ixchel Lopez; Emma Dy (2023): PbS QDs synthesized with 0.3 mL of oleic acid",
+      "sample_id": "ryswyk2023-acs-jchemed-3c00155-pbs-qds-synthesized-with-0-3-ml-of-oleic-1--product",
+      "source_sample_label": "PbS QDs synthesized with 0.3 mL of oleic acid",
+      "composition": {
+        "value": "PbS",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "ryswyk2023-acs-jchemed-3c00155",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "recipe_link_evidence": [
+        {
+          "source_id": "ryswyk2023-acs-jchemed-3c00155",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "product_structure_fields": [
+        {
+          "kind": "phase",
+          "value": {
+            "value": "zinc blende",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "ryswyk2023-acs-jchemed-3c00155",
+                "locator": "Main PDF p.2"
+              }
+            ],
+            "note": ""
+          }
+        },
+        {
+          "kind": "morphology",
+          "value": {
+            "value": "sphere",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "ryswyk2023-acs-jchemed-3c00155",
+                "locator": "Main PDF p.2"
+              }
+            ],
+            "note": ""
+          }
+        }
+      ],
+      "structural_measurements": [
+        {
+          "measurement_id": "ryswyk2023-acs-jchemed-3c00155-pbs-qds-synthesized-with-0-3-ml-of-oleic-1--size",
+          "property": "particle_size",
+          "descriptor_field": "morphology.dimensions",
+          "value": {
+            "value": 3.21,
+            "minimum": null,
+            "maximum": null,
+            "unit": "nm",
+            "status": "reported",
+            "approximate": false,
+            "qualifier": "",
+            "basis": "",
+            "raw_text": "3.21 nm",
+            "evidence": [
+              {
+                "source_id": "ryswyk2023-acs-jchemed-3c00155",
+                "locator": "Main PDF p.4"
+              }
+            ],
+            "derivation": null
+          },
+          "technique": "not reported",
+          "conditions": "",
+          "evidence": [
+            {
+              "source_id": "ryswyk2023-acs-jchemed-3c00155",
+              "locator": "Main PDF p.4"
+            }
+          ]
+        }
+      ],
+      "review_status": "source_extracted",
+      "display_pair_basis": "one_record",
+      "cross_record_sample_deduplication": "not_assessed",
+      "documentation": {
+        "category": "partial",
+        "checks": {
+          "quantified_recipe_and_ordered_conditions": false,
+          "reported_phase": true,
+          "reported_morphology": true,
+          "reported_dimensions": true,
+          "reference_unit_cell_available": false
+        },
+        "missing_categories": [
+          "quantified_recipe_and_ordered_conditions",
+          "reference_unit_cell_available"
+        ],
+        "reference_ids": [],
+        "quantified_input_evidence": {
+          "material_ids": [
+            "ryswyk2023-acs-jchemed-3c00155-pbs-qds-synthesized-with-0-3-ml-of-oleic-1--oleic-acid"
+          ],
+          "fields": [
+            {
+              "material_id": "ryswyk2023-acs-jchemed-3c00155-pbs-qds-synthesized-with-0-3-ml-of-oleic-1--oleic-acid",
+              "pointer": "/materials/1/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.3,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.3 mL",
+                "evidence": [
+                  {
+                    "source_id": "ryswyk2023-acs-jchemed-3c00155",
+                    "locator": "Main PDF p.3"
+                  }
+                ],
+                "derivation": null
+              }
+            }
+          ],
           "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
         },
         "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
@@ -719628,6 +721351,245 @@
                   {
                     "source_id": "zarghami2010-nn100339b",
                     "locator": "Main PDF p.10"
+                  }
+                ],
+                "derivation": null
+              }
+            }
+          ],
+          "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
+        },
+        "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
+      }
+    },
+    {
+      "pair_row_id": "zaza2025-jacs-4c17283-cu-cubes-2::display",
+      "record_id": "zaza2025-jacs-4c17283-cu-cubes-2",
+      "record_page_path": "records/zaza2025-jacs-4c17283-cu-cubes-2.html",
+      "source_group": "zaza2025-jacs-4c17283",
+      "title": "Ludovic Zaza; Bojana Ranković; Philippe Schwaller; Raffaella Buonsanti (2025): Cu cubes",
+      "doi": "10.1021/jacs.4c17283",
+      "year": 2025,
+      "method": "Heat-up",
+      "recipe_label": "Ludovic Zaza; Bojana Ranković; Philippe Schwaller; Raffaella Buonsanti (2025): Cu cubes",
+      "sample_id": "zaza2025-jacs-4c17283-cu-cubes-2--product",
+      "source_sample_label": "Cu cubes",
+      "composition": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "recipe_link_evidence": [
+        {
+          "source_id": "zaza2025-jacs-4c17283",
+          "locator": "Main PDF p.8"
+        }
+      ],
+      "product_structure_fields": [
+        {
+          "kind": "phase",
+          "value": {
+            "value": "metallic",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "zaza2025-jacs-4c17283",
+                "locator": "Main PDF p.7"
+              }
+            ],
+            "note": ""
+          }
+        }
+      ],
+      "structural_measurements": [],
+      "review_status": "source_extracted",
+      "display_pair_basis": "one_record",
+      "cross_record_sample_deduplication": "not_assessed",
+      "documentation": {
+        "category": "partial",
+        "checks": {
+          "quantified_recipe_and_ordered_conditions": false,
+          "reported_phase": true,
+          "reported_morphology": false,
+          "reported_dimensions": false,
+          "reference_unit_cell_available": false
+        },
+        "missing_categories": [
+          "quantified_recipe_and_ordered_conditions",
+          "reported_morphology",
+          "reported_dimensions",
+          "reference_unit_cell_available"
+        ],
+        "reference_ids": [],
+        "quantified_input_evidence": {
+          "material_ids": [
+            "zaza2025-jacs-4c17283-cu-cubes-2--trioctylphosphine-oxide"
+          ],
+          "fields": [
+            {
+              "material_id": "zaza2025-jacs-4c17283-cu-cubes-2--trioctylphosphine-oxide",
+              "pointer": "/materials/0/quantities/amount",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 1.112,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mmol",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "1.112 mmol",
+                "evidence": [
+                  {
+                    "source_id": "zaza2025-jacs-4c17283",
+                    "locator": "Main PDF p.8"
+                  }
+                ],
+                "derivation": null
+              }
+            }
+          ],
+          "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
+        },
+        "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
+      }
+    },
+    {
+      "pair_row_id": "zaza2025-jacs-4c17283-cu-rhombic-dodecahedra-1::display",
+      "record_id": "zaza2025-jacs-4c17283-cu-rhombic-dodecahedra-1",
+      "record_page_path": "records/zaza2025-jacs-4c17283-cu-rhombic-dodecahedra-1.html",
+      "source_group": "zaza2025-jacs-4c17283",
+      "title": "Ludovic Zaza; Bojana Ranković; Philippe Schwaller; Raffaella Buonsanti (2025): Cu rhombic dodecahedra",
+      "doi": "10.1021/jacs.4c17283",
+      "year": 2025,
+      "method": "Heat-up",
+      "recipe_label": "Ludovic Zaza; Bojana Ranković; Philippe Schwaller; Raffaella Buonsanti (2025): Cu rhombic dodecahedra",
+      "sample_id": "zaza2025-jacs-4c17283-cu-rhombic-dodecahedra-1--product",
+      "source_sample_label": "Cu rhombic dodecahedra",
+      "composition": {
+        "value": "Cu",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zaza2025-jacs-4c17283",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "recipe_link_evidence": [
+        {
+          "source_id": "zaza2025-jacs-4c17283",
+          "locator": "Main PDF p.8"
+        }
+      ],
+      "product_structure_fields": [
+        {
+          "kind": "phase",
+          "value": {
+            "value": "metallic",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "zaza2025-jacs-4c17283",
+                "locator": "Main PDF p.7"
+              }
+            ],
+            "note": ""
+          }
+        },
+        {
+          "kind": "morphology",
+          "value": {
+            "value": "rhombic dodecahedron",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "zaza2025-jacs-4c17283",
+                "locator": "Main PDF p.7"
+              }
+            ],
+            "note": ""
+          }
+        }
+      ],
+      "structural_measurements": [
+        {
+          "measurement_id": "zaza2025-jacs-4c17283-cu-rhombic-dodecahedra-1--size",
+          "property": "diameter",
+          "descriptor_field": "morphology.dimensions",
+          "value": {
+            "value": 48.4,
+            "minimum": null,
+            "maximum": null,
+            "unit": "nm",
+            "status": "reported",
+            "approximate": false,
+            "qualifier": "",
+            "basis": "",
+            "raw_text": "48.4 nm",
+            "evidence": [
+              {
+                "source_id": "zaza2025-jacs-4c17283",
+                "locator": "Main PDF p.7"
+              }
+            ],
+            "derivation": null
+          },
+          "technique": "TEM",
+          "conditions": "",
+          "evidence": [
+            {
+              "source_id": "zaza2025-jacs-4c17283",
+              "locator": "Main PDF p.7"
+            }
+          ]
+        }
+      ],
+      "review_status": "source_extracted",
+      "display_pair_basis": "one_record",
+      "cross_record_sample_deduplication": "not_assessed",
+      "documentation": {
+        "category": "partial",
+        "checks": {
+          "quantified_recipe_and_ordered_conditions": false,
+          "reported_phase": true,
+          "reported_morphology": true,
+          "reported_dimensions": true,
+          "reference_unit_cell_available": false
+        },
+        "missing_categories": [
+          "quantified_recipe_and_ordered_conditions",
+          "reference_unit_cell_available"
+        ],
+        "reference_ids": [],
+        "quantified_input_evidence": {
+          "material_ids": [
+            "zaza2025-jacs-4c17283-cu-rhombic-dodecahedra-1--trioctylphosphine"
+          ],
+          "fields": [
+            {
+              "material_id": "zaza2025-jacs-4c17283-cu-rhombic-dodecahedra-1--trioctylphosphine",
+              "pointer": "/materials/0/quantities/amount",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.543,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mmol",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.543 mmol",
+                "evidence": [
+                  {
+                    "source_id": "zaza2025-jacs-4c17283",
+                    "locator": "Main PDF p.8"
                   }
                 ],
                 "derivation": null
