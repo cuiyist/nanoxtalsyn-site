@@ -1,0 +1,327 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "munshi2020-ch20071-cdte-qddendronised-polymer-nanocomposite-2",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Alaa M. Munshi; Jessica A. Kretzmann; Cameron W. Evans; Anna M. Ranieri; Zibeon Schildkraut; Massimiliano Massi; Marck Norret; Martin Saunders; K. Swaminathan Iyer (2020): CdTe QD–dendronised polymer nanocomposite (yellow emission)",
+  "material": {
+    "formula": "CdTe",
+    "family": "CdTe nanocrystals",
+    "elements": [
+      "Cd",
+      "Te"
+    ],
+    "components": [
+      "CdTe"
+    ],
+    "architecture": "composite"
+  },
+  "method": "Precipitation",
+  "sources": [
+    {
+      "id": "munshi2020-ch20071",
+      "doi": "10.1071/ch20071",
+      "title": "Dendronised Polymers as Templates for In Situ Quantum Dot Synthesis",
+      "authors": "Alaa M. Munshi; Jessica A. Kretzmann; Cameron W. Evans; Anna M. Ranieri; Zibeon Schildkraut; Massimiliano Massi; Marck Norret; Martin Saunders; K. Swaminathan Iyer",
+      "year": 2020,
+      "url": "https://doi.org/10.1071/ch20071",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "munshi2020-ch20071",
+    "recipe_family": "munshi2020-ch20071-cdte-qddendronised-polymer-nanocomposite-2",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "CdTe",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "munshi2020-ch20071",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    },
+    "size": {
+      "value": null,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "not_reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "not reported",
+      "evidence": [],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "sphere",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "munshi2020-ch20071",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "munshi2020-ch20071-cdte-qddendronised-polymer-nanocomposite-2--cadmium-nitrate",
+      "name": "cadmium nitrate",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "munshi2020-ch20071",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "munshi2020-ch20071-cdte-qddendronised-polymer-nanocomposite-2--sodium-hydrogen-telluride",
+      "name": "sodium hydrogen telluride",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "munshi2020-ch20071",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "munshi2020-ch20071-cdte-qddendronised-polymer-nanocomposite-2--poly-hema-ran-gma-4g-sh-dendron",
+      "name": "poly(HEMA-ran-GMA) 4G-SH dendron",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "munshi2020-ch20071",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "munshi2020-ch20071-cdte-qddendronised-polymer-nanocomposite-2--after-s01-dissolve",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": []
+    },
+    {
+      "id": "munshi2020-ch20071-cdte-qddendronised-polymer-nanocomposite-2--after-s02-add",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "munshi2020-ch20071-cdte-qddendronised-polymer-nanocomposite-2--after-s01-dissolve",
+        "munshi2020-ch20071-cdte-qddendronised-polymer-nanocomposite-2--cadmium-nitrate",
+        "munshi2020-ch20071-cdte-qddendronised-polymer-nanocomposite-2--poly-hema-ran-gma-4g-sh-dendron"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-dissolve",
+      "action": "dissolve",
+      "label": "Dissolve Te powder using NaBH4 to form NaHTe",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [],
+      "outputs": [
+        "munshi2020-ch20071-cdte-qddendronised-polymer-nanocomposite-2--after-s01-dissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "inert",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "munshi2020-ch20071",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dissolve Te powder using NaBH4 to form NaHTe",
+      "evidence": [
+        {
+          "source_id": "munshi2020-ch20071",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-add",
+      "action": "add",
+      "label": "Add NaHTe to a solution of Cd2+ and dendron",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-dissolve"
+      ],
+      "inputs": [
+        "munshi2020-ch20071-cdte-qddendronised-polymer-nanocomposite-2--after-s01-dissolve",
+        "munshi2020-ch20071-cdte-qddendronised-polymer-nanocomposite-2--cadmium-nitrate",
+        "munshi2020-ch20071-cdte-qddendronised-polymer-nanocomposite-2--poly-hema-ran-gma-4g-sh-dendron"
+      ],
+      "outputs": [
+        "munshi2020-ch20071-cdte-qddendronised-polymer-nanocomposite-2--after-s02-add"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "inert",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "munshi2020-ch20071",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add NaHTe to a solution of Cd2+ and dendron",
+      "evidence": [
+        {
+          "source_id": "munshi2020-ch20071",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "munshi2020-ch20071-cdte-qddendronised-polymer-nanocomposite-2--product",
+      "source_sample_label": "CdTe QD–dendronised polymer nanocomposite (yellow emission)",
+      "batch_id": null,
+      "material_state_id": "munshi2020-ch20071-cdte-qddendronised-polymer-nanocomposite-2--after-s02-add",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "CdTe",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "munshi2020-ch20071",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "morphology": {
+        "value": "sphere",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "munshi2020-ch20071",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": "thiolated fourth-generation PAMAM dendrons",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "munshi2020-ch20071",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "munshi2020-ch20071",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "notes": [
+        "Reactor: aqueous solution (Main PDF p.2).",
+        "Reaction time: 19 h (Main PDF p.2)."
+      ]
+    }
+  ],
+  "measurements": [],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Phase not reported in the extracted text.",
+      "Size not reported in the extracted text.",
+      "Reaction temperature not reported in the extracted text.",
+      "Amount of cadmium nitrate not reported in the extracted text.",
+      "Amount of sodium hydrogen telluride not reported in the extracted text.",
+      "Amount of poly(HEMA-ran-GMA) 4G-SH dendron not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

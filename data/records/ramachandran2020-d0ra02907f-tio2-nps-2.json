@@ -1,0 +1,447 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "ramachandran2020-d0ra02907f-tio2-nps-2",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Pravena Ramachandran; Chong Yew Lee; Ruey-An Doong; Chern Ein Oon; Nguyen Thi Kim Thanh; Hooi Ling Lee (2020): TiO2 NPs",
+  "material": {
+    "formula": "TiO2",
+    "family": "TiO2 nanocrystals",
+    "elements": [
+      "Ti",
+      "O"
+    ],
+    "components": [
+      "TiO2"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Microwave-assisted",
+  "sources": [
+    {
+      "id": "ramachandran2020-d0ra02907f",
+      "doi": "10.1039/d0ra02907f",
+      "title": "A titanium dioxide/nitrogen-doped graphene quantum dot nanocomposite to mitigate cytotoxicity: synthesis, characterisation, and cell viability evaluation",
+      "authors": "Pravena Ramachandran; Chong Yew Lee; Ruey-An Doong; Chern Ein Oon; Nguyen Thi Kim Thanh; Hooi Ling Lee",
+      "year": 2020,
+      "url": "https://doi.org/10.1039/d0ra02907f",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "ramachandran2020-d0ra02907f",
+    "recipe_family": "ramachandran2020-d0ra02907f-tio2-nps-2",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "TiO2",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "ramachandran2020-d0ra02907f",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "anatase",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "ramachandran2020-d0ra02907f",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": 11.46,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "11.46 nm",
+      "evidence": [
+        {
+          "source_id": "ramachandran2020-d0ra02907f",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "square",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "ramachandran2020-d0ra02907f",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "ramachandran2020-d0ra02907f-tio2-nps-2--hydrochloric-acid",
+      "name": "hydrochloric acid",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "ramachandran2020-d0ra02907f",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "ramachandran2020-d0ra02907f-tio2-nps-2--after-s01-adjust-ph",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "ramachandran2020-d0ra02907f-tio2-nps-2--hydrochloric-acid"
+      ]
+    },
+    {
+      "id": "ramachandran2020-d0ra02907f-tio2-nps-2--after-s02-heat",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "ramachandran2020-d0ra02907f-tio2-nps-2--after-s01-adjust-ph",
+        "ramachandran2020-d0ra02907f-tio2-nps-2--hydrochloric-acid"
+      ]
+    },
+    {
+      "id": "ramachandran2020-d0ra02907f-tio2-nps-2--after-s03-calcine",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "ramachandran2020-d0ra02907f-tio2-nps-2--after-s02-heat"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-adjust-ph",
+      "action": "adjust ph",
+      "label": "Adjust pH to 1.3 using hydrochloric acid",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "ramachandran2020-d0ra02907f-tio2-nps-2--hydrochloric-acid"
+      ],
+      "outputs": [
+        "ramachandran2020-d0ra02907f-tio2-nps-2--after-s01-adjust-ph"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 30,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "30 min",
+          "evidence": [
+            {
+              "source_id": "ramachandran2020-d0ra02907f",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Adjust pH to 1.3 using hydrochloric acid",
+      "evidence": [
+        {
+          "source_id": "ramachandran2020-d0ra02907f",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-heat",
+      "action": "heat",
+      "label": "Microwave-assisted synthesis",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-adjust-ph"
+      ],
+      "inputs": [
+        "ramachandran2020-d0ra02907f-tio2-nps-2--after-s01-adjust-ph",
+        "ramachandran2020-d0ra02907f-tio2-nps-2--hydrochloric-acid"
+      ],
+      "outputs": [
+        "ramachandran2020-d0ra02907f-tio2-nps-2--after-s02-heat"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 20,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "20 min",
+          "evidence": [
+            {
+              "source_id": "ramachandran2020-d0ra02907f",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Microwave-assisted synthesis",
+      "evidence": [
+        {
+          "source_id": "ramachandran2020-d0ra02907f",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s03-calcine",
+      "action": "calcine",
+      "label": "Calcine the dried powder",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-heat"
+      ],
+      "inputs": [
+        "ramachandran2020-d0ra02907f-tio2-nps-2--after-s02-heat"
+      ],
+      "outputs": [
+        "ramachandran2020-d0ra02907f-tio2-nps-2--after-s03-calcine"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 500,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "500 °C",
+          "evidence": [
+            {
+              "source_id": "ramachandran2020-d0ra02907f",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 2,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2 h",
+          "evidence": [
+            {
+              "source_id": "ramachandran2020-d0ra02907f",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Calcine the dried powder",
+      "evidence": [
+        {
+          "source_id": "ramachandran2020-d0ra02907f",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "ramachandran2020-d0ra02907f-tio2-nps-2--product",
+      "source_sample_label": "TiO2 NPs",
+      "batch_id": null,
+      "material_state_id": "ramachandran2020-d0ra02907f-tio2-nps-2--after-s03-calcine",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "TiO2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "ramachandran2020-d0ra02907f",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "anatase",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "ramachandran2020-d0ra02907f",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": "square",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "ramachandran2020-d0ra02907f",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": "none",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "ramachandran2020-d0ra02907f",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "ramachandran2020-d0ra02907f",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "notes": [
+        "Reaction time: 20 min (Main PDF p.2)."
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "id": "ramachandran2020-d0ra02907f-tio2-nps-2--size",
+      "sample_id": "ramachandran2020-d0ra02907f-tio2-nps-2--product",
+      "property": "diameter",
+      "technique": "HRTEM",
+      "value": {
+        "value": 11.46,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "11.46 nm",
+        "evidence": [
+          {
+            "source_id": "ramachandran2020-d0ra02907f",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "ramachandran2020-d0ra02907f",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    }
+  ],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Reactor not reported in the extracted text.",
+      "Atmosphere not reported in the extracted text.",
+      "Reaction temperature not reported in the extracted text.",
+      "Amount of hydrochloric acid not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

@@ -1,0 +1,350 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "egorysheva2017-s0036023617090042-bisbo4-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "A. V. Egorysheva; A. A. Berseneva; T. B. Kuvshinova; O. M. Gaitko (2017): BiSbO4",
+  "material": {
+    "formula": "BiSbO4",
+    "family": "BiSbO4 nanocrystals",
+    "elements": [
+      "Bi",
+      "Sb",
+      "O"
+    ],
+    "components": [
+      "BiSbO4"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Synthesis as described in the source",
+  "sources": [
+    {
+      "id": "egorysheva2017-s0036023617090042",
+      "doi": "10.1134/s0036023617090042",
+      "title": "Synthesis of nanocrystalline BiSbO4",
+      "authors": "A. V. Egorysheva; A. A. Berseneva; T. B. Kuvshinova; O. M. Gaitko",
+      "year": 2017,
+      "url": "https://doi.org/10.1134/s0036023617090042",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "egorysheva2017-s0036023617090042",
+    "recipe_family": "egorysheva2017-s0036023617090042-bisbo4-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "BiSbO4",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "egorysheva2017-s0036023617090042",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "monoclinic",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "egorysheva2017-s0036023617090042",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": null,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "not_reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "not reported",
+      "evidence": [],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "elongated",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "egorysheva2017-s0036023617090042",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "egorysheva2017-s0036023617090042-bisbo4-1--bi-no3-3-5h2o",
+      "name": "Bi(NO3)3 · 5H2O",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "egorysheva2017-s0036023617090042",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "egorysheva2017-s0036023617090042-bisbo4-1--sb-oac-3",
+      "name": "Sb(OAc)3",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "egorysheva2017-s0036023617090042",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "egorysheva2017-s0036023617090042-bisbo4-1--hclconc",
+      "name": "HClconc",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "egorysheva2017-s0036023617090042",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "egorysheva2017-s0036023617090042-bisbo4-1--nh4ohconc",
+      "name": "NH4OHconc",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "egorysheva2017-s0036023617090042",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "egorysheva2017-s0036023617090042-bisbo4-1--after-s01-dissolve",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "egorysheva2017-s0036023617090042-bisbo4-1--bi-no3-3-5h2o",
+        "egorysheva2017-s0036023617090042-bisbo4-1--sb-oac-3",
+        "egorysheva2017-s0036023617090042-bisbo4-1--hclconc"
+      ]
+    },
+    {
+      "id": "egorysheva2017-s0036023617090042-bisbo4-1--after-s02-precipitate",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "egorysheva2017-s0036023617090042-bisbo4-1--after-s01-dissolve",
+        "egorysheva2017-s0036023617090042-bisbo4-1--nh4ohconc"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-dissolve",
+      "action": "dissolve",
+      "label": "Dissolve solid components in hydrochloric acid",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "egorysheva2017-s0036023617090042-bisbo4-1--bi-no3-3-5h2o",
+        "egorysheva2017-s0036023617090042-bisbo4-1--sb-oac-3",
+        "egorysheva2017-s0036023617090042-bisbo4-1--hclconc"
+      ],
+      "outputs": [
+        "egorysheva2017-s0036023617090042-bisbo4-1--after-s01-dissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dissolve solid components in hydrochloric acid",
+      "evidence": [
+        {
+          "source_id": "egorysheva2017-s0036023617090042",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "s02-precipitate",
+      "action": "precipitate",
+      "label": "Precipitate using ammonia",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-dissolve"
+      ],
+      "inputs": [
+        "egorysheva2017-s0036023617090042-bisbo4-1--after-s01-dissolve",
+        "egorysheva2017-s0036023617090042-bisbo4-1--nh4ohconc"
+      ],
+      "outputs": [
+        "egorysheva2017-s0036023617090042-bisbo4-1--after-s02-precipitate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Precipitate using ammonia",
+      "evidence": [
+        {
+          "source_id": "egorysheva2017-s0036023617090042",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "egorysheva2017-s0036023617090042-bisbo4-1--product",
+      "source_sample_label": "BiSbO4",
+      "batch_id": null,
+      "material_state_id": "egorysheva2017-s0036023617090042-bisbo4-1--after-s02-precipitate",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "BiSbO4",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "egorysheva2017-s0036023617090042",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "monoclinic",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "egorysheva2017-s0036023617090042",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": "elongated",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "egorysheva2017-s0036023617090042",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "egorysheva2017-s0036023617090042",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "notes": [
+        "Reactor: platinum crucibles (Main PDF p.1).",
+        "Reaction temperature: 650 degC (Main PDF p.2).",
+        "Reaction time: 1 h (Main PDF p.1)."
+      ]
+    }
+  ],
+  "measurements": [],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Ligand not reported in the extracted text.",
+      "Size not reported in the extracted text.",
+      "Atmosphere not reported in the extracted text.",
+      "Amount of Bi(NO3)3 · 5H2O not reported in the extracted text.",
+      "Amount of Sb(OAc)3 not reported in the extracted text.",
+      "Amount of HClconc not reported in the extracted text.",
+      "Amount of NH4OHconc not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

@@ -1,0 +1,441 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "sorokin2023-s0020168523080150-scf3-nanocrystals-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "N. I. Sorokin; I. I. Buchinskaya (2023): ScF3 nanocrystals",
+  "material": {
+    "formula": "ScF3",
+    "family": "ScF3 nanocrystals",
+    "elements": [
+      "Sc",
+      "F"
+    ],
+    "components": [
+      "ScF3"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Synthesis as described in the source",
+  "sources": [
+    {
+      "id": "sorokin2023-s0020168523080150",
+      "doi": "10.1134/s0020168523080150",
+      "title": "Synthesis and Electrical Conductivity of Nanocrystalline Scandium Fluoride",
+      "authors": "N. I. Sorokin; I. I. Buchinskaya",
+      "year": 2023,
+      "url": "https://doi.org/10.1134/s0020168523080150",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "sorokin2023-s0020168523080150",
+    "recipe_family": "sorokin2023-s0020168523080150-scf3-nanocrystals-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    },
+    "phase": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    },
+    "size": {
+      "value": null,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "not_reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "not reported",
+      "evidence": [],
+      "derivation": null
+    },
+    "morphology": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "sorokin2023-s0020168523080150-scf3-nanocrystals-1--sccl3",
+      "name": "ScCl3",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "sorokin2023-s0020168523080150",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "sorokin2023-s0020168523080150-scf3-nanocrystals-1--hf",
+      "name": "HF",
+      "formula": null,
+      "role": "nonmetal_precursor",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "sorokin2023-s0020168523080150",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "sorokin2023-s0020168523080150-scf3-nanocrystals-1--double-distilled-water",
+      "name": "double-distilled water",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "sorokin2023-s0020168523080150",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "sorokin2023-s0020168523080150-scf3-nanocrystals-1--after-s01-dissolve",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "sorokin2023-s0020168523080150-scf3-nanocrystals-1--sccl3",
+        "sorokin2023-s0020168523080150-scf3-nanocrystals-1--double-distilled-water"
+      ]
+    },
+    {
+      "id": "sorokin2023-s0020168523080150-scf3-nanocrystals-1--after-s02-precipitate",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "sorokin2023-s0020168523080150-scf3-nanocrystals-1--after-s01-dissolve",
+        "sorokin2023-s0020168523080150-scf3-nanocrystals-1--sccl3",
+        "sorokin2023-s0020168523080150-scf3-nanocrystals-1--hf"
+      ]
+    },
+    {
+      "id": "sorokin2023-s0020168523080150-scf3-nanocrystals-1--after-s03-wash",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "sorokin2023-s0020168523080150-scf3-nanocrystals-1--after-s02-precipitate",
+        "sorokin2023-s0020168523080150-scf3-nanocrystals-1--hf"
+      ]
+    },
+    {
+      "id": "sorokin2023-s0020168523080150-scf3-nanocrystals-1--after-s04-calcine",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "sorokin2023-s0020168523080150-scf3-nanocrystals-1--after-s03-wash"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-dissolve",
+      "action": "dissolve",
+      "label": "Dissolve ScCl3 in water",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "sorokin2023-s0020168523080150-scf3-nanocrystals-1--sccl3",
+        "sorokin2023-s0020168523080150-scf3-nanocrystals-1--double-distilled-water"
+      ],
+      "outputs": [
+        "sorokin2023-s0020168523080150-scf3-nanocrystals-1--after-s01-dissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "sorokin2023-s0020168523080150",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dissolve ScCl3 in water",
+      "evidence": [
+        {
+          "source_id": "sorokin2023-s0020168523080150",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-precipitate",
+      "action": "precipitate",
+      "label": "Precipitate ScF3 by adding HF",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-dissolve"
+      ],
+      "inputs": [
+        "sorokin2023-s0020168523080150-scf3-nanocrystals-1--after-s01-dissolve",
+        "sorokin2023-s0020168523080150-scf3-nanocrystals-1--sccl3",
+        "sorokin2023-s0020168523080150-scf3-nanocrystals-1--hf"
+      ],
+      "outputs": [
+        "sorokin2023-s0020168523080150-scf3-nanocrystals-1--after-s02-precipitate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Precipitate ScF3 by adding HF",
+      "evidence": [
+        {
+          "source_id": "sorokin2023-s0020168523080150",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s03-wash",
+      "action": "wash",
+      "label": "Wash precipitate with HF",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-precipitate"
+      ],
+      "inputs": [
+        "sorokin2023-s0020168523080150-scf3-nanocrystals-1--after-s02-precipitate",
+        "sorokin2023-s0020168523080150-scf3-nanocrystals-1--hf"
+      ],
+      "outputs": [
+        "sorokin2023-s0020168523080150-scf3-nanocrystals-1--after-s03-wash"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Wash precipitate with HF",
+      "evidence": [
+        {
+          "source_id": "sorokin2023-s0020168523080150",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s04-calcine",
+      "action": "calcine",
+      "label": "Calcine precipitate in air",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-wash"
+      ],
+      "inputs": [
+        "sorokin2023-s0020168523080150-scf3-nanocrystals-1--after-s03-wash"
+      ],
+      "outputs": [
+        "sorokin2023-s0020168523080150-scf3-nanocrystals-1--after-s04-calcine"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 723,
+          "minimum": null,
+          "maximum": null,
+          "unit": "K",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "723 K",
+          "evidence": [
+            {
+              "source_id": "sorokin2023-s0020168523080150",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 1.5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1.5 h",
+          "evidence": [
+            {
+              "source_id": "sorokin2023-s0020168523080150",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "sorokin2023-s0020168523080150",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Calcine precipitate in air",
+      "evidence": [
+        {
+          "source_id": "sorokin2023-s0020168523080150",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "sorokin2023-s0020168523080150-scf3-nanocrystals-1--product",
+      "source_sample_label": "ScF3 nanocrystals",
+      "batch_id": null,
+      "material_state_id": "sorokin2023-s0020168523080150-scf3-nanocrystals-1--after-s04-calcine",
+      "parent_sample_id": null,
+      "composition": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "phase": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "morphology": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "surface": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "sorokin2023-s0020168523080150",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "notes": [
+        "Reactor: Teflon glassware and a glassy carbon crucible (Main PDF p.2).",
+        "Reaction temperature: 723 K (Main PDF p.2).",
+        "Reaction time: 1.5 h (Main PDF p.2)."
+      ]
+    }
+  ],
+  "measurements": [],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Phase not reported in the extracted text.",
+      "Shape not reported in the extracted text.",
+      "Ligand not reported in the extracted text.",
+      "Size not reported in the extracted text.",
+      "Amount of ScCl3 not reported in the extracted text.",
+      "Amount of HF not reported in the extracted text.",
+      "Amount of double-distilled water not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

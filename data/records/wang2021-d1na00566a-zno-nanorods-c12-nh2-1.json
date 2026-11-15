@@ -1,0 +1,414 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "wang2021-d1na00566a-zno-nanorods-c12-nh2-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Yinping Wang; Yannick Coppel; Christine Lepetit; Jean-Daniel Marty; Christophe Mingotaud; Myrtil L. Kahn (2021): ZnO nanorods (C12-NH2)",
+  "material": {
+    "formula": "ZnO",
+    "family": "ZnO nanocrystals",
+    "elements": [
+      "Zn",
+      "O"
+    ],
+    "components": [
+      "ZnO"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Organometallic hydrolysis",
+  "sources": [
+    {
+      "id": "wang2021-d1na00566a",
+      "doi": "10.1039/d1na00566a",
+      "title": "Anisotropic growth of ZnO nanoparticles driven by the structure of amine surfactants: the role of surface dynamics in nanocrystal growth",
+      "authors": "Yinping Wang; Yannick Coppel; Christine Lepetit; Jean-Daniel Marty; Christophe Mingotaud; Myrtil L. Kahn",
+      "year": 2021,
+      "url": "https://doi.org/10.1039/d1na00566a",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "wang2021-d1na00566a",
+    "recipe_family": "wang2021-d1na00566a-zno-nanorods-c12-nh2-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "ZnO",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "wang2021-d1na00566a",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "hexagonal",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "wang2021-d1na00566a",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": 5.0,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "5 nm",
+      "evidence": [
+        {
+          "source_id": "wang2021-d1na00566a",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "nanorod",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "wang2021-d1na00566a",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "wang2021-d1na00566a-zno-nanorods-c12-nh2-1--dodecylamine",
+      "name": "dodecylamine",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 0.5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.5 mmol",
+          "evidence": [
+            {
+              "source_id": "wang2021-d1na00566a",
+              "locator": "Main PDF p.9"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "wang2021-d1na00566a",
+          "locator": "Main PDF p.9"
+        }
+      ]
+    },
+    {
+      "id": "wang2021-d1na00566a-zno-nanorods-c12-nh2-1--zncy2",
+      "name": "[ZnCy2]",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 0.25,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.25 mmol",
+          "evidence": [
+            {
+              "source_id": "wang2021-d1na00566a",
+              "locator": "Main PDF p.9"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "wang2021-d1na00566a",
+          "locator": "Main PDF p.9"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "wang2021-d1na00566a-zno-nanorods-c12-nh2-1--after-s01-mix",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "wang2021-d1na00566a-zno-nanorods-c12-nh2-1--zncy2",
+        "wang2021-d1na00566a-zno-nanorods-c12-nh2-1--dodecylamine"
+      ]
+    },
+    {
+      "id": "wang2021-d1na00566a-zno-nanorods-c12-nh2-1--after-s02-hydrolysis",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "wang2021-d1na00566a-zno-nanorods-c12-nh2-1--after-s01-mix",
+        "wang2021-d1na00566a-zno-nanorods-c12-nh2-1--zncy2",
+        "wang2021-d1na00566a-zno-nanorods-c12-nh2-1--dodecylamine"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-mix",
+      "action": "mix",
+      "label": "Mixing [ZnCy2] and dodecylamine in a vial",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "wang2021-d1na00566a-zno-nanorods-c12-nh2-1--zncy2",
+        "wang2021-d1na00566a-zno-nanorods-c12-nh2-1--dodecylamine"
+      ],
+      "outputs": [
+        "wang2021-d1na00566a-zno-nanorods-c12-nh2-1--after-s01-mix"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "wang2021-d1na00566a",
+            "locator": "Main PDF p.9"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Mixing [ZnCy2] and dodecylamine in a vial",
+      "evidence": [
+        {
+          "source_id": "wang2021-d1na00566a",
+          "locator": "Main PDF p.9"
+        }
+      ]
+    },
+    {
+      "id": "s02-hydrolysis",
+      "action": "hydrolysis",
+      "label": "Hydrolysis in contact with air",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-mix"
+      ],
+      "inputs": [
+        "wang2021-d1na00566a-zno-nanorods-c12-nh2-1--after-s01-mix",
+        "wang2021-d1na00566a-zno-nanorods-c12-nh2-1--zncy2",
+        "wang2021-d1na00566a-zno-nanorods-c12-nh2-1--dodecylamine"
+      ],
+      "outputs": [
+        "wang2021-d1na00566a-zno-nanorods-c12-nh2-1--after-s02-hydrolysis"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 4,
+          "minimum": null,
+          "maximum": null,
+          "unit": "d",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "4 days",
+          "evidence": [
+            {
+              "source_id": "wang2021-d1na00566a",
+              "locator": "Main PDF p.9"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "wang2021-d1na00566a",
+            "locator": "Main PDF p.9"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Hydrolysis in contact with air",
+      "evidence": [
+        {
+          "source_id": "wang2021-d1na00566a",
+          "locator": "Main PDF p.9"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "wang2021-d1na00566a-zno-nanorods-c12-nh2-1--product",
+      "source_sample_label": "ZnO nanorods (C12-NH2)",
+      "batch_id": null,
+      "material_state_id": "wang2021-d1na00566a-zno-nanorods-c12-nh2-1--after-s02-hydrolysis",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "ZnO",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "wang2021-d1na00566a",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "hexagonal",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "wang2021-d1na00566a",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": "nanorod",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "wang2021-d1na00566a",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": "dodecylamine (C12-NH2)",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "wang2021-d1na00566a",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "wang2021-d1na00566a",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "notes": [
+        "Reactor: 4 mL vial (Main PDF p.9).",
+        "Reaction time: 4 d (Main PDF p.9)."
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "id": "wang2021-d1na00566a-zno-nanorods-c12-nh2-1--size",
+      "sample_id": "wang2021-d1na00566a-zno-nanorods-c12-nh2-1--product",
+      "property": "diameter",
+      "technique": "TEM",
+      "value": {
+        "value": 5.0,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "5 nm",
+        "evidence": [
+          {
+            "source_id": "wang2021-d1na00566a",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "wang2021-d1na00566a",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Reaction temperature not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

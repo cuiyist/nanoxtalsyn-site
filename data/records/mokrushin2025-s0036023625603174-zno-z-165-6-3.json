@@ -1,0 +1,402 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "mokrushin2025-s0036023625603174-zno-z-165-6-3",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "A. S. Mokrushin; I. A. Nagornov; S. A. Dmitrieva; N. P. Simonenko; E. P. Simonenko (2025): ZnO (Z-165-6)",
+  "material": {
+    "formula": "ZnO",
+    "family": "ZnO nanocrystals",
+    "elements": [
+      "Zn",
+      "O"
+    ],
+    "components": [
+      "ZnO"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Synthesis as described in the source",
+  "sources": [
+    {
+      "id": "mokrushin2025-s0036023625603174",
+      "doi": "10.1134/s0036023625603174",
+      "title": "Zinc Glycerate as a Precursor for the Synthesis of Nanocrystalline ZnO with Improved NO2 Gas Sensitivity",
+      "authors": "A. S. Mokrushin; I. A. Nagornov; S. A. Dmitrieva; N. P. Simonenko; E. P. Simonenko",
+      "year": 2025,
+      "url": "https://doi.org/10.1134/s0036023625603174",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "mokrushin2025-s0036023625603174",
+    "recipe_family": "mokrushin2025-s0036023625603174-zno-z-165-6-3",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    },
+    "phase": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    },
+    "size": {
+      "value": null,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "not_reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "not reported",
+      "evidence": [],
+      "derivation": null
+    },
+    "morphology": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "mokrushin2025-s0036023625603174-zno-z-165-6-3--zinc-acetylacetonate-monohydrate",
+      "name": "zinc acetylacetonate monohydrate",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "concentration": {
+          "value": 0.2,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mol/L",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.2 mol/L",
+          "evidence": [
+            {
+              "source_id": "mokrushin2025-s0036023625603174",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "mokrushin2025-s0036023625603174",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "mokrushin2025-s0036023625603174-zno-z-165-6-3--after-s01-dissolve",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "mokrushin2025-s0036023625603174-zno-z-165-6-3--zinc-acetylacetonate-monohydrate"
+      ]
+    },
+    {
+      "id": "mokrushin2025-s0036023625603174-zno-z-165-6-3--after-s02-centrifuge",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "mokrushin2025-s0036023625603174-zno-z-165-6-3--after-s01-dissolve"
+      ]
+    },
+    {
+      "id": "mokrushin2025-s0036023625603174-zno-z-165-6-3--after-s03-wash",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "mokrushin2025-s0036023625603174-zno-z-165-6-3--after-s02-centrifuge"
+      ]
+    },
+    {
+      "id": "mokrushin2025-s0036023625603174-zno-z-165-6-3--after-s04-anneal",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "mokrushin2025-s0036023625603174-zno-z-165-6-3--after-s03-wash"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-dissolve",
+      "action": "dissolve",
+      "label": "Dissolve zinc acetylacetonate monohydrate in glycerol",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "mokrushin2025-s0036023625603174-zno-z-165-6-3--zinc-acetylacetonate-monohydrate"
+      ],
+      "outputs": [
+        "mokrushin2025-s0036023625603174-zno-z-165-6-3--after-s01-dissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dissolve zinc acetylacetonate monohydrate in glycerol",
+      "evidence": [
+        {
+          "source_id": "mokrushin2025-s0036023625603174",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-centrifuge",
+      "action": "centrifuge",
+      "label": "Separate solid precipitates",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-dissolve"
+      ],
+      "inputs": [
+        "mokrushin2025-s0036023625603174-zno-z-165-6-3--after-s01-dissolve"
+      ],
+      "outputs": [
+        "mokrushin2025-s0036023625603174-zno-z-165-6-3--after-s02-centrifuge"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Separate solid precipitates",
+      "evidence": [
+        {
+          "source_id": "mokrushin2025-s0036023625603174",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s03-wash",
+      "action": "wash",
+      "label": "Wash with ethanol",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-centrifuge"
+      ],
+      "inputs": [
+        "mokrushin2025-s0036023625603174-zno-z-165-6-3--after-s02-centrifuge"
+      ],
+      "outputs": [
+        "mokrushin2025-s0036023625603174-zno-z-165-6-3--after-s03-wash"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Wash with ethanol",
+      "evidence": [
+        {
+          "source_id": "mokrushin2025-s0036023625603174",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s04-anneal",
+      "action": "anneal",
+      "label": "Anneal at 370°C",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-wash"
+      ],
+      "inputs": [
+        "mokrushin2025-s0036023625603174-zno-z-165-6-3--after-s03-wash"
+      ],
+      "outputs": [
+        "mokrushin2025-s0036023625603174-zno-z-165-6-3--after-s04-anneal"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 370,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "370 °C",
+          "evidence": [
+            {
+              "source_id": "mokrushin2025-s0036023625603174",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 2,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2 h",
+          "evidence": [
+            {
+              "source_id": "mokrushin2025-s0036023625603174",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Anneal at 370°C",
+      "evidence": [
+        {
+          "source_id": "mokrushin2025-s0036023625603174",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "mokrushin2025-s0036023625603174-zno-z-165-6-3--product",
+      "source_sample_label": "ZnO (Z-165-6)",
+      "batch_id": null,
+      "material_state_id": "mokrushin2025-s0036023625603174-zno-z-165-6-3--after-s04-anneal",
+      "parent_sample_id": null,
+      "composition": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "phase": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "morphology": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "surface": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "mokrushin2025-s0036023625603174",
+          "locator": "Main PDF"
+        }
+      ],
+      "notes": [
+        "Reaction time: 6 h (Main PDF p.2)."
+      ]
+    }
+  ],
+  "measurements": [],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Phase not reported in the extracted text.",
+      "Shape not reported in the extracted text.",
+      "Ligand not reported in the extracted text.",
+      "Size not reported in the extracted text.",
+      "Reactor not reported in the extracted text.",
+      "Atmosphere not reported in the extracted text.",
+      "Reaction temperature not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

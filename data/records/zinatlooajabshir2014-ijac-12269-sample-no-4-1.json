@@ -1,0 +1,664 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "zinatlooajabshir2014-ijac-12269-sample-no-4-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Sahar Zinatloo‐Ajabshir; Masoud Salavati‐Niasari (2014): sample no. 4",
+  "material": {
+    "formula": "ZrO2",
+    "family": "ZrO2 nanocrystals",
+    "elements": [
+      "Zr",
+      "O"
+    ],
+    "components": [
+      "ZrO2"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Sonochemical",
+  "sources": [
+    {
+      "id": "zinatlooajabshir2014-ijac-12269",
+      "doi": "10.1111/ijac.12269",
+      "title": "A Sonochemical‐Assisted Synthesis of Pure Nanocrystalline Tetragonal Zirconium Dioxide Using Tetramethylethylenediamine",
+      "authors": "Sahar Zinatloo‐Ajabshir; Masoud Salavati‐Niasari",
+      "year": 2014,
+      "url": "https://doi.org/10.1111/ijac.12269",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "zinatlooajabshir2014-ijac-12269",
+    "recipe_family": "zinatlooajabshir2014-ijac-12269-sample-no-4-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "ZrO2",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "zinatlooajabshir2014-ijac-12269",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "tetragonal",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "zinatlooajabshir2014-ijac-12269",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": 15,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "15 nm",
+      "evidence": [
+        {
+          "source_id": "zinatlooajabshir2014-ijac-12269",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "sponge-like",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "zinatlooajabshir2014-ijac-12269",
+          "locator": "Main PDF p.4"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "zinatlooajabshir2014-ijac-12269-sample-no-4-1--zirconyl-nitrate",
+      "name": "zirconyl nitrate",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 mmol",
+          "evidence": [
+            {
+              "source_id": "zinatlooajabshir2014-ijac-12269",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zinatlooajabshir2014-ijac-12269",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "zinatlooajabshir2014-ijac-12269-sample-no-4-1--tetramethylethylenediamine",
+      "name": "tetramethylethylenediamine",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 4,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "4 mmol",
+          "evidence": [
+            {
+              "source_id": "zinatlooajabshir2014-ijac-12269",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zinatlooajabshir2014-ijac-12269",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "zinatlooajabshir2014-ijac-12269-sample-no-4-1--after-s01-dissolve",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zinatlooajabshir2014-ijac-12269-sample-no-4-1--tetramethylethylenediamine"
+      ]
+    },
+    {
+      "id": "zinatlooajabshir2014-ijac-12269-sample-no-4-1--after-s02-dissolve",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zinatlooajabshir2014-ijac-12269-sample-no-4-1--after-s01-dissolve",
+        "zinatlooajabshir2014-ijac-12269-sample-no-4-1--zirconyl-nitrate"
+      ]
+    },
+    {
+      "id": "zinatlooajabshir2014-ijac-12269-sample-no-4-1--after-s03-add",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zinatlooajabshir2014-ijac-12269-sample-no-4-1--after-s02-dissolve",
+        "zinatlooajabshir2014-ijac-12269-sample-no-4-1--tetramethylethylenediamine",
+        "zinatlooajabshir2014-ijac-12269-sample-no-4-1--zirconyl-nitrate"
+      ]
+    },
+    {
+      "id": "zinatlooajabshir2014-ijac-12269-sample-no-4-1--after-s04-filter",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zinatlooajabshir2014-ijac-12269-sample-no-4-1--after-s03-add"
+      ]
+    },
+    {
+      "id": "zinatlooajabshir2014-ijac-12269-sample-no-4-1--after-s05-dry",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zinatlooajabshir2014-ijac-12269-sample-no-4-1--after-s04-filter"
+      ]
+    },
+    {
+      "id": "zinatlooajabshir2014-ijac-12269-sample-no-4-1--after-s06-calcine",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "zinatlooajabshir2014-ijac-12269-sample-no-4-1--after-s05-dry"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-dissolve",
+      "action": "dissolve",
+      "label": "Dissolve TMED in distilled water",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "zinatlooajabshir2014-ijac-12269-sample-no-4-1--tetramethylethylenediamine"
+      ],
+      "outputs": [
+        "zinatlooajabshir2014-ijac-12269-sample-no-4-1--after-s01-dissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zinatlooajabshir2014-ijac-12269",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dissolve TMED in distilled water",
+      "evidence": [
+        {
+          "source_id": "zinatlooajabshir2014-ijac-12269",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-dissolve",
+      "action": "dissolve",
+      "label": "Dissolve ZN in distilled water",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-dissolve"
+      ],
+      "inputs": [
+        "zinatlooajabshir2014-ijac-12269-sample-no-4-1--after-s01-dissolve",
+        "zinatlooajabshir2014-ijac-12269-sample-no-4-1--zirconyl-nitrate"
+      ],
+      "outputs": [
+        "zinatlooajabshir2014-ijac-12269-sample-no-4-1--after-s02-dissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zinatlooajabshir2014-ijac-12269",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dissolve ZN in distilled water",
+      "evidence": [
+        {
+          "source_id": "zinatlooajabshir2014-ijac-12269",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s03-add",
+      "action": "add",
+      "label": "Add TMED solution to ZN solution under ultrasound",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-dissolve"
+      ],
+      "inputs": [
+        "zinatlooajabshir2014-ijac-12269-sample-no-4-1--after-s02-dissolve",
+        "zinatlooajabshir2014-ijac-12269-sample-no-4-1--tetramethylethylenediamine",
+        "zinatlooajabshir2014-ijac-12269-sample-no-4-1--zirconyl-nitrate"
+      ],
+      "outputs": [
+        "zinatlooajabshir2014-ijac-12269-sample-no-4-1--after-s03-add"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 20,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "20 min",
+          "evidence": [
+            {
+              "source_id": "zinatlooajabshir2014-ijac-12269",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zinatlooajabshir2014-ijac-12269",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add TMED solution to ZN solution under ultrasound",
+      "evidence": [
+        {
+          "source_id": "zinatlooajabshir2014-ijac-12269",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s04-filter",
+      "action": "filter",
+      "label": "Filter the white gel-like product",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-add"
+      ],
+      "inputs": [
+        "zinatlooajabshir2014-ijac-12269-sample-no-4-1--after-s03-add"
+      ],
+      "outputs": [
+        "zinatlooajabshir2014-ijac-12269-sample-no-4-1--after-s04-filter"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Filter the white gel-like product",
+      "evidence": [
+        {
+          "source_id": "zinatlooajabshir2014-ijac-12269",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s05-dry",
+      "action": "dry",
+      "label": "Dry the product at 80°C",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-filter"
+      ],
+      "inputs": [
+        "zinatlooajabshir2014-ijac-12269-sample-no-4-1--after-s04-filter"
+      ],
+      "outputs": [
+        "zinatlooajabshir2014-ijac-12269-sample-no-4-1--after-s05-dry"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 80,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "80 °C",
+          "evidence": [
+            {
+              "source_id": "zinatlooajabshir2014-ijac-12269",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dry the product at 80°C",
+      "evidence": [
+        {
+          "source_id": "zinatlooajabshir2014-ijac-12269",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s06-calcine",
+      "action": "calcine",
+      "label": "Calcine the product at 600°C for 4 h",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s05-dry"
+      ],
+      "inputs": [
+        "zinatlooajabshir2014-ijac-12269-sample-no-4-1--after-s05-dry"
+      ],
+      "outputs": [
+        "zinatlooajabshir2014-ijac-12269-sample-no-4-1--after-s06-calcine"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 600,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "600 °C",
+          "evidence": [
+            {
+              "source_id": "zinatlooajabshir2014-ijac-12269",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 4,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "4 h",
+          "evidence": [
+            {
+              "source_id": "zinatlooajabshir2014-ijac-12269",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zinatlooajabshir2014-ijac-12269",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Calcine the product at 600°C for 4 h",
+      "evidence": [
+        {
+          "source_id": "zinatlooajabshir2014-ijac-12269",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "zinatlooajabshir2014-ijac-12269-sample-no-4-1--product",
+      "source_sample_label": "sample no. 4",
+      "batch_id": null,
+      "material_state_id": "zinatlooajabshir2014-ijac-12269-sample-no-4-1--after-s06-calcine",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "ZrO2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zinatlooajabshir2014-ijac-12269",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "tetragonal",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zinatlooajabshir2014-ijac-12269",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": "sponge-like",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zinatlooajabshir2014-ijac-12269",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": "TMED",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zinatlooajabshir2014-ijac-12269",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "zinatlooajabshir2014-ijac-12269",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "notes": [
+        "Reaction temperature: 25 degC (Main PDF p.2).",
+        "Reaction time: 20 min (Main PDF p.2)."
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "id": "zinatlooajabshir2014-ijac-12269-sample-no-4-1--size",
+      "sample_id": "zinatlooajabshir2014-ijac-12269-sample-no-4-1--product",
+      "property": "crystallite_size",
+      "technique": "XRD",
+      "value": {
+        "value": 15,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "15 nm",
+        "evidence": [
+          {
+            "source_id": "zinatlooajabshir2014-ijac-12269",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "zinatlooajabshir2014-ijac-12269",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Reactor not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

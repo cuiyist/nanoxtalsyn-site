@@ -1,0 +1,577 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "mohanty2020-5-0002011-cds-nanoparticles-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Biswajyoti Mohanty; J. Nayak (2020): CdS nanoparticles",
+  "material": {
+    "formula": "CdS",
+    "family": "CdS nanocrystals",
+    "elements": [
+      "Cd",
+      "S"
+    ],
+    "components": [
+      "CdS"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Hydrothermal",
+  "sources": [
+    {
+      "id": "mohanty2020-5-0002011",
+      "doi": "10.1063/5.0002011",
+      "title": "One-step synthesis, characterization and optoelectronic properties of cadmium sulfide nanocrystal",
+      "authors": "Biswajyoti Mohanty; J. Nayak",
+      "year": 2020,
+      "url": "https://doi.org/10.1063/5.0002011",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "mohanty2020-5-0002011",
+    "recipe_family": "mohanty2020-5-0002011-cds-nanoparticles-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "CdS",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "mohanty2020-5-0002011",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "hexagonal wurtzite",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "mohanty2020-5-0002011",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": 9.89,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "9.89 nm",
+      "evidence": [
+        {
+          "source_id": "mohanty2020-5-0002011",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "sphere",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "mohanty2020-5-0002011",
+          "locator": "Main PDF p.6"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "mohanty2020-5-0002011-cds-nanoparticles-1--cadmium-acetate-dihydrate",
+      "name": "Cadmium acetate dihydrate",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 2,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2 mmol",
+          "evidence": [
+            {
+              "source_id": "mohanty2020-5-0002011",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "mohanty2020-5-0002011",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "mohanty2020-5-0002011-cds-nanoparticles-1--sodium-sulfide-nonahydrate",
+      "name": "Sodium sulfide nonahydrate",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 4,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "4 mmol",
+          "evidence": [
+            {
+              "source_id": "mohanty2020-5-0002011",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "mohanty2020-5-0002011",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "mohanty2020-5-0002011-cds-nanoparticles-1--after-s01-dissolve",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "mohanty2020-5-0002011-cds-nanoparticles-1--sodium-sulfide-nonahydrate"
+      ]
+    },
+    {
+      "id": "mohanty2020-5-0002011-cds-nanoparticles-1--after-s02-dissolve",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "mohanty2020-5-0002011-cds-nanoparticles-1--after-s01-dissolve",
+        "mohanty2020-5-0002011-cds-nanoparticles-1--cadmium-acetate-dihydrate"
+      ]
+    },
+    {
+      "id": "mohanty2020-5-0002011-cds-nanoparticles-1--after-s03-heat",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "mohanty2020-5-0002011-cds-nanoparticles-1--after-s02-dissolve"
+      ]
+    },
+    {
+      "id": "mohanty2020-5-0002011-cds-nanoparticles-1--after-s04-dry",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "mohanty2020-5-0002011-cds-nanoparticles-1--after-s03-heat"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-dissolve",
+      "action": "dissolve",
+      "label": "Dissolve sodium sulfide in water",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "mohanty2020-5-0002011-cds-nanoparticles-1--sodium-sulfide-nonahydrate"
+      ],
+      "outputs": [
+        "mohanty2020-5-0002011-cds-nanoparticles-1--after-s01-dissolve"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 15,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "15 min",
+          "evidence": [
+            {
+              "source_id": "mohanty2020-5-0002011",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "mohanty2020-5-0002011",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dissolve sodium sulfide in water",
+      "evidence": [
+        {
+          "source_id": "mohanty2020-5-0002011",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s02-dissolve",
+      "action": "dissolve",
+      "label": "Dissolve cadmium acetate in solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-dissolve"
+      ],
+      "inputs": [
+        "mohanty2020-5-0002011-cds-nanoparticles-1--after-s01-dissolve",
+        "mohanty2020-5-0002011-cds-nanoparticles-1--cadmium-acetate-dihydrate"
+      ],
+      "outputs": [
+        "mohanty2020-5-0002011-cds-nanoparticles-1--after-s02-dissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "mohanty2020-5-0002011",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dissolve cadmium acetate in solution",
+      "evidence": [
+        {
+          "source_id": "mohanty2020-5-0002011",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s03-heat",
+      "action": "heat",
+      "label": "Hydrothermal reaction in autoclave",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-dissolve"
+      ],
+      "inputs": [
+        "mohanty2020-5-0002011-cds-nanoparticles-1--after-s02-dissolve"
+      ],
+      "outputs": [
+        "mohanty2020-5-0002011-cds-nanoparticles-1--after-s03-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 180,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "180 °C",
+          "evidence": [
+            {
+              "source_id": "mohanty2020-5-0002011",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 24,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "24 h",
+          "evidence": [
+            {
+              "source_id": "mohanty2020-5-0002011",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "mohanty2020-5-0002011",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Hydrothermal reaction in autoclave",
+      "evidence": [
+        {
+          "source_id": "mohanty2020-5-0002011",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s04-dry",
+      "action": "dry",
+      "label": "Dry the product",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-heat"
+      ],
+      "inputs": [
+        "mohanty2020-5-0002011-cds-nanoparticles-1--after-s03-heat"
+      ],
+      "outputs": [
+        "mohanty2020-5-0002011-cds-nanoparticles-1--after-s04-dry"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 70,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "70 °C",
+          "evidence": [
+            {
+              "source_id": "mohanty2020-5-0002011",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 12,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "12 h",
+          "evidence": [
+            {
+              "source_id": "mohanty2020-5-0002011",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dry the product",
+      "evidence": [
+        {
+          "source_id": "mohanty2020-5-0002011",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "mohanty2020-5-0002011-cds-nanoparticles-1--product",
+      "source_sample_label": "CdS nanoparticles",
+      "batch_id": null,
+      "material_state_id": "mohanty2020-5-0002011-cds-nanoparticles-1--after-s04-dry",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "CdS",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "mohanty2020-5-0002011",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "hexagonal wurtzite",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "mohanty2020-5-0002011",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": "sphere",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "mohanty2020-5-0002011",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "mohanty2020-5-0002011",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "notes": [
+        "Reactor: autoclave (Main PDF p.3).",
+        "Reaction temperature: 180 degC (Main PDF p.3).",
+        "Reaction time: 24 h (Main PDF p.3)."
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "id": "mohanty2020-5-0002011-cds-nanoparticles-1--size",
+      "sample_id": "mohanty2020-5-0002011-cds-nanoparticles-1--product",
+      "property": "particle_size",
+      "technique": "not reported",
+      "value": {
+        "value": 9.89,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "9.89 nm",
+        "evidence": [
+          {
+            "source_id": "mohanty2020-5-0002011",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "mohanty2020-5-0002011",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Ligand not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}
