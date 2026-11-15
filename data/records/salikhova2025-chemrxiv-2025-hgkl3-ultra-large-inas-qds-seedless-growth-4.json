@@ -1,0 +1,330 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "salikhova2025-chemrxiv-2025-hgkl3-ultra-large-inas-qds-seedless-growth-4",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Ekaterina Salikhova; Alf Mews; Jan Steffen Niehaus (2025): Ultra-large InAs QDs (seedless growth)",
+  "material": {
+    "formula": "InAs",
+    "family": "InAs nanocrystals",
+    "elements": [
+      "In",
+      "As"
+    ],
+    "components": [
+      "InAs"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Seedless growth",
+  "sources": [
+    {
+      "id": "salikhova2025-chemrxiv-2025-hgkl3",
+      "doi": "10.26434/chemrxiv-2025-hgkl3",
+      "title": "Colloidal Synthesis of Ultra-Large InAs Quantum Dots",
+      "authors": "Ekaterina Salikhova; Alf Mews; Jan Steffen Niehaus",
+      "year": 2025,
+      "url": "https://doi.org/10.26434/chemrxiv-2025-hgkl3",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "salikhova2025-chemrxiv-2025-hgkl3",
+    "recipe_family": "salikhova2025-chemrxiv-2025-hgkl3-ultra-large-inas-qds-seedless-growth-4",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "InAs",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "salikhova2025-chemrxiv-2025-hgkl3",
+          "locator": "Main PDF p.13"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "zinc blende",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "salikhova2025-chemrxiv-2025-hgkl3",
+          "locator": "Main PDF p.9"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": null,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "not_reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "not reported",
+      "evidence": [],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "octahedral",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "salikhova2025-chemrxiv-2025-hgkl3",
+          "locator": "Main PDF p.9"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "salikhova2025-chemrxiv-2025-hgkl3-ultra-large-inas-qds-seedless-growth-4--tri-n-octylphosphine",
+      "name": "Tri-n-octylphosphine",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "salikhova2025-chemrxiv-2025-hgkl3",
+          "locator": "Main PDF p.9"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "salikhova2025-chemrxiv-2025-hgkl3-ultra-large-inas-qds-seedless-growth-4--after-s01-inject",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": []
+    },
+    {
+      "id": "salikhova2025-chemrxiv-2025-hgkl3-ultra-large-inas-qds-seedless-growth-4--after-s02-anneal",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "salikhova2025-chemrxiv-2025-hgkl3-ultra-large-inas-qds-seedless-growth-4--after-s01-inject"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-inject",
+      "action": "inject",
+      "label": "Injecting cluster solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [],
+      "outputs": [
+        "salikhova2025-chemrxiv-2025-hgkl3-ultra-large-inas-qds-seedless-growth-4--after-s01-inject"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 300,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "300 °C",
+          "evidence": [
+            {
+              "source_id": "salikhova2025-chemrxiv-2025-hgkl3",
+              "locator": "Main PDF p.12"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "salikhova2025-chemrxiv-2025-hgkl3",
+            "locator": "Main PDF p.12"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Injecting cluster solution",
+      "evidence": [
+        {
+          "source_id": "salikhova2025-chemrxiv-2025-hgkl3",
+          "locator": "Main PDF p.12"
+        }
+      ]
+    },
+    {
+      "id": "s02-anneal",
+      "action": "anneal",
+      "label": "Annealing between injection steps",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-inject"
+      ],
+      "inputs": [
+        "salikhova2025-chemrxiv-2025-hgkl3-ultra-large-inas-qds-seedless-growth-4--after-s01-inject"
+      ],
+      "outputs": [
+        "salikhova2025-chemrxiv-2025-hgkl3-ultra-large-inas-qds-seedless-growth-4--after-s02-anneal"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 30,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "30 min",
+          "evidence": [
+            {
+              "source_id": "salikhova2025-chemrxiv-2025-hgkl3",
+              "locator": "Main PDF p.12"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "salikhova2025-chemrxiv-2025-hgkl3",
+            "locator": "Main PDF p.12"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Annealing between injection steps",
+      "evidence": [
+        {
+          "source_id": "salikhova2025-chemrxiv-2025-hgkl3",
+          "locator": "Main PDF p.12"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "salikhova2025-chemrxiv-2025-hgkl3-ultra-large-inas-qds-seedless-growth-4--product",
+      "source_sample_label": "Ultra-large InAs QDs (seedless growth)",
+      "batch_id": null,
+      "material_state_id": "salikhova2025-chemrxiv-2025-hgkl3-ultra-large-inas-qds-seedless-growth-4--after-s02-anneal",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "InAs",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "salikhova2025-chemrxiv-2025-hgkl3",
+            "locator": "Main PDF p.13"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "zinc blende",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "salikhova2025-chemrxiv-2025-hgkl3",
+            "locator": "Main PDF p.9"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": "octahedral",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "salikhova2025-chemrxiv-2025-hgkl3",
+            "locator": "Main PDF p.9"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": "Oleylamine",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "salikhova2025-chemrxiv-2025-hgkl3",
+            "locator": "Main PDF p.12"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "salikhova2025-chemrxiv-2025-hgkl3",
+          "locator": "Main PDF p.12"
+        }
+      ],
+      "notes": [
+        "Reactor: three-neck round-bottom flask (Main PDF p.9).",
+        "Reaction temperature: 300 degC (Main PDF p.12).",
+        "Reaction time: 30 min (Main PDF p.12)."
+      ]
+    }
+  ],
+  "measurements": [],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Size not reported in the extracted text.",
+      "Amount of Tri-n-octylphosphine not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

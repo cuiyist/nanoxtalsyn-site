@@ -1,0 +1,654 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Enrico Dilena; Dirk Dorfs; Chandramohan George; Karol Miszta; Mauro Povia; Alessandro Genovese; Alberto Casu; Mirko Prato; Liberato Manna (2012): cubic Cu2−x(S0.40Se0.60) alloy NCs",
+  "material": {
+    "formula": "Cu2−x(S0.40Se0.60)",
+    "family": "Cu2−x(S0.40Se0.60) nanocrystals",
+    "elements": [
+      "Cu",
+      "S",
+      "Se"
+    ],
+    "components": [
+      "Cu2−x(S0.40Se0.60)"
+    ],
+    "architecture": "alloy"
+  },
+  "method": "Hot injection",
+  "sources": [
+    {
+      "id": "dilena2012-c2jm30788j",
+      "doi": "10.1039/c2jm30788j",
+      "title": "Colloidal Cu2−x(SySe1−y) alloy nanocrystals with controllable crystal phase: synthesis, plasmonic properties, cation exchange and electrochemical lithiation",
+      "authors": "Enrico Dilena; Dirk Dorfs; Chandramohan George; Karol Miszta; Mauro Povia; Alessandro Genovese; Alberto Casu; Mirko Prato; Liberato Manna",
+      "year": 2012,
+      "url": "https://doi.org/10.1039/c2jm30788j",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "dilena2012-c2jm30788j",
+    "recipe_family": "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "Cu2−x(S0.40Se0.60)",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "dilena2012-c2jm30788j",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "cubic",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "dilena2012-c2jm30788j",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": 11.6,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "11.6 nm",
+      "evidence": [
+        {
+          "source_id": "dilena2012-c2jm30788j",
+          "locator": "Main PDF p.4"
+        }
+      ],
+      "derivation": null
+    },
+    "morphology": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--oleylamine",
+      "name": "oleylamine",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 10,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "10 mL",
+          "evidence": [
+            {
+              "source_id": "dilena2012-c2jm30788j",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "dilena2012-c2jm30788j",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--after-s01-degas",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--oleylamine"
+      ]
+    },
+    {
+      "id": "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--after-s02-heat",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--after-s01-degas"
+      ]
+    },
+    {
+      "id": "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--after-s03-heat",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--after-s02-heat"
+      ]
+    },
+    {
+      "id": "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--after-s04-inject",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--after-s03-heat"
+      ]
+    },
+    {
+      "id": "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--after-s05-add",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--after-s04-inject"
+      ]
+    },
+    {
+      "id": "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--after-s06-wash",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--after-s05-add"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-degas",
+      "action": "degas",
+      "label": "Degassing under vacuum",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--oleylamine"
+      ],
+      "outputs": [
+        "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--after-s01-degas"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 80,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "80 °C",
+          "evidence": [
+            {
+              "source_id": "dilena2012-c2jm30788j",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 h",
+          "evidence": [
+            {
+              "source_id": "dilena2012-c2jm30788j",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "dilena2012-c2jm30788j",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Degassing under vacuum",
+      "evidence": [
+        {
+          "source_id": "dilena2012-c2jm30788j",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s02-heat",
+      "action": "heat",
+      "label": "Heating to 150 °C",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-degas"
+      ],
+      "inputs": [
+        "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--after-s01-degas"
+      ],
+      "outputs": [
+        "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--after-s02-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 150,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "150 °C",
+          "evidence": [
+            {
+              "source_id": "dilena2012-c2jm30788j",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 10,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "10 min",
+          "evidence": [
+            {
+              "source_id": "dilena2012-c2jm30788j",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "dilena2012-c2jm30788j",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heating to 150 °C",
+      "evidence": [
+        {
+          "source_id": "dilena2012-c2jm30788j",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s03-heat",
+      "action": "heat",
+      "label": "Heating to 300 °C",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-heat"
+      ],
+      "inputs": [
+        "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--after-s02-heat"
+      ],
+      "outputs": [
+        "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--after-s03-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 300,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "300 °C",
+          "evidence": [
+            {
+              "source_id": "dilena2012-c2jm30788j",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "dilena2012-c2jm30788j",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heating to 300 °C",
+      "evidence": [
+        {
+          "source_id": "dilena2012-c2jm30788j",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s04-inject",
+      "action": "inject",
+      "label": "Injection of solution C",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-heat"
+      ],
+      "inputs": [
+        "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--after-s03-heat"
+      ],
+      "outputs": [
+        "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--after-s04-inject"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "dilena2012-c2jm30788j",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Injection of solution C",
+      "evidence": [
+        {
+          "source_id": "dilena2012-c2jm30788j",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s05-add",
+      "action": "add",
+      "label": "Addition of toluene",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-inject"
+      ],
+      "inputs": [
+        "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--after-s04-inject"
+      ],
+      "outputs": [
+        "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--after-s05-add"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 60,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "60 °C",
+          "evidence": [
+            {
+              "source_id": "dilena2012-c2jm30788j",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "dilena2012-c2jm30788j",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Addition of toluene",
+      "evidence": [
+        {
+          "source_id": "dilena2012-c2jm30788j",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s06-wash",
+      "action": "wash",
+      "label": "Washing with toluene and ethanol",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s05-add"
+      ],
+      "inputs": [
+        "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--after-s05-add"
+      ],
+      "outputs": [
+        "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--after-s06-wash"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Washing with toluene and ethanol",
+      "evidence": [
+        {
+          "source_id": "dilena2012-c2jm30788j",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--product",
+      "source_sample_label": "cubic Cu2−x(S0.40Se0.60) alloy NCs",
+      "batch_id": null,
+      "material_state_id": "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--after-s06-wash",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "Cu2−x(S0.40Se0.60)",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "dilena2012-c2jm30788j",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "cubic",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "dilena2012-c2jm30788j",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "surface": {
+        "value": "oleylamine",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "dilena2012-c2jm30788j",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "dilena2012-c2jm30788j",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "notes": [
+        "Reactor: 25 ml three-neck flask (Main PDF p.3).",
+        "Reaction temperature: 300 degC (Main PDF p.3).",
+        "Reaction time: 5 min (Main PDF p.3)."
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "id": "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--size",
+      "sample_id": "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--product",
+      "property": "diameter",
+      "technique": "TEM",
+      "value": {
+        "value": 11.6,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "11.6 nm",
+        "evidence": [
+          {
+            "source_id": "dilena2012-c2jm30788j",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "dilena2012-c2jm30788j",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    }
+  ],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Shape not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

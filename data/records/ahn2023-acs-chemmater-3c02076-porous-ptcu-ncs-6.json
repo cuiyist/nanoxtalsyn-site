@@ -1,0 +1,373 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "ahn2023-acs-chemmater-3c02076-porous-ptcu-ncs-6",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Hochan Ahn; Hojin Ahn; Younghyun Wy; Sang Woo Han (2023): Porous PtCu NCs",
+  "material": {
+    "formula": "PtCu",
+    "family": "PtCu nanocrystals",
+    "elements": [
+      "Pt",
+      "Cu"
+    ],
+    "components": [
+      "PtCu"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Synthesis as described in the source",
+  "sources": [
+    {
+      "id": "ahn2023-acs-chemmater-3c02076",
+      "doi": "10.1021/acs.chemmater.3c02076",
+      "title": "Suppressing Nanocrystal Growth with Cysteine: A Quenching Strategy for Monitoring the Evolution of Nanocrystals",
+      "authors": "Hochan Ahn; Hojin Ahn; Younghyun Wy; Sang Woo Han",
+      "year": 2023,
+      "url": "https://doi.org/10.1021/acs.chemmater.3c02076",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "ahn2023-acs-chemmater-3c02076",
+    "recipe_family": "ahn2023-acs-chemmater-3c02076-porous-ptcu-ncs-6",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "PtCu",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "ahn2023-acs-chemmater-3c02076",
+          "locator": "Main PDF p.6"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    },
+    "size": {
+      "value": null,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "not_reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "not reported",
+      "evidence": [],
+      "derivation": null
+    },
+    "morphology": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "ahn2023-acs-chemmater-3c02076-porous-ptcu-ncs-6--pvp-40-000",
+      "name": "PVP 40,000",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "ahn2023-acs-chemmater-3c02076",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "ahn2023-acs-chemmater-3c02076-porous-ptcu-ncs-6--k2ptcl4",
+      "name": "K2PtCl4",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 0.7,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.7 mL",
+          "evidence": [
+            {
+              "source_id": "ahn2023-acs-chemmater-3c02076",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "ahn2023-acs-chemmater-3c02076",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "ahn2023-acs-chemmater-3c02076-porous-ptcu-ncs-6--cysteine",
+      "name": "cysteine",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "ahn2023-acs-chemmater-3c02076",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "ahn2023-acs-chemmater-3c02076-porous-ptcu-ncs-6--after-s01-add",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "ahn2023-acs-chemmater-3c02076-porous-ptcu-ncs-6--pvp-40-000",
+        "ahn2023-acs-chemmater-3c02076-porous-ptcu-ncs-6--k2ptcl4"
+      ]
+    },
+    {
+      "id": "ahn2023-acs-chemmater-3c02076-porous-ptcu-ncs-6--after-s02-add",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "ahn2023-acs-chemmater-3c02076-porous-ptcu-ncs-6--after-s01-add"
+      ]
+    },
+    {
+      "id": "ahn2023-acs-chemmater-3c02076-porous-ptcu-ncs-6--after-s03-quench",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "ahn2023-acs-chemmater-3c02076-porous-ptcu-ncs-6--after-s02-add",
+        "ahn2023-acs-chemmater-3c02076-porous-ptcu-ncs-6--cysteine"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-add",
+      "action": "add",
+      "label": "Add PVP 40,000, K2PtCl4, and CuCl2",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "ahn2023-acs-chemmater-3c02076-porous-ptcu-ncs-6--pvp-40-000",
+        "ahn2023-acs-chemmater-3c02076-porous-ptcu-ncs-6--k2ptcl4"
+      ],
+      "outputs": [
+        "ahn2023-acs-chemmater-3c02076-porous-ptcu-ncs-6--after-s01-add"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add PVP 40,000, K2PtCl4, and CuCl2",
+      "evidence": [
+        {
+          "source_id": "ahn2023-acs-chemmater-3c02076",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "s02-add",
+      "action": "add",
+      "label": "Add AA",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-add"
+      ],
+      "inputs": [
+        "ahn2023-acs-chemmater-3c02076-porous-ptcu-ncs-6--after-s01-add"
+      ],
+      "outputs": [
+        "ahn2023-acs-chemmater-3c02076-porous-ptcu-ncs-6--after-s02-add"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add AA",
+      "evidence": [
+        {
+          "source_id": "ahn2023-acs-chemmater-3c02076",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "s03-quench",
+      "action": "quench",
+      "label": "Quench the reaction with cysteine",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-add"
+      ],
+      "inputs": [
+        "ahn2023-acs-chemmater-3c02076-porous-ptcu-ncs-6--after-s02-add",
+        "ahn2023-acs-chemmater-3c02076-porous-ptcu-ncs-6--cysteine"
+      ],
+      "outputs": [
+        "ahn2023-acs-chemmater-3c02076-porous-ptcu-ncs-6--after-s03-quench"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Quench the reaction with cysteine",
+      "evidence": [
+        {
+          "source_id": "ahn2023-acs-chemmater-3c02076",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "ahn2023-acs-chemmater-3c02076-porous-ptcu-ncs-6--product",
+      "source_sample_label": "Porous PtCu NCs",
+      "batch_id": null,
+      "material_state_id": "ahn2023-acs-chemmater-3c02076-porous-ptcu-ncs-6--after-s03-quench",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "PtCu",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "ahn2023-acs-chemmater-3c02076",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "morphology": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "surface": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "ahn2023-acs-chemmater-3c02076",
+          "locator": "Main PDF p.6"
+        }
+      ],
+      "notes": [
+        "Reactor: 20 mL vial (Main PDF p.7)."
+      ]
+    }
+  ],
+  "measurements": [],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Phase not reported in the extracted text.",
+      "Shape not reported in the extracted text.",
+      "Ligand not reported in the extracted text.",
+      "Size not reported in the extracted text.",
+      "Atmosphere not reported in the extracted text.",
+      "Reaction temperature not reported in the extracted text.",
+      "Reaction time not reported in the extracted text.",
+      "Amount of PVP 40,000 not reported in the extracted text.",
+      "Amount of cysteine not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

@@ -1,0 +1,380 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "elmi2023-s00248-022-01977-y-nanocalcite-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Fatemeh Elmi; Zahra Etemadifar; Giti Emtiazi (2023): nanocalcite",
+  "material": {
+    "formula": "CaCO3",
+    "family": "CaCO3 nanocrystals",
+    "elements": [
+      "Ca",
+      "C",
+      "O"
+    ],
+    "components": [
+      "CaCO3"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Biological",
+  "sources": [
+    {
+      "id": "elmi2023-s00248-022-01977-y",
+      "doi": "10.1007/s00248-022-01977-y",
+      "title": "Biosynthesis of Calcite Nanocrystal by a Novel Polyextremophile Bhargavaea cecembensis-Related Strain Isolated from Sandy Soil",
+      "authors": "Fatemeh Elmi; Zahra Etemadifar; Giti Emtiazi",
+      "year": 2023,
+      "url": "https://doi.org/10.1007/s00248-022-01977-y",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "elmi2023-s00248-022-01977-y",
+    "recipe_family": "elmi2023-s00248-022-01977-y-nanocalcite-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "CaCO3",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "elmi2023-s00248-022-01977-y",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "calcite",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "elmi2023-s00248-022-01977-y",
+          "locator": "Main PDF p.4"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": null,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "not_reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "not reported",
+      "evidence": [],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "irregular",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "elmi2023-s00248-022-01977-y",
+          "locator": "Main PDF p.4"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "elmi2023-s00248-022-01977-y-nanocalcite-1--urea",
+      "name": "urea",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "concentration": {
+          "value": 2,
+          "minimum": null,
+          "maximum": null,
+          "unit": "%",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2 %",
+          "evidence": [
+            {
+              "source_id": "elmi2023-s00248-022-01977-y",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "elmi2023-s00248-022-01977-y",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "elmi2023-s00248-022-01977-y-nanocalcite-1--after-s01-inoculate",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "elmi2023-s00248-022-01977-y-nanocalcite-1--urea"
+      ]
+    },
+    {
+      "id": "elmi2023-s00248-022-01977-y-nanocalcite-1--after-s02-precipitate",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "elmi2023-s00248-022-01977-y-nanocalcite-1--after-s01-inoculate"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-inoculate",
+      "action": "inoculate",
+      "label": "Inoculate selected strain into CCP medium",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "elmi2023-s00248-022-01977-y-nanocalcite-1--urea"
+      ],
+      "outputs": [
+        "elmi2023-s00248-022-01977-y-nanocalcite-1--after-s01-inoculate"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 30,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "30 °C",
+          "evidence": [
+            {
+              "source_id": "elmi2023-s00248-022-01977-y",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 14,
+          "minimum": null,
+          "maximum": null,
+          "unit": "d",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "14 days",
+          "evidence": [
+            {
+              "source_id": "elmi2023-s00248-022-01977-y",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "aerobic",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "elmi2023-s00248-022-01977-y",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Inoculate selected strain into CCP medium",
+      "evidence": [
+        {
+          "source_id": "elmi2023-s00248-022-01977-y",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-precipitate",
+      "action": "precipitate",
+      "label": "Calcium carbonate precipitation",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-inoculate"
+      ],
+      "inputs": [
+        "elmi2023-s00248-022-01977-y-nanocalcite-1--after-s01-inoculate"
+      ],
+      "outputs": [
+        "elmi2023-s00248-022-01977-y-nanocalcite-1--after-s02-precipitate"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 30,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "30 °C",
+          "evidence": [
+            {
+              "source_id": "elmi2023-s00248-022-01977-y",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 14,
+          "minimum": null,
+          "maximum": null,
+          "unit": "d",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "14 days",
+          "evidence": [
+            {
+              "source_id": "elmi2023-s00248-022-01977-y",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Calcium carbonate precipitation",
+      "evidence": [
+        {
+          "source_id": "elmi2023-s00248-022-01977-y",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "elmi2023-s00248-022-01977-y-nanocalcite-1--product",
+      "source_sample_label": "nanocalcite",
+      "batch_id": null,
+      "material_state_id": "elmi2023-s00248-022-01977-y-nanocalcite-1--after-s02-precipitate",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "CaCO3",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "elmi2023-s00248-022-01977-y",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "calcite",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "elmi2023-s00248-022-01977-y",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": "irregular",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "elmi2023-s00248-022-01977-y",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "elmi2023-s00248-022-01977-y",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "notes": [
+        "Reactor: 250-ml glass Erlenmeyer flasks (Main PDF p.2).",
+        "Reaction temperature: 30 degC (Main PDF p.2).",
+        "Reaction time: 14 d (Main PDF p.2)."
+      ]
+    }
+  ],
+  "measurements": [],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Ligand not reported in the extracted text.",
+      "Size not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

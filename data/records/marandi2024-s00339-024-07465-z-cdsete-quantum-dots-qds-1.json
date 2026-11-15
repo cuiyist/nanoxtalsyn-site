@@ -1,0 +1,616 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "marandi2024-s00339-024-07465-z-cdsete-quantum-dots-qds-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Maziar Marandi; Sana Alejaber; Farkhondeh Mirahmadi (2024): CdSeTe quantum dots (QDs)",
+  "material": {
+    "formula": "CdSeTe",
+    "family": "CdSeTe nanocrystals",
+    "elements": [
+      "Cd",
+      "Se",
+      "Te"
+    ],
+    "components": [
+      "CdSeTe"
+    ],
+    "architecture": "alloy"
+  },
+  "method": "Hot injection",
+  "sources": [
+    {
+      "id": "marandi2024-s00339-024-07465-z",
+      "doi": "10.1007/s00339-024-07465-z",
+      "title": "Facile synthesis and application of hyperbranched TiO2 hollow spheres for enhancement of power conversion efficiency of CdSeTe quantum dot-sensitized solar cells",
+      "authors": "Maziar Marandi; Sana Alejaber; Farkhondeh Mirahmadi",
+      "year": 2024,
+      "url": "https://doi.org/10.1007/s00339-024-07465-z",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "marandi2024-s00339-024-07465-z",
+    "recipe_family": "marandi2024-s00339-024-07465-z-cdsete-quantum-dots-qds-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "CdSeTe",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "marandi2024-s00339-024-07465-z",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "hexagonal",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "marandi2024-s00339-024-07465-z",
+          "locator": "Main PDF p.9"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": null,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "not_reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "not reported",
+      "evidence": [],
+      "derivation": null
+    },
+    "morphology": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "marandi2024-s00339-024-07465-z-cdsete-quantum-dots-qds-1--cadmium-oxide-cdo",
+      "name": "Cadmium Oxide (CdO)",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 0.1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.1 mol",
+          "evidence": [
+            {
+              "source_id": "marandi2024-s00339-024-07465-z",
+              "locator": "Main PDF p.4"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "marandi2024-s00339-024-07465-z",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    },
+    {
+      "id": "marandi2024-s00339-024-07465-z-cdsete-quantum-dots-qds-1--oleic-acid",
+      "name": "Oleic acid",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "marandi2024-s00339-024-07465-z",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    },
+    {
+      "id": "marandi2024-s00339-024-07465-z-cdsete-quantum-dots-qds-1--oleylamine",
+      "name": "Oleylamine",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "marandi2024-s00339-024-07465-z",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "marandi2024-s00339-024-07465-z-cdsete-quantum-dots-qds-1--after-s01-heat",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": []
+    },
+    {
+      "id": "marandi2024-s00339-024-07465-z-cdsete-quantum-dots-qds-1--after-s02-heat",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "marandi2024-s00339-024-07465-z-cdsete-quantum-dots-qds-1--after-s01-heat"
+      ]
+    },
+    {
+      "id": "marandi2024-s00339-024-07465-z-cdsete-quantum-dots-qds-1--after-s03-heat",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "marandi2024-s00339-024-07465-z-cdsete-quantum-dots-qds-1--after-s02-heat",
+        "marandi2024-s00339-024-07465-z-cdsete-quantum-dots-qds-1--cadmium-oxide-cdo",
+        "marandi2024-s00339-024-07465-z-cdsete-quantum-dots-qds-1--oleic-acid"
+      ]
+    },
+    {
+      "id": "marandi2024-s00339-024-07465-z-cdsete-quantum-dots-qds-1--after-s04-inject",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "marandi2024-s00339-024-07465-z-cdsete-quantum-dots-qds-1--after-s03-heat"
+      ]
+    },
+    {
+      "id": "marandi2024-s00339-024-07465-z-cdsete-quantum-dots-qds-1--after-s05-heat",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "marandi2024-s00339-024-07465-z-cdsete-quantum-dots-qds-1--after-s04-inject",
+        "marandi2024-s00339-024-07465-z-cdsete-quantum-dots-qds-1--cadmium-oxide-cdo",
+        "marandi2024-s00339-024-07465-z-cdsete-quantum-dots-qds-1--oleic-acid"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-heat",
+      "action": "heat",
+      "label": "Heating Te solution to remove oxygen",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [],
+      "outputs": [
+        "marandi2024-s00339-024-07465-z-cdsete-quantum-dots-qds-1--after-s01-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 250,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "250 °C",
+          "evidence": [
+            {
+              "source_id": "marandi2024-s00339-024-07465-z",
+              "locator": "Main PDF p.4"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "marandi2024-s00339-024-07465-z",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heating Te solution to remove oxygen",
+      "evidence": [
+        {
+          "source_id": "marandi2024-s00339-024-07465-z",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    },
+    {
+      "id": "s02-heat",
+      "action": "heat",
+      "label": "Heating Se solution to obtain colorless solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-heat"
+      ],
+      "inputs": [
+        "marandi2024-s00339-024-07465-z-cdsete-quantum-dots-qds-1--after-s01-heat"
+      ],
+      "outputs": [
+        "marandi2024-s00339-024-07465-z-cdsete-quantum-dots-qds-1--after-s02-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 60,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "60 °C",
+          "evidence": [
+            {
+              "source_id": "marandi2024-s00339-024-07465-z",
+              "locator": "Main PDF p.4"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "marandi2024-s00339-024-07465-z",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heating Se solution to obtain colorless solution",
+      "evidence": [
+        {
+          "source_id": "marandi2024-s00339-024-07465-z",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    },
+    {
+      "id": "s03-heat",
+      "action": "heat",
+      "label": "Heating CdO solution to change color",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-heat"
+      ],
+      "inputs": [
+        "marandi2024-s00339-024-07465-z-cdsete-quantum-dots-qds-1--after-s02-heat",
+        "marandi2024-s00339-024-07465-z-cdsete-quantum-dots-qds-1--cadmium-oxide-cdo",
+        "marandi2024-s00339-024-07465-z-cdsete-quantum-dots-qds-1--oleic-acid"
+      ],
+      "outputs": [
+        "marandi2024-s00339-024-07465-z-cdsete-quantum-dots-qds-1--after-s03-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 250,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "250 °C",
+          "evidence": [
+            {
+              "source_id": "marandi2024-s00339-024-07465-z",
+              "locator": "Main PDF p.4"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "marandi2024-s00339-024-07465-z",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heating CdO solution to change color",
+      "evidence": [
+        {
+          "source_id": "marandi2024-s00339-024-07465-z",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    },
+    {
+      "id": "s04-inject",
+      "action": "inject",
+      "label": "Injecting Se and Te solutions into CdO solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-heat"
+      ],
+      "inputs": [
+        "marandi2024-s00339-024-07465-z-cdsete-quantum-dots-qds-1--after-s03-heat"
+      ],
+      "outputs": [
+        "marandi2024-s00339-024-07465-z-cdsete-quantum-dots-qds-1--after-s04-inject"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 110,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "110 °C",
+          "evidence": [
+            {
+              "source_id": "marandi2024-s00339-024-07465-z",
+              "locator": "Main PDF p.4"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "marandi2024-s00339-024-07465-z",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Injecting Se and Te solutions into CdO solution",
+      "evidence": [
+        {
+          "source_id": "marandi2024-s00339-024-07465-z",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    },
+    {
+      "id": "s05-heat",
+      "action": "heat",
+      "label": "Heating to complete reaction",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-inject"
+      ],
+      "inputs": [
+        "marandi2024-s00339-024-07465-z-cdsete-quantum-dots-qds-1--after-s04-inject",
+        "marandi2024-s00339-024-07465-z-cdsete-quantum-dots-qds-1--cadmium-oxide-cdo",
+        "marandi2024-s00339-024-07465-z-cdsete-quantum-dots-qds-1--oleic-acid"
+      ],
+      "outputs": [
+        "marandi2024-s00339-024-07465-z-cdsete-quantum-dots-qds-1--after-s05-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 300,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "300 °C",
+          "evidence": [
+            {
+              "source_id": "marandi2024-s00339-024-07465-z",
+              "locator": "Main PDF p.4"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 10,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "10 min",
+          "evidence": [
+            {
+              "source_id": "marandi2024-s00339-024-07465-z",
+              "locator": "Main PDF p.4"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "marandi2024-s00339-024-07465-z",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heating to complete reaction",
+      "evidence": [
+        {
+          "source_id": "marandi2024-s00339-024-07465-z",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "marandi2024-s00339-024-07465-z-cdsete-quantum-dots-qds-1--product",
+      "source_sample_label": "CdSeTe quantum dots (QDs)",
+      "batch_id": null,
+      "material_state_id": "marandi2024-s00339-024-07465-z-cdsete-quantum-dots-qds-1--after-s05-heat",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "CdSeTe",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "marandi2024-s00339-024-07465-z",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "hexagonal",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "marandi2024-s00339-024-07465-z",
+            "locator": "Main PDF p.9"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "surface": {
+        "value": "Oleylamine",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "marandi2024-s00339-024-07465-z",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "marandi2024-s00339-024-07465-z",
+          "locator": "Main PDF p.4"
+        }
+      ],
+      "notes": [
+        "Reactor: three-neck flask (Main PDF p.4).",
+        "Reaction temperature: 300 degC (Main PDF p.4).",
+        "Reaction time: 10 min (Main PDF p.4)."
+      ]
+    }
+  ],
+  "measurements": [],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Shape not reported in the extracted text.",
+      "Size not reported in the extracted text.",
+      "Amount of Oleic acid not reported in the extracted text.",
+      "Amount of Oleylamine not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}
