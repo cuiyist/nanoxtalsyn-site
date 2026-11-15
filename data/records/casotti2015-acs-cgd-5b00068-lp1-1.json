@@ -1,0 +1,309 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "casotti2015-acs-cgd-5b00068-lp1-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Davide Casotti; Matteo Ardit; Robert Dinnebier; Michele Dondi; Francesco Matteucci; Isabella Zama; Giuseppe Cruciani (2015): LP1",
+  "material": {
+    "formula": "TiO2",
+    "family": "TiO2 nanocrystals",
+    "elements": [
+      "Ti",
+      "O"
+    ],
+    "components": [
+      "TiO2"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Synthesis as described in the source",
+  "sources": [
+    {
+      "id": "casotti2015-acs-cgd-5b00068",
+      "doi": "10.1021/acs.cgd.5b00068",
+      "title": "Limited Crystallite Growth upon Isothermal Annealing of Nanocrystalline Anatase",
+      "authors": "Davide Casotti; Matteo Ardit; Robert Dinnebier; Michele Dondi; Francesco Matteucci; Isabella Zama; Giuseppe Cruciani",
+      "year": 2015,
+      "url": "https://doi.org/10.1021/acs.cgd.5b00068",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "casotti2015-acs-cgd-5b00068",
+    "recipe_family": "casotti2015-acs-cgd-5b00068-lp1-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "TiO2",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "casotti2015-acs-cgd-5b00068",
+          "locator": "Main PDF p.4"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "anatase",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "casotti2015-acs-cgd-5b00068",
+          "locator": "Main PDF p.4"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": 6.9,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "6.9 nm",
+      "evidence": [
+        {
+          "source_id": "casotti2015-acs-cgd-5b00068",
+          "locator": "Main PDF p.4"
+        }
+      ],
+      "derivation": null
+    },
+    "morphology": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "casotti2015-acs-cgd-5b00068-lp1-1--titanium-tetraisopropoxide",
+      "name": "titanium tetraisopropoxide",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "casotti2015-acs-cgd-5b00068",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "casotti2015-acs-cgd-5b00068-lp1-1--benzyl-alcohol",
+      "name": "benzyl alcohol",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "casotti2015-acs-cgd-5b00068",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "casotti2015-acs-cgd-5b00068-lp1-1--acetic-acid",
+      "name": "acetic acid",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "casotti2015-acs-cgd-5b00068",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "casotti2015-acs-cgd-5b00068-lp1-1--after-s01-reflux",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "casotti2015-acs-cgd-5b00068-lp1-1--titanium-tetraisopropoxide",
+        "casotti2015-acs-cgd-5b00068-lp1-1--benzyl-alcohol",
+        "casotti2015-acs-cgd-5b00068-lp1-1--acetic-acid"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-reflux",
+      "action": "reﬂux",
+      "label": "Reﬂux synthesis of organic solvents",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "casotti2015-acs-cgd-5b00068-lp1-1--titanium-tetraisopropoxide",
+        "casotti2015-acs-cgd-5b00068-lp1-1--benzyl-alcohol",
+        "casotti2015-acs-cgd-5b00068-lp1-1--acetic-acid"
+      ],
+      "outputs": [
+        "casotti2015-acs-cgd-5b00068-lp1-1--after-s01-reflux"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Reﬂux synthesis of organic solvents",
+      "evidence": [
+        {
+          "source_id": "casotti2015-acs-cgd-5b00068",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "casotti2015-acs-cgd-5b00068-lp1-1--product",
+      "source_sample_label": "LP1",
+      "batch_id": null,
+      "material_state_id": "casotti2015-acs-cgd-5b00068-lp1-1--after-s01-reflux",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "TiO2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "casotti2015-acs-cgd-5b00068",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "anatase",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "casotti2015-acs-cgd-5b00068",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "surface": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "casotti2015-acs-cgd-5b00068",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "notes": [
+        "Reactor: unsealed ceramic crucibles (Main PDF p.3).",
+        "Reaction temperature: 375 degC (Main PDF p.3).",
+        "Reaction time: 40 h (Main PDF p.3)."
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "id": "casotti2015-acs-cgd-5b00068-lp1-1--size",
+      "sample_id": "casotti2015-acs-cgd-5b00068-lp1-1--product",
+      "property": "particle_size",
+      "technique": "not reported",
+      "value": {
+        "value": 6.9,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "6.9 nm",
+        "evidence": [
+          {
+            "source_id": "casotti2015-acs-cgd-5b00068",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "casotti2015-acs-cgd-5b00068",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    }
+  ],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Shape not reported in the extracted text.",
+      "Ligand not reported in the extracted text.",
+      "Atmosphere not reported in the extracted text.",
+      "Amount of titanium tetraisopropoxide not reported in the extracted text.",
+      "Amount of benzyl alcohol not reported in the extracted text.",
+      "Amount of acetic acid not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

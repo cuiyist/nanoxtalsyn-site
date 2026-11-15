@@ -1,0 +1,704 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "bilgin2024-s11164-024-05338-x-asphodelus-based-cqds-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Adile Yagmur Hergül Bilgin; Ebru Bozkurt (2024): Asphodelus-based CQDs",
+  "material": {
+    "formula": "C",
+    "family": "C nanocrystals",
+    "elements": [
+      "C"
+    ],
+    "components": [
+      "C"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Hydrothermal",
+  "sources": [
+    {
+      "id": "bilgin2024-s11164-024-05338-x",
+      "doi": "10.1007/s11164-024-05338-x",
+      "title": "Fluorometric detection of β-carotene with novel green synthesis carbon quantum dot from Asphodelus",
+      "authors": "Adile Yagmur Hergül Bilgin; Ebru Bozkurt",
+      "year": 2024,
+      "url": "https://doi.org/10.1007/s11164-024-05338-x",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "bilgin2024-s11164-024-05338-x",
+    "recipe_family": "bilgin2024-s11164-024-05338-x-asphodelus-based-cqds-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "C",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "bilgin2024-s11164-024-05338-x",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "amorphous",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "bilgin2024-s11164-024-05338-x",
+          "locator": "Main PDF p.4"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": 3.9,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "3.9 nm",
+      "evidence": [
+        {
+          "source_id": "bilgin2024-s11164-024-05338-x",
+          "locator": "Main PDF p.4"
+        }
+      ],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "sphere",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "bilgin2024-s11164-024-05338-x",
+          "locator": "Main PDF p.4"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "bilgin2024-s11164-024-05338-x-asphodelus-based-cqds-1--asphodelus",
+      "name": "Asphodelus",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "mass": {
+          "value": 2.5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "g",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2.5 g",
+          "evidence": [
+            {
+              "source_id": "bilgin2024-s11164-024-05338-x",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "bilgin2024-s11164-024-05338-x",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "bilgin2024-s11164-024-05338-x-asphodelus-based-cqds-1--pure-water",
+      "name": "pure water",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 50,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "50 mL",
+          "evidence": [
+            {
+              "source_id": "bilgin2024-s11164-024-05338-x",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "bilgin2024-s11164-024-05338-x",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "bilgin2024-s11164-024-05338-x-asphodelus-based-cqds-1--after-s01-place",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "bilgin2024-s11164-024-05338-x-asphodelus-based-cqds-1--asphodelus",
+        "bilgin2024-s11164-024-05338-x-asphodelus-based-cqds-1--pure-water"
+      ]
+    },
+    {
+      "id": "bilgin2024-s11164-024-05338-x-asphodelus-based-cqds-1--after-s02-heat",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "bilgin2024-s11164-024-05338-x-asphodelus-based-cqds-1--after-s01-place"
+      ]
+    },
+    {
+      "id": "bilgin2024-s11164-024-05338-x-asphodelus-based-cqds-1--after-s03-cool",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "bilgin2024-s11164-024-05338-x-asphodelus-based-cqds-1--after-s02-heat"
+      ]
+    },
+    {
+      "id": "bilgin2024-s11164-024-05338-x-asphodelus-based-cqds-1--after-s04-filter",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "bilgin2024-s11164-024-05338-x-asphodelus-based-cqds-1--after-s03-cool"
+      ]
+    },
+    {
+      "id": "bilgin2024-s11164-024-05338-x-asphodelus-based-cqds-1--after-s05-filter",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "bilgin2024-s11164-024-05338-x-asphodelus-based-cqds-1--after-s04-filter"
+      ]
+    },
+    {
+      "id": "bilgin2024-s11164-024-05338-x-asphodelus-based-cqds-1--after-s06-centrifuge",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "bilgin2024-s11164-024-05338-x-asphodelus-based-cqds-1--after-s05-filter"
+      ]
+    },
+    {
+      "id": "bilgin2024-s11164-024-05338-x-asphodelus-based-cqds-1--after-s07-store",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "bilgin2024-s11164-024-05338-x-asphodelus-based-cqds-1--after-s06-centrifuge"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-place",
+      "action": "place",
+      "label": "2.5 g of powdered Asphodelus placed in an autoclave bottle with 50 ml of pure water",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "bilgin2024-s11164-024-05338-x-asphodelus-based-cqds-1--asphodelus",
+        "bilgin2024-s11164-024-05338-x-asphodelus-based-cqds-1--pure-water"
+      ],
+      "outputs": [
+        "bilgin2024-s11164-024-05338-x-asphodelus-based-cqds-1--after-s01-place"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "bilgin2024-s11164-024-05338-x",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "2.5 g of powdered Asphodelus placed in an autoclave bottle with 50 ml of pure water",
+      "evidence": [
+        {
+          "source_id": "bilgin2024-s11164-024-05338-x",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s02-heat",
+      "action": "heat",
+      "label": "Hydrothermal synthesis at 125 °C for 12 h",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-place"
+      ],
+      "inputs": [
+        "bilgin2024-s11164-024-05338-x-asphodelus-based-cqds-1--after-s01-place"
+      ],
+      "outputs": [
+        "bilgin2024-s11164-024-05338-x-asphodelus-based-cqds-1--after-s02-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 125,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "125 °C",
+          "evidence": [
+            {
+              "source_id": "bilgin2024-s11164-024-05338-x",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 12,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "12 h",
+          "evidence": [
+            {
+              "source_id": "bilgin2024-s11164-024-05338-x",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "bilgin2024-s11164-024-05338-x",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Hydrothermal synthesis at 125 °C for 12 h",
+      "evidence": [
+        {
+          "source_id": "bilgin2024-s11164-024-05338-x",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s03-cool",
+      "action": "cool",
+      "label": "Cooling to room temperature",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-heat"
+      ],
+      "inputs": [
+        "bilgin2024-s11164-024-05338-x-asphodelus-based-cqds-1--after-s02-heat"
+      ],
+      "outputs": [
+        "bilgin2024-s11164-024-05338-x-asphodelus-based-cqds-1--after-s03-cool"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "bilgin2024-s11164-024-05338-x",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Cooling to room temperature",
+      "evidence": [
+        {
+          "source_id": "bilgin2024-s11164-024-05338-x",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s04-filter",
+      "action": "filter",
+      "label": "Filtration with ordinary filter paper",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-cool"
+      ],
+      "inputs": [
+        "bilgin2024-s11164-024-05338-x-asphodelus-based-cqds-1--after-s03-cool"
+      ],
+      "outputs": [
+        "bilgin2024-s11164-024-05338-x-asphodelus-based-cqds-1--after-s04-filter"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Filtration with ordinary filter paper",
+      "evidence": [
+        {
+          "source_id": "bilgin2024-s11164-024-05338-x",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s05-filter",
+      "action": "filter",
+      "label": "Filtration through 0.22-µm membrane filter",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-filter"
+      ],
+      "inputs": [
+        "bilgin2024-s11164-024-05338-x-asphodelus-based-cqds-1--after-s04-filter"
+      ],
+      "outputs": [
+        "bilgin2024-s11164-024-05338-x-asphodelus-based-cqds-1--after-s05-filter"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Filtration through 0.22-µm membrane filter",
+      "evidence": [
+        {
+          "source_id": "bilgin2024-s11164-024-05338-x",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s06-centrifuge",
+      "action": "centrifuge",
+      "label": "Centrifugation at 10,000 rpm for 30 min",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s05-filter"
+      ],
+      "inputs": [
+        "bilgin2024-s11164-024-05338-x-asphodelus-based-cqds-1--after-s05-filter"
+      ],
+      "outputs": [
+        "bilgin2024-s11164-024-05338-x-asphodelus-based-cqds-1--after-s06-centrifuge"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 30,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "30 min",
+          "evidence": [
+            {
+              "source_id": "bilgin2024-s11164-024-05338-x",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Centrifugation at 10,000 rpm for 30 min",
+      "evidence": [
+        {
+          "source_id": "bilgin2024-s11164-024-05338-x",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s07-store",
+      "action": "store",
+      "label": "Storage at 4 °C",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s06-centrifuge"
+      ],
+      "inputs": [
+        "bilgin2024-s11164-024-05338-x-asphodelus-based-cqds-1--after-s06-centrifuge"
+      ],
+      "outputs": [
+        "bilgin2024-s11164-024-05338-x-asphodelus-based-cqds-1--after-s07-store"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 4,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "4 °C",
+          "evidence": [
+            {
+              "source_id": "bilgin2024-s11164-024-05338-x",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "bilgin2024-s11164-024-05338-x",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Storage at 4 °C",
+      "evidence": [
+        {
+          "source_id": "bilgin2024-s11164-024-05338-x",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "bilgin2024-s11164-024-05338-x-asphodelus-based-cqds-1--product",
+      "source_sample_label": "Asphodelus-based CQDs",
+      "batch_id": null,
+      "material_state_id": "bilgin2024-s11164-024-05338-x-asphodelus-based-cqds-1--after-s07-store",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "C",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "bilgin2024-s11164-024-05338-x",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "amorphous",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "bilgin2024-s11164-024-05338-x",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": "sphere",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "bilgin2024-s11164-024-05338-x",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": "hydroxyl and amine groups",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "bilgin2024-s11164-024-05338-x",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "bilgin2024-s11164-024-05338-x",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "notes": [
+        "Reactor: autoclave bottle (Main PDF p.3).",
+        "Reaction temperature: 125 degC (Main PDF p.3).",
+        "Reaction time: 12 h (Main PDF p.3)."
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "id": "bilgin2024-s11164-024-05338-x-asphodelus-based-cqds-1--size",
+      "sample_id": "bilgin2024-s11164-024-05338-x-asphodelus-based-cqds-1--product",
+      "property": "diameter",
+      "technique": "TEM",
+      "value": {
+        "value": 3.9,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "3.9 nm",
+        "evidence": [
+          {
+            "source_id": "bilgin2024-s11164-024-05338-x",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "bilgin2024-s11164-024-05338-x",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    }
+  ],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

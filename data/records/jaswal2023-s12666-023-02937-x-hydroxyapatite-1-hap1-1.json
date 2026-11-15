@@ -1,0 +1,465 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "jaswal2023-s12666-023-02937-x-hydroxyapatite-1-hap1-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Ajay Jaswal; Sushant Samir; Alakesh Manna (2023): Hydroxyapatite-1 (HAp1)",
+  "material": {
+    "formula": "Ca10(PO4)6(OH)2",
+    "family": "Ca10(PO4)6(OH)2 nanocrystals",
+    "elements": [
+      "Ca",
+      "P",
+      "O",
+      "H"
+    ],
+    "components": [
+      "Ca10(PO4)6(OH)2"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Precipitation",
+  "sources": [
+    {
+      "id": "jaswal2023-s12666-023-02937-x",
+      "doi": "10.1007/s12666-023-02937-x",
+      "title": "Synthesis of Nanocrystalline Hydroxyapatite Biomaterial from Waste Eggshells by Precipitation Method",
+      "authors": "Ajay Jaswal; Sushant Samir; Alakesh Manna",
+      "year": 2023,
+      "url": "https://doi.org/10.1007/s12666-023-02937-x",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "jaswal2023-s12666-023-02937-x",
+    "recipe_family": "jaswal2023-s12666-023-02937-x-hydroxyapatite-1-hap1-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "Ca10(PO4)6(OH)2",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "jaswal2023-s12666-023-02937-x",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "monophasic low crystalline",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "jaswal2023-s12666-023-02937-x",
+          "locator": "Main PDF p.7"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": null,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "not_reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "not reported",
+      "evidence": [],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "nanorods",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "jaswal2023-s12666-023-02937-x",
+          "locator": "Main PDF p.7"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "jaswal2023-s12666-023-02937-x-hydroxyapatite-1-hap1-1--eggshells",
+      "name": "eggshells",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "jaswal2023-s12666-023-02937-x",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "jaswal2023-s12666-023-02937-x-hydroxyapatite-1-hap1-1--orthophosphoric-acid",
+      "name": "orthophosphoric acid",
+      "formula": null,
+      "role": "nonmetal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "concentration": {
+          "value": 0.6,
+          "minimum": null,
+          "maximum": null,
+          "unit": "M",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.6 M",
+          "evidence": [
+            {
+              "source_id": "jaswal2023-s12666-023-02937-x",
+              "locator": "Main PDF p.4"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "jaswal2023-s12666-023-02937-x",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    },
+    {
+      "id": "jaswal2023-s12666-023-02937-x-hydroxyapatite-1-hap1-1--naoh",
+      "name": "NaOH",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "jaswal2023-s12666-023-02937-x",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "jaswal2023-s12666-023-02937-x-hydroxyapatite-1-hap1-1--after-s01-age",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": []
+    },
+    {
+      "id": "jaswal2023-s12666-023-02937-x-hydroxyapatite-1-hap1-1--after-s02-dissolve",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "jaswal2023-s12666-023-02937-x-hydroxyapatite-1-hap1-1--after-s01-age",
+        "jaswal2023-s12666-023-02937-x-hydroxyapatite-1-hap1-1--eggshells"
+      ]
+    },
+    {
+      "id": "jaswal2023-s12666-023-02937-x-hydroxyapatite-1-hap1-1--after-s03-mix",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "jaswal2023-s12666-023-02937-x-hydroxyapatite-1-hap1-1--after-s02-dissolve",
+        "jaswal2023-s12666-023-02937-x-hydroxyapatite-1-hap1-1--orthophosphoric-acid",
+        "jaswal2023-s12666-023-02937-x-hydroxyapatite-1-hap1-1--naoh"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-age",
+      "action": "age",
+      "label": "Age calcined product for 24 hours",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [],
+      "outputs": [
+        "jaswal2023-s12666-023-02937-x-hydroxyapatite-1-hap1-1--after-s01-age"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 37.5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "37.5 °C",
+          "evidence": [
+            {
+              "source_id": "jaswal2023-s12666-023-02937-x",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 24,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "24 h",
+          "evidence": [
+            {
+              "source_id": "jaswal2023-s12666-023-02937-x",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "jaswal2023-s12666-023-02937-x",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Age calcined product for 24 hours",
+      "evidence": [
+        {
+          "source_id": "jaswal2023-s12666-023-02937-x",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s02-dissolve",
+      "action": "dissolve",
+      "label": "Dissolve CaO in distilled water to form Ca(OH)2",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-age"
+      ],
+      "inputs": [
+        "jaswal2023-s12666-023-02937-x-hydroxyapatite-1-hap1-1--after-s01-age",
+        "jaswal2023-s12666-023-02937-x-hydroxyapatite-1-hap1-1--eggshells"
+      ],
+      "outputs": [
+        "jaswal2023-s12666-023-02937-x-hydroxyapatite-1-hap1-1--after-s02-dissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "jaswal2023-s12666-023-02937-x",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dissolve CaO in distilled water to form Ca(OH)2",
+      "evidence": [
+        {
+          "source_id": "jaswal2023-s12666-023-02937-x",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "s03-mix",
+      "action": "mix",
+      "label": "Mix orthophosphoric acid with Ca(OH)2 solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-dissolve"
+      ],
+      "inputs": [
+        "jaswal2023-s12666-023-02937-x-hydroxyapatite-1-hap1-1--after-s02-dissolve",
+        "jaswal2023-s12666-023-02937-x-hydroxyapatite-1-hap1-1--orthophosphoric-acid",
+        "jaswal2023-s12666-023-02937-x-hydroxyapatite-1-hap1-1--naoh"
+      ],
+      "outputs": [
+        "jaswal2023-s12666-023-02937-x-hydroxyapatite-1-hap1-1--after-s03-mix"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 30,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "30 min",
+          "evidence": [
+            {
+              "source_id": "jaswal2023-s12666-023-02937-x",
+              "locator": "Main PDF p.4"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "jaswal2023-s12666-023-02937-x",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Mix orthophosphoric acid with Ca(OH)2 solution",
+      "evidence": [
+        {
+          "source_id": "jaswal2023-s12666-023-02937-x",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "jaswal2023-s12666-023-02937-x-hydroxyapatite-1-hap1-1--product",
+      "source_sample_label": "Hydroxyapatite-1 (HAp1)",
+      "batch_id": null,
+      "material_state_id": "jaswal2023-s12666-023-02937-x-hydroxyapatite-1-hap1-1--after-s03-mix",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "Ca10(PO4)6(OH)2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "jaswal2023-s12666-023-02937-x",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "monophasic low crystalline",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "jaswal2023-s12666-023-02937-x",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": "nanorods",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "jaswal2023-s12666-023-02937-x",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": "none",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "jaswal2023-s12666-023-02937-x",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "jaswal2023-s12666-023-02937-x",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "notes": [
+        "Reaction time: 1 h (Main PDF p.3)."
+      ]
+    }
+  ],
+  "measurements": [],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Size not reported in the extracted text.",
+      "Reactor not reported in the extracted text.",
+      "Reaction temperature not reported in the extracted text.",
+      "Amount of eggshells not reported in the extracted text.",
+      "Amount of NaOH not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

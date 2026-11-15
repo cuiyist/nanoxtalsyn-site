@@ -1,0 +1,522 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "liu2020-s40145-019-0345-1-nanocrystalline-hfb2-powders-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Da Liu; Qiangang Fu; Yanhui Chu (2020): nanocrystalline HfB2 powders",
+  "material": {
+    "formula": "HfB2",
+    "family": "HfB2 nanocrystals",
+    "elements": [
+      "Hf",
+      "B"
+    ],
+    "components": [
+      "HfB2"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Molten salt synthesis",
+  "sources": [
+    {
+      "id": "liu2020-s40145-019-0345-1",
+      "doi": "10.1007/s40145-019-0345-1",
+      "title": "Molten salt synthesis, formation mechanism, and oxidation behavior of nanocrystalline HfB2 powders",
+      "authors": "Da Liu; Qiangang Fu; Yanhui Chu",
+      "year": 2020,
+      "url": "https://doi.org/10.1007/s40145-019-0345-1",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "liu2020-s40145-019-0345-1",
+    "recipe_family": "liu2020-s40145-019-0345-1-nanocrystalline-hfb2-powders-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "HfB2",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "liu2020-s40145-019-0345-1",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "hexagonal",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "liu2020-s40145-019-0345-1",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": 155,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "155 nm",
+      "evidence": [
+        {
+          "source_id": "liu2020-s40145-019-0345-1",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "irregular polyhedral",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "liu2020-s40145-019-0345-1",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "liu2020-s40145-019-0345-1-nanocrystalline-hfb2-powders-1--after-s01-heat",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": []
+    },
+    {
+      "id": "liu2020-s40145-019-0345-1-nanocrystalline-hfb2-powders-1--after-s02-cool",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "liu2020-s40145-019-0345-1-nanocrystalline-hfb2-powders-1--after-s01-heat"
+      ]
+    },
+    {
+      "id": "liu2020-s40145-019-0345-1-nanocrystalline-hfb2-powders-1--after-s03-dissolve",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "liu2020-s40145-019-0345-1-nanocrystalline-hfb2-powders-1--after-s02-cool"
+      ]
+    },
+    {
+      "id": "liu2020-s40145-019-0345-1-nanocrystalline-hfb2-powders-1--after-s04-wash",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "liu2020-s40145-019-0345-1-nanocrystalline-hfb2-powders-1--after-s03-dissolve"
+      ]
+    },
+    {
+      "id": "liu2020-s40145-019-0345-1-nanocrystalline-hfb2-powders-1--after-s05-dry",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "liu2020-s40145-019-0345-1-nanocrystalline-hfb2-powders-1--after-s04-wash"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-heat",
+      "action": "heat",
+      "label": "The system was heated from room temperature to 1273–1373 K at a rate of 10 K/min and held for 1 h.",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [],
+      "outputs": [
+        "liu2020-s40145-019-0345-1-nanocrystalline-hfb2-powders-1--after-s01-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 1373,
+          "minimum": null,
+          "maximum": null,
+          "unit": "K",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1373 K",
+          "evidence": [
+            {
+              "source_id": "liu2020-s40145-019-0345-1",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 h",
+          "evidence": [
+            {
+              "source_id": "liu2020-s40145-019-0345-1",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "liu2020-s40145-019-0345-1",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "The system was heated from room temperature to 1273–1373 K at a rate of 10 K/min and held for 1 h.",
+      "evidence": [
+        {
+          "source_id": "liu2020-s40145-019-0345-1",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-cool",
+      "action": "cool",
+      "label": "The system was cooled to room temperature.",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-heat"
+      ],
+      "inputs": [
+        "liu2020-s40145-019-0345-1-nanocrystalline-hfb2-powders-1--after-s01-heat"
+      ],
+      "outputs": [
+        "liu2020-s40145-019-0345-1-nanocrystalline-hfb2-powders-1--after-s02-cool"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "liu2020-s40145-019-0345-1",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "The system was cooled to room temperature.",
+      "evidence": [
+        {
+          "source_id": "liu2020-s40145-019-0345-1",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s03-dissolve",
+      "action": "dissolve",
+      "label": "The as-synthesized products were immersed in deionized water at 353 K to dissolve the residual NaCl/KCl salts and B2O3 production.",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-cool"
+      ],
+      "inputs": [
+        "liu2020-s40145-019-0345-1-nanocrystalline-hfb2-powders-1--after-s02-cool"
+      ],
+      "outputs": [
+        "liu2020-s40145-019-0345-1-nanocrystalline-hfb2-powders-1--after-s03-dissolve"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 353,
+          "minimum": null,
+          "maximum": null,
+          "unit": "K",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "353 K",
+          "evidence": [
+            {
+              "source_id": "liu2020-s40145-019-0345-1",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "liu2020-s40145-019-0345-1",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "The as-synthesized products were immersed in deionized water at 353 K to dissolve the residual NaCl/KCl salts and B2O3 production.",
+      "evidence": [
+        {
+          "source_id": "liu2020-s40145-019-0345-1",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s04-wash",
+      "action": "wash",
+      "label": "The products were filtered and washed by deionized water and absolute ethanol for several times.",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-dissolve"
+      ],
+      "inputs": [
+        "liu2020-s40145-019-0345-1-nanocrystalline-hfb2-powders-1--after-s03-dissolve"
+      ],
+      "outputs": [
+        "liu2020-s40145-019-0345-1-nanocrystalline-hfb2-powders-1--after-s04-wash"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "The products were filtered and washed by deionized water and absolute ethanol for several times.",
+      "evidence": [
+        {
+          "source_id": "liu2020-s40145-019-0345-1",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s05-dry",
+      "action": "dry",
+      "label": "The products were dried at 333 K.",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-wash"
+      ],
+      "inputs": [
+        "liu2020-s40145-019-0345-1-nanocrystalline-hfb2-powders-1--after-s04-wash"
+      ],
+      "outputs": [
+        "liu2020-s40145-019-0345-1-nanocrystalline-hfb2-powders-1--after-s05-dry"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 333,
+          "minimum": null,
+          "maximum": null,
+          "unit": "K",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "333 K",
+          "evidence": [
+            {
+              "source_id": "liu2020-s40145-019-0345-1",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "The products were dried at 333 K.",
+      "evidence": [
+        {
+          "source_id": "liu2020-s40145-019-0345-1",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "liu2020-s40145-019-0345-1-nanocrystalline-hfb2-powders-1--product",
+      "source_sample_label": "nanocrystalline HfB2 powders",
+      "batch_id": null,
+      "material_state_id": "liu2020-s40145-019-0345-1-nanocrystalline-hfb2-powders-1--after-s05-dry",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "HfB2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "liu2020-s40145-019-0345-1",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "hexagonal",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "liu2020-s40145-019-0345-1",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": "irregular polyhedral",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "liu2020-s40145-019-0345-1",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "liu2020-s40145-019-0345-1",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "notes": [
+        "Reactor: alumina crucible (Main PDF p.2).",
+        "Reaction temperature: 1373 K (Main PDF p.2).",
+        "Reaction time: 1 h (Main PDF p.2)."
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "id": "liu2020-s40145-019-0345-1-nanocrystalline-hfb2-powders-1--size",
+      "sample_id": "liu2020-s40145-019-0345-1-nanocrystalline-hfb2-powders-1--product",
+      "property": "diameter",
+      "technique": "SEM",
+      "value": {
+        "value": 155,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "155 nm",
+        "evidence": [
+          {
+            "source_id": "liu2020-s40145-019-0345-1",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "liu2020-s40145-019-0345-1",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    }
+  ],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Ligand not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

@@ -1,0 +1,495 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "rahmany2024-s10854-024-12541-4-gfo0-7-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Zamzama Rahmany; Nandakumar Kalarikkal; S. Savitha Pillai (2024): GFO0.7",
+  "material": {
+    "formula": "Ga0.7Fe1.3O3",
+    "family": "Ga0.7Fe1.3O3 nanocrystals",
+    "elements": [
+      "Ga",
+      "Fe",
+      "O"
+    ],
+    "components": [
+      "Ga0.7Fe1.3O3"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Hydrothermal",
+  "sources": [
+    {
+      "id": "rahmany2024-s10854-024-12541-4",
+      "doi": "10.1007/s10854-024-12541-4",
+      "title": "Structure and magneto-electric properties of hydrothermally prepared nanocrystalline GaxFe2−xO3 (x = 0.7, 1 & 1.3)",
+      "authors": "Zamzama Rahmany; Nandakumar Kalarikkal; S. Savitha Pillai",
+      "year": 2024,
+      "url": "https://doi.org/10.1007/s10854-024-12541-4",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "rahmany2024-s10854-024-12541-4",
+    "recipe_family": "rahmany2024-s10854-024-12541-4-gfo0-7-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "Ga0.7Fe1.3O3",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "rahmany2024-s10854-024-12541-4",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "trigonal",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "rahmany2024-s10854-024-12541-4",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": 85.4,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "85.4 nm",
+      "evidence": [
+        {
+          "source_id": "rahmany2024-s10854-024-12541-4",
+          "locator": "Main PDF p.4"
+        }
+      ],
+      "derivation": null
+    },
+    "morphology": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "rahmany2024-s10854-024-12541-4-gfo0-7-1--gallium-nitrate-hydrate",
+      "name": "gallium nitrate hydrate",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "rahmany2024-s10854-024-12541-4",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "rahmany2024-s10854-024-12541-4-gfo0-7-1--iron-nitrate-nonahydrate",
+      "name": "iron nitrate nonahydrate",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "rahmany2024-s10854-024-12541-4",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "rahmany2024-s10854-024-12541-4-gfo0-7-1--after-s01-stir",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": []
+    },
+    {
+      "id": "rahmany2024-s10854-024-12541-4-gfo0-7-1--after-s02-autoclave",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "rahmany2024-s10854-024-12541-4-gfo0-7-1--after-s01-stir"
+      ]
+    },
+    {
+      "id": "rahmany2024-s10854-024-12541-4-gfo0-7-1--after-s03-wash",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "rahmany2024-s10854-024-12541-4-gfo0-7-1--after-s02-autoclave"
+      ]
+    },
+    {
+      "id": "rahmany2024-s10854-024-12541-4-gfo0-7-1--after-s04-dry",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "rahmany2024-s10854-024-12541-4-gfo0-7-1--after-s03-wash"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-stir",
+      "action": "stir",
+      "label": "Stir the solution for 1 hour",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [],
+      "outputs": [
+        "rahmany2024-s10854-024-12541-4-gfo0-7-1--after-s01-stir"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 h",
+          "evidence": [
+            {
+              "source_id": "rahmany2024-s10854-024-12541-4",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Stir the solution for 1 hour",
+      "evidence": [
+        {
+          "source_id": "rahmany2024-s10854-024-12541-4",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-autoclave",
+      "action": "autoclave",
+      "label": "Autoclave the solution at 250 °C for 5 hours",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-stir"
+      ],
+      "inputs": [
+        "rahmany2024-s10854-024-12541-4-gfo0-7-1--after-s01-stir"
+      ],
+      "outputs": [
+        "rahmany2024-s10854-024-12541-4-gfo0-7-1--after-s02-autoclave"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 250,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "250 °C",
+          "evidence": [
+            {
+              "source_id": "rahmany2024-s10854-024-12541-4",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "5 h",
+          "evidence": [
+            {
+              "source_id": "rahmany2024-s10854-024-12541-4",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Autoclave the solution at 250 °C for 5 hours",
+      "evidence": [
+        {
+          "source_id": "rahmany2024-s10854-024-12541-4",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s03-wash",
+      "action": "wash",
+      "label": "Wash the product with ethanol and distilled water",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-autoclave"
+      ],
+      "inputs": [
+        "rahmany2024-s10854-024-12541-4-gfo0-7-1--after-s02-autoclave"
+      ],
+      "outputs": [
+        "rahmany2024-s10854-024-12541-4-gfo0-7-1--after-s03-wash"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Wash the product with ethanol and distilled water",
+      "evidence": [
+        {
+          "source_id": "rahmany2024-s10854-024-12541-4",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s04-dry",
+      "action": "dry",
+      "label": "Dry the product at 80 °C overnight",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-wash"
+      ],
+      "inputs": [
+        "rahmany2024-s10854-024-12541-4-gfo0-7-1--after-s03-wash"
+      ],
+      "outputs": [
+        "rahmany2024-s10854-024-12541-4-gfo0-7-1--after-s04-dry"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 80,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "80 °C",
+          "evidence": [
+            {
+              "source_id": "rahmany2024-s10854-024-12541-4",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dry the product at 80 °C overnight",
+      "evidence": [
+        {
+          "source_id": "rahmany2024-s10854-024-12541-4",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "rahmany2024-s10854-024-12541-4-gfo0-7-1--product",
+      "source_sample_label": "GFO0.7",
+      "batch_id": null,
+      "material_state_id": "rahmany2024-s10854-024-12541-4-gfo0-7-1--after-s04-dry",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "Ga0.7Fe1.3O3",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "rahmany2024-s10854-024-12541-4",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "trigonal",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "rahmany2024-s10854-024-12541-4",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "surface": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "rahmany2024-s10854-024-12541-4",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "notes": [
+        "Reactor: Teflon liner of 100 mL capacity (Main PDF p.2).",
+        "Reaction temperature: 250 degC (Main PDF p.2).",
+        "Reaction time: 5 h (Main PDF p.2)."
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "id": "rahmany2024-s10854-024-12541-4-gfo0-7-1--size",
+      "sample_id": "rahmany2024-s10854-024-12541-4-gfo0-7-1--product",
+      "property": "particle_size",
+      "technique": "not reported",
+      "value": {
+        "value": 85.4,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "85.4 nm",
+        "evidence": [
+          {
+            "source_id": "rahmany2024-s10854-024-12541-4",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "rahmany2024-s10854-024-12541-4",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    }
+  ],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Shape not reported in the extracted text.",
+      "Ligand not reported in the extracted text.",
+      "Atmosphere not reported in the extracted text.",
+      "Amount of gallium nitrate hydrate not reported in the extracted text.",
+      "Amount of iron nitrate nonahydrate not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

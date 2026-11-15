@@ -1,0 +1,362 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "tan2010-s11051-010-0110-4-nanocrystalline-cubic-zirconia-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Dezhi Tan; Geng Lin; Yin Liu; Yu Teng; Yixi Zhuang; Bin Zhu; Quanzhong Zhao; Jianrong Qiu (2010): nanocrystalline cubic zirconia",
+  "material": {
+    "formula": "ZrO2",
+    "family": "ZrO2 nanocrystals",
+    "elements": [
+      "Zr",
+      "O"
+    ],
+    "components": [
+      "ZrO2"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Femtosecond laser ablation",
+  "sources": [
+    {
+      "id": "tan2010-s11051-010-0110-4",
+      "doi": "10.1007/s11051-010-0110-4",
+      "title": "Synthesis of nanocrystalline cubic zirconia using femtosecond laser ablation",
+      "authors": "Dezhi Tan; Geng Lin; Yin Liu; Yu Teng; Yixi Zhuang; Bin Zhu; Quanzhong Zhao; Jianrong Qiu",
+      "year": 2010,
+      "url": "https://doi.org/10.1007/s11051-010-0110-4",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "tan2010-s11051-010-0110-4",
+    "recipe_family": "tan2010-s11051-010-0110-4-nanocrystalline-cubic-zirconia-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "ZrO2",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "tan2010-s11051-010-0110-4",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "cubic",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "tan2010-s11051-010-0110-4",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": 10,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "10 nm",
+      "evidence": [
+        {
+          "source_id": "tan2010-s11051-010-0110-4",
+          "locator": "Main PDF p.4"
+        }
+      ],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "spherical",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "tan2010-s11051-010-0110-4",
+          "locator": "Main PDF p.4"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "tan2010-s11051-010-0110-4-nanocrystalline-cubic-zirconia-1--zirconium-metal-plate",
+      "name": "zirconium metal plate",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "tan2010-s11051-010-0110-4",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "tan2010-s11051-010-0110-4-nanocrystalline-cubic-zirconia-1--after-s01-ablate",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "tan2010-s11051-010-0110-4-nanocrystalline-cubic-zirconia-1--zirconium-metal-plate"
+      ]
+    },
+    {
+      "id": "tan2010-s11051-010-0110-4-nanocrystalline-cubic-zirconia-1--after-s02-collect",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "tan2010-s11051-010-0110-4-nanocrystalline-cubic-zirconia-1--after-s01-ablate"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-ablate",
+      "action": "ablate",
+      "label": "Femtosecond laser ablation of zirconium in ammonia",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "tan2010-s11051-010-0110-4-nanocrystalline-cubic-zirconia-1--zirconium-metal-plate"
+      ],
+      "outputs": [
+        "tan2010-s11051-010-0110-4-nanocrystalline-cubic-zirconia-1--after-s01-ablate"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 60,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "60 min",
+          "evidence": [
+            {
+              "source_id": "tan2010-s11051-010-0110-4",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "ammonia",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "tan2010-s11051-010-0110-4",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Femtosecond laser ablation of zirconium in ammonia",
+      "evidence": [
+        {
+          "source_id": "tan2010-s11051-010-0110-4",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s02-collect",
+      "action": "collect",
+      "label": "Centrifugation and evaporation of the solution",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-ablate"
+      ],
+      "inputs": [
+        "tan2010-s11051-010-0110-4-nanocrystalline-cubic-zirconia-1--after-s01-ablate"
+      ],
+      "outputs": [
+        "tan2010-s11051-010-0110-4-nanocrystalline-cubic-zirconia-1--after-s02-collect"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 80,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "80 °C",
+          "evidence": [
+            {
+              "source_id": "tan2010-s11051-010-0110-4",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Centrifugation and evaporation of the solution",
+      "evidence": [
+        {
+          "source_id": "tan2010-s11051-010-0110-4",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "tan2010-s11051-010-0110-4-nanocrystalline-cubic-zirconia-1--product",
+      "source_sample_label": "nanocrystalline cubic zirconia",
+      "batch_id": null,
+      "material_state_id": "tan2010-s11051-010-0110-4-nanocrystalline-cubic-zirconia-1--after-s02-collect",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "ZrO2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "tan2010-s11051-010-0110-4",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "cubic",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "tan2010-s11051-010-0110-4",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": "spherical",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "tan2010-s11051-010-0110-4",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "tan2010-s11051-010-0110-4",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "notes": [
+        "Reactor: glass vessel (Main PDF p.2).",
+        "Reaction time: 60 min (Main PDF p.3)."
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "id": "tan2010-s11051-010-0110-4-nanocrystalline-cubic-zirconia-1--size",
+      "sample_id": "tan2010-s11051-010-0110-4-nanocrystalline-cubic-zirconia-1--product",
+      "property": "diameter",
+      "technique": "TEM",
+      "value": {
+        "value": 10,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "10 nm",
+        "evidence": [
+          {
+            "source_id": "tan2010-s11051-010-0110-4",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "tan2010-s11051-010-0110-4",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    }
+  ],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Ligand not reported in the extracted text.",
+      "Reaction temperature not reported in the extracted text.",
+      "Amount of zirconium metal plate not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

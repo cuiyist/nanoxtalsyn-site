@@ -1,0 +1,484 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "zhang2021-acs-chemmater-1c02610-ag2te-qds-14-7-plqy-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Ming-Yu Zhang; An-An Liu; Haohao Fu; Wei Zhang; Shu-Han Zhang; Zhen-Ya Liu; Lin-Han Jiang; Xueguang Shao; Dai-Wen Pang (2021): Ag2Te QDs (14.7% PLQY)",
+  "material": {
+    "formula": "Ag2Te",
+    "family": "Ag2Te nanocrystals",
+    "elements": [
+      "Ag",
+      "Te"
+    ],
+    "components": [
+      "Ag2Te"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Hot injection",
+  "sources": [
+    {
+      "id": "zhang2021-acs-chemmater-1c02610",
+      "doi": "10.1021/acs.chemmater.1c02610",
+      "title": "Regulation of Silver Precursor Reactivity via Tertiary Phosphine to Synthesize Near-Infrared Ag2Te with Photoluminescence Quantum Yield of up to 14.7%",
+      "authors": "Ming-Yu Zhang; An-An Liu; Haohao Fu; Wei Zhang; Shu-Han Zhang; Zhen-Ya Liu; Lin-Han Jiang; Xueguang Shao; Dai-Wen Pang",
+      "year": 2021,
+      "url": "https://doi.org/10.1021/acs.chemmater.1c02610",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "zhang2021-acs-chemmater-1c02610",
+    "recipe_family": "zhang2021-acs-chemmater-1c02610-ag2te-qds-14-7-plqy-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "Ag2Te",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "zhang2021-acs-chemmater-1c02610",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "monoclinic",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "zhang2021-acs-chemmater-1c02610",
+          "locator": "Main PDF p.5"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": null,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "not_reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "not reported",
+      "evidence": [],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "nanocrystal",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "zhang2021-acs-chemmater-1c02610",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "zhang2021-acs-chemmater-1c02610-ag2te-qds-14-7-plqy-1--trioctylphosphine",
+      "name": "trioctylphosphine",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zhang2021-acs-chemmater-1c02610",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "zhang2021-acs-chemmater-1c02610-ag2te-qds-14-7-plqy-1--silver-acetate",
+      "name": "silver acetate",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 1.0,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 mmol",
+          "evidence": [
+            {
+              "source_id": "zhang2021-acs-chemmater-1c02610",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zhang2021-acs-chemmater-1c02610",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "zhang2021-acs-chemmater-1c02610-ag2te-qds-14-7-plqy-1--tellurium-powder",
+      "name": "tellurium powder",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zhang2021-acs-chemmater-1c02610",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "zhang2021-acs-chemmater-1c02610-ag2te-qds-14-7-plqy-1--after-s01-add",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zhang2021-acs-chemmater-1c02610-ag2te-qds-14-7-plqy-1--silver-acetate"
+      ]
+    },
+    {
+      "id": "zhang2021-acs-chemmater-1c02610-ag2te-qds-14-7-plqy-1--after-s02-cool",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zhang2021-acs-chemmater-1c02610-ag2te-qds-14-7-plqy-1--after-s01-add"
+      ]
+    },
+    {
+      "id": "zhang2021-acs-chemmater-1c02610-ag2te-qds-14-7-plqy-1--after-s03-precipitate",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zhang2021-acs-chemmater-1c02610-ag2te-qds-14-7-plqy-1--after-s02-cool"
+      ]
+    },
+    {
+      "id": "zhang2021-acs-chemmater-1c02610-ag2te-qds-14-7-plqy-1--after-s04-purify",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "zhang2021-acs-chemmater-1c02610-ag2te-qds-14-7-plqy-1--after-s03-precipitate"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-add",
+      "action": "add",
+      "label": "Add AgAc",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "zhang2021-acs-chemmater-1c02610-ag2te-qds-14-7-plqy-1--silver-acetate"
+      ],
+      "outputs": [
+        "zhang2021-acs-chemmater-1c02610-ag2te-qds-14-7-plqy-1--after-s01-add"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 160,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "160 °C",
+          "evidence": [
+            {
+              "source_id": "zhang2021-acs-chemmater-1c02610",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zhang2021-acs-chemmater-1c02610",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add AgAc",
+      "evidence": [
+        {
+          "source_id": "zhang2021-acs-chemmater-1c02610",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-cool",
+      "action": "cool",
+      "label": "Cool to 150 °C for growth",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-add"
+      ],
+      "inputs": [
+        "zhang2021-acs-chemmater-1c02610-ag2te-qds-14-7-plqy-1--after-s01-add"
+      ],
+      "outputs": [
+        "zhang2021-acs-chemmater-1c02610-ag2te-qds-14-7-plqy-1--after-s02-cool"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 150,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "150 °C",
+          "evidence": [
+            {
+              "source_id": "zhang2021-acs-chemmater-1c02610",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zhang2021-acs-chemmater-1c02610",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Cool to 150 °C for growth",
+      "evidence": [
+        {
+          "source_id": "zhang2021-acs-chemmater-1c02610",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s03-precipitate",
+      "action": "precipitate",
+      "label": "Precipitate QDs with acetone",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-cool"
+      ],
+      "inputs": [
+        "zhang2021-acs-chemmater-1c02610-ag2te-qds-14-7-plqy-1--after-s02-cool"
+      ],
+      "outputs": [
+        "zhang2021-acs-chemmater-1c02610-ag2te-qds-14-7-plqy-1--after-s03-precipitate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Precipitate QDs with acetone",
+      "evidence": [
+        {
+          "source_id": "zhang2021-acs-chemmater-1c02610",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s04-purify",
+      "action": "purify",
+      "label": "Purify by precipitation-redispersion",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-precipitate"
+      ],
+      "inputs": [
+        "zhang2021-acs-chemmater-1c02610-ag2te-qds-14-7-plqy-1--after-s03-precipitate"
+      ],
+      "outputs": [
+        "zhang2021-acs-chemmater-1c02610-ag2te-qds-14-7-plqy-1--after-s04-purify"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Purify by precipitation-redispersion",
+      "evidence": [
+        {
+          "source_id": "zhang2021-acs-chemmater-1c02610",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "zhang2021-acs-chemmater-1c02610-ag2te-qds-14-7-plqy-1--product",
+      "source_sample_label": "Ag2Te QDs (14.7% PLQY)",
+      "batch_id": null,
+      "material_state_id": "zhang2021-acs-chemmater-1c02610-ag2te-qds-14-7-plqy-1--after-s04-purify",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "Ag2Te",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zhang2021-acs-chemmater-1c02610",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "monoclinic",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zhang2021-acs-chemmater-1c02610",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": "nanocrystal",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zhang2021-acs-chemmater-1c02610",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": "TOP",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zhang2021-acs-chemmater-1c02610",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "zhang2021-acs-chemmater-1c02610",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "notes": [
+        "Reactor: three-neck flask (Main PDF p.2).",
+        "Reaction temperature: 160 degC (Main PDF p.2)."
+      ]
+    }
+  ],
+  "measurements": [],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Size not reported in the extracted text.",
+      "Reaction time not reported in the extracted text.",
+      "Amount of trioctylphosphine not reported in the extracted text.",
+      "Amount of tellurium powder not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

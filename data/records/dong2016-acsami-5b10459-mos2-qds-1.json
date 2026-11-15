@@ -1,0 +1,364 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "dong2016-acsami-5b10459-mos2-qds-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Haifeng Dong; Songsong Tang; Yansong Hao; Haizhu Yu; Wenhao Dai; Guifeng Zhao; Yu Cao; Huiting Lu; Xueji Zhang; Huangxian Ju (2016): MoS2 QDs",
+  "material": {
+    "formula": "MoS2",
+    "family": "MoS2 nanocrystals",
+    "elements": [
+      "Mo",
+      "S"
+    ],
+    "components": [
+      "MoS2"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Ultrasonic",
+  "sources": [
+    {
+      "id": "dong2016-acsami-5b10459",
+      "doi": "10.1021/acsami.5b10459",
+      "title": "Fluorescent MoS2 Quantum Dots: Ultrasonic Preparation, Up-Conversion and Down-Conversion Bioimaging, and Photodynamic Therapy",
+      "authors": "Haifeng Dong; Songsong Tang; Yansong Hao; Haizhu Yu; Wenhao Dai; Guifeng Zhao; Yu Cao; Huiting Lu; Xueji Zhang; Huangxian Ju",
+      "year": 2016,
+      "url": "https://doi.org/10.1021/acsami.5b10459",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "dong2016-acsami-5b10459",
+    "recipe_family": "dong2016-acsami-5b10459-mos2-qds-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "MoS2",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "dong2016-acsami-5b10459",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "hexagonal",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "dong2016-acsami-5b10459",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": null,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "not_reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "not reported",
+      "evidence": [],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "nanosheet",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "dong2016-acsami-5b10459",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "dong2016-acsami-5b10459-mos2-qds-1--tetrabutylammonium-tba",
+      "name": "tetrabutylammonium (TBA)",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 1.5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1.5 mL",
+          "evidence": [
+            {
+              "source_id": "dong2016-acsami-5b10459",
+              "locator": "Main PDF p.6"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "dong2016-acsami-5b10459",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "dong2016-acsami-5b10459-mos2-qds-1--ethanol-water-mixture",
+      "name": "ethanol/water mixture",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 4,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "4 mL",
+          "evidence": [
+            {
+              "source_id": "dong2016-acsami-5b10459",
+              "locator": "Main PDF p.6"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "dong2016-acsami-5b10459",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "dong2016-acsami-5b10459-mos2-qds-1--after-s01-disperse",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "dong2016-acsami-5b10459-mos2-qds-1--tetrabutylammonium-tba",
+        "dong2016-acsami-5b10459-mos2-qds-1--ethanol-water-mixture"
+      ]
+    },
+    {
+      "id": "dong2016-acsami-5b10459-mos2-qds-1--after-s02-sonicate",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "dong2016-acsami-5b10459-mos2-qds-1--after-s01-disperse",
+        "dong2016-acsami-5b10459-mos2-qds-1--tetrabutylammonium-tba",
+        "dong2016-acsami-5b10459-mos2-qds-1--ethanol-water-mixture"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-disperse",
+      "action": "disperse",
+      "label": "Layered MoS2 materials dispersed in solution containing TBA and ethanol/water mixture.",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "dong2016-acsami-5b10459-mos2-qds-1--tetrabutylammonium-tba",
+        "dong2016-acsami-5b10459-mos2-qds-1--ethanol-water-mixture"
+      ],
+      "outputs": [
+        "dong2016-acsami-5b10459-mos2-qds-1--after-s01-disperse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Layered MoS2 materials dispersed in solution containing TBA and ethanol/water mixture.",
+      "evidence": [
+        {
+          "source_id": "dong2016-acsami-5b10459",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "s02-sonicate",
+      "action": "sonicate",
+      "label": "Ultrasonic processing for different durations.",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-disperse"
+      ],
+      "inputs": [
+        "dong2016-acsami-5b10459-mos2-qds-1--after-s01-disperse",
+        "dong2016-acsami-5b10459-mos2-qds-1--tetrabutylammonium-tba",
+        "dong2016-acsami-5b10459-mos2-qds-1--ethanol-water-mixture"
+      ],
+      "outputs": [
+        "dong2016-acsami-5b10459-mos2-qds-1--after-s02-sonicate"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 15,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "15 h",
+          "evidence": [
+            {
+              "source_id": "dong2016-acsami-5b10459",
+              "locator": "Main PDF p.6"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Ultrasonic processing for different durations.",
+      "evidence": [
+        {
+          "source_id": "dong2016-acsami-5b10459",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "dong2016-acsami-5b10459-mos2-qds-1--product",
+      "source_sample_label": "MoS2 QDs",
+      "batch_id": null,
+      "material_state_id": "dong2016-acsami-5b10459-mos2-qds-1--after-s02-sonicate",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "MoS2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "dong2016-acsami-5b10459",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "hexagonal",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "dong2016-acsami-5b10459",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": "nanosheet",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "dong2016-acsami-5b10459",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "dong2016-acsami-5b10459",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "notes": [
+        "Reactor: ultrasonic processor KH5200E (Main PDF p.6).",
+        "Reaction time: 15 h (Main PDF p.2)."
+      ]
+    }
+  ],
+  "measurements": [],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Ligand not reported in the extracted text.",
+      "Size not reported in the extracted text.",
+      "Atmosphere not reported in the extracted text.",
+      "Reaction temperature not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

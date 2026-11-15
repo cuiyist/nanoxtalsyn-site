@@ -1,0 +1,496 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "hasuno2026-s11051-026-06588-z-al-doped-li4ti5o12-li4ti5-xalxo12-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Ryuta Hasuno; Kiet Le Anh Cao; Delyana Ratnasari; Oktaviardi Bityasmawan Abdillah; Eka Lutfi Septiani; Tomoyuki Hirano; Tetsutaro Hayashi; Takashi Ogi (2026): Al-doped Li4Ti5O12 (Li4Ti5-xAlxO12)",
+  "material": {
+    "formula": "Li4Ti5-xAlxO12",
+    "family": "Li4Ti5-xAlxO12 nanocrystals",
+    "elements": [
+      "Li",
+      "Ti",
+      "Al",
+      "O"
+    ],
+    "components": [
+      "Li4Ti5-xAlxO12"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Flame spray pyrolysis",
+  "sources": [
+    {
+      "id": "hasuno2026-s11051-026-06588-z",
+      "doi": "10.1007/s11051-026-06588-z",
+      "title": "Synthesis of Al-doped nanocrystalline Li4Ti5O12 via flame spray pyrolysis",
+      "authors": "Ryuta Hasuno; Kiet Le Anh Cao; Delyana Ratnasari; Oktaviardi Bityasmawan Abdillah; Eka Lutfi Septiani; Tomoyuki Hirano; Tetsutaro Hayashi; Takashi Ogi",
+      "year": 2026,
+      "url": "https://doi.org/10.1007/s11051-026-06588-z",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "hasuno2026-s11051-026-06588-z",
+    "recipe_family": "hasuno2026-s11051-026-06588-z-al-doped-li4ti5o12-li4ti5-xalxo12-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "Li4Ti5-xAlxO12",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "hasuno2026-s11051-026-06588-z",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "spinel",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "hasuno2026-s11051-026-06588-z",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": null,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "not_reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "not reported",
+      "evidence": [],
+      "derivation": null
+    },
+    "morphology": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    }
+  },
+  "materials": [],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "hasuno2026-s11051-026-06588-z-al-doped-li4ti5o12-li4ti5-xalxo12-1--after-s01-dissolve",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": []
+    },
+    {
+      "id": "hasuno2026-s11051-026-06588-z-al-doped-li4ti5o12-li4ti5-xalxo12-1--after-s02-dissolve",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "hasuno2026-s11051-026-06588-z-al-doped-li4ti5o12-li4ti5-xalxo12-1--after-s01-dissolve"
+      ]
+    },
+    {
+      "id": "hasuno2026-s11051-026-06588-z-al-doped-li4ti5o12-li4ti5-xalxo12-1--after-s03-mix",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "hasuno2026-s11051-026-06588-z-al-doped-li4ti5o12-li4ti5-xalxo12-1--after-s02-dissolve"
+      ]
+    },
+    {
+      "id": "hasuno2026-s11051-026-06588-z-al-doped-li4ti5o12-li4ti5-xalxo12-1--after-s04-spray",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "hasuno2026-s11051-026-06588-z-al-doped-li4ti5o12-li4ti5-xalxo12-1--after-s03-mix"
+      ]
+    },
+    {
+      "id": "hasuno2026-s11051-026-06588-z-al-doped-li4ti5o12-li4ti5-xalxo12-1--after-s05-collect",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "hasuno2026-s11051-026-06588-z-al-doped-li4ti5o12-li4ti5-xalxo12-1--after-s04-spray"
+      ]
+    },
+    {
+      "id": "hasuno2026-s11051-026-06588-z-al-doped-li4ti5o12-li4ti5-xalxo12-1--after-s06-calcine",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "hasuno2026-s11051-026-06588-z-al-doped-li4ti5o12-li4ti5-xalxo12-1--after-s05-collect"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-dissolve",
+      "action": "dissolve",
+      "label": "Lithium acetylacetonate dissolved in 2-ethylhexanoic acid",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [],
+      "outputs": [
+        "hasuno2026-s11051-026-06588-z-al-doped-li4ti5o12-li4ti5-xalxo12-1--after-s01-dissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "hasuno2026-s11051-026-06588-z",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Lithium acetylacetonate dissolved in 2-ethylhexanoic acid",
+      "evidence": [
+        {
+          "source_id": "hasuno2026-s11051-026-06588-z",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    },
+    {
+      "id": "s02-dissolve",
+      "action": "dissolve",
+      "label": "Titanium and aluminum precursors dissolved in xylene",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-dissolve"
+      ],
+      "inputs": [
+        "hasuno2026-s11051-026-06588-z-al-doped-li4ti5o12-li4ti5-xalxo12-1--after-s01-dissolve"
+      ],
+      "outputs": [
+        "hasuno2026-s11051-026-06588-z-al-doped-li4ti5o12-li4ti5-xalxo12-1--after-s02-dissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "hasuno2026-s11051-026-06588-z",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Titanium and aluminum precursors dissolved in xylene",
+      "evidence": [
+        {
+          "source_id": "hasuno2026-s11051-026-06588-z",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    },
+    {
+      "id": "s03-mix",
+      "action": "mix",
+      "label": "Solutions mixed to achieve total metal concentration of 0.2 mol/L",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-dissolve"
+      ],
+      "inputs": [
+        "hasuno2026-s11051-026-06588-z-al-doped-li4ti5o12-li4ti5-xalxo12-1--after-s02-dissolve"
+      ],
+      "outputs": [
+        "hasuno2026-s11051-026-06588-z-al-doped-li4ti5o12-li4ti5-xalxo12-1--after-s03-mix"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "hasuno2026-s11051-026-06588-z",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Solutions mixed to achieve total metal concentration of 0.2 mol/L",
+      "evidence": [
+        {
+          "source_id": "hasuno2026-s11051-026-06588-z",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    },
+    {
+      "id": "s04-spray",
+      "action": "spray",
+      "label": "Precursor solution supplied to two-fluid nozzle at 3 mL/min",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-mix"
+      ],
+      "inputs": [
+        "hasuno2026-s11051-026-06588-z-al-doped-li4ti5o12-li4ti5-xalxo12-1--after-s03-mix"
+      ],
+      "outputs": [
+        "hasuno2026-s11051-026-06588-z-al-doped-li4ti5o12-li4ti5-xalxo12-1--after-s04-spray"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "hasuno2026-s11051-026-06588-z",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Precursor solution supplied to two-fluid nozzle at 3 mL/min",
+      "evidence": [
+        {
+          "source_id": "hasuno2026-s11051-026-06588-z",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    },
+    {
+      "id": "s05-collect",
+      "action": "collect",
+      "label": "Particles collected using glass fiber filter",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-spray"
+      ],
+      "inputs": [
+        "hasuno2026-s11051-026-06588-z-al-doped-li4ti5o12-li4ti5-xalxo12-1--after-s04-spray"
+      ],
+      "outputs": [
+        "hasuno2026-s11051-026-06588-z-al-doped-li4ti5o12-li4ti5-xalxo12-1--after-s05-collect"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Particles collected using glass fiber filter",
+      "evidence": [
+        {
+          "source_id": "hasuno2026-s11051-026-06588-z",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    },
+    {
+      "id": "s06-calcine",
+      "action": "calcine",
+      "label": "Collected powder calcined at 900°C for 4 h under air flow",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s05-collect"
+      ],
+      "inputs": [
+        "hasuno2026-s11051-026-06588-z-al-doped-li4ti5o12-li4ti5-xalxo12-1--after-s05-collect"
+      ],
+      "outputs": [
+        "hasuno2026-s11051-026-06588-z-al-doped-li4ti5o12-li4ti5-xalxo12-1--after-s06-calcine"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 900,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "900 °C",
+          "evidence": [
+            {
+              "source_id": "hasuno2026-s11051-026-06588-z",
+              "locator": "Main PDF p.5"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 4,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "4 h",
+          "evidence": [
+            {
+              "source_id": "hasuno2026-s11051-026-06588-z",
+              "locator": "Main PDF p.5"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "hasuno2026-s11051-026-06588-z",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Collected powder calcined at 900°C for 4 h under air flow",
+      "evidence": [
+        {
+          "source_id": "hasuno2026-s11051-026-06588-z",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "hasuno2026-s11051-026-06588-z-al-doped-li4ti5o12-li4ti5-xalxo12-1--product",
+      "source_sample_label": "Al-doped Li4Ti5O12 (Li4Ti5-xAlxO12)",
+      "batch_id": null,
+      "material_state_id": "hasuno2026-s11051-026-06588-z-al-doped-li4ti5o12-li4ti5-xalxo12-1--after-s06-calcine",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "Li4Ti5-xAlxO12",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "hasuno2026-s11051-026-06588-z",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "spinel",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "hasuno2026-s11051-026-06588-z",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "surface": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "hasuno2026-s11051-026-06588-z",
+          "locator": "Main PDF p.5"
+        }
+      ],
+      "notes": [
+        "Reaction temperature: 900 degC (Main PDF p.5).",
+        "Reaction time: 4 h (Main PDF p.5)."
+      ]
+    }
+  ],
+  "measurements": [],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Shape not reported in the extracted text.",
+      "Ligand not reported in the extracted text.",
+      "Size not reported in the extracted text.",
+      "Reactor not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

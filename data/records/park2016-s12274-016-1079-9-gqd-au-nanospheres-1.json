@@ -1,0 +1,276 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "park2016-s12274-016-1079-9-gqd-au-nanospheres-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Byeongho Park; Sun Jun Kim; Ji Soo Sohn; Min Sik Nam; Shinill Kang; Seong Chan Jun (2016): GQD/Au nanospheres",
+  "material": {
+    "formula": "GQD/Au",
+    "family": "GQD/Au nanocrystals",
+    "elements": [
+      "Au"
+    ],
+    "components": [
+      "GQD",
+      "Au"
+    ],
+    "architecture": "composite"
+  },
+  "method": "Photochemical",
+  "sources": [
+    {
+      "id": "park2016-s12274-016-1079-9",
+      "doi": "10.1007/s12274-016-1079-9",
+      "title": "Surface plasmon enhancement of photoluminescence in photo-chemically synthesized graphene quantum dot and Au nanosphere",
+      "authors": "Byeongho Park; Sun Jun Kim; Ji Soo Sohn; Min Sik Nam; Shinill Kang; Seong Chan Jun",
+      "year": 2016,
+      "url": "https://doi.org/10.1007/s12274-016-1079-9",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "park2016-s12274-016-1079-9",
+    "recipe_family": "park2016-s12274-016-1079-9-gqd-au-nanospheres-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "GQD/Au",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "park2016-s12274-016-1079-9",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    },
+    "size": {
+      "value": null,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "not_reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "not reported",
+      "evidence": [],
+      "derivation": null
+    },
+    "morphology": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "park2016-s12274-016-1079-9-gqd-au-nanospheres-1--go",
+      "name": "GO",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "park2016-s12274-016-1079-9",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "park2016-s12274-016-1079-9-gqd-au-nanospheres-1--haucl4",
+      "name": "HAuCl4",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "concentration": {
+          "value": 1.64,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mM",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1.64 mM",
+          "evidence": [
+            {
+              "source_id": "park2016-s12274-016-1079-9",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "park2016-s12274-016-1079-9",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "park2016-s12274-016-1079-9-gqd-au-nanospheres-1--after-s01-irradiate",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "park2016-s12274-016-1079-9-gqd-au-nanospheres-1--haucl4"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-irradiate",
+      "action": "irradiate",
+      "label": "Irradiate the GQD/HAuCl4 solution with UV light",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "park2016-s12274-016-1079-9-gqd-au-nanospheres-1--haucl4"
+      ],
+      "outputs": [
+        "park2016-s12274-016-1079-9-gqd-au-nanospheres-1--after-s01-irradiate"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 2,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2 min",
+          "evidence": [
+            {
+              "source_id": "park2016-s12274-016-1079-9",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Irradiate the GQD/HAuCl4 solution with UV light",
+      "evidence": [
+        {
+          "source_id": "park2016-s12274-016-1079-9",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "park2016-s12274-016-1079-9-gqd-au-nanospheres-1--product",
+      "source_sample_label": "GQD/Au nanospheres",
+      "batch_id": null,
+      "material_state_id": "park2016-s12274-016-1079-9-gqd-au-nanospheres-1--after-s01-irradiate",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "GQD/Au",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "park2016-s12274-016-1079-9",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "morphology": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "surface": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "park2016-s12274-016-1079-9",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "notes": [
+        "Reaction time: 2 min (Main PDF p.3)."
+      ]
+    }
+  ],
+  "measurements": [],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Phase not reported in the extracted text.",
+      "Shape not reported in the extracted text.",
+      "Ligand not reported in the extracted text.",
+      "Size not reported in the extracted text.",
+      "Reactor not reported in the extracted text.",
+      "Atmosphere not reported in the extracted text.",
+      "Reaction temperature not reported in the extracted text.",
+      "Amount of GO not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

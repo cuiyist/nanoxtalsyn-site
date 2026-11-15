@@ -1,0 +1,291 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "harris2012-ja309863n-inas-qds-synthesized-with-tmge3as-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Daniel K. Harris; Moungi G. Bawendi (2012): InAs QDs synthesized with TMGe3As",
+  "material": {
+    "formula": "InAs",
+    "family": "InAs nanocrystals",
+    "elements": [
+      "In",
+      "As"
+    ],
+    "components": [
+      "InAs"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Synthesis as described in the source",
+  "sources": [
+    {
+      "id": "harris2012-ja309863n",
+      "doi": "10.1021/ja309863n",
+      "title": "Improved Precursor Chemistry for the Synthesis of III–V Quantum Dots",
+      "authors": "Daniel K. Harris; Moungi G. Bawendi",
+      "year": 2012,
+      "url": "https://doi.org/10.1021/ja309863n",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "harris2012-ja309863n",
+    "recipe_family": "harris2012-ja309863n-inas-qds-synthesized-with-tmge3as-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "InAs",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "harris2012-ja309863n",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    },
+    "size": {
+      "value": null,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "not_reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "not reported",
+      "evidence": [],
+      "derivation": null
+    },
+    "morphology": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "harris2012-ja309863n-inas-qds-synthesized-with-tmge3as-1--indium-iii-myristate",
+      "name": "indium(III) myristate",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "harris2012-ja309863n",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "harris2012-ja309863n-inas-qds-synthesized-with-tmge3as-1--tri-n-octylphosphine",
+      "name": "tri-n-octylphosphine",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "harris2012-ja309863n",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "harris2012-ja309863n-inas-qds-synthesized-with-tmge3as-1--after-s01-heat",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "harris2012-ja309863n-inas-qds-synthesized-with-tmge3as-1--indium-iii-myristate",
+        "harris2012-ja309863n-inas-qds-synthesized-with-tmge3as-1--tri-n-octylphosphine"
+      ]
+    },
+    {
+      "id": "harris2012-ja309863n-inas-qds-synthesized-with-tmge3as-1--after-s02-inject",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "harris2012-ja309863n-inas-qds-synthesized-with-tmge3as-1--after-s01-heat"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-heat",
+      "action": "heat",
+      "label": "Loaded with InMy3 and TOP",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "harris2012-ja309863n-inas-qds-synthesized-with-tmge3as-1--indium-iii-myristate",
+        "harris2012-ja309863n-inas-qds-synthesized-with-tmge3as-1--tri-n-octylphosphine"
+      ],
+      "outputs": [
+        "harris2012-ja309863n-inas-qds-synthesized-with-tmge3as-1--after-s01-heat"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Loaded with InMy3 and TOP",
+      "evidence": [
+        {
+          "source_id": "harris2012-ja309863n",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-inject",
+      "action": "inject",
+      "label": "Injected group-V precursor",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-heat"
+      ],
+      "inputs": [
+        "harris2012-ja309863n-inas-qds-synthesized-with-tmge3as-1--after-s01-heat"
+      ],
+      "outputs": [
+        "harris2012-ja309863n-inas-qds-synthesized-with-tmge3as-1--after-s02-inject"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Injected group-V precursor",
+      "evidence": [
+        {
+          "source_id": "harris2012-ja309863n",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "harris2012-ja309863n-inas-qds-synthesized-with-tmge3as-1--product",
+      "source_sample_label": "InAs QDs synthesized with TMGe3As",
+      "batch_id": null,
+      "material_state_id": "harris2012-ja309863n-inas-qds-synthesized-with-tmge3as-1--after-s02-inject",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "InAs",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "harris2012-ja309863n",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "morphology": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "surface": {
+        "value": "myristate",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "harris2012-ja309863n",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "harris2012-ja309863n",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "notes": [
+        "Reaction temperature: 130 degC (Main PDF p.2)."
+      ]
+    }
+  ],
+  "measurements": [],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Phase not reported in the extracted text.",
+      "Shape not reported in the extracted text.",
+      "Size not reported in the extracted text.",
+      "Reactor not reported in the extracted text.",
+      "Atmosphere not reported in the extracted text.",
+      "Reaction time not reported in the extracted text.",
+      "Amount of indium(III) myristate not reported in the extracted text.",
+      "Amount of tri-n-octylphosphine not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

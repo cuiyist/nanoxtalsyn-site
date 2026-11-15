@@ -1,0 +1,501 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "sarangi2025-acs-inorgchem-4c04513-niv-ldh-nv-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Preeti Prabha Sarangi; Kundan Kumar Das; Jyotirmayee Sahu; Upali Aparajita Mohanty; Dipti Prava Sahoo; Kulamani Parida (2025): NiV-LDH (NV)",
+  "material": {
+    "formula": "NiV-LDH",
+    "family": "NiV-LDH nanocrystals",
+    "elements": [
+      "Ni",
+      "V"
+    ],
+    "components": [
+      "NiV",
+      "LDH"
+    ],
+    "architecture": "unresolved"
+  },
+  "method": "Reflux",
+  "sources": [
+    {
+      "id": "sarangi2025-acs-inorgchem-4c04513",
+      "doi": "10.1021/acs.inorgchem.4c04513",
+      "title": "Structurally Modulated NiV-LDH with CdMoSe-Quantum Dots: Unlocking the Active Centers at S-Scheme Heterojunctions for Stimulating Photocatalytic H2O2 Production and H2 Evolution",
+      "authors": "Preeti Prabha Sarangi; Kundan Kumar Das; Jyotirmayee Sahu; Upali Aparajita Mohanty; Dipti Prava Sahoo; Kulamani Parida",
+      "year": 2025,
+      "url": "https://doi.org/10.1021/acs.inorgchem.4c04513",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "sarangi2025-acs-inorgchem-4c04513",
+    "recipe_family": "sarangi2025-acs-inorgchem-4c04513-niv-ldh-nv-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "NiV-LDH",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "sarangi2025-acs-inorgchem-4c04513",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "layered double hydroxide",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "sarangi2025-acs-inorgchem-4c04513",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": null,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "not_reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "not reported",
+      "evidence": [],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "nanoflower",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "sarangi2025-acs-inorgchem-4c04513",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "sarangi2025-acs-inorgchem-4c04513-niv-ldh-nv-1--nicl26h2o",
+      "name": "NiCl2·6H2O",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "sarangi2025-acs-inorgchem-4c04513",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "sarangi2025-acs-inorgchem-4c04513-niv-ldh-nv-1--vcl3",
+      "name": "VCl3",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "sarangi2025-acs-inorgchem-4c04513",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "sarangi2025-acs-inorgchem-4c04513-niv-ldh-nv-1--urea",
+      "name": "urea",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "sarangi2025-acs-inorgchem-4c04513",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "sarangi2025-acs-inorgchem-4c04513-niv-ldh-nv-1--after-s01-stir",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "sarangi2025-acs-inorgchem-4c04513-niv-ldh-nv-1--nicl26h2o",
+        "sarangi2025-acs-inorgchem-4c04513-niv-ldh-nv-1--vcl3",
+        "sarangi2025-acs-inorgchem-4c04513-niv-ldh-nv-1--urea"
+      ]
+    },
+    {
+      "id": "sarangi2025-acs-inorgchem-4c04513-niv-ldh-nv-1--after-s02-reflux",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "sarangi2025-acs-inorgchem-4c04513-niv-ldh-nv-1--after-s01-stir",
+        "sarangi2025-acs-inorgchem-4c04513-niv-ldh-nv-1--nicl26h2o",
+        "sarangi2025-acs-inorgchem-4c04513-niv-ldh-nv-1--vcl3",
+        "sarangi2025-acs-inorgchem-4c04513-niv-ldh-nv-1--urea"
+      ]
+    },
+    {
+      "id": "sarangi2025-acs-inorgchem-4c04513-niv-ldh-nv-1--after-s03-wash",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "sarangi2025-acs-inorgchem-4c04513-niv-ldh-nv-1--after-s02-reflux"
+      ]
+    },
+    {
+      "id": "sarangi2025-acs-inorgchem-4c04513-niv-ldh-nv-1--after-s04-dry",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "sarangi2025-acs-inorgchem-4c04513-niv-ldh-nv-1--after-s03-wash"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-stir",
+      "action": "stir",
+      "label": "Stirring the solution containing NiCl2·6H2O, VCl3, and urea",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "sarangi2025-acs-inorgchem-4c04513-niv-ldh-nv-1--nicl26h2o",
+        "sarangi2025-acs-inorgchem-4c04513-niv-ldh-nv-1--vcl3",
+        "sarangi2025-acs-inorgchem-4c04513-niv-ldh-nv-1--urea"
+      ],
+      "outputs": [
+        "sarangi2025-acs-inorgchem-4c04513-niv-ldh-nv-1--after-s01-stir"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 15,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "15 min",
+          "evidence": [
+            {
+              "source_id": "sarangi2025-acs-inorgchem-4c04513",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Stirring the solution containing NiCl2·6H2O, VCl3, and urea",
+      "evidence": [
+        {
+          "source_id": "sarangi2025-acs-inorgchem-4c04513",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-reflux",
+      "action": "reflux",
+      "label": "Refluxing the mixture at 110 °C for 48 h",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-stir"
+      ],
+      "inputs": [
+        "sarangi2025-acs-inorgchem-4c04513-niv-ldh-nv-1--after-s01-stir",
+        "sarangi2025-acs-inorgchem-4c04513-niv-ldh-nv-1--nicl26h2o",
+        "sarangi2025-acs-inorgchem-4c04513-niv-ldh-nv-1--vcl3",
+        "sarangi2025-acs-inorgchem-4c04513-niv-ldh-nv-1--urea"
+      ],
+      "outputs": [
+        "sarangi2025-acs-inorgchem-4c04513-niv-ldh-nv-1--after-s02-reflux"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 110,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "110 °C",
+          "evidence": [
+            {
+              "source_id": "sarangi2025-acs-inorgchem-4c04513",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 48,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "48 h",
+          "evidence": [
+            {
+              "source_id": "sarangi2025-acs-inorgchem-4c04513",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Refluxing the mixture at 110 °C for 48 h",
+      "evidence": [
+        {
+          "source_id": "sarangi2025-acs-inorgchem-4c04513",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s03-wash",
+      "action": "wash",
+      "label": "Washing the sample with distilled water and ethanol",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-reflux"
+      ],
+      "inputs": [
+        "sarangi2025-acs-inorgchem-4c04513-niv-ldh-nv-1--after-s02-reflux"
+      ],
+      "outputs": [
+        "sarangi2025-acs-inorgchem-4c04513-niv-ldh-nv-1--after-s03-wash"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Washing the sample with distilled water and ethanol",
+      "evidence": [
+        {
+          "source_id": "sarangi2025-acs-inorgchem-4c04513",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s04-dry",
+      "action": "dry",
+      "label": "Drying the sample at 70 °C in a hot-air oven",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-wash"
+      ],
+      "inputs": [
+        "sarangi2025-acs-inorgchem-4c04513-niv-ldh-nv-1--after-s03-wash"
+      ],
+      "outputs": [
+        "sarangi2025-acs-inorgchem-4c04513-niv-ldh-nv-1--after-s04-dry"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 70,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "70 °C",
+          "evidence": [
+            {
+              "source_id": "sarangi2025-acs-inorgchem-4c04513",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Drying the sample at 70 °C in a hot-air oven",
+      "evidence": [
+        {
+          "source_id": "sarangi2025-acs-inorgchem-4c04513",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "sarangi2025-acs-inorgchem-4c04513-niv-ldh-nv-1--product",
+      "source_sample_label": "NiV-LDH (NV)",
+      "batch_id": null,
+      "material_state_id": "sarangi2025-acs-inorgchem-4c04513-niv-ldh-nv-1--after-s04-dry",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "NiV-LDH",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "sarangi2025-acs-inorgchem-4c04513",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "layered double hydroxide",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "sarangi2025-acs-inorgchem-4c04513",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": "nanoflower",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "sarangi2025-acs-inorgchem-4c04513",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "sarangi2025-acs-inorgchem-4c04513",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "notes": [
+        "Reaction temperature: 110 degC (Main PDF p.2).",
+        "Reaction time: 48 h (Main PDF p.2)."
+      ]
+    }
+  ],
+  "measurements": [],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Ligand not reported in the extracted text.",
+      "Size not reported in the extracted text.",
+      "Reactor not reported in the extracted text.",
+      "Atmosphere not reported in the extracted text.",
+      "Amount of NiCl2·6H2O not reported in the extracted text.",
+      "Amount of VCl3 not reported in the extracted text.",
+      "Amount of urea not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

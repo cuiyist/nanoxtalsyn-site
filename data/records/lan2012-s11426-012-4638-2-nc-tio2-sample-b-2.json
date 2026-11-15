@@ -1,0 +1,384 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "lan2012-s11426-012-4638-2-nc-tio2-sample-b-2",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Zhang Lan; JiHuai Wu; JianMing Lin; MiaoLiang Huang (2012): nc-TiO2 (sample b)",
+  "material": {
+    "formula": "TiO2",
+    "family": "TiO2 nanocrystals",
+    "elements": [
+      "Ti",
+      "O"
+    ],
+    "components": [
+      "TiO2"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Hydrothermal",
+  "sources": [
+    {
+      "id": "lan2012-s11426-012-4638-2",
+      "doi": "10.1007/s11426-012-4638-2",
+      "title": "Controllable hydrothermal synthesis of nanocrystal TiO2 particles and their use in dye-sensitized solar cells",
+      "authors": "Zhang Lan; JiHuai Wu; JianMing Lin; MiaoLiang Huang",
+      "year": 2012,
+      "url": "https://doi.org/10.1007/s11426-012-4638-2",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "lan2012-s11426-012-4638-2",
+    "recipe_family": "lan2012-s11426-012-4638-2-nc-tio2-sample-b-2",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "TiO2",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "lan2012-s11426-012-4638-2",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "anatase",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "lan2012-s11426-012-4638-2",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": null,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "not_reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "not reported",
+      "evidence": [],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "square-like",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "lan2012-s11426-012-4638-2",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "lan2012-s11426-012-4638-2-nc-tio2-sample-b-2--tetra-n-butyl-titanate",
+      "name": "tetra-n-butyl titanate",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 10,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "10 mL",
+          "evidence": [
+            {
+              "source_id": "lan2012-s11426-012-4638-2",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "lan2012-s11426-012-4638-2",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "lan2012-s11426-012-4638-2-nc-tio2-sample-b-2--after-s01-add",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "lan2012-s11426-012-4638-2-nc-tio2-sample-b-2--tetra-n-butyl-titanate"
+      ]
+    },
+    {
+      "id": "lan2012-s11426-012-4638-2-nc-tio2-sample-b-2--after-s02-add",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "lan2012-s11426-012-4638-2-nc-tio2-sample-b-2--after-s01-add"
+      ]
+    },
+    {
+      "id": "lan2012-s11426-012-4638-2-nc-tio2-sample-b-2--after-s03-autoclave",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "lan2012-s11426-012-4638-2-nc-tio2-sample-b-2--after-s02-add"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-add",
+      "action": "add",
+      "label": "Add Ti(OC4H9)4 to water",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "lan2012-s11426-012-4638-2-nc-tio2-sample-b-2--tetra-n-butyl-titanate"
+      ],
+      "outputs": [
+        "lan2012-s11426-012-4638-2-nc-tio2-sample-b-2--after-s01-add"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add Ti(OC4H9)4 to water",
+      "evidence": [
+        {
+          "source_id": "lan2012-s11426-012-4638-2",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-add",
+      "action": "add",
+      "label": "Add TEAOH solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-add"
+      ],
+      "inputs": [
+        "lan2012-s11426-012-4638-2-nc-tio2-sample-b-2--after-s01-add"
+      ],
+      "outputs": [
+        "lan2012-s11426-012-4638-2-nc-tio2-sample-b-2--after-s02-add"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add TEAOH solution",
+      "evidence": [
+        {
+          "source_id": "lan2012-s11426-012-4638-2",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s03-autoclave",
+      "action": "autoclave",
+      "label": "Autoclave at 200°C",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-add"
+      ],
+      "inputs": [
+        "lan2012-s11426-012-4638-2-nc-tio2-sample-b-2--after-s02-add"
+      ],
+      "outputs": [
+        "lan2012-s11426-012-4638-2-nc-tio2-sample-b-2--after-s03-autoclave"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 200,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "200 °C",
+          "evidence": [
+            {
+              "source_id": "lan2012-s11426-012-4638-2",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 12,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "12 h",
+          "evidence": [
+            {
+              "source_id": "lan2012-s11426-012-4638-2",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Autoclave at 200°C",
+      "evidence": [
+        {
+          "source_id": "lan2012-s11426-012-4638-2",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "lan2012-s11426-012-4638-2-nc-tio2-sample-b-2--product",
+      "source_sample_label": "nc-TiO2 (sample b)",
+      "batch_id": null,
+      "material_state_id": "lan2012-s11426-012-4638-2-nc-tio2-sample-b-2--after-s03-autoclave",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "TiO2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "lan2012-s11426-012-4638-2",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "anatase",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "lan2012-s11426-012-4638-2",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": "square-like",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "lan2012-s11426-012-4638-2",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "lan2012-s11426-012-4638-2",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "notes": [
+        "Reactor: sealed flask (Main PDF p.2).",
+        "Reaction temperature: 200 degC (Main PDF p.2).",
+        "Reaction time: 12 h (Main PDF p.2)."
+      ]
+    }
+  ],
+  "measurements": [],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Ligand not reported in the extracted text.",
+      "Size not reported in the extracted text.",
+      "Atmosphere not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

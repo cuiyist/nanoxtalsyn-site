@@ -1,0 +1,343 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "mandlik2021-s10967-021-08052-9-al2o3-c-np-10-c-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Nandkumar T. Mandlik; V. B. Varma; P. D. Sahare; V. L. Mathe; S. V. Bhoraskar; S. D. Dhole (2021): Al2O3:C-NP (10% C)",
+  "material": {
+    "formula": "Al2O3:C",
+    "family": "Al2O3:C nanocrystals",
+    "elements": [
+      "Al",
+      "O",
+      "C"
+    ],
+    "components": [
+      "Al2O3:C"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Thermal plasma",
+  "sources": [
+    {
+      "id": "mandlik2021-s10967-021-08052-9",
+      "doi": "10.1007/s10967-021-08052-9",
+      "title": "Synthesis of nanocrystalline Al2O3:C by thermal plasma reactor for radiation dosimetry applications",
+      "authors": "Nandkumar T. Mandlik; V. B. Varma; P. D. Sahare; V. L. Mathe; S. V. Bhoraskar; S. D. Dhole",
+      "year": 2021,
+      "url": "https://doi.org/10.1007/s10967-021-08052-9",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "mandlik2021-s10967-021-08052-9",
+    "recipe_family": "mandlik2021-s10967-021-08052-9-al2o3-c-np-10-c-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "Al2O3:C",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "mandlik2021-s10967-021-08052-9",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "gamma",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "mandlik2021-s10967-021-08052-9",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": 30,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "30 nm",
+      "evidence": [
+        {
+          "source_id": "mandlik2021-s10967-021-08052-9",
+          "locator": "Main PDF p.4"
+        }
+      ],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "sphere",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "mandlik2021-s10967-021-08052-9",
+          "locator": "Main PDF p.10"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "mandlik2021-s10967-021-08052-9-al2o3-c-np-10-c-1--aluminum",
+      "name": "aluminum",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "mandlik2021-s10967-021-08052-9",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "mandlik2021-s10967-021-08052-9-al2o3-c-np-10-c-1--graphite",
+      "name": "graphite",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "mandlik2021-s10967-021-08052-9",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "mandlik2021-s10967-021-08052-9-al2o3-c-np-10-c-1--after-s01-insert",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "mandlik2021-s10967-021-08052-9-al2o3-c-np-10-c-1--aluminum",
+        "mandlik2021-s10967-021-08052-9-al2o3-c-np-10-c-1--graphite"
+      ]
+    },
+    {
+      "id": "mandlik2021-s10967-021-08052-9-al2o3-c-np-10-c-1--after-s02-heat",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "mandlik2021-s10967-021-08052-9-al2o3-c-np-10-c-1--after-s01-insert"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-insert",
+      "action": "insert",
+      "label": "Insertion of graphite rod into an aluminum cylinder",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "mandlik2021-s10967-021-08052-9-al2o3-c-np-10-c-1--aluminum",
+        "mandlik2021-s10967-021-08052-9-al2o3-c-np-10-c-1--graphite"
+      ],
+      "outputs": [
+        "mandlik2021-s10967-021-08052-9-al2o3-c-np-10-c-1--after-s01-insert"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Insertion of graphite rod into an aluminum cylinder",
+      "evidence": [
+        {
+          "source_id": "mandlik2021-s10967-021-08052-9",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-heat",
+      "action": "heat",
+      "label": "Heating in thermal plasma reactor",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-insert"
+      ],
+      "inputs": [
+        "mandlik2021-s10967-021-08052-9-al2o3-c-np-10-c-1--after-s01-insert"
+      ],
+      "outputs": [
+        "mandlik2021-s10967-021-08052-9-al2o3-c-np-10-c-1--after-s02-heat"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heating in thermal plasma reactor",
+      "evidence": [
+        {
+          "source_id": "mandlik2021-s10967-021-08052-9",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "mandlik2021-s10967-021-08052-9-al2o3-c-np-10-c-1--product",
+      "source_sample_label": "Al2O3:C-NP (10% C)",
+      "batch_id": null,
+      "material_state_id": "mandlik2021-s10967-021-08052-9-al2o3-c-np-10-c-1--after-s02-heat",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "Al2O3:C",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "mandlik2021-s10967-021-08052-9",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "gamma",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "mandlik2021-s10967-021-08052-9",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": "sphere",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "mandlik2021-s10967-021-08052-9",
+            "locator": "Main PDF p.10"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "mandlik2021-s10967-021-08052-9",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "notes": [
+        "Reactor: Transferred Arc Thermal Plasma Reactor (Main PDF p.2)."
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "id": "mandlik2021-s10967-021-08052-9-al2o3-c-np-10-c-1--size",
+      "sample_id": "mandlik2021-s10967-021-08052-9-al2o3-c-np-10-c-1--product",
+      "property": "crystallite_size",
+      "technique": "XRD",
+      "value": {
+        "value": 30,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "30 nm",
+        "evidence": [
+          {
+            "source_id": "mandlik2021-s10967-021-08052-9",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "mandlik2021-s10967-021-08052-9",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    }
+  ],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Ligand not reported in the extracted text.",
+      "Atmosphere not reported in the extracted text.",
+      "Reaction temperature not reported in the extracted text.",
+      "Reaction time not reported in the extracted text.",
+      "Amount of aluminum not reported in the extracted text.",
+      "Amount of graphite not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}
