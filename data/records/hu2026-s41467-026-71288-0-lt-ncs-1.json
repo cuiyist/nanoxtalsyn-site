@@ -1,0 +1,273 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "hu2026-s41467-026-71288-0-lt-ncs-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Xudong Hu; Zhicheng Wang; Simil Thomas; Issatay Nadinov; Qiuting Cai; Xingliang Dai; Zhigao Huang; Yue Wang; Jialong Gong; Ye Wu; Renqian Zhou; Yuanfan Wen; Jian-Xin Wang; Haibo Zeng; Osman M. Bakr; Husam N. Alshareef; Xiaoming Li; Omar F. Mohammed (2026): LT-NCs",
+  "material": {
+    "formula": "CsPbBr3",
+    "family": "CsPbBr3 nanocrystals",
+    "elements": [
+      "Cs",
+      "Pb",
+      "Br"
+    ],
+    "components": [
+      "CsPbBr3"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Low-temperature polar-solvent",
+  "sources": [
+    {
+      "id": "hu2026-s41467-026-71288-0",
+      "doi": "10.1038/s41467-026-71288-0",
+      "title": "Polar solvent strategy enables scalable synthesis of perovskite nanocrystal scintillators for fast X-ray imaging",
+      "authors": "Xudong Hu; Zhicheng Wang; Simil Thomas; Issatay Nadinov; Qiuting Cai; Xingliang Dai; Zhigao Huang; Yue Wang; Jialong Gong; Ye Wu; Renqian Zhou; Yuanfan Wen; Jian-Xin Wang; Haibo Zeng; Osman M. Bakr; Husam N. Alshareef; Xiaoming Li; Omar F. Mohammed",
+      "year": 2026,
+      "url": "https://doi.org/10.1038/s41467-026-71288-0",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "hu2026-s41467-026-71288-0",
+    "recipe_family": "hu2026-s41467-026-71288-0-lt-ncs-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "CsPbBr3",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "hu2026-s41467-026-71288-0",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "perovskite",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "hu2026-s41467-026-71288-0",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": null,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "not_reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "not reported",
+      "evidence": [],
+      "derivation": null
+    },
+    "morphology": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    }
+  },
+  "materials": [],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "hu2026-s41467-026-71288-0-lt-ncs-1--after-s01-add",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": []
+    },
+    {
+      "id": "hu2026-s41467-026-71288-0-lt-ncs-1--after-s02-redisperse",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "hu2026-s41467-026-71288-0-lt-ncs-1--after-s01-add"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-add",
+      "action": "add",
+      "label": "Add solution B to solution A for reaction",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [],
+      "outputs": [
+        "hu2026-s41467-026-71288-0-lt-ncs-1--after-s01-add"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 10,
+          "minimum": null,
+          "maximum": null,
+          "unit": "s",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "10 s",
+          "evidence": [
+            {
+              "source_id": "hu2026-s41467-026-71288-0",
+              "locator": "Main PDF p.8"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add solution B to solution A for reaction",
+      "evidence": [
+        {
+          "source_id": "hu2026-s41467-026-71288-0",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    },
+    {
+      "id": "s02-redisperse",
+      "action": "redisperse",
+      "label": "Redisperse precipitate in TOL or HEX",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-add"
+      ],
+      "inputs": [
+        "hu2026-s41467-026-71288-0-lt-ncs-1--after-s01-add"
+      ],
+      "outputs": [
+        "hu2026-s41467-026-71288-0-lt-ncs-1--after-s02-redisperse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Redisperse precipitate in TOL or HEX",
+      "evidence": [
+        {
+          "source_id": "hu2026-s41467-026-71288-0",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "hu2026-s41467-026-71288-0-lt-ncs-1--product",
+      "source_sample_label": "LT-NCs",
+      "batch_id": null,
+      "material_state_id": "hu2026-s41467-026-71288-0-lt-ncs-1--after-s02-redisperse",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "CsPbBr3",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "hu2026-s41467-026-71288-0",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "perovskite",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "hu2026-s41467-026-71288-0",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "surface": {
+        "value": "protonated oleylamine",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "hu2026-s41467-026-71288-0",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "hu2026-s41467-026-71288-0",
+          "locator": "Main PDF p.7"
+        }
+      ],
+      "notes": [
+        "Reaction temperature: 0 degC (Main PDF p.7).",
+        "Reaction time: 10 s (Main PDF p.8)."
+      ]
+    }
+  ],
+  "measurements": [],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Shape not reported in the extracted text.",
+      "Size not reported in the extracted text.",
+      "Reactor not reported in the extracted text.",
+      "Atmosphere not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

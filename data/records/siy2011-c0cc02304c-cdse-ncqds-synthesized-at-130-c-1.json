@@ -1,0 +1,322 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "siy2011-c0cc02304c-cdse-ncqds-synthesized-at-130-c-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Jacqueline T. Siy; Eric M. Brauser; Michael H. Bartl (2011): CdSe NCQDs synthesized at 130 °C",
+  "material": {
+    "formula": "CdSe",
+    "family": "CdSe nanocrystals",
+    "elements": [
+      "Cd",
+      "Se"
+    ],
+    "components": [
+      "CdSe"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Hot injection",
+  "sources": [
+    {
+      "id": "siy2011-c0cc02304c",
+      "doi": "10.1039/c0cc02304c",
+      "title": "Low-temperature synthesis of CdSe nanocrystal quantum dots",
+      "authors": "Jacqueline T. Siy; Eric M. Brauser; Michael H. Bartl",
+      "year": 2011,
+      "url": "https://doi.org/10.1039/c0cc02304c",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "siy2011-c0cc02304c",
+    "recipe_family": "siy2011-c0cc02304c-cdse-ncqds-synthesized-at-130-c-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "CdSe",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "siy2011-c0cc02304c",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "wurtzite",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "siy2011-c0cc02304c",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": 2.3,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "2.3 nm",
+      "evidence": [
+        {
+          "source_id": "siy2011-c0cc02304c",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "sphere",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "siy2011-c0cc02304c",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "siy2011-c0cc02304c-cdse-ncqds-synthesized-at-130-c-1--cadmium-precursor",
+      "name": "cadmium precursor",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "siy2011-c0cc02304c",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "siy2011-c0cc02304c-cdse-ncqds-synthesized-at-130-c-1--selenium-precursor",
+      "name": "selenium precursor",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "siy2011-c0cc02304c",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "siy2011-c0cc02304c-cdse-ncqds-synthesized-at-130-c-1--octadecylamine",
+      "name": "octadecylamine",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "siy2011-c0cc02304c",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "siy2011-c0cc02304c-cdse-ncqds-synthesized-at-130-c-1--after-s01-inject",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "siy2011-c0cc02304c-cdse-ncqds-synthesized-at-130-c-1--cadmium-precursor",
+        "siy2011-c0cc02304c-cdse-ncqds-synthesized-at-130-c-1--selenium-precursor",
+        "siy2011-c0cc02304c-cdse-ncqds-synthesized-at-130-c-1--octadecylamine"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-inject",
+      "action": "inject",
+      "label": "Simultaneous injection of cadmium and selenium precursors into a reaction flask containing a secondary ligand",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "siy2011-c0cc02304c-cdse-ncqds-synthesized-at-130-c-1--cadmium-precursor",
+        "siy2011-c0cc02304c-cdse-ncqds-synthesized-at-130-c-1--selenium-precursor",
+        "siy2011-c0cc02304c-cdse-ncqds-synthesized-at-130-c-1--octadecylamine"
+      ],
+      "outputs": [
+        "siy2011-c0cc02304c-cdse-ncqds-synthesized-at-130-c-1--after-s01-inject"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Simultaneous injection of cadmium and selenium precursors into a reaction flask containing a secondary ligand",
+      "evidence": [
+        {
+          "source_id": "siy2011-c0cc02304c",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "siy2011-c0cc02304c-cdse-ncqds-synthesized-at-130-c-1--product",
+      "source_sample_label": "CdSe NCQDs synthesized at 130 °C",
+      "batch_id": null,
+      "material_state_id": "siy2011-c0cc02304c-cdse-ncqds-synthesized-at-130-c-1--after-s01-inject",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "CdSe",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "siy2011-c0cc02304c",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "wurtzite",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "siy2011-c0cc02304c",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": "sphere",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "siy2011-c0cc02304c",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": "octadecylamine",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "siy2011-c0cc02304c",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "siy2011-c0cc02304c",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "notes": [
+        "Reactor: separate reaction flask (Main PDF p.1).",
+        "Reaction time: 10 min (Main PDF p.3)."
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "id": "siy2011-c0cc02304c-cdse-ncqds-synthesized-at-130-c-1--size",
+      "sample_id": "siy2011-c0cc02304c-cdse-ncqds-synthesized-at-130-c-1--product",
+      "property": "particle_size",
+      "technique": "not reported",
+      "value": {
+        "value": 2.3,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "2.3 nm",
+        "evidence": [
+          {
+            "source_id": "siy2011-c0cc02304c",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "siy2011-c0cc02304c",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Atmosphere not reported in the extracted text.",
+      "Reaction temperature not reported in the extracted text.",
+      "Amount of cadmium precursor not reported in the extracted text.",
+      "Amount of selenium precursor not reported in the extracted text.",
+      "Amount of octadecylamine not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

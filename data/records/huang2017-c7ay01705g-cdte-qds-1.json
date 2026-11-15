@@ -1,0 +1,523 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "huang2017-c7ay01705g-cdte-qds-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Ke Huang; Rui Dai; Wenqing Deng; Ling Lin; Ai Zhang; Xin Yuan (2017): CdTe QDs",
+  "material": {
+    "formula": "CdTe",
+    "family": "CdTe nanocrystals",
+    "elements": [
+      "Cd",
+      "Te"
+    ],
+    "components": [
+      "CdTe"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Hydride generation",
+  "sources": [
+    {
+      "id": "huang2017-c7ay01705g",
+      "doi": "10.1039/c7ay01705g",
+      "title": "Aqueous synthesis of CdTe quantum dots by hydride generation for visual detection of silver on quantum dot immobilized paper",
+      "authors": "Ke Huang; Rui Dai; Wenqing Deng; Ling Lin; Ai Zhang; Xin Yuan",
+      "year": 2017,
+      "url": "https://doi.org/10.1039/c7ay01705g",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "huang2017-c7ay01705g",
+    "recipe_family": "huang2017-c7ay01705g-cdte-qds-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "CdTe",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "huang2017-c7ay01705g",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    },
+    "size": {
+      "value": null,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "not_reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "not reported",
+      "evidence": [],
+      "derivation": null
+    },
+    "morphology": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "huang2017-c7ay01705g-cdte-qds-1--cd-no3-24h2o",
+      "name": "Cd(NO3)2·4H2O",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "5 mmol",
+          "evidence": [
+            {
+              "source_id": "huang2017-c7ay01705g",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "huang2017-c7ay01705g",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "huang2017-c7ay01705g-cdte-qds-1--na3c6h5o72h2o",
+      "name": "Na3C6H5O7·2H2O",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "mass": {
+          "value": 0.2,
+          "minimum": null,
+          "maximum": null,
+          "unit": "g",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.2 g",
+          "evidence": [
+            {
+              "source_id": "huang2017-c7ay01705g",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "huang2017-c7ay01705g",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "huang2017-c7ay01705g-cdte-qds-1--after-s01-dissolve",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "huang2017-c7ay01705g-cdte-qds-1--cd-no3-24h2o",
+        "huang2017-c7ay01705g-cdte-qds-1--na3c6h5o72h2o"
+      ]
+    },
+    {
+      "id": "huang2017-c7ay01705g-cdte-qds-1--after-s02-adjust-ph",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "huang2017-c7ay01705g-cdte-qds-1--after-s01-dissolve"
+      ]
+    },
+    {
+      "id": "huang2017-c7ay01705g-cdte-qds-1--after-s03-degas",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "huang2017-c7ay01705g-cdte-qds-1--after-s02-adjust-ph"
+      ]
+    },
+    {
+      "id": "huang2017-c7ay01705g-cdte-qds-1--after-s04-heat",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "huang2017-c7ay01705g-cdte-qds-1--after-s03-degas"
+      ]
+    },
+    {
+      "id": "huang2017-c7ay01705g-cdte-qds-1--after-s05-transport-h2te",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "huang2017-c7ay01705g-cdte-qds-1--after-s04-heat"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-dissolve",
+      "action": "dissolve",
+      "label": "Dissolve Cd(NO3)2·4H2O, Na3C6H5O7·2H2O, and TLA in water",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "huang2017-c7ay01705g-cdte-qds-1--cd-no3-24h2o",
+        "huang2017-c7ay01705g-cdte-qds-1--na3c6h5o72h2o"
+      ],
+      "outputs": [
+        "huang2017-c7ay01705g-cdte-qds-1--after-s01-dissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "huang2017-c7ay01705g",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dissolve Cd(NO3)2·4H2O, Na3C6H5O7·2H2O, and TLA in water",
+      "evidence": [
+        {
+          "source_id": "huang2017-c7ay01705g",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-adjust-ph",
+      "action": "adjust ph",
+      "label": "Adjust pH to 10 with NaOH",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-dissolve"
+      ],
+      "inputs": [
+        "huang2017-c7ay01705g-cdte-qds-1--after-s01-dissolve"
+      ],
+      "outputs": [
+        "huang2017-c7ay01705g-cdte-qds-1--after-s02-adjust-ph"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "huang2017-c7ay01705g",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Adjust pH to 10 with NaOH",
+      "evidence": [
+        {
+          "source_id": "huang2017-c7ay01705g",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s03-degas",
+      "action": "degas",
+      "label": "Degas solution with N2",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-adjust-ph"
+      ],
+      "inputs": [
+        "huang2017-c7ay01705g-cdte-qds-1--after-s02-adjust-ph"
+      ],
+      "outputs": [
+        "huang2017-c7ay01705g-cdte-qds-1--after-s03-degas"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 30,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "30 min",
+          "evidence": [
+            {
+              "source_id": "huang2017-c7ay01705g",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "huang2017-c7ay01705g",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Degas solution with N2",
+      "evidence": [
+        {
+          "source_id": "huang2017-c7ay01705g",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s04-heat",
+      "action": "heat",
+      "label": "Heat solution to 100°C with magnetic stirring",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-degas"
+      ],
+      "inputs": [
+        "huang2017-c7ay01705g-cdte-qds-1--after-s03-degas"
+      ],
+      "outputs": [
+        "huang2017-c7ay01705g-cdte-qds-1--after-s04-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 100,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "100 °C",
+          "evidence": [
+            {
+              "source_id": "huang2017-c7ay01705g",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "huang2017-c7ay01705g",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heat solution to 100°C with magnetic stirring",
+      "evidence": [
+        {
+          "source_id": "huang2017-c7ay01705g",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s05-transport-h2te",
+      "action": "transport h2te",
+      "label": "Transport H2Te gas to Cd2+ solution with Ar",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-heat"
+      ],
+      "inputs": [
+        "huang2017-c7ay01705g-cdte-qds-1--after-s04-heat"
+      ],
+      "outputs": [
+        "huang2017-c7ay01705g-cdte-qds-1--after-s05-transport-h2te"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "huang2017-c7ay01705g",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Transport H2Te gas to Cd2+ solution with Ar",
+      "evidence": [
+        {
+          "source_id": "huang2017-c7ay01705g",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "huang2017-c7ay01705g-cdte-qds-1--product",
+      "source_sample_label": "CdTe QDs",
+      "batch_id": null,
+      "material_state_id": "huang2017-c7ay01705g-cdte-qds-1--after-s05-transport-h2te",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "CdTe",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "huang2017-c7ay01705g",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "morphology": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "surface": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "huang2017-c7ay01705g",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "notes": [
+        "Reactor: quartz gas–liquid separator (Main PDF p.2).",
+        "Reaction temperature: 100 degC (Main PDF p.2)."
+      ]
+    }
+  ],
+  "measurements": [],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Phase not reported in the extracted text.",
+      "Shape not reported in the extracted text.",
+      "Ligand not reported in the extracted text.",
+      "Size not reported in the extracted text.",
+      "Reaction time not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

@@ -1,0 +1,418 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "smilgies2018-c8nr04606a-ausingle-ncs-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Detlef-M. Smilgies; Ruipeng Li; Marie Paule Pileni (2018): Ausingle NCs",
+  "material": {
+    "formula": "Au",
+    "family": "Au nanocrystals",
+    "elements": [
+      "Au"
+    ],
+    "components": [
+      "Au"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Synthesis as described in the source",
+  "sources": [
+    {
+      "id": "smilgies2018-c8nr04606a",
+      "doi": "10.1039/c8nr04606a",
+      "title": "Au nanocrystal superlattices: nanocrystallinity, vicinal surfaces, and growth processes",
+      "authors": "Detlef-M. Smilgies; Ruipeng Li; Marie Paule Pileni",
+      "year": 2018,
+      "url": "https://doi.org/10.1039/c8nr04606a",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "smilgies2018-c8nr04606a",
+    "recipe_family": "smilgies2018-c8nr04606a-ausingle-ncs-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "Au",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "smilgies2018-c8nr04606a",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "single crystal",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "smilgies2018-c8nr04606a",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": 5.4,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "5.4 nm",
+      "evidence": [
+        {
+          "source_id": "smilgies2018-c8nr04606a",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "truncated octahedron",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "smilgies2018-c8nr04606a",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "smilgies2018-c8nr04606a-ausingle-ncs-1--chlorotriphenylphosphine-au-i",
+      "name": "chlorotriphenylphosphine Au(I)",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "mass": {
+          "value": 124,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mg",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "124 mg",
+          "evidence": [
+            {
+              "source_id": "smilgies2018-c8nr04606a",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "smilgies2018-c8nr04606a",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "smilgies2018-c8nr04606a-ausingle-ncs-1--dodecanethiol",
+      "name": "dodecanethiol",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "smilgies2018-c8nr04606a",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "smilgies2018-c8nr04606a-ausingle-ncs-1--tert-butylamine-borane-complex",
+      "name": "tert-butylamine borane complex",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "mass": {
+          "value": 330,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mg",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "330 mg",
+          "evidence": [
+            {
+              "source_id": "smilgies2018-c8nr04606a",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "smilgies2018-c8nr04606a",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "smilgies2018-c8nr04606a-ausingle-ncs-1--after-s01-mix",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "smilgies2018-c8nr04606a-ausingle-ncs-1--tert-butylamine-borane-complex"
+      ]
+    },
+    {
+      "id": "smilgies2018-c8nr04606a-ausingle-ncs-1--after-s02-wash",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "smilgies2018-c8nr04606a-ausingle-ncs-1--after-s01-mix"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-mix",
+      "action": "mix",
+      "label": "Mix the reducing solution with the Au solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "smilgies2018-c8nr04606a-ausingle-ncs-1--tert-butylamine-borane-complex"
+      ],
+      "outputs": [
+        "smilgies2018-c8nr04606a-ausingle-ncs-1--after-s01-mix"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "5 min",
+          "evidence": [
+            {
+              "source_id": "smilgies2018-c8nr04606a",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Mix the reducing solution with the Au solution",
+      "evidence": [
+        {
+          "source_id": "smilgies2018-c8nr04606a",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-wash",
+      "action": "wash",
+      "label": "Wash the resulting Au NCs with ethanol",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-mix"
+      ],
+      "inputs": [
+        "smilgies2018-c8nr04606a-ausingle-ncs-1--after-s01-mix"
+      ],
+      "outputs": [
+        "smilgies2018-c8nr04606a-ausingle-ncs-1--after-s02-wash"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Wash the resulting Au NCs with ethanol",
+      "evidence": [
+        {
+          "source_id": "smilgies2018-c8nr04606a",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "smilgies2018-c8nr04606a-ausingle-ncs-1--product",
+      "source_sample_label": "Ausingle NCs",
+      "batch_id": null,
+      "material_state_id": "smilgies2018-c8nr04606a-ausingle-ncs-1--after-s02-wash",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "Au",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "smilgies2018-c8nr04606a",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "single crystal",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "smilgies2018-c8nr04606a",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": "truncated octahedron",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "smilgies2018-c8nr04606a",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": "dodecanethiol",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "smilgies2018-c8nr04606a",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "smilgies2018-c8nr04606a",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "notes": [
+        "Reaction temperature: 100 degC (Main PDF p.2).",
+        "Reaction time: 5 min (Main PDF p.2)."
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "id": "smilgies2018-c8nr04606a-ausingle-ncs-1--size",
+      "sample_id": "smilgies2018-c8nr04606a-ausingle-ncs-1--product",
+      "property": "diameter",
+      "technique": "TEM",
+      "value": {
+        "value": 5.4,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "5.4 nm",
+        "evidence": [
+          {
+            "source_id": "smilgies2018-c8nr04606a",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "smilgies2018-c8nr04606a",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Reactor not reported in the extracted text.",
+      "Atmosphere not reported in the extracted text.",
+      "Amount of dodecanethiol not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

@@ -1,0 +1,754 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "baumgardner2012-c2nr31054f-pbse-nanocubes-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "William J. Baumgardner; Zewei Quan; Jiye Fang; Tobias Hanrath (2012): PbSe nanocubes",
+  "material": {
+    "formula": "PbSe",
+    "family": "PbSe nanocrystals",
+    "elements": [
+      "Pb",
+      "Se"
+    ],
+    "components": [
+      "PbSe"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Hot injection",
+  "sources": [
+    {
+      "id": "baumgardner2012-c2nr31054f",
+      "doi": "10.1039/c2nr31054f",
+      "title": "Timing matters: the underappreciated role of temperature ramp rate for shape control and reproducibility of quantum dot synthesis",
+      "authors": "William J. Baumgardner; Zewei Quan; Jiye Fang; Tobias Hanrath",
+      "year": 2012,
+      "url": "https://doi.org/10.1039/c2nr31054f",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "baumgardner2012-c2nr31054f",
+    "recipe_family": "baumgardner2012-c2nr31054f-pbse-nanocubes-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "PbSe",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "baumgardner2012-c2nr31054f",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "rock salt",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "baumgardner2012-c2nr31054f",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": 11.1,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "11.1 nm",
+      "evidence": [
+        {
+          "source_id": "baumgardner2012-c2nr31054f",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "cube",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "baumgardner2012-c2nr31054f",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "baumgardner2012-c2nr31054f-pbse-nanocubes-1--pbo",
+      "name": "PbO",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 6,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "6 mmol",
+          "evidence": [
+            {
+              "source_id": "baumgardner2012-c2nr31054f",
+              "locator": "Main PDF p.1"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "baumgardner2012-c2nr31054f",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "baumgardner2012-c2nr31054f-pbse-nanocubes-1--oleic-acid",
+      "name": "oleic acid",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 12,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "12 mL",
+          "evidence": [
+            {
+              "source_id": "baumgardner2012-c2nr31054f",
+              "locator": "Main PDF p.1"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "baumgardner2012-c2nr31054f",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "baumgardner2012-c2nr31054f-pbse-nanocubes-1--diphenyl-ether-dpe",
+      "name": "diphenyl ether (DPE)",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "baumgardner2012-c2nr31054f",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "baumgardner2012-c2nr31054f-pbse-nanocubes-1--trioctylphosphine-selenide-top-se",
+      "name": "trioctylphosphine : selenide (TOP : Se)",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 3,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "3 mL",
+          "evidence": [
+            {
+              "source_id": "baumgardner2012-c2nr31054f",
+              "locator": "Main PDF p.1"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "baumgardner2012-c2nr31054f",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "baumgardner2012-c2nr31054f-pbse-nanocubes-1--after-s01-dissolve",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "baumgardner2012-c2nr31054f-pbse-nanocubes-1--pbo",
+        "baumgardner2012-c2nr31054f-pbse-nanocubes-1--oleic-acid",
+        "baumgardner2012-c2nr31054f-pbse-nanocubes-1--diphenyl-ether-dpe"
+      ]
+    },
+    {
+      "id": "baumgardner2012-c2nr31054f-pbse-nanocubes-1--after-s02-heat",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "baumgardner2012-c2nr31054f-pbse-nanocubes-1--after-s01-dissolve",
+        "baumgardner2012-c2nr31054f-pbse-nanocubes-1--trioctylphosphine-selenide-top-se",
+        "baumgardner2012-c2nr31054f-pbse-nanocubes-1--diphenyl-ether-dpe"
+      ]
+    },
+    {
+      "id": "baumgardner2012-c2nr31054f-pbse-nanocubes-1--after-s03-inject",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "baumgardner2012-c2nr31054f-pbse-nanocubes-1--after-s02-heat",
+        "baumgardner2012-c2nr31054f-pbse-nanocubes-1--diphenyl-ether-dpe"
+      ]
+    },
+    {
+      "id": "baumgardner2012-c2nr31054f-pbse-nanocubes-1--after-s04-heat",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "baumgardner2012-c2nr31054f-pbse-nanocubes-1--after-s03-inject"
+      ]
+    },
+    {
+      "id": "baumgardner2012-c2nr31054f-pbse-nanocubes-1--after-s05-quench",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "baumgardner2012-c2nr31054f-pbse-nanocubes-1--after-s04-heat"
+      ]
+    },
+    {
+      "id": "baumgardner2012-c2nr31054f-pbse-nanocubes-1--after-s06-clean",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "baumgardner2012-c2nr31054f-pbse-nanocubes-1--after-s05-quench"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-dissolve",
+      "action": "dissolve",
+      "label": "Dissolve PbO in DPE and oleic acid",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "baumgardner2012-c2nr31054f-pbse-nanocubes-1--pbo",
+        "baumgardner2012-c2nr31054f-pbse-nanocubes-1--oleic-acid",
+        "baumgardner2012-c2nr31054f-pbse-nanocubes-1--diphenyl-ether-dpe"
+      ],
+      "outputs": [
+        "baumgardner2012-c2nr31054f-pbse-nanocubes-1--after-s01-dissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "baumgardner2012-c2nr31054f",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dissolve PbO in DPE and oleic acid",
+      "evidence": [
+        {
+          "source_id": "baumgardner2012-c2nr31054f",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "s02-heat",
+      "action": "heat",
+      "label": "Heat DPE and TOP : Se",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-dissolve"
+      ],
+      "inputs": [
+        "baumgardner2012-c2nr31054f-pbse-nanocubes-1--after-s01-dissolve",
+        "baumgardner2012-c2nr31054f-pbse-nanocubes-1--trioctylphosphine-selenide-top-se",
+        "baumgardner2012-c2nr31054f-pbse-nanocubes-1--diphenyl-ether-dpe"
+      ],
+      "outputs": [
+        "baumgardner2012-c2nr31054f-pbse-nanocubes-1--after-s02-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 200,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "200 °C",
+          "evidence": [
+            {
+              "source_id": "baumgardner2012-c2nr31054f",
+              "locator": "Main PDF p.1"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 hour",
+          "evidence": [
+            {
+              "source_id": "baumgardner2012-c2nr31054f",
+              "locator": "Main PDF p.1"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "baumgardner2012-c2nr31054f",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heat DPE and TOP : Se",
+      "evidence": [
+        {
+          "source_id": "baumgardner2012-c2nr31054f",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "s03-inject",
+      "action": "inject",
+      "label": "Inject lead oleate and DPE into reaction mixture",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-heat"
+      ],
+      "inputs": [
+        "baumgardner2012-c2nr31054f-pbse-nanocubes-1--after-s02-heat",
+        "baumgardner2012-c2nr31054f-pbse-nanocubes-1--diphenyl-ether-dpe"
+      ],
+      "outputs": [
+        "baumgardner2012-c2nr31054f-pbse-nanocubes-1--after-s03-inject"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 140,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "140 °C",
+          "evidence": [
+            {
+              "source_id": "baumgardner2012-c2nr31054f",
+              "locator": "Main PDF p.1"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "baumgardner2012-c2nr31054f",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Inject lead oleate and DPE into reaction mixture",
+      "evidence": [
+        {
+          "source_id": "baumgardner2012-c2nr31054f",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "s04-heat",
+      "action": "heat",
+      "label": "Heat back to 200 ˚C at varying rates",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-inject"
+      ],
+      "inputs": [
+        "baumgardner2012-c2nr31054f-pbse-nanocubes-1--after-s03-inject"
+      ],
+      "outputs": [
+        "baumgardner2012-c2nr31054f-pbse-nanocubes-1--after-s04-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 200,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "200 °C",
+          "evidence": [
+            {
+              "source_id": "baumgardner2012-c2nr31054f",
+              "locator": "Main PDF p.1"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 6,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "6 minutes",
+          "evidence": [
+            {
+              "source_id": "baumgardner2012-c2nr31054f",
+              "locator": "Main PDF p.1"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "baumgardner2012-c2nr31054f",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heat back to 200 ˚C at varying rates",
+      "evidence": [
+        {
+          "source_id": "baumgardner2012-c2nr31054f",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "s05-quench",
+      "action": "quench",
+      "label": "Quench the reaction",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-heat"
+      ],
+      "inputs": [
+        "baumgardner2012-c2nr31054f-pbse-nanocubes-1--after-s04-heat"
+      ],
+      "outputs": [
+        "baumgardner2012-c2nr31054f-pbse-nanocubes-1--after-s05-quench"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "baumgardner2012-c2nr31054f",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Quench the reaction",
+      "evidence": [
+        {
+          "source_id": "baumgardner2012-c2nr31054f",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "s06-clean",
+      "action": "clean",
+      "label": "Clean NCs using hexane and ethanol",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s05-quench"
+      ],
+      "inputs": [
+        "baumgardner2012-c2nr31054f-pbse-nanocubes-1--after-s05-quench"
+      ],
+      "outputs": [
+        "baumgardner2012-c2nr31054f-pbse-nanocubes-1--after-s06-clean"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "baumgardner2012-c2nr31054f",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Clean NCs using hexane and ethanol",
+      "evidence": [
+        {
+          "source_id": "baumgardner2012-c2nr31054f",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "baumgardner2012-c2nr31054f-pbse-nanocubes-1--product",
+      "source_sample_label": "PbSe nanocubes",
+      "batch_id": null,
+      "material_state_id": "baumgardner2012-c2nr31054f-pbse-nanocubes-1--after-s06-clean",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "PbSe",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "baumgardner2012-c2nr31054f",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "rock salt",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "baumgardner2012-c2nr31054f",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": "cube",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "baumgardner2012-c2nr31054f",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": "oleic acid",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "baumgardner2012-c2nr31054f",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "baumgardner2012-c2nr31054f",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "notes": [
+        "Reaction temperature: 200 degC (Main PDF p.1).",
+        "Reaction time: 6 min (Main PDF p.1)."
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "id": "baumgardner2012-c2nr31054f-pbse-nanocubes-1--size",
+      "sample_id": "baumgardner2012-c2nr31054f-pbse-nanocubes-1--product",
+      "property": "diameter",
+      "technique": "TEM",
+      "value": {
+        "value": 11.1,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "11.1 nm",
+        "evidence": [
+          {
+            "source_id": "baumgardner2012-c2nr31054f",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "baumgardner2012-c2nr31054f",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Reactor not reported in the extracted text.",
+      "Amount of diphenyl ether (DPE) not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

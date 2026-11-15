@@ -1,0 +1,271 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "mashiach2021-s41467-020-20512-6-aep-caf2-ncs-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Reut Mashiach; Haim Weissman; Liat Avram; Lothar Houben; Olga Brontvein; Anna Lavie; Vaishali Arunachalam; Michal Leskes; Boris Rybtchinski; Amnon Bar-Shir (2021): AEP-CaF2 NCs",
+  "material": {
+    "formula": "CaF2",
+    "family": "CaF2 nanocrystals",
+    "elements": [
+      "Ca",
+      "F"
+    ],
+    "components": [
+      "CaF2"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Synthesis as described in the source",
+  "sources": [
+    {
+      "id": "mashiach2021-s41467-020-20512-6",
+      "doi": "10.1038/s41467-020-20512-6",
+      "title": "In situ NMR reveals real-time nanocrystal growth evolution via monomer-attachment or particle-coalescence",
+      "authors": "Reut Mashiach; Haim Weissman; Liat Avram; Lothar Houben; Olga Brontvein; Anna Lavie; Vaishali Arunachalam; Michal Leskes; Boris Rybtchinski; Amnon Bar-Shir",
+      "year": 2021,
+      "url": "https://doi.org/10.1038/s41467-020-20512-6",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "mashiach2021-s41467-020-20512-6",
+    "recipe_family": "mashiach2021-s41467-020-20512-6-aep-caf2-ncs-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "CaF2",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "mashiach2021-s41467-020-20512-6",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    },
+    "size": {
+      "value": null,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "not_reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "not reported",
+      "evidence": [],
+      "derivation": null
+    },
+    "morphology": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "mashiach2021-s41467-020-20512-6-aep-caf2-ncs-1--ca2-cations",
+      "name": "Ca2+ cations",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "mashiach2021-s41467-020-20512-6",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "mashiach2021-s41467-020-20512-6-aep-caf2-ncs-1--f-anions",
+      "name": "F- anions",
+      "formula": null,
+      "role": "nonmetal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "mashiach2021-s41467-020-20512-6",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "mashiach2021-s41467-020-20512-6-aep-caf2-ncs-1--2-aminoethyl-phosphate-aep",
+      "name": "2-aminoethyl phosphate (AEP)",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "mashiach2021-s41467-020-20512-6",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "mashiach2021-s41467-020-20512-6-aep-caf2-ncs-1--after-s01-add",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "mashiach2021-s41467-020-20512-6-aep-caf2-ncs-1--ca2-cations",
+        "mashiach2021-s41467-020-20512-6-aep-caf2-ncs-1--f-anions",
+        "mashiach2021-s41467-020-20512-6-aep-caf2-ncs-1--2-aminoethyl-phosphate-aep"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-add",
+      "action": "add",
+      "label": "Adding Ca2+ cations to an aqueous solution of F- anions and AEP ligands",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "mashiach2021-s41467-020-20512-6-aep-caf2-ncs-1--ca2-cations",
+        "mashiach2021-s41467-020-20512-6-aep-caf2-ncs-1--f-anions",
+        "mashiach2021-s41467-020-20512-6-aep-caf2-ncs-1--2-aminoethyl-phosphate-aep"
+      ],
+      "outputs": [
+        "mashiach2021-s41467-020-20512-6-aep-caf2-ncs-1--after-s01-add"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "ambient",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "mashiach2021-s41467-020-20512-6",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Adding Ca2+ cations to an aqueous solution of F- anions and AEP ligands",
+      "evidence": [
+        {
+          "source_id": "mashiach2021-s41467-020-20512-6",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "mashiach2021-s41467-020-20512-6-aep-caf2-ncs-1--product",
+      "source_sample_label": "AEP-CaF2 NCs",
+      "batch_id": null,
+      "material_state_id": "mashiach2021-s41467-020-20512-6-aep-caf2-ncs-1--after-s01-add",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "CaF2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "mashiach2021-s41467-020-20512-6",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "morphology": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "surface": {
+        "value": "2-aminoethyl phosphate (AEP)",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "mashiach2021-s41467-020-20512-6",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "mashiach2021-s41467-020-20512-6",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "notes": [
+        "Reactor: NMR tube (Main PDF p.3)."
+      ]
+    }
+  ],
+  "measurements": [],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Phase not reported in the extracted text.",
+      "Shape not reported in the extracted text.",
+      "Size not reported in the extracted text.",
+      "Reaction temperature not reported in the extracted text.",
+      "Reaction time not reported in the extracted text.",
+      "Amount of Ca2+ cations not reported in the extracted text.",
+      "Amount of F- anions not reported in the extracted text.",
+      "Amount of 2-aminoethyl phosphate (AEP) not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

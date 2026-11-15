@@ -1,0 +1,293 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "nightingale2011-c0lc00507j-cdse-quantum-dots-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "A. M. Nightingale; S. H. Krishnadasan; D. Berhanu; X. Niu; C. Drury; R. McIntyre; E. Valsami-Jones; J. C. deMello (2011): CdSe quantum dots",
+  "material": {
+    "formula": "CdSe",
+    "family": "CdSe nanocrystals",
+    "elements": [
+      "Cd",
+      "Se"
+    ],
+    "components": [
+      "CdSe"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Hot injection",
+  "sources": [
+    {
+      "id": "nightingale2011-c0lc00507j",
+      "doi": "10.1039/c0lc00507j",
+      "title": "A stable droplet reactor for high temperature nanocrystal synthesis",
+      "authors": "A. M. Nightingale; S. H. Krishnadasan; D. Berhanu; X. Niu; C. Drury; R. McIntyre; E. Valsami-Jones; J. C. deMello",
+      "year": 2011,
+      "url": "https://doi.org/10.1039/c0lc00507j",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "nightingale2011-c0lc00507j",
+    "recipe_family": "nightingale2011-c0lc00507j-cdse-quantum-dots-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "CdSe",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "nightingale2011-c0lc00507j",
+          "locator": "Main PDF p.5"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    },
+    "size": {
+      "value": null,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "not_reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "not reported",
+      "evidence": [],
+      "derivation": null
+    },
+    "morphology": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "nightingale2011-c0lc00507j-cdse-quantum-dots-1--cadmium-oleate",
+      "name": "cadmium oleate",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "nightingale2011-c0lc00507j",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    },
+    {
+      "id": "nightingale2011-c0lc00507j-cdse-quantum-dots-1--selenium",
+      "name": "selenium",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "nightingale2011-c0lc00507j",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    },
+    {
+      "id": "nightingale2011-c0lc00507j-cdse-quantum-dots-1--trioctylphosphine",
+      "name": "trioctylphosphine",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "nightingale2011-c0lc00507j",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    },
+    {
+      "id": "nightingale2011-c0lc00507j-cdse-quantum-dots-1--octadecene",
+      "name": "octadecene",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "nightingale2011-c0lc00507j",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "nightingale2011-c0lc00507j-cdse-quantum-dots-1--after-s01-heat",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "nightingale2011-c0lc00507j-cdse-quantum-dots-1--octadecene",
+        "nightingale2011-c0lc00507j-cdse-quantum-dots-1--cadmium-oleate",
+        "nightingale2011-c0lc00507j-cdse-quantum-dots-1--selenium",
+        "nightingale2011-c0lc00507j-cdse-quantum-dots-1--trioctylphosphine"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-heat",
+      "action": "heat",
+      "label": "Heat the main capillary in an oil-bath",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "nightingale2011-c0lc00507j-cdse-quantum-dots-1--octadecene",
+        "nightingale2011-c0lc00507j-cdse-quantum-dots-1--cadmium-oleate",
+        "nightingale2011-c0lc00507j-cdse-quantum-dots-1--selenium",
+        "nightingale2011-c0lc00507j-cdse-quantum-dots-1--trioctylphosphine"
+      ],
+      "outputs": [
+        "nightingale2011-c0lc00507j-cdse-quantum-dots-1--after-s01-heat"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "inert",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "nightingale2011-c0lc00507j",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heat the main capillary in an oil-bath",
+      "evidence": [
+        {
+          "source_id": "nightingale2011-c0lc00507j",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "nightingale2011-c0lc00507j-cdse-quantum-dots-1--product",
+      "source_sample_label": "CdSe quantum dots",
+      "batch_id": null,
+      "material_state_id": "nightingale2011-c0lc00507j-cdse-quantum-dots-1--after-s01-heat",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "CdSe",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "nightingale2011-c0lc00507j",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "morphology": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "surface": {
+        "value": "oleic acid",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "nightingale2011-c0lc00507j",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "nightingale2011-c0lc00507j",
+          "locator": "Main PDF p.5"
+        }
+      ],
+      "notes": [
+        "Reactor: capillary-based droplet reactor (Main PDF p.3)."
+      ]
+    }
+  ],
+  "measurements": [],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Phase not reported in the extracted text.",
+      "Shape not reported in the extracted text.",
+      "Size not reported in the extracted text.",
+      "Reaction temperature not reported in the extracted text.",
+      "Reaction time not reported in the extracted text.",
+      "Amount of cadmium oleate not reported in the extracted text.",
+      "Amount of selenium not reported in the extracted text.",
+      "Amount of trioctylphosphine not reported in the extracted text.",
+      "Amount of octadecene not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}
