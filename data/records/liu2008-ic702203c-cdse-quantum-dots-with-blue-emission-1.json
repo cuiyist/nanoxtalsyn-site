@@ -1,0 +1,664 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "liu2008-ic702203c-cdse-quantum-dots-with-blue-emission-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Liping Liu; Qing Peng; Yadong Li (2008): CdSe quantum dots with blue emission",
+  "material": {
+    "formula": "CdSe",
+    "family": "CdSe nanocrystals",
+    "elements": [
+      "Cd",
+      "Se"
+    ],
+    "components": [
+      "CdSe"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Oxidation",
+  "sources": [
+    {
+      "id": "liu2008-ic702203c",
+      "doi": "10.1021/ic702203c",
+      "title": "An Effective Oxidation Route to Blue Emission CdSe Quantum Dots",
+      "authors": "Liping Liu; Qing Peng; Yadong Li",
+      "year": 2008,
+      "url": "https://doi.org/10.1021/ic702203c",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "liu2008-ic702203c",
+    "recipe_family": "liu2008-ic702203c-cdse-quantum-dots-with-blue-emission-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "CdSe",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "liu2008-ic702203c",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "zinc blende",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "liu2008-ic702203c",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": 1.7,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "1.7 nm",
+      "evidence": [
+        {
+          "source_id": "liu2008-ic702203c",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "sphere",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "liu2008-ic702203c",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "liu2008-ic702203c-cdse-quantum-dots-with-blue-emission-1--cd-ac-22h2o",
+      "name": "Cd(Ac)2·2H2O",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "liu2008-ic702203c",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "liu2008-ic702203c-cdse-quantum-dots-with-blue-emission-1--na2seso3",
+      "name": "Na2SeSO3",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "liu2008-ic702203c",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "liu2008-ic702203c-cdse-quantum-dots-with-blue-emission-1--naoh",
+      "name": "NaOH",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "liu2008-ic702203c",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "liu2008-ic702203c-cdse-quantum-dots-with-blue-emission-1--ethanol",
+      "name": "ethanol",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "liu2008-ic702203c",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "liu2008-ic702203c-cdse-quantum-dots-with-blue-emission-1--n-hexane",
+      "name": "n-hexane",
+      "formula": null,
+      "role": "solvent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "liu2008-ic702203c",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "liu2008-ic702203c-cdse-quantum-dots-with-blue-emission-1--after-s01-dissolve",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "liu2008-ic702203c-cdse-quantum-dots-with-blue-emission-1--naoh",
+        "liu2008-ic702203c-cdse-quantum-dots-with-blue-emission-1--ethanol"
+      ]
+    },
+    {
+      "id": "liu2008-ic702203c-cdse-quantum-dots-with-blue-emission-1--after-s02-add",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "liu2008-ic702203c-cdse-quantum-dots-with-blue-emission-1--after-s01-dissolve",
+        "liu2008-ic702203c-cdse-quantum-dots-with-blue-emission-1--cd-ac-22h2o"
+      ]
+    },
+    {
+      "id": "liu2008-ic702203c-cdse-quantum-dots-with-blue-emission-1--after-s03-add",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "liu2008-ic702203c-cdse-quantum-dots-with-blue-emission-1--after-s02-add",
+        "liu2008-ic702203c-cdse-quantum-dots-with-blue-emission-1--na2seso3"
+      ]
+    },
+    {
+      "id": "liu2008-ic702203c-cdse-quantum-dots-with-blue-emission-1--after-s04-extract",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "liu2008-ic702203c-cdse-quantum-dots-with-blue-emission-1--after-s03-add",
+        "liu2008-ic702203c-cdse-quantum-dots-with-blue-emission-1--n-hexane"
+      ]
+    },
+    {
+      "id": "liu2008-ic702203c-cdse-quantum-dots-with-blue-emission-1--after-s05-precipitate",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "liu2008-ic702203c-cdse-quantum-dots-with-blue-emission-1--after-s04-extract",
+        "liu2008-ic702203c-cdse-quantum-dots-with-blue-emission-1--ethanol"
+      ]
+    },
+    {
+      "id": "liu2008-ic702203c-cdse-quantum-dots-with-blue-emission-1--after-s06-redisperse",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "liu2008-ic702203c-cdse-quantum-dots-with-blue-emission-1--after-s05-precipitate",
+        "liu2008-ic702203c-cdse-quantum-dots-with-blue-emission-1--n-hexane"
+      ]
+    },
+    {
+      "id": "liu2008-ic702203c-cdse-quantum-dots-with-blue-emission-1--after-s07-expose",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "liu2008-ic702203c-cdse-quantum-dots-with-blue-emission-1--after-s06-redisperse"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-dissolve",
+      "action": "dissolve",
+      "label": "Dissolve NaOH and OA in ethanol and water",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "liu2008-ic702203c-cdse-quantum-dots-with-blue-emission-1--naoh",
+        "liu2008-ic702203c-cdse-quantum-dots-with-blue-emission-1--ethanol"
+      ],
+      "outputs": [
+        "liu2008-ic702203c-cdse-quantum-dots-with-blue-emission-1--after-s01-dissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "liu2008-ic702203c",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dissolve NaOH and OA in ethanol and water",
+      "evidence": [
+        {
+          "source_id": "liu2008-ic702203c",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-add",
+      "action": "add",
+      "label": "Add Cd(Ac)2·2H2O solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-dissolve"
+      ],
+      "inputs": [
+        "liu2008-ic702203c-cdse-quantum-dots-with-blue-emission-1--after-s01-dissolve",
+        "liu2008-ic702203c-cdse-quantum-dots-with-blue-emission-1--cd-ac-22h2o"
+      ],
+      "outputs": [
+        "liu2008-ic702203c-cdse-quantum-dots-with-blue-emission-1--after-s02-add"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "liu2008-ic702203c",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add Cd(Ac)2·2H2O solution",
+      "evidence": [
+        {
+          "source_id": "liu2008-ic702203c",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s03-add",
+      "action": "add",
+      "label": "Add Na2SeSO3 solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-add"
+      ],
+      "inputs": [
+        "liu2008-ic702203c-cdse-quantum-dots-with-blue-emission-1--after-s02-add",
+        "liu2008-ic702203c-cdse-quantum-dots-with-blue-emission-1--na2seso3"
+      ],
+      "outputs": [
+        "liu2008-ic702203c-cdse-quantum-dots-with-blue-emission-1--after-s03-add"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "liu2008-ic702203c",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add Na2SeSO3 solution",
+      "evidence": [
+        {
+          "source_id": "liu2008-ic702203c",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s04-extract",
+      "action": "extract",
+      "label": "Extract CdSe quantum dots with n-hexane",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-add"
+      ],
+      "inputs": [
+        "liu2008-ic702203c-cdse-quantum-dots-with-blue-emission-1--after-s03-add",
+        "liu2008-ic702203c-cdse-quantum-dots-with-blue-emission-1--n-hexane"
+      ],
+      "outputs": [
+        "liu2008-ic702203c-cdse-quantum-dots-with-blue-emission-1--after-s04-extract"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Extract CdSe quantum dots with n-hexane",
+      "evidence": [
+        {
+          "source_id": "liu2008-ic702203c",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s05-precipitate",
+      "action": "precipitate",
+      "label": "Precipitate nanocrystals with ethanol",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-extract"
+      ],
+      "inputs": [
+        "liu2008-ic702203c-cdse-quantum-dots-with-blue-emission-1--after-s04-extract",
+        "liu2008-ic702203c-cdse-quantum-dots-with-blue-emission-1--ethanol"
+      ],
+      "outputs": [
+        "liu2008-ic702203c-cdse-quantum-dots-with-blue-emission-1--after-s05-precipitate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Precipitate nanocrystals with ethanol",
+      "evidence": [
+        {
+          "source_id": "liu2008-ic702203c",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s06-redisperse",
+      "action": "redisperse",
+      "label": "Redisperse CdSe quantum dots in n-hexane",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s05-precipitate"
+      ],
+      "inputs": [
+        "liu2008-ic702203c-cdse-quantum-dots-with-blue-emission-1--after-s05-precipitate",
+        "liu2008-ic702203c-cdse-quantum-dots-with-blue-emission-1--n-hexane"
+      ],
+      "outputs": [
+        "liu2008-ic702203c-cdse-quantum-dots-with-blue-emission-1--after-s06-redisperse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Redisperse CdSe quantum dots in n-hexane",
+      "evidence": [
+        {
+          "source_id": "liu2008-ic702203c",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s07-expose",
+      "action": "expose",
+      "label": "Expose solution to sunlight for oxidation",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s06-redisperse"
+      ],
+      "inputs": [
+        "liu2008-ic702203c-cdse-quantum-dots-with-blue-emission-1--after-s06-redisperse"
+      ],
+      "outputs": [
+        "liu2008-ic702203c-cdse-quantum-dots-with-blue-emission-1--after-s07-expose"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "liu2008-ic702203c",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Expose solution to sunlight for oxidation",
+      "evidence": [
+        {
+          "source_id": "liu2008-ic702203c",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "liu2008-ic702203c-cdse-quantum-dots-with-blue-emission-1--product",
+      "source_sample_label": "CdSe quantum dots with blue emission",
+      "batch_id": null,
+      "material_state_id": "liu2008-ic702203c-cdse-quantum-dots-with-blue-emission-1--after-s07-expose",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "CdSe",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "liu2008-ic702203c",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "zinc blende",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "liu2008-ic702203c",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": "sphere",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "liu2008-ic702203c",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": "oleic acid",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "liu2008-ic702203c",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "liu2008-ic702203c",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "measurements": [
+    {
+      "id": "liu2008-ic702203c-cdse-quantum-dots-with-blue-emission-1--size",
+      "sample_id": "liu2008-ic702203c-cdse-quantum-dots-with-blue-emission-1--product",
+      "property": "diameter",
+      "technique": "TEM",
+      "value": {
+        "value": 1.7,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "1.7 nm",
+        "evidence": [
+          {
+            "source_id": "liu2008-ic702203c",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "liu2008-ic702203c",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Reactor not reported in the extracted text.",
+      "Reaction temperature not reported in the extracted text.",
+      "Reaction time not reported in the extracted text.",
+      "Amount of Cd(Ac)2·2H2O not reported in the extracted text.",
+      "Amount of Na2SeSO3 not reported in the extracted text.",
+      "Amount of NaOH not reported in the extracted text.",
+      "Amount of ethanol not reported in the extracted text.",
+      "Amount of n-hexane not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

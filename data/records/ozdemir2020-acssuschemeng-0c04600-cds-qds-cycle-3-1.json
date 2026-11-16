@@ -1,0 +1,398 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "ozdemir2020-acssuschemeng-0c04600-cds-qds-cycle-3-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Nur Koncuy Ozdemir; Joseph P. Cline; Christopher J. Kiely; Steven McIntosh; Mark A. Snyder (2020): CdS QDs (Cycle 3)",
+  "material": {
+    "formula": "CdS",
+    "family": "CdS nanocrystals",
+    "elements": [
+      "Cd",
+      "S"
+    ],
+    "components": [
+      "CdS"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Biomineralization",
+  "sources": [
+    {
+      "id": "ozdemir2020-acssuschemeng-0c04600",
+      "doi": "10.1021/acssuschemeng.0c04600",
+      "title": "Scalable Biomineralization of CdS Quantum Dots by Immobilized Cystathionine γ-Lyase",
+      "authors": "Nur Koncuy Ozdemir; Joseph P. Cline; Christopher J. Kiely; Steven McIntosh; Mark A. Snyder",
+      "year": 2020,
+      "url": "https://doi.org/10.1021/acssuschemeng.0c04600",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "ozdemir2020-acssuschemeng-0c04600",
+    "recipe_family": "ozdemir2020-acssuschemeng-0c04600-cds-qds-cycle-3-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "CdS",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "ozdemir2020-acssuschemeng-0c04600",
+          "locator": "Main PDF p.6"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "wurtzite and zincblende",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "ozdemir2020-acssuschemeng-0c04600",
+          "locator": "Main PDF p.6"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": 1.72,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "1.72 nm",
+      "evidence": [
+        {
+          "source_id": "ozdemir2020-acssuschemeng-0c04600",
+          "locator": "Main PDF p.6"
+        }
+      ],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "nanoparticle",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "ozdemir2020-acssuschemeng-0c04600",
+          "locator": "Main PDF p.6"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "ozdemir2020-acssuschemeng-0c04600-cds-qds-cycle-3-1--cadmium-acetate",
+      "name": "cadmium acetate",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "concentration": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mM",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 mM",
+          "evidence": [
+            {
+              "source_id": "ozdemir2020-acssuschemeng-0c04600",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "ozdemir2020-acssuschemeng-0c04600",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "ozdemir2020-acssuschemeng-0c04600-cds-qds-cycle-3-1--after-s01-incubate",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "ozdemir2020-acssuschemeng-0c04600-cds-qds-cycle-3-1--cadmium-acetate"
+      ]
+    },
+    {
+      "id": "ozdemir2020-acssuschemeng-0c04600-cds-qds-cycle-3-1--after-s02-centrifuge",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "ozdemir2020-acssuschemeng-0c04600-cds-qds-cycle-3-1--after-s01-incubate"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-incubate",
+      "action": "incubate",
+      "label": "Incubate solution at 37°C for 2 hours",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "ozdemir2020-acssuschemeng-0c04600-cds-qds-cycle-3-1--cadmium-acetate"
+      ],
+      "outputs": [
+        "ozdemir2020-acssuschemeng-0c04600-cds-qds-cycle-3-1--after-s01-incubate"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 37,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "37 °C",
+          "evidence": [
+            {
+              "source_id": "ozdemir2020-acssuschemeng-0c04600",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 2,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2 h",
+          "evidence": [
+            {
+              "source_id": "ozdemir2020-acssuschemeng-0c04600",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Incubate solution at 37°C for 2 hours",
+      "evidence": [
+        {
+          "source_id": "ozdemir2020-acssuschemeng-0c04600",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-centrifuge",
+      "action": "centrifuge",
+      "label": "Centrifuge to separate QDs from CSE-TiO2",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-incubate"
+      ],
+      "inputs": [
+        "ozdemir2020-acssuschemeng-0c04600-cds-qds-cycle-3-1--after-s01-incubate"
+      ],
+      "outputs": [
+        "ozdemir2020-acssuschemeng-0c04600-cds-qds-cycle-3-1--after-s02-centrifuge"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "5 min",
+          "evidence": [
+            {
+              "source_id": "ozdemir2020-acssuschemeng-0c04600",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Centrifuge to separate QDs from CSE-TiO2",
+      "evidence": [
+        {
+          "source_id": "ozdemir2020-acssuschemeng-0c04600",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "ozdemir2020-acssuschemeng-0c04600-cds-qds-cycle-3-1--product",
+      "source_sample_label": "CdS QDs (Cycle 3)",
+      "batch_id": null,
+      "material_state_id": "ozdemir2020-acssuschemeng-0c04600-cds-qds-cycle-3-1--after-s02-centrifuge",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "CdS",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "ozdemir2020-acssuschemeng-0c04600",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "wurtzite and zincblende",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "ozdemir2020-acssuschemeng-0c04600",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": "nanoparticle",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "ozdemir2020-acssuschemeng-0c04600",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": "L-cysteine",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "ozdemir2020-acssuschemeng-0c04600",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "ozdemir2020-acssuschemeng-0c04600",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "notes": [
+        "Reaction temperature: 37 degC (Main PDF p.2).",
+        "Reaction time: 2 h (Main PDF p.2)."
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "id": "ozdemir2020-acssuschemeng-0c04600-cds-qds-cycle-3-1--size",
+      "sample_id": "ozdemir2020-acssuschemeng-0c04600-cds-qds-cycle-3-1--product",
+      "property": "particle_size",
+      "technique": "not reported",
+      "value": {
+        "value": 1.72,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "1.72 nm",
+        "evidence": [
+          {
+            "source_id": "ozdemir2020-acssuschemeng-0c04600",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "ozdemir2020-acssuschemeng-0c04600",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    }
+  ],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Reactor not reported in the extracted text.",
+      "Atmosphere not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

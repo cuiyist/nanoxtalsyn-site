@@ -1,0 +1,439 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "mathew2017-acssuschemeng-7b00273-auqc-gluten-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Meegle S. Mathew; Kuruvilla Joseph (2017): AuQC@gluten",
+  "material": {
+    "formula": "Au",
+    "family": "Au nanocrystals",
+    "elements": [
+      "Au"
+    ],
+    "components": [
+      "Au"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Synthesis as described in the source",
+  "sources": [
+    {
+      "id": "mathew2017-acssuschemeng-7b00273",
+      "doi": "10.1021/acssuschemeng.7b00273",
+      "title": "Green Synthesis of Gluten-Stabilized Fluorescent Gold Quantum Clusters: Application As Turn-On Sensing of Human Blood Creatinine",
+      "authors": "Meegle S. Mathew; Kuruvilla Joseph",
+      "year": 2017,
+      "url": "https://doi.org/10.1021/acssuschemeng.7b00273",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "mathew2017-acssuschemeng-7b00273",
+    "recipe_family": "mathew2017-acssuschemeng-7b00273-auqc-gluten-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "Au",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "mathew2017-acssuschemeng-7b00273",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "nanocluster",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "mathew2017-acssuschemeng-7b00273",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": 1.5,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "1.5 nm",
+      "evidence": [
+        {
+          "source_id": "mathew2017-acssuschemeng-7b00273",
+          "locator": "Main PDF p.4"
+        }
+      ],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "nanocluster",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "mathew2017-acssuschemeng-7b00273",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "mathew2017-acssuschemeng-7b00273-auqc-gluten-1--gluten",
+      "name": "gluten",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 25,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mg/mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "25 mg/mL",
+          "evidence": [
+            {
+              "source_id": "mathew2017-acssuschemeng-7b00273",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "mathew2017-acssuschemeng-7b00273",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "mathew2017-acssuschemeng-7b00273-auqc-gluten-1--haucl43h2o",
+      "name": "HAuCl4·3H2O",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "concentration": {
+          "value": 5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mM",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "5 mM",
+          "evidence": [
+            {
+              "source_id": "mathew2017-acssuschemeng-7b00273",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "mathew2017-acssuschemeng-7b00273",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "mathew2017-acssuschemeng-7b00273-auqc-gluten-1--after-s01-dissolve",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "mathew2017-acssuschemeng-7b00273-auqc-gluten-1--gluten"
+      ]
+    },
+    {
+      "id": "mathew2017-acssuschemeng-7b00273-auqc-gluten-1--after-s02-treat",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "mathew2017-acssuschemeng-7b00273-auqc-gluten-1--after-s01-dissolve",
+        "mathew2017-acssuschemeng-7b00273-auqc-gluten-1--haucl43h2o",
+        "mathew2017-acssuschemeng-7b00273-auqc-gluten-1--gluten"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-dissolve",
+      "action": "dissolve",
+      "label": "Dissolve gluten in alkaline solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "mathew2017-acssuschemeng-7b00273-auqc-gluten-1--gluten"
+      ],
+      "outputs": [
+        "mathew2017-acssuschemeng-7b00273-auqc-gluten-1--after-s01-dissolve"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 40,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "40 °C",
+          "evidence": [
+            {
+              "source_id": "mathew2017-acssuschemeng-7b00273",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 15,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "15 min",
+          "evidence": [
+            {
+              "source_id": "mathew2017-acssuschemeng-7b00273",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dissolve gluten in alkaline solution",
+      "evidence": [
+        {
+          "source_id": "mathew2017-acssuschemeng-7b00273",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-treat",
+      "action": "treat",
+      "label": "Treat AuCl4 with gluten solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-dissolve"
+      ],
+      "inputs": [
+        "mathew2017-acssuschemeng-7b00273-auqc-gluten-1--after-s01-dissolve",
+        "mathew2017-acssuschemeng-7b00273-auqc-gluten-1--haucl43h2o",
+        "mathew2017-acssuschemeng-7b00273-auqc-gluten-1--gluten"
+      ],
+      "outputs": [
+        "mathew2017-acssuschemeng-7b00273-auqc-gluten-1--after-s02-treat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 55,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "55 °C",
+          "evidence": [
+            {
+              "source_id": "mathew2017-acssuschemeng-7b00273",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Treat AuCl4 with gluten solution",
+      "evidence": [
+        {
+          "source_id": "mathew2017-acssuschemeng-7b00273",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "mathew2017-acssuschemeng-7b00273-auqc-gluten-1--product",
+      "source_sample_label": "AuQC@gluten",
+      "batch_id": null,
+      "material_state_id": "mathew2017-acssuschemeng-7b00273-auqc-gluten-1--after-s02-treat",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "Au",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "mathew2017-acssuschemeng-7b00273",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "nanocluster",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "mathew2017-acssuschemeng-7b00273",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": "nanocluster",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "mathew2017-acssuschemeng-7b00273",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": "gluten",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "mathew2017-acssuschemeng-7b00273",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "mathew2017-acssuschemeng-7b00273",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "notes": [
+        "Reaction temperature: 55 degC (Main PDF p.2).",
+        "Reaction time: 3 h (Main PDF p.2)."
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "id": "mathew2017-acssuschemeng-7b00273-auqc-gluten-1--size",
+      "sample_id": "mathew2017-acssuschemeng-7b00273-auqc-gluten-1--product",
+      "property": "diameter",
+      "technique": "TEM",
+      "value": {
+        "value": 1.5,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "1.5 nm",
+        "evidence": [
+          {
+            "source_id": "mathew2017-acssuschemeng-7b00273",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "mathew2017-acssuschemeng-7b00273",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    }
+  ],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Reactor not reported in the extracted text.",
+      "Atmosphere not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

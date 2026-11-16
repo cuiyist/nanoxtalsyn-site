@@ -1,0 +1,609 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "li2011-la1043552-cds-nanorods-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Zhiguo Li; Jiehe Sui; Xiaoli Li; Wei Cai (2011): CdS nanorods",
+  "material": {
+    "formula": "CdS",
+    "family": "CdS nanocrystals",
+    "elements": [
+      "Cd",
+      "S"
+    ],
+    "components": [
+      "CdS"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Synthesis as described in the source",
+  "sources": [
+    {
+      "id": "li2011-la1043552",
+      "doi": "10.1021/la1043552",
+      "title": "Oriented Attachment Growth of Quantum-Sized CdS Nanorods by Direct Thermolysis of Single-Source Precursor",
+      "authors": "Zhiguo Li; Jiehe Sui; Xiaoli Li; Wei Cai",
+      "year": 2011,
+      "url": "https://doi.org/10.1021/la1043552",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "li2011-la1043552",
+    "recipe_family": "li2011-la1043552-cds-nanorods-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "CdS",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "li2011-la1043552",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "hexagonal",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "li2011-la1043552",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": 4.0,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "4 nm",
+      "evidence": [
+        {
+          "source_id": "li2011-la1043552",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "rod",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "li2011-la1043552",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "li2011-la1043552-cds-nanorods-1--hexadecylamine-hda",
+      "name": "hexadecylamine (HDA)",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "mass": {
+          "value": 25,
+          "minimum": null,
+          "maximum": null,
+          "unit": "g",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "25 g",
+          "evidence": [
+            {
+              "source_id": "li2011-la1043552",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "li2011-la1043552",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "li2011-la1043552-cds-nanorods-1--me4n-4-cd10s4-sph-16",
+      "name": "(Me4N)4[Cd10S4(SPh)16]",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "mass": {
+          "value": 1.2,
+          "minimum": null,
+          "maximum": null,
+          "unit": "g",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1.2 g",
+          "evidence": [
+            {
+              "source_id": "li2011-la1043552",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "li2011-la1043552",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "li2011-la1043552-cds-nanorods-1--after-s01-degas",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "li2011-la1043552-cds-nanorods-1--hexadecylamine-hda"
+      ]
+    },
+    {
+      "id": "li2011-la1043552-cds-nanorods-1--after-s02-add",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "li2011-la1043552-cds-nanorods-1--after-s01-degas",
+        "li2011-la1043552-cds-nanorods-1--me4n-4-cd10s4-sph-16"
+      ]
+    },
+    {
+      "id": "li2011-la1043552-cds-nanorods-1--after-s03-heat",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "li2011-la1043552-cds-nanorods-1--after-s02-add"
+      ]
+    },
+    {
+      "id": "li2011-la1043552-cds-nanorods-1--after-s04-precipitate",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "li2011-la1043552-cds-nanorods-1--after-s03-heat"
+      ]
+    },
+    {
+      "id": "li2011-la1043552-cds-nanorods-1--after-s05-centrifuge",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "li2011-la1043552-cds-nanorods-1--after-s04-precipitate"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-degas",
+      "action": "degas",
+      "label": "Degassing of HDA",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "li2011-la1043552-cds-nanorods-1--hexadecylamine-hda"
+      ],
+      "outputs": [
+        "li2011-la1043552-cds-nanorods-1--after-s01-degas"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 120,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "120 °C",
+          "evidence": [
+            {
+              "source_id": "li2011-la1043552",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "li2011-la1043552",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Degassing of HDA",
+      "evidence": [
+        {
+          "source_id": "li2011-la1043552",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-add",
+      "action": "add",
+      "label": "Addition of (Me4N)4[Cd10S4(SPh)16] to HDA",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-degas"
+      ],
+      "inputs": [
+        "li2011-la1043552-cds-nanorods-1--after-s01-degas",
+        "li2011-la1043552-cds-nanorods-1--me4n-4-cd10s4-sph-16"
+      ],
+      "outputs": [
+        "li2011-la1043552-cds-nanorods-1--after-s02-add"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 80,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "80 °C",
+          "evidence": [
+            {
+              "source_id": "li2011-la1043552",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "li2011-la1043552",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Addition of (Me4N)4[Cd10S4(SPh)16] to HDA",
+      "evidence": [
+        {
+          "source_id": "li2011-la1043552",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s03-heat",
+      "action": "heat",
+      "label": "Heating to reaction temperature",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-add"
+      ],
+      "inputs": [
+        "li2011-la1043552-cds-nanorods-1--after-s02-add"
+      ],
+      "outputs": [
+        "li2011-la1043552-cds-nanorods-1--after-s03-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 220,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "220 °C",
+          "evidence": [
+            {
+              "source_id": "li2011-la1043552",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "5 h",
+          "evidence": [
+            {
+              "source_id": "li2011-la1043552",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "li2011-la1043552",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heating to reaction temperature",
+      "evidence": [
+        {
+          "source_id": "li2011-la1043552",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s04-precipitate",
+      "action": "precipitate",
+      "label": "Precipitation with methanol",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-heat"
+      ],
+      "inputs": [
+        "li2011-la1043552-cds-nanorods-1--after-s03-heat"
+      ],
+      "outputs": [
+        "li2011-la1043552-cds-nanorods-1--after-s04-precipitate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Precipitation with methanol",
+      "evidence": [
+        {
+          "source_id": "li2011-la1043552",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s05-centrifuge",
+      "action": "centrifuge",
+      "label": "Centrifugation and purification",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-precipitate"
+      ],
+      "inputs": [
+        "li2011-la1043552-cds-nanorods-1--after-s04-precipitate"
+      ],
+      "outputs": [
+        "li2011-la1043552-cds-nanorods-1--after-s05-centrifuge"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Centrifugation and purification",
+      "evidence": [
+        {
+          "source_id": "li2011-la1043552",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "li2011-la1043552-cds-nanorods-1--product",
+      "source_sample_label": "CdS nanorods",
+      "batch_id": null,
+      "material_state_id": "li2011-la1043552-cds-nanorods-1--after-s05-centrifuge",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "CdS",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "li2011-la1043552",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "hexagonal",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "li2011-la1043552",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": "rod",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "li2011-la1043552",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": "hexadecylamine (HDA)",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "li2011-la1043552",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "li2011-la1043552",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "notes": [
+        "Reaction temperature: 220 degC (Main PDF p.2).",
+        "Reaction time: 5 h (Main PDF p.2)."
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "id": "li2011-la1043552-cds-nanorods-1--size",
+      "sample_id": "li2011-la1043552-cds-nanorods-1--product",
+      "property": "diameter",
+      "technique": "TEM",
+      "value": {
+        "value": 4.0,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "4 nm",
+        "evidence": [
+          {
+            "source_id": "li2011-la1043552",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "li2011-la1043552",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Reactor not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

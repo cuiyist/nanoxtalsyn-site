@@ -1,0 +1,313 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "kikkeri2009-ja807711w-peg2000-capped-qds-control-compounds-4",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Raghavendra Kikkeri; Bernd Lepenies; Alexander Adibekian; Paola Laurino; Peter H. Seeberger (2009): PEG2000-capped QDs (control compounds)",
+  "material": {
+    "formula": "CdSe/ZnS",
+    "family": "CdSe/ZnS nanocrystals",
+    "elements": [
+      "Cd",
+      "Se",
+      "Zn",
+      "S"
+    ],
+    "components": [
+      "CdSe",
+      "ZnS"
+    ],
+    "architecture": "core_shell"
+  },
+  "method": "Ligand exchange",
+  "sources": [
+    {
+      "id": "kikkeri2009-ja807711w",
+      "doi": "10.1021/ja807711w",
+      "title": "In Vitro Imaging and in Vivo Liver Targeting with Carbohydrate Capped Quantum Dots",
+      "authors": "Raghavendra Kikkeri; Bernd Lepenies; Alexander Adibekian; Paola Laurino; Peter H. Seeberger",
+      "year": 2009,
+      "url": "https://doi.org/10.1021/ja807711w",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "kikkeri2009-ja807711w",
+    "recipe_family": "kikkeri2009-ja807711w-peg2000-capped-qds-control-compounds-4",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "CdSe/ZnS",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "kikkeri2009-ja807711w",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    },
+    "size": {
+      "value": 45,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "45 nm",
+      "evidence": [
+        {
+          "source_id": "kikkeri2009-ja807711w",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "sphere",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "kikkeri2009-ja807711w",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "kikkeri2009-ja807711w-peg2000-capped-qds-control-compounds-4--peg2000",
+      "name": "PEG2000",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "kikkeri2009-ja807711w",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "kikkeri2009-ja807711w-peg2000-capped-qds-control-compounds-4--thioctic-acid",
+      "name": "thioctic acid",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "kikkeri2009-ja807711w",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "kikkeri2009-ja807711w-peg2000-capped-qds-control-compounds-4--tri-n-octyl-phosphine-tri-n-octyl-phosph",
+      "name": "tri-n-octyl phosphine/tri-n-octyl phosphine oxide (TOP/TOPO)-capped QDs",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "kikkeri2009-ja807711w",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "kikkeri2009-ja807711w-peg2000-capped-qds-control-compounds-4--after-s01-ligand-exchange",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "kikkeri2009-ja807711w-peg2000-capped-qds-control-compounds-4--peg2000",
+        "kikkeri2009-ja807711w-peg2000-capped-qds-control-compounds-4--tri-n-octyl-phosphine-tri-n-octyl-phosph"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-ligand-exchange",
+      "action": "ligand exchange",
+      "label": "Ligand exchange with TOP/TOPO-capped QDs",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "kikkeri2009-ja807711w-peg2000-capped-qds-control-compounds-4--peg2000",
+        "kikkeri2009-ja807711w-peg2000-capped-qds-control-compounds-4--tri-n-octyl-phosphine-tri-n-octyl-phosph"
+      ],
+      "outputs": [
+        "kikkeri2009-ja807711w-peg2000-capped-qds-control-compounds-4--after-s01-ligand-exchange"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Ligand exchange with TOP/TOPO-capped QDs",
+      "evidence": [
+        {
+          "source_id": "kikkeri2009-ja807711w",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "kikkeri2009-ja807711w-peg2000-capped-qds-control-compounds-4--product",
+      "source_sample_label": "PEG2000-capped QDs (control compounds)",
+      "batch_id": null,
+      "material_state_id": "kikkeri2009-ja807711w-peg2000-capped-qds-control-compounds-4--after-s01-ligand-exchange",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "CdSe/ZnS",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "kikkeri2009-ja807711w",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "morphology": {
+        "value": "sphere",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "kikkeri2009-ja807711w",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": "PEG2000",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "kikkeri2009-ja807711w",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "kikkeri2009-ja807711w",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "measurements": [
+    {
+      "id": "kikkeri2009-ja807711w-peg2000-capped-qds-control-compounds-4--size",
+      "sample_id": "kikkeri2009-ja807711w-peg2000-capped-qds-control-compounds-4--product",
+      "property": "particle_size",
+      "technique": "not reported",
+      "value": {
+        "value": 45,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "45 nm",
+        "evidence": [
+          {
+            "source_id": "kikkeri2009-ja807711w",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "kikkeri2009-ja807711w",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    }
+  ],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Phase not reported in the extracted text.",
+      "Reactor not reported in the extracted text.",
+      "Atmosphere not reported in the extracted text.",
+      "Reaction temperature not reported in the extracted text.",
+      "Reaction time not reported in the extracted text.",
+      "Amount of PEG2000 not reported in the extracted text.",
+      "Amount of thioctic acid not reported in the extracted text.",
+      "Amount of tri-n-octyl phosphine/tri-n-octyl phosphine oxide (TOP/TOPO)-capped QDs not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

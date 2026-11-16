@@ -1,0 +1,474 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "panfil2024-s12274-024-6835-7-cdse-cds-coreshell-cqdms-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Yossef E. Panfil; Adar Levi; Somnath Koley; Einav Scharf; Yonatan Ossia; Uri Banin (2024): CdSe/CdS core–shell CQDMs",
+  "material": {
+    "formula": "CdSe/CdS",
+    "family": "CdSe/CdS nanocrystals",
+    "elements": [
+      "Cd",
+      "Se",
+      "S"
+    ],
+    "components": [
+      "CdSe",
+      "CdS"
+    ],
+    "architecture": "core_shell"
+  },
+  "method": "Other",
+  "sources": [
+    {
+      "id": "panfil2024-s12274-024-6835-7",
+      "doi": "10.1007/s12274-024-6835-7",
+      "title": "Mechanisms for electric field induced color change in coupled colloidal quantum dot molecules revealed by low temperatures single particle spectroscopy",
+      "authors": "Yossef E. Panfil; Adar Levi; Somnath Koley; Einav Scharf; Yonatan Ossia; Uri Banin",
+      "year": 2024,
+      "url": "https://doi.org/10.1007/s12274-024-6835-7",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "panfil2024-s12274-024-6835-7",
+    "recipe_family": "panfil2024-s12274-024-6835-7-cdse-cds-coreshell-cqdms-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "CdSe/CdS",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "panfil2024-s12274-024-6835-7",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "crystalline",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "panfil2024-s12274-024-6835-7",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": null,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "not_reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "not reported",
+      "evidence": [],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "nanocrystal",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "panfil2024-s12274-024-6835-7",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "panfil2024-s12274-024-6835-7-cdse-cds-coreshell-cqdms-1--cdse-cds-coreshell-qds",
+      "name": "CdSe/CdS core–shell QDs",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "panfil2024-s12274-024-6835-7",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "panfil2024-s12274-024-6835-7-cdse-cds-coreshell-cqdms-1--silica-spheres",
+      "name": "silica spheres",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "panfil2024-s12274-024-6835-7",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "panfil2024-s12274-024-6835-7-cdse-cds-coreshell-cqdms-1--tetra-thiol-molecules",
+      "name": "tetra-thiol molecules",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "panfil2024-s12274-024-6835-7",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "panfil2024-s12274-024-6835-7-cdse-cds-coreshell-cqdms-1--after-s01-attach",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "panfil2024-s12274-024-6835-7-cdse-cds-coreshell-cqdms-1--cdse-cds-coreshell-qds",
+        "panfil2024-s12274-024-6835-7-cdse-cds-coreshell-cqdms-1--silica-spheres"
+      ]
+    },
+    {
+      "id": "panfil2024-s12274-024-6835-7-cdse-cds-coreshell-cqdms-1--after-s02-mask",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "panfil2024-s12274-024-6835-7-cdse-cds-coreshell-cqdms-1--after-s01-attach",
+        "panfil2024-s12274-024-6835-7-cdse-cds-coreshell-cqdms-1--silica-spheres"
+      ]
+    },
+    {
+      "id": "panfil2024-s12274-024-6835-7-cdse-cds-coreshell-cqdms-1--after-s03-functionalize",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "panfil2024-s12274-024-6835-7-cdse-cds-coreshell-cqdms-1--after-s02-mask",
+        "panfil2024-s12274-024-6835-7-cdse-cds-coreshell-cqdms-1--tetra-thiol-molecules"
+      ]
+    },
+    {
+      "id": "panfil2024-s12274-024-6835-7-cdse-cds-coreshell-cqdms-1--after-s04-attach",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "panfil2024-s12274-024-6835-7-cdse-cds-coreshell-cqdms-1--after-s03-functionalize",
+        "panfil2024-s12274-024-6835-7-cdse-cds-coreshell-cqdms-1--cdse-cds-coreshell-qds"
+      ]
+    },
+    {
+      "id": "panfil2024-s12274-024-6835-7-cdse-cds-coreshell-cqdms-1--after-s05-etch",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "panfil2024-s12274-024-6835-7-cdse-cds-coreshell-cqdms-1--after-s04-attach"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-attach",
+      "action": "attach",
+      "label": "Attach single core–shell CdSe/CdS QDs to silica spheres",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "panfil2024-s12274-024-6835-7-cdse-cds-coreshell-cqdms-1--cdse-cds-coreshell-qds",
+        "panfil2024-s12274-024-6835-7-cdse-cds-coreshell-cqdms-1--silica-spheres"
+      ],
+      "outputs": [
+        "panfil2024-s12274-024-6835-7-cdse-cds-coreshell-cqdms-1--after-s01-attach"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Attach single core–shell CdSe/CdS QDs to silica spheres",
+      "evidence": [
+        {
+          "source_id": "panfil2024-s12274-024-6835-7",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-mask",
+      "action": "mask",
+      "label": "Apply a thin silica layer to block further binding",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-attach"
+      ],
+      "inputs": [
+        "panfil2024-s12274-024-6835-7-cdse-cds-coreshell-cqdms-1--after-s01-attach",
+        "panfil2024-s12274-024-6835-7-cdse-cds-coreshell-cqdms-1--silica-spheres"
+      ],
+      "outputs": [
+        "panfil2024-s12274-024-6835-7-cdse-cds-coreshell-cqdms-1--after-s02-mask"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Apply a thin silica layer to block further binding",
+      "evidence": [
+        {
+          "source_id": "panfil2024-s12274-024-6835-7",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s03-functionalize",
+      "action": "functionalize",
+      "label": "Functionalize bound QDs with tetra-thiol molecules",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-mask"
+      ],
+      "inputs": [
+        "panfil2024-s12274-024-6835-7-cdse-cds-coreshell-cqdms-1--after-s02-mask",
+        "panfil2024-s12274-024-6835-7-cdse-cds-coreshell-cqdms-1--tetra-thiol-molecules"
+      ],
+      "outputs": [
+        "panfil2024-s12274-024-6835-7-cdse-cds-coreshell-cqdms-1--after-s03-functionalize"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Functionalize bound QDs with tetra-thiol molecules",
+      "evidence": [
+        {
+          "source_id": "panfil2024-s12274-024-6835-7",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s04-attach",
+      "action": "attach",
+      "label": "Attach second QDs to the first QDs through thiol linkers",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-functionalize"
+      ],
+      "inputs": [
+        "panfil2024-s12274-024-6835-7-cdse-cds-coreshell-cqdms-1--after-s03-functionalize",
+        "panfil2024-s12274-024-6835-7-cdse-cds-coreshell-cqdms-1--cdse-cds-coreshell-qds"
+      ],
+      "outputs": [
+        "panfil2024-s12274-024-6835-7-cdse-cds-coreshell-cqdms-1--after-s04-attach"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Attach second QDs to the first QDs through thiol linkers",
+      "evidence": [
+        {
+          "source_id": "panfil2024-s12274-024-6835-7",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s05-etch",
+      "action": "etch",
+      "label": "Selectively etch the silica sphere",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-attach"
+      ],
+      "inputs": [
+        "panfil2024-s12274-024-6835-7-cdse-cds-coreshell-cqdms-1--after-s04-attach"
+      ],
+      "outputs": [
+        "panfil2024-s12274-024-6835-7-cdse-cds-coreshell-cqdms-1--after-s05-etch"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Selectively etch the silica sphere",
+      "evidence": [
+        {
+          "source_id": "panfil2024-s12274-024-6835-7",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "panfil2024-s12274-024-6835-7-cdse-cds-coreshell-cqdms-1--product",
+      "source_sample_label": "CdSe/CdS core–shell CQDMs",
+      "batch_id": null,
+      "material_state_id": "panfil2024-s12274-024-6835-7-cdse-cds-coreshell-cqdms-1--after-s05-etch",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "CdSe/CdS",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "panfil2024-s12274-024-6835-7",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "crystalline",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "panfil2024-s12274-024-6835-7",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": "nanocrystal",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "panfil2024-s12274-024-6835-7",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": "tetra-thiol molecules",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "panfil2024-s12274-024-6835-7",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "panfil2024-s12274-024-6835-7",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "measurements": [],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Size not reported in the extracted text.",
+      "Reactor not reported in the extracted text.",
+      "Atmosphere not reported in the extracted text.",
+      "Reaction temperature not reported in the extracted text.",
+      "Reaction time not reported in the extracted text.",
+      "Amount of CdSe/CdS core–shell QDs not reported in the extracted text.",
+      "Amount of silica spheres not reported in the extracted text.",
+      "Amount of tetra-thiol molecules not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

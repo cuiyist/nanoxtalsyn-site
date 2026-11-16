@@ -1,0 +1,570 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "sun2022-acssuschemeng-1c06657-yellow-emissive-carbon-quantum-rings-y-c-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Xiaofeng Sun; Yijie Wang; Jinyue Yang; Dongrui Li; Chuan-Zeng Wang; Shengju Zhou; Jin Zhou (2022): yellow-emissive carbon quantum rings (y-CQRs)",
+  "material": {
+    "formula": "C",
+    "family": "C nanocrystals",
+    "elements": [
+      "C"
+    ],
+    "components": [
+      "C"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Pyrolysis",
+  "sources": [
+    {
+      "id": "sun2022-acssuschemeng-1c06657",
+      "doi": "10.1021/acssuschemeng.1c06657",
+      "title": "Rapid Synthesis of Rare-Earth-Element-Free Yellow-Emissive Carbon Quantum Ring-Based Crystals in a Large Scale for White Light-Emitting Diodes",
+      "authors": "Xiaofeng Sun; Yijie Wang; Jinyue Yang; Dongrui Li; Chuan-Zeng Wang; Shengju Zhou; Jin Zhou",
+      "year": 2022,
+      "url": "https://doi.org/10.1021/acssuschemeng.1c06657",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "sun2022-acssuschemeng-1c06657",
+    "recipe_family": "sun2022-acssuschemeng-1c06657-yellow-emissive-carbon-quantum-rings-y-c-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "C",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "sun2022-acssuschemeng-1c06657",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    },
+    "size": {
+      "value": 0.37,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "0.37 nm",
+      "evidence": [
+        {
+          "source_id": "sun2022-acssuschemeng-1c06657",
+          "locator": "Main PDF p.8"
+        }
+      ],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "ring",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "sun2022-acssuschemeng-1c06657",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "sun2022-acssuschemeng-1c06657-yellow-emissive-carbon-quantum-rings-y-c-1--phthalic-acid",
+      "name": "phthalic acid",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "mass": {
+          "value": 2,
+          "minimum": null,
+          "maximum": null,
+          "unit": "g",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2 g",
+          "evidence": [
+            {
+              "source_id": "sun2022-acssuschemeng-1c06657",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "sun2022-acssuschemeng-1c06657",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "sun2022-acssuschemeng-1c06657-yellow-emissive-carbon-quantum-rings-y-c-1--formamide",
+      "name": "formamide",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 10,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "10 mL",
+          "evidence": [
+            {
+              "source_id": "sun2022-acssuschemeng-1c06657",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "sun2022-acssuschemeng-1c06657",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "sun2022-acssuschemeng-1c06657-yellow-emissive-carbon-quantum-rings-y-c-1--after-s01-dissolve",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "sun2022-acssuschemeng-1c06657-yellow-emissive-carbon-quantum-rings-y-c-1--phthalic-acid",
+        "sun2022-acssuschemeng-1c06657-yellow-emissive-carbon-quantum-rings-y-c-1--formamide"
+      ]
+    },
+    {
+      "id": "sun2022-acssuschemeng-1c06657-yellow-emissive-carbon-quantum-rings-y-c-1--after-s02-add",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "sun2022-acssuschemeng-1c06657-yellow-emissive-carbon-quantum-rings-y-c-1--after-s01-dissolve"
+      ]
+    },
+    {
+      "id": "sun2022-acssuschemeng-1c06657-yellow-emissive-carbon-quantum-rings-y-c-1--after-s03-reflux",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "sun2022-acssuschemeng-1c06657-yellow-emissive-carbon-quantum-rings-y-c-1--after-s02-add",
+        "sun2022-acssuschemeng-1c06657-yellow-emissive-carbon-quantum-rings-y-c-1--phthalic-acid",
+        "sun2022-acssuschemeng-1c06657-yellow-emissive-carbon-quantum-rings-y-c-1--formamide"
+      ]
+    },
+    {
+      "id": "sun2022-acssuschemeng-1c06657-yellow-emissive-carbon-quantum-rings-y-c-1--after-s04-cool",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "sun2022-acssuschemeng-1c06657-yellow-emissive-carbon-quantum-rings-y-c-1--after-s03-reflux"
+      ]
+    },
+    {
+      "id": "sun2022-acssuschemeng-1c06657-yellow-emissive-carbon-quantum-rings-y-c-1--after-s05-wash",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "sun2022-acssuschemeng-1c06657-yellow-emissive-carbon-quantum-rings-y-c-1--after-s04-cool"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-dissolve",
+      "action": "dissolve",
+      "label": "Phthalic acid, urea, and formamide dissolved",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "sun2022-acssuschemeng-1c06657-yellow-emissive-carbon-quantum-rings-y-c-1--phthalic-acid",
+        "sun2022-acssuschemeng-1c06657-yellow-emissive-carbon-quantum-rings-y-c-1--formamide"
+      ],
+      "outputs": [
+        "sun2022-acssuschemeng-1c06657-yellow-emissive-carbon-quantum-rings-y-c-1--after-s01-dissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "sun2022-acssuschemeng-1c06657",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Phthalic acid, urea, and formamide dissolved",
+      "evidence": [
+        {
+          "source_id": "sun2022-acssuschemeng-1c06657",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-add",
+      "action": "add",
+      "label": "Sulfuric acid added dropwise",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-dissolve"
+      ],
+      "inputs": [
+        "sun2022-acssuschemeng-1c06657-yellow-emissive-carbon-quantum-rings-y-c-1--after-s01-dissolve"
+      ],
+      "outputs": [
+        "sun2022-acssuschemeng-1c06657-yellow-emissive-carbon-quantum-rings-y-c-1--after-s02-add"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "sun2022-acssuschemeng-1c06657",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Sulfuric acid added dropwise",
+      "evidence": [
+        {
+          "source_id": "sun2022-acssuschemeng-1c06657",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s03-reflux",
+      "action": "reflux",
+      "label": "Refluxed at 200 °C for 15 min",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-add"
+      ],
+      "inputs": [
+        "sun2022-acssuschemeng-1c06657-yellow-emissive-carbon-quantum-rings-y-c-1--after-s02-add",
+        "sun2022-acssuschemeng-1c06657-yellow-emissive-carbon-quantum-rings-y-c-1--phthalic-acid",
+        "sun2022-acssuschemeng-1c06657-yellow-emissive-carbon-quantum-rings-y-c-1--formamide"
+      ],
+      "outputs": [
+        "sun2022-acssuschemeng-1c06657-yellow-emissive-carbon-quantum-rings-y-c-1--after-s03-reflux"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 200,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "200 °C",
+          "evidence": [
+            {
+              "source_id": "sun2022-acssuschemeng-1c06657",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 15,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "15 min",
+          "evidence": [
+            {
+              "source_id": "sun2022-acssuschemeng-1c06657",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "sun2022-acssuschemeng-1c06657",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Refluxed at 200 °C for 15 min",
+      "evidence": [
+        {
+          "source_id": "sun2022-acssuschemeng-1c06657",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s04-cool",
+      "action": "cool",
+      "label": "Cooled to room temperature",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-reflux"
+      ],
+      "inputs": [
+        "sun2022-acssuschemeng-1c06657-yellow-emissive-carbon-quantum-rings-y-c-1--after-s03-reflux"
+      ],
+      "outputs": [
+        "sun2022-acssuschemeng-1c06657-yellow-emissive-carbon-quantum-rings-y-c-1--after-s04-cool"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "sun2022-acssuschemeng-1c06657",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Cooled to room temperature",
+      "evidence": [
+        {
+          "source_id": "sun2022-acssuschemeng-1c06657",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s05-wash",
+      "action": "wash",
+      "label": "Washed with water",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-cool"
+      ],
+      "inputs": [
+        "sun2022-acssuschemeng-1c06657-yellow-emissive-carbon-quantum-rings-y-c-1--after-s04-cool"
+      ],
+      "outputs": [
+        "sun2022-acssuschemeng-1c06657-yellow-emissive-carbon-quantum-rings-y-c-1--after-s05-wash"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Washed with water",
+      "evidence": [
+        {
+          "source_id": "sun2022-acssuschemeng-1c06657",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "sun2022-acssuschemeng-1c06657-yellow-emissive-carbon-quantum-rings-y-c-1--product",
+      "source_sample_label": "yellow-emissive carbon quantum rings (y-CQRs)",
+      "batch_id": null,
+      "material_state_id": "sun2022-acssuschemeng-1c06657-yellow-emissive-carbon-quantum-rings-y-c-1--after-s05-wash",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "C",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "sun2022-acssuschemeng-1c06657",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "morphology": {
+        "value": "ring",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "sun2022-acssuschemeng-1c06657",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": "N-doped and O-doped surface groups",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "sun2022-acssuschemeng-1c06657",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "sun2022-acssuschemeng-1c06657",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "notes": [
+        "Reactor: 100 mL round-bottomed flask (Main PDF p.2).",
+        "Reaction temperature: 200 degC (Main PDF p.2).",
+        "Reaction time: 15 min (Main PDF p.2)."
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "id": "sun2022-acssuschemeng-1c06657-yellow-emissive-carbon-quantum-rings-y-c-1--size",
+      "sample_id": "sun2022-acssuschemeng-1c06657-yellow-emissive-carbon-quantum-rings-y-c-1--product",
+      "property": "crystallite_size",
+      "technique": "XRD",
+      "value": {
+        "value": 0.37,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "0.37 nm",
+        "evidence": [
+          {
+            "source_id": "sun2022-acssuschemeng-1c06657",
+            "locator": "Main PDF p.8"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "sun2022-acssuschemeng-1c06657",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    }
+  ],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Phase not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

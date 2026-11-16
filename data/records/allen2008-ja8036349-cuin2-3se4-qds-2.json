@@ -1,0 +1,340 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "allen2008-ja8036349-cuin2-3se4-qds-2",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Peter M. Allen; Moungi G. Bawendi (2008): CuIn2.3Se4 QDs",
+  "material": {
+    "formula": "CuIn2.3Se4",
+    "family": "CuIn2.3Se4 nanocrystals",
+    "elements": [
+      "Cu",
+      "In",
+      "Se"
+    ],
+    "components": [
+      "CuIn2.3Se4"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Hot injection",
+  "sources": [
+    {
+      "id": "allen2008-ja8036349",
+      "doi": "10.1021/ja8036349",
+      "title": "Ternary I–III–VI Quantum Dots Luminescent in the Red to Near-Infrared",
+      "authors": "Peter M. Allen; Moungi G. Bawendi",
+      "year": 2008,
+      "url": "https://doi.org/10.1021/ja8036349",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "allen2008-ja8036349",
+    "recipe_family": "allen2008-ja8036349-cuin2-3se4-qds-2",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "CuIn2.3Se4",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "allen2008-ja8036349",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    },
+    "size": {
+      "value": 3.0,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "3 nm",
+      "evidence": [
+        {
+          "source_id": "allen2008-ja8036349",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "sphere",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "allen2008-ja8036349",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "allen2008-ja8036349-cuin2-3se4-qds-2--cucl",
+      "name": "CuCl",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "allen2008-ja8036349",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "allen2008-ja8036349-cuin2-3se4-qds-2--incl3",
+      "name": "InCl3",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "allen2008-ja8036349",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "allen2008-ja8036349-cuin2-3se4-qds-2--tri-n-octylphosphine-top",
+      "name": "tri-n-octylphosphine (TOP)",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "allen2008-ja8036349",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "allen2008-ja8036349-cuin2-3se4-qds-2--oleylamine-oa",
+      "name": "oleylamine (OA)",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "allen2008-ja8036349",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "allen2008-ja8036349-cuin2-3se4-qds-2--after-s01-inject",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": []
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-inject",
+      "action": "inject",
+      "label": "Inject (Me3Si)2Se in TOP",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [],
+      "outputs": [
+        "allen2008-ja8036349-cuin2-3se4-qds-2--after-s01-inject"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 280,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "280 °C",
+          "evidence": [
+            {
+              "source_id": "allen2008-ja8036349",
+              "locator": "Main PDF p.1"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Inject (Me3Si)2Se in TOP",
+      "evidence": [
+        {
+          "source_id": "allen2008-ja8036349",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "allen2008-ja8036349-cuin2-3se4-qds-2--product",
+      "source_sample_label": "CuIn2.3Se4 QDs",
+      "batch_id": null,
+      "material_state_id": "allen2008-ja8036349-cuin2-3se4-qds-2--after-s01-inject",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "CuIn2.3Se4",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "allen2008-ja8036349",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "morphology": {
+        "value": "sphere",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "allen2008-ja8036349",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "allen2008-ja8036349",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "measurements": [
+    {
+      "id": "allen2008-ja8036349-cuin2-3se4-qds-2--size",
+      "sample_id": "allen2008-ja8036349-cuin2-3se4-qds-2--product",
+      "property": "diameter",
+      "technique": "TEM",
+      "value": {
+        "value": 3.0,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "3 nm",
+        "evidence": [
+          {
+            "source_id": "allen2008-ja8036349",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "allen2008-ja8036349",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    }
+  ],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Phase not reported in the extracted text.",
+      "Ligand not reported in the extracted text.",
+      "Reactor not reported in the extracted text.",
+      "Atmosphere not reported in the extracted text.",
+      "Reaction temperature not reported in the extracted text.",
+      "Reaction time not reported in the extracted text.",
+      "Amount of CuCl not reported in the extracted text.",
+      "Amount of InCl3 not reported in the extracted text.",
+      "Amount of tri-n-octylphosphine (TOP) not reported in the extracted text.",
+      "Amount of oleylamine (OA) not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}
