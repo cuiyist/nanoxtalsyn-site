@@ -1,0 +1,406 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "rahmatpanah2022-2426749-n-doped-graphene-quantum-dot-ngqd-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Zahra Rahmatpanah; Mir Mohammad Alavi Nikje; Maryam Dargahi (2022): N-doped graphene quantum dot (NGQD)",
+  "material": {
+    "formula": "C, N",
+    "family": "C, N nanocrystals",
+    "elements": [
+      "C",
+      "N"
+    ],
+    "components": [
+      "C, N"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Hydrothermal",
+  "sources": [
+    {
+      "id": "rahmatpanah2022-2426749",
+      "doi": "10.1155/2022/2426749",
+      "title": "N-Doped Graphene Quantum Dot Nanoparticle Synthesis of Optical Active Thermal Stable Polyurea Nanocomposites Using Polybutadiene Chain Modification",
+      "authors": "Zahra Rahmatpanah; Mir Mohammad Alavi Nikje; Maryam Dargahi",
+      "year": 2022,
+      "url": "https://doi.org/10.1155/2022/2426749",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "rahmatpanah2022-2426749",
+    "recipe_family": "rahmatpanah2022-2426749-n-doped-graphene-quantum-dot-ngqd-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "C, N",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "rahmatpanah2022-2426749",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    },
+    "size": {
+      "value": null,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "not_reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "not reported",
+      "evidence": [],
+      "derivation": null
+    },
+    "morphology": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "rahmatpanah2022-2426749-n-doped-graphene-quantum-dot-ngqd-1--citric-acid",
+      "name": "citric acid",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "mass": {
+          "value": 0.21,
+          "minimum": null,
+          "maximum": null,
+          "unit": "g",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.21 g",
+          "evidence": [
+            {
+              "source_id": "rahmatpanah2022-2426749",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "rahmatpanah2022-2426749",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "rahmatpanah2022-2426749-n-doped-graphene-quantum-dot-ngqd-1--urea",
+      "name": "urea",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "mass": {
+          "value": 0.18,
+          "minimum": null,
+          "maximum": null,
+          "unit": "g",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.18 g",
+          "evidence": [
+            {
+              "source_id": "rahmatpanah2022-2426749",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "rahmatpanah2022-2426749",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "rahmatpanah2022-2426749-n-doped-graphene-quantum-dot-ngqd-1--after-s01-dissolve",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "rahmatpanah2022-2426749-n-doped-graphene-quantum-dot-ngqd-1--citric-acid",
+        "rahmatpanah2022-2426749-n-doped-graphene-quantum-dot-ngqd-1--urea"
+      ]
+    },
+    {
+      "id": "rahmatpanah2022-2426749-n-doped-graphene-quantum-dot-ngqd-1--after-s02-heat",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "rahmatpanah2022-2426749-n-doped-graphene-quantum-dot-ngqd-1--after-s01-dissolve"
+      ]
+    },
+    {
+      "id": "rahmatpanah2022-2426749-n-doped-graphene-quantum-dot-ngqd-1--after-s03-centrifuge",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "rahmatpanah2022-2426749-n-doped-graphene-quantum-dot-ngqd-1--after-s02-heat"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-dissolve",
+      "action": "dissolve",
+      "label": "Dissolve citric acid and urea in deionized water",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "rahmatpanah2022-2426749-n-doped-graphene-quantum-dot-ngqd-1--citric-acid",
+        "rahmatpanah2022-2426749-n-doped-graphene-quantum-dot-ngqd-1--urea"
+      ],
+      "outputs": [
+        "rahmatpanah2022-2426749-n-doped-graphene-quantum-dot-ngqd-1--after-s01-dissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dissolve citric acid and urea in deionized water",
+      "evidence": [
+        {
+          "source_id": "rahmatpanah2022-2426749",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s02-heat",
+      "action": "heat",
+      "label": "Hydrothermal reaction",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-dissolve"
+      ],
+      "inputs": [
+        "rahmatpanah2022-2426749-n-doped-graphene-quantum-dot-ngqd-1--after-s01-dissolve"
+      ],
+      "outputs": [
+        "rahmatpanah2022-2426749-n-doped-graphene-quantum-dot-ngqd-1--after-s02-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 200,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "200 °C",
+          "evidence": [
+            {
+              "source_id": "rahmatpanah2022-2426749",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 4,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "4 hours",
+          "evidence": [
+            {
+              "source_id": "rahmatpanah2022-2426749",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Hydrothermal reaction",
+      "evidence": [
+        {
+          "source_id": "rahmatpanah2022-2426749",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s03-centrifuge",
+      "action": "centrifuge",
+      "label": "Separate black deposit",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-heat"
+      ],
+      "inputs": [
+        "rahmatpanah2022-2426749-n-doped-graphene-quantum-dot-ngqd-1--after-s02-heat"
+      ],
+      "outputs": [
+        "rahmatpanah2022-2426749-n-doped-graphene-quantum-dot-ngqd-1--after-s03-centrifuge"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Separate black deposit",
+      "evidence": [
+        {
+          "source_id": "rahmatpanah2022-2426749",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "rahmatpanah2022-2426749-n-doped-graphene-quantum-dot-ngqd-1--product",
+      "source_sample_label": "N-doped graphene quantum dot (NGQD)",
+      "batch_id": null,
+      "material_state_id": "rahmatpanah2022-2426749-n-doped-graphene-quantum-dot-ngqd-1--after-s03-centrifuge",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "C, N",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "rahmatpanah2022-2426749",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "morphology": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "surface": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "rahmatpanah2022-2426749",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "notes": [
+        "Reactor: autoclave (Main PDF p.3).",
+        "Reaction temperature: 200 degC (Main PDF p.3).",
+        "Reaction time: 4 h (Main PDF p.3)."
+      ]
+    }
+  ],
+  "measurements": [],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Phase not reported in the extracted text.",
+      "Shape not reported in the extracted text.",
+      "Ligand not reported in the extracted text.",
+      "Size not reported in the extracted text.",
+      "Atmosphere not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

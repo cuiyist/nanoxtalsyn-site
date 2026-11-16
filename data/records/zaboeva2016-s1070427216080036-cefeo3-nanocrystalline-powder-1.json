@@ -1,0 +1,258 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "zaboeva2016-s1070427216080036-cefeo3-nanocrystalline-powder-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "E. A. Zaboeva; S. G. Izotova; V. I. Popkov (2016): CeFeO3 nanocrystalline powder",
+  "material": {
+    "formula": "CeFeO3",
+    "family": "CeFeO3 nanocrystals",
+    "elements": [
+      "Ce",
+      "Fe",
+      "O"
+    ],
+    "components": [
+      "CeFeO3"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Glycine-nitrate combustion",
+  "sources": [
+    {
+      "id": "zaboeva2016-s1070427216080036",
+      "doi": "10.1134/s1070427216080036",
+      "title": "Glycine-nitrate combustion synthesis of CeFeO3-based nanocrystalline powders",
+      "authors": "E. A. Zaboeva; S. G. Izotova; V. I. Popkov",
+      "year": 2016,
+      "url": "https://doi.org/10.1134/s1070427216080036",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "zaboeva2016-s1070427216080036",
+    "recipe_family": "zaboeva2016-s1070427216080036-cefeo3-nanocrystalline-powder-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    },
+    "phase": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    },
+    "size": {
+      "value": null,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "not_reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "not reported",
+      "evidence": [],
+      "derivation": null
+    },
+    "morphology": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "zaboeva2016-s1070427216080036-cefeo3-nanocrystalline-powder-1--glycine",
+      "name": "glycine",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zaboeva2016-s1070427216080036",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "zaboeva2016-s1070427216080036-cefeo3-nanocrystalline-powder-1--after-s01-dissolve",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zaboeva2016-s1070427216080036-cefeo3-nanocrystalline-powder-1--glycine"
+      ]
+    },
+    {
+      "id": "zaboeva2016-s1070427216080036-cefeo3-nanocrystalline-powder-1--after-s02-heat",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "zaboeva2016-s1070427216080036-cefeo3-nanocrystalline-powder-1--after-s01-dissolve",
+        "zaboeva2016-s1070427216080036-cefeo3-nanocrystalline-powder-1--glycine"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-dissolve",
+      "action": "dissolve",
+      "label": "Dissolve reagents in distilled water",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "zaboeva2016-s1070427216080036-cefeo3-nanocrystalline-powder-1--glycine"
+      ],
+      "outputs": [
+        "zaboeva2016-s1070427216080036-cefeo3-nanocrystalline-powder-1--after-s01-dissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dissolve reagents in distilled water",
+      "evidence": [
+        {
+          "source_id": "zaboeva2016-s1070427216080036",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-heat",
+      "action": "heat",
+      "label": "Heat solution until self-ignition",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-dissolve"
+      ],
+      "inputs": [
+        "zaboeva2016-s1070427216080036-cefeo3-nanocrystalline-powder-1--after-s01-dissolve",
+        "zaboeva2016-s1070427216080036-cefeo3-nanocrystalline-powder-1--glycine"
+      ],
+      "outputs": [
+        "zaboeva2016-s1070427216080036-cefeo3-nanocrystalline-powder-1--after-s02-heat"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heat solution until self-ignition",
+      "evidence": [
+        {
+          "source_id": "zaboeva2016-s1070427216080036",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "zaboeva2016-s1070427216080036-cefeo3-nanocrystalline-powder-1--product",
+      "source_sample_label": "CeFeO3 nanocrystalline powder",
+      "batch_id": null,
+      "material_state_id": "zaboeva2016-s1070427216080036-cefeo3-nanocrystalline-powder-1--after-s02-heat",
+      "parent_sample_id": null,
+      "composition": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "phase": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "morphology": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "surface": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "zaboeva2016-s1070427216080036",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "notes": [
+        "Reactor: stainless-steel vessel (Main PDF p.2)."
+      ]
+    }
+  ],
+  "measurements": [],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Phase not reported in the extracted text.",
+      "Shape not reported in the extracted text.",
+      "Ligand not reported in the extracted text.",
+      "Size not reported in the extracted text.",
+      "Atmosphere not reported in the extracted text.",
+      "Reaction temperature not reported in the extracted text.",
+      "Reaction time not reported in the extracted text.",
+      "Amount of glycine not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

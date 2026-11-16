@@ -1,0 +1,490 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "bruce2019-chemrxiv-7866164-v1-graphene-quantum-dots-gqds-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Jonathan Bruce; Jude Clapper (2019): Graphene Quantum Dots (GQDs)",
+  "material": {
+    "formula": "C",
+    "family": "C nanocrystals",
+    "elements": [
+      "C"
+    ],
+    "components": [
+      "C"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Electrochemical",
+  "sources": [
+    {
+      "id": "bruce2019-chemrxiv-7866164-v1",
+      "doi": "10.26434/chemrxiv.7866164.v1",
+      "title": "Facile Synthesis of Formate-Functionalized Graphene Quantum Dots",
+      "authors": "Jonathan Bruce; Jude Clapper",
+      "year": 2019,
+      "url": "https://doi.org/10.26434/chemrxiv.7866164.v1",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "bruce2019-chemrxiv-7866164-v1",
+    "recipe_family": "bruce2019-chemrxiv-7866164-v1-graphene-quantum-dots-gqds-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "C",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "bruce2019-chemrxiv-7866164-v1",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "sp2-hybridized",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "bruce2019-chemrxiv-7866164-v1",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": 10,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "10 nm",
+      "evidence": [
+        {
+          "source_id": "bruce2019-chemrxiv-7866164-v1",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "quantum dot",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "bruce2019-chemrxiv-7866164-v1",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "bruce2019-chemrxiv-7866164-v1-graphene-quantum-dots-gqds-1--citric-acid-monohydrate",
+      "name": "citric acid monohydrate",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "concentration": {
+          "value": 0.1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "M",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.1 M",
+          "evidence": [
+            {
+              "source_id": "bruce2019-chemrxiv-7866164-v1",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "bruce2019-chemrxiv-7866164-v1",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "bruce2019-chemrxiv-7866164-v1-graphene-quantum-dots-gqds-1--graphite",
+      "name": "graphite",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "bruce2019-chemrxiv-7866164-v1",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "bruce2019-chemrxiv-7866164-v1-graphene-quantum-dots-gqds-1--calcium-chloride",
+      "name": "calcium chloride",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "concentration": {
+          "value": 0.15,
+          "minimum": null,
+          "maximum": null,
+          "unit": "M",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.15 M",
+          "evidence": [
+            {
+              "source_id": "bruce2019-chemrxiv-7866164-v1",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "bruce2019-chemrxiv-7866164-v1",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "bruce2019-chemrxiv-7866164-v1-graphene-quantum-dots-gqds-1--after-s01-apply-voltage",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "bruce2019-chemrxiv-7866164-v1-graphene-quantum-dots-gqds-1--graphite"
+      ]
+    },
+    {
+      "id": "bruce2019-chemrxiv-7866164-v1-graphene-quantum-dots-gqds-1--after-s02-apply-voltage",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "bruce2019-chemrxiv-7866164-v1-graphene-quantum-dots-gqds-1--after-s01-apply-voltage",
+        "bruce2019-chemrxiv-7866164-v1-graphene-quantum-dots-gqds-1--graphite"
+      ]
+    },
+    {
+      "id": "bruce2019-chemrxiv-7866164-v1-graphene-quantum-dots-gqds-1--after-s03-filter",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "bruce2019-chemrxiv-7866164-v1-graphene-quantum-dots-gqds-1--after-s02-apply-voltage"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-apply-voltage",
+      "action": "apply voltage",
+      "label": "Applying alternating voltage",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "bruce2019-chemrxiv-7866164-v1-graphene-quantum-dots-gqds-1--graphite"
+      ],
+      "outputs": [
+        "bruce2019-chemrxiv-7866164-v1-graphene-quantum-dots-gqds-1--after-s01-apply-voltage"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 15,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "15 min",
+          "evidence": [
+            {
+              "source_id": "bruce2019-chemrxiv-7866164-v1",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "bruce2019-chemrxiv-7866164-v1",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Applying alternating voltage",
+      "evidence": [
+        {
+          "source_id": "bruce2019-chemrxiv-7866164-v1",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s02-apply-voltage",
+      "action": "apply voltage",
+      "label": "Applying constant voltage",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-apply-voltage"
+      ],
+      "inputs": [
+        "bruce2019-chemrxiv-7866164-v1-graphene-quantum-dots-gqds-1--after-s01-apply-voltage",
+        "bruce2019-chemrxiv-7866164-v1-graphene-quantum-dots-gqds-1--graphite"
+      ],
+      "outputs": [
+        "bruce2019-chemrxiv-7866164-v1-graphene-quantum-dots-gqds-1--after-s02-apply-voltage"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 30,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "30 min",
+          "evidence": [
+            {
+              "source_id": "bruce2019-chemrxiv-7866164-v1",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "bruce2019-chemrxiv-7866164-v1",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Applying constant voltage",
+      "evidence": [
+        {
+          "source_id": "bruce2019-chemrxiv-7866164-v1",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s03-filter",
+      "action": "filter",
+      "label": "Filtering calcium citrate precipitate",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-apply-voltage"
+      ],
+      "inputs": [
+        "bruce2019-chemrxiv-7866164-v1-graphene-quantum-dots-gqds-1--after-s02-apply-voltage"
+      ],
+      "outputs": [
+        "bruce2019-chemrxiv-7866164-v1-graphene-quantum-dots-gqds-1--after-s03-filter"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Filtering calcium citrate precipitate",
+      "evidence": [
+        {
+          "source_id": "bruce2019-chemrxiv-7866164-v1",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "bruce2019-chemrxiv-7866164-v1-graphene-quantum-dots-gqds-1--product",
+      "source_sample_label": "Graphene Quantum Dots (GQDs)",
+      "batch_id": null,
+      "material_state_id": "bruce2019-chemrxiv-7866164-v1-graphene-quantum-dots-gqds-1--after-s03-filter",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "C",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "bruce2019-chemrxiv-7866164-v1",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "sp2-hybridized",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "bruce2019-chemrxiv-7866164-v1",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": "quantum dot",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "bruce2019-chemrxiv-7866164-v1",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "bruce2019-chemrxiv-7866164-v1",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "notes": [
+        "Reactor: solution in a container (Main PDF p.3)."
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "id": "bruce2019-chemrxiv-7866164-v1-graphene-quantum-dots-gqds-1--size",
+      "sample_id": "bruce2019-chemrxiv-7866164-v1-graphene-quantum-dots-gqds-1--product",
+      "property": "particle_size",
+      "technique": "not reported",
+      "value": {
+        "value": 10,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "10 nm",
+        "evidence": [
+          {
+            "source_id": "bruce2019-chemrxiv-7866164-v1",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "bruce2019-chemrxiv-7866164-v1",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Ligand not reported in the extracted text.",
+      "Reaction temperature not reported in the extracted text.",
+      "Reaction time not reported in the extracted text.",
+      "Amount of graphite not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

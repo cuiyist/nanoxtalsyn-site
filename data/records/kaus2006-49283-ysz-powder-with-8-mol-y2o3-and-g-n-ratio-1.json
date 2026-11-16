@@ -1,0 +1,432 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "kaus2006-49283-ysz-powder-with-8-mol-y2o3-and-g-n-ratio-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Ingeborg Kaus; Paul Inge Dahl; Johann Mastin; Tor Grande; Mari-Ann Einarsrud (2006): YSZ powder with 8 mol% Y2O3 and G/N ratio of 0.23",
+  "material": {
+    "formula": "Y2O3-ZrO2",
+    "family": "Y2O3-ZrO2 nanocrystals",
+    "elements": [
+      "Y",
+      "O",
+      "Zr"
+    ],
+    "components": [
+      "Y2O3",
+      "ZrO2"
+    ],
+    "architecture": "unresolved"
+  },
+  "method": "Smoldering combustion",
+  "sources": [
+    {
+      "id": "kaus2006-49283",
+      "doi": "10.1155/jnm/2006/49283",
+      "title": "Synthesis and Characterization of Nanocrystalline YSZ Powder by Smoldering Combustion Synthesis",
+      "authors": "Ingeborg Kaus; Paul Inge Dahl; Johann Mastin; Tor Grande; Mari-Ann Einarsrud",
+      "year": 2006,
+      "url": "https://doi.org/10.1155/jnm/2006/49283",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "kaus2006-49283",
+    "recipe_family": "kaus2006-49283-ysz-powder-with-8-mol-y2o3-and-g-n-ratio-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "YSZ (Y2O3-ZrO2)",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "kaus2006-49283",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    },
+    "size": {
+      "value": null,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "not_reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "not reported",
+      "evidence": [],
+      "derivation": null
+    },
+    "morphology": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "kaus2006-49283-ysz-powder-with-8-mol-y2o3-and-g-n-ratio-1--zirconyl-nitrate-hydrate-zro-no3-2-6h2o",
+      "name": "zirconyl nitrate hydrate (ZrO(NO3)2 · 6H2O)",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "kaus2006-49283",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "kaus2006-49283-ysz-powder-with-8-mol-y2o3-and-g-n-ratio-1--yttrium-nitrate-y-no3-3-6h2o",
+      "name": "yttrium nitrate (Y(NO3)3 · 6H2O)",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "kaus2006-49283",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "kaus2006-49283-ysz-powder-with-8-mol-y2o3-and-g-n-ratio-1--glycine",
+      "name": "glycine",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "kaus2006-49283",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "kaus2006-49283-ysz-powder-with-8-mol-y2o3-and-g-n-ratio-1--after-s01-dissolve",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "kaus2006-49283-ysz-powder-with-8-mol-y2o3-and-g-n-ratio-1--zirconyl-nitrate-hydrate-zro-no3-2-6h2o",
+        "kaus2006-49283-ysz-powder-with-8-mol-y2o3-and-g-n-ratio-1--yttrium-nitrate-y-no3-3-6h2o"
+      ]
+    },
+    {
+      "id": "kaus2006-49283-ysz-powder-with-8-mol-y2o3-and-g-n-ratio-1--after-s02-filter",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "kaus2006-49283-ysz-powder-with-8-mol-y2o3-and-g-n-ratio-1--after-s01-dissolve",
+        "kaus2006-49283-ysz-powder-with-8-mol-y2o3-and-g-n-ratio-1--zirconyl-nitrate-hydrate-zro-no3-2-6h2o"
+      ]
+    },
+    {
+      "id": "kaus2006-49283-ysz-powder-with-8-mol-y2o3-and-g-n-ratio-1--after-s03-mix",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "kaus2006-49283-ysz-powder-with-8-mol-y2o3-and-g-n-ratio-1--after-s02-filter",
+        "kaus2006-49283-ysz-powder-with-8-mol-y2o3-and-g-n-ratio-1--zirconyl-nitrate-hydrate-zro-no3-2-6h2o",
+        "kaus2006-49283-ysz-powder-with-8-mol-y2o3-and-g-n-ratio-1--yttrium-nitrate-y-no3-3-6h2o"
+      ]
+    },
+    {
+      "id": "kaus2006-49283-ysz-powder-with-8-mol-y2o3-and-g-n-ratio-1--after-s04-evaporate",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "kaus2006-49283-ysz-powder-with-8-mol-y2o3-and-g-n-ratio-1--after-s03-mix",
+        "kaus2006-49283-ysz-powder-with-8-mol-y2o3-and-g-n-ratio-1--zirconyl-nitrate-hydrate-zro-no3-2-6h2o",
+        "kaus2006-49283-ysz-powder-with-8-mol-y2o3-and-g-n-ratio-1--yttrium-nitrate-y-no3-3-6h2o",
+        "kaus2006-49283-ysz-powder-with-8-mol-y2o3-and-g-n-ratio-1--glycine"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-dissolve",
+      "action": "dissolve",
+      "label": "Zirconyl nitrate and yttrium nitrate dissolved in distilled deionized water.",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "kaus2006-49283-ysz-powder-with-8-mol-y2o3-and-g-n-ratio-1--zirconyl-nitrate-hydrate-zro-no3-2-6h2o",
+        "kaus2006-49283-ysz-powder-with-8-mol-y2o3-and-g-n-ratio-1--yttrium-nitrate-y-no3-3-6h2o"
+      ],
+      "outputs": [
+        "kaus2006-49283-ysz-powder-with-8-mol-y2o3-and-g-n-ratio-1--after-s01-dissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Zirconyl nitrate and yttrium nitrate dissolved in distilled deionized water.",
+      "evidence": [
+        {
+          "source_id": "kaus2006-49283",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-filter",
+      "action": "filter",
+      "label": "Zirconyl nitrate solution filtered through porcelain filter crucibles.",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-dissolve"
+      ],
+      "inputs": [
+        "kaus2006-49283-ysz-powder-with-8-mol-y2o3-and-g-n-ratio-1--after-s01-dissolve",
+        "kaus2006-49283-ysz-powder-with-8-mol-y2o3-and-g-n-ratio-1--zirconyl-nitrate-hydrate-zro-no3-2-6h2o"
+      ],
+      "outputs": [
+        "kaus2006-49283-ysz-powder-with-8-mol-y2o3-and-g-n-ratio-1--after-s02-filter"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Zirconyl nitrate solution filtered through porcelain filter crucibles.",
+      "evidence": [
+        {
+          "source_id": "kaus2006-49283",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s03-mix",
+      "action": "mix",
+      "label": "Zirconyl nitrate and yttrium nitrate solutions mixed in appropriate proportions.",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-filter"
+      ],
+      "inputs": [
+        "kaus2006-49283-ysz-powder-with-8-mol-y2o3-and-g-n-ratio-1--after-s02-filter",
+        "kaus2006-49283-ysz-powder-with-8-mol-y2o3-and-g-n-ratio-1--zirconyl-nitrate-hydrate-zro-no3-2-6h2o",
+        "kaus2006-49283-ysz-powder-with-8-mol-y2o3-and-g-n-ratio-1--yttrium-nitrate-y-no3-3-6h2o"
+      ],
+      "outputs": [
+        "kaus2006-49283-ysz-powder-with-8-mol-y2o3-and-g-n-ratio-1--after-s03-mix"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Zirconyl nitrate and yttrium nitrate solutions mixed in appropriate proportions.",
+      "evidence": [
+        {
+          "source_id": "kaus2006-49283",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s04-evaporate",
+      "action": "evaporate",
+      "label": "Solution evaporated in small portions on a hotplate at 200°C until self-ignition occurred.",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-mix"
+      ],
+      "inputs": [
+        "kaus2006-49283-ysz-powder-with-8-mol-y2o3-and-g-n-ratio-1--after-s03-mix",
+        "kaus2006-49283-ysz-powder-with-8-mol-y2o3-and-g-n-ratio-1--zirconyl-nitrate-hydrate-zro-no3-2-6h2o",
+        "kaus2006-49283-ysz-powder-with-8-mol-y2o3-and-g-n-ratio-1--yttrium-nitrate-y-no3-3-6h2o",
+        "kaus2006-49283-ysz-powder-with-8-mol-y2o3-and-g-n-ratio-1--glycine"
+      ],
+      "outputs": [
+        "kaus2006-49283-ysz-powder-with-8-mol-y2o3-and-g-n-ratio-1--after-s04-evaporate"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 200,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "200 °C",
+          "evidence": [
+            {
+              "source_id": "kaus2006-49283",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Solution evaporated in small portions on a hotplate at 200°C until self-ignition occurred.",
+      "evidence": [
+        {
+          "source_id": "kaus2006-49283",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "kaus2006-49283-ysz-powder-with-8-mol-y2o3-and-g-n-ratio-1--product",
+      "source_sample_label": "YSZ powder with 8 mol% Y2O3 and G/N ratio of 0.23",
+      "batch_id": null,
+      "material_state_id": "kaus2006-49283-ysz-powder-with-8-mol-y2o3-and-g-n-ratio-1--after-s04-evaporate",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "YSZ (Y2O3-ZrO2)",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "kaus2006-49283",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "morphology": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "surface": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "kaus2006-49283",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "notes": [
+        "Reactor: tall beaker (approx. 60–70 cm tall) (Main PDF p.2)."
+      ]
+    }
+  ],
+  "measurements": [],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Phase not reported in the extracted text.",
+      "Shape not reported in the extracted text.",
+      "Ligand not reported in the extracted text.",
+      "Size not reported in the extracted text.",
+      "Atmosphere not reported in the extracted text.",
+      "Reaction temperature not reported in the extracted text.",
+      "Reaction time not reported in the extracted text.",
+      "Amount of zirconyl nitrate hydrate (ZrO(NO3)2 · 6H2O) not reported in the extracted text.",
+      "Amount of yttrium nitrate (Y(NO3)3 · 6H2O) not reported in the extracted text.",
+      "Amount of glycine not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

@@ -1,0 +1,262 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "almjasheva2016-s107042721606001x-cofe2o4-nanocrystalline-powders-microwav-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "O. V. Almjasheva; V. V. Gusarov (2016): CoFe2O4 nanocrystalline powders (microwave heating)",
+  "material": {
+    "formula": "CoFe2O4",
+    "family": "CoFe2O4 nanocrystals",
+    "elements": [
+      "Co",
+      "Fe",
+      "O"
+    ],
+    "components": [
+      "CoFe2O4"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Hydrothermal-microwave",
+  "sources": [
+    {
+      "id": "almjasheva2016-s107042721606001x",
+      "doi": "10.1134/s107042721606001x",
+      "title": "Prenucleation formations in control over synthesis of CoFe2O4 nanocrystalline powders",
+      "authors": "O. V. Almjasheva; V. V. Gusarov",
+      "year": 2016,
+      "url": "https://doi.org/10.1134/s107042721606001x",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "almjasheva2016-s107042721606001x",
+    "recipe_family": "almjasheva2016-s107042721606001x-cofe2o4-nanocrystalline-powders-microwav-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "CoFe2O4",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "almjasheva2016-s107042721606001x",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "spinel",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "almjasheva2016-s107042721606001x",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": 10,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "10 nm",
+      "evidence": [
+        {
+          "source_id": "almjasheva2016-s107042721606001x",
+          "locator": "Main PDF p.5"
+        }
+      ],
+      "derivation": null
+    },
+    "morphology": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "almjasheva2016-s107042721606001x-cofe2o4-nanocrystalline-powders-microwav-1--naoh",
+      "name": "NaOH",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "almjasheva2016-s107042721606001x",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "almjasheva2016-s107042721606001x-cofe2o4-nanocrystalline-powders-microwav-1--after-s01-ultrasonic",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": []
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-ultrasonic",
+      "action": "ultrasonic",
+      "label": "Ultrasonic treatment of the hydroxide suspension",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [],
+      "outputs": [
+        "almjasheva2016-s107042721606001x-cofe2o4-nanocrystalline-powders-microwav-1--after-s01-ultrasonic"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Ultrasonic treatment of the hydroxide suspension",
+      "evidence": [
+        {
+          "source_id": "almjasheva2016-s107042721606001x",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "almjasheva2016-s107042721606001x-cofe2o4-nanocrystalline-powders-microwav-1--product",
+      "source_sample_label": "CoFe2O4 nanocrystalline powders (microwave heating)",
+      "batch_id": null,
+      "material_state_id": "almjasheva2016-s107042721606001x-cofe2o4-nanocrystalline-powders-microwav-1--after-s01-ultrasonic",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "CoFe2O4",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "almjasheva2016-s107042721606001x",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "spinel",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "almjasheva2016-s107042721606001x",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "surface": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "almjasheva2016-s107042721606001x",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "notes": [
+        "Reactor: 100-mL Teflon autoclaves with a system for microwave heating (Main PDF p.2).",
+        "Reaction temperature: 130 degC (Main PDF p.2).",
+        "Reaction time: 1 min (Main PDF p.3)."
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "id": "almjasheva2016-s107042721606001x-cofe2o4-nanocrystalline-powders-microwav-1--size",
+      "sample_id": "almjasheva2016-s107042721606001x-cofe2o4-nanocrystalline-powders-microwav-1--product",
+      "property": "crystallite_size",
+      "technique": "XRD",
+      "value": {
+        "value": 10,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "10 nm",
+        "evidence": [
+          {
+            "source_id": "almjasheva2016-s107042721606001x",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "almjasheva2016-s107042721606001x",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    }
+  ],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Shape not reported in the extracted text.",
+      "Ligand not reported in the extracted text.",
+      "Atmosphere not reported in the extracted text.",
+      "Amount of NaOH not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

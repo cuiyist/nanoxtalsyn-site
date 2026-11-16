@@ -1,0 +1,436 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "mansur2017-3896107-agins2-qd1-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Alexandra A. P. Mansur; Herman S. Mansur; Sandhra M. Carvalho; Anderson J. Caires (2017): AgInS2 (QD1)",
+  "material": {
+    "formula": "AgInS2",
+    "family": "AgInS2 nanocrystals",
+    "elements": [
+      "Ag",
+      "In",
+      "S"
+    ],
+    "components": [
+      "AgInS2"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Aqueous",
+  "sources": [
+    {
+      "id": "mansur2017-3896107",
+      "doi": "10.1155/2017/3896107",
+      "title": "One-Pot Aqueous Synthesis of Fluorescent Ag-In-Zn-S Quantum Dot/Polymer Bioconjugates for Multiplex Optical Bioimaging of Glioblastoma Cells",
+      "authors": "Alexandra A. P. Mansur; Herman S. Mansur; Sandhra M. Carvalho; Anderson J. Caires",
+      "year": 2017,
+      "url": "https://doi.org/10.1155/2017/3896107",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "mansur2017-3896107",
+    "recipe_family": "mansur2017-3896107-agins2-qd1-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "AgInS2",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "mansur2017-3896107",
+          "locator": "Main PDF p.5"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "orthorhombic",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "mansur2017-3896107",
+          "locator": "Main PDF p.5"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": 2.2,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "2.2 nm",
+      "evidence": [
+        {
+          "source_id": "mansur2017-3896107",
+          "locator": "Main PDF p.5"
+        }
+      ],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "sphere",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "mansur2017-3896107",
+          "locator": "Main PDF p.5"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "mansur2017-3896107-agins2-qd1-1--carboxymethylcellulose-cmc",
+      "name": "carboxymethylcellulose (CMC)",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "mansur2017-3896107",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "mansur2017-3896107-agins2-qd1-1--silver-nitrate-agno3",
+      "name": "silver nitrate (AgNO3)",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "mansur2017-3896107",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "mansur2017-3896107-agins2-qd1-1--indium-nitrate-hydrate-in-no3-3xh2o",
+      "name": "indium nitrate hydrate (In(NO3)3⋅xH2O)",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "mansur2017-3896107",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "mansur2017-3896107-agins2-qd1-1--sodium-sulfide-hydrate-na2s9h2o",
+      "name": "sodium sulfide hydrate (Na2S⋅9H2O)",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "mansur2017-3896107",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "mansur2017-3896107-agins2-qd1-1--after-s01-add",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "mansur2017-3896107-agins2-qd1-1--silver-nitrate-agno3",
+        "mansur2017-3896107-agins2-qd1-1--indium-nitrate-hydrate-in-no3-3xh2o"
+      ]
+    },
+    {
+      "id": "mansur2017-3896107-agins2-qd1-1--after-s02-add",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "mansur2017-3896107-agins2-qd1-1--after-s01-add",
+        "mansur2017-3896107-agins2-qd1-1--sodium-sulfide-hydrate-na2s9h2o"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-add",
+      "action": "add",
+      "label": "Add silver and indium precursors",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "mansur2017-3896107-agins2-qd1-1--silver-nitrate-agno3",
+        "mansur2017-3896107-agins2-qd1-1--indium-nitrate-hydrate-in-no3-3xh2o"
+      ],
+      "outputs": [
+        "mansur2017-3896107-agins2-qd1-1--after-s01-add"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 min",
+          "evidence": [
+            {
+              "source_id": "mansur2017-3896107",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "mansur2017-3896107",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add silver and indium precursors",
+      "evidence": [
+        {
+          "source_id": "mansur2017-3896107",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-add",
+      "action": "add",
+      "label": "Add sulfur precursor",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-add"
+      ],
+      "inputs": [
+        "mansur2017-3896107-agins2-qd1-1--after-s01-add",
+        "mansur2017-3896107-agins2-qd1-1--sodium-sulfide-hydrate-na2s9h2o"
+      ],
+      "outputs": [
+        "mansur2017-3896107-agins2-qd1-1--after-s02-add"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 10,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "10 min",
+          "evidence": [
+            {
+              "source_id": "mansur2017-3896107",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "mansur2017-3896107",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add sulfur precursor",
+      "evidence": [
+        {
+          "source_id": "mansur2017-3896107",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "mansur2017-3896107-agins2-qd1-1--product",
+      "source_sample_label": "AgInS2 (QD1)",
+      "batch_id": null,
+      "material_state_id": "mansur2017-3896107-agins2-qd1-1--after-s02-add",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "AgInS2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "mansur2017-3896107",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "orthorhombic",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "mansur2017-3896107",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": "sphere",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "mansur2017-3896107",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": "carboxymethylcellulose (CMC)",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "mansur2017-3896107",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "mansur2017-3896107",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "notes": [
+        "Reactor: flask (Main PDF p.2).",
+        "Reaction temperature: 23 degC (Main PDF p.2).",
+        "Reaction time: 10 min (Main PDF p.3)."
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "id": "mansur2017-3896107-agins2-qd1-1--size",
+      "sample_id": "mansur2017-3896107-agins2-qd1-1--product",
+      "property": "particle_size",
+      "technique": "not reported",
+      "value": {
+        "value": 2.2,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "2.2 nm",
+        "evidence": [
+          {
+            "source_id": "mansur2017-3896107",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "mansur2017-3896107",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    }
+  ],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Amount of carboxymethylcellulose (CMC) not reported in the extracted text.",
+      "Amount of silver nitrate (AgNO3) not reported in the extracted text.",
+      "Amount of indium nitrate hydrate (In(NO3)3⋅xH2O) not reported in the extracted text.",
+      "Amount of sodium sulfide hydrate (Na2S⋅9H2O) not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

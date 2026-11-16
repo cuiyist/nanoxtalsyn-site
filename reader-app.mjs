@@ -15,7 +15,7 @@ import {mountProtocol} from './protocol-visuals.mjs?v=0.48.0';
 
 import {mountReaderStructures} from './reader-structures.mjs?v=0.48.0';
 
-import {loadReaderPresentations} from './reader-presentation-loader.mjs?v=0.43.0';
+import {loadReaderPresentations} from './reader-presentation-loader.mjs?v=0.48.1';
 const cache=new Map();
 
 function json(path){if(path==='data/reader-presentation.json')return loadReaderPresentations(siteURL(path));if(!cache.has(path))cache.set(path,fetch(siteURL(path),{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Unavailable '+path);return r.json();}));return cache.get(path);}

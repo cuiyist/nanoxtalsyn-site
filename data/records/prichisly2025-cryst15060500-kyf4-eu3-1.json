@@ -1,0 +1,448 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "prichisly2025-cryst15060500-kyf4-eu3-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Kirill S. Prichisly; Anna A. Betina; Anastasia L. Petrova; Tatyana S. Bulatova; Sergey N. Orlov; Ilya E. Kolesnikov; Nikita A. Bogachev; Mikhail Yu. Skripkin; Andrey S. Mereshchenko (2025): KYF4:Eu3+",
+  "material": {
+    "formula": "KYF4:Eu3+",
+    "family": "KYF4:Eu3+ nanocrystals",
+    "elements": [
+      "K",
+      "Y",
+      "F",
+      "Eu"
+    ],
+    "components": [
+      "KYF4:Eu3+"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Hydrothermal",
+  "sources": [
+    {
+      "id": "prichisly2025-cryst15060500",
+      "doi": "10.3390/cryst15060500",
+      "title": "Synthesis, Morphology, and Luminescent Properties of Nanocrystalline KYF4:Eu3+ Phosphors",
+      "authors": "Kirill S. Prichisly; Anna A. Betina; Anastasia L. Petrova; Tatyana S. Bulatova; Sergey N. Orlov; Ilya E. Kolesnikov; Nikita A. Bogachev; Mikhail Yu. Skripkin; Andrey S. Mereshchenko",
+      "year": 2025,
+      "url": "https://doi.org/10.3390/cryst15060500",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "prichisly2025-cryst15060500",
+    "recipe_family": "prichisly2025-cryst15060500-kyf4-eu3-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "KYF4:Eu3+",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "prichisly2025-cryst15060500",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    },
+    "size": {
+      "value": null,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "not_reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "not reported",
+      "evidence": [],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "sphere",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "prichisly2025-cryst15060500",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "prichisly2025-cryst15060500-kyf4-eu3-1--kf2h2o",
+      "name": "KF·2H2O",
+      "formula": null,
+      "role": "nonmetal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 10,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "10 mmol",
+          "evidence": [
+            {
+              "source_id": "prichisly2025-cryst15060500",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "prichisly2025-cryst15060500",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "prichisly2025-cryst15060500-kyf4-eu3-1--citric-acid",
+      "name": "citric acid",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 2.4,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2.4 mmol",
+          "evidence": [
+            {
+              "source_id": "prichisly2025-cryst15060500",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "prichisly2025-cryst15060500",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "prichisly2025-cryst15060500-kyf4-eu3-1--after-s01-heat",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": []
+    },
+    {
+      "id": "prichisly2025-cryst15060500-kyf4-eu3-1--after-s02-centrifuge",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "prichisly2025-cryst15060500-kyf4-eu3-1--after-s01-heat"
+      ]
+    },
+    {
+      "id": "prichisly2025-cryst15060500-kyf4-eu3-1--after-s03-dry",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "prichisly2025-cryst15060500-kyf4-eu3-1--after-s02-centrifuge"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-heat",
+      "action": "heat",
+      "label": "Heat the mixture in a Teflon-lined autoclave for 17 h at 180°C",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [],
+      "outputs": [
+        "prichisly2025-cryst15060500-kyf4-eu3-1--after-s01-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 180,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "180 °C",
+          "evidence": [
+            {
+              "source_id": "prichisly2025-cryst15060500",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 17,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "17 h",
+          "evidence": [
+            {
+              "source_id": "prichisly2025-cryst15060500",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heat the mixture in a Teflon-lined autoclave for 17 h at 180°C",
+      "evidence": [
+        {
+          "source_id": "prichisly2025-cryst15060500",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-centrifuge",
+      "action": "centrifuge",
+      "label": "Separate the precipitate by centrifugation",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-heat"
+      ],
+      "inputs": [
+        "prichisly2025-cryst15060500-kyf4-eu3-1--after-s01-heat"
+      ],
+      "outputs": [
+        "prichisly2025-cryst15060500-kyf4-eu3-1--after-s02-centrifuge"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Separate the precipitate by centrifugation",
+      "evidence": [
+        {
+          "source_id": "prichisly2025-cryst15060500",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s03-dry",
+      "action": "dry",
+      "label": "Dry the precipitate at 60°C for 24 h",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-centrifuge"
+      ],
+      "inputs": [
+        "prichisly2025-cryst15060500-kyf4-eu3-1--after-s02-centrifuge"
+      ],
+      "outputs": [
+        "prichisly2025-cryst15060500-kyf4-eu3-1--after-s03-dry"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 60,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "60 °C",
+          "evidence": [
+            {
+              "source_id": "prichisly2025-cryst15060500",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 24,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "24 h",
+          "evidence": [
+            {
+              "source_id": "prichisly2025-cryst15060500",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dry the precipitate at 60°C for 24 h",
+      "evidence": [
+        {
+          "source_id": "prichisly2025-cryst15060500",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "prichisly2025-cryst15060500-kyf4-eu3-1--product",
+      "source_sample_label": "KYF4:Eu3+",
+      "batch_id": null,
+      "material_state_id": "prichisly2025-cryst15060500-kyf4-eu3-1--after-s03-dry",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "KYF4:Eu3+",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "prichisly2025-cryst15060500",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "morphology": {
+        "value": "sphere",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "prichisly2025-cryst15060500",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "prichisly2025-cryst15060500",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "notes": [
+        "Reactor: 20 mL Teflon-lined autoclave (Main PDF p.2).",
+        "Reaction temperature: 180 degC (Main PDF p.2).",
+        "Reaction time: 17 h (Main PDF p.2)."
+      ]
+    }
+  ],
+  "measurements": [],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Phase not reported in the extracted text.",
+      "Ligand not reported in the extracted text.",
+      "Size not reported in the extracted text.",
+      "Atmosphere not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

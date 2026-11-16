@@ -1,0 +1,396 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "zander2024-chemrxiv-2024-n5r4n-nicofe-3s4-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Judith Zander; Roland Marschall (2024): (NiCoFe)3S4",
+  "material": {
+    "formula": "(NiCoFe)3S4",
+    "family": "(NiCoFe)3S4 nanocrystals",
+    "elements": [
+      "Ni",
+      "Co",
+      "Fe",
+      "S"
+    ],
+    "components": [
+      "(NiCoFe)3S4"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Microwave-assisted",
+  "sources": [
+    {
+      "id": "zander2024-chemrxiv-2024-n5r4n",
+      "doi": "10.26434/chemrxiv-2024-n5r4n",
+      "title": "1 min synthesis of phase-pure nanocrystalline high-entropy sulphides for efficient water electrolysis",
+      "authors": "Judith Zander; Roland Marschall",
+      "year": 2024,
+      "url": "https://doi.org/10.26434/chemrxiv-2024-n5r4n",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "zander2024-chemrxiv-2024-n5r4n",
+    "recipe_family": "zander2024-chemrxiv-2024-n5r4n-nicofe-3s4-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    },
+    "phase": {
+      "value": "spinel",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "zander2024-chemrxiv-2024-n5r4n",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": null,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "not_reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "not reported",
+      "evidence": [],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "nanosheets",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "zander2024-chemrxiv-2024-n5r4n",
+          "locator": "Main PDF p.5"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "zander2024-chemrxiv-2024-n5r4n-nicofe-3s4-1--1-phenyl-ethanol",
+      "name": "1-phenyl ethanol",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "5 mL",
+          "evidence": [
+            {
+              "source_id": "zander2024-chemrxiv-2024-n5r4n",
+              "locator": "Main PDF p.16"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zander2024-chemrxiv-2024-n5r4n",
+          "locator": "Main PDF p.16"
+        }
+      ]
+    },
+    {
+      "id": "zander2024-chemrxiv-2024-n5r4n-nicofe-3s4-1--benzyl-mercaptan",
+      "name": "benzyl mercaptan",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "5 mL",
+          "evidence": [
+            {
+              "source_id": "zander2024-chemrxiv-2024-n5r4n",
+              "locator": "Main PDF p.16"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zander2024-chemrxiv-2024-n5r4n",
+          "locator": "Main PDF p.16"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "zander2024-chemrxiv-2024-n5r4n-nicofe-3s4-1--after-s01-add",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zander2024-chemrxiv-2024-n5r4n-nicofe-3s4-1--benzyl-mercaptan"
+      ]
+    },
+    {
+      "id": "zander2024-chemrxiv-2024-n5r4n-nicofe-3s4-1--after-s02-cool",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zander2024-chemrxiv-2024-n5r4n-nicofe-3s4-1--after-s01-add"
+      ]
+    },
+    {
+      "id": "zander2024-chemrxiv-2024-n5r4n-nicofe-3s4-1--after-s03-precipitate",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "zander2024-chemrxiv-2024-n5r4n-nicofe-3s4-1--after-s02-cool"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-add",
+      "action": "add",
+      "label": "Add benzyl mercaptan to the solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "zander2024-chemrxiv-2024-n5r4n-nicofe-3s4-1--benzyl-mercaptan"
+      ],
+      "outputs": [
+        "zander2024-chemrxiv-2024-n5r4n-nicofe-3s4-1--after-s01-add"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add benzyl mercaptan to the solution",
+      "evidence": [
+        {
+          "source_id": "zander2024-chemrxiv-2024-n5r4n",
+          "locator": "Main PDF p.16"
+        }
+      ]
+    },
+    {
+      "id": "s02-cool",
+      "action": "cool",
+      "label": "Cool the reaction mixture to 55 °C",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-add"
+      ],
+      "inputs": [
+        "zander2024-chemrxiv-2024-n5r4n-nicofe-3s4-1--after-s01-add"
+      ],
+      "outputs": [
+        "zander2024-chemrxiv-2024-n5r4n-nicofe-3s4-1--after-s02-cool"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 55,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "55 °C",
+          "evidence": [
+            {
+              "source_id": "zander2024-chemrxiv-2024-n5r4n",
+              "locator": "Main PDF p.16"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Cool the reaction mixture to 55 °C",
+      "evidence": [
+        {
+          "source_id": "zander2024-chemrxiv-2024-n5r4n",
+          "locator": "Main PDF p.16"
+        }
+      ]
+    },
+    {
+      "id": "s03-precipitate",
+      "action": "precipitate",
+      "label": "Precipitate the product in n-pentane",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-cool"
+      ],
+      "inputs": [
+        "zander2024-chemrxiv-2024-n5r4n-nicofe-3s4-1--after-s02-cool"
+      ],
+      "outputs": [
+        "zander2024-chemrxiv-2024-n5r4n-nicofe-3s4-1--after-s03-precipitate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Precipitate the product in n-pentane",
+      "evidence": [
+        {
+          "source_id": "zander2024-chemrxiv-2024-n5r4n",
+          "locator": "Main PDF p.16"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "zander2024-chemrxiv-2024-n5r4n-nicofe-3s4-1--product",
+      "source_sample_label": "(NiCoFe)3S4",
+      "batch_id": null,
+      "material_state_id": "zander2024-chemrxiv-2024-n5r4n-nicofe-3s4-1--after-s03-precipitate",
+      "parent_sample_id": null,
+      "composition": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "phase": {
+        "value": "spinel",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zander2024-chemrxiv-2024-n5r4n",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": "nanosheets",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zander2024-chemrxiv-2024-n5r4n",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "zander2024-chemrxiv-2024-n5r4n",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "notes": [
+        "Reactor: borosilicate microwave vessel (Main PDF p.16)."
+      ]
+    }
+  ],
+  "measurements": [],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Ligand not reported in the extracted text.",
+      "Size not reported in the extracted text.",
+      "Atmosphere not reported in the extracted text.",
+      "Reaction temperature not reported in the extracted text.",
+      "Reaction time not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

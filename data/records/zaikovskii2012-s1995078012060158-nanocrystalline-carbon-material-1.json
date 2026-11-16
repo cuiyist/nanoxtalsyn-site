@@ -1,0 +1,328 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "zaikovskii2012-s1995078012060158-nanocrystalline-carbon-material-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "A. V. Zaikovskii; V. A. Mal’tsev; S. A. Novopashin; S. Z. Sakhapov; D. V. Smovzh (2012): nanocrystalline carbon material",
+  "material": {
+    "formula": "C",
+    "family": "C nanocrystals",
+    "elements": [
+      "C"
+    ],
+    "components": [
+      "C"
+    ],
+    "architecture": "composite"
+  },
+  "method": "Plasma arc discharge",
+  "sources": [
+    {
+      "id": "zaikovskii2012-s1995078012060158",
+      "doi": "10.1134/s1995078012060158",
+      "title": "Synthesis of nanocrystalline carbon upon methane pyrolysis in arc discharge",
+      "authors": "A. V. Zaikovskii; V. A. Mal’tsev; S. A. Novopashin; S. Z. Sakhapov; D. V. Smovzh",
+      "year": 2012,
+      "url": "https://doi.org/10.1134/s1995078012060158",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "zaikovskii2012-s1995078012060158",
+    "recipe_family": "zaikovskii2012-s1995078012060158-nanocrystalline-carbon-material-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "C",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "zaikovskii2012-s1995078012060158",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "graphite",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "zaikovskii2012-s1995078012060158",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": 20,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "20 nm",
+      "evidence": [
+        {
+          "source_id": "zaikovskii2012-s1995078012060158",
+          "locator": "Main PDF p.4"
+        }
+      ],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "nanocrystals | nanotubules | bulbous",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "zaikovskii2012-s1995078012060158",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "zaikovskii2012-s1995078012060158-nanocrystalline-carbon-material-1--methane",
+      "name": "methane",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zaikovskii2012-s1995078012060158",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "zaikovskii2012-s1995078012060158-nanocrystalline-carbon-material-1--after-s01-feed",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zaikovskii2012-s1995078012060158-nanocrystalline-carbon-material-1--methane"
+      ]
+    },
+    {
+      "id": "zaikovskii2012-s1995078012060158-nanocrystalline-carbon-material-1--after-s02-arc-discharge",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "zaikovskii2012-s1995078012060158-nanocrystalline-carbon-material-1--after-s01-feed"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-feed",
+      "action": "feed",
+      "label": "Methane is fed through one of the graphite electrodes",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "zaikovskii2012-s1995078012060158-nanocrystalline-carbon-material-1--methane"
+      ],
+      "outputs": [
+        "zaikovskii2012-s1995078012060158-nanocrystalline-carbon-material-1--after-s01-feed"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "vacuum",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zaikovskii2012-s1995078012060158",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Methane is fed through one of the graphite electrodes",
+      "evidence": [
+        {
+          "source_id": "zaikovskii2012-s1995078012060158",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-arc-discharge",
+      "action": "arc discharge",
+      "label": "AC arc discharge is initiated between graphite electrodes",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-feed"
+      ],
+      "inputs": [
+        "zaikovskii2012-s1995078012060158-nanocrystalline-carbon-material-1--after-s01-feed"
+      ],
+      "outputs": [
+        "zaikovskii2012-s1995078012060158-nanocrystalline-carbon-material-1--after-s02-arc-discharge"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "vacuum",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zaikovskii2012-s1995078012060158",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "AC arc discharge is initiated between graphite electrodes",
+      "evidence": [
+        {
+          "source_id": "zaikovskii2012-s1995078012060158",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "zaikovskii2012-s1995078012060158-nanocrystalline-carbon-material-1--product",
+      "source_sample_label": "nanocrystalline carbon material",
+      "batch_id": null,
+      "material_state_id": "zaikovskii2012-s1995078012060158-nanocrystalline-carbon-material-1--after-s02-arc-discharge",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "C",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zaikovskii2012-s1995078012060158",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "graphite",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zaikovskii2012-s1995078012060158",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": "nanocrystals | nanotubules | bulbous",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zaikovskii2012-s1995078012060158",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "zaikovskii2012-s1995078012060158",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "notes": [
+        "Reactor: vacuum chamber with two graphite electrodes (Main PDF p.1)."
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "id": "zaikovskii2012-s1995078012060158-nanocrystalline-carbon-material-1--size",
+      "sample_id": "zaikovskii2012-s1995078012060158-nanocrystalline-carbon-material-1--product",
+      "property": "diameter",
+      "technique": "TEM",
+      "value": {
+        "value": 20,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "20 nm",
+        "evidence": [
+          {
+            "source_id": "zaikovskii2012-s1995078012060158",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "zaikovskii2012-s1995078012060158",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    }
+  ],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Ligand not reported in the extracted text.",
+      "Reaction temperature not reported in the extracted text.",
+      "Reaction time not reported in the extracted text.",
+      "Amount of methane not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}
