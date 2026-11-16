@@ -1,0 +1,573 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "traverso2023-pharmaceutics15061651-htf-qds-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Agata Noelia Traverso; David José Fragale; Diego Luis Viale; Octavio Garate; Pablo Torres; Gastón Valverde; Alejandro Berra; Ana Vanesa Torbidoni; Juan Sebastián Yakisich; Mariano Grasselli; Martín Radrizzani (2023): hTf-QDs",
+  "material": {
+    "formula": "CdSe/ZnS",
+    "family": "CdSe/ZnS nanocrystals",
+    "elements": [
+      "Cd",
+      "Se",
+      "Zn",
+      "S"
+    ],
+    "components": [
+      "CdSe",
+      "ZnS"
+    ],
+    "architecture": "core_shell"
+  },
+  "method": "Synthesis as described in the source",
+  "sources": [
+    {
+      "id": "traverso2023-pharmaceutics15061651",
+      "doi": "10.3390/pharmaceutics15061651",
+      "title": "Two-Step Preparation of Protein-Decorated Biohybrid Quantum Dot Nanoparticles for Cellular Uptake",
+      "authors": "Agata Noelia Traverso; David José Fragale; Diego Luis Viale; Octavio Garate; Pablo Torres; Gastón Valverde; Alejandro Berra; Ana Vanesa Torbidoni; Juan Sebastián Yakisich; Mariano Grasselli; Martín Radrizzani",
+      "year": 2023,
+      "url": "https://doi.org/10.3390/pharmaceutics15061651",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "traverso2023-pharmaceutics15061651",
+    "recipe_family": "traverso2023-pharmaceutics15061651-htf-qds-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "CdSe/ZnS",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "traverso2023-pharmaceutics15061651",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "zinc blende",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "traverso2023-pharmaceutics15061651",
+          "locator": "Main PDF p.16"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": 21,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "21 nm",
+      "evidence": [
+        {
+          "source_id": "traverso2023-pharmaceutics15061651",
+          "locator": "Main PDF p.6"
+        }
+      ],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "sphere",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "traverso2023-pharmaceutics15061651",
+          "locator": "Main PDF p.6"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "traverso2023-pharmaceutics15061651-htf-qds-1--chloroform",
+      "name": "chloroform",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "traverso2023-pharmaceutics15061651",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "traverso2023-pharmaceutics15061651-htf-qds-1--methanol",
+      "name": "methanol",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "traverso2023-pharmaceutics15061651",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "traverso2023-pharmaceutics15061651-htf-qds-1--qds",
+      "name": "QDs",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "traverso2023-pharmaceutics15061651",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "traverso2023-pharmaceutics15061651-htf-qds-1--pbs",
+      "name": "PBS",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "traverso2023-pharmaceutics15061651",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "traverso2023-pharmaceutics15061651-htf-qds-1--human-serum-albumin-hsa",
+      "name": "human serum albumin (HSA)",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "traverso2023-pharmaceutics15061651",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "traverso2023-pharmaceutics15061651-htf-qds-1--glutaraldehyde",
+      "name": "glutaraldehyde",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "traverso2023-pharmaceutics15061651",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "traverso2023-pharmaceutics15061651-htf-qds-1--h2o",
+      "name": "H2O",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "traverso2023-pharmaceutics15061651",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "traverso2023-pharmaceutics15061651-htf-qds-1--human-transferrin-htf",
+      "name": "human transferrin (hTf)",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mg/mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "5 mg/mL",
+          "evidence": [
+            {
+              "source_id": "traverso2023-pharmaceutics15061651",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "traverso2023-pharmaceutics15061651",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "traverso2023-pharmaceutics15061651-htf-qds-1--after-s01-mix",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "traverso2023-pharmaceutics15061651-htf-qds-1--chloroform",
+        "traverso2023-pharmaceutics15061651-htf-qds-1--methanol",
+        "traverso2023-pharmaceutics15061651-htf-qds-1--qds",
+        "traverso2023-pharmaceutics15061651-htf-qds-1--pbs",
+        "traverso2023-pharmaceutics15061651-htf-qds-1--human-serum-albumin-hsa",
+        "traverso2023-pharmaceutics15061651-htf-qds-1--glutaraldehyde",
+        "traverso2023-pharmaceutics15061651-htf-qds-1--h2o"
+      ]
+    },
+    {
+      "id": "traverso2023-pharmaceutics15061651-htf-qds-1--after-s02-incubate",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "traverso2023-pharmaceutics15061651-htf-qds-1--after-s01-mix",
+        "traverso2023-pharmaceutics15061651-htf-qds-1--human-transferrin-htf"
+      ]
+    },
+    {
+      "id": "traverso2023-pharmaceutics15061651-htf-qds-1--after-s03-centrifuge",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "traverso2023-pharmaceutics15061651-htf-qds-1--after-s02-incubate"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-mix",
+      "action": "mix",
+      "label": "Mixing chloroform: methanol (4:1) 1 mL + QDs (5 mg/mL) 20 µL followed by gently adding to the aqueous phase PBS 350 µL + HSA (10 mg/mL) 350 µL + glutaraldehyde (5%) 1.5 µL + H2O 298.5 µL",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "traverso2023-pharmaceutics15061651-htf-qds-1--chloroform",
+        "traverso2023-pharmaceutics15061651-htf-qds-1--methanol",
+        "traverso2023-pharmaceutics15061651-htf-qds-1--qds",
+        "traverso2023-pharmaceutics15061651-htf-qds-1--pbs",
+        "traverso2023-pharmaceutics15061651-htf-qds-1--human-serum-albumin-hsa",
+        "traverso2023-pharmaceutics15061651-htf-qds-1--glutaraldehyde",
+        "traverso2023-pharmaceutics15061651-htf-qds-1--h2o"
+      ],
+      "outputs": [
+        "traverso2023-pharmaceutics15061651-htf-qds-1--after-s01-mix"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "traverso2023-pharmaceutics15061651",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Mixing chloroform: methanol (4:1) 1 mL + QDs (5 mg/mL) 20 µL followed by gently adding to the aqueous phase PBS 350 µL + HSA (10 mg/mL) 350 µL + glutaraldehyde (5%) 1.5 µL + H2O 298.5 µL",
+      "evidence": [
+        {
+          "source_id": "traverso2023-pharmaceutics15061651",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-incubate",
+      "action": "incubate",
+      "label": "Incubated with hTfs (5 mg/mL) at room temperature overnight (ON)",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-mix"
+      ],
+      "inputs": [
+        "traverso2023-pharmaceutics15061651-htf-qds-1--after-s01-mix",
+        "traverso2023-pharmaceutics15061651-htf-qds-1--human-transferrin-htf"
+      ],
+      "outputs": [
+        "traverso2023-pharmaceutics15061651-htf-qds-1--after-s02-incubate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "traverso2023-pharmaceutics15061651",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Incubated with hTfs (5 mg/mL) at room temperature overnight (ON)",
+      "evidence": [
+        {
+          "source_id": "traverso2023-pharmaceutics15061651",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s03-centrifuge",
+      "action": "centrifuge",
+      "label": "Recovered by centrifugation at 13,000× g for 10 min",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-incubate"
+      ],
+      "inputs": [
+        "traverso2023-pharmaceutics15061651-htf-qds-1--after-s02-incubate"
+      ],
+      "outputs": [
+        "traverso2023-pharmaceutics15061651-htf-qds-1--after-s03-centrifuge"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 10,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "10 min",
+          "evidence": [
+            {
+              "source_id": "traverso2023-pharmaceutics15061651",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Recovered by centrifugation at 13,000× g for 10 min",
+      "evidence": [
+        {
+          "source_id": "traverso2023-pharmaceutics15061651",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "traverso2023-pharmaceutics15061651-htf-qds-1--product",
+      "source_sample_label": "hTf-QDs",
+      "batch_id": null,
+      "material_state_id": "traverso2023-pharmaceutics15061651-htf-qds-1--after-s03-centrifuge",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "CdSe/ZnS",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "traverso2023-pharmaceutics15061651",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "zinc blende",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "traverso2023-pharmaceutics15061651",
+            "locator": "Main PDF p.16"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": "sphere",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "traverso2023-pharmaceutics15061651",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": "human transferrin",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "traverso2023-pharmaceutics15061651",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "traverso2023-pharmaceutics15061651",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "notes": [
+        "Reaction temperature: 60 degC (Main PDF p.2)."
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "id": "traverso2023-pharmaceutics15061651-htf-qds-1--size",
+      "sample_id": "traverso2023-pharmaceutics15061651-htf-qds-1--product",
+      "property": "hydrodynamic_diameter",
+      "technique": "DLS",
+      "value": {
+        "value": 21,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "21 nm",
+        "evidence": [
+          {
+            "source_id": "traverso2023-pharmaceutics15061651",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "traverso2023-pharmaceutics15061651",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    }
+  ],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Reactor not reported in the extracted text.",
+      "Reaction time not reported in the extracted text.",
+      "Amount of chloroform not reported in the extracted text.",
+      "Amount of methanol not reported in the extracted text.",
+      "Amount of QDs not reported in the extracted text.",
+      "Amount of PBS not reported in the extracted text.",
+      "Amount of human serum albumin (HSA) not reported in the extracted text.",
+      "Amount of glutaraldehyde not reported in the extracted text.",
+      "Amount of H2O not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

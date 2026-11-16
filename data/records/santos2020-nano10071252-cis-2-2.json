@@ -1,0 +1,644 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "santos2020-nano10071252-cis-2-2",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Calink I. L. Santos; Wagner S. Machado; Karl David Wegner; Leiriana A. P. Gontijo; Jefferson Bettini; Marco A. Schiavon; Peter Reiss; Dmitry Aldakov (2020): CIS-2",
+  "material": {
+    "formula": "CuInS2",
+    "family": "CuInS2 nanocrystals",
+    "elements": [
+      "Cu",
+      "In",
+      "S"
+    ],
+    "components": [
+      "CuInS2"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Synthesis as described in the source",
+  "sources": [
+    {
+      "id": "santos2020-nano10071252",
+      "doi": "10.3390/nano10071252",
+      "title": "Hydrothermal Synthesis of Aqueous-Soluble Copper Indium Sulfide Nanocrystals and Their Use in Quantum Dot Sensitized Solar Cells",
+      "authors": "Calink I. L. Santos; Wagner S. Machado; Karl David Wegner; Leiriana A. P. Gontijo; Jefferson Bettini; Marco A. Schiavon; Peter Reiss; Dmitry Aldakov",
+      "year": 2020,
+      "url": "https://doi.org/10.3390/nano10071252",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "santos2020-nano10071252",
+    "recipe_family": "santos2020-nano10071252-cis-2-2",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "CuInS2",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "santos2020-nano10071252",
+          "locator": "Main PDF p.8"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "chalcopyrite",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "santos2020-nano10071252",
+          "locator": "Main PDF p.8"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": 2.5,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "2.5 nm",
+      "evidence": [
+        {
+          "source_id": "santos2020-nano10071252",
+          "locator": "Main PDF p.8"
+        }
+      ],
+      "derivation": null
+    },
+    "morphology": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "santos2020-nano10071252-cis-2-2--copper-chloride",
+      "name": "copper chloride",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 0.75,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.75 mmol",
+          "evidence": [
+            {
+              "source_id": "santos2020-nano10071252",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "santos2020-nano10071252",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "santos2020-nano10071252-cis-2-2--indium-chloride",
+      "name": "indium chloride",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 0.75,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.75 mmol",
+          "evidence": [
+            {
+              "source_id": "santos2020-nano10071252",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "santos2020-nano10071252",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "santos2020-nano10071252-cis-2-2--3-mercaptopropionic-acid",
+      "name": "3-mercaptopropionic acid",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 9,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "9 mmol",
+          "evidence": [
+            {
+              "source_id": "santos2020-nano10071252",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "santos2020-nano10071252",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "santos2020-nano10071252-cis-2-2--thiourea",
+      "name": "thiourea",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 1.5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1.5 mmol",
+          "evidence": [
+            {
+              "source_id": "santos2020-nano10071252",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "santos2020-nano10071252",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "santos2020-nano10071252-cis-2-2--after-s01-dissolve",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "santos2020-nano10071252-cis-2-2--copper-chloride",
+        "santos2020-nano10071252-cis-2-2--indium-chloride"
+      ]
+    },
+    {
+      "id": "santos2020-nano10071252-cis-2-2--after-s02-add",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "santos2020-nano10071252-cis-2-2--after-s01-dissolve",
+        "santos2020-nano10071252-cis-2-2--thiourea"
+      ]
+    },
+    {
+      "id": "santos2020-nano10071252-cis-2-2--after-s03-heat",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "santos2020-nano10071252-cis-2-2--after-s02-add",
+        "santos2020-nano10071252-cis-2-2--copper-chloride",
+        "santos2020-nano10071252-cis-2-2--indium-chloride",
+        "santos2020-nano10071252-cis-2-2--3-mercaptopropionic-acid",
+        "santos2020-nano10071252-cis-2-2--thiourea"
+      ]
+    },
+    {
+      "id": "santos2020-nano10071252-cis-2-2--after-s04-centrifuge",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "santos2020-nano10071252-cis-2-2--after-s03-heat"
+      ]
+    },
+    {
+      "id": "santos2020-nano10071252-cis-2-2--after-s05-centrifuge",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "santos2020-nano10071252-cis-2-2--after-s04-centrifuge"
+      ]
+    },
+    {
+      "id": "santos2020-nano10071252-cis-2-2--after-s06-centrifuge",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "santos2020-nano10071252-cis-2-2--after-s05-centrifuge"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-dissolve",
+      "action": "dissolve",
+      "label": "Dissolve copper chloride and indium chloride in deionized water",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "santos2020-nano10071252-cis-2-2--copper-chloride",
+        "santos2020-nano10071252-cis-2-2--indium-chloride"
+      ],
+      "outputs": [
+        "santos2020-nano10071252-cis-2-2--after-s01-dissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dissolve copper chloride and indium chloride in deionized water",
+      "evidence": [
+        {
+          "source_id": "santos2020-nano10071252",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-add",
+      "action": "add",
+      "label": "Add thiourea at room temperature",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-dissolve"
+      ],
+      "inputs": [
+        "santos2020-nano10071252-cis-2-2--after-s01-dissolve",
+        "santos2020-nano10071252-cis-2-2--thiourea"
+      ],
+      "outputs": [
+        "santos2020-nano10071252-cis-2-2--after-s02-add"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add thiourea at room temperature",
+      "evidence": [
+        {
+          "source_id": "santos2020-nano10071252",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s03-heat",
+      "action": "heat",
+      "label": "Heat the solution in a Teﬂon-lined stainless-steel autoclave",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-add"
+      ],
+      "inputs": [
+        "santos2020-nano10071252-cis-2-2--after-s02-add",
+        "santos2020-nano10071252-cis-2-2--copper-chloride",
+        "santos2020-nano10071252-cis-2-2--indium-chloride",
+        "santos2020-nano10071252-cis-2-2--3-mercaptopropionic-acid",
+        "santos2020-nano10071252-cis-2-2--thiourea"
+      ],
+      "outputs": [
+        "santos2020-nano10071252-cis-2-2--after-s03-heat"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heat the solution in a Teﬂon-lined stainless-steel autoclave",
+      "evidence": [
+        {
+          "source_id": "santos2020-nano10071252",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s04-centrifuge",
+      "action": "centrifuge",
+      "label": "Centrifuge and filter the product to remove aggregated matter",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-heat"
+      ],
+      "inputs": [
+        "santos2020-nano10071252-cis-2-2--after-s03-heat"
+      ],
+      "outputs": [
+        "santos2020-nano10071252-cis-2-2--after-s04-centrifuge"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Centrifuge and filter the product to remove aggregated matter",
+      "evidence": [
+        {
+          "source_id": "santos2020-nano10071252",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s05-centrifuge",
+      "action": "centrifuge",
+      "label": "Separate the first fraction by centrifugation",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-centrifuge"
+      ],
+      "inputs": [
+        "santos2020-nano10071252-cis-2-2--after-s04-centrifuge"
+      ],
+      "outputs": [
+        "santos2020-nano10071252-cis-2-2--after-s05-centrifuge"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Separate the first fraction by centrifugation",
+      "evidence": [
+        {
+          "source_id": "santos2020-nano10071252",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s06-centrifuge",
+      "action": "centrifuge",
+      "label": "Separate the second fraction by centrifugation",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s05-centrifuge"
+      ],
+      "inputs": [
+        "santos2020-nano10071252-cis-2-2--after-s05-centrifuge"
+      ],
+      "outputs": [
+        "santos2020-nano10071252-cis-2-2--after-s06-centrifuge"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Separate the second fraction by centrifugation",
+      "evidence": [
+        {
+          "source_id": "santos2020-nano10071252",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "santos2020-nano10071252-cis-2-2--product",
+      "source_sample_label": "CIS-2",
+      "batch_id": null,
+      "material_state_id": "santos2020-nano10071252-cis-2-2--after-s06-centrifuge",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "CuInS2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "santos2020-nano10071252",
+            "locator": "Main PDF p.8"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "chalcopyrite",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "santos2020-nano10071252",
+            "locator": "Main PDF p.8"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "surface": {
+        "value": "3-mercaptopropionic acid",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "santos2020-nano10071252",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "santos2020-nano10071252",
+          "locator": "Main PDF p.5"
+        }
+      ],
+      "notes": [
+        "Reactor: Teﬂon-lined stainless-steel autoclave (Main PDF p.3).",
+        "Reaction temperature: 150 degC (Main PDF p.5).",
+        "Reaction time: 20 h (Main PDF p.5)."
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "id": "santos2020-nano10071252-cis-2-2--size",
+      "sample_id": "santos2020-nano10071252-cis-2-2--product",
+      "property": "diameter",
+      "technique": "TEM",
+      "value": {
+        "value": 2.5,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "2.5 nm",
+        "evidence": [
+          {
+            "source_id": "santos2020-nano10071252",
+            "locator": "Main PDF p.8"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "santos2020-nano10071252",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    }
+  ],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Shape not reported in the extracted text.",
+      "Atmosphere not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

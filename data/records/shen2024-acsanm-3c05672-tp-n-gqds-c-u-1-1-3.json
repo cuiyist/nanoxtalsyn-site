@@ -1,0 +1,429 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "shen2024-acsanm-3c05672-tp-n-gqds-c-u-1-1-3",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Deli Shen; Tongbin Lan; Dongxu Qiao; Minghuang Guo; Juan Zuo; Siyong Gu; Houan Zhang; Weizhou Li; Xun Sun; Yafeng Li; Mingdeng Wei (2024): TP-N-GQDs (C/U = 1/1)",
+  "material": {
+    "formula": "C, N",
+    "family": "C, N nanocrystals",
+    "elements": [
+      "C",
+      "N"
+    ],
+    "components": [
+      "C, N"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Synthesis as described in the source",
+  "sources": [
+    {
+      "id": "shen2024-acsanm-3c05672",
+      "doi": "10.1021/acsanm.3c05672",
+      "title": "Tunable Photoluminescent Nitrogen-Doped Graphene Quantum Dots at the Interface for High-Efficiency Perovskite Solar Cells",
+      "authors": "Deli Shen; Tongbin Lan; Dongxu Qiao; Minghuang Guo; Juan Zuo; Siyong Gu; Houan Zhang; Weizhou Li; Xun Sun; Yafeng Li; Mingdeng Wei",
+      "year": 2024,
+      "url": "https://doi.org/10.1021/acsanm.3c05672",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "shen2024-acsanm-3c05672",
+    "recipe_family": "shen2024-acsanm-3c05672-tp-n-gqds-c-u-1-1-3",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "C, N",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "shen2024-acsanm-3c05672",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    },
+    "size": {
+      "value": 5.0,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "5 nm",
+      "evidence": [
+        {
+          "source_id": "shen2024-acsanm-3c05672",
+          "locator": "Main PDF p.4"
+        }
+      ],
+      "derivation": null
+    },
+    "morphology": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "shen2024-acsanm-3c05672-tp-n-gqds-c-u-1-1-3--distilled-water",
+      "name": "distilled water",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 10.0,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "10 mL",
+          "evidence": [
+            {
+              "source_id": "shen2024-acsanm-3c05672",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "shen2024-acsanm-3c05672",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "shen2024-acsanm-3c05672-tp-n-gqds-c-u-1-1-3--after-s01-mix",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": []
+    },
+    {
+      "id": "shen2024-acsanm-3c05672-tp-n-gqds-c-u-1-1-3--after-s02-heat",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "shen2024-acsanm-3c05672-tp-n-gqds-c-u-1-1-3--after-s01-mix",
+        "shen2024-acsanm-3c05672-tp-n-gqds-c-u-1-1-3--distilled-water"
+      ]
+    },
+    {
+      "id": "shen2024-acsanm-3c05672-tp-n-gqds-c-u-1-1-3--after-s03-centrifuge",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "shen2024-acsanm-3c05672-tp-n-gqds-c-u-1-1-3--after-s02-heat"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-mix",
+      "action": "mix",
+      "label": "Mix citric acid and urea in a 1:1 weight ratio",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [],
+      "outputs": [
+        "shen2024-acsanm-3c05672-tp-n-gqds-c-u-1-1-3--after-s01-mix"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "ambient",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "shen2024-acsanm-3c05672",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Mix citric acid and urea in a 1:1 weight ratio",
+      "evidence": [
+        {
+          "source_id": "shen2024-acsanm-3c05672",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-heat",
+      "action": "heat",
+      "label": "Heat the mixture in a microwave reactor",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-mix"
+      ],
+      "inputs": [
+        "shen2024-acsanm-3c05672-tp-n-gqds-c-u-1-1-3--after-s01-mix",
+        "shen2024-acsanm-3c05672-tp-n-gqds-c-u-1-1-3--distilled-water"
+      ],
+      "outputs": [
+        "shen2024-acsanm-3c05672-tp-n-gqds-c-u-1-1-3--after-s02-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 250,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "250 °C",
+          "evidence": [
+            {
+              "source_id": "shen2024-acsanm-3c05672",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "5 min",
+          "evidence": [
+            {
+              "source_id": "shen2024-acsanm-3c05672",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "ambient",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "shen2024-acsanm-3c05672",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heat the mixture in a microwave reactor",
+      "evidence": [
+        {
+          "source_id": "shen2024-acsanm-3c05672",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s03-centrifuge",
+      "action": "centrifuge",
+      "label": "Centrifuge the product",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-heat"
+      ],
+      "inputs": [
+        "shen2024-acsanm-3c05672-tp-n-gqds-c-u-1-1-3--after-s02-heat"
+      ],
+      "outputs": [
+        "shen2024-acsanm-3c05672-tp-n-gqds-c-u-1-1-3--after-s03-centrifuge"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 30,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "30 min",
+          "evidence": [
+            {
+              "source_id": "shen2024-acsanm-3c05672",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Centrifuge the product",
+      "evidence": [
+        {
+          "source_id": "shen2024-acsanm-3c05672",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "shen2024-acsanm-3c05672-tp-n-gqds-c-u-1-1-3--product",
+      "source_sample_label": "TP-N-GQDs (C/U = 1/1)",
+      "batch_id": null,
+      "material_state_id": "shen2024-acsanm-3c05672-tp-n-gqds-c-u-1-1-3--after-s03-centrifuge",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "C, N",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "shen2024-acsanm-3c05672",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "morphology": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "surface": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "shen2024-acsanm-3c05672",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "notes": [
+        "Reactor: 500 mL quartz tube (Main PDF p.2).",
+        "Reaction temperature: 250 degC (Main PDF p.2).",
+        "Reaction time: 5 min (Main PDF p.2)."
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "id": "shen2024-acsanm-3c05672-tp-n-gqds-c-u-1-1-3--size",
+      "sample_id": "shen2024-acsanm-3c05672-tp-n-gqds-c-u-1-1-3--product",
+      "property": "particle_size",
+      "technique": "not reported",
+      "value": {
+        "value": 5.0,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "5 nm",
+        "evidence": [
+          {
+            "source_id": "shen2024-acsanm-3c05672",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "shen2024-acsanm-3c05672",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    }
+  ],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Phase not reported in the extracted text.",
+      "Shape not reported in the extracted text.",
+      "Ligand not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

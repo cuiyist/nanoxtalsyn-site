@@ -1,0 +1,362 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "gao2021-acs-nanolett-1c02284-bulk-like-znse-zns-core-shell-qds-b-qds-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Min Gao; Huawei Yang; Huaibin Shen; Zaiping Zeng; Fengjia Fan; Beibei Tang; Jingjing Min; Ying Zhang; Qingzhao Hua; Lin Song Li; Botao Ji; Zuliang Du (2021): Bulk-like ZnSe/ZnS core/shell QDs (B-QDs)",
+  "material": {
+    "formula": "ZnSe/ZnS",
+    "family": "ZnSe/ZnS nanocrystals",
+    "elements": [
+      "Zn",
+      "Se",
+      "S"
+    ],
+    "components": [
+      "ZnSe",
+      "ZnS"
+    ],
+    "architecture": "unresolved"
+  },
+  "method": "Hot injection",
+  "sources": [
+    {
+      "id": "gao2021-acs-nanolett-1c02284",
+      "doi": "10.1021/acs.nanolett.1c02284",
+      "title": "Bulk-like ZnSe Quantum Dots Enabling Efficient Ultranarrow Blue Light-Emitting Diodes",
+      "authors": "Min Gao; Huawei Yang; Huaibin Shen; Zaiping Zeng; Fengjia Fan; Beibei Tang; Jingjing Min; Ying Zhang; Qingzhao Hua; Lin Song Li; Botao Ji; Zuliang Du",
+      "year": 2021,
+      "url": "https://doi.org/10.1021/acs.nanolett.1c02284",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "gao2021-acs-nanolett-1c02284",
+    "recipe_family": "gao2021-acs-nanolett-1c02284-bulk-like-znse-zns-core-shell-qds-b-qds-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    },
+    "phase": {
+      "value": "zincblende",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "gao2021-acs-nanolett-1c02284",
+          "locator": "Main PDF p.4"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": null,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "not_reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "not reported",
+      "evidence": [],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "sphere",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "gao2021-acs-nanolett-1c02284",
+          "locator": "Main PDF p.4"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "gao2021-acs-nanolett-1c02284-bulk-like-znse-zns-core-shell-qds-b-qds-1--zn-precursor",
+      "name": "Zn precursor",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "gao2021-acs-nanolett-1c02284",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "gao2021-acs-nanolett-1c02284-bulk-like-znse-zns-core-shell-qds-b-qds-1--se-precursor",
+      "name": "Se precursor",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "gao2021-acs-nanolett-1c02284",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "gao2021-acs-nanolett-1c02284-bulk-like-znse-zns-core-shell-qds-b-qds-1--after-s01-inject",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "gao2021-acs-nanolett-1c02284-bulk-like-znse-zns-core-shell-qds-b-qds-1--se-precursor",
+        "gao2021-acs-nanolett-1c02284-bulk-like-znse-zns-core-shell-qds-b-qds-1--zn-precursor"
+      ]
+    },
+    {
+      "id": "gao2021-acs-nanolett-1c02284-bulk-like-znse-zns-core-shell-qds-b-qds-1--after-s02-grow",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "gao2021-acs-nanolett-1c02284-bulk-like-znse-zns-core-shell-qds-b-qds-1--after-s01-inject"
+      ]
+    },
+    {
+      "id": "gao2021-acs-nanolett-1c02284-bulk-like-znse-zns-core-shell-qds-b-qds-1--after-s03-grow",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "gao2021-acs-nanolett-1c02284-bulk-like-znse-zns-core-shell-qds-b-qds-1--after-s02-grow"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-inject",
+      "action": "inject",
+      "label": "Inject Se precursor into Zn precursor",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "gao2021-acs-nanolett-1c02284-bulk-like-znse-zns-core-shell-qds-b-qds-1--se-precursor",
+        "gao2021-acs-nanolett-1c02284-bulk-like-znse-zns-core-shell-qds-b-qds-1--zn-precursor"
+      ],
+      "outputs": [
+        "gao2021-acs-nanolett-1c02284-bulk-like-znse-zns-core-shell-qds-b-qds-1--after-s01-inject"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 300,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "300 °C",
+          "evidence": [
+            {
+              "source_id": "gao2021-acs-nanolett-1c02284",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Inject Se precursor into Zn precursor",
+      "evidence": [
+        {
+          "source_id": "gao2021-acs-nanolett-1c02284",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s02-grow",
+      "action": "grow",
+      "label": "Grow ZnSe core",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-inject"
+      ],
+      "inputs": [
+        "gao2021-acs-nanolett-1c02284-bulk-like-znse-zns-core-shell-qds-b-qds-1--after-s01-inject"
+      ],
+      "outputs": [
+        "gao2021-acs-nanolett-1c02284-bulk-like-znse-zns-core-shell-qds-b-qds-1--after-s02-grow"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Grow ZnSe core",
+      "evidence": [
+        {
+          "source_id": "gao2021-acs-nanolett-1c02284",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s03-grow",
+      "action": "grow",
+      "label": "Grow ZnS shell",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-grow"
+      ],
+      "inputs": [
+        "gao2021-acs-nanolett-1c02284-bulk-like-znse-zns-core-shell-qds-b-qds-1--after-s02-grow"
+      ],
+      "outputs": [
+        "gao2021-acs-nanolett-1c02284-bulk-like-znse-zns-core-shell-qds-b-qds-1--after-s03-grow"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Grow ZnS shell",
+      "evidence": [
+        {
+          "source_id": "gao2021-acs-nanolett-1c02284",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "gao2021-acs-nanolett-1c02284-bulk-like-znse-zns-core-shell-qds-b-qds-1--product",
+      "source_sample_label": "Bulk-like ZnSe/ZnS core/shell QDs (B-QDs)",
+      "batch_id": null,
+      "material_state_id": "gao2021-acs-nanolett-1c02284-bulk-like-znse-zns-core-shell-qds-b-qds-1--after-s03-grow",
+      "parent_sample_id": null,
+      "composition": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "phase": {
+        "value": "zincblende",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "gao2021-acs-nanolett-1c02284",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": "sphere",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "gao2021-acs-nanolett-1c02284",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "gao2021-acs-nanolett-1c02284",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "notes": [
+        "Reaction temperature: 300 degC (Main PDF p.3)."
+      ]
+    }
+  ],
+  "measurements": [],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Ligand not reported in the extracted text.",
+      "Size not reported in the extracted text.",
+      "Reactor not reported in the extracted text.",
+      "Atmosphere not reported in the extracted text.",
+      "Reaction time not reported in the extracted text.",
+      "Amount of Zn precursor not reported in the extracted text.",
+      "Amount of Se precursor not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

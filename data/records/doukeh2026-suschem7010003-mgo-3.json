@@ -1,0 +1,358 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "doukeh2026-suschem7010003-mgo-3",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Rami Doukeh; Cristian Nicolae Eparu; Alina Petronela Prundurel; Mihail Tudose; Gheorghe Brănoiu; Iuliana Veronica Ghețiu; Laura Ștefania Păun; Sonia Mihai; Ioana Gabriela Stan; Doru Bogdan Stoica (2026): MgO",
+  "material": {
+    "formula": "MgO",
+    "family": "MgO nanocrystals",
+    "elements": [
+      "Mg",
+      "O"
+    ],
+    "components": [
+      "MgO"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Synthesis as described in the source",
+  "sources": [
+    {
+      "id": "doukeh2026-suschem7010003",
+      "doi": "10.3390/suschem7010003",
+      "title": "Synthesis, Characterization, and Performance Evaluation of Nanocrystalline Metal Oxides for Shale Inhibition in Water-Based Drilling Fluids",
+      "authors": "Rami Doukeh; Cristian Nicolae Eparu; Alina Petronela Prundurel; Mihail Tudose; Gheorghe Brănoiu; Iuliana Veronica Ghețiu; Laura Ștefania Păun; Sonia Mihai; Ioana Gabriela Stan; Doru Bogdan Stoica",
+      "year": 2026,
+      "url": "https://doi.org/10.3390/suschem7010003",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "doukeh2026-suschem7010003",
+    "recipe_family": "doukeh2026-suschem7010003-mgo-3",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "MgO",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "doukeh2026-suschem7010003",
+          "locator": "Main PDF p.8"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "periclase",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "doukeh2026-suschem7010003",
+          "locator": "Main PDF p.8"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": null,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "not_reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "not reported",
+      "evidence": [],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "agglomerates",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "doukeh2026-suschem7010003",
+          "locator": "Main PDF p.9"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "doukeh2026-suschem7010003-mgo-3--mgcl26h2o",
+      "name": "MgCl2·6H2O",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "mass": {
+          "value": 70,
+          "minimum": null,
+          "maximum": null,
+          "unit": "g",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "70 g",
+          "evidence": [
+            {
+              "source_id": "doukeh2026-suschem7010003",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "doukeh2026-suschem7010003",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "doukeh2026-suschem7010003-mgo-3--koh",
+      "name": "KOH",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "doukeh2026-suschem7010003",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "doukeh2026-suschem7010003-mgo-3--after-s01-centrifuge",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": []
+    },
+    {
+      "id": "doukeh2026-suschem7010003-mgo-3--after-s02-calcine",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "doukeh2026-suschem7010003-mgo-3--after-s01-centrifuge"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-centrifuge",
+      "action": "centrifuge",
+      "label": "Separate MgO precipitate",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [],
+      "outputs": [
+        "doukeh2026-suschem7010003-mgo-3--after-s01-centrifuge"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Separate MgO precipitate",
+      "evidence": [
+        {
+          "source_id": "doukeh2026-suschem7010003",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s02-calcine",
+      "action": "calcine",
+      "label": "Calcine MgO at 400°C",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-centrifuge"
+      ],
+      "inputs": [
+        "doukeh2026-suschem7010003-mgo-3--after-s01-centrifuge"
+      ],
+      "outputs": [
+        "doukeh2026-suschem7010003-mgo-3--after-s02-calcine"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 400,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "400 °C",
+          "evidence": [
+            {
+              "source_id": "doukeh2026-suschem7010003",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 4,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "4 h",
+          "evidence": [
+            {
+              "source_id": "doukeh2026-suschem7010003",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "doukeh2026-suschem7010003",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Calcine MgO at 400°C",
+      "evidence": [
+        {
+          "source_id": "doukeh2026-suschem7010003",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "doukeh2026-suschem7010003-mgo-3--product",
+      "source_sample_label": "MgO",
+      "batch_id": null,
+      "material_state_id": "doukeh2026-suschem7010003-mgo-3--after-s02-calcine",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "MgO",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "doukeh2026-suschem7010003",
+            "locator": "Main PDF p.8"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "periclase",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "doukeh2026-suschem7010003",
+            "locator": "Main PDF p.8"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": "agglomerates",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "doukeh2026-suschem7010003",
+            "locator": "Main PDF p.9"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "doukeh2026-suschem7010003",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "notes": [
+        "Reactor: flat-bottom three-neck flask (Main PDF p.3).",
+        "Reaction temperature: 60 degC (Main PDF p.3).",
+        "Reaction time: 45 min (Main PDF p.3)."
+      ]
+    }
+  ],
+  "measurements": [],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Ligand not reported in the extracted text.",
+      "Size not reported in the extracted text.",
+      "Amount of KOH not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

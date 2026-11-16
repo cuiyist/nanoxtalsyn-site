@@ -1,0 +1,279 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "patra2024-acsanm-4c02311-cpb-dbp-2-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Dinabandhu Patra; Ankush Saini; Monojit Bag; Surya Prakash Singh (2024): CPB-DBP-2",
+  "material": {
+    "formula": "CsPbBr3",
+    "family": "CsPbBr3 nanocrystals",
+    "elements": [
+      "Cs",
+      "Pb",
+      "Br"
+    ],
+    "components": [
+      "CsPbBr3"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Synthesis as described in the source",
+  "sources": [
+    {
+      "id": "patra2024-acsanm-4c02311",
+      "doi": "10.1021/acsanm.4c02311",
+      "title": "Amine-Free CsPbBr3 Perovskite Nanocrystals with a Near-Unity Photoluminescence Quantum Yield for a Superfast Photodetector",
+      "authors": "Dinabandhu Patra; Ankush Saini; Monojit Bag; Surya Prakash Singh",
+      "year": 2024,
+      "url": "https://doi.org/10.1021/acsanm.4c02311",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "patra2024-acsanm-4c02311",
+    "recipe_family": "patra2024-acsanm-4c02311-cpb-dbp-2-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "CsPbBr3",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "patra2024-acsanm-4c02311",
+          "locator": "Main PDF p.5"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "orthorhombic",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "patra2024-acsanm-4c02311",
+          "locator": "Main PDF p.5"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": 29,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "29 nm",
+      "evidence": [
+        {
+          "source_id": "patra2024-acsanm-4c02311",
+          "locator": "Main PDF p.5"
+        }
+      ],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "rhombicuboctahedron",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "patra2024-acsanm-4c02311",
+          "locator": "Main PDF p.5"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "patra2024-acsanm-4c02311-cpb-dbp-2-1--cs-oleate",
+      "name": "Cs-oleate",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "patra2024-acsanm-4c02311",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "patra2024-acsanm-4c02311-cpb-dbp-2-1--after-s01-inject",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "patra2024-acsanm-4c02311-cpb-dbp-2-1--cs-oleate"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-inject",
+      "action": "inject",
+      "label": "Injecting preheated Cs-oleate",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "patra2024-acsanm-4c02311-cpb-dbp-2-1--cs-oleate"
+      ],
+      "outputs": [
+        "patra2024-acsanm-4c02311-cpb-dbp-2-1--after-s01-inject"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "open air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "patra2024-acsanm-4c02311",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Injecting preheated Cs-oleate",
+      "evidence": [
+        {
+          "source_id": "patra2024-acsanm-4c02311",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "patra2024-acsanm-4c02311-cpb-dbp-2-1--product",
+      "source_sample_label": "CPB-DBP-2",
+      "batch_id": null,
+      "material_state_id": "patra2024-acsanm-4c02311-cpb-dbp-2-1--after-s01-inject",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "CsPbBr3",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "patra2024-acsanm-4c02311",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "orthorhombic",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "patra2024-acsanm-4c02311",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": "rhombicuboctahedron",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "patra2024-acsanm-4c02311",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "patra2024-acsanm-4c02311",
+          "locator": "Main PDF p.4"
+        }
+      ],
+      "notes": [
+        "Reactor: 15 mL glass vial (Main PDF p.3).",
+        "Reaction temperature: 160 degC (Main PDF p.4).",
+        "Reaction time: 30 s (Main PDF p.4)."
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "id": "patra2024-acsanm-4c02311-cpb-dbp-2-1--size",
+      "sample_id": "patra2024-acsanm-4c02311-cpb-dbp-2-1--product",
+      "property": "diameter",
+      "technique": "TEM",
+      "value": {
+        "value": 29,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "29 nm",
+        "evidence": [
+          {
+            "source_id": "patra2024-acsanm-4c02311",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "patra2024-acsanm-4c02311",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    }
+  ],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Ligand not reported in the extracted text.",
+      "Amount of Cs-oleate not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

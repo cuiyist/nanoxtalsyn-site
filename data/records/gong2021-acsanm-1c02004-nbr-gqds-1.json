@@ -1,0 +1,651 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "gong2021-acsanm-1c02004-nbr-gqds-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Lin Gong; Ji Sun; Peng Zheng; Yousong Liu; Guangcheng Yang (2021): NBr-GQDs",
+  "material": {
+    "formula": "C, N, Br",
+    "family": "C, N, Br nanocrystals",
+    "elements": [
+      "C",
+      "N",
+      "Br"
+    ],
+    "components": [
+      "C, N, Br"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Deﬂagration",
+  "sources": [
+    {
+      "id": "gong2021-acsanm-1c02004",
+      "doi": "10.1021/acsanm.1c02004",
+      "title": "Yellow Fluorescent Nitrogen and Bromine Co-doped Graphene Quantum Dots for Bioimaging",
+      "authors": "Lin Gong; Ji Sun; Peng Zheng; Yousong Liu; Guangcheng Yang",
+      "year": 2021,
+      "url": "https://doi.org/10.1021/acsanm.1c02004",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "gong2021-acsanm-1c02004",
+    "recipe_family": "gong2021-acsanm-1c02004-nbr-gqds-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "C, N, Br",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "gong2021-acsanm-1c02004",
+          "locator": "Main PDF p.4"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "graphitized carbon",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "gong2021-acsanm-1c02004",
+          "locator": "Main PDF p.4"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": 3.5,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "3.5 nm",
+      "evidence": [
+        {
+          "source_id": "gong2021-acsanm-1c02004",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "derivation": null
+    },
+    "morphology": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "gong2021-acsanm-1c02004-nbr-gqds-1--hexabromobenzene",
+      "name": "hexabromobenzene",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "mass": {
+          "value": 3,
+          "minimum": null,
+          "maximum": null,
+          "unit": "g",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "3 g",
+          "evidence": [
+            {
+              "source_id": "gong2021-acsanm-1c02004",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "gong2021-acsanm-1c02004",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "gong2021-acsanm-1c02004-nbr-gqds-1--sodium-azide",
+      "name": "sodium azide",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "gong2021-acsanm-1c02004",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "gong2021-acsanm-1c02004-nbr-gqds-1--ethanol",
+      "name": "ethanol",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 3,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "3 mL",
+          "evidence": [
+            {
+              "source_id": "gong2021-acsanm-1c02004",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "gong2021-acsanm-1c02004",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "gong2021-acsanm-1c02004-nbr-gqds-1--after-s01-mix",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "gong2021-acsanm-1c02004-nbr-gqds-1--hexabromobenzene",
+        "gong2021-acsanm-1c02004-nbr-gqds-1--sodium-azide"
+      ]
+    },
+    {
+      "id": "gong2021-acsanm-1c02004-nbr-gqds-1--after-s02-add",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "gong2021-acsanm-1c02004-nbr-gqds-1--after-s01-mix",
+        "gong2021-acsanm-1c02004-nbr-gqds-1--ethanol"
+      ]
+    },
+    {
+      "id": "gong2021-acsanm-1c02004-nbr-gqds-1--after-s03-heat",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "gong2021-acsanm-1c02004-nbr-gqds-1--after-s02-add"
+      ]
+    },
+    {
+      "id": "gong2021-acsanm-1c02004-nbr-gqds-1--after-s04-cool",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "gong2021-acsanm-1c02004-nbr-gqds-1--after-s03-heat"
+      ]
+    },
+    {
+      "id": "gong2021-acsanm-1c02004-nbr-gqds-1--after-s05-purify",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "gong2021-acsanm-1c02004-nbr-gqds-1--after-s04-cool"
+      ]
+    },
+    {
+      "id": "gong2021-acsanm-1c02004-nbr-gqds-1--after-s06-dry",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "gong2021-acsanm-1c02004-nbr-gqds-1--after-s05-purify"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-mix",
+      "action": "mix",
+      "label": "Mixing hexabromobenzene and sodium azide in a molar ratio of 1:6",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "gong2021-acsanm-1c02004-nbr-gqds-1--hexabromobenzene",
+        "gong2021-acsanm-1c02004-nbr-gqds-1--sodium-azide"
+      ],
+      "outputs": [
+        "gong2021-acsanm-1c02004-nbr-gqds-1--after-s01-mix"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "gong2021-acsanm-1c02004",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Mixing hexabromobenzene and sodium azide in a molar ratio of 1:6",
+      "evidence": [
+        {
+          "source_id": "gong2021-acsanm-1c02004",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-add",
+      "action": "add",
+      "label": "Adding ethanol to the mixture",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-mix"
+      ],
+      "inputs": [
+        "gong2021-acsanm-1c02004-nbr-gqds-1--after-s01-mix",
+        "gong2021-acsanm-1c02004-nbr-gqds-1--ethanol"
+      ],
+      "outputs": [
+        "gong2021-acsanm-1c02004-nbr-gqds-1--after-s02-add"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "gong2021-acsanm-1c02004",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Adding ethanol to the mixture",
+      "evidence": [
+        {
+          "source_id": "gong2021-acsanm-1c02004",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s03-heat",
+      "action": "heat",
+      "label": "Heating the mixture to 450°C in an Ar atmosphere to initiate the deﬂagration reaction",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-add"
+      ],
+      "inputs": [
+        "gong2021-acsanm-1c02004-nbr-gqds-1--after-s02-add"
+      ],
+      "outputs": [
+        "gong2021-acsanm-1c02004-nbr-gqds-1--after-s03-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 450,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "450 °C",
+          "evidence": [
+            {
+              "source_id": "gong2021-acsanm-1c02004",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "gong2021-acsanm-1c02004",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heating the mixture to 450°C in an Ar atmosphere to initiate the deﬂagration reaction",
+      "evidence": [
+        {
+          "source_id": "gong2021-acsanm-1c02004",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s04-cool",
+      "action": "cool",
+      "label": "Cooling the reaction products to room temperature",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-heat"
+      ],
+      "inputs": [
+        "gong2021-acsanm-1c02004-nbr-gqds-1--after-s03-heat"
+      ],
+      "outputs": [
+        "gong2021-acsanm-1c02004-nbr-gqds-1--after-s04-cool"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "gong2021-acsanm-1c02004",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Cooling the reaction products to room temperature",
+      "evidence": [
+        {
+          "source_id": "gong2021-acsanm-1c02004",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s05-purify",
+      "action": "purify",
+      "label": "Purifying the reaction products using dialysis bags",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-cool"
+      ],
+      "inputs": [
+        "gong2021-acsanm-1c02004-nbr-gqds-1--after-s04-cool"
+      ],
+      "outputs": [
+        "gong2021-acsanm-1c02004-nbr-gqds-1--after-s05-purify"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Purifying the reaction products using dialysis bags",
+      "evidence": [
+        {
+          "source_id": "gong2021-acsanm-1c02004",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s06-dry",
+      "action": "dry",
+      "label": "Vacuum drying the purified NBr-GQDs",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s05-purify"
+      ],
+      "inputs": [
+        "gong2021-acsanm-1c02004-nbr-gqds-1--after-s05-purify"
+      ],
+      "outputs": [
+        "gong2021-acsanm-1c02004-nbr-gqds-1--after-s06-dry"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 80,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "80 °C",
+          "evidence": [
+            {
+              "source_id": "gong2021-acsanm-1c02004",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 12,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "12 h",
+          "evidence": [
+            {
+              "source_id": "gong2021-acsanm-1c02004",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Vacuum drying the purified NBr-GQDs",
+      "evidence": [
+        {
+          "source_id": "gong2021-acsanm-1c02004",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "gong2021-acsanm-1c02004-nbr-gqds-1--product",
+      "source_sample_label": "NBr-GQDs",
+      "batch_id": null,
+      "material_state_id": "gong2021-acsanm-1c02004-nbr-gqds-1--after-s06-dry",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "C, N, Br",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "gong2021-acsanm-1c02004",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "graphitized carbon",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "gong2021-acsanm-1c02004",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "surface": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "gong2021-acsanm-1c02004",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "notes": [
+        "Reactor: 100 mL stainless-steel reactor (Main PDF p.2)."
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "id": "gong2021-acsanm-1c02004-nbr-gqds-1--size",
+      "sample_id": "gong2021-acsanm-1c02004-nbr-gqds-1--product",
+      "property": "diameter",
+      "technique": "TEM",
+      "value": {
+        "value": 3.5,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "3.5 nm",
+        "evidence": [
+          {
+            "source_id": "gong2021-acsanm-1c02004",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "gong2021-acsanm-1c02004",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Shape not reported in the extracted text.",
+      "Ligand not reported in the extracted text.",
+      "Reaction temperature not reported in the extracted text.",
+      "Reaction time not reported in the extracted text.",
+      "Amount of sodium azide not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

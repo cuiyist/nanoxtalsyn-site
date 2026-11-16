@@ -1,0 +1,438 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "li2016-acs-jpcc-6b01530-s1-5h-70-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Pu Li; Yong Lan; Qian Zhang; Ziyan Zhao; Tonu Pullerits; Kaibo Zheng; Ying Zhou (2016): S1.5h-70",
+  "material": {
+    "formula": "SnO2",
+    "family": "SnO2 nanocrystals",
+    "elements": [
+      "Sn",
+      "O"
+    ],
+    "components": [
+      "SnO2"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Hydrolysis",
+  "sources": [
+    {
+      "id": "li2016-acs-jpcc-6b01530",
+      "doi": "10.1021/acs.jpcc.6b01530",
+      "title": "Iodinated SnO2 Quantum Dots: A Facile and Efficient Approach To Increase Solar Absorption for Visible-Light Photocatalysis",
+      "authors": "Pu Li; Yong Lan; Qian Zhang; Ziyan Zhao; Tonu Pullerits; Kaibo Zheng; Ying Zhou",
+      "year": 2016,
+      "url": "https://doi.org/10.1021/acs.jpcc.6b01530",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "li2016-acs-jpcc-6b01530",
+    "recipe_family": "li2016-acs-jpcc-6b01530-s1-5h-70-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "SnO2",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "li2016-acs-jpcc-6b01530",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    },
+    "size": {
+      "value": null,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "not_reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "not reported",
+      "evidence": [],
+      "derivation": null
+    },
+    "morphology": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "li2016-acs-jpcc-6b01530-s1-5h-70-1--sni4",
+      "name": "SnI4",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "mass": {
+          "value": 300,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mg",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "300 mg",
+          "evidence": [
+            {
+              "source_id": "li2016-acs-jpcc-6b01530",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "li2016-acs-jpcc-6b01530",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "li2016-acs-jpcc-6b01530-s1-5h-70-1--deionized-water",
+      "name": "deionized water",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 300,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "300 mL",
+          "evidence": [
+            {
+              "source_id": "li2016-acs-jpcc-6b01530",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "li2016-acs-jpcc-6b01530",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "li2016-acs-jpcc-6b01530-s1-5h-70-1--after-s01-dissolve",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "li2016-acs-jpcc-6b01530-s1-5h-70-1--sni4",
+        "li2016-acs-jpcc-6b01530-s1-5h-70-1--deionized-water"
+      ]
+    },
+    {
+      "id": "li2016-acs-jpcc-6b01530-s1-5h-70-1--after-s02-precipitate",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "li2016-acs-jpcc-6b01530-s1-5h-70-1--after-s01-dissolve"
+      ]
+    },
+    {
+      "id": "li2016-acs-jpcc-6b01530-s1-5h-70-1--after-s03-wash",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "li2016-acs-jpcc-6b01530-s1-5h-70-1--after-s02-precipitate"
+      ]
+    },
+    {
+      "id": "li2016-acs-jpcc-6b01530-s1-5h-70-1--after-s04-dry",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "li2016-acs-jpcc-6b01530-s1-5h-70-1--after-s03-wash"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-dissolve",
+      "action": "dissolve",
+      "label": "SnI4 is dissolved in deionized water",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "li2016-acs-jpcc-6b01530-s1-5h-70-1--sni4",
+        "li2016-acs-jpcc-6b01530-s1-5h-70-1--deionized-water"
+      ],
+      "outputs": [
+        "li2016-acs-jpcc-6b01530-s1-5h-70-1--after-s01-dissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "SnI4 is dissolved in deionized water",
+      "evidence": [
+        {
+          "source_id": "li2016-acs-jpcc-6b01530",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-precipitate",
+      "action": "precipitate",
+      "label": "SnO2 QDs are precipitated",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-dissolve"
+      ],
+      "inputs": [
+        "li2016-acs-jpcc-6b01530-s1-5h-70-1--after-s01-dissolve"
+      ],
+      "outputs": [
+        "li2016-acs-jpcc-6b01530-s1-5h-70-1--after-s02-precipitate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "SnO2 QDs are precipitated",
+      "evidence": [
+        {
+          "source_id": "li2016-acs-jpcc-6b01530",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s03-wash",
+      "action": "wash",
+      "label": "Products are washed with ethanol and deionized water",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-precipitate"
+      ],
+      "inputs": [
+        "li2016-acs-jpcc-6b01530-s1-5h-70-1--after-s02-precipitate"
+      ],
+      "outputs": [
+        "li2016-acs-jpcc-6b01530-s1-5h-70-1--after-s03-wash"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Products are washed with ethanol and deionized water",
+      "evidence": [
+        {
+          "source_id": "li2016-acs-jpcc-6b01530",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s04-dry",
+      "action": "dry",
+      "label": "Products are dried in a vacuum oven",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-wash"
+      ],
+      "inputs": [
+        "li2016-acs-jpcc-6b01530-s1-5h-70-1--after-s03-wash"
+      ],
+      "outputs": [
+        "li2016-acs-jpcc-6b01530-s1-5h-70-1--after-s04-dry"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 60,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "60 °C",
+          "evidence": [
+            {
+              "source_id": "li2016-acs-jpcc-6b01530",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Products are dried in a vacuum oven",
+      "evidence": [
+        {
+          "source_id": "li2016-acs-jpcc-6b01530",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "li2016-acs-jpcc-6b01530-s1-5h-70-1--product",
+      "source_sample_label": "S1.5h-70",
+      "batch_id": null,
+      "material_state_id": "li2016-acs-jpcc-6b01530-s1-5h-70-1--after-s04-dry",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "SnO2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "li2016-acs-jpcc-6b01530",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "morphology": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "surface": {
+        "value": "iodine species",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "li2016-acs-jpcc-6b01530",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "li2016-acs-jpcc-6b01530",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "notes": [
+        "Reactor: 300 mL deionized water (Main PDF p.2)."
+      ]
+    }
+  ],
+  "measurements": [],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Phase not reported in the extracted text.",
+      "Shape not reported in the extracted text.",
+      "Size not reported in the extracted text.",
+      "Atmosphere not reported in the extracted text.",
+      "Reaction temperature not reported in the extracted text.",
+      "Reaction time not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

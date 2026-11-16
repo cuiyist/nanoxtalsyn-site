@@ -1,0 +1,660 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "kumbhakar2024-acs-jpcc-4c02798-2d-zno-qds-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Partha Kumbhakar; Subhendu Mishra; Pathik Kumbhakar; Ranjan Kumar Barik; Chandra Sekhar Tiwary; Abhishek Kumar Singh (2024): 2D ZnO QDs",
+  "material": {
+    "formula": "ZnO",
+    "family": "ZnO nanocrystals",
+    "elements": [
+      "Zn",
+      "O"
+    ],
+    "components": [
+      "ZnO"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Wet chemical",
+  "sources": [
+    {
+      "id": "kumbhakar2024-acs-jpcc-4c02798",
+      "doi": "10.1021/acs.jpcc.4c02798",
+      "title": "Strain-Induced Tribocatalytic Activity of 2D ZnO Quantum Dots",
+      "authors": "Partha Kumbhakar; Subhendu Mishra; Pathik Kumbhakar; Ranjan Kumar Barik; Chandra Sekhar Tiwary; Abhishek Kumar Singh",
+      "year": 2024,
+      "url": "https://doi.org/10.1021/acs.jpcc.4c02798",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "kumbhakar2024-acs-jpcc-4c02798",
+    "recipe_family": "kumbhakar2024-acs-jpcc-4c02798-2d-zno-qds-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "ZnO",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "kumbhakar2024-acs-jpcc-4c02798",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "hexagonal wurtzite",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "kumbhakar2024-acs-jpcc-4c02798",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": 5.0,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "5 nm",
+      "evidence": [
+        {
+          "source_id": "kumbhakar2024-acs-jpcc-4c02798",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "derivation": null
+    },
+    "morphology": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "kumbhakar2024-acs-jpcc-4c02798-2d-zno-qds-1--zinc-acetate",
+      "name": "zinc acetate",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "mass": {
+          "value": 8,
+          "minimum": null,
+          "maximum": null,
+          "unit": "g",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "8 g",
+          "evidence": [
+            {
+              "source_id": "kumbhakar2024-acs-jpcc-4c02798",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "kumbhakar2024-acs-jpcc-4c02798",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "kumbhakar2024-acs-jpcc-4c02798-2d-zno-qds-1--ethanol-water-mixture",
+      "name": "ethanol/water mixture",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 40,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "40 mL",
+          "evidence": [
+            {
+              "source_id": "kumbhakar2024-acs-jpcc-4c02798",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "kumbhakar2024-acs-jpcc-4c02798",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "kumbhakar2024-acs-jpcc-4c02798-2d-zno-qds-1--naoh",
+      "name": "NaOH",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "kumbhakar2024-acs-jpcc-4c02798",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "kumbhakar2024-acs-jpcc-4c02798-2d-zno-qds-1--after-s01-dissolve",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "kumbhakar2024-acs-jpcc-4c02798-2d-zno-qds-1--zinc-acetate",
+        "kumbhakar2024-acs-jpcc-4c02798-2d-zno-qds-1--ethanol-water-mixture"
+      ]
+    },
+    {
+      "id": "kumbhakar2024-acs-jpcc-4c02798-2d-zno-qds-1--after-s02-add",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "kumbhakar2024-acs-jpcc-4c02798-2d-zno-qds-1--after-s01-dissolve",
+        "kumbhakar2024-acs-jpcc-4c02798-2d-zno-qds-1--naoh"
+      ]
+    },
+    {
+      "id": "kumbhakar2024-acs-jpcc-4c02798-2d-zno-qds-1--after-s03-refrigerate",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "kumbhakar2024-acs-jpcc-4c02798-2d-zno-qds-1--after-s02-add"
+      ]
+    },
+    {
+      "id": "kumbhakar2024-acs-jpcc-4c02798-2d-zno-qds-1--after-s04-heat",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "kumbhakar2024-acs-jpcc-4c02798-2d-zno-qds-1--after-s03-refrigerate"
+      ]
+    },
+    {
+      "id": "kumbhakar2024-acs-jpcc-4c02798-2d-zno-qds-1--after-s05-centrifuge",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "kumbhakar2024-acs-jpcc-4c02798-2d-zno-qds-1--after-s04-heat"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-dissolve",
+      "action": "dissolve",
+      "label": "Dissolve zinc acetate in ethanol/water mixture",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "kumbhakar2024-acs-jpcc-4c02798-2d-zno-qds-1--zinc-acetate",
+        "kumbhakar2024-acs-jpcc-4c02798-2d-zno-qds-1--ethanol-water-mixture"
+      ],
+      "outputs": [
+        "kumbhakar2024-acs-jpcc-4c02798-2d-zno-qds-1--after-s01-dissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "kumbhakar2024-acs-jpcc-4c02798",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dissolve zinc acetate in ethanol/water mixture",
+      "evidence": [
+        {
+          "source_id": "kumbhakar2024-acs-jpcc-4c02798",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-add",
+      "action": "add",
+      "label": "Add NaOH to increase pH",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-dissolve"
+      ],
+      "inputs": [
+        "kumbhakar2024-acs-jpcc-4c02798-2d-zno-qds-1--after-s01-dissolve",
+        "kumbhakar2024-acs-jpcc-4c02798-2d-zno-qds-1--naoh"
+      ],
+      "outputs": [
+        "kumbhakar2024-acs-jpcc-4c02798-2d-zno-qds-1--after-s02-add"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 30,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "30 min",
+          "evidence": [
+            {
+              "source_id": "kumbhakar2024-acs-jpcc-4c02798",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "kumbhakar2024-acs-jpcc-4c02798",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add NaOH to increase pH",
+      "evidence": [
+        {
+          "source_id": "kumbhakar2024-acs-jpcc-4c02798",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s03-refrigerate",
+      "action": "refrigerate",
+      "label": "Refrigerate solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-add"
+      ],
+      "inputs": [
+        "kumbhakar2024-acs-jpcc-4c02798-2d-zno-qds-1--after-s02-add"
+      ],
+      "outputs": [
+        "kumbhakar2024-acs-jpcc-4c02798-2d-zno-qds-1--after-s03-refrigerate"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "5 °C",
+          "evidence": [
+            {
+              "source_id": "kumbhakar2024-acs-jpcc-4c02798",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 2,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2 h",
+          "evidence": [
+            {
+              "source_id": "kumbhakar2024-acs-jpcc-4c02798",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "kumbhakar2024-acs-jpcc-4c02798",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Refrigerate solution",
+      "evidence": [
+        {
+          "source_id": "kumbhakar2024-acs-jpcc-4c02798",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s04-heat",
+      "action": "heat",
+      "label": "Heat solution in air",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-refrigerate"
+      ],
+      "inputs": [
+        "kumbhakar2024-acs-jpcc-4c02798-2d-zno-qds-1--after-s03-refrigerate"
+      ],
+      "outputs": [
+        "kumbhakar2024-acs-jpcc-4c02798-2d-zno-qds-1--after-s04-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 70,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "70 °C",
+          "evidence": [
+            {
+              "source_id": "kumbhakar2024-acs-jpcc-4c02798",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 2,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2 h",
+          "evidence": [
+            {
+              "source_id": "kumbhakar2024-acs-jpcc-4c02798",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "kumbhakar2024-acs-jpcc-4c02798",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heat solution in air",
+      "evidence": [
+        {
+          "source_id": "kumbhakar2024-acs-jpcc-4c02798",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s05-centrifuge",
+      "action": "centrifuge",
+      "label": "Centrifuge solution",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-heat"
+      ],
+      "inputs": [
+        "kumbhakar2024-acs-jpcc-4c02798-2d-zno-qds-1--after-s04-heat"
+      ],
+      "outputs": [
+        "kumbhakar2024-acs-jpcc-4c02798-2d-zno-qds-1--after-s05-centrifuge"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 10,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "10 min",
+          "evidence": [
+            {
+              "source_id": "kumbhakar2024-acs-jpcc-4c02798",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Centrifuge solution",
+      "evidence": [
+        {
+          "source_id": "kumbhakar2024-acs-jpcc-4c02798",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "kumbhakar2024-acs-jpcc-4c02798-2d-zno-qds-1--product",
+      "source_sample_label": "2D ZnO QDs",
+      "batch_id": null,
+      "material_state_id": "kumbhakar2024-acs-jpcc-4c02798-2d-zno-qds-1--after-s05-centrifuge",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "ZnO",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "kumbhakar2024-acs-jpcc-4c02798",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "hexagonal wurtzite",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "kumbhakar2024-acs-jpcc-4c02798",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "surface": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "kumbhakar2024-acs-jpcc-4c02798",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "notes": [
+        "Reaction temperature: 70 degC (Main PDF p.2).",
+        "Reaction time: 2 h (Main PDF p.2)."
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "id": "kumbhakar2024-acs-jpcc-4c02798-2d-zno-qds-1--size",
+      "sample_id": "kumbhakar2024-acs-jpcc-4c02798-2d-zno-qds-1--product",
+      "property": "diameter",
+      "technique": "TEM",
+      "value": {
+        "value": 5.0,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "5 nm",
+        "evidence": [
+          {
+            "source_id": "kumbhakar2024-acs-jpcc-4c02798",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "kumbhakar2024-acs-jpcc-4c02798",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Shape not reported in the extracted text.",
+      "Ligand not reported in the extracted text.",
+      "Reactor not reported in the extracted text.",
+      "Amount of NaOH not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

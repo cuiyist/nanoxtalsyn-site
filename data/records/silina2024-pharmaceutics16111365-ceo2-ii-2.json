@@ -1,0 +1,388 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "silina2024-pharmaceutics16111365-ceo2-ii-2",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Ekaterina V. Silina; Victor A. Stupin; Natalia E. Manturova; Elena L. Chuvilina; Akhmedali A. Gasanov; Anna A. Ostrovskaya; Olga I. Andreeva; Natalia Y. Tabachkova; Maxim A. Abakumov; Aleksey A. Nikitin; Alexey A. Kryukov; Svetlana A. Dodonova; Aleksey V. Kochura; Maksim A. Pugachevskii (2024): CeO2-II",
+  "material": {
+    "formula": "CeO2",
+    "family": "CeO2 nanocrystals",
+    "elements": [
+      "Ce",
+      "O"
+    ],
+    "components": [
+      "CeO2"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Synthesis as described in the source",
+  "sources": [
+    {
+      "id": "silina2024-pharmaceutics16111365",
+      "doi": "10.3390/pharmaceutics16111365",
+      "title": "Development of Technology for the Synthesis of Nanocrystalline Cerium Oxide Under Production Conditions with the Best Regenerative Activity and Biocompatibility for Further Creation of Wound-Healing Agents",
+      "authors": "Ekaterina V. Silina; Victor A. Stupin; Natalia E. Manturova; Elena L. Chuvilina; Akhmedali A. Gasanov; Anna A. Ostrovskaya; Olga I. Andreeva; Natalia Y. Tabachkova; Maxim A. Abakumov; Aleksey A. Nikitin; Alexey A. Kryukov; Svetlana A. Dodonova; Aleksey V. Kochura; Maksim A. Pugachevskii",
+      "year": 2024,
+      "url": "https://doi.org/10.3390/pharmaceutics16111365",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "silina2024-pharmaceutics16111365",
+    "recipe_family": "silina2024-pharmaceutics16111365-ceo2-ii-2",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "CeO2",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "silina2024-pharmaceutics16111365",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "cubic fluorite",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "silina2024-pharmaceutics16111365",
+          "locator": "Main PDF"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": 9,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "9 nm",
+      "evidence": [
+        {
+          "source_id": "silina2024-pharmaceutics16111365",
+          "locator": "Main PDF p.26"
+        }
+      ],
+      "derivation": null
+    },
+    "morphology": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    }
+  },
+  "materials": [],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "silina2024-pharmaceutics16111365-ceo2-ii-2--after-s01-dissolve",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": []
+    },
+    {
+      "id": "silina2024-pharmaceutics16111365-ceo2-ii-2--after-s02-dry",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "silina2024-pharmaceutics16111365-ceo2-ii-2--after-s01-dissolve"
+      ]
+    },
+    {
+      "id": "silina2024-pharmaceutics16111365-ceo2-ii-2--after-s03-calcine",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "silina2024-pharmaceutics16111365-ceo2-ii-2--after-s02-dry"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-dissolve",
+      "action": "dissolve",
+      "label": "Dissolve cerium nitrate and ammonium nitrate in water",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [],
+      "outputs": [
+        "silina2024-pharmaceutics16111365-ceo2-ii-2--after-s01-dissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dissolve cerium nitrate and ammonium nitrate in water",
+      "evidence": [
+        {
+          "source_id": "silina2024-pharmaceutics16111365",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s02-dry",
+      "action": "dry",
+      "label": "Dry the precipitate",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-dissolve"
+      ],
+      "inputs": [
+        "silina2024-pharmaceutics16111365-ceo2-ii-2--after-s01-dissolve"
+      ],
+      "outputs": [
+        "silina2024-pharmaceutics16111365-ceo2-ii-2--after-s02-dry"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 20,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "20 °C",
+          "evidence": [
+            {
+              "source_id": "silina2024-pharmaceutics16111365",
+              "locator": "Main PDF p.5"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dry the precipitate",
+      "evidence": [
+        {
+          "source_id": "silina2024-pharmaceutics16111365",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    },
+    {
+      "id": "s03-calcine",
+      "action": "calcine",
+      "label": "Calcine the dried precipitate",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-dry"
+      ],
+      "inputs": [
+        "silina2024-pharmaceutics16111365-ceo2-ii-2--after-s02-dry"
+      ],
+      "outputs": [
+        "silina2024-pharmaceutics16111365-ceo2-ii-2--after-s03-calcine"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 450,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "450 °C",
+          "evidence": [
+            {
+              "source_id": "silina2024-pharmaceutics16111365",
+              "locator": "Main PDF p.5"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 2,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2 h",
+          "evidence": [
+            {
+              "source_id": "silina2024-pharmaceutics16111365",
+              "locator": "Main PDF p.5"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Calcine the dried precipitate",
+      "evidence": [
+        {
+          "source_id": "silina2024-pharmaceutics16111365",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "silina2024-pharmaceutics16111365-ceo2-ii-2--product",
+      "source_sample_label": "CeO2-II",
+      "batch_id": null,
+      "material_state_id": "silina2024-pharmaceutics16111365-ceo2-ii-2--after-s03-calcine",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "CeO2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "silina2024-pharmaceutics16111365",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "cubic fluorite",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "silina2024-pharmaceutics16111365",
+            "locator": "Main PDF"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "surface": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "silina2024-pharmaceutics16111365",
+          "locator": "Main PDF p.5"
+        }
+      ],
+      "notes": [
+        "Reaction temperature: 450 degC (Main PDF p.5).",
+        "Reaction time: 2 h (Main PDF p.5)."
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "id": "silina2024-pharmaceutics16111365-ceo2-ii-2--size",
+      "sample_id": "silina2024-pharmaceutics16111365-ceo2-ii-2--product",
+      "property": "particle_size",
+      "technique": "not reported",
+      "value": {
+        "value": 9,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "9 nm",
+        "evidence": [
+          {
+            "source_id": "silina2024-pharmaceutics16111365",
+            "locator": "Main PDF p.26"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "silina2024-pharmaceutics16111365",
+          "locator": "Main PDF p.26"
+        }
+      ]
+    }
+  ],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Shape not reported in the extracted text.",
+      "Ligand not reported in the extracted text.",
+      "Reactor not reported in the extracted text.",
+      "Atmosphere not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

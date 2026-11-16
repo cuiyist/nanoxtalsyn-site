@@ -1,0 +1,498 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "udhayaa2021-14-5-5-nife2o4-nanoparticles-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "P. Aji Udhayaa; M. Meena; M. Abila Jeba Queen; M. Mary Freda; T. Regin Das (2021): NiFe2O4 nanoparticles",
+  "material": {
+    "formula": "NiFe2O4",
+    "family": "NiFe2O4 nanocrystals",
+    "elements": [
+      "Ni",
+      "Fe",
+      "O"
+    ],
+    "components": [
+      "NiFe2O4"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Combustion",
+  "sources": [
+    {
+      "id": "udhayaa2021-14-5-5",
+      "doi": "10.47011/14.5.5",
+      "title": "Albumen-assisted Synthesis of Nanocrystalline Nickel Ferrite Photocatalyst",
+      "authors": "P. Aji Udhayaa; M. Meena; M. Abila Jeba Queen; M. Mary Freda; T. Regin Das",
+      "year": 2021,
+      "url": "https://doi.org/10.47011/14.5.5",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "udhayaa2021-14-5-5",
+    "recipe_family": "udhayaa2021-14-5-5-nife2o4-nanoparticles-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "NiFe2O4",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "udhayaa2021-14-5-5",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "cubic spinel",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "udhayaa2021-14-5-5",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": 34,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "34 nm",
+      "evidence": [
+        {
+          "source_id": "udhayaa2021-14-5-5",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "sphere",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "udhayaa2021-14-5-5",
+          "locator": "Main PDF p.5"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "udhayaa2021-14-5-5-nife2o4-nanoparticles-1--ferric-nitrate-nonahydrate",
+      "name": "ferric nitrate nonahydrate",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "udhayaa2021-14-5-5",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "udhayaa2021-14-5-5-nife2o4-nanoparticles-1--nickel-nitrate-hexahydrate",
+      "name": "nickel nitrate hexahydrate",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "udhayaa2021-14-5-5",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "udhayaa2021-14-5-5-nife2o4-nanoparticles-1--egg-white",
+      "name": "egg white",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "udhayaa2021-14-5-5",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "udhayaa2021-14-5-5-nife2o4-nanoparticles-1--after-s01-mix",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "udhayaa2021-14-5-5-nife2o4-nanoparticles-1--egg-white"
+      ]
+    },
+    {
+      "id": "udhayaa2021-14-5-5-nife2o4-nanoparticles-1--after-s02-heat",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "udhayaa2021-14-5-5-nife2o4-nanoparticles-1--after-s01-mix",
+        "udhayaa2021-14-5-5-nife2o4-nanoparticles-1--ferric-nitrate-nonahydrate",
+        "udhayaa2021-14-5-5-nife2o4-nanoparticles-1--nickel-nitrate-hexahydrate",
+        "udhayaa2021-14-5-5-nife2o4-nanoparticles-1--egg-white"
+      ]
+    },
+    {
+      "id": "udhayaa2021-14-5-5-nife2o4-nanoparticles-1--after-s03-calcine",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "udhayaa2021-14-5-5-nife2o4-nanoparticles-1--after-s02-heat",
+        "udhayaa2021-14-5-5-nife2o4-nanoparticles-1--ferric-nitrate-nonahydrate",
+        "udhayaa2021-14-5-5-nife2o4-nanoparticles-1--nickel-nitrate-hexahydrate",
+        "udhayaa2021-14-5-5-nife2o4-nanoparticles-1--egg-white"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-mix",
+      "action": "mix",
+      "label": "Egg white and double distilled water are combined in 3:1 ratio by vigorous stirring at room temperature for one hour to form a homogeneous solution.",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "udhayaa2021-14-5-5-nife2o4-nanoparticles-1--egg-white"
+      ],
+      "outputs": [
+        "udhayaa2021-14-5-5-nife2o4-nanoparticles-1--after-s01-mix"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 h",
+          "evidence": [
+            {
+              "source_id": "udhayaa2021-14-5-5",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Egg white and double distilled water are combined in 3:1 ratio by vigorous stirring at room temperature for one hour to form a homogeneous solution.",
+      "evidence": [
+        {
+          "source_id": "udhayaa2021-14-5-5",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-heat",
+      "action": "heat",
+      "label": "The mixed solution was then heated for several hours on a hot plate at 80oC, until a dried precursor was obtained.",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-mix"
+      ],
+      "inputs": [
+        "udhayaa2021-14-5-5-nife2o4-nanoparticles-1--after-s01-mix",
+        "udhayaa2021-14-5-5-nife2o4-nanoparticles-1--ferric-nitrate-nonahydrate",
+        "udhayaa2021-14-5-5-nife2o4-nanoparticles-1--nickel-nitrate-hexahydrate",
+        "udhayaa2021-14-5-5-nife2o4-nanoparticles-1--egg-white"
+      ],
+      "outputs": [
+        "udhayaa2021-14-5-5-nife2o4-nanoparticles-1--after-s02-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 80,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "80 °C",
+          "evidence": [
+            {
+              "source_id": "udhayaa2021-14-5-5",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "The mixed solution was then heated for several hours on a hot plate at 80oC, until a dried precursor was obtained.",
+      "evidence": [
+        {
+          "source_id": "udhayaa2021-14-5-5",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s03-calcine",
+      "action": "calcine",
+      "label": "The powder as synthesized was calcined for 3 hours in a muffle furnace at 600oC.",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-heat"
+      ],
+      "inputs": [
+        "udhayaa2021-14-5-5-nife2o4-nanoparticles-1--after-s02-heat",
+        "udhayaa2021-14-5-5-nife2o4-nanoparticles-1--ferric-nitrate-nonahydrate",
+        "udhayaa2021-14-5-5-nife2o4-nanoparticles-1--nickel-nitrate-hexahydrate",
+        "udhayaa2021-14-5-5-nife2o4-nanoparticles-1--egg-white"
+      ],
+      "outputs": [
+        "udhayaa2021-14-5-5-nife2o4-nanoparticles-1--after-s03-calcine"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 600,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "600 °C",
+          "evidence": [
+            {
+              "source_id": "udhayaa2021-14-5-5",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 3,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "3 h",
+          "evidence": [
+            {
+              "source_id": "udhayaa2021-14-5-5",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "The powder as synthesized was calcined for 3 hours in a muffle furnace at 600oC.",
+      "evidence": [
+        {
+          "source_id": "udhayaa2021-14-5-5",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "udhayaa2021-14-5-5-nife2o4-nanoparticles-1--product",
+      "source_sample_label": "NiFe2O4 nanoparticles",
+      "batch_id": null,
+      "material_state_id": "udhayaa2021-14-5-5-nife2o4-nanoparticles-1--after-s03-calcine",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "NiFe2O4",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "udhayaa2021-14-5-5",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "cubic spinel",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "udhayaa2021-14-5-5",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": "sphere",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "udhayaa2021-14-5-5",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": "egg white",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "udhayaa2021-14-5-5",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "udhayaa2021-14-5-5",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "notes": [
+        "Reactor: muffle furnace (Main PDF p.3).",
+        "Reaction temperature: 600 degC (Main PDF p.3).",
+        "Reaction time: 3 h (Main PDF p.3)."
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "id": "udhayaa2021-14-5-5-nife2o4-nanoparticles-1--size",
+      "sample_id": "udhayaa2021-14-5-5-nife2o4-nanoparticles-1--product",
+      "property": "crystallite_size",
+      "technique": "XRD",
+      "value": {
+        "value": 34,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "34 nm",
+        "evidence": [
+          {
+            "source_id": "udhayaa2021-14-5-5",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "udhayaa2021-14-5-5",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Atmosphere not reported in the extracted text.",
+      "Amount of ferric nitrate nonahydrate not reported in the extracted text.",
+      "Amount of nickel nitrate hexahydrate not reported in the extracted text.",
+      "Amount of egg white not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

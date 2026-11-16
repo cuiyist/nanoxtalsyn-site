@@ -1,0 +1,567 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Lin-Jer Chen; Chia-Rong Lee; Yu-Ju Chuang; Zhao-Han Wu; Chienyi Chen (2016): CsSnBr3 quantum rods",
+  "material": {
+    "formula": "CsSnBr3",
+    "family": "CsSnBr3 nanocrystals",
+    "elements": [
+      "Cs",
+      "Sn",
+      "Br"
+    ],
+    "components": [
+      "CsSnBr3"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Solvothermal",
+  "sources": [
+    {
+      "id": "chen2016-acs-jpclett-6b02344",
+      "doi": "10.1021/acs.jpclett.6b02344",
+      "title": "Synthesis and Optical Properties of Lead-Free Cesium Tin Halide Perovskite Quantum Rods with High-Performance Solar Cell Application",
+      "authors": "Lin-Jer Chen; Chia-Rong Lee; Yu-Ju Chuang; Zhao-Han Wu; Chienyi Chen",
+      "year": 2016,
+      "url": "https://doi.org/10.1021/acs.jpclett.6b02344",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "chen2016-acs-jpclett-6b02344",
+    "recipe_family": "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "CsSnBr3",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "chen2016-acs-jpclett-6b02344",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    },
+    "size": {
+      "value": 5.0,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "5 nm",
+      "evidence": [
+        {
+          "source_id": "chen2016-acs-jpclett-6b02344",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "rod",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "chen2016-acs-jpclett-6b02344",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2--octadecene-ode",
+      "name": "octadecene (ODE)",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 60,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "60 mL",
+          "evidence": [
+            {
+              "source_id": "chen2016-acs-jpclett-6b02344",
+              "locator": "Main PDF p.6"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "chen2016-acs-jpclett-6b02344",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2--oleylamine-olam",
+      "name": "oleylamine (OLAM)",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 6,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "6 mL",
+          "evidence": [
+            {
+              "source_id": "chen2016-acs-jpclett-6b02344",
+              "locator": "Main PDF p.6"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "chen2016-acs-jpclett-6b02344",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2--after-s01-dry",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": []
+    },
+    {
+      "id": "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2--after-s02-heat",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2--after-s01-dry"
+      ]
+    },
+    {
+      "id": "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2--after-s03-cool",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2--after-s02-heat"
+      ]
+    },
+    {
+      "id": "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2--after-s04-dry",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2--after-s03-cool"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-dry",
+      "action": "dry",
+      "label": "Drying under vacuum",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [],
+      "outputs": [
+        "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2--after-s01-dry"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 120,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "120 °C",
+          "evidence": [
+            {
+              "source_id": "chen2016-acs-jpclett-6b02344",
+              "locator": "Main PDF p.6"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 h",
+          "evidence": [
+            {
+              "source_id": "chen2016-acs-jpclett-6b02344",
+              "locator": "Main PDF p.6"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Drying under vacuum",
+      "evidence": [
+        {
+          "source_id": "chen2016-acs-jpclett-6b02344",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "s02-heat",
+      "action": "heat",
+      "label": "Solvothermal reaction",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-dry"
+      ],
+      "inputs": [
+        "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2--after-s01-dry"
+      ],
+      "outputs": [
+        "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2--after-s02-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 180,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "180 °C",
+          "evidence": [
+            {
+              "source_id": "chen2016-acs-jpclett-6b02344",
+              "locator": "Main PDF p.6"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 6,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "6 h",
+          "evidence": [
+            {
+              "source_id": "chen2016-acs-jpclett-6b02344",
+              "locator": "Main PDF p.6"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Solvothermal reaction",
+      "evidence": [
+        {
+          "source_id": "chen2016-acs-jpclett-6b02344",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "s03-cool",
+      "action": "cool",
+      "label": "Cooling with ice bath",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-heat"
+      ],
+      "inputs": [
+        "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2--after-s02-heat"
+      ],
+      "outputs": [
+        "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2--after-s03-cool"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Cooling with ice bath",
+      "evidence": [
+        {
+          "source_id": "chen2016-acs-jpclett-6b02344",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "s04-dry",
+      "action": "dry",
+      "label": "Vacuum drying",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-cool"
+      ],
+      "inputs": [
+        "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2--after-s03-cool"
+      ],
+      "outputs": [
+        "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2--after-s04-dry"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 80,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "80 °C",
+          "evidence": [
+            {
+              "source_id": "chen2016-acs-jpclett-6b02344",
+              "locator": "Main PDF p.6"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 3,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "3 h",
+          "evidence": [
+            {
+              "source_id": "chen2016-acs-jpclett-6b02344",
+              "locator": "Main PDF p.6"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Vacuum drying",
+      "evidence": [
+        {
+          "source_id": "chen2016-acs-jpclett-6b02344",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2--product",
+      "source_sample_label": "CsSnBr3 quantum rods",
+      "batch_id": null,
+      "material_state_id": "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2--after-s04-dry",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "CsSnBr3",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "chen2016-acs-jpclett-6b02344",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "morphology": {
+        "value": "rod",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "chen2016-acs-jpclett-6b02344",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "chen2016-acs-jpclett-6b02344",
+          "locator": "Main PDF p.6"
+        }
+      ],
+      "notes": [
+        "Reactor: 50 mL Teflon-lined autoclave (Main PDF p.6).",
+        "Reaction temperature: 180 degC (Main PDF p.6).",
+        "Reaction time: 6 h (Main PDF p.6)."
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "id": "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2--size",
+      "sample_id": "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2--product",
+      "property": "diameter",
+      "technique": "TEM",
+      "value": {
+        "value": 5.0,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "5 nm",
+        "evidence": [
+          {
+            "source_id": "chen2016-acs-jpclett-6b02344",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "chen2016-acs-jpclett-6b02344",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Phase not reported in the extracted text.",
+      "Ligand not reported in the extracted text.",
+      "Atmosphere not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

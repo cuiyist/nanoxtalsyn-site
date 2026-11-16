@@ -1,0 +1,661 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "whiffen2021-nano11030715-wurtzite-zns-nanopowder-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Radenka Krsmanović Whiffen; Amelia Montone; Loris Pietrelli; Luciano Pilloni (2021): wurtzite ZnS nanopowder",
+  "material": {
+    "formula": "ZnS",
+    "family": "ZnS nanocrystals",
+    "elements": [
+      "Zn",
+      "S"
+    ],
+    "components": [
+      "ZnS"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Co-precipitation",
+  "sources": [
+    {
+      "id": "whiffen2021-nano11030715",
+      "doi": "10.3390/nano11030715",
+      "title": "On Tailoring Co-Precipitation Synthesis to Maximize Production Yield of Nanocrystalline Wurtzite ZnS",
+      "authors": "Radenka Krsmanović Whiffen; Amelia Montone; Loris Pietrelli; Luciano Pilloni",
+      "year": 2021,
+      "url": "https://doi.org/10.3390/nano11030715",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "whiffen2021-nano11030715",
+    "recipe_family": "whiffen2021-nano11030715-wurtzite-zns-nanopowder-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "ZnS",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "whiffen2021-nano11030715",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "wurtzite",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "whiffen2021-nano11030715",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": 3.0,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "3 nm",
+      "evidence": [
+        {
+          "source_id": "whiffen2021-nano11030715",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "derivation": null
+    },
+    "morphology": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "whiffen2021-nano11030715-wurtzite-zns-nanopowder-1--zncl2",
+      "name": "ZnCl2",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "whiffen2021-nano11030715",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "whiffen2021-nano11030715-wurtzite-zns-nanopowder-1--thiourea",
+      "name": "thiourea",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 1.0,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 mol",
+          "evidence": [
+            {
+              "source_id": "whiffen2021-nano11030715",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "whiffen2021-nano11030715",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "whiffen2021-nano11030715-wurtzite-zns-nanopowder-1--ethyl-glycol",
+      "name": "ethyl glycol",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "whiffen2021-nano11030715",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "whiffen2021-nano11030715-wurtzite-zns-nanopowder-1--after-s01-dissolve",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "whiffen2021-nano11030715-wurtzite-zns-nanopowder-1--zncl2",
+        "whiffen2021-nano11030715-wurtzite-zns-nanopowder-1--thiourea",
+        "whiffen2021-nano11030715-wurtzite-zns-nanopowder-1--ethyl-glycol"
+      ]
+    },
+    {
+      "id": "whiffen2021-nano11030715-wurtzite-zns-nanopowder-1--after-s02-merge",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "whiffen2021-nano11030715-wurtzite-zns-nanopowder-1--after-s01-dissolve",
+        "whiffen2021-nano11030715-wurtzite-zns-nanopowder-1--zncl2",
+        "whiffen2021-nano11030715-wurtzite-zns-nanopowder-1--thiourea",
+        "whiffen2021-nano11030715-wurtzite-zns-nanopowder-1--ethyl-glycol"
+      ]
+    },
+    {
+      "id": "whiffen2021-nano11030715-wurtzite-zns-nanopowder-1--after-s03-cool",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "whiffen2021-nano11030715-wurtzite-zns-nanopowder-1--after-s02-merge"
+      ]
+    },
+    {
+      "id": "whiffen2021-nano11030715-wurtzite-zns-nanopowder-1--after-s04-centrifuge",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "whiffen2021-nano11030715-wurtzite-zns-nanopowder-1--after-s03-cool"
+      ]
+    },
+    {
+      "id": "whiffen2021-nano11030715-wurtzite-zns-nanopowder-1--after-s05-wash",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "whiffen2021-nano11030715-wurtzite-zns-nanopowder-1--after-s04-centrifuge"
+      ]
+    },
+    {
+      "id": "whiffen2021-nano11030715-wurtzite-zns-nanopowder-1--after-s06-dry",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "whiffen2021-nano11030715-wurtzite-zns-nanopowder-1--after-s05-wash"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-dissolve",
+      "action": "dissolve",
+      "label": "ZnCl2 and thiourea dissolved in ethyl glycol",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "whiffen2021-nano11030715-wurtzite-zns-nanopowder-1--zncl2",
+        "whiffen2021-nano11030715-wurtzite-zns-nanopowder-1--thiourea",
+        "whiffen2021-nano11030715-wurtzite-zns-nanopowder-1--ethyl-glycol"
+      ],
+      "outputs": [
+        "whiffen2021-nano11030715-wurtzite-zns-nanopowder-1--after-s01-dissolve"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 110,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "110 °C",
+          "evidence": [
+            {
+              "source_id": "whiffen2021-nano11030715",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 30,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "30 min",
+          "evidence": [
+            {
+              "source_id": "whiffen2021-nano11030715",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "ZnCl2 and thiourea dissolved in ethyl glycol",
+      "evidence": [
+        {
+          "source_id": "whiffen2021-nano11030715",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s02-merge",
+      "action": "merge",
+      "label": "ZnCl2 and thiourea solutions merged in a larger glass beaker",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-dissolve"
+      ],
+      "inputs": [
+        "whiffen2021-nano11030715-wurtzite-zns-nanopowder-1--after-s01-dissolve",
+        "whiffen2021-nano11030715-wurtzite-zns-nanopowder-1--zncl2",
+        "whiffen2021-nano11030715-wurtzite-zns-nanopowder-1--thiourea",
+        "whiffen2021-nano11030715-wurtzite-zns-nanopowder-1--ethyl-glycol"
+      ],
+      "outputs": [
+        "whiffen2021-nano11030715-wurtzite-zns-nanopowder-1--after-s02-merge"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 140,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "140 °C",
+          "evidence": [
+            {
+              "source_id": "whiffen2021-nano11030715",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "ZnCl2 and thiourea solutions merged in a larger glass beaker",
+      "evidence": [
+        {
+          "source_id": "whiffen2021-nano11030715",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s03-cool",
+      "action": "cool",
+      "label": "Solution cooled to room temperature",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-merge"
+      ],
+      "inputs": [
+        "whiffen2021-nano11030715-wurtzite-zns-nanopowder-1--after-s02-merge"
+      ],
+      "outputs": [
+        "whiffen2021-nano11030715-wurtzite-zns-nanopowder-1--after-s03-cool"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Solution cooled to room temperature",
+      "evidence": [
+        {
+          "source_id": "whiffen2021-nano11030715",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s04-centrifuge",
+      "action": "centrifuge",
+      "label": "Powder separated by centrifugation",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-cool"
+      ],
+      "inputs": [
+        "whiffen2021-nano11030715-wurtzite-zns-nanopowder-1--after-s03-cool"
+      ],
+      "outputs": [
+        "whiffen2021-nano11030715-wurtzite-zns-nanopowder-1--after-s04-centrifuge"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "5 min",
+          "evidence": [
+            {
+              "source_id": "whiffen2021-nano11030715",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Powder separated by centrifugation",
+      "evidence": [
+        {
+          "source_id": "whiffen2021-nano11030715",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s05-wash",
+      "action": "wash",
+      "label": "Powder washed with acetone and ethyl alcohol",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-centrifuge"
+      ],
+      "inputs": [
+        "whiffen2021-nano11030715-wurtzite-zns-nanopowder-1--after-s04-centrifuge"
+      ],
+      "outputs": [
+        "whiffen2021-nano11030715-wurtzite-zns-nanopowder-1--after-s05-wash"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Powder washed with acetone and ethyl alcohol",
+      "evidence": [
+        {
+          "source_id": "whiffen2021-nano11030715",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s06-dry",
+      "action": "dry",
+      "label": "Powder dried in oven",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s05-wash"
+      ],
+      "inputs": [
+        "whiffen2021-nano11030715-wurtzite-zns-nanopowder-1--after-s05-wash"
+      ],
+      "outputs": [
+        "whiffen2021-nano11030715-wurtzite-zns-nanopowder-1--after-s06-dry"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 70,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "70 °C",
+          "evidence": [
+            {
+              "source_id": "whiffen2021-nano11030715",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Powder dried in oven",
+      "evidence": [
+        {
+          "source_id": "whiffen2021-nano11030715",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "whiffen2021-nano11030715-wurtzite-zns-nanopowder-1--product",
+      "source_sample_label": "wurtzite ZnS nanopowder",
+      "batch_id": null,
+      "material_state_id": "whiffen2021-nano11030715-wurtzite-zns-nanopowder-1--after-s06-dry",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "ZnS",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "whiffen2021-nano11030715",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "wurtzite",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "whiffen2021-nano11030715",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "surface": {
+        "value": "ethyl glycol",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "whiffen2021-nano11030715",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "whiffen2021-nano11030715",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "notes": [
+        "Reactor: 5 L jacketed glass reactor (Main PDF p.3)."
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "id": "whiffen2021-nano11030715-wurtzite-zns-nanopowder-1--size",
+      "sample_id": "whiffen2021-nano11030715-wurtzite-zns-nanopowder-1--product",
+      "property": "diameter",
+      "technique": "TEM",
+      "value": {
+        "value": 3.0,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "3 nm",
+        "evidence": [
+          {
+            "source_id": "whiffen2021-nano11030715",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "whiffen2021-nano11030715",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    }
+  ],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Shape not reported in the extracted text.",
+      "Atmosphere not reported in the extracted text.",
+      "Reaction temperature not reported in the extracted text.",
+      "Reaction time not reported in the extracted text.",
+      "Amount of ZnCl2 not reported in the extracted text.",
+      "Amount of ethyl glycol not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

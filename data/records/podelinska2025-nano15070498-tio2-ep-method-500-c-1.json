@@ -1,0 +1,309 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "podelinska2025-nano15070498-tio2-ep-method-500-c-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Alise Podelinska; Elina Neilande; Viktorija Pankratova; Vera Serga; Hanna Bandarenka; Aliaksandr Burko; Sergei Piskunov; Vladimir A. Pankratov; Anatolijs Sarakovskis; Anatoli I. Popov; Dmitry V. Bocharov (2025): TiO2 (EP method, 500 °C)",
+  "material": {
+    "formula": "TiO2",
+    "family": "TiO2 nanocrystals",
+    "elements": [
+      "Ti",
+      "O"
+    ],
+    "components": [
+      "TiO2"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Extraction–pyrolytic",
+  "sources": [
+    {
+      "id": "podelinska2025-nano15070498",
+      "doi": "10.3390/nano15070498",
+      "title": "Structural and Spectroscopic Characterization of TiO2 Nanocrystalline Materials Synthesized by Different Methods",
+      "authors": "Alise Podelinska; Elina Neilande; Viktorija Pankratova; Vera Serga; Hanna Bandarenka; Aliaksandr Burko; Sergei Piskunov; Vladimir A. Pankratov; Anatolijs Sarakovskis; Anatoli I. Popov; Dmitry V. Bocharov",
+      "year": 2025,
+      "url": "https://doi.org/10.3390/nano15070498",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "podelinska2025-nano15070498",
+    "recipe_family": "podelinska2025-nano15070498-tio2-ep-method-500-c-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "TiO2",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "podelinska2025-nano15070498",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "anatase",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "podelinska2025-nano15070498",
+          "locator": "Main PDF p.9"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": null,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "not_reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "not reported",
+      "evidence": [],
+      "derivation": null
+    },
+    "morphology": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "podelinska2025-nano15070498-tio2-ep-method-500-c-1--ticl3",
+      "name": "TiCl3",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "concentration": {
+          "value": 0.1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "M",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.1 M",
+          "evidence": [
+            {
+              "source_id": "podelinska2025-nano15070498",
+              "locator": "Main PDF p.4"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "podelinska2025-nano15070498",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    },
+    {
+      "id": "podelinska2025-nano15070498-tio2-ep-method-500-c-1--n-pentanoic-acid",
+      "name": "n-pentanoic acid",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "podelinska2025-nano15070498",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "podelinska2025-nano15070498-tio2-ep-method-500-c-1--after-s01-heat",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "podelinska2025-nano15070498-tio2-ep-method-500-c-1--ticl3",
+        "podelinska2025-nano15070498-tio2-ep-method-500-c-1--n-pentanoic-acid"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-heat",
+      "action": "heat",
+      "label": "Pyrolysis of the precursor",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "podelinska2025-nano15070498-tio2-ep-method-500-c-1--ticl3",
+        "podelinska2025-nano15070498-tio2-ep-method-500-c-1--n-pentanoic-acid"
+      ],
+      "outputs": [
+        "podelinska2025-nano15070498-tio2-ep-method-500-c-1--after-s01-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 500,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "500 °C",
+          "evidence": [
+            {
+              "source_id": "podelinska2025-nano15070498",
+              "locator": "Main PDF p.4"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 60,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "60 min",
+          "evidence": [
+            {
+              "source_id": "podelinska2025-nano15070498",
+              "locator": "Main PDF p.4"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "podelinska2025-nano15070498",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Pyrolysis of the precursor",
+      "evidence": [
+        {
+          "source_id": "podelinska2025-nano15070498",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "podelinska2025-nano15070498-tio2-ep-method-500-c-1--product",
+      "source_sample_label": "TiO2 (EP method, 500 °C)",
+      "batch_id": null,
+      "material_state_id": "podelinska2025-nano15070498-tio2-ep-method-500-c-1--after-s01-heat",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "TiO2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "podelinska2025-nano15070498",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "anatase",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "podelinska2025-nano15070498",
+            "locator": "Main PDF p.9"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "surface": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "podelinska2025-nano15070498",
+          "locator": "Main PDF p.4"
+        }
+      ],
+      "notes": [
+        "Reaction temperature: 500 degC (Main PDF p.4).",
+        "Reaction time: 60 min (Main PDF p.4)."
+      ]
+    }
+  ],
+  "measurements": [],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Shape not reported in the extracted text.",
+      "Ligand not reported in the extracted text.",
+      "Size not reported in the extracted text.",
+      "Reactor not reported in the extracted text.",
+      "Amount of n-pentanoic acid not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

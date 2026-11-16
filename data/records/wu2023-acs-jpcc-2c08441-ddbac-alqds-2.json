@@ -1,0 +1,419 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "wu2023-acs-jpcc-2c08441-ddbac-alqds-2",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Hao Wu; Xiaoyu Cheng; Songjun Xie; Yan Huang; Raheel Ahmed Janjua; Xinzi Liu; Sailing He (2023): DDBAC-AlQDs",
+  "material": {
+    "formula": "Al",
+    "family": "Al nanocrystals",
+    "elements": [
+      "Al"
+    ],
+    "components": [
+      "Al"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Heat-up",
+  "sources": [
+    {
+      "id": "wu2023-acs-jpcc-2c08441",
+      "doi": "10.1021/acs.jpcc.2c08441",
+      "title": "Aluminum Quantum Dots with Surface Controlled Blue-UV Photoluminescence",
+      "authors": "Hao Wu; Xiaoyu Cheng; Songjun Xie; Yan Huang; Raheel Ahmed Janjua; Xinzi Liu; Sailing He",
+      "year": 2023,
+      "url": "https://doi.org/10.1021/acs.jpcc.2c08441",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "wu2023-acs-jpcc-2c08441",
+    "recipe_family": "wu2023-acs-jpcc-2c08441-ddbac-alqds-2",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "Al",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "wu2023-acs-jpcc-2c08441",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "metallic",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "wu2023-acs-jpcc-2c08441",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": null,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "not_reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "not reported",
+      "evidence": [],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "sphere",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "wu2023-acs-jpcc-2c08441",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "wu2023-acs-jpcc-2c08441-ddbac-alqds-2--xylene",
+      "name": "xylene",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "wu2023-acs-jpcc-2c08441",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "wu2023-acs-jpcc-2c08441-ddbac-alqds-2--tetradecylphosphonic-acid",
+      "name": "tetradecylphosphonic acid",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "concentration": {
+          "value": 2.5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mM",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2.5 mM",
+          "evidence": [
+            {
+              "source_id": "wu2023-acs-jpcc-2c08441",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "wu2023-acs-jpcc-2c08441",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "wu2023-acs-jpcc-2c08441-ddbac-alqds-2--after-s01-sonicate",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "wu2023-acs-jpcc-2c08441-ddbac-alqds-2--xylene"
+      ]
+    },
+    {
+      "id": "wu2023-acs-jpcc-2c08441-ddbac-alqds-2--after-s02-quench",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "wu2023-acs-jpcc-2c08441-ddbac-alqds-2--after-s01-sonicate"
+      ]
+    },
+    {
+      "id": "wu2023-acs-jpcc-2c08441-ddbac-alqds-2--after-s03-add",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "wu2023-acs-jpcc-2c08441-ddbac-alqds-2--after-s02-quench",
+        "wu2023-acs-jpcc-2c08441-ddbac-alqds-2--tetradecylphosphonic-acid"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-sonicate",
+      "action": "sonicate",
+      "label": "Solution sonicated until transparent",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "wu2023-acs-jpcc-2c08441-ddbac-alqds-2--xylene"
+      ],
+      "outputs": [
+        "wu2023-acs-jpcc-2c08441-ddbac-alqds-2--after-s01-sonicate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "wu2023-acs-jpcc-2c08441",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Solution sonicated until transparent",
+      "evidence": [
+        {
+          "source_id": "wu2023-acs-jpcc-2c08441",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-quench",
+      "action": "quench",
+      "label": "Excess reducing agent quenched with ethanol",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-sonicate"
+      ],
+      "inputs": [
+        "wu2023-acs-jpcc-2c08441-ddbac-alqds-2--after-s01-sonicate"
+      ],
+      "outputs": [
+        "wu2023-acs-jpcc-2c08441-ddbac-alqds-2--after-s02-quench"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "wu2023-acs-jpcc-2c08441",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Excess reducing agent quenched with ethanol",
+      "evidence": [
+        {
+          "source_id": "wu2023-acs-jpcc-2c08441",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s03-add",
+      "action": "add",
+      "label": "Tetradecylphosphonic acid added for surface modification",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-quench"
+      ],
+      "inputs": [
+        "wu2023-acs-jpcc-2c08441-ddbac-alqds-2--after-s02-quench",
+        "wu2023-acs-jpcc-2c08441-ddbac-alqds-2--tetradecylphosphonic-acid"
+      ],
+      "outputs": [
+        "wu2023-acs-jpcc-2c08441-ddbac-alqds-2--after-s03-add"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 130,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "130 °C",
+          "evidence": [
+            {
+              "source_id": "wu2023-acs-jpcc-2c08441",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 4,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "4 h",
+          "evidence": [
+            {
+              "source_id": "wu2023-acs-jpcc-2c08441",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "wu2023-acs-jpcc-2c08441",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Tetradecylphosphonic acid added for surface modification",
+      "evidence": [
+        {
+          "source_id": "wu2023-acs-jpcc-2c08441",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "wu2023-acs-jpcc-2c08441-ddbac-alqds-2--product",
+      "source_sample_label": "DDBAC-AlQDs",
+      "batch_id": null,
+      "material_state_id": "wu2023-acs-jpcc-2c08441-ddbac-alqds-2--after-s03-add",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "Al",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "wu2023-acs-jpcc-2c08441",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "metallic",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "wu2023-acs-jpcc-2c08441",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": "sphere",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "wu2023-acs-jpcc-2c08441",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "wu2023-acs-jpcc-2c08441",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "notes": [
+        "Reaction temperature: 130 degC (Main PDF p.2).",
+        "Reaction time: 4 h (Main PDF p.2)."
+      ]
+    }
+  ],
+  "measurements": [],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Ligand not reported in the extracted text.",
+      "Size not reported in the extracted text.",
+      "Reactor not reported in the extracted text.",
+      "Amount of xylene not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}
