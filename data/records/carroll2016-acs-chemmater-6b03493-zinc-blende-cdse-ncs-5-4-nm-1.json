@@ -1,0 +1,728 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "carroll2016-acs-chemmater-6b03493-zinc-blende-cdse-ncs-5-4-nm-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Gerard M. Carroll; Emily Y. Tsui; Carl K. Brozek; Daniel R. Gamelin (2016): Zinc-blende CdSe NCs (5.4 nm)",
+  "material": {
+    "formula": "CdSe",
+    "family": "CdSe nanocrystals",
+    "elements": [
+      "Cd",
+      "Se"
+    ],
+    "components": [
+      "CdSe"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Heat-up",
+  "sources": [
+    {
+      "id": "carroll2016-acs-chemmater-6b03493",
+      "doi": "10.1021/acs.chemmater.6b03493",
+      "title": "Spectroelectrochemical Measurement of Surface Electrostatic Contributions to Colloidal CdSe Nanocrystal Redox Potentials",
+      "authors": "Gerard M. Carroll; Emily Y. Tsui; Carl K. Brozek; Daniel R. Gamelin",
+      "year": 2016,
+      "url": "https://doi.org/10.1021/acs.chemmater.6b03493",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "carroll2016-acs-chemmater-6b03493",
+    "recipe_family": "carroll2016-acs-chemmater-6b03493-zinc-blende-cdse-ncs-5-4-nm-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "CdSe",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "carroll2016-acs-chemmater-6b03493",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "zinc blende",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "carroll2016-acs-chemmater-6b03493",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": null,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "not_reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "not reported",
+      "evidence": [],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "sphere",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "carroll2016-acs-chemmater-6b03493",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "carroll2016-acs-chemmater-6b03493-zinc-blende-cdse-ncs-5-4-nm-1--cdo",
+      "name": "CdO",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 1.52,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1.52 mmol",
+          "evidence": [
+            {
+              "source_id": "carroll2016-acs-chemmater-6b03493",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "carroll2016-acs-chemmater-6b03493",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "carroll2016-acs-chemmater-6b03493-zinc-blende-cdse-ncs-5-4-nm-1--oleic-acid",
+      "name": "oleic acid",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "5 mmol",
+          "evidence": [
+            {
+              "source_id": "carroll2016-acs-chemmater-6b03493",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "carroll2016-acs-chemmater-6b03493",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "carroll2016-acs-chemmater-6b03493-zinc-blende-cdse-ncs-5-4-nm-1--octadecene",
+      "name": "octadecene",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "carroll2016-acs-chemmater-6b03493",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "carroll2016-acs-chemmater-6b03493-zinc-blende-cdse-ncs-5-4-nm-1--seo2",
+      "name": "SeO2",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 1.53,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1.53 mmol",
+          "evidence": [
+            {
+              "source_id": "carroll2016-acs-chemmater-6b03493",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "carroll2016-acs-chemmater-6b03493",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "carroll2016-acs-chemmater-6b03493-zinc-blende-cdse-ncs-5-4-nm-1--after-s01-heat",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": []
+    },
+    {
+      "id": "carroll2016-acs-chemmater-6b03493-zinc-blende-cdse-ncs-5-4-nm-1--after-s02-cool",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "carroll2016-acs-chemmater-6b03493-zinc-blende-cdse-ncs-5-4-nm-1--after-s01-heat"
+      ]
+    },
+    {
+      "id": "carroll2016-acs-chemmater-6b03493-zinc-blende-cdse-ncs-5-4-nm-1--after-s03-add",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "carroll2016-acs-chemmater-6b03493-zinc-blende-cdse-ncs-5-4-nm-1--after-s02-cool",
+        "carroll2016-acs-chemmater-6b03493-zinc-blende-cdse-ncs-5-4-nm-1--seo2"
+      ]
+    },
+    {
+      "id": "carroll2016-acs-chemmater-6b03493-zinc-blende-cdse-ncs-5-4-nm-1--after-s04-heat",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "carroll2016-acs-chemmater-6b03493-zinc-blende-cdse-ncs-5-4-nm-1--after-s03-add"
+      ]
+    },
+    {
+      "id": "carroll2016-acs-chemmater-6b03493-zinc-blende-cdse-ncs-5-4-nm-1--after-s05-cool",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "carroll2016-acs-chemmater-6b03493-zinc-blende-cdse-ncs-5-4-nm-1--after-s04-heat"
+      ]
+    },
+    {
+      "id": "carroll2016-acs-chemmater-6b03493-zinc-blende-cdse-ncs-5-4-nm-1--after-s06-precipitate",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "carroll2016-acs-chemmater-6b03493-zinc-blende-cdse-ncs-5-4-nm-1--after-s05-cool"
+      ]
+    },
+    {
+      "id": "carroll2016-acs-chemmater-6b03493-zinc-blende-cdse-ncs-5-4-nm-1--after-s07-redisperse",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "carroll2016-acs-chemmater-6b03493-zinc-blende-cdse-ncs-5-4-nm-1--after-s06-precipitate"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-heat",
+      "action": "heat",
+      "label": "Heat the mixture under nitrogen to 300 °C",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [],
+      "outputs": [
+        "carroll2016-acs-chemmater-6b03493-zinc-blende-cdse-ncs-5-4-nm-1--after-s01-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 300,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "300 °C",
+          "evidence": [
+            {
+              "source_id": "carroll2016-acs-chemmater-6b03493",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "carroll2016-acs-chemmater-6b03493",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heat the mixture under nitrogen to 300 °C",
+      "evidence": [
+        {
+          "source_id": "carroll2016-acs-chemmater-6b03493",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-cool",
+      "action": "cool",
+      "label": "Cool the mixture to 115 °C",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-heat"
+      ],
+      "inputs": [
+        "carroll2016-acs-chemmater-6b03493-zinc-blende-cdse-ncs-5-4-nm-1--after-s01-heat"
+      ],
+      "outputs": [
+        "carroll2016-acs-chemmater-6b03493-zinc-blende-cdse-ncs-5-4-nm-1--after-s02-cool"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 115,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "115 °C",
+          "evidence": [
+            {
+              "source_id": "carroll2016-acs-chemmater-6b03493",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "carroll2016-acs-chemmater-6b03493",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Cool the mixture to 115 °C",
+      "evidence": [
+        {
+          "source_id": "carroll2016-acs-chemmater-6b03493",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s03-add",
+      "action": "add",
+      "label": "Add SeO2 under nitrogen flow",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-cool"
+      ],
+      "inputs": [
+        "carroll2016-acs-chemmater-6b03493-zinc-blende-cdse-ncs-5-4-nm-1--after-s02-cool",
+        "carroll2016-acs-chemmater-6b03493-zinc-blende-cdse-ncs-5-4-nm-1--seo2"
+      ],
+      "outputs": [
+        "carroll2016-acs-chemmater-6b03493-zinc-blende-cdse-ncs-5-4-nm-1--after-s03-add"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "carroll2016-acs-chemmater-6b03493",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add SeO2 under nitrogen flow",
+      "evidence": [
+        {
+          "source_id": "carroll2016-acs-chemmater-6b03493",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s04-heat",
+      "action": "heat",
+      "label": "Heat the mixture to 240 °C for 10 min",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-add"
+      ],
+      "inputs": [
+        "carroll2016-acs-chemmater-6b03493-zinc-blende-cdse-ncs-5-4-nm-1--after-s03-add"
+      ],
+      "outputs": [
+        "carroll2016-acs-chemmater-6b03493-zinc-blende-cdse-ncs-5-4-nm-1--after-s04-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 240,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "240 °C",
+          "evidence": [
+            {
+              "source_id": "carroll2016-acs-chemmater-6b03493",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 10,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "10 min",
+          "evidence": [
+            {
+              "source_id": "carroll2016-acs-chemmater-6b03493",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "carroll2016-acs-chemmater-6b03493",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heat the mixture to 240 °C for 10 min",
+      "evidence": [
+        {
+          "source_id": "carroll2016-acs-chemmater-6b03493",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s05-cool",
+      "action": "cool",
+      "label": "Cool the mixture to room temperature",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-heat"
+      ],
+      "inputs": [
+        "carroll2016-acs-chemmater-6b03493-zinc-blende-cdse-ncs-5-4-nm-1--after-s04-heat"
+      ],
+      "outputs": [
+        "carroll2016-acs-chemmater-6b03493-zinc-blende-cdse-ncs-5-4-nm-1--after-s05-cool"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "carroll2016-acs-chemmater-6b03493",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Cool the mixture to room temperature",
+      "evidence": [
+        {
+          "source_id": "carroll2016-acs-chemmater-6b03493",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s06-precipitate",
+      "action": "precipitate",
+      "label": "Precipitate the NCs using ethanol",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s05-cool"
+      ],
+      "inputs": [
+        "carroll2016-acs-chemmater-6b03493-zinc-blende-cdse-ncs-5-4-nm-1--after-s05-cool"
+      ],
+      "outputs": [
+        "carroll2016-acs-chemmater-6b03493-zinc-blende-cdse-ncs-5-4-nm-1--after-s06-precipitate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Precipitate the NCs using ethanol",
+      "evidence": [
+        {
+          "source_id": "carroll2016-acs-chemmater-6b03493",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s07-redisperse",
+      "action": "redisperse",
+      "label": "Redisperse the NCs in toluene",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s06-precipitate"
+      ],
+      "inputs": [
+        "carroll2016-acs-chemmater-6b03493-zinc-blende-cdse-ncs-5-4-nm-1--after-s06-precipitate"
+      ],
+      "outputs": [
+        "carroll2016-acs-chemmater-6b03493-zinc-blende-cdse-ncs-5-4-nm-1--after-s07-redisperse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Redisperse the NCs in toluene",
+      "evidence": [
+        {
+          "source_id": "carroll2016-acs-chemmater-6b03493",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "carroll2016-acs-chemmater-6b03493-zinc-blende-cdse-ncs-5-4-nm-1--product",
+      "source_sample_label": "Zinc-blende CdSe NCs (5.4 nm)",
+      "batch_id": null,
+      "material_state_id": "carroll2016-acs-chemmater-6b03493-zinc-blende-cdse-ncs-5-4-nm-1--after-s07-redisperse",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "CdSe",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "carroll2016-acs-chemmater-6b03493",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "zinc blende",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "carroll2016-acs-chemmater-6b03493",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": "sphere",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "carroll2016-acs-chemmater-6b03493",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": "oleic acid",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "carroll2016-acs-chemmater-6b03493",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "carroll2016-acs-chemmater-6b03493",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "notes": [
+        "Reactor: three-necked round-bottom flask (Main PDF p.2).",
+        "Reaction time: 10 min (Main PDF p.2)."
+      ]
+    }
+  ],
+  "measurements": [],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Size not reported in the extracted text.",
+      "Reaction temperature not reported in the extracted text.",
+      "Amount of octadecene not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

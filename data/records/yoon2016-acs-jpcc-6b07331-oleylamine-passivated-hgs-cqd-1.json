@@ -1,0 +1,753 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "yoon2016-acs-jpcc-6b07331-oleylamine-passivated-hgs-cqd-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Bitna Yoon; Juyeon Jeong; Kwang Seob Jeong (2016): oleylamine passivated HgS CQD",
+  "material": {
+    "formula": "HgS",
+    "family": "HgS nanocrystals",
+    "elements": [
+      "Hg",
+      "S"
+    ],
+    "components": [
+      "HgS"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Heat-up",
+  "sources": [
+    {
+      "id": "yoon2016-acs-jpcc-6b07331",
+      "doi": "10.1021/acs.jpcc.6b07331",
+      "title": "Higher Quantum State Transitions in Colloidal Quantum Dot with Heavy Electron Doping",
+      "authors": "Bitna Yoon; Juyeon Jeong; Kwang Seob Jeong",
+      "year": 2016,
+      "url": "https://doi.org/10.1021/acs.jpcc.6b07331",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "yoon2016-acs-jpcc-6b07331",
+    "recipe_family": "yoon2016-acs-jpcc-6b07331-oleylamine-passivated-hgs-cqd-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "HgS",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "yoon2016-acs-jpcc-6b07331",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "zinc blende",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "yoon2016-acs-jpcc-6b07331",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": 5.7,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "5.7 nm",
+      "evidence": [
+        {
+          "source_id": "yoon2016-acs-jpcc-6b07331",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "sphere",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "yoon2016-acs-jpcc-6b07331",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "yoon2016-acs-jpcc-6b07331-oleylamine-passivated-hgs-cqd-1--hgcl2",
+      "name": "HgCl2",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "mass": {
+          "value": 160,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mg",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "160 mg",
+          "evidence": [
+            {
+              "source_id": "yoon2016-acs-jpcc-6b07331",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "yoon2016-acs-jpcc-6b07331",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "yoon2016-acs-jpcc-6b07331-oleylamine-passivated-hgs-cqd-1--oleylamine",
+      "name": "oleylamine",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 4,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "4 mL",
+          "evidence": [
+            {
+              "source_id": "yoon2016-acs-jpcc-6b07331",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "yoon2016-acs-jpcc-6b07331",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "yoon2016-acs-jpcc-6b07331-oleylamine-passivated-hgs-cqd-1--bis-trimethylsilyl-sulfide",
+      "name": "bis(trimethylsilyl) sulfide",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 0.2,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.2 mL",
+          "evidence": [
+            {
+              "source_id": "yoon2016-acs-jpcc-6b07331",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "yoon2016-acs-jpcc-6b07331",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "yoon2016-acs-jpcc-6b07331-oleylamine-passivated-hgs-cqd-1--after-s01-dissolve",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "yoon2016-acs-jpcc-6b07331-oleylamine-passivated-hgs-cqd-1--hgcl2",
+        "yoon2016-acs-jpcc-6b07331-oleylamine-passivated-hgs-cqd-1--oleylamine"
+      ]
+    },
+    {
+      "id": "yoon2016-acs-jpcc-6b07331-oleylamine-passivated-hgs-cqd-1--after-s02-degas",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "yoon2016-acs-jpcc-6b07331-oleylamine-passivated-hgs-cqd-1--after-s01-dissolve",
+        "yoon2016-acs-jpcc-6b07331-oleylamine-passivated-hgs-cqd-1--hgcl2",
+        "yoon2016-acs-jpcc-6b07331-oleylamine-passivated-hgs-cqd-1--oleylamine"
+      ]
+    },
+    {
+      "id": "yoon2016-acs-jpcc-6b07331-oleylamine-passivated-hgs-cqd-1--after-s03-heat",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "yoon2016-acs-jpcc-6b07331-oleylamine-passivated-hgs-cqd-1--after-s02-degas",
+        "yoon2016-acs-jpcc-6b07331-oleylamine-passivated-hgs-cqd-1--hgcl2",
+        "yoon2016-acs-jpcc-6b07331-oleylamine-passivated-hgs-cqd-1--oleylamine"
+      ]
+    },
+    {
+      "id": "yoon2016-acs-jpcc-6b07331-oleylamine-passivated-hgs-cqd-1--after-s04-inject",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "yoon2016-acs-jpcc-6b07331-oleylamine-passivated-hgs-cqd-1--after-s03-heat",
+        "yoon2016-acs-jpcc-6b07331-oleylamine-passivated-hgs-cqd-1--bis-trimethylsilyl-sulfide"
+      ]
+    },
+    {
+      "id": "yoon2016-acs-jpcc-6b07331-oleylamine-passivated-hgs-cqd-1--after-s05-precipitate",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "yoon2016-acs-jpcc-6b07331-oleylamine-passivated-hgs-cqd-1--after-s04-inject"
+      ]
+    },
+    {
+      "id": "yoon2016-acs-jpcc-6b07331-oleylamine-passivated-hgs-cqd-1--after-s06-wash",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "yoon2016-acs-jpcc-6b07331-oleylamine-passivated-hgs-cqd-1--after-s05-precipitate"
+      ]
+    },
+    {
+      "id": "yoon2016-acs-jpcc-6b07331-oleylamine-passivated-hgs-cqd-1--after-s07-redisperse",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "yoon2016-acs-jpcc-6b07331-oleylamine-passivated-hgs-cqd-1--after-s06-wash"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-dissolve",
+      "action": "dissolve",
+      "label": "Dissolve HgCl2 in oleylamine",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "yoon2016-acs-jpcc-6b07331-oleylamine-passivated-hgs-cqd-1--hgcl2",
+        "yoon2016-acs-jpcc-6b07331-oleylamine-passivated-hgs-cqd-1--oleylamine"
+      ],
+      "outputs": [
+        "yoon2016-acs-jpcc-6b07331-oleylamine-passivated-hgs-cqd-1--after-s01-dissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "argon",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "yoon2016-acs-jpcc-6b07331",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dissolve HgCl2 in oleylamine",
+      "evidence": [
+        {
+          "source_id": "yoon2016-acs-jpcc-6b07331",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-degas",
+      "action": "degas",
+      "label": "Degas HgCl2 solution under vacuum",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-dissolve"
+      ],
+      "inputs": [
+        "yoon2016-acs-jpcc-6b07331-oleylamine-passivated-hgs-cqd-1--after-s01-dissolve",
+        "yoon2016-acs-jpcc-6b07331-oleylamine-passivated-hgs-cqd-1--hgcl2",
+        "yoon2016-acs-jpcc-6b07331-oleylamine-passivated-hgs-cqd-1--oleylamine"
+      ],
+      "outputs": [
+        "yoon2016-acs-jpcc-6b07331-oleylamine-passivated-hgs-cqd-1--after-s02-degas"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 85,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "85 °C",
+          "evidence": [
+            {
+              "source_id": "yoon2016-acs-jpcc-6b07331",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 35,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "35 min",
+          "evidence": [
+            {
+              "source_id": "yoon2016-acs-jpcc-6b07331",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "argon",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "yoon2016-acs-jpcc-6b07331",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Degas HgCl2 solution under vacuum",
+      "evidence": [
+        {
+          "source_id": "yoon2016-acs-jpcc-6b07331",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s03-heat",
+      "action": "heat",
+      "label": "Heat HgCl2 solution under argon atmosphere",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-degas"
+      ],
+      "inputs": [
+        "yoon2016-acs-jpcc-6b07331-oleylamine-passivated-hgs-cqd-1--after-s02-degas",
+        "yoon2016-acs-jpcc-6b07331-oleylamine-passivated-hgs-cqd-1--hgcl2",
+        "yoon2016-acs-jpcc-6b07331-oleylamine-passivated-hgs-cqd-1--oleylamine"
+      ],
+      "outputs": [
+        "yoon2016-acs-jpcc-6b07331-oleylamine-passivated-hgs-cqd-1--after-s03-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 120,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "120 °C",
+          "evidence": [
+            {
+              "source_id": "yoon2016-acs-jpcc-6b07331",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "argon",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "yoon2016-acs-jpcc-6b07331",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heat HgCl2 solution under argon atmosphere",
+      "evidence": [
+        {
+          "source_id": "yoon2016-acs-jpcc-6b07331",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s04-inject",
+      "action": "inject",
+      "label": "Inject bis(trimethylsilyl) sulfide into HgCl2 solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-heat"
+      ],
+      "inputs": [
+        "yoon2016-acs-jpcc-6b07331-oleylamine-passivated-hgs-cqd-1--after-s03-heat",
+        "yoon2016-acs-jpcc-6b07331-oleylamine-passivated-hgs-cqd-1--bis-trimethylsilyl-sulfide"
+      ],
+      "outputs": [
+        "yoon2016-acs-jpcc-6b07331-oleylamine-passivated-hgs-cqd-1--after-s04-inject"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 90,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "90 °C",
+          "evidence": [
+            {
+              "source_id": "yoon2016-acs-jpcc-6b07331",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "argon",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "yoon2016-acs-jpcc-6b07331",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Inject bis(trimethylsilyl) sulfide into HgCl2 solution",
+      "evidence": [
+        {
+          "source_id": "yoon2016-acs-jpcc-6b07331",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s05-precipitate",
+      "action": "precipitate",
+      "label": "Precipitate HgS CQDs with polar solvent",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-inject"
+      ],
+      "inputs": [
+        "yoon2016-acs-jpcc-6b07331-oleylamine-passivated-hgs-cqd-1--after-s04-inject"
+      ],
+      "outputs": [
+        "yoon2016-acs-jpcc-6b07331-oleylamine-passivated-hgs-cqd-1--after-s05-precipitate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Precipitate HgS CQDs with polar solvent",
+      "evidence": [
+        {
+          "source_id": "yoon2016-acs-jpcc-6b07331",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s06-wash",
+      "action": "wash",
+      "label": "Wash HgS CQDs with chloroform/ethanol",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s05-precipitate"
+      ],
+      "inputs": [
+        "yoon2016-acs-jpcc-6b07331-oleylamine-passivated-hgs-cqd-1--after-s05-precipitate"
+      ],
+      "outputs": [
+        "yoon2016-acs-jpcc-6b07331-oleylamine-passivated-hgs-cqd-1--after-s06-wash"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Wash HgS CQDs with chloroform/ethanol",
+      "evidence": [
+        {
+          "source_id": "yoon2016-acs-jpcc-6b07331",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s07-redisperse",
+      "action": "redisperse",
+      "label": "Redisperse HgS CQDs in tetrachloroethylene",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s06-wash"
+      ],
+      "inputs": [
+        "yoon2016-acs-jpcc-6b07331-oleylamine-passivated-hgs-cqd-1--after-s06-wash"
+      ],
+      "outputs": [
+        "yoon2016-acs-jpcc-6b07331-oleylamine-passivated-hgs-cqd-1--after-s07-redisperse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Redisperse HgS CQDs in tetrachloroethylene",
+      "evidence": [
+        {
+          "source_id": "yoon2016-acs-jpcc-6b07331",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "yoon2016-acs-jpcc-6b07331-oleylamine-passivated-hgs-cqd-1--product",
+      "source_sample_label": "oleylamine passivated HgS CQD",
+      "batch_id": null,
+      "material_state_id": "yoon2016-acs-jpcc-6b07331-oleylamine-passivated-hgs-cqd-1--after-s07-redisperse",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "HgS",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "yoon2016-acs-jpcc-6b07331",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "zinc blende",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "yoon2016-acs-jpcc-6b07331",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": "sphere",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "yoon2016-acs-jpcc-6b07331",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": "oleylamine",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "yoon2016-acs-jpcc-6b07331",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "yoon2016-acs-jpcc-6b07331",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "notes": [
+        "Reactor: 50 mL round-bottom flask (Main PDF p.2).",
+        "Reaction temperature: 120 degC (Main PDF p.2).",
+        "Reaction time: 1 h (Main PDF p.2)."
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "id": "yoon2016-acs-jpcc-6b07331-oleylamine-passivated-hgs-cqd-1--size",
+      "sample_id": "yoon2016-acs-jpcc-6b07331-oleylamine-passivated-hgs-cqd-1--product",
+      "property": "diameter",
+      "technique": "TEM",
+      "value": {
+        "value": 5.7,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "5.7 nm",
+        "evidence": [
+          {
+            "source_id": "yoon2016-acs-jpcc-6b07331",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "yoon2016-acs-jpcc-6b07331",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

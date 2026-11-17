@@ -1,0 +1,341 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "degbevi2024-acs-inorgchem-4c03534-inp-in-co-co-4-3-ncs-2",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Mawuli Degbevi; Jonathan T. Stoffel; Emily Y. Tsui (2024): InP-In[Co(CO)4]3 NCs",
+  "material": {
+    "formula": "InP",
+    "family": "InP nanocrystals",
+    "elements": [
+      "In",
+      "P"
+    ],
+    "components": [
+      "InP"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Heat-up",
+  "sources": [
+    {
+      "id": "degbevi2024-acs-inorgchem-4c03534",
+      "doi": "10.1021/acs.inorgchem.4c03534",
+      "title": "Coordinated Anions Tune Z-Type Ligand Displacement from Colloidal CdSe and InP Nanocrystal Surfaces",
+      "authors": "Mawuli Degbevi; Jonathan T. Stoffel; Emily Y. Tsui",
+      "year": 2024,
+      "url": "https://doi.org/10.1021/acs.inorgchem.4c03534",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "degbevi2024-acs-inorgchem-4c03534",
+    "recipe_family": "degbevi2024-acs-inorgchem-4c03534-inp-in-co-co-4-3-ncs-2",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "InP",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "degbevi2024-acs-inorgchem-4c03534",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "tetrahedral",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "degbevi2024-acs-inorgchem-4c03534",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": 4.5,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "4.5 nm",
+      "evidence": [
+        {
+          "source_id": "degbevi2024-acs-inorgchem-4c03534",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "tetrahedron",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "degbevi2024-acs-inorgchem-4c03534",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "degbevi2024-acs-inorgchem-4c03534-inp-in-co-co-4-3-ncs-2--inp-incl3-ncs",
+      "name": "InP-InCl3 NCs",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "degbevi2024-acs-inorgchem-4c03534",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    },
+    {
+      "id": "degbevi2024-acs-inorgchem-4c03534-inp-in-co-co-4-3-ncs-2--et3sico-co-4",
+      "name": "Et3SiCo(CO)4",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "degbevi2024-acs-inorgchem-4c03534",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "degbevi2024-acs-inorgchem-4c03534-inp-in-co-co-4-3-ncs-2--after-s01-heat",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "degbevi2024-acs-inorgchem-4c03534-inp-in-co-co-4-3-ncs-2--inp-incl3-ncs",
+        "degbevi2024-acs-inorgchem-4c03534-inp-in-co-co-4-3-ncs-2--et3sico-co-4"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-heat",
+      "action": "heat",
+      "label": "Heat the toluene suspension of InP-InCl3 NCs and Et3SiCo(CO)4",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "degbevi2024-acs-inorgchem-4c03534-inp-in-co-co-4-3-ncs-2--inp-incl3-ncs",
+        "degbevi2024-acs-inorgchem-4c03534-inp-in-co-co-4-3-ncs-2--et3sico-co-4"
+      ],
+      "outputs": [
+        "degbevi2024-acs-inorgchem-4c03534-inp-in-co-co-4-3-ncs-2--after-s01-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 80,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "80 °C",
+          "evidence": [
+            {
+              "source_id": "degbevi2024-acs-inorgchem-4c03534",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 3,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "3 h",
+          "evidence": [
+            {
+              "source_id": "degbevi2024-acs-inorgchem-4c03534",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "degbevi2024-acs-inorgchem-4c03534",
+            "locator": "Main PDF p.8"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heat the toluene suspension of InP-InCl3 NCs and Et3SiCo(CO)4",
+      "evidence": [
+        {
+          "source_id": "degbevi2024-acs-inorgchem-4c03534",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "degbevi2024-acs-inorgchem-4c03534-inp-in-co-co-4-3-ncs-2--product",
+      "source_sample_label": "InP-In[Co(CO)4]3 NCs",
+      "batch_id": null,
+      "material_state_id": "degbevi2024-acs-inorgchem-4c03534-inp-in-co-co-4-3-ncs-2--after-s01-heat",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "InP",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "degbevi2024-acs-inorgchem-4c03534",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "tetrahedral",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "degbevi2024-acs-inorgchem-4c03534",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": "tetrahedron",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "degbevi2024-acs-inorgchem-4c03534",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": "[Co(CO)4]−",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "degbevi2024-acs-inorgchem-4c03534",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "degbevi2024-acs-inorgchem-4c03534",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "notes": [
+        "Reactor: Schlenk tube (Main PDF p.8).",
+        "Reaction temperature: 80 degC (Main PDF p.2).",
+        "Reaction time: 3 h (Main PDF p.2)."
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "id": "degbevi2024-acs-inorgchem-4c03534-inp-in-co-co-4-3-ncs-2--size",
+      "sample_id": "degbevi2024-acs-inorgchem-4c03534-inp-in-co-co-4-3-ncs-2--product",
+      "property": "diameter",
+      "technique": "TEM",
+      "value": {
+        "value": 4.5,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "4.5 nm",
+        "evidence": [
+          {
+            "source_id": "degbevi2024-acs-inorgchem-4c03534",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "degbevi2024-acs-inorgchem-4c03534",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Amount of InP-InCl3 NCs not reported in the extracted text.",
+      "Amount of Et3SiCo(CO)4 not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

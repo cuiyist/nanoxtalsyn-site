@@ -1,0 +1,227 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "meng2016-acs-jpclett-6b02448-cdse-cds-core-shell-qds-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Renyang Meng; Haiyan Qin; Yuan Niu; Wei Fang; Sen Yang; Xing Lin; Hujia Cao; Junliang Ma; Wanzhen Lin; Limin Tong; Xiaogang Peng (2016): CdSe/CdS core/shell QDs",
+  "material": {
+    "formula": "CdSe/CdS",
+    "family": "CdSe/CdS nanocrystals",
+    "elements": [
+      "Cd",
+      "Se",
+      "S"
+    ],
+    "components": [
+      "CdSe",
+      "CdS"
+    ],
+    "architecture": "core_shell"
+  },
+  "method": "Synthesis as described in the source",
+  "sources": [
+    {
+      "id": "meng2016-acs-jpclett-6b02448",
+      "doi": "10.1021/acs.jpclett.6b02448",
+      "title": "Charging and Discharging Channels in Photoluminescence Intermittency of Single Colloidal CdSe/CdS Core/Shell Quantum Dot",
+      "authors": "Renyang Meng; Haiyan Qin; Yuan Niu; Wei Fang; Sen Yang; Xing Lin; Hujia Cao; Junliang Ma; Wanzhen Lin; Limin Tong; Xiaogang Peng",
+      "year": 2016,
+      "url": "https://doi.org/10.1021/acs.jpclett.6b02448",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "meng2016-acs-jpclett-6b02448",
+    "recipe_family": "meng2016-acs-jpclett-6b02448-cdse-cds-core-shell-qds-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "CdSe/CdS",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "meng2016-acs-jpclett-6b02448",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "zinc blende",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "meng2016-acs-jpclett-6b02448",
+          "locator": "Main PDF p.5"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": null,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "not_reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "not reported",
+      "evidence": [],
+      "derivation": null
+    },
+    "morphology": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    }
+  },
+  "materials": [],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "meng2016-acs-jpclett-6b02448-cdse-cds-core-shell-qds-1--after-s01-replace",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": []
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-replace",
+      "action": "replace",
+      "label": "Ligand exchange with 1-dodecanethiol",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [],
+      "outputs": [
+        "meng2016-acs-jpclett-6b02448-cdse-cds-core-shell-qds-1--after-s01-replace"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 3,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "3 h",
+          "evidence": [
+            {
+              "source_id": "meng2016-acs-jpclett-6b02448",
+              "locator": "Main PDF p.5"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Ligand exchange with 1-dodecanethiol",
+      "evidence": [
+        {
+          "source_id": "meng2016-acs-jpclett-6b02448",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "meng2016-acs-jpclett-6b02448-cdse-cds-core-shell-qds-1--product",
+      "source_sample_label": "CdSe/CdS core/shell QDs",
+      "batch_id": null,
+      "material_state_id": "meng2016-acs-jpclett-6b02448-cdse-cds-core-shell-qds-1--after-s01-replace",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "CdSe/CdS",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "meng2016-acs-jpclett-6b02448",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "zinc blende",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "meng2016-acs-jpclett-6b02448",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "surface": {
+        "value": "1-dodecanethiol",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "meng2016-acs-jpclett-6b02448",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "meng2016-acs-jpclett-6b02448",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "measurements": [],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Shape not reported in the extracted text.",
+      "Size not reported in the extracted text.",
+      "Reactor not reported in the extracted text.",
+      "Atmosphere not reported in the extracted text.",
+      "Reaction temperature not reported in the extracted text.",
+      "Reaction time not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

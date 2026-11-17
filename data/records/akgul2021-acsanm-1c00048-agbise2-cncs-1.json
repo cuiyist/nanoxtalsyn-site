@@ -1,0 +1,368 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "akgul2021-acsanm-1c00048-agbise2-cncs-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "M. Zafer Akgul; Gerasimos Konstantatos (2021): AgBiSe2 CNCs",
+  "material": {
+    "formula": "AgBiSe2",
+    "family": "AgBiSe2 nanocrystals",
+    "elements": [
+      "Ag",
+      "Bi",
+      "Se"
+    ],
+    "components": [
+      "AgBiSe2"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Synthesis as described in the source",
+  "sources": [
+    {
+      "id": "akgul2021-acsanm-1c00048",
+      "doi": "10.1021/acsanm.1c00048",
+      "title": "AgBiSe2 Colloidal Nanocrystals for Use in Solar Cells",
+      "authors": "M. Zafer Akgul; Gerasimos Konstantatos",
+      "year": 2021,
+      "url": "https://doi.org/10.1021/acsanm.1c00048",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "akgul2021-acsanm-1c00048",
+    "recipe_family": "akgul2021-acsanm-1c00048-agbise2-cncs-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "AgBiSe2",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "akgul2021-acsanm-1c00048",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    },
+    "size": {
+      "value": 6.0,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "6 nm",
+      "evidence": [
+        {
+          "source_id": "akgul2021-acsanm-1c00048",
+          "locator": "Main PDF p.4"
+        }
+      ],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "sphere",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "akgul2021-acsanm-1c00048",
+          "locator": "Main PDF p.4"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "akgul2021-acsanm-1c00048-agbise2-cncs-1--selenium-dioxide",
+      "name": "selenium dioxide",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "akgul2021-acsanm-1c00048",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "akgul2021-acsanm-1c00048-agbise2-cncs-1--1-octanethiol",
+      "name": "1-octanethiol",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "akgul2021-acsanm-1c00048",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "akgul2021-acsanm-1c00048-agbise2-cncs-1--n-octylamine",
+      "name": "n-octylamine",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "akgul2021-acsanm-1c00048",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "akgul2021-acsanm-1c00048-agbise2-cncs-1--after-s01-dissolve",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "akgul2021-acsanm-1c00048-agbise2-cncs-1--selenium-dioxide",
+        "akgul2021-acsanm-1c00048-agbise2-cncs-1--1-octanethiol",
+        "akgul2021-acsanm-1c00048-agbise2-cncs-1--n-octylamine"
+      ]
+    },
+    {
+      "id": "akgul2021-acsanm-1c00048-agbise2-cncs-1--after-s02-add",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "akgul2021-acsanm-1c00048-agbise2-cncs-1--after-s01-dissolve"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-dissolve",
+      "action": "dissolve",
+      "label": "SeO2 is reduced and dissolved using a mixture of 1-octanethiol and n-octylamine",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "akgul2021-acsanm-1c00048-agbise2-cncs-1--selenium-dioxide",
+        "akgul2021-acsanm-1c00048-agbise2-cncs-1--1-octanethiol",
+        "akgul2021-acsanm-1c00048-agbise2-cncs-1--n-octylamine"
+      ],
+      "outputs": [
+        "akgul2021-acsanm-1c00048-agbise2-cncs-1--after-s01-dissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "ambient",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "akgul2021-acsanm-1c00048",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "SeO2 is reduced and dissolved using a mixture of 1-octanethiol and n-octylamine",
+      "evidence": [
+        {
+          "source_id": "akgul2021-acsanm-1c00048",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s02-add",
+      "action": "add",
+      "label": "AgI and BiI3 are added to the reaction mixture",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-dissolve"
+      ],
+      "inputs": [
+        "akgul2021-acsanm-1c00048-agbise2-cncs-1--after-s01-dissolve"
+      ],
+      "outputs": [
+        "akgul2021-acsanm-1c00048-agbise2-cncs-1--after-s02-add"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "ambient",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "akgul2021-acsanm-1c00048",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "AgI and BiI3 are added to the reaction mixture",
+      "evidence": [
+        {
+          "source_id": "akgul2021-acsanm-1c00048",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "akgul2021-acsanm-1c00048-agbise2-cncs-1--product",
+      "source_sample_label": "AgBiSe2 CNCs",
+      "batch_id": null,
+      "material_state_id": "akgul2021-acsanm-1c00048-agbise2-cncs-1--after-s02-add",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "AgBiSe2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "akgul2021-acsanm-1c00048",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "morphology": {
+        "value": "sphere",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "akgul2021-acsanm-1c00048",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": "n-octylamine",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "akgul2021-acsanm-1c00048",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "akgul2021-acsanm-1c00048",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "measurements": [
+    {
+      "id": "akgul2021-acsanm-1c00048-agbise2-cncs-1--size",
+      "sample_id": "akgul2021-acsanm-1c00048-agbise2-cncs-1--product",
+      "property": "diameter",
+      "technique": "TEM",
+      "value": {
+        "value": 6.0,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "6 nm",
+        "evidence": [
+          {
+            "source_id": "akgul2021-acsanm-1c00048",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "akgul2021-acsanm-1c00048",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    }
+  ],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Phase not reported in the extracted text.",
+      "Reactor not reported in the extracted text.",
+      "Reaction temperature not reported in the extracted text.",
+      "Reaction time not reported in the extracted text.",
+      "Amount of selenium dioxide not reported in the extracted text.",
+      "Amount of 1-octanethiol not reported in the extracted text.",
+      "Amount of n-octylamine not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

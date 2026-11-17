@@ -1,0 +1,687 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "shen2022-acsnano-2c01694-mid-wave-hgte-cqd-pn-device-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Xingyu Shen; John C. Peterson; Philippe Guyot-Sionnest (2022): mid-wave HgTe CQD p−n device",
+  "material": {
+    "formula": "HgTe",
+    "family": "HgTe nanocrystals",
+    "elements": [
+      "Hg",
+      "Te"
+    ],
+    "components": [
+      "HgTe"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Hot injection",
+  "sources": [
+    {
+      "id": "shen2022-acsnano-2c01694",
+      "doi": "10.1021/acsnano.2c01694",
+      "title": "Mid-infrared HgTe Colloidal Quantum Dot LEDs",
+      "authors": "Xingyu Shen; John C. Peterson; Philippe Guyot-Sionnest",
+      "year": 2022,
+      "url": "https://doi.org/10.1021/acsnano.2c01694",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "shen2022-acsnano-2c01694",
+    "recipe_family": "shen2022-acsnano-2c01694-mid-wave-hgte-cqd-pn-device-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    },
+    "phase": {
+      "value": "nanocrystalline",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "shen2022-acsnano-2c01694",
+          "locator": "Main PDF p.6"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": null,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "not_reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "not reported",
+      "evidence": [],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "nanoparticle",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "shen2022-acsnano-2c01694",
+          "locator": "Main PDF p.6"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "shen2022-acsnano-2c01694-mid-wave-hgte-cqd-pn-device-1--hgcl2",
+      "name": "HgCl2",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 0.15,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.15 mmol",
+          "evidence": [
+            {
+              "source_id": "shen2022-acsnano-2c01694",
+              "locator": "Main PDF p.6"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "shen2022-acsnano-2c01694",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "shen2022-acsnano-2c01694-mid-wave-hgte-cqd-pn-device-1--tellurium-in-trioctyphosphine",
+      "name": "tellurium in trioctyphosphine",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 0.15,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.15 mmol",
+          "evidence": [
+            {
+              "source_id": "shen2022-acsnano-2c01694",
+              "locator": "Main PDF p.6"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "shen2022-acsnano-2c01694",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "shen2022-acsnano-2c01694-mid-wave-hgte-cqd-pn-device-1--tetrachloroethylene",
+      "name": "tetrachloroethylene",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "shen2022-acsnano-2c01694",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "shen2022-acsnano-2c01694-mid-wave-hgte-cqd-pn-device-1--1-dodecanethiol",
+      "name": "1-dodecanethiol",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "shen2022-acsnano-2c01694",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "shen2022-acsnano-2c01694-mid-wave-hgte-cqd-pn-device-1--trioctylphosphine",
+      "name": "trioctylphosphine",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "shen2022-acsnano-2c01694",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "shen2022-acsnano-2c01694-mid-wave-hgte-cqd-pn-device-1--2-propanol",
+      "name": "2-propanol",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "shen2022-acsnano-2c01694",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "shen2022-acsnano-2c01694-mid-wave-hgte-cqd-pn-device-1--after-s01-dissolve",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "shen2022-acsnano-2c01694-mid-wave-hgte-cqd-pn-device-1--hgcl2"
+      ]
+    },
+    {
+      "id": "shen2022-acsnano-2c01694-mid-wave-hgte-cqd-pn-device-1--after-s02-inject",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "shen2022-acsnano-2c01694-mid-wave-hgte-cqd-pn-device-1--after-s01-dissolve",
+        "shen2022-acsnano-2c01694-mid-wave-hgte-cqd-pn-device-1--tellurium-in-trioctyphosphine"
+      ]
+    },
+    {
+      "id": "shen2022-acsnano-2c01694-mid-wave-hgte-cqd-pn-device-1--after-s03-cool",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "shen2022-acsnano-2c01694-mid-wave-hgte-cqd-pn-device-1--after-s02-inject"
+      ]
+    },
+    {
+      "id": "shen2022-acsnano-2c01694-mid-wave-hgte-cqd-pn-device-1--after-s04-add",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "shen2022-acsnano-2c01694-mid-wave-hgte-cqd-pn-device-1--after-s03-cool",
+        "shen2022-acsnano-2c01694-mid-wave-hgte-cqd-pn-device-1--tetrachloroethylene",
+        "shen2022-acsnano-2c01694-mid-wave-hgte-cqd-pn-device-1--1-dodecanethiol",
+        "shen2022-acsnano-2c01694-mid-wave-hgte-cqd-pn-device-1--trioctylphosphine"
+      ]
+    },
+    {
+      "id": "shen2022-acsnano-2c01694-mid-wave-hgte-cqd-pn-device-1--after-s05-precipitate",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "shen2022-acsnano-2c01694-mid-wave-hgte-cqd-pn-device-1--after-s04-add",
+        "shen2022-acsnano-2c01694-mid-wave-hgte-cqd-pn-device-1--2-propanol"
+      ]
+    },
+    {
+      "id": "shen2022-acsnano-2c01694-mid-wave-hgte-cqd-pn-device-1--after-s06-resuspend",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "shen2022-acsnano-2c01694-mid-wave-hgte-cqd-pn-device-1--after-s05-precipitate"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-dissolve",
+      "action": "dissolve",
+      "label": "Dissolve HgCl2 in oleylamine",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "shen2022-acsnano-2c01694-mid-wave-hgte-cqd-pn-device-1--hgcl2"
+      ],
+      "outputs": [
+        "shen2022-acsnano-2c01694-mid-wave-hgte-cqd-pn-device-1--after-s01-dissolve"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 100,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "100 °C",
+          "evidence": [
+            {
+              "source_id": "shen2022-acsnano-2c01694",
+              "locator": "Main PDF p.6"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 45,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "45 min",
+          "evidence": [
+            {
+              "source_id": "shen2022-acsnano-2c01694",
+              "locator": "Main PDF p.6"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "inert",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "shen2022-acsnano-2c01694",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dissolve HgCl2 in oleylamine",
+      "evidence": [
+        {
+          "source_id": "shen2022-acsnano-2c01694",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "s02-inject",
+      "action": "inject",
+      "label": "Inject TOPTe into HgCl2 solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-dissolve"
+      ],
+      "inputs": [
+        "shen2022-acsnano-2c01694-mid-wave-hgte-cqd-pn-device-1--after-s01-dissolve",
+        "shen2022-acsnano-2c01694-mid-wave-hgte-cqd-pn-device-1--tellurium-in-trioctyphosphine"
+      ],
+      "outputs": [
+        "shen2022-acsnano-2c01694-mid-wave-hgte-cqd-pn-device-1--after-s02-inject"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 10,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "10 min",
+          "evidence": [
+            {
+              "source_id": "shen2022-acsnano-2c01694",
+              "locator": "Main PDF p.6"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "inert",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "shen2022-acsnano-2c01694",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Inject TOPTe into HgCl2 solution",
+      "evidence": [
+        {
+          "source_id": "shen2022-acsnano-2c01694",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "s03-cool",
+      "action": "cool",
+      "label": "Cool the reaction mixture",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-inject"
+      ],
+      "inputs": [
+        "shen2022-acsnano-2c01694-mid-wave-hgte-cqd-pn-device-1--after-s02-inject"
+      ],
+      "outputs": [
+        "shen2022-acsnano-2c01694-mid-wave-hgte-cqd-pn-device-1--after-s03-cool"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "inert",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "shen2022-acsnano-2c01694",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Cool the reaction mixture",
+      "evidence": [
+        {
+          "source_id": "shen2022-acsnano-2c01694",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "s04-add",
+      "action": "add",
+      "label": "Add tetrachloroethylene, 1-dodecanethiol, and trioctylphosphine",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-cool"
+      ],
+      "inputs": [
+        "shen2022-acsnano-2c01694-mid-wave-hgte-cqd-pn-device-1--after-s03-cool",
+        "shen2022-acsnano-2c01694-mid-wave-hgte-cqd-pn-device-1--tetrachloroethylene",
+        "shen2022-acsnano-2c01694-mid-wave-hgte-cqd-pn-device-1--1-dodecanethiol",
+        "shen2022-acsnano-2c01694-mid-wave-hgte-cqd-pn-device-1--trioctylphosphine"
+      ],
+      "outputs": [
+        "shen2022-acsnano-2c01694-mid-wave-hgte-cqd-pn-device-1--after-s04-add"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "inert",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "shen2022-acsnano-2c01694",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add tetrachloroethylene, 1-dodecanethiol, and trioctylphosphine",
+      "evidence": [
+        {
+          "source_id": "shen2022-acsnano-2c01694",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "s05-precipitate",
+      "action": "precipitate",
+      "label": "Precipitate with 2-propanol",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-add"
+      ],
+      "inputs": [
+        "shen2022-acsnano-2c01694-mid-wave-hgte-cqd-pn-device-1--after-s04-add",
+        "shen2022-acsnano-2c01694-mid-wave-hgte-cqd-pn-device-1--2-propanol"
+      ],
+      "outputs": [
+        "shen2022-acsnano-2c01694-mid-wave-hgte-cqd-pn-device-1--after-s05-precipitate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Precipitate with 2-propanol",
+      "evidence": [
+        {
+          "source_id": "shen2022-acsnano-2c01694",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "s06-resuspend",
+      "action": "resuspend",
+      "label": "Resuspend precipitate in chlorobenzene",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s05-precipitate"
+      ],
+      "inputs": [
+        "shen2022-acsnano-2c01694-mid-wave-hgte-cqd-pn-device-1--after-s05-precipitate"
+      ],
+      "outputs": [
+        "shen2022-acsnano-2c01694-mid-wave-hgte-cqd-pn-device-1--after-s06-resuspend"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "inert",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "shen2022-acsnano-2c01694",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Resuspend precipitate in chlorobenzene",
+      "evidence": [
+        {
+          "source_id": "shen2022-acsnano-2c01694",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "shen2022-acsnano-2c01694-mid-wave-hgte-cqd-pn-device-1--product",
+      "source_sample_label": "mid-wave HgTe CQD p−n device",
+      "batch_id": null,
+      "material_state_id": "shen2022-acsnano-2c01694-mid-wave-hgte-cqd-pn-device-1--after-s06-resuspend",
+      "parent_sample_id": null,
+      "composition": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "phase": {
+        "value": "nanocrystalline",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "shen2022-acsnano-2c01694",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": "nanoparticle",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "shen2022-acsnano-2c01694",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": "trioctylphosphine, 1-dodecanethiol",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "shen2022-acsnano-2c01694",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "shen2022-acsnano-2c01694",
+          "locator": "Main PDF p.6"
+        }
+      ],
+      "notes": [
+        "Reactor: 20 mL glass vial (Main PDF p.6).",
+        "Reaction temperature: 100 degC (Main PDF p.6).",
+        "Reaction time: 10 min (Main PDF p.6)."
+      ]
+    }
+  ],
+  "measurements": [],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Size not reported in the extracted text.",
+      "Amount of tetrachloroethylene not reported in the extracted text.",
+      "Amount of 1-dodecanethiol not reported in the extracted text.",
+      "Amount of trioctylphosphine not reported in the extracted text.",
+      "Amount of 2-propanol not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}
