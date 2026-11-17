@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "yan2010-la1009169-cd0-4zn0-6s-nanocrystals-capped-with-pma-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Lili Yan; Ziyi Yu; Li Chen; Caifeng Wang; Su Chen (2010): Cd0.4Zn0.6S nanocrystals capped with PMAA macromonomer",
   "material": {
@@ -86,17 +86,191 @@
       "note": ""
     }
   },
-  "materials": [],
+  "materials": [
+    {
+      "id": "yan2010-la1009169-cd0-4zn0-6s-nanocrystals-capped-with-pma-1--cobf",
+      "name": "CoBF",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "yan2010-la1009169",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "yan2010-la1009169-cd0-4zn0-6s-nanocrystals-capped-with-pma-1--deionized-water",
+      "name": "deionized water",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "yan2010-la1009169",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "yan2010-la1009169-cd0-4zn0-6s-nanocrystals-capped-with-pma-1--azobisisobutyronitrile-va-044",
+      "name": "azobisisobutyronitrile (VA-044)",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "yan2010-la1009169",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "yan2010-la1009169-cd0-4zn0-6s-nanocrystals-capped-with-pma-1--sodium-sulfide",
+      "name": "sodium sulfide",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "yan2010-la1009169",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
   "stocks": [],
   "material_states": [
+    {
+      "id": "yan2010-la1009169-cd0-4zn0-6s-nanocrystals-capped-with-pma-1--after-d2-s01-dissolve",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "yan2010-la1009169-cd0-4zn0-6s-nanocrystals-capped-with-pma-1--cobf",
+        "yan2010-la1009169-cd0-4zn0-6s-nanocrystals-capped-with-pma-1--deionized-water"
+      ]
+    },
+    {
+      "id": "yan2010-la1009169-cd0-4zn0-6s-nanocrystals-capped-with-pma-1--after-d2-s02-mix",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "yan2010-la1009169-cd0-4zn0-6s-nanocrystals-capped-with-pma-1--after-d2-s01-dissolve",
+        "yan2010-la1009169-cd0-4zn0-6s-nanocrystals-capped-with-pma-1--cobf"
+      ]
+    },
     {
       "id": "yan2010-la1009169-cd0-4zn0-6s-nanocrystals-capped-with-pma-1--after-s01-add",
       "name": "product as isolated",
       "kind": "product",
-      "parent_ids": []
+      "parent_ids": [
+        "yan2010-la1009169-cd0-4zn0-6s-nanocrystals-capped-with-pma-1--after-d2-s02-mix",
+        "yan2010-la1009169-cd0-4zn0-6s-nanocrystals-capped-with-pma-1--sodium-sulfide"
+      ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-dissolve",
+      "action": "dissolve",
+      "label": "Dissolve PMAA macromonomer in deionized water",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "yan2010-la1009169-cd0-4zn0-6s-nanocrystals-capped-with-pma-1--cobf",
+        "yan2010-la1009169-cd0-4zn0-6s-nanocrystals-capped-with-pma-1--deionized-water"
+      ],
+      "outputs": [
+        "yan2010-la1009169-cd0-4zn0-6s-nanocrystals-capped-with-pma-1--after-d2-s01-dissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dissolve PMAA macromonomer in deionized water",
+      "evidence": [
+        {
+          "source_id": "yan2010-la1009169",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s02-mix",
+      "action": "mix",
+      "label": "Mixing MAA with CoBF",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s01-dissolve"
+      ],
+      "inputs": [
+        "yan2010-la1009169-cd0-4zn0-6s-nanocrystals-capped-with-pma-1--after-d2-s01-dissolve",
+        "yan2010-la1009169-cd0-4zn0-6s-nanocrystals-capped-with-pma-1--cobf"
+      ],
+      "outputs": [
+        "yan2010-la1009169-cd0-4zn0-6s-nanocrystals-capped-with-pma-1--after-d2-s02-mix"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Mixing MAA with CoBF",
+      "evidence": [
+        {
+          "source_id": "yan2010-la1009169",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
     {
       "id": "s01-add",
       "action": "add",
@@ -104,8 +278,13 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s02-mix"
+      ],
+      "inputs": [
+        "yan2010-la1009169-cd0-4zn0-6s-nanocrystals-capped-with-pma-1--after-d2-s02-mix",
+        "yan2010-la1009169-cd0-4zn0-6s-nanocrystals-capped-with-pma-1--sodium-sulfide"
+      ],
       "outputs": [
         "yan2010-la1009169-cd0-4zn0-6s-nanocrystals-capped-with-pma-1--after-s01-add"
       ],
@@ -240,18 +419,54 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "yan2010-la1009169-cd0-4zn0-6s-nanocrystals-capped-with-pma-1--photoluminescence-peak",
+      "sample_id": "yan2010-la1009169-cd0-4zn0-6s-nanocrystals-capped-with-pma-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 565,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "565 nm",
+        "evidence": [
+          {
+            "source_id": "yan2010-la1009169",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "yan2010-la1009169",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
-      "Reaction time not reported in the extracted text."
+      "Reaction time not reported in the extracted text.",
+      "Amount of CoBF not reported in the extracted text.",
+      "Amount of deionized water not reported in the extracted text.",
+      "Amount of azobisisobutyronitrile (VA-044) not reported in the extracted text.",
+      "Amount of sodium sulfide not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

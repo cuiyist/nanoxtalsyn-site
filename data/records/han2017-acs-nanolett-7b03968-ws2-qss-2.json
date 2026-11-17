@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "han2017-acs-nanolett-7b03968-ws2-qss-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Chunchun Han; Yong Zhang; Peng Gao; Shulin Chen; Xinfeng Liu; Yang Mi; Jianqi Zhang; Yanhong Ma; Wenyu Jiang; Jinquan Chang (2017): WS2 QSs",
   "material": {
@@ -75,14 +75,91 @@
       "note": ""
     }
   },
-  "materials": [],
+  "materials": [
+    {
+      "id": "han2017-acs-nanolett-7b03968-ws2-qss-2--ws2-bulk-material",
+      "name": "WS2 bulk material",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "han2017-acs-nanolett-7b03968",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "han2017-acs-nanolett-7b03968-ws2-qss-2--nacl",
+      "name": "NaCl",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "han2017-acs-nanolett-7b03968",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "han2017-acs-nanolett-7b03968-ws2-qss-2--n-methyl-2-pyrrolidone-nmp",
+      "name": "N-methyl-2-pyrrolidone (NMP)",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "han2017-acs-nanolett-7b03968",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
   "stocks": [],
   "material_states": [
     {
       "id": "han2017-acs-nanolett-7b03968-ws2-qss-2--after-s01-sonicate",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "han2017-acs-nanolett-7b03968-ws2-qss-2--ws2-bulk-material"
+      ]
+    },
+    {
+      "id": "han2017-acs-nanolett-7b03968-ws2-qss-2--after-d2-s02-filter",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "han2017-acs-nanolett-7b03968-ws2-qss-2--after-s01-sonicate"
+      ]
+    },
+    {
+      "id": "han2017-acs-nanolett-7b03968-ws2-qss-2--after-d2-s03-wash",
       "name": "product as isolated",
       "kind": "product",
-      "parent_ids": []
+      "parent_ids": [
+        "han2017-acs-nanolett-7b03968-ws2-qss-2--after-d2-s02-filter",
+        "han2017-acs-nanolett-7b03968-ws2-qss-2--nacl"
+      ]
     }
   ],
   "operations": [
@@ -94,7 +171,9 @@
       "branch": "",
       "optional": false,
       "depends_on": [],
-      "inputs": [],
+      "inputs": [
+        "han2017-acs-nanolett-7b03968-ws2-qss-2--ws2-bulk-material"
+      ],
       "outputs": [
         "han2017-acs-nanolett-7b03968-ws2-qss-2--after-s01-sonicate"
       ],
@@ -119,6 +198,83 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s02-filter",
+      "action": "filter",
+      "label": "Filtration and centrifugation",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-sonicate"
+      ],
+      "inputs": [
+        "han2017-acs-nanolett-7b03968-ws2-qss-2--after-s01-sonicate"
+      ],
+      "outputs": [
+        "han2017-acs-nanolett-7b03968-ws2-qss-2--after-d2-s02-filter"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Filtration and centrifugation",
+      "evidence": [
+        {
+          "source_id": "han2017-acs-nanolett-7b03968",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s03-wash",
+      "action": "wash",
+      "label": "Remove NaCl from milled material",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-filter"
+      ],
+      "inputs": [
+        "han2017-acs-nanolett-7b03968-ws2-qss-2--after-d2-s02-filter",
+        "han2017-acs-nanolett-7b03968-ws2-qss-2--nacl"
+      ],
+      "outputs": [
+        "han2017-acs-nanolett-7b03968-ws2-qss-2--after-d2-s03-wash"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Remove NaCl from milled material",
+      "evidence": [
+        {
+          "source_id": "han2017-acs-nanolett-7b03968",
+          "locator": "Main PDF p.4"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -127,7 +283,7 @@
       "sample_id": "han2017-acs-nanolett-7b03968-ws2-qss-2--product",
       "source_sample_label": "WS2 QSs",
       "batch_id": null,
-      "material_state_id": "han2017-acs-nanolett-7b03968-ws2-qss-2--after-s01-sonicate",
+      "material_state_id": "han2017-acs-nanolett-7b03968-ws2-qss-2--after-d2-s03-wash",
       "parent_sample_id": null,
       "composition": {
         "value": null,
@@ -200,7 +356,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
@@ -208,7 +364,10 @@
       "Reactor not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
-      "Reaction time not reported in the extracted text."
+      "Reaction time not reported in the extracted text.",
+      "Amount of WS2 bulk material not reported in the extracted text.",
+      "Amount of NaCl not reported in the extracted text.",
+      "Amount of N-methyl-2-pyrrolidone (NMP) not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "rownaghi2011-ie201549j-con-zsm-5-3",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Ali A. Rownaghi and Jonas Hedlund (2011): Con-ZSM-5",
   "material": {
@@ -91,13 +91,272 @@
   "stocks": [],
   "material_states": [
     {
+      "id": "rownaghi2011-ie201549j-con-zsm-5-3--after-d2-s01-add",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": []
+    },
+    {
+      "id": "rownaghi2011-ie201549j-con-zsm-5-3--after-d2-s02-add",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "rownaghi2011-ie201549j-con-zsm-5-3--after-d2-s01-add"
+      ]
+    },
+    {
+      "id": "rownaghi2011-ie201549j-con-zsm-5-3--after-d2-s03-add",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "rownaghi2011-ie201549j-con-zsm-5-3--after-d2-s02-add"
+      ]
+    },
+    {
+      "id": "rownaghi2011-ie201549j-con-zsm-5-3--after-d2-s04-stir",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "rownaghi2011-ie201549j-con-zsm-5-3--after-d2-s03-add"
+      ]
+    },
+    {
+      "id": "rownaghi2011-ie201549j-con-zsm-5-3--after-d2-s05-freeze-dry",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "rownaghi2011-ie201549j-con-zsm-5-3--after-d2-s04-stir"
+      ]
+    },
+    {
       "id": "rownaghi2011-ie201549j-con-zsm-5-3--after-s01-calcine",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "rownaghi2011-ie201549j-con-zsm-5-3--after-d2-s05-freeze-dry"
+      ]
+    },
+    {
+      "id": "rownaghi2011-ie201549j-con-zsm-5-3--after-d2-s07-treat",
       "name": "product as isolated",
       "kind": "product",
-      "parent_ids": []
+      "parent_ids": [
+        "rownaghi2011-ie201549j-con-zsm-5-3--after-s01-calcine"
+      ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-add",
+      "action": "add",
+      "label": "Add TEOS, TPAOH, and water to a polypropylene bottle",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [],
+      "outputs": [
+        "rownaghi2011-ie201549j-con-zsm-5-3--after-d2-s01-add"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "rownaghi2011-ie201549j",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add TEOS, TPAOH, and water to a polypropylene bottle",
+      "evidence": [
+        {
+          "source_id": "rownaghi2011-ie201549j",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s02-add",
+      "action": "add",
+      "label": "Add AIP, NaOH, water, and TPAOH to a glass beaker",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s01-add"
+      ],
+      "inputs": [
+        "rownaghi2011-ie201549j-con-zsm-5-3--after-d2-s01-add"
+      ],
+      "outputs": [
+        "rownaghi2011-ie201549j-con-zsm-5-3--after-d2-s02-add"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "rownaghi2011-ie201549j",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add AIP, NaOH, water, and TPAOH to a glass beaker",
+      "evidence": [
+        {
+          "source_id": "rownaghi2011-ie201549j",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s03-add",
+      "action": "add",
+      "label": "Add clear silicate solution to clear aluminate solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-add"
+      ],
+      "inputs": [
+        "rownaghi2011-ie201549j-con-zsm-5-3--after-d2-s02-add"
+      ],
+      "outputs": [
+        "rownaghi2011-ie201549j-con-zsm-5-3--after-d2-s03-add"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "rownaghi2011-ie201549j",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add clear silicate solution to clear aluminate solution",
+      "evidence": [
+        {
+          "source_id": "rownaghi2011-ie201549j",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s04-stir",
+      "action": "stir",
+      "label": "Stir",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-add"
+      ],
+      "inputs": [
+        "rownaghi2011-ie201549j-con-zsm-5-3--after-d2-s03-add"
+      ],
+      "outputs": [
+        "rownaghi2011-ie201549j-con-zsm-5-3--after-d2-s04-stir"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "rownaghi2011-ie201549j",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Stir",
+      "evidence": [
+        {
+          "source_id": "rownaghi2011-ie201549j",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s05-freeze-dry",
+      "action": "freeze-dry",
+      "label": "Freeze-dry the purified product",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-stir"
+      ],
+      "inputs": [
+        "rownaghi2011-ie201549j-con-zsm-5-3--after-d2-s04-stir"
+      ],
+      "outputs": [
+        "rownaghi2011-ie201549j-con-zsm-5-3--after-d2-s05-freeze-dry"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "rownaghi2011-ie201549j",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Freeze-dry the purified product",
+      "evidence": [
+        {
+          "source_id": "rownaghi2011-ie201549j",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
     {
       "id": "s01-calcine",
       "action": "calcine",
@@ -105,8 +364,12 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s05-freeze-dry"
+      ],
+      "inputs": [
+        "rownaghi2011-ie201549j-con-zsm-5-3--after-d2-s05-freeze-dry"
+      ],
       "outputs": [
         "rownaghi2011-ie201549j-con-zsm-5-3--after-s01-calcine"
       ],
@@ -173,6 +436,49 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s07-treat",
+      "action": "treat",
+      "label": "Treat",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-calcine"
+      ],
+      "inputs": [
+        "rownaghi2011-ie201549j-con-zsm-5-3--after-s01-calcine"
+      ],
+      "outputs": [
+        "rownaghi2011-ie201549j-con-zsm-5-3--after-d2-s07-treat"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "rownaghi2011-ie201549j",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Treat",
+      "evidence": [
+        {
+          "source_id": "rownaghi2011-ie201549j",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -181,7 +487,7 @@
       "sample_id": "rownaghi2011-ie201549j-con-zsm-5-3--product",
       "source_sample_label": "Con-ZSM-5",
       "batch_id": null,
-      "material_state_id": "rownaghi2011-ie201549j-con-zsm-5-3--after-s01-calcine",
+      "material_state_id": "rownaghi2011-ie201549j-con-zsm-5-3--after-d2-s07-treat",
       "parent_sample_id": null,
       "composition": {
         "value": "SiO2/Al2O3",
@@ -236,7 +542,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",

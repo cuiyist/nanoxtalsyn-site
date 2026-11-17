@@ -14,7 +14,7 @@
   "approval_status": "approved",
   "approved_at": "2026-10-02T11:54:30.807304+00:00",
   "approved_by": "MatterSyn integration owner; Henkel and Xu scoped audits accepted and 49 exact asset rights entries independently checked",
-  "asset_rights_registry_sha256": "c3aa0c3a789e832b7c97657083846ea6b191a05d8b306c1dabb22648c28a274c",
+  "asset_rights_registry_sha256": "285809c25c0105a924419598cd2a82505fe63ae46810a3ec459844fb513dbea1",
   "blob_approvals": [],
   "exact_blob_approval_classes": [],
   "path_rules": [
@@ -2051,6 +2051,16 @@
       "decision": "allow",
       "review_status": "approved",
       "reviewer": "Codex engineering review: authored dependency declaration, no private contents; source-only permission.",
+      "requires_source_refs": false
+    },
+    {
+      "rule_id": "simple-source-completeness-policy-20261117",
+      "repo": "mattersyn",
+      "path_glob": "tools/simple-pipeline/completeness_policy.json",
+      "content_class": "authored_code",
+      "decision": "allow",
+      "review_status": "approved",
+      "reviewer": "Codex engineering review: exact local extraction configuration and aggregate held-out counts; no paper text, quotes, personal paths or model payloads; source-only permission.",
       "requires_source_refs": false
     }
   ],

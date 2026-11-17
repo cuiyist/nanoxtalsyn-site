@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "kwon2025-acsnano-5c14864-ag3aus2-qds-from-haucl4-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Jisu Kwon; Wonseok Lee; Yoonbin Shin; Jaelim Kim; Yunmo Sung; Eunsung Lee; Sungjee Kim (2025): Ag3AuS2 QDs (from HAuCl4)",
   "material": {
@@ -117,6 +117,44 @@
         {
           "source_id": "kwon2025-acsnano-5c14864",
           "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "kwon2025-acsnano-5c14864-ag3aus2-qds-from-haucl4-1--methanol",
+      "name": "methanol",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "kwon2025-acsnano-5c14864",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    },
+    {
+      "id": "kwon2025-acsnano-5c14864-ag3aus2-qds-from-haucl4-1--ag2s-qds",
+      "name": "Ag2S QDs",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "kwon2025-acsnano-5c14864",
+          "locator": "Main PDF p.8"
         }
       ]
     }
@@ -252,13 +290,15 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
-      "Reaction temperature not reported in the extracted text."
+      "Reaction temperature not reported in the extracted text.",
+      "Amount of methanol not reported in the extracted text.",
+      "Amount of Ag2S QDs not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

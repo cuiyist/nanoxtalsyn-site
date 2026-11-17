@@ -455630,8 +455630,34 @@
         ],
         "reference_ids": [],
         "quantified_input_evidence": {
-          "material_ids": [],
-          "fields": [],
+          "material_ids": [
+            "j-jcat-2016-11-028-cqds-zno-ga-zno-composite-nanorod-array-1--zn-no3-26h2o"
+          ],
+          "fields": [
+            {
+              "material_id": "j-jcat-2016-11-028-cqds-zno-ga-zno-composite-nanorod-array-1--zn-no3-26h2o",
+              "pointer": "/materials/0/quantities/concentration",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 40,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mM",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "40 mM",
+                "evidence": [
+                  {
+                    "source_id": "j-jcat-2016-11-028",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            }
+          ],
           "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
         },
         "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
@@ -547208,7 +547234,7 @@
       "title": "Peizhao Liu et al. (2023): CsPbBr3-R-silica helices",
       "doi": "10.1021/acs.nanolett.2c04823",
       "year": 2023,
-      "method": "Synthesis as described in the source",
+      "method": "Supersaturated recrystallization",
       "recipe_label": "Peizhao Liu et al. (2023): CsPbBr3-R-silica helices",
       "sample_id": "liu2023-acs-nanolett-2c04823-cspbbr3-r-silica-helices-1--product",
       "source_sample_label": "CsPbBr3-R-silica helices",
@@ -547230,7 +547256,22 @@
           "locator": "Main PDF p.2"
         }
       ],
-      "product_structure_fields": [],
+      "product_structure_fields": [
+        {
+          "kind": "morphology",
+          "value": {
+            "value": "helical",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "liu2023-acs-nanolett-2c04823",
+                "locator": "Main PDF p.2"
+              }
+            ],
+            "note": ""
+          }
+        }
+      ],
       "structural_measurements": [
         {
           "measurement_id": "liu2023-acs-nanolett-2c04823-cspbbr3-r-silica-helices-1--size",
@@ -547272,14 +547313,13 @@
         "checks": {
           "quantified_recipe_and_ordered_conditions": false,
           "reported_phase": false,
-          "reported_morphology": false,
+          "reported_morphology": true,
           "reported_dimensions": true,
           "reference_unit_cell_available": false
         },
         "missing_categories": [
           "quantified_recipe_and_ordered_conditions",
           "reported_phase",
-          "reported_morphology",
           "reference_unit_cell_available"
         ],
         "reference_ids": [],
@@ -560387,8 +560427,34 @@
         ],
         "reference_ids": [],
         "quantified_input_evidence": {
-          "material_ids": [],
-          "fields": [],
+          "material_ids": [
+            "mahima2010-cg100381u-branched-cu-nanorods-1--cucl2"
+          ],
+          "fields": [
+            {
+              "material_id": "mahima2010-cg100381u-branched-cu-nanorods-1--cucl2",
+              "pointer": "/materials/0/quantities/concentration",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 2.5,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mM",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "2.5 mM",
+                "evidence": [
+                  {
+                    "source_id": "mahima2010-cg100381u",
+                    "locator": "Main PDF p.1"
+                  }
+                ],
+                "derivation": null
+              }
+            }
+          ],
           "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
         },
         "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
@@ -645647,7 +645713,39 @@
           }
         }
       ],
-      "structural_measurements": [],
+      "structural_measurements": [
+        {
+          "measurement_id": "rizzo2014-am500110x-pbs-qds-2--size",
+          "property": "diameter",
+          "descriptor_field": "morphology.dimensions",
+          "value": {
+            "value": 2.8,
+            "minimum": null,
+            "maximum": null,
+            "unit": "nm",
+            "status": "reported",
+            "approximate": false,
+            "qualifier": "",
+            "basis": "",
+            "raw_text": "2.8 nm",
+            "evidence": [
+              {
+                "source_id": "rizzo2014-am500110x",
+                "locator": "Main PDF p.4"
+              }
+            ],
+            "derivation": null
+          },
+          "technique": "TEM",
+          "conditions": "",
+          "evidence": [
+            {
+              "source_id": "rizzo2014-am500110x",
+              "locator": "Main PDF p.4"
+            }
+          ]
+        }
+      ],
       "review_status": "source_extracted",
       "display_pair_basis": "one_record",
       "cross_record_sample_deduplication": "not_assessed",
@@ -645657,13 +645755,12 @@
           "quantified_recipe_and_ordered_conditions": false,
           "reported_phase": false,
           "reported_morphology": true,
-          "reported_dimensions": false,
+          "reported_dimensions": true,
           "reference_unit_cell_available": false
         },
         "missing_categories": [
           "quantified_recipe_and_ordered_conditions",
           "reported_phase",
-          "reported_dimensions",
           "reference_unit_cell_available"
         ],
         "reference_ids": [],
@@ -796719,8 +796816,34 @@
         ],
         "reference_ids": [],
         "quantified_input_evidence": {
-          "material_ids": [],
-          "fields": [],
+          "material_ids": [
+            "zhang12007-s11051-006-9177-3-hydroxyapatite-hap-powder-spherical-morp-1--diammonium-hydrogen-phosphate-nh4-2hpo4"
+          ],
+          "fields": [
+            {
+              "material_id": "zhang12007-s11051-006-9177-3-hydroxyapatite-hap-powder-spherical-morp-1--diammonium-hydrogen-phosphate-nh4-2hpo4",
+              "pointer": "/materials/0/quantities/concentration",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.5,
+                "minimum": null,
+                "maximum": null,
+                "unit": "M",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.5 M",
+                "evidence": [
+                  {
+                    "source_id": "zhang12007-s11051-006-9177-3",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            }
+          ],
           "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
         },
         "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "liu2023-acs-nanolett-2c04823-cspbbr3-r-silica-helices-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Peizhao Liu et al. (2023): CsPbBr3-R-silica helices",
   "material": {
@@ -17,7 +17,7 @@
     ],
     "architecture": "single_material"
   },
-  "method": "Synthesis as described in the source",
+  "method": "Supersaturated recrystallization",
   "sources": [
     {
       "id": "liu2023-acs-nanolett-2c04823",
@@ -75,20 +75,92 @@
       "derivation": null
     },
     "morphology": {
-      "value": null,
-      "status": "not_reported",
-      "evidence": [],
+      "value": "helical",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "liu2023-acs-nanolett-2c04823",
+          "locator": "Main PDF p.2"
+        }
+      ],
       "note": ""
     }
   },
-  "materials": [],
+  "materials": [
+    {
+      "id": "liu2023-acs-nanolett-2c04823-cspbbr3-r-silica-helices-1--csbr",
+      "name": "CsBr",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "liu2023-acs-nanolett-2c04823",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    },
+    {
+      "id": "liu2023-acs-nanolett-2c04823-cspbbr3-r-silica-helices-1--pbbr2",
+      "name": "PbBr2",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "liu2023-acs-nanolett-2c04823",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    },
+    {
+      "id": "liu2023-acs-nanolett-2c04823-cspbbr3-r-silica-helices-1--dmf",
+      "name": "DMF",
+      "formula": null,
+      "role": "solvent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "liu2023-acs-nanolett-2c04823",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
   "stocks": [],
   "material_states": [
     {
       "id": "liu2023-acs-nanolett-2c04823-cspbbr3-r-silica-helices-1--after-s01-deposit",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": []
+    },
+    {
+      "id": "liu2023-acs-nanolett-2c04823-cspbbr3-r-silica-helices-1--after-d2-s02-dry",
       "name": "product as isolated",
       "kind": "product",
-      "parent_ids": []
+      "parent_ids": [
+        "liu2023-acs-nanolett-2c04823-cspbbr3-r-silica-helices-1--after-s01-deposit",
+        "liu2023-acs-nanolett-2c04823-cspbbr3-r-silica-helices-1--dmf"
+      ]
     }
   ],
   "operations": [
@@ -130,6 +202,45 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s02-dry",
+      "action": "dry",
+      "label": "Solvent evaporation",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-deposit"
+      ],
+      "inputs": [
+        "liu2023-acs-nanolett-2c04823-cspbbr3-r-silica-helices-1--after-s01-deposit",
+        "liu2023-acs-nanolett-2c04823-cspbbr3-r-silica-helices-1--dmf"
+      ],
+      "outputs": [
+        "liu2023-acs-nanolett-2c04823-cspbbr3-r-silica-helices-1--after-d2-s02-dry"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Solvent evaporation",
+      "evidence": [
+        {
+          "source_id": "liu2023-acs-nanolett-2c04823",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -138,7 +249,7 @@
       "sample_id": "liu2023-acs-nanolett-2c04823-cspbbr3-r-silica-helices-1--product",
       "source_sample_label": "CsPbBr3-R-silica helices",
       "batch_id": null,
-      "material_state_id": "liu2023-acs-nanolett-2c04823-cspbbr3-r-silica-helices-1--after-s01-deposit",
+      "material_state_id": "liu2023-acs-nanolett-2c04823-cspbbr3-r-silica-helices-1--after-d2-s02-dry",
       "parent_sample_id": null,
       "composition": {
         "value": "CsPbBr3",
@@ -158,9 +269,14 @@
         "note": ""
       },
       "morphology": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "helical",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "liu2023-acs-nanolett-2c04823",
+            "locator": "Main PDF p.2"
+          }
+        ],
         "note": ""
       },
       "surface": {
@@ -216,18 +332,84 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "liu2023-acs-nanolett-2c04823-cspbbr3-r-silica-helices-1--photoluminescence-peak",
+      "sample_id": "liu2023-acs-nanolett-2c04823-cspbbr3-r-silica-helices-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 514,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "514 nm",
+        "evidence": [
+          {
+            "source_id": "liu2023-acs-nanolett-2c04823",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "liu2023-acs-nanolett-2c04823",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "liu2023-acs-nanolett-2c04823-cspbbr3-r-silica-helices-1--photoluminescence-quantum-yield",
+      "sample_id": "liu2023-acs-nanolett-2c04823-cspbbr3-r-silica-helices-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 0.8,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "0.8 %",
+        "evidence": [
+          {
+            "source_id": "liu2023-acs-nanolett-2c04823",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "liu2023-acs-nanolett-2c04823",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
-      "Shape not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
-      "Reaction time not reported in the extracted text."
+      "Reaction time not reported in the extracted text.",
+      "Amount of CsBr not reported in the extracted text.",
+      "Amount of PbBr2 not reported in the extracted text.",
+      "Amount of DMF not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

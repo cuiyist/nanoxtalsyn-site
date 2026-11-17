@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "sato2008-jbm-a-31469-nanotitania-ha-weight-ratio-1-2-coatings-3",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Michiko Sato (2008): nanotitania/HA (weight ratio: 1/2) coatings",
   "material": {
@@ -92,17 +92,319 @@
       "note": ""
     }
   },
-  "materials": [],
+  "materials": [
+    {
+      "id": "sato2008-jbm-a-31469-nanotitania-ha-weight-ratio-1-2-coatings-3--nanotitania-powders",
+      "name": "nanotitania powders",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "sato2008-jbm-a-31469",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "sato2008-jbm-a-31469-nanotitania-ha-weight-ratio-1-2-coatings-3--nanocrystalline-ha-powders",
+      "name": "nanocrystalline HA powders",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "sato2008-jbm-a-31469",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "sato2008-jbm-a-31469-nanotitania-ha-weight-ratio-1-2-coatings-3--ammonium-hydroxide",
+      "name": "ammonium hydroxide",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "sato2008-jbm-a-31469",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "sato2008-jbm-a-31469-nanotitania-ha-weight-ratio-1-2-coatings-3--ammonium-phosphate",
+      "name": "ammonium phosphate",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "sato2008-jbm-a-31469",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "sato2008-jbm-a-31469-nanotitania-ha-weight-ratio-1-2-coatings-3--calcium-nitrate",
+      "name": "calcium nitrate",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "sato2008-jbm-a-31469",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
   "stocks": [],
   "material_states": [
     {
+      "id": "sato2008-jbm-a-31469-nanotitania-ha-weight-ratio-1-2-coatings-3--after-d2-s01-add",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "sato2008-jbm-a-31469-nanotitania-ha-weight-ratio-1-2-coatings-3--ammonium-phosphate"
+      ]
+    },
+    {
+      "id": "sato2008-jbm-a-31469-nanotitania-ha-weight-ratio-1-2-coatings-3--after-d2-s02-add",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "sato2008-jbm-a-31469-nanotitania-ha-weight-ratio-1-2-coatings-3--after-d2-s01-add",
+        "sato2008-jbm-a-31469-nanotitania-ha-weight-ratio-1-2-coatings-3--calcium-nitrate"
+      ]
+    },
+    {
+      "id": "sato2008-jbm-a-31469-nanotitania-ha-weight-ratio-1-2-coatings-3--after-d2-s03-precipitate",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "sato2008-jbm-a-31469-nanotitania-ha-weight-ratio-1-2-coatings-3--after-d2-s02-add",
+        "sato2008-jbm-a-31469-nanotitania-ha-weight-ratio-1-2-coatings-3--ammonium-phosphate",
+        "sato2008-jbm-a-31469-nanotitania-ha-weight-ratio-1-2-coatings-3--calcium-nitrate"
+      ]
+    },
+    {
+      "id": "sato2008-jbm-a-31469-nanotitania-ha-weight-ratio-1-2-coatings-3--after-d2-s04-hydrothermal",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "sato2008-jbm-a-31469-nanotitania-ha-weight-ratio-1-2-coatings-3--after-d2-s03-precipitate",
+        "sato2008-jbm-a-31469-nanotitania-ha-weight-ratio-1-2-coatings-3--ammonium-phosphate",
+        "sato2008-jbm-a-31469-nanotitania-ha-weight-ratio-1-2-coatings-3--calcium-nitrate"
+      ]
+    },
+    {
       "id": "sato2008-jbm-a-31469-nanotitania-ha-weight-ratio-1-2-coatings-3--after-s01-mix",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "sato2008-jbm-a-31469-nanotitania-ha-weight-ratio-1-2-coatings-3--after-d2-s04-hydrothermal",
+        "sato2008-jbm-a-31469-nanotitania-ha-weight-ratio-1-2-coatings-3--nanotitania-powders",
+        "sato2008-jbm-a-31469-nanotitania-ha-weight-ratio-1-2-coatings-3--nanocrystalline-ha-powders"
+      ]
+    },
+    {
+      "id": "sato2008-jbm-a-31469-nanotitania-ha-weight-ratio-1-2-coatings-3--after-d2-s06-deposit",
       "name": "product as isolated",
       "kind": "product",
-      "parent_ids": []
+      "parent_ids": [
+        "sato2008-jbm-a-31469-nanotitania-ha-weight-ratio-1-2-coatings-3--after-s01-mix",
+        "sato2008-jbm-a-31469-nanotitania-ha-weight-ratio-1-2-coatings-3--nanotitania-powders",
+        "sato2008-jbm-a-31469-nanotitania-ha-weight-ratio-1-2-coatings-3--nanocrystalline-ha-powders"
+      ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-add",
+      "action": "add",
+      "label": "Add ammonium phosphate solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "sato2008-jbm-a-31469-nanotitania-ha-weight-ratio-1-2-coatings-3--ammonium-phosphate"
+      ],
+      "outputs": [
+        "sato2008-jbm-a-31469-nanotitania-ha-weight-ratio-1-2-coatings-3--after-d2-s01-add"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add ammonium phosphate solution",
+      "evidence": [
+        {
+          "source_id": "sato2008-jbm-a-31469",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s02-add",
+      "action": "add",
+      "label": "Add calcium nitrate solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s01-add"
+      ],
+      "inputs": [
+        "sato2008-jbm-a-31469-nanotitania-ha-weight-ratio-1-2-coatings-3--after-d2-s01-add",
+        "sato2008-jbm-a-31469-nanotitania-ha-weight-ratio-1-2-coatings-3--calcium-nitrate"
+      ],
+      "outputs": [
+        "sato2008-jbm-a-31469-nanotitania-ha-weight-ratio-1-2-coatings-3--after-d2-s02-add"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add calcium nitrate solution",
+      "evidence": [
+        {
+          "source_id": "sato2008-jbm-a-31469",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s03-precipitate",
+      "action": "precipitate",
+      "label": "Precipitation of HA",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-add"
+      ],
+      "inputs": [
+        "sato2008-jbm-a-31469-nanotitania-ha-weight-ratio-1-2-coatings-3--after-d2-s02-add",
+        "sato2008-jbm-a-31469-nanotitania-ha-weight-ratio-1-2-coatings-3--ammonium-phosphate",
+        "sato2008-jbm-a-31469-nanotitania-ha-weight-ratio-1-2-coatings-3--calcium-nitrate"
+      ],
+      "outputs": [
+        "sato2008-jbm-a-31469-nanotitania-ha-weight-ratio-1-2-coatings-3--after-d2-s03-precipitate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Precipitation of HA",
+      "evidence": [
+        {
+          "source_id": "sato2008-jbm-a-31469",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s04-hydrothermal",
+      "action": "hydrothermal",
+      "label": "Hydrothermal treatment",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-precipitate"
+      ],
+      "inputs": [
+        "sato2008-jbm-a-31469-nanotitania-ha-weight-ratio-1-2-coatings-3--after-d2-s03-precipitate",
+        "sato2008-jbm-a-31469-nanotitania-ha-weight-ratio-1-2-coatings-3--ammonium-phosphate",
+        "sato2008-jbm-a-31469-nanotitania-ha-weight-ratio-1-2-coatings-3--calcium-nitrate"
+      ],
+      "outputs": [
+        "sato2008-jbm-a-31469-nanotitania-ha-weight-ratio-1-2-coatings-3--after-d2-s04-hydrothermal"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Hydrothermal treatment",
+      "evidence": [
+        {
+          "source_id": "sato2008-jbm-a-31469",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
     {
       "id": "s01-mix",
       "action": "mix",
@@ -110,8 +412,14 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s04-hydrothermal"
+      ],
+      "inputs": [
+        "sato2008-jbm-a-31469-nanotitania-ha-weight-ratio-1-2-coatings-3--after-d2-s04-hydrothermal",
+        "sato2008-jbm-a-31469-nanotitania-ha-weight-ratio-1-2-coatings-3--nanotitania-powders",
+        "sato2008-jbm-a-31469-nanotitania-ha-weight-ratio-1-2-coatings-3--nanocrystalline-ha-powders"
+      ],
       "outputs": [
         "sato2008-jbm-a-31469-nanotitania-ha-weight-ratio-1-2-coatings-3--after-s01-mix"
       ],
@@ -136,6 +444,46 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s06-deposit",
+      "action": "deposit",
+      "label": "Mixed powders deposited on titanium substrates",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-mix"
+      ],
+      "inputs": [
+        "sato2008-jbm-a-31469-nanotitania-ha-weight-ratio-1-2-coatings-3--after-s01-mix",
+        "sato2008-jbm-a-31469-nanotitania-ha-weight-ratio-1-2-coatings-3--nanotitania-powders",
+        "sato2008-jbm-a-31469-nanotitania-ha-weight-ratio-1-2-coatings-3--nanocrystalline-ha-powders"
+      ],
+      "outputs": [
+        "sato2008-jbm-a-31469-nanotitania-ha-weight-ratio-1-2-coatings-3--after-d2-s06-deposit"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Mixed powders deposited on titanium substrates",
+      "evidence": [
+        {
+          "source_id": "sato2008-jbm-a-31469",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -144,7 +492,7 @@
       "sample_id": "sato2008-jbm-a-31469-nanotitania-ha-weight-ratio-1-2-coatings-3--product",
       "source_sample_label": "nanotitania/HA (weight ratio: 1/2) coatings",
       "batch_id": null,
-      "material_state_id": "sato2008-jbm-a-31469-nanotitania-ha-weight-ratio-1-2-coatings-3--after-s01-mix",
+      "material_state_id": "sato2008-jbm-a-31469-nanotitania-ha-weight-ratio-1-2-coatings-3--after-d2-s06-deposit",
       "parent_sample_id": null,
       "composition": {
         "value": "Ca10(PO4)6(OH)2 and TiO2",
@@ -232,13 +580,18 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
-      "Reaction time not reported in the extracted text."
+      "Reaction time not reported in the extracted text.",
+      "Amount of nanotitania powders not reported in the extracted text.",
+      "Amount of nanocrystalline HA powders not reported in the extracted text.",
+      "Amount of ammonium hydroxide not reported in the extracted text.",
+      "Amount of ammonium phosphate not reported in the extracted text.",
+      "Amount of calcium nitrate not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

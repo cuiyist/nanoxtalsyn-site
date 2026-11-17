@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "al2007-pssc-200777345-fecozr-thin-film-as-deposited-zr-concent-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Yung‐Wang Peng et al. (2007): FeCoZr thin film (as-deposited, Zr concentration 11.89 at.%)",
   "material": {
@@ -86,9 +86,17 @@
   "material_states": [
     {
       "id": "al2007-pssc-200777345-fecozr-thin-film-as-deposited-zr-concent-1--after-s01-sputter",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": []
+    },
+    {
+      "id": "al2007-pssc-200777345-fecozr-thin-film-as-deposited-zr-concent-1--after-d2-s02-anneal",
       "name": "product as isolated",
       "kind": "product",
-      "parent_ids": []
+      "parent_ids": [
+        "al2007-pssc-200777345-fecozr-thin-film-as-deposited-zr-concent-1--after-s01-sputter"
+      ]
     }
   ],
   "operations": [
@@ -130,6 +138,49 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s02-anneal",
+      "action": "anneal",
+      "label": "Annealing in magnetic field",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-sputter"
+      ],
+      "inputs": [
+        "al2007-pssc-200777345-fecozr-thin-film-as-deposited-zr-concent-1--after-s01-sputter"
+      ],
+      "outputs": [
+        "al2007-pssc-200777345-fecozr-thin-film-as-deposited-zr-concent-1--after-d2-s02-anneal"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "al2007-pssc-200777345",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Annealing in magnetic field",
+      "evidence": [
+        {
+          "source_id": "al2007-pssc-200777345",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -138,7 +189,7 @@
       "sample_id": "al2007-pssc-200777345-fecozr-thin-film-as-deposited-zr-concent-1--product",
       "source_sample_label": "FeCoZr thin film (as-deposited, Zr concentration 11.89 at.%)",
       "batch_id": null,
-      "material_state_id": "al2007-pssc-200777345-fecozr-thin-film-as-deposited-zr-concent-1--after-s01-sputter",
+      "material_state_id": "al2007-pssc-200777345-fecozr-thin-film-as-deposited-zr-concent-1--after-d2-s02-anneal",
       "parent_sample_id": null,
       "composition": {
         "value": "FeCoZr",
@@ -188,7 +239,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "meng2016-acs-jpclett-6b02448-cdse-cds-core-shell-qds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Renyang Meng; Haiyan Qin; Yuan Niu; Wei Fang; Sen Yang; Xing Lin; Hujia Cao; Junliang Ma; Wanzhen Lin; Limin Tong; Xiaogang Peng (2016): CdSe/CdS core/shell QDs",
   "material": {
@@ -82,17 +82,255 @@
       "note": ""
     }
   },
-  "materials": [],
+  "materials": [
+    {
+      "id": "meng2016-acs-jpclett-6b02448-cdse-cds-core-shell-qds-1--cadmium-diethyldithiocarbamate",
+      "name": "cadmium diethyldithiocarbamate",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "meng2016-acs-jpclett-6b02448",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    },
+    {
+      "id": "meng2016-acs-jpclett-6b02448-cdse-cds-core-shell-qds-1--zinc-diethyldithiocarbamate",
+      "name": "zinc diethyldithiocarbamate",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "meng2016-acs-jpclett-6b02448",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    },
+    {
+      "id": "meng2016-acs-jpclett-6b02448-cdse-cds-core-shell-qds-1--1-dodecanethiol",
+      "name": "1-dodecanethiol",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "meng2016-acs-jpclett-6b02448",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    }
+  ],
   "stocks": [],
   "material_states": [
+    {
+      "id": "meng2016-acs-jpclett-6b02448-cdse-cds-core-shell-qds-1--after-d2-s01-synthesize",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "meng2016-acs-jpclett-6b02448-cdse-cds-core-shell-qds-1--cadmium-diethyldithiocarbamate"
+      ]
+    },
+    {
+      "id": "meng2016-acs-jpclett-6b02448-cdse-cds-core-shell-qds-1--after-d2-s02-inject",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "meng2016-acs-jpclett-6b02448-cdse-cds-core-shell-qds-1--after-d2-s01-synthesize",
+        "meng2016-acs-jpclett-6b02448-cdse-cds-core-shell-qds-1--zinc-diethyldithiocarbamate"
+      ]
+    },
+    {
+      "id": "meng2016-acs-jpclett-6b02448-cdse-cds-core-shell-qds-1--after-d2-s03-heat",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "meng2016-acs-jpclett-6b02448-cdse-cds-core-shell-qds-1--after-d2-s02-inject",
+        "meng2016-acs-jpclett-6b02448-cdse-cds-core-shell-qds-1--zinc-diethyldithiocarbamate"
+      ]
+    },
     {
       "id": "meng2016-acs-jpclett-6b02448-cdse-cds-core-shell-qds-1--after-s01-replace",
       "name": "product as isolated",
       "kind": "product",
-      "parent_ids": []
+      "parent_ids": [
+        "meng2016-acs-jpclett-6b02448-cdse-cds-core-shell-qds-1--after-d2-s03-heat",
+        "meng2016-acs-jpclett-6b02448-cdse-cds-core-shell-qds-1--1-dodecanethiol"
+      ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-synthesize",
+      "action": "synthesize",
+      "label": "CdSe/CdS core/shell QDs using published procedures",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "meng2016-acs-jpclett-6b02448-cdse-cds-core-shell-qds-1--cadmium-diethyldithiocarbamate"
+      ],
+      "outputs": [
+        "meng2016-acs-jpclett-6b02448-cdse-cds-core-shell-qds-1--after-d2-s01-synthesize"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "CdSe/CdS core/shell QDs using published procedures",
+      "evidence": [
+        {
+          "source_id": "meng2016-acs-jpclett-6b02448",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    },
+    {
+      "id": "d2-s02-inject",
+      "action": "inject",
+      "label": "Inject",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s01-synthesize"
+      ],
+      "inputs": [
+        "meng2016-acs-jpclett-6b02448-cdse-cds-core-shell-qds-1--after-d2-s01-synthesize",
+        "meng2016-acs-jpclett-6b02448-cdse-cds-core-shell-qds-1--zinc-diethyldithiocarbamate"
+      ],
+      "outputs": [
+        "meng2016-acs-jpclett-6b02448-cdse-cds-core-shell-qds-1--after-d2-s02-inject"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Inject",
+      "evidence": [
+        {
+          "source_id": "meng2016-acs-jpclett-6b02448",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    },
+    {
+      "id": "d2-s03-heat",
+      "action": "heat",
+      "label": "Growth of ZnS shell",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-inject"
+      ],
+      "inputs": [
+        "meng2016-acs-jpclett-6b02448-cdse-cds-core-shell-qds-1--after-d2-s02-inject",
+        "meng2016-acs-jpclett-6b02448-cdse-cds-core-shell-qds-1--zinc-diethyldithiocarbamate"
+      ],
+      "outputs": [
+        "meng2016-acs-jpclett-6b02448-cdse-cds-core-shell-qds-1--after-d2-s03-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 150,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "150 °C",
+          "evidence": [
+            {
+              "source_id": "meng2016-acs-jpclett-6b02448",
+              "locator": "Main PDF p.5"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 20,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "20 min",
+          "evidence": [
+            {
+              "source_id": "meng2016-acs-jpclett-6b02448",
+              "locator": "Main PDF p.5"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Growth of ZnS shell",
+      "evidence": [
+        {
+          "source_id": "meng2016-acs-jpclett-6b02448",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    },
     {
       "id": "s01-replace",
       "action": "replace",
@@ -100,8 +338,13 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s03-heat"
+      ],
+      "inputs": [
+        "meng2016-acs-jpclett-6b02448-cdse-cds-core-shell-qds-1--after-d2-s03-heat",
+        "meng2016-acs-jpclett-6b02448-cdse-cds-core-shell-qds-1--1-dodecanethiol"
+      ],
       "outputs": [
         "meng2016-acs-jpclett-6b02448-cdse-cds-core-shell-qds-1--after-s01-replace"
       ],
@@ -208,14 +451,17 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
-      "Reaction time not reported in the extracted text."
+      "Reaction time not reported in the extracted text.",
+      "Amount of cadmium diethyldithiocarbamate not reported in the extracted text.",
+      "Amount of zinc diethyldithiocarbamate not reported in the extracted text.",
+      "Amount of 1-dodecanethiol not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],
