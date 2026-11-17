@@ -1,0 +1,684 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "chang2015-c4nr07521h-pbs-colloidal-quantum-dots-cqds-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Jin Chang; Yuki Kuga; Iván Mora-Seró; Taro Toyoda; Yuhei Ogomi; Shuzi Hayase; Juan Bisquert; Qing Shen (2015): PbS colloidal quantum dots (CQDs)",
+  "material": {
+    "formula": "PbS",
+    "family": "PbS nanocrystals",
+    "elements": [
+      "Pb",
+      "S"
+    ],
+    "components": [
+      "PbS"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Synthesis as described in the source",
+  "sources": [
+    {
+      "id": "chang2015-c4nr07521h",
+      "doi": "10.1039/c4nr07521h",
+      "title": "High reduction of interfacial charge recombination in colloidal quantum dot solar cells by metal oxide surface passivation",
+      "authors": "Jin Chang; Yuki Kuga; Iván Mora-Seró; Taro Toyoda; Yuhei Ogomi; Shuzi Hayase; Juan Bisquert; Qing Shen",
+      "year": 2015,
+      "url": "https://doi.org/10.1039/c4nr07521h",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "chang2015-c4nr07521h",
+    "recipe_family": "chang2015-c4nr07521h-pbs-colloidal-quantum-dots-cqds-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "PbS",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "chang2015-c4nr07521h",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "crystal",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "chang2015-c4nr07521h",
+          "locator": "Main PDF p.5"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": 3.5,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "3.5 nm",
+      "evidence": [
+        {
+          "source_id": "chang2015-c4nr07521h",
+          "locator": "Main PDF p.5"
+        }
+      ],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "sphere",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "chang2015-c4nr07521h",
+          "locator": "Main PDF p.5"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "chang2015-c4nr07521h-pbs-colloidal-quantum-dots-cqds-1--pbo",
+      "name": "PbO",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 6,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "6 mmol",
+          "evidence": [
+            {
+              "source_id": "chang2015-c4nr07521h",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "chang2015-c4nr07521h",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "chang2015-c4nr07521h-pbs-colloidal-quantum-dots-cqds-1--oleic-acid",
+      "name": "oleic acid",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 15,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "15 mmol",
+          "evidence": [
+            {
+              "source_id": "chang2015-c4nr07521h",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "chang2015-c4nr07521h",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "chang2015-c4nr07521h-pbs-colloidal-quantum-dots-cqds-1--1-octadecene",
+      "name": "1-octadecene",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 50,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "50 mL",
+          "evidence": [
+            {
+              "source_id": "chang2015-c4nr07521h",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "chang2015-c4nr07521h",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "chang2015-c4nr07521h-pbs-colloidal-quantum-dots-cqds-1--hexamethyldisilathiane",
+      "name": "hexamethyldisilathiane",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 3,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "3 mmol",
+          "evidence": [
+            {
+              "source_id": "chang2015-c4nr07521h",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "chang2015-c4nr07521h",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "chang2015-c4nr07521h-pbs-colloidal-quantum-dots-cqds-1--after-s01-mix",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "chang2015-c4nr07521h-pbs-colloidal-quantum-dots-cqds-1--pbo",
+        "chang2015-c4nr07521h-pbs-colloidal-quantum-dots-cqds-1--oleic-acid",
+        "chang2015-c4nr07521h-pbs-colloidal-quantum-dots-cqds-1--1-octadecene"
+      ]
+    },
+    {
+      "id": "chang2015-c4nr07521h-pbs-colloidal-quantum-dots-cqds-1--after-s02-inject",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "chang2015-c4nr07521h-pbs-colloidal-quantum-dots-cqds-1--after-s01-mix",
+        "chang2015-c4nr07521h-pbs-colloidal-quantum-dots-cqds-1--hexamethyldisilathiane"
+      ]
+    },
+    {
+      "id": "chang2015-c4nr07521h-pbs-colloidal-quantum-dots-cqds-1--after-s03-cool",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "chang2015-c4nr07521h-pbs-colloidal-quantum-dots-cqds-1--after-s02-inject"
+      ]
+    },
+    {
+      "id": "chang2015-c4nr07521h-pbs-colloidal-quantum-dots-cqds-1--after-s04-cool",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "chang2015-c4nr07521h-pbs-colloidal-quantum-dots-cqds-1--after-s03-cool"
+      ]
+    },
+    {
+      "id": "chang2015-c4nr07521h-pbs-colloidal-quantum-dots-cqds-1--after-s05-wash",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "chang2015-c4nr07521h-pbs-colloidal-quantum-dots-cqds-1--after-s04-cool"
+      ]
+    },
+    {
+      "id": "chang2015-c4nr07521h-pbs-colloidal-quantum-dots-cqds-1--after-s06-dry",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "chang2015-c4nr07521h-pbs-colloidal-quantum-dots-cqds-1--after-s05-wash"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-mix",
+      "action": "mix",
+      "label": "Mix PbO, OA, and ODE",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "chang2015-c4nr07521h-pbs-colloidal-quantum-dots-cqds-1--pbo",
+        "chang2015-c4nr07521h-pbs-colloidal-quantum-dots-cqds-1--oleic-acid",
+        "chang2015-c4nr07521h-pbs-colloidal-quantum-dots-cqds-1--1-octadecene"
+      ],
+      "outputs": [
+        "chang2015-c4nr07521h-pbs-colloidal-quantum-dots-cqds-1--after-s01-mix"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Mix PbO, OA, and ODE",
+      "evidence": [
+        {
+          "source_id": "chang2015-c4nr07521h",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s02-inject",
+      "action": "inject",
+      "label": "Inject TMS solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-mix"
+      ],
+      "inputs": [
+        "chang2015-c4nr07521h-pbs-colloidal-quantum-dots-cqds-1--after-s01-mix",
+        "chang2015-c4nr07521h-pbs-colloidal-quantum-dots-cqds-1--hexamethyldisilathiane"
+      ],
+      "outputs": [
+        "chang2015-c4nr07521h-pbs-colloidal-quantum-dots-cqds-1--after-s02-inject"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 115,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "115 °C",
+          "evidence": [
+            {
+              "source_id": "chang2015-c4nr07521h",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Inject TMS solution",
+      "evidence": [
+        {
+          "source_id": "chang2015-c4nr07521h",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s03-cool",
+      "action": "cool",
+      "label": "Cool the solution to 75 °C",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-inject"
+      ],
+      "inputs": [
+        "chang2015-c4nr07521h-pbs-colloidal-quantum-dots-cqds-1--after-s02-inject"
+      ],
+      "outputs": [
+        "chang2015-c4nr07521h-pbs-colloidal-quantum-dots-cqds-1--after-s03-cool"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 75,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "75 °C",
+          "evidence": [
+            {
+              "source_id": "chang2015-c4nr07521h",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Cool the solution to 75 °C",
+      "evidence": [
+        {
+          "source_id": "chang2015-c4nr07521h",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s04-cool",
+      "action": "cool",
+      "label": "Cool the solution to room temperature",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-cool"
+      ],
+      "inputs": [
+        "chang2015-c4nr07521h-pbs-colloidal-quantum-dots-cqds-1--after-s03-cool"
+      ],
+      "outputs": [
+        "chang2015-c4nr07521h-pbs-colloidal-quantum-dots-cqds-1--after-s04-cool"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Cool the solution to room temperature",
+      "evidence": [
+        {
+          "source_id": "chang2015-c4nr07521h",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s05-wash",
+      "action": "wash",
+      "label": "Wash the precipitate with acetone",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-cool"
+      ],
+      "inputs": [
+        "chang2015-c4nr07521h-pbs-colloidal-quantum-dots-cqds-1--after-s04-cool"
+      ],
+      "outputs": [
+        "chang2015-c4nr07521h-pbs-colloidal-quantum-dots-cqds-1--after-s05-wash"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Wash the precipitate with acetone",
+      "evidence": [
+        {
+          "source_id": "chang2015-c4nr07521h",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s06-dry",
+      "action": "dry",
+      "label": "Dry the precipitate with nitrogen flow",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s05-wash"
+      ],
+      "inputs": [
+        "chang2015-c4nr07521h-pbs-colloidal-quantum-dots-cqds-1--after-s05-wash"
+      ],
+      "outputs": [
+        "chang2015-c4nr07521h-pbs-colloidal-quantum-dots-cqds-1--after-s06-dry"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dry the precipitate with nitrogen flow",
+      "evidence": [
+        {
+          "source_id": "chang2015-c4nr07521h",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "chang2015-c4nr07521h-pbs-colloidal-quantum-dots-cqds-1--product",
+      "source_sample_label": "PbS colloidal quantum dots (CQDs)",
+      "batch_id": null,
+      "material_state_id": "chang2015-c4nr07521h-pbs-colloidal-quantum-dots-cqds-1--after-s06-dry",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "PbS",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "chang2015-c4nr07521h",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "crystal",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "chang2015-c4nr07521h",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": "sphere",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "chang2015-c4nr07521h",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": "oleic acid",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "chang2015-c4nr07521h",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "chang2015-c4nr07521h",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "notes": [
+        "Reactor: 100 mL three-neck flask (Main PDF p.3)."
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "id": "chang2015-c4nr07521h-pbs-colloidal-quantum-dots-cqds-1--size",
+      "sample_id": "chang2015-c4nr07521h-pbs-colloidal-quantum-dots-cqds-1--product",
+      "property": "diameter",
+      "technique": "TEM",
+      "value": {
+        "value": 3.5,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "3.5 nm",
+        "evidence": [
+          {
+            "source_id": "chang2015-c4nr07521h",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "chang2015-c4nr07521h",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    }
+  ],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Atmosphere not reported in the extracted text.",
+      "Reaction temperature not reported in the extracted text.",
+      "Reaction time not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

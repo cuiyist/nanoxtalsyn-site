@@ -1,0 +1,212 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "yuan2020-d0ra05205a-post-laser-irradiated-colloidal-si-nanoc-2",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Ze Yuan; Toshihiro Nakamura (2020): post-laser-irradiated colloidal Si nanocrystals (Si-ncs)",
+  "material": {
+    "formula": "Si",
+    "family": "Si nanocrystals",
+    "elements": [
+      "Si"
+    ],
+    "components": [
+      "Si"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Post-laser irradiation",
+  "sources": [
+    {
+      "id": "yuan2020-d0ra05205a",
+      "doi": "10.1039/d0ra05205a",
+      "title": "Spectral tuning of colloidal Si nanocrystal luminescence by post-laser irradiation in liquid",
+      "authors": "Ze Yuan; Toshihiro Nakamura",
+      "year": 2020,
+      "url": "https://doi.org/10.1039/d0ra05205a",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "yuan2020-d0ra05205a",
+    "recipe_family": "yuan2020-d0ra05205a-post-laser-irradiated-colloidal-si-nanoc-2",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    },
+    "phase": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    },
+    "size": {
+      "value": null,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "not_reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "not reported",
+      "evidence": [],
+      "derivation": null
+    },
+    "morphology": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "yuan2020-d0ra05205a-post-laser-irradiated-colloidal-si-nanoc-2--1-octene",
+      "name": "1-octene",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "yuan2020-d0ra05205a",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "yuan2020-d0ra05205a-post-laser-irradiated-colloidal-si-nanoc-2--after-s01-irradiate",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "yuan2020-d0ra05205a-post-laser-irradiated-colloidal-si-nanoc-2--1-octene"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-irradiate",
+      "action": "irradiate",
+      "label": "Post-laser irradiation of colloidal Si-nc sample",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "yuan2020-d0ra05205a-post-laser-irradiated-colloidal-si-nanoc-2--1-octene"
+      ],
+      "outputs": [
+        "yuan2020-d0ra05205a-post-laser-irradiated-colloidal-si-nanoc-2--after-s01-irradiate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "yuan2020-d0ra05205a",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Post-laser irradiation of colloidal Si-nc sample",
+      "evidence": [
+        {
+          "source_id": "yuan2020-d0ra05205a",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "yuan2020-d0ra05205a-post-laser-irradiated-colloidal-si-nanoc-2--product",
+      "source_sample_label": "post-laser-irradiated colloidal Si nanocrystals (Si-ncs)",
+      "batch_id": null,
+      "material_state_id": "yuan2020-d0ra05205a-post-laser-irradiated-colloidal-si-nanoc-2--after-s01-irradiate",
+      "parent_sample_id": null,
+      "composition": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "phase": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "morphology": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "surface": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "yuan2020-d0ra05205a",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "notes": [
+        "Reaction time: 3 h (Main PDF p.2)."
+      ]
+    }
+  ],
+  "measurements": [],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Phase not reported in the extracted text.",
+      "Shape not reported in the extracted text.",
+      "Ligand not reported in the extracted text.",
+      "Size not reported in the extracted text.",
+      "Reactor not reported in the extracted text.",
+      "Reaction temperature not reported in the extracted text.",
+      "Amount of 1-octene not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

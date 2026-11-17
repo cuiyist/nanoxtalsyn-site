@@ -1,0 +1,575 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "yang2023-acsphotonics-2c01145-hgte-colloidal-quantum-dots-cqds-with-a-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Ji Yang; Yifei Lv; Ziyang He; Binbin Wang; Shiwu Chen; Feng Xiao; Huicheng Hu; Mengxuan Yu; Huan Liu; Xinzheng Lan; Hsien-Yi Hsu; Haisheng Song; Jiang Tang (2023): HgTe colloidal quantum dots (CQDs) with a cutoff wavelength at 2.2 μm",
+  "material": {
+    "formula": "HgTe",
+    "family": "HgTe nanocrystals",
+    "elements": [
+      "Hg",
+      "Te"
+    ],
+    "components": [
+      "HgTe"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Hot injection",
+  "sources": [
+    {
+      "id": "yang2023-acsphotonics-2c01145",
+      "doi": "10.1021/acsphotonics.2c01145",
+      "title": "Bi2S3 Electron Transport Layer Incorporation for High-Performance Heterostructure HgTe Colloidal Quantum Dot Infrared Photodetectors",
+      "authors": "Ji Yang; Yifei Lv; Ziyang He; Binbin Wang; Shiwu Chen; Feng Xiao; Huicheng Hu; Mengxuan Yu; Huan Liu; Xinzheng Lan; Hsien-Yi Hsu; Haisheng Song; Jiang Tang",
+      "year": 2023,
+      "url": "https://doi.org/10.1021/acsphotonics.2c01145",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "yang2023-acsphotonics-2c01145",
+    "recipe_family": "yang2023-acsphotonics-2c01145-hgte-colloidal-quantum-dots-cqds-with-a-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "HgTe",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "yang2023-acsphotonics-2c01145",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "nanocrystalline",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "yang2023-acsphotonics-2c01145",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": 6.5,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "6.5 nm",
+      "evidence": [
+        {
+          "source_id": "yang2023-acsphotonics-2c01145",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "derivation": null
+    },
+    "morphology": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "yang2023-acsphotonics-2c01145-hgte-colloidal-quantum-dots-cqds-with-a-1--hgcl2",
+      "name": "HgCl2",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "mass": {
+          "value": 486,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mg",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "486 mg",
+          "evidence": [
+            {
+              "source_id": "yang2023-acsphotonics-2c01145",
+              "locator": "Main PDF p.6"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "yang2023-acsphotonics-2c01145",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "yang2023-acsphotonics-2c01145-hgte-colloidal-quantum-dots-cqds-with-a-1--tellurium-in-trioctylphosphine-solution",
+      "name": "tellurium in trioctylphosphine solution",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 0.9,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.9 mL",
+          "evidence": [
+            {
+              "source_id": "yang2023-acsphotonics-2c01145",
+              "locator": "Main PDF p.6"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "yang2023-acsphotonics-2c01145",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "yang2023-acsphotonics-2c01145-hgte-colloidal-quantum-dots-cqds-with-a-1--tetrachloroethylene-tce",
+      "name": "tetrachloroethylene (TCE)",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 20,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "20 mL",
+          "evidence": [
+            {
+              "source_id": "yang2023-acsphotonics-2c01145",
+              "locator": "Main PDF p.6"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "yang2023-acsphotonics-2c01145",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "yang2023-acsphotonics-2c01145-hgte-colloidal-quantum-dots-cqds-with-a-1--after-s01-dissolve",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "yang2023-acsphotonics-2c01145-hgte-colloidal-quantum-dots-cqds-with-a-1--hgcl2"
+      ]
+    },
+    {
+      "id": "yang2023-acsphotonics-2c01145-hgte-colloidal-quantum-dots-cqds-with-a-1--after-s02-inject",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "yang2023-acsphotonics-2c01145-hgte-colloidal-quantum-dots-cqds-with-a-1--after-s01-dissolve",
+        "yang2023-acsphotonics-2c01145-hgte-colloidal-quantum-dots-cqds-with-a-1--tellurium-in-trioctylphosphine-solution"
+      ]
+    },
+    {
+      "id": "yang2023-acsphotonics-2c01145-hgte-colloidal-quantum-dots-cqds-with-a-1--after-s03-add",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "yang2023-acsphotonics-2c01145-hgte-colloidal-quantum-dots-cqds-with-a-1--after-s02-inject",
+        "yang2023-acsphotonics-2c01145-hgte-colloidal-quantum-dots-cqds-with-a-1--tetrachloroethylene-tce"
+      ]
+    },
+    {
+      "id": "yang2023-acsphotonics-2c01145-hgte-colloidal-quantum-dots-cqds-with-a-1--after-s04-wash",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "yang2023-acsphotonics-2c01145-hgte-colloidal-quantum-dots-cqds-with-a-1--after-s03-add"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-dissolve",
+      "action": "dissolve",
+      "label": "Dissolve HgCl2 in oleylamine",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "yang2023-acsphotonics-2c01145-hgte-colloidal-quantum-dots-cqds-with-a-1--hgcl2"
+      ],
+      "outputs": [
+        "yang2023-acsphotonics-2c01145-hgte-colloidal-quantum-dots-cqds-with-a-1--after-s01-dissolve"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 100,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "100 °C",
+          "evidence": [
+            {
+              "source_id": "yang2023-acsphotonics-2c01145",
+              "locator": "Main PDF p.6"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 40,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "40 min",
+          "evidence": [
+            {
+              "source_id": "yang2023-acsphotonics-2c01145",
+              "locator": "Main PDF p.6"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "yang2023-acsphotonics-2c01145",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dissolve HgCl2 in oleylamine",
+      "evidence": [
+        {
+          "source_id": "yang2023-acsphotonics-2c01145",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "s02-inject",
+      "action": "inject",
+      "label": "Inject tellurium solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-dissolve"
+      ],
+      "inputs": [
+        "yang2023-acsphotonics-2c01145-hgte-colloidal-quantum-dots-cqds-with-a-1--after-s01-dissolve",
+        "yang2023-acsphotonics-2c01145-hgte-colloidal-quantum-dots-cqds-with-a-1--tellurium-in-trioctylphosphine-solution"
+      ],
+      "outputs": [
+        "yang2023-acsphotonics-2c01145-hgte-colloidal-quantum-dots-cqds-with-a-1--after-s02-inject"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 3,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "3 min",
+          "evidence": [
+            {
+              "source_id": "yang2023-acsphotonics-2c01145",
+              "locator": "Main PDF p.6"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "yang2023-acsphotonics-2c01145",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Inject tellurium solution",
+      "evidence": [
+        {
+          "source_id": "yang2023-acsphotonics-2c01145",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "s03-add",
+      "action": "add",
+      "label": "Add tetrachloroethylene",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-inject"
+      ],
+      "inputs": [
+        "yang2023-acsphotonics-2c01145-hgte-colloidal-quantum-dots-cqds-with-a-1--after-s02-inject",
+        "yang2023-acsphotonics-2c01145-hgte-colloidal-quantum-dots-cqds-with-a-1--tetrachloroethylene-tce"
+      ],
+      "outputs": [
+        "yang2023-acsphotonics-2c01145-hgte-colloidal-quantum-dots-cqds-with-a-1--after-s03-add"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "yang2023-acsphotonics-2c01145",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add tetrachloroethylene",
+      "evidence": [
+        {
+          "source_id": "yang2023-acsphotonics-2c01145",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "s04-wash",
+      "action": "wash",
+      "label": "Wash with isopropanol and redisperse in octane",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-add"
+      ],
+      "inputs": [
+        "yang2023-acsphotonics-2c01145-hgte-colloidal-quantum-dots-cqds-with-a-1--after-s03-add"
+      ],
+      "outputs": [
+        "yang2023-acsphotonics-2c01145-hgte-colloidal-quantum-dots-cqds-with-a-1--after-s04-wash"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Wash with isopropanol and redisperse in octane",
+      "evidence": [
+        {
+          "source_id": "yang2023-acsphotonics-2c01145",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "yang2023-acsphotonics-2c01145-hgte-colloidal-quantum-dots-cqds-with-a-1--product",
+      "source_sample_label": "HgTe colloidal quantum dots (CQDs) with a cutoff wavelength at 2.2 μm",
+      "batch_id": null,
+      "material_state_id": "yang2023-acsphotonics-2c01145-hgte-colloidal-quantum-dots-cqds-with-a-1--after-s04-wash",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "HgTe",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "yang2023-acsphotonics-2c01145",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "nanocrystalline",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "yang2023-acsphotonics-2c01145",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "surface": {
+        "value": "oleylamine",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "yang2023-acsphotonics-2c01145",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "yang2023-acsphotonics-2c01145",
+          "locator": "Main PDF p.4"
+        }
+      ],
+      "notes": [
+        "Reactor: 250 mL flask (Main PDF p.6)."
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "id": "yang2023-acsphotonics-2c01145-hgte-colloidal-quantum-dots-cqds-with-a-1--size",
+      "sample_id": "yang2023-acsphotonics-2c01145-hgte-colloidal-quantum-dots-cqds-with-a-1--product",
+      "property": "diameter",
+      "technique": "TEM",
+      "value": {
+        "value": 6.5,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "6.5 nm",
+        "evidence": [
+          {
+            "source_id": "yang2023-acsphotonics-2c01145",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "yang2023-acsphotonics-2c01145",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Shape not reported in the extracted text.",
+      "Reaction temperature not reported in the extracted text.",
+      "Reaction time not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

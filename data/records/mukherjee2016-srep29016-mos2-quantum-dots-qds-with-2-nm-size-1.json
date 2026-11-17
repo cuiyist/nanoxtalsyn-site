@@ -1,0 +1,562 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "mukherjee2016-srep29016-mos2-quantum-dots-qds-with-2-nm-size-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Subhrajit Mukherjee; Rishi Maiti; Ajit K. Katiyar; Soumen Das; Samit K. Ray (2016): MoS2 quantum dots (QDs) with ~2 nm size",
+  "material": {
+    "formula": "MoS2",
+    "family": "MoS2 nanocrystals",
+    "elements": [
+      "Mo",
+      "S"
+    ],
+    "components": [
+      "MoS2"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Synthesis as described in the source",
+  "sources": [
+    {
+      "id": "mukherjee2016-srep29016",
+      "doi": "10.1038/srep29016",
+      "title": "Novel Colloidal MoS2 Quantum Dot Heterojunctions on Silicon Platforms for Multifunctional Optoelectronic Devices",
+      "authors": "Subhrajit Mukherjee; Rishi Maiti; Ajit K. Katiyar; Soumen Das; Samit K. Ray",
+      "year": 2016,
+      "url": "https://doi.org/10.1038/srep29016",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "mukherjee2016-srep29016",
+    "recipe_family": "mukherjee2016-srep29016-mos2-quantum-dots-qds-with-2-nm-size-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "MoS2",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "mukherjee2016-srep29016",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "2H",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "mukherjee2016-srep29016",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": 2,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "2 nm",
+      "evidence": [
+        {
+          "source_id": "mukherjee2016-srep29016",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "sphere",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "mukherjee2016-srep29016",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "mukherjee2016-srep29016-mos2-quantum-dots-qds-with-2-nm-size-1--mos2",
+      "name": "MoS2",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "mukherjee2016-srep29016",
+          "locator": "Main PDF p.9"
+        }
+      ]
+    },
+    {
+      "id": "mukherjee2016-srep29016-mos2-quantum-dots-qds-with-2-nm-size-1--dimethylformamide-dmf",
+      "name": "dimethylformamide (DMF)",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "mukherjee2016-srep29016",
+          "locator": "Main PDF p.9"
+        }
+      ]
+    },
+    {
+      "id": "mukherjee2016-srep29016-mos2-quantum-dots-qds-with-2-nm-size-1--ethanol",
+      "name": "ethanol",
+      "formula": null,
+      "role": "solvent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "mukherjee2016-srep29016",
+          "locator": "Main PDF p.9"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "mukherjee2016-srep29016-mos2-quantum-dots-qds-with-2-nm-size-1--after-s01-sonicate",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "mukherjee2016-srep29016-mos2-quantum-dots-qds-with-2-nm-size-1--mos2",
+        "mukherjee2016-srep29016-mos2-quantum-dots-qds-with-2-nm-size-1--dimethylformamide-dmf"
+      ]
+    },
+    {
+      "id": "mukherjee2016-srep29016-mos2-quantum-dots-qds-with-2-nm-size-1--after-s02-stir",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "mukherjee2016-srep29016-mos2-quantum-dots-qds-with-2-nm-size-1--after-s01-sonicate",
+        "mukherjee2016-srep29016-mos2-quantum-dots-qds-with-2-nm-size-1--dimethylformamide-dmf"
+      ]
+    },
+    {
+      "id": "mukherjee2016-srep29016-mos2-quantum-dots-qds-with-2-nm-size-1--after-s03-centrifuge",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "mukherjee2016-srep29016-mos2-quantum-dots-qds-with-2-nm-size-1--after-s02-stir",
+        "mukherjee2016-srep29016-mos2-quantum-dots-qds-with-2-nm-size-1--mos2"
+      ]
+    },
+    {
+      "id": "mukherjee2016-srep29016-mos2-quantum-dots-qds-with-2-nm-size-1--after-s04-heat",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "mukherjee2016-srep29016-mos2-quantum-dots-qds-with-2-nm-size-1--after-s03-centrifuge",
+        "mukherjee2016-srep29016-mos2-quantum-dots-qds-with-2-nm-size-1--mos2"
+      ]
+    },
+    {
+      "id": "mukherjee2016-srep29016-mos2-quantum-dots-qds-with-2-nm-size-1--after-s05-redisperse",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "mukherjee2016-srep29016-mos2-quantum-dots-qds-with-2-nm-size-1--after-s04-heat",
+        "mukherjee2016-srep29016-mos2-quantum-dots-qds-with-2-nm-size-1--mos2",
+        "mukherjee2016-srep29016-mos2-quantum-dots-qds-with-2-nm-size-1--ethanol"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-sonicate",
+      "action": "sonicate",
+      "label": "Sonication of MoS2 in DMF",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "mukherjee2016-srep29016-mos2-quantum-dots-qds-with-2-nm-size-1--mos2",
+        "mukherjee2016-srep29016-mos2-quantum-dots-qds-with-2-nm-size-1--dimethylformamide-dmf"
+      ],
+      "outputs": [
+        "mukherjee2016-srep29016-mos2-quantum-dots-qds-with-2-nm-size-1--after-s01-sonicate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "mukherjee2016-srep29016",
+            "locator": "Main PDF p.9"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Sonication of MoS2 in DMF",
+      "evidence": [
+        {
+          "source_id": "mukherjee2016-srep29016",
+          "locator": "Main PDF p.9"
+        }
+      ]
+    },
+    {
+      "id": "s02-stir",
+      "action": "stir",
+      "label": "Stirring DMF dispersion for 2 days",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-sonicate"
+      ],
+      "inputs": [
+        "mukherjee2016-srep29016-mos2-quantum-dots-qds-with-2-nm-size-1--after-s01-sonicate",
+        "mukherjee2016-srep29016-mos2-quantum-dots-qds-with-2-nm-size-1--dimethylformamide-dmf"
+      ],
+      "outputs": [
+        "mukherjee2016-srep29016-mos2-quantum-dots-qds-with-2-nm-size-1--after-s02-stir"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 2,
+          "minimum": null,
+          "maximum": null,
+          "unit": "d",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2 days",
+          "evidence": [
+            {
+              "source_id": "mukherjee2016-srep29016",
+              "locator": "Main PDF p.9"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "mukherjee2016-srep29016",
+            "locator": "Main PDF p.9"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Stirring DMF dispersion for 2 days",
+      "evidence": [
+        {
+          "source_id": "mukherjee2016-srep29016",
+          "locator": "Main PDF p.9"
+        }
+      ]
+    },
+    {
+      "id": "s03-centrifuge",
+      "action": "centrifuge",
+      "label": "Precipitation of MoS2 QDs of different sizes",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-stir"
+      ],
+      "inputs": [
+        "mukherjee2016-srep29016-mos2-quantum-dots-qds-with-2-nm-size-1--after-s02-stir",
+        "mukherjee2016-srep29016-mos2-quantum-dots-qds-with-2-nm-size-1--mos2"
+      ],
+      "outputs": [
+        "mukherjee2016-srep29016-mos2-quantum-dots-qds-with-2-nm-size-1--after-s03-centrifuge"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Precipitation of MoS2 QDs of different sizes",
+      "evidence": [
+        {
+          "source_id": "mukherjee2016-srep29016",
+          "locator": "Main PDF p.9"
+        }
+      ]
+    },
+    {
+      "id": "s04-heat",
+      "action": "heat",
+      "label": "Mild heat treatment under Ar atmosphere",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-centrifuge"
+      ],
+      "inputs": [
+        "mukherjee2016-srep29016-mos2-quantum-dots-qds-with-2-nm-size-1--after-s03-centrifuge",
+        "mukherjee2016-srep29016-mos2-quantum-dots-qds-with-2-nm-size-1--mos2"
+      ],
+      "outputs": [
+        "mukherjee2016-srep29016-mos2-quantum-dots-qds-with-2-nm-size-1--after-s04-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 60,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "60 °C",
+          "evidence": [
+            {
+              "source_id": "mukherjee2016-srep29016",
+              "locator": "Main PDF p.9"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "mukherjee2016-srep29016",
+            "locator": "Main PDF p.9"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Mild heat treatment under Ar atmosphere",
+      "evidence": [
+        {
+          "source_id": "mukherjee2016-srep29016",
+          "locator": "Main PDF p.9"
+        }
+      ]
+    },
+    {
+      "id": "s05-redisperse",
+      "action": "redisperse",
+      "label": "Redispersing dried precipitates into ethanol",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-heat"
+      ],
+      "inputs": [
+        "mukherjee2016-srep29016-mos2-quantum-dots-qds-with-2-nm-size-1--after-s04-heat",
+        "mukherjee2016-srep29016-mos2-quantum-dots-qds-with-2-nm-size-1--mos2",
+        "mukherjee2016-srep29016-mos2-quantum-dots-qds-with-2-nm-size-1--ethanol"
+      ],
+      "outputs": [
+        "mukherjee2016-srep29016-mos2-quantum-dots-qds-with-2-nm-size-1--after-s05-redisperse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Redispersing dried precipitates into ethanol",
+      "evidence": [
+        {
+          "source_id": "mukherjee2016-srep29016",
+          "locator": "Main PDF p.9"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "mukherjee2016-srep29016-mos2-quantum-dots-qds-with-2-nm-size-1--product",
+      "source_sample_label": "MoS2 quantum dots (QDs) with ~2 nm size",
+      "batch_id": null,
+      "material_state_id": "mukherjee2016-srep29016-mos2-quantum-dots-qds-with-2-nm-size-1--after-s05-redisperse",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "MoS2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "mukherjee2016-srep29016",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "2H",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "mukherjee2016-srep29016",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": "sphere",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "mukherjee2016-srep29016",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "mukherjee2016-srep29016",
+          "locator": "Main PDF p.9"
+        }
+      ],
+      "notes": [
+        "Reaction temperature: 60 degC (Main PDF p.9).",
+        "Reaction time: 2 d (Main PDF p.9)."
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "id": "mukherjee2016-srep29016-mos2-quantum-dots-qds-with-2-nm-size-1--size",
+      "sample_id": "mukherjee2016-srep29016-mos2-quantum-dots-qds-with-2-nm-size-1--product",
+      "property": "diameter",
+      "technique": "TEM",
+      "value": {
+        "value": 2,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "2 nm",
+        "evidence": [
+          {
+            "source_id": "mukherjee2016-srep29016",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "mukherjee2016-srep29016",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "missing_fields": [
+      "Ligand not reported in the extracted text.",
+      "Reactor not reported in the extracted text.",
+      "Amount of MoS2 not reported in the extracted text.",
+      "Amount of dimethylformamide (DMF) not reported in the extracted text.",
+      "Amount of ethanol not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}
