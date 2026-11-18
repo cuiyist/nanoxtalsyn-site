@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "gonzalo-juan2012-la205124s-tio2-nanocrystal-monolayer-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "I. Gonzalo-Juan (2012): TiO2 nanocrystal monolayer",
   "material": {
@@ -80,7 +80,65 @@
       "note": ""
     }
   },
-  "materials": [],
+  "materials": [
+    {
+      "id": "gonzalo-juan2012-la205124s-tio2-nanocrystal-monolayer-1--oleic-acid",
+      "name": "oleic acid",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "gonzalo-juan2012-la205124s",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "gonzalo-juan2012-la205124s-tio2-nanocrystal-monolayer-1--oleylamine",
+      "name": "oleylamine",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "gonzalo-juan2012-la205124s",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "gonzalo-juan2012-la205124s-tio2-nanocrystal-monolayer-1--tio2-nanocrystals",
+      "name": "TiO2 nanocrystals",
+      "formula": null,
+      "role": "starting_particles",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "gonzalo-juan2012-la205124s",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
   "stocks": [],
   "material_states": [
     {
@@ -94,7 +152,19 @@
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
-        "gonzalo-juan2012-la205124s-tio2-nanocrystal-monolayer-1--after-s01-solvothermal-synthesis"
+        "gonzalo-juan2012-la205124s-tio2-nanocrystal-monolayer-1--after-s01-solvothermal-synthesis",
+        "gonzalo-juan2012-la205124s-tio2-nanocrystal-monolayer-1--oleic-acid",
+        "gonzalo-juan2012-la205124s-tio2-nanocrystal-monolayer-1--oleylamine"
+      ]
+    },
+    {
+      "id": "gonzalo-juan2012-la205124s-tio2-nanocrystal-monolayer-1--after-d2-s03-centrifugation",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "gonzalo-juan2012-la205124s-tio2-nanocrystal-monolayer-1--after-s02-liquid-liquid-extraction",
+        "gonzalo-juan2012-la205124s-tio2-nanocrystal-monolayer-1--oleic-acid",
+        "gonzalo-juan2012-la205124s-tio2-nanocrystal-monolayer-1--oleylamine"
       ]
     },
     {
@@ -102,7 +172,8 @@
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "gonzalo-juan2012-la205124s-tio2-nanocrystal-monolayer-1--after-s02-liquid-liquid-extraction"
+        "gonzalo-juan2012-la205124s-tio2-nanocrystal-monolayer-1--after-d2-s03-centrifugation",
+        "gonzalo-juan2012-la205124s-tio2-nanocrystal-monolayer-1--tio2-nanocrystals"
       ]
     }
   ],
@@ -152,7 +223,9 @@
         "s01-solvothermal-synthesis"
       ],
       "inputs": [
-        "gonzalo-juan2012-la205124s-tio2-nanocrystal-monolayer-1--after-s01-solvothermal-synthesis"
+        "gonzalo-juan2012-la205124s-tio2-nanocrystal-monolayer-1--after-s01-solvothermal-synthesis",
+        "gonzalo-juan2012-la205124s-tio2-nanocrystal-monolayer-1--oleic-acid",
+        "gonzalo-juan2012-la205124s-tio2-nanocrystal-monolayer-1--oleylamine"
       ],
       "outputs": [
         "gonzalo-juan2012-la205124s-tio2-nanocrystal-monolayer-1--after-s02-liquid-liquid-extraction"
@@ -180,9 +253,9 @@
       ]
     },
     {
-      "id": "s03-electrophoretic-depositi",
-      "action": "electrophoretic deposition",
-      "label": "Deposition of nanocrystals onto silicon electrodes",
+      "id": "d2-s03-centrifugation",
+      "action": "centrifugation",
+      "label": "Isolation of nanocrystals",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -190,7 +263,67 @@
         "s02-liquid-liquid-extraction"
       ],
       "inputs": [
-        "gonzalo-juan2012-la205124s-tio2-nanocrystal-monolayer-1--after-s02-liquid-liquid-extraction"
+        "gonzalo-juan2012-la205124s-tio2-nanocrystal-monolayer-1--after-s02-liquid-liquid-extraction",
+        "gonzalo-juan2012-la205124s-tio2-nanocrystal-monolayer-1--oleic-acid",
+        "gonzalo-juan2012-la205124s-tio2-nanocrystal-monolayer-1--oleylamine"
+      ],
+      "outputs": [
+        "gonzalo-juan2012-la205124s-tio2-nanocrystal-monolayer-1--after-d2-s03-centrifugation"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 30,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "30 min",
+          "evidence": [
+            {
+              "source_id": "gonzalo-juan2012-la205124s",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Isolation of nanocrystals",
+      "evidence": [
+        {
+          "source_id": "gonzalo-juan2012-la205124s",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s03-electrophoretic-depositi",
+      "action": "electrophoretic deposition",
+      "label": "Deposition of nanocrystals onto silicon electrodes",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-centrifugation"
+      ],
+      "inputs": [
+        "gonzalo-juan2012-la205124s-tio2-nanocrystal-monolayer-1--after-d2-s03-centrifugation",
+        "gonzalo-juan2012-la205124s-tio2-nanocrystal-monolayer-1--tio2-nanocrystals"
       ],
       "outputs": [
         "gonzalo-juan2012-la205124s-tio2-nanocrystal-monolayer-1--after-s03-electrophoretic-depositi"
@@ -307,13 +440,16 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
-      "Reaction time not reported in the extracted text."
+      "Reaction time not reported in the extracted text.",
+      "Amount of oleic acid not reported in the extracted text.",
+      "Amount of oleylamine not reported in the extracted text.",
+      "Amount of TiO2 nanocrystals not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

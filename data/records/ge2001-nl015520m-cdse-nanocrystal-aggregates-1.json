@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "ge2001-nl015520m-cdse-nanocrystal-aggregates-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Guanglu Ge and Louis E. Brus (2001): CdSe nanocrystal aggregates",
   "material": {
@@ -90,7 +90,26 @@
       "id": "ge2001-nl015520m-cdse-nanocrystal-aggregates-1--cdse-nanocrystals",
       "name": "CdSe nanocrystals",
       "formula": null,
-      "role": "reagent",
+      "role": "starting_particles",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "ge2001-nl015520m",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "ge2001-nl015520m-cdse-nanocrystal-aggregates-1--trioctylphosphine-oxide",
+      "name": "trioctylphosphine oxide",
+      "formula": null,
+      "role": "ligand",
       "stage": "synthesis",
       "identity": {
         "pubchem_cid": null,
@@ -110,10 +129,26 @@
   "material_states": [
     {
       "id": "ge2001-nl015520m-cdse-nanocrystal-aggregates-1--after-s01-spin-coat",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "ge2001-nl015520m-cdse-nanocrystal-aggregates-1--cdse-nanocrystals"
+      ]
+    },
+    {
+      "id": "ge2001-nl015520m-cdse-nanocrystal-aggregates-1--after-d2-s02-heat",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "ge2001-nl015520m-cdse-nanocrystal-aggregates-1--after-s01-spin-coat"
+      ]
+    },
+    {
+      "id": "ge2001-nl015520m-cdse-nanocrystal-aggregates-1--after-d2-s03-quench",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "ge2001-nl015520m-cdse-nanocrystal-aggregates-1--cdse-nanocrystals"
+        "ge2001-nl015520m-cdse-nanocrystal-aggregates-1--after-d2-s02-heat"
       ]
     }
   ],
@@ -153,6 +188,82 @@
           "locator": "Main PDF p.1"
         }
       ]
+    },
+    {
+      "id": "d2-s02-heat",
+      "action": "heat",
+      "label": "Heating in air at the desired temperature for the desired duration",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-spin-coat"
+      ],
+      "inputs": [
+        "ge2001-nl015520m-cdse-nanocrystal-aggregates-1--after-s01-spin-coat"
+      ],
+      "outputs": [
+        "ge2001-nl015520m-cdse-nanocrystal-aggregates-1--after-d2-s02-heat"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heating in air at the desired temperature for the desired duration",
+      "evidence": [
+        {
+          "source_id": "ge2001-nl015520m",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "d2-s03-quench",
+      "action": "quench",
+      "label": "Quench",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-heat"
+      ],
+      "inputs": [
+        "ge2001-nl015520m-cdse-nanocrystal-aggregates-1--after-d2-s02-heat"
+      ],
+      "outputs": [
+        "ge2001-nl015520m-cdse-nanocrystal-aggregates-1--after-d2-s03-quench"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Quench",
+      "evidence": [
+        {
+          "source_id": "ge2001-nl015520m",
+          "locator": "Main PDF p.1"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -161,7 +272,7 @@
       "sample_id": "ge2001-nl015520m-cdse-nanocrystal-aggregates-1--product",
       "source_sample_label": "CdSe nanocrystal aggregates",
       "batch_id": null,
-      "material_state_id": "ge2001-nl015520m-cdse-nanocrystal-aggregates-1--after-s01-spin-coat",
+      "material_state_id": "ge2001-nl015520m-cdse-nanocrystal-aggregates-1--after-d2-s03-quench",
       "parent_sample_id": null,
       "composition": {
         "value": "CdSe",
@@ -249,14 +360,15 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
-      "Amount of CdSe nanocrystals not reported in the extracted text."
+      "Amount of CdSe nanocrystals not reported in the extracted text.",
+      "Amount of trioctylphosphine oxide not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

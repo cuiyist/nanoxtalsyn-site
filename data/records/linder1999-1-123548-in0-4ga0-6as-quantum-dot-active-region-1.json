@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "linder1999-1-123548-in0-4ga0-6as-quantum-dot-active-region-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "K. K. Linder (1999): In0.4Ga0.6As quantum-dot active region",
   "material": {
@@ -81,18 +81,65 @@
       "note": ""
     }
   },
-  "materials": [],
+  "materials": [
+    {
+      "id": "linder1999-1-123548-in0-4ga0-6as-quantum-dot-active-region-1--in0-4ga0-6as",
+      "name": "In0.4Ga0.6As",
+      "formula": null,
+      "role": "starting_particles",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "linder1999-1-123548",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "linder1999-1-123548-in0-4ga0-6as-quantum-dot-active-region-1--gaas",
+      "name": "GaAs",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "linder1999-1-123548",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
   "stocks": [],
   "material_states": [
     {
-      "id": "linder1999-1-123548-in0-4ga0-6as-quantum-dot-active-region-1--after-s01-cool",
+      "id": "linder1999-1-123548-in0-4ga0-6as-quantum-dot-active-region-1--after-d2-s01-anneal",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": []
     },
     {
-      "id": "linder1999-1-123548-in0-4ga0-6as-quantum-dot-active-region-1--after-s02-grow",
+      "id": "linder1999-1-123548-in0-4ga0-6as-quantum-dot-active-region-1--after-s01-cool",
       "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "linder1999-1-123548-in0-4ga0-6as-quantum-dot-active-region-1--after-d2-s01-anneal"
+      ]
+    },
+    {
+      "id": "linder1999-1-123548-in0-4ga0-6as-quantum-dot-active-region-1--after-s02-grow",
+      "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
         "linder1999-1-123548-in0-4ga0-6as-quantum-dot-active-region-1--after-s01-cool"
@@ -100,7 +147,7 @@
     },
     {
       "id": "linder1999-1-123548-in0-4ga0-6as-quantum-dot-active-region-1--after-s03-grow",
-      "name": "mixture after step 3",
+      "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
         "linder1999-1-123548-in0-4ga0-6as-quantum-dot-active-region-1--after-s02-grow"
@@ -108,7 +155,7 @@
     },
     {
       "id": "linder1999-1-123548-in0-4ga0-6as-quantum-dot-active-region-1--after-s04-anneal",
-      "name": "mixture after step 4",
+      "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
         "linder1999-1-123548-in0-4ga0-6as-quantum-dot-active-region-1--after-s03-grow"
@@ -125,14 +172,89 @@
   ],
   "operations": [
     {
+      "id": "d2-s01-anneal",
+      "action": "anneal",
+      "label": "Oxide desorption",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [],
+      "outputs": [
+        "linder1999-1-123548-in0-4ga0-6as-quantum-dot-active-region-1--after-d2-s01-anneal"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 830,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "830 °C",
+          "evidence": [
+            {
+              "source_id": "linder1999-1-123548",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 30,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "30 min",
+          "evidence": [
+            {
+              "source_id": "linder1999-1-123548",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Oxide desorption",
+      "evidence": [
+        {
+          "source_id": "linder1999-1-123548",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
       "id": "s01-cool",
       "action": "cool",
       "label": "Cooling to 350 °C",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s01-anneal"
+      ],
+      "inputs": [
+        "linder1999-1-123548-in0-4ga0-6as-quantum-dot-active-region-1--after-d2-s01-anneal"
+      ],
       "outputs": [
         "linder1999-1-123548-in0-4ga0-6as-quantum-dot-active-region-1--after-s01-cool"
       ],
@@ -463,14 +585,16 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
-      "Reaction time not reported in the extracted text."
+      "Reaction time not reported in the extracted text.",
+      "Amount of In0.4Ga0.6As not reported in the extracted text.",
+      "Amount of GaAs not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "yang2021-jacs-0c13071-agause-qds-6-07-nm-3",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Hongchao Yang; Renfu Li; Yejun Zhang; Mengxuan Yu; Zan Wang; Xi Liu; Wenwu You; Datao Tu; Ziqiang Sun; Rong Zhang; Xueyuan Chen; Qiangbin Wang (2021): AgAuSe QDs (6.07 nm)",
   "material": {
@@ -85,6 +85,25 @@
     {
       "id": "yang2021-jacs-0c13071-agause-qds-6-07-nm-3--au-precursor",
       "name": "Au precursor",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "yang2021-jacs-0c13071",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "yang2021-jacs-0c13071-agause-qds-6-07-nm-3--ag2se-qds",
+      "name": "Ag2Se QDs",
       "formula": null,
       "role": "reagent",
       "stage": "synthesis",
@@ -207,7 +226,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
@@ -216,7 +235,8 @@
       "Atmosphere not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
-      "Amount of Au precursor not reported in the extracted text."
+      "Amount of Au precursor not reported in the extracted text.",
+      "Amount of Ag2Se QDs not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

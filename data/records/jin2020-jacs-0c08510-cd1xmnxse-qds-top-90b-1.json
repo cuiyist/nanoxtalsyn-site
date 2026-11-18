@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Ho Jin; Mateusz Goryca; Michael T. Janicke; Scott A. Crooker; Victor I. Klimov (2020): Cd1−xMnxSe QDs (TOP-90b)",
   "material": {
@@ -80,29 +80,237 @@
       "note": ""
     }
   },
-  "materials": [],
+  "materials": [
+    {
+      "id": "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--cdo",
+      "name": "CdO",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "jin2020-jacs-0c08510",
+          "locator": "Main PDF p.11"
+        }
+      ]
+    },
+    {
+      "id": "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--odpa",
+      "name": "ODPA",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "jin2020-jacs-0c08510",
+          "locator": "Main PDF p.11"
+        }
+      ]
+    },
+    {
+      "id": "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--topo",
+      "name": "TOPO",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "jin2020-jacs-0c08510",
+          "locator": "Main PDF p.11"
+        }
+      ]
+    },
+    {
+      "id": "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--top",
+      "name": "TOP",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 1.8,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1.8 mL",
+          "evidence": [
+            {
+              "source_id": "jin2020-jacs-0c08510",
+              "locator": "Main PDF p.11"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "jin2020-jacs-0c08510",
+          "locator": "Main PDF p.11"
+        }
+      ]
+    },
+    {
+      "id": "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--se",
+      "name": "Se",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "mass": {
+          "value": 0.058,
+          "minimum": null,
+          "maximum": null,
+          "unit": "g",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.058 g",
+          "evidence": [
+            {
+              "source_id": "jin2020-jacs-0c08510",
+              "locator": "Main PDF p.11"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "jin2020-jacs-0c08510",
+          "locator": "Main PDF p.11"
+        }
+      ]
+    },
+    {
+      "id": "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--diphenylphosphine",
+      "name": "Diphenylphosphine",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "jin2020-jacs-0c08510",
+          "locator": "Main PDF p.11"
+        }
+      ]
+    },
+    {
+      "id": "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--oleic-acid",
+      "name": "Oleic acid",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "jin2020-jacs-0c08510",
+          "locator": "Main PDF p.11"
+        }
+      ]
+    }
+  ],
   "stocks": [],
   "material_states": [
     {
       "id": "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--after-s01-heat",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--cdo",
+        "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--odpa",
+        "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--topo"
+      ]
     },
     {
       "id": "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--after-s02-heat",
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
-        "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--after-s01-heat"
+        "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--after-s01-heat",
+        "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--cdo",
+        "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--odpa",
+        "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--topo"
       ]
     },
     {
       "id": "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--after-s03-inject",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--after-s02-heat",
+        "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--top"
+      ]
+    },
+    {
+      "id": "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--after-d2-s04-hold",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--after-s03-inject",
+        "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--top",
+        "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--se"
+      ]
+    },
+    {
+      "id": "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--after-d2-s05-add",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--after-d2-s04-hold",
+        "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--diphenylphosphine"
+      ]
+    },
+    {
+      "id": "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--after-d2-s06-purification",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--after-s02-heat"
+        "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--after-d2-s05-add",
+        "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--oleic-acid"
       ]
     }
   ],
@@ -115,7 +323,11 @@
       "branch": "",
       "optional": false,
       "depends_on": [],
-      "inputs": [],
+      "inputs": [
+        "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--cdo",
+        "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--odpa",
+        "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--topo"
+      ],
       "outputs": [
         "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--after-s01-heat"
       ],
@@ -194,7 +406,10 @@
         "s01-heat"
       ],
       "inputs": [
-        "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--after-s01-heat"
+        "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--after-s01-heat",
+        "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--cdo",
+        "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--odpa",
+        "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--topo"
       ],
       "outputs": [
         "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--after-s02-heat"
@@ -256,7 +471,8 @@
         "s02-heat"
       ],
       "inputs": [
-        "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--after-s02-heat"
+        "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--after-s02-heat",
+        "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--top"
       ],
       "outputs": [
         "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--after-s03-inject"
@@ -306,6 +522,176 @@
           "locator": "Main PDF p.11"
         }
       ]
+    },
+    {
+      "id": "d2-s04-hold",
+      "action": "hold",
+      "label": "Hold at 380 °C for growth",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-inject"
+      ],
+      "inputs": [
+        "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--after-s03-inject",
+        "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--top",
+        "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--se"
+      ],
+      "outputs": [
+        "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--after-d2-s04-hold"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 380,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "380 °C",
+          "evidence": [
+            {
+              "source_id": "jin2020-jacs-0c08510",
+              "locator": "Main PDF p.11"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 min",
+          "evidence": [
+            {
+              "source_id": "jin2020-jacs-0c08510",
+              "locator": "Main PDF p.11"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "jin2020-jacs-0c08510",
+            "locator": "Main PDF p.11"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Hold at 380 °C for growth",
+      "evidence": [
+        {
+          "source_id": "jin2020-jacs-0c08510",
+          "locator": "Main PDF p.11"
+        }
+      ]
+    },
+    {
+      "id": "d2-s05-add",
+      "action": "add",
+      "label": "Adding diphenylphosphine",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-hold"
+      ],
+      "inputs": [
+        "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--after-d2-s04-hold",
+        "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--diphenylphosphine"
+      ],
+      "outputs": [
+        "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--after-d2-s05-add"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "jin2020-jacs-0c08510",
+            "locator": "Main PDF p.11"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Adding diphenylphosphine",
+      "evidence": [
+        {
+          "source_id": "jin2020-jacs-0c08510",
+          "locator": "Main PDF p.11"
+        }
+      ]
+    },
+    {
+      "id": "d2-s06-purification",
+      "action": "puriﬁcation",
+      "label": "Treating with oleic acid",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s05-add"
+      ],
+      "inputs": [
+        "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--after-d2-s05-add",
+        "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--oleic-acid"
+      ],
+      "outputs": [
+        "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--after-d2-s06-purification"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "jin2020-jacs-0c08510",
+            "locator": "Main PDF p.11"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Treating with oleic acid",
+      "evidence": [
+        {
+          "source_id": "jin2020-jacs-0c08510",
+          "locator": "Main PDF p.11"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -314,7 +700,7 @@
       "sample_id": "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--product",
       "source_sample_label": "Cd1−xMnxSe QDs (TOP-90b)",
       "batch_id": null,
-      "material_state_id": "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--after-s03-inject",
+      "material_state_id": "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--after-d2-s06-purification",
       "parent_sample_id": null,
       "composition": {
         "value": "CdSe",
@@ -373,10 +759,15 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
-      "Size not reported in the extracted text."
+      "Size not reported in the extracted text.",
+      "Amount of CdO not reported in the extracted text.",
+      "Amount of ODPA not reported in the extracted text.",
+      "Amount of TOPO not reported in the extracted text.",
+      "Amount of Diphenylphosphine not reported in the extracted text.",
+      "Amount of Oleic acid not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

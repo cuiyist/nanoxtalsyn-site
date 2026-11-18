@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "al2021-acsnano-1c06863-carbyne-nanocrystals-cncs-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Fei Yang et al. (2021): carbyne nanocrystals (CNCs)",
   "material": {
@@ -49,9 +49,14 @@
       "note": ""
     },
     "phase": {
-      "value": null,
-      "status": "not_reported",
-      "evidence": [],
+      "value": "hexagonal",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "al2021-acsnano-1c06863",
+          "locator": "Main PDF p.3"
+        }
+      ],
       "note": ""
     },
     "size": {
@@ -93,16 +98,53 @@
           "locator": "Main PDF p.6"
         }
       ]
+    },
+    {
+      "id": "al2021-acsnano-1c06863-carbyne-nanocrystals-cncs-1--gold-target",
+      "name": "gold target",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "al2021-acsnano-1c06863",
+          "locator": "Main PDF p.6"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
       "id": "al2021-acsnano-1c06863-carbyne-nanocrystals-cncs-1--after-s01-pour",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "al2021-acsnano-1c06863-carbyne-nanocrystals-cncs-1--absolute-ethanol"
+      ]
+    },
+    {
+      "id": "al2021-acsnano-1c06863-carbyne-nanocrystals-cncs-1--after-d2-s02-ablate",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "al2021-acsnano-1c06863-carbyne-nanocrystals-cncs-1--after-s01-pour",
+        "al2021-acsnano-1c06863-carbyne-nanocrystals-cncs-1--gold-target",
+        "al2021-acsnano-1c06863-carbyne-nanocrystals-cncs-1--absolute-ethanol"
+      ]
+    },
+    {
+      "id": "al2021-acsnano-1c06863-carbyne-nanocrystals-cncs-1--after-d2-s03-purify",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "al2021-acsnano-1c06863-carbyne-nanocrystals-cncs-1--absolute-ethanol"
+        "al2021-acsnano-1c06863-carbyne-nanocrystals-cncs-1--after-d2-s02-ablate"
       ]
     }
   ],
@@ -147,6 +189,108 @@
           "locator": "Main PDF p.6"
         }
       ]
+    },
+    {
+      "id": "d2-s02-ablate",
+      "action": "ablate",
+      "label": "Laser ablation in liquids",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-pour"
+      ],
+      "inputs": [
+        "al2021-acsnano-1c06863-carbyne-nanocrystals-cncs-1--after-s01-pour",
+        "al2021-acsnano-1c06863-carbyne-nanocrystals-cncs-1--gold-target",
+        "al2021-acsnano-1c06863-carbyne-nanocrystals-cncs-1--absolute-ethanol"
+      ],
+      "outputs": [
+        "al2021-acsnano-1c06863-carbyne-nanocrystals-cncs-1--after-d2-s02-ablate"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 30,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "30 min",
+          "evidence": [
+            {
+              "source_id": "al2021-acsnano-1c06863",
+              "locator": "Main PDF p.6"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "al2021-acsnano-1c06863",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Laser ablation in liquids",
+      "evidence": [
+        {
+          "source_id": "al2021-acsnano-1c06863",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "d2-s03-purify",
+      "action": "purify",
+      "label": "Using high-performance liquid chromatography (HPLC)",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-ablate"
+      ],
+      "inputs": [
+        "al2021-acsnano-1c06863-carbyne-nanocrystals-cncs-1--after-d2-s02-ablate"
+      ],
+      "outputs": [
+        "al2021-acsnano-1c06863-carbyne-nanocrystals-cncs-1--after-d2-s03-purify"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Using high-performance liquid chromatography (HPLC)",
+      "evidence": [
+        {
+          "source_id": "al2021-acsnano-1c06863",
+          "locator": "Main PDF p.6"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -155,7 +299,7 @@
       "sample_id": "al2021-acsnano-1c06863-carbyne-nanocrystals-cncs-1--product",
       "source_sample_label": "carbyne nanocrystals (CNCs)",
       "batch_id": null,
-      "material_state_id": "al2021-acsnano-1c06863-carbyne-nanocrystals-cncs-1--after-s01-pour",
+      "material_state_id": "al2021-acsnano-1c06863-carbyne-nanocrystals-cncs-1--after-d2-s03-purify",
       "parent_sample_id": null,
       "composition": {
         "value": "C",
@@ -169,9 +313,14 @@
         "note": ""
       },
       "phase": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "hexagonal",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "al2021-acsnano-1c06863",
+            "locator": "Main PDF p.3"
+          }
+        ],
         "note": ""
       },
       "morphology": {
@@ -203,14 +352,14 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
-      "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
-      "Amount of absolute ethanol not reported in the extracted text."
+      "Amount of absolute ethanol not reported in the extracted text.",
+      "Amount of gold target not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

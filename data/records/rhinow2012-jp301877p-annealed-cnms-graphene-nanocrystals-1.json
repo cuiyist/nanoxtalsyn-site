@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "rhinow2012-jp301877p-annealed-cnms-graphene-nanocrystals-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Daniel Rhinow (2012): Annealed CNMs (Graphene nanocrystals)",
   "material": {
@@ -98,18 +98,328 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "rhinow2012-jp301877p-annealed-cnms-graphene-nanocrystals-1--gold",
+      "name": "gold",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "rhinow2012-jp301877p",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "rhinow2012-jp301877p-annealed-cnms-graphene-nanocrystals-1--mica",
+      "name": "mica",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "rhinow2012-jp301877p",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "rhinow2012-jp301877p-annealed-cnms-graphene-nanocrystals-1--dimethylformamide-dmf",
+      "name": "dimethylformamide (DMF)",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "rhinow2012-jp301877p",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "rhinow2012-jp301877p-annealed-cnms-graphene-nanocrystals-1--hydrofluoric-acid-48",
+      "name": "hydrofluoric acid (48%)",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "rhinow2012-jp301877p",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "rhinow2012-jp301877p-annealed-cnms-graphene-nanocrystals-1--poly-methyl-methacrylate-pmma",
+      "name": "poly(methyl methacrylate) (PMMA)",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "rhinow2012-jp301877p",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "rhinow2012-jp301877p-annealed-cnms-graphene-nanocrystals-1--acetone",
+      "name": "acetone",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "rhinow2012-jp301877p",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
+      "id": "rhinow2012-jp301877p-annealed-cnms-graphene-nanocrystals-1--after-d2-s01-self-assemble",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "rhinow2012-jp301877p-annealed-cnms-graphene-nanocrystals-1--1-1-biphenyl-4-thiol-bpt"
+      ]
+    },
+    {
+      "id": "rhinow2012-jp301877p-annealed-cnms-graphene-nanocrystals-1--after-d2-s02-clean",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "rhinow2012-jp301877p-annealed-cnms-graphene-nanocrystals-1--after-d2-s01-self-assemble",
+        "rhinow2012-jp301877p-annealed-cnms-graphene-nanocrystals-1--mica"
+      ]
+    },
+    {
+      "id": "rhinow2012-jp301877p-annealed-cnms-graphene-nanocrystals-1--after-d2-s03-grow",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "rhinow2012-jp301877p-annealed-cnms-graphene-nanocrystals-1--after-d2-s02-clean",
+        "rhinow2012-jp301877p-annealed-cnms-graphene-nanocrystals-1--1-1-biphenyl-4-thiol-bpt",
+        "rhinow2012-jp301877p-annealed-cnms-graphene-nanocrystals-1--dimethylformamide-dmf",
+        "rhinow2012-jp301877p-annealed-cnms-graphene-nanocrystals-1--gold"
+      ]
+    },
+    {
+      "id": "rhinow2012-jp301877p-annealed-cnms-graphene-nanocrystals-1--after-d2-s04-cleave",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "rhinow2012-jp301877p-annealed-cnms-graphene-nanocrystals-1--after-d2-s03-grow",
+        "rhinow2012-jp301877p-annealed-cnms-graphene-nanocrystals-1--hydrofluoric-acid-48",
+        "rhinow2012-jp301877p-annealed-cnms-graphene-nanocrystals-1--gold"
+      ]
+    },
+    {
       "id": "rhinow2012-jp301877p-annealed-cnms-graphene-nanocrystals-1--after-s01-anneal",
       "name": "product as isolated",
       "kind": "product",
-      "parent_ids": []
+      "parent_ids": [
+        "rhinow2012-jp301877p-annealed-cnms-graphene-nanocrystals-1--after-d2-s04-cleave"
+      ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-self-assemble",
+      "action": "self-assemble",
+      "label": "BPT monolayers are self-assembled on gold substrates.",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "rhinow2012-jp301877p-annealed-cnms-graphene-nanocrystals-1--1-1-biphenyl-4-thiol-bpt"
+      ],
+      "outputs": [
+        "rhinow2012-jp301877p-annealed-cnms-graphene-nanocrystals-1--after-d2-s01-self-assemble"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "BPT monolayers are self-assembled on gold substrates.",
+      "evidence": [
+        {
+          "source_id": "rhinow2012-jp301877p",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s02-clean",
+      "action": "clean",
+      "label": "Cleaning the mica substrates with UV/ozone cleaner",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s01-self-assemble"
+      ],
+      "inputs": [
+        "rhinow2012-jp301877p-annealed-cnms-graphene-nanocrystals-1--after-d2-s01-self-assemble",
+        "rhinow2012-jp301877p-annealed-cnms-graphene-nanocrystals-1--mica"
+      ],
+      "outputs": [
+        "rhinow2012-jp301877p-annealed-cnms-graphene-nanocrystals-1--after-d2-s02-clean"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Cleaning the mica substrates with UV/ozone cleaner",
+      "evidence": [
+        {
+          "source_id": "rhinow2012-jp301877p",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s03-grow",
+      "action": "grow",
+      "label": "Growing BPT SAMs on gold substrates",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-clean"
+      ],
+      "inputs": [
+        "rhinow2012-jp301877p-annealed-cnms-graphene-nanocrystals-1--after-d2-s02-clean",
+        "rhinow2012-jp301877p-annealed-cnms-graphene-nanocrystals-1--1-1-biphenyl-4-thiol-bpt",
+        "rhinow2012-jp301877p-annealed-cnms-graphene-nanocrystals-1--dimethylformamide-dmf",
+        "rhinow2012-jp301877p-annealed-cnms-graphene-nanocrystals-1--gold"
+      ],
+      "outputs": [
+        "rhinow2012-jp301877p-annealed-cnms-graphene-nanocrystals-1--after-d2-s03-grow"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Growing BPT SAMs on gold substrates",
+      "evidence": [
+        {
+          "source_id": "rhinow2012-jp301877p",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s04-cleave",
+      "action": "cleave",
+      "label": "Cleaving CNMs from mica substrates using hydrofluoric acid",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-grow"
+      ],
+      "inputs": [
+        "rhinow2012-jp301877p-annealed-cnms-graphene-nanocrystals-1--after-d2-s03-grow",
+        "rhinow2012-jp301877p-annealed-cnms-graphene-nanocrystals-1--hydrofluoric-acid-48",
+        "rhinow2012-jp301877p-annealed-cnms-graphene-nanocrystals-1--gold"
+      ],
+      "outputs": [
+        "rhinow2012-jp301877p-annealed-cnms-graphene-nanocrystals-1--after-d2-s04-cleave"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Cleaving CNMs from mica substrates using hydrofluoric acid",
+      "evidence": [
+        {
+          "source_id": "rhinow2012-jp301877p",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
     {
       "id": "s01-anneal",
       "action": "anneal",
@@ -117,8 +427,12 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s04-cleave"
+      ],
+      "inputs": [
+        "rhinow2012-jp301877p-annealed-cnms-graphene-nanocrystals-1--after-d2-s04-cleave"
+      ],
       "outputs": [
         "rhinow2012-jp301877p-annealed-cnms-graphene-nanocrystals-1--after-s01-anneal"
       ],
@@ -201,7 +515,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
@@ -210,7 +524,13 @@
       "Atmosphere not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
-      "Amount of 1,1′-biphenyl-4-thiol (BPT) not reported in the extracted text."
+      "Amount of 1,1′-biphenyl-4-thiol (BPT) not reported in the extracted text.",
+      "Amount of gold not reported in the extracted text.",
+      "Amount of mica not reported in the extracted text.",
+      "Amount of dimethylformamide (DMF) not reported in the extracted text.",
+      "Amount of hydrofluoric acid (48%) not reported in the extracted text.",
+      "Amount of poly(methyl methacrylate) (PMMA) not reported in the extracted text.",
+      "Amount of acetone not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

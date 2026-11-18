@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "richter2005-1-2081123-hgte-ps-composite-tubes-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Stefan Richter (2005): HgTe/PS composite tubes",
   "material": {
@@ -75,25 +75,114 @@
       "note": ""
     }
   },
-  "materials": [],
+  "materials": [
+    {
+      "id": "richter2005-1-2081123-hgte-ps-composite-tubes-1--polystyrene-ps",
+      "name": "polystyrene (PS)",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "richter2005-1-2081123",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "richter2005-1-2081123-hgte-ps-composite-tubes-1--toluene",
+      "name": "toluene",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "richter2005-1-2081123",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
   "stocks": [],
   "material_states": [
     {
-      "id": "richter2005-1-2081123-hgte-ps-composite-tubes-1--after-s01-wet",
+      "id": "richter2005-1-2081123-hgte-ps-composite-tubes-1--after-d2-s01-stabilizer-exchange",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": []
+    },
+    {
+      "id": "richter2005-1-2081123-hgte-ps-composite-tubes-1--after-s01-wet",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "richter2005-1-2081123-hgte-ps-composite-tubes-1--after-d2-s01-stabilizer-exchange",
+        "richter2005-1-2081123-hgte-ps-composite-tubes-1--polystyrene-ps",
+        "richter2005-1-2081123-hgte-ps-composite-tubes-1--toluene"
+      ]
     },
     {
       "id": "richter2005-1-2081123-hgte-ps-composite-tubes-1--after-s02-evaporate",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "richter2005-1-2081123-hgte-ps-composite-tubes-1--after-s01-wet"
+        "richter2005-1-2081123-hgte-ps-composite-tubes-1--after-s01-wet",
+        "richter2005-1-2081123-hgte-ps-composite-tubes-1--toluene"
       ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-stabilizer-exchange",
+      "action": "stabilizer exchange",
+      "label": "QDs transferred to toluene",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [],
+      "outputs": [
+        "richter2005-1-2081123-hgte-ps-composite-tubes-1--after-d2-s01-stabilizer-exchange"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "ambient",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "richter2005-1-2081123",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "QDs transferred to toluene",
+      "evidence": [
+        {
+          "source_id": "richter2005-1-2081123",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
     {
       "id": "s01-wet",
       "action": "wet",
@@ -101,8 +190,14 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s01-stabilizer-exchange"
+      ],
+      "inputs": [
+        "richter2005-1-2081123-hgte-ps-composite-tubes-1--after-d2-s01-stabilizer-exchange",
+        "richter2005-1-2081123-hgte-ps-composite-tubes-1--polystyrene-ps",
+        "richter2005-1-2081123-hgte-ps-composite-tubes-1--toluene"
+      ],
       "outputs": [
         "richter2005-1-2081123-hgte-ps-composite-tubes-1--after-s01-wet"
       ],
@@ -144,7 +239,8 @@
         "s01-wet"
       ],
       "inputs": [
-        "richter2005-1-2081123-hgte-ps-composite-tubes-1--after-s01-wet"
+        "richter2005-1-2081123-hgte-ps-composite-tubes-1--after-s01-wet",
+        "richter2005-1-2081123-hgte-ps-composite-tubes-1--toluene"
       ],
       "outputs": [
         "richter2005-1-2081123-hgte-ps-composite-tubes-1--after-s02-evaporate"
@@ -228,7 +324,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
@@ -236,7 +332,9 @@
       "Size not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
-      "Reaction time not reported in the extracted text."
+      "Reaction time not reported in the extracted text.",
+      "Amount of polystyrene (PS) not reported in the extracted text.",
+      "Amount of toluene not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

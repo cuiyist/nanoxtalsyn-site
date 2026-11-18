@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "liu2015-mz500803w-qd-cd-ada-peg2000-ada-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Ting Liu; Fangdan Shi; Imene Boussouar; Juan Zhou; Demei Tian; Haibing Li (2015): QD@β-CD + Ada-PEG2000-Ada",
   "material": {
@@ -94,20 +94,84 @@
           "locator": "Main PDF p.1"
         }
       ]
+    },
+    {
+      "id": "liu2015-mz500803w-qd-cd-ada-peg2000-ada-2--cyclodextrin",
+      "name": "β-cyclodextrin",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "liu2015-mz500803w",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
+      "id": "liu2015-mz500803w-qd-cd-ada-peg2000-ada-2--after-d2-s01-modify",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "liu2015-mz500803w-qd-cd-ada-peg2000-ada-2--cyclodextrin"
+      ]
+    },
+    {
       "id": "liu2015-mz500803w-qd-cd-ada-peg2000-ada-2--after-s01-assemble",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
+        "liu2015-mz500803w-qd-cd-ada-peg2000-ada-2--after-d2-s01-modify",
         "liu2015-mz500803w-qd-cd-ada-peg2000-ada-2--ada-peg2000-ada"
       ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-modify",
+      "action": "modify",
+      "label": "QDs modified by β-CD",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "liu2015-mz500803w-qd-cd-ada-peg2000-ada-2--cyclodextrin"
+      ],
+      "outputs": [
+        "liu2015-mz500803w-qd-cd-ada-peg2000-ada-2--after-d2-s01-modify"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "QDs modified by β-CD",
+      "evidence": [
+        {
+          "source_id": "liu2015-mz500803w",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
     {
       "id": "s01-assemble",
       "action": "assemble",
@@ -115,8 +179,11 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
+      "depends_on": [
+        "d2-s01-modify"
+      ],
       "inputs": [
+        "liu2015-mz500803w-qd-cd-ada-peg2000-ada-2--after-d2-s01-modify",
         "liu2015-mz500803w-qd-cd-ada-peg2000-ada-2--ada-peg2000-ada"
       ],
       "outputs": [
@@ -177,9 +244,14 @@
         "note": ""
       },
       "surface": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "β-cyclodextrin and Ada-PEG2000-Ada",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "liu2015-mz500803w",
+            "locator": "Main PDF p.2"
+          }
+        ],
         "note": ""
       },
       "recipe_link": "explicit",
@@ -196,17 +268,17 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
-      "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
-      "Amount of Ada-PEG2000-Ada not reported in the extracted text."
+      "Amount of Ada-PEG2000-Ada not reported in the extracted text.",
+      "Amount of β-cyclodextrin not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

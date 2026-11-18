@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "choi2019-acsanm-9b01085-cuins2-zns-core-shell-qds-with-ddt-dda-1-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Jinyoung Choi; Wonseok Choi; Duk Young Jeon (2019): CuInS2/ZnS core/shell QDs with DDT:DDA = 1:2",
   "material": {
@@ -88,7 +88,103 @@
       "note": ""
     }
   },
-  "materials": [],
+  "materials": [
+    {
+      "id": "choi2019-acsanm-9b01085-cuins2-zns-core-shell-qds-with-ddt-dda-1-1--cui",
+      "name": "CuI",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "choi2019-acsanm-9b01085",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "choi2019-acsanm-9b01085-cuins2-zns-core-shell-qds-with-ddt-dda-1-1--in-oac-3",
+      "name": "In(OAc)3",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "choi2019-acsanm-9b01085",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "choi2019-acsanm-9b01085-cuins2-zns-core-shell-qds-with-ddt-dda-1-1--zn-oac-2",
+      "name": "Zn(OAc)2",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "choi2019-acsanm-9b01085",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "choi2019-acsanm-9b01085-cuins2-zns-core-shell-qds-with-ddt-dda-1-1--dodecylamine-dda",
+      "name": "dodecylamine (DDA)",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "choi2019-acsanm-9b01085",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "choi2019-acsanm-9b01085-cuins2-zns-core-shell-qds-with-ddt-dda-1-1--11-mercapto-1-undecanol-mud",
+      "name": "11-mercapto-1-undecanol (MUD)",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "choi2019-acsanm-9b01085",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    }
+  ],
   "stocks": [],
   "material_states": [
     {
@@ -114,7 +210,7 @@
       ]
     },
     {
-      "id": "choi2019-acsanm-9b01085-cuins2-zns-core-shell-qds-with-ddt-dda-1-1--after-s04-heat",
+      "id": "choi2019-acsanm-9b01085-cuins2-zns-core-shell-qds-with-ddt-dda-1-1--after-d2-s04-centrifuge",
       "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
@@ -122,8 +218,17 @@
       ]
     },
     {
-      "id": "choi2019-acsanm-9b01085-cuins2-zns-core-shell-qds-with-ddt-dda-1-1--after-s05-cool",
+      "id": "choi2019-acsanm-9b01085-cuins2-zns-core-shell-qds-with-ddt-dda-1-1--after-s04-heat",
       "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "choi2019-acsanm-9b01085-cuins2-zns-core-shell-qds-with-ddt-dda-1-1--after-d2-s04-centrifuge",
+        "choi2019-acsanm-9b01085-cuins2-zns-core-shell-qds-with-ddt-dda-1-1--dodecylamine-dda"
+      ]
+    },
+    {
+      "id": "choi2019-acsanm-9b01085-cuins2-zns-core-shell-qds-with-ddt-dda-1-1--after-s05-cool",
+      "name": "mixture after step 6",
       "kind": "reaction_batch",
       "parent_ids": [
         "choi2019-acsanm-9b01085-cuins2-zns-core-shell-qds-with-ddt-dda-1-1--after-s04-heat"
@@ -131,18 +236,27 @@
     },
     {
       "id": "choi2019-acsanm-9b01085-cuins2-zns-core-shell-qds-with-ddt-dda-1-1--after-s06-inject",
-      "name": "mixture after step 6",
+      "name": "mixture after step 7",
       "kind": "reaction_batch",
       "parent_ids": [
-        "choi2019-acsanm-9b01085-cuins2-zns-core-shell-qds-with-ddt-dda-1-1--after-s05-cool"
+        "choi2019-acsanm-9b01085-cuins2-zns-core-shell-qds-with-ddt-dda-1-1--after-s05-cool",
+        "choi2019-acsanm-9b01085-cuins2-zns-core-shell-qds-with-ddt-dda-1-1--11-mercapto-1-undecanol-mud"
       ]
     },
     {
       "id": "choi2019-acsanm-9b01085-cuins2-zns-core-shell-qds-with-ddt-dda-1-1--after-s07-cool",
+      "name": "mixture after step 8",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "choi2019-acsanm-9b01085-cuins2-zns-core-shell-qds-with-ddt-dda-1-1--after-s06-inject"
+      ]
+    },
+    {
+      "id": "choi2019-acsanm-9b01085-cuins2-zns-core-shell-qds-with-ddt-dda-1-1--after-d2-s09-centrifuge",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "choi2019-acsanm-9b01085-cuins2-zns-core-shell-qds-with-ddt-dda-1-1--after-s06-inject"
+        "choi2019-acsanm-9b01085-cuins2-zns-core-shell-qds-with-ddt-dda-1-1--after-s07-cool"
       ]
     }
   ],
@@ -329,10 +443,10 @@
       ]
     },
     {
-      "id": "s04-heat",
-      "action": "heat",
-      "label": "Shell growth with mixed ligands",
-      "stage": "synthesis",
+      "id": "d2-s04-centrifuge",
+      "action": "centrifuge",
+      "label": "Purification of core solution",
+      "stage": "workup",
       "branch": "",
       "optional": false,
       "depends_on": [
@@ -340,6 +454,45 @@
       ],
       "inputs": [
         "choi2019-acsanm-9b01085-cuins2-zns-core-shell-qds-with-ddt-dda-1-1--after-s03-cool"
+      ],
+      "outputs": [
+        "choi2019-acsanm-9b01085-cuins2-zns-core-shell-qds-with-ddt-dda-1-1--after-d2-s04-centrifuge"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Purification of core solution",
+      "evidence": [
+        {
+          "source_id": "choi2019-acsanm-9b01085",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "s04-heat",
+      "action": "heat",
+      "label": "Shell growth with mixed ligands",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-centrifuge"
+      ],
+      "inputs": [
+        "choi2019-acsanm-9b01085-cuins2-zns-core-shell-qds-with-ddt-dda-1-1--after-d2-s04-centrifuge",
+        "choi2019-acsanm-9b01085-cuins2-zns-core-shell-qds-with-ddt-dda-1-1--dodecylamine-dda"
       ],
       "outputs": [
         "choi2019-acsanm-9b01085-cuins2-zns-core-shell-qds-with-ddt-dda-1-1--after-s04-heat"
@@ -481,7 +634,8 @@
         "s05-cool"
       ],
       "inputs": [
-        "choi2019-acsanm-9b01085-cuins2-zns-core-shell-qds-with-ddt-dda-1-1--after-s05-cool"
+        "choi2019-acsanm-9b01085-cuins2-zns-core-shell-qds-with-ddt-dda-1-1--after-s05-cool",
+        "choi2019-acsanm-9b01085-cuins2-zns-core-shell-qds-with-ddt-dda-1-1--11-mercapto-1-undecanol-mud"
       ],
       "outputs": [
         "choi2019-acsanm-9b01085-cuins2-zns-core-shell-qds-with-ddt-dda-1-1--after-s06-inject"
@@ -592,6 +746,44 @@
           "locator": "Main PDF p.6"
         }
       ]
+    },
+    {
+      "id": "d2-s09-centrifuge",
+      "action": "centrifuge",
+      "label": "Purification of ligand-exchanged QDs",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s07-cool"
+      ],
+      "inputs": [
+        "choi2019-acsanm-9b01085-cuins2-zns-core-shell-qds-with-ddt-dda-1-1--after-s07-cool"
+      ],
+      "outputs": [
+        "choi2019-acsanm-9b01085-cuins2-zns-core-shell-qds-with-ddt-dda-1-1--after-d2-s09-centrifuge"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Purification of ligand-exchanged QDs",
+      "evidence": [
+        {
+          "source_id": "choi2019-acsanm-9b01085",
+          "locator": "Main PDF p.6"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -600,7 +792,7 @@
       "sample_id": "choi2019-acsanm-9b01085-cuins2-zns-core-shell-qds-with-ddt-dda-1-1--product",
       "source_sample_label": "CuInS2/ZnS core/shell QDs with DDT:DDA = 1:2",
       "batch_id": null,
-      "material_state_id": "choi2019-acsanm-9b01085-cuins2-zns-core-shell-qds-with-ddt-dda-1-1--after-s07-cool",
+      "material_state_id": "choi2019-acsanm-9b01085-cuins2-zns-core-shell-qds-with-ddt-dda-1-1--after-d2-s09-centrifuge",
       "parent_sample_id": null,
       "composition": {
         "value": "CuInS2/ZnS",
@@ -687,14 +879,51 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "choi2019-acsanm-9b01085-cuins2-zns-core-shell-qds-with-ddt-dda-1-1--photoluminescence-peak",
+      "sample_id": "choi2019-acsanm-9b01085-cuins2-zns-core-shell-qds-with-ddt-dda-1-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 605,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "605 nm",
+        "evidence": [
+          {
+            "source_id": "choi2019-acsanm-9b01085",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "choi2019-acsanm-9b01085",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
-      "Shape not reported in the extracted text."
+      "Shape not reported in the extracted text.",
+      "Amount of CuI not reported in the extracted text.",
+      "Amount of In(OAc)3 not reported in the extracted text.",
+      "Amount of Zn(OAc)2 not reported in the extracted text.",
+      "Amount of dodecylamine (DDA) not reported in the extracted text.",
+      "Amount of 11-mercapto-1-undecanol (MUD) not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

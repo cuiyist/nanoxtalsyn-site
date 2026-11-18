@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "lin2021-acsomega-1c03804-n-goqds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Qiuyuan Lin; Hui Chen; Jianglin Cao; Junxi Zhang (2021): N-GOQDs",
   "material": {
@@ -86,18 +86,69 @@
       "note": ""
     }
   },
-  "materials": [],
+  "materials": [
+    {
+      "id": "lin2021-acsomega-1c03804-n-goqds-1--n-go",
+      "name": "N-GO",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "lin2021-acsomega-1c03804",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "lin2021-acsomega-1c03804-n-goqds-1--h2o2",
+      "name": "H2O2",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "lin2021-acsomega-1c03804",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    }
+  ],
   "stocks": [],
   "material_states": [
     {
-      "id": "lin2021-acsomega-1c03804-n-goqds-1--after-s01-heat",
+      "id": "lin2021-acsomega-1c03804-n-goqds-1--after-d2-s01-mix",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "lin2021-acsomega-1c03804-n-goqds-1--n-go",
+        "lin2021-acsomega-1c03804-n-goqds-1--h2o2"
+      ]
+    },
+    {
+      "id": "lin2021-acsomega-1c03804-n-goqds-1--after-s01-heat",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "lin2021-acsomega-1c03804-n-goqds-1--after-d2-s01-mix",
+        "lin2021-acsomega-1c03804-n-goqds-1--h2o2"
+      ]
     },
     {
       "id": "lin2021-acsomega-1c03804-n-goqds-1--after-s02-dialyze",
-      "name": "mixture after step 2",
+      "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
         "lin2021-acsomega-1c03804-n-goqds-1--after-s01-heat"
@@ -105,14 +156,78 @@
     },
     {
       "id": "lin2021-acsomega-1c03804-n-goqds-1--after-s03-centrifuge",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "lin2021-acsomega-1c03804-n-goqds-1--after-s02-dialyze"
+      ]
+    },
+    {
+      "id": "lin2021-acsomega-1c03804-n-goqds-1--after-d2-s05-dry",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "lin2021-acsomega-1c03804-n-goqds-1--after-s02-dialyze"
+        "lin2021-acsomega-1c03804-n-goqds-1--after-s03-centrifuge"
       ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-mix",
+      "action": "mix",
+      "label": "Mixing N-GO with H2O2",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "lin2021-acsomega-1c03804-n-goqds-1--n-go",
+        "lin2021-acsomega-1c03804-n-goqds-1--h2o2"
+      ],
+      "outputs": [
+        "lin2021-acsomega-1c03804-n-goqds-1--after-d2-s01-mix"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 56,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "56 h",
+          "evidence": [
+            {
+              "source_id": "lin2021-acsomega-1c03804",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Mixing N-GO with H2O2",
+      "evidence": [
+        {
+          "source_id": "lin2021-acsomega-1c03804",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
     {
       "id": "s01-heat",
       "action": "heat",
@@ -120,8 +235,13 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s01-mix"
+      ],
+      "inputs": [
+        "lin2021-acsomega-1c03804-n-goqds-1--after-d2-s01-mix",
+        "lin2021-acsomega-1c03804-n-goqds-1--h2o2"
+      ],
       "outputs": [
         "lin2021-acsomega-1c03804-n-goqds-1--after-s01-heat"
       ],
@@ -241,6 +361,44 @@
           "locator": "Main PDF p.7"
         }
       ]
+    },
+    {
+      "id": "d2-s05-dry",
+      "action": "dry",
+      "label": "Dry",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-centrifuge"
+      ],
+      "inputs": [
+        "lin2021-acsomega-1c03804-n-goqds-1--after-s03-centrifuge"
+      ],
+      "outputs": [
+        "lin2021-acsomega-1c03804-n-goqds-1--after-d2-s05-dry"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dry",
+      "evidence": [
+        {
+          "source_id": "lin2021-acsomega-1c03804",
+          "locator": "Main PDF p.7"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -249,7 +407,7 @@
       "sample_id": "lin2021-acsomega-1c03804-n-goqds-1--product",
       "source_sample_label": "N-GOQDs",
       "batch_id": null,
-      "material_state_id": "lin2021-acsomega-1c03804-n-goqds-1--after-s03-centrifuge",
+      "material_state_id": "lin2021-acsomega-1c03804-n-goqds-1--after-d2-s05-dry",
       "parent_sample_id": null,
       "composition": {
         "value": "C, O, N",
@@ -327,19 +485,85 @@
           "locator": "Main PDF p.4"
         }
       ]
+    },
+    {
+      "id": "lin2021-acsomega-1c03804-n-goqds-1--photoluminescence-peak",
+      "sample_id": "lin2021-acsomega-1c03804-n-goqds-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 460,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "460 nm",
+        "evidence": [
+          {
+            "source_id": "lin2021-acsomega-1c03804",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "lin2021-acsomega-1c03804",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    },
+    {
+      "id": "lin2021-acsomega-1c03804-n-goqds-1--photoluminescence-quantum-yield",
+      "sample_id": "lin2021-acsomega-1c03804-n-goqds-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 11.2,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "11.2 %",
+        "evidence": [
+          {
+            "source_id": "lin2021-acsomega-1c03804",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "lin2021-acsomega-1c03804",
+          "locator": "Main PDF p.4"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
-      "Reaction time not reported in the extracted text."
+      "Reaction time not reported in the extracted text.",
+      "Amount of N-GO not reported in the extracted text.",
+      "Amount of H2O2 not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

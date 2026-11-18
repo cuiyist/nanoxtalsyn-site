@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "zhao2017-acs-analchem-7b01558-mos2-qds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Min Zhao; An-Yi Chen; Dan Huang; Ya-Qin Chai; Ying Zhuo; Ruo Yuan (2017): MoS2 QDs",
   "material": {
@@ -94,21 +94,98 @@
   "stocks": [],
   "material_states": [
     {
-      "id": "zhao2017-acs-analchem-7b01558-mos2-qds-1--after-s01-reflux",
+      "id": "zhao2017-acs-analchem-7b01558-mos2-qds-1--after-d2-s01-sonicate",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": []
     },
     {
+      "id": "zhao2017-acs-analchem-7b01558-mos2-qds-1--after-s01-reflux",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zhao2017-acs-analchem-7b01558-mos2-qds-1--after-d2-s01-sonicate"
+      ]
+    },
+    {
+      "id": "zhao2017-acs-analchem-7b01558-mos2-qds-1--after-d2-s03-sonicate",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zhao2017-acs-analchem-7b01558-mos2-qds-1--after-s01-reflux"
+      ]
+    },
+    {
       "id": "zhao2017-acs-analchem-7b01558-mos2-qds-1--after-s02-centrifuge",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zhao2017-acs-analchem-7b01558-mos2-qds-1--after-d2-s03-sonicate"
+      ]
+    },
+    {
+      "id": "zhao2017-acs-analchem-7b01558-mos2-qds-1--after-d2-s05-dialyze",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "zhao2017-acs-analchem-7b01558-mos2-qds-1--after-s01-reflux"
+        "zhao2017-acs-analchem-7b01558-mos2-qds-1--after-s02-centrifuge"
       ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-sonicate",
+      "action": "sonicate",
+      "label": "Sonicate the mixture for 5 h",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [],
+      "outputs": [
+        "zhao2017-acs-analchem-7b01558-mos2-qds-1--after-d2-s01-sonicate"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "5 h",
+          "evidence": [
+            {
+              "source_id": "zhao2017-acs-analchem-7b01558",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Sonicate the mixture for 5 h",
+      "evidence": [
+        {
+          "source_id": "zhao2017-acs-analchem-7b01558",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
     {
       "id": "s01-reflux",
       "action": "reflux",
@@ -116,8 +193,12 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s01-sonicate"
+      ],
+      "inputs": [
+        "zhao2017-acs-analchem-7b01558-mos2-qds-1--after-d2-s01-sonicate"
+      ],
       "outputs": [
         "zhao2017-acs-analchem-7b01558-mos2-qds-1--after-s01-reflux"
       ],
@@ -181,10 +262,10 @@
       ]
     },
     {
-      "id": "s02-centrifuge",
-      "action": "centrifuge",
-      "label": "Centrifuge the mixture at 8000 rpm",
-      "stage": "workup",
+      "id": "d2-s03-sonicate",
+      "action": "sonicate",
+      "label": "Sonicate the mixture for 2 h",
+      "stage": "synthesis",
       "branch": "",
       "optional": false,
       "depends_on": [
@@ -192,6 +273,63 @@
       ],
       "inputs": [
         "zhao2017-acs-analchem-7b01558-mos2-qds-1--after-s01-reflux"
+      ],
+      "outputs": [
+        "zhao2017-acs-analchem-7b01558-mos2-qds-1--after-d2-s03-sonicate"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 2,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2 h",
+          "evidence": [
+            {
+              "source_id": "zhao2017-acs-analchem-7b01558",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Sonicate the mixture for 2 h",
+      "evidence": [
+        {
+          "source_id": "zhao2017-acs-analchem-7b01558",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s02-centrifuge",
+      "action": "centrifuge",
+      "label": "Centrifuge the mixture at 8000 rpm",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-sonicate"
+      ],
+      "inputs": [
+        "zhao2017-acs-analchem-7b01558-mos2-qds-1--after-d2-s03-sonicate"
       ],
       "outputs": [
         "zhao2017-acs-analchem-7b01558-mos2-qds-1--after-s02-centrifuge"
@@ -217,6 +355,63 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "d2-s05-dialyze",
+      "action": "dialyze",
+      "label": "Dialyze the supernatant against deionized water for 48 h",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-centrifuge"
+      ],
+      "inputs": [
+        "zhao2017-acs-analchem-7b01558-mos2-qds-1--after-s02-centrifuge"
+      ],
+      "outputs": [
+        "zhao2017-acs-analchem-7b01558-mos2-qds-1--after-d2-s05-dialyze"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 48,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "48 h",
+          "evidence": [
+            {
+              "source_id": "zhao2017-acs-analchem-7b01558",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dialyze the supernatant against deionized water for 48 h",
+      "evidence": [
+        {
+          "source_id": "zhao2017-acs-analchem-7b01558",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -225,7 +420,7 @@
       "sample_id": "zhao2017-acs-analchem-7b01558-mos2-qds-1--product",
       "source_sample_label": "MoS2 QDs",
       "batch_id": null,
-      "material_state_id": "zhao2017-acs-analchem-7b01558-mos2-qds-1--after-s02-centrifuge",
+      "material_state_id": "zhao2017-acs-analchem-7b01558-mos2-qds-1--after-d2-s05-dialyze",
       "parent_sample_id": null,
       "composition": {
         "value": "MoS2",
@@ -311,12 +506,76 @@
           "locator": "Main PDF p.4"
         }
       ]
+    },
+    {
+      "id": "zhao2017-acs-analchem-7b01558-mos2-qds-1--photoluminescence-peak",
+      "sample_id": "zhao2017-acs-analchem-7b01558-mos2-qds-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 456,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "456 nm",
+        "evidence": [
+          {
+            "source_id": "zhao2017-acs-analchem-7b01558",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "zhao2017-acs-analchem-7b01558",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    },
+    {
+      "id": "zhao2017-acs-analchem-7b01558-mos2-qds-1--photoluminescence-quantum-yield",
+      "sample_id": "zhao2017-acs-analchem-7b01558-mos2-qds-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 19,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "19 %",
+        "evidence": [
+          {
+            "source_id": "zhao2017-acs-analchem-7b01558",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "zhao2017-acs-analchem-7b01558",
+          "locator": "Main PDF p.1"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Reactor not reported in the extracted text.",

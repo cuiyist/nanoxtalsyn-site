@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Ziyi Jiang et al. (2025): CsPbBr3&CsPbBr1I2@glass@PET",
   "material": {
@@ -96,6 +96,139 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--cesium-carbonate",
+      "name": "cesium carbonate",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "jiang2025-acsami-5c17962",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--sodium-bromide",
+      "name": "sodium bromide",
+      "formula": null,
+      "role": "halide_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "jiang2025-acsami-5c17962",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--lead-hydroxide",
+      "name": "lead hydroxide",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "jiang2025-acsami-5c17962",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--cspbbr3",
+      "name": "CsPbBr3",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "jiang2025-acsami-5c17962",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--cspbbr1i2",
+      "name": "CsPbBr1I2",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "jiang2025-acsami-5c17962",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--uv-curable-adhesive",
+      "name": "UV-curable adhesive",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "jiang2025-acsami-5c17962",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--pet",
+      "name": "PET",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "jiang2025-acsami-5c17962",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -105,7 +238,10 @@
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": [
-        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--lanthanum-oxide"
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--lanthanum-oxide",
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--cesium-carbonate",
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--sodium-bromide",
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--lead-hydroxide"
       ]
     },
     {
@@ -114,7 +250,10 @@
       "kind": "reaction_batch",
       "parent_ids": [
         "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--after-s01-grind",
-        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--lanthanum-oxide"
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--lanthanum-oxide",
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--cesium-carbonate",
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--sodium-bromide",
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--lead-hydroxide"
       ]
     },
     {
@@ -123,7 +262,10 @@
       "kind": "reaction_batch",
       "parent_ids": [
         "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--after-s02-sinter",
-        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--lanthanum-oxide"
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--lanthanum-oxide",
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--cesium-carbonate",
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--sodium-bromide",
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--lead-hydroxide"
       ]
     },
     {
@@ -131,7 +273,10 @@
       "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
-        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--after-s03-quench"
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--after-s03-quench",
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--cspbbr3",
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--cspbbr1i2",
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--uv-curable-adhesive"
       ]
     },
     {
@@ -139,7 +284,11 @@
       "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
-        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--after-s04-mix"
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--after-s04-mix",
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--cspbbr3",
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--cspbbr1i2",
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--uv-curable-adhesive",
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--pet"
       ]
     },
     {
@@ -147,7 +296,11 @@
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--after-s05-coat"
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--after-s05-coat",
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--cspbbr3",
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--cspbbr1i2",
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--uv-curable-adhesive",
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--pet"
       ]
     }
   ],
@@ -161,7 +314,10 @@
       "optional": false,
       "depends_on": [],
       "inputs": [
-        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--lanthanum-oxide"
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--lanthanum-oxide",
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--cesium-carbonate",
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--sodium-bromide",
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--lead-hydroxide"
       ],
       "outputs": [
         "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--after-s01-grind"
@@ -200,7 +356,10 @@
       ],
       "inputs": [
         "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--after-s01-grind",
-        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--lanthanum-oxide"
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--lanthanum-oxide",
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--cesium-carbonate",
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--sodium-bromide",
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--lead-hydroxide"
       ],
       "outputs": [
         "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--after-s02-sinter"
@@ -276,7 +435,10 @@
       ],
       "inputs": [
         "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--after-s02-sinter",
-        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--lanthanum-oxide"
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--lanthanum-oxide",
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--cesium-carbonate",
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--sodium-bromide",
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--lead-hydroxide"
       ],
       "outputs": [
         "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--after-s03-quench"
@@ -314,7 +476,10 @@
         "s03-quench"
       ],
       "inputs": [
-        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--after-s03-quench"
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--after-s03-quench",
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--cspbbr3",
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--cspbbr1i2",
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--uv-curable-adhesive"
       ],
       "outputs": [
         "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--after-s04-mix"
@@ -352,7 +517,11 @@
         "s04-mix"
       ],
       "inputs": [
-        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--after-s04-mix"
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--after-s04-mix",
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--cspbbr3",
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--cspbbr1i2",
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--uv-curable-adhesive",
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--pet"
       ],
       "outputs": [
         "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--after-s05-coat"
@@ -390,7 +559,11 @@
         "s05-coat"
       ],
       "inputs": [
-        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--after-s05-coat"
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--after-s05-coat",
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--cspbbr3",
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--cspbbr1i2",
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--uv-curable-adhesive",
+        "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--pet"
       ],
       "outputs": [
         "jiang2025-acsami-5c17962-cspbbr3-cspbbr1i2-glass-pet-3--after-s06-cure"
@@ -488,7 +661,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
@@ -498,7 +671,14 @@
       "Atmosphere not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
-      "Amount of lanthanum oxide not reported in the extracted text."
+      "Amount of lanthanum oxide not reported in the extracted text.",
+      "Amount of cesium carbonate not reported in the extracted text.",
+      "Amount of sodium bromide not reported in the extracted text.",
+      "Amount of lead hydroxide not reported in the extracted text.",
+      "Amount of CsPbBr3 not reported in the extracted text.",
+      "Amount of CsPbBr1I2 not reported in the extracted text.",
+      "Amount of UV-curable adhesive not reported in the extracted text.",
+      "Amount of PET not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

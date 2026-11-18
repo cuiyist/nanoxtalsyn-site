@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "veprek1995-1-115107-nc-si-sio2-composite-doped-with-tungsten-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "S. Veprěk (1995): nc-Si/SiO2 composite doped with tungsten",
   "material": {
@@ -82,21 +82,59 @@
       "note": ""
     }
   },
-  "materials": [],
+  "materials": [
+    {
+      "id": "veprek1995-1-115107-nc-si-sio2-composite-doped-with-tungsten-1--silicon",
+      "name": "silicon",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "veprek1995-1-115107",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
   "stocks": [],
   "material_states": [
     {
       "id": "veprek1995-1-115107-nc-si-sio2-composite-doped-with-tungsten-1--after-s01-deposit",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "veprek1995-1-115107-nc-si-sio2-composite-doped-with-tungsten-1--silicon"
+      ]
+    },
+    {
+      "id": "veprek1995-1-115107-nc-si-sio2-composite-doped-with-tungsten-1--after-d2-s02-oxidize",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "veprek1995-1-115107-nc-si-sio2-composite-doped-with-tungsten-1--after-s01-deposit"
+      ]
+    },
+    {
+      "id": "veprek1995-1-115107-nc-si-sio2-composite-doped-with-tungsten-1--after-d2-s03-evaporate",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "veprek1995-1-115107-nc-si-sio2-composite-doped-with-tungsten-1--after-d2-s02-oxidize"
+      ]
     },
     {
       "id": "veprek1995-1-115107-nc-si-sio2-composite-doped-with-tungsten-1--after-s02-anneal",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "veprek1995-1-115107-nc-si-sio2-composite-doped-with-tungsten-1--after-s01-deposit"
+        "veprek1995-1-115107-nc-si-sio2-composite-doped-with-tungsten-1--after-d2-s03-evaporate"
       ]
     }
   ],
@@ -109,7 +147,9 @@
       "branch": "",
       "optional": false,
       "depends_on": [],
-      "inputs": [],
+      "inputs": [
+        "veprek1995-1-115107-nc-si-sio2-composite-doped-with-tungsten-1--silicon"
+      ],
       "outputs": [
         "veprek1995-1-115107-nc-si-sio2-composite-doped-with-tungsten-1--after-s01-deposit"
       ],
@@ -141,9 +181,9 @@
       ]
     },
     {
-      "id": "s02-anneal",
-      "action": "anneal",
-      "label": "Annealing in forming gas",
+      "id": "d2-s02-oxidize",
+      "action": "oxidize",
+      "label": "Films oxidized after deposition",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -152,6 +192,92 @@
       ],
       "inputs": [
         "veprek1995-1-115107-nc-si-sio2-composite-doped-with-tungsten-1--after-s01-deposit"
+      ],
+      "outputs": [
+        "veprek1995-1-115107-nc-si-sio2-composite-doped-with-tungsten-1--after-d2-s02-oxidize"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "forming gas",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "veprek1995-1-115107",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Films oxidized after deposition",
+      "evidence": [
+        {
+          "source_id": "veprek1995-1-115107",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s03-evaporate",
+      "action": "evaporate",
+      "label": "Tungsten oxide evaporated on film surface",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-oxidize"
+      ],
+      "inputs": [
+        "veprek1995-1-115107-nc-si-sio2-composite-doped-with-tungsten-1--after-d2-s02-oxidize"
+      ],
+      "outputs": [
+        "veprek1995-1-115107-nc-si-sio2-composite-doped-with-tungsten-1--after-d2-s03-evaporate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "forming gas",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "veprek1995-1-115107",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Tungsten oxide evaporated on film surface",
+      "evidence": [
+        {
+          "source_id": "veprek1995-1-115107",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-anneal",
+      "action": "anneal",
+      "label": "Annealing in forming gas",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-evaporate"
+      ],
+      "inputs": [
+        "veprek1995-1-115107-nc-si-sio2-composite-doped-with-tungsten-1--after-d2-s03-evaporate"
       ],
       "outputs": [
         "veprek1995-1-115107-nc-si-sio2-composite-doped-with-tungsten-1--after-s02-anneal"
@@ -305,14 +431,15 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
-      "Reaction time not reported in the extracted text."
+      "Reaction time not reported in the extracted text.",
+      "Amount of silicon not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

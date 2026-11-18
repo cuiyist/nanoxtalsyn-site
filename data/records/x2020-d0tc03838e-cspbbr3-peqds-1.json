@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "x2020-d0tc03838e-cspbbr3-peqds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "x2020-d0tc03838e (2020): CsPbBr3 PeQDs",
   "material": {
@@ -91,7 +91,65 @@
       "note": ""
     }
   },
-  "materials": [],
+  "materials": [
+    {
+      "id": "x2020-d0tc03838e-cspbbr3-peqds-1--cs",
+      "name": "Cs",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "x2020-d0tc03838e",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    },
+    {
+      "id": "x2020-d0tc03838e-cspbbr3-peqds-1--pb",
+      "name": "Pb",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "x2020-d0tc03838e",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    },
+    {
+      "id": "x2020-d0tc03838e-cspbbr3-peqds-1--br",
+      "name": "Br",
+      "formula": null,
+      "role": "nonmetal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "x2020-d0tc03838e",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    }
+  ],
   "stocks": [],
   "material_states": [
     {
@@ -102,10 +160,26 @@
     },
     {
       "id": "x2020-d0tc03838e-cspbbr3-peqds-1--after-s02-anneal",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "x2020-d0tc03838e-cspbbr3-peqds-1--after-s01-spin-coat"
+      ]
+    },
+    {
+      "id": "x2020-d0tc03838e-cspbbr3-peqds-1--after-d2-s03-wash",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "x2020-d0tc03838e-cspbbr3-peqds-1--after-s02-anneal"
+      ]
+    },
+    {
+      "id": "x2020-d0tc03838e-cspbbr3-peqds-1--after-d2-s04-spin",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "x2020-d0tc03838e-cspbbr3-peqds-1--after-s01-spin-coat"
+        "x2020-d0tc03838e-cspbbr3-peqds-1--after-d2-s03-wash"
       ]
     }
   ],
@@ -229,6 +303,87 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "d2-s03-wash",
+      "action": "wash",
+      "label": "PeQD film was washed with AcOEt to detach OA/OAm ligands",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-anneal"
+      ],
+      "inputs": [
+        "x2020-d0tc03838e-cspbbr3-peqds-1--after-s02-anneal"
+      ],
+      "outputs": [
+        "x2020-d0tc03838e-cspbbr3-peqds-1--after-d2-s03-wash"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "PeQD film was washed with AcOEt to detach OA/OAm ligands",
+      "evidence": [
+        {
+          "source_id": "x2020-d0tc03838e",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "d2-s04-spin",
+      "action": "spin",
+      "label": "PeQD film was spun to dry out the solvent",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-wash"
+      ],
+      "inputs": [
+        "x2020-d0tc03838e-cspbbr3-peqds-1--after-d2-s03-wash"
+      ],
+      "outputs": [
+        "x2020-d0tc03838e-cspbbr3-peqds-1--after-d2-s04-spin"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "x2020-d0tc03838e",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "PeQD film was spun to dry out the solvent",
+      "evidence": [
+        {
+          "source_id": "x2020-d0tc03838e",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -237,7 +392,7 @@
       "sample_id": "x2020-d0tc03838e-cspbbr3-peqds-1--product",
       "source_sample_label": "CsPbBr3 PeQDs",
       "batch_id": null,
-      "material_state_id": "x2020-d0tc03838e-cspbbr3-peqds-1--after-s02-anneal",
+      "material_state_id": "x2020-d0tc03838e-cspbbr3-peqds-1--after-d2-s04-spin",
       "parent_sample_id": null,
       "composition": {
         "value": "CsPbBr3",
@@ -328,14 +483,49 @@
           "locator": "Main PDF p.5"
         }
       ]
+    },
+    {
+      "id": "x2020-d0tc03838e-cspbbr3-peqds-1--photoluminescence-peak",
+      "sample_id": "x2020-d0tc03838e-cspbbr3-peqds-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 475,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "475 nm",
+        "evidence": [
+          {
+            "source_id": "x2020-d0tc03838e",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "x2020-d0tc03838e",
+          "locator": "Main PDF p.4"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
-      "Reactor not reported in the extracted text."
+      "Reactor not reported in the extracted text.",
+      "Amount of Cs not reported in the extracted text.",
+      "Amount of Pb not reported in the extracted text.",
+      "Amount of Br not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "al2012-nn205029s-pt-nanocrystal-superlattices-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Ileana Florea et al. (2012): Pt nanocrystal superlattices",
   "material": {
@@ -103,20 +103,85 @@
           "locator": "Main PDF p.7"
         }
       ]
+    },
+    {
+      "id": "al2012-nn205029s-pt-nanocrystal-superlattices-1--octylamine",
+      "name": "octylamine",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "al2012-nn205029s",
+          "locator": "Main PDF p.4"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
+      "id": "al2012-nn205029s-pt-nanocrystal-superlattices-1--after-d2-s01-deposit",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": []
+    },
+    {
       "id": "al2012-nn205029s-pt-nanocrystal-superlattices-1--after-s01-evaporate",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
+        "al2012-nn205029s-pt-nanocrystal-superlattices-1--after-d2-s01-deposit",
         "al2012-nn205029s-pt-nanocrystal-superlattices-1--toluene"
       ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-deposit",
+      "action": "deposit",
+      "label": "Deposit TEM copper grid with amorphous carbon at the bottom of a glass vial",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [],
+      "outputs": [
+        "al2012-nn205029s-pt-nanocrystal-superlattices-1--after-d2-s01-deposit"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "al2012-nn205029s",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Deposit TEM copper grid with amorphous carbon at the bottom of a glass vial",
+      "evidence": [
+        {
+          "source_id": "al2012-nn205029s",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
     {
       "id": "s01-evaporate",
       "action": "evaporate",
@@ -124,8 +189,11 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
+      "depends_on": [
+        "d2-s01-deposit"
+      ],
       "inputs": [
+        "al2012-nn205029s-pt-nanocrystal-superlattices-1--after-d2-s01-deposit",
         "al2012-nn205029s-pt-nanocrystal-superlattices-1--toluene"
       ],
       "outputs": [
@@ -247,11 +315,12 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Size not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
-      "Amount of toluene not reported in the extracted text."
+      "Amount of toluene not reported in the extracted text.",
+      "Amount of octylamine not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "salikhova2025-chemrxiv-2025-hgkl3-ultra-large-inas-qds-seedless-growth-4",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Ekaterina Salikhova; Alf Mews; Jan Steffen Niehaus (2025): Ultra-large InAs QDs (seedless growth)",
   "material": {
@@ -104,15 +104,45 @@
           "locator": "Main PDF p.9"
         }
       ]
+    },
+    {
+      "id": "salikhova2025-chemrxiv-2025-hgkl3-ultra-large-inas-qds-seedless-growth-4--oleylamine",
+      "name": "Oleylamine",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "salikhova2025-chemrxiv-2025-hgkl3",
+          "locator": "Main PDF p.9"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
-      "id": "salikhova2025-chemrxiv-2025-hgkl3-ultra-large-inas-qds-seedless-growth-4--after-s01-inject",
+      "id": "salikhova2025-chemrxiv-2025-hgkl3-ultra-large-inas-qds-seedless-growth-4--after-d2-s01-load",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "salikhova2025-chemrxiv-2025-hgkl3-ultra-large-inas-qds-seedless-growth-4--oleylamine",
+        "salikhova2025-chemrxiv-2025-hgkl3-ultra-large-inas-qds-seedless-growth-4--tri-n-octylphosphine"
+      ]
+    },
+    {
+      "id": "salikhova2025-chemrxiv-2025-hgkl3-ultra-large-inas-qds-seedless-growth-4--after-s01-inject",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "salikhova2025-chemrxiv-2025-hgkl3-ultra-large-inas-qds-seedless-growth-4--after-d2-s01-load"
+      ]
     },
     {
       "id": "salikhova2025-chemrxiv-2025-hgkl3-ultra-large-inas-qds-seedless-growth-4--after-s02-anneal",
@@ -125,14 +155,60 @@
   ],
   "operations": [
     {
+      "id": "d2-s01-load",
+      "action": "load",
+      "label": "Loading the OAm-TOP solution into the flask",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "salikhova2025-chemrxiv-2025-hgkl3-ultra-large-inas-qds-seedless-growth-4--oleylamine",
+        "salikhova2025-chemrxiv-2025-hgkl3-ultra-large-inas-qds-seedless-growth-4--tri-n-octylphosphine"
+      ],
+      "outputs": [
+        "salikhova2025-chemrxiv-2025-hgkl3-ultra-large-inas-qds-seedless-growth-4--after-d2-s01-load"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "salikhova2025-chemrxiv-2025-hgkl3",
+            "locator": "Main PDF p.12"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Loading the OAm-TOP solution into the flask",
+      "evidence": [
+        {
+          "source_id": "salikhova2025-chemrxiv-2025-hgkl3",
+          "locator": "Main PDF p.9"
+        }
+      ]
+    },
+    {
       "id": "s01-inject",
       "action": "inject",
       "label": "Injecting cluster solution",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s01-load"
+      ],
+      "inputs": [
+        "salikhova2025-chemrxiv-2025-hgkl3-ultra-large-inas-qds-seedless-growth-4--after-d2-s01-load"
+      ],
       "outputs": [
         "salikhova2025-chemrxiv-2025-hgkl3-ultra-large-inas-qds-seedless-growth-4--after-s01-inject"
       ],
@@ -315,10 +391,11 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Size not reported in the extracted text.",
-      "Amount of Tri-n-octylphosphine not reported in the extracted text."
+      "Amount of Tri-n-octylphosphine not reported in the extracted text.",
+      "Amount of Oleylamine not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "qiu2004-b314397j-mwcnts-decorated-with-tin-nanoparticles-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Longhui Qiu (2004): MWCNTs decorated with tin nanoparticles",
   "material": {
@@ -89,14 +89,75 @@
       "note": ""
     }
   },
-  "materials": [],
+  "materials": [
+    {
+      "id": "qiu2004-b314397j-mwcnts-decorated-with-tin-nanoparticles-1--mwcnts",
+      "name": "MWCNTs",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "qiu2004-b314397j",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "qiu2004-b314397j-mwcnts-decorated-with-tin-nanoparticles-1--nitrogen",
+      "name": "nitrogen",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "qiu2004-b314397j",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "qiu2004-b314397j-mwcnts-decorated-with-tin-nanoparticles-1--hno3",
+      "name": "HNO3",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "qiu2004-b314397j",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    }
+  ],
   "stocks": [],
   "material_states": [
     {
       "id": "qiu2004-b314397j-mwcnts-decorated-with-tin-nanoparticles-1--after-s01-reflux",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "qiu2004-b314397j-mwcnts-decorated-with-tin-nanoparticles-1--mwcnts",
+        "qiu2004-b314397j-mwcnts-decorated-with-tin-nanoparticles-1--hno3"
+      ]
     },
     {
       "id": "qiu2004-b314397j-mwcnts-decorated-with-tin-nanoparticles-1--after-s02-centrifuge",
@@ -172,7 +233,10 @@
       "branch": "",
       "optional": false,
       "depends_on": [],
-      "inputs": [],
+      "inputs": [
+        "qiu2004-b314397j-mwcnts-decorated-with-tin-nanoparticles-1--mwcnts",
+        "qiu2004-b314397j-mwcnts-decorated-with-tin-nanoparticles-1--hno3"
+      ],
       "outputs": [
         "qiu2004-b314397j-mwcnts-decorated-with-tin-nanoparticles-1--after-s01-reflux"
       ],
@@ -728,11 +792,14 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
-      "Reaction temperature not reported in the extracted text."
+      "Reaction temperature not reported in the extracted text.",
+      "Amount of MWCNTs not reported in the extracted text.",
+      "Amount of nitrogen not reported in the extracted text.",
+      "Amount of HNO3 not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

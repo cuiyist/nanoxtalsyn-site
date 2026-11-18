@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "jiang2025-acsami-5c17962-cspbbr3-glass-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Ziyi Jiang et al. (2025): CsPbBr3@glass",
   "material": {
@@ -91,21 +91,86 @@
       "note": ""
     }
   },
-  "materials": [],
+  "materials": [
+    {
+      "id": "jiang2025-acsami-5c17962-cspbbr3-glass-1--cesium-carbonate",
+      "name": "cesium carbonate",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "jiang2025-acsami-5c17962",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "jiang2025-acsami-5c17962-cspbbr3-glass-1--sodium-bromide",
+      "name": "sodium bromide",
+      "formula": null,
+      "role": "halide_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "jiang2025-acsami-5c17962",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "jiang2025-acsami-5c17962-cspbbr3-glass-1--lead-hydroxide",
+      "name": "lead hydroxide",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "jiang2025-acsami-5c17962",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
   "stocks": [],
   "material_states": [
     {
       "id": "jiang2025-acsami-5c17962-cspbbr3-glass-1--after-s01-sinter",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "jiang2025-acsami-5c17962-cspbbr3-glass-1--cesium-carbonate",
+        "jiang2025-acsami-5c17962-cspbbr3-glass-1--sodium-bromide",
+        "jiang2025-acsami-5c17962-cspbbr3-glass-1--lead-hydroxide"
+      ]
     },
     {
       "id": "jiang2025-acsami-5c17962-cspbbr3-glass-1--after-s02-quench",
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
-        "jiang2025-acsami-5c17962-cspbbr3-glass-1--after-s01-sinter"
+        "jiang2025-acsami-5c17962-cspbbr3-glass-1--after-s01-sinter",
+        "jiang2025-acsami-5c17962-cspbbr3-glass-1--cesium-carbonate",
+        "jiang2025-acsami-5c17962-cspbbr3-glass-1--sodium-bromide",
+        "jiang2025-acsami-5c17962-cspbbr3-glass-1--lead-hydroxide"
       ]
     },
     {
@@ -113,7 +178,10 @@
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "jiang2025-acsami-5c17962-cspbbr3-glass-1--after-s02-quench"
+        "jiang2025-acsami-5c17962-cspbbr3-glass-1--after-s02-quench",
+        "jiang2025-acsami-5c17962-cspbbr3-glass-1--cesium-carbonate",
+        "jiang2025-acsami-5c17962-cspbbr3-glass-1--sodium-bromide",
+        "jiang2025-acsami-5c17962-cspbbr3-glass-1--lead-hydroxide"
       ]
     }
   ],
@@ -126,7 +194,11 @@
       "branch": "",
       "optional": false,
       "depends_on": [],
-      "inputs": [],
+      "inputs": [
+        "jiang2025-acsami-5c17962-cspbbr3-glass-1--cesium-carbonate",
+        "jiang2025-acsami-5c17962-cspbbr3-glass-1--sodium-bromide",
+        "jiang2025-acsami-5c17962-cspbbr3-glass-1--lead-hydroxide"
+      ],
       "outputs": [
         "jiang2025-acsami-5c17962-cspbbr3-glass-1--after-s01-sinter"
       ],
@@ -205,7 +277,10 @@
         "s01-sinter"
       ],
       "inputs": [
-        "jiang2025-acsami-5c17962-cspbbr3-glass-1--after-s01-sinter"
+        "jiang2025-acsami-5c17962-cspbbr3-glass-1--after-s01-sinter",
+        "jiang2025-acsami-5c17962-cspbbr3-glass-1--cesium-carbonate",
+        "jiang2025-acsami-5c17962-cspbbr3-glass-1--sodium-bromide",
+        "jiang2025-acsami-5c17962-cspbbr3-glass-1--lead-hydroxide"
       ],
       "outputs": [
         "jiang2025-acsami-5c17962-cspbbr3-glass-1--after-s02-quench"
@@ -248,7 +323,10 @@
         "s02-quench"
       ],
       "inputs": [
-        "jiang2025-acsami-5c17962-cspbbr3-glass-1--after-s02-quench"
+        "jiang2025-acsami-5c17962-cspbbr3-glass-1--after-s02-quench",
+        "jiang2025-acsami-5c17962-cspbbr3-glass-1--cesium-carbonate",
+        "jiang2025-acsami-5c17962-cspbbr3-glass-1--sodium-bromide",
+        "jiang2025-acsami-5c17962-cspbbr3-glass-1--lead-hydroxide"
       ],
       "outputs": [
         "jiang2025-acsami-5c17962-cspbbr3-glass-1--after-s03-grind"
@@ -398,13 +476,49 @@
           "locator": "Main PDF p.6"
         }
       ]
+    },
+    {
+      "id": "jiang2025-acsami-5c17962-cspbbr3-glass-1--photoluminescence-quantum-yield",
+      "sample_id": "jiang2025-acsami-5c17962-cspbbr3-glass-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 58,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "58 %",
+        "evidence": [
+          {
+            "source_id": "jiang2025-acsami-5c17962",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "jiang2025-acsami-5c17962",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
-    "missing_fields": [],
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
+    "missing_fields": [
+      "Amount of cesium carbonate not reported in the extracted text.",
+      "Amount of sodium bromide not reported in the extracted text.",
+      "Amount of lead hydroxide not reported in the extracted text."
+    ],
     "conflicts": [],
     "requested_tasks": [],
     "experimental_outcome": "reported_product"

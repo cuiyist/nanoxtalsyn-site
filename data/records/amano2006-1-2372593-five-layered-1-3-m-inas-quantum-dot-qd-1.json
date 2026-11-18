@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "amano2006-1-2372593-five-layered-1-3-m-inas-quantum-dot-qd-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Takeru Amano et al. (2006): five-layered 1.3 μm InAs quantum dot (QD)",
   "material": {
@@ -39,9 +39,14 @@
   },
   "intended_target": {
     "composition": {
-      "value": null,
-      "status": "not_reported",
-      "evidence": [],
+      "value": "InAs",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "amano2006-1-2372593",
+          "locator": "Main PDF p.2"
+        }
+      ],
       "note": ""
     },
     "phase": {
@@ -89,6 +94,25 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "amano2006-1-2372593-five-layered-1-3-m-inas-quantum-dot-qd-1--gaas",
+      "name": "GaAs",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "amano2006-1-2372593",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -97,7 +121,9 @@
       "id": "amano2006-1-2372593-five-layered-1-3-m-inas-quantum-dot-qd-1--after-s01-grow",
       "name": "product as isolated",
       "kind": "product",
-      "parent_ids": []
+      "parent_ids": [
+        "amano2006-1-2372593-five-layered-1-3-m-inas-quantum-dot-qd-1--gaas"
+      ]
     }
   ],
   "operations": [
@@ -109,7 +135,9 @@
       "branch": "",
       "optional": false,
       "depends_on": [],
-      "inputs": [],
+      "inputs": [
+        "amano2006-1-2372593-five-layered-1-3-m-inas-quantum-dot-qd-1--gaas"
+      ],
       "outputs": [
         "amano2006-1-2372593-five-layered-1-3-m-inas-quantum-dot-qd-1--after-s01-grow"
       ],
@@ -164,9 +192,14 @@
       "material_state_id": "amano2006-1-2372593-five-layered-1-3-m-inas-quantum-dot-qd-1--after-s01-grow",
       "parent_sample_id": null,
       "composition": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "InAs",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "amano2006-1-2372593",
+            "locator": "Main PDF p.2"
+          }
+        ],
         "note": ""
       },
       "phase": {
@@ -203,7 +236,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
@@ -212,7 +245,8 @@
       "Reactor not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
-      "Amount of InGaAs not reported in the extracted text."
+      "Amount of InGaAs not reported in the extracted text.",
+      "Amount of GaAs not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

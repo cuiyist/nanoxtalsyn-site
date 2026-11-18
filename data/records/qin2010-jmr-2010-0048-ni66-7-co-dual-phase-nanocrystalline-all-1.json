@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "qin2010-jmr-2010-0048-ni66-7-co-dual-phase-nanocrystalline-all-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Liyuan Qin (2010): Ni–66.7%Co dual-phase nanocrystalline alloy",
   "material": {
@@ -99,6 +99,63 @@
           "locator": "Main PDF p.1"
         }
       ]
+    },
+    {
+      "id": "qin2010-jmr-2010-0048-ni66-7-co-dual-phase-nanocrystalline-all-1--cobalt-sulfate",
+      "name": "cobalt sulfate",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "qin2010-jmr-2010-0048",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "qin2010-jmr-2010-0048-ni66-7-co-dual-phase-nanocrystalline-all-1--boric-acid",
+      "name": "boric acid",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "qin2010-jmr-2010-0048",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "qin2010-jmr-2010-0048-ni66-7-co-dual-phase-nanocrystalline-all-1--additives",
+      "name": "additives",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "qin2010-jmr-2010-0048",
+          "locator": "Main PDF p.1"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -108,7 +165,10 @@
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "qin2010-jmr-2010-0048-ni66-7-co-dual-phase-nanocrystalline-all-1--nickel-sulfate"
+        "qin2010-jmr-2010-0048-ni66-7-co-dual-phase-nanocrystalline-all-1--nickel-sulfate",
+        "qin2010-jmr-2010-0048-ni66-7-co-dual-phase-nanocrystalline-all-1--cobalt-sulfate",
+        "qin2010-jmr-2010-0048-ni66-7-co-dual-phase-nanocrystalline-all-1--boric-acid",
+        "qin2010-jmr-2010-0048-ni66-7-co-dual-phase-nanocrystalline-all-1--additives"
       ]
     }
   ],
@@ -122,7 +182,10 @@
       "optional": false,
       "depends_on": [],
       "inputs": [
-        "qin2010-jmr-2010-0048-ni66-7-co-dual-phase-nanocrystalline-all-1--nickel-sulfate"
+        "qin2010-jmr-2010-0048-ni66-7-co-dual-phase-nanocrystalline-all-1--nickel-sulfate",
+        "qin2010-jmr-2010-0048-ni66-7-co-dual-phase-nanocrystalline-all-1--cobalt-sulfate",
+        "qin2010-jmr-2010-0048-ni66-7-co-dual-phase-nanocrystalline-all-1--boric-acid",
+        "qin2010-jmr-2010-0048-ni66-7-co-dual-phase-nanocrystalline-all-1--additives"
       ],
       "outputs": [
         "qin2010-jmr-2010-0048-ni66-7-co-dual-phase-nanocrystalline-all-1--after-s01-electrodeposit"
@@ -234,7 +297,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
@@ -243,7 +306,10 @@
       "Atmosphere not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
-      "Amount of nickel sulfate not reported in the extracted text."
+      "Amount of nickel sulfate not reported in the extracted text.",
+      "Amount of cobalt sulfate not reported in the extracted text.",
+      "Amount of boric acid not reported in the extracted text.",
+      "Amount of additives not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

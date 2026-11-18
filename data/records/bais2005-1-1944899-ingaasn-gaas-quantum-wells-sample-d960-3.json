@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "bais2005-1-1944899-ingaasn-gaas-quantum-wells-sample-d960-3",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "G. Bais et al. (2005): InGaAsN/GaAs quantum wells (Sample D960)",
   "material": {
@@ -73,21 +73,84 @@
       "note": ""
     }
   },
-  "materials": [],
+  "materials": [
+    {
+      "id": "bais2005-1-1944899-ingaasn-gaas-quantum-wells-sample-d960-3--gaas",
+      "name": "GaAs",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "bais2005-1-1944899",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "bais2005-1-1944899-ingaasn-gaas-quantum-wells-sample-d960-3--ingaasn",
+      "name": "InGaAsN",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "bais2005-1-1944899",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "bais2005-1-1944899-ingaasn-gaas-quantum-wells-sample-d960-3--n2-ar",
+      "name": "N2/Ar",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "bais2005-1-1944899",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
   "stocks": [],
   "material_states": [
     {
       "id": "bais2005-1-1944899-ingaasn-gaas-quantum-wells-sample-d960-3--after-s01-grow",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "bais2005-1-1944899-ingaasn-gaas-quantum-wells-sample-d960-3--gaas"
+      ]
     },
     {
       "id": "bais2005-1-1944899-ingaasn-gaas-quantum-wells-sample-d960-3--after-s02-grow",
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
-        "bais2005-1-1944899-ingaasn-gaas-quantum-wells-sample-d960-3--after-s01-grow"
+        "bais2005-1-1944899-ingaasn-gaas-quantum-wells-sample-d960-3--after-s01-grow",
+        "bais2005-1-1944899-ingaasn-gaas-quantum-wells-sample-d960-3--gaas",
+        "bais2005-1-1944899-ingaasn-gaas-quantum-wells-sample-d960-3--ingaasn",
+        "bais2005-1-1944899-ingaasn-gaas-quantum-wells-sample-d960-3--n2-ar"
       ]
     },
     {
@@ -116,7 +179,9 @@
       "branch": "",
       "optional": false,
       "depends_on": [],
-      "inputs": [],
+      "inputs": [
+        "bais2005-1-1944899-ingaasn-gaas-quantum-wells-sample-d960-3--gaas"
+      ],
       "outputs": [
         "bais2005-1-1944899-ingaasn-gaas-quantum-wells-sample-d960-3--after-s01-grow"
       ],
@@ -172,7 +237,10 @@
         "s01-grow"
       ],
       "inputs": [
-        "bais2005-1-1944899-ingaasn-gaas-quantum-wells-sample-d960-3--after-s01-grow"
+        "bais2005-1-1944899-ingaasn-gaas-quantum-wells-sample-d960-3--after-s01-grow",
+        "bais2005-1-1944899-ingaasn-gaas-quantum-wells-sample-d960-3--gaas",
+        "bais2005-1-1944899-ingaasn-gaas-quantum-wells-sample-d960-3--ingaasn",
+        "bais2005-1-1944899-ingaasn-gaas-quantum-wells-sample-d960-3--n2-ar"
       ],
       "outputs": [
         "bais2005-1-1944899-ingaasn-gaas-quantum-wells-sample-d960-3--after-s02-grow"
@@ -380,7 +448,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
@@ -388,7 +456,10 @@
       "Size not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
-      "Reaction time not reported in the extracted text."
+      "Reaction time not reported in the extracted text.",
+      "Amount of GaAs not reported in the extracted text.",
+      "Amount of InGaAsN not reported in the extracted text.",
+      "Amount of N2/Ar not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

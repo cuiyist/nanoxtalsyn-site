@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "feng2005-s10853-005-1238-y-ha8-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "WANG FENG (2005): HA8",
   "material": {
@@ -92,18 +92,65 @@
       "note": ""
     }
   },
-  "materials": [],
+  "materials": [
+    {
+      "id": "feng2005-s10853-005-1238-y-ha8-1--k2hpo43h2o",
+      "name": "K2HPO4·3H2O",
+      "formula": null,
+      "role": "nonmetal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "feng2005-s10853-005-1238-y",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "feng2005-s10853-005-1238-y-ha8-1--cacl2",
+      "name": "CaCl2",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "feng2005-s10853-005-1238-y",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    }
+  ],
   "stocks": [],
   "material_states": [
     {
-      "id": "feng2005-s10853-005-1238-y-ha8-1--after-s01-filter",
+      "id": "feng2005-s10853-005-1238-y-ha8-1--after-d2-s01-heat",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": []
     },
     {
-      "id": "feng2005-s10853-005-1238-y-ha8-1--after-s02-dry",
+      "id": "feng2005-s10853-005-1238-y-ha8-1--after-s01-filter",
       "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "feng2005-s10853-005-1238-y-ha8-1--after-d2-s01-heat"
+      ]
+    },
+    {
+      "id": "feng2005-s10853-005-1238-y-ha8-1--after-s02-dry",
+      "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
         "feng2005-s10853-005-1238-y-ha8-1--after-s01-filter"
@@ -120,14 +167,94 @@
   ],
   "operations": [
     {
+      "id": "d2-s01-heat",
+      "action": "heat",
+      "label": "Keep at 37°C for 8 days",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [],
+      "outputs": [
+        "feng2005-s10853-005-1238-y-ha8-1--after-d2-s01-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 37,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "37 °C",
+          "evidence": [
+            {
+              "source_id": "feng2005-s10853-005-1238-y",
+              "locator": "Main PDF p.1"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 8,
+          "minimum": null,
+          "maximum": null,
+          "unit": "d",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "8 days",
+          "evidence": [
+            {
+              "source_id": "feng2005-s10853-005-1238-y",
+              "locator": "Main PDF p.1"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "feng2005-s10853-005-1238-y",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Keep at 37°C for 8 days",
+      "evidence": [
+        {
+          "source_id": "feng2005-s10853-005-1238-y",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
       "id": "s01-filter",
       "action": "filter",
       "label": "Filtrate and wash depositions six times with deionized water",
       "stage": "workup",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s01-heat"
+      ],
+      "inputs": [
+        "feng2005-s10853-005-1238-y-ha8-1--after-d2-s01-heat"
+      ],
       "outputs": [
         "feng2005-s10853-005-1238-y-ha8-1--after-s01-filter"
       ],
@@ -370,9 +497,11 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
-      "Ligand not reported in the extracted text."
+      "Ligand not reported in the extracted text.",
+      "Amount of K2HPO4·3H2O not reported in the extracted text.",
+      "Amount of CaCl2 not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

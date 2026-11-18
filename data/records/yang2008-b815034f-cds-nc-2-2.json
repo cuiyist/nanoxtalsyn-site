@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "yang2008-b815034f-cds-nc-2-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "ShengYang Yang (2008): CdS NC-2",
   "material": {
@@ -85,17 +85,146 @@
       "note": ""
     }
   },
-  "materials": [],
+  "materials": [
+    {
+      "id": "yang2008-b815034f-cds-nc-2-2--cd-ch3coo-2-h2o",
+      "name": "Cd(CH3COO)2$H2O",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "yang2008-b815034f",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "yang2008-b815034f-cds-nc-2-2--na2s-9h2o",
+      "name": "Na2S$9H2O",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "yang2008-b815034f",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "yang2008-b815034f-cds-nc-2-2--butyl-acrylate-ba",
+      "name": "Butyl acrylate (BA)",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "yang2008-b815034f",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "yang2008-b815034f-cds-nc-2-2--aibn",
+      "name": "AIBN",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "yang2008-b815034f",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
   "stocks": [],
   "material_states": [
     {
+      "id": "yang2008-b815034f-cds-nc-2-2--after-d2-s01-precipitate",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": []
+    },
+    {
       "id": "yang2008-b815034f-cds-nc-2-2--after-s01-add",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "yang2008-b815034f-cds-nc-2-2--after-d2-s01-precipitate",
+        "yang2008-b815034f-cds-nc-2-2--na2s-9h2o"
+      ]
+    },
+    {
+      "id": "yang2008-b815034f-cds-nc-2-2--after-d2-s03-heat",
       "name": "product as isolated",
       "kind": "product",
-      "parent_ids": []
+      "parent_ids": [
+        "yang2008-b815034f-cds-nc-2-2--after-s01-add",
+        "yang2008-b815034f-cds-nc-2-2--aibn"
+      ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-precipitate",
+      "action": "precipitate",
+      "label": "Precipitate PMAA-b-PBA in diethyl ether",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [],
+      "outputs": [
+        "yang2008-b815034f-cds-nc-2-2--after-d2-s01-precipitate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Precipitate PMAA-b-PBA in diethyl ether",
+      "evidence": [
+        {
+          "source_id": "yang2008-b815034f",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
     {
       "id": "s01-add",
       "action": "add",
@@ -103,8 +232,13 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s01-precipitate"
+      ],
+      "inputs": [
+        "yang2008-b815034f-cds-nc-2-2--after-d2-s01-precipitate",
+        "yang2008-b815034f-cds-nc-2-2--na2s-9h2o"
+      ],
       "outputs": [
         "yang2008-b815034f-cds-nc-2-2--after-s01-add"
       ],
@@ -129,6 +263,82 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s03-heat",
+      "action": "heat",
+      "label": "Heat under nitrogen atmosphere for cross-linking",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-add"
+      ],
+      "inputs": [
+        "yang2008-b815034f-cds-nc-2-2--after-s01-add",
+        "yang2008-b815034f-cds-nc-2-2--aibn"
+      ],
+      "outputs": [
+        "yang2008-b815034f-cds-nc-2-2--after-d2-s03-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 75,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "75 °C",
+          "evidence": [
+            {
+              "source_id": "yang2008-b815034f",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 4,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "4 h",
+          "evidence": [
+            {
+              "source_id": "yang2008-b815034f",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heat under nitrogen atmosphere for cross-linking",
+      "evidence": [
+        {
+          "source_id": "yang2008-b815034f",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -137,7 +347,7 @@
       "sample_id": "yang2008-b815034f-cds-nc-2-2--product",
       "source_sample_label": "CdS NC-2",
       "batch_id": null,
-      "material_state_id": "yang2008-b815034f-cds-nc-2-2--after-s01-add",
+      "material_state_id": "yang2008-b815034f-cds-nc-2-2--after-d2-s03-heat",
       "parent_sample_id": null,
       "composition": {
         "value": "CdS",
@@ -193,17 +403,54 @@
       "notes": []
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "yang2008-b815034f-cds-nc-2-2--photoluminescence-quantum-yield",
+      "sample_id": "yang2008-b815034f-cds-nc-2-2--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 2,
+        "minimum": null,
+        "maximum": null,
+        "unit": "fold",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "2 fold",
+        "evidence": [
+          {
+            "source_id": "yang2008-b815034f",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "yang2008-b815034f",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Size not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
-      "Reaction time not reported in the extracted text."
+      "Reaction time not reported in the extracted text.",
+      "Amount of Cd(CH3COO)2$H2O not reported in the extracted text.",
+      "Amount of Na2S$9H2O not reported in the extracted text.",
+      "Amount of Butyl acrylate (BA) not reported in the extracted text.",
+      "Amount of AIBN not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

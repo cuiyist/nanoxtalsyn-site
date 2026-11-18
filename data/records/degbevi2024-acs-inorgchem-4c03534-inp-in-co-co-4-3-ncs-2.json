@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "degbevi2024-acs-inorgchem-4c03534-inp-in-co-co-4-3-ncs-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Mawuli Degbevi; Jonathan T. Stoffel; Emily Y. Tsui (2024): InP-In[Co(CO)4]3 NCs",
   "material": {
@@ -134,11 +134,19 @@
   "material_states": [
     {
       "id": "degbevi2024-acs-inorgchem-4c03534-inp-in-co-co-4-3-ncs-2--after-s01-heat",
-      "name": "product as isolated",
-      "kind": "product",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
       "parent_ids": [
         "degbevi2024-acs-inorgchem-4c03534-inp-in-co-co-4-3-ncs-2--inp-incl3-ncs",
         "degbevi2024-acs-inorgchem-4c03534-inp-in-co-co-4-3-ncs-2--et3sico-co-4"
+      ]
+    },
+    {
+      "id": "degbevi2024-acs-inorgchem-4c03534-inp-in-co-co-4-3-ncs-2--after-d2-s02-purify",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "degbevi2024-acs-inorgchem-4c03534-inp-in-co-co-4-3-ncs-2--after-s01-heat"
       ]
     }
   ],
@@ -221,6 +229,44 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s02-purify",
+      "action": "purify",
+      "label": "Purify the reaction mixture by GPC",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-heat"
+      ],
+      "inputs": [
+        "degbevi2024-acs-inorgchem-4c03534-inp-in-co-co-4-3-ncs-2--after-s01-heat"
+      ],
+      "outputs": [
+        "degbevi2024-acs-inorgchem-4c03534-inp-in-co-co-4-3-ncs-2--after-d2-s02-purify"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Purify the reaction mixture by GPC",
+      "evidence": [
+        {
+          "source_id": "degbevi2024-acs-inorgchem-4c03534",
+          "locator": "Main PDF p.8"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -229,7 +275,7 @@
       "sample_id": "degbevi2024-acs-inorgchem-4c03534-inp-in-co-co-4-3-ncs-2--product",
       "source_sample_label": "InP-In[Co(CO)4]3 NCs",
       "batch_id": null,
-      "material_state_id": "degbevi2024-acs-inorgchem-4c03534-inp-in-co-co-4-3-ncs-2--after-s01-heat",
+      "material_state_id": "degbevi2024-acs-inorgchem-4c03534-inp-in-co-co-4-3-ncs-2--after-d2-s02-purify",
       "parent_sample_id": null,
       "composition": {
         "value": "InP",
@@ -321,12 +367,44 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "degbevi2024-acs-inorgchem-4c03534-inp-in-co-co-4-3-ncs-2--photoluminescence-quantum-yield",
+      "sample_id": "degbevi2024-acs-inorgchem-4c03534-inp-in-co-co-4-3-ncs-2--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 5,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "5 %",
+        "evidence": [
+          {
+            "source_id": "degbevi2024-acs-inorgchem-4c03534",
+            "locator": "Main PDF p.8"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "degbevi2024-acs-inorgchem-4c03534",
+          "locator": "Main PDF p.8"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Amount of InP-InCl3 NCs not reported in the extracted text.",
       "Amount of Et3SiCo(CO)4 not reported in the extracted text."

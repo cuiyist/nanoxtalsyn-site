@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "bostedt2004-1-1828238-germanium-nanocrystals-1-6-nm-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "C. Bostedt; T. van Buuren; T. M. Willey; L. J. Terminello (2004): germanium nanocrystals (1.6 nm)",
   "material": {
@@ -104,10 +104,18 @@
   "material_states": [
     {
       "id": "bostedt2004-1-1828238-germanium-nanocrystals-1-6-nm-1--after-s01-condense",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "bostedt2004-1-1828238-germanium-nanocrystals-1-6-nm-1--ge-vapor"
+      ]
+    },
+    {
+      "id": "bostedt2004-1-1828238-germanium-nanocrystals-1-6-nm-1--after-d2-s02-deposit",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "bostedt2004-1-1828238-germanium-nanocrystals-1-6-nm-1--ge-vapor"
+        "bostedt2004-1-1828238-germanium-nanocrystals-1-6-nm-1--after-s01-condense"
       ]
     }
   ],
@@ -152,6 +160,49 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s02-deposit",
+      "action": "deposit",
+      "label": "Deposit on HF-etched silicon substrates",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-condense"
+      ],
+      "inputs": [
+        "bostedt2004-1-1828238-germanium-nanocrystals-1-6-nm-1--after-s01-condense"
+      ],
+      "outputs": [
+        "bostedt2004-1-1828238-germanium-nanocrystals-1-6-nm-1--after-d2-s02-deposit"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "He",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "bostedt2004-1-1828238",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Deposit on HF-etched silicon substrates",
+      "evidence": [
+        {
+          "source_id": "bostedt2004-1-1828238",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -160,7 +211,7 @@
       "sample_id": "bostedt2004-1-1828238-germanium-nanocrystals-1-6-nm-1--product",
       "source_sample_label": "germanium nanocrystals (1.6 nm)",
       "batch_id": null,
-      "material_state_id": "bostedt2004-1-1828238-germanium-nanocrystals-1-6-nm-1--after-s01-condense",
+      "material_state_id": "bostedt2004-1-1828238-germanium-nanocrystals-1-6-nm-1--after-d2-s02-deposit",
       "parent_sample_id": null,
       "composition": {
         "value": "Ge",
@@ -243,7 +294,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",

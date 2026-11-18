@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "hu2026-s41467-026-71288-0-lt-ncs-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Xudong Hu; Zhicheng Wang; Simil Thomas; Issatay Nadinov; Qiuting Cai; Xingliang Dai; Zhigao Huang; Yue Wang; Jialong Gong; Ye Wu; Renqian Zhou; Yuanfan Wen; Jian-Xin Wang; Haibo Zeng; Osman M. Bakr; Husam N. Alshareef; Xiaoming Li; Omar F. Mohammed (2026): LT-NCs",
   "material": {
@@ -81,7 +81,141 @@
       "note": ""
     }
   },
-  "materials": [],
+  "materials": [
+    {
+      "id": "hu2026-s41467-026-71288-0-lt-ncs-1--pb-ac-2-3h2o",
+      "name": "Pb(Ac)2 3H2O",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "hu2026-s41467-026-71288-0",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "hu2026-s41467-026-71288-0-lt-ncs-1--csac",
+      "name": "CsAc",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "hu2026-s41467-026-71288-0",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "hu2026-s41467-026-71288-0-lt-ncs-1--meoh",
+      "name": "MeOH",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "hu2026-s41467-026-71288-0",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "hu2026-s41467-026-71288-0-lt-ncs-1--octa",
+      "name": "OctA",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "hu2026-s41467-026-71288-0",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "hu2026-s41467-026-71288-0-lt-ncs-1--hex",
+      "name": "HEX",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "hu2026-s41467-026-71288-0",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    },
+    {
+      "id": "hu2026-s41467-026-71288-0-lt-ncs-1--ea",
+      "name": "EA",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "hu2026-s41467-026-71288-0",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    },
+    {
+      "id": "hu2026-s41467-026-71288-0-lt-ncs-1--tol",
+      "name": "TOL",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "hu2026-s41467-026-71288-0",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    }
+  ],
   "stocks": [],
   "material_states": [
     {
@@ -91,11 +225,27 @@
       "parent_ids": []
     },
     {
+      "id": "hu2026-s41467-026-71288-0-lt-ncs-1--after-d2-s02-purify",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "hu2026-s41467-026-71288-0-lt-ncs-1--after-s01-add"
+      ]
+    },
+    {
       "id": "hu2026-s41467-026-71288-0-lt-ncs-1--after-s02-redisperse",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "hu2026-s41467-026-71288-0-lt-ncs-1--after-d2-s02-purify"
+      ]
+    },
+    {
+      "id": "hu2026-s41467-026-71288-0-lt-ncs-1--after-d2-s04-redissolve",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "hu2026-s41467-026-71288-0-lt-ncs-1--after-s01-add"
+        "hu2026-s41467-026-71288-0-lt-ncs-1--after-s02-redisperse"
       ]
     }
   ],
@@ -154,9 +304,9 @@
       ]
     },
     {
-      "id": "s02-redisperse",
-      "action": "redisperse",
-      "label": "Redisperse precipitate in TOL or HEX",
+      "id": "d2-s02-purify",
+      "action": "purify",
+      "label": "Add EA and centrifuge",
       "stage": "workup",
       "branch": "",
       "optional": false,
@@ -165,6 +315,63 @@
       ],
       "inputs": [
         "hu2026-s41467-026-71288-0-lt-ncs-1--after-s01-add"
+      ],
+      "outputs": [
+        "hu2026-s41467-026-71288-0-lt-ncs-1--after-d2-s02-purify"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 min",
+          "evidence": [
+            {
+              "source_id": "hu2026-s41467-026-71288-0",
+              "locator": "Main PDF p.8"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add EA and centrifuge",
+      "evidence": [
+        {
+          "source_id": "hu2026-s41467-026-71288-0",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    },
+    {
+      "id": "s02-redisperse",
+      "action": "redisperse",
+      "label": "Redisperse precipitate in TOL or HEX",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-purify"
+      ],
+      "inputs": [
+        "hu2026-s41467-026-71288-0-lt-ncs-1--after-d2-s02-purify"
       ],
       "outputs": [
         "hu2026-s41467-026-71288-0-lt-ncs-1--after-s02-redisperse"
@@ -190,6 +397,44 @@
           "locator": "Main PDF p.8"
         }
       ]
+    },
+    {
+      "id": "d2-s04-redissolve",
+      "action": "redissolve",
+      "label": "Redissolve precipitate in HEX or TOL for characterization",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-redisperse"
+      ],
+      "inputs": [
+        "hu2026-s41467-026-71288-0-lt-ncs-1--after-s02-redisperse"
+      ],
+      "outputs": [
+        "hu2026-s41467-026-71288-0-lt-ncs-1--after-d2-s04-redissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Redissolve precipitate in HEX or TOL for characterization",
+      "evidence": [
+        {
+          "source_id": "hu2026-s41467-026-71288-0",
+          "locator": "Main PDF p.8"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -198,7 +443,7 @@
       "sample_id": "hu2026-s41467-026-71288-0-lt-ncs-1--product",
       "source_sample_label": "LT-NCs",
       "batch_id": null,
-      "material_state_id": "hu2026-s41467-026-71288-0-lt-ncs-1--after-s02-redisperse",
+      "material_state_id": "hu2026-s41467-026-71288-0-lt-ncs-1--after-d2-s04-redissolve",
       "parent_sample_id": null,
       "composition": {
         "value": "CsPbBr3",
@@ -252,16 +497,56 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "hu2026-s41467-026-71288-0-lt-ncs-1--photoluminescence-quantum-yield",
+      "sample_id": "hu2026-s41467-026-71288-0-lt-ncs-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 89,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "89 %",
+        "evidence": [
+          {
+            "source_id": "hu2026-s41467-026-71288-0",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "hu2026-s41467-026-71288-0",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
-      "Atmosphere not reported in the extracted text."
+      "Atmosphere not reported in the extracted text.",
+      "Amount of Pb(Ac)2 3H2O not reported in the extracted text.",
+      "Amount of CsAc not reported in the extracted text.",
+      "Amount of MeOH not reported in the extracted text.",
+      "Amount of OctA not reported in the extracted text.",
+      "Amount of HEX not reported in the extracted text.",
+      "Amount of EA not reported in the extracted text.",
+      "Amount of TOL not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

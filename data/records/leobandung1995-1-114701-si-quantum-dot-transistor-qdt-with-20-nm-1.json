@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "leobandung1995-1-114701-si-quantum-dot-transistor-qdt-with-20-nm-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Effendi Leobandung (1995): Si quantum-dot transistor (QDT) with 20 nm dot",
   "material": {
@@ -108,15 +108,63 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "leobandung1995-1-114701-si-quantum-dot-transistor-qdt-with-20-nm-1--simox-silicon-wafer",
+      "name": "SIMOX silicon wafer",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "leobandung1995-1-114701",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
       "id": "leobandung1995-1-114701-si-quantum-dot-transistor-qdt-with-20-nm-1--after-s01-etch",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "leobandung1995-1-114701-si-quantum-dot-transistor-qdt-with-20-nm-1--simox-silicon-wafer"
+      ]
+    },
+    {
+      "id": "leobandung1995-1-114701-si-quantum-dot-transistor-qdt-with-20-nm-1--after-d2-s02-lithography",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "leobandung1995-1-114701-si-quantum-dot-transistor-qdt-with-20-nm-1--after-s01-etch",
+        "leobandung1995-1-114701-si-quantum-dot-transistor-qdt-with-20-nm-1--pmma-resist"
+      ]
+    },
+    {
+      "id": "leobandung1995-1-114701-si-quantum-dot-transistor-qdt-with-20-nm-1--after-d2-s03-grow",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "leobandung1995-1-114701-si-quantum-dot-transistor-qdt-with-20-nm-1--after-d2-s02-lithography",
+        "leobandung1995-1-114701-si-quantum-dot-transistor-qdt-with-20-nm-1--simox-silicon-wafer"
+      ]
+    },
+    {
+      "id": "leobandung1995-1-114701-si-quantum-dot-transistor-qdt-with-20-nm-1--after-d2-s04-anneal",
       "name": "product as isolated",
       "kind": "product",
-      "parent_ids": []
+      "parent_ids": [
+        "leobandung1995-1-114701-si-quantum-dot-transistor-qdt-with-20-nm-1--after-d2-s03-grow",
+        "leobandung1995-1-114701-si-quantum-dot-transistor-qdt-with-20-nm-1--simox-silicon-wafer"
+      ]
     }
   ],
   "operations": [
@@ -128,7 +176,9 @@
       "branch": "",
       "optional": false,
       "depends_on": [],
-      "inputs": [],
+      "inputs": [
+        "leobandung1995-1-114701-si-quantum-dot-transistor-qdt-with-20-nm-1--simox-silicon-wafer"
+      ],
       "outputs": [
         "leobandung1995-1-114701-si-quantum-dot-transistor-qdt-with-20-nm-1--after-s01-etch"
       ],
@@ -153,6 +203,142 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s02-lithography",
+      "action": "lithography",
+      "label": "E-beam lithography to define the quantum dot",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-etch"
+      ],
+      "inputs": [
+        "leobandung1995-1-114701-si-quantum-dot-transistor-qdt-with-20-nm-1--after-s01-etch",
+        "leobandung1995-1-114701-si-quantum-dot-transistor-qdt-with-20-nm-1--pmma-resist"
+      ],
+      "outputs": [
+        "leobandung1995-1-114701-si-quantum-dot-transistor-qdt-with-20-nm-1--after-d2-s02-lithography"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "E-beam lithography to define the quantum dot",
+      "evidence": [
+        {
+          "source_id": "leobandung1995-1-114701",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s03-grow",
+      "action": "grow",
+      "label": "Gate oxide growth",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-lithography"
+      ],
+      "inputs": [
+        "leobandung1995-1-114701-si-quantum-dot-transistor-qdt-with-20-nm-1--after-d2-s02-lithography",
+        "leobandung1995-1-114701-si-quantum-dot-transistor-qdt-with-20-nm-1--simox-silicon-wafer"
+      ],
+      "outputs": [
+        "leobandung1995-1-114701-si-quantum-dot-transistor-qdt-with-20-nm-1--after-d2-s03-grow"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 1000,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1000 °C",
+          "evidence": [
+            {
+              "source_id": "leobandung1995-1-114701",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Gate oxide growth",
+      "evidence": [
+        {
+          "source_id": "leobandung1995-1-114701",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s04-anneal",
+      "action": "anneal",
+      "label": "Annealing to reduce damage from RIE",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-grow"
+      ],
+      "inputs": [
+        "leobandung1995-1-114701-si-quantum-dot-transistor-qdt-with-20-nm-1--after-d2-s03-grow",
+        "leobandung1995-1-114701-si-quantum-dot-transistor-qdt-with-20-nm-1--simox-silicon-wafer"
+      ],
+      "outputs": [
+        "leobandung1995-1-114701-si-quantum-dot-transistor-qdt-with-20-nm-1--after-d2-s04-anneal"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Annealing to reduce damage from RIE",
+      "evidence": [
+        {
+          "source_id": "leobandung1995-1-114701",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -161,7 +347,7 @@
       "sample_id": "leobandung1995-1-114701-si-quantum-dot-transistor-qdt-with-20-nm-1--product",
       "source_sample_label": "Si quantum-dot transistor (QDT) with 20 nm dot",
       "batch_id": null,
-      "material_state_id": "leobandung1995-1-114701-si-quantum-dot-transistor-qdt-with-20-nm-1--after-s01-etch",
+      "material_state_id": "leobandung1995-1-114701-si-quantum-dot-transistor-qdt-with-20-nm-1--after-d2-s04-anneal",
       "parent_sample_id": null,
       "composition": {
         "value": "Si",
@@ -251,13 +437,14 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
-      "Amount of PMMA resist not reported in the extracted text."
+      "Amount of PMMA resist not reported in the extracted text.",
+      "Amount of SIMOX silicon wafer not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

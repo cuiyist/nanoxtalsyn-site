@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "jung2024-d3nh00456b-pbs-cqds-b4-nm-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Byung Ku Jung; Taesung Park; Young Kyun Choi; Yong Min Lee; Tae Hyuk Kim; Bogyeom Seo; Seongkeun Oh; Jae Won Shim; Yu-hwa Lo; Tse Nga Ng; Soong Ju Oh (2024): PbS CQDs (B4 nm)",
   "material": {
@@ -128,20 +128,218 @@
           "locator": "Main PDF p.6"
         }
       ]
+    },
+    {
+      "id": "jung2024-d3nh00456b-pbs-cqds-b4-nm-1--oleic-acid",
+      "name": "oleic acid",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 3,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "3 mL",
+          "evidence": [
+            {
+              "source_id": "jung2024-d3nh00456b",
+              "locator": "Main PDF p.6"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "jung2024-d3nh00456b",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "jung2024-d3nh00456b-pbs-cqds-b4-nm-1--lead-ii-oxide",
+      "name": "lead(II) oxide",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "mass": {
+          "value": 0.9,
+          "minimum": null,
+          "maximum": null,
+          "unit": "g",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.9 g",
+          "evidence": [
+            {
+              "source_id": "jung2024-d3nh00456b",
+              "locator": "Main PDF p.6"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "jung2024-d3nh00456b",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "jung2024-d3nh00456b-pbs-cqds-b4-nm-1--1-octadecene",
+      "name": "1-octadecene",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 20,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "20 mL",
+          "evidence": [
+            {
+              "source_id": "jung2024-d3nh00456b",
+              "locator": "Main PDF p.6"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "jung2024-d3nh00456b",
+          "locator": "Main PDF p.6"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
+      "id": "jung2024-d3nh00456b-pbs-cqds-b4-nm-1--after-d2-s01-degas",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "jung2024-d3nh00456b-pbs-cqds-b4-nm-1--oleic-acid",
+        "jung2024-d3nh00456b-pbs-cqds-b4-nm-1--lead-ii-oxide",
+        "jung2024-d3nh00456b-pbs-cqds-b4-nm-1--1-octadecene"
+      ]
+    },
+    {
       "id": "jung2024-d3nh00456b-pbs-cqds-b4-nm-1--after-s01-inject",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "jung2024-d3nh00456b-pbs-cqds-b4-nm-1--after-d2-s01-degas",
+        "jung2024-d3nh00456b-pbs-cqds-b4-nm-1--bis-trimethylsilyl-sulfide"
+      ]
+    },
+    {
+      "id": "jung2024-d3nh00456b-pbs-cqds-b4-nm-1--after-d2-s03-purify",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "jung2024-d3nh00456b-pbs-cqds-b4-nm-1--after-s01-inject"
+      ]
+    },
+    {
+      "id": "jung2024-d3nh00456b-pbs-cqds-b4-nm-1--after-d2-s04-redisperse",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "jung2024-d3nh00456b-pbs-cqds-b4-nm-1--bis-trimethylsilyl-sulfide"
+        "jung2024-d3nh00456b-pbs-cqds-b4-nm-1--after-d2-s03-purify"
       ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-degas",
+      "action": "degas",
+      "label": "Degassing the solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "jung2024-d3nh00456b-pbs-cqds-b4-nm-1--oleic-acid",
+        "jung2024-d3nh00456b-pbs-cqds-b4-nm-1--lead-ii-oxide",
+        "jung2024-d3nh00456b-pbs-cqds-b4-nm-1--1-octadecene"
+      ],
+      "outputs": [
+        "jung2024-d3nh00456b-pbs-cqds-b4-nm-1--after-d2-s01-degas"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 110,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "110 °C",
+          "evidence": [
+            {
+              "source_id": "jung2024-d3nh00456b",
+              "locator": "Main PDF p.6"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Degassing the solution",
+      "evidence": [
+        {
+          "source_id": "jung2024-d3nh00456b",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
     {
       "id": "s01-inject",
       "action": "inject",
@@ -149,8 +347,11 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
+      "depends_on": [
+        "d2-s01-degas"
+      ],
       "inputs": [
+        "jung2024-d3nh00456b-pbs-cqds-b4-nm-1--after-d2-s01-degas",
         "jung2024-d3nh00456b-pbs-cqds-b4-nm-1--bis-trimethylsilyl-sulfide"
       ],
       "outputs": [
@@ -177,6 +378,82 @@
           "locator": "Main PDF p.6"
         }
       ]
+    },
+    {
+      "id": "d2-s03-purify",
+      "action": "purify",
+      "label": "Purifying the QDs",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-inject"
+      ],
+      "inputs": [
+        "jung2024-d3nh00456b-pbs-cqds-b4-nm-1--after-s01-inject"
+      ],
+      "outputs": [
+        "jung2024-d3nh00456b-pbs-cqds-b4-nm-1--after-d2-s03-purify"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Purifying the QDs",
+      "evidence": [
+        {
+          "source_id": "jung2024-d3nh00456b",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "d2-s04-redisperse",
+      "action": "redisperse",
+      "label": "Redispersing the QDs",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-purify"
+      ],
+      "inputs": [
+        "jung2024-d3nh00456b-pbs-cqds-b4-nm-1--after-d2-s03-purify"
+      ],
+      "outputs": [
+        "jung2024-d3nh00456b-pbs-cqds-b4-nm-1--after-d2-s04-redisperse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Redispersing the QDs",
+      "evidence": [
+        {
+          "source_id": "jung2024-d3nh00456b",
+          "locator": "Main PDF p.6"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -185,7 +462,7 @@
       "sample_id": "jung2024-d3nh00456b-pbs-cqds-b4-nm-1--product",
       "source_sample_label": "PbS CQDs (B4 nm)",
       "batch_id": null,
-      "material_state_id": "jung2024-d3nh00456b-pbs-cqds-b4-nm-1--after-s01-inject",
+      "material_state_id": "jung2024-d3nh00456b-pbs-cqds-b4-nm-1--after-d2-s04-redisperse",
       "parent_sample_id": null,
       "composition": {
         "value": "PbS",
@@ -238,7 +515,9 @@
           "locator": "Main PDF p.2"
         }
       ],
-      "notes": []
+      "notes": [
+        "Reactor: 100 mL three-neck flask (Main PDF p.6)."
+      ]
     }
   ],
   "measurements": [
@@ -278,9 +557,8 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
-      "Reactor not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
       "Reaction time not reported in the extracted text."

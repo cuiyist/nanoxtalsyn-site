@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "chaim2004-jmr-2004-0334-transparent-nanocrystalline-mgo-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Rachman Chaim (2004): Transparent nanocrystalline MgO",
   "material": {
@@ -90,21 +90,44 @@
       "note": ""
     }
   },
-  "materials": [],
+  "materials": [
+    {
+      "id": "chaim2004-jmr-2004-0334-transparent-nanocrystalline-mgo-1--nanocrystalline-mgo-powder",
+      "name": "nanocrystalline MgO powder",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "chaim2004-jmr-2004-0334",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    }
+  ],
   "stocks": [],
   "material_states": [
     {
       "id": "chaim2004-jmr-2004-0334-transparent-nanocrystalline-mgo-1--after-s01-uniaxial-cold-pressing",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "chaim2004-jmr-2004-0334-transparent-nanocrystalline-mgo-1--nanocrystalline-mgo-powder"
+      ]
     },
     {
       "id": "chaim2004-jmr-2004-0334-transparent-nanocrystalline-mgo-1--after-s02-cold-isostatic-pressing",
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
-        "chaim2004-jmr-2004-0334-transparent-nanocrystalline-mgo-1--after-s01-uniaxial-cold-pressing"
+        "chaim2004-jmr-2004-0334-transparent-nanocrystalline-mgo-1--after-s01-uniaxial-cold-pressing",
+        "chaim2004-jmr-2004-0334-transparent-nanocrystalline-mgo-1--nanocrystalline-mgo-powder"
       ]
     },
     {
@@ -112,7 +135,8 @@
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "chaim2004-jmr-2004-0334-transparent-nanocrystalline-mgo-1--after-s02-cold-isostatic-pressing"
+        "chaim2004-jmr-2004-0334-transparent-nanocrystalline-mgo-1--after-s02-cold-isostatic-pressing",
+        "chaim2004-jmr-2004-0334-transparent-nanocrystalline-mgo-1--nanocrystalline-mgo-powder"
       ]
     }
   ],
@@ -125,7 +149,9 @@
       "branch": "",
       "optional": false,
       "depends_on": [],
-      "inputs": [],
+      "inputs": [
+        "chaim2004-jmr-2004-0334-transparent-nanocrystalline-mgo-1--nanocrystalline-mgo-powder"
+      ],
       "outputs": [
         "chaim2004-jmr-2004-0334-transparent-nanocrystalline-mgo-1--after-s01-uniaxial-cold-pressing"
       ],
@@ -167,7 +193,8 @@
         "s01-uniaxial-cold-pressing"
       ],
       "inputs": [
-        "chaim2004-jmr-2004-0334-transparent-nanocrystalline-mgo-1--after-s01-uniaxial-cold-pressing"
+        "chaim2004-jmr-2004-0334-transparent-nanocrystalline-mgo-1--after-s01-uniaxial-cold-pressing",
+        "chaim2004-jmr-2004-0334-transparent-nanocrystalline-mgo-1--nanocrystalline-mgo-powder"
       ],
       "outputs": [
         "chaim2004-jmr-2004-0334-transparent-nanocrystalline-mgo-1--after-s02-cold-isostatic-pressing"
@@ -210,7 +237,8 @@
         "s02-cold-isostatic-pressing"
       ],
       "inputs": [
-        "chaim2004-jmr-2004-0334-transparent-nanocrystalline-mgo-1--after-s02-cold-isostatic-pressing"
+        "chaim2004-jmr-2004-0334-transparent-nanocrystalline-mgo-1--after-s02-cold-isostatic-pressing",
+        "chaim2004-jmr-2004-0334-transparent-nanocrystalline-mgo-1--nanocrystalline-mgo-powder"
       ],
       "outputs": [
         "chaim2004-jmr-2004-0334-transparent-nanocrystalline-mgo-1--after-s03-spark-plasma-sintering"
@@ -378,9 +406,10 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
-      "Ligand not reported in the extracted text."
+      "Ligand not reported in the extracted text.",
+      "Amount of nanocrystalline MgO powder not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

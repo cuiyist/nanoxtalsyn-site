@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "lee2013-nn4026806-5-4-nm-ceo2-nanoparticles-coated-with-po-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Seung Soo Lee (2013): 5.4 nm CeO2 nanoparticles coated with poly(acrylic acid)-octylamine (PAAOA)",
   "material": {
@@ -85,21 +85,143 @@
       "note": ""
     }
   },
-  "materials": [],
+  "materials": [
+    {
+      "id": "lee2013-nn4026806-5-4-nm-ceo2-nanoparticles-coated-with-po-2--cerium-iii-nitrate-hexahydrate",
+      "name": "cerium(III) nitrate hexahydrate",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "5 mmol",
+          "evidence": [
+            {
+              "source_id": "lee2013-nn4026806",
+              "locator": "Main PDF p.8"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "lee2013-nn4026806",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    },
+    {
+      "id": "lee2013-nn4026806-5-4-nm-ceo2-nanoparticles-coated-with-po-2--oleylamine",
+      "name": "oleylamine",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 15.0,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "15 mmol",
+          "evidence": [
+            {
+              "source_id": "lee2013-nn4026806",
+              "locator": "Main PDF p.8"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "lee2013-nn4026806",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    },
+    {
+      "id": "lee2013-nn4026806-5-4-nm-ceo2-nanoparticles-coated-with-po-2--1-octadecene",
+      "name": "1-octadecene",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "mass": {
+          "value": 5.0,
+          "minimum": null,
+          "maximum": null,
+          "unit": "g",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "5 g",
+          "evidence": [
+            {
+              "source_id": "lee2013-nn4026806",
+              "locator": "Main PDF p.8"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "lee2013-nn4026806",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    }
+  ],
   "stocks": [],
   "material_states": [
     {
       "id": "lee2013-nn4026806-5-4-nm-ceo2-nanoparticles-coated-with-po-2--after-s01-dissolve",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "lee2013-nn4026806-5-4-nm-ceo2-nanoparticles-coated-with-po-2--cerium-iii-nitrate-hexahydrate",
+        "lee2013-nn4026806-5-4-nm-ceo2-nanoparticles-coated-with-po-2--oleylamine",
+        "lee2013-nn4026806-5-4-nm-ceo2-nanoparticles-coated-with-po-2--1-octadecene"
+      ]
     },
     {
       "id": "lee2013-nn4026806-5-4-nm-ceo2-nanoparticles-coated-with-po-2--after-s02-heat",
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
-        "lee2013-nn4026806-5-4-nm-ceo2-nanoparticles-coated-with-po-2--after-s01-dissolve"
+        "lee2013-nn4026806-5-4-nm-ceo2-nanoparticles-coated-with-po-2--after-s01-dissolve",
+        "lee2013-nn4026806-5-4-nm-ceo2-nanoparticles-coated-with-po-2--cerium-iii-nitrate-hexahydrate",
+        "lee2013-nn4026806-5-4-nm-ceo2-nanoparticles-coated-with-po-2--oleylamine",
+        "lee2013-nn4026806-5-4-nm-ceo2-nanoparticles-coated-with-po-2--1-octadecene"
       ]
     },
     {
@@ -120,7 +242,11 @@
       "branch": "",
       "optional": false,
       "depends_on": [],
-      "inputs": [],
+      "inputs": [
+        "lee2013-nn4026806-5-4-nm-ceo2-nanoparticles-coated-with-po-2--cerium-iii-nitrate-hexahydrate",
+        "lee2013-nn4026806-5-4-nm-ceo2-nanoparticles-coated-with-po-2--oleylamine",
+        "lee2013-nn4026806-5-4-nm-ceo2-nanoparticles-coated-with-po-2--1-octadecene"
+      ],
       "outputs": [
         "lee2013-nn4026806-5-4-nm-ceo2-nanoparticles-coated-with-po-2--after-s01-dissolve"
       ],
@@ -199,7 +325,10 @@
         "s01-dissolve"
       ],
       "inputs": [
-        "lee2013-nn4026806-5-4-nm-ceo2-nanoparticles-coated-with-po-2--after-s01-dissolve"
+        "lee2013-nn4026806-5-4-nm-ceo2-nanoparticles-coated-with-po-2--after-s01-dissolve",
+        "lee2013-nn4026806-5-4-nm-ceo2-nanoparticles-coated-with-po-2--cerium-iii-nitrate-hexahydrate",
+        "lee2013-nn4026806-5-4-nm-ceo2-nanoparticles-coated-with-po-2--oleylamine",
+        "lee2013-nn4026806-5-4-nm-ceo2-nanoparticles-coated-with-po-2--1-octadecene"
       ],
       "outputs": [
         "lee2013-nn4026806-5-4-nm-ceo2-nanoparticles-coated-with-po-2--after-s02-heat"
@@ -371,7 +500,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",

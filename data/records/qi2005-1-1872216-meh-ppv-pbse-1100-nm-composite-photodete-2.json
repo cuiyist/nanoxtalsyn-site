@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "qi2005-1-1872216-meh-ppv-pbse-1100-nm-composite-photodete-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Difei Qi (2005): MEH-PPV/PbSe (1100 nm) composite photodetector",
   "material": {
@@ -75,17 +75,210 @@
       "note": ""
     }
   },
-  "materials": [],
+  "materials": [
+    {
+      "id": "qi2005-1-1872216-meh-ppv-pbse-1100-nm-composite-photodete-2--meh-ppv",
+      "name": "MEH-PPV",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "qi2005-1-1872216",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "qi2005-1-1872216-meh-ppv-pbse-1100-nm-composite-photodete-2--pbse-qds",
+      "name": "PbSe QDs",
+      "formula": null,
+      "role": "starting_particles",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "qi2005-1-1872216",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
   "stocks": [],
   "material_states": [
     {
+      "id": "qi2005-1-1872216-meh-ppv-pbse-1100-nm-composite-photodete-2--after-d2-s01-spin-coat",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "qi2005-1-1872216-meh-ppv-pbse-1100-nm-composite-photodete-2--meh-ppv",
+        "qi2005-1-1872216-meh-ppv-pbse-1100-nm-composite-photodete-2--pbse-qds"
+      ]
+    },
+    {
+      "id": "qi2005-1-1872216-meh-ppv-pbse-1100-nm-composite-photodete-2--after-d2-s02-dissolve",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "qi2005-1-1872216-meh-ppv-pbse-1100-nm-composite-photodete-2--after-d2-s01-spin-coat",
+        "qi2005-1-1872216-meh-ppv-pbse-1100-nm-composite-photodete-2--meh-ppv"
+      ]
+    },
+    {
+      "id": "qi2005-1-1872216-meh-ppv-pbse-1100-nm-composite-photodete-2--after-d2-s03-mix",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "qi2005-1-1872216-meh-ppv-pbse-1100-nm-composite-photodete-2--after-d2-s02-dissolve",
+        "qi2005-1-1872216-meh-ppv-pbse-1100-nm-composite-photodete-2--meh-ppv",
+        "qi2005-1-1872216-meh-ppv-pbse-1100-nm-composite-photodete-2--pbse-qds"
+      ]
+    },
+    {
       "id": "qi2005-1-1872216-meh-ppv-pbse-1100-nm-composite-photodete-2--after-s01-store",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "qi2005-1-1872216-meh-ppv-pbse-1100-nm-composite-photodete-2--after-d2-s03-mix"
+      ]
+    },
+    {
+      "id": "qi2005-1-1872216-meh-ppv-pbse-1100-nm-composite-photodete-2--after-d2-s05-deposit-electrode",
       "name": "product as isolated",
       "kind": "product",
-      "parent_ids": []
+      "parent_ids": [
+        "qi2005-1-1872216-meh-ppv-pbse-1100-nm-composite-photodete-2--after-s01-store"
+      ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-spin-coat",
+      "action": "spin-coat",
+      "label": "Spin-cast the active layer from the MEH-PPV/PbSe mixed solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "qi2005-1-1872216-meh-ppv-pbse-1100-nm-composite-photodete-2--meh-ppv",
+        "qi2005-1-1872216-meh-ppv-pbse-1100-nm-composite-photodete-2--pbse-qds"
+      ],
+      "outputs": [
+        "qi2005-1-1872216-meh-ppv-pbse-1100-nm-composite-photodete-2--after-d2-s01-spin-coat"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Spin-cast the active layer from the MEH-PPV/PbSe mixed solution",
+      "evidence": [
+        {
+          "source_id": "qi2005-1-1872216",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "d2-s02-dissolve",
+      "action": "dissolve",
+      "label": "Dissolve",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s01-spin-coat"
+      ],
+      "inputs": [
+        "qi2005-1-1872216-meh-ppv-pbse-1100-nm-composite-photodete-2--after-d2-s01-spin-coat",
+        "qi2005-1-1872216-meh-ppv-pbse-1100-nm-composite-photodete-2--meh-ppv"
+      ],
+      "outputs": [
+        "qi2005-1-1872216-meh-ppv-pbse-1100-nm-composite-photodete-2--after-d2-s02-dissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dissolve",
+      "evidence": [
+        {
+          "source_id": "qi2005-1-1872216",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "d2-s03-mix",
+      "action": "mix",
+      "label": "MEH-PPV and PbSe QDs were mixed to make films with varying weight percentages.",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-dissolve"
+      ],
+      "inputs": [
+        "qi2005-1-1872216-meh-ppv-pbse-1100-nm-composite-photodete-2--after-d2-s02-dissolve",
+        "qi2005-1-1872216-meh-ppv-pbse-1100-nm-composite-photodete-2--meh-ppv",
+        "qi2005-1-1872216-meh-ppv-pbse-1100-nm-composite-photodete-2--pbse-qds"
+      ],
+      "outputs": [
+        "qi2005-1-1872216-meh-ppv-pbse-1100-nm-composite-photodete-2--after-d2-s03-mix"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "MEH-PPV and PbSe QDs were mixed to make films with varying weight percentages.",
+      "evidence": [
+        {
+          "source_id": "qi2005-1-1872216",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
     {
       "id": "s01-store",
       "action": "store",
@@ -93,8 +286,12 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s03-mix"
+      ],
+      "inputs": [
+        "qi2005-1-1872216-meh-ppv-pbse-1100-nm-composite-photodete-2--after-d2-s03-mix"
+      ],
       "outputs": [
         "qi2005-1-1872216-meh-ppv-pbse-1100-nm-composite-photodete-2--after-s01-store"
       ],
@@ -119,6 +316,44 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "d2-s05-deposit-electrode",
+      "action": "deposit_electrode",
+      "label": "An aluminum top electrode was fabricated using thermal evaporation through a shadow mask.",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-store"
+      ],
+      "inputs": [
+        "qi2005-1-1872216-meh-ppv-pbse-1100-nm-composite-photodete-2--after-s01-store"
+      ],
+      "outputs": [
+        "qi2005-1-1872216-meh-ppv-pbse-1100-nm-composite-photodete-2--after-d2-s05-deposit-electrode"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "An aluminum top electrode was fabricated using thermal evaporation through a shadow mask.",
+      "evidence": [
+        {
+          "source_id": "qi2005-1-1872216",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -127,7 +362,7 @@
       "sample_id": "qi2005-1-1872216-meh-ppv-pbse-1100-nm-composite-photodete-2--product",
       "source_sample_label": "MEH-PPV/PbSe (1100 nm) composite photodetector",
       "batch_id": null,
-      "material_state_id": "qi2005-1-1872216-meh-ppv-pbse-1100-nm-composite-photodete-2--after-s01-store",
+      "material_state_id": "qi2005-1-1872216-meh-ppv-pbse-1100-nm-composite-photodete-2--after-d2-s05-deposit-electrode",
       "parent_sample_id": null,
       "composition": {
         "value": "PbSe",
@@ -153,9 +388,14 @@
         "note": ""
       },
       "surface": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "oleic acid",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "qi2005-1-1872216",
+            "locator": "Main PDF p.3"
+          }
+        ],
         "note": ""
       },
       "recipe_link": "explicit",
@@ -172,16 +412,17 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
-      "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
-      "Reaction time not reported in the extracted text."
+      "Reaction time not reported in the extracted text.",
+      "Amount of MEH-PPV not reported in the extracted text.",
+      "Amount of PbSe QDs not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

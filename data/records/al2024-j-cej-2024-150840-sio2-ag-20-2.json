@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "al2024-j-cej-2024-150840-sio2-ag-20-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Ha Trang Nguyen et al. (2024): SiO2@Ag-20",
   "material": {
@@ -96,18 +96,192 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "al2024-j-cej-2024-150840-sio2-ag-20-2--3-mercaptopropyl-trimethoxy-silane-mps",
+      "name": "(3-Mercaptopropyl) trimethoxy-silane (MPS)",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "al2024-j-cej-2024-150840",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "al2024-j-cej-2024-150840-sio2-ag-20-2--silver-nitrate-agno3",
+      "name": "Silver nitrate (AgNO3)",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "al2024-j-cej-2024-150840",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "al2024-j-cej-2024-150840-sio2-ag-20-2--sodium-hydroxide-naoh",
+      "name": "Sodium hydroxide (NaOH)",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "al2024-j-cej-2024-150840",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "al2024-j-cej-2024-150840-sio2-ag-20-2--ammonium-hydroxide-nh4oh",
+      "name": "Ammonium hydroxide (NH4OH)",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "al2024-j-cej-2024-150840",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "al2024-j-cej-2024-150840-sio2-ag-20-2--sio2-spheres",
+      "name": "SiO2 spheres",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "al2024-j-cej-2024-150840",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
+      "id": "al2024-j-cej-2024-150840-sio2-ag-20-2--after-d2-s01-blend",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "al2024-j-cej-2024-150840-sio2-ag-20-2--silver-nitrate-agno3",
+        "al2024-j-cej-2024-150840-sio2-ag-20-2--sodium-hydroxide-naoh"
+      ]
+    },
+    {
       "id": "al2024-j-cej-2024-150840-sio2-ag-20-2--after-s01-add",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "al2024-j-cej-2024-150840-sio2-ag-20-2--after-d2-s01-blend",
+        "al2024-j-cej-2024-150840-sio2-ag-20-2--ammonium-hydroxide-nh4oh"
+      ]
+    },
+    {
+      "id": "al2024-j-cej-2024-150840-sio2-ag-20-2--after-d2-s03-disperse",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "al2024-j-cej-2024-150840-sio2-ag-20-2--after-s01-add",
+        "al2024-j-cej-2024-150840-sio2-ag-20-2--sio2-spheres"
+      ]
+    },
+    {
+      "id": "al2024-j-cej-2024-150840-sio2-ag-20-2--after-d2-s04-sonicate",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "al2024-j-cej-2024-150840-sio2-ag-20-2--after-d2-s03-disperse"
+      ]
+    },
+    {
+      "id": "al2024-j-cej-2024-150840-sio2-ag-20-2--after-d2-s05-heat",
       "name": "product as isolated",
       "kind": "product",
-      "parent_ids": []
+      "parent_ids": [
+        "al2024-j-cej-2024-150840-sio2-ag-20-2--after-d2-s04-sonicate"
+      ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-blend",
+      "action": "blend",
+      "label": "Blend",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "al2024-j-cej-2024-150840-sio2-ag-20-2--silver-nitrate-agno3",
+        "al2024-j-cej-2024-150840-sio2-ag-20-2--sodium-hydroxide-naoh"
+      ],
+      "outputs": [
+        "al2024-j-cej-2024-150840-sio2-ag-20-2--after-d2-s01-blend"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "ambient",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "al2024-j-cej-2024-150840",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Blend",
+      "evidence": [
+        {
+          "source_id": "al2024-j-cej-2024-150840",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
     {
       "id": "s01-add",
       "action": "add",
@@ -115,8 +289,13 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s01-blend"
+      ],
+      "inputs": [
+        "al2024-j-cej-2024-150840-sio2-ag-20-2--after-d2-s01-blend",
+        "al2024-j-cej-2024-150840-sio2-ag-20-2--ammonium-hydroxide-nh4oh"
+      ],
       "outputs": [
         "al2024-j-cej-2024-150840-sio2-ag-20-2--after-s01-add"
       ],
@@ -146,6 +325,211 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s03-disperse",
+      "action": "disperse",
+      "label": "Disperse SiO2 spheres in EtOH",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-add"
+      ],
+      "inputs": [
+        "al2024-j-cej-2024-150840-sio2-ag-20-2--after-s01-add",
+        "al2024-j-cej-2024-150840-sio2-ag-20-2--sio2-spheres"
+      ],
+      "outputs": [
+        "al2024-j-cej-2024-150840-sio2-ag-20-2--after-d2-s03-disperse"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "5 min",
+          "evidence": [
+            {
+              "source_id": "al2024-j-cej-2024-150840",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "ambient",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "al2024-j-cej-2024-150840",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Disperse SiO2 spheres in EtOH",
+      "evidence": [
+        {
+          "source_id": "al2024-j-cej-2024-150840",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s04-sonicate",
+      "action": "sonicate",
+      "label": "Sonicate the mixture",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-disperse"
+      ],
+      "inputs": [
+        "al2024-j-cej-2024-150840-sio2-ag-20-2--after-d2-s03-disperse"
+      ],
+      "outputs": [
+        "al2024-j-cej-2024-150840-sio2-ag-20-2--after-d2-s04-sonicate"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 30,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "30 min",
+          "evidence": [
+            {
+              "source_id": "al2024-j-cej-2024-150840",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "ambient",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "al2024-j-cej-2024-150840",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Sonicate the mixture",
+      "evidence": [
+        {
+          "source_id": "al2024-j-cej-2024-150840",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "d2-s05-heat",
+      "action": "heat",
+      "label": "Heat the mixture",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-sonicate"
+      ],
+      "inputs": [
+        "al2024-j-cej-2024-150840-sio2-ag-20-2--after-d2-s04-sonicate"
+      ],
+      "outputs": [
+        "al2024-j-cej-2024-150840-sio2-ag-20-2--after-d2-s05-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 70,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "70 °C",
+          "evidence": [
+            {
+              "source_id": "al2024-j-cej-2024-150840",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 7,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "7 h",
+          "evidence": [
+            {
+              "source_id": "al2024-j-cej-2024-150840",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "ambient",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "al2024-j-cej-2024-150840",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heat the mixture",
+      "evidence": [
+        {
+          "source_id": "al2024-j-cej-2024-150840",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -154,7 +538,7 @@
       "sample_id": "al2024-j-cej-2024-150840-sio2-ag-20-2--product",
       "source_sample_label": "SiO2@Ag-20",
       "batch_id": null,
-      "material_state_id": "al2024-j-cej-2024-150840-sio2-ag-20-2--after-s01-add",
+      "material_state_id": "al2024-j-cej-2024-150840-sio2-ag-20-2--after-d2-s05-heat",
       "parent_sample_id": null,
       "composition": {
         "value": null,
@@ -207,12 +591,17 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
-      "Amount of Tetraethyl silicate (TEOS) not reported in the extracted text."
+      "Amount of Tetraethyl silicate (TEOS) not reported in the extracted text.",
+      "Amount of (3-Mercaptopropyl) trimethoxy-silane (MPS) not reported in the extracted text.",
+      "Amount of Silver nitrate (AgNO3) not reported in the extracted text.",
+      "Amount of Sodium hydroxide (NaOH) not reported in the extracted text.",
+      "Amount of Ammonium hydroxide (NH4OH) not reported in the extracted text.",
+      "Amount of SiO2 spheres not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

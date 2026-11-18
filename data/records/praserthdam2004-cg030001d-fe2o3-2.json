@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "praserthdam2004-cg030001d-fe2o3-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Piyasan Praserthdam (2004): Fe2O3",
   "material": {
@@ -80,14 +80,36 @@
       "note": ""
     }
   },
-  "materials": [],
+  "materials": [
+    {
+      "id": "praserthdam2004-cg030001d-fe2o3-2--1-4-butanediol",
+      "name": "1,4-butanediol",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "praserthdam2004-cg030001d",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    }
+  ],
   "stocks": [],
   "material_states": [
     {
       "id": "praserthdam2004-cg030001d-fe2o3-2--after-s01-dissolve",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "praserthdam2004-cg030001d-fe2o3-2--1-4-butanediol"
+      ]
     },
     {
       "id": "praserthdam2004-cg030001d-fe2o3-2--after-s02-heat",
@@ -131,7 +153,9 @@
       "branch": "",
       "optional": false,
       "depends_on": [],
-      "inputs": [],
+      "inputs": [
+        "praserthdam2004-cg030001d-fe2o3-2--1-4-butanediol"
+      ],
       "outputs": [
         "praserthdam2004-cg030001d-fe2o3-2--after-s01-dissolve"
       ],
@@ -403,12 +427,13 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
-      "Reaction temperature not reported in the extracted text."
+      "Reaction temperature not reported in the extracted text.",
+      "Amount of 1,4-butanediol not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

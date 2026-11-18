@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "ramamoorthy1999-jmr-1999-0015-3-mol-y2o3zro2-3ysz-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "R. Ramamoorthy; S. Ramasamy; D. Sundararaman (1999): 3 mol % Y2O3–ZrO2 (3YSZ)",
   "material": {
@@ -62,16 +62,21 @@
       "note": ""
     },
     "size": {
-      "value": null,
+      "value": 10,
       "minimum": null,
       "maximum": null,
       "unit": "nm",
-      "status": "not_reported",
+      "status": "reported",
       "approximate": false,
       "qualifier": "",
       "basis": "",
-      "raw_text": "not reported",
-      "evidence": [],
+      "raw_text": "10 nm",
+      "evidence": [
+        {
+          "source_id": "ramamoorthy1999-jmr-1999-0015",
+          "locator": "Main PDF p.3"
+        }
+      ],
       "derivation": null
     },
     "morphology": {
@@ -105,26 +110,157 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "ramamoorthy1999-jmr-1999-0015-3-mol-y2o3zro2-3ysz-2--zirconium-oxy-chloride-zrocl28h2o",
+      "name": "zirconium oxy-chloride (ZrOCl2·8H2O)",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "ramamoorthy1999-jmr-1999-0015",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "ramamoorthy1999-jmr-1999-0015-3-mol-y2o3zro2-3ysz-2--ammonia-solution",
+      "name": "ammonia solution",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "ramamoorthy1999-jmr-1999-0015",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "ramamoorthy1999-jmr-1999-0015-3-mol-y2o3zro2-3ysz-2--y-no3-36h2o",
+      "name": "Y(NO3)3·6H2O",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "ramamoorthy1999-jmr-1999-0015",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "ramamoorthy1999-jmr-1999-0015-3-mol-y2o3zro2-3ysz-2--nh3",
+      "name": "NH3",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "ramamoorthy1999-jmr-1999-0015",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
-      "id": "ramamoorthy1999-jmr-1999-0015-3-mol-y2o3zro2-3ysz-2--after-s01-neutralize",
+      "id": "ramamoorthy1999-jmr-1999-0015-3-mol-y2o3zro2-3ysz-2--after-d2-s01-add",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "ramamoorthy1999-jmr-1999-0015-3-mol-y2o3zro2-3ysz-2--yttrium-nitrate-y-no3-36h2o"
+      ]
+    },
+    {
+      "id": "ramamoorthy1999-jmr-1999-0015-3-mol-y2o3zro2-3ysz-2--after-s01-neutralize",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "ramamoorthy1999-jmr-1999-0015-3-mol-y2o3zro2-3ysz-2--after-d2-s01-add",
+        "ramamoorthy1999-jmr-1999-0015-3-mol-y2o3zro2-3ysz-2--ammonia-solution"
+      ]
+    },
+    {
+      "id": "ramamoorthy1999-jmr-1999-0015-3-mol-y2o3zro2-3ysz-2--after-d2-s03-wash",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "ramamoorthy1999-jmr-1999-0015-3-mol-y2o3zro2-3ysz-2--after-s01-neutralize"
+      ]
     },
     {
       "id": "ramamoorthy1999-jmr-1999-0015-3-mol-y2o3zro2-3ysz-2--after-s02-anneal",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "ramamoorthy1999-jmr-1999-0015-3-mol-y2o3zro2-3ysz-2--after-s01-neutralize"
+        "ramamoorthy1999-jmr-1999-0015-3-mol-y2o3zro2-3ysz-2--after-d2-s03-wash"
       ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-add",
+      "action": "add",
+      "label": "Add yttrium nitrate as dopant",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "ramamoorthy1999-jmr-1999-0015-3-mol-y2o3zro2-3ysz-2--yttrium-nitrate-y-no3-36h2o"
+      ],
+      "outputs": [
+        "ramamoorthy1999-jmr-1999-0015-3-mol-y2o3zro2-3ysz-2--after-d2-s01-add"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add yttrium nitrate as dopant",
+      "evidence": [
+        {
+          "source_id": "ramamoorthy1999-jmr-1999-0015",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
     {
       "id": "s01-neutralize",
       "action": "neutralize",
@@ -132,8 +268,13 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s01-add"
+      ],
+      "inputs": [
+        "ramamoorthy1999-jmr-1999-0015-3-mol-y2o3zro2-3ysz-2--after-d2-s01-add",
+        "ramamoorthy1999-jmr-1999-0015-3-mol-y2o3zro2-3ysz-2--ammonia-solution"
+      ],
       "outputs": [
         "ramamoorthy1999-jmr-1999-0015-3-mol-y2o3zro2-3ysz-2--after-s01-neutralize"
       ],
@@ -160,10 +301,10 @@
       ]
     },
     {
-      "id": "s02-anneal",
-      "action": "anneal",
-      "label": "Anneal the powders at various temperatures",
-      "stage": "synthesis",
+      "id": "d2-s03-wash",
+      "action": "wash",
+      "label": "Wash the precipitated particles",
+      "stage": "workup",
       "branch": "",
       "optional": false,
       "depends_on": [
@@ -171,6 +312,44 @@
       ],
       "inputs": [
         "ramamoorthy1999-jmr-1999-0015-3-mol-y2o3zro2-3ysz-2--after-s01-neutralize"
+      ],
+      "outputs": [
+        "ramamoorthy1999-jmr-1999-0015-3-mol-y2o3zro2-3ysz-2--after-d2-s03-wash"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Wash the precipitated particles",
+      "evidence": [
+        {
+          "source_id": "ramamoorthy1999-jmr-1999-0015",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-anneal",
+      "action": "anneal",
+      "label": "Anneal the powders at various temperatures",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-wash"
+      ],
+      "inputs": [
+        "ramamoorthy1999-jmr-1999-0015-3-mol-y2o3zro2-3ysz-2--after-d2-s03-wash"
       ],
       "outputs": [
         "ramamoorthy1999-jmr-1999-0015-3-mol-y2o3zro2-3ysz-2--after-s02-anneal"
@@ -276,18 +455,54 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "ramamoorthy1999-jmr-1999-0015-3-mol-y2o3zro2-3ysz-2--size",
+      "sample_id": "ramamoorthy1999-jmr-1999-0015-3-mol-y2o3zro2-3ysz-2--product",
+      "property": "crystallite_size",
+      "technique": "XRD",
+      "value": {
+        "value": 10,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "10 nm",
+        "evidence": [
+          {
+            "source_id": "ramamoorthy1999-jmr-1999-0015",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "ramamoorthy1999-jmr-1999-0015",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
-      "Size not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
-      "Amount of yttrium nitrate [Y(NO3)3·6H2O] not reported in the extracted text."
+      "Amount of yttrium nitrate [Y(NO3)3·6H2O] not reported in the extracted text.",
+      "Amount of zirconium oxy-chloride (ZrOCl2·8H2O) not reported in the extracted text.",
+      "Amount of ammonia solution not reported in the extracted text.",
+      "Amount of Y(NO3)3·6H2O not reported in the extracted text.",
+      "Amount of NH3 not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

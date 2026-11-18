@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "degbevi2024-acs-inorgchem-4c03534-cdse-cd-co-co-4-2-ncs-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Mawuli Degbevi; Jonathan T. Stoffel; Emily Y. Tsui (2024): CdSe-Cd[Co(CO)4]2 NCs",
   "material": {
@@ -128,16 +128,52 @@
           "locator": "Main PDF p.8"
         }
       ]
+    },
+    {
+      "id": "degbevi2024-acs-inorgchem-4c03534-cdse-cd-co-co-4-2-ncs-1--cdse-cd-oa-2-ncs",
+      "name": "CdSe-Cd(OA)2 NCs",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "degbevi2024-acs-inorgchem-4c03534",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
       "id": "degbevi2024-acs-inorgchem-4c03534-cdse-cd-co-co-4-2-ncs-1--after-s01-heat",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "degbevi2024-acs-inorgchem-4c03534-cdse-cd-co-co-4-2-ncs-1--et3sico-co-4",
+        "degbevi2024-acs-inorgchem-4c03534-cdse-cd-co-co-4-2-ncs-1--cdse-cd-oa-2-ncs"
+      ]
+    },
+    {
+      "id": "degbevi2024-acs-inorgchem-4c03534-cdse-cd-co-co-4-2-ncs-1--after-d2-s02-cool",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "degbevi2024-acs-inorgchem-4c03534-cdse-cd-co-co-4-2-ncs-1--after-s01-heat"
+      ]
+    },
+    {
+      "id": "degbevi2024-acs-inorgchem-4c03534-cdse-cd-co-co-4-2-ncs-1--after-d2-s03-purify",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "degbevi2024-acs-inorgchem-4c03534-cdse-cd-co-co-4-2-ncs-1--et3sico-co-4"
+        "degbevi2024-acs-inorgchem-4c03534-cdse-cd-co-co-4-2-ncs-1--after-d2-s02-cool"
       ]
     }
   ],
@@ -151,7 +187,8 @@
       "optional": false,
       "depends_on": [],
       "inputs": [
-        "degbevi2024-acs-inorgchem-4c03534-cdse-cd-co-co-4-2-ncs-1--et3sico-co-4"
+        "degbevi2024-acs-inorgchem-4c03534-cdse-cd-co-co-4-2-ncs-1--et3sico-co-4",
+        "degbevi2024-acs-inorgchem-4c03534-cdse-cd-co-co-4-2-ncs-1--cdse-cd-oa-2-ncs"
       ],
       "outputs": [
         "degbevi2024-acs-inorgchem-4c03534-cdse-cd-co-co-4-2-ncs-1--after-s01-heat"
@@ -219,6 +256,87 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s02-cool",
+      "action": "cool",
+      "label": "Cooling reaction mixture to room temperature",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-heat"
+      ],
+      "inputs": [
+        "degbevi2024-acs-inorgchem-4c03534-cdse-cd-co-co-4-2-ncs-1--after-s01-heat"
+      ],
+      "outputs": [
+        "degbevi2024-acs-inorgchem-4c03534-cdse-cd-co-co-4-2-ncs-1--after-d2-s02-cool"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "degbevi2024-acs-inorgchem-4c03534",
+            "locator": "Main PDF p.8"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Cooling reaction mixture to room temperature",
+      "evidence": [
+        {
+          "source_id": "degbevi2024-acs-inorgchem-4c03534",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    },
+    {
+      "id": "d2-s03-purify",
+      "action": "purify",
+      "label": "Purify the reaction mixture by GPC",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-cool"
+      ],
+      "inputs": [
+        "degbevi2024-acs-inorgchem-4c03534-cdse-cd-co-co-4-2-ncs-1--after-d2-s02-cool"
+      ],
+      "outputs": [
+        "degbevi2024-acs-inorgchem-4c03534-cdse-cd-co-co-4-2-ncs-1--after-d2-s03-purify"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Purify the reaction mixture by GPC",
+      "evidence": [
+        {
+          "source_id": "degbevi2024-acs-inorgchem-4c03534",
+          "locator": "Main PDF p.8"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -227,7 +345,7 @@
       "sample_id": "degbevi2024-acs-inorgchem-4c03534-cdse-cd-co-co-4-2-ncs-1--product",
       "source_sample_label": "CdSe-Cd[Co(CO)4]2 NCs",
       "batch_id": null,
-      "material_state_id": "degbevi2024-acs-inorgchem-4c03534-cdse-cd-co-co-4-2-ncs-1--after-s01-heat",
+      "material_state_id": "degbevi2024-acs-inorgchem-4c03534-cdse-cd-co-co-4-2-ncs-1--after-d2-s03-purify",
       "parent_sample_id": null,
       "composition": {
         "value": "CdSe",
@@ -318,14 +436,47 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "degbevi2024-acs-inorgchem-4c03534-cdse-cd-co-co-4-2-ncs-1--photoluminescence-quantum-yield",
+      "sample_id": "degbevi2024-acs-inorgchem-4c03534-cdse-cd-co-co-4-2-ncs-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 5,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "5 %",
+        "evidence": [
+          {
+            "source_id": "degbevi2024-acs-inorgchem-4c03534",
+            "locator": "Main PDF p.8"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "degbevi2024-acs-inorgchem-4c03534",
+          "locator": "Main PDF p.8"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
-      "Reactor not reported in the extracted text."
+      "Reactor not reported in the extracted text.",
+      "Amount of CdSe-Cd(OA)2 NCs not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

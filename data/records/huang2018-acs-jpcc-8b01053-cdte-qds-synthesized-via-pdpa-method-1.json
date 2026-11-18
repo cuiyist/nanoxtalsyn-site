@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "huang2018-acs-jpcc-8b01053-cdte-qds-synthesized-via-pdpa-method-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Xiaodan Huang; Lihong Jing; Stephen V. Kershaw; Xiaojun Wei; Haoran Ning; Xiaodan Sun; Andrey L. Rogach; Mingyuan Gao (2018): CdTe QDs synthesized via PDPA method",
   "material": {
@@ -80,7 +80,103 @@
       "note": ""
     }
   },
-  "materials": [],
+  "materials": [
+    {
+      "id": "huang2018-acs-jpcc-8b01053-cdte-qds-synthesized-via-pdpa-method-1--cd-ch3coo-22h2o",
+      "name": "Cd(CH3COO)2·2H2O",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "huang2018-acs-jpcc-8b01053",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "huang2018-acs-jpcc-8b01053-cdte-qds-synthesized-via-pdpa-method-1--tga",
+      "name": "TGA",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 2.6,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2.6 mmol",
+          "evidence": [
+            {
+              "source_id": "huang2018-acs-jpcc-8b01053",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "huang2018-acs-jpcc-8b01053",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "huang2018-acs-jpcc-8b01053-cdte-qds-synthesized-via-pdpa-method-1--na2teo3",
+      "name": "Na2TeO3",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 0.4,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.4 mmol",
+          "evidence": [
+            {
+              "source_id": "huang2018-acs-jpcc-8b01053",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "huang2018-acs-jpcc-8b01053",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
   "stocks": [],
   "material_states": [
     {
@@ -282,17 +378,50 @@
           "locator": "Main PDF p.4"
         }
       ]
+    },
+    {
+      "id": "huang2018-acs-jpcc-8b01053-cdte-qds-synthesized-via-pdpa-method-1--photoluminescence-quantum-yield",
+      "sample_id": "huang2018-acs-jpcc-8b01053-cdte-qds-synthesized-via-pdpa-method-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 10,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "10 %",
+        "evidence": [
+          {
+            "source_id": "huang2018-acs-jpcc-8b01053",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "huang2018-acs-jpcc-8b01053",
+          "locator": "Main PDF p.6"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
-      "Reaction temperature not reported in the extracted text."
+      "Reaction temperature not reported in the extracted text.",
+      "Amount of Cd(CH3COO)2·2H2O not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "bui2010-nl101079u-cdse-zns-core-shell-streptavidin-conjuga-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Hieu Bui (2010): CdSe/ZnS core/shell streptavidin-conjugated quantum dots (Qdot 585)",
   "material": {
@@ -103,9 +103,18 @@
   "material_states": [
     {
       "id": "bui2010-nl101079u-cdse-zns-core-shell-streptavidin-conjuga-1--after-s01-combine",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "bui2010-nl101079u-cdse-zns-core-shell-streptavidin-conjuga-1--cdse-zns-core-shell-streptavidin-conjuga"
+      ]
+    },
+    {
+      "id": "bui2010-nl101079u-cdse-zns-core-shell-streptavidin-conjuga-1--after-d2-s02-dispersing",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
+        "bui2010-nl101079u-cdse-zns-core-shell-streptavidin-conjuga-1--after-s01-combine",
         "bui2010-nl101079u-cdse-zns-core-shell-streptavidin-conjuga-1--cdse-zns-core-shell-streptavidin-conjuga"
       ]
     }
@@ -165,6 +174,45 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s02-dispersing",
+      "action": "dispersing",
+      "label": "Disperse reacted DNA nanotubes with attached quantum dots onto a mica surface",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-combine"
+      ],
+      "inputs": [
+        "bui2010-nl101079u-cdse-zns-core-shell-streptavidin-conjuga-1--after-s01-combine",
+        "bui2010-nl101079u-cdse-zns-core-shell-streptavidin-conjuga-1--cdse-zns-core-shell-streptavidin-conjuga"
+      ],
+      "outputs": [
+        "bui2010-nl101079u-cdse-zns-core-shell-streptavidin-conjuga-1--after-d2-s02-dispersing"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Disperse reacted DNA nanotubes with attached quantum dots onto a mica surface",
+      "evidence": [
+        {
+          "source_id": "bui2010-nl101079u",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -173,7 +221,7 @@
       "sample_id": "bui2010-nl101079u-cdse-zns-core-shell-streptavidin-conjuga-1--product",
       "source_sample_label": "CdSe/ZnS core/shell streptavidin-conjugated quantum dots (Qdot 585)",
       "batch_id": null,
-      "material_state_id": "bui2010-nl101079u-cdse-zns-core-shell-streptavidin-conjuga-1--after-s01-combine",
+      "material_state_id": "bui2010-nl101079u-cdse-zns-core-shell-streptavidin-conjuga-1--after-d2-s02-dispersing",
       "parent_sample_id": null,
       "composition": {
         "value": "CdSe/ZnS",
@@ -223,7 +271,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "muyeed2020-j-jcrysgro-2020-125652-sa-ingan-qds-on-pec-qd-templates-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Syed Ahmed Al Muyeed (2020): SA InGaN QDs on PEC QD templates",
   "material": {
@@ -75,6 +75,44 @@
     {
       "id": "muyeed2020-j-jcrysgro-2020-125652-sa-ingan-qds-on-pec-qd-templates-2--ingan",
       "name": "InGaN",
+      "formula": null,
+      "role": "starting_particles",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "muyeed2020-j-jcrysgro-2020-125652",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "muyeed2020-j-jcrysgro-2020-125652-sa-ingan-qds-on-pec-qd-templates-2--gan",
+      "name": "GaN",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "muyeed2020-j-jcrysgro-2020-125652",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "muyeed2020-j-jcrysgro-2020-125652-sa-ingan-qds-on-pec-qd-templates-2--al0-45ga0-55n",
+      "name": "Al0.45Ga0.55N",
       "formula": null,
       "role": "reagent",
       "stage": "synthesis",
@@ -206,18 +244,53 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "muyeed2020-j-jcrysgro-2020-125652-sa-ingan-qds-on-pec-qd-templates-2--photoluminescence-peak",
+      "sample_id": "muyeed2020-j-jcrysgro-2020-125652-sa-ingan-qds-on-pec-qd-templates-2--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 470,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "470 nm",
+        "evidence": [
+          {
+            "source_id": "muyeed2020-j-jcrysgro-2020-125652",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "muyeed2020-j-jcrysgro-2020-125652",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
-      "Amount of InGaN not reported in the extracted text."
+      "Amount of InGaN not reported in the extracted text.",
+      "Amount of GaN not reported in the extracted text.",
+      "Amount of Al0.45Ga0.55N not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

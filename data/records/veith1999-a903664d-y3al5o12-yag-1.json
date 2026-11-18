@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "veith1999-a903664d-y3al5o12-yag-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Michael Veith; Sanjay Mathur; Aivaras Kareiva; Mohammad Jilavi; Michael Zimmer; Volker Huch (1999): Y3Al5O12 (YAG)",
   "material": {
@@ -119,15 +119,80 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "veith1999-a903664d-y3al5o12-yag-1--yttrium-oxide",
+      "name": "yttrium oxide",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "veith1999-a903664d",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "veith1999-a903664d-y3al5o12-yag-1--aluminium-nitrate",
+      "name": "aluminium nitrate",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "veith1999-a903664d",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "veith1999-a903664d-y3al5o12-yag-1--ammonium-cerium-iv-nitrate",
+      "name": "ammonium cerium(IV) nitrate",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "veith1999-a903664d",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
       "id": "veith1999-a903664d-y3al5o12-yag-1--after-s01-grind",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": []
+    },
+    {
+      "id": "veith1999-a903664d-y3al5o12-yag-1--after-d2-s02-heat",
       "name": "product as isolated",
       "kind": "product",
-      "parent_ids": []
+      "parent_ids": [
+        "veith1999-a903664d-y3al5o12-yag-1--after-s01-grind"
+      ]
     }
   ],
   "operations": [
@@ -169,6 +234,49 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s02-heat",
+      "action": "heat",
+      "label": "Gel powders sintered at various temperatures",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-grind"
+      ],
+      "inputs": [
+        "veith1999-a903664d-y3al5o12-yag-1--after-s01-grind"
+      ],
+      "outputs": [
+        "veith1999-a903664d-y3al5o12-yag-1--after-d2-s02-heat"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "veith1999-a903664d",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Gel powders sintered at various temperatures",
+      "evidence": [
+        {
+          "source_id": "veith1999-a903664d",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -177,7 +285,7 @@
       "sample_id": "veith1999-a903664d-y3al5o12-yag-1--product",
       "source_sample_label": "Y3Al5O12 (YAG)",
       "batch_id": null,
-      "material_state_id": "veith1999-a903664d-y3al5o12-yag-1--after-s01-grind",
+      "material_state_id": "veith1999-a903664d-y3al5o12-yag-1--after-d2-s02-heat",
       "parent_sample_id": null,
       "composition": {
         "value": "Y3Al5O12",
@@ -229,13 +337,16 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
-      "Reaction temperature not reported in the extracted text."
+      "Reaction temperature not reported in the extracted text.",
+      "Amount of yttrium oxide not reported in the extracted text.",
+      "Amount of aluminium nitrate not reported in the extracted text.",
+      "Amount of ammonium cerium(IV) nitrate not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

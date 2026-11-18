@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "hu2008-1-3021085-mgo-nanocrystalline-powders-annealed-at-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Jifan Hu (2008): MgO nanocrystalline powders (annealed at 800 °C)",
   "material": {
@@ -85,18 +85,108 @@
       "note": ""
     }
   },
-  "materials": [],
+  "materials": [
+    {
+      "id": "hu2008-1-3021085-mgo-nanocrystalline-powders-annealed-at-2--mg-no3-26h2o",
+      "name": "Mg(NO3)2·6H2O",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "hu2008-1-3021085",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "hu2008-1-3021085-mgo-nanocrystalline-powders-annealed-at-2--citric-acid",
+      "name": "citric acid",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "hu2008-1-3021085",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "hu2008-1-3021085-mgo-nanocrystalline-powders-annealed-at-2--ethanol",
+      "name": "ethanol",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "hu2008-1-3021085",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "hu2008-1-3021085-mgo-nanocrystalline-powders-annealed-at-2--ion-free-water",
+      "name": "ion-free water",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "hu2008-1-3021085",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
   "stocks": [],
   "material_states": [
     {
-      "id": "hu2008-1-3021085-mgo-nanocrystalline-powders-annealed-at-2--after-s01-stir",
+      "id": "hu2008-1-3021085-mgo-nanocrystalline-powders-annealed-at-2--after-d2-s01-dissolve",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "hu2008-1-3021085-mgo-nanocrystalline-powders-annealed-at-2--mg-no3-26h2o",
+        "hu2008-1-3021085-mgo-nanocrystalline-powders-annealed-at-2--citric-acid",
+        "hu2008-1-3021085-mgo-nanocrystalline-powders-annealed-at-2--ethanol",
+        "hu2008-1-3021085-mgo-nanocrystalline-powders-annealed-at-2--ion-free-water"
+      ]
+    },
+    {
+      "id": "hu2008-1-3021085-mgo-nanocrystalline-powders-annealed-at-2--after-s01-stir",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "hu2008-1-3021085-mgo-nanocrystalline-powders-annealed-at-2--after-d2-s01-dissolve"
+      ]
     },
     {
       "id": "hu2008-1-3021085-mgo-nanocrystalline-powders-annealed-at-2--after-s02-dry",
-      "name": "mixture after step 2",
+      "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
         "hu2008-1-3021085-mgo-nanocrystalline-powders-annealed-at-2--after-s01-stir"
@@ -113,14 +203,62 @@
   ],
   "operations": [
     {
+      "id": "d2-s01-dissolve",
+      "action": "dissolve",
+      "label": "Mg(NO3)2·6H2O and citric acid dissolved in ethanol and ion-free water",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "hu2008-1-3021085-mgo-nanocrystalline-powders-annealed-at-2--mg-no3-26h2o",
+        "hu2008-1-3021085-mgo-nanocrystalline-powders-annealed-at-2--citric-acid",
+        "hu2008-1-3021085-mgo-nanocrystalline-powders-annealed-at-2--ethanol",
+        "hu2008-1-3021085-mgo-nanocrystalline-powders-annealed-at-2--ion-free-water"
+      ],
+      "outputs": [
+        "hu2008-1-3021085-mgo-nanocrystalline-powders-annealed-at-2--after-d2-s01-dissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "hu2008-1-3021085",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Mg(NO3)2·6H2O and citric acid dissolved in ethanol and ion-free water",
+      "evidence": [
+        {
+          "source_id": "hu2008-1-3021085",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
       "id": "s01-stir",
       "action": "stir",
       "label": "Solution stirred at 80 °C for several hours",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s01-dissolve"
+      ],
+      "inputs": [
+        "hu2008-1-3021085-mgo-nanocrystalline-powders-annealed-at-2--after-d2-s01-dissolve"
+      ],
       "outputs": [
         "hu2008-1-3021085-mgo-nanocrystalline-powders-annealed-at-2--after-s01-stir"
       ],
@@ -400,11 +538,15 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
-      "Reactor not reported in the extracted text."
+      "Reactor not reported in the extracted text.",
+      "Amount of Mg(NO3)2·6H2O not reported in the extracted text.",
+      "Amount of citric acid not reported in the extracted text.",
+      "Amount of ethanol not reported in the extracted text.",
+      "Amount of ion-free water not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

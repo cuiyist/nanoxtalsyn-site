@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "feng2005-1-1852078-si-nanocrystals-in-sio2-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Tao Feng (2005): Si nanocrystals in SiO2",
   "material": {
@@ -114,10 +114,18 @@
   "material_states": [
     {
       "id": "feng2005-1-1852078-si-nanocrystals-in-sio2-1--after-s01-anneal",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "feng2005-1-1852078-si-nanocrystals-in-sio2-1--si"
+      ]
+    },
+    {
+      "id": "feng2005-1-1852078-si-nanocrystals-in-sio2-1--after-d2-s02-etch",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "feng2005-1-1852078-si-nanocrystals-in-sio2-1--si"
+        "feng2005-1-1852078-si-nanocrystals-in-sio2-1--after-s01-anneal"
       ]
     }
   ],
@@ -199,6 +207,49 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s02-etch",
+      "action": "etch",
+      "label": "Etch",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-anneal"
+      ],
+      "inputs": [
+        "feng2005-1-1852078-si-nanocrystals-in-sio2-1--after-s01-anneal"
+      ],
+      "outputs": [
+        "feng2005-1-1852078-si-nanocrystals-in-sio2-1--after-d2-s02-etch"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "2% O2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "feng2005-1-1852078",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Etch",
+      "evidence": [
+        {
+          "source_id": "feng2005-1-1852078",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -207,7 +258,7 @@
       "sample_id": "feng2005-1-1852078-si-nanocrystals-in-sio2-1--product",
       "source_sample_label": "Si nanocrystals in SiO2",
       "batch_id": null,
-      "material_state_id": "feng2005-1-1852078-si-nanocrystals-in-sio2-1--after-s01-anneal",
+      "material_state_id": "feng2005-1-1852078-si-nanocrystals-in-sio2-1--after-d2-s02-etch",
       "parent_sample_id": null,
       "composition": {
         "value": "Si",
@@ -298,7 +349,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Reactor not reported in the extracted text.",

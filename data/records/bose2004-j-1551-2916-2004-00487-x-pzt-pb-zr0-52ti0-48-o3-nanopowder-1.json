@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "bose2004-j-1551-2916-2004-00487-x-pzt-pb-zr0-52ti0-48-o3-nanopowder-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Susmita Bose; Ashis Banerjee (2004): PZT (Pb(Zr0.52Ti0.48)O3) nanopowder",
   "material": {
@@ -82,14 +82,93 @@
       "note": ""
     }
   },
-  "materials": [],
+  "materials": [
+    {
+      "id": "bose2004-j-1551-2916-2004-00487-x-pzt-pb-zr0-52ti0-48-o3-nanopowder-1--pb-no3-2",
+      "name": "Pb(NO3)2",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "bose2004-j-1551-2916-2004-00487-x",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "bose2004-j-1551-2916-2004-00487-x-pzt-pb-zr0-52ti0-48-o3-nanopowder-1--tio2",
+      "name": "TiO2",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "bose2004-j-1551-2916-2004-00487-x",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "bose2004-j-1551-2916-2004-00487-x-pzt-pb-zr0-52ti0-48-o3-nanopowder-1--hno3",
+      "name": "HNO3",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "bose2004-j-1551-2916-2004-00487-x",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "bose2004-j-1551-2916-2004-00487-x-pzt-pb-zr0-52ti0-48-o3-nanopowder-1--nh4oh",
+      "name": "NH4OH",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "bose2004-j-1551-2916-2004-00487-x",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    }
+  ],
   "stocks": [],
   "material_states": [
     {
       "id": "bose2004-j-1551-2916-2004-00487-x-pzt-pb-zr0-52ti0-48-o3-nanopowder-1--after-s01-dissolve",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "bose2004-j-1551-2916-2004-00487-x-pzt-pb-zr0-52ti0-48-o3-nanopowder-1--pb-no3-2"
+      ]
     },
     {
       "id": "bose2004-j-1551-2916-2004-00487-x-pzt-pb-zr0-52ti0-48-o3-nanopowder-1--after-s02-dissolve",
@@ -100,11 +179,44 @@
       ]
     },
     {
+      "id": "bose2004-j-1551-2916-2004-00487-x-pzt-pb-zr0-52ti0-48-o3-nanopowder-1--after-d2-s03-filter",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "bose2004-j-1551-2916-2004-00487-x-pzt-pb-zr0-52ti0-48-o3-nanopowder-1--after-s02-dissolve"
+      ]
+    },
+    {
+      "id": "bose2004-j-1551-2916-2004-00487-x-pzt-pb-zr0-52ti0-48-o3-nanopowder-1--after-d2-s04-filter",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "bose2004-j-1551-2916-2004-00487-x-pzt-pb-zr0-52ti0-48-o3-nanopowder-1--after-d2-s03-filter"
+      ]
+    },
+    {
       "id": "bose2004-j-1551-2916-2004-00487-x-pzt-pb-zr0-52ti0-48-o3-nanopowder-1--after-s03-precipitate",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "bose2004-j-1551-2916-2004-00487-x-pzt-pb-zr0-52ti0-48-o3-nanopowder-1--after-d2-s04-filter",
+        "bose2004-j-1551-2916-2004-00487-x-pzt-pb-zr0-52ti0-48-o3-nanopowder-1--nh4oh"
+      ]
+    },
+    {
+      "id": "bose2004-j-1551-2916-2004-00487-x-pzt-pb-zr0-52ti0-48-o3-nanopowder-1--after-d2-s06-filter",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "bose2004-j-1551-2916-2004-00487-x-pzt-pb-zr0-52ti0-48-o3-nanopowder-1--after-s03-precipitate"
+      ]
+    },
+    {
+      "id": "bose2004-j-1551-2916-2004-00487-x-pzt-pb-zr0-52ti0-48-o3-nanopowder-1--after-d2-s07-grind",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "bose2004-j-1551-2916-2004-00487-x-pzt-pb-zr0-52ti0-48-o3-nanopowder-1--after-s02-dissolve"
+        "bose2004-j-1551-2916-2004-00487-x-pzt-pb-zr0-52ti0-48-o3-nanopowder-1--after-d2-s06-filter"
       ]
     }
   ],
@@ -117,7 +229,9 @@
       "branch": "",
       "optional": false,
       "depends_on": [],
-      "inputs": [],
+      "inputs": [
+        "bose2004-j-1551-2916-2004-00487-x-pzt-pb-zr0-52ti0-48-o3-nanopowder-1--pb-no3-2"
+      ],
       "outputs": [
         "bose2004-j-1551-2916-2004-00487-x-pzt-pb-zr0-52ti0-48-o3-nanopowder-1--after-s01-dissolve"
       ],
@@ -182,9 +296,9 @@
       ]
     },
     {
-      "id": "s03-precipitate",
-      "action": "precipitate",
-      "label": "Add excess NH4OH for complete precipitation",
+      "id": "d2-s03-filter",
+      "action": "filter",
+      "label": "Filter precipitate",
       "stage": "workup",
       "branch": "",
       "optional": false,
@@ -193,6 +307,83 @@
       ],
       "inputs": [
         "bose2004-j-1551-2916-2004-00487-x-pzt-pb-zr0-52ti0-48-o3-nanopowder-1--after-s02-dissolve"
+      ],
+      "outputs": [
+        "bose2004-j-1551-2916-2004-00487-x-pzt-pb-zr0-52ti0-48-o3-nanopowder-1--after-d2-s03-filter"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Filter precipitate",
+      "evidence": [
+        {
+          "source_id": "bose2004-j-1551-2916-2004-00487-x",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "d2-s04-filter",
+      "action": "filter",
+      "label": "Filter liquid part",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-filter"
+      ],
+      "inputs": [
+        "bose2004-j-1551-2916-2004-00487-x-pzt-pb-zr0-52ti0-48-o3-nanopowder-1--after-d2-s03-filter"
+      ],
+      "outputs": [
+        "bose2004-j-1551-2916-2004-00487-x-pzt-pb-zr0-52ti0-48-o3-nanopowder-1--after-d2-s04-filter"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Filter liquid part",
+      "evidence": [
+        {
+          "source_id": "bose2004-j-1551-2916-2004-00487-x",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "s03-precipitate",
+      "action": "precipitate",
+      "label": "Add excess NH4OH for complete precipitation",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-filter"
+      ],
+      "inputs": [
+        "bose2004-j-1551-2916-2004-00487-x-pzt-pb-zr0-52ti0-48-o3-nanopowder-1--after-d2-s04-filter",
+        "bose2004-j-1551-2916-2004-00487-x-pzt-pb-zr0-52ti0-48-o3-nanopowder-1--nh4oh"
       ],
       "outputs": [
         "bose2004-j-1551-2916-2004-00487-x-pzt-pb-zr0-52ti0-48-o3-nanopowder-1--after-s03-precipitate"
@@ -218,6 +409,82 @@
           "locator": "Main PDF p.1"
         }
       ]
+    },
+    {
+      "id": "d2-s06-filter",
+      "action": "filter",
+      "label": "Filter precipitate",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-precipitate"
+      ],
+      "inputs": [
+        "bose2004-j-1551-2916-2004-00487-x-pzt-pb-zr0-52ti0-48-o3-nanopowder-1--after-s03-precipitate"
+      ],
+      "outputs": [
+        "bose2004-j-1551-2916-2004-00487-x-pzt-pb-zr0-52ti0-48-o3-nanopowder-1--after-d2-s06-filter"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Filter precipitate",
+      "evidence": [
+        {
+          "source_id": "bose2004-j-1551-2916-2004-00487-x",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "d2-s07-grind",
+      "action": "grind",
+      "label": "Grind black fluffy mass to fine powder",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s06-filter"
+      ],
+      "inputs": [
+        "bose2004-j-1551-2916-2004-00487-x-pzt-pb-zr0-52ti0-48-o3-nanopowder-1--after-d2-s06-filter"
+      ],
+      "outputs": [
+        "bose2004-j-1551-2916-2004-00487-x-pzt-pb-zr0-52ti0-48-o3-nanopowder-1--after-d2-s07-grind"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Grind black fluffy mass to fine powder",
+      "evidence": [
+        {
+          "source_id": "bose2004-j-1551-2916-2004-00487-x",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -226,7 +493,7 @@
       "sample_id": "bose2004-j-1551-2916-2004-00487-x-pzt-pb-zr0-52ti0-48-o3-nanopowder-1--product",
       "source_sample_label": "PZT (Pb(Zr0.52Ti0.48)O3) nanopowder",
       "batch_id": null,
-      "material_state_id": "bose2004-j-1551-2916-2004-00487-x-pzt-pb-zr0-52ti0-48-o3-nanopowder-1--after-s03-precipitate",
+      "material_state_id": "bose2004-j-1551-2916-2004-00487-x-pzt-pb-zr0-52ti0-48-o3-nanopowder-1--after-d2-s07-grind",
       "parent_sample_id": null,
       "composition": {
         "value": null,
@@ -276,14 +543,18 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
-      "Reaction time not reported in the extracted text."
+      "Reaction time not reported in the extracted text.",
+      "Amount of Pb(NO3)2 not reported in the extracted text.",
+      "Amount of TiO2 not reported in the extracted text.",
+      "Amount of HNO3 not reported in the extracted text.",
+      "Amount of NH4OH not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

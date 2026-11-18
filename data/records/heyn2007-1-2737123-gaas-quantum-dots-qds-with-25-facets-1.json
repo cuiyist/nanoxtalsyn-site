@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "heyn2007-1-2737123-gaas-quantum-dots-qds-with-25-facets-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Ch. Heyn (2007): GaAs quantum dots (QDs) with 25° facets",
   "material": {
@@ -85,25 +85,234 @@
       "note": ""
     }
   },
-  "materials": [],
+  "materials": [
+    {
+      "id": "heyn2007-1-2737123-gaas-quantum-dots-qds-with-25-facets-1--ga",
+      "name": "Ga",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "heyn2007-1-2737123",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "heyn2007-1-2737123-gaas-quantum-dots-qds-with-25-facets-1--as4",
+      "name": "As4",
+      "formula": null,
+      "role": "nonmetal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "heyn2007-1-2737123",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "heyn2007-1-2737123-gaas-quantum-dots-qds-with-25-facets-1--as",
+      "name": "As",
+      "formula": null,
+      "role": "nonmetal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "heyn2007-1-2737123",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
   "stocks": [],
   "material_states": [
     {
-      "id": "heyn2007-1-2737123-gaas-quantum-dots-qds-with-25-facets-1--after-s01-pause",
+      "id": "heyn2007-1-2737123-gaas-quantum-dots-qds-with-25-facets-1--after-d2-s01-grow-buffer-layer",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "heyn2007-1-2737123-gaas-quantum-dots-qds-with-25-facets-1--ga",
+        "heyn2007-1-2737123-gaas-quantum-dots-qds-with-25-facets-1--as4"
+      ]
+    },
+    {
+      "id": "heyn2007-1-2737123-gaas-quantum-dots-qds-with-25-facets-1--after-d2-s02-decrease-temperature",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "heyn2007-1-2737123-gaas-quantum-dots-qds-with-25-facets-1--after-d2-s01-grow-buffer-layer"
+      ]
+    },
+    {
+      "id": "heyn2007-1-2737123-gaas-quantum-dots-qds-with-25-facets-1--after-s01-pause",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "heyn2007-1-2737123-gaas-quantum-dots-qds-with-25-facets-1--after-d2-s02-decrease-temperature"
+      ]
+    },
+    {
+      "id": "heyn2007-1-2737123-gaas-quantum-dots-qds-with-25-facets-1--after-d2-s04-supply-as4",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "heyn2007-1-2737123-gaas-quantum-dots-qds-with-25-facets-1--after-s01-pause",
+        "heyn2007-1-2737123-gaas-quantum-dots-qds-with-25-facets-1--as4"
+      ]
     },
     {
       "id": "heyn2007-1-2737123-gaas-quantum-dots-qds-with-25-facets-1--after-s02-anneal",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "heyn2007-1-2737123-gaas-quantum-dots-qds-with-25-facets-1--after-s01-pause"
+        "heyn2007-1-2737123-gaas-quantum-dots-qds-with-25-facets-1--after-d2-s04-supply-as4"
       ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-grow-buffer-layer",
+      "action": "grow buffer layer",
+      "label": "Grow GaAs buffer layer",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "heyn2007-1-2737123-gaas-quantum-dots-qds-with-25-facets-1--ga",
+        "heyn2007-1-2737123-gaas-quantum-dots-qds-with-25-facets-1--as4"
+      ],
+      "outputs": [
+        "heyn2007-1-2737123-gaas-quantum-dots-qds-with-25-facets-1--after-d2-s01-grow-buffer-layer"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 580,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "580 °C",
+          "evidence": [
+            {
+              "source_id": "heyn2007-1-2737123",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "As pressure",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "heyn2007-1-2737123",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Grow GaAs buffer layer",
+      "evidence": [
+        {
+          "source_id": "heyn2007-1-2737123",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s02-decrease-temperature",
+      "action": "decrease temperature",
+      "label": "Decrease substrate temperature",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s01-grow-buffer-layer"
+      ],
+      "inputs": [
+        "heyn2007-1-2737123-gaas-quantum-dots-qds-with-25-facets-1--after-d2-s01-grow-buffer-layer"
+      ],
+      "outputs": [
+        "heyn2007-1-2737123-gaas-quantum-dots-qds-with-25-facets-1--after-d2-s02-decrease-temperature"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 140,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "140 °C",
+          "evidence": [
+            {
+              "source_id": "heyn2007-1-2737123",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "As pressure",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "heyn2007-1-2737123",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Decrease substrate temperature",
+      "evidence": [
+        {
+          "source_id": "heyn2007-1-2737123",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
     {
       "id": "s01-pause",
       "action": "pause",
@@ -111,8 +320,12 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s02-decrease-temperature"
+      ],
+      "inputs": [
+        "heyn2007-1-2737123-gaas-quantum-dots-qds-with-25-facets-1--after-d2-s02-decrease-temperature"
+      ],
       "outputs": [
         "heyn2007-1-2737123-gaas-quantum-dots-qds-with-25-facets-1--after-s01-pause"
       ],
@@ -163,9 +376,9 @@
       ]
     },
     {
-      "id": "s02-anneal",
-      "action": "anneal",
-      "label": "Anneal under As pressure",
+      "id": "d2-s04-supply-as4",
+      "action": "supply as4",
+      "label": "Supply As4 for crystallization",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -173,7 +386,70 @@
         "s01-pause"
       ],
       "inputs": [
-        "heyn2007-1-2737123-gaas-quantum-dots-qds-with-25-facets-1--after-s01-pause"
+        "heyn2007-1-2737123-gaas-quantum-dots-qds-with-25-facets-1--after-s01-pause",
+        "heyn2007-1-2737123-gaas-quantum-dots-qds-with-25-facets-1--as4"
+      ],
+      "outputs": [
+        "heyn2007-1-2737123-gaas-quantum-dots-qds-with-25-facets-1--after-d2-s04-supply-as4"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 120,
+          "minimum": null,
+          "maximum": null,
+          "unit": "s",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "120 s",
+          "evidence": [
+            {
+              "source_id": "heyn2007-1-2737123",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "As pressure",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "heyn2007-1-2737123",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Supply As4 for crystallization",
+      "evidence": [
+        {
+          "source_id": "heyn2007-1-2737123",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-anneal",
+      "action": "anneal",
+      "label": "Anneal under As pressure",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-supply-as4"
+      ],
+      "inputs": [
+        "heyn2007-1-2737123-gaas-quantum-dots-qds-with-25-facets-1--after-d2-s04-supply-as4"
       ],
       "outputs": [
         "heyn2007-1-2737123-gaas-quantum-dots-qds-with-25-facets-1--after-s02-anneal"
@@ -308,10 +584,13 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
-      "Size not reported in the extracted text."
+      "Size not reported in the extracted text.",
+      "Amount of Ga not reported in the extracted text.",
+      "Amount of As4 not reported in the extracted text.",
+      "Amount of As not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

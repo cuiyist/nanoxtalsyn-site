@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "matsuda2005-jmr-2005-0032-100-16-5-sio216-5tio2-coating-with-anata-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Atsunori Matsuda et al. (2005): (100 −16.5)SiO2·16.5TiO2 coating with anatase nanocrystals",
   "material": {
@@ -82,21 +82,82 @@
       "note": ""
     }
   },
-  "materials": [],
+  "materials": [
+    {
+      "id": "matsuda2005-jmr-2005-0032-100-16-5-sio216-5tio2-coating-with-anata-1--hydrochloric-acid",
+      "name": "hydrochloric acid",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "matsuda2005-jmr-2005-0032",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "matsuda2005-jmr-2005-0032-100-16-5-sio216-5tio2-coating-with-anata-1--hydrolyzed-solution",
+      "name": "hydrolyzed solution",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "matsuda2005-jmr-2005-0032",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "matsuda2005-jmr-2005-0032-100-16-5-sio216-5tio2-coating-with-anata-1--substrates",
+      "name": "substrates",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "matsuda2005-jmr-2005-0032",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
   "stocks": [],
   "material_states": [
     {
       "id": "matsuda2005-jmr-2005-0032-100-16-5-sio216-5tio2-coating-with-anata-1--after-s01-hydrolyze",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "matsuda2005-jmr-2005-0032-100-16-5-sio216-5tio2-coating-with-anata-1--hydrochloric-acid"
+      ]
     },
     {
       "id": "matsuda2005-jmr-2005-0032-100-16-5-sio216-5tio2-coating-with-anata-1--after-s02-mix",
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
-        "matsuda2005-jmr-2005-0032-100-16-5-sio216-5tio2-coating-with-anata-1--after-s01-hydrolyze"
+        "matsuda2005-jmr-2005-0032-100-16-5-sio216-5tio2-coating-with-anata-1--after-s01-hydrolyze",
+        "matsuda2005-jmr-2005-0032-100-16-5-sio216-5tio2-coating-with-anata-1--hydrolyzed-solution"
       ]
     },
     {
@@ -109,10 +170,20 @@
     },
     {
       "id": "matsuda2005-jmr-2005-0032-100-16-5-sio216-5tio2-coating-with-anata-1--after-s04-dry",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "matsuda2005-jmr-2005-0032-100-16-5-sio216-5tio2-coating-with-anata-1--after-s03-coat",
+        "matsuda2005-jmr-2005-0032-100-16-5-sio216-5tio2-coating-with-anata-1--substrates"
+      ]
+    },
+    {
+      "id": "matsuda2005-jmr-2005-0032-100-16-5-sio216-5tio2-coating-with-anata-1--after-d2-s05-boil",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "matsuda2005-jmr-2005-0032-100-16-5-sio216-5tio2-coating-with-anata-1--after-s03-coat"
+        "matsuda2005-jmr-2005-0032-100-16-5-sio216-5tio2-coating-with-anata-1--after-s04-dry",
+        "matsuda2005-jmr-2005-0032-100-16-5-sio216-5tio2-coating-with-anata-1--substrates"
       ]
     }
   ],
@@ -125,7 +196,9 @@
       "branch": "",
       "optional": false,
       "depends_on": [],
-      "inputs": [],
+      "inputs": [
+        "matsuda2005-jmr-2005-0032-100-16-5-sio216-5tio2-coating-with-anata-1--hydrochloric-acid"
+      ],
       "outputs": [
         "matsuda2005-jmr-2005-0032-100-16-5-sio216-5tio2-coating-with-anata-1--after-s01-hydrolyze"
       ],
@@ -186,7 +259,8 @@
         "s01-hydrolyze"
       ],
       "inputs": [
-        "matsuda2005-jmr-2005-0032-100-16-5-sio216-5tio2-coating-with-anata-1--after-s01-hydrolyze"
+        "matsuda2005-jmr-2005-0032-100-16-5-sio216-5tio2-coating-with-anata-1--after-s01-hydrolyze",
+        "matsuda2005-jmr-2005-0032-100-16-5-sio216-5tio2-coating-with-anata-1--hydrolyzed-solution"
       ],
       "outputs": [
         "matsuda2005-jmr-2005-0032-100-16-5-sio216-5tio2-coating-with-anata-1--after-s02-mix"
@@ -291,7 +365,8 @@
         "s03-coat"
       ],
       "inputs": [
-        "matsuda2005-jmr-2005-0032-100-16-5-sio216-5tio2-coating-with-anata-1--after-s03-coat"
+        "matsuda2005-jmr-2005-0032-100-16-5-sio216-5tio2-coating-with-anata-1--after-s03-coat",
+        "matsuda2005-jmr-2005-0032-100-16-5-sio216-5tio2-coating-with-anata-1--substrates"
       ],
       "outputs": [
         "matsuda2005-jmr-2005-0032-100-16-5-sio216-5tio2-coating-with-anata-1--after-s04-dry"
@@ -354,6 +429,69 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s05-boil",
+      "action": "boil",
+      "label": "Boiling water treatment",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-dry"
+      ],
+      "inputs": [
+        "matsuda2005-jmr-2005-0032-100-16-5-sio216-5tio2-coating-with-anata-1--after-s04-dry",
+        "matsuda2005-jmr-2005-0032-100-16-5-sio216-5tio2-coating-with-anata-1--substrates"
+      ],
+      "outputs": [
+        "matsuda2005-jmr-2005-0032-100-16-5-sio216-5tio2-coating-with-anata-1--after-d2-s05-boil"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 h",
+          "evidence": [
+            {
+              "source_id": "matsuda2005-jmr-2005-0032",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "matsuda2005-jmr-2005-0032",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Boiling water treatment",
+      "evidence": [
+        {
+          "source_id": "matsuda2005-jmr-2005-0032",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -362,7 +500,7 @@
       "sample_id": "matsuda2005-jmr-2005-0032-100-16-5-sio216-5tio2-coating-with-anata-1--product",
       "source_sample_label": "(100 −16.5)SiO2·16.5TiO2 coating with anatase nanocrystals",
       "batch_id": null,
-      "material_state_id": "matsuda2005-jmr-2005-0032-100-16-5-sio216-5tio2-coating-with-anata-1--after-s04-dry",
+      "material_state_id": "matsuda2005-jmr-2005-0032-100-16-5-sio216-5tio2-coating-with-anata-1--after-d2-s05-boil",
       "parent_sample_id": null,
       "composition": {
         "value": "SiO2-TiO2",
@@ -415,12 +553,15 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
-      "Reaction temperature not reported in the extracted text."
+      "Reaction temperature not reported in the extracted text.",
+      "Amount of hydrochloric acid not reported in the extracted text.",
+      "Amount of hydrolyzed solution not reported in the extracted text.",
+      "Amount of substrates not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

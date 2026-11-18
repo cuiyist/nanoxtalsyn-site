@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmge-3as-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Hyeong Woo Ban; Maral Vafaie; Larissa Levina; Pan Xia; Muhammad Imran; Yanjiang Liu; Amin Morteza Najarian; Edward H. Sargent (2024): InAs CQDs synthesized with (TMGe)3As",
   "material": {
@@ -128,15 +128,129 @@
           "locator": "Main PDF p.7"
         }
       ]
+    },
+    {
+      "id": "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmge-3as-2--1-octadecene",
+      "name": "1-octadecene",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "ban2024-jacs-4c06202",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmge-3as-2--in-oac-3",
+      "name": "In(OAc)3",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "ban2024-jacs-4c06202",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmge-3as-2--tmge-3as",
+      "name": "(TMGe)3As",
+      "formula": null,
+      "role": "nonmetal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "ban2024-jacs-4c06202",
+          "locator": "Main PDF p.7"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
       "id": "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmge-3as-2--after-s01-degas",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmge-3as-2--1-octadecene"
+      ]
+    },
+    {
+      "id": "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmge-3as-2--after-d2-s02-mix",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmge-3as-2--after-s01-degas",
+        "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmge-3as-2--in-oac-3",
+        "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmge-3as-2--oleic-acid",
+        "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmge-3as-2--1-octadecene"
+      ]
+    },
+    {
+      "id": "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmge-3as-2--after-d2-s03-refill",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmge-3as-2--after-d2-s02-mix"
+      ]
+    },
+    {
+      "id": "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmge-3as-2--after-d2-s04-add",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmge-3as-2--after-d2-s03-refill",
+        "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmge-3as-2--1-octadecene",
+        "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmge-3as-2--oleic-acid"
+      ]
+    },
+    {
+      "id": "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmge-3as-2--after-d2-s05-inject",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmge-3as-2--after-d2-s04-add",
+        "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmge-3as-2--oleic-acid",
+        "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmge-3as-2--1-octadecene"
+      ]
+    },
+    {
+      "id": "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmge-3as-2--after-d2-s06-cool",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmge-3as-2--after-d2-s05-inject"
+      ]
+    },
+    {
+      "id": "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmge-3as-2--after-d2-s07-purify",
       "name": "product as isolated",
       "kind": "product",
-      "parent_ids": []
+      "parent_ids": [
+        "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmge-3as-2--after-d2-s06-cool"
+      ]
     }
   ],
   "operations": [
@@ -148,7 +262,9 @@
       "branch": "",
       "optional": false,
       "depends_on": [],
-      "inputs": [],
+      "inputs": [
+        "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmge-3as-2--1-octadecene"
+      ],
       "outputs": [
         "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmge-3as-2--after-s01-degas"
       ],
@@ -197,6 +313,266 @@
           "locator": "Main PDF p.7"
         }
       ]
+    },
+    {
+      "id": "d2-s02-mix",
+      "action": "mix",
+      "label": "Mix",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-degas"
+      ],
+      "inputs": [
+        "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmge-3as-2--after-s01-degas",
+        "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmge-3as-2--in-oac-3",
+        "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmge-3as-2--oleic-acid",
+        "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmge-3as-2--1-octadecene"
+      ],
+      "outputs": [
+        "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmge-3as-2--after-d2-s02-mix"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "ban2024-jacs-4c06202",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Mix",
+      "evidence": [
+        {
+          "source_id": "ban2024-jacs-4c06202",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "d2-s03-refill",
+      "action": "refill",
+      "label": "Refill",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-mix"
+      ],
+      "inputs": [
+        "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmge-3as-2--after-d2-s02-mix"
+      ],
+      "outputs": [
+        "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmge-3as-2--after-d2-s03-refill"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "ban2024-jacs-4c06202",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Refill",
+      "evidence": [
+        {
+          "source_id": "ban2024-jacs-4c06202",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "d2-s04-add",
+      "action": "add",
+      "label": "Add",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-refill"
+      ],
+      "inputs": [
+        "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmge-3as-2--after-d2-s03-refill",
+        "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmge-3as-2--1-octadecene",
+        "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmge-3as-2--oleic-acid"
+      ],
+      "outputs": [
+        "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmge-3as-2--after-d2-s04-add"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "ban2024-jacs-4c06202",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add",
+      "evidence": [
+        {
+          "source_id": "ban2024-jacs-4c06202",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "d2-s05-inject",
+      "action": "inject",
+      "label": "Continuous injection of InAs nanoclusters",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-add"
+      ],
+      "inputs": [
+        "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmge-3as-2--after-d2-s04-add",
+        "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmge-3as-2--oleic-acid",
+        "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmge-3as-2--1-octadecene"
+      ],
+      "outputs": [
+        "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmge-3as-2--after-d2-s05-inject"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "ban2024-jacs-4c06202",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Continuous injection of InAs nanoclusters",
+      "evidence": [
+        {
+          "source_id": "ban2024-jacs-4c06202",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "d2-s06-cool",
+      "action": "cool",
+      "label": "Cooling the reaction mixture to room temperature",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s05-inject"
+      ],
+      "inputs": [
+        "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmge-3as-2--after-d2-s05-inject"
+      ],
+      "outputs": [
+        "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmge-3as-2--after-d2-s06-cool"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "ban2024-jacs-4c06202",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Cooling the reaction mixture to room temperature",
+      "evidence": [
+        {
+          "source_id": "ban2024-jacs-4c06202",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "d2-s07-purify",
+      "action": "purify",
+      "label": "Purifying the InAs CQDs",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s06-cool"
+      ],
+      "inputs": [
+        "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmge-3as-2--after-d2-s06-cool"
+      ],
+      "outputs": [
+        "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmge-3as-2--after-d2-s07-purify"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Purifying the InAs CQDs",
+      "evidence": [
+        {
+          "source_id": "ban2024-jacs-4c06202",
+          "locator": "Main PDF p.7"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -205,7 +581,7 @@
       "sample_id": "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmge-3as-2--product",
       "source_sample_label": "InAs CQDs synthesized with (TMGe)3As",
       "batch_id": null,
-      "material_state_id": "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmge-3as-2--after-s01-degas",
+      "material_state_id": "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmge-3as-2--after-d2-s07-purify",
       "parent_sample_id": null,
       "composition": {
         "value": "InAs",
@@ -297,13 +673,49 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmge-3as-2--photoluminescence-peak",
+      "sample_id": "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmge-3as-2--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 940,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "940 nm",
+        "evidence": [
+          {
+            "source_id": "ban2024-jacs-4c06202",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "ban2024-jacs-4c06202",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
-    "missing_fields": [],
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
+    "missing_fields": [
+      "Amount of 1-octadecene not reported in the extracted text.",
+      "Amount of In(OAc)3 not reported in the extracted text.",
+      "Amount of (TMGe)3As not reported in the extracted text."
+    ],
     "conflicts": [],
     "requested_tasks": [],
     "experimental_outcome": "reported_product"

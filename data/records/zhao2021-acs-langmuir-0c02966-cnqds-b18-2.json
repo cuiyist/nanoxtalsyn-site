@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "zhao2021-acs-langmuir-0c02966-cnqds-b18-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Ping Zhao; Bo Jin; Qingchun Zhang; Rufan Peng (2021): CNQDs-B18",
   "material": {
@@ -74,9 +74,14 @@
       "derivation": null
     },
     "morphology": {
-      "value": null,
-      "status": "not_reported",
-      "evidence": [],
+      "value": "quasi-spherical",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "zhao2021-acs-langmuir-0c02966",
+          "locator": "Main PDF p.2"
+        }
+      ],
       "note": ""
     }
   },
@@ -84,14 +89,22 @@
   "stocks": [],
   "material_states": [
     {
-      "id": "zhao2021-acs-langmuir-0c02966-cnqds-b18-2--after-s01-heat",
+      "id": "zhao2021-acs-langmuir-0c02966-cnqds-b18-2--after-d2-s01-dissolve",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": []
     },
     {
-      "id": "zhao2021-acs-langmuir-0c02966-cnqds-b18-2--after-s02-cool",
+      "id": "zhao2021-acs-langmuir-0c02966-cnqds-b18-2--after-s01-heat",
       "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zhao2021-acs-langmuir-0c02966-cnqds-b18-2--after-d2-s01-dissolve"
+      ]
+    },
+    {
+      "id": "zhao2021-acs-langmuir-0c02966-cnqds-b18-2--after-s02-cool",
+      "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
         "zhao2021-acs-langmuir-0c02966-cnqds-b18-2--after-s01-heat"
@@ -108,14 +121,57 @@
   ],
   "operations": [
     {
+      "id": "d2-s01-dissolve",
+      "action": "dissolve",
+      "label": "Dissolve urea and citric acid in water",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [],
+      "outputs": [
+        "zhao2021-acs-langmuir-0c02966-cnqds-b18-2--after-d2-s01-dissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zhao2021-acs-langmuir-0c02966",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dissolve urea and citric acid in water",
+      "evidence": [
+        {
+          "source_id": "zhao2021-acs-langmuir-0c02966",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
       "id": "s01-heat",
       "action": "heat",
       "label": "Hydrothermal reaction at 180 °C for 3 h",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s01-dissolve"
+      ],
+      "inputs": [
+        "zhao2021-acs-langmuir-0c02966-cnqds-b18-2--after-d2-s01-dissolve"
+      ],
       "outputs": [
         "zhao2021-acs-langmuir-0c02966-cnqds-b18-2--after-s01-heat"
       ],
@@ -291,9 +347,14 @@
         "note": ""
       },
       "morphology": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "quasi-spherical",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zhao2021-acs-langmuir-0c02966",
+            "locator": "Main PDF p.2"
+          }
+        ],
         "note": ""
       },
       "surface": {
@@ -348,15 +409,78 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "zhao2021-acs-langmuir-0c02966-cnqds-b18-2--photoluminescence-peak",
+      "sample_id": "zhao2021-acs-langmuir-0c02966-cnqds-b18-2--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 440,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "440 nm",
+        "evidence": [
+          {
+            "source_id": "zhao2021-acs-langmuir-0c02966",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "zhao2021-acs-langmuir-0c02966",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "zhao2021-acs-langmuir-0c02966-cnqds-b18-2--photoluminescence-quantum-yield",
+      "sample_id": "zhao2021-acs-langmuir-0c02966-cnqds-b18-2--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 40.0,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "40 %",
+        "evidence": [
+          {
+            "source_id": "zhao2021-acs-langmuir-0c02966",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "zhao2021-acs-langmuir-0c02966",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
-      "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text."
     ],
     "conflicts": [],
