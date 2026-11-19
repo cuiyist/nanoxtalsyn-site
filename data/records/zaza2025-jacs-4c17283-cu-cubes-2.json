@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "zaza2025-jacs-4c17283-cu-cubes-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Ludovic Zaza; Bojana Ranković; Philippe Schwaller; Raffaella Buonsanti (2025): Cu cubes",
   "material": {
@@ -112,6 +112,63 @@
           "locator": "Main PDF p.8"
         }
       ]
+    },
+    {
+      "id": "zaza2025-jacs-4c17283-cu-cubes-2--cubr",
+      "name": "CuBr",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 0.513,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.513 mmol",
+          "evidence": [
+            {
+              "source_id": "zaza2025-jacs-4c17283",
+              "locator": "Main PDF p.8"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zaza2025-jacs-4c17283",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    },
+    {
+      "id": "zaza2025-jacs-4c17283-cu-cubes-2--oleylamine",
+      "name": "oleylamine",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zaza2025-jacs-4c17283",
+          "locator": "Main PDF p.8"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -121,7 +178,9 @@
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": [
-        "zaza2025-jacs-4c17283-cu-cubes-2--trioctylphosphine-oxide"
+        "zaza2025-jacs-4c17283-cu-cubes-2--trioctylphosphine-oxide",
+        "zaza2025-jacs-4c17283-cu-cubes-2--cubr",
+        "zaza2025-jacs-4c17283-cu-cubes-2--oleylamine"
       ]
     },
     {
@@ -133,7 +192,7 @@
       ]
     },
     {
-      "id": "zaza2025-jacs-4c17283-cu-cubes-2--after-s03-heat",
+      "id": "zaza2025-jacs-4c17283-cu-cubes-2--after-d2-s03-redisperse",
       "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
@@ -141,11 +200,27 @@
       ]
     },
     {
+      "id": "zaza2025-jacs-4c17283-cu-cubes-2--after-s03-heat",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zaza2025-jacs-4c17283-cu-cubes-2--after-d2-s03-redisperse"
+      ]
+    },
+    {
       "id": "zaza2025-jacs-4c17283-cu-cubes-2--after-s04-cool",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zaza2025-jacs-4c17283-cu-cubes-2--after-s03-heat"
+      ]
+    },
+    {
+      "id": "zaza2025-jacs-4c17283-cu-cubes-2--after-d2-s06-purify",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "zaza2025-jacs-4c17283-cu-cubes-2--after-s03-heat"
+        "zaza2025-jacs-4c17283-cu-cubes-2--after-s04-cool"
       ]
     }
   ],
@@ -159,7 +234,9 @@
       "optional": false,
       "depends_on": [],
       "inputs": [
-        "zaza2025-jacs-4c17283-cu-cubes-2--trioctylphosphine-oxide"
+        "zaza2025-jacs-4c17283-cu-cubes-2--trioctylphosphine-oxide",
+        "zaza2025-jacs-4c17283-cu-cubes-2--cubr",
+        "zaza2025-jacs-4c17283-cu-cubes-2--oleylamine"
       ],
       "outputs": [
         "zaza2025-jacs-4c17283-cu-cubes-2--after-s01-add"
@@ -272,10 +349,10 @@
       ]
     },
     {
-      "id": "s03-heat",
-      "action": "heat",
-      "label": "Heat the reaction mixture to the desired temperature.",
-      "stage": "synthesis",
+      "id": "d2-s03-redisperse",
+      "action": "redisperse",
+      "label": "Redisperse the final product in toluene",
+      "stage": "workup",
       "branch": "",
       "optional": false,
       "depends_on": [
@@ -283,6 +360,44 @@
       ],
       "inputs": [
         "zaza2025-jacs-4c17283-cu-cubes-2--after-s02-degas"
+      ],
+      "outputs": [
+        "zaza2025-jacs-4c17283-cu-cubes-2--after-d2-s03-redisperse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Redisperse the final product in toluene",
+      "evidence": [
+        {
+          "source_id": "zaza2025-jacs-4c17283",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    },
+    {
+      "id": "s03-heat",
+      "action": "heat",
+      "label": "Heat the reaction mixture to the desired temperature.",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-redisperse"
+      ],
+      "inputs": [
+        "zaza2025-jacs-4c17283-cu-cubes-2--after-d2-s03-redisperse"
       ],
       "outputs": [
         "zaza2025-jacs-4c17283-cu-cubes-2--after-s03-heat"
@@ -412,6 +527,63 @@
           "locator": "Main PDF p.8"
         }
       ]
+    },
+    {
+      "id": "d2-s06-purify",
+      "action": "purify",
+      "label": "Wash and centrifuge the reaction solution.",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-cool"
+      ],
+      "inputs": [
+        "zaza2025-jacs-4c17283-cu-cubes-2--after-s04-cool"
+      ],
+      "outputs": [
+        "zaza2025-jacs-4c17283-cu-cubes-2--after-d2-s06-purify"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 10,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "10 min",
+          "evidence": [
+            {
+              "source_id": "zaza2025-jacs-4c17283",
+              "locator": "Main PDF p.8"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Wash and centrifuge the reaction solution.",
+      "evidence": [
+        {
+          "source_id": "zaza2025-jacs-4c17283",
+          "locator": "Main PDF p.8"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -420,7 +592,7 @@
       "sample_id": "zaza2025-jacs-4c17283-cu-cubes-2--product",
       "source_sample_label": "Cu cubes",
       "batch_id": null,
-      "material_state_id": "zaza2025-jacs-4c17283-cu-cubes-2--after-s04-cool",
+      "material_state_id": "zaza2025-jacs-4c17283-cu-cubes-2--after-d2-s06-purify",
       "parent_sample_id": null,
       "composition": {
         "value": null,
@@ -474,10 +646,11 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
-      "Size not reported in the extracted text."
+      "Size not reported in the extracted text.",
+      "Amount of oleylamine not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

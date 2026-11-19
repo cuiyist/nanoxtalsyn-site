@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "kelly2014-ja510120e-1-octyl-sincs-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Tapas K. Purkait et al. (2014): 1-octyl-SiNCs",
   "material": {
@@ -136,15 +136,63 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "kelly2014-ja510120e-1-octyl-sincs-2--hydrogen-terminated-silicon-nanocrystals",
+      "name": "hydrogen-terminated silicon nanocrystals (H-SiNCs)",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "kelly2014-ja510120e",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "kelly2014-ja510120e-1-octyl-sincs-2--toluene",
+      "name": "toluene",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "kelly2014-ja510120e",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
       "id": "kelly2014-ja510120e-1-octyl-sincs-2--after-s01-degas",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": []
+    },
+    {
+      "id": "kelly2014-ja510120e-1-octyl-sincs-2--after-d2-s02-add",
       "name": "product as isolated",
       "kind": "product",
-      "parent_ids": []
+      "parent_ids": [
+        "kelly2014-ja510120e-1-octyl-sincs-2--after-s01-degas",
+        "kelly2014-ja510120e-1-octyl-sincs-2--1-octene",
+        "kelly2014-ja510120e-1-octyl-sincs-2--bh3thf"
+      ]
     }
   ],
   "operations": [
@@ -186,6 +234,70 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s02-add",
+      "action": "add",
+      "label": "Add 1-octene and BH3·THF",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-degas"
+      ],
+      "inputs": [
+        "kelly2014-ja510120e-1-octyl-sincs-2--after-s01-degas",
+        "kelly2014-ja510120e-1-octyl-sincs-2--1-octene",
+        "kelly2014-ja510120e-1-octyl-sincs-2--bh3thf"
+      ],
+      "outputs": [
+        "kelly2014-ja510120e-1-octyl-sincs-2--after-d2-s02-add"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 12,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "12 h",
+          "evidence": [
+            {
+              "source_id": "kelly2014-ja510120e",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "air-free",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "kelly2014-ja510120e",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add 1-octene and BH3·THF",
+      "evidence": [
+        {
+          "source_id": "kelly2014-ja510120e",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -194,7 +306,7 @@
       "sample_id": "kelly2014-ja510120e-1-octyl-sincs-2--product",
       "source_sample_label": "1-octyl-SiNCs",
       "batch_id": null,
-      "material_state_id": "kelly2014-ja510120e-1-octyl-sincs-2--after-s01-degas",
+      "material_state_id": "kelly2014-ja510120e-1-octyl-sincs-2--after-d2-s02-add",
       "parent_sample_id": null,
       "composition": {
         "value": "Si",
@@ -274,18 +386,52 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "kelly2014-ja510120e-1-octyl-sincs-2--photoluminescence-peak",
+      "sample_id": "kelly2014-ja510120e-1-octyl-sincs-2--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 694,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "694 nm",
+        "evidence": [
+          {
+            "source_id": "kelly2014-ja510120e",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "kelly2014-ja510120e",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
-      "Amount of 1-octene not reported in the extracted text."
+      "Amount of 1-octene not reported in the extracted text.",
+      "Amount of hydrogen-terminated silicon nanocrystals (H-SiNCs) not reported in the extracted text.",
+      "Amount of toluene not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

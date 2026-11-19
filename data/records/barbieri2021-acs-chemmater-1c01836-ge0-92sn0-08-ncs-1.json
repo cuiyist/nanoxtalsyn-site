@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "barbieri2021-acs-chemmater-1c01836-ge0-92sn0-08-ncs-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Rachel C. Barbieri et al. (2021): Ge0.92Sn0.08 NCs",
   "material": {
@@ -74,9 +74,14 @@
       "derivation": null
     },
     "morphology": {
-      "value": null,
-      "status": "not_reported",
-      "evidence": [],
+      "value": "sphere",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "barbieri2021-acs-chemmater-1c01836",
+          "locator": "Main PDF p.10"
+        }
+      ],
       "note": ""
     }
   },
@@ -118,16 +123,67 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "barbieri2021-acs-chemmater-1c01836-ge0-92sn0-08-ncs-1--gei2",
+      "name": "GeI2",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "barbieri2021-acs-chemmater-1c01836",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "barbieri2021-acs-chemmater-1c01836-ge0-92sn0-08-ncs-1--sn-hmds-2",
+      "name": "Sn(HMDS)2",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "barbieri2021-acs-chemmater-1c01836",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
-      "id": "barbieri2021-acs-chemmater-1c01836-ge0-92sn0-08-ncs-1--after-s01-heat",
+      "id": "barbieri2021-acs-chemmater-1c01836-ge0-92sn0-08-ncs-1--after-d2-s01-heat",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": [
+        "barbieri2021-acs-chemmater-1c01836-ge0-92sn0-08-ncs-1--gei2",
+        "barbieri2021-acs-chemmater-1c01836-ge0-92sn0-08-ncs-1--sn-hmds-2",
         "barbieri2021-acs-chemmater-1c01836-ge0-92sn0-08-ncs-1--ola"
+      ]
+    },
+    {
+      "id": "barbieri2021-acs-chemmater-1c01836-ge0-92sn0-08-ncs-1--after-s01-heat",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "barbieri2021-acs-chemmater-1c01836-ge0-92sn0-08-ncs-1--after-d2-s01-heat",
+        "barbieri2021-acs-chemmater-1c01836-ge0-92sn0-08-ncs-1--ola",
+        "barbieri2021-acs-chemmater-1c01836-ge0-92sn0-08-ncs-1--gei2",
+        "barbieri2021-acs-chemmater-1c01836-ge0-92sn0-08-ncs-1--sn-hmds-2"
       ]
     },
     {
@@ -141,15 +197,95 @@
   ],
   "operations": [
     {
+      "id": "d2-s01-heat",
+      "action": "heat",
+      "label": "Heat to 120 °C for 30 min",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "barbieri2021-acs-chemmater-1c01836-ge0-92sn0-08-ncs-1--gei2",
+        "barbieri2021-acs-chemmater-1c01836-ge0-92sn0-08-ncs-1--sn-hmds-2",
+        "barbieri2021-acs-chemmater-1c01836-ge0-92sn0-08-ncs-1--ola"
+      ],
+      "outputs": [
+        "barbieri2021-acs-chemmater-1c01836-ge0-92sn0-08-ncs-1--after-d2-s01-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 120,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "120 °C",
+          "evidence": [
+            {
+              "source_id": "barbieri2021-acs-chemmater-1c01836",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 30,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "30 min",
+          "evidence": [
+            {
+              "source_id": "barbieri2021-acs-chemmater-1c01836",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heat to 120 °C for 30 min",
+      "evidence": [
+        {
+          "source_id": "barbieri2021-acs-chemmater-1c01836",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
       "id": "s01-heat",
       "action": "heat",
       "label": "Heat to 250 °C for 120 min",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
+      "depends_on": [
+        "d2-s01-heat"
+      ],
       "inputs": [
-        "barbieri2021-acs-chemmater-1c01836-ge0-92sn0-08-ncs-1--ola"
+        "barbieri2021-acs-chemmater-1c01836-ge0-92sn0-08-ncs-1--after-d2-s01-heat",
+        "barbieri2021-acs-chemmater-1c01836-ge0-92sn0-08-ncs-1--ola",
+        "barbieri2021-acs-chemmater-1c01836-ge0-92sn0-08-ncs-1--gei2",
+        "barbieri2021-acs-chemmater-1c01836-ge0-92sn0-08-ncs-1--sn-hmds-2"
       ],
       "outputs": [
         "barbieri2021-acs-chemmater-1c01836-ge0-92sn0-08-ncs-1--after-s01-heat"
@@ -279,9 +415,14 @@
         "note": ""
       },
       "morphology": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "sphere",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "barbieri2021-acs-chemmater-1c01836",
+            "locator": "Main PDF p.10"
+          }
+        ],
         "note": ""
       },
       "surface": {
@@ -340,13 +481,14 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
-      "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
-      "Reaction time not reported in the extracted text."
+      "Reaction time not reported in the extracted text.",
+      "Amount of GeI2 not reported in the extracted text.",
+      "Amount of Sn(HMDS)2 not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

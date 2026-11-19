@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "jeon2012-la301477e-cdse-quantum-dot-interlayer-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Ji Hye Jeon (2012): CdSe quantum dot interlayer",
   "material": {
@@ -104,6 +104,44 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "jeon2012-la301477e-cdse-quantum-dot-interlayer-1--polycarbonate-pc-film",
+      "name": "polycarbonate (PC) film",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "jeon2012-la301477e",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "jeon2012-la301477e-cdse-quantum-dot-interlayer-1--cdse-qd-solution",
+      "name": "CdSe QD solution",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "jeon2012-la301477e",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -115,11 +153,19 @@
       "parent_ids": []
     },
     {
+      "id": "jeon2012-la301477e-cdse-quantum-dot-interlayer-1--after-d2-s02-heat",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "jeon2012-la301477e-cdse-quantum-dot-interlayer-1--after-s01-drop"
+      ]
+    },
+    {
       "id": "jeon2012-la301477e-cdse-quantum-dot-interlayer-1--after-s02-transfer",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "jeon2012-la301477e-cdse-quantum-dot-interlayer-1--after-s01-drop"
+        "jeon2012-la301477e-cdse-quantum-dot-interlayer-1--after-d2-s02-heat"
       ]
     }
   ],
@@ -159,9 +205,9 @@
       ]
     },
     {
-      "id": "s02-transfer",
-      "action": "transfer",
-      "label": "Transfer QD interlayer onto active layer",
+      "id": "d2-s02-heat",
+      "action": "heat",
+      "label": "Thermally treat QD layer to remove solvent",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -170,6 +216,81 @@
       ],
       "inputs": [
         "jeon2012-la301477e-cdse-quantum-dot-interlayer-1--after-s01-drop"
+      ],
+      "outputs": [
+        "jeon2012-la301477e-cdse-quantum-dot-interlayer-1--after-d2-s02-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 50,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "50 °C",
+          "evidence": [
+            {
+              "source_id": "jeon2012-la301477e",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 min",
+          "evidence": [
+            {
+              "source_id": "jeon2012-la301477e",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Thermally treat QD layer to remove solvent",
+      "evidence": [
+        {
+          "source_id": "jeon2012-la301477e",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-transfer",
+      "action": "transfer",
+      "label": "Transfer QD interlayer onto active layer",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-heat"
+      ],
+      "inputs": [
+        "jeon2012-la301477e-cdse-quantum-dot-interlayer-1--after-d2-s02-heat"
       ],
       "outputs": [
         "jeon2012-la301477e-cdse-quantum-dot-interlayer-1--after-s02-transfer"
@@ -308,17 +429,51 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "jeon2012-la301477e-cdse-quantum-dot-interlayer-1--photoluminescence-peak",
+      "sample_id": "jeon2012-la301477e-cdse-quantum-dot-interlayer-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 550,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "550 nm",
+        "evidence": [
+          {
+            "source_id": "jeon2012-la301477e",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "jeon2012-la301477e",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
-      "Amount of PUA resin (NOA63) not reported in the extracted text."
+      "Amount of PUA resin (NOA63) not reported in the extracted text.",
+      "Amount of polycarbonate (PC) film not reported in the extracted text.",
+      "Amount of CdSe QD solution not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

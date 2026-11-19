@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "ou2010-jp105344b-pbse-qd-assembled-2d-islands-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Yi-Ching Ou (2010): PbSe QD-assembled 2D islands",
   "material": {
@@ -109,6 +109,25 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "ou2010-jp105344b-pbse-qd-assembled-2d-islands-1--pbse-qds",
+      "name": "PbSe QDs",
+      "formula": null,
+      "role": "starting_particles",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "ou2010-jp105344b",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -120,11 +139,21 @@
       "parent_ids": []
     },
     {
+      "id": "ou2010-jp105344b-pbse-qd-assembled-2d-islands-1--after-d2-s02-cast",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "ou2010-jp105344b-pbse-qd-assembled-2d-islands-1--after-s01-heat",
+        "ou2010-jp105344b-pbse-qd-assembled-2d-islands-1--pbse-qds",
+        "ou2010-jp105344b-pbse-qd-assembled-2d-islands-1--toluene"
+      ]
+    },
+    {
       "id": "ou2010-jp105344b-pbse-qd-assembled-2d-islands-1--after-s02-evaporate",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "ou2010-jp105344b-pbse-qd-assembled-2d-islands-1--after-s01-heat",
+        "ou2010-jp105344b-pbse-qd-assembled-2d-islands-1--after-d2-s02-cast",
         "ou2010-jp105344b-pbse-qd-assembled-2d-islands-1--toluene"
       ]
     }
@@ -170,9 +199,9 @@
       ]
     },
     {
-      "id": "s02-evaporate",
-      "action": "evaporate",
-      "label": "Evaporate solvent",
+      "id": "d2-s02-cast",
+      "action": "cast",
+      "label": "Cast nanocrystal suspension on hot substrate",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -181,6 +210,51 @@
       ],
       "inputs": [
         "ou2010-jp105344b-pbse-qd-assembled-2d-islands-1--after-s01-heat",
+        "ou2010-jp105344b-pbse-qd-assembled-2d-islands-1--pbse-qds",
+        "ou2010-jp105344b-pbse-qd-assembled-2d-islands-1--toluene"
+      ],
+      "outputs": [
+        "ou2010-jp105344b-pbse-qd-assembled-2d-islands-1--after-d2-s02-cast"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "ou2010-jp105344b",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Cast nanocrystal suspension on hot substrate",
+      "evidence": [
+        {
+          "source_id": "ou2010-jp105344b",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-evaporate",
+      "action": "evaporate",
+      "label": "Evaporate solvent",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-cast"
+      ],
+      "inputs": [
+        "ou2010-jp105344b-pbse-qd-assembled-2d-islands-1--after-d2-s02-cast",
         "ou2010-jp105344b-pbse-qd-assembled-2d-islands-1--toluene"
       ],
       "outputs": [
@@ -315,11 +389,12 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Reactor not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
-      "Amount of toluene not reported in the extracted text."
+      "Amount of toluene not reported in the extracted text.",
+      "Amount of PbSe QDs not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

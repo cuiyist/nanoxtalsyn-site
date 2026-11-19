@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "toyama1998-1-121035-p-type-nc-si-thin-film-in-sno2-p-type-nc-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Toshihiko Toyama (1998): p-type nc-Si thin film in SnO2/p-type nc-Si/Al TFLED",
   "material": {
@@ -103,6 +103,25 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "toyama1998-1-121035-p-type-nc-si-thin-film-in-sno2-p-type-nc-1--aluminum",
+      "name": "Aluminum",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "toyama1998-1-121035",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -127,7 +146,8 @@
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "toyama1998-1-121035-p-type-nc-si-thin-film-in-sno2-p-type-nc-1--after-s02-anodize"
+        "toyama1998-1-121035-p-type-nc-si-thin-film-in-sno2-p-type-nc-1--after-s02-anodize",
+        "toyama1998-1-121035-p-type-nc-si-thin-film-in-sno2-p-type-nc-1--aluminum"
       ]
     }
   ],
@@ -235,7 +255,8 @@
         "s02-anodize"
       ],
       "inputs": [
-        "toyama1998-1-121035-p-type-nc-si-thin-film-in-sno2-p-type-nc-1--after-s02-anodize"
+        "toyama1998-1-121035-p-type-nc-si-thin-film-in-sno2-p-type-nc-1--after-s02-anodize",
+        "toyama1998-1-121035-p-type-nc-si-thin-film-in-sno2-p-type-nc-1--aluminum"
       ],
       "outputs": [
         "toyama1998-1-121035-p-type-nc-si-thin-film-in-sno2-p-type-nc-1--after-s03-evaporate"
@@ -327,13 +348,14 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
-      "Amount of HF aqueous solution not reported in the extracted text."
+      "Amount of HF aqueous solution not reported in the extracted text.",
+      "Amount of Aluminum not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

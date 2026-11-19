@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "chen2006-1-2364131-mon-mo-bilayer-film-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Gang Chen et al. (2006): MoN/Mo bilayer film",
   "material": {
@@ -129,13 +129,59 @@
   "stocks": [],
   "material_states": [
     {
+      "id": "chen2006-1-2364131-mon-mo-bilayer-film-1--after-d2-s01-heat",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "chen2006-1-2364131-mon-mo-bilayer-film-1--molybdenum-plate"
+      ]
+    },
+    {
       "id": "chen2006-1-2364131-mon-mo-bilayer-film-1--after-s01-anneal",
       "name": "product as isolated",
       "kind": "product",
-      "parent_ids": []
+      "parent_ids": [
+        "chen2006-1-2364131-mon-mo-bilayer-film-1--after-d2-s01-heat"
+      ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-heat",
+      "action": "heat",
+      "label": "Heat substrates during deposition",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "chen2006-1-2364131-mon-mo-bilayer-film-1--molybdenum-plate"
+      ],
+      "outputs": [
+        "chen2006-1-2364131-mon-mo-bilayer-film-1--after-d2-s01-heat"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heat substrates during deposition",
+      "evidence": [
+        {
+          "source_id": "chen2006-1-2364131",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
     {
       "id": "s01-anneal",
       "action": "anneal",
@@ -143,8 +189,12 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s01-heat"
+      ],
+      "inputs": [
+        "chen2006-1-2364131-mon-mo-bilayer-film-1--after-d2-s01-heat"
+      ],
       "outputs": [
         "chen2006-1-2364131-mon-mo-bilayer-film-1--after-s01-anneal"
       ],
@@ -269,7 +319,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",

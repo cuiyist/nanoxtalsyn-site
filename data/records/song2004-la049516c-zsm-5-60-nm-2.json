@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "song2004-la049516c-zsm-5-60-nm-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "W. Song (2004): ZSM-5 (60 nm)",
   "material": {
@@ -100,19 +100,103 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "song2004-la049516c-zsm-5-60-nm-2--tetraethyl-orthosilicate-teos",
+      "name": "tetraethyl orthosilicate (TEOS)",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "song2004-la049516c",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "song2004-la049516c-zsm-5-60-nm-2--tetrapropylammonium-hydroxide-tpaoh",
+      "name": "tetrapropylammonium hydroxide (TPAOH)",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "song2004-la049516c",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "song2004-la049516c-zsm-5-60-nm-2--aluminum-isopropoxide",
+      "name": "aluminum isopropoxide",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "song2004-la049516c",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "song2004-la049516c-zsm-5-60-nm-2--water-h2o",
+      "name": "water (H2O)",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "song2004-la049516c",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
-      "id": "song2004-la049516c-zsm-5-60-nm-2--after-s01-heat",
+      "id": "song2004-la049516c-zsm-5-60-nm-2--after-d2-s01-remove-alcohol",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": []
     },
     {
-      "id": "song2004-la049516c-zsm-5-60-nm-2--after-s02-centrifuge",
+      "id": "song2004-la049516c-zsm-5-60-nm-2--after-s01-heat",
       "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "song2004-la049516c-zsm-5-60-nm-2--after-d2-s01-remove-alcohol"
+      ]
+    },
+    {
+      "id": "song2004-la049516c-zsm-5-60-nm-2--after-s02-centrifuge",
+      "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
         "song2004-la049516c-zsm-5-60-nm-2--after-s01-heat"
@@ -129,14 +213,57 @@
   ],
   "operations": [
     {
+      "id": "d2-s01-remove-alcohol",
+      "action": "remove alcohol",
+      "label": "Removal of alcohols",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [],
+      "outputs": [
+        "song2004-la049516c-zsm-5-60-nm-2--after-d2-s01-remove-alcohol"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "song2004-la049516c",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Removal of alcohols",
+      "evidence": [
+        {
+          "source_id": "song2004-la049516c",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
       "id": "s01-heat",
       "action": "heat",
       "label": "Hydrothermal treatment",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s01-remove-alcohol"
+      ],
+      "inputs": [
+        "song2004-la049516c-zsm-5-60-nm-2--after-d2-s01-remove-alcohol"
+      ],
       "outputs": [
         "song2004-la049516c-zsm-5-60-nm-2--after-s01-heat"
       ],
@@ -326,14 +453,18 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
-      "Amount of sodium hydroxide (NaOH) not reported in the extracted text."
+      "Amount of sodium hydroxide (NaOH) not reported in the extracted text.",
+      "Amount of tetraethyl orthosilicate (TEOS) not reported in the extracted text.",
+      "Amount of tetrapropylammonium hydroxide (TPAOH) not reported in the extracted text.",
+      "Amount of aluminum isopropoxide not reported in the extracted text.",
+      "Amount of water (H2O) not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

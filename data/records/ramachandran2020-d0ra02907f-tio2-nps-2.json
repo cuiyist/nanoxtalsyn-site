@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "ramachandran2020-d0ra02907f-tio2-nps-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Pravena Ramachandran; Chong Yew Lee; Ruey-An Doong; Chern Ein Oon; Nguyen Thi Kim Thanh; Hooi Ling Lee (2020): TiO2 NPs",
   "material": {
@@ -109,6 +109,25 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "ramachandran2020-d0ra02907f-tio2-nps-2--titanium-iv-tetraisopropoxide",
+      "name": "titanium(IV) tetraisopropoxide",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "ramachandran2020-d0ra02907f",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -127,7 +146,8 @@
       "kind": "reaction_batch",
       "parent_ids": [
         "ramachandran2020-d0ra02907f-tio2-nps-2--after-s01-adjust-ph",
-        "ramachandran2020-d0ra02907f-tio2-nps-2--hydrochloric-acid"
+        "ramachandran2020-d0ra02907f-tio2-nps-2--hydrochloric-acid",
+        "ramachandran2020-d0ra02907f-tio2-nps-2--titanium-iv-tetraisopropoxide"
       ]
     },
     {
@@ -207,7 +227,8 @@
       ],
       "inputs": [
         "ramachandran2020-d0ra02907f-tio2-nps-2--after-s01-adjust-ph",
-        "ramachandran2020-d0ra02907f-tio2-nps-2--hydrochloric-acid"
+        "ramachandran2020-d0ra02907f-tio2-nps-2--hydrochloric-acid",
+        "ramachandran2020-d0ra02907f-tio2-nps-2--titanium-iv-tetraisopropoxide"
       ],
       "outputs": [
         "ramachandran2020-d0ra02907f-tio2-nps-2--after-s02-heat"
@@ -430,12 +451,13 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Reactor not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
-      "Amount of hydrochloric acid not reported in the extracted text."
+      "Amount of hydrochloric acid not reported in the extracted text.",
+      "Amount of titanium(IV) tetraisopropoxide not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

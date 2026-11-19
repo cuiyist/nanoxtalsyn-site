@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Enrico Dilena; Dirk Dorfs; Chandramohan George; Karol Miszta; Mauro Povia; Alessandro Genovese; Alberto Casu; Mirko Prato; Liberato Manna (2012): cubic Cu2−x(S0.40Se0.60) alloy NCs",
   "material": {
@@ -124,6 +124,82 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--sulfur",
+      "name": "sulfur",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "dilena2012-c2jm30788j",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--selenium",
+      "name": "selenium",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "dilena2012-c2jm30788j",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--toluene",
+      "name": "toluene",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "dilena2012-c2jm30788j",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--ethanol",
+      "name": "ethanol",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "dilena2012-c2jm30788j",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -157,7 +233,9 @@
       "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
-        "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--after-s03-heat"
+        "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--after-s03-heat",
+        "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--sulfur",
+        "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--selenium"
       ]
     },
     {
@@ -165,15 +243,27 @@
       "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
-        "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--after-s04-inject"
+        "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--after-s04-inject",
+        "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--toluene"
       ]
     },
     {
       "id": "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--after-s06-wash",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--after-s05-add",
+        "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--toluene",
+        "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--ethanol"
+      ]
+    },
+    {
+      "id": "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--after-d2-s07-dissolve",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--after-s05-add"
+        "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--after-s06-wash",
+        "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--toluene"
       ]
     }
   ],
@@ -409,7 +499,9 @@
         "s03-heat"
       ],
       "inputs": [
-        "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--after-s03-heat"
+        "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--after-s03-heat",
+        "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--sulfur",
+        "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--selenium"
       ],
       "outputs": [
         "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--after-s04-inject"
@@ -452,7 +544,8 @@
         "s04-inject"
       ],
       "inputs": [
-        "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--after-s04-inject"
+        "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--after-s04-inject",
+        "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--toluene"
       ],
       "outputs": [
         "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--after-s05-add"
@@ -514,7 +607,9 @@
         "s05-add"
       ],
       "inputs": [
-        "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--after-s05-add"
+        "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--after-s05-add",
+        "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--toluene",
+        "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--ethanol"
       ],
       "outputs": [
         "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--after-s06-wash"
@@ -540,6 +635,50 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "d2-s07-dissolve",
+      "action": "dissolve",
+      "label": "Dissolving in toluene",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s06-wash"
+      ],
+      "inputs": [
+        "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--after-s06-wash",
+        "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--toluene"
+      ],
+      "outputs": [
+        "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--after-d2-s07-dissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "dilena2012-c2jm30788j",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dissolving in toluene",
+      "evidence": [
+        {
+          "source_id": "dilena2012-c2jm30788j",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -548,7 +687,7 @@
       "sample_id": "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--product",
       "source_sample_label": "cubic Cu2−x(S0.40Se0.60) alloy NCs",
       "batch_id": null,
-      "material_state_id": "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--after-s06-wash",
+      "material_state_id": "dilena2012-c2jm30788j-cubic-cu2x-s0-40se0-60-alloy-ncs-1--after-d2-s07-dissolve",
       "parent_sample_id": null,
       "composition": {
         "value": "Cu2−x(S0.40Se0.60)",
@@ -640,9 +779,13 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
-      "Shape not reported in the extracted text."
+      "Shape not reported in the extracted text.",
+      "Amount of sulfur not reported in the extracted text.",
+      "Amount of selenium not reported in the extracted text.",
+      "Amount of toluene not reported in the extracted text.",
+      "Amount of ethanol not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

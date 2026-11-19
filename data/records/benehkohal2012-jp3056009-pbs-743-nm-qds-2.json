@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "benehkohal2012-jp3056009-pbs-743-nm-qds-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Nima Parsi Benehkohal (2012): PbS 743 nm QDs",
   "material": {
@@ -85,7 +85,7 @@
       "id": "benehkohal2012-jp3056009-pbs-743-nm-qds-2--pbs-qds",
       "name": "PbS QDs",
       "formula": null,
-      "role": "reagent",
+      "role": "starting_particles",
       "stage": "synthesis",
       "identity": {
         "pubchem_cid": null,
@@ -141,11 +141,19 @@
       ]
     },
     {
+      "id": "benehkohal2012-jp3056009-pbs-743-nm-qds-2--after-d2-s03-rinse",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "benehkohal2012-jp3056009-pbs-743-nm-qds-2--after-s02-deposit"
+      ]
+    },
+    {
       "id": "benehkohal2012-jp3056009-pbs-743-nm-qds-2--after-s03-coat",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "benehkohal2012-jp3056009-pbs-743-nm-qds-2--after-s02-deposit"
+        "benehkohal2012-jp3056009-pbs-743-nm-qds-2--after-d2-s03-rinse"
       ]
     }
   ],
@@ -227,9 +235,9 @@
       ]
     },
     {
-      "id": "s03-coat",
-      "action": "coat",
-      "label": "Coat with CdS using SILAR",
+      "id": "d2-s03-rinse",
+      "action": "rinse",
+      "label": "Rinse with toluene and ethanol",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -238,6 +246,44 @@
       ],
       "inputs": [
         "benehkohal2012-jp3056009-pbs-743-nm-qds-2--after-s02-deposit"
+      ],
+      "outputs": [
+        "benehkohal2012-jp3056009-pbs-743-nm-qds-2--after-d2-s03-rinse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Rinse with toluene and ethanol",
+      "evidence": [
+        {
+          "source_id": "benehkohal2012-jp3056009",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s03-coat",
+      "action": "coat",
+      "label": "Coat with CdS using SILAR",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-rinse"
+      ],
+      "inputs": [
+        "benehkohal2012-jp3056009-pbs-743-nm-qds-2--after-d2-s03-rinse"
       ],
       "outputs": [
         "benehkohal2012-jp3056009-pbs-743-nm-qds-2--after-s03-coat"
@@ -351,7 +397,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",

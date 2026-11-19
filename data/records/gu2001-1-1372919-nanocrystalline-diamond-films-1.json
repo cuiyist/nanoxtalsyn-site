@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "gu2001-1-1372919-nanocrystalline-diamond-films-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Changzhi Gu (2001): nanocrystalline diamond films",
   "material": {
@@ -123,9 +123,19 @@
   "material_states": [
     {
       "id": "gu2001-1-1372919-nanocrystalline-diamond-films-1--after-s01-etch",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "gu2001-1-1372919-nanocrystalline-diamond-films-1--hydrogen"
+      ]
+    },
+    {
+      "id": "gu2001-1-1372919-nanocrystalline-diamond-films-1--after-d2-s02-bias-pretreatment",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
+        "gu2001-1-1372919-nanocrystalline-diamond-films-1--after-s01-etch",
+        "gu2001-1-1372919-nanocrystalline-diamond-films-1--methane",
         "gu2001-1-1372919-nanocrystalline-diamond-films-1--hydrogen"
       ]
     }
@@ -208,6 +218,70 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s02-bias-pretreatment",
+      "action": "bias pretreatment",
+      "label": "Film nucleation in methane-hydrogen plasma",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-etch"
+      ],
+      "inputs": [
+        "gu2001-1-1372919-nanocrystalline-diamond-films-1--after-s01-etch",
+        "gu2001-1-1372919-nanocrystalline-diamond-films-1--methane",
+        "gu2001-1-1372919-nanocrystalline-diamond-films-1--hydrogen"
+      ],
+      "outputs": [
+        "gu2001-1-1372919-nanocrystalline-diamond-films-1--after-d2-s02-bias-pretreatment"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 845,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "845 °C",
+          "evidence": [
+            {
+              "source_id": "gu2001-1-1372919",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "hydrogen plasma",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "gu2001-1-1372919",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Film nucleation in methane-hydrogen plasma",
+      "evidence": [
+        {
+          "source_id": "gu2001-1-1372919",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -216,7 +290,7 @@
       "sample_id": "gu2001-1-1372919-nanocrystalline-diamond-films-1--product",
       "source_sample_label": "nanocrystalline diamond films",
       "batch_id": null,
-      "material_state_id": "gu2001-1-1372919-nanocrystalline-diamond-films-1--after-s01-etch",
+      "material_state_id": "gu2001-1-1372919-nanocrystalline-diamond-films-1--after-d2-s02-bias-pretreatment",
       "parent_sample_id": null,
       "composition": {
         "value": "C",
@@ -269,7 +343,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",

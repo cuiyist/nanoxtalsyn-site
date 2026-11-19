@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "konya2002-nl0256661-pt-nanoparticles-in-mesoporous-silica-sb-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Zoltan Konya (2002): Pt nanoparticles in mesoporous silica (SBA-15)",
   "material": {
@@ -117,15 +117,88 @@
           "locator": "Main PDF p.1"
         }
       ]
+    },
+    {
+      "id": "konya2002-nl0256661-pt-nanoparticles-in-mesoporous-silica-sb-1--h2",
+      "name": "H2",
+      "formula": null,
+      "role": "reducing_agent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "konya2002-nl0256661",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "konya2002-nl0256661-pt-nanoparticles-in-mesoporous-silica-sb-1--tetramethoxysilane-tmos",
+      "name": "tetramethoxysilane (TMOS)",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "konya2002-nl0256661",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
       "id": "konya2002-nl0256661-pt-nanoparticles-in-mesoporous-silica-sb-1--after-s01-reduce",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "konya2002-nl0256661-pt-nanoparticles-in-mesoporous-silica-sb-1--h2"
+      ]
+    },
+    {
+      "id": "konya2002-nl0256661-pt-nanoparticles-in-mesoporous-silica-sb-1--after-d2-s02-centrifuge",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "konya2002-nl0256661-pt-nanoparticles-in-mesoporous-silica-sb-1--after-s01-reduce"
+      ]
+    },
+    {
+      "id": "konya2002-nl0256661-pt-nanoparticles-in-mesoporous-silica-sb-1--after-d2-s03-stir",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "konya2002-nl0256661-pt-nanoparticles-in-mesoporous-silica-sb-1--after-d2-s02-centrifuge",
+        "konya2002-nl0256661-pt-nanoparticles-in-mesoporous-silica-sb-1--tetramethoxysilane-tmos"
+      ]
+    },
+    {
+      "id": "konya2002-nl0256661-pt-nanoparticles-in-mesoporous-silica-sb-1--after-d2-s04-filter",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "konya2002-nl0256661-pt-nanoparticles-in-mesoporous-silica-sb-1--after-d2-s03-stir"
+      ]
+    },
+    {
+      "id": "konya2002-nl0256661-pt-nanoparticles-in-mesoporous-silica-sb-1--after-d2-s05-calcine",
       "name": "product as isolated",
       "kind": "product",
-      "parent_ids": []
+      "parent_ids": [
+        "konya2002-nl0256661-pt-nanoparticles-in-mesoporous-silica-sb-1--after-d2-s04-filter"
+      ]
     }
   ],
   "operations": [
@@ -137,7 +210,9 @@
       "branch": "",
       "optional": false,
       "depends_on": [],
-      "inputs": [],
+      "inputs": [
+        "konya2002-nl0256661-pt-nanoparticles-in-mesoporous-silica-sb-1--h2"
+      ],
       "outputs": [
         "konya2002-nl0256661-pt-nanoparticles-in-mesoporous-silica-sb-1--after-s01-reduce"
       ],
@@ -186,6 +261,169 @@
           "locator": "Main PDF p.1"
         }
       ]
+    },
+    {
+      "id": "d2-s02-centrifuge",
+      "action": "centrifuge",
+      "label": "Narrow size distribution",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-reduce"
+      ],
+      "inputs": [
+        "konya2002-nl0256661-pt-nanoparticles-in-mesoporous-silica-sb-1--after-s01-reduce"
+      ],
+      "outputs": [
+        "konya2002-nl0256661-pt-nanoparticles-in-mesoporous-silica-sb-1--after-d2-s02-centrifuge"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Narrow size distribution",
+      "evidence": [
+        {
+          "source_id": "konya2002-nl0256661",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "d2-s03-stir",
+      "action": "stir",
+      "label": "Stir",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-centrifuge"
+      ],
+      "inputs": [
+        "konya2002-nl0256661-pt-nanoparticles-in-mesoporous-silica-sb-1--after-d2-s02-centrifuge",
+        "konya2002-nl0256661-pt-nanoparticles-in-mesoporous-silica-sb-1--tetramethoxysilane-tmos"
+      ],
+      "outputs": [
+        "konya2002-nl0256661-pt-nanoparticles-in-mesoporous-silica-sb-1--after-d2-s03-stir"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "konya2002-nl0256661",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Stir",
+      "evidence": [
+        {
+          "source_id": "konya2002-nl0256661",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s04-filter",
+      "action": "filter",
+      "label": "Product filtered and washed",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-stir"
+      ],
+      "inputs": [
+        "konya2002-nl0256661-pt-nanoparticles-in-mesoporous-silica-sb-1--after-d2-s03-stir"
+      ],
+      "outputs": [
+        "konya2002-nl0256661-pt-nanoparticles-in-mesoporous-silica-sb-1--after-d2-s04-filter"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Product filtered and washed",
+      "evidence": [
+        {
+          "source_id": "konya2002-nl0256661",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s05-calcine",
+      "action": "calcine",
+      "label": "Calcine",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-filter"
+      ],
+      "inputs": [
+        "konya2002-nl0256661-pt-nanoparticles-in-mesoporous-silica-sb-1--after-d2-s04-filter"
+      ],
+      "outputs": [
+        "konya2002-nl0256661-pt-nanoparticles-in-mesoporous-silica-sb-1--after-d2-s05-calcine"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "konya2002-nl0256661",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Calcine",
+      "evidence": [
+        {
+          "source_id": "konya2002-nl0256661",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -194,7 +432,7 @@
       "sample_id": "konya2002-nl0256661-pt-nanoparticles-in-mesoporous-silica-sb-1--product",
       "source_sample_label": "Pt nanoparticles in mesoporous silica (SBA-15)",
       "batch_id": null,
-      "material_state_id": "konya2002-nl0256661-pt-nanoparticles-in-mesoporous-silica-sb-1--after-s01-reduce",
+      "material_state_id": "konya2002-nl0256661-pt-nanoparticles-in-mesoporous-silica-sb-1--after-d2-s05-calcine",
       "parent_sample_id": null,
       "composition": {
         "value": "Pt",
@@ -253,12 +491,13 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Size not reported in the extracted text.",
-      "Amount of tri-block copolymer poly(ethylene oxide)-poly(propylene oxide)-poly(ethylene oxide) (Pluronic P-123) not reported in the extracted text.",
-      "Amount of K2PtCl4 not reported in the extracted text."
+      "Amount of K2PtCl4 not reported in the extracted text.",
+      "Amount of H2 not reported in the extracted text.",
+      "Amount of tetramethoxysilane (TMOS) not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

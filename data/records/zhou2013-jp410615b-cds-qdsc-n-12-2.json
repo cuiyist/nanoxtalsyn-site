@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "zhou2013-jp410615b-cds-qdsc-n-12-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Ru Zhou (2013): CdS QDSC (N-12)",
   "material": {
@@ -108,6 +108,44 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "zhou2013-jp410615b-cds-qdsc-n-12-2--cadmium-nitrate",
+      "name": "cadmium nitrate",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "concentration": {
+          "value": 0.1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "M",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.1 M",
+          "evidence": [
+            {
+              "source_id": "zhou2013-jp410615b",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zhou2013-jp410615b",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -116,7 +154,9 @@
       "id": "zhou2013-jp410615b-cds-qdsc-n-12-2--after-s01-dip",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "zhou2013-jp410615b-cds-qdsc-n-12-2--cadmium-nitrate"
+      ]
     },
     {
       "id": "zhou2013-jp410615b-cds-qdsc-n-12-2--after-s02-dip",
@@ -146,7 +186,9 @@
       "branch": "",
       "optional": false,
       "depends_on": [],
-      "inputs": [],
+      "inputs": [
+        "zhou2013-jp410615b-cds-qdsc-n-12-2--cadmium-nitrate"
+      ],
       "outputs": [
         "zhou2013-jp410615b-cds-qdsc-n-12-2--after-s01-dip"
       ],
@@ -354,7 +396,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",

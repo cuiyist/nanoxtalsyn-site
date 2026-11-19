@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "ozdemir2020-acssuschemeng-0c04600-cds-qds-cycle-3-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Nur Koncuy Ozdemir; Joseph P. Cline; Christopher J. Kiely; Steven McIntosh; Mark A. Snyder (2020): CdS QDs (Cycle 3)",
   "material": {
@@ -128,6 +128,82 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "ozdemir2020-acssuschemeng-0c04600-cds-qds-cycle-3-1--l-cysteine",
+      "name": "L-cysteine",
+      "formula": null,
+      "role": "nonmetal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "ozdemir2020-acssuschemeng-0c04600",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "ozdemir2020-acssuschemeng-0c04600-cds-qds-cycle-3-1--cystathionine-lyase-cse",
+      "name": "cystathionine γ-lyase (CSE)",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "ozdemir2020-acssuschemeng-0c04600",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "ozdemir2020-acssuschemeng-0c04600-cds-qds-cycle-3-1--tris-hcl-buffer",
+      "name": "Tris-HCl buffer",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "ozdemir2020-acssuschemeng-0c04600",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "ozdemir2020-acssuschemeng-0c04600-cds-qds-cycle-3-1--pyridoxal-phosphate-plp",
+      "name": "pyridoxal phosphate (PLP)",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "ozdemir2020-acssuschemeng-0c04600",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -137,15 +213,36 @@
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": [
-        "ozdemir2020-acssuschemeng-0c04600-cds-qds-cycle-3-1--cadmium-acetate"
+        "ozdemir2020-acssuschemeng-0c04600-cds-qds-cycle-3-1--cadmium-acetate",
+        "ozdemir2020-acssuschemeng-0c04600-cds-qds-cycle-3-1--l-cysteine",
+        "ozdemir2020-acssuschemeng-0c04600-cds-qds-cycle-3-1--cystathionine-lyase-cse",
+        "ozdemir2020-acssuschemeng-0c04600-cds-qds-cycle-3-1--tris-hcl-buffer"
       ]
     },
     {
       "id": "ozdemir2020-acssuschemeng-0c04600-cds-qds-cycle-3-1--after-s02-centrifuge",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "ozdemir2020-acssuschemeng-0c04600-cds-qds-cycle-3-1--after-s01-incubate"
+      ]
+    },
+    {
+      "id": "ozdemir2020-acssuschemeng-0c04600-cds-qds-cycle-3-1--after-d2-s03-add-plp",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "ozdemir2020-acssuschemeng-0c04600-cds-qds-cycle-3-1--after-s02-centrifuge",
+        "ozdemir2020-acssuschemeng-0c04600-cds-qds-cycle-3-1--pyridoxal-phosphate-plp"
+      ]
+    },
+    {
+      "id": "ozdemir2020-acssuschemeng-0c04600-cds-qds-cycle-3-1--after-d2-s04-wash",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "ozdemir2020-acssuschemeng-0c04600-cds-qds-cycle-3-1--after-s01-incubate"
+        "ozdemir2020-acssuschemeng-0c04600-cds-qds-cycle-3-1--after-d2-s03-add-plp",
+        "ozdemir2020-acssuschemeng-0c04600-cds-qds-cycle-3-1--tris-hcl-buffer"
       ]
     }
   ],
@@ -159,7 +256,10 @@
       "optional": false,
       "depends_on": [],
       "inputs": [
-        "ozdemir2020-acssuschemeng-0c04600-cds-qds-cycle-3-1--cadmium-acetate"
+        "ozdemir2020-acssuschemeng-0c04600-cds-qds-cycle-3-1--cadmium-acetate",
+        "ozdemir2020-acssuschemeng-0c04600-cds-qds-cycle-3-1--l-cysteine",
+        "ozdemir2020-acssuschemeng-0c04600-cds-qds-cycle-3-1--cystathionine-lyase-cse",
+        "ozdemir2020-acssuschemeng-0c04600-cds-qds-cycle-3-1--tris-hcl-buffer"
       ],
       "outputs": [
         "ozdemir2020-acssuschemeng-0c04600-cds-qds-cycle-3-1--after-s01-incubate"
@@ -279,6 +379,84 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "d2-s03-add-plp",
+      "action": "add plp",
+      "label": "Add PLP to the solution for each synthesis cycle.",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-centrifuge"
+      ],
+      "inputs": [
+        "ozdemir2020-acssuschemeng-0c04600-cds-qds-cycle-3-1--after-s02-centrifuge",
+        "ozdemir2020-acssuschemeng-0c04600-cds-qds-cycle-3-1--pyridoxal-phosphate-plp"
+      ],
+      "outputs": [
+        "ozdemir2020-acssuschemeng-0c04600-cds-qds-cycle-3-1--after-d2-s03-add-plp"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add PLP to the solution for each synthesis cycle.",
+      "evidence": [
+        {
+          "source_id": "ozdemir2020-acssuschemeng-0c04600",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "d2-s04-wash",
+      "action": "wash",
+      "label": "Wash",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-add-plp"
+      ],
+      "inputs": [
+        "ozdemir2020-acssuschemeng-0c04600-cds-qds-cycle-3-1--after-d2-s03-add-plp",
+        "ozdemir2020-acssuschemeng-0c04600-cds-qds-cycle-3-1--tris-hcl-buffer"
+      ],
+      "outputs": [
+        "ozdemir2020-acssuschemeng-0c04600-cds-qds-cycle-3-1--after-d2-s04-wash"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Wash",
+      "evidence": [
+        {
+          "source_id": "ozdemir2020-acssuschemeng-0c04600",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -287,7 +465,7 @@
       "sample_id": "ozdemir2020-acssuschemeng-0c04600-cds-qds-cycle-3-1--product",
       "source_sample_label": "CdS QDs (Cycle 3)",
       "batch_id": null,
-      "material_state_id": "ozdemir2020-acssuschemeng-0c04600-cds-qds-cycle-3-1--after-s02-centrifuge",
+      "material_state_id": "ozdemir2020-acssuschemeng-0c04600-cds-qds-cycle-3-1--after-d2-s04-wash",
       "parent_sample_id": null,
       "composition": {
         "value": "CdS",
@@ -383,10 +561,14 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Reactor not reported in the extracted text.",
-      "Atmosphere not reported in the extracted text."
+      "Atmosphere not reported in the extracted text.",
+      "Amount of L-cysteine not reported in the extracted text.",
+      "Amount of cystathionine γ-lyase (CSE) not reported in the extracted text.",
+      "Amount of Tris-HCl buffer not reported in the extracted text.",
+      "Amount of pyridoxal phosphate (PLP) not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

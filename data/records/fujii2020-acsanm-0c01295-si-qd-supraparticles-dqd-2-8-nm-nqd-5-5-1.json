@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "fujii2020-acsanm-0c01295-si-qd-supraparticles-dqd-2-8-nm-nqd-5-5-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Minoru Fujii (2020): Si QD supraparticles (dQD = 2.8 nm, NQD = 5.5 × 10^16 cm^-3, CPhMe = 75.0%)",
   "material": {
@@ -122,17 +122,131 @@
           "locator": "Main PDF p.1"
         }
       ]
+    },
+    {
+      "id": "fujii2020-acsanm-0c01295-si-qd-supraparticles-dqd-2-8-nm-nqd-5-5-1--toluene",
+      "name": "toluene",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "fujii2020-acsanm-0c01295",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "fujii2020-acsanm-0c01295-si-qd-supraparticles-dqd-2-8-nm-nqd-5-5-1--boron-b",
+      "name": "boron (B)",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "fujii2020-acsanm-0c01295",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "fujii2020-acsanm-0c01295-si-qd-supraparticles-dqd-2-8-nm-nqd-5-5-1--phosphorus-p",
+      "name": "phosphorus (P)",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "fujii2020-acsanm-0c01295",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "fujii2020-acsanm-0c01295-si-qd-supraparticles-dqd-2-8-nm-nqd-5-5-1--pvp",
+      "name": "PVP",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "fujii2020-acsanm-0c01295",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "fujii2020-acsanm-0c01295-si-qd-supraparticles-dqd-2-8-nm-nqd-5-5-1--silica",
+      "name": "silica",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "fujii2020-acsanm-0c01295",
+          "locator": "Main PDF p.7"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
       "id": "fujii2020-acsanm-0c01295-si-qd-supraparticles-dqd-2-8-nm-nqd-5-5-1--after-s01-prepare",
-      "name": "product as isolated",
-      "kind": "product",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
       "parent_ids": [
         "fujii2020-acsanm-0c01295-si-qd-supraparticles-dqd-2-8-nm-nqd-5-5-1--boron-b-and-phosphorus-p-codoped-si-qds",
         "fujii2020-acsanm-0c01295-si-qd-supraparticles-dqd-2-8-nm-nqd-5-5-1--methanol"
+      ]
+    },
+    {
+      "id": "fujii2020-acsanm-0c01295-si-qd-supraparticles-dqd-2-8-nm-nqd-5-5-1--after-d2-s02-stabilize",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "fujii2020-acsanm-0c01295-si-qd-supraparticles-dqd-2-8-nm-nqd-5-5-1--after-s01-prepare",
+        "fujii2020-acsanm-0c01295-si-qd-supraparticles-dqd-2-8-nm-nqd-5-5-1--methanol"
+      ]
+    },
+    {
+      "id": "fujii2020-acsanm-0c01295-si-qd-supraparticles-dqd-2-8-nm-nqd-5-5-1--after-d2-s03-coat",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "fujii2020-acsanm-0c01295-si-qd-supraparticles-dqd-2-8-nm-nqd-5-5-1--after-d2-s02-stabilize",
+        "fujii2020-acsanm-0c01295-si-qd-supraparticles-dqd-2-8-nm-nqd-5-5-1--pvp",
+        "fujii2020-acsanm-0c01295-si-qd-supraparticles-dqd-2-8-nm-nqd-5-5-1--silica"
       ]
     }
   ],
@@ -178,6 +292,95 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s02-stabilize",
+      "action": "stabilize",
+      "label": "Add methanol to the solution to stop secondary agglomeration.",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-prepare"
+      ],
+      "inputs": [
+        "fujii2020-acsanm-0c01295-si-qd-supraparticles-dqd-2-8-nm-nqd-5-5-1--after-s01-prepare",
+        "fujii2020-acsanm-0c01295-si-qd-supraparticles-dqd-2-8-nm-nqd-5-5-1--methanol"
+      ],
+      "outputs": [
+        "fujii2020-acsanm-0c01295-si-qd-supraparticles-dqd-2-8-nm-nqd-5-5-1--after-d2-s02-stabilize"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "fujii2020-acsanm-0c01295",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add methanol to the solution to stop secondary agglomeration.",
+      "evidence": [
+        {
+          "source_id": "fujii2020-acsanm-0c01295",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "d2-s03-coat",
+      "action": "coat",
+      "label": "Coat the supraparticles with PVP and then with silica.",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-stabilize"
+      ],
+      "inputs": [
+        "fujii2020-acsanm-0c01295-si-qd-supraparticles-dqd-2-8-nm-nqd-5-5-1--after-d2-s02-stabilize",
+        "fujii2020-acsanm-0c01295-si-qd-supraparticles-dqd-2-8-nm-nqd-5-5-1--pvp",
+        "fujii2020-acsanm-0c01295-si-qd-supraparticles-dqd-2-8-nm-nqd-5-5-1--silica"
+      ],
+      "outputs": [
+        "fujii2020-acsanm-0c01295-si-qd-supraparticles-dqd-2-8-nm-nqd-5-5-1--after-d2-s03-coat"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "fujii2020-acsanm-0c01295",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Coat the supraparticles with PVP and then with silica.",
+      "evidence": [
+        {
+          "source_id": "fujii2020-acsanm-0c01295",
+          "locator": "Main PDF p.7"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -186,7 +389,7 @@
       "sample_id": "fujii2020-acsanm-0c01295-si-qd-supraparticles-dqd-2-8-nm-nqd-5-5-1--product",
       "source_sample_label": "Si QD supraparticles (dQD = 2.8 nm, NQD = 5.5 × 10^16 cm^-3, CPhMe = 75.0%)",
       "batch_id": null,
-      "material_state_id": "fujii2020-acsanm-0c01295-si-qd-supraparticles-dqd-2-8-nm-nqd-5-5-1--after-s01-prepare",
+      "material_state_id": "fujii2020-acsanm-0c01295-si-qd-supraparticles-dqd-2-8-nm-nqd-5-5-1--after-d2-s03-coat",
       "parent_sample_id": null,
       "composition": {
         "value": null,
@@ -277,11 +480,15 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Reaction temperature not reported in the extracted text.",
-      "Amount of boron (B) and phosphorus (P) codoped Si QDs not reported in the extracted text.",
-      "Amount of methanol not reported in the extracted text."
+      "Amount of methanol not reported in the extracted text.",
+      "Amount of toluene not reported in the extracted text.",
+      "Amount of boron (B) not reported in the extracted text.",
+      "Amount of phosphorus (P) not reported in the extracted text.",
+      "Amount of PVP not reported in the extracted text.",
+      "Amount of silica not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

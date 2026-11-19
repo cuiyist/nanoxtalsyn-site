@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "m-ihara1999-1-1833941-zns-tbf3-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "M.Ihara (1999): ZnS:TbF3",
   "material": {
@@ -96,6 +96,63 @@
           "locator": "Main PDF p.1"
         }
       ]
+    },
+    {
+      "id": "m-ihara1999-1-1833941-zns-tbf3-2--terbium-nitrate",
+      "name": "terbium nitrate",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "m-ihara1999-1-1833941",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "m-ihara1999-1-1833941-zns-tbf3-2--sodium-fluoride",
+      "name": "sodium fluoride",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "m-ihara1999-1-1833941",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "m-ihara1999-1-1833941-zns-tbf3-2--sodium-sulfide",
+      "name": "sodium sulfide",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "m-ihara1999-1-1833941",
+          "locator": "Main PDF p.1"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -105,7 +162,9 @@
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": [
-        "m-ihara1999-1-1833941-zns-tbf3-2--zinc-acetate"
+        "m-ihara1999-1-1833941-zns-tbf3-2--zinc-acetate",
+        "m-ihara1999-1-1833941-zns-tbf3-2--terbium-nitrate",
+        "m-ihara1999-1-1833941-zns-tbf3-2--sodium-fluoride"
       ]
     },
     {
@@ -127,7 +186,9 @@
       "optional": false,
       "depends_on": [],
       "inputs": [
-        "m-ihara1999-1-1833941-zns-tbf3-2--zinc-acetate"
+        "m-ihara1999-1-1833941-zns-tbf3-2--zinc-acetate",
+        "m-ihara1999-1-1833941-zns-tbf3-2--terbium-nitrate",
+        "m-ihara1999-1-1833941-zns-tbf3-2--sodium-fluoride"
       ],
       "outputs": [
         "m-ihara1999-1-1833941-zns-tbf3-2--after-s01-mix"
@@ -244,7 +305,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
@@ -254,7 +315,10 @@
       "Atmosphere not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
-      "Amount of zinc acetate not reported in the extracted text."
+      "Amount of zinc acetate not reported in the extracted text.",
+      "Amount of terbium nitrate not reported in the extracted text.",
+      "Amount of sodium fluoride not reported in the extracted text.",
+      "Amount of sodium sulfide not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

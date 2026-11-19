@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "otobe1998-1-120973-surface-oxidized-nanocrystalline-silicon-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Masanori Otobe (1998): surface oxidized nanocrystalline silicon (nc-Si) with a grain size of 9 nm",
   "material": {
@@ -15,7 +15,7 @@
     ],
     "architecture": "single_material"
   },
-  "method": "Synthesis as described in the source",
+  "method": "Plasma synthesis",
   "sources": [
     {
       "id": "otobe1998-1-120973",
@@ -127,13 +127,121 @@
   "stocks": [],
   "material_states": [
     {
+      "id": "otobe1998-1-120973-surface-oxidized-nanocrystalline-silicon-1--after-d2-s01-deposit",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "otobe1998-1-120973-surface-oxidized-nanocrystalline-silicon-1--sih4",
+        "otobe1998-1-120973-surface-oxidized-nanocrystalline-silicon-1--h2"
+      ]
+    },
+    {
+      "id": "otobe1998-1-120973-surface-oxidized-nanocrystalline-silicon-1--after-d2-s02-generate-plasma",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "otobe1998-1-120973-surface-oxidized-nanocrystalline-silicon-1--after-d2-s01-deposit",
+        "otobe1998-1-120973-surface-oxidized-nanocrystalline-silicon-1--sih4",
+        "otobe1998-1-120973-surface-oxidized-nanocrystalline-silicon-1--h2"
+      ]
+    },
+    {
       "id": "otobe1998-1-120973-surface-oxidized-nanocrystalline-silicon-1--after-s01-oxidize",
       "name": "product as isolated",
       "kind": "product",
-      "parent_ids": []
+      "parent_ids": [
+        "otobe1998-1-120973-surface-oxidized-nanocrystalline-silicon-1--after-d2-s02-generate-plasma"
+      ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-deposit",
+      "action": "deposit",
+      "label": "Nc-Si particles are formed in the gas phase of the plasma cell",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "otobe1998-1-120973-surface-oxidized-nanocrystalline-silicon-1--sih4",
+        "otobe1998-1-120973-surface-oxidized-nanocrystalline-silicon-1--h2"
+      ],
+      "outputs": [
+        "otobe1998-1-120973-surface-oxidized-nanocrystalline-silicon-1--after-d2-s01-deposit"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "plasma",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "otobe1998-1-120973",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Nc-Si particles are formed in the gas phase of the plasma cell",
+      "evidence": [
+        {
+          "source_id": "otobe1998-1-120973",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s02-generate-plasma",
+      "action": "generate plasma",
+      "label": "Generate plasma",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s01-deposit"
+      ],
+      "inputs": [
+        "otobe1998-1-120973-surface-oxidized-nanocrystalline-silicon-1--after-d2-s01-deposit",
+        "otobe1998-1-120973-surface-oxidized-nanocrystalline-silicon-1--sih4",
+        "otobe1998-1-120973-surface-oxidized-nanocrystalline-silicon-1--h2"
+      ],
+      "outputs": [
+        "otobe1998-1-120973-surface-oxidized-nanocrystalline-silicon-1--after-d2-s02-generate-plasma"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "plasma",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "otobe1998-1-120973",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Generate plasma",
+      "evidence": [
+        {
+          "source_id": "otobe1998-1-120973",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
     {
       "id": "s01-oxidize",
       "action": "oxidize",
@@ -141,16 +249,25 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s02-generate-plasma"
+      ],
+      "inputs": [
+        "otobe1998-1-120973-surface-oxidized-nanocrystalline-silicon-1--after-d2-s02-generate-plasma"
+      ],
       "outputs": [
         "otobe1998-1-120973-surface-oxidized-nanocrystalline-silicon-1--after-s01-oxidize"
       ],
       "parameters": {},
       "environment": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "plasma",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "otobe1998-1-120973",
+            "locator": "Main PDF p.2"
+          }
+        ],
         "note": ""
       },
       "endpoint": {
@@ -258,12 +375,11 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
-      "Atmosphere not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
       "Amount of SiH4 not reported in the extracted text.",

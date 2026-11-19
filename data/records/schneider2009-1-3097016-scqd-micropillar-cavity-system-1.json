@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "schneider2009-1-3097016-scqd-micropillar-cavity-system-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "C. Schneider (2009): SCQD-micropillar cavity system",
   "material": {
@@ -90,7 +90,7 @@
       "id": "schneider2009-1-3097016-scqd-micropillar-cavity-system-1--inas",
       "name": "InAs",
       "formula": null,
-      "role": "reagent",
+      "role": "starting_particles",
       "stage": "synthesis",
       "identity": {
         "pubchem_cid": null,
@@ -123,18 +123,198 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "schneider2009-1-3097016-scqd-micropillar-cavity-system-1--alas",
+      "name": "AlAs",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "schneider2009-1-3097016",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
+      "id": "schneider2009-1-3097016-scqd-micropillar-cavity-system-1--after-d2-s01-grow",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "schneider2009-1-3097016-scqd-micropillar-cavity-system-1--alas",
+        "schneider2009-1-3097016-scqd-micropillar-cavity-system-1--gaas"
+      ]
+    },
+    {
+      "id": "schneider2009-1-3097016-scqd-micropillar-cavity-system-1--after-d2-s02-deposit",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "schneider2009-1-3097016-scqd-micropillar-cavity-system-1--after-d2-s01-grow",
+        "schneider2009-1-3097016-scqd-micropillar-cavity-system-1--gaas"
+      ]
+    },
+    {
+      "id": "schneider2009-1-3097016-scqd-micropillar-cavity-system-1--after-d2-s03-deposit",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "schneider2009-1-3097016-scqd-micropillar-cavity-system-1--after-d2-s02-deposit",
+        "schneider2009-1-3097016-scqd-micropillar-cavity-system-1--inas"
+      ]
+    },
+    {
       "id": "schneider2009-1-3097016-scqd-micropillar-cavity-system-1--after-s01-anneal",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "schneider2009-1-3097016-scqd-micropillar-cavity-system-1--after-d2-s03-deposit"
+      ]
+    },
+    {
+      "id": "schneider2009-1-3097016-scqd-micropillar-cavity-system-1--after-d2-s05-deposit",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "schneider2009-1-3097016-scqd-micropillar-cavity-system-1--after-s01-anneal",
+        "schneider2009-1-3097016-scqd-micropillar-cavity-system-1--inas"
+      ]
+    },
+    {
+      "id": "schneider2009-1-3097016-scqd-micropillar-cavity-system-1--after-d2-s06-fabricate",
       "name": "product as isolated",
       "kind": "product",
-      "parent_ids": []
+      "parent_ids": [
+        "schneider2009-1-3097016-scqd-micropillar-cavity-system-1--after-d2-s05-deposit"
+      ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-grow",
+      "action": "grow",
+      "label": "Grow bottom part of AlAs/GaAs planar microcavities",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "schneider2009-1-3097016-scqd-micropillar-cavity-system-1--alas",
+        "schneider2009-1-3097016-scqd-micropillar-cavity-system-1--gaas"
+      ],
+      "outputs": [
+        "schneider2009-1-3097016-scqd-micropillar-cavity-system-1--after-d2-s01-grow"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Grow bottom part of AlAs/GaAs planar microcavities",
+      "evidence": [
+        {
+          "source_id": "schneider2009-1-3097016",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s02-deposit",
+      "action": "deposit",
+      "label": "Deposit GaAs buffer layer",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s01-grow"
+      ],
+      "inputs": [
+        "schneider2009-1-3097016-scqd-micropillar-cavity-system-1--after-d2-s01-grow",
+        "schneider2009-1-3097016-scqd-micropillar-cavity-system-1--gaas"
+      ],
+      "outputs": [
+        "schneider2009-1-3097016-scqd-micropillar-cavity-system-1--after-d2-s02-deposit"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Deposit GaAs buffer layer",
+      "evidence": [
+        {
+          "source_id": "schneider2009-1-3097016",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s03-deposit",
+      "action": "deposit",
+      "label": "Deposit first InAs layer",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-deposit"
+      ],
+      "inputs": [
+        "schneider2009-1-3097016-scqd-micropillar-cavity-system-1--after-d2-s02-deposit",
+        "schneider2009-1-3097016-scqd-micropillar-cavity-system-1--inas"
+      ],
+      "outputs": [
+        "schneider2009-1-3097016-scqd-micropillar-cavity-system-1--after-d2-s03-deposit"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Deposit first InAs layer",
+      "evidence": [
+        {
+          "source_id": "schneider2009-1-3097016",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
     {
       "id": "s01-anneal",
       "action": "anneal",
@@ -142,8 +322,12 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s03-deposit"
+      ],
+      "inputs": [
+        "schneider2009-1-3097016-scqd-micropillar-cavity-system-1--after-d2-s03-deposit"
+      ],
       "outputs": [
         "schneider2009-1-3097016-scqd-micropillar-cavity-system-1--after-s01-anneal"
       ],
@@ -205,6 +389,83 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "d2-s05-deposit",
+      "action": "deposit",
+      "label": "Deposit second and third InAs layers",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-anneal"
+      ],
+      "inputs": [
+        "schneider2009-1-3097016-scqd-micropillar-cavity-system-1--after-s01-anneal",
+        "schneider2009-1-3097016-scqd-micropillar-cavity-system-1--inas"
+      ],
+      "outputs": [
+        "schneider2009-1-3097016-scqd-micropillar-cavity-system-1--after-d2-s05-deposit"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Deposit second and third InAs layers",
+      "evidence": [
+        {
+          "source_id": "schneider2009-1-3097016",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "d2-s06-fabricate",
+      "action": "fabricate",
+      "label": "Fabricate micropillar cavities aligned with SCQDs",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s05-deposit"
+      ],
+      "inputs": [
+        "schneider2009-1-3097016-scqd-micropillar-cavity-system-1--after-d2-s05-deposit"
+      ],
+      "outputs": [
+        "schneider2009-1-3097016-scqd-micropillar-cavity-system-1--after-d2-s06-fabricate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Fabricate micropillar cavities aligned with SCQDs",
+      "evidence": [
+        {
+          "source_id": "schneider2009-1-3097016",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -213,7 +474,7 @@
       "sample_id": "schneider2009-1-3097016-scqd-micropillar-cavity-system-1--product",
       "source_sample_label": "SCQD-micropillar cavity system",
       "batch_id": null,
-      "material_state_id": "schneider2009-1-3097016-scqd-micropillar-cavity-system-1--after-s01-anneal",
+      "material_state_id": "schneider2009-1-3097016-scqd-micropillar-cavity-system-1--after-d2-s06-fabricate",
       "parent_sample_id": null,
       "composition": {
         "value": "InAs",
@@ -266,11 +527,44 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "schneider2009-1-3097016-scqd-micropillar-cavity-system-1--photoluminescence-peak",
+      "sample_id": "schneider2009-1-3097016-scqd-micropillar-cavity-system-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 959,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "959 nm",
+        "evidence": [
+          {
+            "source_id": "schneider2009-1-3097016",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "schneider2009-1-3097016",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
@@ -278,7 +572,8 @@
       "Atmosphere not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
       "Amount of InAs not reported in the extracted text.",
-      "Amount of GaAs not reported in the extracted text."
+      "Amount of GaAs not reported in the extracted text.",
+      "Amount of AlAs not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

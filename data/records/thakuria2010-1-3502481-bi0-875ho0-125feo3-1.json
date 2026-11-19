@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "thakuria2010-1-3502481-bi0-875ho0-125feo3-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Pankaj Thakuria and P. A. Joy (2010): Bi0.875Ho0.125FeO3",
   "material": {
@@ -101,6 +101,44 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "thakuria2010-1-3502481-bi0-875ho0-125feo3-1--bi-no3-35h2o",
+      "name": "Bi(NO3)3·5H2O",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "thakuria2010-1-3502481",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "thakuria2010-1-3502481-bi0-875ho0-125feo3-1--fe-no3-39h2o",
+      "name": "Fe(NO3)3·9H2O",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "thakuria2010-1-3502481",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -109,7 +147,10 @@
       "id": "thakuria2010-1-3502481-bi0-875ho0-125feo3-1--after-s01-dissolve",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "thakuria2010-1-3502481-bi0-875ho0-125feo3-1--bi-no3-35h2o",
+        "thakuria2010-1-3502481-bi0-875ho0-125feo3-1--fe-no3-39h2o"
+      ]
     },
     {
       "id": "thakuria2010-1-3502481-bi0-875ho0-125feo3-1--after-s02-heat",
@@ -117,7 +158,9 @@
       "kind": "reaction_batch",
       "parent_ids": [
         "thakuria2010-1-3502481-bi0-875ho0-125feo3-1--after-s01-dissolve",
-        "thakuria2010-1-3502481-bi0-875ho0-125feo3-1--tartaric-acid"
+        "thakuria2010-1-3502481-bi0-875ho0-125feo3-1--tartaric-acid",
+        "thakuria2010-1-3502481-bi0-875ho0-125feo3-1--bi-no3-35h2o",
+        "thakuria2010-1-3502481-bi0-875ho0-125feo3-1--fe-no3-39h2o"
       ]
     },
     {
@@ -126,7 +169,9 @@
       "kind": "product",
       "parent_ids": [
         "thakuria2010-1-3502481-bi0-875ho0-125feo3-1--after-s02-heat",
-        "thakuria2010-1-3502481-bi0-875ho0-125feo3-1--tartaric-acid"
+        "thakuria2010-1-3502481-bi0-875ho0-125feo3-1--tartaric-acid",
+        "thakuria2010-1-3502481-bi0-875ho0-125feo3-1--bi-no3-35h2o",
+        "thakuria2010-1-3502481-bi0-875ho0-125feo3-1--fe-no3-39h2o"
       ]
     }
   ],
@@ -139,7 +184,10 @@
       "branch": "",
       "optional": false,
       "depends_on": [],
-      "inputs": [],
+      "inputs": [
+        "thakuria2010-1-3502481-bi0-875ho0-125feo3-1--bi-no3-35h2o",
+        "thakuria2010-1-3502481-bi0-875ho0-125feo3-1--fe-no3-39h2o"
+      ],
       "outputs": [
         "thakuria2010-1-3502481-bi0-875ho0-125feo3-1--after-s01-dissolve"
       ],
@@ -177,7 +225,9 @@
       ],
       "inputs": [
         "thakuria2010-1-3502481-bi0-875ho0-125feo3-1--after-s01-dissolve",
-        "thakuria2010-1-3502481-bi0-875ho0-125feo3-1--tartaric-acid"
+        "thakuria2010-1-3502481-bi0-875ho0-125feo3-1--tartaric-acid",
+        "thakuria2010-1-3502481-bi0-875ho0-125feo3-1--bi-no3-35h2o",
+        "thakuria2010-1-3502481-bi0-875ho0-125feo3-1--fe-no3-39h2o"
       ],
       "outputs": [
         "thakuria2010-1-3502481-bi0-875ho0-125feo3-1--after-s02-heat"
@@ -216,7 +266,9 @@
       ],
       "inputs": [
         "thakuria2010-1-3502481-bi0-875ho0-125feo3-1--after-s02-heat",
-        "thakuria2010-1-3502481-bi0-875ho0-125feo3-1--tartaric-acid"
+        "thakuria2010-1-3502481-bi0-875ho0-125feo3-1--tartaric-acid",
+        "thakuria2010-1-3502481-bi0-875ho0-125feo3-1--bi-no3-35h2o",
+        "thakuria2010-1-3502481-bi0-875ho0-125feo3-1--fe-no3-39h2o"
       ],
       "outputs": [
         "thakuria2010-1-3502481-bi0-875ho0-125feo3-1--after-s03-calcine"
@@ -340,14 +392,16 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
-      "Amount of tartaric acid not reported in the extracted text."
+      "Amount of tartaric acid not reported in the extracted text.",
+      "Amount of Bi(NO3)3·5H2O not reported in the extracted text.",
+      "Amount of Fe(NO3)3·9H2O not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

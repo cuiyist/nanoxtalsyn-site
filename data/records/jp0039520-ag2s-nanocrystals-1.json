@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "jp0039520-ag2s-nanocrystals-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "jp0039520 (n.d.): Ag2S nanocrystals",
   "material": {
@@ -123,16 +123,56 @@
           "locator": "Main PDF p.13"
         }
       ]
+    },
+    {
+      "id": "jp0039520-ag2s-nanocrystals-1--sodium-sulfide",
+      "name": "sodium sulfide",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "jp0039520",
+          "locator": "Main PDF p.13"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
       "id": "jp0039520-ag2s-nanocrystals-1--after-s01-mix",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "jp0039520-ag2s-nanocrystals-1--ag-aot",
+        "jp0039520-ag2s-nanocrystals-1--sodium-sulfide"
+      ]
+    },
+    {
+      "id": "jp0039520-ag2s-nanocrystals-1--after-d2-s02-evaporate",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "jp0039520-ag2s-nanocrystals-1--after-s01-mix",
+        "jp0039520-ag2s-nanocrystals-1--dodecanethiol"
+      ]
+    },
+    {
+      "id": "jp0039520-ag2s-nanocrystals-1--after-d2-s03-wash",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "jp0039520-ag2s-nanocrystals-1--ag-aot"
+        "jp0039520-ag2s-nanocrystals-1--after-d2-s02-evaporate",
+        "jp0039520-ag2s-nanocrystals-1--ag-aot",
+        "jp0039520-ag2s-nanocrystals-1--sodium-sulfide",
+        "jp0039520-ag2s-nanocrystals-1--dodecanethiol"
       ]
     }
   ],
@@ -146,7 +186,8 @@
       "optional": false,
       "depends_on": [],
       "inputs": [
-        "jp0039520-ag2s-nanocrystals-1--ag-aot"
+        "jp0039520-ag2s-nanocrystals-1--ag-aot",
+        "jp0039520-ag2s-nanocrystals-1--sodium-sulfide"
       ],
       "outputs": [
         "jp0039520-ag2s-nanocrystals-1--after-s01-mix"
@@ -177,6 +218,110 @@
           "locator": "Main PDF p.13"
         }
       ]
+    },
+    {
+      "id": "d2-s02-evaporate",
+      "action": "evaporate",
+      "label": "Evaporation of solvents",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-mix"
+      ],
+      "inputs": [
+        "jp0039520-ag2s-nanocrystals-1--after-s01-mix",
+        "jp0039520-ag2s-nanocrystals-1--dodecanethiol"
+      ],
+      "outputs": [
+        "jp0039520-ag2s-nanocrystals-1--after-d2-s02-evaporate"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 60,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "60 °C",
+          "evidence": [
+            {
+              "source_id": "jp0039520",
+              "locator": "Main PDF p.13"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "jp0039520",
+            "locator": "Main PDF p.13"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Evaporation of solvents",
+      "evidence": [
+        {
+          "source_id": "jp0039520",
+          "locator": "Main PDF p.13"
+        }
+      ]
+    },
+    {
+      "id": "d2-s03-wash",
+      "action": "wash",
+      "label": "Washing with ethanol",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-evaporate"
+      ],
+      "inputs": [
+        "jp0039520-ag2s-nanocrystals-1--after-d2-s02-evaporate",
+        "jp0039520-ag2s-nanocrystals-1--ag-aot",
+        "jp0039520-ag2s-nanocrystals-1--sodium-sulfide",
+        "jp0039520-ag2s-nanocrystals-1--dodecanethiol"
+      ],
+      "outputs": [
+        "jp0039520-ag2s-nanocrystals-1--after-d2-s03-wash"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Washing with ethanol",
+      "evidence": [
+        {
+          "source_id": "jp0039520",
+          "locator": "Main PDF p.13"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -185,7 +330,7 @@
       "sample_id": "jp0039520-ag2s-nanocrystals-1--product",
       "source_sample_label": "Ag2S nanocrystals",
       "batch_id": null,
-      "material_state_id": "jp0039520-ag2s-nanocrystals-1--after-s01-mix",
+      "material_state_id": "jp0039520-ag2s-nanocrystals-1--after-d2-s03-wash",
       "parent_sample_id": null,
       "composition": {
         "value": "Ag2S",
@@ -270,14 +415,15 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
       "Amount of Ag(AOT) not reported in the extracted text.",
-      "Amount of dodecanethiol not reported in the extracted text."
+      "Amount of dodecanethiol not reported in the extracted text.",
+      "Amount of sodium sulfide not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

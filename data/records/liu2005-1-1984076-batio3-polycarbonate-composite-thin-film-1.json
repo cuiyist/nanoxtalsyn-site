@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "liu2005-1-1984076-batio3-polycarbonate-composite-thin-film-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "W. C. Liu et al. (2005): BaTiO3/polycarbonate composite thin films (20-wt % BT-doped)",
   "material": {
@@ -105,6 +105,101 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "liu2005-1-1984076-batio3-polycarbonate-composite-thin-film-1--barium-nitrate",
+      "name": "barium nitrate",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "liu2005-1-1984076",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "liu2005-1-1984076-batio3-polycarbonate-composite-thin-film-1--de-ionized-water",
+      "name": "de-ionized water",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "liu2005-1-1984076",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "liu2005-1-1984076-batio3-polycarbonate-composite-thin-film-1--10-mol-l-koh-solution",
+      "name": "10-mol/l KOH solution",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "liu2005-1-1984076",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "liu2005-1-1984076-batio3-polycarbonate-composite-thin-film-1--chloroform",
+      "name": "chloroform",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "liu2005-1-1984076",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "liu2005-1-1984076-batio3-polycarbonate-composite-thin-film-1--polycarbonate",
+      "name": "polycarbonate",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "liu2005-1-1984076",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -113,7 +208,10 @@
       "id": "liu2005-1-1984076-batio3-polycarbonate-composite-thin-film-1--after-s01-dissolve",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "liu2005-1-1984076-batio3-polycarbonate-composite-thin-film-1--barium-nitrate",
+        "liu2005-1-1984076-batio3-polycarbonate-composite-thin-film-1--de-ionized-water"
+      ]
     },
     {
       "id": "liu2005-1-1984076-batio3-polycarbonate-composite-thin-film-1--after-s02-add",
@@ -142,10 +240,53 @@
     },
     {
       "id": "liu2005-1-1984076-batio3-polycarbonate-composite-thin-film-1--after-s05-filter",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "liu2005-1-1984076-batio3-polycarbonate-composite-thin-film-1--after-s04-heat"
+      ]
+    },
+    {
+      "id": "liu2005-1-1984076-batio3-polycarbonate-composite-thin-film-1--after-d2-s06-disperse",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "liu2005-1-1984076-batio3-polycarbonate-composite-thin-film-1--after-s05-filter",
+        "liu2005-1-1984076-batio3-polycarbonate-composite-thin-film-1--polycarbonate"
+      ]
+    },
+    {
+      "id": "liu2005-1-1984076-batio3-polycarbonate-composite-thin-film-1--after-d2-s07-spin-coat",
+      "name": "mixture after step 7",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "liu2005-1-1984076-batio3-polycarbonate-composite-thin-film-1--after-d2-s06-disperse",
+        "liu2005-1-1984076-batio3-polycarbonate-composite-thin-film-1--polycarbonate"
+      ]
+    },
+    {
+      "id": "liu2005-1-1984076-batio3-polycarbonate-composite-thin-film-1--after-d2-s08-bake",
+      "name": "mixture after step 8",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "liu2005-1-1984076-batio3-polycarbonate-composite-thin-film-1--after-d2-s07-spin-coat"
+      ]
+    },
+    {
+      "id": "liu2005-1-1984076-batio3-polycarbonate-composite-thin-film-1--after-d2-s09-repeat",
+      "name": "mixture after step 9",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "liu2005-1-1984076-batio3-polycarbonate-composite-thin-film-1--after-d2-s08-bake",
+        "liu2005-1-1984076-batio3-polycarbonate-composite-thin-film-1--polycarbonate"
+      ]
+    },
+    {
+      "id": "liu2005-1-1984076-batio3-polycarbonate-composite-thin-film-1--after-d2-s10-bake",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "liu2005-1-1984076-batio3-polycarbonate-composite-thin-film-1--after-s04-heat"
+        "liu2005-1-1984076-batio3-polycarbonate-composite-thin-film-1--after-d2-s09-repeat"
       ]
     }
   ],
@@ -158,7 +299,10 @@
       "branch": "",
       "optional": false,
       "depends_on": [],
-      "inputs": [],
+      "inputs": [
+        "liu2005-1-1984076-batio3-polycarbonate-composite-thin-film-1--barium-nitrate",
+        "liu2005-1-1984076-batio3-polycarbonate-composite-thin-film-1--de-ionized-water"
+      ],
       "outputs": [
         "liu2005-1-1984076-batio3-polycarbonate-composite-thin-film-1--after-s01-dissolve"
       ],
@@ -392,6 +536,199 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "d2-s06-disperse",
+      "action": "disperse",
+      "label": "Disperse BT nanocrystals into PC solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s05-filter"
+      ],
+      "inputs": [
+        "liu2005-1-1984076-batio3-polycarbonate-composite-thin-film-1--after-s05-filter",
+        "liu2005-1-1984076-batio3-polycarbonate-composite-thin-film-1--polycarbonate"
+      ],
+      "outputs": [
+        "liu2005-1-1984076-batio3-polycarbonate-composite-thin-film-1--after-d2-s06-disperse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Disperse BT nanocrystals into PC solution",
+      "evidence": [
+        {
+          "source_id": "liu2005-1-1984076",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "d2-s07-spin-coat",
+      "action": "spin-coat",
+      "label": "Spin-coat",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s06-disperse"
+      ],
+      "inputs": [
+        "liu2005-1-1984076-batio3-polycarbonate-composite-thin-film-1--after-d2-s06-disperse",
+        "liu2005-1-1984076-batio3-polycarbonate-composite-thin-film-1--polycarbonate"
+      ],
+      "outputs": [
+        "liu2005-1-1984076-batio3-polycarbonate-composite-thin-film-1--after-d2-s07-spin-coat"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Spin-coat",
+      "evidence": [
+        {
+          "source_id": "liu2005-1-1984076",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "d2-s08-bake",
+      "action": "bake",
+      "label": "Bake",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s07-spin-coat"
+      ],
+      "inputs": [
+        "liu2005-1-1984076-batio3-polycarbonate-composite-thin-film-1--after-d2-s07-spin-coat"
+      ],
+      "outputs": [
+        "liu2005-1-1984076-batio3-polycarbonate-composite-thin-film-1--after-d2-s08-bake"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Bake",
+      "evidence": [
+        {
+          "source_id": "liu2005-1-1984076",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "d2-s09-repeat",
+      "action": "repeat",
+      "label": "Repeat spin-coating and baking to obtain thick films",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s08-bake"
+      ],
+      "inputs": [
+        "liu2005-1-1984076-batio3-polycarbonate-composite-thin-film-1--after-d2-s08-bake",
+        "liu2005-1-1984076-batio3-polycarbonate-composite-thin-film-1--polycarbonate"
+      ],
+      "outputs": [
+        "liu2005-1-1984076-batio3-polycarbonate-composite-thin-film-1--after-d2-s09-repeat"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Repeat spin-coating and baking to obtain thick films",
+      "evidence": [
+        {
+          "source_id": "liu2005-1-1984076",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "d2-s10-bake",
+      "action": "bake",
+      "label": "Bake",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s09-repeat"
+      ],
+      "inputs": [
+        "liu2005-1-1984076-batio3-polycarbonate-composite-thin-film-1--after-d2-s09-repeat"
+      ],
+      "outputs": [
+        "liu2005-1-1984076-batio3-polycarbonate-composite-thin-film-1--after-d2-s10-bake"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Bake",
+      "evidence": [
+        {
+          "source_id": "liu2005-1-1984076",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -400,7 +737,7 @@
       "sample_id": "liu2005-1-1984076-batio3-polycarbonate-composite-thin-film-1--product",
       "source_sample_label": "BaTiO3/polycarbonate composite thin films (20-wt % BT-doped)",
       "batch_id": null,
-      "material_state_id": "liu2005-1-1984076-batio3-polycarbonate-composite-thin-film-1--after-s05-filter",
+      "material_state_id": "liu2005-1-1984076-batio3-polycarbonate-composite-thin-film-1--after-d2-s10-bake",
       "parent_sample_id": null,
       "composition": {
         "value": "BaTiO3",
@@ -459,12 +796,17 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
-      "Amount of potassium hydroxide not reported in the extracted text."
+      "Amount of potassium hydroxide not reported in the extracted text.",
+      "Amount of barium nitrate not reported in the extracted text.",
+      "Amount of de-ionized water not reported in the extracted text.",
+      "Amount of 10-mol/l KOH solution not reported in the extracted text.",
+      "Amount of chloroform not reported in the extracted text.",
+      "Amount of polycarbonate not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

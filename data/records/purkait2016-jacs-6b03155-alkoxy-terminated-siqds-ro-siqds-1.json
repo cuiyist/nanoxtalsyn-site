@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "purkait2016-jacs-6b03155-alkoxy-terminated-siqds-ro-siqds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Tapas K. Purkait; Muhammad Iqbal; Muhammad Amirul Islam; Md Hosnay Mobarok; Christina M. Gonzalez; Lida Hadidi; Jonathan G. C. Veinot (2016): alkoxy-terminated SiQDs (RO-SiQDs)",
   "material": {
@@ -127,6 +127,25 @@
           "locator": "Main PDF p.5"
         }
       ]
+    },
+    {
+      "id": "purkait2016-jacs-6b03155-alkoxy-terminated-siqds-ro-siqds-1--h-siqd",
+      "name": "H-SiQD",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "purkait2016-jacs-6b03155",
+          "locator": "Main PDF p.5"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -136,15 +155,48 @@
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": [
-        "purkait2016-jacs-6b03155-alkoxy-terminated-siqds-ro-siqds-1--2-butanone"
+        "purkait2016-jacs-6b03155-alkoxy-terminated-siqds-ro-siqds-1--2-butanone",
+        "purkait2016-jacs-6b03155-alkoxy-terminated-siqds-ro-siqds-1--h-siqd"
       ]
     },
     {
       "id": "purkait2016-jacs-6b03155-alkoxy-terminated-siqds-ro-siqds-1--after-s02-heat",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "purkait2016-jacs-6b03155-alkoxy-terminated-siqds-ro-siqds-1--after-s01-combine"
+      ]
+    },
+    {
+      "id": "purkait2016-jacs-6b03155-alkoxy-terminated-siqds-ro-siqds-1--after-d2-s03-concentrate",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "purkait2016-jacs-6b03155-alkoxy-terminated-siqds-ro-siqds-1--after-s02-heat"
+      ]
+    },
+    {
+      "id": "purkait2016-jacs-6b03155-alkoxy-terminated-siqds-ro-siqds-1--after-d2-s04-add",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "purkait2016-jacs-6b03155-alkoxy-terminated-siqds-ro-siqds-1--after-d2-s03-concentrate"
+      ]
+    },
+    {
+      "id": "purkait2016-jacs-6b03155-alkoxy-terminated-siqds-ro-siqds-1--after-d2-s05-centrifuge",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "purkait2016-jacs-6b03155-alkoxy-terminated-siqds-ro-siqds-1--after-d2-s04-add"
+      ]
+    },
+    {
+      "id": "purkait2016-jacs-6b03155-alkoxy-terminated-siqds-ro-siqds-1--after-d2-s06-redisperse",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "purkait2016-jacs-6b03155-alkoxy-terminated-siqds-ro-siqds-1--after-s01-combine"
+        "purkait2016-jacs-6b03155-alkoxy-terminated-siqds-ro-siqds-1--after-d2-s05-centrifuge"
       ]
     }
   ],
@@ -158,7 +210,8 @@
       "optional": false,
       "depends_on": [],
       "inputs": [
-        "purkait2016-jacs-6b03155-alkoxy-terminated-siqds-ro-siqds-1--2-butanone"
+        "purkait2016-jacs-6b03155-alkoxy-terminated-siqds-ro-siqds-1--2-butanone",
+        "purkait2016-jacs-6b03155-alkoxy-terminated-siqds-ro-siqds-1--h-siqd"
       ],
       "outputs": [
         "purkait2016-jacs-6b03155-alkoxy-terminated-siqds-ro-siqds-1--after-s01-combine"
@@ -269,6 +322,168 @@
           "locator": "Main PDF p.5"
         }
       ]
+    },
+    {
+      "id": "d2-s03-concentrate",
+      "action": "concentrate",
+      "label": "Concentrate reaction mixture",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-heat"
+      ],
+      "inputs": [
+        "purkait2016-jacs-6b03155-alkoxy-terminated-siqds-ro-siqds-1--after-s02-heat"
+      ],
+      "outputs": [
+        "purkait2016-jacs-6b03155-alkoxy-terminated-siqds-ro-siqds-1--after-d2-s03-concentrate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "purkait2016-jacs-6b03155",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Concentrate reaction mixture",
+      "evidence": [
+        {
+          "source_id": "purkait2016-jacs-6b03155",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    },
+    {
+      "id": "d2-s04-add",
+      "action": "add",
+      "label": "Add methanol antisolvent",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-concentrate"
+      ],
+      "inputs": [
+        "purkait2016-jacs-6b03155-alkoxy-terminated-siqds-ro-siqds-1--after-d2-s03-concentrate"
+      ],
+      "outputs": [
+        "purkait2016-jacs-6b03155-alkoxy-terminated-siqds-ro-siqds-1--after-d2-s04-add"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "purkait2016-jacs-6b03155",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add methanol antisolvent",
+      "evidence": [
+        {
+          "source_id": "purkait2016-jacs-6b03155",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    },
+    {
+      "id": "d2-s05-centrifuge",
+      "action": "centrifuge",
+      "label": "Centrifuge to isolate crude functionalized SiQDs",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-add"
+      ],
+      "inputs": [
+        "purkait2016-jacs-6b03155-alkoxy-terminated-siqds-ro-siqds-1--after-d2-s04-add"
+      ],
+      "outputs": [
+        "purkait2016-jacs-6b03155-alkoxy-terminated-siqds-ro-siqds-1--after-d2-s05-centrifuge"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Centrifuge to isolate crude functionalized SiQDs",
+      "evidence": [
+        {
+          "source_id": "purkait2016-jacs-6b03155",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    },
+    {
+      "id": "d2-s06-redisperse",
+      "action": "redisperse",
+      "label": "Redisperse in toluene",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s05-centrifuge"
+      ],
+      "inputs": [
+        "purkait2016-jacs-6b03155-alkoxy-terminated-siqds-ro-siqds-1--after-d2-s05-centrifuge"
+      ],
+      "outputs": [
+        "purkait2016-jacs-6b03155-alkoxy-terminated-siqds-ro-siqds-1--after-d2-s06-redisperse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Redisperse in toluene",
+      "evidence": [
+        {
+          "source_id": "purkait2016-jacs-6b03155",
+          "locator": "Main PDF p.5"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -277,7 +492,7 @@
       "sample_id": "purkait2016-jacs-6b03155-alkoxy-terminated-siqds-ro-siqds-1--product",
       "source_sample_label": "alkoxy-terminated SiQDs (RO-SiQDs)",
       "batch_id": null,
-      "material_state_id": "purkait2016-jacs-6b03155-alkoxy-terminated-siqds-ro-siqds-1--after-s02-heat",
+      "material_state_id": "purkait2016-jacs-6b03155-alkoxy-terminated-siqds-ro-siqds-1--after-d2-s06-redisperse",
       "parent_sample_id": null,
       "composition": {
         "value": "Si",
@@ -374,8 +589,10 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
-    "missing_fields": [],
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
+    "missing_fields": [
+      "Amount of H-SiQD not reported in the extracted text."
+    ],
     "conflicts": [],
     "requested_tasks": [],
     "experimental_outcome": "reported_product"

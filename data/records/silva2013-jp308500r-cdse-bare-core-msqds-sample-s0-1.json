@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "silva2013-jp308500r-cdse-bare-core-msqds-sample-s0-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Anielle Christine A. Silva (2013): CdSe bare-core MSQDs (sample S0)",
   "material": {
@@ -194,6 +194,82 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "silva2013-jp308500r-cdse-bare-core-msqds-sample-s0-1--selenium",
+      "name": "Selenium",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "silva2013-jp308500r",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "silva2013-jp308500r-cdse-bare-core-msqds-sample-s0-1--sodium-hydroxide",
+      "name": "Sodium hydroxide",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "silva2013-jp308500r",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "silva2013-jp308500r-cdse-bare-core-msqds-sample-s0-1--ethanol",
+      "name": "Ethanol",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "silva2013-jp308500r",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "silva2013-jp308500r-cdse-bare-core-msqds-sample-s0-1--sodium-hydroselenide-nahse",
+      "name": "Sodium hydroselenide (NaHSe)",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "silva2013-jp308500r",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -203,7 +279,8 @@
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": [
-        "silva2013-jp308500r-cdse-bare-core-msqds-sample-s0-1--sodium-borohydride"
+        "silva2013-jp308500r-cdse-bare-core-msqds-sample-s0-1--sodium-borohydride",
+        "silva2013-jp308500r-cdse-bare-core-msqds-sample-s0-1--selenium"
       ]
     },
     {
@@ -236,10 +313,23 @@
     },
     {
       "id": "silva2013-jp308500r-cdse-bare-core-msqds-sample-s0-1--after-s05-precipitate",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "silva2013-jp308500r-cdse-bare-core-msqds-sample-s0-1--after-s04-reflux",
+        "silva2013-jp308500r-cdse-bare-core-msqds-sample-s0-1--ethanol"
+      ]
+    },
+    {
+      "id": "silva2013-jp308500r-cdse-bare-core-msqds-sample-s0-1--after-d2-s06-redisperse",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "silva2013-jp308500r-cdse-bare-core-msqds-sample-s0-1--after-s04-reflux"
+        "silva2013-jp308500r-cdse-bare-core-msqds-sample-s0-1--after-s05-precipitate",
+        "silva2013-jp308500r-cdse-bare-core-msqds-sample-s0-1--cadmium-perchlorate",
+        "silva2013-jp308500r-cdse-bare-core-msqds-sample-s0-1--thioglycerol",
+        "silva2013-jp308500r-cdse-bare-core-msqds-sample-s0-1--sodium-hydroselenide-nahse",
+        "silva2013-jp308500r-cdse-bare-core-msqds-sample-s0-1--sodium-borohydride"
       ]
     }
   ],
@@ -253,7 +343,8 @@
       "optional": false,
       "depends_on": [],
       "inputs": [
-        "silva2013-jp308500r-cdse-bare-core-msqds-sample-s0-1--sodium-borohydride"
+        "silva2013-jp308500r-cdse-bare-core-msqds-sample-s0-1--sodium-borohydride",
+        "silva2013-jp308500r-cdse-bare-core-msqds-sample-s0-1--selenium"
       ],
       "outputs": [
         "silva2013-jp308500r-cdse-bare-core-msqds-sample-s0-1--after-s01-prepare"
@@ -486,7 +577,8 @@
         "s04-reflux"
       ],
       "inputs": [
-        "silva2013-jp308500r-cdse-bare-core-msqds-sample-s0-1--after-s04-reflux"
+        "silva2013-jp308500r-cdse-bare-core-msqds-sample-s0-1--after-s04-reflux",
+        "silva2013-jp308500r-cdse-bare-core-msqds-sample-s0-1--ethanol"
       ],
       "outputs": [
         "silva2013-jp308500r-cdse-bare-core-msqds-sample-s0-1--after-s05-precipitate"
@@ -512,6 +604,48 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s06-redisperse",
+      "action": "redisperse",
+      "label": "Redisperse the precipitate in ultrapure water",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s05-precipitate"
+      ],
+      "inputs": [
+        "silva2013-jp308500r-cdse-bare-core-msqds-sample-s0-1--after-s05-precipitate",
+        "silva2013-jp308500r-cdse-bare-core-msqds-sample-s0-1--cadmium-perchlorate",
+        "silva2013-jp308500r-cdse-bare-core-msqds-sample-s0-1--thioglycerol",
+        "silva2013-jp308500r-cdse-bare-core-msqds-sample-s0-1--sodium-hydroselenide-nahse",
+        "silva2013-jp308500r-cdse-bare-core-msqds-sample-s0-1--sodium-borohydride"
+      ],
+      "outputs": [
+        "silva2013-jp308500r-cdse-bare-core-msqds-sample-s0-1--after-d2-s06-redisperse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Redisperse the precipitate in ultrapure water",
+      "evidence": [
+        {
+          "source_id": "silva2013-jp308500r",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -520,7 +654,7 @@
       "sample_id": "silva2013-jp308500r-cdse-bare-core-msqds-sample-s0-1--product",
       "source_sample_label": "CdSe bare-core MSQDs (sample S0)",
       "batch_id": null,
-      "material_state_id": "silva2013-jp308500r-cdse-bare-core-msqds-sample-s0-1--after-s05-precipitate",
+      "material_state_id": "silva2013-jp308500r-cdse-bare-core-msqds-sample-s0-1--after-d2-s06-redisperse",
       "parent_sample_id": null,
       "composition": {
         "value": "CdSe",
@@ -579,10 +713,14 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
-      "Size not reported in the extracted text."
+      "Size not reported in the extracted text.",
+      "Amount of Selenium not reported in the extracted text.",
+      "Amount of Sodium hydroxide not reported in the extracted text.",
+      "Amount of Ethanol not reported in the extracted text.",
+      "Amount of Sodium hydroselenide (NaHSe) not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

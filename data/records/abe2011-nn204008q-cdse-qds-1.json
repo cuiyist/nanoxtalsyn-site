@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "abe2011-nn204008q-cdse-qds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Sofie Abé; Richard Karel Čapek; Bram De Geyter; Zeger Hens (2011): CdSe QDs",
   "material": {
@@ -156,16 +156,88 @@
           "locator": "Main PDF p.5"
         }
       ]
+    },
+    {
+      "id": "abe2011-nn204008q-cdse-qds-1--stearic-acid",
+      "name": "stearic acid",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "abe2011-nn204008q",
+          "locator": "Main PDF p.10"
+        }
+      ]
+    },
+    {
+      "id": "abe2011-nn204008q-cdse-qds-1--hexadecylamine",
+      "name": "hexadecylamine",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "abe2011-nn204008q",
+          "locator": "Main PDF p.10"
+        }
+      ]
+    },
+    {
+      "id": "abe2011-nn204008q-cdse-qds-1--octadecene",
+      "name": "octadecene",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "abe2011-nn204008q",
+          "locator": "Main PDF p.5"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
-      "id": "abe2011-nn204008q-cdse-qds-1--after-s01-inject",
+      "id": "abe2011-nn204008q-cdse-qds-1--after-d2-s01-heat",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
+      "parent_ids": []
+    },
+    {
+      "id": "abe2011-nn204008q-cdse-qds-1--after-s01-inject",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
       "parent_ids": [
+        "abe2011-nn204008q-cdse-qds-1--after-d2-s01-heat",
         "abe2011-nn204008q-cdse-qds-1--trioctylphosphine-selenide"
+      ]
+    },
+    {
+      "id": "abe2011-nn204008q-cdse-qds-1--after-d2-s03-hold",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "abe2011-nn204008q-cdse-qds-1--after-s01-inject"
       ]
     },
     {
@@ -173,11 +245,50 @@
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "abe2011-nn204008q-cdse-qds-1--after-s01-inject"
+        "abe2011-nn204008q-cdse-qds-1--after-d2-s03-hold"
       ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-heat",
+      "action": "heat",
+      "label": "Heating to injection temperature",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [],
+      "outputs": [
+        "abe2011-nn204008q-cdse-qds-1--after-d2-s01-heat"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "abe2011-nn204008q",
+            "locator": "Main PDF p.9"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heating to injection temperature",
+      "evidence": [
+        {
+          "source_id": "abe2011-nn204008q",
+          "locator": "Main PDF p.10"
+        }
+      ]
+    },
     {
       "id": "s01-inject",
       "action": "inject",
@@ -185,8 +296,11 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
+      "depends_on": [
+        "d2-s01-heat"
+      ],
       "inputs": [
+        "abe2011-nn204008q-cdse-qds-1--after-d2-s01-heat",
         "abe2011-nn204008q-cdse-qds-1--trioctylphosphine-selenide"
       ],
       "outputs": [
@@ -220,10 +334,10 @@
       ]
     },
     {
-      "id": "s02-precipitate",
-      "action": "precipitate",
-      "label": "Precipitation with methanol",
-      "stage": "workup",
+      "id": "d2-s03-hold",
+      "action": "hold",
+      "label": "Reaction at growth temperature",
+      "stage": "synthesis",
       "branch": "",
       "optional": false,
       "depends_on": [
@@ -231,6 +345,49 @@
       ],
       "inputs": [
         "abe2011-nn204008q-cdse-qds-1--after-s01-inject"
+      ],
+      "outputs": [
+        "abe2011-nn204008q-cdse-qds-1--after-d2-s03-hold"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "abe2011-nn204008q",
+            "locator": "Main PDF p.9"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Reaction at growth temperature",
+      "evidence": [
+        {
+          "source_id": "abe2011-nn204008q",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    },
+    {
+      "id": "s02-precipitate",
+      "action": "precipitate",
+      "label": "Precipitation with methanol",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-hold"
+      ],
+      "inputs": [
+        "abe2011-nn204008q-cdse-qds-1--after-d2-s03-hold"
       ],
       "outputs": [
         "abe2011-nn204008q-cdse-qds-1--after-s02-precipitate"
@@ -316,13 +473,16 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
-      "Reaction time not reported in the extracted text."
+      "Reaction time not reported in the extracted text.",
+      "Amount of stearic acid not reported in the extracted text.",
+      "Amount of hexadecylamine not reported in the extracted text.",
+      "Amount of octadecene not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

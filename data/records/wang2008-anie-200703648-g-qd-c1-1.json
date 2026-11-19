@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "wang2008-anie-200703648-g-qd-c1-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Qiangbin Wang (2008): G-QD-C1",
   "material": {
@@ -116,6 +116,82 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "wang2008-anie-200703648-g-qd-c1-1--p2s5",
+      "name": "P2S5",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "wang2008-anie-200703648",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "wang2008-anie-200703648-g-qd-c1-1--butylamine",
+      "name": "butylamine",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "wang2008-anie-200703648",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "wang2008-anie-200703648-g-qd-c1-1--dmso",
+      "name": "DMSO",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "wang2008-anie-200703648",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "wang2008-anie-200703648-g-qd-c1-1--cdse-core-particles",
+      "name": "CdSe core particles",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "wang2008-anie-200703648",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -125,7 +201,9 @@
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": [
-        "wang2008-anie-200703648-g-qd-c1-1--zncl2"
+        "wang2008-anie-200703648-g-qd-c1-1--zncl2",
+        "wang2008-anie-200703648-g-qd-c1-1--butylamine",
+        "wang2008-anie-200703648-g-qd-c1-1--dmso"
       ]
     },
     {
@@ -133,7 +211,8 @@
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
-        "wang2008-anie-200703648-g-qd-c1-1--after-s01-heat"
+        "wang2008-anie-200703648-g-qd-c1-1--after-s01-heat",
+        "wang2008-anie-200703648-g-qd-c1-1--cdse-core-particles"
       ]
     },
     {
@@ -163,7 +242,9 @@
       "optional": false,
       "depends_on": [],
       "inputs": [
-        "wang2008-anie-200703648-g-qd-c1-1--zncl2"
+        "wang2008-anie-200703648-g-qd-c1-1--zncl2",
+        "wang2008-anie-200703648-g-qd-c1-1--butylamine",
+        "wang2008-anie-200703648-g-qd-c1-1--dmso"
       ],
       "outputs": [
         "wang2008-anie-200703648-g-qd-c1-1--after-s01-heat"
@@ -201,7 +282,8 @@
         "s01-heat"
       ],
       "inputs": [
-        "wang2008-anie-200703648-g-qd-c1-1--after-s01-heat"
+        "wang2008-anie-200703648-g-qd-c1-1--after-s01-heat",
+        "wang2008-anie-200703648-g-qd-c1-1--cdse-core-particles"
       ],
       "outputs": [
         "wang2008-anie-200703648-g-qd-c1-1--after-s02-dissolve"
@@ -357,11 +439,76 @@
       "notes": []
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "wang2008-anie-200703648-g-qd-c1-1--photoluminescence-peak",
+      "sample_id": "wang2008-anie-200703648-g-qd-c1-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 548,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "548 nm",
+        "evidence": [
+          {
+            "source_id": "wang2008-anie-200703648",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "wang2008-anie-200703648",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "wang2008-anie-200703648-g-qd-c1-1--photoluminescence-quantum-yield",
+      "sample_id": "wang2008-anie-200703648-g-qd-c1-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 41.3,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "41.3 %",
+        "evidence": [
+          {
+            "source_id": "wang2008-anie-200703648",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "wang2008-anie-200703648",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
@@ -369,7 +516,11 @@
       "Reactor not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
-      "Reaction time not reported in the extracted text."
+      "Reaction time not reported in the extracted text.",
+      "Amount of P2S5 not reported in the extracted text.",
+      "Amount of butylamine not reported in the extracted text.",
+      "Amount of DMSO not reported in the extracted text.",
+      "Amount of CdSe core particles not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

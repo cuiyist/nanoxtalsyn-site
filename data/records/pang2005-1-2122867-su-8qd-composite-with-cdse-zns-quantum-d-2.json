@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "pang2005-1-2122867-su-8qd-composite-with-cdse-zns-quantum-d-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Lin Pang (2005): SU-8–QD composite with CdSe/ZnS quantum dots",
   "material": {
@@ -19,7 +19,7 @@
     ],
     "architecture": "unresolved"
   },
-  "method": "Synthesis as described in the source",
+  "method": "Direct dispersion",
   "sources": [
     {
       "id": "pang2005-1-2122867",
@@ -83,6 +83,44 @@
       "id": "pang2005-1-2122867-su-8qd-composite-with-cdse-zns-quantum-d-2--cdse-zns-quantum-dots",
       "name": "CdSe/ZnS quantum dots",
       "formula": null,
+      "role": "starting_particles",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "pang2005-1-2122867",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    },
+    {
+      "id": "pang2005-1-2122867-su-8qd-composite-with-cdse-zns-quantum-d-2--su-8",
+      "name": "SU-8",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "pang2005-1-2122867",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    },
+    {
+      "id": "pang2005-1-2122867-su-8qd-composite-with-cdse-zns-quantum-d-2--su-8-solution",
+      "name": "SU-8 solution",
+      "formula": null,
       "role": "reagent",
       "stage": "synthesis",
       "identity": {
@@ -106,7 +144,18 @@
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": [
-        "pang2005-1-2122867-su-8qd-composite-with-cdse-zns-quantum-d-2--cdse-zns-quantum-dots"
+        "pang2005-1-2122867-su-8qd-composite-with-cdse-zns-quantum-d-2--cdse-zns-quantum-dots",
+        "pang2005-1-2122867-su-8qd-composite-with-cdse-zns-quantum-d-2--su-8"
+      ]
+    },
+    {
+      "id": "pang2005-1-2122867-su-8qd-composite-with-cdse-zns-quantum-d-2--after-d2-s02-spin-coat",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "pang2005-1-2122867-su-8qd-composite-with-cdse-zns-quantum-d-2--after-s01-add",
+        "pang2005-1-2122867-su-8qd-composite-with-cdse-zns-quantum-d-2--cdse-zns-quantum-dots",
+        "pang2005-1-2122867-su-8qd-composite-with-cdse-zns-quantum-d-2--su-8"
       ]
     },
     {
@@ -114,8 +163,9 @@
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "pang2005-1-2122867-su-8qd-composite-with-cdse-zns-quantum-d-2--after-s01-add",
-        "pang2005-1-2122867-su-8qd-composite-with-cdse-zns-quantum-d-2--cdse-zns-quantum-dots"
+        "pang2005-1-2122867-su-8qd-composite-with-cdse-zns-quantum-d-2--after-d2-s02-spin-coat",
+        "pang2005-1-2122867-su-8qd-composite-with-cdse-zns-quantum-d-2--cdse-zns-quantum-dots",
+        "pang2005-1-2122867-su-8qd-composite-with-cdse-zns-quantum-d-2--su-8"
       ]
     }
   ],
@@ -129,7 +179,8 @@
       "optional": false,
       "depends_on": [],
       "inputs": [
-        "pang2005-1-2122867-su-8qd-composite-with-cdse-zns-quantum-d-2--cdse-zns-quantum-dots"
+        "pang2005-1-2122867-su-8qd-composite-with-cdse-zns-quantum-d-2--cdse-zns-quantum-dots",
+        "pang2005-1-2122867-su-8qd-composite-with-cdse-zns-quantum-d-2--su-8"
       ],
       "outputs": [
         "pang2005-1-2122867-su-8qd-composite-with-cdse-zns-quantum-d-2--after-s01-add"
@@ -157,9 +208,9 @@
       ]
     },
     {
-      "id": "s02-heat",
-      "action": "heat",
-      "label": "Soft bake at 90°C",
+      "id": "d2-s02-spin-coat",
+      "action": "spin coat",
+      "label": "Spin coat solution onto substrate",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -168,7 +219,48 @@
       ],
       "inputs": [
         "pang2005-1-2122867-su-8qd-composite-with-cdse-zns-quantum-d-2--after-s01-add",
-        "pang2005-1-2122867-su-8qd-composite-with-cdse-zns-quantum-d-2--cdse-zns-quantum-dots"
+        "pang2005-1-2122867-su-8qd-composite-with-cdse-zns-quantum-d-2--cdse-zns-quantum-dots",
+        "pang2005-1-2122867-su-8qd-composite-with-cdse-zns-quantum-d-2--su-8"
+      ],
+      "outputs": [
+        "pang2005-1-2122867-su-8qd-composite-with-cdse-zns-quantum-d-2--after-d2-s02-spin-coat"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Spin coat solution onto substrate",
+      "evidence": [
+        {
+          "source_id": "pang2005-1-2122867",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    },
+    {
+      "id": "s02-heat",
+      "action": "heat",
+      "label": "Soft bake at 90°C",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-spin-coat"
+      ],
+      "inputs": [
+        "pang2005-1-2122867-su-8qd-composite-with-cdse-zns-quantum-d-2--after-d2-s02-spin-coat",
+        "pang2005-1-2122867-su-8qd-composite-with-cdse-zns-quantum-d-2--cdse-zns-quantum-dots",
+        "pang2005-1-2122867-su-8qd-composite-with-cdse-zns-quantum-d-2--su-8"
       ],
       "outputs": [
         "pang2005-1-2122867-su-8qd-composite-with-cdse-zns-quantum-d-2--after-s02-heat"
@@ -283,11 +375,44 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "pang2005-1-2122867-su-8qd-composite-with-cdse-zns-quantum-d-2--photoluminescence-peak",
+      "sample_id": "pang2005-1-2122867-su-8qd-composite-with-cdse-zns-quantum-d-2--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 613.5,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "613.5 nm",
+        "evidence": [
+          {
+            "source_id": "pang2005-1-2122867",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "pang2005-1-2122867",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
@@ -295,7 +420,9 @@
       "Size not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
-      "Amount of CdSe/ZnS quantum dots not reported in the extracted text."
+      "Amount of CdSe/ZnS quantum dots not reported in the extracted text.",
+      "Amount of SU-8 not reported in the extracted text.",
+      "Amount of SU-8 solution not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

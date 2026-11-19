@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "peng2012-nl2038979-graphene-quantum-dots-gqds-synthesized-a-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Juan Peng; Wei Gao; Bipin Kumar Gupta; Zheng Liu; Rebeca Romero-Aburto; Liehui Ge; Li Song; Lawrence B. Alemany; Xiaobo Zhan; Guanhui Gao; Sajna Antony Vithayathil; Benny Abraham Kaipparettu; Angel A. Marti; Takuya Hayashi; Jun-Jie Zhu; Pulickel M. Ajayan (2012): Graphene quantum dots (GQDs) synthesized at 100 °C",
   "material": {
@@ -122,10 +122,20 @@
   "stocks": [],
   "material_states": [
     {
+      "id": "peng2012-nl2038979-graphene-quantum-dots-gqds-synthesized-a-2--after-d2-s01-exfoliate",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "peng2012-nl2038979-graphene-quantum-dots-gqds-synthesized-a-2--pitch-based-carbon-fibers",
+        "peng2012-nl2038979-graphene-quantum-dots-gqds-synthesized-a-2--acidic-solution"
+      ]
+    },
+    {
       "id": "peng2012-nl2038979-graphene-quantum-dots-gqds-synthesized-a-2--after-s01-oxidize",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
+        "peng2012-nl2038979-graphene-quantum-dots-gqds-synthesized-a-2--after-d2-s01-exfoliate",
         "peng2012-nl2038979-graphene-quantum-dots-gqds-synthesized-a-2--pitch-based-carbon-fibers",
         "peng2012-nl2038979-graphene-quantum-dots-gqds-synthesized-a-2--acidic-solution"
       ]
@@ -133,14 +143,54 @@
   ],
   "operations": [
     {
+      "id": "d2-s01-exfoliate",
+      "action": "exfoliate",
+      "label": "Acid treatment and chemical exfoliation of carbon fibers",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "peng2012-nl2038979-graphene-quantum-dots-gqds-synthesized-a-2--pitch-based-carbon-fibers",
+        "peng2012-nl2038979-graphene-quantum-dots-gqds-synthesized-a-2--acidic-solution"
+      ],
+      "outputs": [
+        "peng2012-nl2038979-graphene-quantum-dots-gqds-synthesized-a-2--after-d2-s01-exfoliate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Acid treatment and chemical exfoliation of carbon fibers",
+      "evidence": [
+        {
+          "source_id": "peng2012-nl2038979",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
       "id": "s01-oxidize",
       "action": "oxidize",
       "label": "Chemical oxidation and cutting of carbon fibers",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
+      "depends_on": [
+        "d2-s01-exfoliate"
+      ],
       "inputs": [
+        "peng2012-nl2038979-graphene-quantum-dots-gqds-synthesized-a-2--after-d2-s01-exfoliate",
         "peng2012-nl2038979-graphene-quantum-dots-gqds-synthesized-a-2--pitch-based-carbon-fibers",
         "peng2012-nl2038979-graphene-quantum-dots-gqds-synthesized-a-2--acidic-solution"
       ],
@@ -231,7 +281,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Size not reported in the extracted text.",

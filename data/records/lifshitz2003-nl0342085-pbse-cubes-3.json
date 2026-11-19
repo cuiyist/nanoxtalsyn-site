@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "lifshitz2003-nl0342085-pbse-cubes-3",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "E. Lifshitz; M. Bashouti; V. Kloper; A. Kigel; M. S. Eisen; S. Berger (2003): PbSe cubes",
   "material": {
@@ -156,15 +156,61 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "lifshitz2003-nl0342085-pbse-cubes-3--alkyldiamine",
+      "name": "alkyldiamine",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "lifshitz2003-nl0342085",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "lifshitz2003-nl0342085-pbse-cubes-3--hydrazine",
+      "name": "hydrazine",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "lifshitz2003-nl0342085",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
       "id": "lifshitz2003-nl0342085-pbse-cubes-3--after-s01-heat",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": []
+    },
+    {
+      "id": "lifshitz2003-nl0342085-pbse-cubes-3--after-d2-s02-quench",
       "name": "product as isolated",
       "kind": "product",
-      "parent_ids": []
+      "parent_ids": [
+        "lifshitz2003-nl0342085-pbse-cubes-3--after-s01-heat"
+      ]
     }
   ],
   "operations": [
@@ -225,6 +271,49 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s02-quench",
+      "action": "quench",
+      "label": "Quench the reaction with toluene and ethanol",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-heat"
+      ],
+      "inputs": [
+        "lifshitz2003-nl0342085-pbse-cubes-3--after-s01-heat"
+      ],
+      "outputs": [
+        "lifshitz2003-nl0342085-pbse-cubes-3--after-d2-s02-quench"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "lifshitz2003-nl0342085",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Quench the reaction with toluene and ethanol",
+      "evidence": [
+        {
+          "source_id": "lifshitz2003-nl0342085",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -233,7 +322,7 @@
       "sample_id": "lifshitz2003-nl0342085-pbse-cubes-3--product",
       "source_sample_label": "PbSe cubes",
       "batch_id": null,
-      "material_state_id": "lifshitz2003-nl0342085-pbse-cubes-3--after-s01-heat",
+      "material_state_id": "lifshitz2003-nl0342085-pbse-cubes-3--after-d2-s02-quench",
       "parent_sample_id": null,
       "composition": {
         "value": null,
@@ -286,11 +375,13 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
-      "Reaction time not reported in the extracted text."
+      "Reaction time not reported in the extracted text.",
+      "Amount of alkyldiamine not reported in the extracted text.",
+      "Amount of hydrazine not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

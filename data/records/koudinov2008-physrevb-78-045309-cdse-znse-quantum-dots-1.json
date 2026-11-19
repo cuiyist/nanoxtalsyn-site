@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "koudinov2008-physrevb-78-045309-cdse-znse-quantum-dots-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "A. V. Koudinov (2008): CdSe/ZnSe quantum dots",
   "material": {
@@ -82,7 +82,7 @@
       "id": "koudinov2008-physrevb-78-045309-cdse-znse-quantum-dots-1--cdse",
       "name": "CdSe",
       "formula": null,
-      "role": "reagent",
+      "role": "starting_particles",
       "stage": "synthesis",
       "identity": {
         "pubchem_cid": null,
@@ -96,35 +96,24 @@
           "locator": "Main PDF p.4"
         }
       ]
-    },
-    {
-      "id": "koudinov2008-physrevb-78-045309-cdse-znse-quantum-dots-1--znse",
-      "name": "ZnSe",
-      "formula": null,
-      "role": "reagent",
-      "stage": "synthesis",
-      "identity": {
-        "pubchem_cid": null,
-        "smiles": null
-      },
-      "quantities": {},
-      "notes": [],
-      "evidence": [
-        {
-          "source_id": "koudinov2008-physrevb-78-045309",
-          "locator": "Main PDF p.5"
-        }
-      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
       "id": "koudinov2008-physrevb-78-045309-cdse-znse-quantum-dots-1--after-s01-grow",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "koudinov2008-physrevb-78-045309-cdse-znse-quantum-dots-1--cdse"
+      ]
+    },
+    {
+      "id": "koudinov2008-physrevb-78-045309-cdse-znse-quantum-dots-1--after-d2-s02-cap",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "koudinov2008-physrevb-78-045309-cdse-znse-quantum-dots-1--cdse"
+        "koudinov2008-physrevb-78-045309-cdse-znse-quantum-dots-1--after-s01-grow"
       ]
     }
   ],
@@ -201,6 +190,44 @@
           "locator": "Main PDF p.4"
         }
       ]
+    },
+    {
+      "id": "d2-s02-cap",
+      "action": "cap",
+      "label": "Cap CdSe quantum dots with ZnSe",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-grow"
+      ],
+      "inputs": [
+        "koudinov2008-physrevb-78-045309-cdse-znse-quantum-dots-1--after-s01-grow"
+      ],
+      "outputs": [
+        "koudinov2008-physrevb-78-045309-cdse-znse-quantum-dots-1--after-d2-s02-cap"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Cap CdSe quantum dots with ZnSe",
+      "evidence": [
+        {
+          "source_id": "koudinov2008-physrevb-78-045309",
+          "locator": "Main PDF p.5"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -209,7 +236,7 @@
       "sample_id": "koudinov2008-physrevb-78-045309-cdse-znse-quantum-dots-1--product",
       "source_sample_label": "CdSe/ZnSe quantum dots",
       "batch_id": null,
-      "material_state_id": "koudinov2008-physrevb-78-045309-cdse-znse-quantum-dots-1--after-s01-grow",
+      "material_state_id": "koudinov2008-physrevb-78-045309-cdse-znse-quantum-dots-1--after-d2-s02-cap",
       "parent_sample_id": null,
       "composition": {
         "value": "CdSe/ZnSe",
@@ -257,7 +284,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",

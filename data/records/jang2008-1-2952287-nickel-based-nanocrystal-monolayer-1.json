@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "jang2008-1-2952287-nickel-based-nanocrystal-monolayer-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Yoo-Sung Jang (2008): nickel-based nanocrystal monolayer",
   "material": {
@@ -109,6 +109,25 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "jang2008-1-2952287-nickel-based-nanocrystal-monolayer-1--ni",
+      "name": "Ni",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "jang2008-1-2952287",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -123,10 +142,21 @@
     },
     {
       "id": "jang2008-1-2952287-nickel-based-nanocrystal-monolayer-1--after-s02-deposit",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "jang2008-1-2952287-nickel-based-nanocrystal-monolayer-1--after-s01-deposit",
+        "jang2008-1-2952287-nickel-based-nanocrystal-monolayer-1--ni"
+      ]
+    },
+    {
+      "id": "jang2008-1-2952287-nickel-based-nanocrystal-monolayer-1--after-d2-s03-anneal",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "jang2008-1-2952287-nickel-based-nanocrystal-monolayer-1--after-s01-deposit"
+        "jang2008-1-2952287-nickel-based-nanocrystal-monolayer-1--after-s02-deposit",
+        "jang2008-1-2952287-nickel-based-nanocrystal-monolayer-1--siox",
+        "jang2008-1-2952287-nickel-based-nanocrystal-monolayer-1--ni"
       ]
     }
   ],
@@ -202,7 +232,8 @@
         "s01-deposit"
       ],
       "inputs": [
-        "jang2008-1-2952287-nickel-based-nanocrystal-monolayer-1--after-s01-deposit"
+        "jang2008-1-2952287-nickel-based-nanocrystal-monolayer-1--after-s01-deposit",
+        "jang2008-1-2952287-nickel-based-nanocrystal-monolayer-1--ni"
       ],
       "outputs": [
         "jang2008-1-2952287-nickel-based-nanocrystal-monolayer-1--after-s02-deposit"
@@ -233,6 +264,88 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s03-anneal",
+      "action": "anneal",
+      "label": "Anneal sandwich structure to form nanocrystals",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-deposit"
+      ],
+      "inputs": [
+        "jang2008-1-2952287-nickel-based-nanocrystal-monolayer-1--after-s02-deposit",
+        "jang2008-1-2952287-nickel-based-nanocrystal-monolayer-1--siox",
+        "jang2008-1-2952287-nickel-based-nanocrystal-monolayer-1--ni"
+      ],
+      "outputs": [
+        "jang2008-1-2952287-nickel-based-nanocrystal-monolayer-1--after-d2-s03-anneal"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 900,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "900 °C",
+          "evidence": [
+            {
+              "source_id": "jang2008-1-2952287",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 h",
+          "evidence": [
+            {
+              "source_id": "jang2008-1-2952287",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "jang2008-1-2952287",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Anneal sandwich structure to form nanocrystals",
+      "evidence": [
+        {
+          "source_id": "jang2008-1-2952287",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -241,7 +354,7 @@
       "sample_id": "jang2008-1-2952287-nickel-based-nanocrystal-monolayer-1--product",
       "source_sample_label": "nickel-based nanocrystal monolayer",
       "batch_id": null,
-      "material_state_id": "jang2008-1-2952287-nickel-based-nanocrystal-monolayer-1--after-s02-deposit",
+      "material_state_id": "jang2008-1-2952287-nickel-based-nanocrystal-monolayer-1--after-d2-s03-anneal",
       "parent_sample_id": null,
       "composition": {
         "value": "NiSi2",
@@ -290,7 +403,9 @@
         }
       ],
       "notes": [
-        "Reactor: quartz-tube furnace (Main PDF p.2)."
+        "Reactor: quartz-tube furnace (Main PDF p.2).",
+        "Reaction temperature: 900 degC (Main PDF p.2).",
+        "Reaction time: 1 h (Main PDF p.2)."
       ]
     }
   ],
@@ -331,12 +446,11 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
-      "Reaction temperature not reported in the extracted text.",
-      "Reaction time not reported in the extracted text.",
-      "Amount of SiOx not reported in the extracted text."
+      "Amount of SiOx not reported in the extracted text.",
+      "Amount of Ni not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

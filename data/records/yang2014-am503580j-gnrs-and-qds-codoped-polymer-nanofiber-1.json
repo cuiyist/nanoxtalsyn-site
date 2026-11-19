@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "yang2014-am503580j-gnrs-and-qds-codoped-polymer-nanofiber-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Xianguang Yang (2014): GNRs and QDs codoped polymer nanoﬁber",
   "material": {
@@ -116,6 +116,101 @@
           "locator": "Main PDF p.1"
         }
       ]
+    },
+    {
+      "id": "yang2014-am503580j-gnrs-and-qds-codoped-polymer-nanofiber-1--gold-nanorods",
+      "name": "gold nanorods",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 60,
+          "minimum": null,
+          "maximum": null,
+          "unit": "µL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "60 µL",
+          "evidence": [
+            {
+              "source_id": "yang2014-am503580j",
+              "locator": "Main PDF p.1"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "yang2014-am503580j",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "yang2014-am503580j-gnrs-and-qds-codoped-polymer-nanofiber-1--cdse-zns-coreshell-qds",
+      "name": "CdSe-ZnS core−shell QDs",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 300,
+          "minimum": null,
+          "maximum": null,
+          "unit": "µL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "300 µL",
+          "evidence": [
+            {
+              "source_id": "yang2014-am503580j",
+              "locator": "Main PDF p.1"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "yang2014-am503580j",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "yang2014-am503580j-gnrs-and-qds-codoped-polymer-nanofiber-1--ethanol",
+      "name": "ethanol",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "yang2014-am503580j",
+          "locator": "Main PDF p.1"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -125,15 +220,34 @@
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": [
-        "yang2014-am503580j-gnrs-and-qds-codoped-polymer-nanofiber-1--polyvinylpyrrolidone"
+        "yang2014-am503580j-gnrs-and-qds-codoped-polymer-nanofiber-1--polyvinylpyrrolidone",
+        "yang2014-am503580j-gnrs-and-qds-codoped-polymer-nanofiber-1--ethanol"
+      ]
+    },
+    {
+      "id": "yang2014-am503580j-gnrs-and-qds-codoped-polymer-nanofiber-1--after-d2-s02-add",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "yang2014-am503580j-gnrs-and-qds-codoped-polymer-nanofiber-1--after-s01-dissolve",
+        "yang2014-am503580j-gnrs-and-qds-codoped-polymer-nanofiber-1--gold-nanorods",
+        "yang2014-am503580j-gnrs-and-qds-codoped-polymer-nanofiber-1--cdse-zns-coreshell-qds"
       ]
     },
     {
       "id": "yang2014-am503580j-gnrs-and-qds-codoped-polymer-nanofiber-1--after-s02-stir",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "yang2014-am503580j-gnrs-and-qds-codoped-polymer-nanofiber-1--after-d2-s02-add"
+      ]
+    },
+    {
+      "id": "yang2014-am503580j-gnrs-and-qds-codoped-polymer-nanofiber-1--after-d2-s04-ultrasonicate",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "yang2014-am503580j-gnrs-and-qds-codoped-polymer-nanofiber-1--after-s01-dissolve"
+        "yang2014-am503580j-gnrs-and-qds-codoped-polymer-nanofiber-1--after-s02-stir"
       ]
     }
   ],
@@ -147,7 +261,8 @@
       "optional": false,
       "depends_on": [],
       "inputs": [
-        "yang2014-am503580j-gnrs-and-qds-codoped-polymer-nanofiber-1--polyvinylpyrrolidone"
+        "yang2014-am503580j-gnrs-and-qds-codoped-polymer-nanofiber-1--polyvinylpyrrolidone",
+        "yang2014-am503580j-gnrs-and-qds-codoped-polymer-nanofiber-1--ethanol"
       ],
       "outputs": [
         "yang2014-am503580j-gnrs-and-qds-codoped-polymer-nanofiber-1--after-s01-dissolve"
@@ -175,9 +290,9 @@
       ]
     },
     {
-      "id": "s02-stir",
-      "action": "stir",
-      "label": "Stir the mixture",
+      "id": "d2-s02-add",
+      "action": "add",
+      "label": "Add GNRs and QDs to PVP solution",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -185,7 +300,47 @@
         "s01-dissolve"
       ],
       "inputs": [
-        "yang2014-am503580j-gnrs-and-qds-codoped-polymer-nanofiber-1--after-s01-dissolve"
+        "yang2014-am503580j-gnrs-and-qds-codoped-polymer-nanofiber-1--after-s01-dissolve",
+        "yang2014-am503580j-gnrs-and-qds-codoped-polymer-nanofiber-1--gold-nanorods",
+        "yang2014-am503580j-gnrs-and-qds-codoped-polymer-nanofiber-1--cdse-zns-coreshell-qds"
+      ],
+      "outputs": [
+        "yang2014-am503580j-gnrs-and-qds-codoped-polymer-nanofiber-1--after-d2-s02-add"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add GNRs and QDs to PVP solution",
+      "evidence": [
+        {
+          "source_id": "yang2014-am503580j",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "s02-stir",
+      "action": "stir",
+      "label": "Stir the mixture",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-add"
+      ],
+      "inputs": [
+        "yang2014-am503580j-gnrs-and-qds-codoped-polymer-nanofiber-1--after-d2-s02-add"
       ],
       "outputs": [
         "yang2014-am503580j-gnrs-and-qds-codoped-polymer-nanofiber-1--after-s02-stir"
@@ -230,6 +385,44 @@
           "locator": "Main PDF p.1"
         }
       ]
+    },
+    {
+      "id": "d2-s04-ultrasonicate",
+      "action": "ultrasonicate",
+      "label": "Ultrasonicate the mixture",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-stir"
+      ],
+      "inputs": [
+        "yang2014-am503580j-gnrs-and-qds-codoped-polymer-nanofiber-1--after-s02-stir"
+      ],
+      "outputs": [
+        "yang2014-am503580j-gnrs-and-qds-codoped-polymer-nanofiber-1--after-d2-s04-ultrasonicate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Ultrasonicate the mixture",
+      "evidence": [
+        {
+          "source_id": "yang2014-am503580j",
+          "locator": "Main PDF p.1"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -238,7 +431,7 @@
       "sample_id": "yang2014-am503580j-gnrs-and-qds-codoped-polymer-nanofiber-1--product",
       "source_sample_label": "GNRs and QDs codoped polymer nanoﬁber",
       "batch_id": null,
-      "material_state_id": "yang2014-am503580j-gnrs-and-qds-codoped-polymer-nanofiber-1--after-s02-stir",
+      "material_state_id": "yang2014-am503580j-gnrs-and-qds-codoped-polymer-nanofiber-1--after-d2-s04-ultrasonicate",
       "parent_sample_id": null,
       "composition": {
         "value": "CdSe-ZnS",
@@ -282,18 +475,84 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "yang2014-am503580j-gnrs-and-qds-codoped-polymer-nanofiber-1--photoluminescence-peak",
+      "sample_id": "yang2014-am503580j-gnrs-and-qds-codoped-polymer-nanofiber-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 600,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "600 nm",
+        "evidence": [
+          {
+            "source_id": "yang2014-am503580j",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "yang2014-am503580j",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "yang2014-am503580j-gnrs-and-qds-codoped-polymer-nanofiber-1--photoluminescence-quantum-yield",
+      "sample_id": "yang2014-am503580j-gnrs-and-qds-codoped-polymer-nanofiber-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 78,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "78 %",
+        "evidence": [
+          {
+            "source_id": "yang2014-am503580j",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "yang2014-am503580j",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
-      "Reaction temperature not reported in the extracted text."
+      "Reaction temperature not reported in the extracted text.",
+      "Amount of ethanol not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

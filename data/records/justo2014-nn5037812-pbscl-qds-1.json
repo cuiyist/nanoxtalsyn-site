@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "justo2014-nn5037812-pbscl-qds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Yolanda Justo (2014): PbSCl QDs",
   "material": {
@@ -199,6 +199,25 @@
           "locator": "Main PDF p.8"
         }
       ]
+    },
+    {
+      "id": "justo2014-nn5037812-pbscl-qds-1--oleic-acid",
+      "name": "Oleic acid",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "justo2014-nn5037812",
+          "locator": "Main PDF p.8"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -234,13 +253,38 @@
     },
     {
       "id": "justo2014-nn5037812-pbscl-qds-1--after-s04-hold",
-      "name": "product as isolated",
-      "kind": "product",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
       "parent_ids": [
         "justo2014-nn5037812-pbscl-qds-1--after-s03-inject",
         "justo2014-nn5037812-pbscl-qds-1--pbcl2",
         "justo2014-nn5037812-pbscl-qds-1--s",
         "justo2014-nn5037812-pbscl-qds-1--oleylamine"
+      ]
+    },
+    {
+      "id": "justo2014-nn5037812-pbscl-qds-1--after-d2-s05-quench",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "justo2014-nn5037812-pbscl-qds-1--after-s04-hold"
+      ]
+    },
+    {
+      "id": "justo2014-nn5037812-pbscl-qds-1--after-d2-s06-centrifuge",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "justo2014-nn5037812-pbscl-qds-1--after-d2-s05-quench"
+      ]
+    },
+    {
+      "id": "justo2014-nn5037812-pbscl-qds-1--after-d2-s07-ligand-exchange",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "justo2014-nn5037812-pbscl-qds-1--after-d2-s06-centrifuge",
+        "justo2014-nn5037812-pbscl-qds-1--oleic-acid"
       ]
     }
   ],
@@ -516,6 +560,131 @@
           "locator": "Main PDF p.8"
         }
       ]
+    },
+    {
+      "id": "d2-s05-quench",
+      "action": "quench",
+      "label": "Quenching the reaction",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-hold"
+      ],
+      "inputs": [
+        "justo2014-nn5037812-pbscl-qds-1--after-s04-hold"
+      ],
+      "outputs": [
+        "justo2014-nn5037812-pbscl-qds-1--after-d2-s05-quench"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "justo2014-nn5037812",
+            "locator": "Main PDF p.8"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Quenching the reaction",
+      "evidence": [
+        {
+          "source_id": "justo2014-nn5037812",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    },
+    {
+      "id": "d2-s06-centrifuge",
+      "action": "centrifuge",
+      "label": "Purification by centrifugation",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s05-quench"
+      ],
+      "inputs": [
+        "justo2014-nn5037812-pbscl-qds-1--after-d2-s05-quench"
+      ],
+      "outputs": [
+        "justo2014-nn5037812-pbscl-qds-1--after-d2-s06-centrifuge"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Purification by centrifugation",
+      "evidence": [
+        {
+          "source_id": "justo2014-nn5037812",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    },
+    {
+      "id": "d2-s07-ligand-exchange",
+      "action": "ligand exchange",
+      "label": "Exchange from OLA to OA",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s06-centrifuge"
+      ],
+      "inputs": [
+        "justo2014-nn5037812-pbscl-qds-1--after-d2-s06-centrifuge",
+        "justo2014-nn5037812-pbscl-qds-1--oleic-acid"
+      ],
+      "outputs": [
+        "justo2014-nn5037812-pbscl-qds-1--after-d2-s07-ligand-exchange"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "justo2014-nn5037812",
+            "locator": "Main PDF p.8"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Exchange from OLA to OA",
+      "evidence": [
+        {
+          "source_id": "justo2014-nn5037812",
+          "locator": "Main PDF p.8"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -524,7 +693,7 @@
       "sample_id": "justo2014-nn5037812-pbscl-qds-1--product",
       "source_sample_label": "PbSCl QDs",
       "batch_id": null,
-      "material_state_id": "justo2014-nn5037812-pbscl-qds-1--after-s04-hold",
+      "material_state_id": "justo2014-nn5037812-pbscl-qds-1--after-d2-s07-ligand-exchange",
       "parent_sample_id": null,
       "composition": {
         "value": "PbS",
@@ -588,9 +757,10 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
-      "Size not reported in the extracted text."
+      "Size not reported in the extracted text.",
+      "Amount of Oleic acid not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

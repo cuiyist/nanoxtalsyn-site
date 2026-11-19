@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "liu2023-acsami-3c04900-inp-znse1-6-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Jiabin Liu; Shuai Yue; Hui Zhang; Chao Wang; David Barba; François Vidal; Shuhui Sun; Zhiming M. Wang; Jiming Bao; Haiguang Zhao; Gurpreet Singh Selopal; Federico Rosei (2023): InP/ZnSe1.6",
   "material": {
@@ -107,19 +107,164 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "liu2023-acsami-3c04900-inp-znse1-6-2--incl3",
+      "name": "InCl3",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "liu2023-acsami-3c04900",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "liu2023-acsami-3c04900-inp-znse1-6-2--zncl2",
+      "name": "ZnCl2",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "liu2023-acsami-3c04900",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "liu2023-acsami-3c04900-inp-znse1-6-2--tris-diethylamino-phosphine",
+      "name": "tris(diethylamino)phosphine",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "liu2023-acsami-3c04900",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "liu2023-acsami-3c04900-inp-znse1-6-2--zinc-stearate",
+      "name": "zinc stearate",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "liu2023-acsami-3c04900",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "liu2023-acsami-3c04900-inp-znse1-6-2--se-powder",
+      "name": "Se powder",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "liu2023-acsami-3c04900",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "liu2023-acsami-3c04900-inp-znse1-6-2--trioctylphosphine-top",
+      "name": "trioctylphosphine (TOP)",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "liu2023-acsami-3c04900",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "liu2023-acsami-3c04900-inp-znse1-6-2--octadecene-ode",
+      "name": "Octadecene (ODE)",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "liu2023-acsami-3c04900",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
-      "id": "liu2023-acsami-3c04900-inp-znse1-6-2--after-s01-heat",
+      "id": "liu2023-acsami-3c04900-inp-znse1-6-2--after-d2-s01-stir",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "liu2023-acsami-3c04900-inp-znse1-6-2--incl3",
+        "liu2023-acsami-3c04900-inp-znse1-6-2--zncl2",
+        "liu2023-acsami-3c04900-inp-znse1-6-2--oleylamine"
+      ]
+    },
+    {
+      "id": "liu2023-acsami-3c04900-inp-znse1-6-2--after-s01-heat",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "liu2023-acsami-3c04900-inp-znse1-6-2--after-d2-s01-stir"
+      ]
     },
     {
       "id": "liu2023-acsami-3c04900-inp-znse1-6-2--after-s02-quench",
-      "name": "mixture after step 2",
+      "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
         "liu2023-acsami-3c04900-inp-znse1-6-2--after-s01-heat"
@@ -127,14 +272,75 @@
     },
     {
       "id": "liu2023-acsami-3c04900-inp-znse1-6-2--after-s03-precipitate",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "liu2023-acsami-3c04900-inp-znse1-6-2--after-s02-quench"
+      ]
+    },
+    {
+      "id": "liu2023-acsami-3c04900-inp-znse1-6-2--after-d2-s05-centrifuge",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "liu2023-acsami-3c04900-inp-znse1-6-2--after-s03-precipitate"
+      ]
+    },
+    {
+      "id": "liu2023-acsami-3c04900-inp-znse1-6-2--after-d2-s06-dissolve",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "liu2023-acsami-3c04900-inp-znse1-6-2--after-s02-quench"
+        "liu2023-acsami-3c04900-inp-znse1-6-2--after-d2-s05-centrifuge",
+        "liu2023-acsami-3c04900-inp-znse1-6-2--se-powder",
+        "liu2023-acsami-3c04900-inp-znse1-6-2--trioctylphosphine-top"
       ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-stir",
+      "action": "stir",
+      "label": "Stir",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "liu2023-acsami-3c04900-inp-znse1-6-2--incl3",
+        "liu2023-acsami-3c04900-inp-znse1-6-2--zncl2",
+        "liu2023-acsami-3c04900-inp-znse1-6-2--oleylamine"
+      ],
+      "outputs": [
+        "liu2023-acsami-3c04900-inp-znse1-6-2--after-d2-s01-stir"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "liu2023-acsami-3c04900",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Stir",
+      "evidence": [
+        {
+          "source_id": "liu2023-acsami-3c04900",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
     {
       "id": "s01-heat",
       "action": "heat",
@@ -142,8 +348,12 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s01-stir"
+      ],
+      "inputs": [
+        "liu2023-acsami-3c04900-inp-znse1-6-2--after-d2-s01-stir"
+      ],
       "outputs": [
         "liu2023-acsami-3c04900-inp-znse1-6-2--after-s01-heat"
       ],
@@ -273,6 +483,89 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s05-centrifuge",
+      "action": "centrifuge",
+      "label": "Centrifugation to separate QDs",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-precipitate"
+      ],
+      "inputs": [
+        "liu2023-acsami-3c04900-inp-znse1-6-2--after-s03-precipitate"
+      ],
+      "outputs": [
+        "liu2023-acsami-3c04900-inp-znse1-6-2--after-d2-s05-centrifuge"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Centrifugation to separate QDs",
+      "evidence": [
+        {
+          "source_id": "liu2023-acsami-3c04900",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s06-dissolve",
+      "action": "dissolve",
+      "label": "Dissolving Se powder in TOP",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s05-centrifuge"
+      ],
+      "inputs": [
+        "liu2023-acsami-3c04900-inp-znse1-6-2--after-d2-s05-centrifuge",
+        "liu2023-acsami-3c04900-inp-znse1-6-2--se-powder",
+        "liu2023-acsami-3c04900-inp-znse1-6-2--trioctylphosphine-top"
+      ],
+      "outputs": [
+        "liu2023-acsami-3c04900-inp-znse1-6-2--after-d2-s06-dissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "liu2023-acsami-3c04900",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dissolving Se powder in TOP",
+      "evidence": [
+        {
+          "source_id": "liu2023-acsami-3c04900",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -281,7 +574,7 @@
       "sample_id": "liu2023-acsami-3c04900-inp-znse1-6-2--product",
       "source_sample_label": "InP/ZnSe1.6",
       "batch_id": null,
-      "material_state_id": "liu2023-acsami-3c04900-inp-znse1-6-2--after-s03-precipitate",
+      "material_state_id": "liu2023-acsami-3c04900-inp-znse1-6-2--after-d2-s06-dissolve",
       "parent_sample_id": null,
       "composition": {
         "value": "InP/ZnSe",
@@ -336,14 +629,21 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
-      "Amount of oleylamine not reported in the extracted text."
+      "Amount of oleylamine not reported in the extracted text.",
+      "Amount of InCl3 not reported in the extracted text.",
+      "Amount of ZnCl2 not reported in the extracted text.",
+      "Amount of tris(diethylamino)phosphine not reported in the extracted text.",
+      "Amount of zinc stearate not reported in the extracted text.",
+      "Amount of Se powder not reported in the extracted text.",
+      "Amount of trioctylphosphine (TOP) not reported in the extracted text.",
+      "Amount of Octadecene (ODE) not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

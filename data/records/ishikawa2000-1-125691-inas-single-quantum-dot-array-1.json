@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "ishikawa2000-1-125691-inas-single-quantum-dot-array-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Tomonori Ishikawa (2000): InAs single quantum-dot array",
   "material": {
@@ -94,6 +94,25 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "ishikawa2000-1-125691-inas-single-quantum-dot-array-1--inas",
+      "name": "InAs",
+      "formula": null,
+      "role": "starting_particles",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "ishikawa2000-1-125691",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -107,11 +126,35 @@
       ]
     },
     {
-      "id": "ishikawa2000-1-125691-inas-single-quantum-dot-array-1--after-s02-grow",
+      "id": "ishikawa2000-1-125691-inas-single-quantum-dot-array-1--after-d2-s02-photooxidize",
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
-        "ishikawa2000-1-125691-inas-single-quantum-dot-array-1--after-s01-grow",
+        "ishikawa2000-1-125691-inas-single-quantum-dot-array-1--after-s01-grow"
+      ]
+    },
+    {
+      "id": "ishikawa2000-1-125691-inas-single-quantum-dot-array-1--after-d2-s03-write",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "ishikawa2000-1-125691-inas-single-quantum-dot-array-1--after-d2-s02-photooxidize"
+      ]
+    },
+    {
+      "id": "ishikawa2000-1-125691-inas-single-quantum-dot-array-1--after-d2-s04-etch",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "ishikawa2000-1-125691-inas-single-quantum-dot-array-1--after-d2-s03-write"
+      ]
+    },
+    {
+      "id": "ishikawa2000-1-125691-inas-single-quantum-dot-array-1--after-s02-grow",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "ishikawa2000-1-125691-inas-single-quantum-dot-array-1--after-d2-s04-etch",
         "ishikawa2000-1-125691-inas-single-quantum-dot-array-1--gaas"
       ]
     },
@@ -120,7 +163,8 @@
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "ishikawa2000-1-125691-inas-single-quantum-dot-array-1--after-s02-grow"
+        "ishikawa2000-1-125691-inas-single-quantum-dot-array-1--after-s02-grow",
+        "ishikawa2000-1-125691-inas-single-quantum-dot-array-1--inas"
       ]
     }
   ],
@@ -167,9 +211,9 @@
       ]
     },
     {
-      "id": "s02-grow",
-      "action": "grow",
-      "label": "Grow second GaAs buffer layer",
+      "id": "d2-s02-photooxidize",
+      "action": "photooxidize",
+      "label": "Form oxide layer by photo-oxidation",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -177,7 +221,136 @@
         "s01-grow"
       ],
       "inputs": [
-        "ishikawa2000-1-125691-inas-single-quantum-dot-array-1--after-s01-grow",
+        "ishikawa2000-1-125691-inas-single-quantum-dot-array-1--after-s01-grow"
+      ],
+      "outputs": [
+        "ishikawa2000-1-125691-inas-single-quantum-dot-array-1--after-d2-s02-photooxidize"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "ultra-high vacuum",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "ishikawa2000-1-125691",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Form oxide layer by photo-oxidation",
+      "evidence": [
+        {
+          "source_id": "ishikawa2000-1-125691",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s03-write",
+      "action": "write",
+      "label": "Perform in situ electron-beam lithography on oxide layer",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-photooxidize"
+      ],
+      "inputs": [
+        "ishikawa2000-1-125691-inas-single-quantum-dot-array-1--after-d2-s02-photooxidize"
+      ],
+      "outputs": [
+        "ishikawa2000-1-125691-inas-single-quantum-dot-array-1--after-d2-s03-write"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "ultra-high vacuum",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "ishikawa2000-1-125691",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Perform in situ electron-beam lithography on oxide layer",
+      "evidence": [
+        {
+          "source_id": "ishikawa2000-1-125691",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s04-etch",
+      "action": "etch",
+      "label": "Etch",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-write"
+      ],
+      "inputs": [
+        "ishikawa2000-1-125691-inas-single-quantum-dot-array-1--after-d2-s03-write"
+      ],
+      "outputs": [
+        "ishikawa2000-1-125691-inas-single-quantum-dot-array-1--after-d2-s04-etch"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "ultra-high vacuum",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "ishikawa2000-1-125691",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Etch",
+      "evidence": [
+        {
+          "source_id": "ishikawa2000-1-125691",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-grow",
+      "action": "grow",
+      "label": "Grow second GaAs buffer layer",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-etch"
+      ],
+      "inputs": [
+        "ishikawa2000-1-125691-inas-single-quantum-dot-array-1--after-d2-s04-etch",
         "ishikawa2000-1-125691-inas-single-quantum-dot-array-1--gaas"
       ],
       "outputs": [
@@ -240,7 +413,8 @@
         "s02-grow"
       ],
       "inputs": [
-        "ishikawa2000-1-125691-inas-single-quantum-dot-array-1--after-s02-grow"
+        "ishikawa2000-1-125691-inas-single-quantum-dot-array-1--after-s02-grow",
+        "ishikawa2000-1-125691-inas-single-quantum-dot-array-1--inas"
       ],
       "outputs": [
         "ishikawa2000-1-125691-inas-single-quantum-dot-array-1--after-s03-supply"
@@ -374,13 +548,14 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
-      "Amount of GaAs not reported in the extracted text."
+      "Amount of GaAs not reported in the extracted text.",
+      "Amount of InAs not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

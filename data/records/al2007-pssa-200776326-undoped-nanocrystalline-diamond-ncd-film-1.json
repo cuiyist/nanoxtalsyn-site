@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "al2007-pssa-200776326-undoped-nanocrystalline-diamond-ncd-film-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "P. Christiaens et al. (2007): undoped nanocrystalline diamond (NCD) films",
   "material": {
@@ -160,18 +160,131 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "al2007-pssa-200776326-undoped-nanocrystalline-diamond-ncd-film-1--diamond-powder",
+      "name": "diamond powder",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "al2007-pssa-200776326",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "al2007-pssa-200776326-undoped-nanocrystalline-diamond-ncd-film-1--h2so4",
+      "name": "H2SO4",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "al2007-pssa-200776326",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "al2007-pssa-200776326-undoped-nanocrystalline-diamond-ncd-film-1--kno3",
+      "name": "KNO3",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "al2007-pssa-200776326",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
+      "id": "al2007-pssa-200776326-undoped-nanocrystalline-diamond-ncd-film-1--after-d2-s01-seed",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "al2007-pssa-200776326-undoped-nanocrystalline-diamond-ncd-film-1--diamond-powder"
+      ]
+    },
+    {
       "id": "al2007-pssa-200776326-undoped-nanocrystalline-diamond-ncd-film-1--after-s01-treat",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "al2007-pssa-200776326-undoped-nanocrystalline-diamond-ncd-film-1--after-d2-s01-seed",
+        "al2007-pssa-200776326-undoped-nanocrystalline-diamond-ncd-film-1--h2so4",
+        "al2007-pssa-200776326-undoped-nanocrystalline-diamond-ncd-film-1--kno3"
+      ]
+    },
+    {
+      "id": "al2007-pssa-200776326-undoped-nanocrystalline-diamond-ncd-film-1--after-d2-s03-deposit",
       "name": "product as isolated",
       "kind": "product",
-      "parent_ids": []
+      "parent_ids": [
+        "al2007-pssa-200776326-undoped-nanocrystalline-diamond-ncd-film-1--after-s01-treat"
+      ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-seed",
+      "action": "seed",
+      "label": "Seed",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "al2007-pssa-200776326-undoped-nanocrystalline-diamond-ncd-film-1--diamond-powder"
+      ],
+      "outputs": [
+        "al2007-pssa-200776326-undoped-nanocrystalline-diamond-ncd-film-1--after-d2-s01-seed"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Seed",
+      "evidence": [
+        {
+          "source_id": "al2007-pssa-200776326",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
     {
       "id": "s01-treat",
       "action": "treat",
@@ -179,8 +292,14 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s01-seed"
+      ],
+      "inputs": [
+        "al2007-pssa-200776326-undoped-nanocrystalline-diamond-ncd-film-1--after-d2-s01-seed",
+        "al2007-pssa-200776326-undoped-nanocrystalline-diamond-ncd-film-1--h2so4",
+        "al2007-pssa-200776326-undoped-nanocrystalline-diamond-ncd-film-1--kno3"
+      ],
       "outputs": [
         "al2007-pssa-200776326-undoped-nanocrystalline-diamond-ncd-film-1--after-s01-treat"
       ],
@@ -242,6 +361,44 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s03-deposit",
+      "action": "deposit",
+      "label": "Aluminum film deposition on rear side",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-treat"
+      ],
+      "inputs": [
+        "al2007-pssa-200776326-undoped-nanocrystalline-diamond-ncd-film-1--after-s01-treat"
+      ],
+      "outputs": [
+        "al2007-pssa-200776326-undoped-nanocrystalline-diamond-ncd-film-1--after-d2-s03-deposit"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Aluminum film deposition on rear side",
+      "evidence": [
+        {
+          "source_id": "al2007-pssa-200776326",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -250,7 +407,7 @@
       "sample_id": "al2007-pssa-200776326-undoped-nanocrystalline-diamond-ncd-film-1--product",
       "source_sample_label": "undoped nanocrystalline diamond (NCD) films",
       "batch_id": null,
-      "material_state_id": "al2007-pssa-200776326-undoped-nanocrystalline-diamond-ncd-film-1--after-s01-treat",
+      "material_state_id": "al2007-pssa-200776326-undoped-nanocrystalline-diamond-ncd-film-1--after-d2-s03-deposit",
       "parent_sample_id": null,
       "composition": {
         "value": "C",
@@ -335,13 +492,16 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
-      "Reaction temperature not reported in the extracted text."
+      "Reaction temperature not reported in the extracted text.",
+      "Amount of diamond powder not reported in the extracted text.",
+      "Amount of H2SO4 not reported in the extracted text.",
+      "Amount of KNO3 not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

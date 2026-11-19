@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "fang2007-s11051-006-9171-9-nanocrystalline-sno2-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Zhen Fang (2007): nanocrystalline SnO2",
   "material": {
@@ -128,15 +128,53 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "fang2007-s11051-006-9171-9-nanocrystalline-sno2-1--naoh",
+      "name": "NaOH",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "fang2007-s11051-006-9171-9",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
-      "id": "fang2007-s11051-006-9171-9-nanocrystalline-sno2-1--after-s01-separate",
+      "id": "fang2007-s11051-006-9171-9-nanocrystalline-sno2-1--after-d2-s01-prepare",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "fang2007-s11051-006-9171-9-nanocrystalline-sno2-1--sncl4"
+      ]
+    },
+    {
+      "id": "fang2007-s11051-006-9171-9-nanocrystalline-sno2-1--after-d2-s02-feed",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "fang2007-s11051-006-9171-9-nanocrystalline-sno2-1--after-d2-s01-prepare",
+        "fang2007-s11051-006-9171-9-nanocrystalline-sno2-1--sncl4"
+      ]
+    },
+    {
+      "id": "fang2007-s11051-006-9171-9-nanocrystalline-sno2-1--after-s01-separate",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "fang2007-s11051-006-9171-9-nanocrystalline-sno2-1--after-d2-s02-feed"
+      ]
     },
     {
       "id": "fang2007-s11051-006-9171-9-nanocrystalline-sno2-1--after-s02-calcinate",
@@ -149,14 +187,112 @@
   ],
   "operations": [
     {
+      "id": "d2-s01-prepare",
+      "action": "prepare",
+      "label": "Prepare",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "fang2007-s11051-006-9171-9-nanocrystalline-sno2-1--sncl4"
+      ],
+      "outputs": [
+        "fang2007-s11051-006-9171-9-nanocrystalline-sno2-1--after-d2-s01-prepare"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Prepare",
+      "evidence": [
+        {
+          "source_id": "fang2007-s11051-006-9171-9",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s02-feed",
+      "action": "feed",
+      "label": "Feed SnCl4 solution into the reactor",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s01-prepare"
+      ],
+      "inputs": [
+        "fang2007-s11051-006-9171-9-nanocrystalline-sno2-1--after-d2-s01-prepare",
+        "fang2007-s11051-006-9171-9-nanocrystalline-sno2-1--sncl4"
+      ],
+      "outputs": [
+        "fang2007-s11051-006-9171-9-nanocrystalline-sno2-1--after-d2-s02-feed"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 300,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "300 °C",
+          "evidence": [
+            {
+              "source_id": "fang2007-s11051-006-9171-9",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Feed SnCl4 solution into the reactor",
+      "evidence": [
+        {
+          "source_id": "fang2007-s11051-006-9171-9",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
       "id": "s01-separate",
       "action": "separate",
       "label": "Separate the effluent to obtain solid particles",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s02-feed"
+      ],
+      "inputs": [
+        "fang2007-s11051-006-9171-9-nanocrystalline-sno2-1--after-d2-s02-feed"
+      ],
       "outputs": [
         "fang2007-s11051-006-9171-9-nanocrystalline-sno2-1--after-s01-separate"
       ],
@@ -317,12 +453,13 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
-      "Reaction time not reported in the extracted text."
+      "Reaction time not reported in the extracted text.",
+      "Amount of NaOH not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

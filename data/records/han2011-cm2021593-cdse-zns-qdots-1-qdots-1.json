@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "han2011-cm2021593-cdse-zns-qdots-1-qdots-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Hyunjoo Han (2011): CdSe/ZnS qdots (1-qdots)",
   "material": {
@@ -207,6 +207,82 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "han2011-cm2021593-cdse-zns-qdots-1-qdots-1--zinc-acetate",
+      "name": "Zinc acetate",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "han2011-cm2021593",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "han2011-cm2021593-cdse-zns-qdots-1-qdots-1--1-octadecene",
+      "name": "1-octadecene",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "han2011-cm2021593",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "han2011-cm2021593-cdse-zns-qdots-1-qdots-1--tributylphosphine",
+      "name": "Tributylphosphine",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "han2011-cm2021593",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "han2011-cm2021593-cdse-zns-qdots-1-qdots-1--selenium",
+      "name": "Selenium",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "han2011-cm2021593",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -216,7 +292,8 @@
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": [
-        "han2011-cm2021593-cdse-zns-qdots-1-qdots-1--cadmium-oxide"
+        "han2011-cm2021593-cdse-zns-qdots-1-qdots-1--cadmium-oxide",
+        "han2011-cm2021593-cdse-zns-qdots-1-qdots-1--1-octadecene"
       ]
     },
     {
@@ -226,7 +303,8 @@
       "parent_ids": [
         "han2011-cm2021593-cdse-zns-qdots-1-qdots-1--after-s01-dissolve",
         "han2011-cm2021593-cdse-zns-qdots-1-qdots-1--dodecylamine",
-        "han2011-cm2021593-cdse-zns-qdots-1-qdots-1--trioctylphosphine-oxide"
+        "han2011-cm2021593-cdse-zns-qdots-1-qdots-1--trioctylphosphine-oxide",
+        "han2011-cm2021593-cdse-zns-qdots-1-qdots-1--1-octadecene"
       ]
     },
     {
@@ -272,7 +350,8 @@
       "optional": false,
       "depends_on": [],
       "inputs": [
-        "han2011-cm2021593-cdse-zns-qdots-1-qdots-1--cadmium-oxide"
+        "han2011-cm2021593-cdse-zns-qdots-1-qdots-1--cadmium-oxide",
+        "han2011-cm2021593-cdse-zns-qdots-1-qdots-1--1-octadecene"
       ],
       "outputs": [
         "han2011-cm2021593-cdse-zns-qdots-1-qdots-1--after-s01-dissolve"
@@ -336,7 +415,8 @@
       "inputs": [
         "han2011-cm2021593-cdse-zns-qdots-1-qdots-1--after-s01-dissolve",
         "han2011-cm2021593-cdse-zns-qdots-1-qdots-1--dodecylamine",
-        "han2011-cm2021593-cdse-zns-qdots-1-qdots-1--trioctylphosphine-oxide"
+        "han2011-cm2021593-cdse-zns-qdots-1-qdots-1--trioctylphosphine-oxide",
+        "han2011-cm2021593-cdse-zns-qdots-1-qdots-1--1-octadecene"
       ],
       "outputs": [
         "han2011-cm2021593-cdse-zns-qdots-1-qdots-1--after-s02-dissolve"
@@ -670,11 +750,15 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
-      "Reaction time not reported in the extracted text."
+      "Reaction time not reported in the extracted text.",
+      "Amount of Zinc acetate not reported in the extracted text.",
+      "Amount of 1-octadecene not reported in the extracted text.",
+      "Amount of Tributylphosphine not reported in the extracted text.",
+      "Amount of Selenium not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

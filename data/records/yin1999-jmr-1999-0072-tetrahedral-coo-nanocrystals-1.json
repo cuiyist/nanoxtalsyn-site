@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "yin1999-jmr-1999-0072-tetrahedral-coo-nanocrystals-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "J. S. Yin; Z. L. Wang (1999): tetrahedral CoO nanocrystals",
   "material": {
@@ -104,6 +104,25 @@
           "locator": "Main PDF p.1"
         }
       ]
+    },
+    {
+      "id": "yin1999-jmr-1999-0072-tetrahedral-coo-nanocrystals-1--toluene",
+      "name": "toluene",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "yin1999-jmr-1999-0072",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -115,11 +134,19 @@
       "parent_ids": []
     },
     {
+      "id": "yin1999-jmr-1999-0072-tetrahedral-coo-nanocrystals-1--after-d2-s02-dilute",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "yin1999-jmr-1999-0072-tetrahedral-coo-nanocrystals-1--after-s01-heat"
+      ]
+    },
+    {
       "id": "yin1999-jmr-1999-0072-tetrahedral-coo-nanocrystals-1--after-s02-magnetic-separation",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "yin1999-jmr-1999-0072-tetrahedral-coo-nanocrystals-1--after-s01-heat"
+        "yin1999-jmr-1999-0072-tetrahedral-coo-nanocrystals-1--after-d2-s02-dilute"
       ]
     }
   ],
@@ -201,9 +228,9 @@
       ]
     },
     {
-      "id": "s02-magnetic-separation",
-      "action": "magnetic separation",
-      "label": "Separate CoO nanocrystals using a magnetic field",
+      "id": "d2-s02-dilute",
+      "action": "dilute",
+      "label": "Dilute",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -212,6 +239,49 @@
       ],
       "inputs": [
         "yin1999-jmr-1999-0072-tetrahedral-coo-nanocrystals-1--after-s01-heat"
+      ],
+      "outputs": [
+        "yin1999-jmr-1999-0072-tetrahedral-coo-nanocrystals-1--after-d2-s02-dilute"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "yin1999-jmr-1999-0072",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dilute",
+      "evidence": [
+        {
+          "source_id": "yin1999-jmr-1999-0072",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-magnetic-separation",
+      "action": "magnetic separation",
+      "label": "Separate CoO nanocrystals using a magnetic field",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-dilute"
+      ],
+      "inputs": [
+        "yin1999-jmr-1999-0072-tetrahedral-coo-nanocrystals-1--after-d2-s02-dilute"
       ],
       "outputs": [
         "yin1999-jmr-1999-0072-tetrahedral-coo-nanocrystals-1--after-s02-magnetic-separation"
@@ -360,11 +430,12 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
-      "Amount of Na(AOT) not reported in the extracted text."
+      "Amount of Na(AOT) not reported in the extracted text.",
+      "Amount of toluene not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

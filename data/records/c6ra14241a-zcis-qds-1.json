@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "c6ra14241a-zcis-qds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "c6ra14241a (n.d.): ZCIS QDs",
   "material": {
@@ -192,6 +192,44 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "c6ra14241a-zcis-qds-1--zinc-stearate",
+      "name": "zinc stearate",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "c6ra14241a",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "c6ra14241a-zcis-qds-1--ode",
+      "name": "ODE",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "c6ra14241a",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -218,11 +256,29 @@
       ]
     },
     {
-      "id": "c6ra14241a-zcis-qds-1--after-s03-precipitate",
+      "id": "c6ra14241a-zcis-qds-1--after-d2-s03-add",
       "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
-        "c6ra14241a-zcis-qds-1--after-s02-heat"
+        "c6ra14241a-zcis-qds-1--after-s02-heat",
+        "c6ra14241a-zcis-qds-1--zinc-stearate",
+        "c6ra14241a-zcis-qds-1--ode"
+      ]
+    },
+    {
+      "id": "c6ra14241a-zcis-qds-1--after-s03-precipitate",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "c6ra14241a-zcis-qds-1--after-d2-s03-add"
+      ]
+    },
+    {
+      "id": "c6ra14241a-zcis-qds-1--after-d2-s05-centrifuge",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "c6ra14241a-zcis-qds-1--after-s03-precipitate"
       ]
     },
     {
@@ -230,7 +286,7 @@
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "c6ra14241a-zcis-qds-1--after-s03-precipitate"
+        "c6ra14241a-zcis-qds-1--after-d2-s05-centrifuge"
       ]
     }
   ],
@@ -363,6 +419,88 @@
       ]
     },
     {
+      "id": "d2-s03-add",
+      "action": "add",
+      "label": "Adding zinc stearate and ODE",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-heat"
+      ],
+      "inputs": [
+        "c6ra14241a-zcis-qds-1--after-s02-heat",
+        "c6ra14241a-zcis-qds-1--zinc-stearate",
+        "c6ra14241a-zcis-qds-1--ode"
+      ],
+      "outputs": [
+        "c6ra14241a-zcis-qds-1--after-d2-s03-add"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 240,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "240 °C",
+          "evidence": [
+            {
+              "source_id": "c6ra14241a",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 240,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "240 min",
+          "evidence": [
+            {
+              "source_id": "c6ra14241a",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "c6ra14241a",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Adding zinc stearate and ODE",
+      "evidence": [
+        {
+          "source_id": "c6ra14241a",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
       "id": "s03-precipitate",
       "action": "precipitate",
       "label": "Precipitation with acetone",
@@ -370,10 +508,10 @@
       "branch": "",
       "optional": false,
       "depends_on": [
-        "s02-heat"
+        "d2-s03-add"
       ],
       "inputs": [
-        "c6ra14241a-zcis-qds-1--after-s02-heat"
+        "c6ra14241a-zcis-qds-1--after-d2-s03-add"
       ],
       "outputs": [
         "c6ra14241a-zcis-qds-1--after-s03-precipitate"
@@ -420,9 +558,9 @@
       ]
     },
     {
-      "id": "s04-redisperse",
-      "action": "redisperse",
-      "label": "Redispersing in n-hexane",
+      "id": "d2-s05-centrifuge",
+      "action": "centrifuge",
+      "label": "Centrifugation",
       "stage": "workup",
       "branch": "",
       "optional": false,
@@ -431,6 +569,63 @@
       ],
       "inputs": [
         "c6ra14241a-zcis-qds-1--after-s03-precipitate"
+      ],
+      "outputs": [
+        "c6ra14241a-zcis-qds-1--after-d2-s05-centrifuge"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "5 min",
+          "evidence": [
+            {
+              "source_id": "c6ra14241a",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Centrifugation",
+      "evidence": [
+        {
+          "source_id": "c6ra14241a",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s04-redisperse",
+      "action": "redisperse",
+      "label": "Redispersing in n-hexane",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s05-centrifuge"
+      ],
+      "inputs": [
+        "c6ra14241a-zcis-qds-1--after-d2-s05-centrifuge"
       ],
       "outputs": [
         "c6ra14241a-zcis-qds-1--after-s04-redisperse"
@@ -508,7 +703,9 @@
         }
       ],
       "notes": [
-        "Reaction temperature: 210 degC (Main PDF p.2)."
+        "Reaction temperature: 210 degC (Main PDF p.2).",
+        "Reactor: 50 mL three-necked flask (Main PDF p.2).",
+        "Reaction time: 10 min (Main PDF p.2)."
       ]
     }
   ],
@@ -516,13 +713,13 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
       "Size not reported in the extracted text.",
-      "Reactor not reported in the extracted text.",
-      "Reaction time not reported in the extracted text."
+      "Amount of zinc stearate not reported in the extracted text.",
+      "Amount of ODE not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

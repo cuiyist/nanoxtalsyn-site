@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "knauth1998-jssc-1998-7890-cu0-15ce0-85o2-x-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "P. Knauth; G. Schwitzgebel; A. Tschöpe; S. Villain (1998): Cu0.15Ce0.85O2-x",
   "material": {
@@ -51,22 +51,32 @@
       "note": ""
     },
     "phase": {
-      "value": null,
-      "status": "not_reported",
-      "evidence": [],
+      "value": "fluorite",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "knauth1998-jssc-1998-7890",
+          "locator": "Main PDF p.2"
+        }
+      ],
       "note": ""
     },
     "size": {
-      "value": null,
+      "value": 18,
       "minimum": null,
       "maximum": null,
       "unit": "nm",
-      "status": "not_reported",
+      "status": "reported",
       "approximate": false,
       "qualifier": "",
       "basis": "",
-      "raw_text": "not reported",
-      "evidence": [],
+      "raw_text": "18 nm",
+      "evidence": [
+        {
+          "source_id": "knauth1998-jssc-1998-7890",
+          "locator": "Main PDF p.2"
+        }
+      ],
       "derivation": null
     },
     "morphology": {
@@ -95,6 +105,25 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "knauth1998-jssc-1998-7890-cu0-15ce0-85o2-x-1--nanoclusters",
+      "name": "nanoclusters",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "knauth1998-jssc-1998-7890",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -108,11 +137,20 @@
       ]
     },
     {
+      "id": "knauth1998-jssc-1998-7890-cu0-15ce0-85o2-x-1--after-d2-s02-collect",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "knauth1998-jssc-1998-7890-cu0-15ce0-85o2-x-1--after-s01-sputter"
+      ]
+    },
+    {
       "id": "knauth1998-jssc-1998-7890-cu0-15ce0-85o2-x-1--after-s02-oxidize",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "knauth1998-jssc-1998-7890-cu0-15ce0-85o2-x-1--after-s01-sputter"
+        "knauth1998-jssc-1998-7890-cu0-15ce0-85o2-x-1--after-d2-s02-collect",
+        "knauth1998-jssc-1998-7890-cu0-15ce0-85o2-x-1--nanoclusters"
       ]
     }
   ],
@@ -159,10 +197,10 @@
       ]
     },
     {
-      "id": "s02-oxidize",
-      "action": "oxidize",
-      "label": "Oxidize metallic nanoclusters",
-      "stage": "synthesis",
+      "id": "d2-s02-collect",
+      "action": "collect",
+      "label": "Nanoclusters collected on a cold substrate",
+      "stage": "workup",
       "branch": "",
       "optional": false,
       "depends_on": [
@@ -170,6 +208,45 @@
       ],
       "inputs": [
         "knauth1998-jssc-1998-7890-cu0-15ce0-85o2-x-1--after-s01-sputter"
+      ],
+      "outputs": [
+        "knauth1998-jssc-1998-7890-cu0-15ce0-85o2-x-1--after-d2-s02-collect"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Nanoclusters collected on a cold substrate",
+      "evidence": [
+        {
+          "source_id": "knauth1998-jssc-1998-7890",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-oxidize",
+      "action": "oxidize",
+      "label": "Oxidize metallic nanoclusters",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-collect"
+      ],
+      "inputs": [
+        "knauth1998-jssc-1998-7890-cu0-15ce0-85o2-x-1--after-d2-s02-collect",
+        "knauth1998-jssc-1998-7890-cu0-15ce0-85o2-x-1--nanoclusters"
       ],
       "outputs": [
         "knauth1998-jssc-1998-7890-cu0-15ce0-85o2-x-1--after-s02-oxidize"
@@ -222,9 +299,14 @@
         "note": ""
       },
       "phase": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "fluorite",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "knauth1998-jssc-1998-7890",
+            "locator": "Main PDF p.2"
+          }
+        ],
         "note": ""
       },
       "morphology": {
@@ -251,19 +333,51 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "knauth1998-jssc-1998-7890-cu0-15ce0-85o2-x-1--size",
+      "sample_id": "knauth1998-jssc-1998-7890-cu0-15ce0-85o2-x-1--product",
+      "property": "crystallite_size",
+      "technique": "XRD",
+      "value": {
+        "value": 18,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "18 nm",
+        "evidence": [
+          {
+            "source_id": "knauth1998-jssc-1998-7890",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "knauth1998-jssc-1998-7890",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
-      "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
-      "Size not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
-      "Amount of Cu15Ce85 target not reported in the extracted text."
+      "Amount of Cu15Ce85 target not reported in the extracted text.",
+      "Amount of nanoclusters not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

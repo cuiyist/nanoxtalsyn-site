@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "x2010-s11671-010-9632-z-si-ncs-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "x2010-s11671-010-9632-z (2010): Si NCs",
   "material": {
@@ -103,6 +103,44 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "x2010-s11671-010-9632-z-si-ncs-1--1-2-dichlorobenzene-dcb",
+      "name": "1,2-dichlorobenzene (DCB)",
+      "formula": null,
+      "role": "solvent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "x2010-s11671-010-9632-z",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "x2010-s11671-010-9632-z-si-ncs-1--si-ncs",
+      "name": "Si NCs",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "x2010-s11671-010-9632-z",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -116,7 +154,7 @@
       ]
     },
     {
-      "id": "x2010-s11671-010-9632-z-si-ncs-1--after-s02-collect",
+      "id": "x2010-s11671-010-9632-z-si-ncs-1--after-d2-s02-apply-power",
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
@@ -124,27 +162,47 @@
       ]
     },
     {
-      "id": "x2010-s11671-010-9632-z-si-ncs-1--after-s03-dry",
+      "id": "x2010-s11671-010-9632-z-si-ncs-1--after-s02-collect",
       "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "x2010-s11671-010-9632-z-si-ncs-1--after-d2-s02-apply-power"
+      ]
+    },
+    {
+      "id": "x2010-s11671-010-9632-z-si-ncs-1--after-d2-s04-transfer",
+      "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
         "x2010-s11671-010-9632-z-si-ncs-1--after-s02-collect"
       ]
     },
     {
-      "id": "x2010-s11671-010-9632-z-si-ncs-1--after-s04-degas",
-      "name": "mixture after step 4",
+      "id": "x2010-s11671-010-9632-z-si-ncs-1--after-s03-dry",
+      "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
-        "x2010-s11671-010-9632-z-si-ncs-1--after-s03-dry"
+        "x2010-s11671-010-9632-z-si-ncs-1--after-d2-s04-transfer",
+        "x2010-s11671-010-9632-z-si-ncs-1--1-2-dichlorobenzene-dcb"
+      ]
+    },
+    {
+      "id": "x2010-s11671-010-9632-z-si-ncs-1--after-s04-degas",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "x2010-s11671-010-9632-z-si-ncs-1--after-s03-dry",
+        "x2010-s11671-010-9632-z-si-ncs-1--1-2-dichlorobenzene-dcb"
       ]
     },
     {
       "id": "x2010-s11671-010-9632-z-si-ncs-1--after-s05-disperse",
-      "name": "mixture after step 5",
+      "name": "mixture after step 7",
       "kind": "reaction_batch",
       "parent_ids": [
-        "x2010-s11671-010-9632-z-si-ncs-1--after-s04-degas"
+        "x2010-s11671-010-9632-z-si-ncs-1--after-s04-degas",
+        "x2010-s11671-010-9632-z-si-ncs-1--si-ncs",
+        "x2010-s11671-010-9632-z-si-ncs-1--1-2-dichlorobenzene-dcb"
       ]
     },
     {
@@ -199,10 +257,10 @@
       ]
     },
     {
-      "id": "s02-collect",
-      "action": "collect",
-      "label": "Collecting Si NCs downstream of the plasma on stainless steel meshes",
-      "stage": "workup",
+      "id": "d2-s02-apply-power",
+      "action": "apply power",
+      "label": "RF power applied to electrodes",
+      "stage": "synthesis",
       "branch": "",
       "optional": false,
       "depends_on": [
@@ -210,6 +268,49 @@
       ],
       "inputs": [
         "x2010-s11671-010-9632-z-si-ncs-1--after-s01-flow"
+      ],
+      "outputs": [
+        "x2010-s11671-010-9632-z-si-ncs-1--after-d2-s02-apply-power"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "vacuum",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "x2010-s11671-010-9632-z",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "RF power applied to electrodes",
+      "evidence": [
+        {
+          "source_id": "x2010-s11671-010-9632-z",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-collect",
+      "action": "collect",
+      "label": "Collecting Si NCs downstream of the plasma on stainless steel meshes",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-apply-power"
+      ],
+      "inputs": [
+        "x2010-s11671-010-9632-z-si-ncs-1--after-d2-s02-apply-power"
       ],
       "outputs": [
         "x2010-s11671-010-9632-z-si-ncs-1--after-s02-collect"
@@ -237,10 +338,10 @@
       ]
     },
     {
-      "id": "s03-dry",
-      "action": "dry",
-      "label": "Drying DCB with molecular sieves",
-      "stage": "workup",
+      "id": "d2-s04-transfer",
+      "action": "transfer",
+      "label": "Transferring Si NCs to an air-tight vial inside a nitrogen-purged glove bag",
+      "stage": "synthesis",
       "branch": "",
       "optional": false,
       "depends_on": [
@@ -248,6 +349,50 @@
       ],
       "inputs": [
         "x2010-s11671-010-9632-z-si-ncs-1--after-s02-collect"
+      ],
+      "outputs": [
+        "x2010-s11671-010-9632-z-si-ncs-1--after-d2-s04-transfer"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "vacuum",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "x2010-s11671-010-9632-z",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Transferring Si NCs to an air-tight vial inside a nitrogen-purged glove bag",
+      "evidence": [
+        {
+          "source_id": "x2010-s11671-010-9632-z",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s03-dry",
+      "action": "dry",
+      "label": "Drying DCB with molecular sieves",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-transfer"
+      ],
+      "inputs": [
+        "x2010-s11671-010-9632-z-si-ncs-1--after-d2-s04-transfer",
+        "x2010-s11671-010-9632-z-si-ncs-1--1-2-dichlorobenzene-dcb"
       ],
       "outputs": [
         "x2010-s11671-010-9632-z-si-ncs-1--after-s03-dry"
@@ -285,7 +430,8 @@
         "s03-dry"
       ],
       "inputs": [
-        "x2010-s11671-010-9632-z-si-ncs-1--after-s03-dry"
+        "x2010-s11671-010-9632-z-si-ncs-1--after-s03-dry",
+        "x2010-s11671-010-9632-z-si-ncs-1--1-2-dichlorobenzene-dcb"
       ],
       "outputs": [
         "x2010-s11671-010-9632-z-si-ncs-1--after-s04-degas"
@@ -347,7 +493,9 @@
         "s04-degas"
       ],
       "inputs": [
-        "x2010-s11671-010-9632-z-si-ncs-1--after-s04-degas"
+        "x2010-s11671-010-9632-z-si-ncs-1--after-s04-degas",
+        "x2010-s11671-010-9632-z-si-ncs-1--si-ncs",
+        "x2010-s11671-010-9632-z-si-ncs-1--1-2-dichlorobenzene-dcb"
       ],
       "outputs": [
         "x2010-s11671-010-9632-z-si-ncs-1--after-s05-disperse"
@@ -503,14 +651,16 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
-      "Amount of silane (SiH4) not reported in the extracted text."
+      "Amount of silane (SiH4) not reported in the extracted text.",
+      "Amount of 1,2-dichlorobenzene (DCB) not reported in the extracted text.",
+      "Amount of Si NCs not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

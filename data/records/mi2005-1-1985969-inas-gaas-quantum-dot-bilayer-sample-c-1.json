@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "mi2005-1-1985969-inas-gaas-quantum-dot-bilayer-sample-c-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Zetian Mi and Pallab Bhattacharyaa (2005): InAs/GaAs quantum dot bilayer (Sample C)",
   "material": {
@@ -122,6 +122,63 @@
         "pubchem_cid": null,
         "smiles": null
       },
+      "quantities": {
+        "amount": {
+          "value": 100,
+          "minimum": null,
+          "maximum": null,
+          "unit": "Å",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "100 Å",
+          "evidence": [
+            {
+              "source_id": "mi2005-1-1985969",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "mi2005-1-1985969",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "mi2005-1-1985969-inas-gaas-quantum-dot-bilayer-sample-c-1--inas--checked-2",
+      "name": "InAs",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "mi2005-1-1985969",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "mi2005-1-1985969-inas-gaas-quantum-dot-bilayer-sample-c-1--gaas--checked-2",
+      "name": "GaAs",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
       "quantities": {},
       "notes": [],
       "evidence": [
@@ -135,13 +192,82 @@
   "stocks": [],
   "material_states": [
     {
+      "id": "mi2005-1-1985969-inas-gaas-quantum-dot-bilayer-sample-c-1--after-d2-s01-grow",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "mi2005-1-1985969-inas-gaas-quantum-dot-bilayer-sample-c-1--gaas"
+      ]
+    },
+    {
       "id": "mi2005-1-1985969-inas-gaas-quantum-dot-bilayer-sample-c-1--after-s01-anneal",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "mi2005-1-1985969-inas-gaas-quantum-dot-bilayer-sample-c-1--after-d2-s01-grow"
+      ]
+    },
+    {
+      "id": "mi2005-1-1985969-inas-gaas-quantum-dot-bilayer-sample-c-1--after-d2-s03-grow",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "mi2005-1-1985969-inas-gaas-quantum-dot-bilayer-sample-c-1--after-s01-anneal",
+        "mi2005-1-1985969-inas-gaas-quantum-dot-bilayer-sample-c-1--inas--checked-2"
+      ]
+    },
+    {
+      "id": "mi2005-1-1985969-inas-gaas-quantum-dot-bilayer-sample-c-1--after-d2-s04-grow",
       "name": "product as isolated",
       "kind": "product",
-      "parent_ids": []
+      "parent_ids": [
+        "mi2005-1-1985969-inas-gaas-quantum-dot-bilayer-sample-c-1--after-d2-s03-grow",
+        "mi2005-1-1985969-inas-gaas-quantum-dot-bilayer-sample-c-1--gaas--checked-2"
+      ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-grow",
+      "action": "grow",
+      "label": "Grow GaAs cap layer",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "mi2005-1-1985969-inas-gaas-quantum-dot-bilayer-sample-c-1--gaas"
+      ],
+      "outputs": [
+        "mi2005-1-1985969-inas-gaas-quantum-dot-bilayer-sample-c-1--after-d2-s01-grow"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "As₂ overpressure",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "mi2005-1-1985969",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Grow GaAs cap layer",
+      "evidence": [
+        {
+          "source_id": "mi2005-1-1985969",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
     {
       "id": "s01-anneal",
       "action": "anneal",
@@ -149,8 +275,12 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s01-grow"
+      ],
+      "inputs": [
+        "mi2005-1-1985969-inas-gaas-quantum-dot-bilayer-sample-c-1--after-d2-s01-grow"
+      ],
       "outputs": [
         "mi2005-1-1985969-inas-gaas-quantum-dot-bilayer-sample-c-1--after-s01-anneal"
       ],
@@ -217,6 +347,113 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "d2-s03-grow",
+      "action": "grow",
+      "label": "Grow second (active) InAs QD layer",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-anneal"
+      ],
+      "inputs": [
+        "mi2005-1-1985969-inas-gaas-quantum-dot-bilayer-sample-c-1--after-s01-anneal",
+        "mi2005-1-1985969-inas-gaas-quantum-dot-bilayer-sample-c-1--inas--checked-2"
+      ],
+      "outputs": [
+        "mi2005-1-1985969-inas-gaas-quantum-dot-bilayer-sample-c-1--after-d2-s03-grow"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 480,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "480 °C",
+          "evidence": [
+            {
+              "source_id": "mi2005-1-1985969",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "As₂ overpressure",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "mi2005-1-1985969",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Grow second (active) InAs QD layer",
+      "evidence": [
+        {
+          "source_id": "mi2005-1-1985969",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "d2-s04-grow",
+      "action": "grow",
+      "label": "Grow GaAs cap layer",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-grow"
+      ],
+      "inputs": [
+        "mi2005-1-1985969-inas-gaas-quantum-dot-bilayer-sample-c-1--after-d2-s03-grow",
+        "mi2005-1-1985969-inas-gaas-quantum-dot-bilayer-sample-c-1--gaas--checked-2"
+      ],
+      "outputs": [
+        "mi2005-1-1985969-inas-gaas-quantum-dot-bilayer-sample-c-1--after-d2-s04-grow"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "As₂ overpressure",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "mi2005-1-1985969",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Grow GaAs cap layer",
+      "evidence": [
+        {
+          "source_id": "mi2005-1-1985969",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -225,7 +462,7 @@
       "sample_id": "mi2005-1-1985969-inas-gaas-quantum-dot-bilayer-sample-c-1--product",
       "source_sample_label": "InAs/GaAs quantum dot bilayer (Sample C)",
       "batch_id": null,
-      "material_state_id": "mi2005-1-1985969-inas-gaas-quantum-dot-bilayer-sample-c-1--after-s01-anneal",
+      "material_state_id": "mi2005-1-1985969-inas-gaas-quantum-dot-bilayer-sample-c-1--after-d2-s04-grow",
       "parent_sample_id": null,
       "composition": {
         "value": "InAs/GaAs",
@@ -315,7 +552,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",

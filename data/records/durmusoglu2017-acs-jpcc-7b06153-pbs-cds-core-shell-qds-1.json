@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "durmusoglu2017-acs-jpcc-7b06153-pbs-cds-core-shell-qds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Emek G. Durmusoglu; Melike M. Yildizhan; Mehmet A. Gulgun; Havva Yagci Acar (2017): PbS/CdS core/shell QDs",
   "material": {
@@ -130,6 +130,120 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "durmusoglu2017-acs-jpcc-7b06153-pbs-cds-core-shell-qds-1--cdo",
+      "name": "CdO",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 2,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2 mmol",
+          "evidence": [
+            {
+              "source_id": "durmusoglu2017-acs-jpcc-7b06153",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "durmusoglu2017-acs-jpcc-7b06153",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "durmusoglu2017-acs-jpcc-7b06153-pbs-cds-core-shell-qds-1--1-octadecene-ode",
+      "name": "1-octadecene (ODE)",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "durmusoglu2017-acs-jpcc-7b06153",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "durmusoglu2017-acs-jpcc-7b06153-pbs-cds-core-shell-qds-1--pbs-core-solution",
+      "name": "PbS core solution",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "durmusoglu2017-acs-jpcc-7b06153",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "durmusoglu2017-acs-jpcc-7b06153-pbs-cds-core-shell-qds-1--oleylamine",
+      "name": "oleylamine",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "durmusoglu2017-acs-jpcc-7b06153",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "durmusoglu2017-acs-jpcc-7b06153-pbs-cds-core-shell-qds-1--dt",
+      "name": "DT",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "durmusoglu2017-acs-jpcc-7b06153",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -138,7 +252,11 @@
       "id": "durmusoglu2017-acs-jpcc-7b06153-pbs-cds-core-shell-qds-1--after-s01-heat",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "durmusoglu2017-acs-jpcc-7b06153-pbs-cds-core-shell-qds-1--cdo",
+        "durmusoglu2017-acs-jpcc-7b06153-pbs-cds-core-shell-qds-1--oleic-acid-oa",
+        "durmusoglu2017-acs-jpcc-7b06153-pbs-cds-core-shell-qds-1--1-octadecene-ode"
+      ]
     },
     {
       "id": "durmusoglu2017-acs-jpcc-7b06153-pbs-cds-core-shell-qds-1--after-s02-cool",
@@ -177,7 +295,8 @@
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "durmusoglu2017-acs-jpcc-7b06153-pbs-cds-core-shell-qds-1--after-s05-anneal"
+        "durmusoglu2017-acs-jpcc-7b06153-pbs-cds-core-shell-qds-1--after-s05-anneal",
+        "durmusoglu2017-acs-jpcc-7b06153-pbs-cds-core-shell-qds-1--dt"
       ]
     }
   ],
@@ -190,7 +309,11 @@
       "branch": "",
       "optional": false,
       "depends_on": [],
-      "inputs": [],
+      "inputs": [
+        "durmusoglu2017-acs-jpcc-7b06153-pbs-cds-core-shell-qds-1--cdo",
+        "durmusoglu2017-acs-jpcc-7b06153-pbs-cds-core-shell-qds-1--oleic-acid-oa",
+        "durmusoglu2017-acs-jpcc-7b06153-pbs-cds-core-shell-qds-1--1-octadecene-ode"
+      ],
       "outputs": [
         "durmusoglu2017-acs-jpcc-7b06153-pbs-cds-core-shell-qds-1--after-s01-heat"
       ],
@@ -437,7 +560,8 @@
         "s05-anneal"
       ],
       "inputs": [
-        "durmusoglu2017-acs-jpcc-7b06153-pbs-cds-core-shell-qds-1--after-s05-anneal"
+        "durmusoglu2017-acs-jpcc-7b06153-pbs-cds-core-shell-qds-1--after-s05-anneal",
+        "durmusoglu2017-acs-jpcc-7b06153-pbs-cds-core-shell-qds-1--dt"
       ],
       "outputs": [
         "durmusoglu2017-acs-jpcc-7b06153-pbs-cds-core-shell-qds-1--after-s06-ligand-exchange"
@@ -591,9 +715,13 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
-      "Reaction time not reported in the extracted text."
+      "Reaction time not reported in the extracted text.",
+      "Amount of 1-octadecene (ODE) not reported in the extracted text.",
+      "Amount of PbS core solution not reported in the extracted text.",
+      "Amount of oleylamine not reported in the extracted text.",
+      "Amount of DT not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

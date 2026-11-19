@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "mo2012-ie201826e-r-ttca-capped-cds-qds-ph-7-5-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Yan-mei Mo; Yu Tang; Fei Gao; Jun Yang; Yuan-ming Zhang* (2012): R-TTCA-capped CdS QDs (pH 7.5)",
   "material": {
@@ -50,9 +50,14 @@
       "note": ""
     },
     "phase": {
-      "value": null,
-      "status": "not_reported",
-      "evidence": [],
+      "value": "hexagonal",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "mo2012-ie201826e",
+          "locator": "Main PDF p.2"
+        }
+      ],
       "note": ""
     },
     "size": {
@@ -69,9 +74,14 @@
       "derivation": null
     },
     "morphology": {
-      "value": null,
-      "status": "not_reported",
-      "evidence": [],
+      "value": "sphere",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "mo2012-ie201826e",
+          "locator": "Main PDF p.5"
+        }
+      ],
       "note": ""
     }
   },
@@ -151,15 +161,42 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "mo2012-ie201826e-r-ttca-capped-cds-qds-ph-7-5-1--carbon-disulfide",
+      "name": "carbon disulﬁde",
+      "formula": null,
+      "role": "nonmetal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "mo2012-ie201826e",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
       "id": "mo2012-ie201826e-r-ttca-capped-cds-qds-ph-7-5-1--after-s01-stir",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": []
+    },
+    {
+      "id": "mo2012-ie201826e-r-ttca-capped-cds-qds-ph-7-5-1--after-d2-s02-dry",
       "name": "product as isolated",
       "kind": "product",
-      "parent_ids": []
+      "parent_ids": [
+        "mo2012-ie201826e-r-ttca-capped-cds-qds-ph-7-5-1--after-s01-stir"
+      ]
     }
   ],
   "operations": [
@@ -220,6 +257,81 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s02-dry",
+      "action": "dry",
+      "label": "Dry colloidal quantum dots under vacuum",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-stir"
+      ],
+      "inputs": [
+        "mo2012-ie201826e-r-ttca-capped-cds-qds-ph-7-5-1--after-s01-stir"
+      ],
+      "outputs": [
+        "mo2012-ie201826e-r-ttca-capped-cds-qds-ph-7-5-1--after-d2-s02-dry"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 60,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "60 °C",
+          "evidence": [
+            {
+              "source_id": "mo2012-ie201826e",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 6,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "6 h",
+          "evidence": [
+            {
+              "source_id": "mo2012-ie201826e",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dry colloidal quantum dots under vacuum",
+      "evidence": [
+        {
+          "source_id": "mo2012-ie201826e",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -228,7 +340,7 @@
       "sample_id": "mo2012-ie201826e-r-ttca-capped-cds-qds-ph-7-5-1--product",
       "source_sample_label": "R-TTCA-capped CdS QDs (pH 7.5)",
       "batch_id": null,
-      "material_state_id": "mo2012-ie201826e-r-ttca-capped-cds-qds-ph-7-5-1--after-s01-stir",
+      "material_state_id": "mo2012-ie201826e-r-ttca-capped-cds-qds-ph-7-5-1--after-d2-s02-dry",
       "parent_sample_id": null,
       "composition": {
         "value": "CdS",
@@ -242,15 +354,25 @@
         "note": ""
       },
       "phase": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "hexagonal",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "mo2012-ie201826e",
+            "locator": "Main PDF p.2"
+          }
+        ],
         "note": ""
       },
       "morphology": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "sphere",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "mo2012-ie201826e",
+            "locator": "Main PDF p.5"
+          }
+        ],
         "note": ""
       },
       "surface": {
@@ -280,13 +402,12 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
-      "Phase not reported in the extracted text.",
-      "Shape not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
-      "Reaction temperature not reported in the extracted text."
+      "Reaction temperature not reported in the extracted text.",
+      "Amount of carbon disulﬁde not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "silva2013-jp308500r-cdse-cds-cs-msqds-sample-s2-3",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Anielle Christine A. Silva (2013): CdSe/CdS CS-MSQDs (sample S2)",
   "material": {
@@ -120,6 +120,44 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "silva2013-jp308500r-cdse-cds-cs-msqds-sample-s2-3--sodium-hydroxide",
+      "name": "Sodium hydroxide",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "silva2013-jp308500r",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "silva2013-jp308500r-cdse-cds-cs-msqds-sample-s2-3--ethanol",
+      "name": "Ethanol",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "silva2013-jp308500r",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -141,11 +179,29 @@
       ]
     },
     {
+      "id": "silva2013-jp308500r-cdse-cds-cs-msqds-sample-s2-3--after-d2-s03-heat",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "silva2013-jp308500r-cdse-cds-cs-msqds-sample-s2-3--after-s02-reflux"
+      ]
+    },
+    {
       "id": "silva2013-jp308500r-cdse-cds-cs-msqds-sample-s2-3--after-s03-precipitate",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "silva2013-jp308500r-cdse-cds-cs-msqds-sample-s2-3--after-d2-s03-heat",
+        "silva2013-jp308500r-cdse-cds-cs-msqds-sample-s2-3--ethanol"
+      ]
+    },
+    {
+      "id": "silva2013-jp308500r-cdse-cds-cs-msqds-sample-s2-3--after-d2-s05-redisperse",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "silva2013-jp308500r-cdse-cds-cs-msqds-sample-s2-3--after-s02-reflux"
+        "silva2013-jp308500r-cdse-cds-cs-msqds-sample-s2-3--after-s03-precipitate",
+        "silva2013-jp308500r-cdse-cds-cs-msqds-sample-s2-3--thioglycerol"
       ]
     }
   ],
@@ -254,10 +310,10 @@
       ]
     },
     {
-      "id": "s03-precipitate",
-      "action": "precipitate",
-      "label": "Precipitate the suspension using ethanol",
-      "stage": "workup",
+      "id": "d2-s03-heat",
+      "action": "heat",
+      "label": "Increase temperature to 80 °C and reflux",
+      "stage": "synthesis",
       "branch": "",
       "optional": false,
       "depends_on": [
@@ -265,6 +321,87 @@
       ],
       "inputs": [
         "silva2013-jp308500r-cdse-cds-cs-msqds-sample-s2-3--after-s02-reflux"
+      ],
+      "outputs": [
+        "silva2013-jp308500r-cdse-cds-cs-msqds-sample-s2-3--after-d2-s03-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 80,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "80 °C",
+          "evidence": [
+            {
+              "source_id": "silva2013-jp308500r",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 30,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "30 min",
+          "evidence": [
+            {
+              "source_id": "silva2013-jp308500r",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "silva2013-jp308500r",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Increase temperature to 80 °C and reflux",
+      "evidence": [
+        {
+          "source_id": "silva2013-jp308500r",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s03-precipitate",
+      "action": "precipitate",
+      "label": "Precipitate the suspension using ethanol",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-heat"
+      ],
+      "inputs": [
+        "silva2013-jp308500r-cdse-cds-cs-msqds-sample-s2-3--after-d2-s03-heat",
+        "silva2013-jp308500r-cdse-cds-cs-msqds-sample-s2-3--ethanol"
       ],
       "outputs": [
         "silva2013-jp308500r-cdse-cds-cs-msqds-sample-s2-3--after-s03-precipitate"
@@ -290,6 +427,45 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s05-redisperse",
+      "action": "redisperse",
+      "label": "Redisperse the precipitate in ultrapure water",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-precipitate"
+      ],
+      "inputs": [
+        "silva2013-jp308500r-cdse-cds-cs-msqds-sample-s2-3--after-s03-precipitate",
+        "silva2013-jp308500r-cdse-cds-cs-msqds-sample-s2-3--thioglycerol"
+      ],
+      "outputs": [
+        "silva2013-jp308500r-cdse-cds-cs-msqds-sample-s2-3--after-d2-s05-redisperse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Redisperse the precipitate in ultrapure water",
+      "evidence": [
+        {
+          "source_id": "silva2013-jp308500r",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -298,7 +474,7 @@
       "sample_id": "silva2013-jp308500r-cdse-cds-cs-msqds-sample-s2-3--product",
       "source_sample_label": "CdSe/CdS CS-MSQDs (sample S2)",
       "batch_id": null,
-      "material_state_id": "silva2013-jp308500r-cdse-cds-cs-msqds-sample-s2-3--after-s03-precipitate",
+      "material_state_id": "silva2013-jp308500r-cdse-cds-cs-msqds-sample-s2-3--after-d2-s05-redisperse",
       "parent_sample_id": null,
       "composition": {
         "value": "CdSe/CdS",
@@ -357,10 +533,12 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
-      "Size not reported in the extracted text."
+      "Size not reported in the extracted text.",
+      "Amount of Sodium hydroxide not reported in the extracted text.",
+      "Amount of Ethanol not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

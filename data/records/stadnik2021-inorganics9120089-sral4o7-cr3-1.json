@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "stadnik2021-inorganics9120089-sral4o7-cr3-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Vitalii Stadnik; Vasyl Hreb; Andriy Luchechko; Yaroslav Zhydachevskyy; Andrzej Suchocki; Leonid Vasylechko (2021): SrAl4O7:Cr3+",
   "material": {
@@ -91,6 +91,101 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "stadnik2021-inorganics9120089-sral4o7-cr3-1--al-no3-39h2o",
+      "name": "Al(NO3)3·9H2O",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "stadnik2021-inorganics9120089",
+          "locator": "Main PDF p.11"
+        }
+      ]
+    },
+    {
+      "id": "stadnik2021-inorganics9120089-sral4o7-cr3-1--cr-no3-39h2o",
+      "name": "Cr(NO3)3·9H2O",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "stadnik2021-inorganics9120089",
+          "locator": "Main PDF p.11"
+        }
+      ]
+    },
+    {
+      "id": "stadnik2021-inorganics9120089-sral4o7-cr3-1--citric-acid",
+      "name": "citric acid",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "stadnik2021-inorganics9120089",
+          "locator": "Main PDF p.11"
+        }
+      ]
+    },
+    {
+      "id": "stadnik2021-inorganics9120089-sral4o7-cr3-1--ethylene-glycol",
+      "name": "ethylene glycol",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "stadnik2021-inorganics9120089",
+          "locator": "Main PDF p.11"
+        }
+      ]
+    },
+    {
+      "id": "stadnik2021-inorganics9120089-sral4o7-cr3-1--nh4oh",
+      "name": "NH4OH",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "stadnik2021-inorganics9120089",
+          "locator": "Main PDF p.11"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -99,7 +194,9 @@
       "id": "stadnik2021-inorganics9120089-sral4o7-cr3-1--after-s01-neutralize",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "stadnik2021-inorganics9120089-sral4o7-cr3-1--nh4oh"
+      ]
     },
     {
       "id": "stadnik2021-inorganics9120089-sral4o7-cr3-1--after-s02-combust",
@@ -107,7 +204,11 @@
       "kind": "product",
       "parent_ids": [
         "stadnik2021-inorganics9120089-sral4o7-cr3-1--after-s01-neutralize",
-        "stadnik2021-inorganics9120089-sral4o7-cr3-1--sr-no3-24h2o"
+        "stadnik2021-inorganics9120089-sral4o7-cr3-1--sr-no3-24h2o",
+        "stadnik2021-inorganics9120089-sral4o7-cr3-1--al-no3-39h2o",
+        "stadnik2021-inorganics9120089-sral4o7-cr3-1--cr-no3-39h2o",
+        "stadnik2021-inorganics9120089-sral4o7-cr3-1--citric-acid",
+        "stadnik2021-inorganics9120089-sral4o7-cr3-1--ethylene-glycol"
       ]
     }
   ],
@@ -120,7 +221,9 @@
       "branch": "",
       "optional": false,
       "depends_on": [],
-      "inputs": [],
+      "inputs": [
+        "stadnik2021-inorganics9120089-sral4o7-cr3-1--nh4oh"
+      ],
       "outputs": [
         "stadnik2021-inorganics9120089-sral4o7-cr3-1--after-s01-neutralize"
       ],
@@ -158,7 +261,11 @@
       ],
       "inputs": [
         "stadnik2021-inorganics9120089-sral4o7-cr3-1--after-s01-neutralize",
-        "stadnik2021-inorganics9120089-sral4o7-cr3-1--sr-no3-24h2o"
+        "stadnik2021-inorganics9120089-sral4o7-cr3-1--sr-no3-24h2o",
+        "stadnik2021-inorganics9120089-sral4o7-cr3-1--al-no3-39h2o",
+        "stadnik2021-inorganics9120089-sral4o7-cr3-1--cr-no3-39h2o",
+        "stadnik2021-inorganics9120089-sral4o7-cr3-1--citric-acid",
+        "stadnik2021-inorganics9120089-sral4o7-cr3-1--ethylene-glycol"
       ],
       "outputs": [
         "stadnik2021-inorganics9120089-sral4o7-cr3-1--after-s02-combust"
@@ -253,7 +360,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
@@ -262,7 +369,12 @@
       "Reactor not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
-      "Amount of Sr(NO3)2·4H2O not reported in the extracted text."
+      "Amount of Sr(NO3)2·4H2O not reported in the extracted text.",
+      "Amount of Al(NO3)3·9H2O not reported in the extracted text.",
+      "Amount of Cr(NO3)3·9H2O not reported in the extracted text.",
+      "Amount of citric acid not reported in the extracted text.",
+      "Amount of ethylene glycol not reported in the extracted text.",
+      "Amount of NH4OH not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "mokrushin2025-s0036023625603174-zno-z-145-6-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "A. S. Mokrushin; I. A. Nagornov; S. A. Dmitrieva; N. P. Simonenko; E. P. Simonenko (2025): ZnO (Z-145-6)",
   "material": {
@@ -108,6 +108,25 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "mokrushin2025-s0036023625603174-zno-z-145-6-2--glycerol",
+      "name": "glycerol",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "mokrushin2025-s0036023625603174",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -117,7 +136,8 @@
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": [
-        "mokrushin2025-s0036023625603174-zno-z-145-6-2--zinc-acetylacetonate-monohydrate"
+        "mokrushin2025-s0036023625603174-zno-z-145-6-2--zinc-acetylacetonate-monohydrate",
+        "mokrushin2025-s0036023625603174-zno-z-145-6-2--glycerol"
       ]
     },
     {
@@ -155,7 +175,8 @@
       "optional": false,
       "depends_on": [],
       "inputs": [
-        "mokrushin2025-s0036023625603174-zno-z-145-6-2--zinc-acetylacetonate-monohydrate"
+        "mokrushin2025-s0036023625603174-zno-z-145-6-2--zinc-acetylacetonate-monohydrate",
+        "mokrushin2025-s0036023625603174-zno-z-145-6-2--glycerol"
       ],
       "outputs": [
         "mokrushin2025-s0036023625603174-zno-z-145-6-2--after-s01-dissolve"
@@ -382,7 +403,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
@@ -390,7 +411,8 @@
       "Size not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
-      "Reaction temperature not reported in the extracted text."
+      "Reaction temperature not reported in the extracted text.",
+      "Amount of glycerol not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

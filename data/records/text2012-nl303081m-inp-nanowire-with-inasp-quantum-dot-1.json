@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "text2012-nl303081m-inp-nanowire-with-inasp-quantum-dot-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Maaike Bouwes Bavinck et al. (2012): InP nanowire with InAsP quantum dot",
   "material": {
@@ -50,9 +50,14 @@
       "note": ""
     },
     "phase": {
-      "value": null,
-      "status": "not_reported",
-      "evidence": [],
+      "value": "zinc blende | wurtzite",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "text2012-nl303081m",
+          "locator": "Main PDF p.2"
+        }
+      ],
       "note": ""
     },
     "size": {
@@ -85,7 +90,7 @@
       "id": "text2012-nl303081m-inp-nanowire-with-inasp-quantum-dot-1--inp",
       "name": "InP",
       "formula": null,
-      "role": "reagent",
+      "role": "starting_particles",
       "stage": "synthesis",
       "identity": {
         "pubchem_cid": null,
@@ -118,17 +123,62 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "text2012-nl303081m-inp-nanowire-with-inasp-quantum-dot-1--sio2",
+      "name": "SiO2",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "text2012-nl303081m",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
       "id": "text2012-nl303081m-inp-nanowire-with-inasp-quantum-dot-1--after-s01-grow",
-      "name": "product as isolated",
-      "kind": "product",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
       "parent_ids": [
         "text2012-nl303081m-inp-nanowire-with-inasp-quantum-dot-1--inp",
         "text2012-nl303081m-inp-nanowire-with-inasp-quantum-dot-1--inasp"
+      ]
+    },
+    {
+      "id": "text2012-nl303081m-inp-nanowire-with-inasp-quantum-dot-1--after-d2-s02-deposit",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "text2012-nl303081m-inp-nanowire-with-inasp-quantum-dot-1--after-s01-grow",
+        "text2012-nl303081m-inp-nanowire-with-inasp-quantum-dot-1--sio2"
+      ]
+    },
+    {
+      "id": "text2012-nl303081m-inp-nanowire-with-inasp-quantum-dot-1--after-d2-s03-measure",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "text2012-nl303081m-inp-nanowire-with-inasp-quantum-dot-1--after-d2-s02-deposit"
+      ]
+    },
+    {
+      "id": "text2012-nl303081m-inp-nanowire-with-inasp-quantum-dot-1--after-d2-s04-remove",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "text2012-nl303081m-inp-nanowire-with-inasp-quantum-dot-1--after-d2-s03-measure",
+        "text2012-nl303081m-inp-nanowire-with-inasp-quantum-dot-1--sio2"
       ]
     }
   ],
@@ -169,6 +219,122 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s02-deposit",
+      "action": "deposit",
+      "label": "Deposit",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-grow"
+      ],
+      "inputs": [
+        "text2012-nl303081m-inp-nanowire-with-inasp-quantum-dot-1--after-s01-grow",
+        "text2012-nl303081m-inp-nanowire-with-inasp-quantum-dot-1--sio2"
+      ],
+      "outputs": [
+        "text2012-nl303081m-inp-nanowire-with-inasp-quantum-dot-1--after-d2-s02-deposit"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Deposit",
+      "evidence": [
+        {
+          "source_id": "text2012-nl303081m",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s03-measure",
+      "action": "measure",
+      "label": "Photoluminescence measurements",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-deposit"
+      ],
+      "inputs": [
+        "text2012-nl303081m-inp-nanowire-with-inasp-quantum-dot-1--after-d2-s02-deposit"
+      ],
+      "outputs": [
+        "text2012-nl303081m-inp-nanowire-with-inasp-quantum-dot-1--after-d2-s03-measure"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Photoluminescence measurements",
+      "evidence": [
+        {
+          "source_id": "text2012-nl303081m",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s04-remove",
+      "action": "remove",
+      "label": "Remove",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-measure"
+      ],
+      "inputs": [
+        "text2012-nl303081m-inp-nanowire-with-inasp-quantum-dot-1--after-d2-s03-measure",
+        "text2012-nl303081m-inp-nanowire-with-inasp-quantum-dot-1--sio2"
+      ],
+      "outputs": [
+        "text2012-nl303081m-inp-nanowire-with-inasp-quantum-dot-1--after-d2-s04-remove"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Remove",
+      "evidence": [
+        {
+          "source_id": "text2012-nl303081m",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -177,7 +343,7 @@
       "sample_id": "text2012-nl303081m-inp-nanowire-with-inasp-quantum-dot-1--product",
       "source_sample_label": "InP nanowire with InAsP quantum dot",
       "batch_id": null,
-      "material_state_id": "text2012-nl303081m-inp-nanowire-with-inasp-quantum-dot-1--after-s01-grow",
+      "material_state_id": "text2012-nl303081m-inp-nanowire-with-inasp-quantum-dot-1--after-d2-s04-remove",
       "parent_sample_id": null,
       "composition": {
         "value": "InP | InAsP",
@@ -191,9 +357,14 @@
         "note": ""
       },
       "phase": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "zinc blende | wurtzite",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "text2012-nl303081m",
+            "locator": "Main PDF p.2"
+          }
+        ],
         "note": ""
       },
       "morphology": {
@@ -255,9 +426,8 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
-      "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
@@ -265,7 +435,8 @@
       "Reaction temperature not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
       "Amount of InP not reported in the extracted text.",
-      "Amount of InAsP not reported in the extracted text."
+      "Amount of InAsP not reported in the extracted text.",
+      "Amount of SiO2 not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

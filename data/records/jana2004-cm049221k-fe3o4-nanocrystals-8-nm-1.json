@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "jana2004-cm049221k-fe3o4-nanocrystals-8-nm-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Nikhil R. Jana; Yongfen Chen; Xiaogang Peng (2004): Fe3O4 nanocrystals (8 nm)",
   "material": {
@@ -128,21 +128,153 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "jana2004-cm049221k-fe3o4-nanocrystals-8-nm-1--iron-ii-stearate",
+      "name": "iron(II) stearate",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "jana2004-cm049221k",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "jana2004-cm049221k-fe3o4-nanocrystals-8-nm-1--naoh",
+      "name": "NaOH",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "jana2004-cm049221k",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
+      "id": "jana2004-cm049221k-fe3o4-nanocrystals-8-nm-1--after-d2-s01-add",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "jana2004-cm049221k-fe3o4-nanocrystals-8-nm-1--oleic-acid"
+      ]
+    },
+    {
+      "id": "jana2004-cm049221k-fe3o4-nanocrystals-8-nm-1--after-d2-s02-add",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "jana2004-cm049221k-fe3o4-nanocrystals-8-nm-1--after-d2-s01-add",
+        "jana2004-cm049221k-fe3o4-nanocrystals-8-nm-1--naoh"
+      ]
+    },
+    {
       "id": "jana2004-cm049221k-fe3o4-nanocrystals-8-nm-1--after-s01-heat",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
+        "jana2004-cm049221k-fe3o4-nanocrystals-8-nm-1--after-d2-s02-add",
         "jana2004-cm049221k-fe3o4-nanocrystals-8-nm-1--oleic-acid",
-        "jana2004-cm049221k-fe3o4-nanocrystals-8-nm-1--octadecene"
+        "jana2004-cm049221k-fe3o4-nanocrystals-8-nm-1--octadecene",
+        "jana2004-cm049221k-fe3o4-nanocrystals-8-nm-1--iron-ii-stearate"
       ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-add",
+      "action": "add",
+      "label": "Add oleic acid",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "jana2004-cm049221k-fe3o4-nanocrystals-8-nm-1--oleic-acid"
+      ],
+      "outputs": [
+        "jana2004-cm049221k-fe3o4-nanocrystals-8-nm-1--after-d2-s01-add"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add oleic acid",
+      "evidence": [
+        {
+          "source_id": "jana2004-cm049221k",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s02-add",
+      "action": "add",
+      "label": "Add NaOH solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s01-add"
+      ],
+      "inputs": [
+        "jana2004-cm049221k-fe3o4-nanocrystals-8-nm-1--after-d2-s01-add",
+        "jana2004-cm049221k-fe3o4-nanocrystals-8-nm-1--naoh"
+      ],
+      "outputs": [
+        "jana2004-cm049221k-fe3o4-nanocrystals-8-nm-1--after-d2-s02-add"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add NaOH solution",
+      "evidence": [
+        {
+          "source_id": "jana2004-cm049221k",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
     {
       "id": "s01-heat",
       "action": "heat",
@@ -150,10 +282,14 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
+      "depends_on": [
+        "d2-s02-add"
+      ],
       "inputs": [
+        "jana2004-cm049221k-fe3o4-nanocrystals-8-nm-1--after-d2-s02-add",
         "jana2004-cm049221k-fe3o4-nanocrystals-8-nm-1--oleic-acid",
-        "jana2004-cm049221k-fe3o4-nanocrystals-8-nm-1--octadecene"
+        "jana2004-cm049221k-fe3o4-nanocrystals-8-nm-1--octadecene",
+        "jana2004-cm049221k-fe3o4-nanocrystals-8-nm-1--iron-ii-stearate"
       ],
       "outputs": [
         "jana2004-cm049221k-fe3o4-nanocrystals-8-nm-1--after-s01-heat"
@@ -298,12 +434,14 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Amount of oleic acid not reported in the extracted text.",
-      "Amount of octadecene not reported in the extracted text."
+      "Amount of octadecene not reported in the extracted text.",
+      "Amount of iron(II) stearate not reported in the extracted text.",
+      "Amount of NaOH not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

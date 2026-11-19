@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "subedi2022-acsnano-2c00758-anisometric-cqds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Subhangi Subedi; Avinash K. Rella; Le Gia Trung; Vineet Kumar; Shin-Woong Kang (2022): anisometric CQDs",
   "material": {
@@ -100,6 +100,25 @@
           "locator": "Main PDF p.10"
         }
       ]
+    },
+    {
+      "id": "subedi2022-acsnano-2c00758-anisometric-cqds-1--zsm-5055-la",
+      "name": "ZSM 5055 LA",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "subedi2022-acsnano-2c00758",
+          "locator": "Main PDF p.10"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -113,7 +132,7 @@
       ]
     },
     {
-      "id": "subedi2022-acsnano-2c00758-anisometric-cqds-1--after-s02-filter",
+      "id": "subedi2022-acsnano-2c00758-anisometric-cqds-1--after-d2-s02-cool",
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
@@ -121,8 +140,24 @@
       ]
     },
     {
-      "id": "subedi2022-acsnano-2c00758-anisometric-cqds-1--after-s03-centrifuge",
+      "id": "subedi2022-acsnano-2c00758-anisometric-cqds-1--after-d2-s03-extract",
       "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "subedi2022-acsnano-2c00758-anisometric-cqds-1--after-d2-s02-cool"
+      ]
+    },
+    {
+      "id": "subedi2022-acsnano-2c00758-anisometric-cqds-1--after-s02-filter",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "subedi2022-acsnano-2c00758-anisometric-cqds-1--after-d2-s03-extract"
+      ]
+    },
+    {
+      "id": "subedi2022-acsnano-2c00758-anisometric-cqds-1--after-s03-centrifuge",
+      "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
         "subedi2022-acsnano-2c00758-anisometric-cqds-1--after-s02-filter"
@@ -175,10 +210,10 @@
       ]
     },
     {
-      "id": "s02-filter",
-      "action": "filter",
-      "label": "Filter the dispersion using a micropore syringe",
-      "stage": "workup",
+      "id": "d2-s02-cool",
+      "action": "cool",
+      "label": "Cool the reaction mixture to room temperature",
+      "stage": "synthesis",
       "branch": "",
       "optional": false,
       "depends_on": [
@@ -186,6 +221,82 @@
       ],
       "inputs": [
         "subedi2022-acsnano-2c00758-anisometric-cqds-1--after-s01-seal"
+      ],
+      "outputs": [
+        "subedi2022-acsnano-2c00758-anisometric-cqds-1--after-d2-s02-cool"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Cool the reaction mixture to room temperature",
+      "evidence": [
+        {
+          "source_id": "subedi2022-acsnano-2c00758",
+          "locator": "Main PDF p.10"
+        }
+      ]
+    },
+    {
+      "id": "d2-s03-extract",
+      "action": "extract",
+      "label": "Extract the CQDs with ethanol",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-cool"
+      ],
+      "inputs": [
+        "subedi2022-acsnano-2c00758-anisometric-cqds-1--after-d2-s02-cool"
+      ],
+      "outputs": [
+        "subedi2022-acsnano-2c00758-anisometric-cqds-1--after-d2-s03-extract"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Extract the CQDs with ethanol",
+      "evidence": [
+        {
+          "source_id": "subedi2022-acsnano-2c00758",
+          "locator": "Main PDF p.10"
+        }
+      ]
+    },
+    {
+      "id": "s02-filter",
+      "action": "filter",
+      "label": "Filter the dispersion using a micropore syringe",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-extract"
+      ],
+      "inputs": [
+        "subedi2022-acsnano-2c00758-anisometric-cqds-1--after-d2-s03-extract"
       ],
       "outputs": [
         "subedi2022-acsnano-2c00758-anisometric-cqds-1--after-s02-filter"
@@ -348,18 +459,84 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "subedi2022-acsnano-2c00758-anisometric-cqds-1--photoluminescence-peak",
+      "sample_id": "subedi2022-acsnano-2c00758-anisometric-cqds-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 445,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "445 nm",
+        "evidence": [
+          {
+            "source_id": "subedi2022-acsnano-2c00758",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "subedi2022-acsnano-2c00758",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    },
+    {
+      "id": "subedi2022-acsnano-2c00758-anisometric-cqds-1--photoluminescence-quantum-yield",
+      "sample_id": "subedi2022-acsnano-2c00758-anisometric-cqds-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 35.03,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "35.03 %",
+        "evidence": [
+          {
+            "source_id": "subedi2022-acsnano-2c00758",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "subedi2022-acsnano-2c00758",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
-      "Amount of MLC 15600-100 not reported in the extracted text."
+      "Amount of MLC 15600-100 not reported in the extracted text.",
+      "Amount of ZSM 5055 LA not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

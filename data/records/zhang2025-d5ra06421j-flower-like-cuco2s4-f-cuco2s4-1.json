@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "zhang2025-d5ra06421j-flower-like-cuco2s4-f-cuco2s4-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Qiu Zhang; Yuekun Zhang; Chunxiao Zhang; Xiuyan Jiang; Xuemei Fu (2025): flower-like CuCo2S4 (f-CuCo2S4)",
   "material": {
@@ -17,7 +17,7 @@
     ],
     "architecture": "single_material"
   },
-  "method": "Synthesis as described in the source",
+  "method": "Solvothermal",
   "sources": [
     {
       "id": "zhang2025-d5ra06421j",
@@ -40,9 +40,14 @@
   },
   "intended_target": {
     "composition": {
-      "value": null,
-      "status": "not_reported",
-      "evidence": [],
+      "value": "CuCo2S4",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "zhang2025-d5ra06421j",
+          "locator": "Main PDF p.3"
+        }
+      ],
       "note": ""
     },
     "phase": {
@@ -95,6 +100,82 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "zhang2025-d5ra06421j-flower-like-cuco2s4-f-cuco2s4-1--cocl26h2o",
+      "name": "CoCl2·6H2O",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zhang2025-d5ra06421j",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "zhang2025-d5ra06421j-flower-like-cuco2s4-f-cuco2s4-1--thiourea",
+      "name": "thiourea",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zhang2025-d5ra06421j",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "zhang2025-d5ra06421j-flower-like-cuco2s4-f-cuco2s4-1--cucl2-2h2o",
+      "name": "CuCl2$2H2O",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zhang2025-d5ra06421j",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "zhang2025-d5ra06421j-flower-like-cuco2s4-f-cuco2s4-1--cocl2-6h2o",
+      "name": "CoCl2$6H2O",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zhang2025-d5ra06421j",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -112,11 +193,13 @@
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
-        "zhang2025-d5ra06421j-flower-like-cuco2s4-f-cuco2s4-1--after-s01-dissolve"
+        "zhang2025-d5ra06421j-flower-like-cuco2s4-f-cuco2s4-1--after-s01-dissolve",
+        "zhang2025-d5ra06421j-flower-like-cuco2s4-f-cuco2s4-1--cocl26h2o",
+        "zhang2025-d5ra06421j-flower-like-cuco2s4-f-cuco2s4-1--thiourea"
       ]
     },
     {
-      "id": "zhang2025-d5ra06421j-flower-like-cuco2s4-f-cuco2s4-1--after-s03-heat",
+      "id": "zhang2025-d5ra06421j-flower-like-cuco2s4-f-cuco2s4-1--after-d2-s03-stir",
       "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
@@ -124,11 +207,27 @@
       ]
     },
     {
-      "id": "zhang2025-d5ra06421j-flower-like-cuco2s4-f-cuco2s4-1--after-s04-wash",
+      "id": "zhang2025-d5ra06421j-flower-like-cuco2s4-f-cuco2s4-1--after-s03-heat",
       "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
+        "zhang2025-d5ra06421j-flower-like-cuco2s4-f-cuco2s4-1--after-d2-s03-stir"
+      ]
+    },
+    {
+      "id": "zhang2025-d5ra06421j-flower-like-cuco2s4-f-cuco2s4-1--after-d2-s05-cool",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
         "zhang2025-d5ra06421j-flower-like-cuco2s4-f-cuco2s4-1--after-s03-heat"
+      ]
+    },
+    {
+      "id": "zhang2025-d5ra06421j-flower-like-cuco2s4-f-cuco2s4-1--after-s04-wash",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zhang2025-d5ra06421j-flower-like-cuco2s4-f-cuco2s4-1--after-d2-s05-cool"
       ]
     },
     {
@@ -188,7 +287,9 @@
         "s01-dissolve"
       ],
       "inputs": [
-        "zhang2025-d5ra06421j-flower-like-cuco2s4-f-cuco2s4-1--after-s01-dissolve"
+        "zhang2025-d5ra06421j-flower-like-cuco2s4-f-cuco2s4-1--after-s01-dissolve",
+        "zhang2025-d5ra06421j-flower-like-cuco2s4-f-cuco2s4-1--cocl26h2o",
+        "zhang2025-d5ra06421j-flower-like-cuco2s4-f-cuco2s4-1--thiourea"
       ],
       "outputs": [
         "zhang2025-d5ra06421j-flower-like-cuco2s4-f-cuco2s4-1--after-s02-add"
@@ -216,9 +317,9 @@
       ]
     },
     {
-      "id": "s03-heat",
-      "action": "heat",
-      "label": "Heat the solution in an autoclave at 200 °C for 12 hours.",
+      "id": "d2-s03-stir",
+      "action": "stir",
+      "label": "Stir the solution for 30 minutes.",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -227,6 +328,63 @@
       ],
       "inputs": [
         "zhang2025-d5ra06421j-flower-like-cuco2s4-f-cuco2s4-1--after-s02-add"
+      ],
+      "outputs": [
+        "zhang2025-d5ra06421j-flower-like-cuco2s4-f-cuco2s4-1--after-d2-s03-stir"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 30,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "30 min",
+          "evidence": [
+            {
+              "source_id": "zhang2025-d5ra06421j",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Stir the solution for 30 minutes.",
+      "evidence": [
+        {
+          "source_id": "zhang2025-d5ra06421j",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s03-heat",
+      "action": "heat",
+      "label": "Heat the solution in an autoclave at 200 °C for 12 hours.",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-stir"
+      ],
+      "inputs": [
+        "zhang2025-d5ra06421j-flower-like-cuco2s4-f-cuco2s4-1--after-d2-s03-stir"
       ],
       "outputs": [
         "zhang2025-d5ra06421j-flower-like-cuco2s4-f-cuco2s4-1--after-s03-heat"
@@ -291,10 +449,10 @@
       ]
     },
     {
-      "id": "s04-wash",
-      "action": "wash",
-      "label": "Wash the precipitate with deionized water and ethanol.",
-      "stage": "workup",
+      "id": "d2-s05-cool",
+      "action": "cool",
+      "label": "Cool the solution to room temperature.",
+      "stage": "synthesis",
       "branch": "",
       "optional": false,
       "depends_on": [
@@ -302,6 +460,44 @@
       ],
       "inputs": [
         "zhang2025-d5ra06421j-flower-like-cuco2s4-f-cuco2s4-1--after-s03-heat"
+      ],
+      "outputs": [
+        "zhang2025-d5ra06421j-flower-like-cuco2s4-f-cuco2s4-1--after-d2-s05-cool"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Cool the solution to room temperature.",
+      "evidence": [
+        {
+          "source_id": "zhang2025-d5ra06421j",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s04-wash",
+      "action": "wash",
+      "label": "Wash the precipitate with deionized water and ethanol.",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s05-cool"
+      ],
+      "inputs": [
+        "zhang2025-d5ra06421j-flower-like-cuco2s4-f-cuco2s4-1--after-d2-s05-cool"
       ],
       "outputs": [
         "zhang2025-d5ra06421j-flower-like-cuco2s4-f-cuco2s4-1--after-s04-wash"
@@ -413,9 +609,14 @@
       "material_state_id": "zhang2025-d5ra06421j-flower-like-cuco2s4-f-cuco2s4-1--after-s05-dry",
       "parent_sample_id": null,
       "composition": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "CuCo2S4",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zhang2025-d5ra06421j",
+            "locator": "Main PDF p.3"
+          }
+        ],
         "note": ""
       },
       "phase": {
@@ -459,13 +660,17 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
-      "Amount of ethylene glycol not reported in the extracted text."
+      "Amount of ethylene glycol not reported in the extracted text.",
+      "Amount of CoCl2·6H2O not reported in the extracted text.",
+      "Amount of thiourea not reported in the extracted text.",
+      "Amount of CuCl2$2H2O not reported in the extracted text.",
+      "Amount of CoCl2$6H2O not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

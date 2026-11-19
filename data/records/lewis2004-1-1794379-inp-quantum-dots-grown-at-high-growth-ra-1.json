@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "lewis2004-1-1794379-inp-quantum-dots-grown-at-high-growth-ra-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "G. M. Lewis et al. (2004): InP quantum dots grown at high growth rate on 10° off (100) substrates",
   "material": {
@@ -85,7 +85,7 @@
       "id": "lewis2004-1-1794379-inp-quantum-dots-grown-at-high-growth-ra-1--inp",
       "name": "InP",
       "formula": null,
-      "role": "reagent",
+      "role": "starting_particles",
       "stage": "synthesis",
       "identity": {
         "pubchem_cid": null,
@@ -118,17 +118,53 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "lewis2004-1-1794379-inp-quantum-dots-grown-at-high-growth-ra-1--gaas",
+      "name": "GaAs",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "lewis2004-1-1794379",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
       "id": "lewis2004-1-1794379-inp-quantum-dots-grown-at-high-growth-ra-1--after-s01-grow",
-      "name": "product as isolated",
-      "kind": "product",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
       "parent_ids": [
         "lewis2004-1-1794379-inp-quantum-dots-grown-at-high-growth-ra-1--inp",
         "lewis2004-1-1794379-inp-quantum-dots-grown-at-high-growth-ra-1--algainp"
+      ]
+    },
+    {
+      "id": "lewis2004-1-1794379-inp-quantum-dots-grown-at-high-growth-ra-1--after-d2-s02-deposit",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "lewis2004-1-1794379-inp-quantum-dots-grown-at-high-growth-ra-1--after-s01-grow",
+        "lewis2004-1-1794379-inp-quantum-dots-grown-at-high-growth-ra-1--inp"
+      ]
+    },
+    {
+      "id": "lewis2004-1-1794379-inp-quantum-dots-grown-at-high-growth-ra-1--after-d2-s03-cover",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "lewis2004-1-1794379-inp-quantum-dots-grown-at-high-growth-ra-1--after-d2-s02-deposit"
       ]
     }
   ],
@@ -188,6 +224,83 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s02-deposit",
+      "action": "deposit",
+      "label": "Deposit InP at high growth rate",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-grow"
+      ],
+      "inputs": [
+        "lewis2004-1-1794379-inp-quantum-dots-grown-at-high-growth-ra-1--after-s01-grow",
+        "lewis2004-1-1794379-inp-quantum-dots-grown-at-high-growth-ra-1--inp"
+      ],
+      "outputs": [
+        "lewis2004-1-1794379-inp-quantum-dots-grown-at-high-growth-ra-1--after-d2-s02-deposit"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Deposit InP at high growth rate",
+      "evidence": [
+        {
+          "source_id": "lewis2004-1-1794379",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "d2-s03-cover",
+      "action": "cover",
+      "label": "Cover dots with GaInP",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-deposit"
+      ],
+      "inputs": [
+        "lewis2004-1-1794379-inp-quantum-dots-grown-at-high-growth-ra-1--after-d2-s02-deposit"
+      ],
+      "outputs": [
+        "lewis2004-1-1794379-inp-quantum-dots-grown-at-high-growth-ra-1--after-d2-s03-cover"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Cover dots with GaInP",
+      "evidence": [
+        {
+          "source_id": "lewis2004-1-1794379",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -196,7 +309,7 @@
       "sample_id": "lewis2004-1-1794379-inp-quantum-dots-grown-at-high-growth-ra-1--product",
       "source_sample_label": "InP quantum dots grown at high growth rate on 10° off (100) substrates",
       "batch_id": null,
-      "material_state_id": "lewis2004-1-1794379-inp-quantum-dots-grown-at-high-growth-ra-1--after-s01-grow",
+      "material_state_id": "lewis2004-1-1794379-inp-quantum-dots-grown-at-high-growth-ra-1--after-d2-s03-cover",
       "parent_sample_id": null,
       "composition": {
         "value": "InP",
@@ -248,7 +361,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
@@ -257,7 +370,8 @@
       "Atmosphere not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
       "Amount of InP not reported in the extracted text.",
-      "Amount of AlGaInP not reported in the extracted text."
+      "Amount of AlGaInP not reported in the extracted text.",
+      "Amount of GaAs not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

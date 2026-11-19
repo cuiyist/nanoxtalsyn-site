@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "jia2014-ja505541q-zns-quantum-rods-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Guohua Jia; Uri Banin (2014): ZnS quantum rods",
   "material": {
@@ -167,9 +167,25 @@
   "material_states": [
     {
       "id": "jia2014-ja505541q-zns-quantum-rods-2--after-s01-heat",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": []
+    },
+    {
+      "id": "jia2014-ja505541q-zns-quantum-rods-2--after-d2-s02-puriify",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "jia2014-ja505541q-zns-quantum-rods-2--after-s01-heat"
+      ]
+    },
+    {
+      "id": "jia2014-ja505541q-zns-quantum-rods-2--after-d2-s03-redissolve",
       "name": "product as isolated",
       "kind": "product",
-      "parent_ids": []
+      "parent_ids": [
+        "jia2014-ja505541q-zns-quantum-rods-2--after-d2-s02-puriify"
+      ]
     }
   ],
   "operations": [
@@ -248,6 +264,92 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s02-puriify",
+      "action": "puriify",
+      "label": "Precipitate and centrifuge",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-heat"
+      ],
+      "inputs": [
+        "jia2014-ja505541q-zns-quantum-rods-2--after-s01-heat"
+      ],
+      "outputs": [
+        "jia2014-ja505541q-zns-quantum-rods-2--after-d2-s02-puriify"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "jia2014-ja505541q",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Precipitate and centrifuge",
+      "evidence": [
+        {
+          "source_id": "jia2014-ja505541q",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s03-redissolve",
+      "action": "redissolve",
+      "label": "Redissolve in oleylamine",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-puriify"
+      ],
+      "inputs": [
+        "jia2014-ja505541q-zns-quantum-rods-2--after-d2-s02-puriify"
+      ],
+      "outputs": [
+        "jia2014-ja505541q-zns-quantum-rods-2--after-d2-s03-redissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "jia2014-ja505541q",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Redissolve in oleylamine",
+      "evidence": [
+        {
+          "source_id": "jia2014-ja505541q",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -256,7 +358,7 @@
       "sample_id": "jia2014-ja505541q-zns-quantum-rods-2--product",
       "source_sample_label": "ZnS quantum rods",
       "batch_id": null,
-      "material_state_id": "jia2014-ja505541q-zns-quantum-rods-2--after-s01-heat",
+      "material_state_id": "jia2014-ja505541q-zns-quantum-rods-2--after-d2-s03-redissolve",
       "parent_sample_id": null,
       "composition": {
         "value": "ZnS",
@@ -346,7 +448,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Reactor not reported in the extracted text.",

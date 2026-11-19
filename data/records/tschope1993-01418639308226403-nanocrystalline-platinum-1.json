@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "tschope1993-01418639308226403-nanocrystalline-platinum-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "A. Tschope and R. Birringer (1993): nanocrystalline platinum",
   "material": {
@@ -111,16 +111,25 @@
       ]
     },
     {
-      "id": "tschope1993-01418639308226403-nanocrystalline-platinum-1--after-s02-collect",
+      "id": "tschope1993-01418639308226403-nanocrystalline-platinum-1--after-d2-s02-nucleate",
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
-        "tschope1993-01418639308226403-nanocrystalline-platinum-1--after-s01-sputter"
+        "tschope1993-01418639308226403-nanocrystalline-platinum-1--after-s01-sputter",
+        "tschope1993-01418639308226403-nanocrystalline-platinum-1--platinum"
+      ]
+    },
+    {
+      "id": "tschope1993-01418639308226403-nanocrystalline-platinum-1--after-s02-collect",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "tschope1993-01418639308226403-nanocrystalline-platinum-1--after-d2-s02-nucleate"
       ]
     },
     {
       "id": "tschope1993-01418639308226403-nanocrystalline-platinum-1--after-s03-evacuate",
-      "name": "mixture after step 3",
+      "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
         "tschope1993-01418639308226403-nanocrystalline-platinum-1--after-s02-collect"
@@ -173,6 +182,45 @@
       ]
     },
     {
+      "id": "d2-s02-nucleate",
+      "action": "nucleate",
+      "label": "Nucleate and grow nanometre-sized particles.",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-sputter"
+      ],
+      "inputs": [
+        "tschope1993-01418639308226403-nanocrystalline-platinum-1--after-s01-sputter",
+        "tschope1993-01418639308226403-nanocrystalline-platinum-1--platinum"
+      ],
+      "outputs": [
+        "tschope1993-01418639308226403-nanocrystalline-platinum-1--after-d2-s02-nucleate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Nucleate and grow nanometre-sized particles.",
+      "evidence": [
+        {
+          "source_id": "tschope1993-01418639308226403",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    },
+    {
       "id": "s02-collect",
       "action": "collect",
       "label": "Collect the particles on a 'cold finger'.",
@@ -180,10 +228,10 @@
       "branch": "",
       "optional": false,
       "depends_on": [
-        "s01-sputter"
+        "d2-s02-nucleate"
       ],
       "inputs": [
-        "tschope1993-01418639308226403-nanocrystalline-platinum-1--after-s01-sputter"
+        "tschope1993-01418639308226403-nanocrystalline-platinum-1--after-d2-s02-nucleate"
       ],
       "outputs": [
         "tschope1993-01418639308226403-nanocrystalline-platinum-1--after-s02-collect"
@@ -411,7 +459,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",

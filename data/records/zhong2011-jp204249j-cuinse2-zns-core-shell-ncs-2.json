@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "zhong2011-jp204249j-cuinse2-zns-core-shell-ncs-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Haizheng Zhong; Zhibin Wang; Enrico Bovero; Zhenghong Lu; Frank C. J. M. van Veggel; Gregory D. Scholes (2011): CuInSe2/ZnS core/shell NCs",
   "material": {
@@ -120,6 +120,63 @@
           "derivation": null
         }
       },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zhong2011-jp204249j",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "zhong2011-jp204249j-cuinse2-zns-core-shell-ncs-2--cuinse2-ncs",
+      "name": "CuInSe2 NCs",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zhong2011-jp204249j",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "zhong2011-jp204249j-cuinse2-zns-core-shell-ncs-2--zn-st-2",
+      "name": "Zn(St)2",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zhong2011-jp204249j",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "zhong2011-jp204249j-cuinse2-zns-core-shell-ncs-2--1-octadecene",
+      "name": "1-octadecene",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
       "notes": [],
       "evidence": [
         {
@@ -347,9 +404,12 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
-      "Phase not reported in the extracted text."
+      "Phase not reported in the extracted text.",
+      "Amount of CuInSe2 NCs not reported in the extracted text.",
+      "Amount of Zn(St)2 not reported in the extracted text.",
+      "Amount of 1-octadecene not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

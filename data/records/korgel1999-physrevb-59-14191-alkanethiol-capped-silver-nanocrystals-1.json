@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "korgel1999-physrevb-59-14191-alkanethiol-capped-silver-nanocrystals-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Brian A. Korgel; Donald Fitzmaurice (1999): alkanethiol-capped silver nanocrystals",
   "material": {
@@ -98,6 +98,120 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "korgel1999-physrevb-59-14191-alkanethiol-capped-silver-nanocrystals-1--agno3",
+      "name": "AgNO3",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "korgel1999-physrevb-59-14191",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "korgel1999-physrevb-59-14191-alkanethiol-capped-silver-nanocrystals-1--nabh4",
+      "name": "NaBH4",
+      "formula": null,
+      "role": "reducing_agent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "mass": {
+          "value": 0.39,
+          "minimum": null,
+          "maximum": null,
+          "unit": "g",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.39 g",
+          "evidence": [
+            {
+              "source_id": "korgel1999-physrevb-59-14191",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "korgel1999-physrevb-59-14191",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "korgel1999-physrevb-59-14191-alkanethiol-capped-silver-nanocrystals-1--ethanol",
+      "name": "ethanol",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "korgel1999-physrevb-59-14191",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "korgel1999-physrevb-59-14191-alkanethiol-capped-silver-nanocrystals-1--chloroform",
+      "name": "chloroform",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "korgel1999-physrevb-59-14191",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "korgel1999-physrevb-59-14191-alkanethiol-capped-silver-nanocrystals-1--hexane",
+      "name": "hexane",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "korgel1999-physrevb-59-14191",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -107,7 +221,8 @@
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": [
-        "korgel1999-physrevb-59-14191-alkanethiol-capped-silver-nanocrystals-1--alkanethiol"
+        "korgel1999-physrevb-59-14191-alkanethiol-capped-silver-nanocrystals-1--alkanethiol",
+        "korgel1999-physrevb-59-14191-alkanethiol-capped-silver-nanocrystals-1--nabh4"
       ]
     },
     {
@@ -115,7 +230,8 @@
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
-        "korgel1999-physrevb-59-14191-alkanethiol-capped-silver-nanocrystals-1--after-s01-reduce"
+        "korgel1999-physrevb-59-14191-alkanethiol-capped-silver-nanocrystals-1--after-s01-reduce",
+        "korgel1999-physrevb-59-14191-alkanethiol-capped-silver-nanocrystals-1--ethanol"
       ]
     },
     {
@@ -123,7 +239,9 @@
       "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
-        "korgel1999-physrevb-59-14191-alkanethiol-capped-silver-nanocrystals-1--after-s02-wash"
+        "korgel1999-physrevb-59-14191-alkanethiol-capped-silver-nanocrystals-1--after-s02-wash",
+        "korgel1999-physrevb-59-14191-alkanethiol-capped-silver-nanocrystals-1--chloroform",
+        "korgel1999-physrevb-59-14191-alkanethiol-capped-silver-nanocrystals-1--ethanol"
       ]
     },
     {
@@ -131,7 +249,8 @@
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "korgel1999-physrevb-59-14191-alkanethiol-capped-silver-nanocrystals-1--after-s03-precipitate"
+        "korgel1999-physrevb-59-14191-alkanethiol-capped-silver-nanocrystals-1--after-s03-precipitate",
+        "korgel1999-physrevb-59-14191-alkanethiol-capped-silver-nanocrystals-1--hexane"
       ]
     }
   ],
@@ -145,7 +264,8 @@
       "optional": false,
       "depends_on": [],
       "inputs": [
-        "korgel1999-physrevb-59-14191-alkanethiol-capped-silver-nanocrystals-1--alkanethiol"
+        "korgel1999-physrevb-59-14191-alkanethiol-capped-silver-nanocrystals-1--alkanethiol",
+        "korgel1999-physrevb-59-14191-alkanethiol-capped-silver-nanocrystals-1--nabh4"
       ],
       "outputs": [
         "korgel1999-physrevb-59-14191-alkanethiol-capped-silver-nanocrystals-1--after-s01-reduce"
@@ -188,7 +308,8 @@
         "s01-reduce"
       ],
       "inputs": [
-        "korgel1999-physrevb-59-14191-alkanethiol-capped-silver-nanocrystals-1--after-s01-reduce"
+        "korgel1999-physrevb-59-14191-alkanethiol-capped-silver-nanocrystals-1--after-s01-reduce",
+        "korgel1999-physrevb-59-14191-alkanethiol-capped-silver-nanocrystals-1--ethanol"
       ],
       "outputs": [
         "korgel1999-physrevb-59-14191-alkanethiol-capped-silver-nanocrystals-1--after-s02-wash"
@@ -226,7 +347,9 @@
         "s02-wash"
       ],
       "inputs": [
-        "korgel1999-physrevb-59-14191-alkanethiol-capped-silver-nanocrystals-1--after-s02-wash"
+        "korgel1999-physrevb-59-14191-alkanethiol-capped-silver-nanocrystals-1--after-s02-wash",
+        "korgel1999-physrevb-59-14191-alkanethiol-capped-silver-nanocrystals-1--chloroform",
+        "korgel1999-physrevb-59-14191-alkanethiol-capped-silver-nanocrystals-1--ethanol"
       ],
       "outputs": [
         "korgel1999-physrevb-59-14191-alkanethiol-capped-silver-nanocrystals-1--after-s03-precipitate"
@@ -264,7 +387,8 @@
         "s03-precipitate"
       ],
       "inputs": [
-        "korgel1999-physrevb-59-14191-alkanethiol-capped-silver-nanocrystals-1--after-s03-precipitate"
+        "korgel1999-physrevb-59-14191-alkanethiol-capped-silver-nanocrystals-1--after-s03-precipitate",
+        "korgel1999-physrevb-59-14191-alkanethiol-capped-silver-nanocrystals-1--hexane"
       ],
       "outputs": [
         "korgel1999-physrevb-59-14191-alkanethiol-capped-silver-nanocrystals-1--after-s04-spin-coat"
@@ -377,14 +501,18 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
-      "Amount of alkanethiol not reported in the extracted text."
+      "Amount of alkanethiol not reported in the extracted text.",
+      "Amount of AgNO3 not reported in the extracted text.",
+      "Amount of ethanol not reported in the extracted text.",
+      "Amount of chloroform not reported in the extracted text.",
+      "Amount of hexane not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

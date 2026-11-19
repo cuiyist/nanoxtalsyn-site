@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "lees2008-nl801629f-core-shell-cdse-zns-qd-3-7",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Emma E. Lees (2008): Core/Shell CdSe/ZnS QD 3",
   "material": {
@@ -83,7 +83,7 @@
       "id": "lees2008-nl801629f-core-shell-cdse-zns-qd-3-7--cdse",
       "name": "CdSe",
       "formula": null,
-      "role": "reagent",
+      "role": "starting_particles",
       "stage": "synthesis",
       "identity": {
         "pubchem_cid": null,
@@ -97,35 +97,24 @@
           "locator": "Main PDF p.6"
         }
       ]
-    },
-    {
-      "id": "lees2008-nl801629f-core-shell-cdse-zns-qd-3-7--zns",
-      "name": "ZnS",
-      "formula": null,
-      "role": "reagent",
-      "stage": "synthesis",
-      "identity": {
-        "pubchem_cid": null,
-        "smiles": null
-      },
-      "quantities": {},
-      "notes": [],
-      "evidence": [
-        {
-          "source_id": "lees2008-nl801629f",
-          "locator": "Main PDF p.5"
-        }
-      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
       "id": "lees2008-nl801629f-core-shell-cdse-zns-qd-3-7--after-s01-synthesize",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "lees2008-nl801629f-core-shell-cdse-zns-qd-3-7--cdse"
+      ]
+    },
+    {
+      "id": "lees2008-nl801629f-core-shell-cdse-zns-qd-3-7--after-d2-s02-grow-shell",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "lees2008-nl801629f-core-shell-cdse-zns-qd-3-7--cdse"
+        "lees2008-nl801629f-core-shell-cdse-zns-qd-3-7--after-s01-synthesize"
       ]
     }
   ],
@@ -165,6 +154,44 @@
           "locator": "Main PDF p.6"
         }
       ]
+    },
+    {
+      "id": "d2-s02-grow-shell",
+      "action": "grow shell",
+      "label": "ZnS shell was grown on CdSe core QDs.",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-synthesize"
+      ],
+      "inputs": [
+        "lees2008-nl801629f-core-shell-cdse-zns-qd-3-7--after-s01-synthesize"
+      ],
+      "outputs": [
+        "lees2008-nl801629f-core-shell-cdse-zns-qd-3-7--after-d2-s02-grow-shell"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "ZnS shell was grown on CdSe core QDs.",
+      "evidence": [
+        {
+          "source_id": "lees2008-nl801629f",
+          "locator": "Main PDF p.5"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -173,7 +200,7 @@
       "sample_id": "lees2008-nl801629f-core-shell-cdse-zns-qd-3-7--product",
       "source_sample_label": "Core/Shell CdSe/ZnS QD 3",
       "batch_id": null,
-      "material_state_id": "lees2008-nl801629f-core-shell-cdse-zns-qd-3-7--after-s01-synthesize",
+      "material_state_id": "lees2008-nl801629f-core-shell-cdse-zns-qd-3-7--after-d2-s02-grow-shell",
       "parent_sample_id": null,
       "composition": {
         "value": null,
@@ -223,7 +250,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Size not reported in the extracted text.",

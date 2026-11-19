@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "prochazkova2020-acsanm-9b01857-methylammonium-lead-bromide-perovskite-n-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Anna Jancik Prochazkova; Yolanda Salinas; Cigdem Yumusak; Markus Clark Scharber; Oliver Brüggemann; Martin Weiter; Niyazi Serdar Sariciftci; Jozef Krajcovic; Alexander Kovalenko (2020): methylammonium lead bromide perovskite nanoparticles (PNPs) with 4.6 ± 0.2 nm size",
   "material": {
@@ -107,26 +107,139 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "prochazkova2020-acsanm-9b01857-methylammonium-lead-bromide-perovskite-n-1--pbbr2",
+      "name": "PbBr2",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "prochazkova2020-acsanm-9b01857",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "prochazkova2020-acsanm-9b01857-methylammonium-lead-bromide-perovskite-n-1--methylammonium-bromide",
+      "name": "Methylammonium bromide",
+      "formula": null,
+      "role": "halide_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 0.03,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mol L−1",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.03 mol L−1",
+          "evidence": [
+            {
+              "source_id": "prochazkova2020-acsanm-9b01857",
+              "locator": "Main PDF p.6"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "prochazkova2020-acsanm-9b01857",
+          "locator": "Main PDF p.6"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
-      "id": "prochazkova2020-acsanm-9b01857-methylammonium-lead-bromide-perovskite-n-1--after-s01-dissolve",
+      "id": "prochazkova2020-acsanm-9b01857-methylammonium-lead-bromide-perovskite-n-1--after-d2-s01-add",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "prochazkova2020-acsanm-9b01857-methylammonium-lead-bromide-perovskite-n-1--water"
+      ]
+    },
+    {
+      "id": "prochazkova2020-acsanm-9b01857-methylammonium-lead-bromide-perovskite-n-1--after-s01-dissolve",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "prochazkova2020-acsanm-9b01857-methylammonium-lead-bromide-perovskite-n-1--after-d2-s01-add",
+        "prochazkova2020-acsanm-9b01857-methylammonium-lead-bromide-perovskite-n-1--pbbr2",
+        "prochazkova2020-acsanm-9b01857-methylammonium-lead-bromide-perovskite-n-1--methylammonium-bromide"
+      ]
     },
     {
       "id": "prochazkova2020-acsanm-9b01857-methylammonium-lead-bromide-perovskite-n-1--after-s02-centrifuge",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "prochazkova2020-acsanm-9b01857-methylammonium-lead-bromide-perovskite-n-1--after-s01-dissolve"
+      ]
+    },
+    {
+      "id": "prochazkova2020-acsanm-9b01857-methylammonium-lead-bromide-perovskite-n-1--after-d2-s04-wash",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "prochazkova2020-acsanm-9b01857-methylammonium-lead-bromide-perovskite-n-1--after-s01-dissolve"
+        "prochazkova2020-acsanm-9b01857-methylammonium-lead-bromide-perovskite-n-1--after-s02-centrifuge"
       ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-add",
+      "action": "add",
+      "label": "Add water to the precursor solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "prochazkova2020-acsanm-9b01857-methylammonium-lead-bromide-perovskite-n-1--water"
+      ],
+      "outputs": [
+        "prochazkova2020-acsanm-9b01857-methylammonium-lead-bromide-perovskite-n-1--after-d2-s01-add"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add water to the precursor solution",
+      "evidence": [
+        {
+          "source_id": "prochazkova2020-acsanm-9b01857",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
     {
       "id": "s01-dissolve",
       "action": "dissolve",
@@ -134,8 +247,14 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s01-add"
+      ],
+      "inputs": [
+        "prochazkova2020-acsanm-9b01857-methylammonium-lead-bromide-perovskite-n-1--after-d2-s01-add",
+        "prochazkova2020-acsanm-9b01857-methylammonium-lead-bromide-perovskite-n-1--pbbr2",
+        "prochazkova2020-acsanm-9b01857-methylammonium-lead-bromide-perovskite-n-1--methylammonium-bromide"
+      ],
       "outputs": [
         "prochazkova2020-acsanm-9b01857-methylammonium-lead-bromide-perovskite-n-1--after-s01-dissolve"
       ],
@@ -217,6 +336,44 @@
           "locator": "Main PDF p.6"
         }
       ]
+    },
+    {
+      "id": "d2-s04-wash",
+      "action": "wash",
+      "label": "Washing and redispersing in toluene",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-centrifuge"
+      ],
+      "inputs": [
+        "prochazkova2020-acsanm-9b01857-methylammonium-lead-bromide-perovskite-n-1--after-s02-centrifuge"
+      ],
+      "outputs": [
+        "prochazkova2020-acsanm-9b01857-methylammonium-lead-bromide-perovskite-n-1--after-d2-s04-wash"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Washing and redispersing in toluene",
+      "evidence": [
+        {
+          "source_id": "prochazkova2020-acsanm-9b01857",
+          "locator": "Main PDF p.6"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -225,7 +382,7 @@
       "sample_id": "prochazkova2020-acsanm-9b01857-methylammonium-lead-bromide-perovskite-n-1--product",
       "source_sample_label": "methylammonium lead bromide perovskite nanoparticles (PNPs) with 4.6 ± 0.2 nm size",
       "batch_id": null,
-      "material_state_id": "prochazkova2020-acsanm-9b01857-methylammonium-lead-bromide-perovskite-n-1--after-s02-centrifuge",
+      "material_state_id": "prochazkova2020-acsanm-9b01857-methylammonium-lead-bromide-perovskite-n-1--after-d2-s04-wash",
       "parent_sample_id": null,
       "composition": {
         "value": "CH3NH3PbBr3",
@@ -282,14 +439,15 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
-      "Amount of water not reported in the extracted text."
+      "Amount of water not reported in the extracted text.",
+      "Amount of PbBr2 not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

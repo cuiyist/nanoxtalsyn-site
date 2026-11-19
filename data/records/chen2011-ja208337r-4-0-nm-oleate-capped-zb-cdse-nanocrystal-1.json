@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "chen2011-ja208337r-4-0-nm-oleate-capped-zb-cdse-nanocrystal-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Ou Chen (2011): 4.0-nm oleate-capped ZB-CdSe nanocrystals",
   "material": {
@@ -128,15 +128,72 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "chen2011-ja208337r-4-0-nm-oleate-capped-zb-cdse-nanocrystal-1--oleylamine-oam",
+      "name": "Oleylamine (OAm)",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "chen2011-ja208337r",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "chen2011-ja208337r-4-0-nm-oleate-capped-zb-cdse-nanocrystal-1--hexane",
+      "name": "hexane",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "chen2011-ja208337r",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
       "id": "chen2011-ja208337r-4-0-nm-oleate-capped-zb-cdse-nanocrystal-1--after-s01-dissolve",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "chen2011-ja208337r-4-0-nm-oleate-capped-zb-cdse-nanocrystal-1--oleate",
+        "chen2011-ja208337r-4-0-nm-oleate-capped-zb-cdse-nanocrystal-1--1-octadecene-ode"
+      ]
+    },
+    {
+      "id": "chen2011-ja208337r-4-0-nm-oleate-capped-zb-cdse-nanocrystal-1--after-d2-s02-remove",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "chen2011-ja208337r-4-0-nm-oleate-capped-zb-cdse-nanocrystal-1--after-s01-dissolve",
+        "chen2011-ja208337r-4-0-nm-oleate-capped-zb-cdse-nanocrystal-1--hexane"
+      ]
+    },
+    {
+      "id": "chen2011-ja208337r-4-0-nm-oleate-capped-zb-cdse-nanocrystal-1--after-d2-s03-heat",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
+        "chen2011-ja208337r-4-0-nm-oleate-capped-zb-cdse-nanocrystal-1--after-d2-s02-remove",
         "chen2011-ja208337r-4-0-nm-oleate-capped-zb-cdse-nanocrystal-1--oleate",
         "chen2011-ja208337r-4-0-nm-oleate-capped-zb-cdse-nanocrystal-1--1-octadecene-ode"
       ]
@@ -160,9 +217,14 @@
       ],
       "parameters": {},
       "environment": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "chen2011-ja208337r",
+            "locator": "Main PDF p.2"
+          }
+        ],
         "note": ""
       },
       "endpoint": {
@@ -179,6 +241,132 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s02-remove",
+      "action": "remove",
+      "label": "Remove hexane under vacuum",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-dissolve"
+      ],
+      "inputs": [
+        "chen2011-ja208337r-4-0-nm-oleate-capped-zb-cdse-nanocrystal-1--after-s01-dissolve",
+        "chen2011-ja208337r-4-0-nm-oleate-capped-zb-cdse-nanocrystal-1--hexane"
+      ],
+      "outputs": [
+        "chen2011-ja208337r-4-0-nm-oleate-capped-zb-cdse-nanocrystal-1--after-d2-s02-remove"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "chen2011-ja208337r",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Remove hexane under vacuum",
+      "evidence": [
+        {
+          "source_id": "chen2011-ja208337r",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s03-heat",
+      "action": "heat",
+      "label": "Heat the solution to 240 ˚C",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-remove"
+      ],
+      "inputs": [
+        "chen2011-ja208337r-4-0-nm-oleate-capped-zb-cdse-nanocrystal-1--after-d2-s02-remove",
+        "chen2011-ja208337r-4-0-nm-oleate-capped-zb-cdse-nanocrystal-1--oleate",
+        "chen2011-ja208337r-4-0-nm-oleate-capped-zb-cdse-nanocrystal-1--1-octadecene-ode"
+      ],
+      "outputs": [
+        "chen2011-ja208337r-4-0-nm-oleate-capped-zb-cdse-nanocrystal-1--after-d2-s03-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 240,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "240 °C",
+          "evidence": [
+            {
+              "source_id": "chen2011-ja208337r",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 30,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "30 min",
+          "evidence": [
+            {
+              "source_id": "chen2011-ja208337r",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "chen2011-ja208337r",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heat the solution to 240 ˚C",
+      "evidence": [
+        {
+          "source_id": "chen2011-ja208337r",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -187,7 +375,7 @@
       "sample_id": "chen2011-ja208337r-4-0-nm-oleate-capped-zb-cdse-nanocrystal-1--product",
       "source_sample_label": "4.0-nm oleate-capped ZB-CdSe nanocrystals",
       "batch_id": null,
-      "material_state_id": "chen2011-ja208337r-4-0-nm-oleate-capped-zb-cdse-nanocrystal-1--after-s01-dissolve",
+      "material_state_id": "chen2011-ja208337r-4-0-nm-oleate-capped-zb-cdse-nanocrystal-1--after-d2-s03-heat",
       "parent_sample_id": null,
       "composition": {
         "value": "CdSe",
@@ -241,7 +429,8 @@
         }
       ],
       "notes": [
-        "Reaction time: 30 min (Main PDF p.2)."
+        "Reaction time: 30 min (Main PDF p.2).",
+        "Reaction temperature: 240 degC (Main PDF p.2)."
       ]
     }
   ],
@@ -277,18 +466,50 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "chen2011-ja208337r-4-0-nm-oleate-capped-zb-cdse-nanocrystal-1--photoluminescence-quantum-yield",
+      "sample_id": "chen2011-ja208337r-4-0-nm-oleate-capped-zb-cdse-nanocrystal-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 35,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "35 %",
+        "evidence": [
+          {
+            "source_id": "chen2011-ja208337r",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "chen2011-ja208337r",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Reactor not reported in the extracted text.",
-      "Atmosphere not reported in the extracted text.",
-      "Reaction temperature not reported in the extracted text.",
       "Amount of oleate not reported in the extracted text.",
-      "Amount of 1-octadecene (ODE) not reported in the extracted text."
+      "Amount of 1-octadecene (ODE) not reported in the extracted text.",
+      "Amount of Oleylamine (OAm) not reported in the extracted text.",
+      "Amount of hexane not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

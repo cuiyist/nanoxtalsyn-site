@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "pompa2006-nnano-2006-93-cdse-zns-nanocrystals-dispersed-in-pmma-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "P. P. Pompa (2006): CdSe/ZnS nanocrystals dispersed in PMMA",
   "material": {
@@ -83,7 +83,26 @@
       "id": "pompa2006-nnano-2006-93-cdse-zns-nanocrystals-dispersed-in-pmma-1--cdse-zns",
       "name": "CdSe/ZnS",
       "formula": null,
-      "role": "reagent",
+      "role": "starting_particles",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "pompa2006-nnano-2006-93",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    },
+    {
+      "id": "pompa2006-nnano-2006-93-cdse-zns-nanocrystals-dispersed-in-pmma-1--cdse",
+      "name": "CdSe",
+      "formula": null,
+      "role": "starting_particles",
       "stage": "synthesis",
       "identity": {
         "pubchem_cid": null,
@@ -118,11 +137,19 @@
       ]
     },
     {
+      "id": "pompa2006-nnano-2006-93-cdse-zns-nanocrystals-dispersed-in-pmma-1--after-d2-s03-deposit",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "pompa2006-nnano-2006-93-cdse-zns-nanocrystals-dispersed-in-pmma-1--after-s02-disperse"
+      ]
+    },
+    {
       "id": "pompa2006-nnano-2006-93-cdse-zns-nanocrystals-dispersed-in-pmma-1--after-s03-bake",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "pompa2006-nnano-2006-93-cdse-zns-nanocrystals-dispersed-in-pmma-1--after-s02-disperse"
+        "pompa2006-nnano-2006-93-cdse-zns-nanocrystals-dispersed-in-pmma-1--after-d2-s03-deposit"
       ]
     }
   ],
@@ -202,9 +229,9 @@
       ]
     },
     {
-      "id": "s03-bake",
-      "action": "bake",
-      "label": "Samples baked at 180°C for 120 s",
+      "id": "d2-s03-deposit",
+      "action": "deposit",
+      "label": "Deposited onto the substrate by spin-coating",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -213,6 +240,44 @@
       ],
       "inputs": [
         "pompa2006-nnano-2006-93-cdse-zns-nanocrystals-dispersed-in-pmma-1--after-s02-disperse"
+      ],
+      "outputs": [
+        "pompa2006-nnano-2006-93-cdse-zns-nanocrystals-dispersed-in-pmma-1--after-d2-s03-deposit"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Deposited onto the substrate by spin-coating",
+      "evidence": [
+        {
+          "source_id": "pompa2006-nnano-2006-93",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    },
+    {
+      "id": "s03-bake",
+      "action": "bake",
+      "label": "Samples baked at 180°C for 120 s",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-deposit"
+      ],
+      "inputs": [
+        "pompa2006-nnano-2006-93-cdse-zns-nanocrystals-dispersed-in-pmma-1--after-d2-s03-deposit"
       ],
       "outputs": [
         "pompa2006-nnano-2006-93-cdse-zns-nanocrystals-dispersed-in-pmma-1--after-s03-bake"
@@ -324,11 +389,44 @@
       "notes": []
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "pompa2006-nnano-2006-93-cdse-zns-nanocrystals-dispersed-in-pmma-1--photoluminescence-peak",
+      "sample_id": "pompa2006-nnano-2006-93-cdse-zns-nanocrystals-dispersed-in-pmma-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 580,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "580 nm",
+        "evidence": [
+          {
+            "source_id": "pompa2006-nnano-2006-93",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "pompa2006-nnano-2006-93",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
@@ -338,7 +436,10 @@
       "Atmosphere not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
-      "Amount of CdSe/ZnS not reported in the extracted text."
+      "Amount of CdSe/ZnS not reported in the extracted text.",
+      "Amount of CdSe/ZnS not reported in the extracted text.",
+      "Amount of CdSe not reported in the extracted text.",
+      "Amount of ZnS not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "gabal2011-ie200988g-pbtio3-nanocrystals-calcined-at-600-c-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Mohamed Abd El-Fattah Gabal (2011): PbTiO3 nanocrystals calcined at 600 °C",
   "material": {
@@ -124,10 +124,29 @@
   "stocks": [],
   "material_states": [
     {
+      "id": "gabal2011-ie200988g-pbtio3-nanocrystals-calcined-at-600-c-1--after-d2-s01-precipitate",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "gabal2011-ie200988g-pbtio3-nanocrystals-calcined-at-600-c-1--oxalic-acid"
+      ]
+    },
+    {
       "id": "gabal2011-ie200988g-pbtio3-nanocrystals-calcined-at-600-c-1--after-s01-add",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "gabal2011-ie200988g-pbtio3-nanocrystals-calcined-at-600-c-1--after-d2-s01-precipitate",
+        "gabal2011-ie200988g-pbtio3-nanocrystals-calcined-at-600-c-1--oxalic-acid",
+        "gabal2011-ie200988g-pbtio3-nanocrystals-calcined-at-600-c-1--titanium-dioxide"
+      ]
+    },
+    {
+      "id": "gabal2011-ie200988g-pbtio3-nanocrystals-calcined-at-600-c-1--after-d2-s03-precipitate",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
+        "gabal2011-ie200988g-pbtio3-nanocrystals-calcined-at-600-c-1--after-s01-add",
         "gabal2011-ie200988g-pbtio3-nanocrystals-calcined-at-600-c-1--oxalic-acid",
         "gabal2011-ie200988g-pbtio3-nanocrystals-calcined-at-600-c-1--titanium-dioxide"
       ]
@@ -135,14 +154,53 @@
   ],
   "operations": [
     {
+      "id": "d2-s01-precipitate",
+      "action": "precipitate",
+      "label": "Precipitate lead oxalate",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "gabal2011-ie200988g-pbtio3-nanocrystals-calcined-at-600-c-1--oxalic-acid"
+      ],
+      "outputs": [
+        "gabal2011-ie200988g-pbtio3-nanocrystals-calcined-at-600-c-1--after-d2-s01-precipitate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Precipitate lead oxalate",
+      "evidence": [
+        {
+          "source_id": "gabal2011-ie200988g",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
       "id": "s01-add",
       "action": "add",
       "label": "Add oxalic acid to the suspension",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
+      "depends_on": [
+        "d2-s01-precipitate"
+      ],
       "inputs": [
+        "gabal2011-ie200988g-pbtio3-nanocrystals-calcined-at-600-c-1--after-d2-s01-precipitate",
         "gabal2011-ie200988g-pbtio3-nanocrystals-calcined-at-600-c-1--oxalic-acid",
         "gabal2011-ie200988g-pbtio3-nanocrystals-calcined-at-600-c-1--titanium-dioxide"
       ],
@@ -170,6 +228,46 @@
           "locator": "Main PDF p.1"
         }
       ]
+    },
+    {
+      "id": "d2-s03-precipitate",
+      "action": "precipitate",
+      "label": "Precipitate",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-add"
+      ],
+      "inputs": [
+        "gabal2011-ie200988g-pbtio3-nanocrystals-calcined-at-600-c-1--after-s01-add",
+        "gabal2011-ie200988g-pbtio3-nanocrystals-calcined-at-600-c-1--oxalic-acid",
+        "gabal2011-ie200988g-pbtio3-nanocrystals-calcined-at-600-c-1--titanium-dioxide"
+      ],
+      "outputs": [
+        "gabal2011-ie200988g-pbtio3-nanocrystals-calcined-at-600-c-1--after-d2-s03-precipitate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Precipitate",
+      "evidence": [
+        {
+          "source_id": "gabal2011-ie200988g",
+          "locator": "Main PDF p.1"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -178,7 +276,7 @@
       "sample_id": "gabal2011-ie200988g-pbtio3-nanocrystals-calcined-at-600-c-1--product",
       "source_sample_label": "PbTiO3 nanocrystals calcined at 600 °C",
       "batch_id": null,
-      "material_state_id": "gabal2011-ie200988g-pbtio3-nanocrystals-calcined-at-600-c-1--after-s01-add",
+      "material_state_id": "gabal2011-ie200988g-pbtio3-nanocrystals-calcined-at-600-c-1--after-d2-s03-precipitate",
       "parent_sample_id": null,
       "composition": {
         "value": "PbTiO3",
@@ -230,7 +328,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",

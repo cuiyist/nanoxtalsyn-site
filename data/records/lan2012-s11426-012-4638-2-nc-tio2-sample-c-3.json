@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "lan2012-s11426-012-4638-2-nc-tio2-sample-c-3",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Zhang Lan; JiHuai Wu; JianMing Lin; MiaoLiang Huang (2012): nc-TiO2 (sample c)",
   "material": {
@@ -74,9 +74,14 @@
       "derivation": null
     },
     "morphology": {
-      "value": null,
-      "status": "not_reported",
-      "evidence": [],
+      "value": "square-like",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "lan2012-s11426-012-4638-2",
+          "locator": "Main PDF p.3"
+        }
+      ],
       "note": ""
     }
   },
@@ -131,11 +136,19 @@
       ]
     },
     {
-      "id": "lan2012-s11426-012-4638-2-nc-tio2-sample-c-3--after-s02-add",
+      "id": "lan2012-s11426-012-4638-2-nc-tio2-sample-c-3--after-d2-s02-filter",
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
         "lan2012-s11426-012-4638-2-nc-tio2-sample-c-3--after-s01-add"
+      ]
+    },
+    {
+      "id": "lan2012-s11426-012-4638-2-nc-tio2-sample-c-3--after-s02-add",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "lan2012-s11426-012-4638-2-nc-tio2-sample-c-3--after-d2-s02-filter"
       ]
     },
     {
@@ -185,10 +198,10 @@
       ]
     },
     {
-      "id": "s02-add",
-      "action": "add",
-      "label": "Add TBAOH solution",
-      "stage": "synthesis",
+      "id": "d2-s02-filter",
+      "action": "filter",
+      "label": "Filter precipitate",
+      "stage": "workup",
       "branch": "",
       "optional": false,
       "depends_on": [
@@ -196,6 +209,44 @@
       ],
       "inputs": [
         "lan2012-s11426-012-4638-2-nc-tio2-sample-c-3--after-s01-add"
+      ],
+      "outputs": [
+        "lan2012-s11426-012-4638-2-nc-tio2-sample-c-3--after-d2-s02-filter"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Filter precipitate",
+      "evidence": [
+        {
+          "source_id": "lan2012-s11426-012-4638-2",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-add",
+      "action": "add",
+      "label": "Add TBAOH solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-filter"
+      ],
+      "inputs": [
+        "lan2012-s11426-012-4638-2-nc-tio2-sample-c-3--after-d2-s02-filter"
       ],
       "outputs": [
         "lan2012-s11426-012-4638-2-nc-tio2-sample-c-3--after-s02-add"
@@ -329,9 +380,14 @@
         "note": ""
       },
       "morphology": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "square-like",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "lan2012-s11426-012-4638-2",
+            "locator": "Main PDF p.3"
+          }
+        ],
         "note": ""
       },
       "surface": {
@@ -358,9 +414,8 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
-      "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Atmosphere not reported in the extracted text."

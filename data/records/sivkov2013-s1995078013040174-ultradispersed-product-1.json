@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "sivkov2013-s1995078013040174-ultradispersed-product-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "A. A. Sivkov; A. Ya. Pak; D. S. Nikitin; I. A. Rakhmatullin; I. I. Shanenkov (2013): ultradispersed product",
   "material": {
@@ -128,16 +128,51 @@
           "locator": "Main PDF p.1"
         }
       ]
+    },
+    {
+      "id": "sivkov2013-s1995078013040174-ultradispersed-product-1--soot",
+      "name": "soot",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "sivkov2013-s1995078013040174",
+          "locator": "Main PDF p.1"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
       "id": "sivkov2013-s1995078013040174-ultradispersed-product-1--after-s01-load",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "sivkov2013-s1995078013040174-ultradispersed-product-1--carbon-soot"
+      ]
+    },
+    {
+      "id": "sivkov2013-s1995078013040174-ultradispersed-product-1--after-d2-s02-heat",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "sivkov2013-s1995078013040174-ultradispersed-product-1--after-s01-load"
+      ]
+    },
+    {
+      "id": "sivkov2013-s1995078013040174-ultradispersed-product-1--after-d2-s03-generate",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "sivkov2013-s1995078013040174-ultradispersed-product-1--carbon-soot"
+        "sivkov2013-s1995078013040174-ultradispersed-product-1--after-d2-s02-heat"
       ]
     }
   ],
@@ -177,6 +212,82 @@
           "locator": "Main PDF p.1"
         }
       ]
+    },
+    {
+      "id": "d2-s02-heat",
+      "action": "heat",
+      "label": "Carbon dam in the CFPS turns into a plasma state under the action of the growing current",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-load"
+      ],
+      "inputs": [
+        "sivkov2013-s1995078013040174-ultradispersed-product-1--after-s01-load"
+      ],
+      "outputs": [
+        "sivkov2013-s1995078013040174-ultradispersed-product-1--after-d2-s02-heat"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Carbon dam in the CFPS turns into a plasma state under the action of the growing current",
+      "evidence": [
+        {
+          "source_id": "sivkov2013-s1995078013040174",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "d2-s03-generate",
+      "action": "generate",
+      "label": "Generate arc discharge plasma",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-heat"
+      ],
+      "inputs": [
+        "sivkov2013-s1995078013040174-ultradispersed-product-1--after-d2-s02-heat"
+      ],
+      "outputs": [
+        "sivkov2013-s1995078013040174-ultradispersed-product-1--after-d2-s03-generate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Generate arc discharge plasma",
+      "evidence": [
+        {
+          "source_id": "sivkov2013-s1995078013040174",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -185,7 +296,7 @@
       "sample_id": "sivkov2013-s1995078013040174-ultradispersed-product-1--product",
       "source_sample_label": "ultradispersed product",
       "batch_id": null,
-      "material_state_id": "sivkov2013-s1995078013040174-ultradispersed-product-1--after-s01-load",
+      "material_state_id": "sivkov2013-s1995078013040174-ultradispersed-product-1--after-d2-s03-generate",
       "parent_sample_id": null,
       "composition": {
         "value": "C3N4",
@@ -275,12 +386,13 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
-      "Reaction time not reported in the extracted text."
+      "Reaction time not reported in the extracted text.",
+      "Amount of soot not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

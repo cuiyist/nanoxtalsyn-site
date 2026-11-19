@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "zhong2011-jp204249j-cuinse2-ncs-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Haizheng Zhong; Zhibin Wang; Enrico Bovero; Zhenghong Lu; Frank C. J. M. van Veggel; Gregory D. Scholes (2011): CuInSe2 NCs",
   "material": {
@@ -200,19 +200,94 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "zhong2011-jp204249j-cuinse2-ncs-1--cui",
+      "name": "CuI",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zhong2011-jp204249j",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "zhong2011-jp204249j-cuinse2-ncs-1--in-oac-3",
+      "name": "In(OAc)3",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zhong2011-jp204249j",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "zhong2011-jp204249j-cuinse2-ncs-1--tbpse",
+      "name": "TBPSe",
+      "formula": null,
+      "role": "nonmetal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zhong2011-jp204249j",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
-      "id": "zhong2011-jp204249j-cuinse2-ncs-1--after-s01-cool",
+      "id": "zhong2011-jp204249j-cuinse2-ncs-1--after-d2-s01-add",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "zhong2011-jp204249j-cuinse2-ncs-1--oleic-acid"
+      ]
+    },
+    {
+      "id": "zhong2011-jp204249j-cuinse2-ncs-1--after-d2-s02-inject",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zhong2011-jp204249j-cuinse2-ncs-1--after-d2-s01-add"
+      ]
+    },
+    {
+      "id": "zhong2011-jp204249j-cuinse2-ncs-1--after-s01-cool",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zhong2011-jp204249j-cuinse2-ncs-1--after-d2-s02-inject"
+      ]
     },
     {
       "id": "zhong2011-jp204249j-cuinse2-ncs-1--after-s02-precipitate",
-      "name": "mixture after step 2",
+      "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
         "zhong2011-jp204249j-cuinse2-ncs-1--after-s01-cool"
@@ -220,10 +295,26 @@
     },
     {
       "id": "zhong2011-jp204249j-cuinse2-ncs-1--after-s03-centrifuge",
-      "name": "mixture after step 3",
+      "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
         "zhong2011-jp204249j-cuinse2-ncs-1--after-s02-precipitate"
+      ]
+    },
+    {
+      "id": "zhong2011-jp204249j-cuinse2-ncs-1--after-d2-s06-redisperse",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zhong2011-jp204249j-cuinse2-ncs-1--after-s03-centrifuge"
+      ]
+    },
+    {
+      "id": "zhong2011-jp204249j-cuinse2-ncs-1--after-d2-s07-wash",
+      "name": "mixture after step 7",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zhong2011-jp204249j-cuinse2-ncs-1--after-d2-s06-redisperse"
       ]
     },
     {
@@ -231,11 +322,104 @@
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "zhong2011-jp204249j-cuinse2-ncs-1--after-s03-centrifuge"
+        "zhong2011-jp204249j-cuinse2-ncs-1--after-d2-s07-wash"
       ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-add",
+      "action": "add",
+      "label": "Adding oleic acid",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "zhong2011-jp204249j-cuinse2-ncs-1--oleic-acid"
+      ],
+      "outputs": [
+        "zhong2011-jp204249j-cuinse2-ncs-1--after-d2-s01-add"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 30,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "30 min",
+          "evidence": [
+            {
+              "source_id": "zhong2011-jp204249j",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Adding oleic acid",
+      "evidence": [
+        {
+          "source_id": "zhong2011-jp204249j",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s02-inject",
+      "action": "inject",
+      "label": "Injecting TBPSe precursor",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s01-add"
+      ],
+      "inputs": [
+        "zhong2011-jp204249j-cuinse2-ncs-1--after-d2-s01-add"
+      ],
+      "outputs": [
+        "zhong2011-jp204249j-cuinse2-ncs-1--after-d2-s02-inject"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Injecting TBPSe precursor",
+      "evidence": [
+        {
+          "source_id": "zhong2011-jp204249j",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
     {
       "id": "s01-cool",
       "action": "cool",
@@ -243,8 +427,12 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s02-inject"
+      ],
+      "inputs": [
+        "zhong2011-jp204249j-cuinse2-ncs-1--after-d2-s02-inject"
+      ],
       "outputs": [
         "zhong2011-jp204249j-cuinse2-ncs-1--after-s01-cool"
       ],
@@ -347,9 +535,9 @@
       ]
     },
     {
-      "id": "s04-dry",
-      "action": "dry",
-      "label": "Drying under vacuum",
+      "id": "d2-s06-redisperse",
+      "action": "redisperse",
+      "label": "Redispersing in chloroform",
       "stage": "workup",
       "branch": "",
       "optional": false,
@@ -358,6 +546,82 @@
       ],
       "inputs": [
         "zhong2011-jp204249j-cuinse2-ncs-1--after-s03-centrifuge"
+      ],
+      "outputs": [
+        "zhong2011-jp204249j-cuinse2-ncs-1--after-d2-s06-redisperse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Redispersing in chloroform",
+      "evidence": [
+        {
+          "source_id": "zhong2011-jp204249j",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s07-wash",
+      "action": "wash",
+      "label": "Wash with chloroform and reprecipitate",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s06-redisperse"
+      ],
+      "inputs": [
+        "zhong2011-jp204249j-cuinse2-ncs-1--after-d2-s06-redisperse"
+      ],
+      "outputs": [
+        "zhong2011-jp204249j-cuinse2-ncs-1--after-d2-s07-wash"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Wash with chloroform and reprecipitate",
+      "evidence": [
+        {
+          "source_id": "zhong2011-jp204249j",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s04-dry",
+      "action": "dry",
+      "label": "Drying under vacuum",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s07-wash"
+      ],
+      "inputs": [
+        "zhong2011-jp204249j-cuinse2-ncs-1--after-d2-s07-wash"
       ],
       "outputs": [
         "zhong2011-jp204249j-cuinse2-ncs-1--after-s04-dry"
@@ -476,13 +740,16 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
-      "Reaction temperature not reported in the extracted text."
+      "Reaction temperature not reported in the extracted text.",
+      "Amount of CuI not reported in the extracted text.",
+      "Amount of In(OAc)3 not reported in the extracted text.",
+      "Amount of TBPSe not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "fasoli2008-1-2825425-cdse-nanostructures-nucleated-from-tetra-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "A. Fasoli (2008): CdSe nanostructures nucleated from tetrapod-shaped nanocrystal seeds (t-NCs)",
   "material": {
@@ -50,9 +50,14 @@
       "note": ""
     },
     "phase": {
-      "value": null,
-      "status": "not_reported",
-      "evidence": [],
+      "value": "zinc blende",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "fasoli2008-1-2825425",
+          "locator": "Main PDF p.2"
+        }
+      ],
       "note": ""
     },
     "size": {
@@ -85,7 +90,7 @@
       "id": "fasoli2008-1-2825425-cdse-nanostructures-nucleated-from-tetra-2--cdse-powder",
       "name": "CdSe powder",
       "formula": null,
-      "role": "reagent",
+      "role": "starting_particles",
       "stage": "synthesis",
       "identity": {
         "pubchem_cid": null,
@@ -123,15 +128,125 @@
   "stocks": [],
   "material_states": [
     {
+      "id": "fasoli2008-1-2825425-cdse-nanostructures-nucleated-from-tetra-2--after-d2-s01-produce",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "fasoli2008-1-2825425-cdse-nanostructures-nucleated-from-tetra-2--cdse-powder"
+      ]
+    },
+    {
+      "id": "fasoli2008-1-2825425-cdse-nanostructures-nucleated-from-tetra-2--after-d2-s02-dissolve",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "fasoli2008-1-2825425-cdse-nanostructures-nucleated-from-tetra-2--after-d2-s01-produce"
+      ]
+    },
+    {
       "id": "fasoli2008-1-2825425-cdse-nanostructures-nucleated-from-tetra-2--after-s01-heat",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
+        "fasoli2008-1-2825425-cdse-nanostructures-nucleated-from-tetra-2--after-d2-s02-dissolve",
         "fasoli2008-1-2825425-cdse-nanostructures-nucleated-from-tetra-2--cdse-powder"
       ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-produce",
+      "action": "produce",
+      "label": "Produce CdSe t-NCs",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "fasoli2008-1-2825425-cdse-nanostructures-nucleated-from-tetra-2--cdse-powder"
+      ],
+      "outputs": [
+        "fasoli2008-1-2825425-cdse-nanostructures-nucleated-from-tetra-2--after-d2-s01-produce"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Produce CdSe t-NCs",
+      "evidence": [
+        {
+          "source_id": "fasoli2008-1-2825425",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s02-dissolve",
+      "action": "dissolve",
+      "label": "CdSe nanocrystals dissolved in toluene",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s01-produce"
+      ],
+      "inputs": [
+        "fasoli2008-1-2825425-cdse-nanostructures-nucleated-from-tetra-2--after-d2-s01-produce"
+      ],
+      "outputs": [
+        "fasoli2008-1-2825425-cdse-nanostructures-nucleated-from-tetra-2--after-d2-s02-dissolve"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "5 min",
+          "evidence": [
+            {
+              "source_id": "fasoli2008-1-2825425",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "CdSe nanocrystals dissolved in toluene",
+      "evidence": [
+        {
+          "source_id": "fasoli2008-1-2825425",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
     {
       "id": "s01-heat",
       "action": "heat",
@@ -139,8 +254,11 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
+      "depends_on": [
+        "d2-s02-dissolve"
+      ],
       "inputs": [
+        "fasoli2008-1-2825425-cdse-nanostructures-nucleated-from-tetra-2--after-d2-s02-dissolve",
         "fasoli2008-1-2825425-cdse-nanostructures-nucleated-from-tetra-2--cdse-powder"
       ],
       "outputs": [
@@ -189,9 +307,14 @@
         "note": ""
       },
       "phase": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "zinc blende",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "fasoli2008-1-2825425",
+            "locator": "Main PDF p.2"
+          }
+        ],
         "note": ""
       },
       "morphology": {
@@ -255,16 +378,16 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
-      "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
       "Amount of CdSe powder not reported in the extracted text.",
-      "Amount of CdSe nanocrystal seeds (t-NCs) not reported in the extracted text."
+      "Amount of CdSe powder not reported in the extracted text.",
+      "Amount of CdSe not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

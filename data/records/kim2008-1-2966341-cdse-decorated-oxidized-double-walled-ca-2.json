@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "kim2008-1-2966341-cdse-decorated-oxidized-double-walled-ca-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Yoong Ahm Kim (2008): CdSe-decorated oxidized double walled carbon nanotubes (O-DWNTs)",
   "material": {
@@ -137,27 +137,135 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "kim2008-1-2966341-cdse-decorated-oxidized-double-walled-ca-2--sodium-hydrogen-selenide-nahse",
+      "name": "sodium hydrogen selenide (NaHSe)",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "kim2008-1-2966341",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "kim2008-1-2966341-cdse-decorated-oxidized-double-walled-ca-2--sodium-borohydride",
+      "name": "sodium borohydride",
+      "formula": null,
+      "role": "reducing_agent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "concentration": {
+          "value": 3.0,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol/l",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "3 mmol/l",
+          "evidence": [
+            {
+              "source_id": "kim2008-1-2966341",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "kim2008-1-2966341",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "kim2008-1-2966341-cdse-decorated-oxidized-double-walled-ca-2--dwnts",
+      "name": "DWNTs",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "kim2008-1-2966341",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "kim2008-1-2966341-cdse-decorated-oxidized-double-walled-ca-2--cd-loaded-dwnts",
+      "name": "Cd-loaded DWNTs",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "kim2008-1-2966341",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
-      "id": "kim2008-1-2966341-cdse-decorated-oxidized-double-walled-ca-2--after-s01-ultrasonicate",
+      "id": "kim2008-1-2966341-cdse-decorated-oxidized-double-walled-ca-2--after-d2-s01-heat",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "kim2008-1-2966341-cdse-decorated-oxidized-double-walled-ca-2--nitric-acid-hno3",
+        "kim2008-1-2966341-cdse-decorated-oxidized-double-walled-ca-2--dwnts"
+      ]
     },
     {
-      "id": "kim2008-1-2966341-cdse-decorated-oxidized-double-walled-ca-2--after-s02-reflux",
+      "id": "kim2008-1-2966341-cdse-decorated-oxidized-double-walled-ca-2--after-s01-ultrasonicate",
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
-        "kim2008-1-2966341-cdse-decorated-oxidized-double-walled-ca-2--after-s01-ultrasonicate"
+        "kim2008-1-2966341-cdse-decorated-oxidized-double-walled-ca-2--after-d2-s01-heat",
+        "kim2008-1-2966341-cdse-decorated-oxidized-double-walled-ca-2--dwnts"
+      ]
+    },
+    {
+      "id": "kim2008-1-2966341-cdse-decorated-oxidized-double-walled-ca-2--after-s02-reflux",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "kim2008-1-2966341-cdse-decorated-oxidized-double-walled-ca-2--after-s01-ultrasonicate",
+        "kim2008-1-2966341-cdse-decorated-oxidized-double-walled-ca-2--dwnts"
       ]
     },
     {
       "id": "kim2008-1-2966341-cdse-decorated-oxidized-double-walled-ca-2--after-s03-dissolve",
-      "name": "mixture after step 3",
+      "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
         "kim2008-1-2966341-cdse-decorated-oxidized-double-walled-ca-2--after-s02-reflux",
@@ -166,10 +274,12 @@
     },
     {
       "id": "kim2008-1-2966341-cdse-decorated-oxidized-double-walled-ca-2--after-s04-add",
-      "name": "mixture after step 4",
+      "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
-        "kim2008-1-2966341-cdse-decorated-oxidized-double-walled-ca-2--after-s03-dissolve"
+        "kim2008-1-2966341-cdse-decorated-oxidized-double-walled-ca-2--after-s03-dissolve",
+        "kim2008-1-2966341-cdse-decorated-oxidized-double-walled-ca-2--sodium-hydrogen-selenide-nahse",
+        "kim2008-1-2966341-cdse-decorated-oxidized-double-walled-ca-2--cd-loaded-dwnts"
       ]
     },
     {
@@ -177,11 +287,69 @@
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "kim2008-1-2966341-cdse-decorated-oxidized-double-walled-ca-2--after-s04-add"
+        "kim2008-1-2966341-cdse-decorated-oxidized-double-walled-ca-2--after-s04-add",
+        "kim2008-1-2966341-cdse-decorated-oxidized-double-walled-ca-2--sodium-hydrogen-selenide-nahse",
+        "kim2008-1-2966341-cdse-decorated-oxidized-double-walled-ca-2--cd-loaded-dwnts"
       ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-heat",
+      "action": "heat",
+      "label": "DWNTs were acid-treated by refluxing in nitric acid.",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "kim2008-1-2966341-cdse-decorated-oxidized-double-walled-ca-2--nitric-acid-hno3",
+        "kim2008-1-2966341-cdse-decorated-oxidized-double-walled-ca-2--dwnts"
+      ],
+      "outputs": [
+        "kim2008-1-2966341-cdse-decorated-oxidized-double-walled-ca-2--after-d2-s01-heat"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 3,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "3 h",
+          "evidence": [
+            {
+              "source_id": "kim2008-1-2966341",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "DWNTs were acid-treated by refluxing in nitric acid.",
+      "evidence": [
+        {
+          "source_id": "kim2008-1-2966341",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
     {
       "id": "s01-ultrasonicate",
       "action": "ultrasonicate",
@@ -189,8 +357,13 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s01-heat"
+      ],
+      "inputs": [
+        "kim2008-1-2966341-cdse-decorated-oxidized-double-walled-ca-2--after-d2-s01-heat",
+        "kim2008-1-2966341-cdse-decorated-oxidized-double-walled-ca-2--dwnts"
+      ],
       "outputs": [
         "kim2008-1-2966341-cdse-decorated-oxidized-double-walled-ca-2--after-s01-ultrasonicate"
       ],
@@ -246,7 +419,8 @@
         "s01-ultrasonicate"
       ],
       "inputs": [
-        "kim2008-1-2966341-cdse-decorated-oxidized-double-walled-ca-2--after-s01-ultrasonicate"
+        "kim2008-1-2966341-cdse-decorated-oxidized-double-walled-ca-2--after-s01-ultrasonicate",
+        "kim2008-1-2966341-cdse-decorated-oxidized-double-walled-ca-2--dwnts"
       ],
       "outputs": [
         "kim2008-1-2966341-cdse-decorated-oxidized-double-walled-ca-2--after-s02-reflux"
@@ -323,7 +497,9 @@
         "s03-dissolve"
       ],
       "inputs": [
-        "kim2008-1-2966341-cdse-decorated-oxidized-double-walled-ca-2--after-s03-dissolve"
+        "kim2008-1-2966341-cdse-decorated-oxidized-double-walled-ca-2--after-s03-dissolve",
+        "kim2008-1-2966341-cdse-decorated-oxidized-double-walled-ca-2--sodium-hydrogen-selenide-nahse",
+        "kim2008-1-2966341-cdse-decorated-oxidized-double-walled-ca-2--cd-loaded-dwnts"
       ],
       "outputs": [
         "kim2008-1-2966341-cdse-decorated-oxidized-double-walled-ca-2--after-s04-add"
@@ -380,7 +556,9 @@
         "s04-add"
       ],
       "inputs": [
-        "kim2008-1-2966341-cdse-decorated-oxidized-double-walled-ca-2--after-s04-add"
+        "kim2008-1-2966341-cdse-decorated-oxidized-double-walled-ca-2--after-s04-add",
+        "kim2008-1-2966341-cdse-decorated-oxidized-double-walled-ca-2--sodium-hydrogen-selenide-nahse",
+        "kim2008-1-2966341-cdse-decorated-oxidized-double-walled-ca-2--cd-loaded-dwnts"
       ],
       "outputs": [
         "kim2008-1-2966341-cdse-decorated-oxidized-double-walled-ca-2--after-s05-reflux"
@@ -485,7 +663,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
@@ -493,7 +671,10 @@
       "Reactor not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
-      "Amount of selenium powder not reported in the extracted text."
+      "Amount of selenium powder not reported in the extracted text.",
+      "Amount of sodium hydrogen selenide (NaHSe) not reported in the extracted text.",
+      "Amount of DWNTs not reported in the extracted text.",
+      "Amount of Cd-loaded DWNTs not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

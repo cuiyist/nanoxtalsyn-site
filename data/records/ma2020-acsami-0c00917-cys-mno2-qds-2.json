@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "ma2020-acsami-0c00917-cys-mno2-qds-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Zhangyan Ma; Yan Sun; Jingwen Xie; Peipei Li; Qiujun Lu; Meiling Liu; Peng Yin; Haitao Li; Youyu Zhang; Shouzhuo Yao (2020): Cys-MnO2 QDs",
   "material": {
@@ -113,6 +113,25 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "ma2020-acsami-0c00917-cys-mno2-qds-2--ultrapure-water",
+      "name": "ultrapure water",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "ma2020-acsami-0c00917",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -122,7 +141,8 @@
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": [
-        "ma2020-acsami-0c00917-cys-mno2-qds-2--mno2-nanosheets"
+        "ma2020-acsami-0c00917-cys-mno2-qds-2--mno2-nanosheets",
+        "ma2020-acsami-0c00917-cys-mno2-qds-2--ultrapure-water"
       ]
     },
     {
@@ -131,7 +151,8 @@
       "kind": "reaction_batch",
       "parent_ids": [
         "ma2020-acsami-0c00917-cys-mno2-qds-2--after-s01-add",
-        "ma2020-acsami-0c00917-cys-mno2-qds-2--mno2-nanosheets"
+        "ma2020-acsami-0c00917-cys-mno2-qds-2--mno2-nanosheets",
+        "ma2020-acsami-0c00917-cys-mno2-qds-2--ultrapure-water"
       ]
     },
     {
@@ -140,7 +161,8 @@
       "kind": "product",
       "parent_ids": [
         "ma2020-acsami-0c00917-cys-mno2-qds-2--after-s02-sonicate",
-        "ma2020-acsami-0c00917-cys-mno2-qds-2--mno2-nanosheets"
+        "ma2020-acsami-0c00917-cys-mno2-qds-2--mno2-nanosheets",
+        "ma2020-acsami-0c00917-cys-mno2-qds-2--ultrapure-water"
       ]
     }
   ],
@@ -154,7 +176,8 @@
       "optional": false,
       "depends_on": [],
       "inputs": [
-        "ma2020-acsami-0c00917-cys-mno2-qds-2--mno2-nanosheets"
+        "ma2020-acsami-0c00917-cys-mno2-qds-2--mno2-nanosheets",
+        "ma2020-acsami-0c00917-cys-mno2-qds-2--ultrapure-water"
       ],
       "outputs": [
         "ma2020-acsami-0c00917-cys-mno2-qds-2--after-s01-add"
@@ -193,7 +216,8 @@
       ],
       "inputs": [
         "ma2020-acsami-0c00917-cys-mno2-qds-2--after-s01-add",
-        "ma2020-acsami-0c00917-cys-mno2-qds-2--mno2-nanosheets"
+        "ma2020-acsami-0c00917-cys-mno2-qds-2--mno2-nanosheets",
+        "ma2020-acsami-0c00917-cys-mno2-qds-2--ultrapure-water"
       ],
       "outputs": [
         "ma2020-acsami-0c00917-cys-mno2-qds-2--after-s02-sonicate"
@@ -251,7 +275,8 @@
       ],
       "inputs": [
         "ma2020-acsami-0c00917-cys-mno2-qds-2--after-s02-sonicate",
-        "ma2020-acsami-0c00917-cys-mno2-qds-2--mno2-nanosheets"
+        "ma2020-acsami-0c00917-cys-mno2-qds-2--mno2-nanosheets",
+        "ma2020-acsami-0c00917-cys-mno2-qds-2--ultrapure-water"
       ],
       "outputs": [
         "ma2020-acsami-0c00917-cys-mno2-qds-2--after-s03-centrifuge"
@@ -348,18 +373,52 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "ma2020-acsami-0c00917-cys-mno2-qds-2--photoluminescence-quantum-yield",
+      "sample_id": "ma2020-acsami-0c00917-cys-mno2-qds-2--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 4.7,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "4.7 %",
+        "evidence": [
+          {
+            "source_id": "ma2020-acsami-0c00917",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "ma2020-acsami-0c00917",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
-      "Reaction temperature not reported in the extracted text."
+      "Reaction temperature not reported in the extracted text.",
+      "Amount of ultrapure water not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

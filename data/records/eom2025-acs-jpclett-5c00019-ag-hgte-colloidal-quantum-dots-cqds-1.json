@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "eom2025-acs-jpclett-5c00019-ag-hgte-colloidal-quantum-dots-cqds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "So Young Eom; Haemin Song; Jin Hyeok Lee; Yoon Seo Jung; Gahyeon Kim; Dongsun Choi; Woong Kim; Kwang Seob Jeong (2025): Ag-HgTe colloidal quantum dots (CQDs)",
   "material": {
@@ -101,6 +101,101 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "eom2025-acs-jpclett-5c00019-ag-hgte-colloidal-quantum-dots-cqds-1--hgte-cqds",
+      "name": "HgTe CQDs",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "eom2025-acs-jpclett-5c00019",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "eom2025-acs-jpclett-5c00019-ag-hgte-colloidal-quantum-dots-cqds-1--1-2-ethanedithiol-edt",
+      "name": "1,2-ethanedithiol (EDT)",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "eom2025-acs-jpclett-5c00019",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "eom2025-acs-jpclett-5c00019-ag-hgte-colloidal-quantum-dots-cqds-1--chlorobenzene",
+      "name": "chlorobenzene",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "eom2025-acs-jpclett-5c00019",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "eom2025-acs-jpclett-5c00019-ag-hgte-colloidal-quantum-dots-cqds-1--oleylamine",
+      "name": "oleylamine",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "eom2025-acs-jpclett-5c00019",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "eom2025-acs-jpclett-5c00019-ag-hgte-colloidal-quantum-dots-cqds-1--toluene",
+      "name": "toluene",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "eom2025-acs-jpclett-5c00019",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -119,7 +214,8 @@
       "kind": "product",
       "parent_ids": [
         "eom2025-acs-jpclett-5c00019-ag-hgte-colloidal-quantum-dots-cqds-1--after-s01-dissolve",
-        "eom2025-acs-jpclett-5c00019-ag-hgte-colloidal-quantum-dots-cqds-1--agno3"
+        "eom2025-acs-jpclett-5c00019-ag-hgte-colloidal-quantum-dots-cqds-1--agno3",
+        "eom2025-acs-jpclett-5c00019-ag-hgte-colloidal-quantum-dots-cqds-1--hgte-cqds"
       ]
     }
   ],
@@ -172,7 +268,8 @@
       ],
       "inputs": [
         "eom2025-acs-jpclett-5c00019-ag-hgte-colloidal-quantum-dots-cqds-1--after-s01-dissolve",
-        "eom2025-acs-jpclett-5c00019-ag-hgte-colloidal-quantum-dots-cqds-1--agno3"
+        "eom2025-acs-jpclett-5c00019-ag-hgte-colloidal-quantum-dots-cqds-1--agno3",
+        "eom2025-acs-jpclett-5c00019-ag-hgte-colloidal-quantum-dots-cqds-1--hgte-cqds"
       ],
       "outputs": [
         "eom2025-acs-jpclett-5c00019-ag-hgte-colloidal-quantum-dots-cqds-1--after-s02-inject"
@@ -284,7 +381,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
@@ -293,7 +390,12 @@
       "Atmosphere not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
-      "Amount of AgNO3 not reported in the extracted text."
+      "Amount of AgNO3 not reported in the extracted text.",
+      "Amount of HgTe CQDs not reported in the extracted text.",
+      "Amount of 1,2-ethanedithiol (EDT) not reported in the extracted text.",
+      "Amount of chlorobenzene not reported in the extracted text.",
+      "Amount of oleylamine not reported in the extracted text.",
+      "Amount of toluene not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

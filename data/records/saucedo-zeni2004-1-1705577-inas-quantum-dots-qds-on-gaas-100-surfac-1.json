@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "saucedo-zeni2004-1-1705577-inas-quantum-dots-qds-on-gaas-100-surfac-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "N. Saucedo-Zeni (2004): InAs quantum dots (QDs) on GaAs(100) surface (Sample A)",
   "material": {
@@ -99,7 +99,7 @@
       "id": "saucedo-zeni2004-1-1705577-inas-quantum-dots-qds-on-gaas-100-surfac-1--inas",
       "name": "InAs",
       "formula": null,
-      "role": "reagent",
+      "role": "starting_particles",
       "stage": "synthesis",
       "identity": {
         "pubchem_cid": null,
@@ -132,20 +132,136 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "saucedo-zeni2004-1-1705577-inas-quantum-dots-qds-on-gaas-100-surfac-1--gaas",
+      "name": "GaAs",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "saucedo-zeni2004-1-1705577",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
+      "id": "saucedo-zeni2004-1-1705577-inas-quantum-dots-qds-on-gaas-100-surfac-1--after-d2-s01-clean",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": []
+    },
+    {
+      "id": "saucedo-zeni2004-1-1705577-inas-quantum-dots-qds-on-gaas-100-surfac-1--after-d2-s02-mount",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "saucedo-zeni2004-1-1705577-inas-quantum-dots-qds-on-gaas-100-surfac-1--after-d2-s01-clean"
+      ]
+    },
+    {
       "id": "saucedo-zeni2004-1-1705577-inas-quantum-dots-qds-on-gaas-100-surfac-1--after-s01-deposit",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
+        "saucedo-zeni2004-1-1705577-inas-quantum-dots-qds-on-gaas-100-surfac-1--after-d2-s02-mount",
         "saucedo-zeni2004-1-1705577-inas-quantum-dots-qds-on-gaas-100-surfac-1--inas"
       ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-clean",
+      "action": "clean",
+      "label": "Chemical polishing of GaAs substrates",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [],
+      "outputs": [
+        "saucedo-zeni2004-1-1705577-inas-quantum-dots-qds-on-gaas-100-surfac-1--after-d2-s01-clean"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "As4 flux",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "saucedo-zeni2004-1-1705577",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Chemical polishing of GaAs substrates",
+      "evidence": [
+        {
+          "source_id": "saucedo-zeni2004-1-1705577",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s02-mount",
+      "action": "mount",
+      "label": "Mounting substrates on molybdenum blocks",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s01-clean"
+      ],
+      "inputs": [
+        "saucedo-zeni2004-1-1705577-inas-quantum-dots-qds-on-gaas-100-surfac-1--after-d2-s01-clean"
+      ],
+      "outputs": [
+        "saucedo-zeni2004-1-1705577-inas-quantum-dots-qds-on-gaas-100-surfac-1--after-d2-s02-mount"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "As4 flux",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "saucedo-zeni2004-1-1705577",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Mounting substrates on molybdenum blocks",
+      "evidence": [
+        {
+          "source_id": "saucedo-zeni2004-1-1705577",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
     {
       "id": "s01-deposit",
       "action": "deposit",
@@ -153,8 +269,11 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
+      "depends_on": [
+        "d2-s02-mount"
+      ],
       "inputs": [
+        "saucedo-zeni2004-1-1705577-inas-quantum-dots-qds-on-gaas-100-surfac-1--after-d2-s02-mount",
         "saucedo-zeni2004-1-1705577-inas-quantum-dots-qds-on-gaas-100-surfac-1--inas"
       ],
       "outputs": [
@@ -260,7 +379,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
@@ -268,7 +387,9 @@
       "Size not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
-      "Amount of GaAs buffer layer not reported in the extracted text."
+      "Amount of GaAs buffer layer not reported in the extracted text.",
+      "Amount of GaAs buffer layer not reported in the extracted text.",
+      "Amount of GaAs not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],
