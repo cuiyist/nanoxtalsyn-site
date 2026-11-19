@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "yasseriu2006-s00339-005-3446-3-au-nanocrystals-on-sinws-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "a.a. yasseriu (2006): Au nanocrystals on SiNWs",
   "material": {
@@ -49,9 +49,14 @@
       "note": ""
     },
     "phase": {
-      "value": null,
-      "status": "not_reported",
-      "evidence": [],
+      "value": "crystalline",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "yasseriu2006-s00339-005-3446-3",
+          "locator": "Main PDF p.2"
+        }
+      ],
       "note": ""
     },
     "size": {
@@ -198,15 +203,65 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "yasseriu2006-s00339-005-3446-3-au-nanocrystals-on-sinws-2--h2so4",
+      "name": "H2SO4",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "yasseriu2006-s00339-005-3446-3",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "yasseriu2006-s00339-005-3446-3-au-nanocrystals-on-sinws-2--h2o2",
+      "name": "H2O2",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "yasseriu2006-s00339-005-3446-3",
+          "locator": "Main PDF p.1"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
       "id": "yasseriu2006-s00339-005-3446-3-au-nanocrystals-on-sinws-2--after-s01-clean",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "yasseriu2006-s00339-005-3446-3-au-nanocrystals-on-sinws-2--h2so4",
+        "yasseriu2006-s00339-005-3446-3-au-nanocrystals-on-sinws-2--h2o2"
+      ]
+    },
+    {
+      "id": "yasseriu2006-s00339-005-3446-3-au-nanocrystals-on-sinws-2--after-d2-s02-etch",
       "name": "product as isolated",
       "kind": "product",
-      "parent_ids": []
+      "parent_ids": [
+        "yasseriu2006-s00339-005-3446-3-au-nanocrystals-on-sinws-2--after-s01-clean",
+        "yasseriu2006-s00339-005-3446-3-au-nanocrystals-on-sinws-2--hf"
+      ]
     }
   ],
   "operations": [
@@ -218,7 +273,10 @@
       "branch": "",
       "optional": false,
       "depends_on": [],
-      "inputs": [],
+      "inputs": [
+        "yasseriu2006-s00339-005-3446-3-au-nanocrystals-on-sinws-2--h2so4",
+        "yasseriu2006-s00339-005-3446-3-au-nanocrystals-on-sinws-2--h2o2"
+      ],
       "outputs": [
         "yasseriu2006-s00339-005-3446-3-au-nanocrystals-on-sinws-2--after-s01-clean"
       ],
@@ -267,6 +325,50 @@
           "locator": "Main PDF p.1"
         }
       ]
+    },
+    {
+      "id": "d2-s02-etch",
+      "action": "etch",
+      "label": "Etch",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-clean"
+      ],
+      "inputs": [
+        "yasseriu2006-s00339-005-3446-3-au-nanocrystals-on-sinws-2--after-s01-clean",
+        "yasseriu2006-s00339-005-3446-3-au-nanocrystals-on-sinws-2--hf"
+      ],
+      "outputs": [
+        "yasseriu2006-s00339-005-3446-3-au-nanocrystals-on-sinws-2--after-d2-s02-etch"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "yasseriu2006-s00339-005-3446-3",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Etch",
+      "evidence": [
+        {
+          "source_id": "yasseriu2006-s00339-005-3446-3",
+          "locator": "Main PDF p.1"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -275,7 +377,7 @@
       "sample_id": "yasseriu2006-s00339-005-3446-3-au-nanocrystals-on-sinws-2--product",
       "source_sample_label": "Au nanocrystals on SiNWs",
       "batch_id": null,
-      "material_state_id": "yasseriu2006-s00339-005-3446-3-au-nanocrystals-on-sinws-2--after-s01-clean",
+      "material_state_id": "yasseriu2006-s00339-005-3446-3-au-nanocrystals-on-sinws-2--after-d2-s02-etch",
       "parent_sample_id": null,
       "composition": {
         "value": "Au",
@@ -289,9 +391,14 @@
         "note": ""
       },
       "phase": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "crystalline",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "yasseriu2006-s00339-005-3446-3",
+            "locator": "Main PDF p.2"
+          }
+        ],
         "note": ""
       },
       "morphology": {
@@ -360,12 +467,13 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
-      "Phase not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
-      "Reaction temperature not reported in the extracted text."
+      "Reaction temperature not reported in the extracted text.",
+      "Amount of H2SO4 not reported in the extracted text.",
+      "Amount of H2O2 not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

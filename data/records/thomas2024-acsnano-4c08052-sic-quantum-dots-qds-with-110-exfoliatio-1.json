@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "thomas2024-acsnano-4c08052-sic-quantum-dots-qds-with-110-exfoliatio-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Salim A. Thomas; Naif S. Alharthi; Reed J. Petersen; Ahmed Aldrees; Sakurako Tani; Kenneth J. Anderson; Joseph Granlie; Todd A. Pringle; Scott A. Payne; Yongki Choi; Dmitri S. Kilin; Erik K. Hobbie (2024): SiC quantum dots (QDs) with ⟨110⟩ exfoliation to few atomic layers and surface passivation with 1-dodecene",
   "material": {
@@ -79,9 +79,14 @@
       "derivation": null
     },
     "morphology": {
-      "value": null,
-      "status": "not_reported",
-      "evidence": [],
+      "value": "disk",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "thomas2024-acsnano-4c08052",
+          "locator": "Main PDF p.2"
+        }
+      ],
       "note": ""
     }
   },
@@ -204,13 +209,85 @@
   "stocks": [],
   "material_states": [
     {
+      "id": "thomas2024-acsnano-4c08052-sic-quantum-dots-qds-with-110-exfoliatio-1--after-d2-s01-clean",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": []
+    },
+    {
       "id": "thomas2024-acsnano-4c08052-sic-quantum-dots-qds-with-110-exfoliatio-1--after-s01-purge",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "thomas2024-acsnano-4c08052-sic-quantum-dots-qds-with-110-exfoliatio-1--after-d2-s01-clean"
+      ]
+    },
+    {
+      "id": "thomas2024-acsnano-4c08052-sic-quantum-dots-qds-with-110-exfoliatio-1--after-d2-s03-release",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "thomas2024-acsnano-4c08052-sic-quantum-dots-qds-with-110-exfoliatio-1--after-s01-purge"
+      ]
+    },
+    {
+      "id": "thomas2024-acsnano-4c08052-sic-quantum-dots-qds-with-110-exfoliatio-1--after-d2-s04-centrifuge",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "thomas2024-acsnano-4c08052-sic-quantum-dots-qds-with-110-exfoliatio-1--after-d2-s03-release"
+      ]
+    },
+    {
+      "id": "thomas2024-acsnano-4c08052-sic-quantum-dots-qds-with-110-exfoliatio-1--after-d2-s05-passivate",
       "name": "product as isolated",
       "kind": "product",
-      "parent_ids": []
+      "parent_ids": [
+        "thomas2024-acsnano-4c08052-sic-quantum-dots-qds-with-110-exfoliatio-1--after-d2-s04-centrifuge",
+        "thomas2024-acsnano-4c08052-sic-quantum-dots-qds-with-110-exfoliatio-1--1-dodecene"
+      ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-clean",
+      "action": "clean",
+      "label": "Reactor cleaned in base bath and dried",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [],
+      "outputs": [
+        "thomas2024-acsnano-4c08052-sic-quantum-dots-qds-with-110-exfoliatio-1--after-d2-s01-clean"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "Ar/H2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "thomas2024-acsnano-4c08052",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Reactor cleaned in base bath and dried",
+      "evidence": [
+        {
+          "source_id": "thomas2024-acsnano-4c08052",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
     {
       "id": "s01-purge",
       "action": "purge",
@@ -218,8 +295,12 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s01-clean"
+      ],
+      "inputs": [
+        "thomas2024-acsnano-4c08052-sic-quantum-dots-qds-with-110-exfoliatio-1--after-d2-s01-clean"
+      ],
       "outputs": [
         "thomas2024-acsnano-4c08052-sic-quantum-dots-qds-with-110-exfoliatio-1--after-s01-purge"
       ],
@@ -249,6 +330,168 @@
           "locator": "Main PDF p.7"
         }
       ]
+    },
+    {
+      "id": "d2-s03-release",
+      "action": "release",
+      "label": "Heat applied to release flakes from reactor",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-purge"
+      ],
+      "inputs": [
+        "thomas2024-acsnano-4c08052-sic-quantum-dots-qds-with-110-exfoliatio-1--after-s01-purge"
+      ],
+      "outputs": [
+        "thomas2024-acsnano-4c08052-sic-quantum-dots-qds-with-110-exfoliatio-1--after-d2-s03-release"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "Ar/H2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "thomas2024-acsnano-4c08052",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heat applied to release flakes from reactor",
+      "evidence": [
+        {
+          "source_id": "thomas2024-acsnano-4c08052",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    },
+    {
+      "id": "d2-s04-centrifuge",
+      "action": "centrifuge",
+      "label": "Centrifuge to extract supernatant",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-release"
+      ],
+      "inputs": [
+        "thomas2024-acsnano-4c08052-sic-quantum-dots-qds-with-110-exfoliatio-1--after-d2-s03-release"
+      ],
+      "outputs": [
+        "thomas2024-acsnano-4c08052-sic-quantum-dots-qds-with-110-exfoliatio-1--after-d2-s04-centrifuge"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Centrifuge to extract supernatant",
+      "evidence": [
+        {
+          "source_id": "thomas2024-acsnano-4c08052",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    },
+    {
+      "id": "d2-s05-passivate",
+      "action": "passivate",
+      "label": "Thermal hydrosilylation with 1-dodecene",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-centrifuge"
+      ],
+      "inputs": [
+        "thomas2024-acsnano-4c08052-sic-quantum-dots-qds-with-110-exfoliatio-1--after-d2-s04-centrifuge",
+        "thomas2024-acsnano-4c08052-sic-quantum-dots-qds-with-110-exfoliatio-1--1-dodecene"
+      ],
+      "outputs": [
+        "thomas2024-acsnano-4c08052-sic-quantum-dots-qds-with-110-exfoliatio-1--after-d2-s05-passivate"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 185,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "185 °C",
+          "evidence": [
+            {
+              "source_id": "thomas2024-acsnano-4c08052",
+              "locator": "Main PDF p.8"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 4,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "4 h",
+          "evidence": [
+            {
+              "source_id": "thomas2024-acsnano-4c08052",
+              "locator": "Main PDF p.8"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar/H2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "thomas2024-acsnano-4c08052",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Thermal hydrosilylation with 1-dodecene",
+      "evidence": [
+        {
+          "source_id": "thomas2024-acsnano-4c08052",
+          "locator": "Main PDF p.8"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -257,7 +500,7 @@
       "sample_id": "thomas2024-acsnano-4c08052-sic-quantum-dots-qds-with-110-exfoliatio-1--product",
       "source_sample_label": "SiC quantum dots (QDs) with ⟨110⟩ exfoliation to few atomic layers and surface passivation with 1-dodecene",
       "batch_id": null,
-      "material_state_id": "thomas2024-acsnano-4c08052-sic-quantum-dots-qds-with-110-exfoliatio-1--after-s01-purge",
+      "material_state_id": "thomas2024-acsnano-4c08052-sic-quantum-dots-qds-with-110-exfoliatio-1--after-d2-s05-passivate",
       "parent_sample_id": null,
       "composition": {
         "value": "SiC",
@@ -282,9 +525,14 @@
         "note": ""
       },
       "morphology": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "disk",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "thomas2024-acsnano-4c08052",
+            "locator": "Main PDF p.2"
+          }
+        ],
         "note": ""
       },
       "surface": {
@@ -343,14 +591,45 @@
           "locator": "Main PDF p.1"
         }
       ]
+    },
+    {
+      "id": "thomas2024-acsnano-4c08052-sic-quantum-dots-qds-with-110-exfoliatio-1--photoluminescence-quantum-yield",
+      "sample_id": "thomas2024-acsnano-4c08052-sic-quantum-dots-qds-with-110-exfoliatio-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 60,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "60 %",
+        "evidence": [
+          {
+            "source_id": "thomas2024-acsnano-4c08052",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "thomas2024-acsnano-4c08052",
+          "locator": "Main PDF p.1"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
-      "Shape not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text."
     ],
     "conflicts": [],

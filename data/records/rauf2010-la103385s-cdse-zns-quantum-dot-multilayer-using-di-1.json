@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "rauf2010-la103385s-cdse-zns-quantum-dot-multilayer-using-di-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Sakandar Rauf (2010): CdSe/ZnS quantum dot multilayer using dithiol linker",
   "material": {
@@ -88,7 +88,7 @@
       "id": "rauf2010-la103385s-cdse-zns-quantum-dot-multilayer-using-di-1--cdse-zns-quantum-dots",
       "name": "CdSe/ZnS quantum dots",
       "formula": null,
-      "role": "reagent",
+      "role": "starting_particles",
       "stage": "synthesis",
       "identity": {
         "pubchem_cid": null,
@@ -178,6 +178,63 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "rauf2010-la103385s-cdse-zns-quantum-dot-multilayer-using-di-1--ethanol",
+      "name": "ethanol",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "rauf2010-la103385s",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "rauf2010-la103385s-cdse-zns-quantum-dot-multilayer-using-di-1--isopropyl-alcohol-ipa",
+      "name": "isopropyl alcohol (IPA)",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "rauf2010-la103385s",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "rauf2010-la103385s-cdse-zns-quantum-dot-multilayer-using-di-1--water",
+      "name": "water",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "rauf2010-la103385s",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -196,7 +253,17 @@
       "kind": "reaction_batch",
       "parent_ids": [
         "rauf2010-la103385s-cdse-zns-quantum-dot-multilayer-using-di-1--after-s01-modify",
-        "rauf2010-la103385s-cdse-zns-quantum-dot-multilayer-using-di-1--1-9-nonanedithiol"
+        "rauf2010-la103385s-cdse-zns-quantum-dot-multilayer-using-di-1--1-9-nonanedithiol",
+        "rauf2010-la103385s-cdse-zns-quantum-dot-multilayer-using-di-1--ethanol"
+      ]
+    },
+    {
+      "id": "rauf2010-la103385s-cdse-zns-quantum-dot-multilayer-using-di-1--after-d2-s03-rinse",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "rauf2010-la103385s-cdse-zns-quantum-dot-multilayer-using-di-1--after-s02-incubate",
+        "rauf2010-la103385s-cdse-zns-quantum-dot-multilayer-using-di-1--ethanol"
       ]
     },
     {
@@ -204,7 +271,7 @@
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "rauf2010-la103385s-cdse-zns-quantum-dot-multilayer-using-di-1--after-s02-incubate",
+        "rauf2010-la103385s-cdse-zns-quantum-dot-multilayer-using-di-1--after-d2-s03-rinse",
         "rauf2010-la103385s-cdse-zns-quantum-dot-multilayer-using-di-1--cdse-zns-quantum-dots"
       ]
     }
@@ -277,7 +344,8 @@
       ],
       "inputs": [
         "rauf2010-la103385s-cdse-zns-quantum-dot-multilayer-using-di-1--after-s01-modify",
-        "rauf2010-la103385s-cdse-zns-quantum-dot-multilayer-using-di-1--1-9-nonanedithiol"
+        "rauf2010-la103385s-cdse-zns-quantum-dot-multilayer-using-di-1--1-9-nonanedithiol",
+        "rauf2010-la103385s-cdse-zns-quantum-dot-multilayer-using-di-1--ethanol"
       ],
       "outputs": [
         "rauf2010-la103385s-cdse-zns-quantum-dot-multilayer-using-di-1--after-s02-incubate"
@@ -324,9 +392,9 @@
       ]
     },
     {
-      "id": "s03-incubate",
-      "action": "incubate",
-      "label": "Second quantum dot layer incubation",
+      "id": "d2-s03-rinse",
+      "action": "rinse",
+      "label": "Rinsing with ethanol",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -335,6 +403,45 @@
       ],
       "inputs": [
         "rauf2010-la103385s-cdse-zns-quantum-dot-multilayer-using-di-1--after-s02-incubate",
+        "rauf2010-la103385s-cdse-zns-quantum-dot-multilayer-using-di-1--ethanol"
+      ],
+      "outputs": [
+        "rauf2010-la103385s-cdse-zns-quantum-dot-multilayer-using-di-1--after-d2-s03-rinse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Rinsing with ethanol",
+      "evidence": [
+        {
+          "source_id": "rauf2010-la103385s",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s03-incubate",
+      "action": "incubate",
+      "label": "Second quantum dot layer incubation",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-rinse"
+      ],
+      "inputs": [
+        "rauf2010-la103385s-cdse-zns-quantum-dot-multilayer-using-di-1--after-d2-s03-rinse",
         "rauf2010-la103385s-cdse-zns-quantum-dot-multilayer-using-di-1--cdse-zns-quantum-dots"
       ],
       "outputs": [
@@ -468,19 +575,54 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "rauf2010-la103385s-cdse-zns-quantum-dot-multilayer-using-di-1--photoluminescence-peak",
+      "sample_id": "rauf2010-la103385s-cdse-zns-quantum-dot-multilayer-using-di-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 626,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "626 nm",
+        "evidence": [
+          {
+            "source_id": "rauf2010-la103385s",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "rauf2010-la103385s",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
-      "Amount of CdSe/ZnS quantum dots not reported in the extracted text."
+      "Amount of CdSe/ZnS quantum dots not reported in the extracted text.",
+      "Amount of ethanol not reported in the extracted text.",
+      "Amount of isopropyl alcohol (IPA) not reported in the extracted text.",
+      "Amount of water not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

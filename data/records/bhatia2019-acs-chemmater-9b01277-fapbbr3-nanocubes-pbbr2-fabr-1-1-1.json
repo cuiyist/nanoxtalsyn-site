@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "bhatia2019-acs-chemmater-9b01277-fapbbr3-nanocubes-pbbr2-fabr-1-1-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Harshita Bhatia; Julian A. Steele; Cristina Martin; Masoumeh Keshavarz; Guillermo Solis-Fernandez; Haifeng Yuan; Guillaume Fleury; Haowei Huang; Iurii Dovgaliuk; Dmitry Chernyshov; Jelle Hendrix; Maarten B. J. Roeffaers; Johan Hofkens; Elke Debroye (2019): FAPbBr3 nanocubes (PbBr2:FABr = 1:1)",
   "material": {
@@ -169,6 +169,44 @@
           "locator": "Main PDF p.6"
         }
       ]
+    },
+    {
+      "id": "bhatia2019-acs-chemmater-9b01277-fapbbr3-nanocubes-pbbr2-fabr-1-1-1--oleylamine-oam",
+      "name": "oleylamine (OAm)",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "bhatia2019-acs-chemmater-9b01277",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "bhatia2019-acs-chemmater-9b01277-fapbbr3-nanocubes-pbbr2-fabr-1-1-1--oleic-acid-oac",
+      "name": "oleic acid (OAc)",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "bhatia2019-acs-chemmater-9b01277",
+          "locator": "Main PDF p.6"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -179,7 +217,9 @@
       "kind": "reaction_batch",
       "parent_ids": [
         "bhatia2019-acs-chemmater-9b01277-fapbbr3-nanocubes-pbbr2-fabr-1-1-1--pbbr2",
-        "bhatia2019-acs-chemmater-9b01277-fapbbr3-nanocubes-pbbr2-fabr-1-1-1--toluene"
+        "bhatia2019-acs-chemmater-9b01277-fapbbr3-nanocubes-pbbr2-fabr-1-1-1--toluene",
+        "bhatia2019-acs-chemmater-9b01277-fapbbr3-nanocubes-pbbr2-fabr-1-1-1--oleylamine-oam",
+        "bhatia2019-acs-chemmater-9b01277-fapbbr3-nanocubes-pbbr2-fabr-1-1-1--oleic-acid-oac"
       ]
     },
     {
@@ -211,7 +251,9 @@
       "depends_on": [],
       "inputs": [
         "bhatia2019-acs-chemmater-9b01277-fapbbr3-nanocubes-pbbr2-fabr-1-1-1--pbbr2",
-        "bhatia2019-acs-chemmater-9b01277-fapbbr3-nanocubes-pbbr2-fabr-1-1-1--toluene"
+        "bhatia2019-acs-chemmater-9b01277-fapbbr3-nanocubes-pbbr2-fabr-1-1-1--toluene",
+        "bhatia2019-acs-chemmater-9b01277-fapbbr3-nanocubes-pbbr2-fabr-1-1-1--oleylamine-oam",
+        "bhatia2019-acs-chemmater-9b01277-fapbbr3-nanocubes-pbbr2-fabr-1-1-1--oleic-acid-oac"
       ],
       "outputs": [
         "bhatia2019-acs-chemmater-9b01277-fapbbr3-nanocubes-pbbr2-fabr-1-1-1--after-s01-inject"
@@ -434,18 +476,52 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "bhatia2019-acs-chemmater-9b01277-fapbbr3-nanocubes-pbbr2-fabr-1-1-1--photoluminescence-quantum-yield",
+      "sample_id": "bhatia2019-acs-chemmater-9b01277-fapbbr3-nanocubes-pbbr2-fabr-1-1-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 30,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "30 %",
+        "evidence": [
+          {
+            "source_id": "bhatia2019-acs-chemmater-9b01277",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "bhatia2019-acs-chemmater-9b01277",
+          "locator": "Main PDF p.4"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Reactor not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
       "Amount of N-dimethylformamide (DMF) not reported in the extracted text.",
-      "Amount of toluene not reported in the extracted text."
+      "Amount of toluene not reported in the extracted text.",
+      "Amount of oleylamine (OAm) not reported in the extracted text.",
+      "Amount of oleic acid (OAc) not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

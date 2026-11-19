@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "he2012-jp304728u-zn-doped-pbs-qds-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Xingliang He; Iraida N. Demchenko; W. C. Stolte; Anthony van Buuren; Hong Liang (2012): Zn-doped PbS QDs",
   "material": {
@@ -198,6 +198,25 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "he2012-jp304728u-zn-doped-pbs-qds-2--sodium-hydroxide",
+      "name": "sodium hydroxide",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "he2012-jp304728u",
+          "locator": "Main PDF p.5"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -206,7 +225,9 @@
       "id": "he2012-jp304728u-zn-doped-pbs-qds-2--after-s01-titrate",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "he2012-jp304728u-zn-doped-pbs-qds-2--sodium-hydroxide"
+      ]
     },
     {
       "id": "he2012-jp304728u-zn-doped-pbs-qds-2--after-s02-add",
@@ -235,7 +256,9 @@
       "branch": "",
       "optional": false,
       "depends_on": [],
-      "inputs": [],
+      "inputs": [
+        "he2012-jp304728u-zn-doped-pbs-qds-2--sodium-hydroxide"
+      ],
       "outputs": [
         "he2012-jp304728u-zn-doped-pbs-qds-2--after-s01-titrate"
       ],
@@ -427,13 +450,14 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Size not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
       "Amount of thioacetamide not reported in the extracted text.",
-      "Amount of zinc chloride not reported in the extracted text."
+      "Amount of zinc chloride not reported in the extracted text.",
+      "Amount of sodium hydroxide not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "brown2018-acs-langmuir-8b02402-inpzn-zns-msc-core-shell-qds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Richard P. Brown; Miranda J. Gallagher; D. Howard Fairbrother; Zeev Rosenzweig (2018): InPZn/ZnS MSC core/shell QDs",
   "material": {
@@ -192,6 +192,63 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "brown2018-acs-langmuir-8b02402-inpzn-zns-msc-core-shell-qds-1--zinc-stearate",
+      "name": "zinc stearate",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "brown2018-acs-langmuir-8b02402",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "brown2018-acs-langmuir-8b02402-inpzn-zns-msc-core-shell-qds-1--squalane",
+      "name": "squalane",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 7.5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "7.5 mL",
+          "evidence": [
+            {
+              "source_id": "brown2018-acs-langmuir-8b02402",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "brown2018-acs-langmuir-8b02402",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -217,10 +274,18 @@
     },
     {
       "id": "brown2018-acs-langmuir-8b02402-inpzn-zns-msc-core-shell-qds-1--after-s03-cool",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "brown2018-acs-langmuir-8b02402-inpzn-zns-msc-core-shell-qds-1--after-s02-heat"
+      ]
+    },
+    {
+      "id": "brown2018-acs-langmuir-8b02402-inpzn-zns-msc-core-shell-qds-1--after-d2-s04-purify",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "brown2018-acs-langmuir-8b02402-inpzn-zns-msc-core-shell-qds-1--after-s02-heat"
+        "brown2018-acs-langmuir-8b02402-inpzn-zns-msc-core-shell-qds-1--after-s03-cool"
       ]
     }
   ],
@@ -358,6 +423,44 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "d2-s04-purify",
+      "action": "purify",
+      "label": "Precipitation and centrifugation",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-cool"
+      ],
+      "inputs": [
+        "brown2018-acs-langmuir-8b02402-inpzn-zns-msc-core-shell-qds-1--after-s03-cool"
+      ],
+      "outputs": [
+        "brown2018-acs-langmuir-8b02402-inpzn-zns-msc-core-shell-qds-1--after-d2-s04-purify"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Precipitation and centrifugation",
+      "evidence": [
+        {
+          "source_id": "brown2018-acs-langmuir-8b02402",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -366,7 +469,7 @@
       "sample_id": "brown2018-acs-langmuir-8b02402-inpzn-zns-msc-core-shell-qds-1--product",
       "source_sample_label": "InPZn/ZnS MSC core/shell QDs",
       "batch_id": null,
-      "material_state_id": "brown2018-acs-langmuir-8b02402-inpzn-zns-msc-core-shell-qds-1--after-s03-cool",
+      "material_state_id": "brown2018-acs-langmuir-8b02402-inpzn-zns-msc-core-shell-qds-1--after-d2-s04-purify",
       "parent_sample_id": null,
       "composition": {
         "value": "InPZn/ZnS",
@@ -409,11 +512,44 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "brown2018-acs-langmuir-8b02402-inpzn-zns-msc-core-shell-qds-1--photoluminescence-quantum-yield",
+      "sample_id": "brown2018-acs-langmuir-8b02402-inpzn-zns-msc-core-shell-qds-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 50,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "50 %",
+        "evidence": [
+          {
+            "source_id": "brown2018-acs-langmuir-8b02402",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "brown2018-acs-langmuir-8b02402",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
@@ -421,7 +557,8 @@
       "Size not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
-      "Reaction time not reported in the extracted text."
+      "Reaction time not reported in the extracted text.",
+      "Amount of zinc stearate not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

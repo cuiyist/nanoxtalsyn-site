@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "chen2015-jp510908f-cis-zns-qds-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Chieh-Wei Chen; Dai-Ying Wu; Yung-Chieh Chan; Chun Che Lin; Po-Hsiang Chung; Michael Hsiao; Ru-Shi Liu (2015): CIS/ZnS QDs",
   "material": {
@@ -221,6 +221,44 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "chen2015-jp510908f-cis-zns-qds-2--cui",
+      "name": "CuI",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "chen2015-jp510908f",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "chen2015-jp510908f-cis-zns-qds-2--in-oac-3",
+      "name": "In(OAc)3",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "chen2015-jp510908f",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -238,10 +276,18 @@
     },
     {
       "id": "chen2015-jp510908f-cis-zns-qds-2--after-s02-cool",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "chen2015-jp510908f-cis-zns-qds-2--after-s01-heat"
+      ]
+    },
+    {
+      "id": "chen2015-jp510908f-cis-zns-qds-2--after-d2-s03-wash",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "chen2015-jp510908f-cis-zns-qds-2--after-s01-heat"
+        "chen2015-jp510908f-cis-zns-qds-2--after-s02-cool"
       ]
     }
   ],
@@ -359,6 +405,44 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s03-wash",
+      "action": "wash",
+      "label": "Remove unreacted reagents by centrifugation",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-cool"
+      ],
+      "inputs": [
+        "chen2015-jp510908f-cis-zns-qds-2--after-s02-cool"
+      ],
+      "outputs": [
+        "chen2015-jp510908f-cis-zns-qds-2--after-d2-s03-wash"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Remove unreacted reagents by centrifugation",
+      "evidence": [
+        {
+          "source_id": "chen2015-jp510908f",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -367,7 +451,7 @@
       "sample_id": "chen2015-jp510908f-cis-zns-qds-2--product",
       "source_sample_label": "CIS/ZnS QDs",
       "batch_id": null,
-      "material_state_id": "chen2015-jp510908f-cis-zns-qds-2--after-s02-cool",
+      "material_state_id": "chen2015-jp510908f-cis-zns-qds-2--after-d2-s03-wash",
       "parent_sample_id": null,
       "composition": {
         "value": "CuInS2/ZnS",
@@ -454,16 +538,82 @@
           "locator": "Main PDF p.4"
         }
       ]
+    },
+    {
+      "id": "chen2015-jp510908f-cis-zns-qds-2--photoluminescence-peak",
+      "sample_id": "chen2015-jp510908f-cis-zns-qds-2--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 620,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "620 nm",
+        "evidence": [
+          {
+            "source_id": "chen2015-jp510908f",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "chen2015-jp510908f",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    },
+    {
+      "id": "chen2015-jp510908f-cis-zns-qds-2--photoluminescence-quantum-yield",
+      "sample_id": "chen2015-jp510908f-cis-zns-qds-2--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 48,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "48 %",
+        "evidence": [
+          {
+            "source_id": "chen2015-jp510908f",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "chen2015-jp510908f",
+          "locator": "Main PDF p.4"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
-      "Amount of 1-dodecanethiol not reported in the extracted text."
+      "Amount of 1-dodecanethiol not reported in the extracted text.",
+      "Amount of CuI not reported in the extracted text.",
+      "Amount of In(OAc)3 not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "heinemann2009-adfm-200900852-cdse-nanocrystals-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Marc Daniel Heinemann (2009): CdSe nanocrystals",
   "material": {
@@ -175,6 +175,44 @@
           "locator": "Main PDF p.7"
         }
       ]
+    },
+    {
+      "id": "heinemann2009-adfm-200900852-cdse-nanocrystals-1--oleic-acid",
+      "name": "oleic acid",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "heinemann2009-adfm-200900852",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "heinemann2009-adfm-200900852-cdse-nanocrystals-1--se",
+      "name": "Se",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "heinemann2009-adfm-200900852",
+          "locator": "Main PDF p.7"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -184,7 +222,8 @@
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": [
-        "heinemann2009-adfm-200900852-cdse-nanocrystals-1--trioctylphosphine"
+        "heinemann2009-adfm-200900852-cdse-nanocrystals-1--trioctylphosphine",
+        "heinemann2009-adfm-200900852-cdse-nanocrystals-1--se"
       ]
     },
     {
@@ -197,10 +236,34 @@
     },
     {
       "id": "heinemann2009-adfm-200900852-cdse-nanocrystals-1--after-s03-treat",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "heinemann2009-adfm-200900852-cdse-nanocrystals-1--after-s02-purify"
+      ]
+    },
+    {
+      "id": "heinemann2009-adfm-200900852-cdse-nanocrystals-1--after-d2-s04-stir",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "heinemann2009-adfm-200900852-cdse-nanocrystals-1--after-s03-treat"
+      ]
+    },
+    {
+      "id": "heinemann2009-adfm-200900852-cdse-nanocrystals-1--after-d2-s05-precipitate",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "heinemann2009-adfm-200900852-cdse-nanocrystals-1--after-d2-s04-stir"
+      ]
+    },
+    {
+      "id": "heinemann2009-adfm-200900852-cdse-nanocrystals-1--after-d2-s06-redissolve",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "heinemann2009-adfm-200900852-cdse-nanocrystals-1--after-s02-purify"
+        "heinemann2009-adfm-200900852-cdse-nanocrystals-1--after-d2-s05-precipitate"
       ]
     }
   ],
@@ -214,7 +277,8 @@
       "optional": false,
       "depends_on": [],
       "inputs": [
-        "heinemann2009-adfm-200900852-cdse-nanocrystals-1--trioctylphosphine"
+        "heinemann2009-adfm-200900852-cdse-nanocrystals-1--trioctylphosphine",
+        "heinemann2009-adfm-200900852-cdse-nanocrystals-1--se"
       ],
       "outputs": [
         "heinemann2009-adfm-200900852-cdse-nanocrystals-1--after-s01-inject"
@@ -326,6 +390,130 @@
           "locator": "Main PDF p.7"
         }
       ]
+    },
+    {
+      "id": "d2-s04-stir",
+      "action": "stir",
+      "label": "Stirring at room temperature",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-treat"
+      ],
+      "inputs": [
+        "heinemann2009-adfm-200900852-cdse-nanocrystals-1--after-s03-treat"
+      ],
+      "outputs": [
+        "heinemann2009-adfm-200900852-cdse-nanocrystals-1--after-d2-s04-stir"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "heinemann2009-adfm-200900852",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Stirring at room temperature",
+      "evidence": [
+        {
+          "source_id": "heinemann2009-adfm-200900852",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "d2-s05-precipitate",
+      "action": "precipitate",
+      "label": "Precipitation with hexane",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-stir"
+      ],
+      "inputs": [
+        "heinemann2009-adfm-200900852-cdse-nanocrystals-1--after-d2-s04-stir"
+      ],
+      "outputs": [
+        "heinemann2009-adfm-200900852-cdse-nanocrystals-1--after-d2-s05-precipitate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Precipitation with hexane",
+      "evidence": [
+        {
+          "source_id": "heinemann2009-adfm-200900852",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "d2-s06-redissolve",
+      "action": "redissolve",
+      "label": "Redissolving in pyridine",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s05-precipitate"
+      ],
+      "inputs": [
+        "heinemann2009-adfm-200900852-cdse-nanocrystals-1--after-d2-s05-precipitate"
+      ],
+      "outputs": [
+        "heinemann2009-adfm-200900852-cdse-nanocrystals-1--after-d2-s06-redissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "heinemann2009-adfm-200900852",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Redissolving in pyridine",
+      "evidence": [
+        {
+          "source_id": "heinemann2009-adfm-200900852",
+          "locator": "Main PDF p.7"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -334,7 +522,7 @@
       "sample_id": "heinemann2009-adfm-200900852-cdse-nanocrystals-1--product",
       "source_sample_label": "CdSe nanocrystals",
       "batch_id": null,
-      "material_state_id": "heinemann2009-adfm-200900852-cdse-nanocrystals-1--after-s03-treat",
+      "material_state_id": "heinemann2009-adfm-200900852-cdse-nanocrystals-1--after-d2-s06-redissolve",
       "parent_sample_id": null,
       "composition": {
         "value": "CdSe",
@@ -382,21 +570,24 @@
           "locator": "Main PDF p.7"
         }
       ],
-      "notes": []
+      "notes": [
+        "Reaction temperature: 300 degC (Main PDF p.7)."
+      ]
     }
   ],
   "measurements": [],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
-      "Reaction temperature not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
-      "Amount of CdO not reported in the extracted text."
+      "Amount of CdO not reported in the extracted text.",
+      "Amount of oleic acid not reported in the extracted text.",
+      "Amount of Se not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

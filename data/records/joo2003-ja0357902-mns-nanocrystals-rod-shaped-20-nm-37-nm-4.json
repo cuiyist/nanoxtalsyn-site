@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "joo2003-ja0357902-mns-nanocrystals-rod-shaped-20-nm-37-nm-4",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Jin Joo (2003): MnS nanocrystals (rod-shaped, 20 nm × 37 nm)",
   "material": {
@@ -185,6 +185,25 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "joo2003-ja0357902-mns-nanocrystals-rod-shaped-20-nm-37-nm-4--ethanol",
+      "name": "ethanol",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "joo2003-ja0357902",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -209,11 +228,22 @@
       ]
     },
     {
-      "id": "joo2003-ja0357902-mns-nanocrystals-rod-shaped-20-nm-37-nm-4--after-s03-heat",
+      "id": "joo2003-ja0357902-mns-nanocrystals-rod-shaped-20-nm-37-nm-4--after-d2-s03-inject",
       "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
         "joo2003-ja0357902-mns-nanocrystals-rod-shaped-20-nm-37-nm-4--after-s02-dissolve",
+        "joo2003-ja0357902-mns-nanocrystals-rod-shaped-20-nm-37-nm-4--elemental-sulfur",
+        "joo2003-ja0357902-mns-nanocrystals-rod-shaped-20-nm-37-nm-4--oleylamine",
+        "joo2003-ja0357902-mns-nanocrystals-rod-shaped-20-nm-37-nm-4--mncl2"
+      ]
+    },
+    {
+      "id": "joo2003-ja0357902-mns-nanocrystals-rod-shaped-20-nm-37-nm-4--after-s03-heat",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "joo2003-ja0357902-mns-nanocrystals-rod-shaped-20-nm-37-nm-4--after-d2-s03-inject",
         "joo2003-ja0357902-mns-nanocrystals-rod-shaped-20-nm-37-nm-4--mncl2",
         "joo2003-ja0357902-mns-nanocrystals-rod-shaped-20-nm-37-nm-4--elemental-sulfur",
         "joo2003-ja0357902-mns-nanocrystals-rod-shaped-20-nm-37-nm-4--oleylamine"
@@ -221,10 +251,19 @@
     },
     {
       "id": "joo2003-ja0357902-mns-nanocrystals-rod-shaped-20-nm-37-nm-4--after-s04-precipitate",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "joo2003-ja0357902-mns-nanocrystals-rod-shaped-20-nm-37-nm-4--after-s03-heat",
+        "joo2003-ja0357902-mns-nanocrystals-rod-shaped-20-nm-37-nm-4--ethanol"
+      ]
+    },
+    {
+      "id": "joo2003-ja0357902-mns-nanocrystals-rod-shaped-20-nm-37-nm-4--after-d2-s06-centrifuge",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "joo2003-ja0357902-mns-nanocrystals-rod-shaped-20-nm-37-nm-4--after-s03-heat"
+        "joo2003-ja0357902-mns-nanocrystals-rod-shaped-20-nm-37-nm-4--after-s04-precipitate"
       ]
     }
   ],
@@ -326,9 +365,9 @@
       ]
     },
     {
-      "id": "s03-heat",
-      "action": "heat",
-      "label": "Heat the mixture to synthesize MnS nanocrystals",
+      "id": "d2-s03-inject",
+      "action": "inject",
+      "label": "Sulfur solution into Mn-oleylamine complex",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -337,6 +376,47 @@
       ],
       "inputs": [
         "joo2003-ja0357902-mns-nanocrystals-rod-shaped-20-nm-37-nm-4--after-s02-dissolve",
+        "joo2003-ja0357902-mns-nanocrystals-rod-shaped-20-nm-37-nm-4--elemental-sulfur",
+        "joo2003-ja0357902-mns-nanocrystals-rod-shaped-20-nm-37-nm-4--oleylamine",
+        "joo2003-ja0357902-mns-nanocrystals-rod-shaped-20-nm-37-nm-4--mncl2"
+      ],
+      "outputs": [
+        "joo2003-ja0357902-mns-nanocrystals-rod-shaped-20-nm-37-nm-4--after-d2-s03-inject"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Sulfur solution into Mn-oleylamine complex",
+      "evidence": [
+        {
+          "source_id": "joo2003-ja0357902",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s03-heat",
+      "action": "heat",
+      "label": "Heat the mixture to synthesize MnS nanocrystals",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-inject"
+      ],
+      "inputs": [
+        "joo2003-ja0357902-mns-nanocrystals-rod-shaped-20-nm-37-nm-4--after-d2-s03-inject",
         "joo2003-ja0357902-mns-nanocrystals-rod-shaped-20-nm-37-nm-4--mncl2",
         "joo2003-ja0357902-mns-nanocrystals-rod-shaped-20-nm-37-nm-4--elemental-sulfur",
         "joo2003-ja0357902-mns-nanocrystals-rod-shaped-20-nm-37-nm-4--oleylamine"
@@ -414,7 +494,8 @@
         "s03-heat"
       ],
       "inputs": [
-        "joo2003-ja0357902-mns-nanocrystals-rod-shaped-20-nm-37-nm-4--after-s03-heat"
+        "joo2003-ja0357902-mns-nanocrystals-rod-shaped-20-nm-37-nm-4--after-s03-heat",
+        "joo2003-ja0357902-mns-nanocrystals-rod-shaped-20-nm-37-nm-4--ethanol"
       ],
       "outputs": [
         "joo2003-ja0357902-mns-nanocrystals-rod-shaped-20-nm-37-nm-4--after-s04-precipitate"
@@ -440,6 +521,44 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "d2-s06-centrifuge",
+      "action": "centrifuge",
+      "label": "Centrifuge to retrieve nanocrystals",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-precipitate"
+      ],
+      "inputs": [
+        "joo2003-ja0357902-mns-nanocrystals-rod-shaped-20-nm-37-nm-4--after-s04-precipitate"
+      ],
+      "outputs": [
+        "joo2003-ja0357902-mns-nanocrystals-rod-shaped-20-nm-37-nm-4--after-d2-s06-centrifuge"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Centrifuge to retrieve nanocrystals",
+      "evidence": [
+        {
+          "source_id": "joo2003-ja0357902",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -448,7 +567,7 @@
       "sample_id": "joo2003-ja0357902-mns-nanocrystals-rod-shaped-20-nm-37-nm-4--product",
       "source_sample_label": "MnS nanocrystals (rod-shaped, 20 nm × 37 nm)",
       "batch_id": null,
-      "material_state_id": "joo2003-ja0357902-mns-nanocrystals-rod-shaped-20-nm-37-nm-4--after-s04-precipitate",
+      "material_state_id": "joo2003-ja0357902-mns-nanocrystals-rod-shaped-20-nm-37-nm-4--after-d2-s06-centrifuge",
       "parent_sample_id": null,
       "composition": {
         "value": "MnS",
@@ -544,11 +663,12 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Reactor not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
-      "Amount of oleylamine not reported in the extracted text."
+      "Amount of oleylamine not reported in the extracted text.",
+      "Amount of ethanol not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

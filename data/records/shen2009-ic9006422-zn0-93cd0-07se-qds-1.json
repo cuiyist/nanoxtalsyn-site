@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "shen2009-ic9006422-zn0-93cd0-07se-qds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Chien-Chih Shen; Wei-Lung Tseng (2009): Zn0.93Cd0.07Se QDs",
   "material": {
@@ -128,22 +128,111 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "shen2009-ic9006422-zn0-93cd0-07se-qds-1--3-mercaptopropionic-acid",
+      "name": "3-mercaptopropionic acid",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "shen2009-ic9006422",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "shen2009-ic9006422-zn0-93cd0-07se-qds-1--sodium-hydroxide",
+      "name": "sodium hydroxide",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "shen2009-ic9006422",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "shen2009-ic9006422-zn0-93cd0-07se-qds-1--selenium-powder",
+      "name": "selenium powder",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "shen2009-ic9006422",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "shen2009-ic9006422-zn0-93cd0-07se-qds-1--sodium-borohydride",
+      "name": "sodium borohydride",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "shen2009-ic9006422",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
-      "id": "shen2009-ic9006422-zn0-93cd0-07se-qds-1--after-s01-adjust-ph",
+      "id": "shen2009-ic9006422-zn0-93cd0-07se-qds-1--after-d2-s01-prepare",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": [
+        "shen2009-ic9006422-zn0-93cd0-07se-qds-1--sodium-hydroselenide",
+        "shen2009-ic9006422-zn0-93cd0-07se-qds-1--selenium-powder",
+        "shen2009-ic9006422-zn0-93cd0-07se-qds-1--sodium-borohydride"
+      ]
+    },
+    {
+      "id": "shen2009-ic9006422-zn0-93cd0-07se-qds-1--after-s01-adjust-ph",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "shen2009-ic9006422-zn0-93cd0-07se-qds-1--after-d2-s01-prepare",
         "shen2009-ic9006422-zn0-93cd0-07se-qds-1--cadmium-perchlorate",
-        "shen2009-ic9006422-zn0-93cd0-07se-qds-1--zinc-perchlorate"
+        "shen2009-ic9006422-zn0-93cd0-07se-qds-1--zinc-perchlorate",
+        "shen2009-ic9006422-zn0-93cd0-07se-qds-1--3-mercaptopropionic-acid",
+        "shen2009-ic9006422-zn0-93cd0-07se-qds-1--sodium-hydroxide"
       ]
     },
     {
       "id": "shen2009-ic9006422-zn0-93cd0-07se-qds-1--after-s02-add",
-      "name": "mixture after step 2",
+      "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
         "shen2009-ic9006422-zn0-93cd0-07se-qds-1--after-s01-adjust-ph",
@@ -152,13 +241,14 @@
     },
     {
       "id": "shen2009-ic9006422-zn0-93cd0-07se-qds-1--after-s03-heat",
-      "name": "mixture after step 3",
+      "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
         "shen2009-ic9006422-zn0-93cd0-07se-qds-1--after-s02-add",
         "shen2009-ic9006422-zn0-93cd0-07se-qds-1--cadmium-perchlorate",
         "shen2009-ic9006422-zn0-93cd0-07se-qds-1--zinc-perchlorate",
-        "shen2009-ic9006422-zn0-93cd0-07se-qds-1--sodium-hydroselenide"
+        "shen2009-ic9006422-zn0-93cd0-07se-qds-1--sodium-hydroselenide",
+        "shen2009-ic9006422-zn0-93cd0-07se-qds-1--3-mercaptopropionic-acid"
       ]
     },
     {
@@ -172,16 +262,64 @@
   ],
   "operations": [
     {
+      "id": "d2-s01-prepare",
+      "action": "prepare",
+      "label": "Prepare NaHSe solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "shen2009-ic9006422-zn0-93cd0-07se-qds-1--sodium-hydroselenide",
+        "shen2009-ic9006422-zn0-93cd0-07se-qds-1--selenium-powder",
+        "shen2009-ic9006422-zn0-93cd0-07se-qds-1--sodium-borohydride"
+      ],
+      "outputs": [
+        "shen2009-ic9006422-zn0-93cd0-07se-qds-1--after-d2-s01-prepare"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "shen2009-ic9006422",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Prepare NaHSe solution",
+      "evidence": [
+        {
+          "source_id": "shen2009-ic9006422",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
       "id": "s01-adjust-ph",
       "action": "adjust ph",
       "label": "Adjust pH to 11.0",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
+      "depends_on": [
+        "d2-s01-prepare"
+      ],
       "inputs": [
+        "shen2009-ic9006422-zn0-93cd0-07se-qds-1--after-d2-s01-prepare",
         "shen2009-ic9006422-zn0-93cd0-07se-qds-1--cadmium-perchlorate",
-        "shen2009-ic9006422-zn0-93cd0-07se-qds-1--zinc-perchlorate"
+        "shen2009-ic9006422-zn0-93cd0-07se-qds-1--zinc-perchlorate",
+        "shen2009-ic9006422-zn0-93cd0-07se-qds-1--3-mercaptopropionic-acid",
+        "shen2009-ic9006422-zn0-93cd0-07se-qds-1--sodium-hydroxide"
       ],
       "outputs": [
         "shen2009-ic9006422-zn0-93cd0-07se-qds-1--after-s01-adjust-ph"
@@ -271,7 +409,8 @@
         "shen2009-ic9006422-zn0-93cd0-07se-qds-1--after-s02-add",
         "shen2009-ic9006422-zn0-93cd0-07se-qds-1--cadmium-perchlorate",
         "shen2009-ic9006422-zn0-93cd0-07se-qds-1--zinc-perchlorate",
-        "shen2009-ic9006422-zn0-93cd0-07se-qds-1--sodium-hydroselenide"
+        "shen2009-ic9006422-zn0-93cd0-07se-qds-1--sodium-hydroselenide",
+        "shen2009-ic9006422-zn0-93cd0-07se-qds-1--3-mercaptopropionic-acid"
       ],
       "outputs": [
         "shen2009-ic9006422-zn0-93cd0-07se-qds-1--after-s03-heat"
@@ -434,11 +573,76 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "shen2009-ic9006422-zn0-93cd0-07se-qds-1--photoluminescence-peak",
+      "sample_id": "shen2009-ic9006422-zn0-93cd0-07se-qds-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 431,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "431 nm",
+        "evidence": [
+          {
+            "source_id": "shen2009-ic9006422",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "shen2009-ic9006422",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    },
+    {
+      "id": "shen2009-ic9006422-zn0-93cd0-07se-qds-1--photoluminescence-quantum-yield",
+      "sample_id": "shen2009-ic9006422-zn0-93cd0-07se-qds-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 12,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "12 %",
+        "evidence": [
+          {
+            "source_id": "shen2009-ic9006422",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "shen2009-ic9006422",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
@@ -446,7 +650,11 @@
       "Reactor not reported in the extracted text.",
       "Amount of cadmium perchlorate not reported in the extracted text.",
       "Amount of zinc perchlorate not reported in the extracted text.",
-      "Amount of sodium hydroselenide not reported in the extracted text."
+      "Amount of sodium hydroselenide not reported in the extracted text.",
+      "Amount of 3-mercaptopropionic acid not reported in the extracted text.",
+      "Amount of sodium hydroxide not reported in the extracted text.",
+      "Amount of selenium powder not reported in the extracted text.",
+      "Amount of sodium borohydride not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

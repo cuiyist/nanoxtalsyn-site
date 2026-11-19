@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "mashiach2021-s41467-020-20512-6-aep-caf2-ncs-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Reut Mashiach; Haim Weissman; Liat Avram; Lothar Houben; Olga Brontvein; Anna Lavie; Vaishali Arunachalam; Michal Leskes; Boris Rybtchinski; Amnon Bar-Shir (2021): AEP-CaF2 NCs",
   "material": {
@@ -138,12 +138,20 @@
   "material_states": [
     {
       "id": "mashiach2021-s41467-020-20512-6-aep-caf2-ncs-1--after-s01-add",
-      "name": "product as isolated",
-      "kind": "product",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
       "parent_ids": [
         "mashiach2021-s41467-020-20512-6-aep-caf2-ncs-1--ca2-cations",
         "mashiach2021-s41467-020-20512-6-aep-caf2-ncs-1--f-anions",
         "mashiach2021-s41467-020-20512-6-aep-caf2-ncs-1--2-aminoethyl-phosphate-aep"
+      ]
+    },
+    {
+      "id": "mashiach2021-s41467-020-20512-6-aep-caf2-ncs-1--after-d2-s02-monitor",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "mashiach2021-s41467-020-20512-6-aep-caf2-ncs-1--after-s01-add"
       ]
     }
   ],
@@ -190,6 +198,49 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "d2-s02-monitor",
+      "action": "monitor",
+      "label": "Monitor",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-add"
+      ],
+      "inputs": [
+        "mashiach2021-s41467-020-20512-6-aep-caf2-ncs-1--after-s01-add"
+      ],
+      "outputs": [
+        "mashiach2021-s41467-020-20512-6-aep-caf2-ncs-1--after-d2-s02-monitor"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "ambient",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "mashiach2021-s41467-020-20512-6",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Monitor",
+      "evidence": [
+        {
+          "source_id": "mashiach2021-s41467-020-20512-6",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -198,7 +249,7 @@
       "sample_id": "mashiach2021-s41467-020-20512-6-aep-caf2-ncs-1--product",
       "source_sample_label": "AEP-CaF2 NCs",
       "batch_id": null,
-      "material_state_id": "mashiach2021-s41467-020-20512-6-aep-caf2-ncs-1--after-s01-add",
+      "material_state_id": "mashiach2021-s41467-020-20512-6-aep-caf2-ncs-1--after-d2-s02-monitor",
       "parent_sample_id": null,
       "composition": {
         "value": "CaF2",
@@ -250,7 +301,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",

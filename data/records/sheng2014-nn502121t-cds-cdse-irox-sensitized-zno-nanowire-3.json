@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "sheng2014-nn502121t-cds-cdse-irox-sensitized-zno-nanowire-3",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Sheng (2014): CdS/CdSe/IrOx-sensitized ZnO nanowire",
   "material": {
@@ -156,6 +156,25 @@
           "locator": "Main PDF p.6"
         }
       ]
+    },
+    {
+      "id": "sheng2014-nn502121t-cds-cdse-irox-sensitized-zno-nanowire-3--irox",
+      "name": "IrOx",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "sheng2014-nn502121t",
+          "locator": "Main PDF p.6"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -174,7 +193,8 @@
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "sheng2014-nn502121t-cds-cdse-irox-sensitized-zno-nanowire-3--after-s01-heating"
+        "sheng2014-nn502121t-cds-cdse-irox-sensitized-zno-nanowire-3--after-s01-heating",
+        "sheng2014-nn502121t-cds-cdse-irox-sensitized-zno-nanowire-3--irox"
       ]
     }
   ],
@@ -264,7 +284,8 @@
         "s01-heating"
       ],
       "inputs": [
-        "sheng2014-nn502121t-cds-cdse-irox-sensitized-zno-nanowire-3--after-s01-heating"
+        "sheng2014-nn502121t-cds-cdse-irox-sensitized-zno-nanowire-3--after-s01-heating",
+        "sheng2014-nn502121t-cds-cdse-irox-sensitized-zno-nanowire-3--irox"
       ],
       "outputs": [
         "sheng2014-nn502121t-cds-cdse-irox-sensitized-zno-nanowire-3--after-s02-immersion"
@@ -371,13 +392,14 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Amount of NaOH not reported in the extracted text.",
-      "Amount of HNO3 not reported in the extracted text."
+      "Amount of HNO3 not reported in the extracted text.",
+      "Amount of IrOx not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

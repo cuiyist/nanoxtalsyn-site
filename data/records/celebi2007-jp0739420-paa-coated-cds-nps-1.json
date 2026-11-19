@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "celebi2007-jp0739420-paa-coated-cds-nps-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Serdar Celebi; A. Koray Erdamar; Alphan Sennaroglu; Adnan Kurt; Havva Yagci Acar (2007): PAA-coated CdS NPs",
   "material": {
@@ -142,6 +142,44 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "celebi2007-jp0739420-paa-coated-cds-nps-1--naoh",
+      "name": "NaOH",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "celebi2007-jp0739420",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "celebi2007-jp0739420-paa-coated-cds-nps-1--hno3",
+      "name": "HNO3",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "celebi2007-jp0739420",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -177,7 +215,9 @@
       "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
-        "celebi2007-jp0739420-paa-coated-cds-nps-1--after-s03-degas"
+        "celebi2007-jp0739420-paa-coated-cds-nps-1--after-s03-degas",
+        "celebi2007-jp0739420-paa-coated-cds-nps-1--naoh",
+        "celebi2007-jp0739420-paa-coated-cds-nps-1--hno3"
       ]
     },
     {
@@ -349,7 +389,9 @@
         "s03-degas"
       ],
       "inputs": [
-        "celebi2007-jp0739420-paa-coated-cds-nps-1--after-s03-degas"
+        "celebi2007-jp0739420-paa-coated-cds-nps-1--after-s03-degas",
+        "celebi2007-jp0739420-paa-coated-cds-nps-1--naoh",
+        "celebi2007-jp0739420-paa-coated-cds-nps-1--hno3"
       ],
       "outputs": [
         "celebi2007-jp0739420-paa-coated-cds-nps-1--after-s04-adjust-ph"
@@ -489,18 +531,53 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "celebi2007-jp0739420-paa-coated-cds-nps-1--photoluminescence-quantum-yield",
+      "sample_id": "celebi2007-jp0739420-paa-coated-cds-nps-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 17,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "17 %",
+        "evidence": [
+          {
+            "source_id": "celebi2007-jp0739420",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "celebi2007-jp0739420",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Size not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
       "Amount of Cd(NO3)2·4H2O not reported in the extracted text.",
       "Amount of PAA (2100 g/mol) not reported in the extracted text.",
-      "Amount of Na2S·3H2O not reported in the extracted text."
+      "Amount of Na2S·3H2O not reported in the extracted text.",
+      "Amount of NaOH not reported in the extracted text.",
+      "Amount of HNO3 not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

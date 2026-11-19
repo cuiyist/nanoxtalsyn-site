@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "hou2007-cg060747m-hexagonal-boron-nitride-hbn-nanocrystals-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Li Hou (2007): hexagonal boron nitride (hBN) nanocrystals",
   "material": {
@@ -185,17 +185,37 @@
   "stocks": [],
   "material_states": [
     {
-      "id": "hou2007-cg060747m-hexagonal-boron-nitride-hbn-nanocrystals-1--after-s01-heat",
+      "id": "hou2007-cg060747m-hexagonal-boron-nitride-hbn-nanocrystals-1--after-d2-s01-dissolve",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "hou2007-cg060747m-hexagonal-boron-nitride-hbn-nanocrystals-1--amorphous-b-powder",
+        "hou2007-cg060747m-hexagonal-boron-nitride-hbn-nanocrystals-1--nan3",
+        "hou2007-cg060747m-hexagonal-boron-nitride-hbn-nanocrystals-1--anhydrous-ch3cn"
+      ]
     },
     {
-      "id": "hou2007-cg060747m-hexagonal-boron-nitride-hbn-nanocrystals-1--after-s02-cool",
+      "id": "hou2007-cg060747m-hexagonal-boron-nitride-hbn-nanocrystals-1--after-s01-heat",
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
+        "hou2007-cg060747m-hexagonal-boron-nitride-hbn-nanocrystals-1--after-d2-s01-dissolve"
+      ]
+    },
+    {
+      "id": "hou2007-cg060747m-hexagonal-boron-nitride-hbn-nanocrystals-1--after-s02-cool",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
         "hou2007-cg060747m-hexagonal-boron-nitride-hbn-nanocrystals-1--after-s01-heat"
+      ]
+    },
+    {
+      "id": "hou2007-cg060747m-hexagonal-boron-nitride-hbn-nanocrystals-1--after-d2-s04-wash",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "hou2007-cg060747m-hexagonal-boron-nitride-hbn-nanocrystals-1--after-s02-cool"
       ]
     },
     {
@@ -203,11 +223,54 @@
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "hou2007-cg060747m-hexagonal-boron-nitride-hbn-nanocrystals-1--after-s02-cool"
+        "hou2007-cg060747m-hexagonal-boron-nitride-hbn-nanocrystals-1--after-d2-s04-wash"
       ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-dissolve",
+      "action": "dissolve",
+      "label": "Put reactants into autoclave and fill with solvent",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "hou2007-cg060747m-hexagonal-boron-nitride-hbn-nanocrystals-1--amorphous-b-powder",
+        "hou2007-cg060747m-hexagonal-boron-nitride-hbn-nanocrystals-1--nan3",
+        "hou2007-cg060747m-hexagonal-boron-nitride-hbn-nanocrystals-1--anhydrous-ch3cn"
+      ],
+      "outputs": [
+        "hou2007-cg060747m-hexagonal-boron-nitride-hbn-nanocrystals-1--after-d2-s01-dissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "hou2007-cg060747m",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Put reactants into autoclave and fill with solvent",
+      "evidence": [
+        {
+          "source_id": "hou2007-cg060747m",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
     {
       "id": "s01-heat",
       "action": "heat",
@@ -215,8 +278,12 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s01-dissolve"
+      ],
+      "inputs": [
+        "hou2007-cg060747m-hexagonal-boron-nitride-hbn-nanocrystals-1--after-d2-s01-dissolve"
+      ],
       "outputs": [
         "hou2007-cg060747m-hexagonal-boron-nitride-hbn-nanocrystals-1--after-s01-heat"
       ],
@@ -328,9 +395,9 @@
       ]
     },
     {
-      "id": "s03-dry",
-      "action": "dry",
-      "label": "Dry in vacuum",
+      "id": "d2-s04-wash",
+      "action": "wash",
+      "label": "Remove impurities with ethanol and water",
       "stage": "workup",
       "branch": "",
       "optional": false,
@@ -339,6 +406,44 @@
       ],
       "inputs": [
         "hou2007-cg060747m-hexagonal-boron-nitride-hbn-nanocrystals-1--after-s02-cool"
+      ],
+      "outputs": [
+        "hou2007-cg060747m-hexagonal-boron-nitride-hbn-nanocrystals-1--after-d2-s04-wash"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Remove impurities with ethanol and water",
+      "evidence": [
+        {
+          "source_id": "hou2007-cg060747m",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "s03-dry",
+      "action": "dry",
+      "label": "Dry in vacuum",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-wash"
+      ],
+      "inputs": [
+        "hou2007-cg060747m-hexagonal-boron-nitride-hbn-nanocrystals-1--after-d2-s04-wash"
       ],
       "outputs": [
         "hou2007-cg060747m-hexagonal-boron-nitride-hbn-nanocrystals-1--after-s03-dry"
@@ -446,11 +551,44 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "hou2007-cg060747m-hexagonal-boron-nitride-hbn-nanocrystals-1--photoluminescence-peak",
+      "sample_id": "hou2007-cg060747m-hexagonal-boron-nitride-hbn-nanocrystals-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 580,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "580 nm",
+        "evidence": [
+          {
+            "source_id": "hou2007-cg060747m",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "hou2007-cg060747m",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",

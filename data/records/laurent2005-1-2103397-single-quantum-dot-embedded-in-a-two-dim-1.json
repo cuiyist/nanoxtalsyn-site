@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "laurent2005-1-2103397-single-quantum-dot-embedded-in-a-two-dim-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "S. Laurent (2005): single-quantum dot embedded in a two-dimensional photonic crystal cavity",
   "material": {
@@ -90,7 +90,7 @@
       "id": "laurent2005-1-2103397-single-quantum-dot-embedded-in-a-two-dim-1--inas",
       "name": "InAs",
       "formula": null,
-      "role": "reagent",
+      "role": "starting_particles",
       "stage": "synthesis",
       "identity": {
         "pubchem_cid": null,
@@ -142,6 +142,25 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "laurent2005-1-2103397-single-quantum-dot-embedded-in-a-two-dim-1--gaas-membrane",
+      "name": "GaAs membrane",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "laurent2005-1-2103397",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -158,10 +177,18 @@
     },
     {
       "id": "laurent2005-1-2103397-single-quantum-dot-embedded-in-a-two-dim-1--after-s02-pattern",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "laurent2005-1-2103397-single-quantum-dot-embedded-in-a-two-dim-1--after-s01-grow"
+      ]
+    },
+    {
+      "id": "laurent2005-1-2103397-single-quantum-dot-embedded-in-a-two-dim-1--after-d2-s03-etch",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "laurent2005-1-2103397-single-quantum-dot-embedded-in-a-two-dim-1--after-s01-grow"
+        "laurent2005-1-2103397-single-quantum-dot-embedded-in-a-two-dim-1--after-s02-pattern"
       ]
     }
   ],
@@ -241,6 +268,44 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s03-etch",
+      "action": "etch",
+      "label": "Reactive ion etching followed by wet etching",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-pattern"
+      ],
+      "inputs": [
+        "laurent2005-1-2103397-single-quantum-dot-embedded-in-a-two-dim-1--after-s02-pattern"
+      ],
+      "outputs": [
+        "laurent2005-1-2103397-single-quantum-dot-embedded-in-a-two-dim-1--after-d2-s03-etch"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Reactive ion etching followed by wet etching",
+      "evidence": [
+        {
+          "source_id": "laurent2005-1-2103397",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -249,7 +314,7 @@
       "sample_id": "laurent2005-1-2103397-single-quantum-dot-embedded-in-a-two-dim-1--product",
       "source_sample_label": "single-quantum dot embedded in a two-dimensional photonic crystal cavity",
       "batch_id": null,
-      "material_state_id": "laurent2005-1-2103397-single-quantum-dot-embedded-in-a-two-dim-1--after-s02-pattern",
+      "material_state_id": "laurent2005-1-2103397-single-quantum-dot-embedded-in-a-two-dim-1--after-d2-s03-etch",
       "parent_sample_id": null,
       "composition": {
         "value": "InAs quantum dot",
@@ -300,11 +365,44 @@
       "notes": []
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "laurent2005-1-2103397-single-quantum-dot-embedded-in-a-two-dim-1--photoluminescence-peak",
+      "sample_id": "laurent2005-1-2103397-single-quantum-dot-embedded-in-a-two-dim-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 920,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "920 nm",
+        "evidence": [
+          {
+            "source_id": "laurent2005-1-2103397",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "laurent2005-1-2103397",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
@@ -314,7 +412,8 @@
       "Reaction time not reported in the extracted text.",
       "Amount of InAs not reported in the extracted text.",
       "Amount of GaAs not reported in the extracted text.",
-      "Amount of AlAs not reported in the extracted text."
+      "Amount of AlAs not reported in the extracted text.",
+      "Amount of GaAs membrane not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

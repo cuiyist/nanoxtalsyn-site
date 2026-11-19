@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "jasieniak2011-nl201282v-cdte-nanocrystals-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Jacek Jasieniak (2011): CdTe nanocrystals",
   "material": {
@@ -199,6 +199,63 @@
           "locator": "Main PDF p.7"
         }
       ]
+    },
+    {
+      "id": "jasieniak2011-nl201282v-cdte-nanocrystals-1--cdo",
+      "name": "CdO",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "mass": {
+          "value": 0.48,
+          "minimum": null,
+          "maximum": null,
+          "unit": "g",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.48 g",
+          "evidence": [
+            {
+              "source_id": "jasieniak2011-nl201282v",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "jasieniak2011-nl201282v",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "jasieniak2011-nl201282v-cdte-nanocrystals-1--te",
+      "name": "Te",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "jasieniak2011-nl201282v",
+          "locator": "Main PDF p.7"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -209,7 +266,8 @@
       "kind": "reaction_batch",
       "parent_ids": [
         "jasieniak2011-nl201282v-cdte-nanocrystals-1--oleic-acid",
-        "jasieniak2011-nl201282v-cdte-nanocrystals-1--octadecene"
+        "jasieniak2011-nl201282v-cdte-nanocrystals-1--octadecene",
+        "jasieniak2011-nl201282v-cdte-nanocrystals-1--cdo"
       ]
     },
     {
@@ -219,7 +277,8 @@
       "parent_ids": [
         "jasieniak2011-nl201282v-cdte-nanocrystals-1--after-s01-heat",
         "jasieniak2011-nl201282v-cdte-nanocrystals-1--oleic-acid",
-        "jasieniak2011-nl201282v-cdte-nanocrystals-1--octadecene"
+        "jasieniak2011-nl201282v-cdte-nanocrystals-1--octadecene",
+        "jasieniak2011-nl201282v-cdte-nanocrystals-1--cdo"
       ]
     },
     {
@@ -229,7 +288,8 @@
       "parent_ids": [
         "jasieniak2011-nl201282v-cdte-nanocrystals-1--after-s02-heat",
         "jasieniak2011-nl201282v-cdte-nanocrystals-1--trioctylphosphine",
-        "jasieniak2011-nl201282v-cdte-nanocrystals-1--octadecene"
+        "jasieniak2011-nl201282v-cdte-nanocrystals-1--octadecene",
+        "jasieniak2011-nl201282v-cdte-nanocrystals-1--te"
       ]
     }
   ],
@@ -244,7 +304,8 @@
       "depends_on": [],
       "inputs": [
         "jasieniak2011-nl201282v-cdte-nanocrystals-1--oleic-acid",
-        "jasieniak2011-nl201282v-cdte-nanocrystals-1--octadecene"
+        "jasieniak2011-nl201282v-cdte-nanocrystals-1--octadecene",
+        "jasieniak2011-nl201282v-cdte-nanocrystals-1--cdo"
       ],
       "outputs": [
         "jasieniak2011-nl201282v-cdte-nanocrystals-1--after-s01-heat"
@@ -308,7 +369,8 @@
       "inputs": [
         "jasieniak2011-nl201282v-cdte-nanocrystals-1--after-s01-heat",
         "jasieniak2011-nl201282v-cdte-nanocrystals-1--oleic-acid",
-        "jasieniak2011-nl201282v-cdte-nanocrystals-1--octadecene"
+        "jasieniak2011-nl201282v-cdte-nanocrystals-1--octadecene",
+        "jasieniak2011-nl201282v-cdte-nanocrystals-1--cdo"
       ],
       "outputs": [
         "jasieniak2011-nl201282v-cdte-nanocrystals-1--after-s02-heat"
@@ -372,7 +434,8 @@
       "inputs": [
         "jasieniak2011-nl201282v-cdte-nanocrystals-1--after-s02-heat",
         "jasieniak2011-nl201282v-cdte-nanocrystals-1--trioctylphosphine",
-        "jasieniak2011-nl201282v-cdte-nanocrystals-1--octadecene"
+        "jasieniak2011-nl201282v-cdte-nanocrystals-1--octadecene",
+        "jasieniak2011-nl201282v-cdte-nanocrystals-1--te"
       ],
       "outputs": [
         "jasieniak2011-nl201282v-cdte-nanocrystals-1--after-s03-inject"
@@ -497,11 +560,12 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
-      "Reaction time not reported in the extracted text."
+      "Reaction time not reported in the extracted text.",
+      "Amount of Te not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

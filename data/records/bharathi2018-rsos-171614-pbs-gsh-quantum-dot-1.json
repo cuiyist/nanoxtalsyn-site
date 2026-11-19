@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "bharathi2018-rsos-171614-pbs-gsh-quantum-dot-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "M. Vijaya Bharathi; Santanu Maiti; Bidisha Sarkar; Kaustab Ghosh; Priyankar Paira (2018): PbS-GSH quantum dot",
   "material": {
@@ -137,21 +137,49 @@
           "locator": "Main PDF p.7"
         }
       ]
+    },
+    {
+      "id": "bharathi2018-rsos-171614-pbs-gsh-quantum-dot-1--naoh",
+      "name": "NaOH",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "bharathi2018-rsos-171614",
+          "locator": "Main PDF p.7"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
-      "id": "bharathi2018-rsos-171614-pbs-gsh-quantum-dot-1--after-s01-add",
+      "id": "bharathi2018-rsos-171614-pbs-gsh-quantum-dot-1--after-d2-s01-dissolve",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": [
+        "bharathi2018-rsos-171614-pbs-gsh-quantum-dot-1--l-glutathione"
+      ]
+    },
+    {
+      "id": "bharathi2018-rsos-171614-pbs-gsh-quantum-dot-1--after-s01-add",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "bharathi2018-rsos-171614-pbs-gsh-quantum-dot-1--after-d2-s01-dissolve",
         "bharathi2018-rsos-171614-pbs-gsh-quantum-dot-1--lead-acetate"
       ]
     },
     {
       "id": "bharathi2018-rsos-171614-pbs-gsh-quantum-dot-1--after-s02-add",
-      "name": "mixture after step 2",
+      "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
         "bharathi2018-rsos-171614-pbs-gsh-quantum-dot-1--after-s01-add",
@@ -160,7 +188,7 @@
     },
     {
       "id": "bharathi2018-rsos-171614-pbs-gsh-quantum-dot-1--after-s03-sonicate",
-      "name": "mixture after step 3",
+      "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
         "bharathi2018-rsos-171614-pbs-gsh-quantum-dot-1--after-s02-add"
@@ -168,7 +196,7 @@
     },
     {
       "id": "bharathi2018-rsos-171614-pbs-gsh-quantum-dot-1--after-s04-precipitate",
-      "name": "mixture after step 4",
+      "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
         "bharathi2018-rsos-171614-pbs-gsh-quantum-dot-1--after-s03-sonicate"
@@ -185,14 +213,77 @@
   ],
   "operations": [
     {
+      "id": "d2-s01-dissolve",
+      "action": "dissolve",
+      "label": "Dissolve L-glutathione in Milli-Q water",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "bharathi2018-rsos-171614-pbs-gsh-quantum-dot-1--l-glutathione"
+      ],
+      "outputs": [
+        "bharathi2018-rsos-171614-pbs-gsh-quantum-dot-1--after-d2-s01-dissolve"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 10,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "10 min",
+          "evidence": [
+            {
+              "source_id": "bharathi2018-rsos-171614",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "bharathi2018-rsos-171614",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dissolve L-glutathione in Milli-Q water",
+      "evidence": [
+        {
+          "source_id": "bharathi2018-rsos-171614",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
       "id": "s01-add",
       "action": "add",
       "label": "Add lead precursor",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
+      "depends_on": [
+        "d2-s01-dissolve"
+      ],
       "inputs": [
+        "bharathi2018-rsos-171614-pbs-gsh-quantum-dot-1--after-d2-s01-dissolve",
         "bharathi2018-rsos-171614-pbs-gsh-quantum-dot-1--lead-acetate"
       ],
       "outputs": [
@@ -552,18 +643,51 @@
           "locator": "Main PDF p.5"
         }
       ]
+    },
+    {
+      "id": "bharathi2018-rsos-171614-pbs-gsh-quantum-dot-1--photoluminescence-peak",
+      "sample_id": "bharathi2018-rsos-171614-pbs-gsh-quantum-dot-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 1010,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "1010 nm",
+        "evidence": [
+          {
+            "source_id": "bharathi2018-rsos-171614",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "bharathi2018-rsos-171614",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
       "Amount of L-glutathione not reported in the extracted text.",
       "Amount of lead acetate not reported in the extracted text.",
-      "Amount of sodium sulfide not reported in the extracted text."
+      "Amount of sodium sulfide not reported in the extracted text.",
+      "Amount of NaOH not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

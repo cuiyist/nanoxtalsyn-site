@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "chadwick2005-pssc-200460170-nanocrystalline-linbo3-sol-gel-21-nm-gra-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "A. V. Chadwick (2005): nanocrystalline LiNbO3 (sol-gel, 21 nm grain size, 20% SiO2)",
   "material": {
@@ -160,11 +160,36 @@
       ]
     },
     {
+      "id": "chadwick2005-pssc-200460170-nanocrystalline-linbo3-sol-gel-21-nm-gra-2--after-d2-s03-condense",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "chadwick2005-pssc-200460170-nanocrystalline-linbo3-sol-gel-21-nm-gra-2--after-s02-hydrolyse"
+      ]
+    },
+    {
+      "id": "chadwick2005-pssc-200460170-nanocrystalline-linbo3-sol-gel-21-nm-gra-2--after-d2-s04-add",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "chadwick2005-pssc-200460170-nanocrystalline-linbo3-sol-gel-21-nm-gra-2--after-d2-s03-condense",
+        "chadwick2005-pssc-200460170-nanocrystalline-linbo3-sol-gel-21-nm-gra-2--tetraethoxy-silane-teos"
+      ]
+    },
+    {
       "id": "chadwick2005-pssc-200460170-nanocrystalline-linbo3-sol-gel-21-nm-gra-2--after-s03-dry",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "chadwick2005-pssc-200460170-nanocrystalline-linbo3-sol-gel-21-nm-gra-2--after-d2-s04-add"
+      ]
+    },
+    {
+      "id": "chadwick2005-pssc-200460170-nanocrystalline-linbo3-sol-gel-21-nm-gra-2--after-d2-s06-calcine",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "chadwick2005-pssc-200460170-nanocrystalline-linbo3-sol-gel-21-nm-gra-2--after-s02-hydrolyse"
+        "chadwick2005-pssc-200460170-nanocrystalline-linbo3-sol-gel-21-nm-gra-2--after-s03-dry"
       ]
     }
   ],
@@ -245,10 +270,10 @@
       ]
     },
     {
-      "id": "s03-dry",
-      "action": "dry",
-      "label": "The gel was dried",
-      "stage": "workup",
+      "id": "d2-s03-condense",
+      "action": "condense",
+      "label": "A polymeric gel with metal-oxygen links is spontaneously formed by the condensation of the hydroxy-alkoxides",
+      "stage": "synthesis",
       "branch": "",
       "optional": false,
       "depends_on": [
@@ -256,6 +281,83 @@
       ],
       "inputs": [
         "chadwick2005-pssc-200460170-nanocrystalline-linbo3-sol-gel-21-nm-gra-2--after-s02-hydrolyse"
+      ],
+      "outputs": [
+        "chadwick2005-pssc-200460170-nanocrystalline-linbo3-sol-gel-21-nm-gra-2--after-d2-s03-condense"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "A polymeric gel with metal-oxygen links is spontaneously formed by the condensation of the hydroxy-alkoxides",
+      "evidence": [
+        {
+          "source_id": "chadwick2005-pssc-200460170",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s04-add",
+      "action": "add",
+      "label": "Adding tetraethoxy silane (TEOS) at the outset to produce ‘silica-stabilised’ nanocrystals",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-condense"
+      ],
+      "inputs": [
+        "chadwick2005-pssc-200460170-nanocrystalline-linbo3-sol-gel-21-nm-gra-2--after-d2-s03-condense",
+        "chadwick2005-pssc-200460170-nanocrystalline-linbo3-sol-gel-21-nm-gra-2--tetraethoxy-silane-teos"
+      ],
+      "outputs": [
+        "chadwick2005-pssc-200460170-nanocrystalline-linbo3-sol-gel-21-nm-gra-2--after-d2-s04-add"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Adding tetraethoxy silane (TEOS) at the outset to produce ‘silica-stabilised’ nanocrystals",
+      "evidence": [
+        {
+          "source_id": "chadwick2005-pssc-200460170",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s03-dry",
+      "action": "dry",
+      "label": "The gel was dried",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-add"
+      ],
+      "inputs": [
+        "chadwick2005-pssc-200460170-nanocrystalline-linbo3-sol-gel-21-nm-gra-2--after-d2-s04-add"
       ],
       "outputs": [
         "chadwick2005-pssc-200460170-nanocrystalline-linbo3-sol-gel-21-nm-gra-2--after-s03-dry"
@@ -281,6 +383,44 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s06-calcine",
+      "action": "calcine",
+      "label": "Calcined to produce nanocrystalline samples",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-dry"
+      ],
+      "inputs": [
+        "chadwick2005-pssc-200460170-nanocrystalline-linbo3-sol-gel-21-nm-gra-2--after-s03-dry"
+      ],
+      "outputs": [
+        "chadwick2005-pssc-200460170-nanocrystalline-linbo3-sol-gel-21-nm-gra-2--after-d2-s06-calcine"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Calcined to produce nanocrystalline samples",
+      "evidence": [
+        {
+          "source_id": "chadwick2005-pssc-200460170",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -289,7 +429,7 @@
       "sample_id": "chadwick2005-pssc-200460170-nanocrystalline-linbo3-sol-gel-21-nm-gra-2--product",
       "source_sample_label": "nanocrystalline LiNbO3 (sol-gel, 21 nm grain size, 20% SiO2)",
       "batch_id": null,
-      "material_state_id": "chadwick2005-pssc-200460170-nanocrystalline-linbo3-sol-gel-21-nm-gra-2--after-s03-dry",
+      "material_state_id": "chadwick2005-pssc-200460170-nanocrystalline-linbo3-sol-gel-21-nm-gra-2--after-d2-s06-calcine",
       "parent_sample_id": null,
       "composition": {
         "value": "LiNbO3",
@@ -367,7 +507,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",

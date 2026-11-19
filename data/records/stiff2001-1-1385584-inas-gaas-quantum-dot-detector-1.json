@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "stiff2001-1-1385584-inas-gaas-quantum-dot-detector-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "A. D. Stiff et al. (2001): InAs/GaAs quantum-dot detector",
   "material": {
@@ -156,11 +156,27 @@
       ]
     },
     {
-      "id": "stiff2001-1-1385584-inas-gaas-quantum-dot-detector-1--after-s03-grow",
+      "id": "stiff2001-1-1385584-inas-gaas-quantum-dot-detector-1--after-d2-s03-dope",
       "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
-        "stiff2001-1-1385584-inas-gaas-quantum-dot-detector-1--after-s02-grow",
+        "stiff2001-1-1385584-inas-gaas-quantum-dot-detector-1--after-s02-grow"
+      ]
+    },
+    {
+      "id": "stiff2001-1-1385584-inas-gaas-quantum-dot-detector-1--after-d2-s04-pause",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "stiff2001-1-1385584-inas-gaas-quantum-dot-detector-1--after-d2-s03-dope"
+      ]
+    },
+    {
+      "id": "stiff2001-1-1385584-inas-gaas-quantum-dot-detector-1--after-s03-grow",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "stiff2001-1-1385584-inas-gaas-quantum-dot-detector-1--after-d2-s04-pause",
         "stiff2001-1-1385584-inas-gaas-quantum-dot-detector-1--gaas"
       ]
     },
@@ -289,9 +305,9 @@
       ]
     },
     {
-      "id": "s03-grow",
-      "action": "grow",
-      "label": "Grow GaAs barrier layer",
+      "id": "d2-s03-dope",
+      "action": "dope",
+      "label": "Dope quantum dots with silicon",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -299,7 +315,83 @@
         "s02-grow"
       ],
       "inputs": [
-        "stiff2001-1-1385584-inas-gaas-quantum-dot-detector-1--after-s02-grow",
+        "stiff2001-1-1385584-inas-gaas-quantum-dot-detector-1--after-s02-grow"
+      ],
+      "outputs": [
+        "stiff2001-1-1385584-inas-gaas-quantum-dot-detector-1--after-d2-s03-dope"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dope quantum dots with silicon",
+      "evidence": [
+        {
+          "source_id": "stiff2001-1-1385584",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s04-pause",
+      "action": "pause",
+      "label": "Allow dot formation",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-dope"
+      ],
+      "inputs": [
+        "stiff2001-1-1385584-inas-gaas-quantum-dot-detector-1--after-d2-s03-dope"
+      ],
+      "outputs": [
+        "stiff2001-1-1385584-inas-gaas-quantum-dot-detector-1--after-d2-s04-pause"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Allow dot formation",
+      "evidence": [
+        {
+          "source_id": "stiff2001-1-1385584",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s03-grow",
+      "action": "grow",
+      "label": "Grow GaAs barrier layer",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-pause"
+      ],
+      "inputs": [
+        "stiff2001-1-1385584-inas-gaas-quantum-dot-detector-1--after-d2-s04-pause",
         "stiff2001-1-1385584-inas-gaas-quantum-dot-detector-1--gaas"
       ],
       "outputs": [
@@ -439,7 +531,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",

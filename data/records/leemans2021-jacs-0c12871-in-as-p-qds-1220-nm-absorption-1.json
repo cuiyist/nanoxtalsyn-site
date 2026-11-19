@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "leemans2021-jacs-0c12871-in-as-p-qds-1220-nm-absorption-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Jari Leemans; Kim C. Dümbgen; Matthias M. Minjauw; Qiang Zhao; André Vantomme; Ivan Infante; Christophe Detavernier; Zeger Hens (2021): In(As,P) QDs (1220 nm absorption)",
   "material": {
@@ -181,19 +181,68 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "leemans2021-jacs-0c12871-in-as-p-qds-1220-nm-absorption-1--tris-diethylamino-phosphine",
+      "name": "tris(diethylamino)phosphine",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "equivalents": {
+          "value": 3,
+          "minimum": null,
+          "maximum": null,
+          "unit": "equiv",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "3 equiv",
+          "evidence": [
+            {
+              "source_id": "leemans2021-jacs-0c12871",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "leemans2021-jacs-0c12871",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
-      "id": "leemans2021-jacs-0c12871-in-as-p-qds-1220-nm-absorption-1--after-s01-degas",
+      "id": "leemans2021-jacs-0c12871-in-as-p-qds-1220-nm-absorption-1--after-d2-s01-mix",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "leemans2021-jacs-0c12871-in-as-p-qds-1220-nm-absorption-1--indium-iii-chloride",
+        "leemans2021-jacs-0c12871-in-as-p-qds-1220-nm-absorption-1--oleylamine"
+      ]
+    },
+    {
+      "id": "leemans2021-jacs-0c12871-in-as-p-qds-1220-nm-absorption-1--after-s01-degas",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "leemans2021-jacs-0c12871-in-as-p-qds-1220-nm-absorption-1--after-d2-s01-mix"
+      ]
     },
     {
       "id": "leemans2021-jacs-0c12871-in-as-p-qds-1220-nm-absorption-1--after-s02-heat",
-      "name": "mixture after step 2",
+      "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
         "leemans2021-jacs-0c12871-in-as-p-qds-1220-nm-absorption-1--after-s01-degas"
@@ -201,7 +250,7 @@
     },
     {
       "id": "leemans2021-jacs-0c12871-in-as-p-qds-1220-nm-absorption-1--after-s03-inject",
-      "name": "mixture after step 3",
+      "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
         "leemans2021-jacs-0c12871-in-as-p-qds-1220-nm-absorption-1--after-s02-heat",
@@ -210,14 +259,66 @@
     },
     {
       "id": "leemans2021-jacs-0c12871-in-as-p-qds-1220-nm-absorption-1--after-s04-purify",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "leemans2021-jacs-0c12871-in-as-p-qds-1220-nm-absorption-1--after-s03-inject"
+      ]
+    },
+    {
+      "id": "leemans2021-jacs-0c12871-in-as-p-qds-1220-nm-absorption-1--after-d2-s06-load",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "leemans2021-jacs-0c12871-in-as-p-qds-1220-nm-absorption-1--after-s03-inject"
+        "leemans2021-jacs-0c12871-in-as-p-qds-1220-nm-absorption-1--after-s04-purify",
+        "leemans2021-jacs-0c12871-in-as-p-qds-1220-nm-absorption-1--indium-iii-chloride",
+        "leemans2021-jacs-0c12871-in-as-p-qds-1220-nm-absorption-1--oleylamine"
       ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-mix",
+      "action": "mix",
+      "label": "Mix",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "leemans2021-jacs-0c12871-in-as-p-qds-1220-nm-absorption-1--indium-iii-chloride",
+        "leemans2021-jacs-0c12871-in-as-p-qds-1220-nm-absorption-1--oleylamine"
+      ],
+      "outputs": [
+        "leemans2021-jacs-0c12871-in-as-p-qds-1220-nm-absorption-1--after-d2-s01-mix"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "leemans2021-jacs-0c12871",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Mix",
+      "evidence": [
+        {
+          "source_id": "leemans2021-jacs-0c12871",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
     {
       "id": "s01-degas",
       "action": "degas",
@@ -225,8 +326,12 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s01-mix"
+      ],
+      "inputs": [
+        "leemans2021-jacs-0c12871-in-as-p-qds-1220-nm-absorption-1--after-d2-s01-mix"
+      ],
       "outputs": [
         "leemans2021-jacs-0c12871-in-as-p-qds-1220-nm-absorption-1--after-s01-degas"
       ],
@@ -437,6 +542,51 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s06-load",
+      "action": "load",
+      "label": "Load",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-purify"
+      ],
+      "inputs": [
+        "leemans2021-jacs-0c12871-in-as-p-qds-1220-nm-absorption-1--after-s04-purify",
+        "leemans2021-jacs-0c12871-in-as-p-qds-1220-nm-absorption-1--indium-iii-chloride",
+        "leemans2021-jacs-0c12871-in-as-p-qds-1220-nm-absorption-1--oleylamine"
+      ],
+      "outputs": [
+        "leemans2021-jacs-0c12871-in-as-p-qds-1220-nm-absorption-1--after-d2-s06-load"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "leemans2021-jacs-0c12871",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Load",
+      "evidence": [
+        {
+          "source_id": "leemans2021-jacs-0c12871",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -445,7 +595,7 @@
       "sample_id": "leemans2021-jacs-0c12871-in-as-p-qds-1220-nm-absorption-1--product",
       "source_sample_label": "In(As,P) QDs (1220 nm absorption)",
       "batch_id": null,
-      "material_state_id": "leemans2021-jacs-0c12871-in-as-p-qds-1220-nm-absorption-1--after-s04-purify",
+      "material_state_id": "leemans2021-jacs-0c12871-in-as-p-qds-1220-nm-absorption-1--after-d2-s06-load",
       "parent_sample_id": null,
       "composition": {
         "value": "In(As,P)",
@@ -507,7 +657,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Size not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",

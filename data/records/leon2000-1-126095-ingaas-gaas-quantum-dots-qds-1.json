@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "leon2000-1-126095-ingaas-gaas-quantum-dots-qds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "R. Leon and J. Wellman (2000): InGaAs/GaAs quantum dots (QDs)",
   "material": {
@@ -138,10 +138,29 @@
   "stocks": [],
   "material_states": [
     {
-      "id": "leon2000-1-126095-ingaas-gaas-quantum-dots-qds-1--after-s01-cool",
+      "id": "leon2000-1-126095-ingaas-gaas-quantum-dots-qds-1--after-d2-s01-grow",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": []
+    },
+    {
+      "id": "leon2000-1-126095-ingaas-gaas-quantum-dots-qds-1--after-d2-s02-grow",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "leon2000-1-126095-ingaas-gaas-quantum-dots-qds-1--after-d2-s01-grow",
+        "leon2000-1-126095-ingaas-gaas-quantum-dots-qds-1--ch3-3ga",
+        "leon2000-1-126095-ingaas-gaas-quantum-dots-qds-1--ch3-3in",
+        "leon2000-1-126095-ingaas-gaas-quantum-dots-qds-1--ash3"
+      ]
+    },
+    {
+      "id": "leon2000-1-126095-ingaas-gaas-quantum-dots-qds-1--after-s01-cool",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "leon2000-1-126095-ingaas-gaas-quantum-dots-qds-1--after-d2-s02-grow"
+      ]
     },
     {
       "id": "leon2000-1-126095-ingaas-gaas-quantum-dots-qds-1--after-s02-cool",
@@ -154,14 +173,141 @@
   ],
   "operations": [
     {
+      "id": "d2-s01-grow",
+      "action": "grow",
+      "label": "Grow GaAs buffer layers",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [],
+      "outputs": [
+        "leon2000-1-126095-ingaas-gaas-quantum-dots-qds-1--after-d2-s01-grow"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 650,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "650 °C",
+          "evidence": [
+            {
+              "source_id": "leon2000-1-126095",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "H2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "leon2000-1-126095",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Grow GaAs buffer layers",
+      "evidence": [
+        {
+          "source_id": "leon2000-1-126095",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s02-grow",
+      "action": "grow",
+      "label": "Grow InGaAs islands",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s01-grow"
+      ],
+      "inputs": [
+        "leon2000-1-126095-ingaas-gaas-quantum-dots-qds-1--after-d2-s01-grow",
+        "leon2000-1-126095-ingaas-gaas-quantum-dots-qds-1--ch3-3ga",
+        "leon2000-1-126095-ingaas-gaas-quantum-dots-qds-1--ch3-3in",
+        "leon2000-1-126095-ingaas-gaas-quantum-dots-qds-1--ash3"
+      ],
+      "outputs": [
+        "leon2000-1-126095-ingaas-gaas-quantum-dots-qds-1--after-d2-s02-grow"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 550,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "550 °C",
+          "evidence": [
+            {
+              "source_id": "leon2000-1-126095",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "H2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "leon2000-1-126095",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Grow InGaAs islands",
+      "evidence": [
+        {
+          "source_id": "leon2000-1-126095",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
       "id": "s01-cool",
       "action": "cool",
       "label": "Cool the structures to below 400 °C",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s02-grow"
+      ],
+      "inputs": [
+        "leon2000-1-126095-ingaas-gaas-quantum-dots-qds-1--after-d2-s02-grow"
+      ],
       "outputs": [
         "leon2000-1-126095-ingaas-gaas-quantum-dots-qds-1--after-s01-cool"
       ],
@@ -309,7 +455,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",

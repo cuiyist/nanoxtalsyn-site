@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "ding2023-jacs-2c13527-cspbbr3-nanocrystals-medium-qy-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Yang Ding; Zhuoming Zhang; Stefano Toso; Irina Gushchina; Vadim Trepalin; Kejia Shi; Jeffrey W. Peng; Masaru Kuno (2023): CsPbBr3 nanocrystals (medium-QY)",
   "material": {
@@ -143,6 +143,63 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "ding2023-jacs-2c13527-cspbbr3-nanocrystals-medium-qy-1--oleic-acid-oa",
+      "name": "oleic acid (OA)",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "ding2023-jacs-2c13527",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "ding2023-jacs-2c13527-cspbbr3-nanocrystals-medium-qy-1--didodecylamine-ddam",
+      "name": "didodecylamine (DDAm)",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "ding2023-jacs-2c13527",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "ding2023-jacs-2c13527-cspbbr3-nanocrystals-medium-qy-1--dddma",
+      "name": "DDDMA+",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "ding2023-jacs-2c13527",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -151,7 +208,9 @@
       "id": "ding2023-jacs-2c13527-cspbbr3-nanocrystals-medium-qy-1--after-s01-add",
       "name": "product as isolated",
       "kind": "product",
-      "parent_ids": []
+      "parent_ids": [
+        "ding2023-jacs-2c13527-cspbbr3-nanocrystals-medium-qy-1--dddma"
+      ]
     }
   ],
   "operations": [
@@ -163,7 +222,9 @@
       "branch": "",
       "optional": false,
       "depends_on": [],
-      "inputs": [],
+      "inputs": [
+        "ding2023-jacs-2c13527-cspbbr3-nanocrystals-medium-qy-1--dddma"
+      ],
       "outputs": [
         "ding2023-jacs-2c13527-cspbbr3-nanocrystals-medium-qy-1--after-s01-add"
       ],
@@ -279,12 +340,44 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "ding2023-jacs-2c13527-cspbbr3-nanocrystals-medium-qy-1--photoluminescence-quantum-yield",
+      "sample_id": "ding2023-jacs-2c13527-cspbbr3-nanocrystals-medium-qy-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 84.2,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "84.2 %",
+        "evidence": [
+          {
+            "source_id": "ding2023-jacs-2c13527",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "ding2023-jacs-2c13527",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
@@ -293,7 +386,10 @@
       "Reaction time not reported in the extracted text.",
       "Amount of Cs-Pb-oleate not reported in the extracted text.",
       "Amount of benzoyl bromide (BzBr) not reported in the extracted text.",
-      "Amount of didodecyl dimethyl ammonium (DDDMA+) not reported in the extracted text."
+      "Amount of didodecyl dimethyl ammonium (DDDMA+) not reported in the extracted text.",
+      "Amount of oleic acid (OA) not reported in the extracted text.",
+      "Amount of didodecylamine (DDAm) not reported in the extracted text.",
+      "Amount of DDDMA+ not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

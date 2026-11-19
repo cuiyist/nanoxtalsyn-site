@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "yang2003-1-1530728-inas-site-controlled-quantum-dots-scqds-3",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Tao Yang (2003): InAs site-controlled quantum dots (SCQDs) with a QD-array pitch of 50 nm",
   "material": {
@@ -95,7 +95,7 @@
       "id": "yang2003-1-1530728-inas-site-controlled-quantum-dots-scqds-3--inas",
       "name": "InAs",
       "formula": null,
-      "role": "reagent",
+      "role": "starting_particles",
       "stage": "synthesis",
       "identity": {
         "pubchem_cid": null,
@@ -180,17 +180,25 @@
       ]
     },
     {
-      "id": "yang2003-1-1530728-inas-site-controlled-quantum-dots-scqds-3--after-s02-deposit",
+      "id": "yang2003-1-1530728-inas-site-controlled-quantum-dots-scqds-3--after-d2-s02-create",
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
-        "yang2003-1-1530728-inas-site-controlled-quantum-dots-scqds-3--after-s01-grow",
+        "yang2003-1-1530728-inas-site-controlled-quantum-dots-scqds-3--after-s01-grow"
+      ]
+    },
+    {
+      "id": "yang2003-1-1530728-inas-site-controlled-quantum-dots-scqds-3--after-s02-deposit",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "yang2003-1-1530728-inas-site-controlled-quantum-dots-scqds-3--after-d2-s02-create",
         "yang2003-1-1530728-inas-site-controlled-quantum-dots-scqds-3--gaas"
       ]
     },
     {
       "id": "yang2003-1-1530728-inas-site-controlled-quantum-dots-scqds-3--after-s03-grow",
-      "name": "mixture after step 3",
+      "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
         "yang2003-1-1530728-inas-site-controlled-quantum-dots-scqds-3--after-s02-deposit",
@@ -199,7 +207,7 @@
     },
     {
       "id": "yang2003-1-1530728-inas-site-controlled-quantum-dots-scqds-3--after-s04-grow",
-      "name": "mixture after step 4",
+      "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
         "yang2003-1-1530728-inas-site-controlled-quantum-dots-scqds-3--after-s03-grow",
@@ -275,9 +283,9 @@
       ]
     },
     {
-      "id": "s02-deposit",
-      "action": "deposit",
-      "label": "Deposit GaAs to form nanoholes",
+      "id": "d2-s02-create",
+      "action": "create",
+      "label": "Create square arrays of STM tip-induced nanomasks",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -285,7 +293,45 @@
         "s01-grow"
       ],
       "inputs": [
-        "yang2003-1-1530728-inas-site-controlled-quantum-dots-scqds-3--after-s01-grow",
+        "yang2003-1-1530728-inas-site-controlled-quantum-dots-scqds-3--after-s01-grow"
+      ],
+      "outputs": [
+        "yang2003-1-1530728-inas-site-controlled-quantum-dots-scqds-3--after-d2-s02-create"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Create square arrays of STM tip-induced nanomasks",
+      "evidence": [
+        {
+          "source_id": "yang2003-1-1530728",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s02-deposit",
+      "action": "deposit",
+      "label": "Deposit GaAs to form nanoholes",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-create"
+      ],
+      "inputs": [
+        "yang2003-1-1530728-inas-site-controlled-quantum-dots-scqds-3--after-d2-s02-create",
         "yang2003-1-1530728-inas-site-controlled-quantum-dots-scqds-3--gaas"
       ],
       "outputs": [
@@ -566,7 +612,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Reactor not reported in the extracted text.",

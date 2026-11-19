@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "jang2024-mi15111297-zno-nanoparticles-synthesized-at-70c-in-6",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Se-Hoon Jang; Go-Eun Kim; Sang-Uk Byun; Kyoung-Ho Lee; Dae-Gyu Moon (2024): ZnO nanoparticles synthesized at 70°C in the closed system",
   "material": {
@@ -181,9 +181,20 @@
   "material_states": [
     {
       "id": "jang2024-mi15111297-zno-nanoparticles-synthesized-at-70c-in-6--after-s01-dissolve",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "jang2024-mi15111297-zno-nanoparticles-synthesized-at-70c-in-6--potassium-hydroxide",
+        "jang2024-mi15111297-zno-nanoparticles-synthesized-at-70c-in-6--zinc-acetate-dihydrate",
+        "jang2024-mi15111297-zno-nanoparticles-synthesized-at-70c-in-6--methanol"
+      ]
+    },
+    {
+      "id": "jang2024-mi15111297-zno-nanoparticles-synthesized-at-70c-in-6--after-d2-s02-heat",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
+        "jang2024-mi15111297-zno-nanoparticles-synthesized-at-70c-in-6--after-s01-dissolve",
         "jang2024-mi15111297-zno-nanoparticles-synthesized-at-70c-in-6--potassium-hydroxide",
         "jang2024-mi15111297-zno-nanoparticles-synthesized-at-70c-in-6--zinc-acetate-dihydrate",
         "jang2024-mi15111297-zno-nanoparticles-synthesized-at-70c-in-6--methanol"
@@ -228,6 +239,66 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s02-heat",
+      "action": "heat",
+      "label": "Stir the mixed solution at 70°C",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-dissolve"
+      ],
+      "inputs": [
+        "jang2024-mi15111297-zno-nanoparticles-synthesized-at-70c-in-6--after-s01-dissolve",
+        "jang2024-mi15111297-zno-nanoparticles-synthesized-at-70c-in-6--potassium-hydroxide",
+        "jang2024-mi15111297-zno-nanoparticles-synthesized-at-70c-in-6--zinc-acetate-dihydrate",
+        "jang2024-mi15111297-zno-nanoparticles-synthesized-at-70c-in-6--methanol"
+      ],
+      "outputs": [
+        "jang2024-mi15111297-zno-nanoparticles-synthesized-at-70c-in-6--after-d2-s02-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 70,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "70 °C",
+          "evidence": [
+            {
+              "source_id": "jang2024-mi15111297",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Stir the mixed solution at 70°C",
+      "evidence": [
+        {
+          "source_id": "jang2024-mi15111297",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -236,7 +307,7 @@
       "sample_id": "jang2024-mi15111297-zno-nanoparticles-synthesized-at-70c-in-6--product",
       "source_sample_label": "ZnO nanoparticles synthesized at 70°C in the closed system",
       "batch_id": null,
-      "material_state_id": "jang2024-mi15111297-zno-nanoparticles-synthesized-at-70c-in-6--after-s01-dissolve",
+      "material_state_id": "jang2024-mi15111297-zno-nanoparticles-synthesized-at-70c-in-6--after-d2-s02-heat",
       "parent_sample_id": null,
       "composition": {
         "value": null,
@@ -285,11 +356,44 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "jang2024-mi15111297-zno-nanoparticles-synthesized-at-70c-in-6--photoluminescence-peak",
+      "sample_id": "jang2024-mi15111297-zno-nanoparticles-synthesized-at-70c-in-6--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 575,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "575 nm",
+        "evidence": [
+          {
+            "source_id": "jang2024-mi15111297",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "jang2024-mi15111297",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "A. Rath (2013): Mn-doped ZnS nanocrystals with a shell layer of ZnS",
   "material": {
@@ -176,31 +176,208 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--manganese-stearate",
+      "name": "manganese stearate",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "rath2013-jp409937z",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--zn-stearate",
+      "name": "Zn-stearate",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "rath2013-jp409937z",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--mn-stearate",
+      "name": "Mn-stearate",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "rath2013-jp409937z",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--tmah",
+      "name": "TMAH",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "rath2013-jp409937z",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--methanol",
+      "name": "methanol",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "rath2013-jp409937z",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--mncl24h2o",
+      "name": "MnCl2·4H2O",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "rath2013-jp409937z",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--stearic-acid",
+      "name": "stearic acid",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "rath2013-jp409937z",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
-      "id": "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--after-s01-heat",
+      "id": "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--after-d2-s01-add",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--tmah",
+        "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--methanol"
+      ]
+    },
+    {
+      "id": "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--after-d2-s02-add",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--after-d2-s01-add",
+        "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--mncl24h2o",
+        "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--methanol"
+      ]
+    },
+    {
+      "id": "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--after-d2-s03-load",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--after-d2-s02-add",
+        "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--manganese-stearate",
+        "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--sulfur",
+        "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--octadecylamine",
+        "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--octadecene"
+      ]
+    },
+    {
+      "id": "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--after-s01-heat",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--after-d2-s03-load"
+      ]
     },
     {
       "id": "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--after-s02-cool",
-      "name": "mixture after step 2",
+      "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
         "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--after-s01-heat"
       ]
     },
     {
-      "id": "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--after-s03-inject",
-      "name": "mixture after step 3",
+      "id": "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--after-d2-s06-mix",
+      "name": "mixture after step 6",
       "kind": "reaction_batch",
       "parent_ids": [
         "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--after-s02-cool",
+        "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--stearic-acid",
         "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--octadecene"
+      ]
+    },
+    {
+      "id": "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--after-s03-inject",
+      "name": "mixture after step 7",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--after-d2-s06-mix",
+        "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--octadecene",
+        "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--stearic-acid"
       ]
     },
     {
@@ -214,14 +391,189 @@
   ],
   "operations": [
     {
+      "id": "d2-s01-add",
+      "action": "add",
+      "label": "Add TMAH in methanol",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--tmah",
+        "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--methanol"
+      ],
+      "outputs": [
+        "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--after-d2-s01-add"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "rath2013-jp409937z",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add TMAH in methanol",
+      "evidence": [
+        {
+          "source_id": "rath2013-jp409937z",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s02-add",
+      "action": "add",
+      "label": "Add",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s01-add"
+      ],
+      "inputs": [
+        "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--after-d2-s01-add",
+        "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--mncl24h2o",
+        "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--methanol"
+      ],
+      "outputs": [
+        "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--after-d2-s02-add"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "rath2013-jp409937z",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add",
+      "evidence": [
+        {
+          "source_id": "rath2013-jp409937z",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s03-load",
+      "action": "load",
+      "label": "Load chemicals into flask",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-add"
+      ],
+      "inputs": [
+        "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--after-d2-s02-add",
+        "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--manganese-stearate",
+        "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--sulfur",
+        "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--octadecylamine",
+        "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--octadecene"
+      ],
+      "outputs": [
+        "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--after-d2-s03-load"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 100,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "100 °C",
+          "evidence": [
+            {
+              "source_id": "rath2013-jp409937z",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 15,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "15 min",
+          "evidence": [
+            {
+              "source_id": "rath2013-jp409937z",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "rath2013-jp409937z",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Load chemicals into flask",
+      "evidence": [
+        {
+          "source_id": "rath2013-jp409937z",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
       "id": "s01-heat",
       "action": "heat",
       "label": "Heat to form Mn-doped ZnS nanocrystals",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s03-load"
+      ],
+      "inputs": [
+        "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--after-d2-s03-load"
+      ],
       "outputs": [
         "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--after-s01-heat"
       ],
@@ -334,9 +686,9 @@
       ]
     },
     {
-      "id": "s03-inject",
-      "action": "inject",
-      "label": "Inject shell solution into reaction flask",
+      "id": "d2-s06-mix",
+      "action": "mix",
+      "label": "Prepare shell solution",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -345,7 +697,53 @@
       ],
       "inputs": [
         "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--after-s02-cool",
+        "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--stearic-acid",
         "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--octadecene"
+      ],
+      "outputs": [
+        "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--after-d2-s06-mix"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "rath2013-jp409937z",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Prepare shell solution",
+      "evidence": [
+        {
+          "source_id": "rath2013-jp409937z",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s03-inject",
+      "action": "inject",
+      "label": "Inject shell solution into reaction flask",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s06-mix"
+      ],
+      "inputs": [
+        "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--after-d2-s06-mix",
+        "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--octadecene",
+        "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--stearic-acid"
       ],
       "outputs": [
         "rath2013-jp409937z-mn-doped-zns-nanocrystals-with-a-shell-l-1--after-s03-inject"
@@ -500,12 +898,19 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
-      "Amount of octadecene not reported in the extracted text."
+      "Amount of octadecene not reported in the extracted text.",
+      "Amount of manganese stearate not reported in the extracted text.",
+      "Amount of Zn-stearate not reported in the extracted text.",
+      "Amount of Mn-stearate not reported in the extracted text.",
+      "Amount of TMAH not reported in the extracted text.",
+      "Amount of methanol not reported in the extracted text.",
+      "Amount of MnCl2·4H2O not reported in the extracted text.",
+      "Amount of stearic acid not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

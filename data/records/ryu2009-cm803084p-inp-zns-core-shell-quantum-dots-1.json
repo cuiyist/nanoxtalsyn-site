@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "ryu2009-cm803084p-inp-zns-core-shell-quantum-dots-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Euidock Ryu; Sungwoo Kim; Eunjoo Jang; Shinae Jun; Hyosook Jang; Byungki Kim; Sang-Wook Kim (2009): InP/ZnS core-shell quantum dots",
   "material": {
@@ -183,6 +183,63 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "ryu2009-cm803084p-inp-zns-core-shell-quantum-dots-1--tris-trimethylsilyl-phosphine",
+      "name": "tris(trimethylsilyl)phosphine",
+      "formula": null,
+      "role": "nonmetal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 0.03,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.03 mmol",
+          "evidence": [
+            {
+              "source_id": "ryu2009-cm803084p",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "ryu2009-cm803084p",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "ryu2009-cm803084p-inp-zns-core-shell-quantum-dots-1--octadecene",
+      "name": "octadecene",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "ryu2009-cm803084p",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -194,7 +251,8 @@
       "parent_ids": [
         "ryu2009-cm803084p-inp-zns-core-shell-quantum-dots-1--indium-acetate",
         "ryu2009-cm803084p-inp-zns-core-shell-quantum-dots-1--zinc-acetate",
-        "ryu2009-cm803084p-inp-zns-core-shell-quantum-dots-1--dodecanethiol"
+        "ryu2009-cm803084p-inp-zns-core-shell-quantum-dots-1--dodecanethiol",
+        "ryu2009-cm803084p-inp-zns-core-shell-quantum-dots-1--tris-trimethylsilyl-phosphine"
       ]
     },
     {
@@ -228,7 +286,8 @@
       "inputs": [
         "ryu2009-cm803084p-inp-zns-core-shell-quantum-dots-1--indium-acetate",
         "ryu2009-cm803084p-inp-zns-core-shell-quantum-dots-1--zinc-acetate",
-        "ryu2009-cm803084p-inp-zns-core-shell-quantum-dots-1--dodecanethiol"
+        "ryu2009-cm803084p-inp-zns-core-shell-quantum-dots-1--dodecanethiol",
+        "ryu2009-cm803084p-inp-zns-core-shell-quantum-dots-1--tris-trimethylsilyl-phosphine"
       ],
       "outputs": [
         "ryu2009-cm803084p-inp-zns-core-shell-quantum-dots-1--after-s01-heat"
@@ -455,11 +514,12 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Size not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
-      "Amount of dodecanethiol not reported in the extracted text."
+      "Amount of dodecanethiol not reported in the extracted text.",
+      "Amount of octadecene not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

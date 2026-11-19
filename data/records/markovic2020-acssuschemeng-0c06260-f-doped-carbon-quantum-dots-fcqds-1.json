@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "markovic2020-acssuschemeng-0c06260-f-doped-carbon-quantum-dots-fcqds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Zoran M. Marković; Martina Labudová; Martin Danko; Danka Matijašević; Matej Mičušík; Vojtech Nádaždy; Mária Kováčová; Angela Kleinová; Zdeno Špitalský; Vladimir Pavlović; Dušan D. Milivojević; Mina Medić; Biljana M. Todorović Marković (2020): F-doped Carbon Quantum Dots (FCQDs)",
   "material": {
@@ -195,12 +195,50 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "markovic2020-acssuschemeng-0c06260-f-doped-carbon-quantum-dots-fcqds-1--fcqds",
+      "name": "FCQDs",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "markovic2020-acssuschemeng-0c06260",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "markovic2020-acssuschemeng-0c06260-f-doped-carbon-quantum-dots-fcqds-1--hcl",
+      "name": "HCl",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "markovic2020-acssuschemeng-0c06260",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
-      "id": "markovic2020-acssuschemeng-0c06260-f-doped-carbon-quantum-dots-fcqds-1--after-s01-sonicate",
+      "id": "markovic2020-acssuschemeng-0c06260-f-doped-carbon-quantum-dots-fcqds-1--after-d2-s01-mix",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": [
@@ -211,8 +249,20 @@
       ]
     },
     {
-      "id": "markovic2020-acssuschemeng-0c06260-f-doped-carbon-quantum-dots-fcqds-1--after-s02-heat",
+      "id": "markovic2020-acssuschemeng-0c06260-f-doped-carbon-quantum-dots-fcqds-1--after-s01-sonicate",
       "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "markovic2020-acssuschemeng-0c06260-f-doped-carbon-quantum-dots-fcqds-1--after-d2-s01-mix",
+        "markovic2020-acssuschemeng-0c06260-f-doped-carbon-quantum-dots-fcqds-1--citric-acid",
+        "markovic2020-acssuschemeng-0c06260-f-doped-carbon-quantum-dots-fcqds-1--urea",
+        "markovic2020-acssuschemeng-0c06260-f-doped-carbon-quantum-dots-fcqds-1--sodium-fluoride",
+        "markovic2020-acssuschemeng-0c06260-f-doped-carbon-quantum-dots-fcqds-1--water"
+      ]
+    },
+    {
+      "id": "markovic2020-acssuschemeng-0c06260-f-doped-carbon-quantum-dots-fcqds-1--after-s02-heat",
+      "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
         "markovic2020-acssuschemeng-0c06260-f-doped-carbon-quantum-dots-fcqds-1--after-s01-sonicate",
@@ -224,18 +274,21 @@
     },
     {
       "id": "markovic2020-acssuschemeng-0c06260-f-doped-carbon-quantum-dots-fcqds-1--after-s03-dilute",
-      "name": "mixture after step 3",
+      "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
-        "markovic2020-acssuschemeng-0c06260-f-doped-carbon-quantum-dots-fcqds-1--after-s02-heat"
+        "markovic2020-acssuschemeng-0c06260-f-doped-carbon-quantum-dots-fcqds-1--after-s02-heat",
+        "markovic2020-acssuschemeng-0c06260-f-doped-carbon-quantum-dots-fcqds-1--fcqds"
       ]
     },
     {
       "id": "markovic2020-acssuschemeng-0c06260-f-doped-carbon-quantum-dots-fcqds-1--after-s04-neutralize",
-      "name": "mixture after step 4",
+      "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
-        "markovic2020-acssuschemeng-0c06260-f-doped-carbon-quantum-dots-fcqds-1--after-s03-dilute"
+        "markovic2020-acssuschemeng-0c06260-f-doped-carbon-quantum-dots-fcqds-1--after-s03-dilute",
+        "markovic2020-acssuschemeng-0c06260-f-doped-carbon-quantum-dots-fcqds-1--fcqds",
+        "markovic2020-acssuschemeng-0c06260-f-doped-carbon-quantum-dots-fcqds-1--hcl"
       ]
     },
     {
@@ -243,11 +296,51 @@
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "markovic2020-acssuschemeng-0c06260-f-doped-carbon-quantum-dots-fcqds-1--after-s04-neutralize"
+        "markovic2020-acssuschemeng-0c06260-f-doped-carbon-quantum-dots-fcqds-1--after-s04-neutralize",
+        "markovic2020-acssuschemeng-0c06260-f-doped-carbon-quantum-dots-fcqds-1--fcqds"
       ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-mix",
+      "action": "mix",
+      "label": "Mix citric acid, urea, sodium fluoride, and water",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "markovic2020-acssuschemeng-0c06260-f-doped-carbon-quantum-dots-fcqds-1--citric-acid",
+        "markovic2020-acssuschemeng-0c06260-f-doped-carbon-quantum-dots-fcqds-1--urea",
+        "markovic2020-acssuschemeng-0c06260-f-doped-carbon-quantum-dots-fcqds-1--sodium-fluoride",
+        "markovic2020-acssuschemeng-0c06260-f-doped-carbon-quantum-dots-fcqds-1--water"
+      ],
+      "outputs": [
+        "markovic2020-acssuschemeng-0c06260-f-doped-carbon-quantum-dots-fcqds-1--after-d2-s01-mix"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Mix citric acid, urea, sodium fluoride, and water",
+      "evidence": [
+        {
+          "source_id": "markovic2020-acssuschemeng-0c06260",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
     {
       "id": "s01-sonicate",
       "action": "sonicate",
@@ -255,8 +348,11 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
+      "depends_on": [
+        "d2-s01-mix"
+      ],
       "inputs": [
+        "markovic2020-acssuschemeng-0c06260-f-doped-carbon-quantum-dots-fcqds-1--after-d2-s01-mix",
         "markovic2020-acssuschemeng-0c06260-f-doped-carbon-quantum-dots-fcqds-1--citric-acid",
         "markovic2020-acssuschemeng-0c06260-f-doped-carbon-quantum-dots-fcqds-1--urea",
         "markovic2020-acssuschemeng-0c06260-f-doped-carbon-quantum-dots-fcqds-1--sodium-fluoride",
@@ -377,7 +473,8 @@
         "s02-heat"
       ],
       "inputs": [
-        "markovic2020-acssuschemeng-0c06260-f-doped-carbon-quantum-dots-fcqds-1--after-s02-heat"
+        "markovic2020-acssuschemeng-0c06260-f-doped-carbon-quantum-dots-fcqds-1--after-s02-heat",
+        "markovic2020-acssuschemeng-0c06260-f-doped-carbon-quantum-dots-fcqds-1--fcqds"
       ],
       "outputs": [
         "markovic2020-acssuschemeng-0c06260-f-doped-carbon-quantum-dots-fcqds-1--after-s03-dilute"
@@ -415,7 +512,9 @@
         "s03-dilute"
       ],
       "inputs": [
-        "markovic2020-acssuschemeng-0c06260-f-doped-carbon-quantum-dots-fcqds-1--after-s03-dilute"
+        "markovic2020-acssuschemeng-0c06260-f-doped-carbon-quantum-dots-fcqds-1--after-s03-dilute",
+        "markovic2020-acssuschemeng-0c06260-f-doped-carbon-quantum-dots-fcqds-1--fcqds",
+        "markovic2020-acssuschemeng-0c06260-f-doped-carbon-quantum-dots-fcqds-1--hcl"
       ],
       "outputs": [
         "markovic2020-acssuschemeng-0c06260-f-doped-carbon-quantum-dots-fcqds-1--after-s04-neutralize"
@@ -453,7 +552,8 @@
         "s04-neutralize"
       ],
       "inputs": [
-        "markovic2020-acssuschemeng-0c06260-f-doped-carbon-quantum-dots-fcqds-1--after-s04-neutralize"
+        "markovic2020-acssuschemeng-0c06260-f-doped-carbon-quantum-dots-fcqds-1--after-s04-neutralize",
+        "markovic2020-acssuschemeng-0c06260-f-doped-carbon-quantum-dots-fcqds-1--fcqds"
       ],
       "outputs": [
         "markovic2020-acssuschemeng-0c06260-f-doped-carbon-quantum-dots-fcqds-1--after-s05-purify"
@@ -588,14 +688,16 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Amount of sodium fluoride not reported in the extracted text.",
-      "Amount of water not reported in the extracted text."
+      "Amount of water not reported in the extracted text.",
+      "Amount of FCQDs not reported in the extracted text.",
+      "Amount of HCl not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

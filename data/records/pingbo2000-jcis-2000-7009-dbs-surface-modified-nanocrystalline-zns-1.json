@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "pingbo2000-jcis-2000-7009-dbs-surface-modified-nanocrystalline-zns-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Xie Pingbo; Zhang Weiping; Yin Min; Chen Houtong; Zhang Weiwei; Lou Liren; Xia Shangda (2000): DBS surface-modified nanocrystalline ZnS : Mn",
   "material": {
@@ -138,17 +138,121 @@
           "locator": "Main PDF p.1"
         }
       ]
+    },
+    {
+      "id": "pingbo2000-jcis-2000-7009-dbs-surface-modified-nanocrystalline-zns-1--dbs",
+      "name": "DBS",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "pingbo2000-jcis-2000-7009",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "pingbo2000-jcis-2000-7009-dbs-surface-modified-nanocrystalline-zns-1--dbs-dodecyl-benzene-sulfonic-acid-sodium",
+      "name": "DBS (dodecyl benzene sulfonic acid sodium salt)",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "pingbo2000-jcis-2000-7009",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "pingbo2000-jcis-2000-7009-dbs-surface-modified-nanocrystalline-zns-1--alcohol",
+      "name": "alcohol",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "pingbo2000-jcis-2000-7009",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "pingbo2000-jcis-2000-7009-dbs-surface-modified-nanocrystalline-zns-1--benzene",
+      "name": "benzene",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "pingbo2000-jcis-2000-7009",
+          "locator": "Main PDF p.1"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
-      "id": "pingbo2000-jcis-2000-7009-dbs-surface-modified-nanocrystalline-zns-1--after-s01-mix",
+      "id": "pingbo2000-jcis-2000-7009-dbs-surface-modified-nanocrystalline-zns-1--after-d2-s01-dissolve",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": [
         "pingbo2000-jcis-2000-7009-dbs-surface-modified-nanocrystalline-zns-1--zn-no3-2",
+        "pingbo2000-jcis-2000-7009-dbs-surface-modified-nanocrystalline-zns-1--mncl2",
+        "pingbo2000-jcis-2000-7009-dbs-surface-modified-nanocrystalline-zns-1--na2s"
+      ]
+    },
+    {
+      "id": "pingbo2000-jcis-2000-7009-dbs-surface-modified-nanocrystalline-zns-1--after-s01-mix",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "pingbo2000-jcis-2000-7009-dbs-surface-modified-nanocrystalline-zns-1--after-d2-s01-dissolve",
+        "pingbo2000-jcis-2000-7009-dbs-surface-modified-nanocrystalline-zns-1--zn-no3-2",
         "pingbo2000-jcis-2000-7009-dbs-surface-modified-nanocrystalline-zns-1--mncl2"
+      ]
+    },
+    {
+      "id": "pingbo2000-jcis-2000-7009-dbs-surface-modified-nanocrystalline-zns-1--after-d2-s03-precipitate",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "pingbo2000-jcis-2000-7009-dbs-surface-modified-nanocrystalline-zns-1--after-s01-mix",
+        "pingbo2000-jcis-2000-7009-dbs-surface-modified-nanocrystalline-zns-1--na2s"
+      ]
+    },
+    {
+      "id": "pingbo2000-jcis-2000-7009-dbs-surface-modified-nanocrystalline-zns-1--after-d2-s04-dry",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "pingbo2000-jcis-2000-7009-dbs-surface-modified-nanocrystalline-zns-1--after-d2-s03-precipitate"
       ]
     },
     {
@@ -156,11 +260,50 @@
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "pingbo2000-jcis-2000-7009-dbs-surface-modified-nanocrystalline-zns-1--after-s01-mix"
+        "pingbo2000-jcis-2000-7009-dbs-surface-modified-nanocrystalline-zns-1--after-d2-s04-dry",
+        "pingbo2000-jcis-2000-7009-dbs-surface-modified-nanocrystalline-zns-1--dbs"
       ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-dissolve",
+      "action": "dissolve",
+      "label": "Zn(NO3)2, MnCl2, and Na2S were dissolved in aqueous solutions.",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "pingbo2000-jcis-2000-7009-dbs-surface-modified-nanocrystalline-zns-1--zn-no3-2",
+        "pingbo2000-jcis-2000-7009-dbs-surface-modified-nanocrystalline-zns-1--mncl2",
+        "pingbo2000-jcis-2000-7009-dbs-surface-modified-nanocrystalline-zns-1--na2s"
+      ],
+      "outputs": [
+        "pingbo2000-jcis-2000-7009-dbs-surface-modified-nanocrystalline-zns-1--after-d2-s01-dissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Zn(NO3)2, MnCl2, and Na2S were dissolved in aqueous solutions.",
+      "evidence": [
+        {
+          "source_id": "pingbo2000-jcis-2000-7009",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
     {
       "id": "s01-mix",
       "action": "mix",
@@ -168,8 +311,11 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
+      "depends_on": [
+        "d2-s01-dissolve"
+      ],
       "inputs": [
+        "pingbo2000-jcis-2000-7009-dbs-surface-modified-nanocrystalline-zns-1--after-d2-s01-dissolve",
         "pingbo2000-jcis-2000-7009-dbs-surface-modified-nanocrystalline-zns-1--zn-no3-2",
         "pingbo2000-jcis-2000-7009-dbs-surface-modified-nanocrystalline-zns-1--mncl2"
       ],
@@ -199,6 +345,120 @@
       ]
     },
     {
+      "id": "d2-s03-precipitate",
+      "action": "precipitate",
+      "label": "Na2S was added drop by drop to the mixture with stirring.",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-mix"
+      ],
+      "inputs": [
+        "pingbo2000-jcis-2000-7009-dbs-surface-modified-nanocrystalline-zns-1--after-s01-mix",
+        "pingbo2000-jcis-2000-7009-dbs-surface-modified-nanocrystalline-zns-1--na2s"
+      ],
+      "outputs": [
+        "pingbo2000-jcis-2000-7009-dbs-surface-modified-nanocrystalline-zns-1--after-d2-s03-precipitate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Na2S was added drop by drop to the mixture with stirring.",
+      "evidence": [
+        {
+          "source_id": "pingbo2000-jcis-2000-7009",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "d2-s04-dry",
+      "action": "dry",
+      "label": "The precipitate was dried at 40°C for 24 h.",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-precipitate"
+      ],
+      "inputs": [
+        "pingbo2000-jcis-2000-7009-dbs-surface-modified-nanocrystalline-zns-1--after-d2-s03-precipitate"
+      ],
+      "outputs": [
+        "pingbo2000-jcis-2000-7009-dbs-surface-modified-nanocrystalline-zns-1--after-d2-s04-dry"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 40,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "40 °C",
+          "evidence": [
+            {
+              "source_id": "pingbo2000-jcis-2000-7009",
+              "locator": "Main PDF p.1"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 24,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "24 h",
+          "evidence": [
+            {
+              "source_id": "pingbo2000-jcis-2000-7009",
+              "locator": "Main PDF p.1"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "The precipitate was dried at 40°C for 24 h.",
+      "evidence": [
+        {
+          "source_id": "pingbo2000-jcis-2000-7009",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
       "id": "s02-add",
       "action": "add",
       "label": "DBS, alcohol, and benzene were added to the aqueous solutions for surface modification.",
@@ -206,10 +466,11 @@
       "branch": "",
       "optional": false,
       "depends_on": [
-        "s01-mix"
+        "d2-s04-dry"
       ],
       "inputs": [
-        "pingbo2000-jcis-2000-7009-dbs-surface-modified-nanocrystalline-zns-1--after-s01-mix"
+        "pingbo2000-jcis-2000-7009-dbs-surface-modified-nanocrystalline-zns-1--after-d2-s04-dry",
+        "pingbo2000-jcis-2000-7009-dbs-surface-modified-nanocrystalline-zns-1--dbs"
       ],
       "outputs": [
         "pingbo2000-jcis-2000-7009-dbs-surface-modified-nanocrystalline-zns-1--after-s02-add"
@@ -294,11 +555,44 @@
       "notes": []
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "pingbo2000-jcis-2000-7009-dbs-surface-modified-nanocrystalline-zns-1--photoluminescence-peak",
+      "sample_id": "pingbo2000-jcis-2000-7009-dbs-surface-modified-nanocrystalline-zns-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 600,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "600 nm",
+        "evidence": [
+          {
+            "source_id": "pingbo2000-jcis-2000-7009",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "pingbo2000-jcis-2000-7009",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Size not reported in the extracted text.",
@@ -308,7 +602,11 @@
       "Reaction time not reported in the extracted text.",
       "Amount of Zn(NO3)2 not reported in the extracted text.",
       "Amount of MnCl2 not reported in the extracted text.",
-      "Amount of Na2S not reported in the extracted text."
+      "Amount of Na2S not reported in the extracted text.",
+      "Amount of DBS not reported in the extracted text.",
+      "Amount of DBS (dodecyl benzene sulfonic acid sodium salt) not reported in the extracted text.",
+      "Amount of alcohol not reported in the extracted text.",
+      "Amount of benzene not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

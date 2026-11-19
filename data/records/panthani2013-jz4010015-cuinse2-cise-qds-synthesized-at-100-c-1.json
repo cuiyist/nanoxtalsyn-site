@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "panthani2013-jz4010015-cuinse2-cise-qds-synthesized-at-100-c-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Matthew G. Panthani (2013): CuInSe2 (CISe) QDs synthesized at 100 °C",
   "material": {
@@ -143,6 +143,44 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "panthani2013-jz4010015-cuinse2-cise-qds-synthesized-at-100-c-1--oleylamine",
+      "name": "oleylamine",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "panthani2013-jz4010015",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "panthani2013-jz4010015-cuinse2-cise-qds-synthesized-at-100-c-1--dpp-se",
+      "name": "DPP/Se",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "panthani2013-jz4010015",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -154,7 +192,8 @@
       "parent_ids": [
         "panthani2013-jz4010015-cuinse2-cise-qds-synthesized-at-100-c-1--cu-precursor",
         "panthani2013-jz4010015-cuinse2-cise-qds-synthesized-at-100-c-1--in-precursor",
-        "panthani2013-jz4010015-cuinse2-cise-qds-synthesized-at-100-c-1--diphenylphosphine-selenide-dpp-se"
+        "panthani2013-jz4010015-cuinse2-cise-qds-synthesized-at-100-c-1--diphenylphosphine-selenide-dpp-se",
+        "panthani2013-jz4010015-cuinse2-cise-qds-synthesized-at-100-c-1--oleylamine"
       ]
     }
   ],
@@ -170,7 +209,8 @@
       "inputs": [
         "panthani2013-jz4010015-cuinse2-cise-qds-synthesized-at-100-c-1--cu-precursor",
         "panthani2013-jz4010015-cuinse2-cise-qds-synthesized-at-100-c-1--in-precursor",
-        "panthani2013-jz4010015-cuinse2-cise-qds-synthesized-at-100-c-1--diphenylphosphine-selenide-dpp-se"
+        "panthani2013-jz4010015-cuinse2-cise-qds-synthesized-at-100-c-1--diphenylphosphine-selenide-dpp-se",
+        "panthani2013-jz4010015-cuinse2-cise-qds-synthesized-at-100-c-1--oleylamine"
       ],
       "outputs": [
         "panthani2013-jz4010015-cuinse2-cise-qds-synthesized-at-100-c-1--after-s01-heat"
@@ -308,7 +348,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
@@ -316,7 +356,8 @@
       "Reaction time not reported in the extracted text.",
       "Amount of Cu precursor not reported in the extracted text.",
       "Amount of In precursor not reported in the extracted text.",
-      "Amount of diphenylphosphine selenide (DPP/Se) not reported in the extracted text."
+      "Amount of oleylamine not reported in the extracted text.",
+      "Amount of DPP/Se not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "srdic2000-j-1151-2916-2000-tb01266-x-nanocrystalline-zro2-powder-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Vladimir V. Srdic´ (2000): nanocrystalline ZrO2 powder",
   "material": {
@@ -171,17 +171,77 @@
   "stocks": [],
   "material_states": [
     {
-      "id": "srdic2000-j-1151-2916-2000-tb01266-x-nanocrystalline-zro2-powder-1--after-s01-heat",
-      "name": "product as isolated",
-      "kind": "product",
+      "id": "srdic2000-j-1151-2916-2000-tb01266-x-nanocrystalline-zro2-powder-1--after-d2-s01-bubbling",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
       "parent_ids": [
+        "srdic2000-j-1151-2916-2000-tb01266-x-nanocrystalline-zro2-powder-1--zirconium-tert-butoxide",
+        "srdic2000-j-1151-2916-2000-tb01266-x-nanocrystalline-zro2-powder-1--helium"
+      ]
+    },
+    {
+      "id": "srdic2000-j-1151-2916-2000-tb01266-x-nanocrystalline-zro2-powder-1--after-s01-heat",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "srdic2000-j-1151-2916-2000-tb01266-x-nanocrystalline-zro2-powder-1--after-d2-s01-bubbling",
         "srdic2000-j-1151-2916-2000-tb01266-x-nanocrystalline-zro2-powder-1--zirconium-tert-butoxide",
         "srdic2000-j-1151-2916-2000-tb01266-x-nanocrystalline-zro2-powder-1--helium",
         "srdic2000-j-1151-2916-2000-tb01266-x-nanocrystalline-zro2-powder-1--oxygen"
       ]
+    },
+    {
+      "id": "srdic2000-j-1151-2916-2000-tb01266-x-nanocrystalline-zro2-powder-1--after-d2-s03-collect",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "srdic2000-j-1151-2916-2000-tb01266-x-nanocrystalline-zro2-powder-1--after-s01-heat"
+      ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-bubbling",
+      "action": "bubbling",
+      "label": "Bubbling helium through zirconium tert-butoxide precursor",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "srdic2000-j-1151-2916-2000-tb01266-x-nanocrystalline-zro2-powder-1--zirconium-tert-butoxide",
+        "srdic2000-j-1151-2916-2000-tb01266-x-nanocrystalline-zro2-powder-1--helium"
+      ],
+      "outputs": [
+        "srdic2000-j-1151-2916-2000-tb01266-x-nanocrystalline-zro2-powder-1--after-d2-s01-bubbling"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "He and O2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "srdic2000-j-1151-2916-2000-tb01266-x",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Bubbling helium through zirconium tert-butoxide precursor",
+      "evidence": [
+        {
+          "source_id": "srdic2000-j-1151-2916-2000-tb01266-x",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
     {
       "id": "s01-heat",
       "action": "heat",
@@ -189,8 +249,11 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
+      "depends_on": [
+        "d2-s01-bubbling"
+      ],
       "inputs": [
+        "srdic2000-j-1151-2916-2000-tb01266-x-nanocrystalline-zro2-powder-1--after-d2-s01-bubbling",
         "srdic2000-j-1151-2916-2000-tb01266-x-nanocrystalline-zro2-powder-1--zirconium-tert-butoxide",
         "srdic2000-j-1151-2916-2000-tb01266-x-nanocrystalline-zro2-powder-1--helium",
         "srdic2000-j-1151-2916-2000-tb01266-x-nanocrystalline-zro2-powder-1--oxygen"
@@ -243,6 +306,44 @@
           "locator": "Main PDF p.1"
         }
       ]
+    },
+    {
+      "id": "d2-s03-collect",
+      "action": "collect",
+      "label": "Collect nanoparticles via thermophoretic force",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-heat"
+      ],
+      "inputs": [
+        "srdic2000-j-1151-2916-2000-tb01266-x-nanocrystalline-zro2-powder-1--after-s01-heat"
+      ],
+      "outputs": [
+        "srdic2000-j-1151-2916-2000-tb01266-x-nanocrystalline-zro2-powder-1--after-d2-s03-collect"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Collect nanoparticles via thermophoretic force",
+      "evidence": [
+        {
+          "source_id": "srdic2000-j-1151-2916-2000-tb01266-x",
+          "locator": "Main PDF p.1"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -251,7 +352,7 @@
       "sample_id": "srdic2000-j-1151-2916-2000-tb01266-x-nanocrystalline-zro2-powder-1--product",
       "source_sample_label": "nanocrystalline ZrO2 powder",
       "batch_id": null,
-      "material_state_id": "srdic2000-j-1151-2916-2000-tb01266-x-nanocrystalline-zro2-powder-1--after-s01-heat",
+      "material_state_id": "srdic2000-j-1151-2916-2000-tb01266-x-nanocrystalline-zro2-powder-1--after-d2-s03-collect",
       "parent_sample_id": null,
       "composition": {
         "value": "ZrO2",
@@ -341,7 +442,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Reactor not reported in the extracted text.",

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "luther2009-ja906503w-pbs-nanorods-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Joseph M. Luther (2009): PbS nanorods",
   "material": {
@@ -194,30 +194,109 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "luther2009-ja906503w-pbs-nanorods-1--cdo",
+      "name": "CdO",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "luther2009-ja906503w",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "luther2009-ja906503w-pbs-nanorods-1--tri-n-octylphosphine",
+      "name": "tri-n-octylphosphine",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "luther2009-ja906503w",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "luther2009-ja906503w-pbs-nanorods-1--tri-n-butylphosphine",
+      "name": "tri-n-butylphosphine",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "luther2009-ja906503w",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
-      "id": "luther2009-ja906503w-pbs-nanorods-1--after-s01-cool",
+      "id": "luther2009-ja906503w-pbs-nanorods-1--after-d2-s01-heat",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "luther2009-ja906503w-pbs-nanorods-1--cdo",
+        "luther2009-ja906503w-pbs-nanorods-1--tri-n-octylphosphine-oxide",
+        "luther2009-ja906503w-pbs-nanorods-1--n-octadecylphosphonic-acid",
+        "luther2009-ja906503w-pbs-nanorods-1--tri-n-octylphosphine",
+        "luther2009-ja906503w-pbs-nanorods-1--sulfur"
+      ]
+    },
+    {
+      "id": "luther2009-ja906503w-pbs-nanorods-1--after-s01-cool",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "luther2009-ja906503w-pbs-nanorods-1--after-d2-s01-heat"
+      ]
     },
     {
       "id": "luther2009-ja906503w-pbs-nanorods-1--after-s02-centrifuge",
-      "name": "mixture after step 2",
+      "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
         "luther2009-ja906503w-pbs-nanorods-1--after-s01-cool"
       ]
     },
     {
-      "id": "luther2009-ja906503w-pbs-nanorods-1--after-s03-add",
-      "name": "mixture after step 3",
+      "id": "luther2009-ja906503w-pbs-nanorods-1--after-d2-s04-redisperse",
+      "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
         "luther2009-ja906503w-pbs-nanorods-1--after-s02-centrifuge"
+      ]
+    },
+    {
+      "id": "luther2009-ja906503w-pbs-nanorods-1--after-s03-add",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "luther2009-ja906503w-pbs-nanorods-1--after-d2-s04-redisperse"
       ]
     },
     {
@@ -231,14 +310,100 @@
   ],
   "operations": [
     {
+      "id": "d2-s01-heat",
+      "action": "heat",
+      "label": "Heating to 315 °C for 45 min",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "luther2009-ja906503w-pbs-nanorods-1--cdo",
+        "luther2009-ja906503w-pbs-nanorods-1--tri-n-octylphosphine-oxide",
+        "luther2009-ja906503w-pbs-nanorods-1--n-octadecylphosphonic-acid",
+        "luther2009-ja906503w-pbs-nanorods-1--tri-n-octylphosphine",
+        "luther2009-ja906503w-pbs-nanorods-1--sulfur"
+      ],
+      "outputs": [
+        "luther2009-ja906503w-pbs-nanorods-1--after-d2-s01-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 315,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "315 °C",
+          "evidence": [
+            {
+              "source_id": "luther2009-ja906503w",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 45,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "45 min",
+          "evidence": [
+            {
+              "source_id": "luther2009-ja906503w",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "argon",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "luther2009-ja906503w",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heating to 315 °C for 45 min",
+      "evidence": [
+        {
+          "source_id": "luther2009-ja906503w",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
       "id": "s01-cool",
       "action": "cool",
       "label": "Cooling to room temperature",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s01-heat"
+      ],
+      "inputs": [
+        "luther2009-ja906503w-pbs-nanorods-1--after-d2-s01-heat"
+      ],
       "outputs": [
         "luther2009-ja906503w-pbs-nanorods-1--after-s01-cool"
       ],
@@ -327,10 +492,10 @@
       ]
     },
     {
-      "id": "s03-add",
-      "action": "add",
-      "label": "Adding hexane and methanol for purification",
-      "stage": "synthesis",
+      "id": "d2-s04-redisperse",
+      "action": "redisperse",
+      "label": "Redispersing in toluene and nonanoic acid",
+      "stage": "workup",
       "branch": "",
       "optional": false,
       "depends_on": [
@@ -338,6 +503,44 @@
       ],
       "inputs": [
         "luther2009-ja906503w-pbs-nanorods-1--after-s02-centrifuge"
+      ],
+      "outputs": [
+        "luther2009-ja906503w-pbs-nanorods-1--after-d2-s04-redisperse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Redispersing in toluene and nonanoic acid",
+      "evidence": [
+        {
+          "source_id": "luther2009-ja906503w",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s03-add",
+      "action": "add",
+      "label": "Adding hexane and methanol for purification",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-redisperse"
+      ],
+      "inputs": [
+        "luther2009-ja906503w-pbs-nanorods-1--after-d2-s04-redisperse"
       ],
       "outputs": [
         "luther2009-ja906503w-pbs-nanorods-1--after-s03-add"
@@ -491,11 +694,14 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Size not reported in the extracted text.",
-      "Reactor not reported in the extracted text."
+      "Reactor not reported in the extracted text.",
+      "Amount of CdO not reported in the extracted text.",
+      "Amount of tri-n-octylphosphine not reported in the extracted text.",
+      "Amount of tri-n-butylphosphine not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

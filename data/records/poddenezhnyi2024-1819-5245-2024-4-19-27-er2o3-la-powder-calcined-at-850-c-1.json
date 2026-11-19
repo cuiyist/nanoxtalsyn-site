@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "poddenezhnyi2024-1819-5245-2024-4-19-27-er2o3-la-powder-calcined-at-850-c-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "E. N. Poddenezhnyi; N. E. Drobyshevskaya; A. A. Boiko; V. S. Urbanovich; S. V. Grigoriev (2024): Er2O3 : La powder calcined at 850 °C",
   "material": {
@@ -147,13 +147,63 @@
   "stocks": [],
   "material_states": [
     {
+      "id": "poddenezhnyi2024-1819-5245-2024-4-19-27-er2o3-la-powder-calcined-at-850-c-1--after-d2-s01-mix",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "poddenezhnyi2024-1819-5245-2024-4-19-27-er2o3-la-powder-calcined-at-850-c-1--erbium-nitrate",
+        "poddenezhnyi2024-1819-5245-2024-4-19-27-er2o3-la-powder-calcined-at-850-c-1--lanthanum-nitrate",
+        "poddenezhnyi2024-1819-5245-2024-4-19-27-er2o3-la-powder-calcined-at-850-c-1--polyvinyl-alcohol"
+      ]
+    },
+    {
       "id": "poddenezhnyi2024-1819-5245-2024-4-19-27-er2o3-la-powder-calcined-at-850-c-1--after-s01-calcine",
       "name": "product as isolated",
       "kind": "product",
-      "parent_ids": []
+      "parent_ids": [
+        "poddenezhnyi2024-1819-5245-2024-4-19-27-er2o3-la-powder-calcined-at-850-c-1--after-d2-s01-mix"
+      ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-mix",
+      "action": "mix",
+      "label": "Mixing nitrate salts of erbium and lanthanum with polyvinyl alcohol",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "poddenezhnyi2024-1819-5245-2024-4-19-27-er2o3-la-powder-calcined-at-850-c-1--erbium-nitrate",
+        "poddenezhnyi2024-1819-5245-2024-4-19-27-er2o3-la-powder-calcined-at-850-c-1--lanthanum-nitrate",
+        "poddenezhnyi2024-1819-5245-2024-4-19-27-er2o3-la-powder-calcined-at-850-c-1--polyvinyl-alcohol"
+      ],
+      "outputs": [
+        "poddenezhnyi2024-1819-5245-2024-4-19-27-er2o3-la-powder-calcined-at-850-c-1--after-d2-s01-mix"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Mixing nitrate salts of erbium and lanthanum with polyvinyl alcohol",
+      "evidence": [
+        {
+          "source_id": "poddenezhnyi2024-1819-5245-2024-4-19-27",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
     {
       "id": "s01-calcine",
       "action": "calcine",
@@ -161,8 +211,12 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s01-mix"
+      ],
+      "inputs": [
+        "poddenezhnyi2024-1819-5245-2024-4-19-27-er2o3-la-powder-calcined-at-850-c-1--after-d2-s01-mix"
+      ],
       "outputs": [
         "poddenezhnyi2024-1819-5245-2024-4-19-27-er2o3-la-powder-calcined-at-850-c-1--after-s01-calcine"
       ],
@@ -265,11 +319,44 @@
       "notes": []
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "poddenezhnyi2024-1819-5245-2024-4-19-27-er2o3-la-powder-calcined-at-850-c-1--photoluminescence-peak",
+      "sample_id": "poddenezhnyi2024-1819-5245-2024-4-19-27-er2o3-la-powder-calcined-at-850-c-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 1533.6,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "1533.6 nm",
+        "evidence": [
+          {
+            "source_id": "poddenezhnyi2024-1819-5245-2024-4-19-27",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "poddenezhnyi2024-1819-5245-2024-4-19-27",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",

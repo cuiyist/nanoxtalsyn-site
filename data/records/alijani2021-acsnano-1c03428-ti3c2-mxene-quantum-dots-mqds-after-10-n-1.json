@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "alijani2021-acsnano-1c03428-ti3c2-mxene-quantum-dots-mqds-after-10-n-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Hossein Alijani; Amgad R. Rezk; Mohammad Mehdi Khosravi Farsani; Heba Ahmed; Joseph Halim; Philipp Reineck; Billy J. Murdoch; Ahmed El-Ghazaly; Johanna Rosen; Leslie Y. Yeo (2021): Ti3C2 MXene quantum dots (MQDs) after 10 nebulization cycles",
   "material": {
@@ -189,6 +189,44 @@
           "locator": "Main PDF p.7"
         }
       ]
+    },
+    {
+      "id": "alijani2021-acsnano-1c03428-ti3c2-mxene-quantum-dots-mqds-after-10-n-1--nafion-117-solution",
+      "name": "Naﬁon 117 solution",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "alijani2021-acsnano-1c03428",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "alijani2021-acsnano-1c03428-ti3c2-mxene-quantum-dots-mqds-after-10-n-1--deionized-water",
+      "name": "deionized water",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "alijani2021-acsnano-1c03428",
+          "locator": "Main PDF p.6"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -200,12 +238,48 @@
       "parent_ids": []
     },
     {
+      "id": "alijani2021-acsnano-1c03428-ti3c2-mxene-quantum-dots-mqds-after-10-n-1--after-d2-s02-etch",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "alijani2021-acsnano-1c03428-ti3c2-mxene-quantum-dots-mqds-after-10-n-1--after-s01-heat",
+        "alijani2021-acsnano-1c03428-ti3c2-mxene-quantum-dots-mqds-after-10-n-1--hydrofluoric-acid-hf"
+      ]
+    },
+    {
+      "id": "alijani2021-acsnano-1c03428-ti3c2-mxene-quantum-dots-mqds-after-10-n-1--after-d2-s03-sonicate",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "alijani2021-acsnano-1c03428-ti3c2-mxene-quantum-dots-mqds-after-10-n-1--after-d2-s02-etch",
+        "alijani2021-acsnano-1c03428-ti3c2-mxene-quantum-dots-mqds-after-10-n-1--ethanol"
+      ]
+    },
+    {
       "id": "alijani2021-acsnano-1c03428-ti3c2-mxene-quantum-dots-mqds-after-10-n-1--after-s02-nebulize",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "alijani2021-acsnano-1c03428-ti3c2-mxene-quantum-dots-mqds-after-10-n-1--after-d2-s03-sonicate",
+        "alijani2021-acsnano-1c03428-ti3c2-mxene-quantum-dots-mqds-after-10-n-1--ethanol"
+      ]
+    },
+    {
+      "id": "alijani2021-acsnano-1c03428-ti3c2-mxene-quantum-dots-mqds-after-10-n-1--after-d2-s05-collect",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "alijani2021-acsnano-1c03428-ti3c2-mxene-quantum-dots-mqds-after-10-n-1--after-s02-nebulize",
+        "alijani2021-acsnano-1c03428-ti3c2-mxene-quantum-dots-mqds-after-10-n-1--ethanol"
+      ]
+    },
+    {
+      "id": "alijani2021-acsnano-1c03428-ti3c2-mxene-quantum-dots-mqds-after-10-n-1--after-d2-s06-drop-cast",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "alijani2021-acsnano-1c03428-ti3c2-mxene-quantum-dots-mqds-after-10-n-1--after-s01-heat",
-        "alijani2021-acsnano-1c03428-ti3c2-mxene-quantum-dots-mqds-after-10-n-1--ethanol"
+        "alijani2021-acsnano-1c03428-ti3c2-mxene-quantum-dots-mqds-after-10-n-1--after-d2-s05-collect",
+        "alijani2021-acsnano-1c03428-ti3c2-mxene-quantum-dots-mqds-after-10-n-1--nafion-117-solution"
       ]
     }
   ],
@@ -282,9 +356,9 @@
       ]
     },
     {
-      "id": "s02-nebulize",
-      "action": "nebulize",
-      "label": "Nebulization of MXene suspension using surface-reflected bulk waves",
+      "id": "d2-s02-etch",
+      "action": "etch",
+      "label": "Etch",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -293,6 +367,84 @@
       ],
       "inputs": [
         "alijani2021-acsnano-1c03428-ti3c2-mxene-quantum-dots-mqds-after-10-n-1--after-s01-heat",
+        "alijani2021-acsnano-1c03428-ti3c2-mxene-quantum-dots-mqds-after-10-n-1--hydrofluoric-acid-hf"
+      ],
+      "outputs": [
+        "alijani2021-acsnano-1c03428-ti3c2-mxene-quantum-dots-mqds-after-10-n-1--after-d2-s02-etch"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Etch",
+      "evidence": [
+        {
+          "source_id": "alijani2021-acsnano-1c03428",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "d2-s03-sonicate",
+      "action": "sonicate",
+      "label": "Bath sonication",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-etch"
+      ],
+      "inputs": [
+        "alijani2021-acsnano-1c03428-ti3c2-mxene-quantum-dots-mqds-after-10-n-1--after-d2-s02-etch",
+        "alijani2021-acsnano-1c03428-ti3c2-mxene-quantum-dots-mqds-after-10-n-1--ethanol"
+      ],
+      "outputs": [
+        "alijani2021-acsnano-1c03428-ti3c2-mxene-quantum-dots-mqds-after-10-n-1--after-d2-s03-sonicate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Bath sonication",
+      "evidence": [
+        {
+          "source_id": "alijani2021-acsnano-1c03428",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "s02-nebulize",
+      "action": "nebulize",
+      "label": "Nebulization of MXene suspension using surface-reflected bulk waves",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-sonicate"
+      ],
+      "inputs": [
+        "alijani2021-acsnano-1c03428-ti3c2-mxene-quantum-dots-mqds-after-10-n-1--after-d2-s03-sonicate",
         "alijani2021-acsnano-1c03428-ti3c2-mxene-quantum-dots-mqds-after-10-n-1--ethanol"
       ],
       "outputs": [
@@ -338,6 +490,84 @@
           "locator": "Main PDF p.7"
         }
       ]
+    },
+    {
+      "id": "d2-s05-collect",
+      "action": "collect",
+      "label": "Condensate collection",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-nebulize"
+      ],
+      "inputs": [
+        "alijani2021-acsnano-1c03428-ti3c2-mxene-quantum-dots-mqds-after-10-n-1--after-s02-nebulize",
+        "alijani2021-acsnano-1c03428-ti3c2-mxene-quantum-dots-mqds-after-10-n-1--ethanol"
+      ],
+      "outputs": [
+        "alijani2021-acsnano-1c03428-ti3c2-mxene-quantum-dots-mqds-after-10-n-1--after-d2-s05-collect"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Condensate collection",
+      "evidence": [
+        {
+          "source_id": "alijani2021-acsnano-1c03428",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "d2-s06-drop-cast",
+      "action": "drop-cast",
+      "label": "Drop-casting MXene suspension onto a glassy carbon electrode",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s05-collect"
+      ],
+      "inputs": [
+        "alijani2021-acsnano-1c03428-ti3c2-mxene-quantum-dots-mqds-after-10-n-1--after-d2-s05-collect",
+        "alijani2021-acsnano-1c03428-ti3c2-mxene-quantum-dots-mqds-after-10-n-1--nafion-117-solution"
+      ],
+      "outputs": [
+        "alijani2021-acsnano-1c03428-ti3c2-mxene-quantum-dots-mqds-after-10-n-1--after-d2-s06-drop-cast"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Drop-casting MXene suspension onto a glassy carbon electrode",
+      "evidence": [
+        {
+          "source_id": "alijani2021-acsnano-1c03428",
+          "locator": "Main PDF p.7"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -346,7 +576,7 @@
       "sample_id": "alijani2021-acsnano-1c03428-ti3c2-mxene-quantum-dots-mqds-after-10-n-1--product",
       "source_sample_label": "Ti3C2 MXene quantum dots (MQDs) after 10 nebulization cycles",
       "batch_id": null,
-      "material_state_id": "alijani2021-acsnano-1c03428-ti3c2-mxene-quantum-dots-mqds-after-10-n-1--after-s02-nebulize",
+      "material_state_id": "alijani2021-acsnano-1c03428-ti3c2-mxene-quantum-dots-mqds-after-10-n-1--after-d2-s06-drop-cast",
       "parent_sample_id": null,
       "composition": {
         "value": null,
@@ -387,11 +617,76 @@
       "notes": []
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "alijani2021-acsnano-1c03428-ti3c2-mxene-quantum-dots-mqds-after-10-n-1--photoluminescence-peak",
+      "sample_id": "alijani2021-acsnano-1c03428-ti3c2-mxene-quantum-dots-mqds-after-10-n-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 360,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "360 nm",
+        "evidence": [
+          {
+            "source_id": "alijani2021-acsnano-1c03428",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "alijani2021-acsnano-1c03428",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    },
+    {
+      "id": "alijani2021-acsnano-1c03428-ti3c2-mxene-quantum-dots-mqds-after-10-n-1--photoluminescence-quantum-yield",
+      "sample_id": "alijani2021-acsnano-1c03428-ti3c2-mxene-quantum-dots-mqds-after-10-n-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 2.5,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "2.5 %",
+        "evidence": [
+          {
+            "source_id": "alijani2021-acsnano-1c03428",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "alijani2021-acsnano-1c03428",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
@@ -399,7 +694,9 @@
       "Reactor not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
-      "Reaction time not reported in the extracted text."
+      "Reaction time not reported in the extracted text.",
+      "Amount of Naﬁon 117 solution not reported in the extracted text.",
+      "Amount of deionized water not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

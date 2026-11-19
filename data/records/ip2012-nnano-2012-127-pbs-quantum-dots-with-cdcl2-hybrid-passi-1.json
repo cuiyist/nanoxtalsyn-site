@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Alexander H. Ip; Susanna M. Thon; Sjoerd Hoogland; Oleksandr Voznyy; David Zhitomirsky; Ratan Debnath; Larissa Levina; Lisa R. Rollny; Graham H. Carey; Armin Fischer; Kyle W. Kemp; Illan J. Kramer; Zhijun Ning; André J. Labelle; Kang Wei Chou; Aram Amassian; Edward H. Sargent (2012): PbS quantum dots with CdCl2 hybrid passivation",
   "material": {
@@ -185,6 +185,25 @@
           "locator": "Main PDF p.5"
         }
       ]
+    },
+    {
+      "id": "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--lead-chloride",
+      "name": "Lead chloride",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "ip2012-nnano-2012-127",
+          "locator": "Main PDF p.5"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -195,7 +214,8 @@
       "kind": "reaction_batch",
       "parent_ids": [
         "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--cadmium-chloride",
-        "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--oleylamine"
+        "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--oleylamine",
+        "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--tetradecylphosphonic-acid-tdpa"
       ]
     },
     {
@@ -205,7 +225,8 @@
       "parent_ids": [
         "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--after-s01-dissolve",
         "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--cadmium-chloride",
-        "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--oleylamine"
+        "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--oleylamine",
+        "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--tetradecylphosphonic-acid-tdpa"
       ]
     },
     {
@@ -215,7 +236,8 @@
       "parent_ids": [
         "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--after-s02-heat",
         "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--cadmium-chloride",
-        "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--oleylamine"
+        "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--oleylamine",
+        "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--tetradecylphosphonic-acid-tdpa"
       ]
     },
     {
@@ -225,16 +247,29 @@
       "parent_ids": [
         "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--after-s03-inject",
         "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--cadmium-chloride",
-        "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--oleylamine"
+        "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--oleylamine",
+        "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--tetradecylphosphonic-acid-tdpa"
       ]
     },
     {
       "id": "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--after-s05-purify",
-      "name": "product as isolated",
-      "kind": "product",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
       "parent_ids": [
         "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--after-s04-isolate",
         "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--cadmium-chloride",
+        "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--oleylamine",
+        "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--tetradecylphosphonic-acid-tdpa"
+      ]
+    },
+    {
+      "id": "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--after-d2-s06-wash",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--after-s05-purify",
+        "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--cadmium-chloride",
+        "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--tetradecylphosphonic-acid-tdpa",
         "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--oleylamine"
       ]
     }
@@ -250,7 +285,8 @@
       "depends_on": [],
       "inputs": [
         "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--cadmium-chloride",
-        "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--oleylamine"
+        "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--oleylamine",
+        "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--tetradecylphosphonic-acid-tdpa"
       ],
       "outputs": [
         "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--after-s01-dissolve"
@@ -332,7 +368,8 @@
       "inputs": [
         "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--after-s01-dissolve",
         "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--cadmium-chloride",
-        "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--oleylamine"
+        "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--oleylamine",
+        "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--tetradecylphosphonic-acid-tdpa"
       ],
       "outputs": [
         "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--after-s02-heat"
@@ -396,7 +433,8 @@
       "inputs": [
         "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--after-s02-heat",
         "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--cadmium-chloride",
-        "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--oleylamine"
+        "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--oleylamine",
+        "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--tetradecylphosphonic-acid-tdpa"
       ],
       "outputs": [
         "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--after-s03-inject"
@@ -441,7 +479,8 @@
       "inputs": [
         "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--after-s03-inject",
         "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--cadmium-chloride",
-        "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--oleylamine"
+        "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--oleylamine",
+        "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--tetradecylphosphonic-acid-tdpa"
       ],
       "outputs": [
         "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--after-s04-isolate"
@@ -500,7 +539,8 @@
       "inputs": [
         "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--after-s04-isolate",
         "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--cadmium-chloride",
-        "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--oleylamine"
+        "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--oleylamine",
+        "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--tetradecylphosphonic-acid-tdpa"
       ],
       "outputs": [
         "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--after-s05-purify"
@@ -526,6 +566,47 @@
           "locator": "Main PDF p.5"
         }
       ]
+    },
+    {
+      "id": "d2-s06-wash",
+      "action": "wash",
+      "label": "Wash solution with methanol",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s05-purify"
+      ],
+      "inputs": [
+        "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--after-s05-purify",
+        "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--cadmium-chloride",
+        "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--tetradecylphosphonic-acid-tdpa",
+        "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--oleylamine"
+      ],
+      "outputs": [
+        "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--after-d2-s06-wash"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Wash solution with methanol",
+      "evidence": [
+        {
+          "source_id": "ip2012-nnano-2012-127",
+          "locator": "Main PDF p.5"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -534,7 +615,7 @@
       "sample_id": "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--product",
       "source_sample_label": "PbS quantum dots with CdCl2 hybrid passivation",
       "batch_id": null,
-      "material_state_id": "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--after-s05-purify",
+      "material_state_id": "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--after-d2-s06-wash",
       "parent_sample_id": null,
       "composition": {
         "value": "PbS",
@@ -625,15 +706,48 @@
           "locator": "Main PDF p.4"
         }
       ]
+    },
+    {
+      "id": "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--photoluminescence-quantum-yield",
+      "sample_id": "ip2012-nnano-2012-127-pbs-quantum-dots-with-cdcl2-hybrid-passi-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 42,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "42 %",
+        "evidence": [
+          {
+            "source_id": "ip2012-nnano-2012-127",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "ip2012-nnano-2012-127",
+          "locator": "Main PDF p.5"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Reaction time not reported in the extracted text.",
-      "Amount of Oleylamine not reported in the extracted text."
+      "Amount of Oleylamine not reported in the extracted text.",
+      "Amount of Lead chloride not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

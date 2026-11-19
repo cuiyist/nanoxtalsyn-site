@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "lee2001-1-1336554-inas-quantum-dot-lattice-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "H. Lee (2001): InAs quantum dot lattice",
   "material": {
@@ -85,7 +85,7 @@
       "id": "lee2001-1-1336554-inas-quantum-dot-lattice-1--inas",
       "name": "InAs",
       "formula": null,
-      "role": "reagent",
+      "role": "starting_particles",
       "stage": "synthesis",
       "identity": {
         "pubchem_cid": null,
@@ -137,6 +137,25 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "lee2001-1-1336554-inas-quantum-dot-lattice-1--alas",
+      "name": "AlAs",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "lee2001-1-1336554",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -148,17 +167,25 @@
       "parent_ids": []
     },
     {
-      "id": "lee2001-1-1336554-inas-quantum-dot-lattice-1--after-s02-deposit",
+      "id": "lee2001-1-1336554-inas-quantum-dot-lattice-1--after-d2-s02-etch",
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
-        "lee2001-1-1336554-inas-quantum-dot-lattice-1--after-s01-pattern",
+        "lee2001-1-1336554-inas-quantum-dot-lattice-1--after-s01-pattern"
+      ]
+    },
+    {
+      "id": "lee2001-1-1336554-inas-quantum-dot-lattice-1--after-s02-deposit",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "lee2001-1-1336554-inas-quantum-dot-lattice-1--after-d2-s02-etch",
         "lee2001-1-1336554-inas-quantum-dot-lattice-1--gaas"
       ]
     },
     {
       "id": "lee2001-1-1336554-inas-quantum-dot-lattice-1--after-s03-deposit",
-      "name": "mixture after step 3",
+      "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
         "lee2001-1-1336554-inas-quantum-dot-lattice-1--after-s02-deposit",
@@ -217,9 +244,9 @@
       ]
     },
     {
-      "id": "s02-deposit",
-      "action": "deposit",
-      "label": "Deposit GaAs layer to remove surface damage",
+      "id": "d2-s02-etch",
+      "action": "etch",
+      "label": "Chemical etching to form mesas",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -227,7 +254,50 @@
         "s01-pattern"
       ],
       "inputs": [
-        "lee2001-1-1336554-inas-quantum-dot-lattice-1--after-s01-pattern",
+        "lee2001-1-1336554-inas-quantum-dot-lattice-1--after-s01-pattern"
+      ],
+      "outputs": [
+        "lee2001-1-1336554-inas-quantum-dot-lattice-1--after-d2-s02-etch"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "As2 flux",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "lee2001-1-1336554",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Chemical etching to form mesas",
+      "evidence": [
+        {
+          "source_id": "lee2001-1-1336554",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-deposit",
+      "action": "deposit",
+      "label": "Deposit GaAs layer to remove surface damage",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-etch"
+      ],
+      "inputs": [
+        "lee2001-1-1336554-inas-quantum-dot-lattice-1--after-d2-s02-etch",
         "lee2001-1-1336554-inas-quantum-dot-lattice-1--gaas"
       ],
       "outputs": [
@@ -465,7 +535,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
@@ -474,7 +544,8 @@
       "Reaction time not reported in the extracted text.",
       "Amount of InAs not reported in the extracted text.",
       "Amount of GaAs not reported in the extracted text.",
-      "Amount of In0.2Ga0.8As not reported in the extracted text."
+      "Amount of In0.2Ga0.8As not reported in the extracted text.",
+      "Amount of AlAs not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "pei2026-s41598-026-48145-7-p-cqds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Shuchen Pei; Kangli Yan; Shaoyu Cai; Yinjun Hou; Kang Luo; Pu Xiang; Yang Peng (2026): P-CQDs",
   "material": {
@@ -196,10 +196,30 @@
   "stocks": [],
   "material_states": [
     {
-      "id": "pei2026-s41598-026-48145-7-p-cqds-1--after-s01-heat",
+      "id": "pei2026-s41598-026-48145-7-p-cqds-1--after-d2-s01-pulverize",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": [
+        "pei2026-s41598-026-48145-7-p-cqds-1--caesalpinia-sappan-l"
+      ]
+    },
+    {
+      "id": "pei2026-s41598-026-48145-7-p-cqds-1--after-d2-s02-mix",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "pei2026-s41598-026-48145-7-p-cqds-1--after-d2-s01-pulverize",
+        "pei2026-s41598-026-48145-7-p-cqds-1--caesalpinia-sappan-l",
+        "pei2026-s41598-026-48145-7-p-cqds-1--phosphoric-acid",
+        "pei2026-s41598-026-48145-7-p-cqds-1--ultrapure-water"
+      ]
+    },
+    {
+      "id": "pei2026-s41598-026-48145-7-p-cqds-1--after-s01-heat",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "pei2026-s41598-026-48145-7-p-cqds-1--after-d2-s02-mix",
         "pei2026-s41598-026-48145-7-p-cqds-1--caesalpinia-sappan-l",
         "pei2026-s41598-026-48145-7-p-cqds-1--phosphoric-acid",
         "pei2026-s41598-026-48145-7-p-cqds-1--ultrapure-water"
@@ -216,14 +236,94 @@
   ],
   "operations": [
     {
+      "id": "d2-s01-pulverize",
+      "action": "pulverize",
+      "label": "Caesalpinia sappan L. was pulverized",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "pei2026-s41598-026-48145-7-p-cqds-1--caesalpinia-sappan-l"
+      ],
+      "outputs": [
+        "pei2026-s41598-026-48145-7-p-cqds-1--after-d2-s01-pulverize"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Caesalpinia sappan L. was pulverized",
+      "evidence": [
+        {
+          "source_id": "pei2026-s41598-026-48145-7",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s02-mix",
+      "action": "mix",
+      "label": "Caesalpinia sappan L. was mixed with phosphoric acid and ultrapure water",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s01-pulverize"
+      ],
+      "inputs": [
+        "pei2026-s41598-026-48145-7-p-cqds-1--after-d2-s01-pulverize",
+        "pei2026-s41598-026-48145-7-p-cqds-1--caesalpinia-sappan-l",
+        "pei2026-s41598-026-48145-7-p-cqds-1--phosphoric-acid",
+        "pei2026-s41598-026-48145-7-p-cqds-1--ultrapure-water"
+      ],
+      "outputs": [
+        "pei2026-s41598-026-48145-7-p-cqds-1--after-d2-s02-mix"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Caesalpinia sappan L. was mixed with phosphoric acid and ultrapure water",
+      "evidence": [
+        {
+          "source_id": "pei2026-s41598-026-48145-7",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
       "id": "s01-heat",
       "action": "heat",
       "label": "The solution was heated in a PTFE-lined autoclave",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
+      "depends_on": [
+        "d2-s02-mix"
+      ],
       "inputs": [
+        "pei2026-s41598-026-48145-7-p-cqds-1--after-d2-s02-mix",
         "pei2026-s41598-026-48145-7-p-cqds-1--caesalpinia-sappan-l",
         "pei2026-s41598-026-48145-7-p-cqds-1--phosphoric-acid",
         "pei2026-s41598-026-48145-7-p-cqds-1--ultrapure-water"
@@ -380,11 +480,76 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "pei2026-s41598-026-48145-7-p-cqds-1--photoluminescence-peak",
+      "sample_id": "pei2026-s41598-026-48145-7-p-cqds-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 450,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "450 nm",
+        "evidence": [
+          {
+            "source_id": "pei2026-s41598-026-48145-7",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "pei2026-s41598-026-48145-7",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    },
+    {
+      "id": "pei2026-s41598-026-48145-7-p-cqds-1--photoluminescence-quantum-yield",
+      "sample_id": "pei2026-s41598-026-48145-7-p-cqds-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 24.4,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "24.4 %",
+        "evidence": [
+          {
+            "source_id": "pei2026-s41598-026-48145-7",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "pei2026-s41598-026-48145-7",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",

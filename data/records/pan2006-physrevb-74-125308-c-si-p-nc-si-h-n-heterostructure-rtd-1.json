@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "pan2006-physrevb-74-125308-c-si-p-nc-si-h-n-heterostructure-rtd-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Wei Pan (2006): c-Si(p)/nc-Si:H(n) heterostructure RTD",
   "material": {
@@ -147,12 +147,20 @@
   "material_states": [
     {
       "id": "pan2006-physrevb-74-125308-c-si-p-nc-si-h-n-heterostructure-rtd-1--after-s01-deposit",
-      "name": "product as isolated",
-      "kind": "product",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
       "parent_ids": [
         "pan2006-physrevb-74-125308-c-si-p-nc-si-h-n-heterostructure-rtd-1--sih4",
         "pan2006-physrevb-74-125308-c-si-p-nc-si-h-n-heterostructure-rtd-1--ph3",
         "pan2006-physrevb-74-125308-c-si-p-nc-si-h-n-heterostructure-rtd-1--h2"
+      ]
+    },
+    {
+      "id": "pan2006-physrevb-74-125308-c-si-p-nc-si-h-n-heterostructure-rtd-1--after-d2-s02-pattern",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "pan2006-physrevb-74-125308-c-si-p-nc-si-h-n-heterostructure-rtd-1--after-s01-deposit"
       ]
     }
   ],
@@ -199,6 +207,49 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s02-pattern",
+      "action": "pattern",
+      "label": "Photolithography to make square holes",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-deposit"
+      ],
+      "inputs": [
+        "pan2006-physrevb-74-125308-c-si-p-nc-si-h-n-heterostructure-rtd-1--after-s01-deposit"
+      ],
+      "outputs": [
+        "pan2006-physrevb-74-125308-c-si-p-nc-si-h-n-heterostructure-rtd-1--after-d2-s02-pattern"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "H2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "pan2006-physrevb-74-125308",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Photolithography to make square holes",
+      "evidence": [
+        {
+          "source_id": "pan2006-physrevb-74-125308",
+          "locator": "Main PDF p.1"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -207,7 +258,7 @@
       "sample_id": "pan2006-physrevb-74-125308-c-si-p-nc-si-h-n-heterostructure-rtd-1--product",
       "source_sample_label": "c-Si(p)/nc-Si:H(n) heterostructure RTD",
       "batch_id": null,
-      "material_state_id": "pan2006-physrevb-74-125308-c-si-p-nc-si-h-n-heterostructure-rtd-1--after-s01-deposit",
+      "material_state_id": "pan2006-physrevb-74-125308-c-si-p-nc-si-h-n-heterostructure-rtd-1--after-d2-s02-pattern",
       "parent_sample_id": null,
       "composition": {
         "value": "Si",
@@ -292,7 +343,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",

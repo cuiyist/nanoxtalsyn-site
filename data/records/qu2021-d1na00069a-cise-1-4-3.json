@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "qu2021-d1na00069a-cise-1-4-3",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Senlin Qu; Xin Yuan; Yu Li; Xingyang Li; Xiujuan Zhou; Xiaogang Xue; Kexiang Zhang; Juan Xu; Changlai Yuan (2021): CISe-1/4",
   "material": {
@@ -138,12 +138,50 @@
           "locator": "Main PDF p.7"
         }
       ]
+    },
+    {
+      "id": "qu2021-d1na00069a-cise-1-4-3--hydrazine-hydrate",
+      "name": "Hydrazine hydrate",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "qu2021-d1na00069a",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "qu2021-d1na00069a-cise-1-4-3--sodium-hydroxide",
+      "name": "Sodium hydroxide",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "qu2021-d1na00069a",
+          "locator": "Main PDF p.7"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
-      "id": "qu2021-d1na00069a-cise-1-4-3--after-s01-adjust-ph",
+      "id": "qu2021-d1na00069a-cise-1-4-3--after-d2-s01-mix",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": [
@@ -153,14 +191,35 @@
       ]
     },
     {
-      "id": "qu2021-d1na00069a-cise-1-4-3--after-s02-cool",
+      "id": "qu2021-d1na00069a-cise-1-4-3--after-s01-adjust-ph",
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
-        "qu2021-d1na00069a-cise-1-4-3--after-s01-adjust-ph",
+        "qu2021-d1na00069a-cise-1-4-3--after-d2-s01-mix",
         "qu2021-d1na00069a-cise-1-4-3--copper-i-acetate",
         "qu2021-d1na00069a-cise-1-4-3--indium-iii-acetate",
         "qu2021-d1na00069a-cise-1-4-3--trithiocyanuric-acid"
+      ]
+    },
+    {
+      "id": "qu2021-d1na00069a-cise-1-4-3--after-d2-s03-dilute",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "qu2021-d1na00069a-cise-1-4-3--after-s01-adjust-ph",
+        "qu2021-d1na00069a-cise-1-4-3--hydrazine-hydrate"
+      ]
+    },
+    {
+      "id": "qu2021-d1na00069a-cise-1-4-3--after-s02-cool",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "qu2021-d1na00069a-cise-1-4-3--after-d2-s03-dilute",
+        "qu2021-d1na00069a-cise-1-4-3--copper-i-acetate",
+        "qu2021-d1na00069a-cise-1-4-3--indium-iii-acetate",
+        "qu2021-d1na00069a-cise-1-4-3--trithiocyanuric-acid",
+        "qu2021-d1na00069a-cise-1-4-3--hydrazine-hydrate"
       ]
     },
     {
@@ -171,11 +230,55 @@
         "qu2021-d1na00069a-cise-1-4-3--after-s02-cool",
         "qu2021-d1na00069a-cise-1-4-3--copper-i-acetate",
         "qu2021-d1na00069a-cise-1-4-3--indium-iii-acetate",
-        "qu2021-d1na00069a-cise-1-4-3--trithiocyanuric-acid"
+        "qu2021-d1na00069a-cise-1-4-3--trithiocyanuric-acid",
+        "qu2021-d1na00069a-cise-1-4-3--hydrazine-hydrate"
       ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-mix",
+      "action": "mix",
+      "label": "Prepare metal–ligand complexes",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "qu2021-d1na00069a-cise-1-4-3--copper-i-acetate",
+        "qu2021-d1na00069a-cise-1-4-3--indium-iii-acetate",
+        "qu2021-d1na00069a-cise-1-4-3--trithiocyanuric-acid"
+      ],
+      "outputs": [
+        "qu2021-d1na00069a-cise-1-4-3--after-d2-s01-mix"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "qu2021-d1na00069a",
+            "locator": "Main PDF p.8"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Prepare metal–ligand complexes",
+      "evidence": [
+        {
+          "source_id": "qu2021-d1na00069a",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
     {
       "id": "s01-adjust-ph",
       "action": "adjust ph",
@@ -183,8 +286,11 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
+      "depends_on": [
+        "d2-s01-mix"
+      ],
       "inputs": [
+        "qu2021-d1na00069a-cise-1-4-3--after-d2-s01-mix",
         "qu2021-d1na00069a-cise-1-4-3--copper-i-acetate",
         "qu2021-d1na00069a-cise-1-4-3--indium-iii-acetate",
         "qu2021-d1na00069a-cise-1-4-3--trithiocyanuric-acid"
@@ -220,9 +326,9 @@
       ]
     },
     {
-      "id": "s02-cool",
-      "action": "cool",
-      "label": "Cool to room temperature",
+      "id": "d2-s03-dilute",
+      "action": "dilute",
+      "label": "Dilute Se precursor",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -231,9 +337,54 @@
       ],
       "inputs": [
         "qu2021-d1na00069a-cise-1-4-3--after-s01-adjust-ph",
+        "qu2021-d1na00069a-cise-1-4-3--hydrazine-hydrate"
+      ],
+      "outputs": [
+        "qu2021-d1na00069a-cise-1-4-3--after-d2-s03-dilute"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "qu2021-d1na00069a",
+            "locator": "Main PDF p.8"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dilute Se precursor",
+      "evidence": [
+        {
+          "source_id": "qu2021-d1na00069a",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "s02-cool",
+      "action": "cool",
+      "label": "Cool to room temperature",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-dilute"
+      ],
+      "inputs": [
+        "qu2021-d1na00069a-cise-1-4-3--after-d2-s03-dilute",
         "qu2021-d1na00069a-cise-1-4-3--copper-i-acetate",
         "qu2021-d1na00069a-cise-1-4-3--indium-iii-acetate",
-        "qu2021-d1na00069a-cise-1-4-3--trithiocyanuric-acid"
+        "qu2021-d1na00069a-cise-1-4-3--trithiocyanuric-acid",
+        "qu2021-d1na00069a-cise-1-4-3--hydrazine-hydrate"
       ],
       "outputs": [
         "qu2021-d1na00069a-cise-1-4-3--after-s02-cool"
@@ -279,7 +430,8 @@
         "qu2021-d1na00069a-cise-1-4-3--after-s02-cool",
         "qu2021-d1na00069a-cise-1-4-3--copper-i-acetate",
         "qu2021-d1na00069a-cise-1-4-3--indium-iii-acetate",
-        "qu2021-d1na00069a-cise-1-4-3--trithiocyanuric-acid"
+        "qu2021-d1na00069a-cise-1-4-3--trithiocyanuric-acid",
+        "qu2021-d1na00069a-cise-1-4-3--hydrazine-hydrate"
       ],
       "outputs": [
         "qu2021-d1na00069a-cise-1-4-3--after-s03-wash"
@@ -363,22 +515,57 @@
       ],
       "notes": [
         "Reactor: 100 mL autoclave (Main PDF p.7).",
-        "Reaction temperature: 180 degC (Main PDF p.7)."
+        "Reaction temperature: 180 degC (Main PDF p.7).",
+        "Reaction time: 60 h (Main PDF p.7)."
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "qu2021-d1na00069a-cise-1-4-3--photoluminescence-peak",
+      "sample_id": "qu2021-d1na00069a-cise-1-4-3--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 767,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "767 nm",
+        "evidence": [
+          {
+            "source_id": "qu2021-d1na00069a",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "qu2021-d1na00069a",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Size not reported in the extracted text.",
-      "Reaction time not reported in the extracted text.",
       "Amount of Copper(I) acetate not reported in the extracted text.",
       "Amount of Indium(III) acetate not reported in the extracted text.",
-      "Amount of Trithiocyanuric acid not reported in the extracted text."
+      "Amount of Trithiocyanuric acid not reported in the extracted text.",
+      "Amount of Hydrazine hydrate not reported in the extracted text.",
+      "Amount of Sodium hydroxide not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

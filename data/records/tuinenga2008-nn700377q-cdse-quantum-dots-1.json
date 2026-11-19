@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "tuinenga2008-nn700377q-cdse-quantum-dots-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Christopher Tuinenga; Jacek Jasinski; Takeo Iwamoto; Viktor Chikan (2008): CdSe quantum dots",
   "material": {
@@ -190,21 +190,101 @@
   "stocks": [],
   "material_states": [
     {
-      "id": "tuinenga2008-nn700377q-cdse-quantum-dots-1--after-s01-heat",
+      "id": "tuinenga2008-nn700377q-cdse-quantum-dots-1--after-d2-s01-add",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "tuinenga2008-nn700377q-cdse-quantum-dots-1--incl3",
+        "tuinenga2008-nn700377q-cdse-quantum-dots-1--li4-cd10se4-sph-16"
+      ]
+    },
+    {
+      "id": "tuinenga2008-nn700377q-cdse-quantum-dots-1--after-s01-heat",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "tuinenga2008-nn700377q-cdse-quantum-dots-1--after-d2-s01-add"
+      ]
     },
     {
       "id": "tuinenga2008-nn700377q-cdse-quantum-dots-1--after-s02-add",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "tuinenga2008-nn700377q-cdse-quantum-dots-1--after-s01-heat"
+      ]
+    },
+    {
+      "id": "tuinenga2008-nn700377q-cdse-quantum-dots-1--after-d2-s04-cool",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "tuinenga2008-nn700377q-cdse-quantum-dots-1--after-s01-heat"
+        "tuinenga2008-nn700377q-cdse-quantum-dots-1--after-s02-add"
       ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-add",
+      "action": "add",
+      "label": "Add InCl3 and Li4[Cd10Se4(SPh)16]",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "tuinenga2008-nn700377q-cdse-quantum-dots-1--incl3",
+        "tuinenga2008-nn700377q-cdse-quantum-dots-1--li4-cd10se4-sph-16"
+      ],
+      "outputs": [
+        "tuinenga2008-nn700377q-cdse-quantum-dots-1--after-d2-s01-add"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 120,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "120 °C",
+          "evidence": [
+            {
+              "source_id": "tuinenga2008-nn700377q",
+              "locator": "Main PDF p.10"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "tuinenga2008-nn700377q",
+            "locator": "Main PDF p.10"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add InCl3 and Li4[Cd10Se4(SPh)16]",
+      "evidence": [
+        {
+          "source_id": "tuinenga2008-nn700377q",
+          "locator": "Main PDF p.10"
+        }
+      ]
+    },
     {
       "id": "s01-heat",
       "action": "heat",
@@ -212,8 +292,12 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s01-add"
+      ],
+      "inputs": [
+        "tuinenga2008-nn700377q-cdse-quantum-dots-1--after-d2-s01-add"
+      ],
       "outputs": [
         "tuinenga2008-nn700377q-cdse-quantum-dots-1--after-s01-heat"
       ],
@@ -360,6 +444,49 @@
           "locator": "Main PDF p.10"
         }
       ]
+    },
+    {
+      "id": "d2-s04-cool",
+      "action": "cool",
+      "label": "Cool and purify",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-add"
+      ],
+      "inputs": [
+        "tuinenga2008-nn700377q-cdse-quantum-dots-1--after-s02-add"
+      ],
+      "outputs": [
+        "tuinenga2008-nn700377q-cdse-quantum-dots-1--after-d2-s04-cool"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "tuinenga2008-nn700377q",
+            "locator": "Main PDF p.10"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Cool and purify",
+      "evidence": [
+        {
+          "source_id": "tuinenga2008-nn700377q",
+          "locator": "Main PDF p.10"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -368,7 +495,7 @@
       "sample_id": "tuinenga2008-nn700377q-cdse-quantum-dots-1--product",
       "source_sample_label": "CdSe quantum dots",
       "batch_id": null,
-      "material_state_id": "tuinenga2008-nn700377q-cdse-quantum-dots-1--after-s02-add",
+      "material_state_id": "tuinenga2008-nn700377q-cdse-quantum-dots-1--after-d2-s04-cool",
       "parent_sample_id": null,
       "composition": {
         "value": "CdSe",
@@ -404,9 +531,14 @@
         "note": ""
       },
       "surface": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "amine",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "tuinenga2008-nn700377q",
+            "locator": "Main PDF p.7"
+          }
+        ],
         "note": ""
       },
       "recipe_link": "explicit",
@@ -454,14 +586,77 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "tuinenga2008-nn700377q-cdse-quantum-dots-1--photoluminescence-peak",
+      "sample_id": "tuinenga2008-nn700377q-cdse-quantum-dots-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 460,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "460 nm",
+        "evidence": [
+          {
+            "source_id": "tuinenga2008-nn700377q",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "tuinenga2008-nn700377q",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "tuinenga2008-nn700377q-cdse-quantum-dots-1--photoluminescence-quantum-yield",
+      "sample_id": "tuinenga2008-nn700377q-cdse-quantum-dots-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 50,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "50 %",
+        "evidence": [
+          {
+            "source_id": "tuinenga2008-nn700377q",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "tuinenga2008-nn700377q",
+          "locator": "Main PDF p.6"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
-      "Ligand not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
       "Amount of HDA not reported in the extracted text."
     ],

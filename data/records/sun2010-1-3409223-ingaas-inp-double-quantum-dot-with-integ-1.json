@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "sun2010-1-3409223-ingaas-inp-double-quantum-dot-with-integ-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Jie Sun et al. (2010): InGaAs/InP double quantum dot with integrated charge sensors",
   "material": {
@@ -135,6 +135,82 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "sun2010-1-3409223-ingaas-inp-double-quantum-dot-with-integ-1--ingaas-inp-heterostructure",
+      "name": "InGaAs/InP heterostructure",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "sun2010-1-3409223",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "sun2010-1-3409223-ingaas-inp-double-quantum-dot-with-integ-1--ingaas",
+      "name": "InGaAs",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "sun2010-1-3409223",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "sun2010-1-3409223-ingaas-inp-double-quantum-dot-with-integ-1--inp",
+      "name": "InP",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "sun2010-1-3409223",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "sun2010-1-3409223-ingaas-inp-double-quantum-dot-with-integ-1--zep-520a-7",
+      "name": "ZEP 520A-7",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "sun2010-1-3409223",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -149,11 +225,21 @@
     },
     {
       "id": "sun2010-1-3409223-ingaas-inp-double-quantum-dot-with-integ-1--after-s02-pattern",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "sun2010-1-3409223-ingaas-inp-double-quantum-dot-with-integ-1--after-s01-deposit",
+        "sun2010-1-3409223-ingaas-inp-double-quantum-dot-with-integ-1--hfo2",
+        "sun2010-1-3409223-ingaas-inp-double-quantum-dot-with-integ-1--zep-520a-7"
+      ]
+    },
+    {
+      "id": "sun2010-1-3409223-ingaas-inp-double-quantum-dot-with-integ-1--after-d2-s03-deposit",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "sun2010-1-3409223-ingaas-inp-double-quantum-dot-with-integ-1--after-s01-deposit",
-        "sun2010-1-3409223-ingaas-inp-double-quantum-dot-with-integ-1--hfo2"
+        "sun2010-1-3409223-ingaas-inp-double-quantum-dot-with-integ-1--after-s02-pattern",
+        "sun2010-1-3409223-ingaas-inp-double-quantum-dot-with-integ-1--ti-au"
       ]
     }
   ],
@@ -225,7 +311,8 @@
       ],
       "inputs": [
         "sun2010-1-3409223-ingaas-inp-double-quantum-dot-with-integ-1--after-s01-deposit",
-        "sun2010-1-3409223-ingaas-inp-double-quantum-dot-with-integ-1--hfo2"
+        "sun2010-1-3409223-ingaas-inp-double-quantum-dot-with-integ-1--hfo2",
+        "sun2010-1-3409223-ingaas-inp-double-quantum-dot-with-integ-1--zep-520a-7"
       ],
       "outputs": [
         "sun2010-1-3409223-ingaas-inp-double-quantum-dot-with-integ-1--after-s02-pattern"
@@ -251,6 +338,45 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s03-deposit",
+      "action": "deposit",
+      "label": "Deposit Ti/Au for top gates",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-pattern"
+      ],
+      "inputs": [
+        "sun2010-1-3409223-ingaas-inp-double-quantum-dot-with-integ-1--after-s02-pattern",
+        "sun2010-1-3409223-ingaas-inp-double-quantum-dot-with-integ-1--ti-au"
+      ],
+      "outputs": [
+        "sun2010-1-3409223-ingaas-inp-double-quantum-dot-with-integ-1--after-d2-s03-deposit"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Deposit Ti/Au for top gates",
+      "evidence": [
+        {
+          "source_id": "sun2010-1-3409223",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -259,7 +385,7 @@
       "sample_id": "sun2010-1-3409223-ingaas-inp-double-quantum-dot-with-integ-1--product",
       "source_sample_label": "InGaAs/InP double quantum dot with integrated charge sensors",
       "batch_id": null,
-      "material_state_id": "sun2010-1-3409223-ingaas-inp-double-quantum-dot-with-integ-1--after-s02-pattern",
+      "material_state_id": "sun2010-1-3409223-ingaas-inp-double-quantum-dot-with-integ-1--after-d2-s03-deposit",
       "parent_sample_id": null,
       "composition": {
         "value": null,
@@ -332,7 +458,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
@@ -343,7 +469,11 @@
       "Reaction time not reported in the extracted text.",
       "Amount of HfO2 not reported in the extracted text.",
       "Amount of PMMA not reported in the extracted text.",
-      "Amount of Ti/Au not reported in the extracted text."
+      "Amount of Ti/Au not reported in the extracted text.",
+      "Amount of InGaAs/InP heterostructure not reported in the extracted text.",
+      "Amount of InGaAs not reported in the extracted text.",
+      "Amount of InP not reported in the extracted text.",
+      "Amount of ZEP 520A-7 not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

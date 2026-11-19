@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "wuister2003-nl034054t-aet-capped-cdte-qds-in-water-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Sander F. Wuister; Ingmar Swart; Floris van Driel; Stephen G. Hickey; Celso de Mello Donegá (2003): AET-capped CdTe QDs in water",
   "material": {
@@ -194,6 +194,63 @@
           "locator": "Main PDF p.1"
         }
       ]
+    },
+    {
+      "id": "wuister2003-nl034054t-aet-capped-cdte-qds-in-water-1--cd-me-2",
+      "name": "Cd(Me)2",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "wuister2003-nl034054t",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "wuister2003-nl034054t-aet-capped-cdte-qds-in-water-1--te-powder",
+      "name": "Te powder",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "wuister2003-nl034054t",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "wuister2003-nl034054t-aet-capped-cdte-qds-in-water-1--cdte-qds",
+      "name": "CdTe QDs",
+      "formula": null,
+      "role": "starting_particles",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "wuister2003-nl034054t",
+          "locator": "Main PDF p.1"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -208,11 +265,22 @@
       ]
     },
     {
-      "id": "wuister2003-nl034054t-aet-capped-cdte-qds-in-water-1--after-s02-dissolve",
+      "id": "wuister2003-nl034054t-aet-capped-cdte-qds-in-water-1--after-d2-s02-add",
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
-        "wuister2003-nl034054t-aet-capped-cdte-qds-in-water-1--after-s01-heat"
+        "wuister2003-nl034054t-aet-capped-cdte-qds-in-water-1--after-s01-heat",
+        "wuister2003-nl034054t-aet-capped-cdte-qds-in-water-1--cd-me-2",
+        "wuister2003-nl034054t-aet-capped-cdte-qds-in-water-1--te-powder"
+      ]
+    },
+    {
+      "id": "wuister2003-nl034054t-aet-capped-cdte-qds-in-water-1--after-s02-dissolve",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "wuister2003-nl034054t-aet-capped-cdte-qds-in-water-1--after-d2-s02-add",
+        "wuister2003-nl034054t-aet-capped-cdte-qds-in-water-1--cdte-qds"
       ]
     },
     {
@@ -288,9 +356,9 @@
       ]
     },
     {
-      "id": "s02-dissolve",
-      "action": "dissolve",
-      "label": "Dissolving the crude CdTe QD solution in chloroform",
+      "id": "d2-s02-add",
+      "action": "add",
+      "label": "Adding Cd(Me)2 and Te powder to the heated mixture",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -298,7 +366,72 @@
         "s01-heat"
       ],
       "inputs": [
-        "wuister2003-nl034054t-aet-capped-cdte-qds-in-water-1--after-s01-heat"
+        "wuister2003-nl034054t-aet-capped-cdte-qds-in-water-1--after-s01-heat",
+        "wuister2003-nl034054t-aet-capped-cdte-qds-in-water-1--cd-me-2",
+        "wuister2003-nl034054t-aet-capped-cdte-qds-in-water-1--te-powder"
+      ],
+      "outputs": [
+        "wuister2003-nl034054t-aet-capped-cdte-qds-in-water-1--after-d2-s02-add"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 180,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "180 °C",
+          "evidence": [
+            {
+              "source_id": "wuister2003-nl034054t",
+              "locator": "Main PDF p.1"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "argon",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "wuister2003-nl034054t",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Adding Cd(Me)2 and Te powder to the heated mixture",
+      "evidence": [
+        {
+          "source_id": "wuister2003-nl034054t",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "s02-dissolve",
+      "action": "dissolve",
+      "label": "Dissolving the crude CdTe QD solution in chloroform",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-add"
+      ],
+      "inputs": [
+        "wuister2003-nl034054t-aet-capped-cdte-qds-in-water-1--after-d2-s02-add",
+        "wuister2003-nl034054t-aet-capped-cdte-qds-in-water-1--cdte-qds"
       ],
       "outputs": [
         "wuister2003-nl034054t-aet-capped-cdte-qds-in-water-1--after-s02-dissolve"
@@ -434,16 +567,52 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "wuister2003-nl034054t-aet-capped-cdte-qds-in-water-1--photoluminescence-quantum-yield",
+      "sample_id": "wuister2003-nl034054t-aet-capped-cdte-qds-in-water-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 59,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "59 %",
+        "evidence": [
+          {
+            "source_id": "wuister2003-nl034054t",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "wuister2003-nl034054t",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
-      "Reaction time not reported in the extracted text."
+      "Reaction time not reported in the extracted text.",
+      "Amount of Cd(Me)2 not reported in the extracted text.",
+      "Amount of Te powder not reported in the extracted text.",
+      "Amount of CdTe QDs not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

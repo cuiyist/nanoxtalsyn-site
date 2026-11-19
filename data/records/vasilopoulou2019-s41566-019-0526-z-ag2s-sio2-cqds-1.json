@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "vasilopoulou2019-s41566-019-0526-z-ag2s-sio2-cqds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Maria Vasilopoulou; Hyeong Pil Kim; Byung Soon Kim; Michael Papadakis; Anderson Emanuel Ximim Gavim; Andreia Gerniski Macedo; Wilson Jose da Silva; Fabio Kurt Schneider; Mohd Asri Mat Teridi; Athanassios G. Coutsolelos; Abd. Rashid bin Mohd Yusoff (2019): Ag2S@SiO2 CQDs",
   "material": {
@@ -161,23 +161,107 @@
           "locator": "Main PDF p.8"
         }
       ]
+    },
+    {
+      "id": "vasilopoulou2019-s41566-019-0526-z-ag2s-sio2-cqds-1--ag2s-cqds",
+      "name": "Ag2S CQDs",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "vasilopoulou2019-s41566-019-0526-z",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    },
+    {
+      "id": "vasilopoulou2019-s41566-019-0526-z-ag2s-sio2-cqds-1--agno3",
+      "name": "AgNO3",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "vasilopoulou2019-s41566-019-0526-z",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    },
+    {
+      "id": "vasilopoulou2019-s41566-019-0526-z-ag2s-sio2-cqds-1--na2s",
+      "name": "Na2S",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "vasilopoulou2019-s41566-019-0526-z",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    },
+    {
+      "id": "vasilopoulou2019-s41566-019-0526-z-ag2s-sio2-cqds-1--bsa",
+      "name": "BSA",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "vasilopoulou2019-s41566-019-0526-z",
+          "locator": "Main PDF p.8"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
-      "id": "vasilopoulou2019-s41566-019-0526-z-ag2s-sio2-cqds-1--after-s01-mix",
+      "id": "vasilopoulou2019-s41566-019-0526-z-ag2s-sio2-cqds-1--after-d2-s01-filter",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
+      "parent_ids": []
+    },
+    {
+      "id": "vasilopoulou2019-s41566-019-0526-z-ag2s-sio2-cqds-1--after-s01-mix",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
       "parent_ids": [
+        "vasilopoulou2019-s41566-019-0526-z-ag2s-sio2-cqds-1--after-d2-s01-filter",
         "vasilopoulou2019-s41566-019-0526-z-ag2s-sio2-cqds-1--silver-diethyldithiocarbamate",
         "vasilopoulou2019-s41566-019-0526-z-ag2s-sio2-cqds-1--oleic-acid",
-        "vasilopoulou2019-s41566-019-0526-z-ag2s-sio2-cqds-1--hexadecylamine"
+        "vasilopoulou2019-s41566-019-0526-z-ag2s-sio2-cqds-1--hexadecylamine",
+        "vasilopoulou2019-s41566-019-0526-z-ag2s-sio2-cqds-1--ag2s-cqds"
       ]
     },
     {
       "id": "vasilopoulou2019-s41566-019-0526-z-ag2s-sio2-cqds-1--after-s02-degas",
-      "name": "mixture after step 2",
+      "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
         "vasilopoulou2019-s41566-019-0526-z-ag2s-sio2-cqds-1--after-s01-mix"
@@ -185,7 +269,7 @@
     },
     {
       "id": "vasilopoulou2019-s41566-019-0526-z-ag2s-sio2-cqds-1--after-s03-heat",
-      "name": "mixture after step 3",
+      "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
         "vasilopoulou2019-s41566-019-0526-z-ag2s-sio2-cqds-1--after-s02-degas"
@@ -193,7 +277,7 @@
     },
     {
       "id": "vasilopoulou2019-s41566-019-0526-z-ag2s-sio2-cqds-1--after-s04-quench",
-      "name": "mixture after step 4",
+      "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
         "vasilopoulou2019-s41566-019-0526-z-ag2s-sio2-cqds-1--after-s03-heat"
@@ -210,17 +294,55 @@
   ],
   "operations": [
     {
+      "id": "d2-s01-filter",
+      "action": "filter",
+      "label": "Filtering the solution with a dialysis membrane",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [],
+      "outputs": [
+        "vasilopoulou2019-s41566-019-0526-z-ag2s-sio2-cqds-1--after-d2-s01-filter"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Filtering the solution with a dialysis membrane",
+      "evidence": [
+        {
+          "source_id": "vasilopoulou2019-s41566-019-0526-z",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    },
+    {
       "id": "s01-mix",
       "action": "mix",
       "label": "Mix silver diethyldithiocarbamate, oleic acid, hexadecylamine, and Ag2S CQDs",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
+      "depends_on": [
+        "d2-s01-filter"
+      ],
       "inputs": [
+        "vasilopoulou2019-s41566-019-0526-z-ag2s-sio2-cqds-1--after-d2-s01-filter",
         "vasilopoulou2019-s41566-019-0526-z-ag2s-sio2-cqds-1--silver-diethyldithiocarbamate",
         "vasilopoulou2019-s41566-019-0526-z-ag2s-sio2-cqds-1--oleic-acid",
-        "vasilopoulou2019-s41566-019-0526-z-ag2s-sio2-cqds-1--hexadecylamine"
+        "vasilopoulou2019-s41566-019-0526-z-ag2s-sio2-cqds-1--hexadecylamine",
+        "vasilopoulou2019-s41566-019-0526-z-ag2s-sio2-cqds-1--ag2s-cqds"
       ],
       "outputs": [
         "vasilopoulou2019-s41566-019-0526-z-ag2s-sio2-cqds-1--after-s01-mix"
@@ -531,17 +653,85 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "vasilopoulou2019-s41566-019-0526-z-ag2s-sio2-cqds-1--photoluminescence-peak",
+      "sample_id": "vasilopoulou2019-s41566-019-0526-z-ag2s-sio2-cqds-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 1404,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "1404 nm",
+        "evidence": [
+          {
+            "source_id": "vasilopoulou2019-s41566-019-0526-z",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "vasilopoulou2019-s41566-019-0526-z",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "vasilopoulou2019-s41566-019-0526-z-ag2s-sio2-cqds-1--photoluminescence-quantum-yield",
+      "sample_id": "vasilopoulou2019-s41566-019-0526-z-ag2s-sio2-cqds-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 84,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "84 %",
+        "evidence": [
+          {
+            "source_id": "vasilopoulou2019-s41566-019-0526-z",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "vasilopoulou2019-s41566-019-0526-z",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
       "Amount of oleic acid not reported in the extracted text.",
-      "Amount of hexadecylamine not reported in the extracted text."
+      "Amount of hexadecylamine not reported in the extracted text.",
+      "Amount of Ag2S CQDs not reported in the extracted text.",
+      "Amount of AgNO3 not reported in the extracted text.",
+      "Amount of Na2S not reported in the extracted text.",
+      "Amount of BSA not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

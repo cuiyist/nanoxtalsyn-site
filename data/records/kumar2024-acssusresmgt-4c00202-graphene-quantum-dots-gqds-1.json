@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "kumar2024-acssusresmgt-4c00202-graphene-quantum-dots-gqds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Dheeraj Kumar; Sweety Rani; Blesson Tom Mathew; Rohit Kumar Chikara; Bhanu Nandan; Rajiv K. Srivastava (2024): Graphene Quantum Dots (GQDs)",
   "material": {
@@ -203,6 +203,44 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "kumar2024-acssusresmgt-4c00202-graphene-quantum-dots-gqds-1--expanded-polystyrene-styrofoam",
+      "name": "expanded polystyrene (Styrofoam)",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "kumar2024-acssusresmgt-4c00202",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "kumar2024-acssusresmgt-4c00202-graphene-quantum-dots-gqds-1--styrofoam-waste",
+      "name": "Styrofoam waste",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "kumar2024-acssusresmgt-4c00202",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -211,7 +249,9 @@
       "id": "kumar2024-acssusresmgt-4c00202-graphene-quantum-dots-gqds-1--after-s01-cut",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "kumar2024-acssusresmgt-4c00202-graphene-quantum-dots-gqds-1--expanded-polystyrene-styrofoam"
+      ]
     },
     {
       "id": "kumar2024-acssusresmgt-4c00202-graphene-quantum-dots-gqds-1--after-s02-mix",
@@ -221,7 +261,8 @@
         "kumar2024-acssusresmgt-4c00202-graphene-quantum-dots-gqds-1--after-s01-cut",
         "kumar2024-acssusresmgt-4c00202-graphene-quantum-dots-gqds-1--acetone",
         "kumar2024-acssusresmgt-4c00202-graphene-quantum-dots-gqds-1--ammonia",
-        "kumar2024-acssusresmgt-4c00202-graphene-quantum-dots-gqds-1--hydrogen-peroxide"
+        "kumar2024-acssusresmgt-4c00202-graphene-quantum-dots-gqds-1--hydrogen-peroxide",
+        "kumar2024-acssusresmgt-4c00202-graphene-quantum-dots-gqds-1--expanded-polystyrene-styrofoam"
       ]
     },
     {
@@ -232,7 +273,8 @@
         "kumar2024-acssusresmgt-4c00202-graphene-quantum-dots-gqds-1--after-s02-mix",
         "kumar2024-acssusresmgt-4c00202-graphene-quantum-dots-gqds-1--acetone",
         "kumar2024-acssusresmgt-4c00202-graphene-quantum-dots-gqds-1--ammonia",
-        "kumar2024-acssusresmgt-4c00202-graphene-quantum-dots-gqds-1--hydrogen-peroxide"
+        "kumar2024-acssusresmgt-4c00202-graphene-quantum-dots-gqds-1--hydrogen-peroxide",
+        "kumar2024-acssusresmgt-4c00202-graphene-quantum-dots-gqds-1--expanded-polystyrene-styrofoam"
       ]
     },
     {
@@ -253,7 +295,9 @@
       "branch": "",
       "optional": false,
       "depends_on": [],
-      "inputs": [],
+      "inputs": [
+        "kumar2024-acssusresmgt-4c00202-graphene-quantum-dots-gqds-1--expanded-polystyrene-styrofoam"
+      ],
       "outputs": [
         "kumar2024-acssusresmgt-4c00202-graphene-quantum-dots-gqds-1--after-s01-cut"
       ],
@@ -298,7 +342,8 @@
         "kumar2024-acssusresmgt-4c00202-graphene-quantum-dots-gqds-1--after-s01-cut",
         "kumar2024-acssusresmgt-4c00202-graphene-quantum-dots-gqds-1--acetone",
         "kumar2024-acssusresmgt-4c00202-graphene-quantum-dots-gqds-1--ammonia",
-        "kumar2024-acssusresmgt-4c00202-graphene-quantum-dots-gqds-1--hydrogen-peroxide"
+        "kumar2024-acssusresmgt-4c00202-graphene-quantum-dots-gqds-1--hydrogen-peroxide",
+        "kumar2024-acssusresmgt-4c00202-graphene-quantum-dots-gqds-1--expanded-polystyrene-styrofoam"
       ],
       "outputs": [
         "kumar2024-acssusresmgt-4c00202-graphene-quantum-dots-gqds-1--after-s02-mix"
@@ -363,7 +408,8 @@
         "kumar2024-acssusresmgt-4c00202-graphene-quantum-dots-gqds-1--after-s02-mix",
         "kumar2024-acssusresmgt-4c00202-graphene-quantum-dots-gqds-1--acetone",
         "kumar2024-acssusresmgt-4c00202-graphene-quantum-dots-gqds-1--ammonia",
-        "kumar2024-acssusresmgt-4c00202-graphene-quantum-dots-gqds-1--hydrogen-peroxide"
+        "kumar2024-acssusresmgt-4c00202-graphene-quantum-dots-gqds-1--hydrogen-peroxide",
+        "kumar2024-acssusresmgt-4c00202-graphene-quantum-dots-gqds-1--expanded-polystyrene-styrofoam"
       ],
       "outputs": [
         "kumar2024-acssusresmgt-4c00202-graphene-quantum-dots-gqds-1--after-s03-heat"
@@ -563,15 +609,49 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "kumar2024-acssusresmgt-4c00202-graphene-quantum-dots-gqds-1--photoluminescence-quantum-yield",
+      "sample_id": "kumar2024-acssusresmgt-4c00202-graphene-quantum-dots-gqds-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 1.87,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "1.87 %",
+        "evidence": [
+          {
+            "source_id": "kumar2024-acssusresmgt-4c00202",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "kumar2024-acssusresmgt-4c00202",
+          "locator": "Main PDF p.5"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
-      "Reactor not reported in the extracted text."
+      "Reactor not reported in the extracted text.",
+      "Amount of expanded polystyrene (Styrofoam) not reported in the extracted text.",
+      "Amount of Styrofoam waste not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

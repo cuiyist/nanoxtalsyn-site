@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "chen2004-jp047035w-znse-znses-qds-3",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Hsueh-Shih Chen; Bertrand Lo; Jen-Yu Hwang; Gwo-Yang Chang; Chien-Ming Chen; Shih-Jung Tasi; Shian-Jy Jassy Wang (2004): ZnSe/ZnSeS QDs",
   "material": {
@@ -320,10 +320,17 @@
   "stocks": [],
   "material_states": [
     {
-      "id": "chen2004-jp047035w-znse-znses-qds-3--after-s01-dissolve",
+      "id": "chen2004-jp047035w-znse-znses-qds-3--after-d2-s01-grow",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
+      "parent_ids": []
+    },
+    {
+      "id": "chen2004-jp047035w-znse-znses-qds-3--after-s01-dissolve",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
       "parent_ids": [
+        "chen2004-jp047035w-znse-znses-qds-3--after-d2-s01-grow",
         "chen2004-jp047035w-znse-znses-qds-3--zno",
         "chen2004-jp047035w-znse-znses-qds-3--lauric-acid",
         "chen2004-jp047035w-znse-znses-qds-3--hexadecylamine"
@@ -331,7 +338,7 @@
     },
     {
       "id": "chen2004-jp047035w-znse-znses-qds-3--after-s02-dissolve",
-      "name": "mixture after step 2",
+      "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
         "chen2004-jp047035w-znse-znses-qds-3--after-s01-dissolve",
@@ -352,14 +359,51 @@
   ],
   "operations": [
     {
+      "id": "d2-s01-grow",
+      "action": "grow",
+      "label": "ZnSe QDs",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [],
+      "outputs": [
+        "chen2004-jp047035w-znse-znses-qds-3--after-d2-s01-grow"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "ZnSe QDs",
+      "evidence": [
+        {
+          "source_id": "chen2004-jp047035w",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
       "id": "s01-dissolve",
       "action": "dissolve",
       "label": "Dissolve ZnO in lauric acid/hexadecylamine",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
+      "depends_on": [
+        "d2-s01-grow"
+      ],
       "inputs": [
+        "chen2004-jp047035w-znse-znses-qds-3--after-d2-s01-grow",
         "chen2004-jp047035w-znse-znses-qds-3--zno",
         "chen2004-jp047035w-znse-znses-qds-3--lauric-acid",
         "chen2004-jp047035w-znse-znses-qds-3--hexadecylamine"
@@ -534,11 +578,44 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "chen2004-jp047035w-znse-znses-qds-3--photoluminescence-quantum-yield",
+      "sample_id": "chen2004-jp047035w-znse-znses-qds-3--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 26.1,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "26.1 %",
+        "evidence": [
+          {
+            "source_id": "chen2004-jp047035w",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "chen2004-jp047035w",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Size not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",

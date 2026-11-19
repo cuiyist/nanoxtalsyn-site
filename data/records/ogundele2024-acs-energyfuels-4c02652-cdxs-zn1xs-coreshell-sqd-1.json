@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "ogundele2024-acs-energyfuels-4c02652-cdxs-zn1xs-coreshell-sqd-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Abiodun Kazeem Ogundele; Genene Tessema Mola (2024): CdxS/Zn1−xS core−shell SQD",
   "material": {
@@ -201,6 +201,63 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "ogundele2024-acs-energyfuels-4c02652-cdxs-zn1xs-coreshell-sqd-1--thioglycolic-acid",
+      "name": "thioglycolic acid",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "ogundele2024-acs-energyfuels-4c02652",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "ogundele2024-acs-energyfuels-4c02652-cdxs-zn1xs-coreshell-sqd-1--ethylene-glycol",
+      "name": "ethylene glycol",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "ogundele2024-acs-energyfuels-4c02652",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "ogundele2024-acs-energyfuels-4c02652-cdxs-zn1xs-coreshell-sqd-1--ethanol",
+      "name": "ethanol",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "ogundele2024-acs-energyfuels-4c02652",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -211,7 +268,9 @@
       "kind": "reaction_batch",
       "parent_ids": [
         "ogundele2024-acs-energyfuels-4c02652-cdxs-zn1xs-coreshell-sqd-1--cadmium-acetate",
-        "ogundele2024-acs-energyfuels-4c02652-cdxs-zn1xs-coreshell-sqd-1--zinc-acetate"
+        "ogundele2024-acs-energyfuels-4c02652-cdxs-zn1xs-coreshell-sqd-1--zinc-acetate",
+        "ogundele2024-acs-energyfuels-4c02652-cdxs-zn1xs-coreshell-sqd-1--ethylene-glycol",
+        "ogundele2024-acs-energyfuels-4c02652-cdxs-zn1xs-coreshell-sqd-1--ethanol"
       ]
     },
     {
@@ -221,7 +280,9 @@
       "parent_ids": [
         "ogundele2024-acs-energyfuels-4c02652-cdxs-zn1xs-coreshell-sqd-1--after-s01-sonicate",
         "ogundele2024-acs-energyfuels-4c02652-cdxs-zn1xs-coreshell-sqd-1--cadmium-acetate",
-        "ogundele2024-acs-energyfuels-4c02652-cdxs-zn1xs-coreshell-sqd-1--zinc-acetate"
+        "ogundele2024-acs-energyfuels-4c02652-cdxs-zn1xs-coreshell-sqd-1--zinc-acetate",
+        "ogundele2024-acs-energyfuels-4c02652-cdxs-zn1xs-coreshell-sqd-1--ethylene-glycol",
+        "ogundele2024-acs-energyfuels-4c02652-cdxs-zn1xs-coreshell-sqd-1--ethanol"
       ]
     },
     {
@@ -252,7 +313,9 @@
       "depends_on": [],
       "inputs": [
         "ogundele2024-acs-energyfuels-4c02652-cdxs-zn1xs-coreshell-sqd-1--cadmium-acetate",
-        "ogundele2024-acs-energyfuels-4c02652-cdxs-zn1xs-coreshell-sqd-1--zinc-acetate"
+        "ogundele2024-acs-energyfuels-4c02652-cdxs-zn1xs-coreshell-sqd-1--zinc-acetate",
+        "ogundele2024-acs-energyfuels-4c02652-cdxs-zn1xs-coreshell-sqd-1--ethylene-glycol",
+        "ogundele2024-acs-energyfuels-4c02652-cdxs-zn1xs-coreshell-sqd-1--ethanol"
       ],
       "outputs": [
         "ogundele2024-acs-energyfuels-4c02652-cdxs-zn1xs-coreshell-sqd-1--after-s01-sonicate"
@@ -329,7 +392,9 @@
       "inputs": [
         "ogundele2024-acs-energyfuels-4c02652-cdxs-zn1xs-coreshell-sqd-1--after-s01-sonicate",
         "ogundele2024-acs-energyfuels-4c02652-cdxs-zn1xs-coreshell-sqd-1--cadmium-acetate",
-        "ogundele2024-acs-energyfuels-4c02652-cdxs-zn1xs-coreshell-sqd-1--zinc-acetate"
+        "ogundele2024-acs-energyfuels-4c02652-cdxs-zn1xs-coreshell-sqd-1--zinc-acetate",
+        "ogundele2024-acs-energyfuels-4c02652-cdxs-zn1xs-coreshell-sqd-1--ethylene-glycol",
+        "ogundele2024-acs-energyfuels-4c02652-cdxs-zn1xs-coreshell-sqd-1--ethanol"
       ],
       "outputs": [
         "ogundele2024-acs-energyfuels-4c02652-cdxs-zn1xs-coreshell-sqd-1--after-s02-heat"
@@ -578,18 +643,53 @@
           "locator": "Main PDF p.4"
         }
       ]
+    },
+    {
+      "id": "ogundele2024-acs-energyfuels-4c02652-cdxs-zn1xs-coreshell-sqd-1--photoluminescence-peak",
+      "sample_id": "ogundele2024-acs-energyfuels-4c02652-cdxs-zn1xs-coreshell-sqd-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 683,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "683 nm",
+        "evidence": [
+          {
+            "source_id": "ogundele2024-acs-energyfuels-4c02652",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "ogundele2024-acs-energyfuels-4c02652",
+          "locator": "Main PDF p.6"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
-      "Reaction time not reported in the extracted text."
+      "Reaction time not reported in the extracted text.",
+      "Amount of thioglycolic acid not reported in the extracted text.",
+      "Amount of ethylene glycol not reported in the extracted text.",
+      "Amount of ethanol not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

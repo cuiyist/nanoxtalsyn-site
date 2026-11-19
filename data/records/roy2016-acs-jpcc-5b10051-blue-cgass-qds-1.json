@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Debjit Roy; Tapan Routh; Aswin Vijai Asaithambi; Saptarshi Mandal; Prasun K. Mandal (2016): Blue CGASS QDs",
   "material": {
@@ -189,48 +189,178 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--se-powder",
+      "name": "Se powder",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 0.4,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.4 mmol",
+          "evidence": [
+            {
+              "source_id": "roy2016-acs-jpcc-5b10051",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "roy2016-acs-jpcc-5b10051",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--s-powder",
+      "name": "S powder",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 8,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "8 mmol",
+          "evidence": [
+            {
+              "source_id": "roy2016-acs-jpcc-5b10051",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "roy2016-acs-jpcc-5b10051",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--1-octadecene",
+      "name": "1-octadecene",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "roy2016-acs-jpcc-5b10051",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
-      "id": "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--after-s01-degas",
+      "id": "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--after-d2-s01-mix",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": [
         "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--cdo",
         "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--zinc-stearate",
+        "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--1-octadecene",
         "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--oleic-acid"
       ]
     },
     {
-      "id": "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--after-s02-heat",
+      "id": "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--after-s01-degas",
       "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--after-d2-s01-mix",
+        "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--cdo",
+        "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--zinc-stearate",
+        "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--oleic-acid",
+        "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--se-powder",
+        "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--s-powder",
+        "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--1-octadecene"
+      ]
+    },
+    {
+      "id": "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--after-s02-heat",
+      "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
         "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--after-s01-degas",
         "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--cdo",
         "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--zinc-stearate",
-        "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--oleic-acid"
+        "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--oleic-acid",
+        "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--se-powder",
+        "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--s-powder",
+        "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--1-octadecene"
       ]
     },
     {
       "id": "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--after-s03-heat",
-      "name": "product as isolated",
-      "kind": "product",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
       "parent_ids": [
         "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--after-s02-heat",
         "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--cdo",
         "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--zinc-stearate",
+        "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--oleic-acid",
+        "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--se-powder",
+        "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--s-powder",
+        "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--1-octadecene"
+      ]
+    },
+    {
+      "id": "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--after-d2-s05-puriify",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--after-s03-heat",
+        "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--cdo",
+        "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--zinc-stearate",
+        "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--se-powder",
+        "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--s-powder",
+        "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--1-octadecene",
         "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--oleic-acid"
       ]
     }
   ],
   "operations": [
     {
-      "id": "s01-degas",
-      "action": "degas",
-      "label": "Degassing under vacuum",
+      "id": "d2-s01-mix",
+      "action": "mix",
+      "label": "Mix CdO with zinc stearate, ODE, and OA",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -238,7 +368,57 @@
       "inputs": [
         "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--cdo",
         "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--zinc-stearate",
+        "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--1-octadecene",
         "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--oleic-acid"
+      ],
+      "outputs": [
+        "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--after-d2-s01-mix"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "roy2016-acs-jpcc-5b10051",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Mix CdO with zinc stearate, ODE, and OA",
+      "evidence": [
+        {
+          "source_id": "roy2016-acs-jpcc-5b10051",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s01-degas",
+      "action": "degas",
+      "label": "Degassing under vacuum",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s01-mix"
+      ],
+      "inputs": [
+        "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--after-d2-s01-mix",
+        "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--cdo",
+        "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--zinc-stearate",
+        "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--oleic-acid",
+        "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--se-powder",
+        "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--s-powder",
+        "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--1-octadecene"
       ],
       "outputs": [
         "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--after-s01-degas"
@@ -321,7 +501,10 @@
         "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--after-s01-degas",
         "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--cdo",
         "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--zinc-stearate",
-        "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--oleic-acid"
+        "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--oleic-acid",
+        "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--se-powder",
+        "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--s-powder",
+        "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--1-octadecene"
       ],
       "outputs": [
         "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--after-s02-heat"
@@ -386,7 +569,10 @@
         "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--after-s02-heat",
         "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--cdo",
         "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--zinc-stearate",
-        "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--oleic-acid"
+        "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--oleic-acid",
+        "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--se-powder",
+        "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--s-powder",
+        "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--1-octadecene"
       ],
       "outputs": [
         "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--after-s03-heat"
@@ -436,6 +622,55 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "d2-s05-puriify",
+      "action": "puriify",
+      "label": "Purification by solvent extraction",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-heat"
+      ],
+      "inputs": [
+        "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--after-s03-heat",
+        "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--cdo",
+        "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--zinc-stearate",
+        "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--se-powder",
+        "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--s-powder",
+        "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--1-octadecene",
+        "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--oleic-acid"
+      ],
+      "outputs": [
+        "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--after-d2-s05-puriify"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "roy2016-acs-jpcc-5b10051",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Purification by solvent extraction",
+      "evidence": [
+        {
+          "source_id": "roy2016-acs-jpcc-5b10051",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -444,7 +679,7 @@
       "sample_id": "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--product",
       "source_sample_label": "Blue CGASS QDs",
       "batch_id": null,
-      "material_state_id": "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--after-s03-heat",
+      "material_state_id": "roy2016-acs-jpcc-5b10051-blue-cgass-qds-1--after-d2-s05-puriify",
       "parent_sample_id": null,
       "composition": {
         "value": "CdSe",
@@ -496,13 +731,14 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
-      "Reaction time not reported in the extracted text."
+      "Reaction time not reported in the extracted text.",
+      "Amount of 1-octadecene not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

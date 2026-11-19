@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "zhang2015-acs-jpclett-5b00689-pbs-qds-synthesized-at-95-c-with-2-g-oa-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Jianbing Zhang; Ryan W. Crisp; Jianbo Gao; Daniel M. Kroupa; Matthew C. Beard; Joseph M. Luther (2015): PbS QDs synthesized at 95 °C with 2 g OA",
   "material": {
@@ -194,6 +194,25 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "zhang2015-acs-jpclett-5b00689-pbs-qds-synthesized-at-95-c-with-2-g-oa-1--tms-2s",
+      "name": "(TMS)2S",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zhang2015-acs-jpclett-5b00689",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -206,10 +225,26 @@
     },
     {
       "id": "zhang2015-acs-jpclett-5b00689-pbs-qds-synthesized-at-95-c-with-2-g-oa-1--after-s02-cool",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zhang2015-acs-jpclett-5b00689-pbs-qds-synthesized-at-95-c-with-2-g-oa-1--after-s01-heat"
+      ]
+    },
+    {
+      "id": "zhang2015-acs-jpclett-5b00689-pbs-qds-synthesized-at-95-c-with-2-g-oa-1--after-d2-s03-pump",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zhang2015-acs-jpclett-5b00689-pbs-qds-synthesized-at-95-c-with-2-g-oa-1--after-s02-cool"
+      ]
+    },
+    {
+      "id": "zhang2015-acs-jpclett-5b00689-pbs-qds-synthesized-at-95-c-with-2-g-oa-1--after-d2-s04-purity",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "zhang2015-acs-jpclett-5b00689-pbs-qds-synthesized-at-95-c-with-2-g-oa-1--after-s01-heat"
+        "zhang2015-acs-jpclett-5b00689-pbs-qds-synthesized-at-95-c-with-2-g-oa-1--after-d2-s03-pump"
       ]
     }
   ],
@@ -304,6 +339,82 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "d2-s03-pump",
+      "action": "pump",
+      "label": "Remove reaction solution for measurement",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-cool"
+      ],
+      "inputs": [
+        "zhang2015-acs-jpclett-5b00689-pbs-qds-synthesized-at-95-c-with-2-g-oa-1--after-s02-cool"
+      ],
+      "outputs": [
+        "zhang2015-acs-jpclett-5b00689-pbs-qds-synthesized-at-95-c-with-2-g-oa-1--after-d2-s03-pump"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Remove reaction solution for measurement",
+      "evidence": [
+        {
+          "source_id": "zhang2015-acs-jpclett-5b00689",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "d2-s04-purity",
+      "action": "purity",
+      "label": "Puriﬁed twice using hexane and ethanol",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-pump"
+      ],
+      "inputs": [
+        "zhang2015-acs-jpclett-5b00689-pbs-qds-synthesized-at-95-c-with-2-g-oa-1--after-d2-s03-pump"
+      ],
+      "outputs": [
+        "zhang2015-acs-jpclett-5b00689-pbs-qds-synthesized-at-95-c-with-2-g-oa-1--after-d2-s04-purity"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Puriﬁed twice using hexane and ethanol",
+      "evidence": [
+        {
+          "source_id": "zhang2015-acs-jpclett-5b00689",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -312,7 +423,7 @@
       "sample_id": "zhang2015-acs-jpclett-5b00689-pbs-qds-synthesized-at-95-c-with-2-g-oa-1--product",
       "source_sample_label": "PbS QDs synthesized at 95 °C with 2 g OA",
       "batch_id": null,
-      "material_state_id": "zhang2015-acs-jpclett-5b00689-pbs-qds-synthesized-at-95-c-with-2-g-oa-1--after-s02-cool",
+      "material_state_id": "zhang2015-acs-jpclett-5b00689-pbs-qds-synthesized-at-95-c-with-2-g-oa-1--after-d2-s04-purity",
       "parent_sample_id": null,
       "composition": {
         "value": "PbS",
@@ -365,13 +476,14 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
-      "Reaction time not reported in the extracted text."
+      "Reaction time not reported in the extracted text.",
+      "Amount of (TMS)2S not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

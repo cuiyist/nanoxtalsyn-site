@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "soni2012-nl2034859-bi2te3-nanoplatelet-composite-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Ajay Soni et al. (2012): Bi2Te3 nanoplatelet composite",
   "material": {
@@ -161,6 +161,44 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "soni2012-nl2034859-bi2te3-nanoplatelet-composite-1--isopropyl-alcohol",
+      "name": "isopropyl alcohol",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "soni2012-nl2034859",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "soni2012-nl2034859-bi2te3-nanoplatelet-composite-1--acetone",
+      "name": "acetone",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "soni2012-nl2034859",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -197,7 +235,9 @@
       "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
-        "soni2012-nl2034859-bi2te3-nanoplatelet-composite-1--after-s03-centrifuge"
+        "soni2012-nl2034859-bi2te3-nanoplatelet-composite-1--after-s03-centrifuge",
+        "soni2012-nl2034859-bi2te3-nanoplatelet-composite-1--isopropyl-alcohol",
+        "soni2012-nl2034859-bi2te3-nanoplatelet-composite-1--acetone"
       ]
     },
     {
@@ -336,7 +376,9 @@
         "s03-centrifuge"
       ],
       "inputs": [
-        "soni2012-nl2034859-bi2te3-nanoplatelet-composite-1--after-s03-centrifuge"
+        "soni2012-nl2034859-bi2te3-nanoplatelet-composite-1--after-s03-centrifuge",
+        "soni2012-nl2034859-bi2te3-nanoplatelet-composite-1--isopropyl-alcohol",
+        "soni2012-nl2034859-bi2te3-nanoplatelet-composite-1--acetone"
       ],
       "outputs": [
         "soni2012-nl2034859-bi2te3-nanoplatelet-composite-1--after-s04-wash"
@@ -500,7 +542,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
@@ -511,7 +553,9 @@
       "Amount of bismuth nitrate not reported in the extracted text.",
       "Amount of potassium telluride not reported in the extracted text.",
       "Amount of sodium selenide not reported in the extracted text.",
-      "Amount of diethylene glycol not reported in the extracted text."
+      "Amount of diethylene glycol not reported in the extracted text.",
+      "Amount of isopropyl alcohol not reported in the extracted text.",
+      "Amount of acetone not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

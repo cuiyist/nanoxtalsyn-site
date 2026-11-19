@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "yakimov2001-1-1346651-ge-si-quantum-dots-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "A. I. Yakimov (2001): Ge/Si quantum dots",
   "material": {
@@ -143,6 +143,44 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "yakimov2001-1-1346651-ge-si-quantum-dots-1--boron-doped-si",
+      "name": "boron doped Si",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "yakimov2001-1-1346651",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "yakimov2001-1-1346651-ge-si-quantum-dots-1--boron-delta-doping",
+      "name": "boron delta-doping",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "yakimov2001-1-1346651",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -166,11 +204,20 @@
     },
     {
       "id": "yakimov2001-1-1346651-ge-si-quantum-dots-1--after-s03-grow",
-      "name": "product as isolated",
-      "kind": "product",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
       "parent_ids": [
         "yakimov2001-1-1346651-ge-si-quantum-dots-1--after-s02-grow",
         "yakimov2001-1-1346651-ge-si-quantum-dots-1--si"
+      ]
+    },
+    {
+      "id": "yakimov2001-1-1346651-ge-si-quantum-dots-1--after-d2-s04-dope",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "yakimov2001-1-1346651-ge-si-quantum-dots-1--after-s03-grow",
+        "yakimov2001-1-1346651-ge-si-quantum-dots-1--boron"
       ]
     }
   ],
@@ -345,6 +392,45 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "d2-s04-dope",
+      "action": "dope",
+      "label": "Insert boron delta-doping layer",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-grow"
+      ],
+      "inputs": [
+        "yakimov2001-1-1346651-ge-si-quantum-dots-1--after-s03-grow",
+        "yakimov2001-1-1346651-ge-si-quantum-dots-1--boron"
+      ],
+      "outputs": [
+        "yakimov2001-1-1346651-ge-si-quantum-dots-1--after-d2-s04-dope"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Insert boron delta-doping layer",
+      "evidence": [
+        {
+          "source_id": "yakimov2001-1-1346651",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -353,7 +439,7 @@
       "sample_id": "yakimov2001-1-1346651-ge-si-quantum-dots-1--product",
       "source_sample_label": "Ge/Si quantum dots",
       "batch_id": null,
-      "material_state_id": "yakimov2001-1-1346651-ge-si-quantum-dots-1--after-s03-grow",
+      "material_state_id": "yakimov2001-1-1346651-ge-si-quantum-dots-1--after-d2-s04-dope",
       "parent_sample_id": null,
       "composition": {
         "value": "Ge/Si",
@@ -411,7 +497,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
@@ -419,7 +505,9 @@
       "Reaction time not reported in the extracted text.",
       "Amount of Ge not reported in the extracted text.",
       "Amount of Si not reported in the extracted text.",
-      "Amount of boron not reported in the extracted text."
+      "Amount of boron not reported in the extracted text.",
+      "Amount of boron doped Si not reported in the extracted text.",
+      "Amount of boron delta-doping not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

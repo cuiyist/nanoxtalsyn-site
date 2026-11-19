@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "rogach2007-jp072463y-mpa-capped-cdte-ncs-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Andrey L. Rogach (2007): MPA-capped CdTe NCs",
   "material": {
@@ -166,16 +166,89 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "rogach2007-jp072463y-mpa-capped-cdte-ncs-2--h2te",
+      "name": "H2Te",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "rogach2007-jp072463y",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "rogach2007-jp072463y-mpa-capped-cdte-ncs-2--n2",
+      "name": "N2",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "rogach2007-jp072463y",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
       "id": "rogach2007-jp072463y-mpa-capped-cdte-ncs-2--after-s01-add",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "rogach2007-jp072463y-mpa-capped-cdte-ncs-2--mercaptopropionic-acid"
+      ]
+    },
+    {
+      "id": "rogach2007-jp072463y-mpa-capped-cdte-ncs-2--after-d2-s02-adjust",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "rogach2007-jp072463y-mpa-capped-cdte-ncs-2--after-s01-add",
+        "rogach2007-jp072463y-mpa-capped-cdte-ncs-2--naoh"
+      ]
+    },
+    {
+      "id": "rogach2007-jp072463y-mpa-capped-cdte-ncs-2--after-d2-s03-degas",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "rogach2007-jp072463y-mpa-capped-cdte-ncs-2--after-d2-s02-adjust",
+        "rogach2007-jp072463y-mpa-capped-cdte-ncs-2--n2"
+      ]
+    },
+    {
+      "id": "rogach2007-jp072463y-mpa-capped-cdte-ncs-2--after-d2-s04-inject",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "rogach2007-jp072463y-mpa-capped-cdte-ncs-2--after-d2-s03-degas"
+      ]
+    },
+    {
+      "id": "rogach2007-jp072463y-mpa-capped-cdte-ncs-2--after-d2-s05-heat",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "rogach2007-jp072463y-mpa-capped-cdte-ncs-2--mercaptopropionic-acid"
+        "rogach2007-jp072463y-mpa-capped-cdte-ncs-2--after-d2-s04-inject",
+        "rogach2007-jp072463y-mpa-capped-cdte-ncs-2--h2te"
       ]
     }
   ],
@@ -220,6 +293,219 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "d2-s02-adjust",
+      "action": "adjust",
+      "label": "Adjust pH",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-add"
+      ],
+      "inputs": [
+        "rogach2007-jp072463y-mpa-capped-cdte-ncs-2--after-s01-add",
+        "rogach2007-jp072463y-mpa-capped-cdte-ncs-2--naoh"
+      ],
+      "outputs": [
+        "rogach2007-jp072463y-mpa-capped-cdte-ncs-2--after-d2-s02-adjust"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "rogach2007-jp072463y",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Adjust pH",
+      "evidence": [
+        {
+          "source_id": "rogach2007-jp072463y",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "d2-s03-degas",
+      "action": "degas",
+      "label": "Deaerate solution with N2",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-adjust"
+      ],
+      "inputs": [
+        "rogach2007-jp072463y-mpa-capped-cdte-ncs-2--after-d2-s02-adjust",
+        "rogach2007-jp072463y-mpa-capped-cdte-ncs-2--n2"
+      ],
+      "outputs": [
+        "rogach2007-jp072463y-mpa-capped-cdte-ncs-2--after-d2-s03-degas"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 30,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "30 min",
+          "evidence": [
+            {
+              "source_id": "rogach2007-jp072463y",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "rogach2007-jp072463y",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Deaerate solution with N2",
+      "evidence": [
+        {
+          "source_id": "rogach2007-jp072463y",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "d2-s04-inject",
+      "action": "inject",
+      "label": "Inject",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-degas"
+      ],
+      "inputs": [
+        "rogach2007-jp072463y-mpa-capped-cdte-ncs-2--after-d2-s03-degas"
+      ],
+      "outputs": [
+        "rogach2007-jp072463y-mpa-capped-cdte-ncs-2--after-d2-s04-inject"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "rogach2007-jp072463y",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Inject",
+      "evidence": [
+        {
+          "source_id": "rogach2007-jp072463y",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "d2-s05-heat",
+      "action": "heat",
+      "label": "Reflux under open-air conditions",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-inject"
+      ],
+      "inputs": [
+        "rogach2007-jp072463y-mpa-capped-cdte-ncs-2--after-d2-s04-inject",
+        "rogach2007-jp072463y-mpa-capped-cdte-ncs-2--h2te"
+      ],
+      "outputs": [
+        "rogach2007-jp072463y-mpa-capped-cdte-ncs-2--after-d2-s05-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 100,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "100 °C",
+          "evidence": [
+            {
+              "source_id": "rogach2007-jp072463y",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "rogach2007-jp072463y",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Reflux under open-air conditions",
+      "evidence": [
+        {
+          "source_id": "rogach2007-jp072463y",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -228,7 +514,7 @@
       "sample_id": "rogach2007-jp072463y-mpa-capped-cdte-ncs-2--product",
       "source_sample_label": "MPA-capped CdTe NCs",
       "batch_id": null,
-      "material_state_id": "rogach2007-jp072463y-mpa-capped-cdte-ncs-2--after-s01-add",
+      "material_state_id": "rogach2007-jp072463y-mpa-capped-cdte-ncs-2--after-d2-s05-heat",
       "parent_sample_id": null,
       "composition": {
         "value": "CdTe",
@@ -315,16 +601,50 @@
           "locator": "Main PDF p.4"
         }
       ]
+    },
+    {
+      "id": "rogach2007-jp072463y-mpa-capped-cdte-ncs-2--photoluminescence-peak",
+      "sample_id": "rogach2007-jp072463y-mpa-capped-cdte-ncs-2--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 780,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "780 nm",
+        "evidence": [
+          {
+            "source_id": "rogach2007-jp072463y",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "rogach2007-jp072463y",
+          "locator": "Main PDF p.5"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Amount of mercaptopropionic acid not reported in the extracted text.",
-      "Amount of NaOH not reported in the extracted text."
+      "Amount of NaOH not reported in the extracted text.",
+      "Amount of H2Te not reported in the extracted text.",
+      "Amount of N2 not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

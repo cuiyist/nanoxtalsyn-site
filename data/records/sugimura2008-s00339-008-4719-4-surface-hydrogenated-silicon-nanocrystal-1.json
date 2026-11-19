@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "sugimura2008-s00339-008-4719-4-surface-hydrogenated-silicon-nanocrystal-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Ikurou Umezu · Issei Kondo · Akira Sugimura (2008): surface hydrogenated silicon nanocrystallites",
   "material": {
@@ -131,6 +131,44 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "sugimura2008-s00339-008-4719-4-surface-hydrogenated-silicon-nanocrystal-1--helium-gas",
+      "name": "helium gas",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "sugimura2008-s00339-008-4719-4",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "sugimura2008-s00339-008-4719-4-surface-hydrogenated-silicon-nanocrystal-1--single-crystalline-si-target",
+      "name": "single-crystalline Si target",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "sugimura2008-s00339-008-4719-4",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -146,11 +184,19 @@
     },
     {
       "id": "sugimura2008-s00339-008-4719-4-surface-hydrogenated-silicon-nanocrystal-1--after-s02-ablate",
-      "name": "product as isolated",
-      "kind": "product",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
       "parent_ids": [
         "sugimura2008-s00339-008-4719-4-surface-hydrogenated-silicon-nanocrystal-1--after-s01-introduce",
         "sugimura2008-s00339-008-4719-4-surface-hydrogenated-silicon-nanocrystal-1--single-crystalline-si"
+      ]
+    },
+    {
+      "id": "sugimura2008-s00339-008-4719-4-surface-hydrogenated-silicon-nanocrystal-1--after-d2-s03-rotate",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "sugimura2008-s00339-008-4719-4-surface-hydrogenated-silicon-nanocrystal-1--after-s02-ablate"
       ]
     }
   ],
@@ -240,6 +286,49 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s03-rotate",
+      "action": "rotate",
+      "label": "Rotate target and substrate",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-ablate"
+      ],
+      "inputs": [
+        "sugimura2008-s00339-008-4719-4-surface-hydrogenated-silicon-nanocrystal-1--after-s02-ablate"
+      ],
+      "outputs": [
+        "sugimura2008-s00339-008-4719-4-surface-hydrogenated-silicon-nanocrystal-1--after-d2-s03-rotate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "hydrogen",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "sugimura2008-s00339-008-4719-4",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Rotate target and substrate",
+      "evidence": [
+        {
+          "source_id": "sugimura2008-s00339-008-4719-4",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -248,7 +337,7 @@
       "sample_id": "sugimura2008-s00339-008-4719-4-surface-hydrogenated-silicon-nanocrystal-1--product",
       "source_sample_label": "surface hydrogenated silicon nanocrystallites",
       "batch_id": null,
-      "material_state_id": "sugimura2008-s00339-008-4719-4-surface-hydrogenated-silicon-nanocrystal-1--after-s02-ablate",
+      "material_state_id": "sugimura2008-s00339-008-4719-4-surface-hydrogenated-silicon-nanocrystal-1--after-d2-s03-rotate",
       "parent_sample_id": null,
       "composition": {
         "value": "Si",
@@ -298,7 +387,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
@@ -306,9 +395,9 @@
       "Reactor not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
-      "Amount of hydrogen not reported in the extracted text.",
-      "Amount of helium not reported in the extracted text.",
-      "Amount of single-crystalline Si not reported in the extracted text."
+      "Amount of single-crystalline Si not reported in the extracted text.",
+      "Amount of helium gas not reported in the extracted text.",
+      "Amount of single-crystalline Si target not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

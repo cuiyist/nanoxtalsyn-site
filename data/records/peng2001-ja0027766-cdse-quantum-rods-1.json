@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "peng2001-ja0027766-cdse-quantum-rods-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Z. Adam Peng and Xiaogang Peng* (2001): CdSe quantum rods",
   "material": {
@@ -39,9 +39,14 @@
   },
   "intended_target": {
     "composition": {
-      "value": null,
-      "status": "not_reported",
-      "evidence": [],
+      "value": "CdSe",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "peng2001-ja0027766",
+          "locator": "Main PDF p.2"
+        }
+      ],
       "note": ""
     },
     "phase": {
@@ -187,6 +192,44 @@
           "derivation": null
         }
       },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "peng2001-ja0027766",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "peng2001-ja0027766-cdse-quantum-rods-1--hexylphosphonic-acid",
+      "name": "hexylphosphonic acid",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "peng2001-ja0027766",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "peng2001-ja0027766-cdse-quantum-rods-1--trioctylphosphine-oxide",
+      "name": "trioctylphosphine oxide",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
       "notes": [],
       "evidence": [
         {
@@ -372,9 +415,14 @@
       "material_state_id": "peng2001-ja0027766-cdse-quantum-rods-1--after-s02-add",
       "parent_sample_id": null,
       "composition": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "CdSe",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "peng2001-ja0027766",
+            "locator": "Main PDF p.2"
+          }
+        ],
         "note": ""
       },
       "phase": {
@@ -455,10 +503,12 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
-      "Reaction time not reported in the extracted text."
+      "Reaction time not reported in the extracted text.",
+      "Amount of hexylphosphonic acid not reported in the extracted text.",
+      "Amount of trioctylphosphine oxide not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

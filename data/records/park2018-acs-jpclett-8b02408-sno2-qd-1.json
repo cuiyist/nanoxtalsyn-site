@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "park2018-acs-jpclett-8b02408-sno2-qd-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "So Yeon Park; Mi Yeon Baek; Yeonkyeon Ju; Dong Hoe Kim; Chan Su Moon; Jun Hong Noh; Hyun Suk Jung (2018): SnO2 QD",
   "material": {
@@ -147,6 +147,44 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "park2018-acs-jpclett-8b02408-sno2-qd-1--water",
+      "name": "water",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "park2018-acs-jpclett-8b02408",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "park2018-acs-jpclett-8b02408-sno2-qd-1--xylene",
+      "name": "xylene",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "park2018-acs-jpclett-8b02408",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -166,7 +204,8 @@
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "park2018-acs-jpclett-8b02408-sno2-qd-1--after-s01-dissolve"
+        "park2018-acs-jpclett-8b02408-sno2-qd-1--after-s01-dissolve",
+        "park2018-acs-jpclett-8b02408-sno2-qd-1--water"
       ]
     }
   ],
@@ -225,7 +264,8 @@
         "s01-dissolve"
       ],
       "inputs": [
-        "park2018-acs-jpclett-8b02408-sno2-qd-1--after-s01-dissolve"
+        "park2018-acs-jpclett-8b02408-sno2-qd-1--after-s01-dissolve",
+        "park2018-acs-jpclett-8b02408-sno2-qd-1--water"
       ],
       "outputs": [
         "park2018-acs-jpclett-8b02408-sno2-qd-1--after-s02-inject"
@@ -378,13 +418,15 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Reactor not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
       "Amount of tin metal acetate salt not reported in the extracted text.",
       "Amount of oleic acid not reported in the extracted text.",
-      "Amount of oleylamine not reported in the extracted text."
+      "Amount of oleylamine not reported in the extracted text.",
+      "Amount of water not reported in the extracted text.",
+      "Amount of xylene not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

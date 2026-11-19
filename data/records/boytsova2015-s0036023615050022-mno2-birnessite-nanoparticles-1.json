@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "boytsova2015-s0036023615050022-mno2-birnessite-nanoparticles-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "O. V. Boytsova; T. O. Shekunova; A. E. Baranchikov (2015): δ-MnO2 (birnessite) nanoparticles",
   "material": {
@@ -50,9 +50,14 @@
       "note": ""
     },
     "phase": {
-      "value": null,
-      "status": "not_reported",
-      "evidence": [],
+      "value": "birnessite",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "boytsova2015-s0036023615050022",
+          "locator": "Main PDF p.3"
+        }
+      ],
       "note": ""
     },
     "size": {
@@ -222,11 +227,43 @@
     },
     {
       "id": "boytsova2015-s0036023615050022-mno2-birnessite-nanoparticles-1--after-s03-add",
-      "name": "product as isolated",
-      "kind": "product",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
       "parent_ids": [
         "boytsova2015-s0036023615050022-mno2-birnessite-nanoparticles-1--after-s02-add",
         "boytsova2015-s0036023615050022-mno2-birnessite-nanoparticles-1--sulfuric-acid"
+      ]
+    },
+    {
+      "id": "boytsova2015-s0036023615050022-mno2-birnessite-nanoparticles-1--after-d2-s04-cool",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "boytsova2015-s0036023615050022-mno2-birnessite-nanoparticles-1--after-s03-add"
+      ]
+    },
+    {
+      "id": "boytsova2015-s0036023615050022-mno2-birnessite-nanoparticles-1--after-d2-s05-separate",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "boytsova2015-s0036023615050022-mno2-birnessite-nanoparticles-1--after-d2-s04-cool"
+      ]
+    },
+    {
+      "id": "boytsova2015-s0036023615050022-mno2-birnessite-nanoparticles-1--after-d2-s06-wash",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "boytsova2015-s0036023615050022-mno2-birnessite-nanoparticles-1--after-d2-s05-separate"
+      ]
+    },
+    {
+      "id": "boytsova2015-s0036023615050022-mno2-birnessite-nanoparticles-1--after-d2-s07-dry",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "boytsova2015-s0036023615050022-mno2-birnessite-nanoparticles-1--after-d2-s06-wash"
       ]
     }
   ],
@@ -359,6 +396,168 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s04-cool",
+      "action": "cool",
+      "label": "Air cool the autoclave",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-add"
+      ],
+      "inputs": [
+        "boytsova2015-s0036023615050022-mno2-birnessite-nanoparticles-1--after-s03-add"
+      ],
+      "outputs": [
+        "boytsova2015-s0036023615050022-mno2-birnessite-nanoparticles-1--after-d2-s04-cool"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "boytsova2015-s0036023615050022",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Air cool the autoclave",
+      "evidence": [
+        {
+          "source_id": "boytsova2015-s0036023615050022",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s05-separate",
+      "action": "separate",
+      "label": "Separate precipitate by decantation",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-cool"
+      ],
+      "inputs": [
+        "boytsova2015-s0036023615050022-mno2-birnessite-nanoparticles-1--after-d2-s04-cool"
+      ],
+      "outputs": [
+        "boytsova2015-s0036023615050022-mno2-birnessite-nanoparticles-1--after-d2-s05-separate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "boytsova2015-s0036023615050022",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Separate precipitate by decantation",
+      "evidence": [
+        {
+          "source_id": "boytsova2015-s0036023615050022",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s06-wash",
+      "action": "wash",
+      "label": "Wash precipitate with distilled water",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s05-separate"
+      ],
+      "inputs": [
+        "boytsova2015-s0036023615050022-mno2-birnessite-nanoparticles-1--after-d2-s05-separate"
+      ],
+      "outputs": [
+        "boytsova2015-s0036023615050022-mno2-birnessite-nanoparticles-1--after-d2-s06-wash"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Wash precipitate with distilled water",
+      "evidence": [
+        {
+          "source_id": "boytsova2015-s0036023615050022",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s07-dry",
+      "action": "dry",
+      "label": "Dry",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s06-wash"
+      ],
+      "inputs": [
+        "boytsova2015-s0036023615050022-mno2-birnessite-nanoparticles-1--after-d2-s06-wash"
+      ],
+      "outputs": [
+        "boytsova2015-s0036023615050022-mno2-birnessite-nanoparticles-1--after-d2-s07-dry"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dry",
+      "evidence": [
+        {
+          "source_id": "boytsova2015-s0036023615050022",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -367,7 +566,7 @@
       "sample_id": "boytsova2015-s0036023615050022-mno2-birnessite-nanoparticles-1--product",
       "source_sample_label": "δ-MnO2 (birnessite) nanoparticles",
       "batch_id": null,
-      "material_state_id": "boytsova2015-s0036023615050022-mno2-birnessite-nanoparticles-1--after-s03-add",
+      "material_state_id": "boytsova2015-s0036023615050022-mno2-birnessite-nanoparticles-1--after-d2-s07-dry",
       "parent_sample_id": null,
       "composition": {
         "value": "MnO2",
@@ -381,9 +580,14 @@
         "note": ""
       },
       "phase": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "birnessite",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "boytsova2015-s0036023615050022",
+            "locator": "Main PDF p.3"
+          }
+        ],
         "note": ""
       },
       "morphology": {
@@ -453,9 +657,8 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
-      "Phase not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text."
     ],

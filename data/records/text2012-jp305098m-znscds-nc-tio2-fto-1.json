@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "text2012-jp305098m-znscds-nc-tio2-fto-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Not explicitly listed in the provided text (2012): ZnS−CdS@nc-TiO2/FTO",
   "material": {
@@ -134,6 +134,25 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "text2012-jp305098m-znscds-nc-tio2-fto-1--n2",
+      "name": "N2",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "text2012-jp305098m",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -149,19 +168,47 @@
       ]
     },
     {
-      "id": "text2012-jp305098m-znscds-nc-tio2-fto-1--after-s02-wash",
+      "id": "text2012-jp305098m-znscds-nc-tio2-fto-1--after-d2-s02-immersion",
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
-        "text2012-jp305098m-znscds-nc-tio2-fto-1--after-s01-dissolve"
+        "text2012-jp305098m-znscds-nc-tio2-fto-1--after-s01-dissolve",
+        "text2012-jp305098m-znscds-nc-tio2-fto-1--cd-no3-24h2o",
+        "text2012-jp305098m-znscds-nc-tio2-fto-1--zn-no3-26h2o"
+      ]
+    },
+    {
+      "id": "text2012-jp305098m-znscds-nc-tio2-fto-1--after-s02-wash",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "text2012-jp305098m-znscds-nc-tio2-fto-1--after-d2-s02-immersion"
+      ]
+    },
+    {
+      "id": "text2012-jp305098m-znscds-nc-tio2-fto-1--after-d2-s04-immersion",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "text2012-jp305098m-znscds-nc-tio2-fto-1--after-s02-wash",
+        "text2012-jp305098m-znscds-nc-tio2-fto-1--na2s9h2o"
       ]
     },
     {
       "id": "text2012-jp305098m-znscds-nc-tio2-fto-1--after-s03-wash",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "text2012-jp305098m-znscds-nc-tio2-fto-1--after-d2-s04-immersion"
+      ]
+    },
+    {
+      "id": "text2012-jp305098m-znscds-nc-tio2-fto-1--after-d2-s06-dry",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "text2012-jp305098m-znscds-nc-tio2-fto-1--after-s02-wash"
+        "text2012-jp305098m-znscds-nc-tio2-fto-1--after-s03-wash",
+        "text2012-jp305098m-znscds-nc-tio2-fto-1--n2"
       ]
     }
   ],
@@ -205,6 +252,65 @@
       ]
     },
     {
+      "id": "d2-s02-immersion",
+      "action": "immersion",
+      "label": "Immerse the electrode in the metal salt solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-dissolve"
+      ],
+      "inputs": [
+        "text2012-jp305098m-znscds-nc-tio2-fto-1--after-s01-dissolve",
+        "text2012-jp305098m-znscds-nc-tio2-fto-1--cd-no3-24h2o",
+        "text2012-jp305098m-znscds-nc-tio2-fto-1--zn-no3-26h2o"
+      ],
+      "outputs": [
+        "text2012-jp305098m-znscds-nc-tio2-fto-1--after-d2-s02-immersion"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "5 min",
+          "evidence": [
+            {
+              "source_id": "text2012-jp305098m",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Immerse the electrode in the metal salt solution",
+      "evidence": [
+        {
+          "source_id": "text2012-jp305098m",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
       "id": "s02-wash",
       "action": "wash",
       "label": "Wash the electrode with triple-distilled water",
@@ -212,10 +318,10 @@
       "branch": "",
       "optional": false,
       "depends_on": [
-        "s01-dissolve"
+        "d2-s02-immersion"
       ],
       "inputs": [
-        "text2012-jp305098m-znscds-nc-tio2-fto-1--after-s01-dissolve"
+        "text2012-jp305098m-znscds-nc-tio2-fto-1--after-d2-s02-immersion"
       ],
       "outputs": [
         "text2012-jp305098m-znscds-nc-tio2-fto-1--after-s02-wash"
@@ -243,6 +349,64 @@
       ]
     },
     {
+      "id": "d2-s04-immersion",
+      "action": "immersion",
+      "label": "Immerse the electrode in the Na2S·9H2O solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-wash"
+      ],
+      "inputs": [
+        "text2012-jp305098m-znscds-nc-tio2-fto-1--after-s02-wash",
+        "text2012-jp305098m-znscds-nc-tio2-fto-1--na2s9h2o"
+      ],
+      "outputs": [
+        "text2012-jp305098m-znscds-nc-tio2-fto-1--after-d2-s04-immersion"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "5 min",
+          "evidence": [
+            {
+              "source_id": "text2012-jp305098m",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Immerse the electrode in the Na2S·9H2O solution",
+      "evidence": [
+        {
+          "source_id": "text2012-jp305098m",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
       "id": "s03-wash",
       "action": "wash",
       "label": "Wash the electrode with triple-distilled water",
@@ -250,10 +414,10 @@
       "branch": "",
       "optional": false,
       "depends_on": [
-        "s02-wash"
+        "d2-s04-immersion"
       ],
       "inputs": [
-        "text2012-jp305098m-znscds-nc-tio2-fto-1--after-s02-wash"
+        "text2012-jp305098m-znscds-nc-tio2-fto-1--after-d2-s04-immersion"
       ],
       "outputs": [
         "text2012-jp305098m-znscds-nc-tio2-fto-1--after-s03-wash"
@@ -279,6 +443,45 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "d2-s06-dry",
+      "action": "dry",
+      "label": "Dry",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-wash"
+      ],
+      "inputs": [
+        "text2012-jp305098m-znscds-nc-tio2-fto-1--after-s03-wash",
+        "text2012-jp305098m-znscds-nc-tio2-fto-1--n2"
+      ],
+      "outputs": [
+        "text2012-jp305098m-znscds-nc-tio2-fto-1--after-d2-s06-dry"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dry",
+      "evidence": [
+        {
+          "source_id": "text2012-jp305098m",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -287,7 +490,7 @@
       "sample_id": "text2012-jp305098m-znscds-nc-tio2-fto-1--product",
       "source_sample_label": "ZnS−CdS@nc-TiO2/FTO",
       "batch_id": null,
-      "material_state_id": "text2012-jp305098m-znscds-nc-tio2-fto-1--after-s03-wash",
+      "material_state_id": "text2012-jp305098m-znscds-nc-tio2-fto-1--after-d2-s06-dry",
       "parent_sample_id": null,
       "composition": {
         "value": "ZnS−CdS",
@@ -339,7 +542,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
@@ -349,7 +552,8 @@
       "Reaction temperature not reported in the extracted text.",
       "Amount of Cd(NO3)2·4H2O not reported in the extracted text.",
       "Amount of Zn(NO3)2·6H2O not reported in the extracted text.",
-      "Amount of Na2S·9H2O not reported in the extracted text."
+      "Amount of Na2S·9H2O not reported in the extracted text.",
+      "Amount of N2 not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "yin2008-s12034-008-0093-2-co9s8-nanocrystalline-sample-1-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Peng-Fei Yin; Li-Li Sun; You-Lu Gao; Sheng-Yue Wang (2008): Co9S8 nanocrystalline (sample 1)",
   "material": {
@@ -16,7 +16,7 @@
     ],
     "architecture": "single_material"
   },
-  "method": "Synthesis as described in the source",
+  "method": "Solvothermal",
   "sources": [
     {
       "id": "yin2008-s12034-008-0093-2",
@@ -61,22 +61,32 @@
       "note": ""
     },
     "size": {
-      "value": null,
+      "value": 6.0,
       "minimum": null,
       "maximum": null,
       "unit": "nm",
-      "status": "not_reported",
+      "status": "reported",
       "approximate": false,
       "qualifier": "",
       "basis": "",
-      "raw_text": "not reported",
-      "evidence": [],
+      "raw_text": "6 nm",
+      "evidence": [
+        {
+          "source_id": "yin2008-s12034-008-0093-2",
+          "locator": "Main PDF p.1"
+        }
+      ],
       "derivation": null
     },
     "morphology": {
-      "value": null,
-      "status": "not_reported",
-      "evidence": [],
+      "value": "sphere",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "yin2008-s12034-008-0093-2",
+          "locator": "Main PDF p.1"
+        }
+      ],
       "note": ""
     }
   },
@@ -142,14 +152,26 @@
   "stocks": [],
   "material_states": [
     {
-      "id": "yin2008-s12034-008-0093-2-co9s8-nanocrystalline-sample-1-1--after-s01-heat",
+      "id": "yin2008-s12034-008-0093-2-co9s8-nanocrystalline-sample-1-1--after-d2-s01-dissolve",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "yin2008-s12034-008-0093-2-co9s8-nanocrystalline-sample-1-1--cocl26h2o",
+        "yin2008-s12034-008-0093-2-co9s8-nanocrystalline-sample-1-1--dmso",
+        "yin2008-s12034-008-0093-2-co9s8-nanocrystalline-sample-1-1--c2h5oh"
+      ]
+    },
+    {
+      "id": "yin2008-s12034-008-0093-2-co9s8-nanocrystalline-sample-1-1--after-s01-heat",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "yin2008-s12034-008-0093-2-co9s8-nanocrystalline-sample-1-1--after-d2-s01-dissolve"
+      ]
     },
     {
       "id": "yin2008-s12034-008-0093-2-co9s8-nanocrystalline-sample-1-1--after-s02-heat",
-      "name": "mixture after step 2",
+      "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
         "yin2008-s12034-008-0093-2-co9s8-nanocrystalline-sample-1-1--after-s01-heat"
@@ -157,7 +179,7 @@
     },
     {
       "id": "yin2008-s12034-008-0093-2-co9s8-nanocrystalline-sample-1-1--after-s03-cool",
-      "name": "mixture after step 3",
+      "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
         "yin2008-s12034-008-0093-2-co9s8-nanocrystalline-sample-1-1--after-s02-heat"
@@ -165,7 +187,7 @@
     },
     {
       "id": "yin2008-s12034-008-0093-2-co9s8-nanocrystalline-sample-1-1--after-s04-wash",
-      "name": "mixture after step 4",
+      "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
         "yin2008-s12034-008-0093-2-co9s8-nanocrystalline-sample-1-1--after-s03-cool"
@@ -182,14 +204,56 @@
   ],
   "operations": [
     {
+      "id": "d2-s01-dissolve",
+      "action": "dissolve",
+      "label": "Dissolve",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "yin2008-s12034-008-0093-2-co9s8-nanocrystalline-sample-1-1--cocl26h2o",
+        "yin2008-s12034-008-0093-2-co9s8-nanocrystalline-sample-1-1--dmso",
+        "yin2008-s12034-008-0093-2-co9s8-nanocrystalline-sample-1-1--c2h5oh"
+      ],
+      "outputs": [
+        "yin2008-s12034-008-0093-2-co9s8-nanocrystalline-sample-1-1--after-d2-s01-dissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dissolve",
+      "evidence": [
+        {
+          "source_id": "yin2008-s12034-008-0093-2",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
       "id": "s01-heat",
       "action": "heat",
       "label": "Heat to 150°C for 5 min",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s01-dissolve"
+      ],
+      "inputs": [
+        "yin2008-s12034-008-0093-2-co9s8-nanocrystalline-sample-1-1--after-d2-s01-dissolve"
+      ],
       "outputs": [
         "yin2008-s12034-008-0093-2-co9s8-nanocrystalline-sample-1-1--after-s01-heat"
       ],
@@ -473,9 +537,14 @@
         "note": ""
       },
       "morphology": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "sphere",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "yin2008-s12034-008-0093-2",
+            "locator": "Main PDF p.1"
+          }
+        ],
         "note": ""
       },
       "surface": {
@@ -498,15 +567,46 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "yin2008-s12034-008-0093-2-co9s8-nanocrystalline-sample-1-1--size",
+      "sample_id": "yin2008-s12034-008-0093-2-co9s8-nanocrystalline-sample-1-1--product",
+      "property": "particle_size",
+      "technique": "not reported",
+      "value": {
+        "value": 6.0,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "6 nm",
+        "evidence": [
+          {
+            "source_id": "yin2008-s12034-008-0093-2",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "yin2008-s12034-008-0093-2",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
-      "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
-      "Size not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Amount of CoCl2⋅6H2O not reported in the extracted text.",
       "Amount of DMSO not reported in the extracted text.",

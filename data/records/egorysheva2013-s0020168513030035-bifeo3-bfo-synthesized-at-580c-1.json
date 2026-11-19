@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "egorysheva2013-s0020168513030035-bifeo3-bfo-synthesized-at-580c-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "A. V. Egorysheva; T. B. Kuvshinova; V. D. Volodin; O. G. Ellert; N. N. Efimov; V. M. Skorikov; A. E. Baranchikov; V. M. Novotortsev (2013): BiFeO3 (BFO) synthesized at 580°C",
   "material": {
@@ -158,13 +158,31 @@
     },
     {
       "id": "egorysheva2013-s0020168513030035-bifeo3-bfo-synthesized-at-580c-1--after-s02-precipitate",
-      "name": "product as isolated",
-      "kind": "product",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
       "parent_ids": [
         "egorysheva2013-s0020168513030035-bifeo3-bfo-synthesized-at-580c-1--after-s01-dissolve",
         "egorysheva2013-s0020168513030035-bifeo3-bfo-synthesized-at-580c-1--bi-no3-3-5h2o",
         "egorysheva2013-s0020168513030035-bifeo3-bfo-synthesized-at-580c-1--fe-no3-3-9h2o",
         "egorysheva2013-s0020168513030035-bifeo3-bfo-synthesized-at-580c-1--koh"
+      ]
+    },
+    {
+      "id": "egorysheva2013-s0020168513030035-bifeo3-bfo-synthesized-at-580c-1--after-d2-s03-anneal",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "egorysheva2013-s0020168513030035-bifeo3-bfo-synthesized-at-580c-1--after-s02-precipitate"
+      ]
+    },
+    {
+      "id": "egorysheva2013-s0020168513030035-bifeo3-bfo-synthesized-at-580c-1--after-d2-s04-heat",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "egorysheva2013-s0020168513030035-bifeo3-bfo-synthesized-at-580c-1--after-d2-s03-anneal",
+        "egorysheva2013-s0020168513030035-bifeo3-bfo-synthesized-at-580c-1--bi-no3-3-5h2o",
+        "egorysheva2013-s0020168513030035-bifeo3-bfo-synthesized-at-580c-1--fe-no3-3-9h2o"
       ]
     }
   ],
@@ -246,6 +264,84 @@
           "locator": "Main PDF p.1"
         }
       ]
+    },
+    {
+      "id": "d2-s03-anneal",
+      "action": "anneal",
+      "label": "Isothermal heat treatment",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-precipitate"
+      ],
+      "inputs": [
+        "egorysheva2013-s0020168513030035-bifeo3-bfo-synthesized-at-580c-1--after-s02-precipitate"
+      ],
+      "outputs": [
+        "egorysheva2013-s0020168513030035-bifeo3-bfo-synthesized-at-580c-1--after-d2-s03-anneal"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Isothermal heat treatment",
+      "evidence": [
+        {
+          "source_id": "egorysheva2013-s0020168513030035",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "d2-s04-heat",
+      "action": "heat",
+      "label": "Isothermal heat treatment to form BFO",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-anneal"
+      ],
+      "inputs": [
+        "egorysheva2013-s0020168513030035-bifeo3-bfo-synthesized-at-580c-1--after-d2-s03-anneal",
+        "egorysheva2013-s0020168513030035-bifeo3-bfo-synthesized-at-580c-1--bi-no3-3-5h2o",
+        "egorysheva2013-s0020168513030035-bifeo3-bfo-synthesized-at-580c-1--fe-no3-3-9h2o"
+      ],
+      "outputs": [
+        "egorysheva2013-s0020168513030035-bifeo3-bfo-synthesized-at-580c-1--after-d2-s04-heat"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Isothermal heat treatment to form BFO",
+      "evidence": [
+        {
+          "source_id": "egorysheva2013-s0020168513030035",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -254,7 +350,7 @@
       "sample_id": "egorysheva2013-s0020168513030035-bifeo3-bfo-synthesized-at-580c-1--product",
       "source_sample_label": "BiFeO3 (BFO) synthesized at 580°C",
       "batch_id": null,
-      "material_state_id": "egorysheva2013-s0020168513030035-bifeo3-bfo-synthesized-at-580c-1--after-s02-precipitate",
+      "material_state_id": "egorysheva2013-s0020168513030035-bifeo3-bfo-synthesized-at-580c-1--after-d2-s04-heat",
       "parent_sample_id": null,
       "composition": {
         "value": "BiFeO3",
@@ -309,7 +405,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",

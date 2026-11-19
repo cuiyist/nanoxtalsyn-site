@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "jirkovsky2011-ja109955w-ru0-8co0-2o2-3",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Jakub S. Jirkovský; Michael Busch; Elisabet Ahlberg; Itai Panas; Petr Krtil (2011): Ru0.8Co0.2O2",
   "material": {
@@ -131,6 +131,44 @@
       "formula": null,
       "role": "reagent",
       "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "jirkovsky2011-ja109955w",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "jirkovsky2011-ja109955w-ru0-8co0-2o2-3--ethanol",
+      "name": "ethanol",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "jirkovsky2011-ja109955w",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "jirkovsky2011-ja109955w-ru0-8co0-2o2-3--propane-2-ol",
+      "name": "propane-2-ol",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
       "identity": {
         "pubchem_cid": null,
         "smiles": null
@@ -467,13 +505,15 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
       "Amount of ruthenium(III) nitrosylnitrate not reported in the extracted text.",
       "Amount of cobalt(II) nitrate not reported in the extracted text.",
-      "Amount of tetramethylammonium hydroxide not reported in the extracted text."
+      "Amount of tetramethylammonium hydroxide not reported in the extracted text.",
+      "Amount of ethanol not reported in the extracted text.",
+      "Amount of propane-2-ol not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

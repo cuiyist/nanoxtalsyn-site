@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "duan2015-j-talanta-2014-08-076-cdse-zns-quantum-dot-submicrobeads-qbs-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Hong Duan (2015): CdSe/ZnS quantum-dot submicrobeads (QBs)",
   "material": {
@@ -83,7 +83,7 @@
       "id": "duan2015-j-talanta-2014-08-076-cdse-zns-quantum-dot-submicrobeads-qbs-1--cdse-zns-qds",
       "name": "CdSe/ZnS QDs",
       "formula": null,
-      "role": "metal_precursor",
+      "role": "starting_particles",
       "stage": "synthesis",
       "identity": {
         "pubchem_cid": null,
@@ -192,6 +192,44 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "duan2015-j-talanta-2014-08-076-cdse-zns-quantum-dot-submicrobeads-qbs-1--sodium-dodecyl-sulfate",
+      "name": "sodium dodecyl sulfate",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 3,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mg/mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "3 mg/mL",
+          "evidence": [
+            {
+              "source_id": "duan2015-j-talanta-2014-08-076",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "duan2015-j-talanta-2014-08-076",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -207,11 +245,28 @@
       ]
     },
     {
+      "id": "duan2015-j-talanta-2014-08-076-cdse-zns-quantum-dot-submicrobeads-qbs-1--after-d2-s02-emulsify",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "duan2015-j-talanta-2014-08-076-cdse-zns-quantum-dot-submicrobeads-qbs-1--after-s01-mix",
+        "duan2015-j-talanta-2014-08-076-cdse-zns-quantum-dot-submicrobeads-qbs-1--sodium-dodecyl-sulfate"
+      ]
+    },
+    {
       "id": "duan2015-j-talanta-2014-08-076-cdse-zns-quantum-dot-submicrobeads-qbs-1--after-s02-evaporate",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "duan2015-j-talanta-2014-08-076-cdse-zns-quantum-dot-submicrobeads-qbs-1--after-d2-s02-emulsify"
+      ]
+    },
+    {
+      "id": "duan2015-j-talanta-2014-08-076-cdse-zns-quantum-dot-submicrobeads-qbs-1--after-d2-s04-purify",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "duan2015-j-talanta-2014-08-076-cdse-zns-quantum-dot-submicrobeads-qbs-1--after-s01-mix"
+        "duan2015-j-talanta-2014-08-076-cdse-zns-quantum-dot-submicrobeads-qbs-1--after-s02-evaporate"
       ]
     }
   ],
@@ -255,9 +310,9 @@
       ]
     },
     {
-      "id": "s02-evaporate",
-      "action": "evaporate",
-      "label": "The nonpolar solvent (CHCl3) is evaporated using a rotary evaporator.",
+      "id": "d2-s02-emulsify",
+      "action": "emulsify",
+      "label": "An emulsion is formed using sodium dodecyl sulfate in water.",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -265,7 +320,65 @@
         "s01-mix"
       ],
       "inputs": [
-        "duan2015-j-talanta-2014-08-076-cdse-zns-quantum-dot-submicrobeads-qbs-1--after-s01-mix"
+        "duan2015-j-talanta-2014-08-076-cdse-zns-quantum-dot-submicrobeads-qbs-1--after-s01-mix",
+        "duan2015-j-talanta-2014-08-076-cdse-zns-quantum-dot-submicrobeads-qbs-1--sodium-dodecyl-sulfate"
+      ],
+      "outputs": [
+        "duan2015-j-talanta-2014-08-076-cdse-zns-quantum-dot-submicrobeads-qbs-1--after-d2-s02-emulsify"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 2,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2 min",
+          "evidence": [
+            {
+              "source_id": "duan2015-j-talanta-2014-08-076",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "An emulsion is formed using sodium dodecyl sulfate in water.",
+      "evidence": [
+        {
+          "source_id": "duan2015-j-talanta-2014-08-076",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s02-evaporate",
+      "action": "evaporate",
+      "label": "The nonpolar solvent (CHCl3) is evaporated using a rotary evaporator.",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-emulsify"
+      ],
+      "inputs": [
+        "duan2015-j-talanta-2014-08-076-cdse-zns-quantum-dot-submicrobeads-qbs-1--after-d2-s02-emulsify"
       ],
       "outputs": [
         "duan2015-j-talanta-2014-08-076-cdse-zns-quantum-dot-submicrobeads-qbs-1--after-s02-evaporate"
@@ -291,6 +404,44 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "d2-s04-purify",
+      "action": "purify",
+      "label": "Purify",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-evaporate"
+      ],
+      "inputs": [
+        "duan2015-j-talanta-2014-08-076-cdse-zns-quantum-dot-submicrobeads-qbs-1--after-s02-evaporate"
+      ],
+      "outputs": [
+        "duan2015-j-talanta-2014-08-076-cdse-zns-quantum-dot-submicrobeads-qbs-1--after-d2-s04-purify"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Purify",
+      "evidence": [
+        {
+          "source_id": "duan2015-j-talanta-2014-08-076",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -299,7 +450,7 @@
       "sample_id": "duan2015-j-talanta-2014-08-076-cdse-zns-quantum-dot-submicrobeads-qbs-1--product",
       "source_sample_label": "CdSe/ZnS quantum-dot submicrobeads (QBs)",
       "batch_id": null,
-      "material_state_id": "duan2015-j-talanta-2014-08-076-cdse-zns-quantum-dot-submicrobeads-qbs-1--after-s02-evaporate",
+      "material_state_id": "duan2015-j-talanta-2014-08-076-cdse-zns-quantum-dot-submicrobeads-qbs-1--after-d2-s04-purify",
       "parent_sample_id": null,
       "composition": {
         "value": "CdSe/ZnS",
@@ -345,11 +496,44 @@
       "notes": []
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "duan2015-j-talanta-2014-08-076-cdse-zns-quantum-dot-submicrobeads-qbs-1--photoluminescence-peak",
+      "sample_id": "duan2015-j-talanta-2014-08-076-cdse-zns-quantum-dot-submicrobeads-qbs-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 623,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "623 nm",
+        "evidence": [
+          {
+            "source_id": "duan2015-j-talanta-2014-08-076",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "duan2015-j-talanta-2014-08-076",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",

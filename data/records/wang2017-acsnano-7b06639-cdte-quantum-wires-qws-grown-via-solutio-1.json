@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "wang2017-acsnano-7b06639-cdte-quantum-wires-qws-grown-via-solutio-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Fudong Wang; William E. Buhro (2017): CdTe quantum wires (QWs) grown via solution-solid-solid (SSS) mechanism",
   "material": {
@@ -190,10 +190,20 @@
   "stocks": [],
   "material_states": [
     {
-      "id": "wang2017-acsnano-7b06639-cdte-quantum-wires-qws-grown-via-solutio-1--after-s01-degas",
+      "id": "wang2017-acsnano-7b06639-cdte-quantum-wires-qws-grown-via-solutio-1--after-d2-s01-load",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "wang2017-acsnano-7b06639-cdte-quantum-wires-qws-grown-via-solutio-1--tri-n-octylphosphine-oxide"
+      ]
+    },
+    {
+      "id": "wang2017-acsnano-7b06639-cdte-quantum-wires-qws-grown-via-solutio-1--after-s01-degas",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "wang2017-acsnano-7b06639-cdte-quantum-wires-qws-grown-via-solutio-1--after-d2-s01-load"
+      ]
     },
     {
       "id": "wang2017-acsnano-7b06639-cdte-quantum-wires-qws-grown-via-solutio-1--after-s02-cool",
@@ -206,14 +216,59 @@
   ],
   "operations": [
     {
+      "id": "d2-s01-load",
+      "action": "load",
+      "label": "Load Cd precursor and TOPO into Schlenk tube",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "wang2017-acsnano-7b06639-cdte-quantum-wires-qws-grown-via-solutio-1--tri-n-octylphosphine-oxide"
+      ],
+      "outputs": [
+        "wang2017-acsnano-7b06639-cdte-quantum-wires-qws-grown-via-solutio-1--after-d2-s01-load"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "wang2017-acsnano-7b06639",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Load Cd precursor and TOPO into Schlenk tube",
+      "evidence": [
+        {
+          "source_id": "wang2017-acsnano-7b06639",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
       "id": "s01-degas",
       "action": "degas",
       "label": "Degas reaction mixture under vacuum",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s01-load"
+      ],
+      "inputs": [
+        "wang2017-acsnano-7b06639-cdte-quantum-wires-qws-grown-via-solutio-1--after-d2-s01-load"
+      ],
       "outputs": [
         "wang2017-acsnano-7b06639-cdte-quantum-wires-qws-grown-via-solutio-1--after-s01-degas"
       ],
@@ -408,7 +463,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Reaction temperature not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "gruber2007-1-2739316-er3-y2o3-nanocrystalline-aggregates-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "John B. Gruber et al. (2007): Er3+:Y2O3 nanocrystalline aggregates",
   "material": {
@@ -153,22 +153,42 @@
   "stocks": [],
   "material_states": [
     {
-      "id": "gruber2007-1-2739316-er3-y2o3-nanocrystalline-aggregates-1--after-s01-precipitate",
+      "id": "gruber2007-1-2739316-er3-y2o3-nanocrystalline-aggregates-1--after-d2-s01-dissolve",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "gruber2007-1-2739316-er3-y2o3-nanocrystalline-aggregates-1--ercl3",
+        "gruber2007-1-2739316-er3-y2o3-nanocrystalline-aggregates-1--ycl3",
+        "gruber2007-1-2739316-er3-y2o3-nanocrystalline-aggregates-1--urea"
+      ]
     },
     {
-      "id": "gruber2007-1-2739316-er3-y2o3-nanocrystalline-aggregates-1--after-s02-wash",
+      "id": "gruber2007-1-2739316-er3-y2o3-nanocrystalline-aggregates-1--after-s01-precipitate",
       "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "gruber2007-1-2739316-er3-y2o3-nanocrystalline-aggregates-1--after-d2-s01-dissolve"
+      ]
+    },
+    {
+      "id": "gruber2007-1-2739316-er3-y2o3-nanocrystalline-aggregates-1--after-d2-s03-filter",
+      "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
         "gruber2007-1-2739316-er3-y2o3-nanocrystalline-aggregates-1--after-s01-precipitate"
       ]
     },
     {
+      "id": "gruber2007-1-2739316-er3-y2o3-nanocrystalline-aggregates-1--after-s02-wash",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "gruber2007-1-2739316-er3-y2o3-nanocrystalline-aggregates-1--after-d2-s03-filter"
+      ]
+    },
+    {
       "id": "gruber2007-1-2739316-er3-y2o3-nanocrystalline-aggregates-1--after-s03-dry",
-      "name": "mixture after step 3",
+      "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
         "gruber2007-1-2739316-er3-y2o3-nanocrystalline-aggregates-1--after-s02-wash"
@@ -185,14 +205,56 @@
   ],
   "operations": [
     {
+      "id": "d2-s01-dissolve",
+      "action": "dissolve",
+      "label": "Dissolve",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "gruber2007-1-2739316-er3-y2o3-nanocrystalline-aggregates-1--ercl3",
+        "gruber2007-1-2739316-er3-y2o3-nanocrystalline-aggregates-1--ycl3",
+        "gruber2007-1-2739316-er3-y2o3-nanocrystalline-aggregates-1--urea"
+      ],
+      "outputs": [
+        "gruber2007-1-2739316-er3-y2o3-nanocrystalline-aggregates-1--after-d2-s01-dissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dissolve",
+      "evidence": [
+        {
+          "source_id": "gruber2007-1-2739316",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    },
+    {
       "id": "s01-precipitate",
       "action": "precipitate",
       "label": "Precipitate mixed hydroxide/oxide nanoparticles",
       "stage": "workup",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s01-dissolve"
+      ],
+      "inputs": [
+        "gruber2007-1-2739316-er3-y2o3-nanocrystalline-aggregates-1--after-d2-s01-dissolve"
+      ],
       "outputs": [
         "gruber2007-1-2739316-er3-y2o3-nanocrystalline-aggregates-1--after-s01-precipitate"
       ],
@@ -219,9 +281,9 @@
       ]
     },
     {
-      "id": "s02-wash",
-      "action": "wash",
-      "label": "Wash precipitates with distilled water and ethanol",
+      "id": "d2-s03-filter",
+      "action": "filter",
+      "label": "Filter precipitates from solution",
       "stage": "workup",
       "branch": "",
       "optional": false,
@@ -230,6 +292,44 @@
       ],
       "inputs": [
         "gruber2007-1-2739316-er3-y2o3-nanocrystalline-aggregates-1--after-s01-precipitate"
+      ],
+      "outputs": [
+        "gruber2007-1-2739316-er3-y2o3-nanocrystalline-aggregates-1--after-d2-s03-filter"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Filter precipitates from solution",
+      "evidence": [
+        {
+          "source_id": "gruber2007-1-2739316",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    },
+    {
+      "id": "s02-wash",
+      "action": "wash",
+      "label": "Wash precipitates with distilled water and ethanol",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-filter"
+      ],
+      "inputs": [
+        "gruber2007-1-2739316-er3-y2o3-nanocrystalline-aggregates-1--after-d2-s03-filter"
       ],
       "outputs": [
         "gruber2007-1-2739316-er3-y2o3-nanocrystalline-aggregates-1--after-s02-wash"
@@ -468,7 +568,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Reactor not reported in the extracted text.",

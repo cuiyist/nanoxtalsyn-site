@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "selima2021-v1-cofep-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "S. S. Selima; W. A. Bayoumy; M. Khairy; M.A. Mousa (2021): CoFep",
   "material": {
@@ -152,11 +152,31 @@
       ]
     },
     {
+      "id": "selima2021-v1-cofep-2--after-d2-s02-add",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "selima2021-v1-cofep-2--after-s01-dissolve",
+        "selima2021-v1-cofep-2--urea"
+      ]
+    },
+    {
+      "id": "selima2021-v1-cofep-2--after-d2-s03-filter",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "selima2021-v1-cofep-2--after-d2-s02-add",
+        "selima2021-v1-cofep-2--cobalt-ll-nitrate-hexahydrate-co-no3-2-6",
+        "selima2021-v1-cofep-2--ferric-nitrate-fe-no3-3-9h2o",
+        "selima2021-v1-cofep-2--urea"
+      ]
+    },
+    {
       "id": "selima2021-v1-cofep-2--after-s02-calcine",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "selima2021-v1-cofep-2--after-s01-dissolve",
+        "selima2021-v1-cofep-2--after-d2-s03-filter",
         "selima2021-v1-cofep-2--cobalt-ll-nitrate-hexahydrate-co-no3-2-6",
         "selima2021-v1-cofep-2--ferric-nitrate-fe-no3-3-9h2o",
         "selima2021-v1-cofep-2--urea"
@@ -221,9 +241,9 @@
       ]
     },
     {
-      "id": "s02-calcine",
-      "action": "calcine",
-      "label": "Finally, the powder acquired was calcined up to 700°C with a heating rate of 5°C /min.",
+      "id": "d2-s02-add",
+      "action": "add",
+      "label": "Urea was then added to the heated solution at 90°C with stirring.",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -232,6 +252,142 @@
       ],
       "inputs": [
         "selima2021-v1-cofep-2--after-s01-dissolve",
+        "selima2021-v1-cofep-2--urea"
+      ],
+      "outputs": [
+        "selima2021-v1-cofep-2--after-d2-s02-add"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 90,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "90 °C",
+          "evidence": [
+            {
+              "source_id": "selima2021-v1",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Urea was then added to the heated solution at 90°C with stirring.",
+      "evidence": [
+        {
+          "source_id": "selima2021-v1",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "d2-s03-filter",
+      "action": "filter",
+      "label": "The precipitate obtained was filtered, well washed with bidistilled water, and dried at 95°C for 12 hours.",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-add"
+      ],
+      "inputs": [
+        "selima2021-v1-cofep-2--after-d2-s02-add",
+        "selima2021-v1-cofep-2--cobalt-ll-nitrate-hexahydrate-co-no3-2-6",
+        "selima2021-v1-cofep-2--ferric-nitrate-fe-no3-3-9h2o",
+        "selima2021-v1-cofep-2--urea"
+      ],
+      "outputs": [
+        "selima2021-v1-cofep-2--after-d2-s03-filter"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 95,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "95 °C",
+          "evidence": [
+            {
+              "source_id": "selima2021-v1",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 12,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "12 h",
+          "evidence": [
+            {
+              "source_id": "selima2021-v1",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "The precipitate obtained was filtered, well washed with bidistilled water, and dried at 95°C for 12 hours.",
+      "evidence": [
+        {
+          "source_id": "selima2021-v1",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s02-calcine",
+      "action": "calcine",
+      "label": "Finally, the powder acquired was calcined up to 700°C with a heating rate of 5°C /min.",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-filter"
+      ],
+      "inputs": [
+        "selima2021-v1-cofep-2--after-d2-s03-filter",
         "selima2021-v1-cofep-2--cobalt-ll-nitrate-hexahydrate-co-no3-2-6",
         "selima2021-v1-cofep-2--ferric-nitrate-fe-no3-3-9h2o",
         "selima2021-v1-cofep-2--urea"
@@ -336,11 +492,44 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "selima2021-v1-cofep-2--photoluminescence-peak",
+      "sample_id": "selima2021-v1-cofep-2--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 434,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "434 nm",
+        "evidence": [
+          {
+            "source_id": "selima2021-v1",
+            "locator": "Main PDF p.8"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "selima2021-v1",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",

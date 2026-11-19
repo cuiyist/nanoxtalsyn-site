@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "rani2026-acs-langmuir-6c01054-hp-cqd-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Yogita Rani; Saurabh Chaubey; Ayushi Kumari; Maan Singh; Dinesh Kumar; Prabhat Tripathi (2026): Hp-CQD",
   "material": {
@@ -222,10 +222,26 @@
     },
     {
       "id": "rani2026-acs-langmuir-6c01054-hp-cqd-1--after-s03-heat",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "rani2026-acs-langmuir-6c01054-hp-cqd-1--after-s02-add"
+      ]
+    },
+    {
+      "id": "rani2026-acs-langmuir-6c01054-hp-cqd-1--after-d2-s04-centrifuge",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "rani2026-acs-langmuir-6c01054-hp-cqd-1--after-s03-heat"
+      ]
+    },
+    {
+      "id": "rani2026-acs-langmuir-6c01054-hp-cqd-1--after-d2-s05-dialyze",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "rani2026-acs-langmuir-6c01054-hp-cqd-1--after-s02-add"
+        "rani2026-acs-langmuir-6c01054-hp-cqd-1--after-d2-s04-centrifuge"
       ]
     }
   ],
@@ -433,6 +449,87 @@
           "locator": "Main PDF p.12"
         }
       ]
+    },
+    {
+      "id": "d2-s04-centrifuge",
+      "action": "centrifuge",
+      "label": "Separate insoluble residue",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-heat"
+      ],
+      "inputs": [
+        "rani2026-acs-langmuir-6c01054-hp-cqd-1--after-s03-heat"
+      ],
+      "outputs": [
+        "rani2026-acs-langmuir-6c01054-hp-cqd-1--after-d2-s04-centrifuge"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Separate insoluble residue",
+      "evidence": [
+        {
+          "source_id": "rani2026-acs-langmuir-6c01054",
+          "locator": "Main PDF p.12"
+        }
+      ]
+    },
+    {
+      "id": "d2-s05-dialyze",
+      "action": "dialyze",
+      "label": "Purify product",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-centrifuge"
+      ],
+      "inputs": [
+        "rani2026-acs-langmuir-6c01054-hp-cqd-1--after-d2-s04-centrifuge"
+      ],
+      "outputs": [
+        "rani2026-acs-langmuir-6c01054-hp-cqd-1--after-d2-s05-dialyze"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "rani2026-acs-langmuir-6c01054",
+            "locator": "Main PDF p.12"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Purify product",
+      "evidence": [
+        {
+          "source_id": "rani2026-acs-langmuir-6c01054",
+          "locator": "Main PDF p.12"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -441,7 +538,7 @@
       "sample_id": "rani2026-acs-langmuir-6c01054-hp-cqd-1--product",
       "source_sample_label": "Hp-CQD",
       "batch_id": null,
-      "material_state_id": "rani2026-acs-langmuir-6c01054-hp-cqd-1--after-s03-heat",
+      "material_state_id": "rani2026-acs-langmuir-6c01054-hp-cqd-1--after-d2-s05-dialyze",
       "parent_sample_id": null,
       "composition": {
         "value": "C, N, Si",
@@ -528,12 +625,76 @@
           "locator": "Main PDF p.5"
         }
       ]
+    },
+    {
+      "id": "rani2026-acs-langmuir-6c01054-hp-cqd-1--photoluminescence-peak",
+      "sample_id": "rani2026-acs-langmuir-6c01054-hp-cqd-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 470,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "470 nm",
+        "evidence": [
+          {
+            "source_id": "rani2026-acs-langmuir-6c01054",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "rani2026-acs-langmuir-6c01054",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    },
+    {
+      "id": "rani2026-acs-langmuir-6c01054-hp-cqd-1--photoluminescence-quantum-yield",
+      "sample_id": "rani2026-acs-langmuir-6c01054-hp-cqd-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 1.6,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "1.6 %",
+        "evidence": [
+          {
+            "source_id": "rani2026-acs-langmuir-6c01054",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "rani2026-acs-langmuir-6c01054",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text."
     ],
