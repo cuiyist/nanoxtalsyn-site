@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "tachibana1999-1-125092-in0-2ga0-8n-self-assembled-quantum-dot-l-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Koichi Tachibana (1999): In0.2Ga0.8N self-assembled quantum dot laser",
   "material": {
@@ -105,7 +105,7 @@
       "id": "tachibana1999-1-125092-in0-2ga0-8n-self-assembled-quantum-dot-l-1--in0-2ga0-8n",
       "name": "In0.2Ga0.8N",
       "formula": null,
-      "role": "reagent",
+      "role": "starting_particles",
       "stage": "synthesis",
       "identity": {
         "pubchem_cid": null,
@@ -131,6 +131,25 @@
           "derivation": null
         }
       },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "tachibana1999-1-125092",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "tachibana1999-1-125092-in0-2ga0-8n-self-assembled-quantum-dot-l-1--in0-02ga0-98n",
+      "name": "In0.02Ga0.98N",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
       "notes": [],
       "evidence": [
         {
@@ -179,7 +198,8 @@
       "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
-        "tachibana1999-1-125092-in0-2ga0-8n-self-assembled-quantum-dot-l-1--after-s04-grow"
+        "tachibana1999-1-125092-in0-2ga0-8n-self-assembled-quantum-dot-l-1--after-s04-grow",
+        "tachibana1999-1-125092-in0-2ga0-8n-self-assembled-quantum-dot-l-1--in0-02ga0-98n"
       ]
     },
     {
@@ -438,7 +458,8 @@
         "s04-grow"
       ],
       "inputs": [
-        "tachibana1999-1-125092-in0-2ga0-8n-self-assembled-quantum-dot-l-1--after-s04-grow"
+        "tachibana1999-1-125092-in0-2ga0-8n-self-assembled-quantum-dot-l-1--after-s04-grow",
+        "tachibana1999-1-125092-in0-2ga0-8n-self-assembled-quantum-dot-l-1--in0-02ga0-98n"
       ],
       "outputs": [
         "tachibana1999-1-125092-in0-2ga0-8n-self-assembled-quantum-dot-l-1--after-s05-grow"
@@ -655,18 +676,52 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "tachibana1999-1-125092-in0-2ga0-8n-self-assembled-quantum-dot-l-1--photoluminescence-peak",
+      "sample_id": "tachibana1999-1-125092-in0-2ga0-8n-self-assembled-quantum-dot-l-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 404.9,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "404.9 nm",
+        "evidence": [
+          {
+            "source_id": "tachibana1999-1-125092",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "tachibana1999-1-125092",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
-      "Amount of Al0.07Ga0.93N not reported in the extracted text."
+      "Amount of Al0.07Ga0.93N not reported in the extracted text.",
+      "Amount of In0.02Ga0.98N not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

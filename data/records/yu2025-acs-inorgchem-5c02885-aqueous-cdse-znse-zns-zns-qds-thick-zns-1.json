@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "yu2025-acs-inorgchem-5c02885-aqueous-cdse-znse-zns-zns-qds-thick-zns-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Shenping Yu; Jiahui Sun; Yanbing Lv; Li Wang; Tianxin Li; Xiaoquan Li; Binbin Wang; Lei Wang; Huaibin Shen; Lin Song Li; Ruili Wu (2025): aqueous CdSe/ZnSe/ZnS//ZnS QDs (thick-(ZnS) QDs)",
   "material": {
@@ -161,6 +161,63 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "yu2025-acs-inorgchem-5c02885-aqueous-cdse-znse-zns-zns-qds-thick-zns-1--cdse-znse-zns-qds",
+      "name": "CdSe/ZnSe/ZnS QDs",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "yu2025-acs-inorgchem-5c02885",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "yu2025-acs-inorgchem-5c02885-aqueous-cdse-znse-zns-zns-qds-thick-zns-1--ammonia",
+      "name": "Ammonia",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "yu2025-acs-inorgchem-5c02885",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "yu2025-acs-inorgchem-5c02885-aqueous-cdse-znse-zns-zns-qds-thick-zns-1--n-butanol",
+      "name": "n-Butanol",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "yu2025-acs-inorgchem-5c02885",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -175,13 +232,25 @@
       ]
     },
     {
-      "id": "yu2025-acs-inorgchem-5c02885-aqueous-cdse-znse-zns-zns-qds-thick-zns-1--after-s02-heat",
+      "id": "yu2025-acs-inorgchem-5c02885-aqueous-cdse-znse-zns-zns-qds-thick-zns-1--after-d2-s02-add",
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
         "yu2025-acs-inorgchem-5c02885-aqueous-cdse-znse-zns-zns-qds-thick-zns-1--after-s01-dissolve",
+        "yu2025-acs-inorgchem-5c02885-aqueous-cdse-znse-zns-zns-qds-thick-zns-1--cdse-znse-zns-qds",
         "yu2025-acs-inorgchem-5c02885-aqueous-cdse-znse-zns-zns-qds-thick-zns-1--zncl2",
         "yu2025-acs-inorgchem-5c02885-aqueous-cdse-znse-zns-zns-qds-thick-zns-1--mpa"
+      ]
+    },
+    {
+      "id": "yu2025-acs-inorgchem-5c02885-aqueous-cdse-znse-zns-zns-qds-thick-zns-1--after-s02-heat",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "yu2025-acs-inorgchem-5c02885-aqueous-cdse-znse-zns-zns-qds-thick-zns-1--after-d2-s02-add",
+        "yu2025-acs-inorgchem-5c02885-aqueous-cdse-znse-zns-zns-qds-thick-zns-1--zncl2",
+        "yu2025-acs-inorgchem-5c02885-aqueous-cdse-znse-zns-zns-qds-thick-zns-1--mpa",
+        "yu2025-acs-inorgchem-5c02885-aqueous-cdse-znse-zns-zns-qds-thick-zns-1--cdse-znse-zns-qds"
       ]
     },
     {
@@ -232,9 +301,9 @@
       ]
     },
     {
-      "id": "s02-heat",
-      "action": "heat",
-      "label": "Stirred at 75 °C under UV radiation",
+      "id": "d2-s02-add",
+      "action": "add",
+      "label": "Add purified red CdSe/ZnSe/ZnS QDs, precursor solution, ammonia, and n-butanol",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -243,8 +312,87 @@
       ],
       "inputs": [
         "yu2025-acs-inorgchem-5c02885-aqueous-cdse-znse-zns-zns-qds-thick-zns-1--after-s01-dissolve",
+        "yu2025-acs-inorgchem-5c02885-aqueous-cdse-znse-zns-zns-qds-thick-zns-1--cdse-znse-zns-qds",
         "yu2025-acs-inorgchem-5c02885-aqueous-cdse-znse-zns-zns-qds-thick-zns-1--zncl2",
         "yu2025-acs-inorgchem-5c02885-aqueous-cdse-znse-zns-zns-qds-thick-zns-1--mpa"
+      ],
+      "outputs": [
+        "yu2025-acs-inorgchem-5c02885-aqueous-cdse-znse-zns-zns-qds-thick-zns-1--after-d2-s02-add"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 60,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "60 °C",
+          "evidence": [
+            {
+              "source_id": "yu2025-acs-inorgchem-5c02885",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 2,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2 h",
+          "evidence": [
+            {
+              "source_id": "yu2025-acs-inorgchem-5c02885",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add purified red CdSe/ZnSe/ZnS QDs, precursor solution, ammonia, and n-butanol",
+      "evidence": [
+        {
+          "source_id": "yu2025-acs-inorgchem-5c02885",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s02-heat",
+      "action": "heat",
+      "label": "Stirred at 75 °C under UV radiation",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-add"
+      ],
+      "inputs": [
+        "yu2025-acs-inorgchem-5c02885-aqueous-cdse-znse-zns-zns-qds-thick-zns-1--after-d2-s02-add",
+        "yu2025-acs-inorgchem-5c02885-aqueous-cdse-znse-zns-zns-qds-thick-zns-1--zncl2",
+        "yu2025-acs-inorgchem-5c02885-aqueous-cdse-znse-zns-zns-qds-thick-zns-1--mpa",
+        "yu2025-acs-inorgchem-5c02885-aqueous-cdse-znse-zns-zns-qds-thick-zns-1--cdse-znse-zns-qds"
       ],
       "outputs": [
         "yu2025-acs-inorgchem-5c02885-aqueous-cdse-znse-zns-zns-qds-thick-zns-1--after-s02-heat"
@@ -434,16 +582,83 @@
           "locator": "Main PDF p.5"
         }
       ]
+    },
+    {
+      "id": "yu2025-acs-inorgchem-5c02885-aqueous-cdse-znse-zns-zns-qds-thick-zns-1--photoluminescence-peak",
+      "sample_id": "yu2025-acs-inorgchem-5c02885-aqueous-cdse-znse-zns-zns-qds-thick-zns-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 615,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "615 nm",
+        "evidence": [
+          {
+            "source_id": "yu2025-acs-inorgchem-5c02885",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "yu2025-acs-inorgchem-5c02885",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    },
+    {
+      "id": "yu2025-acs-inorgchem-5c02885-aqueous-cdse-znse-zns-zns-qds-thick-zns-1--photoluminescence-quantum-yield",
+      "sample_id": "yu2025-acs-inorgchem-5c02885-aqueous-cdse-znse-zns-zns-qds-thick-zns-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 88.5,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "88.5 %",
+        "evidence": [
+          {
+            "source_id": "yu2025-acs-inorgchem-5c02885",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "yu2025-acs-inorgchem-5c02885",
+          "locator": "Main PDF p.5"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
-      "Atmosphere not reported in the extracted text."
+      "Atmosphere not reported in the extracted text.",
+      "Amount of CdSe/ZnSe/ZnS QDs not reported in the extracted text.",
+      "Amount of Ammonia not reported in the extracted text.",
+      "Amount of n-Butanol not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

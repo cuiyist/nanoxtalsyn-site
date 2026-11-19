@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "rahmany2024-s10854-024-12541-4-gfo0-7-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Zamzama Rahmany; Nandakumar Kalarikkal; S. Savitha Pillai (2024): GFO0.7",
   "material": {
@@ -124,6 +124,25 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "rahmany2024-s10854-024-12541-4-gfo0-7-1--distilled-water",
+      "name": "distilled water",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "rahmany2024-s10854-024-12541-4",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -152,10 +171,18 @@
     },
     {
       "id": "rahmany2024-s10854-024-12541-4-gfo0-7-1--after-s04-dry",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "rahmany2024-s10854-024-12541-4-gfo0-7-1--after-s03-wash"
+      ]
+    },
+    {
+      "id": "rahmany2024-s10854-024-12541-4-gfo0-7-1--after-d2-s05-sinter",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "rahmany2024-s10854-024-12541-4-gfo0-7-1--after-s03-wash"
+        "rahmany2024-s10854-024-12541-4-gfo0-7-1--after-s04-dry"
       ]
     }
   ],
@@ -382,6 +409,81 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s05-sinter",
+      "action": "sinter",
+      "label": "Sinter the samples at 500 °C for 5 hours",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-dry"
+      ],
+      "inputs": [
+        "rahmany2024-s10854-024-12541-4-gfo0-7-1--after-s04-dry"
+      ],
+      "outputs": [
+        "rahmany2024-s10854-024-12541-4-gfo0-7-1--after-d2-s05-sinter"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 500,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "500 °C",
+          "evidence": [
+            {
+              "source_id": "rahmany2024-s10854-024-12541-4",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "5 h",
+          "evidence": [
+            {
+              "source_id": "rahmany2024-s10854-024-12541-4",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Sinter the samples at 500 °C for 5 hours",
+      "evidence": [
+        {
+          "source_id": "rahmany2024-s10854-024-12541-4",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -390,7 +492,7 @@
       "sample_id": "rahmany2024-s10854-024-12541-4-gfo0-7-1--product",
       "source_sample_label": "GFO0.7",
       "batch_id": null,
-      "material_state_id": "rahmany2024-s10854-024-12541-4-gfo0-7-1--after-s04-dry",
+      "material_state_id": "rahmany2024-s10854-024-12541-4-gfo0-7-1--after-d2-s05-sinter",
       "parent_sample_id": null,
       "composition": {
         "value": "Ga0.7Fe1.3O3",
@@ -477,13 +579,14 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Amount of gallium nitrate hydrate not reported in the extracted text.",
-      "Amount of iron nitrate nonahydrate not reported in the extracted text."
+      "Amount of iron nitrate nonahydrate not reported in the extracted text.",
+      "Amount of distilled water not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "finnie2002-1-1515912-inas-quantum-dots-on-gaas-100-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "P. Finnie et al. (2002): InAs quantum dots on GaAs(100)",
   "material": {
@@ -109,7 +109,7 @@
       "id": "finnie2002-1-1515912-inas-quantum-dots-on-gaas-100-1--inas",
       "name": "InAs",
       "formula": null,
-      "role": "reagent",
+      "role": "starting_particles",
       "stage": "synthesis",
       "identity": {
         "pubchem_cid": null,
@@ -128,10 +128,19 @@
   "stocks": [],
   "material_states": [
     {
-      "id": "finnie2002-1-1515912-inas-quantum-dots-on-gaas-100-1--after-s01-grow",
+      "id": "finnie2002-1-1515912-inas-quantum-dots-on-gaas-100-1--after-d2-s01-heat",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": [
+        "finnie2002-1-1515912-inas-quantum-dots-on-gaas-100-1--gaas"
+      ]
+    },
+    {
+      "id": "finnie2002-1-1515912-inas-quantum-dots-on-gaas-100-1--after-s01-grow",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "finnie2002-1-1515912-inas-quantum-dots-on-gaas-100-1--after-d2-s01-heat",
         "finnie2002-1-1515912-inas-quantum-dots-on-gaas-100-1--gaas"
       ]
     },
@@ -147,14 +156,53 @@
   ],
   "operations": [
     {
+      "id": "d2-s01-heat",
+      "action": "heat",
+      "label": "Heat",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "finnie2002-1-1515912-inas-quantum-dots-on-gaas-100-1--gaas"
+      ],
+      "outputs": [
+        "finnie2002-1-1515912-inas-quantum-dots-on-gaas-100-1--after-d2-s01-heat"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heat",
+      "evidence": [
+        {
+          "source_id": "finnie2002-1-1515912",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
       "id": "s01-grow",
       "action": "grow",
       "label": "Grow GaAs with gallium flux",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
+      "depends_on": [
+        "d2-s01-heat"
+      ],
       "inputs": [
+        "finnie2002-1-1515912-inas-quantum-dots-on-gaas-100-1--after-d2-s01-heat",
         "finnie2002-1-1515912-inas-quantum-dots-on-gaas-100-1--gaas"
       ],
       "outputs": [
@@ -285,7 +333,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",

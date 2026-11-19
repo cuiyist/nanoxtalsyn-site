@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "vagott2022-acs-chemmater-1c03093-pbi2-nanocrystals-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Jacob N. Vagott et al. (2022): PbI2 nanocrystals",
   "material": {
@@ -39,9 +39,14 @@
   },
   "intended_target": {
     "composition": {
-      "value": null,
-      "status": "not_reported",
-      "evidence": [],
+      "value": "PbI2",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "vagott2022-acs-chemmater-1c03093",
+          "locator": "Main PDF p.1"
+        }
+      ],
       "note": ""
     },
     "phase": {
@@ -130,11 +135,55 @@
     },
     {
       "id": "vagott2022-acs-chemmater-1c03093-pbi2-nanocrystals-1--after-s02-heat",
-      "name": "product as isolated",
-      "kind": "product",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
       "parent_ids": [
         "vagott2022-acs-chemmater-1c03093-pbi2-nanocrystals-1--after-s01-clean",
         "vagott2022-acs-chemmater-1c03093-pbi2-nanocrystals-1--bis-2-2-6-6-tetramethyl-3-5-heptanediona"
+      ]
+    },
+    {
+      "id": "vagott2022-acs-chemmater-1c03093-pbi2-nanocrystals-1--after-d2-s03-dose",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "vagott2022-acs-chemmater-1c03093-pbi2-nanocrystals-1--after-s02-heat",
+        "vagott2022-acs-chemmater-1c03093-pbi2-nanocrystals-1--bis-2-2-6-6-tetramethyl-3-5-heptanediona"
+      ]
+    },
+    {
+      "id": "vagott2022-acs-chemmater-1c03093-pbi2-nanocrystals-1--after-d2-s04-purge",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "vagott2022-acs-chemmater-1c03093-pbi2-nanocrystals-1--after-d2-s03-dose"
+      ]
+    },
+    {
+      "id": "vagott2022-acs-chemmater-1c03093-pbi2-nanocrystals-1--after-d2-s05-dose",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "vagott2022-acs-chemmater-1c03093-pbi2-nanocrystals-1--after-d2-s04-purge",
+        "vagott2022-acs-chemmater-1c03093-pbi2-nanocrystals-1--hydroiodic-acid-hi"
+      ]
+    },
+    {
+      "id": "vagott2022-acs-chemmater-1c03093-pbi2-nanocrystals-1--after-d2-s06-purge",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "vagott2022-acs-chemmater-1c03093-pbi2-nanocrystals-1--after-d2-s05-dose"
+      ]
+    },
+    {
+      "id": "vagott2022-acs-chemmater-1c03093-pbi2-nanocrystals-1--after-d2-s07-deposit",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "vagott2022-acs-chemmater-1c03093-pbi2-nanocrystals-1--after-d2-s06-purge",
+        "vagott2022-acs-chemmater-1c03093-pbi2-nanocrystals-1--bis-2-2-6-6-tetramethyl-3-5-heptanediona",
+        "vagott2022-acs-chemmater-1c03093-pbi2-nanocrystals-1--hydroiodic-acid-hi"
       ]
     }
   ],
@@ -240,6 +289,225 @@
           "locator": "Main PDF p.7"
         }
       ]
+    },
+    {
+      "id": "d2-s03-dose",
+      "action": "dose",
+      "label": "Dose",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-heat"
+      ],
+      "inputs": [
+        "vagott2022-acs-chemmater-1c03093-pbi2-nanocrystals-1--after-s02-heat",
+        "vagott2022-acs-chemmater-1c03093-pbi2-nanocrystals-1--bis-2-2-6-6-tetramethyl-3-5-heptanediona"
+      ],
+      "outputs": [
+        "vagott2022-acs-chemmater-1c03093-pbi2-nanocrystals-1--after-d2-s03-dose"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "vagott2022-acs-chemmater-1c03093",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dose",
+      "evidence": [
+        {
+          "source_id": "vagott2022-acs-chemmater-1c03093",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "d2-s04-purge",
+      "action": "purge",
+      "label": "Purge",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-dose"
+      ],
+      "inputs": [
+        "vagott2022-acs-chemmater-1c03093-pbi2-nanocrystals-1--after-d2-s03-dose"
+      ],
+      "outputs": [
+        "vagott2022-acs-chemmater-1c03093-pbi2-nanocrystals-1--after-d2-s04-purge"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "vagott2022-acs-chemmater-1c03093",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Purge",
+      "evidence": [
+        {
+          "source_id": "vagott2022-acs-chemmater-1c03093",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "d2-s05-dose",
+      "action": "dose",
+      "label": "Dose",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-purge"
+      ],
+      "inputs": [
+        "vagott2022-acs-chemmater-1c03093-pbi2-nanocrystals-1--after-d2-s04-purge",
+        "vagott2022-acs-chemmater-1c03093-pbi2-nanocrystals-1--hydroiodic-acid-hi"
+      ],
+      "outputs": [
+        "vagott2022-acs-chemmater-1c03093-pbi2-nanocrystals-1--after-d2-s05-dose"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "vagott2022-acs-chemmater-1c03093",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dose",
+      "evidence": [
+        {
+          "source_id": "vagott2022-acs-chemmater-1c03093",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "d2-s06-purge",
+      "action": "purge",
+      "label": "Purge",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s05-dose"
+      ],
+      "inputs": [
+        "vagott2022-acs-chemmater-1c03093-pbi2-nanocrystals-1--after-d2-s05-dose"
+      ],
+      "outputs": [
+        "vagott2022-acs-chemmater-1c03093-pbi2-nanocrystals-1--after-d2-s06-purge"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "vagott2022-acs-chemmater-1c03093",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Purge",
+      "evidence": [
+        {
+          "source_id": "vagott2022-acs-chemmater-1c03093",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "d2-s07-deposit",
+      "action": "deposit",
+      "label": "Deposit",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s06-purge"
+      ],
+      "inputs": [
+        "vagott2022-acs-chemmater-1c03093-pbi2-nanocrystals-1--after-d2-s06-purge",
+        "vagott2022-acs-chemmater-1c03093-pbi2-nanocrystals-1--bis-2-2-6-6-tetramethyl-3-5-heptanediona",
+        "vagott2022-acs-chemmater-1c03093-pbi2-nanocrystals-1--hydroiodic-acid-hi"
+      ],
+      "outputs": [
+        "vagott2022-acs-chemmater-1c03093-pbi2-nanocrystals-1--after-d2-s07-deposit"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "vagott2022-acs-chemmater-1c03093",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Deposit",
+      "evidence": [
+        {
+          "source_id": "vagott2022-acs-chemmater-1c03093",
+          "locator": "Main PDF p.7"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -248,12 +516,17 @@
       "sample_id": "vagott2022-acs-chemmater-1c03093-pbi2-nanocrystals-1--product",
       "source_sample_label": "PbI2 nanocrystals",
       "batch_id": null,
-      "material_state_id": "vagott2022-acs-chemmater-1c03093-pbi2-nanocrystals-1--after-s02-heat",
+      "material_state_id": "vagott2022-acs-chemmater-1c03093-pbi2-nanocrystals-1--after-d2-s07-deposit",
       "parent_sample_id": null,
       "composition": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "PbI2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "vagott2022-acs-chemmater-1c03093",
+            "locator": "Main PDF p.1"
+          }
+        ],
         "note": ""
       },
       "phase": {
@@ -300,7 +573,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",

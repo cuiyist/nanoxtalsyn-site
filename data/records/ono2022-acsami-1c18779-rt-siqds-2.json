@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "ono2022-acsami-1c18779-rt-siqds-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Taisei Ono; Yuping Xu; Toshiki Sakata; Ken-ichi Saitow (2022): RT-SiQDs",
   "material": {
@@ -146,6 +146,101 @@
           "locator": "Main PDF p.13"
         }
       ]
+    },
+    {
+      "id": "ono2022-acsami-1c18779-rt-siqds-2--ar",
+      "name": "Ar",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "ono2022-acsami-1c18779",
+          "locator": "Main PDF p.13"
+        }
+      ]
+    },
+    {
+      "id": "ono2022-acsami-1c18779-rt-siqds-2--h2",
+      "name": "H2",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "ono2022-acsami-1c18779",
+          "locator": "Main PDF p.13"
+        }
+      ]
+    },
+    {
+      "id": "ono2022-acsami-1c18779-rt-siqds-2--hf",
+      "name": "HF",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "ono2022-acsami-1c18779",
+          "locator": "Main PDF p.13"
+        }
+      ]
+    },
+    {
+      "id": "ono2022-acsami-1c18779-rt-siqds-2--hcl",
+      "name": "HCl",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "ono2022-acsami-1c18779",
+          "locator": "Main PDF p.13"
+        }
+      ]
+    },
+    {
+      "id": "ono2022-acsami-1c18779-rt-siqds-2--toluene",
+      "name": "toluene",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "ono2022-acsami-1c18779",
+          "locator": "Main PDF p.14"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -155,7 +250,9 @@
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": [
-        "ono2022-acsami-1c18779-rt-siqds-2--hydrogen-silsesquioxane-hsq"
+        "ono2022-acsami-1c18779-rt-siqds-2--hydrogen-silsesquioxane-hsq",
+        "ono2022-acsami-1c18779-rt-siqds-2--ar",
+        "ono2022-acsami-1c18779-rt-siqds-2--h2"
       ]
     },
     {
@@ -168,10 +265,31 @@
     },
     {
       "id": "ono2022-acsami-1c18779-rt-siqds-2--after-s03-etch",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "ono2022-acsami-1c18779-rt-siqds-2--after-s02-cool",
+        "ono2022-acsami-1c18779-rt-siqds-2--hf",
+        "ono2022-acsami-1c18779-rt-siqds-2--hcl"
+      ]
+    },
+    {
+      "id": "ono2022-acsami-1c18779-rt-siqds-2--after-d2-s04-hydrosilylation",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "ono2022-acsami-1c18779-rt-siqds-2--after-s03-etch",
+        "ono2022-acsami-1c18779-rt-siqds-2--1-decene",
+        "ono2022-acsami-1c18779-rt-siqds-2--pcl5"
+      ]
+    },
+    {
+      "id": "ono2022-acsami-1c18779-rt-siqds-2--after-d2-s05-purification",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "ono2022-acsami-1c18779-rt-siqds-2--after-s02-cool"
+        "ono2022-acsami-1c18779-rt-siqds-2--after-d2-s04-hydrosilylation",
+        "ono2022-acsami-1c18779-rt-siqds-2--toluene"
       ]
     }
   ],
@@ -185,7 +303,9 @@
       "optional": false,
       "depends_on": [],
       "inputs": [
-        "ono2022-acsami-1c18779-rt-siqds-2--hydrogen-silsesquioxane-hsq"
+        "ono2022-acsami-1c18779-rt-siqds-2--hydrogen-silsesquioxane-hsq",
+        "ono2022-acsami-1c18779-rt-siqds-2--ar",
+        "ono2022-acsami-1c18779-rt-siqds-2--h2"
       ],
       "outputs": [
         "ono2022-acsami-1c18779-rt-siqds-2--after-s01-heat"
@@ -327,7 +447,9 @@
         "s02-cool"
       ],
       "inputs": [
-        "ono2022-acsami-1c18779-rt-siqds-2--after-s02-cool"
+        "ono2022-acsami-1c18779-rt-siqds-2--after-s02-cool",
+        "ono2022-acsami-1c18779-rt-siqds-2--hf",
+        "ono2022-acsami-1c18779-rt-siqds-2--hcl"
       ],
       "outputs": [
         "ono2022-acsami-1c18779-rt-siqds-2--after-s03-etch"
@@ -377,6 +499,132 @@
           "locator": "Main PDF p.13"
         }
       ]
+    },
+    {
+      "id": "d2-s04-hydrosilylation",
+      "action": "hydrosilylation",
+      "label": "Room-temperature hydrosilylation with PCl5",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-etch"
+      ],
+      "inputs": [
+        "ono2022-acsami-1c18779-rt-siqds-2--after-s03-etch",
+        "ono2022-acsami-1c18779-rt-siqds-2--1-decene",
+        "ono2022-acsami-1c18779-rt-siqds-2--pcl5"
+      ],
+      "outputs": [
+        "ono2022-acsami-1c18779-rt-siqds-2--after-d2-s04-hydrosilylation"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 28,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "28 °C",
+          "evidence": [
+            {
+              "source_id": "ono2022-acsami-1c18779",
+              "locator": "Main PDF p.13"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 30,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "30 min",
+          "evidence": [
+            {
+              "source_id": "ono2022-acsami-1c18779",
+              "locator": "Main PDF p.13"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "ono2022-acsami-1c18779",
+            "locator": "Main PDF p.13"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Room-temperature hydrosilylation with PCl5",
+      "evidence": [
+        {
+          "source_id": "ono2022-acsami-1c18779",
+          "locator": "Main PDF p.13"
+        }
+      ]
+    },
+    {
+      "id": "d2-s05-purification",
+      "action": "puriﬁcation",
+      "label": "RT-SiQDs were puriﬁed and dispersed in toluene",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-hydrosilylation"
+      ],
+      "inputs": [
+        "ono2022-acsami-1c18779-rt-siqds-2--after-d2-s04-hydrosilylation",
+        "ono2022-acsami-1c18779-rt-siqds-2--toluene"
+      ],
+      "outputs": [
+        "ono2022-acsami-1c18779-rt-siqds-2--after-d2-s05-purification"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "ono2022-acsami-1c18779",
+            "locator": "Main PDF p.13"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "RT-SiQDs were puriﬁed and dispersed in toluene",
+      "evidence": [
+        {
+          "source_id": "ono2022-acsami-1c18779",
+          "locator": "Main PDF p.14"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -385,7 +633,7 @@
       "sample_id": "ono2022-acsami-1c18779-rt-siqds-2--product",
       "source_sample_label": "RT-SiQDs",
       "batch_id": null,
-      "material_state_id": "ono2022-acsami-1c18779-rt-siqds-2--after-s03-etch",
+      "material_state_id": "ono2022-acsami-1c18779-rt-siqds-2--after-d2-s05-purification",
       "parent_sample_id": null,
       "composition": {
         "value": "Si",
@@ -480,13 +728,18 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Reaction temperature not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
       "Amount of hydrogen silsesquioxane (HSQ) not reported in the extracted text.",
       "Amount of 1-decene not reported in the extracted text.",
-      "Amount of PCl5 not reported in the extracted text."
+      "Amount of PCl5 not reported in the extracted text.",
+      "Amount of Ar not reported in the extracted text.",
+      "Amount of H2 not reported in the extracted text.",
+      "Amount of HF not reported in the extracted text.",
+      "Amount of HCl not reported in the extracted text.",
+      "Amount of toluene not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

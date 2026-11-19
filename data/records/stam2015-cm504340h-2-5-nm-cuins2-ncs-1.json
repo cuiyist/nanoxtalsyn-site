@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "stam2015-cm504340h-2-5-nm-cuins2-ncs-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Ward van der Stam; Anne C. Berends; Freddy T. Rabouw; Tom Willhammar; Xiaoxing Ke; Johannes D. Meeldijk; Sara Bals; Celso de Mello Donega (2015): 2.5 nm CuInS2 NCs",
   "material": {
@@ -148,21 +148,49 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "stam2015-cm504340h-2-5-nm-cuins2-ncs-1--cu2xs-ncs",
+      "name": "Cu2−xS NCs",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "stam2015-cm504340h",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
-      "id": "stam2015-cm504340h-2-5-nm-cuins2-ncs-1--after-s01-add",
+      "id": "stam2015-cm504340h-2-5-nm-cuins2-ncs-1--after-d2-s01-dilute",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": [
+        "stam2015-cm504340h-2-5-nm-cuins2-ncs-1--cu2xs-ncs"
+      ]
+    },
+    {
+      "id": "stam2015-cm504340h-2-5-nm-cuins2-ncs-1--after-s01-add",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "stam2015-cm504340h-2-5-nm-cuins2-ncs-1--after-d2-s01-dilute",
         "stam2015-cm504340h-2-5-nm-cuins2-ncs-1--in-no3-3h2o"
       ]
     },
     {
       "id": "stam2015-cm504340h-2-5-nm-cuins2-ncs-1--after-s02-add",
-      "name": "mixture after step 2",
+      "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
         "stam2015-cm504340h-2-5-nm-cuins2-ncs-1--after-s01-add",
@@ -171,10 +199,18 @@
     },
     {
       "id": "stam2015-cm504340h-2-5-nm-cuins2-ncs-1--after-s03-stir",
-      "name": "mixture after step 3",
+      "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
         "stam2015-cm504340h-2-5-nm-cuins2-ncs-1--after-s02-add"
+      ]
+    },
+    {
+      "id": "stam2015-cm504340h-2-5-nm-cuins2-ncs-1--after-d2-s05-wash",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "stam2015-cm504340h-2-5-nm-cuins2-ncs-1--after-s03-stir"
       ]
     },
     {
@@ -182,11 +218,52 @@
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "stam2015-cm504340h-2-5-nm-cuins2-ncs-1--after-s03-stir"
+        "stam2015-cm504340h-2-5-nm-cuins2-ncs-1--after-d2-s05-wash"
       ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-dilute",
+      "action": "dilute",
+      "label": "Dilute Cu2−xS NCs solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "stam2015-cm504340h-2-5-nm-cuins2-ncs-1--cu2xs-ncs"
+      ],
+      "outputs": [
+        "stam2015-cm504340h-2-5-nm-cuins2-ncs-1--after-d2-s01-dilute"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "stam2015-cm504340h",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dilute Cu2−xS NCs solution",
+      "evidence": [
+        {
+          "source_id": "stam2015-cm504340h",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
     {
       "id": "s01-add",
       "action": "add",
@@ -194,8 +271,11 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
+      "depends_on": [
+        "d2-s01-dilute"
+      ],
       "inputs": [
+        "stam2015-cm504340h-2-5-nm-cuins2-ncs-1--after-d2-s01-dilute",
         "stam2015-cm504340h-2-5-nm-cuins2-ncs-1--in-no3-3h2o"
       ],
       "outputs": [
@@ -316,9 +396,9 @@
       ]
     },
     {
-      "id": "s04-redisperse",
-      "action": "redisperse",
-      "label": "Redisperse NCs in toluene",
+      "id": "d2-s05-wash",
+      "action": "wash",
+      "label": "Wash product NCs to remove excess precursor and ligands",
       "stage": "workup",
       "branch": "",
       "optional": false,
@@ -327,6 +407,44 @@
       ],
       "inputs": [
         "stam2015-cm504340h-2-5-nm-cuins2-ncs-1--after-s03-stir"
+      ],
+      "outputs": [
+        "stam2015-cm504340h-2-5-nm-cuins2-ncs-1--after-d2-s05-wash"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Wash product NCs to remove excess precursor and ligands",
+      "evidence": [
+        {
+          "source_id": "stam2015-cm504340h",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s04-redisperse",
+      "action": "redisperse",
+      "label": "Redisperse NCs in toluene",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s05-wash"
+      ],
+      "inputs": [
+        "stam2015-cm504340h-2-5-nm-cuins2-ncs-1--after-d2-s05-wash"
       ],
       "outputs": [
         "stam2015-cm504340h-2-5-nm-cuins2-ncs-1--after-s04-redisperse"
@@ -450,16 +568,81 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "stam2015-cm504340h-2-5-nm-cuins2-ncs-1--photoluminescence-peak",
+      "sample_id": "stam2015-cm504340h-2-5-nm-cuins2-ncs-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 650,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "650 nm",
+        "evidence": [
+          {
+            "source_id": "stam2015-cm504340h",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "stam2015-cm504340h",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "stam2015-cm504340h-2-5-nm-cuins2-ncs-1--photoluminescence-quantum-yield",
+      "sample_id": "stam2015-cm504340h-2-5-nm-cuins2-ncs-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 5,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "5 %",
+        "evidence": [
+          {
+            "source_id": "stam2015-cm504340h",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "stam2015-cm504340h",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Reaction temperature not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
-      "Amount of trioctylphosphine (TOP) not reported in the extracted text."
+      "Amount of trioctylphosphine (TOP) not reported in the extracted text.",
+      "Amount of Cu2−xS NCs not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

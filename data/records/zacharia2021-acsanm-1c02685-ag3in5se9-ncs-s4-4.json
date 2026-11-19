@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "zacharia2021-acsanm-1c02685-ag3in5se9-ncs-s4-4",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Anna Zacharia; Paris Papagiorgis; Olesya Yarema; Annina Moser; Andreas Othonos; Mathieu Luisier; Vanessa Wood; Maksym Yarema; Grigorios Itskos (2021): Ag3In5Se9 NCs (S4)",
   "material": {
@@ -143,6 +143,44 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "zacharia2021-acsanm-1c02685-ag3in5se9-ncs-s4-4--ini3",
+      "name": "InI3",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zacharia2021-acsanm-1c02685",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "zacharia2021-acsanm-1c02685-ag3in5se9-ncs-s4-4--se",
+      "name": "Se",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zacharia2021-acsanm-1c02685",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -153,7 +191,8 @@
       "kind": "reaction_batch",
       "parent_ids": [
         "zacharia2021-acsanm-1c02685-ag3in5se9-ncs-s4-4--agi",
-        "zacharia2021-acsanm-1c02685-ag3in5se9-ncs-s4-4--top"
+        "zacharia2021-acsanm-1c02685-ag3in5se9-ncs-s4-4--top",
+        "zacharia2021-acsanm-1c02685-ag3in5se9-ncs-s4-4--ini3"
       ]
     },
     {
@@ -177,7 +216,8 @@
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "zacharia2021-acsanm-1c02685-ag3in5se9-ncs-s4-4--after-s03-heat"
+        "zacharia2021-acsanm-1c02685-ag3in5se9-ncs-s4-4--after-s03-heat",
+        "zacharia2021-acsanm-1c02685-ag3in5se9-ncs-s4-4--se"
       ]
     }
   ],
@@ -192,7 +232,8 @@
       "depends_on": [],
       "inputs": [
         "zacharia2021-acsanm-1c02685-ag3in5se9-ncs-s4-4--agi",
-        "zacharia2021-acsanm-1c02685-ag3in5se9-ncs-s4-4--top"
+        "zacharia2021-acsanm-1c02685-ag3in5se9-ncs-s4-4--top",
+        "zacharia2021-acsanm-1c02685-ag3in5se9-ncs-s4-4--ini3"
       ],
       "outputs": [
         "zacharia2021-acsanm-1c02685-ag3in5se9-ncs-s4-4--after-s01-mix"
@@ -354,7 +395,8 @@
         "s03-heat"
       ],
       "inputs": [
-        "zacharia2021-acsanm-1c02685-ag3in5se9-ncs-s4-4--after-s03-heat"
+        "zacharia2021-acsanm-1c02685-ag3in5se9-ncs-s4-4--after-s03-heat",
+        "zacharia2021-acsanm-1c02685-ag3in5se9-ncs-s4-4--se"
       ],
       "outputs": [
         "zacharia2021-acsanm-1c02685-ag3in5se9-ncs-s4-4--after-s04-inject"
@@ -451,12 +493,14 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
-      "Amount of TOP not reported in the extracted text."
+      "Amount of TOP not reported in the extracted text.",
+      "Amount of InI3 not reported in the extracted text.",
+      "Amount of Se not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "zidek2012-ja3029679-cdse-qds-3-1-nm-on-zno-nws-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Karel Žídek (2012): CdSe QDs (3.1 nm) on ZnO NWs",
   "material": {
@@ -128,6 +128,101 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "zidek2012-ja3029679-cdse-qds-3-1-nm-on-zno-nws-1--trioctylphosphine-selenide",
+      "name": "trioctylphosphine selenide",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zidek2012-ja3029679",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "zidek2012-ja3029679-cdse-qds-3-1-nm-on-zno-nws-1--cdo",
+      "name": "CdO",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zidek2012-ja3029679",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "zidek2012-ja3029679-cdse-qds-3-1-nm-on-zno-nws-1--oleic-acid",
+      "name": "oleic acid",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zidek2012-ja3029679",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "zidek2012-ja3029679-cdse-qds-3-1-nm-on-zno-nws-1--zno-nws",
+      "name": "ZnO NWs",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zidek2012-ja3029679",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "zidek2012-ja3029679-cdse-qds-3-1-nm-on-zno-nws-1--cdse-qds",
+      "name": "CdSe QDs",
+      "formula": null,
+      "role": "starting_particles",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zidek2012-ja3029679",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -136,7 +231,11 @@
       "id": "zidek2012-ja3029679-cdse-qds-3-1-nm-on-zno-nws-1--after-s01-heat",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "zidek2012-ja3029679-cdse-qds-3-1-nm-on-zno-nws-1--trioctylphosphine-selenide",
+        "zidek2012-ja3029679-cdse-qds-3-1-nm-on-zno-nws-1--cdo",
+        "zidek2012-ja3029679-cdse-qds-3-1-nm-on-zno-nws-1--oleic-acid"
+      ]
     },
     {
       "id": "zidek2012-ja3029679-cdse-qds-3-1-nm-on-zno-nws-1--after-s02-exchange",
@@ -144,7 +243,8 @@
       "kind": "reaction_batch",
       "parent_ids": [
         "zidek2012-ja3029679-cdse-qds-3-1-nm-on-zno-nws-1--after-s01-heat",
-        "zidek2012-ja3029679-cdse-qds-3-1-nm-on-zno-nws-1--2-mercaptopropionic-acid"
+        "zidek2012-ja3029679-cdse-qds-3-1-nm-on-zno-nws-1--2-mercaptopropionic-acid",
+        "zidek2012-ja3029679-cdse-qds-3-1-nm-on-zno-nws-1--cdse-qds"
       ]
     },
     {
@@ -153,7 +253,9 @@
       "kind": "product",
       "parent_ids": [
         "zidek2012-ja3029679-cdse-qds-3-1-nm-on-zno-nws-1--after-s02-exchange",
-        "zidek2012-ja3029679-cdse-qds-3-1-nm-on-zno-nws-1--ethanol"
+        "zidek2012-ja3029679-cdse-qds-3-1-nm-on-zno-nws-1--ethanol",
+        "zidek2012-ja3029679-cdse-qds-3-1-nm-on-zno-nws-1--zno-nws",
+        "zidek2012-ja3029679-cdse-qds-3-1-nm-on-zno-nws-1--cdse-qds"
       ]
     }
   ],
@@ -166,7 +268,11 @@
       "branch": "",
       "optional": false,
       "depends_on": [],
-      "inputs": [],
+      "inputs": [
+        "zidek2012-ja3029679-cdse-qds-3-1-nm-on-zno-nws-1--trioctylphosphine-selenide",
+        "zidek2012-ja3029679-cdse-qds-3-1-nm-on-zno-nws-1--cdo",
+        "zidek2012-ja3029679-cdse-qds-3-1-nm-on-zno-nws-1--oleic-acid"
+      ],
       "outputs": [
         "zidek2012-ja3029679-cdse-qds-3-1-nm-on-zno-nws-1--after-s01-heat"
       ],
@@ -223,7 +329,8 @@
       ],
       "inputs": [
         "zidek2012-ja3029679-cdse-qds-3-1-nm-on-zno-nws-1--after-s01-heat",
-        "zidek2012-ja3029679-cdse-qds-3-1-nm-on-zno-nws-1--2-mercaptopropionic-acid"
+        "zidek2012-ja3029679-cdse-qds-3-1-nm-on-zno-nws-1--2-mercaptopropionic-acid",
+        "zidek2012-ja3029679-cdse-qds-3-1-nm-on-zno-nws-1--cdse-qds"
       ],
       "outputs": [
         "zidek2012-ja3029679-cdse-qds-3-1-nm-on-zno-nws-1--after-s02-exchange"
@@ -262,7 +369,9 @@
       ],
       "inputs": [
         "zidek2012-ja3029679-cdse-qds-3-1-nm-on-zno-nws-1--after-s02-exchange",
-        "zidek2012-ja3029679-cdse-qds-3-1-nm-on-zno-nws-1--ethanol"
+        "zidek2012-ja3029679-cdse-qds-3-1-nm-on-zno-nws-1--ethanol",
+        "zidek2012-ja3029679-cdse-qds-3-1-nm-on-zno-nws-1--zno-nws",
+        "zidek2012-ja3029679-cdse-qds-3-1-nm-on-zno-nws-1--cdse-qds"
       ],
       "outputs": [
         "zidek2012-ja3029679-cdse-qds-3-1-nm-on-zno-nws-1--after-s03-immersion"
@@ -391,13 +500,18 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Reactor not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
       "Amount of 2-mercaptopropionic acid not reported in the extracted text.",
-      "Amount of ethanol not reported in the extracted text."
+      "Amount of ethanol not reported in the extracted text.",
+      "Amount of trioctylphosphine selenide not reported in the extracted text.",
+      "Amount of CdO not reported in the extracted text.",
+      "Amount of oleic acid not reported in the extracted text.",
+      "Amount of ZnO NWs not reported in the extracted text.",
+      "Amount of CdSe QDs not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

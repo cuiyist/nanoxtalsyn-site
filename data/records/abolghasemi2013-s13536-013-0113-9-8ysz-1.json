@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "abolghasemi2013-s13536-013-0113-9-8ysz-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Z. Abolghasemi; M. Tamizifar; K. Arzani; A. Nemati; A. Khanfekr; M. Bolandi (2013): 8YSZ",
   "material": {
@@ -141,10 +141,18 @@
     },
     {
       "id": "abolghasemi2013-s13536-013-0113-9-8ysz-1--after-s02-dry",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "abolghasemi2013-s13536-013-0113-9-8ysz-1--after-s01-heat"
+      ]
+    },
+    {
+      "id": "abolghasemi2013-s13536-013-0113-9-8ysz-1--after-d2-s03-calcine",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "abolghasemi2013-s13536-013-0113-9-8ysz-1--after-s01-heat"
+        "abolghasemi2013-s13536-013-0113-9-8ysz-1--after-s02-dry"
       ]
     }
   ],
@@ -276,6 +284,81 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s03-calcine",
+      "action": "calcine",
+      "label": "Calcining the dried gel at 900 °C",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-dry"
+      ],
+      "inputs": [
+        "abolghasemi2013-s13536-013-0113-9-8ysz-1--after-s02-dry"
+      ],
+      "outputs": [
+        "abolghasemi2013-s13536-013-0113-9-8ysz-1--after-d2-s03-calcine"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 900,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "900 °C",
+          "evidence": [
+            {
+              "source_id": "abolghasemi2013-s13536-013-0113-9",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 2,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2 h",
+          "evidence": [
+            {
+              "source_id": "abolghasemi2013-s13536-013-0113-9",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Calcining the dried gel at 900 °C",
+      "evidence": [
+        {
+          "source_id": "abolghasemi2013-s13536-013-0113-9",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -284,7 +367,7 @@
       "sample_id": "abolghasemi2013-s13536-013-0113-9-8ysz-1--product",
       "source_sample_label": "8YSZ",
       "batch_id": null,
-      "material_state_id": "abolghasemi2013-s13536-013-0113-9-8ysz-1--after-s02-dry",
+      "material_state_id": "abolghasemi2013-s13536-013-0113-9-8ysz-1--after-d2-s03-calcine",
       "parent_sample_id": null,
       "composition": {
         "value": "ZrO2:Y2O3 (92:8)",
@@ -375,7 +458,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Reactor not reported in the extracted text.",

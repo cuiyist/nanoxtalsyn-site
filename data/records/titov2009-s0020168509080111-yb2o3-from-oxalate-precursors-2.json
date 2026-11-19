@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "titov2009-s0020168509080111-yb2o3-from-oxalate-precursors-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "A. A. Titov (2009): Yb2O3 (from oxalate precursors)",
   "material": {
@@ -132,11 +132,19 @@
       ]
     },
     {
+      "id": "titov2009-s0020168509080111-yb2o3-from-oxalate-precursors-2--after-d2-s02-filter",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "titov2009-s0020168509080111-yb2o3-from-oxalate-precursors-2--after-s01-precipitate"
+      ]
+    },
+    {
       "id": "titov2009-s0020168509080111-yb2o3-from-oxalate-precursors-2--after-s02-heat",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "titov2009-s0020168509080111-yb2o3-from-oxalate-precursors-2--after-s01-precipitate"
+        "titov2009-s0020168509080111-yb2o3-from-oxalate-precursors-2--after-d2-s02-filter"
       ]
     }
   ],
@@ -198,10 +206,10 @@
       ]
     },
     {
-      "id": "s02-heat",
-      "action": "heat",
-      "label": "Calcination of ytterbium oxalate",
-      "stage": "synthesis",
+      "id": "d2-s02-filter",
+      "action": "filter",
+      "label": "Filtering of precipitated ytterbium compounds",
+      "stage": "workup",
       "branch": "",
       "optional": false,
       "depends_on": [
@@ -209,6 +217,44 @@
       ],
       "inputs": [
         "titov2009-s0020168509080111-yb2o3-from-oxalate-precursors-2--after-s01-precipitate"
+      ],
+      "outputs": [
+        "titov2009-s0020168509080111-yb2o3-from-oxalate-precursors-2--after-d2-s02-filter"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Filtering of precipitated ytterbium compounds",
+      "evidence": [
+        {
+          "source_id": "titov2009-s0020168509080111",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "s02-heat",
+      "action": "heat",
+      "label": "Calcination of ytterbium oxalate",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-filter"
+      ],
+      "inputs": [
+        "titov2009-s0020168509080111-yb2o3-from-oxalate-precursors-2--after-d2-s02-filter"
       ],
       "outputs": [
         "titov2009-s0020168509080111-yb2o3-from-oxalate-precursors-2--after-s02-heat"
@@ -333,7 +379,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",

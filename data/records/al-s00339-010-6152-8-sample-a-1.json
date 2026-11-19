@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "al-s00339-010-6152-8-sample-a-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "X. J. Shang et al. (2011): Sample A",
   "material": {
@@ -85,7 +85,7 @@
       "id": "al-s00339-010-6152-8-sample-a-1--inas",
       "name": "InAs",
       "formula": null,
-      "role": "reagent",
+      "role": "starting_particles",
       "stage": "synthesis",
       "identity": {
         "pubchem_cid": null,
@@ -122,6 +122,44 @@
     {
       "id": "al-s00339-010-6152-8-sample-a-1--gaas",
       "name": "GaAs",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "al-s00339-010-6152-8",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "al-s00339-010-6152-8-sample-a-1--si",
+      "name": "Si",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "al-s00339-010-6152-8",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "al-s00339-010-6152-8-sample-a-1--be",
+      "name": "Be",
       "formula": null,
       "role": "reagent",
       "stage": "synthesis",
@@ -182,11 +220,44 @@
       ]
     },
     {
+      "id": "al-s00339-010-6152-8-sample-a-1--after-d2-s06-deposit",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "al-s00339-010-6152-8-sample-a-1--after-s05-grow",
+        "al-s00339-010-6152-8-sample-a-1--inas"
+      ]
+    },
+    {
       "id": "al-s00339-010-6152-8-sample-a-1--after-s06-monitor",
+      "name": "mixture after step 7",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "al-s00339-010-6152-8-sample-a-1--after-d2-s06-deposit"
+      ]
+    },
+    {
+      "id": "al-s00339-010-6152-8-sample-a-1--after-d2-s08-evaporate",
+      "name": "mixture after step 8",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "al-s00339-010-6152-8-sample-a-1--after-s06-monitor"
+      ]
+    },
+    {
+      "id": "al-s00339-010-6152-8-sample-a-1--after-d2-s09-thin",
+      "name": "mixture after step 9",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "al-s00339-010-6152-8-sample-a-1--after-d2-s08-evaporate"
+      ]
+    },
+    {
+      "id": "al-s00339-010-6152-8-sample-a-1--after-d2-s10-evaporate",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "al-s00339-010-6152-8-sample-a-1--after-s05-grow"
+        "al-s00339-010-6152-8-sample-a-1--after-d2-s09-thin"
       ]
     }
   ],
@@ -474,9 +545,9 @@
       ]
     },
     {
-      "id": "s06-monitor",
-      "action": "monitor",
-      "label": "QD formation monitored by RHEED",
+      "id": "d2-s06-deposit",
+      "action": "deposit",
+      "label": "InAs deposited at slow rate",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -484,7 +555,46 @@
         "s05-grow"
       ],
       "inputs": [
-        "al-s00339-010-6152-8-sample-a-1--after-s05-grow"
+        "al-s00339-010-6152-8-sample-a-1--after-s05-grow",
+        "al-s00339-010-6152-8-sample-a-1--inas"
+      ],
+      "outputs": [
+        "al-s00339-010-6152-8-sample-a-1--after-d2-s06-deposit"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "InAs deposited at slow rate",
+      "evidence": [
+        {
+          "source_id": "al-s00339-010-6152-8",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s06-monitor",
+      "action": "monitor",
+      "label": "QD formation monitored by RHEED",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s06-deposit"
+      ],
+      "inputs": [
+        "al-s00339-010-6152-8-sample-a-1--after-d2-s06-deposit"
       ],
       "outputs": [
         "al-s00339-010-6152-8-sample-a-1--after-s06-monitor"
@@ -510,6 +620,120 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "d2-s08-evaporate",
+      "action": "evaporate",
+      "label": "Evaporate top CrAu electrode",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s06-monitor"
+      ],
+      "inputs": [
+        "al-s00339-010-6152-8-sample-a-1--after-s06-monitor"
+      ],
+      "outputs": [
+        "al-s00339-010-6152-8-sample-a-1--after-d2-s08-evaporate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Evaporate top CrAu electrode",
+      "evidence": [
+        {
+          "source_id": "al-s00339-010-6152-8",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "d2-s09-thin",
+      "action": "thin",
+      "label": "Thin sample from back side",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s08-evaporate"
+      ],
+      "inputs": [
+        "al-s00339-010-6152-8-sample-a-1--after-d2-s08-evaporate"
+      ],
+      "outputs": [
+        "al-s00339-010-6152-8-sample-a-1--after-d2-s09-thin"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Thin sample from back side",
+      "evidence": [
+        {
+          "source_id": "al-s00339-010-6152-8",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "d2-s10-evaporate",
+      "action": "evaporate",
+      "label": "Evaporate back AuGeNi electrode",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s09-thin"
+      ],
+      "inputs": [
+        "al-s00339-010-6152-8-sample-a-1--after-d2-s09-thin"
+      ],
+      "outputs": [
+        "al-s00339-010-6152-8-sample-a-1--after-d2-s10-evaporate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Evaporate back AuGeNi electrode",
+      "evidence": [
+        {
+          "source_id": "al-s00339-010-6152-8",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -518,7 +742,7 @@
       "sample_id": "al-s00339-010-6152-8-sample-a-1--product",
       "source_sample_label": "Sample A",
       "batch_id": null,
-      "material_state_id": "al-s00339-010-6152-8-sample-a-1--after-s06-monitor",
+      "material_state_id": "al-s00339-010-6152-8-sample-a-1--after-d2-s10-evaporate",
       "parent_sample_id": null,
       "composition": {
         "value": "InAs",
@@ -566,11 +790,44 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "al-s00339-010-6152-8-sample-a-1--photoluminescence-peak",
+      "sample_id": "al-s00339-010-6152-8-sample-a-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 1022,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "1022 nm",
+        "evidence": [
+          {
+            "source_id": "al-s00339-010-6152-8",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "al-s00339-010-6152-8",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
@@ -578,7 +835,9 @@
       "Reactor not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
-      "Amount of GaAs not reported in the extracted text."
+      "Amount of GaAs not reported in the extracted text.",
+      "Amount of Si not reported in the extracted text.",
+      "Amount of Be not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

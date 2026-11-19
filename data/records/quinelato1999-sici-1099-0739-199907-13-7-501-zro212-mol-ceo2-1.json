@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "quinelato1999-sici-1099-0739-199907-13-7-501-zro212-mol-ceo2-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Antonio L. Quinelato; Elson Longo; Edson R. Leite; José A. Varela (1999): ZrO2–12 mol% CeO2",
   "material": {
@@ -113,22 +113,137 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "quinelato1999-sici-1099-0739-199907-13-7-501-zro212-mol-ceo2-1--ammonium-hydroxide",
+      "name": "ammonium hydroxide",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "quinelato1999-sici-1099-0739-199907-13-7-501",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "quinelato1999-sici-1099-0739-199907-13-7-501-zro212-mol-ceo2-1--nitric-acid",
+      "name": "nitric acid",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "quinelato1999-sici-1099-0739-199907-13-7-501",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "quinelato1999-sici-1099-0739-199907-13-7-501-zro212-mol-ceo2-1--zirconium-hydroxide",
+      "name": "zirconium hydroxide",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "quinelato1999-sici-1099-0739-199907-13-7-501",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "quinelato1999-sici-1099-0739-199907-13-7-501-zro212-mol-ceo2-1--zirconium-nitrate",
+      "name": "zirconium nitrate",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "quinelato1999-sici-1099-0739-199907-13-7-501",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "quinelato1999-sici-1099-0739-199907-13-7-501-zro212-mol-ceo2-1--cerium-nitrate",
+      "name": "cerium nitrate",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "quinelato1999-sici-1099-0739-199907-13-7-501",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
-      "id": "quinelato1999-sici-1099-0739-199907-13-7-501-zro212-mol-ceo2-1--after-s01-mix",
+      "id": "quinelato1999-sici-1099-0739-199907-13-7-501-zro212-mol-ceo2-1--after-d2-s01-filter",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "quinelato1999-sici-1099-0739-199907-13-7-501-zro212-mol-ceo2-1--zirconium-hydroxide"
+      ]
     },
     {
-      "id": "quinelato1999-sici-1099-0739-199907-13-7-501-zro212-mol-ceo2-1--after-s02-char",
+      "id": "quinelato1999-sici-1099-0739-199907-13-7-501-zro212-mol-ceo2-1--after-s01-mix",
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
+        "quinelato1999-sici-1099-0739-199907-13-7-501-zro212-mol-ceo2-1--after-d2-s01-filter",
+        "quinelato1999-sici-1099-0739-199907-13-7-501-zro212-mol-ceo2-1--zirconium-nitrate",
+        "quinelato1999-sici-1099-0739-199907-13-7-501-zro212-mol-ceo2-1--cerium-nitrate"
+      ]
+    },
+    {
+      "id": "quinelato1999-sici-1099-0739-199907-13-7-501-zro212-mol-ceo2-1--after-s02-char",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
         "quinelato1999-sici-1099-0739-199907-13-7-501-zro212-mol-ceo2-1--after-s01-mix"
+      ]
+    },
+    {
+      "id": "quinelato1999-sici-1099-0739-199907-13-7-501-zro212-mol-ceo2-1--after-d2-s04-ball-mill",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "quinelato1999-sici-1099-0739-199907-13-7-501-zro212-mol-ceo2-1--after-s02-char"
       ]
     },
     {
@@ -136,11 +251,47 @@
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "quinelato1999-sici-1099-0739-199907-13-7-501-zro212-mol-ceo2-1--after-s02-char"
+        "quinelato1999-sici-1099-0739-199907-13-7-501-zro212-mol-ceo2-1--after-d2-s04-ball-mill"
       ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-filter",
+      "action": "filter",
+      "label": "Filter zirconium hydroxide",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "quinelato1999-sici-1099-0739-199907-13-7-501-zro212-mol-ceo2-1--zirconium-hydroxide"
+      ],
+      "outputs": [
+        "quinelato1999-sici-1099-0739-199907-13-7-501-zro212-mol-ceo2-1--after-d2-s01-filter"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Filter zirconium hydroxide",
+      "evidence": [
+        {
+          "source_id": "quinelato1999-sici-1099-0739-199907-13-7-501",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
     {
       "id": "s01-mix",
       "action": "mix",
@@ -148,8 +299,14 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s01-filter"
+      ],
+      "inputs": [
+        "quinelato1999-sici-1099-0739-199907-13-7-501-zro212-mol-ceo2-1--after-d2-s01-filter",
+        "quinelato1999-sici-1099-0739-199907-13-7-501-zro212-mol-ceo2-1--zirconium-nitrate",
+        "quinelato1999-sici-1099-0739-199907-13-7-501-zro212-mol-ceo2-1--cerium-nitrate"
+      ],
       "outputs": [
         "quinelato1999-sici-1099-0739-199907-13-7-501-zro212-mol-ceo2-1--after-s01-mix"
       ],
@@ -252,9 +409,9 @@
       ]
     },
     {
-      "id": "s03-calcine",
-      "action": "calcine",
-      "label": "Calcine the powder at various temperatures",
+      "id": "d2-s04-ball-mill",
+      "action": "ball-mill",
+      "label": "Ball-mill the charred resin",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -263,6 +420,44 @@
       ],
       "inputs": [
         "quinelato1999-sici-1099-0739-199907-13-7-501-zro212-mol-ceo2-1--after-s02-char"
+      ],
+      "outputs": [
+        "quinelato1999-sici-1099-0739-199907-13-7-501-zro212-mol-ceo2-1--after-d2-s04-ball-mill"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Ball-mill the charred resin",
+      "evidence": [
+        {
+          "source_id": "quinelato1999-sici-1099-0739-199907-13-7-501",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s03-calcine",
+      "action": "calcine",
+      "label": "Calcine the powder at various temperatures",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-ball-mill"
+      ],
+      "inputs": [
+        "quinelato1999-sici-1099-0739-199907-13-7-501-zro212-mol-ceo2-1--after-d2-s04-ball-mill"
       ],
       "outputs": [
         "quinelato1999-sici-1099-0739-199907-13-7-501-zro212-mol-ceo2-1--after-s03-calcine"
@@ -380,7 +575,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
@@ -389,7 +584,12 @@
       "Reaction temperature not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
       "Amount of citric acid not reported in the extracted text.",
-      "Amount of ethylene glycol not reported in the extracted text."
+      "Amount of ethylene glycol not reported in the extracted text.",
+      "Amount of ammonium hydroxide not reported in the extracted text.",
+      "Amount of nitric acid not reported in the extracted text.",
+      "Amount of zirconium hydroxide not reported in the extracted text.",
+      "Amount of zirconium nitrate not reported in the extracted text.",
+      "Amount of cerium nitrate not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

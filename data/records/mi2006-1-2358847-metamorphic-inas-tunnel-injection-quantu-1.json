@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "mi2006-1-2358847-metamorphic-inas-tunnel-injection-quantu-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Z. Mi (2006): metamorphic InAs tunnel injection quantum dot lasers",
   "material": {
@@ -75,7 +75,7 @@
       "id": "mi2006-1-2358847-metamorphic-inas-tunnel-injection-quantu-1--inas",
       "name": "InAs",
       "formula": null,
-      "role": "reagent",
+      "role": "starting_particles",
       "stage": "synthesis",
       "identity": {
         "pubchem_cid": null,
@@ -146,6 +146,63 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "mi2006-1-2358847-metamorphic-inas-tunnel-injection-quantu-1--alas",
+      "name": "AlAs",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "mi2006-1-2358847",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "mi2006-1-2358847-metamorphic-inas-tunnel-injection-quantu-1--gaas",
+      "name": "GaAs",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "mi2006-1-2358847",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "mi2006-1-2358847-metamorphic-inas-tunnel-injection-quantu-1--in0-4ga0-6as",
+      "name": "In0.4Ga0.6As",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "mi2006-1-2358847",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -154,7 +211,9 @@
       "id": "mi2006-1-2358847-metamorphic-inas-tunnel-injection-quantu-1--after-s01-anneal",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "mi2006-1-2358847-metamorphic-inas-tunnel-injection-quantu-1--alas"
+      ]
     },
     {
       "id": "mi2006-1-2358847-metamorphic-inas-tunnel-injection-quantu-1--after-s02-grow",
@@ -186,7 +245,9 @@
       "branch": "",
       "optional": false,
       "depends_on": [],
-      "inputs": [],
+      "inputs": [
+        "mi2006-1-2358847-metamorphic-inas-tunnel-injection-quantu-1--alas"
+      ],
       "outputs": [
         "mi2006-1-2358847-metamorphic-inas-tunnel-injection-quantu-1--after-s01-anneal"
       ],
@@ -433,12 +494,15 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
-      "Size not reported in the extracted text."
+      "Size not reported in the extracted text.",
+      "Amount of AlAs not reported in the extracted text.",
+      "Amount of GaAs not reported in the extracted text.",
+      "Amount of In0.4Ga0.6As not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

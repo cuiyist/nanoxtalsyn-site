@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "nauka2007-1-2730039-pfo-cdse-zns-hybrid-film-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "K. Nauka (2007): PFO-CdSe/ZnS hybrid film",
   "material": {
@@ -121,6 +121,25 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "nauka2007-1-2730039-pfo-cdse-zns-hybrid-film-1--chloroform",
+      "name": "chloroform",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "nauka2007-1-2730039",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -130,6 +149,16 @@
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": [
+        "nauka2007-1-2730039-pfo-cdse-zns-hybrid-film-1--pfo",
+        "nauka2007-1-2730039-pfo-cdse-zns-hybrid-film-1--chloroform"
+      ]
+    },
+    {
+      "id": "nauka2007-1-2730039-pfo-cdse-zns-hybrid-film-1--after-d2-s02-spin-cast",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "nauka2007-1-2730039-pfo-cdse-zns-hybrid-film-1--after-s01-dissolve",
         "nauka2007-1-2730039-pfo-cdse-zns-hybrid-film-1--pfo"
       ]
     },
@@ -138,7 +167,7 @@
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "nauka2007-1-2730039-pfo-cdse-zns-hybrid-film-1--after-s01-dissolve",
+        "nauka2007-1-2730039-pfo-cdse-zns-hybrid-film-1--after-d2-s02-spin-cast",
         "nauka2007-1-2730039-pfo-cdse-zns-hybrid-film-1--pfo",
         "nauka2007-1-2730039-pfo-cdse-zns-hybrid-film-1--topo-terminated-cdse-zns-nanocrystals"
       ]
@@ -154,7 +183,8 @@
       "optional": false,
       "depends_on": [],
       "inputs": [
-        "nauka2007-1-2730039-pfo-cdse-zns-hybrid-film-1--pfo"
+        "nauka2007-1-2730039-pfo-cdse-zns-hybrid-film-1--pfo",
+        "nauka2007-1-2730039-pfo-cdse-zns-hybrid-film-1--chloroform"
       ],
       "outputs": [
         "nauka2007-1-2730039-pfo-cdse-zns-hybrid-film-1--after-s01-dissolve"
@@ -182,9 +212,9 @@
       ]
     },
     {
-      "id": "s02-mix",
-      "action": "mix",
-      "label": "PFO mixed with nanocrystals in solvent",
+      "id": "d2-s02-spin-cast",
+      "action": "spin-cast",
+      "label": "PFO film formed on substrate",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -193,6 +223,45 @@
       ],
       "inputs": [
         "nauka2007-1-2730039-pfo-cdse-zns-hybrid-film-1--after-s01-dissolve",
+        "nauka2007-1-2730039-pfo-cdse-zns-hybrid-film-1--pfo"
+      ],
+      "outputs": [
+        "nauka2007-1-2730039-pfo-cdse-zns-hybrid-film-1--after-d2-s02-spin-cast"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "PFO film formed on substrate",
+      "evidence": [
+        {
+          "source_id": "nauka2007-1-2730039",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-mix",
+      "action": "mix",
+      "label": "PFO mixed with nanocrystals in solvent",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-spin-cast"
+      ],
+      "inputs": [
+        "nauka2007-1-2730039-pfo-cdse-zns-hybrid-film-1--after-d2-s02-spin-cast",
         "nauka2007-1-2730039-pfo-cdse-zns-hybrid-film-1--pfo",
         "nauka2007-1-2730039-pfo-cdse-zns-hybrid-film-1--topo-terminated-cdse-zns-nanocrystals"
       ],
@@ -306,12 +375,44 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "nauka2007-1-2730039-pfo-cdse-zns-hybrid-film-1--photoluminescence-peak",
+      "sample_id": "nauka2007-1-2730039-pfo-cdse-zns-hybrid-film-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 625,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "625 nm",
+        "evidence": [
+          {
+            "source_id": "nauka2007-1-2730039",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "nauka2007-1-2730039",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
@@ -320,7 +421,8 @@
       "Reaction temperature not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
       "Amount of PFO not reported in the extracted text.",
-      "Amount of TOPO-terminated CdSe/ZnS nanocrystals not reported in the extracted text."
+      "Amount of TOPO-terminated CdSe/ZnS nanocrystals not reported in the extracted text.",
+      "Amount of chloroform not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

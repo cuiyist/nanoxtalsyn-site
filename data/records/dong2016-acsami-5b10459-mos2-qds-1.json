@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "dong2016-acsami-5b10459-mos2-qds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Haifeng Dong; Songsong Tang; Yansong Hao; Haizhu Yu; Wenhao Dai; Guifeng Zhao; Yu Cao; Huiting Lu; Xueji Zhang; Huangxian Ju (2016): MoS2 QDs",
   "material": {
@@ -161,6 +161,25 @@
           "locator": "Main PDF p.6"
         }
       ]
+    },
+    {
+      "id": "dong2016-acsami-5b10459-mos2-qds-1--layered-mos2-materials",
+      "name": "layered MoS2 materials",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "dong2016-acsami-5b10459",
+          "locator": "Main PDF p.6"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -171,17 +190,34 @@
       "kind": "reaction_batch",
       "parent_ids": [
         "dong2016-acsami-5b10459-mos2-qds-1--tetrabutylammonium-tba",
-        "dong2016-acsami-5b10459-mos2-qds-1--ethanol-water-mixture"
+        "dong2016-acsami-5b10459-mos2-qds-1--ethanol-water-mixture",
+        "dong2016-acsami-5b10459-mos2-qds-1--layered-mos2-materials"
       ]
     },
     {
       "id": "dong2016-acsami-5b10459-mos2-qds-1--after-s02-sonicate",
-      "name": "product as isolated",
-      "kind": "product",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
       "parent_ids": [
         "dong2016-acsami-5b10459-mos2-qds-1--after-s01-disperse",
         "dong2016-acsami-5b10459-mos2-qds-1--tetrabutylammonium-tba",
         "dong2016-acsami-5b10459-mos2-qds-1--ethanol-water-mixture"
+      ]
+    },
+    {
+      "id": "dong2016-acsami-5b10459-mos2-qds-1--after-d2-s03-reserve",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "dong2016-acsami-5b10459-mos2-qds-1--after-s02-sonicate"
+      ]
+    },
+    {
+      "id": "dong2016-acsami-5b10459-mos2-qds-1--after-d2-s04-collect",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "dong2016-acsami-5b10459-mos2-qds-1--after-d2-s03-reserve"
       ]
     }
   ],
@@ -196,7 +232,8 @@
       "depends_on": [],
       "inputs": [
         "dong2016-acsami-5b10459-mos2-qds-1--tetrabutylammonium-tba",
-        "dong2016-acsami-5b10459-mos2-qds-1--ethanol-water-mixture"
+        "dong2016-acsami-5b10459-mos2-qds-1--ethanol-water-mixture",
+        "dong2016-acsami-5b10459-mos2-qds-1--layered-mos2-materials"
       ],
       "outputs": [
         "dong2016-acsami-5b10459-mos2-qds-1--after-s01-disperse"
@@ -281,6 +318,82 @@
           "locator": "Main PDF p.6"
         }
       ]
+    },
+    {
+      "id": "d2-s03-reserve",
+      "action": "reserve",
+      "label": "Reserve",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-sonicate"
+      ],
+      "inputs": [
+        "dong2016-acsami-5b10459-mos2-qds-1--after-s02-sonicate"
+      ],
+      "outputs": [
+        "dong2016-acsami-5b10459-mos2-qds-1--after-d2-s03-reserve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Reserve",
+      "evidence": [
+        {
+          "source_id": "dong2016-acsami-5b10459",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "d2-s04-collect",
+      "action": "collect",
+      "label": "Supernatant collected after sonication.",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-reserve"
+      ],
+      "inputs": [
+        "dong2016-acsami-5b10459-mos2-qds-1--after-d2-s03-reserve"
+      ],
+      "outputs": [
+        "dong2016-acsami-5b10459-mos2-qds-1--after-d2-s04-collect"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Supernatant collected after sonication.",
+      "evidence": [
+        {
+          "source_id": "dong2016-acsami-5b10459",
+          "locator": "Main PDF p.6"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -289,7 +402,7 @@
       "sample_id": "dong2016-acsami-5b10459-mos2-qds-1--product",
       "source_sample_label": "MoS2 QDs",
       "batch_id": null,
-      "material_state_id": "dong2016-acsami-5b10459-mos2-qds-1--after-s02-sonicate",
+      "material_state_id": "dong2016-acsami-5b10459-mos2-qds-1--after-d2-s04-collect",
       "parent_sample_id": null,
       "composition": {
         "value": "MoS2",
@@ -343,16 +456,82 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "dong2016-acsami-5b10459-mos2-qds-1--photoluminescence-peak",
+      "sample_id": "dong2016-acsami-5b10459-mos2-qds-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 530,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "530 nm",
+        "evidence": [
+          {
+            "source_id": "dong2016-acsami-5b10459",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "dong2016-acsami-5b10459",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "dong2016-acsami-5b10459-mos2-qds-1--photoluminescence-quantum-yield",
+      "sample_id": "dong2016-acsami-5b10459-mos2-qds-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 19,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "19 %",
+        "evidence": [
+          {
+            "source_id": "dong2016-acsami-5b10459",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "dong2016-acsami-5b10459",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
-      "Reaction temperature not reported in the extracted text."
+      "Reaction temperature not reported in the extracted text.",
+      "Amount of layered MoS2 materials not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "deng2012-ja3081023-cdte-7cds-qddna-conjugates-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Zhengtao Deng; Anirban Samanta; Jeanette Nangreave; Hao Yan; Yan Liu (2012): CdTe/7CdS QD−DNA conjugates",
   "material": {
@@ -130,6 +130,44 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "deng2012-ja3081023-cdte-7cds-qddna-conjugates-1--cdte-core-qds",
+      "name": "CdTe core QDs",
+      "formula": null,
+      "role": "starting_particles",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "deng2012-ja3081023",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "deng2012-ja3081023-cdte-7cds-qddna-conjugates-1--mpa",
+      "name": "MPA",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "deng2012-ja3081023",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -138,7 +176,9 @@
       "id": "deng2012-ja3081023-cdte-7cds-qddna-conjugates-1--after-s01-dissolve",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "deng2012-ja3081023-cdte-7cds-qddna-conjugates-1--cdte-core-qds"
+      ]
     },
     {
       "id": "deng2012-ja3081023-cdte-7cds-qddna-conjugates-1--after-s02-add",
@@ -168,7 +208,9 @@
       "branch": "",
       "optional": false,
       "depends_on": [],
-      "inputs": [],
+      "inputs": [
+        "deng2012-ja3081023-cdte-7cds-qddna-conjugates-1--cdte-core-qds"
+      ],
       "outputs": [
         "deng2012-ja3081023-cdte-7cds-qddna-conjugates-1--after-s01-dissolve"
       ],
@@ -408,16 +450,82 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "deng2012-ja3081023-cdte-7cds-qddna-conjugates-1--photoluminescence-peak",
+      "sample_id": "deng2012-ja3081023-cdte-7cds-qddna-conjugates-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 672,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "672 nm",
+        "evidence": [
+          {
+            "source_id": "deng2012-ja3081023",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "deng2012-ja3081023",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "deng2012-ja3081023-cdte-7cds-qddna-conjugates-1--photoluminescence-quantum-yield",
+      "sample_id": "deng2012-ja3081023-cdte-7cds-qddna-conjugates-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 70,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "70 %",
+        "evidence": [
+          {
+            "source_id": "deng2012-ja3081023",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "deng2012-ja3081023",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Atmosphere not reported in the extracted text.",
       "Amount of Cd2+−MPA complex not reported in the extracted text.",
-      "Amount of ps-po-ssDNA not reported in the extracted text."
+      "Amount of ps-po-ssDNA not reported in the extracted text.",
+      "Amount of CdTe core QDs not reported in the extracted text.",
+      "Amount of MPA not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

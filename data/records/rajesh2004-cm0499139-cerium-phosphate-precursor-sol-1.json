@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "rajesh2004-cm0499139-cerium-phosphate-precursor-sol-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "K. Rajesh et al. (2004): cerium phosphate precursor sol",
   "material": {
@@ -179,27 +179,53 @@
       ]
     },
     {
-      "id": "rajesh2004-cm0499139-cerium-phosphate-precursor-sol-1--after-s03-filter",
+      "id": "rajesh2004-cm0499139-cerium-phosphate-precursor-sol-1--after-d2-s03-precipitate",
       "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
-        "rajesh2004-cm0499139-cerium-phosphate-precursor-sol-1--after-s02-add"
+        "rajesh2004-cm0499139-cerium-phosphate-precursor-sol-1--after-s02-add",
+        "rajesh2004-cm0499139-cerium-phosphate-precursor-sol-1--cerium-nitrate",
+        "rajesh2004-cm0499139-cerium-phosphate-precursor-sol-1--orthophosphoric-acid"
       ]
     },
     {
-      "id": "rajesh2004-cm0499139-cerium-phosphate-precursor-sol-1--after-s04-peptize",
+      "id": "rajesh2004-cm0499139-cerium-phosphate-precursor-sol-1--after-s03-filter",
       "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "rajesh2004-cm0499139-cerium-phosphate-precursor-sol-1--after-d2-s03-precipitate"
+      ]
+    },
+    {
+      "id": "rajesh2004-cm0499139-cerium-phosphate-precursor-sol-1--after-d2-s05-redisperse",
+      "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
         "rajesh2004-cm0499139-cerium-phosphate-precursor-sol-1--after-s03-filter"
       ]
     },
     {
+      "id": "rajesh2004-cm0499139-cerium-phosphate-precursor-sol-1--after-s04-peptize",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "rajesh2004-cm0499139-cerium-phosphate-precursor-sol-1--after-d2-s05-redisperse"
+      ]
+    },
+    {
       "id": "rajesh2004-cm0499139-cerium-phosphate-precursor-sol-1--after-s05-ultrasonicate",
+      "name": "mixture after step 7",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "rajesh2004-cm0499139-cerium-phosphate-precursor-sol-1--after-s04-peptize"
+      ]
+    },
+    {
+      "id": "rajesh2004-cm0499139-cerium-phosphate-precursor-sol-1--after-d2-s08-dry",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "rajesh2004-cm0499139-cerium-phosphate-precursor-sol-1--after-s04-peptize"
+        "rajesh2004-cm0499139-cerium-phosphate-precursor-sol-1--after-s05-ultrasonicate"
       ]
     }
   ],
@@ -280,9 +306,9 @@
       ]
     },
     {
-      "id": "s03-filter",
-      "action": "filter",
-      "label": "Filter and wash the precipitate",
+      "id": "d2-s03-precipitate",
+      "action": "precipitate",
+      "label": "Precipitation of cerium phosphate",
       "stage": "workup",
       "branch": "",
       "optional": false,
@@ -290,7 +316,47 @@
         "s02-add"
       ],
       "inputs": [
-        "rajesh2004-cm0499139-cerium-phosphate-precursor-sol-1--after-s02-add"
+        "rajesh2004-cm0499139-cerium-phosphate-precursor-sol-1--after-s02-add",
+        "rajesh2004-cm0499139-cerium-phosphate-precursor-sol-1--cerium-nitrate",
+        "rajesh2004-cm0499139-cerium-phosphate-precursor-sol-1--orthophosphoric-acid"
+      ],
+      "outputs": [
+        "rajesh2004-cm0499139-cerium-phosphate-precursor-sol-1--after-d2-s03-precipitate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Precipitation of cerium phosphate",
+      "evidence": [
+        {
+          "source_id": "rajesh2004-cm0499139",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s03-filter",
+      "action": "filter",
+      "label": "Filter and wash the precipitate",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-precipitate"
+      ],
+      "inputs": [
+        "rajesh2004-cm0499139-cerium-phosphate-precursor-sol-1--after-d2-s03-precipitate"
       ],
       "outputs": [
         "rajesh2004-cm0499139-cerium-phosphate-precursor-sol-1--after-s03-filter"
@@ -318,10 +384,10 @@
       ]
     },
     {
-      "id": "s04-peptize",
-      "action": "peptize",
-      "label": "Add nitric acid for electrostatic stabilization",
-      "stage": "synthesis",
+      "id": "d2-s05-redisperse",
+      "action": "redisperse",
+      "label": "Redisperse the precipitate in deionized water",
+      "stage": "workup",
       "branch": "",
       "optional": false,
       "depends_on": [
@@ -329,6 +395,44 @@
       ],
       "inputs": [
         "rajesh2004-cm0499139-cerium-phosphate-precursor-sol-1--after-s03-filter"
+      ],
+      "outputs": [
+        "rajesh2004-cm0499139-cerium-phosphate-precursor-sol-1--after-d2-s05-redisperse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Redisperse the precipitate in deionized water",
+      "evidence": [
+        {
+          "source_id": "rajesh2004-cm0499139",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s04-peptize",
+      "action": "peptize",
+      "label": "Add nitric acid for electrostatic stabilization",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s05-redisperse"
+      ],
+      "inputs": [
+        "rajesh2004-cm0499139-cerium-phosphate-precursor-sol-1--after-d2-s05-redisperse"
       ],
       "outputs": [
         "rajesh2004-cm0499139-cerium-phosphate-precursor-sol-1--after-s04-peptize"
@@ -430,6 +534,44 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s08-dry",
+      "action": "dry",
+      "label": "Dry",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s05-ultrasonicate"
+      ],
+      "inputs": [
+        "rajesh2004-cm0499139-cerium-phosphate-precursor-sol-1--after-s05-ultrasonicate"
+      ],
+      "outputs": [
+        "rajesh2004-cm0499139-cerium-phosphate-precursor-sol-1--after-d2-s08-dry"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dry",
+      "evidence": [
+        {
+          "source_id": "rajesh2004-cm0499139",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -438,7 +580,7 @@
       "sample_id": "rajesh2004-cm0499139-cerium-phosphate-precursor-sol-1--product",
       "source_sample_label": "cerium phosphate precursor sol",
       "batch_id": null,
-      "material_state_id": "rajesh2004-cm0499139-cerium-phosphate-precursor-sol-1--after-s05-ultrasonicate",
+      "material_state_id": "rajesh2004-cm0499139-cerium-phosphate-precursor-sol-1--after-d2-s08-dry",
       "parent_sample_id": null,
       "composition": {
         "value": "CePO4",
@@ -516,7 +658,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",

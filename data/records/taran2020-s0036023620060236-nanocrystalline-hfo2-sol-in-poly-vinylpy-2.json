@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "taran2020-s0036023620060236-nanocrystalline-hfo2-sol-in-poly-vinylpy-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "G. S. Taran; A. E. Baranchikov; O. S. Ivanova; K. Yu. Zhizhin (2020): nanocrystalline HfO2 sol in poly(vinylpyrrolidone) solution",
   "material": {
@@ -148,11 +148,19 @@
       ]
     },
     {
+      "id": "taran2020-s0036023620060236-nanocrystalline-hfo2-sol-in-poly-vinylpy-2--after-d2-s04-wash",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "taran2020-s0036023620060236-nanocrystalline-hfo2-sol-in-poly-vinylpy-2--after-s03-centrifuge"
+      ]
+    },
+    {
       "id": "taran2020-s0036023620060236-nanocrystalline-hfo2-sol-in-poly-vinylpy-2--after-s04-disperse",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "taran2020-s0036023620060236-nanocrystalline-hfo2-sol-in-poly-vinylpy-2--after-s03-centrifuge"
+        "taran2020-s0036023620060236-nanocrystalline-hfo2-sol-in-poly-vinylpy-2--after-d2-s04-wash"
       ]
     }
   ],
@@ -271,10 +279,10 @@
       ]
     },
     {
-      "id": "s04-disperse",
-      "action": "disperse",
-      "label": "Dispersing in poly(vinylpyrrolidone) solution",
-      "stage": "synthesis",
+      "id": "d2-s04-wash",
+      "action": "wash",
+      "label": "Washing with distilled water",
+      "stage": "workup",
       "branch": "",
       "optional": false,
       "depends_on": [
@@ -282,6 +290,44 @@
       ],
       "inputs": [
         "taran2020-s0036023620060236-nanocrystalline-hfo2-sol-in-poly-vinylpy-2--after-s03-centrifuge"
+      ],
+      "outputs": [
+        "taran2020-s0036023620060236-nanocrystalline-hfo2-sol-in-poly-vinylpy-2--after-d2-s04-wash"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Washing with distilled water",
+      "evidence": [
+        {
+          "source_id": "taran2020-s0036023620060236",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s04-disperse",
+      "action": "disperse",
+      "label": "Dispersing in poly(vinylpyrrolidone) solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-wash"
+      ],
+      "inputs": [
+        "taran2020-s0036023620060236-nanocrystalline-hfo2-sol-in-poly-vinylpy-2--after-d2-s04-wash"
       ],
       "outputs": [
         "taran2020-s0036023620060236-nanocrystalline-hfo2-sol-in-poly-vinylpy-2--after-s04-disperse"
@@ -386,7 +432,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",

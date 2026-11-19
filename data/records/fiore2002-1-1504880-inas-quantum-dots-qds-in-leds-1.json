@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "fiore2002-1-1504880-inas-quantum-dots-qds-in-leds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "A. Fiore (2002): InAs quantum dots (QDs) in LEDs",
   "material": {
@@ -95,7 +95,7 @@
       "id": "fiore2002-1-1504880-inas-quantum-dots-qds-in-leds-1--inas",
       "name": "InAs",
       "formula": null,
-      "role": "reagent",
+      "role": "starting_particles",
       "stage": "synthesis",
       "identity": {
         "pubchem_cid": null,
@@ -128,6 +128,63 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "fiore2002-1-1504880-inas-quantum-dots-qds-in-leds-1--gaas",
+      "name": "GaAs",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "fiore2002-1-1504880",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "fiore2002-1-1504880-inas-quantum-dots-qds-in-leds-1--al0-9ga0-1as",
+      "name": "Al0.9Ga0.1As",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "fiore2002-1-1504880",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "fiore2002-1-1504880-inas-quantum-dots-qds-in-leds-1--al0-85ga0-15as",
+      "name": "Al0.85Ga0.15As",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "fiore2002-1-1504880",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -143,10 +200,27 @@
     },
     {
       "id": "fiore2002-1-1504880-inas-quantum-dots-qds-in-leds-1--after-s02-grow",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "fiore2002-1-1504880-inas-quantum-dots-qds-in-leds-1--after-s01-grow",
+        "fiore2002-1-1504880-inas-quantum-dots-qds-in-leds-1--al0-85ga0-15as"
+      ]
+    },
+    {
+      "id": "fiore2002-1-1504880-inas-quantum-dots-qds-in-leds-1--after-d2-s03-define",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "fiore2002-1-1504880-inas-quantum-dots-qds-in-leds-1--after-s02-grow"
+      ]
+    },
+    {
+      "id": "fiore2002-1-1504880-inas-quantum-dots-qds-in-leds-1--after-d2-s04-oxidize",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "fiore2002-1-1504880-inas-quantum-dots-qds-in-leds-1--after-s01-grow"
+        "fiore2002-1-1504880-inas-quantum-dots-qds-in-leds-1--after-d2-s03-define"
       ]
     }
   ],
@@ -199,7 +273,8 @@
         "s01-grow"
       ],
       "inputs": [
-        "fiore2002-1-1504880-inas-quantum-dots-qds-in-leds-1--after-s01-grow"
+        "fiore2002-1-1504880-inas-quantum-dots-qds-in-leds-1--after-s01-grow",
+        "fiore2002-1-1504880-inas-quantum-dots-qds-in-leds-1--al0-85ga0-15as"
       ],
       "outputs": [
         "fiore2002-1-1504880-inas-quantum-dots-qds-in-leds-1--after-s02-grow"
@@ -225,6 +300,82 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "d2-s03-define",
+      "action": "define",
+      "label": "Define mesas and current apertures",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-grow"
+      ],
+      "inputs": [
+        "fiore2002-1-1504880-inas-quantum-dots-qds-in-leds-1--after-s02-grow"
+      ],
+      "outputs": [
+        "fiore2002-1-1504880-inas-quantum-dots-qds-in-leds-1--after-d2-s03-define"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Define mesas and current apertures",
+      "evidence": [
+        {
+          "source_id": "fiore2002-1-1504880",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "d2-s04-oxidize",
+      "action": "oxidize",
+      "label": "Oxidize",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-define"
+      ],
+      "inputs": [
+        "fiore2002-1-1504880-inas-quantum-dots-qds-in-leds-1--after-d2-s03-define"
+      ],
+      "outputs": [
+        "fiore2002-1-1504880-inas-quantum-dots-qds-in-leds-1--after-d2-s04-oxidize"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Oxidize",
+      "evidence": [
+        {
+          "source_id": "fiore2002-1-1504880",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -233,7 +384,7 @@
       "sample_id": "fiore2002-1-1504880-inas-quantum-dots-qds-in-leds-1--product",
       "source_sample_label": "InAs quantum dots (QDs) in LEDs",
       "batch_id": null,
-      "material_state_id": "fiore2002-1-1504880-inas-quantum-dots-qds-in-leds-1--after-s02-grow",
+      "material_state_id": "fiore2002-1-1504880-inas-quantum-dots-qds-in-leds-1--after-d2-s04-oxidize",
       "parent_sample_id": null,
       "composition": {
         "value": "InAs",
@@ -316,12 +467,44 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "fiore2002-1-1504880-inas-quantum-dots-qds-in-leds-1--photoluminescence-peak",
+      "sample_id": "fiore2002-1-1504880-inas-quantum-dots-qds-in-leds-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 1300,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "1300 nm",
+        "evidence": [
+          {
+            "source_id": "fiore2002-1-1504880",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "fiore2002-1-1504880",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
@@ -329,7 +512,10 @@
       "Reaction temperature not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
       "Amount of InAs not reported in the extracted text.",
-      "Amount of In0.15Ga0.85As not reported in the extracted text."
+      "Amount of In0.15Ga0.85As not reported in the extracted text.",
+      "Amount of GaAs not reported in the extracted text.",
+      "Amount of Al0.9Ga0.1As not reported in the extracted text.",
+      "Amount of Al0.85Ga0.15As not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

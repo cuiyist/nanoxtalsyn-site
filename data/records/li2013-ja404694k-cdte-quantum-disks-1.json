@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "li2013-ja404694k-cdte-quantum-disks-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Hongbo Li; Rosaria Brescia; Mauro Povia; Mirko Prato; Giovanni Bertoni; Liberato Manna; Iwan Moreels (2013): CdTe quantum disks",
   "material": {
@@ -166,22 +166,174 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "li2013-ja404694k-cdte-quantum-disks-1--cdo",
+      "name": "CdO",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 mmol",
+          "evidence": [
+            {
+              "source_id": "li2013-ja404694k",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "li2013-ja404694k",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "li2013-ja404694k-cdte-quantum-disks-1--top",
+      "name": "TOP",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "li2013-ja404694k",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "li2013-ja404694k-cdte-quantum-disks-1--octylamine",
+      "name": "octylamine",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "li2013-ja404694k",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "li2013-ja404694k-cdte-quantum-disks-1--toluene",
+      "name": "toluene",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "li2013-ja404694k",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "li2013-ja404694k-cdte-quantum-disks-1--ethanol",
+      "name": "ethanol",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "li2013-ja404694k",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
-      "id": "li2013-ja404694k-cdte-quantum-disks-1--after-s01-dissolve",
+      "id": "li2013-ja404694k-cdte-quantum-disks-1--after-d2-s01-heat",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": [
+        "li2013-ja404694k-cdte-quantum-disks-1--oleic-acid"
+      ]
+    },
+    {
+      "id": "li2013-ja404694k-cdte-quantum-disks-1--after-d2-s02-heat",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "li2013-ja404694k-cdte-quantum-disks-1--after-d2-s01-heat",
+        "li2013-ja404694k-cdte-quantum-disks-1--oleic-acid"
+      ]
+    },
+    {
+      "id": "li2013-ja404694k-cdte-quantum-disks-1--after-d2-s03-add",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "li2013-ja404694k-cdte-quantum-disks-1--after-d2-s02-heat",
+        "li2013-ja404694k-cdte-quantum-disks-1--octylamine",
+        "li2013-ja404694k-cdte-quantum-disks-1--toluene"
+      ]
+    },
+    {
+      "id": "li2013-ja404694k-cdte-quantum-disks-1--after-d2-s04-precipitate",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "li2013-ja404694k-cdte-quantum-disks-1--after-d2-s03-add",
+        "li2013-ja404694k-cdte-quantum-disks-1--ethanol"
+      ]
+    },
+    {
+      "id": "li2013-ja404694k-cdte-quantum-disks-1--after-s01-dissolve",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "li2013-ja404694k-cdte-quantum-disks-1--after-d2-s04-precipitate",
         "li2013-ja404694k-cdte-quantum-disks-1--oleic-acid",
-        "li2013-ja404694k-cdte-quantum-disks-1--octadecene"
+        "li2013-ja404694k-cdte-quantum-disks-1--octadecene",
+        "li2013-ja404694k-cdte-quantum-disks-1--cdo"
       ]
     },
     {
       "id": "li2013-ja404694k-cdte-quantum-disks-1--after-s02-cool",
-      "name": "mixture after step 2",
+      "name": "mixture after step 6",
       "kind": "reaction_batch",
       "parent_ids": [
         "li2013-ja404694k-cdte-quantum-disks-1--after-s01-dissolve"
@@ -189,14 +341,177 @@
     },
     {
       "id": "li2013-ja404694k-cdte-quantum-disks-1--after-s03-inject",
+      "name": "mixture after step 7",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "li2013-ja404694k-cdte-quantum-disks-1--after-s02-cool",
+        "li2013-ja404694k-cdte-quantum-disks-1--top"
+      ]
+    },
+    {
+      "id": "li2013-ja404694k-cdte-quantum-disks-1--after-d2-s08-purify",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "li2013-ja404694k-cdte-quantum-disks-1--after-s02-cool"
+        "li2013-ja404694k-cdte-quantum-disks-1--after-s03-inject"
       ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-heat",
+      "action": "heat",
+      "label": "Heating copper precursor",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "li2013-ja404694k-cdte-quantum-disks-1--oleic-acid"
+      ],
+      "outputs": [
+        "li2013-ja404694k-cdte-quantum-disks-1--after-d2-s01-heat"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heating copper precursor",
+      "evidence": [
+        {
+          "source_id": "li2013-ja404694k",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s02-heat",
+      "action": "heat",
+      "label": "Forming clear solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s01-heat"
+      ],
+      "inputs": [
+        "li2013-ja404694k-cdte-quantum-disks-1--after-d2-s01-heat",
+        "li2013-ja404694k-cdte-quantum-disks-1--oleic-acid"
+      ],
+      "outputs": [
+        "li2013-ja404694k-cdte-quantum-disks-1--after-d2-s02-heat"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Forming clear solution",
+      "evidence": [
+        {
+          "source_id": "li2013-ja404694k",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s03-add",
+      "action": "add",
+      "label": "Adding octylamine and toluene",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-heat"
+      ],
+      "inputs": [
+        "li2013-ja404694k-cdte-quantum-disks-1--after-d2-s02-heat",
+        "li2013-ja404694k-cdte-quantum-disks-1--octylamine",
+        "li2013-ja404694k-cdte-quantum-disks-1--toluene"
+      ],
+      "outputs": [
+        "li2013-ja404694k-cdte-quantum-disks-1--after-d2-s03-add"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Adding octylamine and toluene",
+      "evidence": [
+        {
+          "source_id": "li2013-ja404694k",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s04-precipitate",
+      "action": "precipitate",
+      "label": "Purification by ethanol",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-add"
+      ],
+      "inputs": [
+        "li2013-ja404694k-cdte-quantum-disks-1--after-d2-s03-add",
+        "li2013-ja404694k-cdte-quantum-disks-1--ethanol"
+      ],
+      "outputs": [
+        "li2013-ja404694k-cdte-quantum-disks-1--after-d2-s04-precipitate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Purification by ethanol",
+      "evidence": [
+        {
+          "source_id": "li2013-ja404694k",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
     {
       "id": "s01-dissolve",
       "action": "dissolve",
@@ -204,10 +519,14 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
+      "depends_on": [
+        "d2-s04-precipitate"
+      ],
       "inputs": [
+        "li2013-ja404694k-cdte-quantum-disks-1--after-d2-s04-precipitate",
         "li2013-ja404694k-cdte-quantum-disks-1--oleic-acid",
-        "li2013-ja404694k-cdte-quantum-disks-1--octadecene"
+        "li2013-ja404694k-cdte-quantum-disks-1--octadecene",
+        "li2013-ja404694k-cdte-quantum-disks-1--cdo"
       ],
       "outputs": [
         "li2013-ja404694k-cdte-quantum-disks-1--after-s01-dissolve"
@@ -321,7 +640,8 @@
         "s02-cool"
       ],
       "inputs": [
-        "li2013-ja404694k-cdte-quantum-disks-1--after-s02-cool"
+        "li2013-ja404694k-cdte-quantum-disks-1--after-s02-cool",
+        "li2013-ja404694k-cdte-quantum-disks-1--top"
       ],
       "outputs": [
         "li2013-ja404694k-cdte-quantum-disks-1--after-s03-inject"
@@ -366,6 +686,44 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s08-purify",
+      "action": "purify",
+      "label": "Precipitate and centrifuge the CdTe quantum disks",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-inject"
+      ],
+      "inputs": [
+        "li2013-ja404694k-cdte-quantum-disks-1--after-s03-inject"
+      ],
+      "outputs": [
+        "li2013-ja404694k-cdte-quantum-disks-1--after-d2-s08-purify"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Precipitate and centrifuge the CdTe quantum disks",
+      "evidence": [
+        {
+          "source_id": "li2013-ja404694k",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -374,7 +732,7 @@
       "sample_id": "li2013-ja404694k-cdte-quantum-disks-1--product",
       "source_sample_label": "CdTe quantum disks",
       "batch_id": null,
-      "material_state_id": "li2013-ja404694k-cdte-quantum-disks-1--after-s03-inject",
+      "material_state_id": "li2013-ja404694k-cdte-quantum-disks-1--after-d2-s08-purify",
       "parent_sample_id": null,
       "composition": {
         "value": "CdTe",
@@ -464,16 +822,52 @@
           "locator": "Main PDF p.5"
         }
       ]
+    },
+    {
+      "id": "li2013-ja404694k-cdte-quantum-disks-1--photoluminescence-quantum-yield",
+      "sample_id": "li2013-ja404694k-cdte-quantum-disks-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 36,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "36 %",
+        "evidence": [
+          {
+            "source_id": "li2013-ja404694k",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "li2013-ja404694k",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Reactor not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
-      "Reaction temperature not reported in the extracted text."
+      "Reaction temperature not reported in the extracted text.",
+      "Amount of TOP not reported in the extracted text.",
+      "Amount of octylamine not reported in the extracted text.",
+      "Amount of toluene not reported in the extracted text.",
+      "Amount of ethanol not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

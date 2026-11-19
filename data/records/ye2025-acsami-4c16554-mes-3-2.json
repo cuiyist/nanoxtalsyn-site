@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "ye2025-acsami-4c16554-mes-3-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Yuliang Ye; Jiaxiang Wang; Zunxian Yang; Ye Chen; Hui Zhang; Yuting Bai; Xudong Jiang; Benfang Liu; Jiajie Hong; Yue Chen; Zhezhou Fang; Jinzhu Gao; Zheyu Zhou; Runsen Yu; Xuanyao Song; Zhiyu Yuan; Tailiang Guo; Fushan Li; Yongyi Chen; Zhenzhen Weng (2025): MeS 3",
   "material": {
@@ -162,6 +162,101 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "ye2025-acsami-4c16554-mes-3-2--ddab",
+      "name": "DDAB",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "ye2025-acsami-4c16554",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "ye2025-acsami-4c16554-mes-3-2--fa-ac",
+      "name": "FA (Ac)",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "ye2025-acsami-4c16554",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "ye2025-acsami-4c16554-mes-3-2--cs2co3",
+      "name": "Cs2CO3",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "ye2025-acsami-4c16554",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "ye2025-acsami-4c16554-mes-3-2--otac",
+      "name": "OTAC",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "ye2025-acsami-4c16554",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "ye2025-acsami-4c16554-mes-3-2--oa",
+      "name": "OA",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "ye2025-acsami-4c16554",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -171,25 +266,46 @@
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": [
-        "ye2025-acsami-4c16554-mes-3-2--names"
+        "ye2025-acsami-4c16554-mes-3-2--names",
+        "ye2025-acsami-4c16554-mes-3-2--ddab"
       ]
     },
     {
-      "id": "ye2025-acsami-4c16554-mes-3-2--after-s02-inject",
+      "id": "ye2025-acsami-4c16554-mes-3-2--after-d2-s02-prepare",
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
         "ye2025-acsami-4c16554-mes-3-2--after-s01-dissolve",
+        "ye2025-acsami-4c16554-mes-3-2--fa-ac",
+        "ye2025-acsami-4c16554-mes-3-2--cs2co3",
+        "ye2025-acsami-4c16554-mes-3-2--oa",
+        "ye2025-acsami-4c16554-mes-3-2--otac"
+      ]
+    },
+    {
+      "id": "ye2025-acsami-4c16554-mes-3-2--after-s02-inject",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "ye2025-acsami-4c16554-mes-3-2--after-d2-s02-prepare",
         "ye2025-acsami-4c16554-mes-3-2--pbbr2",
         "ye2025-acsami-4c16554-mes-3-2--toab"
       ]
     },
     {
       "id": "ye2025-acsami-4c16554-mes-3-2--after-s03-stir",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "ye2025-acsami-4c16554-mes-3-2--after-s02-inject"
+      ]
+    },
+    {
+      "id": "ye2025-acsami-4c16554-mes-3-2--after-d2-s05-purify",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "ye2025-acsami-4c16554-mes-3-2--after-s02-inject"
+        "ye2025-acsami-4c16554-mes-3-2--after-s03-stir"
       ]
     }
   ],
@@ -203,7 +319,8 @@
       "optional": false,
       "depends_on": [],
       "inputs": [
-        "ye2025-acsami-4c16554-mes-3-2--names"
+        "ye2025-acsami-4c16554-mes-3-2--names",
+        "ye2025-acsami-4c16554-mes-3-2--ddab"
       ],
       "outputs": [
         "ye2025-acsami-4c16554-mes-3-2--after-s01-dissolve"
@@ -236,9 +353,9 @@
       ]
     },
     {
-      "id": "s02-inject",
-      "action": "inject",
-      "label": "Inject A-site solution into toluene solution containing PbBr2 and TOAB.",
+      "id": "d2-s02-prepare",
+      "action": "prepare",
+      "label": "Prepare A-site solution by dissolving FA (AC) and Cs2CO3 in a mixed solution of OA and OTAC.",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -247,6 +364,53 @@
       ],
       "inputs": [
         "ye2025-acsami-4c16554-mes-3-2--after-s01-dissolve",
+        "ye2025-acsami-4c16554-mes-3-2--fa-ac",
+        "ye2025-acsami-4c16554-mes-3-2--cs2co3",
+        "ye2025-acsami-4c16554-mes-3-2--oa",
+        "ye2025-acsami-4c16554-mes-3-2--otac"
+      ],
+      "outputs": [
+        "ye2025-acsami-4c16554-mes-3-2--after-d2-s02-prepare"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "ye2025-acsami-4c16554",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Prepare A-site solution by dissolving FA (AC) and Cs2CO3 in a mixed solution of OA and OTAC.",
+      "evidence": [
+        {
+          "source_id": "ye2025-acsami-4c16554",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-inject",
+      "action": "inject",
+      "label": "Inject A-site solution into toluene solution containing PbBr2 and TOAB.",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-prepare"
+      ],
+      "inputs": [
+        "ye2025-acsami-4c16554-mes-3-2--after-d2-s02-prepare",
         "ye2025-acsami-4c16554-mes-3-2--pbbr2",
         "ye2025-acsami-4c16554-mes-3-2--toab"
       ],
@@ -360,6 +524,44 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s05-purify",
+      "action": "purify",
+      "label": "Purify the quantum dot solution by centrifugation and redispersion.",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-stir"
+      ],
+      "inputs": [
+        "ye2025-acsami-4c16554-mes-3-2--after-s03-stir"
+      ],
+      "outputs": [
+        "ye2025-acsami-4c16554-mes-3-2--after-d2-s05-purify"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Purify the quantum dot solution by centrifugation and redispersion.",
+      "evidence": [
+        {
+          "source_id": "ye2025-acsami-4c16554",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -368,7 +570,7 @@
       "sample_id": "ye2025-acsami-4c16554-mes-3-2--product",
       "source_sample_label": "MeS 3",
       "batch_id": null,
-      "material_state_id": "ye2025-acsami-4c16554-mes-3-2--after-s03-stir",
+      "material_state_id": "ye2025-acsami-4c16554-mes-3-2--after-d2-s05-purify",
       "parent_sample_id": null,
       "composition": {
         "value": "CsPbBr3",
@@ -427,16 +629,86 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "ye2025-acsami-4c16554-mes-3-2--photoluminescence-peak",
+      "sample_id": "ye2025-acsami-4c16554-mes-3-2--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 517.2,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "517.2 nm",
+        "evidence": [
+          {
+            "source_id": "ye2025-acsami-4c16554",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "ye2025-acsami-4c16554",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "ye2025-acsami-4c16554-mes-3-2--photoluminescence-quantum-yield",
+      "sample_id": "ye2025-acsami-4c16554-mes-3-2--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 9.41,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "9.41 %",
+        "evidence": [
+          {
+            "source_id": "ye2025-acsami-4c16554",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "ye2025-acsami-4c16554",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Size not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
       "Amount of TOAB not reported in the extracted text.",
-      "Amount of NaMeS not reported in the extracted text."
+      "Amount of NaMeS not reported in the extracted text.",
+      "Amount of DDAB not reported in the extracted text.",
+      "Amount of FA (Ac) not reported in the extracted text.",
+      "Amount of Cs2CO3 not reported in the extracted text.",
+      "Amount of OTAC not reported in the extracted text.",
+      "Amount of OA not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

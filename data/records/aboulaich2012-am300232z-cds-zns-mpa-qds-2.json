@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "aboulaich2012-am300232z-cds-zns-mpa-qds-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Abdelhay Aboulaich; Denis Billaud; Mouhammad Abyan; Lavinia Balan; Jean-Jacques Gaumet; Ghouti Medjadhi; Jaafar Ghanbaja; Raphaël Schneider (2012): CdS/ZnS@MPA QDs",
   "material": {
@@ -81,9 +81,14 @@
       "derivation": null
     },
     "morphology": {
-      "value": null,
-      "status": "not_reported",
-      "evidence": [],
+      "value": "sphere",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "aboulaich2012-am300232z",
+          "locator": "Main PDF p.7"
+        }
+      ],
       "note": ""
     }
   },
@@ -171,11 +176,19 @@
       ]
     },
     {
+      "id": "aboulaich2012-am300232z-cds-zns-mpa-qds-2--after-d2-s06-wash",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "aboulaich2012-am300232z-cds-zns-mpa-qds-2--after-s05-precipitate"
+      ]
+    },
+    {
       "id": "aboulaich2012-am300232z-cds-zns-mpa-qds-2--after-s06-dry",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "aboulaich2012-am300232z-cds-zns-mpa-qds-2--after-s05-precipitate"
+        "aboulaich2012-am300232z-cds-zns-mpa-qds-2--after-d2-s06-wash"
       ]
     }
   ],
@@ -370,9 +383,9 @@
       ]
     },
     {
-      "id": "s06-dry",
-      "action": "dry",
-      "label": "Dry in vacuum",
+      "id": "d2-s06-wash",
+      "action": "wash",
+      "label": "Wash with ethanol",
       "stage": "workup",
       "branch": "",
       "optional": false,
@@ -381,6 +394,44 @@
       ],
       "inputs": [
         "aboulaich2012-am300232z-cds-zns-mpa-qds-2--after-s05-precipitate"
+      ],
+      "outputs": [
+        "aboulaich2012-am300232z-cds-zns-mpa-qds-2--after-d2-s06-wash"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Wash with ethanol",
+      "evidence": [
+        {
+          "source_id": "aboulaich2012-am300232z",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s06-dry",
+      "action": "dry",
+      "label": "Dry in vacuum",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s06-wash"
+      ],
+      "inputs": [
+        "aboulaich2012-am300232z-cds-zns-mpa-qds-2--after-d2-s06-wash"
       ],
       "outputs": [
         "aboulaich2012-am300232z-cds-zns-mpa-qds-2--after-s06-dry"
@@ -439,9 +490,14 @@
         "note": ""
       },
       "morphology": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "sphere",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "aboulaich2012-am300232z",
+            "locator": "Main PDF p.7"
+          }
+        ],
         "note": ""
       },
       "surface": {
@@ -494,14 +550,45 @@
           "locator": "Main PDF p.7"
         }
       ]
+    },
+    {
+      "id": "aboulaich2012-am300232z-cds-zns-mpa-qds-2--photoluminescence-quantum-yield",
+      "sample_id": "aboulaich2012-am300232z-cds-zns-mpa-qds-2--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 22,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "22 %",
+        "evidence": [
+          {
+            "source_id": "aboulaich2012-am300232z",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "aboulaich2012-am300232z",
+          "locator": "Main PDF p.6"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
-      "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",

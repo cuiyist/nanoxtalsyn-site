@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "zeraatkar2023-v1-modified-magnetite-quantum-dots-mmqds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Ahmad Zeraatkar; Amir Heydarinasab; Shahab Gerami (2023): Modified Magnetite Quantum Dots (MMQDs)",
   "material": {
@@ -180,11 +180,27 @@
       ]
     },
     {
+      "id": "zeraatkar2023-v1-modified-magnetite-quantum-dots-mmqds-1--after-d2-s02-cool",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zeraatkar2023-v1-modified-magnetite-quantum-dots-mmqds-1--after-s01-heat"
+      ]
+    },
+    {
       "id": "zeraatkar2023-v1-modified-magnetite-quantum-dots-mmqds-1--after-s02-coat",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zeraatkar2023-v1-modified-magnetite-quantum-dots-mmqds-1--after-d2-s02-cool"
+      ]
+    },
+    {
+      "id": "zeraatkar2023-v1-modified-magnetite-quantum-dots-mmqds-1--after-d2-s04-disperse",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "zeraatkar2023-v1-modified-magnetite-quantum-dots-mmqds-1--after-s01-heat"
+        "zeraatkar2023-v1-modified-magnetite-quantum-dots-mmqds-1--after-s02-coat"
       ]
     }
   ],
@@ -264,9 +280,9 @@
       ]
     },
     {
-      "id": "s02-coat",
-      "action": "coat",
-      "label": "Citrate coating of Fe3O4 QDs",
+      "id": "d2-s02-cool",
+      "action": "cool",
+      "label": "Cooling after reaction",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -275,6 +291,44 @@
       ],
       "inputs": [
         "zeraatkar2023-v1-modified-magnetite-quantum-dots-mmqds-1--after-s01-heat"
+      ],
+      "outputs": [
+        "zeraatkar2023-v1-modified-magnetite-quantum-dots-mmqds-1--after-d2-s02-cool"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Cooling after reaction",
+      "evidence": [
+        {
+          "source_id": "zeraatkar2023-v1",
+          "locator": "Main PDF p.11"
+        }
+      ]
+    },
+    {
+      "id": "s02-coat",
+      "action": "coat",
+      "label": "Citrate coating of Fe3O4 QDs",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-cool"
+      ],
+      "inputs": [
+        "zeraatkar2023-v1-modified-magnetite-quantum-dots-mmqds-1--after-d2-s02-cool"
       ],
       "outputs": [
         "zeraatkar2023-v1-modified-magnetite-quantum-dots-mmqds-1--after-s02-coat"
@@ -300,6 +354,44 @@
           "locator": "Main PDF p.11"
         }
       ]
+    },
+    {
+      "id": "d2-s04-disperse",
+      "action": "disperse",
+      "label": "Disperse",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-coat"
+      ],
+      "inputs": [
+        "zeraatkar2023-v1-modified-magnetite-quantum-dots-mmqds-1--after-s02-coat"
+      ],
+      "outputs": [
+        "zeraatkar2023-v1-modified-magnetite-quantum-dots-mmqds-1--after-d2-s04-disperse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Disperse",
+      "evidence": [
+        {
+          "source_id": "zeraatkar2023-v1",
+          "locator": "Main PDF p.11"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -308,7 +400,7 @@
       "sample_id": "zeraatkar2023-v1-modified-magnetite-quantum-dots-mmqds-1--product",
       "source_sample_label": "Modified Magnetite Quantum Dots (MMQDs)",
       "batch_id": null,
-      "material_state_id": "zeraatkar2023-v1-modified-magnetite-quantum-dots-mmqds-1--after-s02-coat",
+      "material_state_id": "zeraatkar2023-v1-modified-magnetite-quantum-dots-mmqds-1--after-d2-s04-disperse",
       "parent_sample_id": null,
       "composition": {
         "value": "Fe3O4",
@@ -395,12 +487,44 @@
           "locator": "Main PDF p.5"
         }
       ]
+    },
+    {
+      "id": "zeraatkar2023-v1-modified-magnetite-quantum-dots-mmqds-1--photoluminescence-peak",
+      "sample_id": "zeraatkar2023-v1-modified-magnetite-quantum-dots-mmqds-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 365,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "365 nm",
+        "evidence": [
+          {
+            "source_id": "zeraatkar2023-v1",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "zeraatkar2023-v1",
+          "locator": "Main PDF p.5"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Atmosphere not reported in the extracted text."

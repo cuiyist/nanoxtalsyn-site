@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "zhang2008-adem-200800123-cu46zr47al7-alloy-with-in-situ-precipita-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "L. Zhang et al. (2008): Cu46Zr47Al7 alloy with in-situ precipitated nanocrystals",
   "material": {
@@ -139,12 +139,20 @@
   "material_states": [
     {
       "id": "zhang2008-adem-200800123-cu46zr47al7-alloy-with-in-situ-precipita-1--after-s01-arc-melting",
-      "name": "product as isolated",
-      "kind": "product",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
       "parent_ids": [
         "zhang2008-adem-200800123-cu46zr47al7-alloy-with-in-situ-precipita-1--zr",
         "zhang2008-adem-200800123-cu46zr47al7-alloy-with-in-situ-precipita-1--cu",
         "zhang2008-adem-200800123-cu46zr47al7-alloy-with-in-situ-precipita-1--al"
+      ]
+    },
+    {
+      "id": "zhang2008-adem-200800123-cu46zr47al7-alloy-with-in-situ-precipita-1--after-d2-s02-casting",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "zhang2008-adem-200800123-cu46zr47al7-alloy-with-in-situ-precipita-1--after-s01-arc-melting"
       ]
     }
   ],
@@ -191,6 +199,49 @@
           "locator": "Main PDF p.1"
         }
       ]
+    },
+    {
+      "id": "d2-s02-casting",
+      "action": "casting",
+      "label": "Casting the ingots into plates",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-arc-melting"
+      ],
+      "inputs": [
+        "zhang2008-adem-200800123-cu46zr47al7-alloy-with-in-situ-precipita-1--after-s01-arc-melting"
+      ],
+      "outputs": [
+        "zhang2008-adem-200800123-cu46zr47al7-alloy-with-in-situ-precipita-1--after-d2-s02-casting"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "argon",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zhang2008-adem-200800123",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Casting the ingots into plates",
+      "evidence": [
+        {
+          "source_id": "zhang2008-adem-200800123",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -199,7 +250,7 @@
       "sample_id": "zhang2008-adem-200800123-cu46zr47al7-alloy-with-in-situ-precipita-1--product",
       "source_sample_label": "Cu46Zr47Al7 alloy with in-situ precipitated nanocrystals",
       "batch_id": null,
-      "material_state_id": "zhang2008-adem-200800123-cu46zr47al7-alloy-with-in-situ-precipita-1--after-s01-arc-melting",
+      "material_state_id": "zhang2008-adem-200800123-cu46zr47al7-alloy-with-in-situ-precipita-1--after-d2-s02-casting",
       "parent_sample_id": null,
       "composition": {
         "value": "Cu46Zr47Al7",
@@ -244,7 +295,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",

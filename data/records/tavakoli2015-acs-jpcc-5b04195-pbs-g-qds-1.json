@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "tavakoli2015-acs-jpcc-5b04195-pbs-g-qds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Mohammad Mahdi Tavakoli; Hossein Aashuri; Abdolreza Simchi; Sergii Kalytchuk; Zhiyong Fan (2015): PbS/G QDs",
   "material": {
@@ -166,6 +166,25 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "tavakoli2015-acs-jpcc-5b04195-pbs-g-qds-1--reduced-graphene-oxide",
+      "name": "reduced graphene oxide",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "tavakoli2015-acs-jpcc-5b04195",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -176,7 +195,8 @@
       "kind": "reaction_batch",
       "parent_ids": [
         "tavakoli2015-acs-jpcc-5b04195-pbs-g-qds-1--lead-ii-oxide",
-        "tavakoli2015-acs-jpcc-5b04195-pbs-g-qds-1--1-octadecene"
+        "tavakoli2015-acs-jpcc-5b04195-pbs-g-qds-1--1-octadecene",
+        "tavakoli2015-acs-jpcc-5b04195-pbs-g-qds-1--reduced-graphene-oxide"
       ]
     },
     {
@@ -208,7 +228,8 @@
       "depends_on": [],
       "inputs": [
         "tavakoli2015-acs-jpcc-5b04195-pbs-g-qds-1--lead-ii-oxide",
-        "tavakoli2015-acs-jpcc-5b04195-pbs-g-qds-1--1-octadecene"
+        "tavakoli2015-acs-jpcc-5b04195-pbs-g-qds-1--1-octadecene",
+        "tavakoli2015-acs-jpcc-5b04195-pbs-g-qds-1--reduced-graphene-oxide"
       ],
       "outputs": [
         "tavakoli2015-acs-jpcc-5b04195-pbs-g-qds-1--after-s01-heat"
@@ -476,16 +497,81 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "tavakoli2015-acs-jpcc-5b04195-pbs-g-qds-1--photoluminescence-peak",
+      "sample_id": "tavakoli2015-acs-jpcc-5b04195-pbs-g-qds-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 923,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "923 nm",
+        "evidence": [
+          {
+            "source_id": "tavakoli2015-acs-jpcc-5b04195",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "tavakoli2015-acs-jpcc-5b04195",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    },
+    {
+      "id": "tavakoli2015-acs-jpcc-5b04195-pbs-g-qds-1--photoluminescence-quantum-yield",
+      "sample_id": "tavakoli2015-acs-jpcc-5b04195-pbs-g-qds-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 29,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "29 %",
+        "evidence": [
+          {
+            "source_id": "tavakoli2015-acs-jpcc-5b04195",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "tavakoli2015-acs-jpcc-5b04195",
+          "locator": "Main PDF p.6"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Reaction temperature not reported in the extracted text.",
       "Amount of bis(trimethylsilyl) sulfide not reported in the extracted text.",
-      "Amount of 1-octadecene not reported in the extracted text."
+      "Amount of 1-octadecene not reported in the extracted text.",
+      "Amount of reduced graphene oxide not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

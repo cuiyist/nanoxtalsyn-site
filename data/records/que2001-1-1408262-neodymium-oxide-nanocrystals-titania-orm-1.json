@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "que2001-1-1408262-neodymium-oxide-nanocrystals-titania-orm-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Wenxiu Que et al. (2001): neodymium oxide nanocrystals/titania/ormosil composite thin film",
   "material": {
@@ -137,19 +137,87 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "que2001-1-1408262-neodymium-oxide-nanocrystals-titania-orm-1--np-5-np-9-2-1-wt",
+      "name": "NP-5/NP-9 (2:1 wt %)",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "que2001-1-1408262",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "que2001-1-1408262-neodymium-oxide-nanocrystals-titania-orm-1--oxalic-acid",
+      "name": "oxalic acid",
+      "formula": null,
+      "role": "nonmetal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "que2001-1-1408262",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "que2001-1-1408262-neodymium-oxide-nanocrystals-titania-orm-1--ethanol",
+      "name": "ethanol",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "que2001-1-1408262",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
-      "id": "que2001-1-1408262-neodymium-oxide-nanocrystals-titania-orm-1--after-s01-dry",
+      "id": "que2001-1-1408262-neodymium-oxide-nanocrystals-titania-orm-1--after-d2-s01-titrate",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "que2001-1-1408262-neodymium-oxide-nanocrystals-titania-orm-1--cyclohexane",
+        "que2001-1-1408262-neodymium-oxide-nanocrystals-titania-orm-1--neodymium-nitrate"
+      ]
+    },
+    {
+      "id": "que2001-1-1408262-neodymium-oxide-nanocrystals-titania-orm-1--after-s01-dry",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "que2001-1-1408262-neodymium-oxide-nanocrystals-titania-orm-1--after-d2-s01-titrate"
+      ]
     },
     {
       "id": "que2001-1-1408262-neodymium-oxide-nanocrystals-titania-orm-1--after-s02-calcine",
-      "name": "mixture after step 2",
+      "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
         "que2001-1-1408262-neodymium-oxide-nanocrystals-titania-orm-1--after-s01-dry"
@@ -166,14 +234,55 @@
   ],
   "operations": [
     {
+      "id": "d2-s01-titrate",
+      "action": "titrate",
+      "label": "Determine single-phase region",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "que2001-1-1408262-neodymium-oxide-nanocrystals-titania-orm-1--cyclohexane",
+        "que2001-1-1408262-neodymium-oxide-nanocrystals-titania-orm-1--neodymium-nitrate"
+      ],
+      "outputs": [
+        "que2001-1-1408262-neodymium-oxide-nanocrystals-titania-orm-1--after-d2-s01-titrate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Determine single-phase region",
+      "evidence": [
+        {
+          "source_id": "que2001-1-1408262",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
       "id": "s01-dry",
       "action": "dry",
       "label": "Drying under vacuum at 75 °C for 1 day",
       "stage": "workup",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s01-titrate"
+      ],
+      "inputs": [
+        "que2001-1-1408262-neodymium-oxide-nanocrystals-titania-orm-1--after-d2-s01-titrate"
+      ],
       "outputs": [
         "que2001-1-1408262-neodymium-oxide-nanocrystals-titania-orm-1--after-s01-dry"
       ],
@@ -418,23 +527,60 @@
           "locator": "Main PDF p.3"
         }
       ],
-      "notes": []
+      "notes": [
+        "Reactor: screw-capped tube (Main PDF p.2)."
+      ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "que2001-1-1408262-neodymium-oxide-nanocrystals-titania-orm-1--photoluminescence-peak",
+      "sample_id": "que2001-1-1408262-neodymium-oxide-nanocrystals-titania-orm-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 402,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "402 nm",
+        "evidence": [
+          {
+            "source_id": "que2001-1-1408262",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "que2001-1-1408262",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
-      "Reactor not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
-      "Amount of neodymium nitrate not reported in the extracted text."
+      "Amount of neodymium nitrate not reported in the extracted text.",
+      "Amount of NP-5/NP-9 (2:1 wt %) not reported in the extracted text.",
+      "Amount of oxalic acid not reported in the extracted text.",
+      "Amount of ethanol not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

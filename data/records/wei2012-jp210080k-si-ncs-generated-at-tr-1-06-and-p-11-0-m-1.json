@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "wei2012-jp210080k-si-ncs-generated-at-tr-1-06-and-p-11-0-m-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Shaoyu Wei (2012): Si-NCs generated at Tr = 1.06 and P = 11.0 MPa in supercritical CO2",
   "material": {
@@ -112,6 +112,25 @@
     {
       "id": "wei2012-jp210080k-si-ncs-generated-at-tr-1-06-and-p-11-0-m-1--co2",
       "name": "CO2",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "wei2012-jp210080k",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "wei2012-jp210080k-si-ncs-generated-at-tr-1-06-and-p-11-0-m-1--single-crystal-silicon",
+      "name": "single-crystal silicon",
       "formula": null,
       "role": "reagent",
       "stage": "synthesis",
@@ -375,10 +394,12 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Amount of single-crystal silicon ⟨111⟩ not reported in the extracted text.",
-      "Amount of CO2 not reported in the extracted text."
+      "Amount of CO2 not reported in the extracted text.",
+      "Amount of single-crystal silicon ⟨111⟩ not reported in the extracted text.",
+      "Amount of single-crystal silicon not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

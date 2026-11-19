@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "biacchi2013-ja405203e-sns-spherical-polyhedra-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Adam J. Biacchi (2013): SnS spherical polyhedra",
   "material": {
@@ -204,6 +204,25 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "biacchi2013-ja405203e-sns-spherical-polyhedra-1--tin-iv-chloride",
+      "name": "tin(IV) chloride",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "biacchi2013-ja405203e",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -233,10 +252,18 @@
     },
     {
       "id": "biacchi2013-ja405203e-sns-spherical-polyhedra-1--after-s04-heat",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "biacchi2013-ja405203e-sns-spherical-polyhedra-1--after-s03-inject"
+      ]
+    },
+    {
+      "id": "biacchi2013-ja405203e-sns-spherical-polyhedra-1--after-d2-s05-purify",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "biacchi2013-ja405203e-sns-spherical-polyhedra-1--after-s03-inject"
+        "biacchi2013-ja405203e-sns-spherical-polyhedra-1--after-s04-heat"
       ]
     }
   ],
@@ -484,6 +511,44 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s05-purify",
+      "action": "purify",
+      "label": "Precipitate and centrifuge",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-heat"
+      ],
+      "inputs": [
+        "biacchi2013-ja405203e-sns-spherical-polyhedra-1--after-s04-heat"
+      ],
+      "outputs": [
+        "biacchi2013-ja405203e-sns-spherical-polyhedra-1--after-d2-s05-purify"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Precipitate and centrifuge",
+      "evidence": [
+        {
+          "source_id": "biacchi2013-ja405203e",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -492,7 +557,7 @@
       "sample_id": "biacchi2013-ja405203e-sns-spherical-polyhedra-1--product",
       "source_sample_label": "SnS spherical polyhedra",
       "batch_id": null,
-      "material_state_id": "biacchi2013-ja405203e-sns-spherical-polyhedra-1--after-s04-heat",
+      "material_state_id": "biacchi2013-ja405203e-sns-spherical-polyhedra-1--after-d2-s05-purify",
       "parent_sample_id": null,
       "composition": {
         "value": "SnS",
@@ -588,13 +653,14 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Reaction time not reported in the extracted text.",
       "Amount of 1-octadecene not reported in the extracted text.",
       "Amount of oleic acid not reported in the extracted text.",
       "Amount of tri-n-octylphosphine not reported in the extracted text.",
-      "Amount of hexamethyldisilazane not reported in the extracted text."
+      "Amount of hexamethyldisilazane not reported in the extracted text.",
+      "Amount of tin(IV) chloride not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

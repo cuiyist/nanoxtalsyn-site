@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "abfalterer2020-acsmaterialslett-0c00393-cs2zrcl6-ncs-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Anna Abfalterer; Javad Shamsi; Dominik J. Kubicki; Christopher N. Savory; James Xiao; Giorgio Divitini; Weiwei Li; Stuart Macpherson; Krzysztof Gałkowski; Judith L. MacManus-Driscoll; David O. Scanlon; Samuel D. Stranks (2020): Cs2ZrCl6 NCs",
   "material": {
@@ -40,9 +40,14 @@
   },
   "intended_target": {
     "composition": {
-      "value": null,
-      "status": "not_reported",
-      "evidence": [],
+      "value": "Cs2ZrCl6",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "abfalterer2020-acsmaterialslett-0c00393",
+          "locator": "Main PDF p.2"
+        }
+      ],
       "note": ""
     },
     "phase": {
@@ -133,16 +138,84 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "abfalterer2020-acsmaterialslett-0c00393-cs2zrcl6-ncs-1--1-octadecene-ode",
+      "name": "1-octadecene (ODE)",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "abfalterer2020-acsmaterialslett-0c00393",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "abfalterer2020-acsmaterialslett-0c00393-cs2zrcl6-ncs-1--toluene",
+      "name": "toluene",
+      "formula": null,
+      "role": "solvent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "abfalterer2020-acsmaterialslett-0c00393",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "abfalterer2020-acsmaterialslett-0c00393-cs2zrcl6-ncs-1--ncs",
+      "name": "NCs",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "abfalterer2020-acsmaterialslett-0c00393",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
       "id": "abfalterer2020-acsmaterialslett-0c00393-cs2zrcl6-ncs-1--after-s01-inject",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "abfalterer2020-acsmaterialslett-0c00393-cs2zrcl6-ncs-1--benzoyl-chloride",
+        "abfalterer2020-acsmaterialslett-0c00393-cs2zrcl6-ncs-1--1-octadecene-ode"
+      ]
+    },
+    {
+      "id": "abfalterer2020-acsmaterialslett-0c00393-cs2zrcl6-ncs-1--after-d2-s02-isolate",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "abfalterer2020-acsmaterialslett-0c00393-cs2zrcl6-ncs-1--benzoyl-chloride"
+        "abfalterer2020-acsmaterialslett-0c00393-cs2zrcl6-ncs-1--after-s01-inject",
+        "abfalterer2020-acsmaterialslett-0c00393-cs2zrcl6-ncs-1--ncs",
+        "abfalterer2020-acsmaterialslett-0c00393-cs2zrcl6-ncs-1--toluene"
       ]
     }
   ],
@@ -156,7 +229,8 @@
       "optional": false,
       "depends_on": [],
       "inputs": [
-        "abfalterer2020-acsmaterialslett-0c00393-cs2zrcl6-ncs-1--benzoyl-chloride"
+        "abfalterer2020-acsmaterialslett-0c00393-cs2zrcl6-ncs-1--benzoyl-chloride",
+        "abfalterer2020-acsmaterialslett-0c00393-cs2zrcl6-ncs-1--1-octadecene-ode"
       ],
       "outputs": [
         "abfalterer2020-acsmaterialslett-0c00393-cs2zrcl6-ncs-1--after-s01-inject"
@@ -187,6 +261,46 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s02-isolate",
+      "action": "isolate",
+      "label": "Isolate and redisperse NCs in toluene",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-inject"
+      ],
+      "inputs": [
+        "abfalterer2020-acsmaterialslett-0c00393-cs2zrcl6-ncs-1--after-s01-inject",
+        "abfalterer2020-acsmaterialslett-0c00393-cs2zrcl6-ncs-1--ncs",
+        "abfalterer2020-acsmaterialslett-0c00393-cs2zrcl6-ncs-1--toluene"
+      ],
+      "outputs": [
+        "abfalterer2020-acsmaterialslett-0c00393-cs2zrcl6-ncs-1--after-d2-s02-isolate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Isolate and redisperse NCs in toluene",
+      "evidence": [
+        {
+          "source_id": "abfalterer2020-acsmaterialslett-0c00393",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -195,12 +309,17 @@
       "sample_id": "abfalterer2020-acsmaterialslett-0c00393-cs2zrcl6-ncs-1--product",
       "source_sample_label": "Cs2ZrCl6 NCs",
       "batch_id": null,
-      "material_state_id": "abfalterer2020-acsmaterialslett-0c00393-cs2zrcl6-ncs-1--after-s01-inject",
+      "material_state_id": "abfalterer2020-acsmaterialslett-0c00393-cs2zrcl6-ncs-1--after-d2-s02-isolate",
       "parent_sample_id": null,
       "composition": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "Cs2ZrCl6",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "abfalterer2020-acsmaterialslett-0c00393",
+            "locator": "Main PDF p.2"
+          }
+        ],
         "note": ""
       },
       "phase": {
@@ -241,11 +360,44 @@
       "notes": []
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "abfalterer2020-acsmaterialslett-0c00393-cs2zrcl6-ncs-1--photoluminescence-peak",
+      "sample_id": "abfalterer2020-acsmaterialslett-0c00393-cs2zrcl6-ncs-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 450,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "450 nm",
+        "evidence": [
+          {
+            "source_id": "abfalterer2020-acsmaterialslett-0c00393",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "abfalterer2020-acsmaterialslett-0c00393",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Size not reported in the extracted text.",
@@ -254,7 +406,10 @@
       "Reaction time not reported in the extracted text.",
       "Amount of benzoyl chloride not reported in the extracted text.",
       "Amount of cesium precursor not reported in the extracted text.",
-      "Amount of zirconium precursor not reported in the extracted text."
+      "Amount of zirconium precursor not reported in the extracted text.",
+      "Amount of 1-octadecene (ODE) not reported in the extracted text.",
+      "Amount of toluene not reported in the extracted text.",
+      "Amount of NCs not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "kocher1998-1-120835-lppp-tio2-fullerene-composite-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "M. Kocher et al. (1998): LPPP/TiO2/fullerene composite",
   "material": {
@@ -118,6 +118,63 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "kocher1998-1-120835-lppp-tio2-fullerene-composite-1--cis-x2bis-2-2-bipyridyl-4-4-dicarboxylat",
+      "name": "cis-X2Bis(2,2'-bipyridyl-4,4'-dicarboxylate)ruthenium(II) (X=SCN-)",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "kocher1998-1-120835",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "kocher1998-1-120835-lppp-tio2-fullerene-composite-1--toluene",
+      "name": "toluene",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "kocher1998-1-120835",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "kocher1998-1-120835-lppp-tio2-fullerene-composite-1--aluminum",
+      "name": "aluminum",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "kocher1998-1-120835",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -149,10 +206,19 @@
     },
     {
       "id": "kocher1998-1-120835-lppp-tio2-fullerene-composite-1--after-s04-casting",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "kocher1998-1-120835-lppp-tio2-fullerene-composite-1--after-s03-addition"
+      ]
+    },
+    {
+      "id": "kocher1998-1-120835-lppp-tio2-fullerene-composite-1--after-d2-s05-deposition",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "kocher1998-1-120835-lppp-tio2-fullerene-composite-1--after-s03-addition"
+        "kocher1998-1-120835-lppp-tio2-fullerene-composite-1--after-s04-casting",
+        "kocher1998-1-120835-lppp-tio2-fullerene-composite-1--aluminum"
       ]
     }
   ],
@@ -307,6 +373,45 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s05-deposition",
+      "action": "deposition",
+      "label": "Depositing aluminum top electrodes via thermal evaporation",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-casting"
+      ],
+      "inputs": [
+        "kocher1998-1-120835-lppp-tio2-fullerene-composite-1--after-s04-casting",
+        "kocher1998-1-120835-lppp-tio2-fullerene-composite-1--aluminum"
+      ],
+      "outputs": [
+        "kocher1998-1-120835-lppp-tio2-fullerene-composite-1--after-d2-s05-deposition"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Depositing aluminum top electrodes via thermal evaporation",
+      "evidence": [
+        {
+          "source_id": "kocher1998-1-120835",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -315,7 +420,7 @@
       "sample_id": "kocher1998-1-120835-lppp-tio2-fullerene-composite-1--product",
       "source_sample_label": "LPPP/TiO2/fullerene composite",
       "batch_id": null,
-      "material_state_id": "kocher1998-1-120835-lppp-tio2-fullerene-composite-1--after-s04-casting",
+      "material_state_id": "kocher1998-1-120835-lppp-tio2-fullerene-composite-1--after-d2-s05-deposition",
       "parent_sample_id": null,
       "composition": {
         "value": "TiO2, RuL2(NCS)2, LPPP, fullerene",
@@ -365,7 +470,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
@@ -375,7 +480,10 @@
       "Reaction temperature not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
       "Amount of Ti(OEt)4 not reported in the extracted text.",
-      "Amount of fullerene derivative not reported in the extracted text."
+      "Amount of fullerene derivative not reported in the extracted text.",
+      "Amount of cis-X2Bis(2,2'-bipyridyl-4,4'-dicarboxylate)ruthenium(II) (X=SCN-) not reported in the extracted text.",
+      "Amount of toluene not reported in the extracted text.",
+      "Amount of aluminum not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

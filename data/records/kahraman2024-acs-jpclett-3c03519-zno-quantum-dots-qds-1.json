@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "kahraman2024-acs-jpclett-3c03519-zno-quantum-dots-qds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Abdullah Kahraman; Etienne Socie; Maryam Nazari; Dimitrios Kazazis; Merve Buldu-Akturk; Victoria Kabanova; Elisa Biasin; Grigory Smolentsev; Daniel Grolimund; Emre Erdem; Jacques E. Moser; Andrea Cannizzo; Camila Bacellar; Christopher Milne (2024): ZnO quantum dots (QDs)",
   "material": {
@@ -50,9 +50,14 @@
       "note": ""
     },
     "phase": {
-      "value": null,
-      "status": "not_reported",
-      "evidence": [],
+      "value": "wurtzite",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "kahraman2024-acs-jpclett-3c03519",
+          "locator": "Main PDF p.3"
+        }
+      ],
       "note": ""
     },
     "size": {
@@ -110,6 +115,25 @@
       "name": "ethanol",
       "formula": null,
       "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "kahraman2024-acs-jpclett-3c03519",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "kahraman2024-acs-jpclett-3c03519-zno-quantum-dots-qds-1--naoh",
+      "name": "NaOH",
+      "formula": null,
+      "role": "reagent",
       "stage": "synthesis",
       "identity": {
         "pubchem_cid": null,
@@ -385,9 +409,14 @@
         "note": ""
       },
       "phase": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "wurtzite",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "kahraman2024-acs-jpclett-3c03519",
+            "locator": "Main PDF p.3"
+          }
+        ],
         "note": ""
       },
       "morphology": {
@@ -463,11 +492,11 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
-      "Phase not reported in the extracted text.",
       "Amount of zinc-acetate dihydrate not reported in the extracted text.",
-      "Amount of ethanol not reported in the extracted text."
+      "Amount of ethanol not reported in the extracted text.",
+      "Amount of NaOH not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

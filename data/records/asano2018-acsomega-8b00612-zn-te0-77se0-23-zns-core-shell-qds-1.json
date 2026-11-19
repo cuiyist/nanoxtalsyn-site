@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "asano2018-acsomega-8b00612-zn-te0-77se0-23-zns-core-shell-qds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Hiroshi Asano; Satoshi Tsukuda; Masao Kita; Shinji Fujimoto; Takahisa Omata (2018): Zn(Te0.77Se0.23)/ZnS core/shell QDs",
   "material": {
@@ -164,42 +164,187 @@
           "locator": "Main PDF p.6"
         }
       ]
+    },
+    {
+      "id": "asano2018-acsomega-8b00612-zn-te0-77se0-23-zns-core-shell-qds-1--tri-n-octylphosphine",
+      "name": "tri-n-octylphosphine",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 2.0,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2 mL",
+          "evidence": [
+            {
+              "source_id": "asano2018-acsomega-8b00612",
+              "locator": "Main PDF p.6"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "asano2018-acsomega-8b00612",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "asano2018-acsomega-8b00612-zn-te0-77se0-23-zns-core-shell-qds-1--oleylamine",
+      "name": "oleylamine",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 mL",
+          "evidence": [
+            {
+              "source_id": "asano2018-acsomega-8b00612",
+              "locator": "Main PDF p.6"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "asano2018-acsomega-8b00612",
+          "locator": "Main PDF p.6"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
-      "id": "asano2018-acsomega-8b00612-zn-te0-77se0-23-zns-core-shell-qds-1--after-s01-degas",
+      "id": "asano2018-acsomega-8b00612-zn-te0-77se0-23-zns-core-shell-qds-1--after-d2-s01-dissolve",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "asano2018-acsomega-8b00612-zn-te0-77se0-23-zns-core-shell-qds-1--diethylzinc"
+      ]
+    },
+    {
+      "id": "asano2018-acsomega-8b00612-zn-te0-77se0-23-zns-core-shell-qds-1--after-s01-degas",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "asano2018-acsomega-8b00612-zn-te0-77se0-23-zns-core-shell-qds-1--after-d2-s01-dissolve"
+      ]
     },
     {
       "id": "asano2018-acsomega-8b00612-zn-te0-77se0-23-zns-core-shell-qds-1--after-s02-heat",
-      "name": "mixture after step 2",
+      "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
         "asano2018-acsomega-8b00612-zn-te0-77se0-23-zns-core-shell-qds-1--after-s01-degas"
       ]
     },
     {
-      "id": "asano2018-acsomega-8b00612-zn-te0-77se0-23-zns-core-shell-qds-1--after-s03-cool",
-      "name": "mixture after step 3",
+      "id": "asano2018-acsomega-8b00612-zn-te0-77se0-23-zns-core-shell-qds-1--after-d2-s04-add",
+      "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
-        "asano2018-acsomega-8b00612-zn-te0-77se0-23-zns-core-shell-qds-1--after-s02-heat"
+        "asano2018-acsomega-8b00612-zn-te0-77se0-23-zns-core-shell-qds-1--after-s02-heat",
+        "asano2018-acsomega-8b00612-zn-te0-77se0-23-zns-core-shell-qds-1--diethylzinc",
+        "asano2018-acsomega-8b00612-zn-te0-77se0-23-zns-core-shell-qds-1--1-octadecene"
+      ]
+    },
+    {
+      "id": "asano2018-acsomega-8b00612-zn-te0-77se0-23-zns-core-shell-qds-1--after-s03-cool",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "asano2018-acsomega-8b00612-zn-te0-77se0-23-zns-core-shell-qds-1--after-d2-s04-add"
       ]
     },
     {
       "id": "asano2018-acsomega-8b00612-zn-te0-77se0-23-zns-core-shell-qds-1--after-s04-centrifuge",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "asano2018-acsomega-8b00612-zn-te0-77se0-23-zns-core-shell-qds-1--after-s03-cool"
+      ]
+    },
+    {
+      "id": "asano2018-acsomega-8b00612-zn-te0-77se0-23-zns-core-shell-qds-1--after-d2-s07-dry",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "asano2018-acsomega-8b00612-zn-te0-77se0-23-zns-core-shell-qds-1--after-s03-cool"
+        "asano2018-acsomega-8b00612-zn-te0-77se0-23-zns-core-shell-qds-1--after-s04-centrifuge"
       ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-dissolve",
+      "action": "dissolve",
+      "label": "Dissolve",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "asano2018-acsomega-8b00612-zn-te0-77se0-23-zns-core-shell-qds-1--diethylzinc"
+      ],
+      "outputs": [
+        "asano2018-acsomega-8b00612-zn-te0-77se0-23-zns-core-shell-qds-1--after-d2-s01-dissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "asano2018-acsomega-8b00612",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dissolve",
+      "evidence": [
+        {
+          "source_id": "asano2018-acsomega-8b00612",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
     {
       "id": "s01-degas",
       "action": "degas",
@@ -207,8 +352,12 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s01-dissolve"
+      ],
+      "inputs": [
+        "asano2018-acsomega-8b00612-zn-te0-77se0-23-zns-core-shell-qds-1--after-d2-s01-dissolve"
+      ],
       "outputs": [
         "asano2018-acsomega-8b00612-zn-te0-77se0-23-zns-core-shell-qds-1--after-s01-degas"
       ],
@@ -339,9 +488,9 @@
       ]
     },
     {
-      "id": "s03-cool",
-      "action": "cool",
-      "label": "Cooling the solution to room temperature",
+      "id": "d2-s04-add",
+      "action": "add",
+      "label": "Adding ZnS source solution dropwise",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -349,7 +498,89 @@
         "s02-heat"
       ],
       "inputs": [
-        "asano2018-acsomega-8b00612-zn-te0-77se0-23-zns-core-shell-qds-1--after-s02-heat"
+        "asano2018-acsomega-8b00612-zn-te0-77se0-23-zns-core-shell-qds-1--after-s02-heat",
+        "asano2018-acsomega-8b00612-zn-te0-77se0-23-zns-core-shell-qds-1--diethylzinc",
+        "asano2018-acsomega-8b00612-zn-te0-77se0-23-zns-core-shell-qds-1--1-octadecene"
+      ],
+      "outputs": [
+        "asano2018-acsomega-8b00612-zn-te0-77se0-23-zns-core-shell-qds-1--after-d2-s04-add"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 240,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "240 °C",
+          "evidence": [
+            {
+              "source_id": "asano2018-acsomega-8b00612",
+              "locator": "Main PDF p.6"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 15,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "15 min",
+          "evidence": [
+            {
+              "source_id": "asano2018-acsomega-8b00612",
+              "locator": "Main PDF p.6"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "asano2018-acsomega-8b00612",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Adding ZnS source solution dropwise",
+      "evidence": [
+        {
+          "source_id": "asano2018-acsomega-8b00612",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "s03-cool",
+      "action": "cool",
+      "label": "Cooling the solution to room temperature",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-add"
+      ],
+      "inputs": [
+        "asano2018-acsomega-8b00612-zn-te0-77se0-23-zns-core-shell-qds-1--after-d2-s04-add"
       ],
       "outputs": [
         "asano2018-acsomega-8b00612-zn-te0-77se0-23-zns-core-shell-qds-1--after-s03-cool"
@@ -418,6 +649,44 @@
           "locator": "Main PDF p.6"
         }
       ]
+    },
+    {
+      "id": "d2-s07-dry",
+      "action": "dry",
+      "label": "Dry in vacuum desiccator",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-centrifuge"
+      ],
+      "inputs": [
+        "asano2018-acsomega-8b00612-zn-te0-77se0-23-zns-core-shell-qds-1--after-s04-centrifuge"
+      ],
+      "outputs": [
+        "asano2018-acsomega-8b00612-zn-te0-77se0-23-zns-core-shell-qds-1--after-d2-s07-dry"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dry in vacuum desiccator",
+      "evidence": [
+        {
+          "source_id": "asano2018-acsomega-8b00612",
+          "locator": "Main PDF p.6"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -426,7 +695,7 @@
       "sample_id": "asano2018-acsomega-8b00612-zn-te0-77se0-23-zns-core-shell-qds-1--product",
       "source_sample_label": "Zn(Te0.77Se0.23)/ZnS core/shell QDs",
       "batch_id": null,
-      "material_state_id": "asano2018-acsomega-8b00612-zn-te0-77se0-23-zns-core-shell-qds-1--after-s04-centrifuge",
+      "material_state_id": "asano2018-acsomega-8b00612-zn-te0-77se0-23-zns-core-shell-qds-1--after-d2-s07-dry",
       "parent_sample_id": null,
       "composition": {
         "value": "Zn(Te0.77Se0.23)/ZnS",
@@ -484,7 +753,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",

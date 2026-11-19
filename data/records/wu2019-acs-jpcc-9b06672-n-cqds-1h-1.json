@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "wu2019-acs-jpcc-9b06672-n-cqds-1h-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Xiangdong Wu; Bin Zhao; Jiazhen Zhang; Huang Xu; Kaiqi Xu; Gang Chen (2019): N-CQDs-1h",
   "material": {
@@ -165,7 +165,7 @@
       ]
     },
     {
-      "id": "wu2019-acs-jpcc-9b06672-n-cqds-1h-1--after-s02-cool",
+      "id": "wu2019-acs-jpcc-9b06672-n-cqds-1h-1--after-d2-s02-heat",
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
@@ -173,11 +173,27 @@
       ]
     },
     {
-      "id": "wu2019-acs-jpcc-9b06672-n-cqds-1h-1--after-s03-filter",
+      "id": "wu2019-acs-jpcc-9b06672-n-cqds-1h-1--after-s02-cool",
       "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
+        "wu2019-acs-jpcc-9b06672-n-cqds-1h-1--after-d2-s02-heat"
+      ]
+    },
+    {
+      "id": "wu2019-acs-jpcc-9b06672-n-cqds-1h-1--after-s03-filter",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
         "wu2019-acs-jpcc-9b06672-n-cqds-1h-1--after-s02-cool"
+      ]
+    },
+    {
+      "id": "wu2019-acs-jpcc-9b06672-n-cqds-1h-1--after-d2-s05-purify",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "wu2019-acs-jpcc-9b06672-n-cqds-1h-1--after-s03-filter"
       ]
     },
     {
@@ -185,7 +201,7 @@
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "wu2019-acs-jpcc-9b06672-n-cqds-1h-1--after-s03-filter"
+        "wu2019-acs-jpcc-9b06672-n-cqds-1h-1--after-d2-s05-purify"
       ]
     }
   ],
@@ -207,9 +223,14 @@
       ],
       "parameters": {},
       "environment": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "wu2019-acs-jpcc-9b06672",
+            "locator": "Main PDF p.2"
+          }
+        ],
         "note": ""
       },
       "endpoint": {
@@ -228,9 +249,9 @@
       ]
     },
     {
-      "id": "s02-cool",
-      "action": "cool",
-      "label": "Cool to room temperature",
+      "id": "d2-s02-heat",
+      "action": "heat",
+      "label": "Hydrothermal synthesis",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -241,13 +262,98 @@
         "wu2019-acs-jpcc-9b06672-n-cqds-1h-1--after-s01-dissolve"
       ],
       "outputs": [
+        "wu2019-acs-jpcc-9b06672-n-cqds-1h-1--after-d2-s02-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 180,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "180 °C",
+          "evidence": [
+            {
+              "source_id": "wu2019-acs-jpcc-9b06672",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 h",
+          "evidence": [
+            {
+              "source_id": "wu2019-acs-jpcc-9b06672",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "wu2019-acs-jpcc-9b06672",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Hydrothermal synthesis",
+      "evidence": [
+        {
+          "source_id": "wu2019-acs-jpcc-9b06672",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-cool",
+      "action": "cool",
+      "label": "Cool to room temperature",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-heat"
+      ],
+      "inputs": [
+        "wu2019-acs-jpcc-9b06672-n-cqds-1h-1--after-d2-s02-heat"
+      ],
+      "outputs": [
         "wu2019-acs-jpcc-9b06672-n-cqds-1h-1--after-s02-cool"
       ],
       "parameters": {},
       "environment": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "wu2019-acs-jpcc-9b06672",
+            "locator": "Main PDF p.2"
+          }
+        ],
         "note": ""
       },
       "endpoint": {
@@ -304,10 +410,10 @@
       ]
     },
     {
-      "id": "s04-lyophilize",
-      "action": "lyophilize",
-      "label": "Freeze-dry the product",
-      "stage": "synthesis",
+      "id": "d2-s05-purify",
+      "action": "purify",
+      "label": "Dialysis purification",
+      "stage": "workup",
       "branch": "",
       "optional": false,
       "depends_on": [
@@ -317,13 +423,56 @@
         "wu2019-acs-jpcc-9b06672-n-cqds-1h-1--after-s03-filter"
       ],
       "outputs": [
-        "wu2019-acs-jpcc-9b06672-n-cqds-1h-1--after-s04-lyophilize"
+        "wu2019-acs-jpcc-9b06672-n-cqds-1h-1--after-d2-s05-purify"
       ],
       "parameters": {},
       "environment": {
         "value": null,
         "status": "not_reported",
         "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dialysis purification",
+      "evidence": [
+        {
+          "source_id": "wu2019-acs-jpcc-9b06672",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s04-lyophilize",
+      "action": "lyophilize",
+      "label": "Freeze-dry the product",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s05-purify"
+      ],
+      "inputs": [
+        "wu2019-acs-jpcc-9b06672-n-cqds-1h-1--after-d2-s05-purify"
+      ],
+      "outputs": [
+        "wu2019-acs-jpcc-9b06672-n-cqds-1h-1--after-s04-lyophilize"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "wu2019-acs-jpcc-9b06672",
+            "locator": "Main PDF p.2"
+          }
+        ],
         "note": ""
       },
       "endpoint": {
@@ -392,22 +541,86 @@
         }
       ],
       "notes": [
-        "Reactor: 50 mL polytetrafluoroethylene (Teflon)-lined autoclave (Main PDF p.2)."
+        "Reactor: 50 mL polytetrafluoroethylene (Teflon)-lined autoclave (Main PDF p.2).",
+        "Reaction temperature: 180 degC (Main PDF p.2).",
+        "Reaction time: 1 h (Main PDF p.2)."
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "wu2019-acs-jpcc-9b06672-n-cqds-1h-1--photoluminescence-peak",
+      "sample_id": "wu2019-acs-jpcc-9b06672-n-cqds-1h-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 450,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "450 nm",
+        "evidence": [
+          {
+            "source_id": "wu2019-acs-jpcc-9b06672",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "wu2019-acs-jpcc-9b06672",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    },
+    {
+      "id": "wu2019-acs-jpcc-9b06672-n-cqds-1h-1--photoluminescence-quantum-yield",
+      "sample_id": "wu2019-acs-jpcc-9b06672-n-cqds-1h-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 97.4,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "97.4 %",
+        "evidence": [
+          {
+            "source_id": "wu2019-acs-jpcc-9b06672",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "wu2019-acs-jpcc-9b06672",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
-      "Size not reported in the extracted text.",
-      "Atmosphere not reported in the extracted text.",
-      "Reaction temperature not reported in the extracted text.",
-      "Reaction time not reported in the extracted text."
+      "Size not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

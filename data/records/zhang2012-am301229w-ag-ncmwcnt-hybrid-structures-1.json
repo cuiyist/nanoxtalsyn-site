@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Shumao Cui et al. (2012): Ag NC−MWCNT hybrid structures",
   "material": {
@@ -94,7 +94,7 @@
       "id": "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--ag",
       "name": "Ag",
       "formula": null,
-      "role": "metal_precursor",
+      "role": "starting_particles",
       "stage": "synthesis",
       "identity": {
         "pubchem_cid": null,
@@ -127,6 +127,63 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--n-n-dimethylformamide-dmf",
+      "name": "N, N-Dimethylformamide (DMF)",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zhang2012-am301229w",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--dmf",
+      "name": "DMF",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zhang2012-am301229w",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--ag-ncs",
+      "name": "Ag NCs",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zhang2012-am301229w",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -136,25 +193,55 @@
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": [
-        "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--mwcnts"
+        "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--mwcnts",
+        "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--dmf"
       ]
     },
     {
-      "id": "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--after-s02-anneal",
+      "id": "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--after-d2-s02-drop-cast",
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
         "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--after-s01-disperse",
+        "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--mwcnts",
+        "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--dmf"
+      ]
+    },
+    {
+      "id": "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--after-d2-s03-evaporate",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--after-d2-s02-drop-cast",
+        "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--dmf"
+      ]
+    },
+    {
+      "id": "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--after-s02-anneal",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--after-d2-s03-evaporate",
         "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--mwcnts"
       ]
     },
     {
-      "id": "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--after-s03-deposit",
-      "name": "mixture after step 3",
+      "id": "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--after-d2-s05-evaporate",
+      "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
         "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--after-s02-anneal",
-        "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--mwcnts"
+        "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--ag"
+      ]
+    },
+    {
+      "id": "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--after-s03-deposit",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--after-d2-s05-evaporate",
+        "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--mwcnts",
+        "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--ag-ncs"
       ]
     },
     {
@@ -163,7 +250,8 @@
       "kind": "product",
       "parent_ids": [
         "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--after-s03-deposit",
-        "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--mwcnts"
+        "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--mwcnts",
+        "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--ag-ncs"
       ]
     }
   ],
@@ -177,7 +265,8 @@
       "optional": false,
       "depends_on": [],
       "inputs": [
-        "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--mwcnts"
+        "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--mwcnts",
+        "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--dmf"
       ],
       "outputs": [
         "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--after-s01-disperse"
@@ -210,9 +299,9 @@
       ]
     },
     {
-      "id": "s02-anneal",
-      "action": "anneal",
-      "label": "Annealing treatment at 200 oC for 1 h in Ar flow",
+      "id": "d2-s02-drop-cast",
+      "action": "drop cast",
+      "label": "MWCNTs solution drop cast on gold electrodes",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -221,6 +310,95 @@
       ],
       "inputs": [
         "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--after-s01-disperse",
+        "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--mwcnts",
+        "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--dmf"
+      ],
+      "outputs": [
+        "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--after-d2-s02-drop-cast"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zhang2012-am301229w",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "MWCNTs solution drop cast on gold electrodes",
+      "evidence": [
+        {
+          "source_id": "zhang2012-am301229w",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s03-evaporate",
+      "action": "evaporate",
+      "label": "DMF evaporated",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-drop-cast"
+      ],
+      "inputs": [
+        "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--after-d2-s02-drop-cast",
+        "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--dmf"
+      ],
+      "outputs": [
+        "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--after-d2-s03-evaporate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zhang2012-am301229w",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "DMF evaporated",
+      "evidence": [
+        {
+          "source_id": "zhang2012-am301229w",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-anneal",
+      "action": "anneal",
+      "label": "Annealing treatment at 200 oC for 1 h in Ar flow",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-evaporate"
+      ],
+      "inputs": [
+        "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--after-d2-s03-evaporate",
         "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--mwcnts"
       ],
       "outputs": [
@@ -291,9 +469,9 @@
       ]
     },
     {
-      "id": "s03-deposit",
-      "action": "deposit",
-      "label": "Ag NCs deposited onto MWCNTs using electrostatic force directed assembly",
+      "id": "d2-s05-evaporate",
+      "action": "evaporate",
+      "label": "Ag evaporated into vapor by mini-arc plasma source",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -302,7 +480,52 @@
       ],
       "inputs": [
         "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--after-s02-anneal",
-        "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--mwcnts"
+        "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--ag"
+      ],
+      "outputs": [
+        "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--after-d2-s05-evaporate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zhang2012-am301229w",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Ag evaporated into vapor by mini-arc plasma source",
+      "evidence": [
+        {
+          "source_id": "zhang2012-am301229w",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s03-deposit",
+      "action": "deposit",
+      "label": "Ag NCs deposited onto MWCNTs using electrostatic force directed assembly",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s05-evaporate"
+      ],
+      "inputs": [
+        "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--after-d2-s05-evaporate",
+        "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--mwcnts",
+        "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--ag-ncs"
       ],
       "outputs": [
         "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--after-s03-deposit"
@@ -346,7 +569,8 @@
       ],
       "inputs": [
         "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--after-s03-deposit",
-        "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--mwcnts"
+        "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--mwcnts",
+        "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--ag-ncs"
       ],
       "outputs": [
         "zhang2012-am301229w-ag-ncmwcnt-hybrid-structures-1--after-s04-anneal"
@@ -514,11 +738,14 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Amount of Ag not reported in the extracted text.",
-      "Amount of MWCNTs not reported in the extracted text."
+      "Amount of MWCNTs not reported in the extracted text.",
+      "Amount of N, N-Dimethylformamide (DMF) not reported in the extracted text.",
+      "Amount of DMF not reported in the extracted text.",
+      "Amount of Ag NCs not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

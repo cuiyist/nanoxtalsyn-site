@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "al2006-pssa-200521339-v2o5nh2o-xerogel-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "A. A. Bahgat et al. (2006): V2O5·nH2O xerogel",
   "material": {
@@ -164,13 +164,31 @@
       ]
     },
     {
-      "id": "al2006-pssa-200521339-v2o5nh2o-xerogel-1--after-s02-stir",
-      "name": "product as isolated",
-      "kind": "product",
+      "id": "al2006-pssa-200521339-v2o5nh2o-xerogel-1--after-d2-s02-pour",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
       "parent_ids": [
         "al2006-pssa-200521339-v2o5nh2o-xerogel-1--after-s01-melt",
         "al2006-pssa-200521339-v2o5nh2o-xerogel-1--v2o5",
         "al2006-pssa-200521339-v2o5nh2o-xerogel-1--distilled-water"
+      ]
+    },
+    {
+      "id": "al2006-pssa-200521339-v2o5nh2o-xerogel-1--after-s02-stir",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "al2006-pssa-200521339-v2o5nh2o-xerogel-1--after-d2-s02-pour",
+        "al2006-pssa-200521339-v2o5nh2o-xerogel-1--v2o5",
+        "al2006-pssa-200521339-v2o5nh2o-xerogel-1--distilled-water"
+      ]
+    },
+    {
+      "id": "al2006-pssa-200521339-v2o5nh2o-xerogel-1--after-d2-s04-dip-coat",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "al2006-pssa-200521339-v2o5nh2o-xerogel-1--after-s02-stir"
       ]
     }
   ],
@@ -231,9 +249,9 @@
       ]
     },
     {
-      "id": "s02-stir",
-      "action": "stir",
-      "label": "Mixture is stirred at 60 °C until condensation",
+      "id": "d2-s02-pour",
+      "action": "pour",
+      "label": "Melted V2O5 is poured into distilled water",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -242,6 +260,65 @@
       ],
       "inputs": [
         "al2006-pssa-200521339-v2o5nh2o-xerogel-1--after-s01-melt",
+        "al2006-pssa-200521339-v2o5nh2o-xerogel-1--v2o5",
+        "al2006-pssa-200521339-v2o5nh2o-xerogel-1--distilled-water"
+      ],
+      "outputs": [
+        "al2006-pssa-200521339-v2o5nh2o-xerogel-1--after-d2-s02-pour"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 60,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "60 °C",
+          "evidence": [
+            {
+              "source_id": "al2006-pssa-200521339",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Melted V2O5 is poured into distilled water",
+      "evidence": [
+        {
+          "source_id": "al2006-pssa-200521339",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s02-stir",
+      "action": "stir",
+      "label": "Mixture is stirred at 60 °C until condensation",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-pour"
+      ],
+      "inputs": [
+        "al2006-pssa-200521339-v2o5nh2o-xerogel-1--after-d2-s02-pour",
         "al2006-pssa-200521339-v2o5nh2o-xerogel-1--v2o5",
         "al2006-pssa-200521339-v2o5nh2o-xerogel-1--distilled-water"
       ],
@@ -288,6 +365,44 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "d2-s04-dip-coat",
+      "action": "dip coat",
+      "label": "Film is dip coated on a flat glass substrate",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-stir"
+      ],
+      "inputs": [
+        "al2006-pssa-200521339-v2o5nh2o-xerogel-1--after-s02-stir"
+      ],
+      "outputs": [
+        "al2006-pssa-200521339-v2o5nh2o-xerogel-1--after-d2-s04-dip-coat"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Film is dip coated on a flat glass substrate",
+      "evidence": [
+        {
+          "source_id": "al2006-pssa-200521339",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -296,7 +411,7 @@
       "sample_id": "al2006-pssa-200521339-v2o5nh2o-xerogel-1--product",
       "source_sample_label": "V2O5·nH2O xerogel",
       "batch_id": null,
-      "material_state_id": "al2006-pssa-200521339-v2o5nh2o-xerogel-1--after-s02-stir",
+      "material_state_id": "al2006-pssa-200521339-v2o5nh2o-xerogel-1--after-d2-s04-dip-coat",
       "parent_sample_id": null,
       "composition": {
         "value": "V2O5·nH2O",
@@ -343,7 +458,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",

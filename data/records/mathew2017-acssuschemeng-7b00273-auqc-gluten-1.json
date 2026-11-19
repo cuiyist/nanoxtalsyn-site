@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "mathew2017-acssuschemeng-7b00273-auqc-gluten-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Meegle S. Mathew; Kuruvilla Joseph (2017): AuQC@gluten",
   "material": {
@@ -165,6 +165,25 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "mathew2017-acssuschemeng-7b00273-auqc-gluten-1--naoh",
+      "name": "NaOH",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "mathew2017-acssuschemeng-7b00273",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -174,17 +193,42 @@
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": [
-        "mathew2017-acssuschemeng-7b00273-auqc-gluten-1--gluten"
+        "mathew2017-acssuschemeng-7b00273-auqc-gluten-1--gluten",
+        "mathew2017-acssuschemeng-7b00273-auqc-gluten-1--naoh"
       ]
     },
     {
       "id": "mathew2017-acssuschemeng-7b00273-auqc-gluten-1--after-s02-treat",
-      "name": "product as isolated",
-      "kind": "product",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
       "parent_ids": [
         "mathew2017-acssuschemeng-7b00273-auqc-gluten-1--after-s01-dissolve",
         "mathew2017-acssuschemeng-7b00273-auqc-gluten-1--haucl43h2o",
         "mathew2017-acssuschemeng-7b00273-auqc-gluten-1--gluten"
+      ]
+    },
+    {
+      "id": "mathew2017-acssuschemeng-7b00273-auqc-gluten-1--after-d2-s03-stir",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "mathew2017-acssuschemeng-7b00273-auqc-gluten-1--after-s02-treat"
+      ]
+    },
+    {
+      "id": "mathew2017-acssuschemeng-7b00273-auqc-gluten-1--after-d2-s04-dialysis",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "mathew2017-acssuschemeng-7b00273-auqc-gluten-1--after-d2-s03-stir"
+      ]
+    },
+    {
+      "id": "mathew2017-acssuschemeng-7b00273-auqc-gluten-1--after-d2-s05-freeze-dry",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "mathew2017-acssuschemeng-7b00273-auqc-gluten-1--after-d2-s04-dialysis"
       ]
     }
   ],
@@ -198,7 +242,8 @@
       "optional": false,
       "depends_on": [],
       "inputs": [
-        "mathew2017-acssuschemeng-7b00273-auqc-gluten-1--gluten"
+        "mathew2017-acssuschemeng-7b00273-auqc-gluten-1--gluten",
+        "mathew2017-acssuschemeng-7b00273-auqc-gluten-1--naoh"
       ],
       "outputs": [
         "mathew2017-acssuschemeng-7b00273-auqc-gluten-1--after-s01-dissolve"
@@ -320,6 +365,139 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s03-stir",
+      "action": "stir",
+      "label": "Stir the solution until color change",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-treat"
+      ],
+      "inputs": [
+        "mathew2017-acssuschemeng-7b00273-auqc-gluten-1--after-s02-treat"
+      ],
+      "outputs": [
+        "mathew2017-acssuschemeng-7b00273-auqc-gluten-1--after-d2-s03-stir"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Stir the solution until color change",
+      "evidence": [
+        {
+          "source_id": "mathew2017-acssuschemeng-7b00273",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s04-dialysis",
+      "action": "dialysis",
+      "label": "Purify the cluster by dialysis",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-stir"
+      ],
+      "inputs": [
+        "mathew2017-acssuschemeng-7b00273-auqc-gluten-1--after-d2-s03-stir"
+      ],
+      "outputs": [
+        "mathew2017-acssuschemeng-7b00273-auqc-gluten-1--after-d2-s04-dialysis"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 24,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "24 h",
+          "evidence": [
+            {
+              "source_id": "mathew2017-acssuschemeng-7b00273",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Purify the cluster by dialysis",
+      "evidence": [
+        {
+          "source_id": "mathew2017-acssuschemeng-7b00273",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s05-freeze-dry",
+      "action": "freeze-dry",
+      "label": "Freeze-dry the purified clusters",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-dialysis"
+      ],
+      "inputs": [
+        "mathew2017-acssuschemeng-7b00273-auqc-gluten-1--after-d2-s04-dialysis"
+      ],
+      "outputs": [
+        "mathew2017-acssuschemeng-7b00273-auqc-gluten-1--after-d2-s05-freeze-dry"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Freeze-dry the purified clusters",
+      "evidence": [
+        {
+          "source_id": "mathew2017-acssuschemeng-7b00273",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -328,7 +506,7 @@
       "sample_id": "mathew2017-acssuschemeng-7b00273-auqc-gluten-1--product",
       "source_sample_label": "AuQC@gluten",
       "batch_id": null,
-      "material_state_id": "mathew2017-acssuschemeng-7b00273-auqc-gluten-1--after-s02-treat",
+      "material_state_id": "mathew2017-acssuschemeng-7b00273-auqc-gluten-1--after-d2-s05-freeze-dry",
       "parent_sample_id": null,
       "composition": {
         "value": "Au",
@@ -419,15 +597,80 @@
           "locator": "Main PDF p.4"
         }
       ]
+    },
+    {
+      "id": "mathew2017-acssuschemeng-7b00273-auqc-gluten-1--photoluminescence-peak",
+      "sample_id": "mathew2017-acssuschemeng-7b00273-auqc-gluten-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 680,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "680 nm",
+        "evidence": [
+          {
+            "source_id": "mathew2017-acssuschemeng-7b00273",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "mathew2017-acssuschemeng-7b00273",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "mathew2017-acssuschemeng-7b00273-auqc-gluten-1--photoluminescence-quantum-yield",
+      "sample_id": "mathew2017-acssuschemeng-7b00273-auqc-gluten-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 6.45,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "6.45 %",
+        "evidence": [
+          {
+            "source_id": "mathew2017-acssuschemeng-7b00273",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "mathew2017-acssuschemeng-7b00273",
+          "locator": "Main PDF p.4"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Reactor not reported in the extracted text.",
-      "Atmosphere not reported in the extracted text."
+      "Atmosphere not reported in the extracted text.",
+      "Amount of NaOH not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

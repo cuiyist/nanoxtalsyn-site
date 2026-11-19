@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "tsai2020-acsaem-0c00335-2n-gqds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Kai-An Tsai; Ping-Yen Hsieh; Ting-Hsuan Lai; Chun-Wen Tsao; Hui Pan; Yan-Gu Lin; Yung-Jung Hsu (2020): 2N-GQDs",
   "material": {
@@ -161,6 +161,82 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "tsai2020-acsaem-0c00335-2n-gqds-1--deionized-water",
+      "name": "deionized water",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "tsai2020-acsaem-0c00335",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "tsai2020-acsaem-0c00335-2n-gqds-1--h2so4",
+      "name": "H2SO4",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "tsai2020-acsaem-0c00335",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "tsai2020-acsaem-0c00335-2n-gqds-1--hno3",
+      "name": "HNO3",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "tsai2020-acsaem-0c00335",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "tsai2020-acsaem-0c00335-2n-gqds-1--go",
+      "name": "GO",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "tsai2020-acsaem-0c00335",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -169,7 +245,9 @@
       "id": "tsai2020-acsaem-0c00335-2n-gqds-1--after-s01-disperse",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "tsai2020-acsaem-0c00335-2n-gqds-1--go"
+      ]
     },
     {
       "id": "tsai2020-acsaem-0c00335-2n-gqds-1--after-s02-add",
@@ -181,11 +259,21 @@
       ]
     },
     {
+      "id": "tsai2020-acsaem-0c00335-2n-gqds-1--after-d2-s03-hydrothermal",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "tsai2020-acsaem-0c00335-2n-gqds-1--after-s02-add",
+        "tsai2020-acsaem-0c00335-2n-gqds-1--go",
+        "tsai2020-acsaem-0c00335-2n-gqds-1--urea"
+      ]
+    },
+    {
       "id": "tsai2020-acsaem-0c00335-2n-gqds-1--after-s03-filter",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "tsai2020-acsaem-0c00335-2n-gqds-1--after-s02-add"
+        "tsai2020-acsaem-0c00335-2n-gqds-1--after-d2-s03-hydrothermal"
       ]
     }
   ],
@@ -198,7 +286,9 @@
       "branch": "",
       "optional": false,
       "depends_on": [],
-      "inputs": [],
+      "inputs": [
+        "tsai2020-acsaem-0c00335-2n-gqds-1--go"
+      ],
       "outputs": [
         "tsai2020-acsaem-0c00335-2n-gqds-1--after-s01-disperse"
       ],
@@ -274,6 +364,88 @@
       ]
     },
     {
+      "id": "d2-s03-hydrothermal",
+      "action": "hydrothermal",
+      "label": "Hydrothermal reaction is carried out",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-add"
+      ],
+      "inputs": [
+        "tsai2020-acsaem-0c00335-2n-gqds-1--after-s02-add",
+        "tsai2020-acsaem-0c00335-2n-gqds-1--go",
+        "tsai2020-acsaem-0c00335-2n-gqds-1--urea"
+      ],
+      "outputs": [
+        "tsai2020-acsaem-0c00335-2n-gqds-1--after-d2-s03-hydrothermal"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 180,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "180 °C",
+          "evidence": [
+            {
+              "source_id": "tsai2020-acsaem-0c00335",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 12,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "12 h",
+          "evidence": [
+            {
+              "source_id": "tsai2020-acsaem-0c00335",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "tsai2020-acsaem-0c00335",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Hydrothermal reaction is carried out",
+      "evidence": [
+        {
+          "source_id": "tsai2020-acsaem-0c00335",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
       "id": "s03-filter",
       "action": "filter",
       "label": "Solution is filtered to remove large-sized RGO",
@@ -281,10 +453,10 @@
       "branch": "",
       "optional": false,
       "depends_on": [
-        "s02-add"
+        "d2-s03-hydrothermal"
       ],
       "inputs": [
-        "tsai2020-acsaem-0c00335-2n-gqds-1--after-s02-add"
+        "tsai2020-acsaem-0c00335-2n-gqds-1--after-d2-s03-hydrothermal"
       ],
       "outputs": [
         "tsai2020-acsaem-0c00335-2n-gqds-1--after-s03-filter"
@@ -405,14 +577,50 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "tsai2020-acsaem-0c00335-2n-gqds-1--photoluminescence-peak",
+      "sample_id": "tsai2020-acsaem-0c00335-2n-gqds-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 525,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "525 nm",
+        "evidence": [
+          {
+            "source_id": "tsai2020-acsaem-0c00335",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "tsai2020-acsaem-0c00335",
+          "locator": "Main PDF p.4"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
-      "Phase not reported in the extracted text."
+      "Phase not reported in the extracted text.",
+      "Amount of deionized water not reported in the extracted text.",
+      "Amount of H2SO4 not reported in the extracted text.",
+      "Amount of HNO3 not reported in the extracted text.",
+      "Amount of GO not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

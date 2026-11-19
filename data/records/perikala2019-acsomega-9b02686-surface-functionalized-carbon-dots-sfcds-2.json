@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "perikala2019-acsomega-9b02686-surface-functionalized-carbon-dots-sfcds-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Manasa Perikala; Asha Bhardwaj (2019): Surface-Functionalized Carbon Dots (SFCDs)",
   "material": {
@@ -163,10 +163,21 @@
   "stocks": [],
   "material_states": [
     {
-      "id": "perikala2019-acsomega-9b02686-surface-functionalized-carbon-dots-sfcds-2--after-s01-heat",
+      "id": "perikala2019-acsomega-9b02686-surface-functionalized-carbon-dots-sfcds-2--after-d2-s01-dissolve",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": [
+        "perikala2019-acsomega-9b02686-surface-functionalized-carbon-dots-sfcds-2--citric-acid",
+        "perikala2019-acsomega-9b02686-surface-functionalized-carbon-dots-sfcds-2--octadecene",
+        "perikala2019-acsomega-9b02686-surface-functionalized-carbon-dots-sfcds-2--hexadecyl-amine"
+      ]
+    },
+    {
+      "id": "perikala2019-acsomega-9b02686-surface-functionalized-carbon-dots-sfcds-2--after-s01-heat",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "perikala2019-acsomega-9b02686-surface-functionalized-carbon-dots-sfcds-2--after-d2-s01-dissolve",
         "perikala2019-acsomega-9b02686-surface-functionalized-carbon-dots-sfcds-2--citric-acid",
         "perikala2019-acsomega-9b02686-surface-functionalized-carbon-dots-sfcds-2--octadecene",
         "perikala2019-acsomega-9b02686-surface-functionalized-carbon-dots-sfcds-2--hexadecyl-amine"
@@ -183,14 +194,60 @@
   ],
   "operations": [
     {
+      "id": "d2-s01-dissolve",
+      "action": "dissolve",
+      "label": "Dissolve citric acid and HDA in octadecene",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "perikala2019-acsomega-9b02686-surface-functionalized-carbon-dots-sfcds-2--citric-acid",
+        "perikala2019-acsomega-9b02686-surface-functionalized-carbon-dots-sfcds-2--octadecene",
+        "perikala2019-acsomega-9b02686-surface-functionalized-carbon-dots-sfcds-2--hexadecyl-amine"
+      ],
+      "outputs": [
+        "perikala2019-acsomega-9b02686-surface-functionalized-carbon-dots-sfcds-2--after-d2-s01-dissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "inert",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "perikala2019-acsomega-9b02686",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dissolve citric acid and HDA in octadecene",
+      "evidence": [
+        {
+          "source_id": "perikala2019-acsomega-9b02686",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
       "id": "s01-heat",
       "action": "heat",
       "label": "Heat the solution to 300 °C for 1 hour",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
+      "depends_on": [
+        "d2-s01-dissolve"
+      ],
       "inputs": [
+        "perikala2019-acsomega-9b02686-surface-functionalized-carbon-dots-sfcds-2--after-d2-s01-dissolve",
         "perikala2019-acsomega-9b02686-surface-functionalized-carbon-dots-sfcds-2--citric-acid",
         "perikala2019-acsomega-9b02686-surface-functionalized-carbon-dots-sfcds-2--octadecene",
         "perikala2019-acsomega-9b02686-surface-functionalized-carbon-dots-sfcds-2--hexadecyl-amine"
@@ -365,12 +422,76 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "perikala2019-acsomega-9b02686-surface-functionalized-carbon-dots-sfcds-2--photoluminescence-peak",
+      "sample_id": "perikala2019-acsomega-9b02686-surface-functionalized-carbon-dots-sfcds-2--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 450,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "450 nm",
+        "evidence": [
+          {
+            "source_id": "perikala2019-acsomega-9b02686",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "perikala2019-acsomega-9b02686",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "perikala2019-acsomega-9b02686-surface-functionalized-carbon-dots-sfcds-2--photoluminescence-quantum-yield",
+      "sample_id": "perikala2019-acsomega-9b02686-surface-functionalized-carbon-dots-sfcds-2--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 31,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "31 %",
+        "evidence": [
+          {
+            "source_id": "perikala2019-acsomega-9b02686",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "perikala2019-acsomega-9b02686",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Ligand not reported in the extracted text.",

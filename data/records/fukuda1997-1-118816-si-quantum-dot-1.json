@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "fukuda1997-1-118816-si-quantum-dot-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "M. Fukuda (1997): Si quantum dot",
   "material": {
@@ -132,10 +132,28 @@
   "stocks": [],
   "material_states": [
     {
-      "id": "fukuda1997-1-118816-si-quantum-dot-1--after-s01-etch",
+      "id": "fukuda1997-1-118816-si-quantum-dot-1--after-d2-s01-treat",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": [
+        "fukuda1997-1-118816-si-quantum-dot-1--hydrofluoric-acid"
+      ]
+    },
+    {
+      "id": "fukuda1997-1-118816-si-quantum-dot-1--after-d2-s02-deposit",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "fukuda1997-1-118816-si-quantum-dot-1--after-d2-s01-treat",
+        "fukuda1997-1-118816-si-quantum-dot-1--silane"
+      ]
+    },
+    {
+      "id": "fukuda1997-1-118816-si-quantum-dot-1--after-s01-etch",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "fukuda1997-1-118816-si-quantum-dot-1--after-d2-s02-deposit",
         "fukuda1997-1-118816-si-quantum-dot-1--hydrofluoric-acid"
       ]
     },
@@ -150,14 +168,92 @@
   ],
   "operations": [
     {
+      "id": "d2-s01-treat",
+      "action": "treat",
+      "label": "Treat",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "fukuda1997-1-118816-si-quantum-dot-1--hydrofluoric-acid"
+      ],
+      "outputs": [
+        "fukuda1997-1-118816-si-quantum-dot-1--after-d2-s01-treat"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Treat",
+      "evidence": [
+        {
+          "source_id": "fukuda1997-1-118816",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s02-deposit",
+      "action": "deposit",
+      "label": "Deposit Si quantum dots via LPCVD using pure silane",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s01-treat"
+      ],
+      "inputs": [
+        "fukuda1997-1-118816-si-quantum-dot-1--after-d2-s01-treat",
+        "fukuda1997-1-118816-si-quantum-dot-1--silane"
+      ],
+      "outputs": [
+        "fukuda1997-1-118816-si-quantum-dot-1--after-d2-s02-deposit"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Deposit Si quantum dots via LPCVD using pure silane",
+      "evidence": [
+        {
+          "source_id": "fukuda1997-1-118816",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
       "id": "s01-etch",
       "action": "etch",
       "label": "Etch SiO2 layer to 1 nm thickness using 0.1% HF",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
+      "depends_on": [
+        "d2-s02-deposit"
+      ],
       "inputs": [
+        "fukuda1997-1-118816-si-quantum-dot-1--after-d2-s02-deposit",
         "fukuda1997-1-118816-si-quantum-dot-1--hydrofluoric-acid"
       ],
       "outputs": [
@@ -337,7 +433,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Reactor not reported in the extracted text.",

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "liu2008-la702972d-zn0-99cd0-01se-qds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Fang-Chen Liu; Tian-Lu Cheng; Chien-Chih Shen; Wei-Lung Tseng; Michael Y. Chiang (2008): Zn0.99Cd0.01Se QDs",
   "material": {
@@ -157,6 +157,44 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "liu2008-la702972d-zn0-99cd0-01se-qds-1--cysteine",
+      "name": "cysteine",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "liu2008-la702972d",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "liu2008-la702972d-zn0-99cd0-01se-qds-1--nahse",
+      "name": "NaHSe",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "liu2008-la702972d",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -175,15 +213,25 @@
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
-        "liu2008-la702972d-zn0-99cd0-01se-qds-1--after-s01-react"
+        "liu2008-la702972d-zn0-99cd0-01se-qds-1--after-s01-react",
+        "liu2008-la702972d-zn0-99cd0-01se-qds-1--nahse",
+        "liu2008-la702972d-zn0-99cd0-01se-qds-1--cysteine"
       ]
     },
     {
       "id": "liu2008-la702972d-zn0-99cd0-01se-qds-1--after-s03-heat",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "liu2008-la702972d-zn0-99cd0-01se-qds-1--after-s02-add"
+      ]
+    },
+    {
+      "id": "liu2008-la702972d-zn0-99cd0-01se-qds-1--after-d2-s04-illuminate",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "liu2008-la702972d-zn0-99cd0-01se-qds-1--after-s02-add"
+        "liu2008-la702972d-zn0-99cd0-01se-qds-1--after-s03-heat"
       ]
     }
   ],
@@ -241,7 +289,9 @@
         "s01-react"
       ],
       "inputs": [
-        "liu2008-la702972d-zn0-99cd0-01se-qds-1--after-s01-react"
+        "liu2008-la702972d-zn0-99cd0-01se-qds-1--after-s01-react",
+        "liu2008-la702972d-zn0-99cd0-01se-qds-1--nahse",
+        "liu2008-la702972d-zn0-99cd0-01se-qds-1--cysteine"
       ],
       "outputs": [
         "liu2008-la702972d-zn0-99cd0-01se-qds-1--after-s02-add"
@@ -334,6 +384,49 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s04-illuminate",
+      "action": "illuminate",
+      "label": "Illuminate",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-heat"
+      ],
+      "inputs": [
+        "liu2008-la702972d-zn0-99cd0-01se-qds-1--after-s03-heat"
+      ],
+      "outputs": [
+        "liu2008-la702972d-zn0-99cd0-01se-qds-1--after-d2-s04-illuminate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "liu2008-la702972d",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Illuminate",
+      "evidence": [
+        {
+          "source_id": "liu2008-la702972d",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -342,7 +435,7 @@
       "sample_id": "liu2008-la702972d-zn0-99cd0-01se-qds-1--product",
       "source_sample_label": "Zn0.99Cd0.01Se QDs",
       "batch_id": null,
-      "material_state_id": "liu2008-la702972d-zn0-99cd0-01se-qds-1--after-s03-heat",
+      "material_state_id": "liu2008-la702972d-zn0-99cd0-01se-qds-1--after-d2-s04-illuminate",
       "parent_sample_id": null,
       "composition": {
         "value": "Zn0.99Cd0.01Se",
@@ -399,12 +492,14 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
-      "Reaction time not reported in the extracted text."
+      "Reaction time not reported in the extracted text.",
+      "Amount of cysteine not reported in the extracted text.",
+      "Amount of NaHSe not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

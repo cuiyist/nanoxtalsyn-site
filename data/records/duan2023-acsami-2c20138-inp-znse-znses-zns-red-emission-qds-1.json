@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Xijian Duan; Jingrui Ma; Wenda Zhang; Pai Liu; Haochen Liu; Junjie Hao; Kai Wang; Lars Samuelson; Xiao Wei Sun (2023): InP/ZnSe/ZnSeS/ZnS red emission QDs",
   "material": {
@@ -166,6 +166,158 @@
           "locator": "Main PDF p.7"
         }
       ]
+    },
+    {
+      "id": "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--ola",
+      "name": "OLA",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "duan2023-acsami-2c20138",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--dma-3p",
+      "name": "(DMA)3P",
+      "formula": null,
+      "role": "nonmetal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "duan2023-acsami-2c20138",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--se-top",
+      "name": "Se-TOP",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "duan2023-acsami-2c20138",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--zinc-stearate",
+      "name": "zinc stearate",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "duan2023-acsami-2c20138",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--ode",
+      "name": "ODE",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "duan2023-acsami-2c20138",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--s-top",
+      "name": "S-TOP",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "duan2023-acsami-2c20138",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--ddt",
+      "name": "DDT",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 1.5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1.5 mL",
+          "evidence": [
+            {
+              "source_id": "duan2023-acsami-2c20138",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "duan2023-acsami-2c20138",
+          "locator": "Main PDF p.7"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -176,15 +328,79 @@
       "kind": "reaction_batch",
       "parent_ids": [
         "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--incl3",
-        "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--zncl2"
+        "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--zncl2",
+        "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--ola"
+      ]
+    },
+    {
+      "id": "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--after-d2-s02-inject",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--after-s01-add",
+        "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--dma-3p"
+      ]
+    },
+    {
+      "id": "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--after-d2-s03-inject",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--after-d2-s02-inject",
+        "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--se-top",
+        "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--s-top"
+      ]
+    },
+    {
+      "id": "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--after-d2-s04-inject",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--after-d2-s03-inject",
+        "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--ddt"
       ]
     },
     {
       "id": "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--after-s02-cool",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--after-d2-s04-inject"
+      ]
+    },
+    {
+      "id": "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--after-d2-s06-inject",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--after-s02-cool"
+      ]
+    },
+    {
+      "id": "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--after-d2-s07-inject",
+      "name": "mixture after step 7",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--after-d2-s06-inject",
+        "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--se-top"
+      ]
+    },
+    {
+      "id": "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--after-d2-s08-inject",
+      "name": "mixture after step 8",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--after-d2-s07-inject",
+        "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--s-top"
+      ]
+    },
+    {
+      "id": "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--after-d2-s09-inject",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--after-s01-add"
+        "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--after-d2-s08-inject",
+        "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--ddt"
       ]
     }
   ],
@@ -199,7 +415,8 @@
       "depends_on": [],
       "inputs": [
         "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--incl3",
-        "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--zncl2"
+        "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--zncl2",
+        "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--ola"
       ],
       "outputs": [
         "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--after-s01-add"
@@ -269,9 +486,9 @@
       ]
     },
     {
-      "id": "s02-cool",
-      "action": "cool",
-      "label": "Cool the reaction system to 120 °C",
+      "id": "d2-s02-inject",
+      "action": "inject",
+      "label": "Inject (DMA)3P and react for 22 min",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -279,7 +496,233 @@
         "s01-add"
       ],
       "inputs": [
-        "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--after-s01-add"
+        "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--after-s01-add",
+        "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--dma-3p"
+      ],
+      "outputs": [
+        "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--after-d2-s02-inject"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 22,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "22 min",
+          "evidence": [
+            {
+              "source_id": "duan2023-acsami-2c20138",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "duan2023-acsami-2c20138",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Inject (DMA)3P and react for 22 min",
+      "evidence": [
+        {
+          "source_id": "duan2023-acsami-2c20138",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "d2-s03-inject",
+      "action": "inject",
+      "label": "Inject Se-TOP and S-TOP to coat ZnS shell",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-inject"
+      ],
+      "inputs": [
+        "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--after-d2-s02-inject",
+        "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--se-top",
+        "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--s-top"
+      ],
+      "outputs": [
+        "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--after-d2-s03-inject"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 300,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "300 °C",
+          "evidence": [
+            {
+              "source_id": "duan2023-acsami-2c20138",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 20,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "20 min",
+          "evidence": [
+            {
+              "source_id": "duan2023-acsami-2c20138",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "duan2023-acsami-2c20138",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Inject Se-TOP and S-TOP to coat ZnS shell",
+      "evidence": [
+        {
+          "source_id": "duan2023-acsami-2c20138",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "d2-s04-inject",
+      "action": "inject",
+      "label": "Inject DDT and react for 40 min",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-inject"
+      ],
+      "inputs": [
+        "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--after-d2-s03-inject",
+        "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--ddt"
+      ],
+      "outputs": [
+        "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--after-d2-s04-inject"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 300,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "300 °C",
+          "evidence": [
+            {
+              "source_id": "duan2023-acsami-2c20138",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 40,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "40 min",
+          "evidence": [
+            {
+              "source_id": "duan2023-acsami-2c20138",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "duan2023-acsami-2c20138",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Inject DDT and react for 40 min",
+      "evidence": [
+        {
+          "source_id": "duan2023-acsami-2c20138",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "s02-cool",
+      "action": "cool",
+      "label": "Cool the reaction system to 120 °C",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-inject"
+      ],
+      "inputs": [
+        "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--after-d2-s04-inject"
       ],
       "outputs": [
         "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--after-s02-cool"
@@ -329,6 +772,200 @@
           "locator": "Main PDF p.7"
         }
       ]
+    },
+    {
+      "id": "d2-s06-inject",
+      "action": "inject",
+      "label": "Inject diluted HF solution and etch for 2 min",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-cool"
+      ],
+      "inputs": [
+        "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--after-s02-cool"
+      ],
+      "outputs": [
+        "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--after-d2-s06-inject"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 2,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2 min",
+          "evidence": [
+            {
+              "source_id": "duan2023-acsami-2c20138",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "duan2023-acsami-2c20138",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Inject diluted HF solution and etch for 2 min",
+      "evidence": [
+        {
+          "source_id": "duan2023-acsami-2c20138",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "d2-s07-inject",
+      "action": "inject",
+      "label": "Inject",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s06-inject"
+      ],
+      "inputs": [
+        "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--after-d2-s06-inject",
+        "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--se-top"
+      ],
+      "outputs": [
+        "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--after-d2-s07-inject"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "duan2023-acsami-2c20138",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Inject",
+      "evidence": [
+        {
+          "source_id": "duan2023-acsami-2c20138",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "d2-s08-inject",
+      "action": "inject",
+      "label": "Inject",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s07-inject"
+      ],
+      "inputs": [
+        "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--after-d2-s07-inject",
+        "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--s-top"
+      ],
+      "outputs": [
+        "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--after-d2-s08-inject"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "duan2023-acsami-2c20138",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Inject",
+      "evidence": [
+        {
+          "source_id": "duan2023-acsami-2c20138",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "d2-s09-inject",
+      "action": "inject",
+      "label": "Inject DDT as before",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s08-inject"
+      ],
+      "inputs": [
+        "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--after-d2-s08-inject",
+        "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--ddt"
+      ],
+      "outputs": [
+        "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--after-d2-s09-inject"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "duan2023-acsami-2c20138",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Inject DDT as before",
+      "evidence": [
+        {
+          "source_id": "duan2023-acsami-2c20138",
+          "locator": "Main PDF p.7"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -337,7 +974,7 @@
       "sample_id": "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--product",
       "source_sample_label": "InP/ZnSe/ZnSeS/ZnS red emission QDs",
       "batch_id": null,
-      "material_state_id": "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--after-s02-cool",
+      "material_state_id": "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--after-d2-s09-inject",
       "parent_sample_id": null,
       "composition": {
         "value": "InP",
@@ -428,14 +1065,84 @@
           "locator": "Main PDF p.4"
         }
       ]
+    },
+    {
+      "id": "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--photoluminescence-peak",
+      "sample_id": "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 613,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "613 nm",
+        "evidence": [
+          {
+            "source_id": "duan2023-acsami-2c20138",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "duan2023-acsami-2c20138",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--photoluminescence-quantum-yield",
+      "sample_id": "duan2023-acsami-2c20138-inp-znse-znses-zns-red-emission-qds-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 97.7,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "97.7 %",
+        "evidence": [
+          {
+            "source_id": "duan2023-acsami-2c20138",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "duan2023-acsami-2c20138",
+          "locator": "Main PDF p.1"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
-      "Reaction temperature not reported in the extracted text."
+      "Reaction temperature not reported in the extracted text.",
+      "Amount of OLA not reported in the extracted text.",
+      "Amount of (DMA)3P not reported in the extracted text.",
+      "Amount of Se-TOP not reported in the extracted text.",
+      "Amount of zinc stearate not reported in the extracted text.",
+      "Amount of ODE not reported in the extracted text.",
+      "Amount of S-TOP not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

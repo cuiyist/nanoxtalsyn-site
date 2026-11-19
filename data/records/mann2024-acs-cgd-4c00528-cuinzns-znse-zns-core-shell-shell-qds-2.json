@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "mann2024-acs-cgd-4c00528-cuinzns-znse-zns-core-shell-shell-qds-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Patrick Mann; Simon M. Fairclough; Struan Bourke; Mary Burkitt Gray; Laura Urbano; David J. Morgan; Lea Ann Dailey; Maya Thanou; Nicholas J. Long; Mark A. Green (2024): CuInZnS/ZnSe/ZnS core/shell/shell QDs",
   "material": {
@@ -137,21 +137,155 @@
           "locator": "Main PDF p.4"
         }
       ]
+    },
+    {
+      "id": "mann2024-acs-cgd-4c00528-cuinzns-znse-zns-core-shell-shell-qds-2--trioctylphosphine",
+      "name": "trioctylphosphine",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "mann2024-acs-cgd-4c00528",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "mann2024-acs-cgd-4c00528-cuinzns-znse-zns-core-shell-shell-qds-2--oleic-acid",
+      "name": "oleic acid",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "mann2024-acs-cgd-4c00528",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    },
+    {
+      "id": "mann2024-acs-cgd-4c00528-cuinzns-znse-zns-core-shell-shell-qds-2--oleylamine",
+      "name": "oleylamine",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "mann2024-acs-cgd-4c00528",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "mann2024-acs-cgd-4c00528-cuinzns-znse-zns-core-shell-shell-qds-2--1-octadecene",
+      "name": "1-octadecene",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "mann2024-acs-cgd-4c00528",
+          "locator": "Main PDF p.4"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
+      "id": "mann2024-acs-cgd-4c00528-cuinzns-znse-zns-core-shell-shell-qds-2--after-d2-s01-heat",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "mann2024-acs-cgd-4c00528-cuinzns-znse-zns-core-shell-shell-qds-2--zinc-oleate",
+        "mann2024-acs-cgd-4c00528-cuinzns-znse-zns-core-shell-shell-qds-2--oleic-acid",
+        "mann2024-acs-cgd-4c00528-cuinzns-znse-zns-core-shell-shell-qds-2--1-octadecene"
+      ]
+    },
+    {
       "id": "mann2024-acs-cgd-4c00528-cuinzns-znse-zns-core-shell-shell-qds-2--after-s01-anneal",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "mann2024-acs-cgd-4c00528-cuinzns-znse-zns-core-shell-shell-qds-2--after-d2-s01-heat",
+        "mann2024-acs-cgd-4c00528-cuinzns-znse-zns-core-shell-shell-qds-2--zinc-oleate",
+        "mann2024-acs-cgd-4c00528-cuinzns-znse-zns-core-shell-shell-qds-2--elemental-selenium"
+      ]
+    },
+    {
+      "id": "mann2024-acs-cgd-4c00528-cuinzns-znse-zns-core-shell-shell-qds-2--after-d2-s03-heat",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "mann2024-acs-cgd-4c00528-cuinzns-znse-zns-core-shell-shell-qds-2--zinc-oleate",
-        "mann2024-acs-cgd-4c00528-cuinzns-znse-zns-core-shell-shell-qds-2--elemental-selenium"
+        "mann2024-acs-cgd-4c00528-cuinzns-znse-zns-core-shell-shell-qds-2--after-s01-anneal",
+        "mann2024-acs-cgd-4c00528-cuinzns-znse-zns-core-shell-shell-qds-2--zinc-diethyldithiocarbamate"
       ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-heat",
+      "action": "heat",
+      "label": "Heat",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "mann2024-acs-cgd-4c00528-cuinzns-znse-zns-core-shell-shell-qds-2--zinc-oleate",
+        "mann2024-acs-cgd-4c00528-cuinzns-znse-zns-core-shell-shell-qds-2--oleic-acid",
+        "mann2024-acs-cgd-4c00528-cuinzns-znse-zns-core-shell-shell-qds-2--1-octadecene"
+      ],
+      "outputs": [
+        "mann2024-acs-cgd-4c00528-cuinzns-znse-zns-core-shell-shell-qds-2--after-d2-s01-heat"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heat",
+      "evidence": [
+        {
+          "source_id": "mann2024-acs-cgd-4c00528",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    },
     {
       "id": "s01-anneal",
       "action": "anneal",
@@ -159,8 +293,11 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
+      "depends_on": [
+        "d2-s01-heat"
+      ],
       "inputs": [
+        "mann2024-acs-cgd-4c00528-cuinzns-znse-zns-core-shell-shell-qds-2--after-d2-s01-heat",
         "mann2024-acs-cgd-4c00528-cuinzns-znse-zns-core-shell-shell-qds-2--zinc-oleate",
         "mann2024-acs-cgd-4c00528-cuinzns-znse-zns-core-shell-shell-qds-2--elemental-selenium"
       ],
@@ -225,6 +362,45 @@
           "locator": "Main PDF p.4"
         }
       ]
+    },
+    {
+      "id": "d2-s03-heat",
+      "action": "heat",
+      "label": "Heat",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-anneal"
+      ],
+      "inputs": [
+        "mann2024-acs-cgd-4c00528-cuinzns-znse-zns-core-shell-shell-qds-2--after-s01-anneal",
+        "mann2024-acs-cgd-4c00528-cuinzns-znse-zns-core-shell-shell-qds-2--zinc-diethyldithiocarbamate"
+      ],
+      "outputs": [
+        "mann2024-acs-cgd-4c00528-cuinzns-znse-zns-core-shell-shell-qds-2--after-d2-s03-heat"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heat",
+      "evidence": [
+        {
+          "source_id": "mann2024-acs-cgd-4c00528",
+          "locator": "Main PDF p.4"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -233,7 +409,7 @@
       "sample_id": "mann2024-acs-cgd-4c00528-cuinzns-znse-zns-core-shell-shell-qds-2--product",
       "source_sample_label": "CuInZnS/ZnSe/ZnS core/shell/shell QDs",
       "batch_id": null,
-      "material_state_id": "mann2024-acs-cgd-4c00528-cuinzns-znse-zns-core-shell-shell-qds-2--after-s01-anneal",
+      "material_state_id": "mann2024-acs-cgd-4c00528-cuinzns-znse-zns-core-shell-shell-qds-2--after-d2-s03-heat",
       "parent_sample_id": null,
       "composition": {
         "value": null,
@@ -309,12 +485,76 @@
           "locator": "Main PDF p.4"
         }
       ]
+    },
+    {
+      "id": "mann2024-acs-cgd-4c00528-cuinzns-znse-zns-core-shell-shell-qds-2--photoluminescence-peak",
+      "sample_id": "mann2024-acs-cgd-4c00528-cuinzns-znse-zns-core-shell-shell-qds-2--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 783,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "783 nm",
+        "evidence": [
+          {
+            "source_id": "mann2024-acs-cgd-4c00528",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "mann2024-acs-cgd-4c00528",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    },
+    {
+      "id": "mann2024-acs-cgd-4c00528-cuinzns-znse-zns-core-shell-shell-qds-2--photoluminescence-quantum-yield",
+      "sample_id": "mann2024-acs-cgd-4c00528-cuinzns-znse-zns-core-shell-shell-qds-2--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 30.9,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "30.9 %",
+        "evidence": [
+          {
+            "source_id": "mann2024-acs-cgd-4c00528",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "mann2024-acs-cgd-4c00528",
+          "locator": "Main PDF p.5"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
@@ -322,7 +562,11 @@
       "Atmosphere not reported in the extracted text.",
       "Amount of zinc oleate not reported in the extracted text.",
       "Amount of elemental selenium not reported in the extracted text.",
-      "Amount of zinc diethyldithiocarbamate not reported in the extracted text."
+      "Amount of zinc diethyldithiocarbamate not reported in the extracted text.",
+      "Amount of trioctylphosphine not reported in the extracted text.",
+      "Amount of oleic acid not reported in the extracted text.",
+      "Amount of oleylamine not reported in the extracted text.",
+      "Amount of 1-octadecene not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

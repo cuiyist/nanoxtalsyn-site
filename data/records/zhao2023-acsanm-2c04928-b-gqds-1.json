@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "zhao2023-acsanm-2c04928-b-gqds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Yun Zhao; Bingli Gu; Guoqiang Guo; Yanshuang Li; Tingting Li; Yuejin Zhu; Xu Wang; Da Chen (2023): B-GQDs",
   "material": {
@@ -153,6 +153,25 @@
           "derivation": null
         }
       },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zhao2023-acsanm-2c04928",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "zhao2023-acsanm-2c04928-b-gqds-1--ethanol",
+      "name": "ethanol",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
       "notes": [],
       "evidence": [
         {
@@ -445,15 +464,80 @@
           "locator": "Main PDF p.4"
         }
       ]
+    },
+    {
+      "id": "zhao2023-acsanm-2c04928-b-gqds-1--photoluminescence-peak",
+      "sample_id": "zhao2023-acsanm-2c04928-b-gqds-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 454,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "454 nm",
+        "evidence": [
+          {
+            "source_id": "zhao2023-acsanm-2c04928",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "zhao2023-acsanm-2c04928",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    },
+    {
+      "id": "zhao2023-acsanm-2c04928-b-gqds-1--photoluminescence-quantum-yield",
+      "sample_id": "zhao2023-acsanm-2c04928-b-gqds-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 68,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "68 %",
+        "evidence": [
+          {
+            "source_id": "zhao2023-acsanm-2c04928",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "zhao2023-acsanm-2c04928",
+          "locator": "Main PDF p.1"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
-      "Ligand not reported in the extracted text."
+      "Ligand not reported in the extracted text.",
+      "Amount of ethanol not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

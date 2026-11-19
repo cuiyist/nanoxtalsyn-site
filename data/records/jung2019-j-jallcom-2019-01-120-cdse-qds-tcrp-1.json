@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "jung2019-j-jallcom-2019-01-120-cdse-qds-tcrp-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Jae-Yong Jung; Jung-Goo Lee; Youn-Kyung Baek; Yang-Do Kim; Jong-Pal Hong; Young-Kuk Kim (2019): CdSe QDs (TCRP)",
   "material": {
@@ -280,14 +280,26 @@
   "stocks": [],
   "material_states": [
     {
-      "id": "jung2019-j-jallcom-2019-01-120-cdse-qds-tcrp-1--after-s01-heat",
+      "id": "jung2019-j-jallcom-2019-01-120-cdse-qds-tcrp-1--after-d2-s01-mix",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "jung2019-j-jallcom-2019-01-120-cdse-qds-tcrp-1--cadmium-oxide",
+        "jung2019-j-jallcom-2019-01-120-cdse-qds-tcrp-1--1-octadecene",
+        "jung2019-j-jallcom-2019-01-120-cdse-qds-tcrp-1--oleic-acid"
+      ]
+    },
+    {
+      "id": "jung2019-j-jallcom-2019-01-120-cdse-qds-tcrp-1--after-s01-heat",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "jung2019-j-jallcom-2019-01-120-cdse-qds-tcrp-1--after-d2-s01-mix"
+      ]
     },
     {
       "id": "jung2019-j-jallcom-2019-01-120-cdse-qds-tcrp-1--after-s02-dissolve",
-      "name": "mixture after step 2",
+      "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
         "jung2019-j-jallcom-2019-01-120-cdse-qds-tcrp-1--after-s01-heat",
@@ -308,14 +320,98 @@
   ],
   "operations": [
     {
+      "id": "d2-s01-mix",
+      "action": "mix",
+      "label": "Mixing CdO, ODE, and OA",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "jung2019-j-jallcom-2019-01-120-cdse-qds-tcrp-1--cadmium-oxide",
+        "jung2019-j-jallcom-2019-01-120-cdse-qds-tcrp-1--1-octadecene",
+        "jung2019-j-jallcom-2019-01-120-cdse-qds-tcrp-1--oleic-acid"
+      ],
+      "outputs": [
+        "jung2019-j-jallcom-2019-01-120-cdse-qds-tcrp-1--after-d2-s01-mix"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 120,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "120 °C",
+          "evidence": [
+            {
+              "source_id": "jung2019-j-jallcom-2019-01-120",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 20,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "20 min",
+          "evidence": [
+            {
+              "source_id": "jung2019-j-jallcom-2019-01-120",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "jung2019-j-jallcom-2019-01-120",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Mixing CdO, ODE, and OA",
+      "evidence": [
+        {
+          "source_id": "jung2019-j-jallcom-2019-01-120",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
       "id": "s01-heat",
       "action": "heat",
       "label": "Heating to 275 ˚C under N2 atmosphere",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s01-mix"
+      ],
+      "inputs": [
+        "jung2019-j-jallcom-2019-01-120-cdse-qds-tcrp-1--after-d2-s01-mix"
+      ],
       "outputs": [
         "jung2019-j-jallcom-2019-01-120-cdse-qds-tcrp-1--after-s01-heat"
       ],
@@ -585,12 +681,76 @@
           "locator": "Main PDF p.4"
         }
       ]
+    },
+    {
+      "id": "jung2019-j-jallcom-2019-01-120-cdse-qds-tcrp-1--photoluminescence-peak",
+      "sample_id": "jung2019-j-jallcom-2019-01-120-cdse-qds-tcrp-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 610,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "610 nm",
+        "evidence": [
+          {
+            "source_id": "jung2019-j-jallcom-2019-01-120",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "jung2019-j-jallcom-2019-01-120",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    },
+    {
+      "id": "jung2019-j-jallcom-2019-01-120-cdse-qds-tcrp-1--photoluminescence-quantum-yield",
+      "sample_id": "jung2019-j-jallcom-2019-01-120-cdse-qds-tcrp-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 36,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "36 %",
+        "evidence": [
+          {
+            "source_id": "jung2019-j-jallcom-2019-01-120",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "jung2019-j-jallcom-2019-01-120",
+          "locator": "Main PDF p.4"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Reaction time not reported in the extracted text."

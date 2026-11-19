@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "F.U. Hassan (2019): ZnO-PbS NC",
   "material": {
@@ -116,6 +116,82 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--sodium-sulphide",
+      "name": "Sodium sulphide",
+      "formula": null,
+      "role": "nonmetal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "hassan2019-j-materresbull-2019-110588",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--ammonium-fluoride",
+      "name": "Ammonium fluoride",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "hassan2019-j-materresbull-2019-110588",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--zno-nps",
+      "name": "ZnO NPs",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "hassan2019-j-materresbull-2019-110588",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--pb-no3-2",
+      "name": "Pb(NO3)2",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "hassan2019-j-materresbull-2019-110588",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -134,7 +210,9 @@
       "kind": "reaction_batch",
       "parent_ids": [
         "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--after-s01-add",
-        "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--methanol"
+        "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--methanol",
+        "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--zno-nps",
+        "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--pb-no3-2"
       ]
     },
     {
@@ -144,16 +222,37 @@
       "parent_ids": [
         "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--after-s02-centrifuge",
         "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--methanol",
-        "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--de-ionized-water"
+        "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--de-ionized-water",
+        "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--sodium-sulphide"
+      ]
+    },
+    {
+      "id": "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--after-d2-s04-rinse",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--after-s03-add",
+        "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--methanol"
       ]
     },
     {
       "id": "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--after-s04-centrifuge",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--after-d2-s04-rinse",
+        "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--methanol",
+        "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--de-ionized-water",
+        "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--zno-nps",
+        "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--sodium-sulphide"
+      ]
+    },
+    {
+      "id": "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--after-d2-s06-rinse",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--after-s03-add",
-        "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--methanol",
+        "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--after-s04-centrifuge",
         "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--de-ionized-water"
       ]
     }
@@ -207,7 +306,9 @@
       ],
       "inputs": [
         "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--after-s01-add",
-        "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--methanol"
+        "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--methanol",
+        "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--zno-nps",
+        "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--pb-no3-2"
       ],
       "outputs": [
         "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--after-s02-centrifuge"
@@ -266,7 +367,8 @@
       "inputs": [
         "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--after-s02-centrifuge",
         "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--methanol",
-        "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--de-ionized-water"
+        "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--de-ionized-water",
+        "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--sodium-sulphide"
       ],
       "outputs": [
         "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--after-s03-add"
@@ -294,10 +396,10 @@
       ]
     },
     {
-      "id": "s04-centrifuge",
-      "action": "centrifuge",
-      "label": "Centrifuge for 4 min at 6000 rpm",
-      "stage": "workup",
+      "id": "d2-s04-rinse",
+      "action": "rinse",
+      "label": "Rinse with methanol",
+      "stage": "synthesis",
       "branch": "",
       "optional": false,
       "depends_on": [
@@ -305,8 +407,49 @@
       ],
       "inputs": [
         "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--after-s03-add",
+        "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--methanol"
+      ],
+      "outputs": [
+        "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--after-d2-s04-rinse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Rinse with methanol",
+      "evidence": [
+        {
+          "source_id": "hassan2019-j-materresbull-2019-110588",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s04-centrifuge",
+      "action": "centrifuge",
+      "label": "Centrifuge for 4 min at 6000 rpm",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-rinse"
+      ],
+      "inputs": [
+        "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--after-d2-s04-rinse",
         "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--methanol",
-        "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--de-ionized-water"
+        "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--de-ionized-water",
+        "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--zno-nps",
+        "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--sodium-sulphide"
       ],
       "outputs": [
         "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--after-s04-centrifuge"
@@ -351,6 +494,45 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s06-rinse",
+      "action": "rinse",
+      "label": "Rinse with de-ionized water",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-centrifuge"
+      ],
+      "inputs": [
+        "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--after-s04-centrifuge",
+        "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--de-ionized-water"
+      ],
+      "outputs": [
+        "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--after-d2-s06-rinse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Rinse with de-ionized water",
+      "evidence": [
+        {
+          "source_id": "hassan2019-j-materresbull-2019-110588",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -359,7 +541,7 @@
       "sample_id": "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--product",
       "source_sample_label": "ZnO-PbS NC",
       "batch_id": null,
-      "material_state_id": "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--after-s04-centrifuge",
+      "material_state_id": "hassan2019-j-materresbull-2019-110588-zno-pbs-nc-2--after-d2-s06-rinse",
       "parent_sample_id": null,
       "composition": {
         "value": null,
@@ -406,7 +588,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
@@ -415,7 +597,11 @@
       "Reaction temperature not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
       "Amount of Methanol not reported in the extracted text.",
-      "Amount of De-ionized water not reported in the extracted text."
+      "Amount of De-ionized water not reported in the extracted text.",
+      "Amount of Sodium sulphide not reported in the extracted text.",
+      "Amount of Ammonium fluoride not reported in the extracted text.",
+      "Amount of ZnO NPs not reported in the extracted text.",
+      "Amount of Pb(NO3)2 not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

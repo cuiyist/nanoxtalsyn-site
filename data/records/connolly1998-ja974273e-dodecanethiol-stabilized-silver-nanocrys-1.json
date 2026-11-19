@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "connolly1998-ja974273e-dodecanethiol-stabilized-silver-nanocrys-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Stephen Connolly (1998): dodecanethiol stabilized silver nanocrystals",
   "material": {
@@ -142,10 +142,20 @@
     },
     {
       "id": "connolly1998-ja974273e-dodecanethiol-stabilized-silver-nanocrys-1--after-s02-redissolve",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "connolly1998-ja974273e-dodecanethiol-stabilized-silver-nanocrys-1--after-s01-prepare",
+        "connolly1998-ja974273e-dodecanethiol-stabilized-silver-nanocrys-1--dodecanethiol",
+        "connolly1998-ja974273e-dodecanethiol-stabilized-silver-nanocrys-1--silver"
+      ]
+    },
+    {
+      "id": "connolly1998-ja974273e-dodecanethiol-stabilized-silver-nanocrys-1--after-d2-s03-evaporate",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "connolly1998-ja974273e-dodecanethiol-stabilized-silver-nanocrys-1--after-s01-prepare",
+        "connolly1998-ja974273e-dodecanethiol-stabilized-silver-nanocrys-1--after-s02-redissolve",
         "connolly1998-ja974273e-dodecanethiol-stabilized-silver-nanocrys-1--dodecanethiol",
         "connolly1998-ja974273e-dodecanethiol-stabilized-silver-nanocrys-1--silver"
       ]
@@ -228,6 +238,46 @@
           "locator": "Main PDF p.1"
         }
       ]
+    },
+    {
+      "id": "d2-s03-evaporate",
+      "action": "evaporate",
+      "label": "Solvent evaporation on a carbon coated Cu grid",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-redissolve"
+      ],
+      "inputs": [
+        "connolly1998-ja974273e-dodecanethiol-stabilized-silver-nanocrys-1--after-s02-redissolve",
+        "connolly1998-ja974273e-dodecanethiol-stabilized-silver-nanocrys-1--dodecanethiol",
+        "connolly1998-ja974273e-dodecanethiol-stabilized-silver-nanocrys-1--silver"
+      ],
+      "outputs": [
+        "connolly1998-ja974273e-dodecanethiol-stabilized-silver-nanocrys-1--after-d2-s03-evaporate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Solvent evaporation on a carbon coated Cu grid",
+      "evidence": [
+        {
+          "source_id": "connolly1998-ja974273e",
+          "locator": "Main PDF p.1"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -236,7 +286,7 @@
       "sample_id": "connolly1998-ja974273e-dodecanethiol-stabilized-silver-nanocrys-1--product",
       "source_sample_label": "dodecanethiol stabilized silver nanocrystals",
       "batch_id": null,
-      "material_state_id": "connolly1998-ja974273e-dodecanethiol-stabilized-silver-nanocrys-1--after-s02-redissolve",
+      "material_state_id": "connolly1998-ja974273e-dodecanethiol-stabilized-silver-nanocrys-1--after-d2-s03-evaporate",
       "parent_sample_id": null,
       "composition": {
         "value": "Ag",
@@ -329,7 +379,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Reactor not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",

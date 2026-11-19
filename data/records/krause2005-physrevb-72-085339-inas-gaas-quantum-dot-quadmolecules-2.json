@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "krause2005-physrevb-72-085339-inas-gaas-quantum-dot-quadmolecules-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "B. Krause (2005): InAs/GaAs quantum dot quadmolecules",
   "material": {
@@ -130,6 +130,25 @@
           "locator": "Main PDF p.1"
         }
       ]
+    },
+    {
+      "id": "krause2005-physrevb-72-085339-inas-gaas-quantum-dot-quadmolecules-2--asbr3",
+      "name": "AsBr3",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "krause2005-physrevb-72-085339",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -156,7 +175,8 @@
       "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
-        "krause2005-physrevb-72-085339-inas-gaas-quantum-dot-quadmolecules-2--after-s02-overgrow"
+        "krause2005-physrevb-72-085339-inas-gaas-quantum-dot-quadmolecules-2--after-s02-overgrow",
+        "krause2005-physrevb-72-085339-inas-gaas-quantum-dot-quadmolecules-2--asbr3"
       ]
     },
     {
@@ -256,7 +276,8 @@
         "s02-overgrow"
       ],
       "inputs": [
-        "krause2005-physrevb-72-085339-inas-gaas-quantum-dot-quadmolecules-2--after-s02-overgrow"
+        "krause2005-physrevb-72-085339-inas-gaas-quantum-dot-quadmolecules-2--after-s02-overgrow",
+        "krause2005-physrevb-72-085339-inas-gaas-quantum-dot-quadmolecules-2--asbr3"
       ],
       "outputs": [
         "krause2005-physrevb-72-085339-inas-gaas-quantum-dot-quadmolecules-2--after-s03-etch"
@@ -424,13 +445,14 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Reactor not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
       "Amount of InAs not reported in the extracted text.",
-      "Amount of GaAs not reported in the extracted text."
+      "Amount of GaAs not reported in the extracted text.",
+      "Amount of AsBr3 not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

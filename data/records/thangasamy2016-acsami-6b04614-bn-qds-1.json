@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "thangasamy2016-acsami-6b04614-bn-qds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Pitchai Thangasamy; Manikandan Santhanam; Marappan Sathish (2016): BN QDs",
   "material": {
@@ -127,16 +127,25 @@
       ]
     },
     {
-      "id": "thangasamy2016-acsami-6b04614-bn-qds-1--after-s02-quench",
+      "id": "thangasamy2016-acsami-6b04614-bn-qds-1--after-d2-s02-ultrasonicate",
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
-        "thangasamy2016-acsami-6b04614-bn-qds-1--after-s01-disperse"
+        "thangasamy2016-acsami-6b04614-bn-qds-1--after-s01-disperse",
+        "thangasamy2016-acsami-6b04614-bn-qds-1--n-n-dimethylformamide-dmf"
+      ]
+    },
+    {
+      "id": "thangasamy2016-acsami-6b04614-bn-qds-1--after-s02-quench",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "thangasamy2016-acsami-6b04614-bn-qds-1--after-d2-s02-ultrasonicate"
       ]
     },
     {
       "id": "thangasamy2016-acsami-6b04614-bn-qds-1--after-s03-centrifuge",
-      "name": "mixture after step 3",
+      "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
         "thangasamy2016-acsami-6b04614-bn-qds-1--after-s02-quench"
@@ -190,9 +199,9 @@
       ]
     },
     {
-      "id": "s02-quench",
-      "action": "quench",
-      "label": "Rapid quenching in ice cold water",
+      "id": "d2-s02-ultrasonicate",
+      "action": "ultrasonicate",
+      "label": "Ultrasonication of h-BN in DMF",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -200,7 +209,46 @@
         "s01-disperse"
       ],
       "inputs": [
-        "thangasamy2016-acsami-6b04614-bn-qds-1--after-s01-disperse"
+        "thangasamy2016-acsami-6b04614-bn-qds-1--after-s01-disperse",
+        "thangasamy2016-acsami-6b04614-bn-qds-1--n-n-dimethylformamide-dmf"
+      ],
+      "outputs": [
+        "thangasamy2016-acsami-6b04614-bn-qds-1--after-d2-s02-ultrasonicate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Ultrasonication of h-BN in DMF",
+      "evidence": [
+        {
+          "source_id": "thangasamy2016-acsami-6b04614",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-quench",
+      "action": "quench",
+      "label": "Rapid quenching in ice cold water",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-ultrasonicate"
+      ],
+      "inputs": [
+        "thangasamy2016-acsami-6b04614-bn-qds-1--after-d2-s02-ultrasonicate"
       ],
       "outputs": [
         "thangasamy2016-acsami-6b04614-bn-qds-1--after-s02-quench"
@@ -354,11 +402,76 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "thangasamy2016-acsami-6b04614-bn-qds-1--photoluminescence-peak",
+      "sample_id": "thangasamy2016-acsami-6b04614-bn-qds-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 414,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "414 nm",
+        "evidence": [
+          {
+            "source_id": "thangasamy2016-acsami-6b04614",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "thangasamy2016-acsami-6b04614",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "thangasamy2016-acsami-6b04614-bn-qds-1--photoluminescence-quantum-yield",
+      "sample_id": "thangasamy2016-acsami-6b04614-bn-qds-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 2.8,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "2.8 %",
+        "evidence": [
+          {
+            "source_id": "thangasamy2016-acsami-6b04614",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "thangasamy2016-acsami-6b04614",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
@@ -366,7 +479,6 @@
       "Size not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
-      "Amount of hexagonal boron nitride not reported in the extracted text.",
       "Amount of N,N-Dimethylformamide (DMF) not reported in the extracted text."
     ],
     "conflicts": [],

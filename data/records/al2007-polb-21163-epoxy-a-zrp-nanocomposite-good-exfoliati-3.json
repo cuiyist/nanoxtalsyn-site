@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "al2007-polb-21163-epoxy-a-zrp-nanocomposite-good-exfoliati-3",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Woong J. Boo et al. (2007): epoxy/a-ZrP nanocomposite (good exfoliation)",
   "material": {
@@ -102,6 +102,25 @@
       "name": "phosphoric acid",
       "formula": null,
       "role": "nonmetal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "al2007-polb-21163",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "al2007-polb-21163-epoxy-a-zrp-nanocomposite-good-exfoliati-3--4-4-diamino-diphenyl-sulfone-dds",
+      "name": "4,4'-diamino-diphenyl sulfone (DDS)",
+      "formula": null,
+      "role": "reagent",
       "stage": "synthesis",
       "identity": {
         "pubchem_cid": null,
@@ -450,7 +469,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
@@ -461,7 +480,8 @@
       "Reaction temperature not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
       "Amount of zirconyl chloride octahydrate not reported in the extracted text.",
-      "Amount of phosphoric acid not reported in the extracted text."
+      "Amount of phosphoric acid not reported in the extracted text.",
+      "Amount of 4,4'-diamino-diphenyl sulfone (DDS) not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

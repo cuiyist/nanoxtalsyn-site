@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "zhang1998-jp982948-21-nm-tio2-doped-with-0-5-at-nb5-and-loa-3",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Zhibo Zhang et al. (1998): 21-nm TiO2 doped with 0.5 at. % Nb5+ and loaded with 0.5 wt % Pt",
   "material": {
@@ -142,7 +142,7 @@
   "stocks": [],
   "material_states": [
     {
-      "id": "zhang1998-jp982948-21-nm-tio2-doped-with-0-5-at-nb5-and-loa-3--after-s01-dissolve",
+      "id": "zhang1998-jp982948-21-nm-tio2-doped-with-0-5-at-nb5-and-loa-3--after-d2-s01-crystallize",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": [
@@ -151,8 +151,18 @@
       ]
     },
     {
-      "id": "zhang1998-jp982948-21-nm-tio2-doped-with-0-5-at-nb5-and-loa-3--after-s02-add",
+      "id": "zhang1998-jp982948-21-nm-tio2-doped-with-0-5-at-nb5-and-loa-3--after-s01-dissolve",
       "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zhang1998-jp982948-21-nm-tio2-doped-with-0-5-at-nb5-and-loa-3--after-d2-s01-crystallize",
+        "zhang1998-jp982948-21-nm-tio2-doped-with-0-5-at-nb5-and-loa-3--titanium-isopropoxide",
+        "zhang1998-jp982948-21-nm-tio2-doped-with-0-5-at-nb5-and-loa-3--niobium-ethoxide"
+      ]
+    },
+    {
+      "id": "zhang1998-jp982948-21-nm-tio2-doped-with-0-5-at-nb5-and-loa-3--after-s02-add",
+      "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
         "zhang1998-jp982948-21-nm-tio2-doped-with-0-5-at-nb5-and-loa-3--after-s01-dissolve",
@@ -161,16 +171,87 @@
       ]
     },
     {
+      "id": "zhang1998-jp982948-21-nm-tio2-doped-with-0-5-at-nb5-and-loa-3--after-d2-s04-heat",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zhang1998-jp982948-21-nm-tio2-doped-with-0-5-at-nb5-and-loa-3--after-s02-add",
+        "zhang1998-jp982948-21-nm-tio2-doped-with-0-5-at-nb5-and-loa-3--titanium-isopropoxide",
+        "zhang1998-jp982948-21-nm-tio2-doped-with-0-5-at-nb5-and-loa-3--niobium-ethoxide"
+      ]
+    },
+    {
+      "id": "zhang1998-jp982948-21-nm-tio2-doped-with-0-5-at-nb5-and-loa-3--after-d2-s05-separate",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zhang1998-jp982948-21-nm-tio2-doped-with-0-5-at-nb5-and-loa-3--after-d2-s04-heat"
+      ]
+    },
+    {
+      "id": "zhang1998-jp982948-21-nm-tio2-doped-with-0-5-at-nb5-and-loa-3--after-d2-s06-wash",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zhang1998-jp982948-21-nm-tio2-doped-with-0-5-at-nb5-and-loa-3--after-d2-s05-separate"
+      ]
+    },
+    {
+      "id": "zhang1998-jp982948-21-nm-tio2-doped-with-0-5-at-nb5-and-loa-3--after-d2-s07-dry",
+      "name": "mixture after step 7",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zhang1998-jp982948-21-nm-tio2-doped-with-0-5-at-nb5-and-loa-3--after-d2-s06-wash"
+      ]
+    },
+    {
       "id": "zhang1998-jp982948-21-nm-tio2-doped-with-0-5-at-nb5-and-loa-3--after-s03-photodeposit",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "zhang1998-jp982948-21-nm-tio2-doped-with-0-5-at-nb5-and-loa-3--after-s02-add",
+        "zhang1998-jp982948-21-nm-tio2-doped-with-0-5-at-nb5-and-loa-3--after-d2-s07-dry",
         "zhang1998-jp982948-21-nm-tio2-doped-with-0-5-at-nb5-and-loa-3--h2ptcl6"
       ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-crystallize",
+      "action": "crystallize",
+      "label": "Crystallize",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "zhang1998-jp982948-21-nm-tio2-doped-with-0-5-at-nb5-and-loa-3--titanium-isopropoxide",
+        "zhang1998-jp982948-21-nm-tio2-doped-with-0-5-at-nb5-and-loa-3--niobium-ethoxide"
+      ],
+      "outputs": [
+        "zhang1998-jp982948-21-nm-tio2-doped-with-0-5-at-nb5-and-loa-3--after-d2-s01-crystallize"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Crystallize",
+      "evidence": [
+        {
+          "source_id": "zhang1998-jp982948",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
     {
       "id": "s01-dissolve",
       "action": "dissolve",
@@ -178,8 +259,11 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
+      "depends_on": [
+        "d2-s01-crystallize"
+      ],
       "inputs": [
+        "zhang1998-jp982948-21-nm-tio2-doped-with-0-5-at-nb5-and-loa-3--after-d2-s01-crystallize",
         "zhang1998-jp982948-21-nm-tio2-doped-with-0-5-at-nb5-and-loa-3--titanium-isopropoxide",
         "zhang1998-jp982948-21-nm-tio2-doped-with-0-5-at-nb5-and-loa-3--niobium-ethoxide"
       ],
@@ -249,9 +333,9 @@
       ]
     },
     {
-      "id": "s03-photodeposit",
-      "action": "photodeposit",
-      "label": "H2PtCl6",
+      "id": "d2-s04-heat",
+      "action": "heat",
+      "label": "Calcination",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -260,6 +344,160 @@
       ],
       "inputs": [
         "zhang1998-jp982948-21-nm-tio2-doped-with-0-5-at-nb5-and-loa-3--after-s02-add",
+        "zhang1998-jp982948-21-nm-tio2-doped-with-0-5-at-nb5-and-loa-3--titanium-isopropoxide",
+        "zhang1998-jp982948-21-nm-tio2-doped-with-0-5-at-nb5-and-loa-3--niobium-ethoxide"
+      ],
+      "outputs": [
+        "zhang1998-jp982948-21-nm-tio2-doped-with-0-5-at-nb5-and-loa-3--after-d2-s04-heat"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Calcination",
+      "evidence": [
+        {
+          "source_id": "zhang1998-jp982948",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s05-separate",
+      "action": "separate",
+      "label": "Gel precipitate from sol",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-heat"
+      ],
+      "inputs": [
+        "zhang1998-jp982948-21-nm-tio2-doped-with-0-5-at-nb5-and-loa-3--after-d2-s04-heat"
+      ],
+      "outputs": [
+        "zhang1998-jp982948-21-nm-tio2-doped-with-0-5-at-nb5-and-loa-3--after-d2-s05-separate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Gel precipitate from sol",
+      "evidence": [
+        {
+          "source_id": "zhang1998-jp982948",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s06-wash",
+      "action": "wash",
+      "label": "With ethanol",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s05-separate"
+      ],
+      "inputs": [
+        "zhang1998-jp982948-21-nm-tio2-doped-with-0-5-at-nb5-and-loa-3--after-d2-s05-separate"
+      ],
+      "outputs": [
+        "zhang1998-jp982948-21-nm-tio2-doped-with-0-5-at-nb5-and-loa-3--after-d2-s06-wash"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "With ethanol",
+      "evidence": [
+        {
+          "source_id": "zhang1998-jp982948",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s07-dry",
+      "action": "dry",
+      "label": "Dry",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s06-wash"
+      ],
+      "inputs": [
+        "zhang1998-jp982948-21-nm-tio2-doped-with-0-5-at-nb5-and-loa-3--after-d2-s06-wash"
+      ],
+      "outputs": [
+        "zhang1998-jp982948-21-nm-tio2-doped-with-0-5-at-nb5-and-loa-3--after-d2-s07-dry"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dry",
+      "evidence": [
+        {
+          "source_id": "zhang1998-jp982948",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s03-photodeposit",
+      "action": "photodeposit",
+      "label": "H2PtCl6",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s07-dry"
+      ],
+      "inputs": [
+        "zhang1998-jp982948-21-nm-tio2-doped-with-0-5-at-nb5-and-loa-3--after-d2-s07-dry",
         "zhang1998-jp982948-21-nm-tio2-doped-with-0-5-at-nb5-and-loa-3--h2ptcl6"
       ],
       "outputs": [
@@ -344,7 +582,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",

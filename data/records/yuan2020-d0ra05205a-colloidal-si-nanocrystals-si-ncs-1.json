@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "yuan2020-d0ra05205a-colloidal-si-nanocrystals-si-ncs-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Ze Yuan; Toshihiro Nakamura (2020): colloidal Si nanocrystals (Si-ncs)",
   "material": {
@@ -150,6 +150,44 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "yuan2020-d0ra05205a-colloidal-si-nanocrystals-si-ncs-1--hf",
+      "name": "HF",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "yuan2020-d0ra05205a",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "yuan2020-d0ra05205a-colloidal-si-nanocrystals-si-ncs-1--hno3",
+      "name": "HNO3",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "yuan2020-d0ra05205a",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -159,7 +197,9 @@
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": [
-        "yuan2020-d0ra05205a-colloidal-si-nanocrystals-si-ncs-1--metallurgical-grade-polycrystalline-si-p"
+        "yuan2020-d0ra05205a-colloidal-si-nanocrystals-si-ncs-1--metallurgical-grade-polycrystalline-si-p",
+        "yuan2020-d0ra05205a-colloidal-si-nanocrystals-si-ncs-1--hf",
+        "yuan2020-d0ra05205a-colloidal-si-nanocrystals-si-ncs-1--hno3"
       ]
     },
     {
@@ -183,7 +223,9 @@
       "optional": false,
       "depends_on": [],
       "inputs": [
-        "yuan2020-d0ra05205a-colloidal-si-nanocrystals-si-ncs-1--metallurgical-grade-polycrystalline-si-p"
+        "yuan2020-d0ra05205a-colloidal-si-nanocrystals-si-ncs-1--metallurgical-grade-polycrystalline-si-p",
+        "yuan2020-d0ra05205a-colloidal-si-nanocrystals-si-ncs-1--hf",
+        "yuan2020-d0ra05205a-colloidal-si-nanocrystals-si-ncs-1--hno3"
       ],
       "outputs": [
         "yuan2020-d0ra05205a-colloidal-si-nanocrystals-si-ncs-1--after-s01-stain-etch"
@@ -327,11 +369,76 @@
       "notes": []
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "yuan2020-d0ra05205a-colloidal-si-nanocrystals-si-ncs-1--photoluminescence-peak",
+      "sample_id": "yuan2020-d0ra05205a-colloidal-si-nanocrystals-si-ncs-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 390,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "390 nm",
+        "evidence": [
+          {
+            "source_id": "yuan2020-d0ra05205a",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "yuan2020-d0ra05205a",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "yuan2020-d0ra05205a-colloidal-si-nanocrystals-si-ncs-1--photoluminescence-quantum-yield",
+      "sample_id": "yuan2020-d0ra05205a-colloidal-si-nanocrystals-si-ncs-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 14,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "14 %",
+        "evidence": [
+          {
+            "source_id": "yuan2020-d0ra05205a",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "yuan2020-d0ra05205a",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
@@ -339,7 +446,9 @@
       "Size not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
-      "Reaction time not reported in the extracted text."
+      "Reaction time not reported in the extracted text.",
+      "Amount of HF not reported in the extracted text.",
+      "Amount of HNO3 not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

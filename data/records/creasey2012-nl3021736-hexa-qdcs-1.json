@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "creasey2012-nl3021736-hexa-qdcs-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Megan Creasey (2012): hexa-QDCs",
   "material": {
@@ -138,6 +138,25 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "creasey2012-nl3021736-hexa-qdcs-1--ga",
+      "name": "Ga",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "creasey2012-nl3021736",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -169,17 +188,26 @@
       ]
     },
     {
-      "id": "creasey2012-nl3021736-hexa-qdcs-1--after-s04-crystallize",
+      "id": "creasey2012-nl3021736-hexa-qdcs-1--after-d2-s04-deposit",
       "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
         "creasey2012-nl3021736-hexa-qdcs-1--after-s03-anneal",
+        "creasey2012-nl3021736-hexa-qdcs-1--ga"
+      ]
+    },
+    {
+      "id": "creasey2012-nl3021736-hexa-qdcs-1--after-s04-crystallize",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "creasey2012-nl3021736-hexa-qdcs-1--after-d2-s04-deposit",
         "creasey2012-nl3021736-hexa-qdcs-1--gaas"
       ]
     },
     {
       "id": "creasey2012-nl3021736-hexa-qdcs-1--after-s05-deposit",
-      "name": "mixture after step 5",
+      "name": "mixture after step 6",
       "kind": "reaction_batch",
       "parent_ids": [
         "creasey2012-nl3021736-hexa-qdcs-1--after-s04-crystallize",
@@ -387,9 +415,9 @@
       ]
     },
     {
-      "id": "s04-crystallize",
-      "action": "crystallize",
-      "label": "Crystallize Ga droplets into GaAs nanomounds",
+      "id": "d2-s04-deposit",
+      "action": "deposit",
+      "label": "Deposit Ga to form droplets",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -398,6 +426,64 @@
       ],
       "inputs": [
         "creasey2012-nl3021736-hexa-qdcs-1--after-s03-anneal",
+        "creasey2012-nl3021736-hexa-qdcs-1--ga"
+      ],
+      "outputs": [
+        "creasey2012-nl3021736-hexa-qdcs-1--after-d2-s04-deposit"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 150,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "150 °C",
+          "evidence": [
+            {
+              "source_id": "creasey2012-nl3021736",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Deposit Ga to form droplets",
+      "evidence": [
+        {
+          "source_id": "creasey2012-nl3021736",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s04-crystallize",
+      "action": "crystallize",
+      "label": "Crystallize Ga droplets into GaAs nanomounds",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-deposit"
+      ],
+      "inputs": [
+        "creasey2012-nl3021736-hexa-qdcs-1--after-d2-s04-deposit",
         "creasey2012-nl3021736-hexa-qdcs-1--gaas"
       ],
       "outputs": [
@@ -579,17 +665,52 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "creasey2012-nl3021736-hexa-qdcs-1--photoluminescence-peak",
+      "sample_id": "creasey2012-nl3021736-hexa-qdcs-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 1214,
+        "minimum": null,
+        "maximum": null,
+        "unit": "meV",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "1214 meV",
+        "evidence": [
+          {
+            "source_id": "creasey2012-nl3021736",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "creasey2012-nl3021736",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
-      "Amount of GaAs not reported in the extracted text."
+      "Amount of GaAs not reported in the extracted text.",
+      "Amount of GaAs not reported in the extracted text.",
+      "Amount of Ga not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

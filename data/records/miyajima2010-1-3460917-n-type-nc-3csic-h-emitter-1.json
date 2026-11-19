@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "miyajima2010-1-3460917-n-type-nc-3csic-h-emitter-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Shinsuke Miyajima et al. (2010): n-type nc-3C–SiC:H emitter",
   "material": {
@@ -137,6 +137,25 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "miyajima2010-1-3460917-n-type-nc-3csic-h-emitter-1--monomethylsilane",
+      "name": "monomethylsilane",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "miyajima2010-1-3460917",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -147,7 +166,8 @@
       "kind": "reaction_batch",
       "parent_ids": [
         "miyajima2010-1-3460917-n-type-nc-3csic-h-emitter-1--hydrogen",
-        "miyajima2010-1-3460917-n-type-nc-3csic-h-emitter-1--hexamethyldisilazane"
+        "miyajima2010-1-3460917-n-type-nc-3csic-h-emitter-1--hexamethyldisilazane",
+        "miyajima2010-1-3460917-n-type-nc-3csic-h-emitter-1--monomethylsilane"
       ]
     },
     {
@@ -157,7 +177,8 @@
       "parent_ids": [
         "miyajima2010-1-3460917-n-type-nc-3csic-h-emitter-1--after-s01-deposit",
         "miyajima2010-1-3460917-n-type-nc-3csic-h-emitter-1--hydrogen",
-        "miyajima2010-1-3460917-n-type-nc-3csic-h-emitter-1--hexamethyldisilazane"
+        "miyajima2010-1-3460917-n-type-nc-3csic-h-emitter-1--hexamethyldisilazane",
+        "miyajima2010-1-3460917-n-type-nc-3csic-h-emitter-1--monomethylsilane"
       ]
     }
   ],
@@ -172,7 +193,8 @@
       "depends_on": [],
       "inputs": [
         "miyajima2010-1-3460917-n-type-nc-3csic-h-emitter-1--hydrogen",
-        "miyajima2010-1-3460917-n-type-nc-3csic-h-emitter-1--hexamethyldisilazane"
+        "miyajima2010-1-3460917-n-type-nc-3csic-h-emitter-1--hexamethyldisilazane",
+        "miyajima2010-1-3460917-n-type-nc-3csic-h-emitter-1--monomethylsilane"
       ],
       "outputs": [
         "miyajima2010-1-3460917-n-type-nc-3csic-h-emitter-1--after-s01-deposit"
@@ -236,7 +258,8 @@
       "inputs": [
         "miyajima2010-1-3460917-n-type-nc-3csic-h-emitter-1--after-s01-deposit",
         "miyajima2010-1-3460917-n-type-nc-3csic-h-emitter-1--hydrogen",
-        "miyajima2010-1-3460917-n-type-nc-3csic-h-emitter-1--hexamethyldisilazane"
+        "miyajima2010-1-3460917-n-type-nc-3csic-h-emitter-1--hexamethyldisilazane",
+        "miyajima2010-1-3460917-n-type-nc-3csic-h-emitter-1--monomethylsilane"
       ],
       "outputs": [
         "miyajima2010-1-3460917-n-type-nc-3csic-h-emitter-1--after-s02-deposit"
@@ -346,14 +369,15 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
-      "Amount of hexamethyldisilazane not reported in the extracted text."
+      "Amount of hexamethyldisilazane not reported in the extracted text.",
+      "Amount of monomethylsilane not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Lin-Jer Chen; Chia-Rong Lee; Yu-Ju Chuang; Zhao-Han Wu; Chienyi Chen (2016): CsSnBr3 quantum rods",
   "material": {
@@ -162,6 +162,101 @@
           "locator": "Main PDF p.6"
         }
       ]
+    },
+    {
+      "id": "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2--snbr2",
+      "name": "SnBr2",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "chen2016-acs-jpclett-6b02344",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2--cs2co3",
+      "name": "Cs2CO3",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "chen2016-acs-jpclett-6b02344",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2--oleic-acid-oa",
+      "name": "oleic acid (OA)",
+      "formula": null,
+      "role": "ligand",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "chen2016-acs-jpclett-6b02344",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2--diethylenetriamine",
+      "name": "Diethylenetriamine",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "chen2016-acs-jpclett-6b02344",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2--hydrochloric-acid",
+      "name": "Hydrochloric acid",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "chen2016-acs-jpclett-6b02344",
+          "locator": "Main PDF p.6"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -170,14 +265,24 @@
       "id": "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2--after-s01-dry",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2--snbr2",
+        "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2--octadecene-ode",
+        "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2--oleic-acid-oa",
+        "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2--oleylamine-olam"
+      ]
     },
     {
       "id": "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2--after-s02-heat",
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
-        "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2--after-s01-dry"
+        "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2--after-s01-dry",
+        "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2--snbr2",
+        "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2--cs2co3",
+        "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2--octadecene-ode",
+        "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2--oleic-acid-oa",
+        "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2--diethylenetriamine"
       ]
     },
     {
@@ -206,7 +311,12 @@
       "branch": "",
       "optional": false,
       "depends_on": [],
-      "inputs": [],
+      "inputs": [
+        "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2--snbr2",
+        "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2--octadecene-ode",
+        "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2--oleic-acid-oa",
+        "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2--oleylamine-olam"
+      ],
       "outputs": [
         "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2--after-s01-dry"
       ],
@@ -280,7 +390,12 @@
         "s01-dry"
       ],
       "inputs": [
-        "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2--after-s01-dry"
+        "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2--after-s01-dry",
+        "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2--snbr2",
+        "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2--cs2co3",
+        "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2--octadecene-ode",
+        "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2--oleic-acid-oa",
+        "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2--diethylenetriamine"
       ],
       "outputs": [
         "chen2016-acs-jpclett-6b02344-cssnbr3-quantum-rods-2--after-s02-heat"
@@ -551,11 +666,16 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
-      "Atmosphere not reported in the extracted text."
+      "Atmosphere not reported in the extracted text.",
+      "Amount of SnBr2 not reported in the extracted text.",
+      "Amount of Cs2CO3 not reported in the extracted text.",
+      "Amount of oleic acid (OA) not reported in the extracted text.",
+      "Amount of Diethylenetriamine not reported in the extracted text.",
+      "Amount of Hydrochloric acid not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],
