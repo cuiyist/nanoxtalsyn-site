@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "holub2004-1-1781361-inas-mn-quantum-dot-multilayer-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "M. Holub (2004): InAs:Mn quantum-dot multilayer",
   "material": {
@@ -140,7 +140,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "amount": {
+          "value": 0.15,
+          "minimum": null,
+          "maximum": null,
+          "unit": "Mn/In flux ratio",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.15 Mn/In flux ratio",
+          "evidence": [
+            {
+              "source_id": "holub2004-1-1781361",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -153,7 +172,7 @@
       "id": "holub2004-1-1781361-inas-mn-quantum-dot-multilayer-1--gaas",
       "name": "GaAs",
       "formula": null,
-      "role": "reagent",
+      "role": "substrate",
       "stage": "synthesis",
       "identity": {
         "pubchem_cid": null,
@@ -206,11 +225,28 @@
       ]
     },
     {
-      "id": "holub2004-1-1781361-inas-mn-quantum-dot-multilayer-1--after-s05-deposit",
+      "id": "holub2004-1-1781361-inas-mn-quantum-dot-multilayer-1--after-d2-s05-open",
       "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
         "holub2004-1-1781361-inas-mn-quantum-dot-multilayer-1--after-s04-deposit",
+        "holub2004-1-1781361-inas-mn-quantum-dot-multilayer-1--mn"
+      ]
+    },
+    {
+      "id": "holub2004-1-1781361-inas-mn-quantum-dot-multilayer-1--after-d2-s06-interrupt",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "holub2004-1-1781361-inas-mn-quantum-dot-multilayer-1--after-d2-s05-open"
+      ]
+    },
+    {
+      "id": "holub2004-1-1781361-inas-mn-quantum-dot-multilayer-1--after-s05-deposit",
+      "name": "mixture after step 7",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "holub2004-1-1781361-inas-mn-quantum-dot-multilayer-1--after-d2-s06-interrupt",
         "holub2004-1-1781361-inas-mn-quantum-dot-multilayer-1--gaas"
       ]
     },
@@ -412,7 +448,26 @@
       "outputs": [
         "holub2004-1-1781361-inas-mn-quantum-dot-multilayer-1--after-s04-deposit"
       ],
-      "parameters": {},
+      "parameters": {
+        "duration": {
+          "value": 45,
+          "minimum": null,
+          "maximum": null,
+          "unit": "s",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "45 s",
+          "evidence": [
+            {
+              "source_id": "holub2004-1-1781361",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "environment": {
         "value": null,
         "status": "not_reported",
@@ -435,9 +490,9 @@
       ]
     },
     {
-      "id": "s05-deposit",
-      "action": "deposit",
-      "label": "Deposit GaAs capping layer",
+      "id": "d2-s05-open",
+      "action": "open",
+      "label": "Open Mn effusion cell shutter",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -446,12 +501,146 @@
       ],
       "inputs": [
         "holub2004-1-1781361-inas-mn-quantum-dot-multilayer-1--after-s04-deposit",
+        "holub2004-1-1781361-inas-mn-quantum-dot-multilayer-1--mn"
+      ],
+      "outputs": [
+        "holub2004-1-1781361-inas-mn-quantum-dot-multilayer-1--after-d2-s05-open"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 45,
+          "minimum": null,
+          "maximum": null,
+          "unit": "s",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "45 s",
+          "evidence": [
+            {
+              "source_id": "holub2004-1-1781361",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Open Mn effusion cell shutter",
+      "evidence": [
+        {
+          "source_id": "holub2004-1-1781361",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s06-interrupt",
+      "action": "interrupt",
+      "label": "Growth interruption for dot formation",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s05-open"
+      ],
+      "inputs": [
+        "holub2004-1-1781361-inas-mn-quantum-dot-multilayer-1--after-d2-s05-open"
+      ],
+      "outputs": [
+        "holub2004-1-1781361-inas-mn-quantum-dot-multilayer-1--after-d2-s06-interrupt"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 45,
+          "minimum": null,
+          "maximum": null,
+          "unit": "s",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "45 s",
+          "evidence": [
+            {
+              "source_id": "holub2004-1-1781361",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Growth interruption for dot formation",
+      "evidence": [
+        {
+          "source_id": "holub2004-1-1781361",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s05-deposit",
+      "action": "deposit",
+      "label": "Deposit GaAs capping layer",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s06-interrupt"
+      ],
+      "inputs": [
+        "holub2004-1-1781361-inas-mn-quantum-dot-multilayer-1--after-d2-s06-interrupt",
         "holub2004-1-1781361-inas-mn-quantum-dot-multilayer-1--gaas"
       ],
       "outputs": [
         "holub2004-1-1781361-inas-mn-quantum-dot-multilayer-1--after-s05-deposit"
       ],
-      "parameters": {},
+      "parameters": {
+        "duration": {
+          "value": 45,
+          "minimum": null,
+          "maximum": null,
+          "unit": "s",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "45 s",
+          "evidence": [
+            {
+              "source_id": "holub2004-1-1781361",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "environment": {
         "value": null,
         "status": "not_reported",
@@ -610,12 +799,11 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
-      "Amount of Mn not reported in the extracted text.",
       "Amount of GaAs not reported in the extracted text."
     ],
     "conflicts": [],

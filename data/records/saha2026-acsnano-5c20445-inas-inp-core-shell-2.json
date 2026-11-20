@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "saha2026-acsnano-5c20445-inas-inp-core-shell-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Shraman Kumar Saha; Philippe Guyot-Sionnest (2026): InAs/InP core/shell",
   "material": {
@@ -41,15 +41,25 @@
   },
   "intended_target": {
     "composition": {
-      "value": null,
-      "status": "not_reported",
-      "evidence": [],
+      "value": "InAs/InP",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "saha2026-acsnano-5c20445",
+          "locator": "Main PDF p.2"
+        }
+      ],
       "note": ""
     },
     "phase": {
-      "value": null,
-      "status": "not_reported",
-      "evidence": [],
+      "value": "zinc blende",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "saha2026-acsnano-5c20445",
+          "locator": "Main PDF p.2"
+        }
+      ],
       "note": ""
     },
     "size": {
@@ -240,12 +250,28 @@
   "material_states": [
     {
       "id": "saha2026-acsnano-5c20445-inas-inp-core-shell-2--after-s01-inject",
-      "name": "product as isolated",
-      "kind": "product",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
       "parent_ids": [
         "saha2026-acsnano-5c20445-inas-inp-core-shell-2--inas-toluene-solution",
         "saha2026-acsnano-5c20445-inas-inp-core-shell-2--incl3-top-solution",
         "saha2026-acsnano-5c20445-inas-inp-core-shell-2--tms3p-in-ode-solution"
+      ]
+    },
+    {
+      "id": "saha2026-acsnano-5c20445-inas-inp-core-shell-2--after-d2-s02-cool",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "saha2026-acsnano-5c20445-inas-inp-core-shell-2--after-s01-inject"
+      ]
+    },
+    {
+      "id": "saha2026-acsnano-5c20445-inas-inp-core-shell-2--after-d2-s03-wash",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "saha2026-acsnano-5c20445-inas-inp-core-shell-2--after-d2-s02-cool"
       ]
     }
   ],
@@ -306,6 +332,82 @@
           "locator": "Main PDF p.7"
         }
       ]
+    },
+    {
+      "id": "d2-s02-cool",
+      "action": "cool",
+      "label": "Cooling the reaction mixture",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-inject"
+      ],
+      "inputs": [
+        "saha2026-acsnano-5c20445-inas-inp-core-shell-2--after-s01-inject"
+      ],
+      "outputs": [
+        "saha2026-acsnano-5c20445-inas-inp-core-shell-2--after-d2-s02-cool"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Cooling the reaction mixture",
+      "evidence": [
+        {
+          "source_id": "saha2026-acsnano-5c20445",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "d2-s03-wash",
+      "action": "wash",
+      "label": "Washing the nanocrystals",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-cool"
+      ],
+      "inputs": [
+        "saha2026-acsnano-5c20445-inas-inp-core-shell-2--after-d2-s02-cool"
+      ],
+      "outputs": [
+        "saha2026-acsnano-5c20445-inas-inp-core-shell-2--after-d2-s03-wash"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Washing the nanocrystals",
+      "evidence": [
+        {
+          "source_id": "saha2026-acsnano-5c20445",
+          "locator": "Main PDF p.7"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -314,18 +416,28 @@
       "sample_id": "saha2026-acsnano-5c20445-inas-inp-core-shell-2--product",
       "source_sample_label": "InAs/InP core/shell",
       "batch_id": null,
-      "material_state_id": "saha2026-acsnano-5c20445-inas-inp-core-shell-2--after-s01-inject",
+      "material_state_id": "saha2026-acsnano-5c20445-inas-inp-core-shell-2--after-d2-s03-wash",
       "parent_sample_id": null,
       "composition": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "InAs/InP",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "saha2026-acsnano-5c20445",
+            "locator": "Main PDF p.2"
+          }
+        ],
         "note": ""
       },
       "phase": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "zinc blende",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "saha2026-acsnano-5c20445",
+            "locator": "Main PDF p.2"
+          }
+        ],
         "note": ""
       },
       "morphology": {
@@ -396,9 +508,8 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
-      "Phase not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
       "Atmosphere not reported in the extracted text."
     ],

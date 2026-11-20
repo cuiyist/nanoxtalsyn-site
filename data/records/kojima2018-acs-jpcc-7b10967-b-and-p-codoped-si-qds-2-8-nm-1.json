@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "kojima2018-acs-jpcc-7b10967-b-and-p-codoped-si-qds-2-8-nm-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Takuya Kojima; Hiroshi Sugimoto; Minoru Fujii (2018): B and P codoped Si QDs (2.8 nm)",
   "material": {
@@ -94,7 +94,7 @@
       "id": "kojima2018-acs-jpcc-7b10967-b-and-p-codoped-si-qds-2-8-nm-1--si",
       "name": "Si",
       "formula": null,
-      "role": "metal_precursor",
+      "role": "grown_layer",
       "stage": "synthesis",
       "identity": {
         "pubchem_cid": null,
@@ -165,6 +165,44 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "kojima2018-acs-jpcc-7b10967-b-and-p-codoped-si-qds-2-8-nm-1--hydrofluoric-acid",
+      "name": "hydrofluoric acid",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "kojima2018-acs-jpcc-7b10967",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "kojima2018-acs-jpcc-7b10967-b-and-p-codoped-si-qds-2-8-nm-1--si-qds",
+      "name": "Si QDs",
+      "formula": null,
+      "role": "starting_particles",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "kojima2018-acs-jpcc-7b10967",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -182,10 +220,20 @@
     },
     {
       "id": "kojima2018-acs-jpcc-7b10967-b-and-p-codoped-si-qds-2-8-nm-1--after-s02-etch",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "kojima2018-acs-jpcc-7b10967-b-and-p-codoped-si-qds-2-8-nm-1--after-s01-sputter",
+        "kojima2018-acs-jpcc-7b10967-b-and-p-codoped-si-qds-2-8-nm-1--hydrofluoric-acid"
+      ]
+    },
+    {
+      "id": "kojima2018-acs-jpcc-7b10967-b-and-p-codoped-si-qds-2-8-nm-1--after-d2-s03-disperse",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "kojima2018-acs-jpcc-7b10967-b-and-p-codoped-si-qds-2-8-nm-1--after-s01-sputter"
+        "kojima2018-acs-jpcc-7b10967-b-and-p-codoped-si-qds-2-8-nm-1--after-s02-etch",
+        "kojima2018-acs-jpcc-7b10967-b-and-p-codoped-si-qds-2-8-nm-1--si-qds"
       ]
     }
   ],
@@ -245,7 +293,8 @@
         "s01-sputter"
       ],
       "inputs": [
-        "kojima2018-acs-jpcc-7b10967-b-and-p-codoped-si-qds-2-8-nm-1--after-s01-sputter"
+        "kojima2018-acs-jpcc-7b10967-b-and-p-codoped-si-qds-2-8-nm-1--after-s01-sputter",
+        "kojima2018-acs-jpcc-7b10967-b-and-p-codoped-si-qds-2-8-nm-1--hydrofluoric-acid"
       ],
       "outputs": [
         "kojima2018-acs-jpcc-7b10967-b-and-p-codoped-si-qds-2-8-nm-1--after-s02-etch"
@@ -276,6 +325,50 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s03-disperse",
+      "action": "disperse",
+      "label": "Disperse Si QDs in methanol",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-etch"
+      ],
+      "inputs": [
+        "kojima2018-acs-jpcc-7b10967-b-and-p-codoped-si-qds-2-8-nm-1--after-s02-etch",
+        "kojima2018-acs-jpcc-7b10967-b-and-p-codoped-si-qds-2-8-nm-1--si-qds"
+      ],
+      "outputs": [
+        "kojima2018-acs-jpcc-7b10967-b-and-p-codoped-si-qds-2-8-nm-1--after-d2-s03-disperse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "kojima2018-acs-jpcc-7b10967",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Disperse Si QDs in methanol",
+      "evidence": [
+        {
+          "source_id": "kojima2018-acs-jpcc-7b10967",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -284,7 +377,7 @@
       "sample_id": "kojima2018-acs-jpcc-7b10967-b-and-p-codoped-si-qds-2-8-nm-1--product",
       "source_sample_label": "B and P codoped Si QDs (2.8 nm)",
       "batch_id": null,
-      "material_state_id": "kojima2018-acs-jpcc-7b10967-b-and-p-codoped-si-qds-2-8-nm-1--after-s02-etch",
+      "material_state_id": "kojima2018-acs-jpcc-7b10967-b-and-p-codoped-si-qds-2-8-nm-1--after-d2-s03-disperse",
       "parent_sample_id": null,
       "composition": {
         "value": "Si",
@@ -375,18 +468,52 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "kojima2018-acs-jpcc-7b10967-b-and-p-codoped-si-qds-2-8-nm-1--photoluminescence-quantum-yield",
+      "sample_id": "kojima2018-acs-jpcc-7b10967-b-and-p-codoped-si-qds-2-8-nm-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 12.8,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "12.8 %",
+        "evidence": [
+          {
+            "source_id": "kojima2018-acs-jpcc-7b10967",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "kojima2018-acs-jpcc-7b10967",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Reaction temperature not reported in the extracted text.",
       "Amount of Si not reported in the extracted text.",
       "Amount of SiO2 not reported in the extracted text.",
       "Amount of B2O3 not reported in the extracted text.",
-      "Amount of P2O5 not reported in the extracted text."
+      "Amount of P2O5 not reported in the extracted text.",
+      "Amount of hydrofluoric acid not reported in the extracted text.",
+      "Amount of Si QDs not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

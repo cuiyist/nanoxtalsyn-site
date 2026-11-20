@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "shapiro2016-acs-chemmater-6b02917-pbse-cqds-14-nm-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Arthur Shapiro; Youngjin Jang; Anna Rubin-Brusilovski; Adam K. Budniak; Faris Horani; Aldona Sashchiuk; Efrat Lifshitz (2016): PbSe CQDs (14 nm)",
   "material": {
@@ -251,6 +251,44 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "shapiro2016-acs-chemmater-6b02917-pbse-cqds-14-nm-1--topse",
+      "name": "TOPSe",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 0.4,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.4 mmol",
+          "evidence": [
+            {
+              "source_id": "shapiro2016-acs-chemmater-6b02917",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "shapiro2016-acs-chemmater-6b02917",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -285,10 +323,34 @@
     },
     {
       "id": "shapiro2016-acs-chemmater-6b02917-pbse-cqds-14-nm-1--after-s04-cool",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "shapiro2016-acs-chemmater-6b02917-pbse-cqds-14-nm-1--after-s03-heat"
+      ]
+    },
+    {
+      "id": "shapiro2016-acs-chemmater-6b02917-pbse-cqds-14-nm-1--after-d2-s05-centrifuge",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "shapiro2016-acs-chemmater-6b02917-pbse-cqds-14-nm-1--after-s04-cool"
+      ]
+    },
+    {
+      "id": "shapiro2016-acs-chemmater-6b02917-pbse-cqds-14-nm-1--after-d2-s06-dry",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "shapiro2016-acs-chemmater-6b02917-pbse-cqds-14-nm-1--after-d2-s05-centrifuge"
+      ]
+    },
+    {
+      "id": "shapiro2016-acs-chemmater-6b02917-pbse-cqds-14-nm-1--after-d2-s07-redisperse",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "shapiro2016-acs-chemmater-6b02917-pbse-cqds-14-nm-1--after-s03-heat"
+        "shapiro2016-acs-chemmater-6b02917-pbse-cqds-14-nm-1--after-d2-s06-dry"
       ]
     }
   ],
@@ -503,6 +565,120 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s05-centrifuge",
+      "action": "centrifuge",
+      "label": "Isolate CQDs by centrifuging",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-cool"
+      ],
+      "inputs": [
+        "shapiro2016-acs-chemmater-6b02917-pbse-cqds-14-nm-1--after-s04-cool"
+      ],
+      "outputs": [
+        "shapiro2016-acs-chemmater-6b02917-pbse-cqds-14-nm-1--after-d2-s05-centrifuge"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Isolate CQDs by centrifuging",
+      "evidence": [
+        {
+          "source_id": "shapiro2016-acs-chemmater-6b02917",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s06-dry",
+      "action": "dry",
+      "label": "Dry CQDs",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s05-centrifuge"
+      ],
+      "inputs": [
+        "shapiro2016-acs-chemmater-6b02917-pbse-cqds-14-nm-1--after-d2-s05-centrifuge"
+      ],
+      "outputs": [
+        "shapiro2016-acs-chemmater-6b02917-pbse-cqds-14-nm-1--after-d2-s06-dry"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dry CQDs",
+      "evidence": [
+        {
+          "source_id": "shapiro2016-acs-chemmater-6b02917",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s07-redisperse",
+      "action": "redisperse",
+      "label": "Redissolve in organic solvent",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s06-dry"
+      ],
+      "inputs": [
+        "shapiro2016-acs-chemmater-6b02917-pbse-cqds-14-nm-1--after-d2-s06-dry"
+      ],
+      "outputs": [
+        "shapiro2016-acs-chemmater-6b02917-pbse-cqds-14-nm-1--after-d2-s07-redisperse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Redissolve in organic solvent",
+      "evidence": [
+        {
+          "source_id": "shapiro2016-acs-chemmater-6b02917",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -511,7 +687,7 @@
       "sample_id": "shapiro2016-acs-chemmater-6b02917-pbse-cqds-14-nm-1--product",
       "source_sample_label": "PbSe CQDs (14 nm)",
       "batch_id": null,
-      "material_state_id": "shapiro2016-acs-chemmater-6b02917-pbse-cqds-14-nm-1--after-s04-cool",
+      "material_state_id": "shapiro2016-acs-chemmater-6b02917-pbse-cqds-14-nm-1--after-d2-s07-redisperse",
       "parent_sample_id": null,
       "composition": {
         "value": "PbSe",
@@ -596,7 +772,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",

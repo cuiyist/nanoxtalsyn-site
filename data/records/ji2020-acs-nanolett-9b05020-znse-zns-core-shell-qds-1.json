@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "ji2020-acs-nanolett-9b05020-znse-zns-core-shell-qds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Botao Ji; Somnath Koley; Ilya Slobodkin; Sergei Remennik; Uri Banin (2020): ZnSe/ZnS core/shell QDs",
   "material": {
@@ -76,9 +76,14 @@
       "derivation": null
     },
     "morphology": {
-      "value": null,
-      "status": "not_reported",
-      "evidence": [],
+      "value": "sphere",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "ji2020-acs-nanolett-9b05020",
+          "locator": "Main PDF p.3"
+        }
+      ],
       "note": ""
     }
   },
@@ -158,6 +163,25 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "ji2020-acs-nanolett-9b05020-znse-zns-core-shell-qds-1--oleic-acid",
+      "name": "oleic acid",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "ji2020-acs-nanolett-9b05020",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -168,7 +192,8 @@
       "kind": "reaction_batch",
       "parent_ids": [
         "ji2020-acs-nanolett-9b05020-znse-zns-core-shell-qds-1--1-octadecene",
-        "ji2020-acs-nanolett-9b05020-znse-zns-core-shell-qds-1--oleylamine"
+        "ji2020-acs-nanolett-9b05020-znse-zns-core-shell-qds-1--oleylamine",
+        "ji2020-acs-nanolett-9b05020-znse-zns-core-shell-qds-1--oleic-acid"
       ]
     },
     {
@@ -193,7 +218,8 @@
       "depends_on": [],
       "inputs": [
         "ji2020-acs-nanolett-9b05020-znse-zns-core-shell-qds-1--1-octadecene",
-        "ji2020-acs-nanolett-9b05020-znse-zns-core-shell-qds-1--oleylamine"
+        "ji2020-acs-nanolett-9b05020-znse-zns-core-shell-qds-1--oleylamine",
+        "ji2020-acs-nanolett-9b05020-znse-zns-core-shell-qds-1--oleic-acid"
       ],
       "outputs": [
         "ji2020-acs-nanolett-9b05020-znse-zns-core-shell-qds-1--after-s01-heat"
@@ -340,9 +366,14 @@
         "note": ""
       },
       "morphology": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "sphere",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "ji2020-acs-nanolett-9b05020",
+            "locator": "Main PDF p.3"
+          }
+        ],
         "note": ""
       },
       "surface": {
@@ -364,20 +395,85 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "ji2020-acs-nanolett-9b05020-znse-zns-core-shell-qds-1--photoluminescence-peak",
+      "sample_id": "ji2020-acs-nanolett-9b05020-znse-zns-core-shell-qds-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 419,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "419 nm",
+        "evidence": [
+          {
+            "source_id": "ji2020-acs-nanolett-9b05020",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "ji2020-acs-nanolett-9b05020",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "ji2020-acs-nanolett-9b05020-znse-zns-core-shell-qds-1--photoluminescence-quantum-yield",
+      "sample_id": "ji2020-acs-nanolett-9b05020-znse-zns-core-shell-qds-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 85,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "85 %",
+        "evidence": [
+          {
+            "source_id": "ji2020-acs-nanolett-9b05020",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "ji2020-acs-nanolett-9b05020",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
-      "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
       "Amount of zinc oleate not reported in the extracted text.",
       "Amount of 1-octanethiol not reported in the extracted text.",
       "Amount of 1-octadecene not reported in the extracted text.",
-      "Amount of oleylamine not reported in the extracted text."
+      "Amount of oleylamine not reported in the extracted text.",
+      "Amount of oleic acid not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

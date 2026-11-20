@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "balow2017-acs-chemmater-6b03850-cu3-sb1xasx-s4-nanocrystal-alloys-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Robert B. Balow et al. (2017): Cu3(Sb1−xAsx)S4 nanocrystal alloys",
   "material": {
@@ -206,7 +206,7 @@
       ]
     },
     {
-      "id": "balow2017-acs-chemmater-6b03850-cu3-sb1xasx-s4-nanocrystal-alloys-1--after-s04-cool",
+      "id": "balow2017-acs-chemmater-6b03850-cu3-sb1xasx-s4-nanocrystal-alloys-1--after-d2-s04-hold",
       "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
@@ -214,11 +214,27 @@
       ]
     },
     {
-      "id": "balow2017-acs-chemmater-6b03850-cu3-sb1xasx-s4-nanocrystal-alloys-1--after-s05-resuspend",
+      "id": "balow2017-acs-chemmater-6b03850-cu3-sb1xasx-s4-nanocrystal-alloys-1--after-s04-cool",
       "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
+        "balow2017-acs-chemmater-6b03850-cu3-sb1xasx-s4-nanocrystal-alloys-1--after-d2-s04-hold"
+      ]
+    },
+    {
+      "id": "balow2017-acs-chemmater-6b03850-cu3-sb1xasx-s4-nanocrystal-alloys-1--after-d2-s06-pipette",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
         "balow2017-acs-chemmater-6b03850-cu3-sb1xasx-s4-nanocrystal-alloys-1--after-s04-cool"
+      ]
+    },
+    {
+      "id": "balow2017-acs-chemmater-6b03850-cu3-sb1xasx-s4-nanocrystal-alloys-1--after-s05-resuspend",
+      "name": "mixture after step 7",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "balow2017-acs-chemmater-6b03850-cu3-sb1xasx-s4-nanocrystal-alloys-1--after-d2-s06-pipette"
       ]
     },
     {
@@ -440,9 +456,9 @@
       ]
     },
     {
-      "id": "s04-cool",
-      "action": "cool",
-      "label": "Cooling reaction to room temperature",
+      "id": "d2-s04-hold",
+      "action": "hold",
+      "label": "Maintaining reaction at 175 °C",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -451,6 +467,86 @@
       ],
       "inputs": [
         "balow2017-acs-chemmater-6b03850-cu3-sb1xasx-s4-nanocrystal-alloys-1--after-s03-inject"
+      ],
+      "outputs": [
+        "balow2017-acs-chemmater-6b03850-cu3-sb1xasx-s4-nanocrystal-alloys-1--after-d2-s04-hold"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 175,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "175 °C",
+          "evidence": [
+            {
+              "source_id": "balow2017-acs-chemmater-6b03850",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 10,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "10 min",
+          "evidence": [
+            {
+              "source_id": "balow2017-acs-chemmater-6b03850",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "balow2017-acs-chemmater-6b03850",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Maintaining reaction at 175 °C",
+      "evidence": [
+        {
+          "source_id": "balow2017-acs-chemmater-6b03850",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s04-cool",
+      "action": "cool",
+      "label": "Cooling reaction to room temperature",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-hold"
+      ],
+      "inputs": [
+        "balow2017-acs-chemmater-6b03850-cu3-sb1xasx-s4-nanocrystal-alloys-1--after-d2-s04-hold"
       ],
       "outputs": [
         "balow2017-acs-chemmater-6b03850-cu3-sb1xasx-s4-nanocrystal-alloys-1--after-s04-cool"
@@ -483,9 +579,9 @@
       ]
     },
     {
-      "id": "s05-resuspend",
-      "action": "resuspend",
-      "label": "Resuspending precipitate in hexane",
+      "id": "d2-s06-pipette",
+      "action": "pipette",
+      "label": "Pipetting mother liquor into centrifuge tube",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -494,6 +590,49 @@
       ],
       "inputs": [
         "balow2017-acs-chemmater-6b03850-cu3-sb1xasx-s4-nanocrystal-alloys-1--after-s04-cool"
+      ],
+      "outputs": [
+        "balow2017-acs-chemmater-6b03850-cu3-sb1xasx-s4-nanocrystal-alloys-1--after-d2-s06-pipette"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "balow2017-acs-chemmater-6b03850",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Pipetting mother liquor into centrifuge tube",
+      "evidence": [
+        {
+          "source_id": "balow2017-acs-chemmater-6b03850",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s05-resuspend",
+      "action": "resuspend",
+      "label": "Resuspending precipitate in hexane",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s06-pipette"
+      ],
+      "inputs": [
+        "balow2017-acs-chemmater-6b03850-cu3-sb1xasx-s4-nanocrystal-alloys-1--after-d2-s06-pipette"
       ],
       "outputs": [
         "balow2017-acs-chemmater-6b03850-cu3-sb1xasx-s4-nanocrystal-alloys-1--after-s05-resuspend"
@@ -628,7 +767,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Size not reported in the extracted text.",

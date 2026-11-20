@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "lin2001-jp0102062-gold-nanocrystals-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "X. M. Lin (2001): gold nanocrystals",
   "material": {
@@ -138,6 +138,139 @@
         "pubchem_cid": null,
         "smiles": null
       },
+      "quantities": {
+        "volume": {
+          "value": 0.2,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.2 mL",
+          "evidence": [
+            {
+              "source_id": "lin2001-jp0102062",
+              "locator": "Main PDF p.1"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "lin2001-jp0102062",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "lin2001-jp0102062-gold-nanocrystals-1--nabh4",
+      "name": "NaBH4",
+      "formula": null,
+      "role": "reducing_agent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "lin2001-jp0102062",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "lin2001-jp0102062-gold-nanocrystals-1--toluene",
+      "name": "toluene",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "lin2001-jp0102062",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "lin2001-jp0102062-gold-nanocrystals-1--potassium",
+      "name": "potassium",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "lin2001-jp0102062",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "lin2001-jp0102062-gold-nanocrystals-1--sodium",
+      "name": "sodium",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "lin2001-jp0102062",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "lin2001-jp0102062-gold-nanocrystals-1--argon",
+      "name": "argon",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "lin2001-jp0102062",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "lin2001-jp0102062-gold-nanocrystals-1--ethanol",
+      "name": "ethanol",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
       "quantities": {},
       "notes": [],
       "evidence": [
@@ -154,14 +287,20 @@
       "id": "lin2001-jp0102062-gold-nanocrystals-1--after-s01-distill",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "lin2001-jp0102062-gold-nanocrystals-1--toluene",
+        "lin2001-jp0102062-gold-nanocrystals-1--potassium",
+        "lin2001-jp0102062-gold-nanocrystals-1--sodium"
+      ]
     },
     {
       "id": "lin2001-jp0102062-gold-nanocrystals-1--after-s02-bubbling",
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
-        "lin2001-jp0102062-gold-nanocrystals-1--after-s01-distill"
+        "lin2001-jp0102062-gold-nanocrystals-1--after-s01-distill",
+        "lin2001-jp0102062-gold-nanocrystals-1--toluene",
+        "lin2001-jp0102062-gold-nanocrystals-1--argon"
       ]
     },
     {
@@ -171,7 +310,8 @@
       "parent_ids": [
         "lin2001-jp0102062-gold-nanocrystals-1--after-s02-bubbling",
         "lin2001-jp0102062-gold-nanocrystals-1--gold-chloride",
-        "lin2001-jp0102062-gold-nanocrystals-1--didodecyldimethylammonium-bromide"
+        "lin2001-jp0102062-gold-nanocrystals-1--didodecyldimethylammonium-bromide",
+        "lin2001-jp0102062-gold-nanocrystals-1--toluene"
       ]
     },
     {
@@ -179,7 +319,8 @@
       "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
-        "lin2001-jp0102062-gold-nanocrystals-1--after-s03-dissolve"
+        "lin2001-jp0102062-gold-nanocrystals-1--after-s03-dissolve",
+        "lin2001-jp0102062-gold-nanocrystals-1--nabh4"
       ]
     },
     {
@@ -196,7 +337,8 @@
       "name": "mixture after step 6",
       "kind": "reaction_batch",
       "parent_ids": [
-        "lin2001-jp0102062-gold-nanocrystals-1--after-s05-add"
+        "lin2001-jp0102062-gold-nanocrystals-1--after-s05-add",
+        "lin2001-jp0102062-gold-nanocrystals-1--ethanol"
       ]
     },
     {
@@ -213,11 +355,12 @@
       "name": "mixture after step 8",
       "kind": "reaction_batch",
       "parent_ids": [
-        "lin2001-jp0102062-gold-nanocrystals-1--after-s07-add"
+        "lin2001-jp0102062-gold-nanocrystals-1--after-s07-add",
+        "lin2001-jp0102062-gold-nanocrystals-1--toluene"
       ]
     },
     {
-      "id": "lin2001-jp0102062-gold-nanocrystals-1--after-s09-separate",
+      "id": "lin2001-jp0102062-gold-nanocrystals-1--after-d2-s09-segregate",
       "name": "mixture after step 9",
       "kind": "reaction_batch",
       "parent_ids": [
@@ -225,11 +368,20 @@
       ]
     },
     {
+      "id": "lin2001-jp0102062-gold-nanocrystals-1--after-s09-separate",
+      "name": "mixture after step 10",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "lin2001-jp0102062-gold-nanocrystals-1--after-d2-s09-segregate"
+      ]
+    },
+    {
       "id": "lin2001-jp0102062-gold-nanocrystals-1--after-s10-dissolve",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "lin2001-jp0102062-gold-nanocrystals-1--after-s09-separate"
+        "lin2001-jp0102062-gold-nanocrystals-1--after-s09-separate",
+        "lin2001-jp0102062-gold-nanocrystals-1--toluene"
       ]
     }
   ],
@@ -242,7 +394,11 @@
       "branch": "",
       "optional": false,
       "depends_on": [],
-      "inputs": [],
+      "inputs": [
+        "lin2001-jp0102062-gold-nanocrystals-1--toluene",
+        "lin2001-jp0102062-gold-nanocrystals-1--potassium",
+        "lin2001-jp0102062-gold-nanocrystals-1--sodium"
+      ],
       "outputs": [
         "lin2001-jp0102062-gold-nanocrystals-1--after-s01-distill"
       ],
@@ -279,7 +435,9 @@
         "s01-distill"
       ],
       "inputs": [
-        "lin2001-jp0102062-gold-nanocrystals-1--after-s01-distill"
+        "lin2001-jp0102062-gold-nanocrystals-1--after-s01-distill",
+        "lin2001-jp0102062-gold-nanocrystals-1--toluene",
+        "lin2001-jp0102062-gold-nanocrystals-1--argon"
       ],
       "outputs": [
         "lin2001-jp0102062-gold-nanocrystals-1--after-s02-bubbling"
@@ -338,7 +496,8 @@
       "inputs": [
         "lin2001-jp0102062-gold-nanocrystals-1--after-s02-bubbling",
         "lin2001-jp0102062-gold-nanocrystals-1--gold-chloride",
-        "lin2001-jp0102062-gold-nanocrystals-1--didodecyldimethylammonium-bromide"
+        "lin2001-jp0102062-gold-nanocrystals-1--didodecyldimethylammonium-bromide",
+        "lin2001-jp0102062-gold-nanocrystals-1--toluene"
       ],
       "outputs": [
         "lin2001-jp0102062-gold-nanocrystals-1--after-s03-dissolve"
@@ -376,7 +535,8 @@
         "s03-dissolve"
       ],
       "inputs": [
-        "lin2001-jp0102062-gold-nanocrystals-1--after-s03-dissolve"
+        "lin2001-jp0102062-gold-nanocrystals-1--after-s03-dissolve",
+        "lin2001-jp0102062-gold-nanocrystals-1--nabh4"
       ],
       "outputs": [
         "lin2001-jp0102062-gold-nanocrystals-1--after-s04-add"
@@ -472,7 +632,8 @@
         "s05-add"
       ],
       "inputs": [
-        "lin2001-jp0102062-gold-nanocrystals-1--after-s05-add"
+        "lin2001-jp0102062-gold-nanocrystals-1--after-s05-add",
+        "lin2001-jp0102062-gold-nanocrystals-1--ethanol"
       ],
       "outputs": [
         "lin2001-jp0102062-gold-nanocrystals-1--after-s06-precipitate"
@@ -568,7 +729,8 @@
         "s07-add"
       ],
       "inputs": [
-        "lin2001-jp0102062-gold-nanocrystals-1--after-s07-add"
+        "lin2001-jp0102062-gold-nanocrystals-1--after-s07-add",
+        "lin2001-jp0102062-gold-nanocrystals-1--toluene"
       ],
       "outputs": [
         "lin2001-jp0102062-gold-nanocrystals-1--after-s08-dilute"
@@ -596,9 +758,9 @@
       ]
     },
     {
-      "id": "s09-separate",
-      "action": "separate",
-      "label": "Separate the top layer of the gold colloid",
+      "id": "d2-s09-segregate",
+      "action": "segregate",
+      "label": "Size segregation during slow lowering of the colloid temperature",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -607,6 +769,63 @@
       ],
       "inputs": [
         "lin2001-jp0102062-gold-nanocrystals-1--after-s08-dilute"
+      ],
+      "outputs": [
+        "lin2001-jp0102062-gold-nanocrystals-1--after-d2-s09-segregate"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "d",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 day",
+          "evidence": [
+            {
+              "source_id": "lin2001-jp0102062",
+              "locator": "Main PDF p.1"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Size segregation during slow lowering of the colloid temperature",
+      "evidence": [
+        {
+          "source_id": "lin2001-jp0102062",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "s09-separate",
+      "action": "separate",
+      "label": "Separate the top layer of the gold colloid",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s09-segregate"
+      ],
+      "inputs": [
+        "lin2001-jp0102062-gold-nanocrystals-1--after-d2-s09-segregate"
       ],
       "outputs": [
         "lin2001-jp0102062-gold-nanocrystals-1--after-s09-separate"
@@ -644,7 +863,8 @@
         "s09-separate"
       ],
       "inputs": [
-        "lin2001-jp0102062-gold-nanocrystals-1--after-s09-separate"
+        "lin2001-jp0102062-gold-nanocrystals-1--after-s09-separate",
+        "lin2001-jp0102062-gold-nanocrystals-1--toluene"
       ],
       "outputs": [
         "lin2001-jp0102062-gold-nanocrystals-1--after-s10-dissolve"
@@ -774,13 +994,18 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Atmosphere not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
       "Amount of gold chloride not reported in the extracted text.",
       "Amount of didodecyldimethylammonium bromide not reported in the extracted text.",
-      "Amount of dodecanethiol not reported in the extracted text."
+      "Amount of NaBH4 not reported in the extracted text.",
+      "Amount of toluene not reported in the extracted text.",
+      "Amount of potassium not reported in the extracted text.",
+      "Amount of sodium not reported in the extracted text.",
+      "Amount of argon not reported in the extracted text.",
+      "Amount of ethanol not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

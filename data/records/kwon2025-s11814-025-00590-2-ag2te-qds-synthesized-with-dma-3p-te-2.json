@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "kwon2025-s11814-025-00590-2-ag2te-qds-synthesized-with-dma-3p-te-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Ga Yeon Kwon; Doheon Yoo; Ha-Neul Kim; Jeong-Gyu Lee; Jooyoung Uhm; Min-Jae Choi (2025): Ag2Te QDs synthesized with (DMA)3P-Te",
   "material": {
@@ -56,16 +56,21 @@
       "note": ""
     },
     "size": {
-      "value": null,
+      "value": 3.82,
       "minimum": null,
       "maximum": null,
       "unit": "nm",
-      "status": "not_reported",
+      "status": "reported",
       "approximate": false,
       "qualifier": "",
       "basis": "",
-      "raw_text": "not reported",
-      "evidence": [],
+      "raw_text": "3.82 nm",
+      "evidence": [
+        {
+          "source_id": "kwon2025-s11814-025-00590-2",
+          "locator": "Main PDF"
+        }
+      ],
       "derivation": null
     },
     "morphology": {
@@ -251,10 +256,25 @@
   "stocks": [],
   "material_states": [
     {
-      "id": "kwon2025-s11814-025-00590-2-ag2te-qds-synthesized-with-dma-3p-te-2--after-s01-inject",
+      "id": "kwon2025-s11814-025-00590-2-ag2te-qds-synthesized-with-dma-3p-te-2--after-d2-s01-degas",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
+      "parent_ids": []
+    },
+    {
+      "id": "kwon2025-s11814-025-00590-2-ag2te-qds-synthesized-with-dma-3p-te-2--after-d2-s02-purge",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
       "parent_ids": [
+        "kwon2025-s11814-025-00590-2-ag2te-qds-synthesized-with-dma-3p-te-2--after-d2-s01-degas"
+      ]
+    },
+    {
+      "id": "kwon2025-s11814-025-00590-2-ag2te-qds-synthesized-with-dma-3p-te-2--after-s01-inject",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "kwon2025-s11814-025-00590-2-ag2te-qds-synthesized-with-dma-3p-te-2--after-d2-s02-purge",
         "kwon2025-s11814-025-00590-2-ag2te-qds-synthesized-with-dma-3p-te-2--tris-dimethylamino-phosphine-telluride-d"
       ]
     },
@@ -269,14 +289,136 @@
   ],
   "operations": [
     {
+      "id": "d2-s01-degas",
+      "action": "degas",
+      "label": "Degass the mixture under vacuum",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [],
+      "outputs": [
+        "kwon2025-s11814-025-00590-2-ag2te-qds-synthesized-with-dma-3p-te-2--after-d2-s01-degas"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 40,
+          "minimum": null,
+          "maximum": null,
+          "unit": "℃",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "40 ℃",
+          "evidence": [
+            {
+              "source_id": "kwon2025-s11814-025-00590-2",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 h",
+          "evidence": [
+            {
+              "source_id": "kwon2025-s11814-025-00590-2",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "kwon2025-s11814-025-00590-2",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Degass the mixture under vacuum",
+      "evidence": [
+        {
+          "source_id": "kwon2025-s11814-025-00590-2",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s02-purge",
+      "action": "purge",
+      "label": "Purge the flask with nitrogen",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s01-degas"
+      ],
+      "inputs": [
+        "kwon2025-s11814-025-00590-2-ag2te-qds-synthesized-with-dma-3p-te-2--after-d2-s01-degas"
+      ],
+      "outputs": [
+        "kwon2025-s11814-025-00590-2-ag2te-qds-synthesized-with-dma-3p-te-2--after-d2-s02-purge"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "kwon2025-s11814-025-00590-2",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Purge the flask with nitrogen",
+      "evidence": [
+        {
+          "source_id": "kwon2025-s11814-025-00590-2",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
       "id": "s01-inject",
       "action": "inject",
       "label": "Inject (DMA)3P-Te precursor",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
+      "depends_on": [
+        "d2-s02-purge"
+      ],
       "inputs": [
+        "kwon2025-s11814-025-00590-2-ag2te-qds-synthesized-with-dma-3p-te-2--after-d2-s02-purge",
         "kwon2025-s11814-025-00590-2-ag2te-qds-synthesized-with-dma-3p-te-2--tris-dimethylamino-phosphine-telluride-d"
       ],
       "outputs": [
@@ -403,15 +545,47 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "kwon2025-s11814-025-00590-2-ag2te-qds-synthesized-with-dma-3p-te-2--size",
+      "sample_id": "kwon2025-s11814-025-00590-2-ag2te-qds-synthesized-with-dma-3p-te-2--product",
+      "property": "diameter",
+      "technique": "TEM",
+      "value": {
+        "value": 3.82,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "3.82 nm",
+        "evidence": [
+          {
+            "source_id": "kwon2025-s11814-025-00590-2",
+            "locator": "Main PDF"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "kwon2025-s11814-025-00590-2",
+          "locator": "Main PDF"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
-      "Size not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
       "Amount of tris(dimethylamino)phosphine telluride ((DMA)3P-Te) not reported in the extracted text."
     ],

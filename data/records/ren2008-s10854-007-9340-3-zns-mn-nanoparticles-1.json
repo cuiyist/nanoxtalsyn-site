@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "ren2008-s10854-007-9340-3-zns-mn-nanoparticles-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Zhouyun Ren (2008): ZnS:Mn nanoparticles",
   "material": {
@@ -177,11 +177,19 @@
       ]
     },
     {
-      "id": "ren2008-s10854-007-9340-3-zns-mn-nanoparticles-1--after-s05-wash",
+      "id": "ren2008-s10854-007-9340-3-zns-mn-nanoparticles-1--after-d2-s05-cool",
       "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
         "ren2008-s10854-007-9340-3-zns-mn-nanoparticles-1--after-s04-dry"
+      ]
+    },
+    {
+      "id": "ren2008-s10854-007-9340-3-zns-mn-nanoparticles-1--after-s05-wash",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "ren2008-s10854-007-9340-3-zns-mn-nanoparticles-1--after-d2-s05-cool"
       ]
     },
     {
@@ -286,7 +294,26 @@
       "outputs": [
         "ren2008-s10854-007-9340-3-zns-mn-nanoparticles-1--after-s03-stir"
       ],
-      "parameters": {},
+      "parameters": {
+        "duration": {
+          "value": 10,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "10 h",
+          "evidence": [
+            {
+              "source_id": "ren2008-s10854-007-9340-3",
+              "locator": "Main PDF p.1"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "environment": {
         "value": null,
         "status": "not_reported",
@@ -366,10 +393,10 @@
       ]
     },
     {
-      "id": "s05-wash",
-      "action": "wash",
-      "label": "Washing with de-ionized water",
-      "stage": "workup",
+      "id": "d2-s05-cool",
+      "action": "cool",
+      "label": "Cooling to room temperature",
+      "stage": "synthesis",
       "branch": "",
       "optional": false,
       "depends_on": [
@@ -377,6 +404,63 @@
       ],
       "inputs": [
         "ren2008-s10854-007-9340-3-zns-mn-nanoparticles-1--after-s04-dry"
+      ],
+      "outputs": [
+        "ren2008-s10854-007-9340-3-zns-mn-nanoparticles-1--after-d2-s05-cool"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 10,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "10 h",
+          "evidence": [
+            {
+              "source_id": "ren2008-s10854-007-9340-3",
+              "locator": "Main PDF p.1"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Cooling to room temperature",
+      "evidence": [
+        {
+          "source_id": "ren2008-s10854-007-9340-3",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "s05-wash",
+      "action": "wash",
+      "label": "Washing with de-ionized water",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s05-cool"
+      ],
+      "inputs": [
+        "ren2008-s10854-007-9340-3-zns-mn-nanoparticles-1--after-d2-s05-cool"
       ],
       "outputs": [
         "ren2008-s10854-007-9340-3-zns-mn-nanoparticles-1--after-s05-wash"
@@ -513,11 +597,44 @@
       "notes": []
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "ren2008-s10854-007-9340-3-zns-mn-nanoparticles-1--photoluminescence-peak",
+      "sample_id": "ren2008-s10854-007-9340-3-zns-mn-nanoparticles-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 605,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "605 nm",
+        "evidence": [
+          {
+            "source_id": "ren2008-s10854-007-9340-3",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "ren2008-s10854-007-9340-3",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",

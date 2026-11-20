@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "zhou2009-bm9002877-qd-hpg1-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Li Zhou; Chao Gao; Weijian Xu; Xue Wang; Yuhong Xu (2009): QD@HPG1",
   "material": {
@@ -204,6 +204,139 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "zhou2009-bm9002877-qd-hpg1-1--sodium-borohydride",
+      "name": "sodium borohydride",
+      "formula": null,
+      "role": "reducing_agent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "mass": {
+          "value": 800,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mg",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "800 mg",
+          "evidence": [
+            {
+              "source_id": "zhou2009-bm9002877",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zhou2009-bm9002877",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "zhou2009-bm9002877-qd-hpg1-1--naoh",
+      "name": "NaOH",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "concentration": {
+          "value": 1.0,
+          "minimum": null,
+          "maximum": null,
+          "unit": "M",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 M",
+          "evidence": [
+            {
+              "source_id": "zhou2009-bm9002877",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zhou2009-bm9002877",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "zhou2009-bm9002877-qd-hpg1-1--potassium-methylate",
+      "name": "potassium methylate",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zhou2009-bm9002877",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "zhou2009-bm9002877-qd-hpg1-1--cdte-qds",
+      "name": "CdTe QDs",
+      "formula": null,
+      "role": "starting_particles",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zhou2009-bm9002877",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "zhou2009-bm9002877-qd-hpg1-1--glycidol",
+      "name": "glycidol",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zhou2009-bm9002877",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -212,7 +345,9 @@
       "id": "zhou2009-bm9002877-qd-hpg1-1--after-s01-dissolve",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "zhou2009-bm9002877-qd-hpg1-1--sodium-borohydride"
+      ]
     },
     {
       "id": "zhou2009-bm9002877-qd-hpg1-1--after-s02-add",
@@ -224,7 +359,7 @@
       ]
     },
     {
-      "id": "zhou2009-bm9002877-qd-hpg1-1--after-s03-dry",
+      "id": "zhou2009-bm9002877-qd-hpg1-1--after-d2-s03-cool",
       "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
@@ -232,11 +367,38 @@
       ]
     },
     {
-      "id": "zhou2009-bm9002877-qd-hpg1-1--after-s04-add",
+      "id": "zhou2009-bm9002877-qd-hpg1-1--after-d2-s04-purify",
       "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
-        "zhou2009-bm9002877-qd-hpg1-1--after-s03-dry"
+        "zhou2009-bm9002877-qd-hpg1-1--after-d2-s03-cool"
+      ]
+    },
+    {
+      "id": "zhou2009-bm9002877-qd-hpg1-1--after-s03-dry",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zhou2009-bm9002877-qd-hpg1-1--after-d2-s04-purify"
+      ]
+    },
+    {
+      "id": "zhou2009-bm9002877-qd-hpg1-1--after-d2-s06-initiate",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zhou2009-bm9002877-qd-hpg1-1--after-s03-dry",
+        "zhou2009-bm9002877-qd-hpg1-1--potassium-methylate",
+        "zhou2009-bm9002877-qd-hpg1-1--cdte-qds"
+      ]
+    },
+    {
+      "id": "zhou2009-bm9002877-qd-hpg1-1--after-s04-add",
+      "name": "mixture after step 7",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zhou2009-bm9002877-qd-hpg1-1--after-d2-s06-initiate",
+        "zhou2009-bm9002877-qd-hpg1-1--glycidol"
       ]
     },
     {
@@ -257,7 +419,9 @@
       "branch": "",
       "optional": false,
       "depends_on": [],
-      "inputs": [],
+      "inputs": [
+        "zhou2009-bm9002877-qd-hpg1-1--sodium-borohydride"
+      ],
       "outputs": [
         "zhou2009-bm9002877-qd-hpg1-1--after-s01-dissolve"
       ],
@@ -333,10 +497,10 @@
       ]
     },
     {
-      "id": "s03-dry",
-      "action": "dry",
-      "label": "Dry the QDs",
-      "stage": "workup",
+      "id": "d2-s03-cool",
+      "action": "cool",
+      "label": "Cool the flask",
+      "stage": "synthesis",
       "branch": "",
       "optional": false,
       "depends_on": [
@@ -344,6 +508,87 @@
       ],
       "inputs": [
         "zhou2009-bm9002877-qd-hpg1-1--after-s02-add"
+      ],
+      "outputs": [
+        "zhou2009-bm9002877-qd-hpg1-1--after-d2-s03-cool"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zhou2009-bm9002877",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Cool the flask",
+      "evidence": [
+        {
+          "source_id": "zhou2009-bm9002877",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s04-purify",
+      "action": "purify",
+      "label": "Precipitate and centrifuge QDs",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-cool"
+      ],
+      "inputs": [
+        "zhou2009-bm9002877-qd-hpg1-1--after-d2-s03-cool"
+      ],
+      "outputs": [
+        "zhou2009-bm9002877-qd-hpg1-1--after-d2-s04-purify"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Precipitate and centrifuge QDs",
+      "evidence": [
+        {
+          "source_id": "zhou2009-bm9002877",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s03-dry",
+      "action": "dry",
+      "label": "Dry the QDs",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-purify"
+      ],
+      "inputs": [
+        "zhou2009-bm9002877-qd-hpg1-1--after-d2-s04-purify"
       ],
       "outputs": [
         "zhou2009-bm9002877-qd-hpg1-1--after-s03-dry"
@@ -408,9 +653,9 @@
       ]
     },
     {
-      "id": "s04-add",
-      "action": "add",
-      "label": "Add glycidol monomer",
+      "id": "d2-s06-initiate",
+      "action": "initiate",
+      "label": "Initiate polymerization with potassium methylate",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -418,7 +663,90 @@
         "s03-dry"
       ],
       "inputs": [
-        "zhou2009-bm9002877-qd-hpg1-1--after-s03-dry"
+        "zhou2009-bm9002877-qd-hpg1-1--after-s03-dry",
+        "zhou2009-bm9002877-qd-hpg1-1--potassium-methylate",
+        "zhou2009-bm9002877-qd-hpg1-1--cdte-qds"
+      ],
+      "outputs": [
+        "zhou2009-bm9002877-qd-hpg1-1--after-d2-s06-initiate"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 95,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "95 °C",
+          "evidence": [
+            {
+              "source_id": "zhou2009-bm9002877",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 h",
+          "evidence": [
+            {
+              "source_id": "zhou2009-bm9002877",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zhou2009-bm9002877",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Initiate polymerization with potassium methylate",
+      "evidence": [
+        {
+          "source_id": "zhou2009-bm9002877",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s04-add",
+      "action": "add",
+      "label": "Add glycidol monomer",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s06-initiate"
+      ],
+      "inputs": [
+        "zhou2009-bm9002877-qd-hpg1-1--after-d2-s06-initiate",
+        "zhou2009-bm9002877-qd-hpg1-1--glycidol"
       ],
       "outputs": [
         "zhou2009-bm9002877-qd-hpg1-1--after-s04-add"
@@ -616,8 +944,12 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
-    "missing_fields": [],
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
+    "missing_fields": [
+      "Amount of potassium methylate not reported in the extracted text.",
+      "Amount of CdTe QDs not reported in the extracted text.",
+      "Amount of glycidol not reported in the extracted text."
+    ],
     "conflicts": [],
     "requested_tasks": [],
     "experimental_outcome": "reported_product"

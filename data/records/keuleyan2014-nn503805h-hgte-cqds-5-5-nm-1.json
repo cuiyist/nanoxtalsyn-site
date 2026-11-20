@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "keuleyan2014-nn503805h-hgte-cqds-5-5-nm-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Sean E. Keuleyan; Philippe Guyot-Sionnest; Christophe Delerue; Guy Allan (2014): HgTe CQDs (5.5 nm)",
   "material": {
@@ -51,16 +51,21 @@
       "note": ""
     },
     "size": {
-      "value": null,
+      "value": 5.5,
       "minimum": null,
       "maximum": null,
       "unit": "nm",
-      "status": "not_reported",
+      "status": "reported",
       "approximate": false,
       "qualifier": "",
       "basis": "",
-      "raw_text": "not reported",
-      "evidence": [],
+      "raw_text": "5.5 nm",
+      "evidence": [
+        {
+          "source_id": "keuleyan2014-nn503805h",
+          "locator": "Main PDF"
+        }
+      ],
       "derivation": null
     },
     "morphology": {
@@ -238,12 +243,88 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "concentration": {
+          "value": 10,
+          "minimum": null,
+          "maximum": null,
+          "unit": "%",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "10 %",
+          "evidence": [
+            {
+              "source_id": "keuleyan2014-nn503805h",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
           "source_id": "keuleyan2014-nn503805h",
           "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "keuleyan2014-nn503805h-hgte-cqds-5-5-nm-1--trioctylphosphine",
+      "name": "trioctylphosphine",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 0.1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.1 mL",
+          "evidence": [
+            {
+              "source_id": "keuleyan2014-nn503805h",
+              "locator": "Main PDF p.6"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "keuleyan2014-nn503805h",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "keuleyan2014-nn503805h-hgte-cqds-5-5-nm-1--tetrachloroethylene-tce",
+      "name": "tetrachloroethylene (TCE)",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "keuleyan2014-nn503805h",
+          "locator": "Main PDF p.6"
         }
       ]
     }
@@ -266,19 +347,32 @@
       "parent_ids": [
         "keuleyan2014-nn503805h-hgte-cqds-5-5-nm-1--after-s01-heat",
         "keuleyan2014-nn503805h-hgte-cqds-5-5-nm-1--te",
+        "keuleyan2014-nn503805h-hgte-cqds-5-5-nm-1--oleylamine",
+        "keuleyan2014-nn503805h-hgte-cqds-5-5-nm-1--trioctylphosphine"
+      ]
+    },
+    {
+      "id": "keuleyan2014-nn503805h-hgte-cqds-5-5-nm-1--after-d2-s03-inject",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "keuleyan2014-nn503805h-hgte-cqds-5-5-nm-1--after-s02-dilute",
+        "keuleyan2014-nn503805h-hgte-cqds-5-5-nm-1--te",
+        "keuleyan2014-nn503805h-hgte-cqds-5-5-nm-1--trioctylphosphine",
         "keuleyan2014-nn503805h-hgte-cqds-5-5-nm-1--oleylamine"
       ]
     },
     {
       "id": "keuleyan2014-nn503805h-hgte-cqds-5-5-nm-1--after-s03-grow",
-      "name": "mixture after step 3",
+      "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
-        "keuleyan2014-nn503805h-hgte-cqds-5-5-nm-1--after-s02-dilute",
+        "keuleyan2014-nn503805h-hgte-cqds-5-5-nm-1--after-d2-s03-inject",
         "keuleyan2014-nn503805h-hgte-cqds-5-5-nm-1--hgcl2",
         "keuleyan2014-nn503805h-hgte-cqds-5-5-nm-1--te",
         "keuleyan2014-nn503805h-hgte-cqds-5-5-nm-1--oleylamine",
-        "keuleyan2014-nn503805h-hgte-cqds-5-5-nm-1--octadecylamine"
+        "keuleyan2014-nn503805h-hgte-cqds-5-5-nm-1--octadecylamine",
+        "keuleyan2014-nn503805h-hgte-cqds-5-5-nm-1--trioctylphosphine"
       ]
     },
     {
@@ -287,7 +381,8 @@
       "kind": "product",
       "parent_ids": [
         "keuleyan2014-nn503805h-hgte-cqds-5-5-nm-1--after-s03-grow",
-        "keuleyan2014-nn503805h-hgte-cqds-5-5-nm-1--dodecanethiol"
+        "keuleyan2014-nn503805h-hgte-cqds-5-5-nm-1--dodecanethiol",
+        "keuleyan2014-nn503805h-hgte-cqds-5-5-nm-1--tetrachloroethylene-tce"
       ]
     }
   ],
@@ -384,7 +479,8 @@
       "inputs": [
         "keuleyan2014-nn503805h-hgte-cqds-5-5-nm-1--after-s01-heat",
         "keuleyan2014-nn503805h-hgte-cqds-5-5-nm-1--te",
-        "keuleyan2014-nn503805h-hgte-cqds-5-5-nm-1--oleylamine"
+        "keuleyan2014-nn503805h-hgte-cqds-5-5-nm-1--oleylamine",
+        "keuleyan2014-nn503805h-hgte-cqds-5-5-nm-1--trioctylphosphine"
       ],
       "outputs": [
         "keuleyan2014-nn503805h-hgte-cqds-5-5-nm-1--after-s02-dilute"
@@ -417,9 +513,9 @@
       ]
     },
     {
-      "id": "s03-grow",
-      "action": "grow",
-      "label": "Grow quantum dots at 120 °C for 10 min",
+      "id": "d2-s03-inject",
+      "action": "inject",
+      "label": "Inject diluted Te precursor into the flask",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -428,10 +524,57 @@
       ],
       "inputs": [
         "keuleyan2014-nn503805h-hgte-cqds-5-5-nm-1--after-s02-dilute",
+        "keuleyan2014-nn503805h-hgte-cqds-5-5-nm-1--te",
+        "keuleyan2014-nn503805h-hgte-cqds-5-5-nm-1--trioctylphosphine",
+        "keuleyan2014-nn503805h-hgte-cqds-5-5-nm-1--oleylamine"
+      ],
+      "outputs": [
+        "keuleyan2014-nn503805h-hgte-cqds-5-5-nm-1--after-d2-s03-inject"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "keuleyan2014-nn503805h",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Inject diluted Te precursor into the flask",
+      "evidence": [
+        {
+          "source_id": "keuleyan2014-nn503805h",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "s03-grow",
+      "action": "grow",
+      "label": "Grow quantum dots at 120 °C for 10 min",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-inject"
+      ],
+      "inputs": [
+        "keuleyan2014-nn503805h-hgte-cqds-5-5-nm-1--after-d2-s03-inject",
         "keuleyan2014-nn503805h-hgte-cqds-5-5-nm-1--hgcl2",
         "keuleyan2014-nn503805h-hgte-cqds-5-5-nm-1--te",
         "keuleyan2014-nn503805h-hgte-cqds-5-5-nm-1--oleylamine",
-        "keuleyan2014-nn503805h-hgte-cqds-5-5-nm-1--octadecylamine"
+        "keuleyan2014-nn503805h-hgte-cqds-5-5-nm-1--octadecylamine",
+        "keuleyan2014-nn503805h-hgte-cqds-5-5-nm-1--trioctylphosphine"
       ],
       "outputs": [
         "keuleyan2014-nn503805h-hgte-cqds-5-5-nm-1--after-s03-grow"
@@ -512,7 +655,8 @@
       ],
       "inputs": [
         "keuleyan2014-nn503805h-hgte-cqds-5-5-nm-1--after-s03-grow",
-        "keuleyan2014-nn503805h-hgte-cqds-5-5-nm-1--dodecanethiol"
+        "keuleyan2014-nn503805h-hgte-cqds-5-5-nm-1--dodecanethiol",
+        "keuleyan2014-nn503805h-hgte-cqds-5-5-nm-1--tetrachloroethylene-tce"
       ],
       "outputs": [
         "keuleyan2014-nn503805h-hgte-cqds-5-5-nm-1--after-s04-quench"
@@ -601,15 +745,47 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "keuleyan2014-nn503805h-hgte-cqds-5-5-nm-1--size",
+      "sample_id": "keuleyan2014-nn503805h-hgte-cqds-5-5-nm-1--product",
+      "property": "diameter",
+      "technique": "TEM",
+      "value": {
+        "value": 5.5,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "5.5 nm",
+        "evidence": [
+          {
+            "source_id": "keuleyan2014-nn503805h",
+            "locator": "Main PDF"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "keuleyan2014-nn503805h",
+          "locator": "Main PDF"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
-      "Size not reported in the extracted text.",
-      "Amount of dodecanethiol not reported in the extracted text."
+      "Amount of tetrachloroethylene (TCE) not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "strom2007-s11671-007-9040-1-inas-quantum-dots-on-gaas-ring-like-nano-1",
-  "revision": 2,
+  "revision": 3,
   "record_type": "literature_protocol",
   "title": "N. W. Strom (2007): InAs quantum dots on GaAs ring-like nanostructures",
   "material": {
@@ -125,25 +125,6 @@
       ]
     },
     {
-      "id": "strom2007-s11671-007-9040-1-inas-quantum-dots-on-gaas-ring-like-nano-1--inas",
-      "name": "InAs",
-      "formula": null,
-      "role": "starting_particles",
-      "stage": "synthesis",
-      "identity": {
-        "pubchem_cid": null,
-        "smiles": null
-      },
-      "quantities": {},
-      "notes": [],
-      "evidence": [
-        {
-          "source_id": "strom2007-s11671-007-9040-1",
-          "locator": "Main PDF p.2"
-        }
-      ]
-    },
-    {
       "id": "strom2007-s11671-007-9040-1-inas-quantum-dots-on-gaas-ring-like-nano-1--gaas",
       "name": "GaAs",
       "formula": null,
@@ -203,8 +184,7 @@
       "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
-        "strom2007-s11671-007-9040-1-inas-quantum-dots-on-gaas-ring-like-nano-1--after-s02-anneal",
-        "strom2007-s11671-007-9040-1-inas-quantum-dots-on-gaas-ring-like-nano-1--inas"
+        "strom2007-s11671-007-9040-1-inas-quantum-dots-on-gaas-ring-like-nano-1--after-s02-anneal"
       ]
     },
     {
@@ -392,8 +372,7 @@
         "s02-anneal"
       ],
       "inputs": [
-        "strom2007-s11671-007-9040-1-inas-quantum-dots-on-gaas-ring-like-nano-1--after-s02-anneal",
-        "strom2007-s11671-007-9040-1-inas-quantum-dots-on-gaas-ring-like-nano-1--inas"
+        "strom2007-s11671-007-9040-1-inas-quantum-dots-on-gaas-ring-like-nano-1--after-s02-anneal"
       ],
       "outputs": [
         "strom2007-s11671-007-9040-1-inas-quantum-dots-on-gaas-ring-like-nano-1--after-s03-deposit"

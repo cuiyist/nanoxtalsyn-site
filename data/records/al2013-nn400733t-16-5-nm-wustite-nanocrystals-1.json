@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "al2013-nn400733t-16-5-nm-wustite-nanocrystals-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Tong et al. (2013): 16.5 nm wüstite nanocrystals",
   "material": {
@@ -61,16 +61,21 @@
       "note": ""
     },
     "size": {
-      "value": null,
+      "value": 16.5,
       "minimum": null,
       "maximum": null,
       "unit": "nm",
-      "status": "not_reported",
+      "status": "reported",
       "approximate": false,
       "qualifier": "",
       "basis": "",
-      "raw_text": "not reported",
-      "evidence": [],
+      "raw_text": "16.5 nm",
+      "evidence": [
+        {
+          "source_id": "al2013-nn400733t",
+          "locator": "Main PDF"
+        }
+      ],
       "derivation": null
     },
     "morphology": {
@@ -253,11 +258,67 @@
       ]
     },
     {
+      "id": "al2013-nn400733t-16-5-nm-wustite-nanocrystals-1--after-d2-s08-disperse",
+      "name": "mixture after step 8",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "al2013-nn400733t-16-5-nm-wustite-nanocrystals-1--after-s07-dry"
+      ]
+    },
+    {
       "id": "al2013-nn400733t-16-5-nm-wustite-nanocrystals-1--after-s08-precipitate",
+      "name": "mixture after step 9",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "al2013-nn400733t-16-5-nm-wustite-nanocrystals-1--after-d2-s08-disperse"
+      ]
+    },
+    {
+      "id": "al2013-nn400733t-16-5-nm-wustite-nanocrystals-1--after-d2-s10-coat",
+      "name": "mixture after step 10",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "al2013-nn400733t-16-5-nm-wustite-nanocrystals-1--after-s08-precipitate"
+      ]
+    },
+    {
+      "id": "al2013-nn400733t-16-5-nm-wustite-nanocrystals-1--after-d2-s11-mix",
+      "name": "mixture after step 11",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "al2013-nn400733t-16-5-nm-wustite-nanocrystals-1--after-d2-s10-coat"
+      ]
+    },
+    {
+      "id": "al2013-nn400733t-16-5-nm-wustite-nanocrystals-1--after-d2-s12-evaporate",
+      "name": "mixture after step 12",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "al2013-nn400733t-16-5-nm-wustite-nanocrystals-1--after-d2-s11-mix"
+      ]
+    },
+    {
+      "id": "al2013-nn400733t-16-5-nm-wustite-nanocrystals-1--after-d2-s13-add",
+      "name": "mixture after step 13",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "al2013-nn400733t-16-5-nm-wustite-nanocrystals-1--after-d2-s12-evaporate"
+      ]
+    },
+    {
+      "id": "al2013-nn400733t-16-5-nm-wustite-nanocrystals-1--after-d2-s14-exchange",
+      "name": "mixture after step 14",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "al2013-nn400733t-16-5-nm-wustite-nanocrystals-1--after-d2-s13-add"
+      ]
+    },
+    {
+      "id": "al2013-nn400733t-16-5-nm-wustite-nanocrystals-1--after-d2-s15-disperse",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "al2013-nn400733t-16-5-nm-wustite-nanocrystals-1--after-s07-dry"
+        "al2013-nn400733t-16-5-nm-wustite-nanocrystals-1--after-d2-s14-exchange"
       ]
     }
   ],
@@ -656,10 +717,10 @@
       ]
     },
     {
-      "id": "s08-precipitate",
-      "action": "precipitate",
-      "label": "Precipitated with ethanol at 2:1 ratio",
-      "stage": "workup",
+      "id": "d2-s08-disperse",
+      "action": "disperse",
+      "label": "Dispersed with toluene",
+      "stage": "synthesis",
       "branch": "",
       "optional": false,
       "depends_on": [
@@ -667,6 +728,49 @@
       ],
       "inputs": [
         "al2013-nn400733t-16-5-nm-wustite-nanocrystals-1--after-s07-dry"
+      ],
+      "outputs": [
+        "al2013-nn400733t-16-5-nm-wustite-nanocrystals-1--after-d2-s08-disperse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "argon",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "al2013-nn400733t",
+            "locator": "Main PDF p.8"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dispersed with toluene",
+      "evidence": [
+        {
+          "source_id": "al2013-nn400733t",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    },
+    {
+      "id": "s08-precipitate",
+      "action": "precipitate",
+      "label": "Precipitated with ethanol at 2:1 ratio",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s08-disperse"
+      ],
+      "inputs": [
+        "al2013-nn400733t-16-5-nm-wustite-nanocrystals-1--after-d2-s08-disperse"
       ],
       "outputs": [
         "al2013-nn400733t-16-5-nm-wustite-nanocrystals-1--after-s08-precipitate"
@@ -692,6 +796,264 @@
           "locator": "Main PDF p.8"
         }
       ]
+    },
+    {
+      "id": "d2-s10-coat",
+      "action": "coat",
+      "label": "Coated with DSPE-PEG and DSPE-PEG-maleimide",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s08-precipitate"
+      ],
+      "inputs": [
+        "al2013-nn400733t-16-5-nm-wustite-nanocrystals-1--after-s08-precipitate"
+      ],
+      "outputs": [
+        "al2013-nn400733t-16-5-nm-wustite-nanocrystals-1--after-d2-s10-coat"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "argon",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "al2013-nn400733t",
+            "locator": "Main PDF p.8"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Coated with DSPE-PEG and DSPE-PEG-maleimide",
+      "evidence": [
+        {
+          "source_id": "al2013-nn400733t",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    },
+    {
+      "id": "d2-s11-mix",
+      "action": "mix",
+      "label": "Mixed with DSPE-PEG and DSPE-PEG-maleimide in chloroform",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s10-coat"
+      ],
+      "inputs": [
+        "al2013-nn400733t-16-5-nm-wustite-nanocrystals-1--after-d2-s10-coat"
+      ],
+      "outputs": [
+        "al2013-nn400733t-16-5-nm-wustite-nanocrystals-1--after-d2-s11-mix"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "argon",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "al2013-nn400733t",
+            "locator": "Main PDF p.8"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Mixed with DSPE-PEG and DSPE-PEG-maleimide in chloroform",
+      "evidence": [
+        {
+          "source_id": "al2013-nn400733t",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    },
+    {
+      "id": "d2-s12-evaporate",
+      "action": "evaporate",
+      "label": "Evaporated to remove toluene and chloroform",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s11-mix"
+      ],
+      "inputs": [
+        "al2013-nn400733t-16-5-nm-wustite-nanocrystals-1--after-d2-s11-mix"
+      ],
+      "outputs": [
+        "al2013-nn400733t-16-5-nm-wustite-nanocrystals-1--after-d2-s12-evaporate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "argon",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "al2013-nn400733t",
+            "locator": "Main PDF p.8"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Evaporated to remove toluene and chloroform",
+      "evidence": [
+        {
+          "source_id": "al2013-nn400733t",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    },
+    {
+      "id": "d2-s13-add",
+      "action": "add",
+      "label": "Added distilled water to the DMSO solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s12-evaporate"
+      ],
+      "inputs": [
+        "al2013-nn400733t-16-5-nm-wustite-nanocrystals-1--after-d2-s12-evaporate"
+      ],
+      "outputs": [
+        "al2013-nn400733t-16-5-nm-wustite-nanocrystals-1--after-d2-s13-add"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "argon",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "al2013-nn400733t",
+            "locator": "Main PDF p.8"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Added distilled water to the DMSO solution",
+      "evidence": [
+        {
+          "source_id": "al2013-nn400733t",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    },
+    {
+      "id": "d2-s14-exchange",
+      "action": "exchange",
+      "label": "Solvent exchanged with Vivaspin centrifugal filter tubes",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s13-add"
+      ],
+      "inputs": [
+        "al2013-nn400733t-16-5-nm-wustite-nanocrystals-1--after-d2-s13-add"
+      ],
+      "outputs": [
+        "al2013-nn400733t-16-5-nm-wustite-nanocrystals-1--after-d2-s14-exchange"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "argon",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "al2013-nn400733t",
+            "locator": "Main PDF p.8"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Solvent exchanged with Vivaspin centrifugal filter tubes",
+      "evidence": [
+        {
+          "source_id": "al2013-nn400733t",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    },
+    {
+      "id": "d2-s15-disperse",
+      "action": "disperse",
+      "label": "Dispersed with distilled water",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s14-exchange"
+      ],
+      "inputs": [
+        "al2013-nn400733t-16-5-nm-wustite-nanocrystals-1--after-d2-s14-exchange"
+      ],
+      "outputs": [
+        "al2013-nn400733t-16-5-nm-wustite-nanocrystals-1--after-d2-s15-disperse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "argon",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "al2013-nn400733t",
+            "locator": "Main PDF p.8"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dispersed with distilled water",
+      "evidence": [
+        {
+          "source_id": "al2013-nn400733t",
+          "locator": "Main PDF p.8"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -700,7 +1062,7 @@
       "sample_id": "al2013-nn400733t-16-5-nm-wustite-nanocrystals-1--product",
       "source_sample_label": "16.5 nm wüstite nanocrystals",
       "batch_id": null,
-      "material_state_id": "al2013-nn400733t-16-5-nm-wustite-nanocrystals-1--after-s08-precipitate",
+      "material_state_id": "al2013-nn400733t-16-5-nm-wustite-nanocrystals-1--after-d2-s15-disperse",
       "parent_sample_id": null,
       "composition": {
         "value": "FeO",
@@ -755,14 +1117,46 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "al2013-nn400733t-16-5-nm-wustite-nanocrystals-1--size",
+      "sample_id": "al2013-nn400733t-16-5-nm-wustite-nanocrystals-1--product",
+      "property": "diameter",
+      "technique": "TEM",
+      "value": {
+        "value": 16.5,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "16.5 nm",
+        "evidence": [
+          {
+            "source_id": "al2013-nn400733t",
+            "locator": "Main PDF"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "al2013-nn400733t",
+          "locator": "Main PDF"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
-      "Shape not reported in the extracted text.",
-      "Size not reported in the extracted text."
+      "Shape not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

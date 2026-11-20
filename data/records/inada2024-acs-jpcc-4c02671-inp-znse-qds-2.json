@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "inada2024-acs-jpcc-4c02671-inp-znse-qds-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Kazuki Inada; Daichi Eguchi; Naoto Tamai (2024): InP/ZnSe QDs",
   "material": {
@@ -159,15 +159,64 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "inada2024-acs-jpcc-4c02671-inp-znse-qds-2--se-top",
+      "name": "Se/TOP",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "inada2024-acs-jpcc-4c02671",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "inada2024-acs-jpcc-4c02671-inp-znse-qds-2--s-top",
+      "name": "S/TOP",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "inada2024-acs-jpcc-4c02671",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
-      "id": "inada2024-acs-jpcc-4c02671-inp-znse-qds-2--after-s01-heat",
+      "id": "inada2024-acs-jpcc-4c02671-inp-znse-qds-2--after-d2-s01-dissolve",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": [
+        "inada2024-acs-jpcc-4c02671-inp-znse-qds-2--indium-acetate",
+        "inada2024-acs-jpcc-4c02671-inp-znse-qds-2--stearic-acid",
+        "inada2024-acs-jpcc-4c02671-inp-znse-qds-2--zinc-oleate"
+      ]
+    },
+    {
+      "id": "inada2024-acs-jpcc-4c02671-inp-znse-qds-2--after-s01-heat",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "inada2024-acs-jpcc-4c02671-inp-znse-qds-2--after-d2-s01-dissolve",
         "inada2024-acs-jpcc-4c02671-inp-znse-qds-2--phosphorus-precursor"
       ]
     },
@@ -176,11 +225,51 @@
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "inada2024-acs-jpcc-4c02671-inp-znse-qds-2--after-s01-heat"
+        "inada2024-acs-jpcc-4c02671-inp-znse-qds-2--after-s01-heat",
+        "inada2024-acs-jpcc-4c02671-inp-znse-qds-2--se-top",
+        "inada2024-acs-jpcc-4c02671-inp-znse-qds-2--s-top"
       ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-dissolve",
+      "action": "dissolve",
+      "label": "Dissolve indium acetate, stearic acid, and zinc oleate",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "inada2024-acs-jpcc-4c02671-inp-znse-qds-2--indium-acetate",
+        "inada2024-acs-jpcc-4c02671-inp-znse-qds-2--stearic-acid",
+        "inada2024-acs-jpcc-4c02671-inp-znse-qds-2--zinc-oleate"
+      ],
+      "outputs": [
+        "inada2024-acs-jpcc-4c02671-inp-znse-qds-2--after-d2-s01-dissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dissolve indium acetate, stearic acid, and zinc oleate",
+      "evidence": [
+        {
+          "source_id": "inada2024-acs-jpcc-4c02671",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
     {
       "id": "s01-heat",
       "action": "heat",
@@ -188,8 +277,11 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
+      "depends_on": [
+        "d2-s01-dissolve"
+      ],
       "inputs": [
+        "inada2024-acs-jpcc-4c02671-inp-znse-qds-2--after-d2-s01-dissolve",
         "inada2024-acs-jpcc-4c02671-inp-znse-qds-2--phosphorus-precursor"
       ],
       "outputs": [
@@ -265,7 +357,9 @@
         "s01-heat"
       ],
       "inputs": [
-        "inada2024-acs-jpcc-4c02671-inp-znse-qds-2--after-s01-heat"
+        "inada2024-acs-jpcc-4c02671-inp-znse-qds-2--after-s01-heat",
+        "inada2024-acs-jpcc-4c02671-inp-znse-qds-2--se-top",
+        "inada2024-acs-jpcc-4c02671-inp-znse-qds-2--s-top"
       ],
       "outputs": [
         "inada2024-acs-jpcc-4c02671-inp-znse-qds-2--after-s02-inject"
@@ -357,7 +451,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Size not reported in the extracted text.",
@@ -366,7 +460,9 @@
       "Amount of indium acetate not reported in the extracted text.",
       "Amount of stearic acid not reported in the extracted text.",
       "Amount of zinc oleate not reported in the extracted text.",
-      "Amount of phosphorus precursor not reported in the extracted text."
+      "Amount of phosphorus precursor not reported in the extracted text.",
+      "Amount of Se/TOP not reported in the extracted text.",
+      "Amount of S/TOP not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

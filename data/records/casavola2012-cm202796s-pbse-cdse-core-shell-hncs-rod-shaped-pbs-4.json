@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "casavola2012-cm202796s-pbse-cdse-core-shell-hncs-rod-shaped-pbs-4",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "M. Casavola (2012): PbSe/CdSe core/shell HNCs (rod-shaped PbSe core)",
   "material": {
@@ -244,10 +244,21 @@
   "stocks": [],
   "material_states": [
     {
-      "id": "casavola2012-cm202796s-pbse-cdse-core-shell-hncs-rod-shaped-pbs-4--after-s01-heat",
+      "id": "casavola2012-cm202796s-pbse-cdse-core-shell-hncs-rod-shaped-pbs-4--after-d2-s01-dissolve",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": [
+        "casavola2012-cm202796s-pbse-cdse-core-shell-hncs-rod-shaped-pbs-4--cadmium-acetate-hydrate",
+        "casavola2012-cm202796s-pbse-cdse-core-shell-hncs-rod-shaped-pbs-4--oleic-acid",
+        "casavola2012-cm202796s-pbse-cdse-core-shell-hncs-rod-shaped-pbs-4--diphenylether"
+      ]
+    },
+    {
+      "id": "casavola2012-cm202796s-pbse-cdse-core-shell-hncs-rod-shaped-pbs-4--after-s01-heat",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "casavola2012-cm202796s-pbse-cdse-core-shell-hncs-rod-shaped-pbs-4--after-d2-s01-dissolve",
         "casavola2012-cm202796s-pbse-cdse-core-shell-hncs-rod-shaped-pbs-4--octadecene"
       ]
     },
@@ -262,14 +273,97 @@
   ],
   "operations": [
     {
+      "id": "d2-s01-dissolve",
+      "action": "dissolve",
+      "label": "Dissolving Cd-oleate precursor",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "casavola2012-cm202796s-pbse-cdse-core-shell-hncs-rod-shaped-pbs-4--cadmium-acetate-hydrate",
+        "casavola2012-cm202796s-pbse-cdse-core-shell-hncs-rod-shaped-pbs-4--oleic-acid",
+        "casavola2012-cm202796s-pbse-cdse-core-shell-hncs-rod-shaped-pbs-4--diphenylether"
+      ],
+      "outputs": [
+        "casavola2012-cm202796s-pbse-cdse-core-shell-hncs-rod-shaped-pbs-4--after-d2-s01-dissolve"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 120,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "120 °C",
+          "evidence": [
+            {
+              "source_id": "casavola2012-cm202796s",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 2,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2 h",
+          "evidence": [
+            {
+              "source_id": "casavola2012-cm202796s",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "casavola2012-cm202796s",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dissolving Cd-oleate precursor",
+      "evidence": [
+        {
+          "source_id": "casavola2012-cm202796s",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
       "id": "s01-heat",
       "action": "heat",
       "label": "Heating and injection",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
+      "depends_on": [
+        "d2-s01-dissolve"
+      ],
       "inputs": [
+        "casavola2012-cm202796s-pbse-cdse-core-shell-hncs-rod-shaped-pbs-4--after-d2-s01-dissolve",
         "casavola2012-cm202796s-pbse-cdse-core-shell-hncs-rod-shaped-pbs-4--octadecene"
       ],
       "outputs": [
@@ -457,12 +551,44 @@
           "locator": "Main PDF p.4"
         }
       ]
+    },
+    {
+      "id": "casavola2012-cm202796s-pbse-cdse-core-shell-hncs-rod-shaped-pbs-4--photoluminescence-quantum-yield",
+      "sample_id": "casavola2012-cm202796s-pbse-cdse-core-shell-hncs-rod-shaped-pbs-4--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 3,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "3 %",
+        "evidence": [
+          {
+            "source_id": "casavola2012-cm202796s",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "casavola2012-cm202796s",
+          "locator": "Main PDF p.7"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text."

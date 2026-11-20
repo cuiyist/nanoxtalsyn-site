@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "kim2023-fnano-2022-1096267-cdse-qds-with-nme4-4-cd10se4-sph-16-clus-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Eun Byoel Kim; Kyle M. Tomczak; Hashini B. Chandrasiri; Marcell Pálmai; Amirreza Ghaznavi; Dmitry Gritsenko; Jie Xu; Preston T. Snee (2023): CdSe QDs with (NMe4)4[Cd10Se4(SPh)16] cluster seeds",
   "material": {
@@ -172,7 +172,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "amount": {
+          "value": 5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "5 mmol",
+          "evidence": [
+            {
+              "source_id": "kim2023-fnano-2022-1096267",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -199,6 +218,25 @@
           "locator": "Main PDF p.4"
         }
       ]
+    },
+    {
+      "id": "kim2023-fnano-2022-1096267-cdse-qds-with-nme4-4-cd10se4-sph-16-clus-1--dmf",
+      "name": "DMF",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "kim2023-fnano-2022-1096267",
+          "locator": "Main PDF p.4"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -212,11 +250,21 @@
       ]
     },
     {
+      "id": "kim2023-fnano-2022-1096267-cdse-qds-with-nme4-4-cd10se4-sph-16-clus-1--after-d2-s02-heat",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "kim2023-fnano-2022-1096267-cdse-qds-with-nme4-4-cd10se4-sph-16-clus-1--after-s01-dissolve",
+        "kim2023-fnano-2022-1096267-cdse-qds-with-nme4-4-cd10se4-sph-16-clus-1--cd-no3-26h2o",
+        "kim2023-fnano-2022-1096267-cdse-qds-with-nme4-4-cd10se4-sph-16-clus-1--2-hexyldecanoic-acid"
+      ]
+    },
+    {
       "id": "kim2023-fnano-2022-1096267-cdse-qds-with-nme4-4-cd10se4-sph-16-clus-1--after-s02-inject",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "kim2023-fnano-2022-1096267-cdse-qds-with-nme4-4-cd10se4-sph-16-clus-1--after-s01-dissolve",
+        "kim2023-fnano-2022-1096267-cdse-qds-with-nme4-4-cd10se4-sph-16-clus-1--after-d2-s02-heat",
         "kim2023-fnano-2022-1096267-cdse-qds-with-nme4-4-cd10se4-sph-16-clus-1--nme4-4-cd10se4-sph-16"
       ]
     }
@@ -259,9 +307,9 @@
       ]
     },
     {
-      "id": "s02-inject",
-      "action": "inject",
-      "label": "Inject precursors into microfluidic reactor",
+      "id": "d2-s02-heat",
+      "action": "heat",
+      "label": "Heat Cd(2-hexyldecaonate)2 in diphenyl ether",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -270,6 +318,83 @@
       ],
       "inputs": [
         "kim2023-fnano-2022-1096267-cdse-qds-with-nme4-4-cd10se4-sph-16-clus-1--after-s01-dissolve",
+        "kim2023-fnano-2022-1096267-cdse-qds-with-nme4-4-cd10se4-sph-16-clus-1--cd-no3-26h2o",
+        "kim2023-fnano-2022-1096267-cdse-qds-with-nme4-4-cd10se4-sph-16-clus-1--2-hexyldecanoic-acid"
+      ],
+      "outputs": [
+        "kim2023-fnano-2022-1096267-cdse-qds-with-nme4-4-cd10se4-sph-16-clus-1--after-d2-s02-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 100,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "100 °C",
+          "evidence": [
+            {
+              "source_id": "kim2023-fnano-2022-1096267",
+              "locator": "Main PDF p.4"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 2,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2 h",
+          "evidence": [
+            {
+              "source_id": "kim2023-fnano-2022-1096267",
+              "locator": "Main PDF p.4"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heat Cd(2-hexyldecaonate)2 in diphenyl ether",
+      "evidence": [
+        {
+          "source_id": "kim2023-fnano-2022-1096267",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    },
+    {
+      "id": "s02-inject",
+      "action": "inject",
+      "label": "Inject precursors into microfluidic reactor",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-heat"
+      ],
+      "inputs": [
+        "kim2023-fnano-2022-1096267-cdse-qds-with-nme4-4-cd10se4-sph-16-clus-1--after-d2-s02-heat",
         "kim2023-fnano-2022-1096267-cdse-qds-with-nme4-4-cd10se4-sph-16-clus-1--nme4-4-cd10se4-sph-16"
       ],
       "outputs": [
@@ -381,7 +506,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
@@ -389,8 +514,8 @@
       "Reaction time not reported in the extracted text.",
       "Amount of Cd(NO3)2·6H2O not reported in the extracted text.",
       "Amount of TOP not reported in the extracted text.",
-      "Amount of 2-hexyldecanoic acid not reported in the extracted text.",
-      "Amount of (NMe4)4[Cd10Se4(SPh)16] not reported in the extracted text."
+      "Amount of (NMe4)4[Cd10Se4(SPh)16] not reported in the extracted text.",
+      "Amount of DMF not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

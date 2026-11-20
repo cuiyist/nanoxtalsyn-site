@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "feng2005-cl-2005-1002-ticn-nanocrystals-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Xin Feng; Li-Yi Shi (2005): TiCN nanocrystals",
   "material": {
@@ -218,7 +218,7 @@
       ]
     },
     {
-      "id": "feng2005-cl-2005-1002-ticn-nanocrystals-1--after-s02-heat",
+      "id": "feng2005-cl-2005-1002-ticn-nanocrystals-1--after-d2-s02-put",
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
@@ -229,8 +229,19 @@
       ]
     },
     {
-      "id": "feng2005-cl-2005-1002-ticn-nanocrystals-1--after-s03-cool",
+      "id": "feng2005-cl-2005-1002-ticn-nanocrystals-1--after-s02-heat",
       "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "feng2005-cl-2005-1002-ticn-nanocrystals-1--after-d2-s02-put",
+        "feng2005-cl-2005-1002-ticn-nanocrystals-1--ticl4",
+        "feng2005-cl-2005-1002-ticn-nanocrystals-1--cac2",
+        "feng2005-cl-2005-1002-ticn-nanocrystals-1--nan3"
+      ]
+    },
+    {
+      "id": "feng2005-cl-2005-1002-ticn-nanocrystals-1--after-s03-cool",
+      "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
         "feng2005-cl-2005-1002-ticn-nanocrystals-1--after-s02-heat"
@@ -238,7 +249,7 @@
     },
     {
       "id": "feng2005-cl-2005-1002-ticn-nanocrystals-1--after-s04-collect",
-      "name": "mixture after step 4",
+      "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
         "feng2005-cl-2005-1002-ticn-nanocrystals-1--after-s03-cool"
@@ -246,7 +257,7 @@
     },
     {
       "id": "feng2005-cl-2005-1002-ticn-nanocrystals-1--after-s05-wash",
-      "name": "mixture after step 5",
+      "name": "mixture after step 6",
       "kind": "reaction_batch",
       "parent_ids": [
         "feng2005-cl-2005-1002-ticn-nanocrystals-1--after-s04-collect"
@@ -304,9 +315,9 @@
       ]
     },
     {
-      "id": "s02-heat",
-      "action": "heat",
-      "label": "Heated to 450 °C and held for 8 h",
+      "id": "d2-s02-put",
+      "action": "put",
+      "label": "TiCl4, CaC2, and NaN3 were put into the autoclave",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -315,6 +326,52 @@
       ],
       "inputs": [
         "feng2005-cl-2005-1002-ticn-nanocrystals-1--after-s01-mill",
+        "feng2005-cl-2005-1002-ticn-nanocrystals-1--ticl4",
+        "feng2005-cl-2005-1002-ticn-nanocrystals-1--cac2",
+        "feng2005-cl-2005-1002-ticn-nanocrystals-1--nan3"
+      ],
+      "outputs": [
+        "feng2005-cl-2005-1002-ticn-nanocrystals-1--after-d2-s02-put"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "feng2005-cl-2005-1002",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "TiCl4, CaC2, and NaN3 were put into the autoclave",
+      "evidence": [
+        {
+          "source_id": "feng2005-cl-2005-1002",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "s02-heat",
+      "action": "heat",
+      "label": "Heated to 450 °C and held for 8 h",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-put"
+      ],
+      "inputs": [
+        "feng2005-cl-2005-1002-ticn-nanocrystals-1--after-d2-s02-put",
         "feng2005-cl-2005-1002-ticn-nanocrystals-1--ticl4",
         "feng2005-cl-2005-1002-ticn-nanocrystals-1--cac2",
         "feng2005-cl-2005-1002-ticn-nanocrystals-1--nan3"
@@ -402,7 +459,44 @@
       "outputs": [
         "feng2005-cl-2005-1002-ticn-nanocrystals-1--after-s03-cool"
       ],
-      "parameters": {},
+      "parameters": {
+        "temperature": {
+          "value": 450,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "450 °C",
+          "evidence": [
+            {
+              "source_id": "feng2005-cl-2005-1002",
+              "locator": "Main PDF p.1"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 8,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "8 h",
+          "evidence": [
+            {
+              "source_id": "feng2005-cl-2005-1002",
+              "locator": "Main PDF p.1"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "environment": {
         "value": "N2",
         "status": "reported",
@@ -661,7 +755,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text."
     ],

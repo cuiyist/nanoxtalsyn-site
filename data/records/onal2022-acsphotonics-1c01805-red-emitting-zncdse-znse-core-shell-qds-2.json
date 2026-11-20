@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "onal2022-acsphotonics-1c01805-red-emitting-zncdse-znse-core-shell-qds-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Asim Onal; Guncem Ozgun Eren; Sadra Sadeghi; Rustamzhon Melikov; Mertcan Han; Onuralp Karatum; Melek Sermin Ozer; Houman Bahmani Jalali; Itir Bakis Dogru-Yuksel; Iskender Yilgor; Önder Metin; Sedat Nizamoglu (2022): red-emitting ZnCdSe/ZnSe core/shell QDs",
   "material": {
@@ -201,25 +201,78 @@
           "locator": "Main PDF p.7"
         }
       ]
+    },
+    {
+      "id": "onal2022-acsphotonics-1c01805-red-emitting-zncdse-znse-core-shell-qds-2--oleic-acid",
+      "name": "Oleic acid",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "onal2022-acsphotonics-1c01805",
+          "locator": "Main PDF p.7"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
-      "id": "onal2022-acsphotonics-1c01805-red-emitting-zncdse-znse-core-shell-qds-2--after-s01-heat",
+      "id": "onal2022-acsphotonics-1c01805-red-emitting-zncdse-znse-core-shell-qds-2--after-d2-s01-redisperse",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
+      "parent_ids": []
+    },
+    {
+      "id": "onal2022-acsphotonics-1c01805-red-emitting-zncdse-znse-core-shell-qds-2--after-d2-s02-mix",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
       "parent_ids": [
+        "onal2022-acsphotonics-1c01805-red-emitting-zncdse-znse-core-shell-qds-2--after-d2-s01-redisperse",
+        "onal2022-acsphotonics-1c01805-red-emitting-zncdse-znse-core-shell-qds-2--selenium"
+      ]
+    },
+    {
+      "id": "onal2022-acsphotonics-1c01805-red-emitting-zncdse-znse-core-shell-qds-2--after-s01-heat",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "onal2022-acsphotonics-1c01805-red-emitting-zncdse-znse-core-shell-qds-2--after-d2-s02-mix",
         "onal2022-acsphotonics-1c01805-red-emitting-zncdse-znse-core-shell-qds-2--zinc-oxide",
         "onal2022-acsphotonics-1c01805-red-emitting-zncdse-znse-core-shell-qds-2--cadmium-oxide"
       ]
     },
     {
-      "id": "onal2022-acsphotonics-1c01805-red-emitting-zncdse-znse-core-shell-qds-2--after-s02-cool",
-      "name": "mixture after step 2",
+      "id": "onal2022-acsphotonics-1c01805-red-emitting-zncdse-znse-core-shell-qds-2--after-d2-s04-inject",
+      "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
-        "onal2022-acsphotonics-1c01805-red-emitting-zncdse-znse-core-shell-qds-2--after-s01-heat"
+        "onal2022-acsphotonics-1c01805-red-emitting-zncdse-znse-core-shell-qds-2--after-s01-heat",
+        "onal2022-acsphotonics-1c01805-red-emitting-zncdse-znse-core-shell-qds-2--selenium"
+      ]
+    },
+    {
+      "id": "onal2022-acsphotonics-1c01805-red-emitting-zncdse-znse-core-shell-qds-2--after-s02-cool",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "onal2022-acsphotonics-1c01805-red-emitting-zncdse-znse-core-shell-qds-2--after-d2-s04-inject"
+      ]
+    },
+    {
+      "id": "onal2022-acsphotonics-1c01805-red-emitting-zncdse-znse-core-shell-qds-2--after-d2-s06-add",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "onal2022-acsphotonics-1c01805-red-emitting-zncdse-znse-core-shell-qds-2--after-s02-cool",
+        "onal2022-acsphotonics-1c01805-red-emitting-zncdse-znse-core-shell-qds-2--tributylphosphine"
       ]
     },
     {
@@ -227,11 +280,126 @@
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "onal2022-acsphotonics-1c01805-red-emitting-zncdse-znse-core-shell-qds-2--after-s02-cool"
+        "onal2022-acsphotonics-1c01805-red-emitting-zncdse-znse-core-shell-qds-2--after-d2-s06-add"
       ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-redisperse",
+      "action": "redisperse",
+      "label": "Redispersing in toluene",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [],
+      "outputs": [
+        "onal2022-acsphotonics-1c01805-red-emitting-zncdse-znse-core-shell-qds-2--after-d2-s01-redisperse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Redispersing in toluene",
+      "evidence": [
+        {
+          "source_id": "onal2022-acsphotonics-1c01805",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "d2-s02-mix",
+      "action": "mix",
+      "label": "Mixing paraffin oil and Se precursor",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s01-redisperse"
+      ],
+      "inputs": [
+        "onal2022-acsphotonics-1c01805-red-emitting-zncdse-znse-core-shell-qds-2--after-d2-s01-redisperse",
+        "onal2022-acsphotonics-1c01805-red-emitting-zncdse-znse-core-shell-qds-2--selenium"
+      ],
+      "outputs": [
+        "onal2022-acsphotonics-1c01805-red-emitting-zncdse-znse-core-shell-qds-2--after-d2-s02-mix"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 150,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "150 °C",
+          "evidence": [
+            {
+              "source_id": "onal2022-acsphotonics-1c01805",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 50,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "50 min",
+          "evidence": [
+            {
+              "source_id": "onal2022-acsphotonics-1c01805",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "onal2022-acsphotonics-1c01805",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Mixing paraffin oil and Se precursor",
+      "evidence": [
+        {
+          "source_id": "onal2022-acsphotonics-1c01805",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
     {
       "id": "s01-heat",
       "action": "heat",
@@ -239,8 +407,11 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
+      "depends_on": [
+        "d2-s02-mix"
+      ],
       "inputs": [
+        "onal2022-acsphotonics-1c01805-red-emitting-zncdse-znse-core-shell-qds-2--after-d2-s02-mix",
         "onal2022-acsphotonics-1c01805-red-emitting-zncdse-znse-core-shell-qds-2--zinc-oxide",
         "onal2022-acsphotonics-1c01805-red-emitting-zncdse-znse-core-shell-qds-2--cadmium-oxide"
       ],
@@ -294,9 +465,9 @@
       ]
     },
     {
-      "id": "s02-cool",
-      "action": "cool",
-      "label": "Cooling to room temperature",
+      "id": "d2-s04-inject",
+      "action": "inject",
+      "label": "Injection of Se−SUS precursor for shell growth",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -304,7 +475,88 @@
         "s01-heat"
       ],
       "inputs": [
-        "onal2022-acsphotonics-1c01805-red-emitting-zncdse-znse-core-shell-qds-2--after-s01-heat"
+        "onal2022-acsphotonics-1c01805-red-emitting-zncdse-znse-core-shell-qds-2--after-s01-heat",
+        "onal2022-acsphotonics-1c01805-red-emitting-zncdse-znse-core-shell-qds-2--selenium"
+      ],
+      "outputs": [
+        "onal2022-acsphotonics-1c01805-red-emitting-zncdse-znse-core-shell-qds-2--after-d2-s04-inject"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 310,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "310 °C",
+          "evidence": [
+            {
+              "source_id": "onal2022-acsphotonics-1c01805",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 30,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "30 min",
+          "evidence": [
+            {
+              "source_id": "onal2022-acsphotonics-1c01805",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "onal2022-acsphotonics-1c01805",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Injection of Se−SUS precursor for shell growth",
+      "evidence": [
+        {
+          "source_id": "onal2022-acsphotonics-1c01805",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "s02-cool",
+      "action": "cool",
+      "label": "Cooling to room temperature",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-inject"
+      ],
+      "inputs": [
+        "onal2022-acsphotonics-1c01805-red-emitting-zncdse-znse-core-shell-qds-2--after-d2-s04-inject"
       ],
       "outputs": [
         "onal2022-acsphotonics-1c01805-red-emitting-zncdse-znse-core-shell-qds-2--after-s02-cool"
@@ -337,6 +589,69 @@
       ]
     },
     {
+      "id": "d2-s06-add",
+      "action": "add",
+      "label": "Addition of TBP for surface passivation",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-cool"
+      ],
+      "inputs": [
+        "onal2022-acsphotonics-1c01805-red-emitting-zncdse-znse-core-shell-qds-2--after-s02-cool",
+        "onal2022-acsphotonics-1c01805-red-emitting-zncdse-znse-core-shell-qds-2--tributylphosphine"
+      ],
+      "outputs": [
+        "onal2022-acsphotonics-1c01805-red-emitting-zncdse-znse-core-shell-qds-2--after-d2-s06-add"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 30,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "30 min",
+          "evidence": [
+            {
+              "source_id": "onal2022-acsphotonics-1c01805",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "onal2022-acsphotonics-1c01805",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Addition of TBP for surface passivation",
+      "evidence": [
+        {
+          "source_id": "onal2022-acsphotonics-1c01805",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
       "id": "s03-centrifuge",
       "action": "centrifuge",
       "label": "Purification of QDs",
@@ -344,15 +659,34 @@
       "branch": "",
       "optional": false,
       "depends_on": [
-        "s02-cool"
+        "d2-s06-add"
       ],
       "inputs": [
-        "onal2022-acsphotonics-1c01805-red-emitting-zncdse-znse-core-shell-qds-2--after-s02-cool"
+        "onal2022-acsphotonics-1c01805-red-emitting-zncdse-znse-core-shell-qds-2--after-d2-s06-add"
       ],
       "outputs": [
         "onal2022-acsphotonics-1c01805-red-emitting-zncdse-znse-core-shell-qds-2--after-s03-centrifuge"
       ],
-      "parameters": {},
+      "parameters": {
+        "duration": {
+          "value": 10,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "10 min",
+          "evidence": [
+            {
+              "source_id": "onal2022-acsphotonics-1c01805",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "environment": {
         "value": null,
         "status": "not_reported",
@@ -463,17 +797,50 @@
           "locator": "Main PDF p.4"
         }
       ]
+    },
+    {
+      "id": "onal2022-acsphotonics-1c01805-red-emitting-zncdse-znse-core-shell-qds-2--photoluminescence-peak",
+      "sample_id": "onal2022-acsphotonics-1c01805-red-emitting-zncdse-znse-core-shell-qds-2--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 601,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "601 nm",
+        "evidence": [
+          {
+            "source_id": "onal2022-acsphotonics-1c01805",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "onal2022-acsphotonics-1c01805",
+          "locator": "Main PDF p.4"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
       "Amount of Zinc oxide not reported in the extracted text.",
-      "Amount of Selenium not reported in the extracted text."
+      "Amount of Selenium not reported in the extracted text.",
+      "Amount of Oleic acid not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "tan2007-cm061974e-pbse-qds-7-12-nm-spheres-octahedrons-cub-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Timothy T. Tan; S. Tamil Selvan; Lan Zhao; Shujun Gao; Jackie Y. Ying (2007): PbSe QDs (7-12 nm spheres, octahedrons/cubes)",
   "material": {
@@ -177,7 +177,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "volume": {
+          "value": 5.0,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "5 mL",
+          "evidence": [
+            {
+              "source_id": "tan2007-cm061974e",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -223,21 +242,52 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "tan2007-cm061974e-pbse-qds-7-12-nm-spheres-octahedrons-cub-1--trioctylphosphine",
+      "name": "trioctylphosphine",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "tan2007-cm061974e",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
-      "id": "tan2007-cm061974e-pbse-qds-7-12-nm-spheres-octahedrons-cub-1--after-s01-inject",
+      "id": "tan2007-cm061974e-pbse-qds-7-12-nm-spheres-octahedrons-cub-1--after-d2-s01-dissolve",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": [
-        "tan2007-cm061974e-pbse-qds-7-12-nm-spheres-octahedrons-cub-1--selenium"
+        "tan2007-cm061974e-pbse-qds-7-12-nm-spheres-octahedrons-cub-1--lead-acetate-trihydrate",
+        "tan2007-cm061974e-pbse-qds-7-12-nm-spheres-octahedrons-cub-1--oleic-acid",
+        "tan2007-cm061974e-pbse-qds-7-12-nm-spheres-octahedrons-cub-1--diphenyl-ether"
+      ]
+    },
+    {
+      "id": "tan2007-cm061974e-pbse-qds-7-12-nm-spheres-octahedrons-cub-1--after-s01-inject",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "tan2007-cm061974e-pbse-qds-7-12-nm-spheres-octahedrons-cub-1--after-d2-s01-dissolve",
+        "tan2007-cm061974e-pbse-qds-7-12-nm-spheres-octahedrons-cub-1--selenium",
+        "tan2007-cm061974e-pbse-qds-7-12-nm-spheres-octahedrons-cub-1--trioctylphosphine"
       ]
     },
     {
       "id": "tan2007-cm061974e-pbse-qds-7-12-nm-spheres-octahedrons-cub-1--after-s02-precipitate",
-      "name": "mixture after step 2",
+      "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
         "tan2007-cm061974e-pbse-qds-7-12-nm-spheres-octahedrons-cub-1--after-s01-inject"
@@ -245,14 +295,102 @@
     },
     {
       "id": "tan2007-cm061974e-pbse-qds-7-12-nm-spheres-octahedrons-cub-1--after-s03-centrifuge",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "tan2007-cm061974e-pbse-qds-7-12-nm-spheres-octahedrons-cub-1--after-s02-precipitate"
+      ]
+    },
+    {
+      "id": "tan2007-cm061974e-pbse-qds-7-12-nm-spheres-octahedrons-cub-1--after-d2-s05-redisperse",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "tan2007-cm061974e-pbse-qds-7-12-nm-spheres-octahedrons-cub-1--after-s02-precipitate"
+        "tan2007-cm061974e-pbse-qds-7-12-nm-spheres-octahedrons-cub-1--after-s03-centrifuge"
       ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-dissolve",
+      "action": "dissolve",
+      "label": "Dissolve lead acetate, oleic acid, and diphenyl ether",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "tan2007-cm061974e-pbse-qds-7-12-nm-spheres-octahedrons-cub-1--lead-acetate-trihydrate",
+        "tan2007-cm061974e-pbse-qds-7-12-nm-spheres-octahedrons-cub-1--oleic-acid",
+        "tan2007-cm061974e-pbse-qds-7-12-nm-spheres-octahedrons-cub-1--diphenyl-ether"
+      ],
+      "outputs": [
+        "tan2007-cm061974e-pbse-qds-7-12-nm-spheres-octahedrons-cub-1--after-d2-s01-dissolve"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 100,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "100 °C",
+          "evidence": [
+            {
+              "source_id": "tan2007-cm061974e",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 h",
+          "evidence": [
+            {
+              "source_id": "tan2007-cm061974e",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "tan2007-cm061974e",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dissolve lead acetate, oleic acid, and diphenyl ether",
+      "evidence": [
+        {
+          "source_id": "tan2007-cm061974e",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
     {
       "id": "s01-inject",
       "action": "inject",
@@ -260,9 +398,13 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
+      "depends_on": [
+        "d2-s01-dissolve"
+      ],
       "inputs": [
-        "tan2007-cm061974e-pbse-qds-7-12-nm-spheres-octahedrons-cub-1--selenium"
+        "tan2007-cm061974e-pbse-qds-7-12-nm-spheres-octahedrons-cub-1--after-d2-s01-dissolve",
+        "tan2007-cm061974e-pbse-qds-7-12-nm-spheres-octahedrons-cub-1--selenium",
+        "tan2007-cm061974e-pbse-qds-7-12-nm-spheres-octahedrons-cub-1--trioctylphosphine"
       ],
       "outputs": [
         "tan2007-cm061974e-pbse-qds-7-12-nm-spheres-octahedrons-cub-1--after-s01-inject"
@@ -369,6 +511,44 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "d2-s05-redisperse",
+      "action": "redisperse",
+      "label": "Redisperse in chloroform or cyclohexane",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-centrifuge"
+      ],
+      "inputs": [
+        "tan2007-cm061974e-pbse-qds-7-12-nm-spheres-octahedrons-cub-1--after-s03-centrifuge"
+      ],
+      "outputs": [
+        "tan2007-cm061974e-pbse-qds-7-12-nm-spheres-octahedrons-cub-1--after-d2-s05-redisperse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Redisperse in chloroform or cyclohexane",
+      "evidence": [
+        {
+          "source_id": "tan2007-cm061974e",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -377,7 +557,7 @@
       "sample_id": "tan2007-cm061974e-pbse-qds-7-12-nm-spheres-octahedrons-cub-1--product",
       "source_sample_label": "PbSe QDs (7-12 nm spheres, octahedrons/cubes)",
       "batch_id": null,
-      "material_state_id": "tan2007-cm061974e-pbse-qds-7-12-nm-spheres-octahedrons-cub-1--after-s03-centrifuge",
+      "material_state_id": "tan2007-cm061974e-pbse-qds-7-12-nm-spheres-octahedrons-cub-1--after-d2-s05-redisperse",
       "parent_sample_id": null,
       "composition": {
         "value": "PbSe",
@@ -468,15 +648,47 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "tan2007-cm061974e-pbse-qds-7-12-nm-spheres-octahedrons-cub-1--photoluminescence-peak",
+      "sample_id": "tan2007-cm061974e-pbse-qds-7-12-nm-spheres-octahedrons-cub-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 1238,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "1238 nm",
+        "evidence": [
+          {
+            "source_id": "tan2007-cm061974e",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "tan2007-cm061974e",
+          "locator": "Main PDF p.4"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Reaction time not reported in the extracted text.",
-      "Amount of diphenyl ether not reported in the extracted text."
+      "Amount of trioctylphosphine not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

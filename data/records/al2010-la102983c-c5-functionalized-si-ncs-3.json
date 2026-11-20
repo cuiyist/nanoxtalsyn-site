@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "al2010-la102983c-c5-functionalized-si-ncs-3",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Clark et al. (2010): C5-functionalized Si-NCs",
   "material": {
@@ -119,7 +119,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "amount": {
+          "value": 20,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "20 mmol",
+          "evidence": [
+            {
+              "source_id": "al2010-la102983c",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -165,6 +184,44 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "al2010-la102983c-c5-functionalized-si-ncs-3--ethanol",
+      "name": "ethanol",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "al2010-la102983c",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "al2010-la102983c-c5-functionalized-si-ncs-3--pentane",
+      "name": "pentane",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "al2010-la102983c",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -185,11 +242,20 @@
       ]
     },
     {
+      "id": "al2010-la102983c-c5-functionalized-si-ncs-3--after-d2-s03-dialyze",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "al2010-la102983c-c5-functionalized-si-ncs-3--after-s02-extract",
+        "al2010-la102983c-c5-functionalized-si-ncs-3--ethanol"
+      ]
+    },
+    {
       "id": "al2010-la102983c-c5-functionalized-si-ncs-3--after-s03-purify",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "al2010-la102983c-c5-functionalized-si-ncs-3--after-s02-extract"
+        "al2010-la102983c-c5-functionalized-si-ncs-3--after-d2-s03-dialyze"
       ]
     }
   ],
@@ -273,6 +339,69 @@
       ]
     },
     {
+      "id": "d2-s03-dialyze",
+      "action": "dialyze",
+      "label": "Dialysis against distilled water",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-extract"
+      ],
+      "inputs": [
+        "al2010-la102983c-c5-functionalized-si-ncs-3--after-s02-extract",
+        "al2010-la102983c-c5-functionalized-si-ncs-3--ethanol"
+      ],
+      "outputs": [
+        "al2010-la102983c-c5-functionalized-si-ncs-3--after-d2-s03-dialyze"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 24,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "24 h",
+          "evidence": [
+            {
+              "source_id": "al2010-la102983c",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "al2010-la102983c",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dialysis against distilled water",
+      "evidence": [
+        {
+          "source_id": "al2010-la102983c",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
       "id": "s03-purify",
       "action": "purify",
       "label": "Purified by centrifugation and dialysis",
@@ -280,10 +409,10 @@
       "branch": "",
       "optional": false,
       "depends_on": [
-        "s02-extract"
+        "d2-s03-dialyze"
       ],
       "inputs": [
-        "al2010-la102983c-c5-functionalized-si-ncs-3--after-s02-extract"
+        "al2010-la102983c-c5-functionalized-si-ncs-3--after-d2-s03-dialyze"
       ],
       "outputs": [
         "al2010-la102983c-c5-functionalized-si-ncs-3--after-s03-purify"
@@ -408,18 +537,51 @@
           "locator": "Main PDF p.4"
         }
       ]
+    },
+    {
+      "id": "al2010-la102983c-c5-functionalized-si-ncs-3--photoluminescence-peak",
+      "sample_id": "al2010-la102983c-c5-functionalized-si-ncs-3--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 650,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "650 nm",
+        "evidence": [
+          {
+            "source_id": "al2010-la102983c",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "al2010-la102983c",
+          "locator": "Main PDF p.4"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Reaction temperature not reported in the extracted text.",
       "Amount of hydrogen silsesquioxane (HSQ) not reported in the extracted text.",
-      "Amount of 4-pentenoic acid not reported in the extracted text.",
       "Amount of toluene not reported in the extracted text.",
-      "Amount of HF not reported in the extracted text."
+      "Amount of HF not reported in the extracted text.",
+      "Amount of ethanol not reported in the extracted text.",
+      "Amount of pentane not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

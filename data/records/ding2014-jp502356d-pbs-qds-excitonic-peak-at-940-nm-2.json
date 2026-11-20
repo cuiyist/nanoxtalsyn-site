@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "ding2014-jp502356d-pbs-qds-excitonic-peak-at-940-nm-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Bo Ding (2014): PbS QDs (excitonic peak at 940 nm)",
   "material": {
@@ -50,9 +50,14 @@
       "note": ""
     },
     "phase": {
-      "value": null,
-      "status": "not_reported",
-      "evidence": [],
+      "value": "crystalline",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "ding2014-jp502356d",
+          "locator": "Main PDF p.3"
+        }
+      ],
       "note": ""
     },
     "size": {
@@ -247,11 +252,27 @@
       ]
     },
     {
+      "id": "ding2014-jp502356d-pbs-qds-excitonic-peak-at-940-nm-2--after-d2-s02-cool",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "ding2014-jp502356d-pbs-qds-excitonic-peak-at-940-nm-2--after-s01-mix"
+      ]
+    },
+    {
+      "id": "ding2014-jp502356d-pbs-qds-excitonic-peak-at-940-nm-2--after-d2-s03-wash",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "ding2014-jp502356d-pbs-qds-excitonic-peak-at-940-nm-2--after-d2-s02-cool"
+      ]
+    },
+    {
       "id": "ding2014-jp502356d-pbs-qds-excitonic-peak-at-940-nm-2--after-s02-heat",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "ding2014-jp502356d-pbs-qds-excitonic-peak-at-940-nm-2--after-s01-mix"
+        "ding2014-jp502356d-pbs-qds-excitonic-peak-at-940-nm-2--after-d2-s03-wash"
       ]
     }
   ],
@@ -337,9 +358,9 @@
       ]
     },
     {
-      "id": "s02-heat",
-      "action": "heat",
-      "label": "Heating the reaction at 140 °C",
+      "id": "d2-s02-cool",
+      "action": "cool",
+      "label": "Cooling to room temperature",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -348,6 +369,87 @@
       ],
       "inputs": [
         "ding2014-jp502356d-pbs-qds-excitonic-peak-at-940-nm-2--after-s01-mix"
+      ],
+      "outputs": [
+        "ding2014-jp502356d-pbs-qds-excitonic-peak-at-940-nm-2--after-d2-s02-cool"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "ding2014-jp502356d",
+            "locator": "Main PDF p.8"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Cooling to room temperature",
+      "evidence": [
+        {
+          "source_id": "ding2014-jp502356d",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    },
+    {
+      "id": "d2-s03-wash",
+      "action": "wash",
+      "label": "Precipitation with acetone and dispersion with toluene",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-cool"
+      ],
+      "inputs": [
+        "ding2014-jp502356d-pbs-qds-excitonic-peak-at-940-nm-2--after-d2-s02-cool"
+      ],
+      "outputs": [
+        "ding2014-jp502356d-pbs-qds-excitonic-peak-at-940-nm-2--after-d2-s03-wash"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Precipitation with acetone and dispersion with toluene",
+      "evidence": [
+        {
+          "source_id": "ding2014-jp502356d",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    },
+    {
+      "id": "s02-heat",
+      "action": "heat",
+      "label": "Heating the reaction at 140 °C",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-wash"
+      ],
+      "inputs": [
+        "ding2014-jp502356d-pbs-qds-excitonic-peak-at-940-nm-2--after-d2-s03-wash"
       ],
       "outputs": [
         "ding2014-jp502356d-pbs-qds-excitonic-peak-at-940-nm-2--after-s02-heat"
@@ -437,9 +539,14 @@
         "note": ""
       },
       "phase": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "crystalline",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "ding2014-jp502356d",
+            "locator": "Main PDF p.3"
+          }
+        ],
         "note": ""
       },
       "morphology": {
@@ -510,9 +617,8 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
-      "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text."
     ],
     "conflicts": [],

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "muchlis2025-jacsau-5c00787-pbs-cds-qds-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Andi Magattang Gafur Muchlis; Chong-Ci Hu; Hoang-Duy Nguyen; Ramadhass Keerthika Devi; Yi-Ting Tsai; Yu Chun Lee; Chun Che Lin (2025): PbS/CdS QDs",
   "material": {
@@ -245,12 +245,48 @@
   "material_states": [
     {
       "id": "muchlis2025-jacsau-5c00787-pbs-cds-qds-2--after-s01-heat",
-      "name": "product as isolated",
-      "kind": "product",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
       "parent_ids": [
         "muchlis2025-jacsau-5c00787-pbs-cds-qds-2--cadmium-oxide",
         "muchlis2025-jacsau-5c00787-pbs-cds-qds-2--1-octadecene",
         "muchlis2025-jacsau-5c00787-pbs-cds-qds-2--oleic-acid"
+      ]
+    },
+    {
+      "id": "muchlis2025-jacsau-5c00787-pbs-cds-qds-2--after-d2-s02-stir",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "muchlis2025-jacsau-5c00787-pbs-cds-qds-2--after-s01-heat"
+      ]
+    },
+    {
+      "id": "muchlis2025-jacsau-5c00787-pbs-cds-qds-2--after-d2-s03-dilute",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "muchlis2025-jacsau-5c00787-pbs-cds-qds-2--after-d2-s02-stir",
+        "muchlis2025-jacsau-5c00787-pbs-cds-qds-2--pbs-qd-suspension"
+      ]
+    },
+    {
+      "id": "muchlis2025-jacsau-5c00787-pbs-cds-qds-2--after-d2-s04-mix",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "muchlis2025-jacsau-5c00787-pbs-cds-qds-2--after-d2-s03-dilute",
+        "muchlis2025-jacsau-5c00787-pbs-cds-qds-2--pbs-qd-suspension"
+      ]
+    },
+    {
+      "id": "muchlis2025-jacsau-5c00787-pbs-cds-qds-2--after-d2-s05-react",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "muchlis2025-jacsau-5c00787-pbs-cds-qds-2--after-d2-s04-mix",
+        "muchlis2025-jacsau-5c00787-pbs-cds-qds-2--pbs-qd-suspension",
+        "muchlis2025-jacsau-5c00787-pbs-cds-qds-2--cadmium-oxide"
       ]
     }
   ],
@@ -334,6 +370,219 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "d2-s02-stir",
+      "action": "stir",
+      "label": "Stir",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-heat"
+      ],
+      "inputs": [
+        "muchlis2025-jacsau-5c00787-pbs-cds-qds-2--after-s01-heat"
+      ],
+      "outputs": [
+        "muchlis2025-jacsau-5c00787-pbs-cds-qds-2--after-d2-s02-stir"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "muchlis2025-jacsau-5c00787",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Stir",
+      "evidence": [
+        {
+          "source_id": "muchlis2025-jacsau-5c00787",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "d2-s03-dilute",
+      "action": "dilute",
+      "label": "Dilute PbS QD suspension in toluene",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-stir"
+      ],
+      "inputs": [
+        "muchlis2025-jacsau-5c00787-pbs-cds-qds-2--after-d2-s02-stir",
+        "muchlis2025-jacsau-5c00787-pbs-cds-qds-2--pbs-qd-suspension"
+      ],
+      "outputs": [
+        "muchlis2025-jacsau-5c00787-pbs-cds-qds-2--after-d2-s03-dilute"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "muchlis2025-jacsau-5c00787",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dilute PbS QD suspension in toluene",
+      "evidence": [
+        {
+          "source_id": "muchlis2025-jacsau-5c00787",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "d2-s04-mix",
+      "action": "mix",
+      "label": "Mix PbS with Cd-oleate",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-dilute"
+      ],
+      "inputs": [
+        "muchlis2025-jacsau-5c00787-pbs-cds-qds-2--after-d2-s03-dilute",
+        "muchlis2025-jacsau-5c00787-pbs-cds-qds-2--pbs-qd-suspension"
+      ],
+      "outputs": [
+        "muchlis2025-jacsau-5c00787-pbs-cds-qds-2--after-d2-s04-mix"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "muchlis2025-jacsau-5c00787",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Mix PbS with Cd-oleate",
+      "evidence": [
+        {
+          "source_id": "muchlis2025-jacsau-5c00787",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "d2-s05-react",
+      "action": "react",
+      "label": "React PbS and Cd precursors in microfluidic system",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-mix"
+      ],
+      "inputs": [
+        "muchlis2025-jacsau-5c00787-pbs-cds-qds-2--after-d2-s04-mix",
+        "muchlis2025-jacsau-5c00787-pbs-cds-qds-2--pbs-qd-suspension",
+        "muchlis2025-jacsau-5c00787-pbs-cds-qds-2--cadmium-oxide"
+      ],
+      "outputs": [
+        "muchlis2025-jacsau-5c00787-pbs-cds-qds-2--after-d2-s05-react"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 100,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "100 °C",
+          "evidence": [
+            {
+              "source_id": "muchlis2025-jacsau-5c00787",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "5 min",
+          "evidence": [
+            {
+              "source_id": "muchlis2025-jacsau-5c00787",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "muchlis2025-jacsau-5c00787",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "React PbS and Cd precursors in microfluidic system",
+      "evidence": [
+        {
+          "source_id": "muchlis2025-jacsau-5c00787",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -342,7 +591,7 @@
       "sample_id": "muchlis2025-jacsau-5c00787-pbs-cds-qds-2--product",
       "source_sample_label": "PbS/CdS QDs",
       "batch_id": null,
-      "material_state_id": "muchlis2025-jacsau-5c00787-pbs-cds-qds-2--after-s01-heat",
+      "material_state_id": "muchlis2025-jacsau-5c00787-pbs-cds-qds-2--after-d2-s05-react",
       "parent_sample_id": null,
       "composition": {
         "value": "PbS/CdS",
@@ -429,7 +678,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text."

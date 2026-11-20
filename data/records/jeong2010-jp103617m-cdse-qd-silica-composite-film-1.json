@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "jeong2010-jp103617m-cdse-qd-silica-composite-film-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Sanghwa Jeong (2010): CdSe QD-silica composite film",
   "material": {
@@ -39,15 +39,25 @@
   },
   "intended_target": {
     "composition": {
-      "value": null,
-      "status": "not_reported",
-      "evidence": [],
+      "value": "CdSe",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "jeong2010-jp103617m",
+          "locator": "Main PDF p.1"
+        }
+      ],
       "note": ""
     },
     "phase": {
-      "value": null,
-      "status": "not_reported",
-      "evidence": [],
+      "value": "crystal",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "jeong2010-jp103617m",
+          "locator": "Main PDF p.1"
+        }
+      ],
       "note": ""
     },
     "size": {
@@ -194,19 +204,66 @@
           "locator": "Main PDF p.1"
         }
       ]
+    },
+    {
+      "id": "jeong2010-jp103617m-cdse-qd-silica-composite-film-1--methanol",
+      "name": "methanol",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "jeong2010-jp103617m",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "jeong2010-jp103617m-cdse-qd-silica-composite-film-1--spin-on-glass-sog-organosiloxane",
+      "name": "spin-on-glass (SOG) organosiloxane",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "jeong2010-jp103617m",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
-      "id": "jeong2010-jp103617m-cdse-qd-silica-composite-film-1--after-s01-spin-cast",
+      "id": "jeong2010-jp103617m-cdse-qd-silica-composite-film-1--after-d2-s01-clean",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
+      "parent_ids": []
+    },
+    {
+      "id": "jeong2010-jp103617m-cdse-qd-silica-composite-film-1--after-s01-spin-cast",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
       "parent_ids": [
+        "jeong2010-jp103617m-cdse-qd-silica-composite-film-1--after-d2-s01-clean",
         "jeong2010-jp103617m-cdse-qd-silica-composite-film-1--cadmium-acetate-dihydrate",
         "jeong2010-jp103617m-cdse-qd-silica-composite-film-1--selenium",
         "jeong2010-jp103617m-cdse-qd-silica-composite-film-1--tris-3-hydroxypropyl-phosphine-thpp",
-        "jeong2010-jp103617m-cdse-qd-silica-composite-film-1--ethanol"
+        "jeong2010-jp103617m-cdse-qd-silica-composite-film-1--ethanol",
+        "jeong2010-jp103617m-cdse-qd-silica-composite-film-1--methanol",
+        "jeong2010-jp103617m-cdse-qd-silica-composite-film-1--spin-on-glass-sog-organosiloxane"
       ]
     },
     {
@@ -220,18 +277,62 @@
   ],
   "operations": [
     {
+      "id": "d2-s01-clean",
+      "action": "clean",
+      "label": "Wash and sonicate glass substrate",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [],
+      "outputs": [
+        "jeong2010-jp103617m-cdse-qd-silica-composite-film-1--after-d2-s01-clean"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "jeong2010-jp103617m",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Wash and sonicate glass substrate",
+      "evidence": [
+        {
+          "source_id": "jeong2010-jp103617m",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
       "id": "s01-spin-cast",
       "action": "spin_cast",
       "label": "Spin-cast mixture onto glass substrate",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
+      "depends_on": [
+        "d2-s01-clean"
+      ],
       "inputs": [
+        "jeong2010-jp103617m-cdse-qd-silica-composite-film-1--after-d2-s01-clean",
         "jeong2010-jp103617m-cdse-qd-silica-composite-film-1--cadmium-acetate-dihydrate",
         "jeong2010-jp103617m-cdse-qd-silica-composite-film-1--selenium",
         "jeong2010-jp103617m-cdse-qd-silica-composite-film-1--tris-3-hydroxypropyl-phosphine-thpp",
-        "jeong2010-jp103617m-cdse-qd-silica-composite-film-1--ethanol"
+        "jeong2010-jp103617m-cdse-qd-silica-composite-film-1--ethanol",
+        "jeong2010-jp103617m-cdse-qd-silica-composite-film-1--methanol",
+        "jeong2010-jp103617m-cdse-qd-silica-composite-film-1--spin-on-glass-sog-organosiloxane"
       ],
       "outputs": [
         "jeong2010-jp103617m-cdse-qd-silica-composite-film-1--after-s01-spin-cast"
@@ -354,15 +455,25 @@
       "material_state_id": "jeong2010-jp103617m-cdse-qd-silica-composite-film-1--after-s02-bake",
       "parent_sample_id": null,
       "composition": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "CdSe",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "jeong2010-jp103617m",
+            "locator": "Main PDF p.1"
+          }
+        ],
         "note": ""
       },
       "phase": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "crystal",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "jeong2010-jp103617m",
+            "locator": "Main PDF p.1"
+          }
+        ],
         "note": ""
       },
       "morphology": {
@@ -431,18 +542,51 @@
           "locator": "Main PDF p.4"
         }
       ]
+    },
+    {
+      "id": "jeong2010-jp103617m-cdse-qd-silica-composite-film-1--photoluminescence-quantum-yield",
+      "sample_id": "jeong2010-jp103617m-cdse-qd-silica-composite-film-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 35,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "35 %",
+        "evidence": [
+          {
+            "source_id": "jeong2010-jp103617m",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "jeong2010-jp103617m",
+          "locator": "Main PDF p.1"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
-      "Phase not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
       "Amount of tris(3-hydroxypropyl)phosphine (THPP) not reported in the extracted text.",
-      "Amount of ethanol not reported in the extracted text."
+      "Amount of ethanol not reported in the extracted text.",
+      "Amount of methanol not reported in the extracted text.",
+      "Amount of spin-on-glass (SOG) organosiloxane not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

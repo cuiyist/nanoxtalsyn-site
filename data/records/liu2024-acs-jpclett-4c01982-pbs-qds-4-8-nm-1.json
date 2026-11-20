@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "liu2024-acs-jpclett-4c01982-pbs-qds-4-8-nm-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Yujuan Liu; Lian Tan; Yao Fu; Hao Tang; Gui-Ping Dai; Long Tan (2024): PbS QDs (4.8 nm)",
   "material": {
@@ -242,10 +242,30 @@
   "stocks": [],
   "material_states": [
     {
-      "id": "liu2024-acs-jpclett-4c01982-pbs-qds-4-8-nm-1--after-s01-inject",
+      "id": "liu2024-acs-jpclett-4c01982-pbs-qds-4-8-nm-1--after-d2-s01-dissolve",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": [
+        "liu2024-acs-jpclett-4c01982-pbs-qds-4-8-nm-1--pb-oh-cl",
+        "liu2024-acs-jpclett-4c01982-pbs-qds-4-8-nm-1--oleylamine"
+      ]
+    },
+    {
+      "id": "liu2024-acs-jpclett-4c01982-pbs-qds-4-8-nm-1--after-d2-s02-mix",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "liu2024-acs-jpclett-4c01982-pbs-qds-4-8-nm-1--after-d2-s01-dissolve",
+        "liu2024-acs-jpclett-4c01982-pbs-qds-4-8-nm-1--pb-oh-cl",
+        "liu2024-acs-jpclett-4c01982-pbs-qds-4-8-nm-1--oleylamine"
+      ]
+    },
+    {
+      "id": "liu2024-acs-jpclett-4c01982-pbs-qds-4-8-nm-1--after-s01-inject",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "liu2024-acs-jpclett-4c01982-pbs-qds-4-8-nm-1--after-d2-s02-mix",
         "liu2024-acs-jpclett-4c01982-pbs-qds-4-8-nm-1--sulfur",
         "liu2024-acs-jpclett-4c01982-pbs-qds-4-8-nm-1--oleylamine",
         "liu2024-acs-jpclett-4c01982-pbs-qds-4-8-nm-1--oleic-acid"
@@ -262,14 +282,104 @@
   ],
   "operations": [
     {
+      "id": "d2-s01-dissolve",
+      "action": "dissolve",
+      "label": "Pb(OH)Cl dissolved in OLA solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "liu2024-acs-jpclett-4c01982-pbs-qds-4-8-nm-1--pb-oh-cl",
+        "liu2024-acs-jpclett-4c01982-pbs-qds-4-8-nm-1--oleylamine"
+      ],
+      "outputs": [
+        "liu2024-acs-jpclett-4c01982-pbs-qds-4-8-nm-1--after-d2-s01-dissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "liu2024-acs-jpclett-4c01982",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Pb(OH)Cl dissolved in OLA solution",
+      "evidence": [
+        {
+          "source_id": "liu2024-acs-jpclett-4c01982",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    },
+    {
+      "id": "d2-s02-mix",
+      "action": "mix",
+      "label": "Mix",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s01-dissolve"
+      ],
+      "inputs": [
+        "liu2024-acs-jpclett-4c01982-pbs-qds-4-8-nm-1--after-d2-s01-dissolve",
+        "liu2024-acs-jpclett-4c01982-pbs-qds-4-8-nm-1--pb-oh-cl",
+        "liu2024-acs-jpclett-4c01982-pbs-qds-4-8-nm-1--oleylamine"
+      ],
+      "outputs": [
+        "liu2024-acs-jpclett-4c01982-pbs-qds-4-8-nm-1--after-d2-s02-mix"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "liu2024-acs-jpclett-4c01982",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Mix",
+      "evidence": [
+        {
+          "source_id": "liu2024-acs-jpclett-4c01982",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    },
+    {
       "id": "s01-inject",
       "action": "inject",
       "label": "S-OLA solution injected into lead precursor solution",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
+      "depends_on": [
+        "d2-s02-mix"
+      ],
       "inputs": [
+        "liu2024-acs-jpclett-4c01982-pbs-qds-4-8-nm-1--after-d2-s02-mix",
         "liu2024-acs-jpclett-4c01982-pbs-qds-4-8-nm-1--sulfur",
         "liu2024-acs-jpclett-4c01982-pbs-qds-4-8-nm-1--oleylamine",
         "liu2024-acs-jpclett-4c01982-pbs-qds-4-8-nm-1--oleic-acid"
@@ -432,11 +542,44 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "liu2024-acs-jpclett-4c01982-pbs-qds-4-8-nm-1--photoluminescence-quantum-yield",
+      "sample_id": "liu2024-acs-jpclett-4c01982-pbs-qds-4-8-nm-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 35.9,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "35.9 %",
+        "evidence": [
+          {
+            "source_id": "liu2024-acs-jpclett-4c01982",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "liu2024-acs-jpclett-4c01982",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Size not reported in the extracted text.",
       "Reaction time not reported in the extracted text."

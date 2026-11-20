@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "chen2014-ph500162a-inas-gaas-qd-sld-on-si-substrate-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "S. Chen (2014): InAs/GaAs QD SLD on Si substrate",
   "material": {
@@ -87,7 +87,7 @@
       "id": "chen2014-ph500162a-inas-gaas-qd-sld-on-si-substrate-1--gaas",
       "name": "GaAs",
       "formula": null,
-      "role": "reagent",
+      "role": "grown_layer",
       "stage": "synthesis",
       "identity": {
         "pubchem_cid": null,
@@ -124,6 +124,44 @@
     {
       "id": "chen2014-ph500162a-inas-gaas-qd-sld-on-si-substrate-1--inas",
       "name": "InAs",
+      "formula": null,
+      "role": "grown_layer",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "chen2014-ph500162a",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "chen2014-ph500162a-inas-gaas-qd-sld-on-si-substrate-1--algaas",
+      "name": "AlGaAs",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "chen2014-ph500162a",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "chen2014-ph500162a-inas-gaas-qd-sld-on-si-substrate-1--in0-15ga0-85as",
+      "name": "In0.15Ga0.85As",
       "formula": null,
       "role": "reagent",
       "stage": "synthesis",
@@ -183,7 +221,8 @@
       "kind": "reaction_batch",
       "parent_ids": [
         "chen2014-ph500162a-inas-gaas-qd-sld-on-si-substrate-1--after-s04-grow",
-        "chen2014-ph500162a-inas-gaas-qd-sld-on-si-substrate-1--gaas"
+        "chen2014-ph500162a-inas-gaas-qd-sld-on-si-substrate-1--gaas",
+        "chen2014-ph500162a-inas-gaas-qd-sld-on-si-substrate-1--algaas"
       ]
     },
     {
@@ -193,7 +232,8 @@
       "parent_ids": [
         "chen2014-ph500162a-inas-gaas-qd-sld-on-si-substrate-1--after-s05-grow",
         "chen2014-ph500162a-inas-gaas-qd-sld-on-si-substrate-1--inas",
-        "chen2014-ph500162a-inas-gaas-qd-sld-on-si-substrate-1--gaas"
+        "chen2014-ph500162a-inas-gaas-qd-sld-on-si-substrate-1--gaas",
+        "chen2014-ph500162a-inas-gaas-qd-sld-on-si-substrate-1--in0-15ga0-85as"
       ]
     },
     {
@@ -201,7 +241,8 @@
       "name": "mixture after step 7",
       "kind": "reaction_batch",
       "parent_ids": [
-        "chen2014-ph500162a-inas-gaas-qd-sld-on-si-substrate-1--after-s06-grow"
+        "chen2014-ph500162a-inas-gaas-qd-sld-on-si-substrate-1--after-s06-grow",
+        "chen2014-ph500162a-inas-gaas-qd-sld-on-si-substrate-1--algaas"
       ]
     },
     {
@@ -435,7 +476,8 @@
       ],
       "inputs": [
         "chen2014-ph500162a-inas-gaas-qd-sld-on-si-substrate-1--after-s04-grow",
-        "chen2014-ph500162a-inas-gaas-qd-sld-on-si-substrate-1--gaas"
+        "chen2014-ph500162a-inas-gaas-qd-sld-on-si-substrate-1--gaas",
+        "chen2014-ph500162a-inas-gaas-qd-sld-on-si-substrate-1--algaas"
       ],
       "outputs": [
         "chen2014-ph500162a-inas-gaas-qd-sld-on-si-substrate-1--after-s05-grow"
@@ -475,7 +517,8 @@
       "inputs": [
         "chen2014-ph500162a-inas-gaas-qd-sld-on-si-substrate-1--after-s05-grow",
         "chen2014-ph500162a-inas-gaas-qd-sld-on-si-substrate-1--inas",
-        "chen2014-ph500162a-inas-gaas-qd-sld-on-si-substrate-1--gaas"
+        "chen2014-ph500162a-inas-gaas-qd-sld-on-si-substrate-1--gaas",
+        "chen2014-ph500162a-inas-gaas-qd-sld-on-si-substrate-1--in0-15ga0-85as"
       ],
       "outputs": [
         "chen2014-ph500162a-inas-gaas-qd-sld-on-si-substrate-1--after-s06-grow"
@@ -513,7 +556,8 @@
         "s06-grow"
       ],
       "inputs": [
-        "chen2014-ph500162a-inas-gaas-qd-sld-on-si-substrate-1--after-s06-grow"
+        "chen2014-ph500162a-inas-gaas-qd-sld-on-si-substrate-1--after-s06-grow",
+        "chen2014-ph500162a-inas-gaas-qd-sld-on-si-substrate-1--algaas"
       ],
       "outputs": [
         "chen2014-ph500162a-inas-gaas-qd-sld-on-si-substrate-1--after-s07-grow"
@@ -649,25 +693,60 @@
         }
       ],
       "notes": [
-        "Reactor: MBE system (Main PDF p.2)."
+        "Reactor: MBE system (Main PDF p.2).",
+        "Reaction time: 10 min (Main PDF p.?)."
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "chen2014-ph500162a-inas-gaas-qd-sld-on-si-substrate-1--photoluminescence-peak",
+      "sample_id": "chen2014-ph500162a-inas-gaas-qd-sld-on-si-substrate-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 1255,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "1255 nm",
+        "evidence": [
+          {
+            "source_id": "chen2014-ph500162a",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "chen2014-ph500162a",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
-      "Reaction time not reported in the extracted text.",
       "Amount of GaAs not reported in the extracted text.",
       "Amount of InAlAs not reported in the extracted text.",
-      "Amount of InAs not reported in the extracted text."
+      "Amount of InAs not reported in the extracted text.",
+      "Amount of AlGaAs not reported in the extracted text.",
+      "Amount of In0.15Ga0.85As not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

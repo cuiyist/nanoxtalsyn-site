@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "stoeva2003-jp030013-dodecanethiol-stabilized-au-nanoparticle-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Savka I. Stoeva (2003): dodecanethiol-stabilized Au nanoparticles (SMAD method)",
   "material": {
@@ -55,16 +55,21 @@
       "note": ""
     },
     "size": {
-      "value": null,
+      "value": 4.5,
       "minimum": null,
       "maximum": null,
       "unit": "nm",
-      "status": "not_reported",
+      "status": "reported",
       "approximate": false,
       "qualifier": "",
       "basis": "",
-      "raw_text": "not reported",
-      "evidence": [],
+      "raw_text": "4.5 nm",
+      "evidence": [
+        {
+          "source_id": "stoeva2003-jp030013",
+          "locator": "Main PDF"
+        }
+      ],
       "derivation": null
     },
     "morphology": {
@@ -79,7 +84,7 @@
       "id": "stoeva2003-jp030013-dodecanethiol-stabilized-au-nanoparticle-2--au",
       "name": "Au",
       "formula": null,
-      "role": "metal_precursor",
+      "role": "starting_particles",
       "stage": "synthesis",
       "identity": {
         "pubchem_cid": null,
@@ -240,16 +245,26 @@
       ]
     },
     {
-      "id": "stoeva2003-jp030013-dodecanethiol-stabilized-au-nanoparticle-2--after-s02-warm",
+      "id": "stoeva2003-jp030013-dodecanethiol-stabilized-au-nanoparticle-2--after-d2-s02-evaporate",
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
-        "stoeva2003-jp030013-dodecanethiol-stabilized-au-nanoparticle-2--after-s01-freeze"
+        "stoeva2003-jp030013-dodecanethiol-stabilized-au-nanoparticle-2--after-s01-freeze",
+        "stoeva2003-jp030013-dodecanethiol-stabilized-au-nanoparticle-2--au",
+        "stoeva2003-jp030013-dodecanethiol-stabilized-au-nanoparticle-2--acetone"
+      ]
+    },
+    {
+      "id": "stoeva2003-jp030013-dodecanethiol-stabilized-au-nanoparticle-2--after-s02-warm",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "stoeva2003-jp030013-dodecanethiol-stabilized-au-nanoparticle-2--after-d2-s02-evaporate"
       ]
     },
     {
       "id": "stoeva2003-jp030013-dodecanethiol-stabilized-au-nanoparticle-2--after-s03-mix",
-      "name": "mixture after step 3",
+      "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
         "stoeva2003-jp030013-dodecanethiol-stabilized-au-nanoparticle-2--after-s02-warm"
@@ -257,7 +272,7 @@
     },
     {
       "id": "stoeva2003-jp030013-dodecanethiol-stabilized-au-nanoparticle-2--after-s04-evaporate",
-      "name": "mixture after step 4",
+      "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
         "stoeva2003-jp030013-dodecanethiol-stabilized-au-nanoparticle-2--after-s03-mix"
@@ -265,7 +280,7 @@
     },
     {
       "id": "stoeva2003-jp030013-dodecanethiol-stabilized-au-nanoparticle-2--after-s05-redisperse",
-      "name": "mixture after step 5",
+      "name": "mixture after step 6",
       "kind": "reaction_batch",
       "parent_ids": [
         "stoeva2003-jp030013-dodecanethiol-stabilized-au-nanoparticle-2--after-s04-evaporate",
@@ -325,9 +340,9 @@
       ]
     },
     {
-      "id": "s02-warm",
-      "action": "warm",
-      "label": "Allow Au-acetone matrix to warm",
+      "id": "d2-s02-evaporate",
+      "action": "evaporate",
+      "label": "Evaporate Au and co-deposit with acetone",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -335,7 +350,52 @@
         "s01-freeze"
       ],
       "inputs": [
-        "stoeva2003-jp030013-dodecanethiol-stabilized-au-nanoparticle-2--after-s01-freeze"
+        "stoeva2003-jp030013-dodecanethiol-stabilized-au-nanoparticle-2--after-s01-freeze",
+        "stoeva2003-jp030013-dodecanethiol-stabilized-au-nanoparticle-2--au",
+        "stoeva2003-jp030013-dodecanethiol-stabilized-au-nanoparticle-2--acetone"
+      ],
+      "outputs": [
+        "stoeva2003-jp030013-dodecanethiol-stabilized-au-nanoparticle-2--after-d2-s02-evaporate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "vacuum",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "stoeva2003-jp030013",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Evaporate Au and co-deposit with acetone",
+      "evidence": [
+        {
+          "source_id": "stoeva2003-jp030013",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-warm",
+      "action": "warm",
+      "label": "Allow Au-acetone matrix to warm",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-evaporate"
+      ],
+      "inputs": [
+        "stoeva2003-jp030013-dodecanethiol-stabilized-au-nanoparticle-2--after-d2-s02-evaporate"
       ],
       "outputs": [
         "stoeva2003-jp030013-dodecanethiol-stabilized-au-nanoparticle-2--after-s02-warm"
@@ -623,21 +683,54 @@
           "locator": "Main PDF p.2"
         }
       ],
-      "notes": []
+      "notes": [
+        "Reaction time: 45 min (Main PDF p.?)."
+      ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "stoeva2003-jp030013-dodecanethiol-stabilized-au-nanoparticle-2--size",
+      "sample_id": "stoeva2003-jp030013-dodecanethiol-stabilized-au-nanoparticle-2--product",
+      "property": "particle_size",
+      "technique": "not reported",
+      "value": {
+        "value": 4.5,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "4.5 nm",
+        "evidence": [
+          {
+            "source_id": "stoeva2003-jp030013",
+            "locator": "Main PDF"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "stoeva2003-jp030013",
+          "locator": "Main PDF"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
-      "Size not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
-      "Reaction temperature not reported in the extracted text.",
-      "Reaction time not reported in the extracted text."
+      "Reaction temperature not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

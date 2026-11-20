@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "panda2025-jacs-5c11775-inas-qds-doa-based-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Satyaprakash Panda; Lutfan Sinatra; Khursand E. Yorov; Galih R. Suwito; Alexander Bessonov; Marat Lutfullin; Luca Goldoni; Enrico Bergamaschi; Rosaria Brescia; Mirko Prato; Giorgio Divitini; Luca De Trizio; Liberato Manna (2025): InAs QDs (DOA-based)",
   "material": {
@@ -256,6 +256,44 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "panda2025-jacs-5c11775-inas-qds-doa-based-1--hexane",
+      "name": "hexane",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "panda2025-jacs-5c11775",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "panda2025-jacs-5c11775-inas-qds-doa-based-1--butanol",
+      "name": "butanol",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "panda2025-jacs-5c11775",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -271,11 +309,51 @@
       ]
     },
     {
+      "id": "panda2025-jacs-5c11775-inas-qds-doa-based-1--after-d2-s02-prepare",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "panda2025-jacs-5c11775-inas-qds-doa-based-1--after-s01-degas",
+        "panda2025-jacs-5c11775-inas-qds-doa-based-1--tris-trimethylsilyl-arsine",
+        "panda2025-jacs-5c11775-inas-qds-doa-based-1--dioctylamine",
+        "panda2025-jacs-5c11775-inas-qds-doa-based-1--1-octadecene"
+      ]
+    },
+    {
+      "id": "panda2025-jacs-5c11775-inas-qds-doa-based-1--after-d2-s03-inject",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "panda2025-jacs-5c11775-inas-qds-doa-based-1--after-d2-s02-prepare",
+        "panda2025-jacs-5c11775-inas-qds-doa-based-1--tris-trimethylsilyl-arsine",
+        "panda2025-jacs-5c11775-inas-qds-doa-based-1--dioctylamine",
+        "panda2025-jacs-5c11775-inas-qds-doa-based-1--1-octadecene"
+      ]
+    },
+    {
+      "id": "panda2025-jacs-5c11775-inas-qds-doa-based-1--after-d2-s04-cool",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "panda2025-jacs-5c11775-inas-qds-doa-based-1--after-d2-s03-inject"
+      ]
+    },
+    {
       "id": "panda2025-jacs-5c11775-inas-qds-doa-based-1--after-s02-purify",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "panda2025-jacs-5c11775-inas-qds-doa-based-1--after-d2-s04-cool",
+        "panda2025-jacs-5c11775-inas-qds-doa-based-1--hexane",
+        "panda2025-jacs-5c11775-inas-qds-doa-based-1--butanol"
+      ]
+    },
+    {
+      "id": "panda2025-jacs-5c11775-inas-qds-doa-based-1--after-d2-s06-heat",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "panda2025-jacs-5c11775-inas-qds-doa-based-1--after-s01-degas"
+        "panda2025-jacs-5c11775-inas-qds-doa-based-1--after-s02-purify"
       ]
     }
   ],
@@ -356,6 +434,163 @@
       ]
     },
     {
+      "id": "d2-s02-prepare",
+      "action": "prepare",
+      "label": "Preparing the As precursor solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-degas"
+      ],
+      "inputs": [
+        "panda2025-jacs-5c11775-inas-qds-doa-based-1--after-s01-degas",
+        "panda2025-jacs-5c11775-inas-qds-doa-based-1--tris-trimethylsilyl-arsine",
+        "panda2025-jacs-5c11775-inas-qds-doa-based-1--dioctylamine",
+        "panda2025-jacs-5c11775-inas-qds-doa-based-1--1-octadecene"
+      ],
+      "outputs": [
+        "panda2025-jacs-5c11775-inas-qds-doa-based-1--after-d2-s02-prepare"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Preparing the As precursor solution",
+      "evidence": [
+        {
+          "source_id": "panda2025-jacs-5c11775",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "d2-s03-inject",
+      "action": "inject",
+      "label": "Hot injection of the As precursor solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-prepare"
+      ],
+      "inputs": [
+        "panda2025-jacs-5c11775-inas-qds-doa-based-1--after-d2-s02-prepare",
+        "panda2025-jacs-5c11775-inas-qds-doa-based-1--tris-trimethylsilyl-arsine",
+        "panda2025-jacs-5c11775-inas-qds-doa-based-1--dioctylamine",
+        "panda2025-jacs-5c11775-inas-qds-doa-based-1--1-octadecene"
+      ],
+      "outputs": [
+        "panda2025-jacs-5c11775-inas-qds-doa-based-1--after-d2-s03-inject"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 280,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "280 °C",
+          "evidence": [
+            {
+              "source_id": "panda2025-jacs-5c11775",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 10,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "10 min",
+          "evidence": [
+            {
+              "source_id": "panda2025-jacs-5c11775",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Hot injection of the As precursor solution",
+      "evidence": [
+        {
+          "source_id": "panda2025-jacs-5c11775",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "d2-s04-cool",
+      "action": "cool",
+      "label": "Cooling the reaction to room temperature",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-inject"
+      ],
+      "inputs": [
+        "panda2025-jacs-5c11775-inas-qds-doa-based-1--after-d2-s03-inject"
+      ],
+      "outputs": [
+        "panda2025-jacs-5c11775-inas-qds-doa-based-1--after-d2-s04-cool"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Cooling the reaction to room temperature",
+      "evidence": [
+        {
+          "source_id": "panda2025-jacs-5c11775",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
       "id": "s02-purify",
       "action": "purify",
       "label": "Purification of the QDs",
@@ -363,10 +598,12 @@
       "branch": "",
       "optional": false,
       "depends_on": [
-        "s01-degas"
+        "d2-s04-cool"
       ],
       "inputs": [
-        "panda2025-jacs-5c11775-inas-qds-doa-based-1--after-s01-degas"
+        "panda2025-jacs-5c11775-inas-qds-doa-based-1--after-d2-s04-cool",
+        "panda2025-jacs-5c11775-inas-qds-doa-based-1--hexane",
+        "panda2025-jacs-5c11775-inas-qds-doa-based-1--butanol"
       ],
       "outputs": [
         "panda2025-jacs-5c11775-inas-qds-doa-based-1--after-s02-purify"
@@ -392,6 +629,63 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "d2-s06-heat",
+      "action": "heat",
+      "label": "Heating the reaction flask",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-purify"
+      ],
+      "inputs": [
+        "panda2025-jacs-5c11775-inas-qds-doa-based-1--after-s02-purify"
+      ],
+      "outputs": [
+        "panda2025-jacs-5c11775-inas-qds-doa-based-1--after-d2-s06-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 280,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "280 °C",
+          "evidence": [
+            {
+              "source_id": "panda2025-jacs-5c11775",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heating the reaction flask",
+      "evidence": [
+        {
+          "source_id": "panda2025-jacs-5c11775",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -400,7 +694,7 @@
       "sample_id": "panda2025-jacs-5c11775-inas-qds-doa-based-1--product",
       "source_sample_label": "InAs QDs (DOA-based)",
       "batch_id": null,
-      "material_state_id": "panda2025-jacs-5c11775-inas-qds-doa-based-1--after-s02-purify",
+      "material_state_id": "panda2025-jacs-5c11775-inas-qds-doa-based-1--after-d2-s06-heat",
       "parent_sample_id": null,
       "composition": {
         "value": "InAs",
@@ -490,13 +784,15 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
-      "Amount of 1-octadecene not reported in the extracted text."
+      "Amount of 1-octadecene not reported in the extracted text.",
+      "Amount of hexane not reported in the extracted text.",
+      "Amount of butanol not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

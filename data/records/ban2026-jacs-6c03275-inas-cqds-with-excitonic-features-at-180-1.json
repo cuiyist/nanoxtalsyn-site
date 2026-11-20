@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "ban2026-jacs-6c03275-inas-cqds-with-excitonic-features-at-180-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Hyeong Woo Ban (2026): InAs CQDs with excitonic features at 1800 nm",
   "material": {
@@ -242,18 +242,296 @@
           "locator": "Main PDF p.6"
         }
       ]
+    },
+    {
+      "id": "ban2026-jacs-6c03275-inas-cqds-with-excitonic-features-at-180-1--inas-nanocluster-solution",
+      "name": "InAs nanocluster solution",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "ban2026-jacs-6c03275",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "ban2026-jacs-6c03275-inas-cqds-with-excitonic-features-at-180-1--inas-seed-solution",
+      "name": "InAs seed solution",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "ban2026-jacs-6c03275",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "ban2026-jacs-6c03275-inas-cqds-with-excitonic-features-at-180-1--anhydrous-buoh",
+      "name": "anhydrous BuOH",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "ban2026-jacs-6c03275",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "ban2026-jacs-6c03275-inas-cqds-with-excitonic-features-at-180-1--anhydrous-n-hexane",
+      "name": "anhydrous n-hexane",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "ban2026-jacs-6c03275",
+          "locator": "Main PDF p.7"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
+      "id": "ban2026-jacs-6c03275-inas-cqds-with-excitonic-features-at-180-1--after-d2-s01-mix",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "ban2026-jacs-6c03275-inas-cqds-with-excitonic-features-at-180-1--tmsi-3as",
+        "ban2026-jacs-6c03275-inas-cqds-with-excitonic-features-at-180-1--dioctylamine-doa"
+      ]
+    },
+    {
+      "id": "ban2026-jacs-6c03275-inas-cqds-with-excitonic-features-at-180-1--after-d2-s02-heat",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "ban2026-jacs-6c03275-inas-cqds-with-excitonic-features-at-180-1--after-d2-s01-mix",
+        "ban2026-jacs-6c03275-inas-cqds-with-excitonic-features-at-180-1--in-oac-3",
+        "ban2026-jacs-6c03275-inas-cqds-with-excitonic-features-at-180-1--myristic-acid-ma"
+      ]
+    },
+    {
       "id": "ban2026-jacs-6c03275-inas-cqds-with-excitonic-features-at-180-1--after-s01-inject",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "ban2026-jacs-6c03275-inas-cqds-with-excitonic-features-at-180-1--after-d2-s02-heat",
+        "ban2026-jacs-6c03275-inas-cqds-with-excitonic-features-at-180-1--inas-nanocluster-solution",
+        "ban2026-jacs-6c03275-inas-cqds-with-excitonic-features-at-180-1--inas-seed-solution"
+      ]
+    },
+    {
+      "id": "ban2026-jacs-6c03275-inas-cqds-with-excitonic-features-at-180-1--after-d2-s04-precipitate",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "ban2026-jacs-6c03275-inas-cqds-with-excitonic-features-at-180-1--after-s01-inject",
+        "ban2026-jacs-6c03275-inas-cqds-with-excitonic-features-at-180-1--anhydrous-buoh"
+      ]
+    },
+    {
+      "id": "ban2026-jacs-6c03275-inas-cqds-with-excitonic-features-at-180-1--after-d2-s05-redisperse",
       "name": "product as isolated",
       "kind": "product",
-      "parent_ids": []
+      "parent_ids": [
+        "ban2026-jacs-6c03275-inas-cqds-with-excitonic-features-at-180-1--after-d2-s04-precipitate",
+        "ban2026-jacs-6c03275-inas-cqds-with-excitonic-features-at-180-1--anhydrous-n-hexane"
+      ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-mix",
+      "action": "mix",
+      "label": "Mixing the arsenic precursor solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "ban2026-jacs-6c03275-inas-cqds-with-excitonic-features-at-180-1--tmsi-3as",
+        "ban2026-jacs-6c03275-inas-cqds-with-excitonic-features-at-180-1--dioctylamine-doa"
+      ],
+      "outputs": [
+        "ban2026-jacs-6c03275-inas-cqds-with-excitonic-features-at-180-1--after-d2-s01-mix"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 60,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "60 °C",
+          "evidence": [
+            {
+              "source_id": "ban2026-jacs-6c03275",
+              "locator": "Main PDF p.6"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 20,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "20 min",
+          "evidence": [
+            {
+              "source_id": "ban2026-jacs-6c03275",
+              "locator": "Main PDF p.6"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "ban2026-jacs-6c03275",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Mixing the arsenic precursor solution",
+      "evidence": [
+        {
+          "source_id": "ban2026-jacs-6c03275",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "d2-s02-heat",
+      "action": "heat",
+      "label": "Heating the InAs seed solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s01-mix"
+      ],
+      "inputs": [
+        "ban2026-jacs-6c03275-inas-cqds-with-excitonic-features-at-180-1--after-d2-s01-mix",
+        "ban2026-jacs-6c03275-inas-cqds-with-excitonic-features-at-180-1--in-oac-3",
+        "ban2026-jacs-6c03275-inas-cqds-with-excitonic-features-at-180-1--myristic-acid-ma"
+      ],
+      "outputs": [
+        "ban2026-jacs-6c03275-inas-cqds-with-excitonic-features-at-180-1--after-d2-s02-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 320,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "320 °C",
+          "evidence": [
+            {
+              "source_id": "ban2026-jacs-6c03275",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "5 min",
+          "evidence": [
+            {
+              "source_id": "ban2026-jacs-6c03275",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "ban2026-jacs-6c03275",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heating the InAs seed solution",
+      "evidence": [
+        {
+          "source_id": "ban2026-jacs-6c03275",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
     {
       "id": "s01-inject",
       "action": "inject",
@@ -261,8 +539,14 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s02-heat"
+      ],
+      "inputs": [
+        "ban2026-jacs-6c03275-inas-cqds-with-excitonic-features-at-180-1--after-d2-s02-heat",
+        "ban2026-jacs-6c03275-inas-cqds-with-excitonic-features-at-180-1--inas-nanocluster-solution",
+        "ban2026-jacs-6c03275-inas-cqds-with-excitonic-features-at-180-1--inas-seed-solution"
+      ],
       "outputs": [
         "ban2026-jacs-6c03275-inas-cqds-with-excitonic-features-at-180-1--after-s01-inject"
       ],
@@ -311,6 +595,84 @@
           "locator": "Main PDF p.7"
         }
       ]
+    },
+    {
+      "id": "d2-s04-precipitate",
+      "action": "precipitate",
+      "label": "Precipitation of the InAs CQD solution with anhydrous BuOH",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-inject"
+      ],
+      "inputs": [
+        "ban2026-jacs-6c03275-inas-cqds-with-excitonic-features-at-180-1--after-s01-inject",
+        "ban2026-jacs-6c03275-inas-cqds-with-excitonic-features-at-180-1--anhydrous-buoh"
+      ],
+      "outputs": [
+        "ban2026-jacs-6c03275-inas-cqds-with-excitonic-features-at-180-1--after-d2-s04-precipitate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Precipitation of the InAs CQD solution with anhydrous BuOH",
+      "evidence": [
+        {
+          "source_id": "ban2026-jacs-6c03275",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "d2-s05-redisperse",
+      "action": "redisperse",
+      "label": "Redispersing the precipitated InAs CQD in anhydrous n-hexane",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-precipitate"
+      ],
+      "inputs": [
+        "ban2026-jacs-6c03275-inas-cqds-with-excitonic-features-at-180-1--after-d2-s04-precipitate",
+        "ban2026-jacs-6c03275-inas-cqds-with-excitonic-features-at-180-1--anhydrous-n-hexane"
+      ],
+      "outputs": [
+        "ban2026-jacs-6c03275-inas-cqds-with-excitonic-features-at-180-1--after-d2-s05-redisperse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Redispersing the precipitated InAs CQD in anhydrous n-hexane",
+      "evidence": [
+        {
+          "source_id": "ban2026-jacs-6c03275",
+          "locator": "Main PDF p.7"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -319,7 +681,7 @@
       "sample_id": "ban2026-jacs-6c03275-inas-cqds-with-excitonic-features-at-180-1--product",
       "source_sample_label": "InAs CQDs with excitonic features at 1800 nm",
       "batch_id": null,
-      "material_state_id": "ban2026-jacs-6c03275-inas-cqds-with-excitonic-features-at-180-1--after-s01-inject",
+      "material_state_id": "ban2026-jacs-6c03275-inas-cqds-with-excitonic-features-at-180-1--after-d2-s05-redisperse",
       "parent_sample_id": null,
       "composition": {
         "value": "InAs",
@@ -409,11 +771,15 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
-      "Reaction time not reported in the extracted text."
+      "Reaction time not reported in the extracted text.",
+      "Amount of InAs nanocluster solution not reported in the extracted text.",
+      "Amount of InAs seed solution not reported in the extracted text.",
+      "Amount of anhydrous BuOH not reported in the extracted text.",
+      "Amount of anhydrous n-hexane not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "zhao2024-cbmi-4c00052-sulfur-quantum-dots-sqds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Li Zhao; Tianjian Sha; Yufu Liu; Qingsong Mei; Haibin Li; Pinghua Sun; Haibo Zhou; Huaihong Cai (2024): sulfur quantum dots (SQDs)",
   "material": {
@@ -60,22 +60,32 @@
       "note": ""
     },
     "size": {
-      "value": null,
+      "value": 4.0,
       "minimum": null,
       "maximum": null,
       "unit": "nm",
-      "status": "not_reported",
+      "status": "reported",
       "approximate": false,
       "qualifier": "",
       "basis": "",
-      "raw_text": "not reported",
-      "evidence": [],
+      "raw_text": "4 nm",
+      "evidence": [
+        {
+          "source_id": "zhao2024-cbmi-4c00052",
+          "locator": "Main PDF p.4"
+        }
+      ],
       "derivation": null
     },
     "morphology": {
-      "value": null,
-      "status": "not_reported",
-      "evidence": [],
+      "value": "sphere",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "zhao2024-cbmi-4c00052",
+          "locator": "Main PDF p.4"
+        }
+      ],
       "note": ""
     }
   },
@@ -237,12 +247,29 @@
   "material_states": [
     {
       "id": "zhao2024-cbmi-4c00052-sulfur-quantum-dots-sqds-1--after-s01-dissolve",
-      "name": "product as isolated",
-      "kind": "product",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
       "parent_ids": [
         "zhao2024-cbmi-4c00052-sulfur-quantum-dots-sqds-1--sodium-hydroxide",
         "zhao2024-cbmi-4c00052-sulfur-quantum-dots-sqds-1--l-cysteine",
         "zhao2024-cbmi-4c00052-sulfur-quantum-dots-sqds-1--sublimed-sulfur"
+      ]
+    },
+    {
+      "id": "zhao2024-cbmi-4c00052-sulfur-quantum-dots-sqds-1--after-d2-s02-mix",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zhao2024-cbmi-4c00052-sulfur-quantum-dots-sqds-1--after-s01-dissolve",
+        "zhao2024-cbmi-4c00052-sulfur-quantum-dots-sqds-1--hydrogen-peroxide"
+      ]
+    },
+    {
+      "id": "zhao2024-cbmi-4c00052-sulfur-quantum-dots-sqds-1--after-d2-s03-dialyze",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "zhao2024-cbmi-4c00052-sulfur-quantum-dots-sqds-1--after-d2-s02-mix"
       ]
     }
   ],
@@ -326,6 +353,93 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s02-mix",
+      "action": "mix",
+      "label": "Mix the precursor with hydrogen peroxide.",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-dissolve"
+      ],
+      "inputs": [
+        "zhao2024-cbmi-4c00052-sulfur-quantum-dots-sqds-1--after-s01-dissolve",
+        "zhao2024-cbmi-4c00052-sulfur-quantum-dots-sqds-1--hydrogen-peroxide"
+      ],
+      "outputs": [
+        "zhao2024-cbmi-4c00052-sulfur-quantum-dots-sqds-1--after-d2-s02-mix"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "atmosphere",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zhao2024-cbmi-4c00052",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Mix the precursor with hydrogen peroxide.",
+      "evidence": [
+        {
+          "source_id": "zhao2024-cbmi-4c00052",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s03-dialyze",
+      "action": "dialyze",
+      "label": "Purify the product using dialysis",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-mix"
+      ],
+      "inputs": [
+        "zhao2024-cbmi-4c00052-sulfur-quantum-dots-sqds-1--after-d2-s02-mix"
+      ],
+      "outputs": [
+        "zhao2024-cbmi-4c00052-sulfur-quantum-dots-sqds-1--after-d2-s03-dialyze"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "atmosphere",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zhao2024-cbmi-4c00052",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Purify the product using dialysis",
+      "evidence": [
+        {
+          "source_id": "zhao2024-cbmi-4c00052",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -334,7 +448,7 @@
       "sample_id": "zhao2024-cbmi-4c00052-sulfur-quantum-dots-sqds-1--product",
       "source_sample_label": "sulfur quantum dots (SQDs)",
       "batch_id": null,
-      "material_state_id": "zhao2024-cbmi-4c00052-sulfur-quantum-dots-sqds-1--after-s01-dissolve",
+      "material_state_id": "zhao2024-cbmi-4c00052-sulfur-quantum-dots-sqds-1--after-d2-s03-dialyze",
       "parent_sample_id": null,
       "composition": {
         "value": "S",
@@ -359,9 +473,14 @@
         "note": ""
       },
       "morphology": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "sphere",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zhao2024-cbmi-4c00052",
+            "locator": "Main PDF p.4"
+          }
+        ],
         "note": ""
       },
       "surface": {
@@ -388,14 +507,109 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "zhao2024-cbmi-4c00052-sulfur-quantum-dots-sqds-1--size",
+      "sample_id": "zhao2024-cbmi-4c00052-sulfur-quantum-dots-sqds-1--product",
+      "property": "diameter",
+      "technique": "TEM",
+      "value": {
+        "value": 4.0,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "4 nm",
+        "evidence": [
+          {
+            "source_id": "zhao2024-cbmi-4c00052",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "zhao2024-cbmi-4c00052",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    },
+    {
+      "id": "zhao2024-cbmi-4c00052-sulfur-quantum-dots-sqds-1--photoluminescence-peak",
+      "sample_id": "zhao2024-cbmi-4c00052-sulfur-quantum-dots-sqds-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 460,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "460 nm",
+        "evidence": [
+          {
+            "source_id": "zhao2024-cbmi-4c00052",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "zhao2024-cbmi-4c00052",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    },
+    {
+      "id": "zhao2024-cbmi-4c00052-sulfur-quantum-dots-sqds-1--photoluminescence-quantum-yield",
+      "sample_id": "zhao2024-cbmi-4c00052-sulfur-quantum-dots-sqds-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 2.51,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "2.51 %",
+        "evidence": [
+          {
+            "source_id": "zhao2024-cbmi-4c00052",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "zhao2024-cbmi-4c00052",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
-      "Shape not reported in the extracted text.",
-      "Size not reported in the extracted text.",
       "Reactor not reported in the extracted text."
     ],
     "conflicts": [],

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "chan2012-ja3022973-pdotqdot-nps-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Yang-Hsiang Chan (2012): Pdot−Qdot NPs",
   "material": {
@@ -166,12 +166,32 @@
   "material_states": [
     {
       "id": "chan2012-ja3022973-pdotqdot-nps-1--after-s01-convert",
-      "name": "product as isolated",
-      "kind": "product",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
       "parent_ids": [
         "chan2012-ja3022973-pdotqdot-nps-1--pfbt",
         "chan2012-ja3022973-pdotqdot-nps-1--2-iminothiolane",
         "chan2012-ja3022973-pdotqdot-nps-1--tetrahydrofuran"
+      ]
+    },
+    {
+      "id": "chan2012-ja3022973-pdotqdot-nps-1--after-d2-s02-mix",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "chan2012-ja3022973-pdotqdot-nps-1--after-s01-convert",
+        "chan2012-ja3022973-pdotqdot-nps-1--pfbt",
+        "chan2012-ja3022973-pdotqdot-nps-1--pspegcooh"
+      ]
+    },
+    {
+      "id": "chan2012-ja3022973-pdotqdot-nps-1--after-d2-s03-precipitate",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "chan2012-ja3022973-pdotqdot-nps-1--after-d2-s02-mix",
+        "chan2012-ja3022973-pdotqdot-nps-1--pfbt",
+        "chan2012-ja3022973-pdotqdot-nps-1--pspegcooh"
       ]
     }
   ],
@@ -213,6 +233,86 @@
           "locator": "Main PDF p.1"
         }
       ]
+    },
+    {
+      "id": "d2-s02-mix",
+      "action": "mix",
+      "label": "Mix PFBT with PS−PEG−COOH in THF",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-convert"
+      ],
+      "inputs": [
+        "chan2012-ja3022973-pdotqdot-nps-1--after-s01-convert",
+        "chan2012-ja3022973-pdotqdot-nps-1--pfbt",
+        "chan2012-ja3022973-pdotqdot-nps-1--pspegcooh"
+      ],
+      "outputs": [
+        "chan2012-ja3022973-pdotqdot-nps-1--after-d2-s02-mix"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Mix PFBT with PS−PEG−COOH in THF",
+      "evidence": [
+        {
+          "source_id": "chan2012-ja3022973",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s03-precipitate",
+      "action": "precipitate",
+      "label": "Co-precipitate in water under sonication",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-mix"
+      ],
+      "inputs": [
+        "chan2012-ja3022973-pdotqdot-nps-1--after-d2-s02-mix",
+        "chan2012-ja3022973-pdotqdot-nps-1--pfbt",
+        "chan2012-ja3022973-pdotqdot-nps-1--pspegcooh"
+      ],
+      "outputs": [
+        "chan2012-ja3022973-pdotqdot-nps-1--after-d2-s03-precipitate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Co-precipitate in water under sonication",
+      "evidence": [
+        {
+          "source_id": "chan2012-ja3022973",
+          "locator": "Main PDF p.1"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -221,7 +321,7 @@
       "sample_id": "chan2012-ja3022973-pdotqdot-nps-1--product",
       "source_sample_label": "Pdot−Qdot NPs",
       "batch_id": null,
-      "material_state_id": "chan2012-ja3022973-pdotqdot-nps-1--after-s01-convert",
+      "material_state_id": "chan2012-ja3022973-pdotqdot-nps-1--after-d2-s03-precipitate",
       "parent_sample_id": null,
       "composition": {
         "value": "PFBT-CdSe",
@@ -264,7 +364,9 @@
           "locator": "Main PDF p.1"
         }
       ],
-      "notes": []
+      "notes": [
+        "Reaction time: 12 h (Main PDF p.?)."
+      ]
     }
   ],
   "measurements": [
@@ -299,19 +401,82 @@
           "locator": "Main PDF p.1"
         }
       ]
+    },
+    {
+      "id": "chan2012-ja3022973-pdotqdot-nps-1--photoluminescence-peak",
+      "sample_id": "chan2012-ja3022973-pdotqdot-nps-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 655,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "655 nm",
+        "evidence": [
+          {
+            "source_id": "chan2012-ja3022973",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "chan2012-ja3022973",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "chan2012-ja3022973-pdotqdot-nps-1--photoluminescence-quantum-yield",
+      "sample_id": "chan2012-ja3022973-pdotqdot-nps-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 23,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "23 %",
+        "evidence": [
+          {
+            "source_id": "chan2012-ja3022973",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "chan2012-ja3022973",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
-      "Reaction time not reported in the extracted text.",
       "Amount of PFBT not reported in the extracted text.",
       "Amount of 2-iminothiolane not reported in the extracted text.",
       "Amount of tetrahydrofuran not reported in the extracted text.",

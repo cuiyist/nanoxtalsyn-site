@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "das2025-acs-chemmater-5c00408-cspbbr3-cube-nanocrystals-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Rajdeep Das (2025): CsPbBr3 cube nanocrystals",
   "material": {
@@ -233,6 +233,25 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "das2025-acs-chemmater-5c00408-cspbbr3-cube-nanocrystals-2--oleylamine",
+      "name": "oleylamine",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "das2025-acs-chemmater-5c00408",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -243,7 +262,8 @@
       "kind": "reaction_batch",
       "parent_ids": [
         "das2025-acs-chemmater-5c00408-cspbbr3-cube-nanocrystals-2--pbo",
-        "das2025-acs-chemmater-5c00408-cspbbr3-cube-nanocrystals-2--1-octadecene"
+        "das2025-acs-chemmater-5c00408-cspbbr3-cube-nanocrystals-2--1-octadecene",
+        "das2025-acs-chemmater-5c00408-cspbbr3-cube-nanocrystals-2--oleylamine"
       ]
     },
     {
@@ -255,7 +275,8 @@
         "das2025-acs-chemmater-5c00408-cspbbr3-cube-nanocrystals-2--pbo",
         "das2025-acs-chemmater-5c00408-cspbbr3-cube-nanocrystals-2--1-octadecene",
         "das2025-acs-chemmater-5c00408-cspbbr3-cube-nanocrystals-2--benzoyl-bromide",
-        "das2025-acs-chemmater-5c00408-cspbbr3-cube-nanocrystals-2--cs-oleate-stock-solution"
+        "das2025-acs-chemmater-5c00408-cspbbr3-cube-nanocrystals-2--cs-oleate-stock-solution",
+        "das2025-acs-chemmater-5c00408-cspbbr3-cube-nanocrystals-2--oleylamine"
       ]
     }
   ],
@@ -270,7 +291,8 @@
       "depends_on": [],
       "inputs": [
         "das2025-acs-chemmater-5c00408-cspbbr3-cube-nanocrystals-2--pbo",
-        "das2025-acs-chemmater-5c00408-cspbbr3-cube-nanocrystals-2--1-octadecene"
+        "das2025-acs-chemmater-5c00408-cspbbr3-cube-nanocrystals-2--1-octadecene",
+        "das2025-acs-chemmater-5c00408-cspbbr3-cube-nanocrystals-2--oleylamine"
       ],
       "outputs": [
         "das2025-acs-chemmater-5c00408-cspbbr3-cube-nanocrystals-2--after-s01-heat"
@@ -354,7 +376,8 @@
         "das2025-acs-chemmater-5c00408-cspbbr3-cube-nanocrystals-2--pbo",
         "das2025-acs-chemmater-5c00408-cspbbr3-cube-nanocrystals-2--1-octadecene",
         "das2025-acs-chemmater-5c00408-cspbbr3-cube-nanocrystals-2--benzoyl-bromide",
-        "das2025-acs-chemmater-5c00408-cspbbr3-cube-nanocrystals-2--cs-oleate-stock-solution"
+        "das2025-acs-chemmater-5c00408-cspbbr3-cube-nanocrystals-2--cs-oleate-stock-solution",
+        "das2025-acs-chemmater-5c00408-cspbbr3-cube-nanocrystals-2--oleylamine"
       ],
       "outputs": [
         "das2025-acs-chemmater-5c00408-cspbbr3-cube-nanocrystals-2--after-s02-heat"
@@ -489,10 +512,11 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
-      "Size not reported in the extracted text."
+      "Size not reported in the extracted text.",
+      "Amount of oleylamine not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

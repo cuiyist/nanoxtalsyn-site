@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "panthani2008-ja805845q-cuins2-nanocrystals-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Matthew G. Panthani (2008): CuInS2 nanocrystals",
   "material": {
@@ -17,7 +17,7 @@
     ],
     "architecture": "single_material"
   },
-  "method": "Synthesis as described in the source",
+  "method": "Arrested precipitation",
   "sources": [
     {
       "id": "panthani2008-ja805845q",
@@ -51,22 +51,32 @@
       "note": ""
     },
     "phase": {
-      "value": null,
-      "status": "not_reported",
-      "evidence": [],
+      "value": "tetragonal",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "panthani2008-ja805845q",
+          "locator": "Main PDF p.4"
+        }
+      ],
       "note": ""
     },
     "size": {
-      "value": null,
+      "value": 8,
       "minimum": null,
       "maximum": null,
       "unit": "nm",
-      "status": "not_reported",
+      "status": "reported",
       "approximate": false,
       "qualifier": "",
       "basis": "",
-      "raw_text": "not reported",
-      "evidence": [],
+      "raw_text": "8 nm",
+      "evidence": [
+        {
+          "source_id": "panthani2008-ja805845q",
+          "locator": "Main PDF"
+        }
+      ],
       "derivation": null
     },
     "morphology": {
@@ -209,6 +219,44 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "panthani2008-ja805845q-cuins2-nanocrystals-1--o-dichlorobenzene",
+      "name": "o-dichlorobenzene",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "panthani2008-ja805845q",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "panthani2008-ja805845q-cuins2-nanocrystals-1--ethanol",
+      "name": "ethanol",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "panthani2008-ja805845q",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -219,7 +267,8 @@
       "kind": "reaction_batch",
       "parent_ids": [
         "panthani2008-ja805845q-cuins2-nanocrystals-1--cu-acac-2",
-        "panthani2008-ja805845q-cuins2-nanocrystals-1--in-acac-3"
+        "panthani2008-ja805845q-cuins2-nanocrystals-1--in-acac-3",
+        "panthani2008-ja805845q-cuins2-nanocrystals-1--o-dichlorobenzene"
       ]
     },
     {
@@ -228,7 +277,8 @@
       "kind": "reaction_batch",
       "parent_ids": [
         "panthani2008-ja805845q-cuins2-nanocrystals-1--after-s01-add",
-        "panthani2008-ja805845q-cuins2-nanocrystals-1--elemental-sulfur"
+        "panthani2008-ja805845q-cuins2-nanocrystals-1--elemental-sulfur",
+        "panthani2008-ja805845q-cuins2-nanocrystals-1--o-dichlorobenzene"
       ]
     },
     {
@@ -258,10 +308,19 @@
     },
     {
       "id": "panthani2008-ja805845q-cuins2-nanocrystals-1--after-s06-cool",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "panthani2008-ja805845q-cuins2-nanocrystals-1--after-s05-heat"
+      ]
+    },
+    {
+      "id": "panthani2008-ja805845q-cuins2-nanocrystals-1--after-d2-s07-precipitate",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "panthani2008-ja805845q-cuins2-nanocrystals-1--after-s05-heat"
+        "panthani2008-ja805845q-cuins2-nanocrystals-1--after-s06-cool",
+        "panthani2008-ja805845q-cuins2-nanocrystals-1--ethanol"
       ]
     }
   ],
@@ -276,12 +335,32 @@
       "depends_on": [],
       "inputs": [
         "panthani2008-ja805845q-cuins2-nanocrystals-1--cu-acac-2",
-        "panthani2008-ja805845q-cuins2-nanocrystals-1--in-acac-3"
+        "panthani2008-ja805845q-cuins2-nanocrystals-1--in-acac-3",
+        "panthani2008-ja805845q-cuins2-nanocrystals-1--o-dichlorobenzene"
       ],
       "outputs": [
         "panthani2008-ja805845q-cuins2-nanocrystals-1--after-s01-add"
       ],
-      "parameters": {},
+      "parameters": {
+        "temperature": {
+          "value": 110,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "110 °C",
+          "evidence": [
+            {
+              "source_id": "panthani2008-ja805845q",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "environment": {
         "value": "N2",
         "status": "reported",
@@ -320,12 +399,32 @@
       ],
       "inputs": [
         "panthani2008-ja805845q-cuins2-nanocrystals-1--after-s01-add",
-        "panthani2008-ja805845q-cuins2-nanocrystals-1--elemental-sulfur"
+        "panthani2008-ja805845q-cuins2-nanocrystals-1--elemental-sulfur",
+        "panthani2008-ja805845q-cuins2-nanocrystals-1--o-dichlorobenzene"
       ],
       "outputs": [
         "panthani2008-ja805845q-cuins2-nanocrystals-1--after-s02-add"
       ],
-      "parameters": {},
+      "parameters": {
+        "temperature": {
+          "value": 110,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "110 °C",
+          "evidence": [
+            {
+              "source_id": "panthani2008-ja805845q",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "environment": {
         "value": "N2",
         "status": "reported",
@@ -617,6 +716,45 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s07-precipitate",
+      "action": "precipitate",
+      "label": "Precipitate nanocrystals with ethanol",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s06-cool"
+      ],
+      "inputs": [
+        "panthani2008-ja805845q-cuins2-nanocrystals-1--after-s06-cool",
+        "panthani2008-ja805845q-cuins2-nanocrystals-1--ethanol"
+      ],
+      "outputs": [
+        "panthani2008-ja805845q-cuins2-nanocrystals-1--after-d2-s07-precipitate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Precipitate nanocrystals with ethanol",
+      "evidence": [
+        {
+          "source_id": "panthani2008-ja805845q",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -625,7 +763,7 @@
       "sample_id": "panthani2008-ja805845q-cuins2-nanocrystals-1--product",
       "source_sample_label": "CuInS2 nanocrystals",
       "batch_id": null,
-      "material_state_id": "panthani2008-ja805845q-cuins2-nanocrystals-1--after-s06-cool",
+      "material_state_id": "panthani2008-ja805845q-cuins2-nanocrystals-1--after-d2-s07-precipitate",
       "parent_sample_id": null,
       "composition": {
         "value": "CuInS2",
@@ -639,9 +777,14 @@
         "note": ""
       },
       "phase": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "tetragonal",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "panthani2008-ja805845q",
+            "locator": "Main PDF p.4"
+          }
+        ],
         "note": ""
       },
       "morphology": {
@@ -675,16 +818,49 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "panthani2008-ja805845q-cuins2-nanocrystals-1--size",
+      "sample_id": "panthani2008-ja805845q-cuins2-nanocrystals-1--product",
+      "property": "particle_size",
+      "technique": "not reported",
+      "value": {
+        "value": 8,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "8 nm",
+        "evidence": [
+          {
+            "source_id": "panthani2008-ja805845q",
+            "locator": "Main PDF"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "panthani2008-ja805845q",
+          "locator": "Main PDF"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
-      "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
-      "Size not reported in the extracted text.",
-      "Amount of oleylamine not reported in the extracted text."
+      "Amount of oleylamine not reported in the extracted text.",
+      "Amount of o-dichlorobenzene not reported in the extracted text.",
+      "Amount of ethanol not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

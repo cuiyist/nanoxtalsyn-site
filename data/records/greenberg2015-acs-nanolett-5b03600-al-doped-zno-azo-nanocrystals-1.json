@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "greenberg2015-acs-nanolett-5b03600-al-doped-zno-azo-nanocrystals-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Benjamin L. Greenberg; Shreyashi Ganguly; Jacob T. Held; Nicolaas J. Kramer; K. Andre Mkhoyan; Eray S. Aydil; Uwe R. Kortshagen (2015): Al-doped ZnO (AZO) nanocrystals",
   "material": {
@@ -96,7 +96,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "amount": {
+          "value": 20,
+          "minimum": null,
+          "maximum": null,
+          "unit": "SCCM",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "20 SCCM",
+          "evidence": [
+            {
+              "source_id": "greenberg2015-acs-nanolett-5b03600",
+              "locator": "Main PDF p.6"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -115,7 +134,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "amount": {
+          "value": 3,
+          "minimum": null,
+          "maximum": null,
+          "unit": "SCCM",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "3 SCCM",
+          "evidence": [
+            {
+              "source_id": "greenberg2015-acs-nanolett-5b03600",
+              "locator": "Main PDF p.6"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -204,13 +242,84 @@
   "stocks": [],
   "material_states": [
     {
+      "id": "greenberg2015-acs-nanolett-5b03600-al-doped-zno-azo-nanocrystals-1--after-d2-s01-accelerate",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": []
+    },
+    {
       "id": "greenberg2015-acs-nanolett-5b03600-al-doped-zno-azo-nanocrystals-1--after-s01-deposit",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "greenberg2015-acs-nanolett-5b03600-al-doped-zno-azo-nanocrystals-1--after-d2-s01-accelerate"
+      ]
+    },
+    {
+      "id": "greenberg2015-acs-nanolett-5b03600-al-doped-zno-azo-nanocrystals-1--after-d2-s03-anneal",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "greenberg2015-acs-nanolett-5b03600-al-doped-zno-azo-nanocrystals-1--after-s01-deposit"
+      ]
+    },
+    {
+      "id": "greenberg2015-acs-nanolett-5b03600-al-doped-zno-azo-nanocrystals-1--after-d2-s04-coat",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "greenberg2015-acs-nanolett-5b03600-al-doped-zno-azo-nanocrystals-1--after-d2-s03-anneal"
+      ]
+    },
+    {
+      "id": "greenberg2015-acs-nanolett-5b03600-al-doped-zno-azo-nanocrystals-1--after-d2-s05-etch",
       "name": "product as isolated",
       "kind": "product",
-      "parent_ids": []
+      "parent_ids": [
+        "greenberg2015-acs-nanolett-5b03600-al-doped-zno-azo-nanocrystals-1--after-d2-s04-coat"
+      ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-accelerate",
+      "action": "accelerate",
+      "label": "Aerosol accelerated through rectangular slit orifice",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [],
+      "outputs": [
+        "greenberg2015-acs-nanolett-5b03600-al-doped-zno-azo-nanocrystals-1--after-d2-s01-accelerate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "Ar/O2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "greenberg2015-acs-nanolett-5b03600",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Aerosol accelerated through rectangular slit orifice",
+      "evidence": [
+        {
+          "source_id": "greenberg2015-acs-nanolett-5b03600",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
     {
       "id": "s01-deposit",
       "action": "deposit",
@@ -218,8 +327,12 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s01-accelerate"
+      ],
+      "inputs": [
+        "greenberg2015-acs-nanolett-5b03600-al-doped-zno-azo-nanocrystals-1--after-d2-s01-accelerate"
+      ],
       "outputs": [
         "greenberg2015-acs-nanolett-5b03600-al-doped-zno-azo-nanocrystals-1--after-s01-deposit"
       ],
@@ -249,6 +362,172 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s03-anneal",
+      "action": "anneal",
+      "label": "Anneal film under Ar atmosphere",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-deposit"
+      ],
+      "inputs": [
+        "greenberg2015-acs-nanolett-5b03600-al-doped-zno-azo-nanocrystals-1--after-s01-deposit"
+      ],
+      "outputs": [
+        "greenberg2015-acs-nanolett-5b03600-al-doped-zno-azo-nanocrystals-1--after-d2-s03-anneal"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 625,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "625 °C",
+          "evidence": [
+            {
+              "source_id": "greenberg2015-acs-nanolett-5b03600",
+              "locator": "Main PDF p.4"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 h",
+          "evidence": [
+            {
+              "source_id": "greenberg2015-acs-nanolett-5b03600",
+              "locator": "Main PDF p.4"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar/O2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "greenberg2015-acs-nanolett-5b03600",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Anneal film under Ar atmosphere",
+      "evidence": [
+        {
+          "source_id": "greenberg2015-acs-nanolett-5b03600",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    },
+    {
+      "id": "d2-s04-coat",
+      "action": "coat",
+      "label": "Coat",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-anneal"
+      ],
+      "inputs": [
+        "greenberg2015-acs-nanolett-5b03600-al-doped-zno-azo-nanocrystals-1--after-d2-s03-anneal"
+      ],
+      "outputs": [
+        "greenberg2015-acs-nanolett-5b03600-al-doped-zno-azo-nanocrystals-1--after-d2-s04-coat"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "Ar/O2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "greenberg2015-acs-nanolett-5b03600",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Coat",
+      "evidence": [
+        {
+          "source_id": "greenberg2015-acs-nanolett-5b03600",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "d2-s05-etch",
+      "action": "etch",
+      "label": "Etch",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-coat"
+      ],
+      "inputs": [
+        "greenberg2015-acs-nanolett-5b03600-al-doped-zno-azo-nanocrystals-1--after-d2-s04-coat"
+      ],
+      "outputs": [
+        "greenberg2015-acs-nanolett-5b03600-al-doped-zno-azo-nanocrystals-1--after-d2-s05-etch"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "Ar/O2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "greenberg2015-acs-nanolett-5b03600",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Etch",
+      "evidence": [
+        {
+          "source_id": "greenberg2015-acs-nanolett-5b03600",
+          "locator": "Main PDF p.5"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -257,7 +536,7 @@
       "sample_id": "greenberg2015-acs-nanolett-5b03600-al-doped-zno-azo-nanocrystals-1--product",
       "source_sample_label": "Al-doped ZnO (AZO) nanocrystals",
       "batch_id": null,
-      "material_state_id": "greenberg2015-acs-nanolett-5b03600-al-doped-zno-azo-nanocrystals-1--after-s01-deposit",
+      "material_state_id": "greenberg2015-acs-nanolett-5b03600-al-doped-zno-azo-nanocrystals-1--after-d2-s05-etch",
       "parent_sample_id": null,
       "composition": {
         "value": "ZnO",
@@ -342,14 +621,12 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
-      "Reaction time not reported in the extracted text.",
-      "Amount of diethylzinc (DEZ) not reported in the extracted text.",
-      "Amount of trimethylaluminum (TMA) not reported in the extracted text."
+      "Reaction time not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

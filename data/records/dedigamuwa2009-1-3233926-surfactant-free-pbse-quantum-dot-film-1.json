@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "dedigamuwa2009-1-3233926-surfactant-free-pbse-quantum-dot-film-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "G. Dedigamuwa (2009): surfactant-free PbSe quantum dot film",
   "material": {
@@ -85,7 +85,7 @@
       "id": "dedigamuwa2009-1-3233926-surfactant-free-pbse-quantum-dot-film-1--pbse-nanoparticles",
       "name": "PbSe nanoparticles",
       "formula": null,
-      "role": "reagent",
+      "role": "starting_particles",
       "stage": "synthesis",
       "identity": {
         "pubchem_cid": null,
@@ -161,15 +161,62 @@
   "stocks": [],
   "material_states": [
     {
+      "id": "dedigamuwa2009-1-3233926-surfactant-free-pbse-quantum-dot-film-1--after-d2-s01-redisperse",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "dedigamuwa2009-1-3233926-surfactant-free-pbse-quantum-dot-film-1--pbse-nanoparticles",
+        "dedigamuwa2009-1-3233926-surfactant-free-pbse-quantum-dot-film-1--hexane"
+      ]
+    },
+    {
       "id": "dedigamuwa2009-1-3233926-surfactant-free-pbse-quantum-dot-film-1--after-s01-heat",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
+        "dedigamuwa2009-1-3233926-surfactant-free-pbse-quantum-dot-film-1--after-d2-s01-redisperse",
         "dedigamuwa2009-1-3233926-surfactant-free-pbse-quantum-dot-film-1--sf6-gas"
       ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-redisperse",
+      "action": "redisperse",
+      "label": "Redisperse PbSe nanocrystals in hexane",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "dedigamuwa2009-1-3233926-surfactant-free-pbse-quantum-dot-film-1--pbse-nanoparticles",
+        "dedigamuwa2009-1-3233926-surfactant-free-pbse-quantum-dot-film-1--hexane"
+      ],
+      "outputs": [
+        "dedigamuwa2009-1-3233926-surfactant-free-pbse-quantum-dot-film-1--after-d2-s01-redisperse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Redisperse PbSe nanocrystals in hexane",
+      "evidence": [
+        {
+          "source_id": "dedigamuwa2009-1-3233926",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
     {
       "id": "s01-heat",
       "action": "heat",
@@ -177,8 +224,11 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
+      "depends_on": [
+        "d2-s01-redisperse"
+      ],
       "inputs": [
+        "dedigamuwa2009-1-3233926-surfactant-free-pbse-quantum-dot-film-1--after-d2-s01-redisperse",
         "dedigamuwa2009-1-3233926-surfactant-free-pbse-quantum-dot-film-1--sf6-gas"
       ],
       "outputs": [
@@ -263,9 +313,14 @@
         "note": ""
       },
       "surface": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "none",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "dedigamuwa2009-1-3233926",
+            "locator": "Main PDF p.3"
+          }
+        ],
         "note": ""
       },
       "recipe_link": "explicit",
@@ -284,10 +339,9 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
-      "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",

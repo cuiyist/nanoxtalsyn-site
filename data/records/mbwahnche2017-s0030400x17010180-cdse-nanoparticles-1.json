@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "mbwahnche2017-s0030400x17010180-cdse-nanoparticles-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "R. C. Mbwahnche; L. B. Matyushkin; O. A. Ryzhov; O. A. Aleksandrova; V. A. Moshnikov (2017): CdSe nanoparticles",
   "material": {
@@ -162,9 +162,21 @@
   "material_states": [
     {
       "id": "mbwahnche2017-s0030400x17010180-cdse-nanoparticles-1--after-s01-mix",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "mbwahnche2017-s0030400x17010180-cdse-nanoparticles-1--nahse",
+        "mbwahnche2017-s0030400x17010180-cdse-nanoparticles-1--cdcl2",
+        "mbwahnche2017-s0030400x17010180-cdse-nanoparticles-1--l-cysteine",
+        "mbwahnche2017-s0030400x17010180-cdse-nanoparticles-1--dodecane"
+      ]
+    },
+    {
+      "id": "mbwahnche2017-s0030400x17010180-cdse-nanoparticles-1--after-d2-s02-grow",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
+        "mbwahnche2017-s0030400x17010180-cdse-nanoparticles-1--after-s01-mix",
         "mbwahnche2017-s0030400x17010180-cdse-nanoparticles-1--nahse",
         "mbwahnche2017-s0030400x17010180-cdse-nanoparticles-1--cdcl2",
         "mbwahnche2017-s0030400x17010180-cdse-nanoparticles-1--l-cysteine",
@@ -248,6 +260,67 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "d2-s02-grow",
+      "action": "grow",
+      "label": "Grow",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-mix"
+      ],
+      "inputs": [
+        "mbwahnche2017-s0030400x17010180-cdse-nanoparticles-1--after-s01-mix",
+        "mbwahnche2017-s0030400x17010180-cdse-nanoparticles-1--nahse",
+        "mbwahnche2017-s0030400x17010180-cdse-nanoparticles-1--cdcl2",
+        "mbwahnche2017-s0030400x17010180-cdse-nanoparticles-1--l-cysteine",
+        "mbwahnche2017-s0030400x17010180-cdse-nanoparticles-1--dodecane"
+      ],
+      "outputs": [
+        "mbwahnche2017-s0030400x17010180-cdse-nanoparticles-1--after-d2-s02-grow"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 15,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "15 min",
+          "evidence": [
+            {
+              "source_id": "mbwahnche2017-s0030400x17010180",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Grow",
+      "evidence": [
+        {
+          "source_id": "mbwahnche2017-s0030400x17010180",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -256,7 +329,7 @@
       "sample_id": "mbwahnche2017-s0030400x17010180-cdse-nanoparticles-1--product",
       "source_sample_label": "CdSe nanoparticles",
       "batch_id": null,
-      "material_state_id": "mbwahnche2017-s0030400x17010180-cdse-nanoparticles-1--after-s01-mix",
+      "material_state_id": "mbwahnche2017-s0030400x17010180-cdse-nanoparticles-1--after-d2-s02-grow",
       "parent_sample_id": null,
       "composition": {
         "value": "CdSe",
@@ -343,7 +416,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",

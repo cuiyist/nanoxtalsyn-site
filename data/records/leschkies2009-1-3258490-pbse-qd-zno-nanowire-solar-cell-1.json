@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "leschkies2009-1-3258490-pbse-qd-zno-nanowire-solar-cell-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Kurtis S. Leschkies (2009): PbSe QD/ZnO nanowire solar cell",
   "material": {
@@ -171,7 +171,7 @@
       "id": "leschkies2009-1-3258490-pbse-qd-zno-nanowire-solar-cell-1--pbse-quantum-dots",
       "name": "PbSe quantum dots",
       "formula": null,
-      "role": "reagent",
+      "role": "starting_particles",
       "stage": "synthesis",
       "identity": {
         "pubchem_cid": null,
@@ -204,15 +204,43 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "leschkies2009-1-3258490-pbse-qd-zno-nanowire-solar-cell-1--oleic-acid",
+      "name": "oleic acid",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "leschkies2009-1-3258490",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
+      "id": "leschkies2009-1-3258490-pbse-qd-zno-nanowire-solar-cell-1--after-d2-s01-deposit",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "leschkies2009-1-3258490-pbse-qd-zno-nanowire-solar-cell-1--zinc-nitrate"
+      ]
+    },
+    {
       "id": "leschkies2009-1-3258490-pbse-qd-zno-nanowire-solar-cell-1--after-s01-grow",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
+        "leschkies2009-1-3258490-pbse-qd-zno-nanowire-solar-cell-1--after-d2-s01-deposit",
         "leschkies2009-1-3258490-pbse-qd-zno-nanowire-solar-cell-1--methenamine",
         "leschkies2009-1-3258490-pbse-qd-zno-nanowire-solar-cell-1--zinc-nitrate"
       ]
@@ -220,14 +248,53 @@
   ],
   "operations": [
     {
+      "id": "d2-s01-deposit",
+      "action": "deposit",
+      "label": "Sputter a thin layer of ZnO onto the ITO",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "leschkies2009-1-3258490-pbse-qd-zno-nanowire-solar-cell-1--zinc-nitrate"
+      ],
+      "outputs": [
+        "leschkies2009-1-3258490-pbse-qd-zno-nanowire-solar-cell-1--after-d2-s01-deposit"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Sputter a thin layer of ZnO onto the ITO",
+      "evidence": [
+        {
+          "source_id": "leschkies2009-1-3258490",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
       "id": "s01-grow",
       "action": "grow",
       "label": "Grow ZnO nanowires",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
+      "depends_on": [
+        "d2-s01-deposit"
+      ],
       "inputs": [
+        "leschkies2009-1-3258490-pbse-qd-zno-nanowire-solar-cell-1--after-d2-s01-deposit",
         "leschkies2009-1-3258490-pbse-qd-zno-nanowire-solar-cell-1--methenamine",
         "leschkies2009-1-3258490-pbse-qd-zno-nanowire-solar-cell-1--zinc-nitrate"
       ],
@@ -396,12 +463,13 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Atmosphere not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
       "Amount of PbSe quantum dots not reported in the extracted text.",
-      "Amount of 1,2-ethanedithiol (EDT) not reported in the extracted text."
+      "Amount of 1,2-ethanedithiol (EDT) not reported in the extracted text.",
+      "Amount of oleic acid not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],
