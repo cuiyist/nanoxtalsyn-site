@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "pons2009-cm8027127-cdtese-cdzns-core-shell-qds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Thomas Pons; Nicolas Lequeux; Benoit Mahler; Siarhei Sasnouski; Alexandra Fragola; Benoit Dubertret (2009): CdTeSe/CdZnS core/shell QDs",
   "material": {
@@ -138,7 +138,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "volume": {
+          "value": 2,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2 mL",
+          "evidence": [
+            {
+              "source_id": "pons2009-cm8027127",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -157,7 +176,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "volume": {
+          "value": 2,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2 mL",
+          "evidence": [
+            {
+              "source_id": "pons2009-cm8027127",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -222,26 +260,191 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "pons2009-cm8027127-cdtese-cdzns-core-shell-qds-1--cd-oa-2",
+      "name": "Cd(OA)2",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 0.6,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.6 mmol",
+          "evidence": [
+            {
+              "source_id": "pons2009-cm8027127",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "pons2009-cm8027127",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "pons2009-cm8027127-cdtese-cdzns-core-shell-qds-1--zn-oa-2",
+      "name": "Zn(OA)2",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 1.2,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1.2 mmol",
+          "evidence": [
+            {
+              "source_id": "pons2009-cm8027127",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "pons2009-cm8027127",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
-      "id": "pons2009-cm8027127-cdtese-cdzns-core-shell-qds-1--after-s01-degas",
+      "id": "pons2009-cm8027127-cdtese-cdzns-core-shell-qds-1--after-d2-s01-mix",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "pons2009-cm8027127-cdtese-cdzns-core-shell-qds-1--cd-tdpa-2",
+        "pons2009-cm8027127-cdtese-cdzns-core-shell-qds-1--top",
+        "pons2009-cm8027127-cdtese-cdzns-core-shell-qds-1--oleylamine",
+        "pons2009-cm8027127-cdtese-cdzns-core-shell-qds-1--ode"
+      ]
+    },
+    {
+      "id": "pons2009-cm8027127-cdtese-cdzns-core-shell-qds-1--after-s01-degas",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "pons2009-cm8027127-cdtese-cdzns-core-shell-qds-1--after-d2-s01-mix"
+      ]
     },
     {
       "id": "pons2009-cm8027127-cdtese-cdzns-core-shell-qds-1--after-s02-heat",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "pons2009-cm8027127-cdtese-cdzns-core-shell-qds-1--after-s01-degas"
+      ]
+    },
+    {
+      "id": "pons2009-cm8027127-cdtese-cdzns-core-shell-qds-1--after-d2-s04-hold",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "pons2009-cm8027127-cdtese-cdzns-core-shell-qds-1--after-s02-heat"
+      ]
+    },
+    {
+      "id": "pons2009-cm8027127-cdtese-cdzns-core-shell-qds-1--after-d2-s05-precipitate",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "pons2009-cm8027127-cdtese-cdzns-core-shell-qds-1--after-d2-s04-hold"
+      ]
+    },
+    {
+      "id": "pons2009-cm8027127-cdtese-cdzns-core-shell-qds-1--after-d2-s06-dissolve",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "pons2009-cm8027127-cdtese-cdzns-core-shell-qds-1--after-d2-s05-precipitate"
+      ]
+    },
+    {
+      "id": "pons2009-cm8027127-cdtese-cdzns-core-shell-qds-1--after-d2-s07-precipitate",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "pons2009-cm8027127-cdtese-cdzns-core-shell-qds-1--after-s01-degas"
+        "pons2009-cm8027127-cdtese-cdzns-core-shell-qds-1--after-d2-s06-dissolve"
       ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-mix",
+      "action": "mix",
+      "label": "Mix",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "pons2009-cm8027127-cdtese-cdzns-core-shell-qds-1--cd-tdpa-2",
+        "pons2009-cm8027127-cdtese-cdzns-core-shell-qds-1--top",
+        "pons2009-cm8027127-cdtese-cdzns-core-shell-qds-1--oleylamine",
+        "pons2009-cm8027127-cdtese-cdzns-core-shell-qds-1--ode"
+      ],
+      "outputs": [
+        "pons2009-cm8027127-cdtese-cdzns-core-shell-qds-1--after-d2-s01-mix"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "argon",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "pons2009-cm8027127",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Mix",
+      "evidence": [
+        {
+          "source_id": "pons2009-cm8027127",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
     {
       "id": "s01-degas",
       "action": "degas",
@@ -249,8 +452,12 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s01-mix"
+      ],
+      "inputs": [
+        "pons2009-cm8027127-cdtese-cdzns-core-shell-qds-1--after-d2-s01-mix"
+      ],
       "outputs": [
         "pons2009-cm8027127-cdtese-cdzns-core-shell-qds-1--after-s01-degas"
       ],
@@ -352,6 +559,24 @@
             }
           ],
           "derivation": null
+        },
+        "duration": {
+          "value": 30,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "30 min",
+          "evidence": [
+            {
+              "source_id": "pons2009-cm8027127",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
         }
       },
       "environment": {
@@ -379,6 +604,205 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s04-hold",
+      "action": "hold",
+      "label": "Holding at 230 °C",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-heat"
+      ],
+      "inputs": [
+        "pons2009-cm8027127-cdtese-cdzns-core-shell-qds-1--after-s02-heat"
+      ],
+      "outputs": [
+        "pons2009-cm8027127-cdtese-cdzns-core-shell-qds-1--after-d2-s04-hold"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 230,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "230 °C",
+          "evidence": [
+            {
+              "source_id": "pons2009-cm8027127",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 10,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "10 min",
+          "evidence": [
+            {
+              "source_id": "pons2009-cm8027127",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "argon",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "pons2009-cm8027127",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Holding at 230 °C",
+      "evidence": [
+        {
+          "source_id": "pons2009-cm8027127",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s05-precipitate",
+      "action": "precipitate",
+      "label": "Precipitation in ethanol",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-hold"
+      ],
+      "inputs": [
+        "pons2009-cm8027127-cdtese-cdzns-core-shell-qds-1--after-d2-s04-hold"
+      ],
+      "outputs": [
+        "pons2009-cm8027127-cdtese-cdzns-core-shell-qds-1--after-d2-s05-precipitate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Precipitation in ethanol",
+      "evidence": [
+        {
+          "source_id": "pons2009-cm8027127",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s06-dissolve",
+      "action": "dissolve",
+      "label": "Dissolving in trioctylamine and TOP",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s05-precipitate"
+      ],
+      "inputs": [
+        "pons2009-cm8027127-cdtese-cdzns-core-shell-qds-1--after-d2-s05-precipitate"
+      ],
+      "outputs": [
+        "pons2009-cm8027127-cdtese-cdzns-core-shell-qds-1--after-d2-s06-dissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "argon",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "pons2009-cm8027127",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dissolving in trioctylamine and TOP",
+      "evidence": [
+        {
+          "source_id": "pons2009-cm8027127",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s07-precipitate",
+      "action": "precipitate",
+      "label": "Precipitation in ethanol",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s06-dissolve"
+      ],
+      "inputs": [
+        "pons2009-cm8027127-cdtese-cdzns-core-shell-qds-1--after-d2-s06-dissolve"
+      ],
+      "outputs": [
+        "pons2009-cm8027127-cdtese-cdzns-core-shell-qds-1--after-d2-s07-precipitate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Precipitation in ethanol",
+      "evidence": [
+        {
+          "source_id": "pons2009-cm8027127",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -387,7 +811,7 @@
       "sample_id": "pons2009-cm8027127-cdtese-cdzns-core-shell-qds-1--product",
       "source_sample_label": "CdTeSe/CdZnS core/shell QDs",
       "batch_id": null,
-      "material_state_id": "pons2009-cm8027127-cdtese-cdzns-core-shell-qds-1--after-s02-heat",
+      "material_state_id": "pons2009-cm8027127-cdtese-cdzns-core-shell-qds-1--after-d2-s07-precipitate",
       "parent_sample_id": null,
       "composition": {
         "value": "CdTeSe/CdZnS",
@@ -472,18 +896,48 @@
           "locator": "Main PDF p.6"
         }
       ]
+    },
+    {
+      "id": "pons2009-cm8027127-cdtese-cdzns-core-shell-qds-1--photoluminescence-quantum-yield",
+      "sample_id": "pons2009-cm8027127-cdtese-cdzns-core-shell-qds-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 50,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "50 %",
+        "evidence": [
+          {
+            "source_id": "pons2009-cm8027127",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "pons2009-cm8027127",
+          "locator": "Main PDF p.5"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
-      "Amount of TOP not reported in the extracted text.",
-      "Amount of oleylamine not reported in the extracted text.",
       "Amount of TOPTe not reported in the extracted text."
     ],
     "conflicts": [],

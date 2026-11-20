@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "gamelin2013-ja4072207-cd1xmnxse-nanocrystals-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Gamelin (2013): Cd1−xMnxSe nanocrystals",
   "material": {
@@ -228,6 +228,25 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "gamelin2013-ja4072207-cd1xmnxse-nanocrystals-1--stearic-acid-sa",
+      "name": "stearic acid (SA)",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "gamelin2013-ja4072207",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -236,7 +255,10 @@
       "id": "gamelin2013-ja4072207-cd1xmnxse-nanocrystals-1--after-s01-heat",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "gamelin2013-ja4072207-cd1xmnxse-nanocrystals-1--1-octadecene-ode",
+        "gamelin2013-ja4072207-cd1xmnxse-nanocrystals-1--stearic-acid-sa"
+      ]
     },
     {
       "id": "gamelin2013-ja4072207-cd1xmnxse-nanocrystals-1--after-s02-add",
@@ -253,7 +275,9 @@
       "kind": "reaction_batch",
       "parent_ids": [
         "gamelin2013-ja4072207-cd1xmnxse-nanocrystals-1--after-s02-add",
-        "gamelin2013-ja4072207-cd1xmnxse-nanocrystals-1--mn-oac-24h2o"
+        "gamelin2013-ja4072207-cd1xmnxse-nanocrystals-1--mn-oac-24h2o",
+        "gamelin2013-ja4072207-cd1xmnxse-nanocrystals-1--1-octadecene-ode",
+        "gamelin2013-ja4072207-cd1xmnxse-nanocrystals-1--stearic-acid-sa"
       ]
     },
     {
@@ -274,7 +298,10 @@
       "branch": "",
       "optional": false,
       "depends_on": [],
-      "inputs": [],
+      "inputs": [
+        "gamelin2013-ja4072207-cd1xmnxse-nanocrystals-1--1-octadecene-ode",
+        "gamelin2013-ja4072207-cd1xmnxse-nanocrystals-1--stearic-acid-sa"
+      ],
       "outputs": [
         "gamelin2013-ja4072207-cd1xmnxse-nanocrystals-1--after-s01-heat"
       ],
@@ -398,7 +425,9 @@
       ],
       "inputs": [
         "gamelin2013-ja4072207-cd1xmnxse-nanocrystals-1--after-s02-add",
-        "gamelin2013-ja4072207-cd1xmnxse-nanocrystals-1--mn-oac-24h2o"
+        "gamelin2013-ja4072207-cd1xmnxse-nanocrystals-1--mn-oac-24h2o",
+        "gamelin2013-ja4072207-cd1xmnxse-nanocrystals-1--1-octadecene-ode",
+        "gamelin2013-ja4072207-cd1xmnxse-nanocrystals-1--stearic-acid-sa"
       ],
       "outputs": [
         "gamelin2013-ja4072207-cd1xmnxse-nanocrystals-1--after-s03-heat"
@@ -538,7 +567,8 @@
         }
       ],
       "notes": [
-        "Reactor: 100 mL three-neck round-bottom flask (Main PDF p.3)."
+        "Reactor: 100 mL three-neck round-bottom flask (Main PDF p.3).",
+        "Reaction temperature: 300 degC (Main PDF p.?)."
       ]
     }
   ],
@@ -546,13 +576,13 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
-      "Reaction temperature not reported in the extracted text.",
-      "Reaction time not reported in the extracted text."
+      "Reaction time not reported in the extracted text.",
+      "Amount of stearic acid (SA) not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

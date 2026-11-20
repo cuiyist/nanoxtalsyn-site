@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "norberg2005-jp0535285-zno-nanocrystals-capped-with-topo-sp-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Nick S. Norberg and Daniel R. Gamelin (2005): ZnO nanocrystals capped with TOPO/SP",
   "material": {
@@ -211,11 +211,19 @@
       ]
     },
     {
+      "id": "norberg2005-jp0535285-zno-nanocrystals-capped-with-topo-sp-2--after-d2-s04-resuspend",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "norberg2005-jp0535285-zno-nanocrystals-capped-with-topo-sp-2--after-s03-precipitate"
+      ]
+    },
+    {
       "id": "norberg2005-jp0535285-zno-nanocrystals-capped-with-topo-sp-2--after-s04-precipitate",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "norberg2005-jp0535285-zno-nanocrystals-capped-with-topo-sp-2--after-s03-precipitate",
+        "norberg2005-jp0535285-zno-nanocrystals-capped-with-topo-sp-2--after-d2-s04-resuspend",
         "norberg2005-jp0535285-zno-nanocrystals-capped-with-topo-sp-2--trioctylphosphine-oxide",
         "norberg2005-jp0535285-zno-nanocrystals-capped-with-topo-sp-2--stearyl-phosphate"
       ]
@@ -337,6 +345,44 @@
       ]
     },
     {
+      "id": "d2-s04-resuspend",
+      "action": "resuspend",
+      "label": "Resuspend in ethanol",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-precipitate"
+      ],
+      "inputs": [
+        "norberg2005-jp0535285-zno-nanocrystals-capped-with-topo-sp-2--after-s03-precipitate"
+      ],
+      "outputs": [
+        "norberg2005-jp0535285-zno-nanocrystals-capped-with-topo-sp-2--after-d2-s04-resuspend"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Resuspend in ethanol",
+      "evidence": [
+        {
+          "source_id": "norberg2005-jp0535285",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
       "id": "s04-precipitate",
       "action": "precipitate",
       "label": "Precipitate with TOPO/SP solution",
@@ -344,10 +390,10 @@
       "branch": "",
       "optional": false,
       "depends_on": [
-        "s03-precipitate"
+        "d2-s04-resuspend"
       ],
       "inputs": [
-        "norberg2005-jp0535285-zno-nanocrystals-capped-with-topo-sp-2--after-s03-precipitate",
+        "norberg2005-jp0535285-zno-nanocrystals-capped-with-topo-sp-2--after-d2-s04-resuspend",
         "norberg2005-jp0535285-zno-nanocrystals-capped-with-topo-sp-2--trioctylphosphine-oxide",
         "norberg2005-jp0535285-zno-nanocrystals-capped-with-topo-sp-2--stearyl-phosphate"
       ],
@@ -440,7 +486,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",

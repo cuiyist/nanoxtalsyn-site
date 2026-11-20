@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "chelladurai2021-v1-zf2-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Sasirekha Chelladurai; Raghavan Chandrasekaran; Sivaraman Murugasen (2021): ZF2",
   "material": {
@@ -195,20 +195,41 @@
       ]
     },
     {
-      "id": "chelladurai2021-v1-zf2-2--after-s02-dissolve",
+      "id": "chelladurai2021-v1-zf2-2--after-d2-s02-mix",
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
         "chelladurai2021-v1-zf2-2--after-s01-dissolve",
+        "chelladurai2021-v1-zf2-2--zinc-nitrate-hexahydrate",
+        "chelladurai2021-v1-zf2-2--ferric-nitrate-nona-hydrate"
+      ]
+    },
+    {
+      "id": "chelladurai2021-v1-zf2-2--after-s02-dissolve",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "chelladurai2021-v1-zf2-2--after-d2-s02-mix",
         "chelladurai2021-v1-zf2-2--cetyl-trimethyl-ammonium-bromide-ctab"
       ]
     },
     {
-      "id": "chelladurai2021-v1-zf2-2--after-s03-precipitate",
-      "name": "mixture after step 3",
+      "id": "chelladurai2021-v1-zf2-2--after-d2-s04-mix",
+      "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
         "chelladurai2021-v1-zf2-2--after-s02-dissolve",
+        "chelladurai2021-v1-zf2-2--cetyl-trimethyl-ammonium-bromide-ctab",
+        "chelladurai2021-v1-zf2-2--zinc-nitrate-hexahydrate",
+        "chelladurai2021-v1-zf2-2--ferric-nitrate-nona-hydrate"
+      ]
+    },
+    {
+      "id": "chelladurai2021-v1-zf2-2--after-s03-precipitate",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "chelladurai2021-v1-zf2-2--after-d2-s04-mix",
         "chelladurai2021-v1-zf2-2--sodium-hydroxide-naoh",
         "chelladurai2021-v1-zf2-2--cetyl-trimethyl-ammonium-bromide-ctab",
         "chelladurai2021-v1-zf2-2--zinc-nitrate-hexahydrate",
@@ -216,8 +237,8 @@
       ]
     },
     {
-      "id": "chelladurai2021-v1-zf2-2--after-s04-wash",
-      "name": "mixture after step 4",
+      "id": "chelladurai2021-v1-zf2-2--after-d2-s06-settle",
+      "name": "mixture after step 6",
       "kind": "reaction_batch",
       "parent_ids": [
         "chelladurai2021-v1-zf2-2--after-s03-precipitate",
@@ -228,8 +249,20 @@
       ]
     },
     {
+      "id": "chelladurai2021-v1-zf2-2--after-s04-wash",
+      "name": "mixture after step 7",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "chelladurai2021-v1-zf2-2--after-d2-s06-settle",
+        "chelladurai2021-v1-zf2-2--sodium-hydroxide-naoh",
+        "chelladurai2021-v1-zf2-2--cetyl-trimethyl-ammonium-bromide-ctab",
+        "chelladurai2021-v1-zf2-2--zinc-nitrate-hexahydrate",
+        "chelladurai2021-v1-zf2-2--ferric-nitrate-nona-hydrate"
+      ]
+    },
+    {
       "id": "chelladurai2021-v1-zf2-2--after-s05-dry",
-      "name": "mixture after step 5",
+      "name": "mixture after step 8",
       "kind": "reaction_batch",
       "parent_ids": [
         "chelladurai2021-v1-zf2-2--after-s04-wash",
@@ -241,7 +274,7 @@
     },
     {
       "id": "chelladurai2021-v1-zf2-2--after-s06-grind",
-      "name": "mixture after step 6",
+      "name": "mixture after step 9",
       "kind": "reaction_batch",
       "parent_ids": [
         "chelladurai2021-v1-zf2-2--after-s05-dry",
@@ -345,9 +378,9 @@
       ]
     },
     {
-      "id": "s02-dissolve",
-      "action": "dissolve",
-      "label": "Cetyl Trimethyl Ammonium Bromide in deionized water",
+      "id": "d2-s02-mix",
+      "action": "mix",
+      "label": "Combine solutions A and B",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -356,6 +389,88 @@
       ],
       "inputs": [
         "chelladurai2021-v1-zf2-2--after-s01-dissolve",
+        "chelladurai2021-v1-zf2-2--zinc-nitrate-hexahydrate",
+        "chelladurai2021-v1-zf2-2--ferric-nitrate-nona-hydrate"
+      ],
+      "outputs": [
+        "chelladurai2021-v1-zf2-2--after-d2-s02-mix"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 60,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "60 °C",
+          "evidence": [
+            {
+              "source_id": "chelladurai2021-v1",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 30,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "30 min",
+          "evidence": [
+            {
+              "source_id": "chelladurai2021-v1",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "chelladurai2021-v1",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Combine solutions A and B",
+      "evidence": [
+        {
+          "source_id": "chelladurai2021-v1",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s02-dissolve",
+      "action": "dissolve",
+      "label": "Cetyl Trimethyl Ammonium Bromide in deionized water",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-mix"
+      ],
+      "inputs": [
+        "chelladurai2021-v1-zf2-2--after-d2-s02-mix",
         "chelladurai2021-v1-zf2-2--cetyl-trimethyl-ammonium-bromide-ctab"
       ],
       "outputs": [
@@ -426,10 +541,10 @@
       ]
     },
     {
-      "id": "s03-precipitate",
-      "action": "precipitate",
-      "label": "Add NaOH to solution E to reach pH 10",
-      "stage": "workup",
+      "id": "d2-s04-mix",
+      "action": "mix",
+      "label": "Combine CTAB solution with solution C",
+      "stage": "synthesis",
       "branch": "",
       "optional": false,
       "depends_on": [
@@ -437,6 +552,89 @@
       ],
       "inputs": [
         "chelladurai2021-v1-zf2-2--after-s02-dissolve",
+        "chelladurai2021-v1-zf2-2--cetyl-trimethyl-ammonium-bromide-ctab",
+        "chelladurai2021-v1-zf2-2--zinc-nitrate-hexahydrate",
+        "chelladurai2021-v1-zf2-2--ferric-nitrate-nona-hydrate"
+      ],
+      "outputs": [
+        "chelladurai2021-v1-zf2-2--after-d2-s04-mix"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 60,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "60 °C",
+          "evidence": [
+            {
+              "source_id": "chelladurai2021-v1",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 30,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "30 min",
+          "evidence": [
+            {
+              "source_id": "chelladurai2021-v1",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "chelladurai2021-v1",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Combine CTAB solution with solution C",
+      "evidence": [
+        {
+          "source_id": "chelladurai2021-v1",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s03-precipitate",
+      "action": "precipitate",
+      "label": "Add NaOH to solution E to reach pH 10",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-mix"
+      ],
+      "inputs": [
+        "chelladurai2021-v1-zf2-2--after-d2-s04-mix",
         "chelladurai2021-v1-zf2-2--sodium-hydroxide-naoh",
         "chelladurai2021-v1-zf2-2--cetyl-trimethyl-ammonium-bromide-ctab",
         "chelladurai2021-v1-zf2-2--zinc-nitrate-hexahydrate",
@@ -468,10 +666,10 @@
       ]
     },
     {
-      "id": "s04-wash",
-      "action": "wash",
-      "label": "Wash precipitate with deionized water",
-      "stage": "workup",
+      "id": "d2-s06-settle",
+      "action": "settle",
+      "label": "Allow precipitate to settle",
+      "stage": "synthesis",
       "branch": "",
       "optional": false,
       "depends_on": [
@@ -479,6 +677,53 @@
       ],
       "inputs": [
         "chelladurai2021-v1-zf2-2--after-s03-precipitate",
+        "chelladurai2021-v1-zf2-2--sodium-hydroxide-naoh",
+        "chelladurai2021-v1-zf2-2--cetyl-trimethyl-ammonium-bromide-ctab",
+        "chelladurai2021-v1-zf2-2--zinc-nitrate-hexahydrate",
+        "chelladurai2021-v1-zf2-2--ferric-nitrate-nona-hydrate"
+      ],
+      "outputs": [
+        "chelladurai2021-v1-zf2-2--after-d2-s06-settle"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "chelladurai2021-v1",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Allow precipitate to settle",
+      "evidence": [
+        {
+          "source_id": "chelladurai2021-v1",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s04-wash",
+      "action": "wash",
+      "label": "Wash precipitate with deionized water",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s06-settle"
+      ],
+      "inputs": [
+        "chelladurai2021-v1-zf2-2--after-d2-s06-settle",
         "chelladurai2021-v1-zf2-2--sodium-hydroxide-naoh",
         "chelladurai2021-v1-zf2-2--cetyl-trimethyl-ammonium-bromide-ctab",
         "chelladurai2021-v1-zf2-2--zinc-nitrate-hexahydrate",
@@ -790,7 +1035,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Size not reported in the extracted text.",
       "Amount of Zinc Nitrate Hexahydrate not reported in the extracted text.",

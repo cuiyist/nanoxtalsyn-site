@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "dong2013-cm400812v-ag2se-qds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Bohua Dong; Chunyan Li; Guangcun Chen; Yejun Zhang; Yan Zhang; Manjiao Deng; Qiangbin Wang (2013): Ag2Se QDs",
   "material": {
@@ -139,7 +139,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "volume": {
+          "value": 3,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "3 mL",
+          "evidence": [
+            {
+              "source_id": "dong2013-cm400812v",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -158,7 +177,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "volume": {
+          "value": 7,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "7 mL",
+          "evidence": [
+            {
+              "source_id": "dong2013-cm400812v",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -172,6 +210,101 @@
       "name": "Oleylamine",
       "formula": null,
       "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 3,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "3 mL",
+          "evidence": [
+            {
+              "source_id": "dong2013-cm400812v",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "dong2013-cm400812v",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "dong2013-cm400812v-ag2se-qds-1--nahse",
+      "name": "NaHSe",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 0.01,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.01 mmol",
+          "evidence": [
+            {
+              "source_id": "dong2013-cm400812v",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "dong2013-cm400812v",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "dong2013-cm400812v-ag2se-qds-1--sodium-borohydride",
+      "name": "Sodium borohydride",
+      "formula": null,
+      "role": "reducing_agent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "dong2013-cm400812v",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "dong2013-cm400812v-ag2se-qds-1--c18-pmh-peg",
+      "name": "C18-PMH-PEG",
+      "formula": null,
+      "role": "reagent",
       "stage": "synthesis",
       "identity": {
         "pubchem_cid": null,
@@ -215,15 +348,49 @@
       "kind": "reaction_batch",
       "parent_ids": [
         "dong2013-cm400812v-ag2se-qds-1--after-s02-load",
-        "dong2013-cm400812v-ag2se-qds-1--1-dodecanethiol"
+        "dong2013-cm400812v-ag2se-qds-1--1-dodecanethiol",
+        "dong2013-cm400812v-ag2se-qds-1--nahse"
       ]
     },
     {
       "id": "dong2013-cm400812v-ag2se-qds-1--after-s04-heat",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "dong2013-cm400812v-ag2se-qds-1--after-s03-add"
+      ]
+    },
+    {
+      "id": "dong2013-cm400812v-ag2se-qds-1--after-d2-s05-cool",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "dong2013-cm400812v-ag2se-qds-1--after-s04-heat"
+      ]
+    },
+    {
+      "id": "dong2013-cm400812v-ag2se-qds-1--after-d2-s06-redisperse",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "dong2013-cm400812v-ag2se-qds-1--after-d2-s05-cool"
+      ]
+    },
+    {
+      "id": "dong2013-cm400812v-ag2se-qds-1--after-d2-s07-coating",
+      "name": "mixture after step 7",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "dong2013-cm400812v-ag2se-qds-1--after-d2-s06-redisperse",
+        "dong2013-cm400812v-ag2se-qds-1--c18-pmh-peg"
+      ]
+    },
+    {
+      "id": "dong2013-cm400812v-ag2se-qds-1--after-d2-s08-transfer",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "dong2013-cm400812v-ag2se-qds-1--after-s03-add"
+        "dong2013-cm400812v-ag2se-qds-1--after-d2-s07-coating"
       ]
     }
   ],
@@ -328,7 +495,8 @@
       ],
       "inputs": [
         "dong2013-cm400812v-ag2se-qds-1--after-s02-load",
-        "dong2013-cm400812v-ag2se-qds-1--1-dodecanethiol"
+        "dong2013-cm400812v-ag2se-qds-1--1-dodecanethiol",
+        "dong2013-cm400812v-ag2se-qds-1--nahse"
       ],
       "outputs": [
         "dong2013-cm400812v-ag2se-qds-1--after-s03-add"
@@ -421,6 +589,174 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s05-cool",
+      "action": "cool",
+      "label": "Cool to room temperature",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-heat"
+      ],
+      "inputs": [
+        "dong2013-cm400812v-ag2se-qds-1--after-s04-heat"
+      ],
+      "outputs": [
+        "dong2013-cm400812v-ag2se-qds-1--after-d2-s05-cool"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "dong2013-cm400812v",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Cool to room temperature",
+      "evidence": [
+        {
+          "source_id": "dong2013-cm400812v",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s06-redisperse",
+      "action": "redisperse",
+      "label": "Redisperse in cyclohexane",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s05-cool"
+      ],
+      "inputs": [
+        "dong2013-cm400812v-ag2se-qds-1--after-d2-s05-cool"
+      ],
+      "outputs": [
+        "dong2013-cm400812v-ag2se-qds-1--after-d2-s06-redisperse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Redisperse in cyclohexane",
+      "evidence": [
+        {
+          "source_id": "dong2013-cm400812v",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s07-coating",
+      "action": "coating",
+      "label": "Coating",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s06-redisperse"
+      ],
+      "inputs": [
+        "dong2013-cm400812v-ag2se-qds-1--after-d2-s06-redisperse",
+        "dong2013-cm400812v-ag2se-qds-1--c18-pmh-peg"
+      ],
+      "outputs": [
+        "dong2013-cm400812v-ag2se-qds-1--after-d2-s07-coating"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "dong2013-cm400812v",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Coating",
+      "evidence": [
+        {
+          "source_id": "dong2013-cm400812v",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s08-transfer",
+      "action": "transfer",
+      "label": "Transfer",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s07-coating"
+      ],
+      "inputs": [
+        "dong2013-cm400812v-ag2se-qds-1--after-d2-s07-coating"
+      ],
+      "outputs": [
+        "dong2013-cm400812v-ag2se-qds-1--after-d2-s08-transfer"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "dong2013-cm400812v",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Transfer",
+      "evidence": [
+        {
+          "source_id": "dong2013-cm400812v",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -429,7 +765,7 @@
       "sample_id": "dong2013-cm400812v-ag2se-qds-1--product",
       "source_sample_label": "Ag2Se QDs",
       "batch_id": null,
-      "material_state_id": "dong2013-cm400812v-ag2se-qds-1--after-s04-heat",
+      "material_state_id": "dong2013-cm400812v-ag2se-qds-1--after-d2-s08-transfer",
       "parent_sample_id": null,
       "composition": {
         "value": "Ag2Se",
@@ -520,17 +856,80 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "dong2013-cm400812v-ag2se-qds-1--photoluminescence-peak",
+      "sample_id": "dong2013-cm400812v-ag2se-qds-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 1300,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "1300 nm",
+        "evidence": [
+          {
+            "source_id": "dong2013-cm400812v",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "dong2013-cm400812v",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "dong2013-cm400812v-ag2se-qds-1--photoluminescence-quantum-yield",
+      "sample_id": "dong2013-cm400812v-ag2se-qds-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 29.4,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "29.4 %",
+        "evidence": [
+          {
+            "source_id": "dong2013-cm400812v",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "dong2013-cm400812v",
+          "locator": "Main PDF p.4"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Reaction time not reported in the extracted text.",
-      "Amount of 1-Dodecanethiol not reported in the extracted text.",
-      "Amount of Toluene not reported in the extracted text.",
-      "Amount of Oleylamine not reported in the extracted text."
+      "Amount of Sodium borohydride not reported in the extracted text.",
+      "Amount of C18-PMH-PEG not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

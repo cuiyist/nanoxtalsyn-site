@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "hu2020-jacs-9b11169-c2nqds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Xuanhe Hu; Linfeng Zhong; Chenhao Shu; Zhengsong Fang; Meijia Yang; Jing Li; Dingshan Yu (2020): C2NQDs",
   "material": {
@@ -181,11 +181,19 @@
   "material_states": [
     {
       "id": "hu2020-jacs-9b11169-c2nqds-1--after-s01-sonicate",
-      "name": "product as isolated",
-      "kind": "product",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
       "parent_ids": [
         "hu2020-jacs-9b11169-c2nqds-1--concentrated-h2so4",
         "hu2020-jacs-9b11169-c2nqds-1--concentrated-hno3"
+      ]
+    },
+    {
+      "id": "hu2020-jacs-9b11169-c2nqds-1--after-d2-s02-heat",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "hu2020-jacs-9b11169-c2nqds-1--after-s01-sonicate"
       ]
     }
   ],
@@ -250,6 +258,68 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s02-heat",
+      "action": "heat",
+      "label": "Hydrothermal treatment",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-sonicate"
+      ],
+      "inputs": [
+        "hu2020-jacs-9b11169-c2nqds-1--after-s01-sonicate"
+      ],
+      "outputs": [
+        "hu2020-jacs-9b11169-c2nqds-1--after-d2-s02-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 200,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "200 °C",
+          "evidence": [
+            {
+              "source_id": "hu2020-jacs-9b11169",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "not specified",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "hu2020-jacs-9b11169",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Hydrothermal treatment",
+      "evidence": [
+        {
+          "source_id": "hu2020-jacs-9b11169",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -258,7 +328,7 @@
       "sample_id": "hu2020-jacs-9b11169-c2nqds-1--product",
       "source_sample_label": "C2NQDs",
       "batch_id": null,
-      "material_state_id": "hu2020-jacs-9b11169-c2nqds-1--after-s01-sonicate",
+      "material_state_id": "hu2020-jacs-9b11169-c2nqds-1--after-d2-s02-heat",
       "parent_sample_id": null,
       "composition": {
         "value": "C2N",
@@ -339,12 +409,44 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "hu2020-jacs-9b11169-c2nqds-1--photoluminescence-quantum-yield",
+      "sample_id": "hu2020-jacs-9b11169-c2nqds-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 6.8,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "6.8 %",
+        "evidence": [
+          {
+            "source_id": "hu2020-jacs-9b11169",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "hu2020-jacs-9b11169",
+          "locator": "Main PDF p.4"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",

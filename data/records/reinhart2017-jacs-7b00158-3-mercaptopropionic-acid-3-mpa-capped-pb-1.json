@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "reinhart2017-jacs-7b00158-3-mercaptopropionic-acid-3-mpa-capped-pb-1",
-  "revision": 2,
+  "revision": 3,
   "record_type": "literature_protocol",
   "title": "Chase C. Reinhart; Erik Johansson (2017): 3-mercaptopropionic acid (3-MPA) capped PbS quantum dots (QDs)",
   "material": {
@@ -237,6 +237,25 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "reinhart2017-jacs-7b00158-3-mercaptopropionic-acid-3-mpa-capped-pb-1--3-mercaptopropionic-acid",
+      "name": "3-mercaptopropionic acid",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "reinhart2017-jacs-7b00158",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -274,7 +293,7 @@
       ]
     },
     {
-      "id": "reinhart2017-jacs-7b00158-3-mercaptopropionic-acid-3-mpa-capped-pb-1--after-d2-s05-remove-solvent",
+      "id": "reinhart2017-jacs-7b00158-3-mercaptopropionic-acid-3-mpa-capped-pb-1--after-d3-s05-transfer",
       "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
@@ -282,11 +301,20 @@
       ]
     },
     {
+      "id": "reinhart2017-jacs-7b00158-3-mercaptopropionic-acid-3-mpa-capped-pb-1--after-d2-s05-remove-solvent",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "reinhart2017-jacs-7b00158-3-mercaptopropionic-acid-3-mpa-capped-pb-1--after-d3-s05-transfer"
+      ]
+    },
+    {
       "id": "reinhart2017-jacs-7b00158-3-mercaptopropionic-acid-3-mpa-capped-pb-1--after-d2-s06-resuspend",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "reinhart2017-jacs-7b00158-3-mercaptopropionic-acid-3-mpa-capped-pb-1--after-d2-s05-remove-solvent"
+        "reinhart2017-jacs-7b00158-3-mercaptopropionic-acid-3-mpa-capped-pb-1--after-d2-s05-remove-solvent",
+        "reinhart2017-jacs-7b00158-3-mercaptopropionic-acid-3-mpa-capped-pb-1--3-mercaptopropionic-acid"
       ]
     }
   ],
@@ -485,9 +513,9 @@
       ]
     },
     {
-      "id": "d2-s05-remove-solvent",
-      "action": "remove solvent",
-      "label": "Remove n-hexane under vacuum to form a QD film",
+      "id": "d3-s05-transfer",
+      "action": "transfer",
+      "label": "Transfer QD pellet into the glovebox and disperse in n-hexane",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -496,6 +524,49 @@
       ],
       "inputs": [
         "reinhart2017-jacs-7b00158-3-mercaptopropionic-acid-3-mpa-capped-pb-1--after-d2-s04-precipitate"
+      ],
+      "outputs": [
+        "reinhart2017-jacs-7b00158-3-mercaptopropionic-acid-3-mpa-capped-pb-1--after-d3-s05-transfer"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "reinhart2017-jacs-7b00158",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Transfer QD pellet into the glovebox and disperse in n-hexane",
+      "evidence": [
+        {
+          "source_id": "reinhart2017-jacs-7b00158",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s05-remove-solvent",
+      "action": "remove solvent",
+      "label": "Remove n-hexane under vacuum to form a QD film",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d3-s05-transfer"
+      ],
+      "inputs": [
+        "reinhart2017-jacs-7b00158-3-mercaptopropionic-acid-3-mpa-capped-pb-1--after-d3-s05-transfer"
       ],
       "outputs": [
         "reinhart2017-jacs-7b00158-3-mercaptopropionic-acid-3-mpa-capped-pb-1--after-d2-s05-remove-solvent"
@@ -538,7 +609,8 @@
         "d2-s05-remove-solvent"
       ],
       "inputs": [
-        "reinhart2017-jacs-7b00158-3-mercaptopropionic-acid-3-mpa-capped-pb-1--after-d2-s05-remove-solvent"
+        "reinhart2017-jacs-7b00158-3-mercaptopropionic-acid-3-mpa-capped-pb-1--after-d2-s05-remove-solvent",
+        "reinhart2017-jacs-7b00158-3-mercaptopropionic-acid-3-mpa-capped-pb-1--3-mercaptopropionic-acid"
       ],
       "outputs": [
         "reinhart2017-jacs-7b00158-3-mercaptopropionic-acid-3-mpa-capped-pb-1--after-d2-s06-resuspend"
@@ -641,9 +713,10 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
-      "Size not reported in the extracted text."
+      "Size not reported in the extracted text.",
+      "Amount of 3-mercaptopropionic acid not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

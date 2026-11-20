@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "nguyen2009-la901387q-cevo4-nanocrystals-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Thanh-Dinh Nguyen (2009): CeVO4 nanocrystals",
   "material": {
@@ -57,16 +57,21 @@
       "note": ""
     },
     "size": {
-      "value": null,
+      "value": 15,
       "minimum": null,
       "maximum": null,
       "unit": "nm",
-      "status": "not_reported",
+      "status": "reported",
       "approximate": false,
       "qualifier": "",
       "basis": "",
-      "raw_text": "not reported",
-      "evidence": [],
+      "raw_text": "15 nm",
+      "evidence": [
+        {
+          "source_id": "nguyen2009-la901387q",
+          "locator": "Main PDF"
+        }
+      ],
       "derivation": null
     },
     "morphology": {
@@ -228,6 +233,101 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "nguyen2009-la901387q-cevo4-nanocrystals-2--tetraoctylammonium-bromide",
+      "name": "tetraoctylammonium bromide",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "mass": {
+          "value": 0.87,
+          "minimum": null,
+          "maximum": null,
+          "unit": "g",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.87 g",
+          "evidence": [
+            {
+              "source_id": "nguyen2009-la901387q",
+              "locator": "Main PDF p.1"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "nguyen2009-la901387q",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "nguyen2009-la901387q-cevo4-nanocrystals-2--sodium-hydroxide",
+      "name": "sodium hydroxide",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "nguyen2009-la901387q",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "nguyen2009-la901387q-cevo4-nanocrystals-2--toluene",
+      "name": "toluene",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "nguyen2009-la901387q",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "nguyen2009-la901387q-cevo4-nanocrystals-2--ethanol",
+      "name": "ethanol",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "nguyen2009-la901387q",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -237,7 +337,8 @@
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": [
-        "nguyen2009-la901387q-cevo4-nanocrystals-2--potassium-oleate"
+        "nguyen2009-la901387q-cevo4-nanocrystals-2--potassium-oleate",
+        "nguyen2009-la901387q-cevo4-nanocrystals-2--ethanol"
       ]
     },
     {
@@ -266,7 +367,8 @@
       "kind": "reaction_batch",
       "parent_ids": [
         "nguyen2009-la901387q-cevo4-nanocrystals-2--after-s03-isolate",
-        "nguyen2009-la901387q-cevo4-nanocrystals-2--vanadium-pentaoxide"
+        "nguyen2009-la901387q-cevo4-nanocrystals-2--vanadium-pentaoxide",
+        "nguyen2009-la901387q-cevo4-nanocrystals-2--sodium-hydroxide"
       ]
     },
     {
@@ -275,7 +377,8 @@
       "kind": "reaction_batch",
       "parent_ids": [
         "nguyen2009-la901387q-cevo4-nanocrystals-2--after-s04-dissolve",
-        "nguyen2009-la901387q-cevo4-nanocrystals-2--vanadium-pentaoxide"
+        "nguyen2009-la901387q-cevo4-nanocrystals-2--vanadium-pentaoxide",
+        "nguyen2009-la901387q-cevo4-nanocrystals-2--tetraoctylammonium-bromide"
       ]
     },
     {
@@ -284,7 +387,8 @@
       "kind": "reaction_batch",
       "parent_ids": [
         "nguyen2009-la901387q-cevo4-nanocrystals-2--after-s05-extract",
-        "nguyen2009-la901387q-cevo4-nanocrystals-2--vanadium-pentaoxide"
+        "nguyen2009-la901387q-cevo4-nanocrystals-2--vanadium-pentaoxide",
+        "nguyen2009-la901387q-cevo4-nanocrystals-2--tetraoctylammonium-bromide"
       ]
     },
     {
@@ -311,10 +415,21 @@
     },
     {
       "id": "nguyen2009-la901387q-cevo4-nanocrystals-2--after-s09-cool",
+      "name": "mixture after step 9",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "nguyen2009-la901387q-cevo4-nanocrystals-2--after-s08-heat",
+        "nguyen2009-la901387q-cevo4-nanocrystals-2--cerium-nitrate-hexahydrate",
+        "nguyen2009-la901387q-cevo4-nanocrystals-2--vanadium-pentaoxide",
+        "nguyen2009-la901387q-cevo4-nanocrystals-2--oleylamine"
+      ]
+    },
+    {
+      "id": "nguyen2009-la901387q-cevo4-nanocrystals-2--after-d2-s10-purify",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "nguyen2009-la901387q-cevo4-nanocrystals-2--after-s08-heat",
+        "nguyen2009-la901387q-cevo4-nanocrystals-2--after-s09-cool",
         "nguyen2009-la901387q-cevo4-nanocrystals-2--cerium-nitrate-hexahydrate",
         "nguyen2009-la901387q-cevo4-nanocrystals-2--vanadium-pentaoxide",
         "nguyen2009-la901387q-cevo4-nanocrystals-2--oleylamine"
@@ -331,12 +446,32 @@
       "optional": false,
       "depends_on": [],
       "inputs": [
-        "nguyen2009-la901387q-cevo4-nanocrystals-2--potassium-oleate"
+        "nguyen2009-la901387q-cevo4-nanocrystals-2--potassium-oleate",
+        "nguyen2009-la901387q-cevo4-nanocrystals-2--ethanol"
       ],
       "outputs": [
         "nguyen2009-la901387q-cevo4-nanocrystals-2--after-s01-dissolve"
       ],
-      "parameters": {},
+      "parameters": {
+        "duration": {
+          "value": 30,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "30 min",
+          "evidence": [
+            {
+              "source_id": "nguyen2009-la901387q",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "environment": {
         "value": null,
         "status": "not_reported",
@@ -487,7 +622,8 @@
       ],
       "inputs": [
         "nguyen2009-la901387q-cevo4-nanocrystals-2--after-s03-isolate",
-        "nguyen2009-la901387q-cevo4-nanocrystals-2--vanadium-pentaoxide"
+        "nguyen2009-la901387q-cevo4-nanocrystals-2--vanadium-pentaoxide",
+        "nguyen2009-la901387q-cevo4-nanocrystals-2--sodium-hydroxide"
       ],
       "outputs": [
         "nguyen2009-la901387q-cevo4-nanocrystals-2--after-s04-dissolve"
@@ -545,7 +681,8 @@
       ],
       "inputs": [
         "nguyen2009-la901387q-cevo4-nanocrystals-2--after-s04-dissolve",
-        "nguyen2009-la901387q-cevo4-nanocrystals-2--vanadium-pentaoxide"
+        "nguyen2009-la901387q-cevo4-nanocrystals-2--vanadium-pentaoxide",
+        "nguyen2009-la901387q-cevo4-nanocrystals-2--tetraoctylammonium-bromide"
       ],
       "outputs": [
         "nguyen2009-la901387q-cevo4-nanocrystals-2--after-s05-extract"
@@ -603,7 +740,8 @@
       ],
       "inputs": [
         "nguyen2009-la901387q-cevo4-nanocrystals-2--after-s05-extract",
-        "nguyen2009-la901387q-cevo4-nanocrystals-2--vanadium-pentaoxide"
+        "nguyen2009-la901387q-cevo4-nanocrystals-2--vanadium-pentaoxide",
+        "nguyen2009-la901387q-cevo4-nanocrystals-2--tetraoctylammonium-bromide"
       ],
       "outputs": [
         "nguyen2009-la901387q-cevo4-nanocrystals-2--after-s06-isolate"
@@ -789,6 +927,47 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s10-purify",
+      "action": "purify",
+      "label": "Purify by precipitation-redispersion",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s09-cool"
+      ],
+      "inputs": [
+        "nguyen2009-la901387q-cevo4-nanocrystals-2--after-s09-cool",
+        "nguyen2009-la901387q-cevo4-nanocrystals-2--cerium-nitrate-hexahydrate",
+        "nguyen2009-la901387q-cevo4-nanocrystals-2--vanadium-pentaoxide",
+        "nguyen2009-la901387q-cevo4-nanocrystals-2--oleylamine"
+      ],
+      "outputs": [
+        "nguyen2009-la901387q-cevo4-nanocrystals-2--after-d2-s10-purify"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Purify by precipitation-redispersion",
+      "evidence": [
+        {
+          "source_id": "nguyen2009-la901387q",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -797,7 +976,7 @@
       "sample_id": "nguyen2009-la901387q-cevo4-nanocrystals-2--product",
       "source_sample_label": "CeVO4 nanocrystals",
       "batch_id": null,
-      "material_state_id": "nguyen2009-la901387q-cevo4-nanocrystals-2--after-s09-cool",
+      "material_state_id": "nguyen2009-la901387q-cevo4-nanocrystals-2--after-d2-s10-purify",
       "parent_sample_id": null,
       "composition": {
         "value": "CeVO4",
@@ -842,17 +1021,52 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "nguyen2009-la901387q-cevo4-nanocrystals-2--size",
+      "sample_id": "nguyen2009-la901387q-cevo4-nanocrystals-2--product",
+      "property": "diameter",
+      "technique": "TEM",
+      "value": {
+        "value": 15,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "15 nm",
+        "evidence": [
+          {
+            "source_id": "nguyen2009-la901387q",
+            "locator": "Main PDF"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "nguyen2009-la901387q",
+          "locator": "Main PDF"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
-      "Size not reported in the extracted text.",
-      "Atmosphere not reported in the extracted text."
+      "Atmosphere not reported in the extracted text.",
+      "Amount of sodium hydroxide not reported in the extracted text.",
+      "Amount of toluene not reported in the extracted text.",
+      "Amount of ethanol not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

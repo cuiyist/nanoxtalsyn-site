@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "deng2013-am403050s-quaternary-znaginse-zaise-qds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Dawei Deng; Lingzhi Qu; Jian Zhang; Yuxiang Ma; Yueqing Gu (2013): quaternary Zn−Ag−In−Se (ZAISe) QDs",
   "material": {
@@ -263,19 +263,129 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "deng2013-am403050s-quaternary-znaginse-zaise-qds-1--1-dodecanethiol",
+      "name": "1-dodecanethiol",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "deng2013-am403050s",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "deng2013-am403050s-quaternary-znaginse-zaise-qds-1--se-powder",
+      "name": "Se powder",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 0.3,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.3 mmol",
+          "evidence": [
+            {
+              "source_id": "deng2013-am403050s",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "deng2013-am403050s",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "deng2013-am403050s-quaternary-znaginse-zaise-qds-1--selenium-powder",
+      "name": "selenium powder",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 0.3,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.3 mmol",
+          "evidence": [
+            {
+              "source_id": "deng2013-am403050s",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "deng2013-am403050s",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
-      "id": "deng2013-am403050s-quaternary-znaginse-zaise-qds-1--after-s01-heat",
+      "id": "deng2013-am403050s-quaternary-znaginse-zaise-qds-1--after-d2-s01-mix",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "deng2013-am403050s-quaternary-znaginse-zaise-qds-1--zinc-acetate",
+        "deng2013-am403050s-quaternary-znaginse-zaise-qds-1--silver-nitrate",
+        "deng2013-am403050s-quaternary-znaginse-zaise-qds-1--indium-acetate",
+        "deng2013-am403050s-quaternary-znaginse-zaise-qds-1--1-octadecene",
+        "deng2013-am403050s-quaternary-znaginse-zaise-qds-1--1-dodecanethiol",
+        "deng2013-am403050s-quaternary-znaginse-zaise-qds-1--oleic-acid"
+      ]
+    },
+    {
+      "id": "deng2013-am403050s-quaternary-znaginse-zaise-qds-1--after-s01-heat",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "deng2013-am403050s-quaternary-znaginse-zaise-qds-1--after-d2-s01-mix"
+      ]
     },
     {
       "id": "deng2013-am403050s-quaternary-znaginse-zaise-qds-1--after-s02-hold",
-      "name": "mixture after step 2",
+      "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
         "deng2013-am403050s-quaternary-znaginse-zaise-qds-1--after-s01-heat"
@@ -283,14 +393,76 @@
     },
     {
       "id": "deng2013-am403050s-quaternary-znaginse-zaise-qds-1--after-s03-cool",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "deng2013-am403050s-quaternary-znaginse-zaise-qds-1--after-s02-hold"
+      ]
+    },
+    {
+      "id": "deng2013-am403050s-quaternary-znaginse-zaise-qds-1--after-d2-s05-precipitate",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "deng2013-am403050s-quaternary-znaginse-zaise-qds-1--after-s03-cool"
+      ]
+    },
+    {
+      "id": "deng2013-am403050s-quaternary-znaginse-zaise-qds-1--after-d2-s06-redisperse",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "deng2013-am403050s-quaternary-znaginse-zaise-qds-1--after-s02-hold"
+        "deng2013-am403050s-quaternary-znaginse-zaise-qds-1--after-d2-s05-precipitate"
       ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-mix",
+      "action": "mix",
+      "label": "Mix",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "deng2013-am403050s-quaternary-znaginse-zaise-qds-1--zinc-acetate",
+        "deng2013-am403050s-quaternary-znaginse-zaise-qds-1--silver-nitrate",
+        "deng2013-am403050s-quaternary-znaginse-zaise-qds-1--indium-acetate",
+        "deng2013-am403050s-quaternary-znaginse-zaise-qds-1--1-octadecene",
+        "deng2013-am403050s-quaternary-znaginse-zaise-qds-1--1-dodecanethiol",
+        "deng2013-am403050s-quaternary-znaginse-zaise-qds-1--oleic-acid"
+      ],
+      "outputs": [
+        "deng2013-am403050s-quaternary-znaginse-zaise-qds-1--after-d2-s01-mix"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "deng2013-am403050s",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Mix",
+      "evidence": [
+        {
+          "source_id": "deng2013-am403050s",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
     {
       "id": "s01-heat",
       "action": "heat",
@@ -298,8 +470,12 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s01-mix"
+      ],
+      "inputs": [
+        "deng2013-am403050s-quaternary-znaginse-zaise-qds-1--after-d2-s01-mix"
+      ],
       "outputs": [
         "deng2013-am403050s-quaternary-znaginse-zaise-qds-1--after-s01-heat"
       ],
@@ -489,6 +665,82 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s05-precipitate",
+      "action": "precipitate",
+      "label": "Precipitation of QDs with ethanol",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-cool"
+      ],
+      "inputs": [
+        "deng2013-am403050s-quaternary-znaginse-zaise-qds-1--after-s03-cool"
+      ],
+      "outputs": [
+        "deng2013-am403050s-quaternary-znaginse-zaise-qds-1--after-d2-s05-precipitate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Precipitation of QDs with ethanol",
+      "evidence": [
+        {
+          "source_id": "deng2013-am403050s",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s06-redisperse",
+      "action": "redisperse",
+      "label": "Redispersing QDs in n-decane, toluene, hexane, chloroform, ether",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s05-precipitate"
+      ],
+      "inputs": [
+        "deng2013-am403050s-quaternary-znaginse-zaise-qds-1--after-d2-s05-precipitate"
+      ],
+      "outputs": [
+        "deng2013-am403050s-quaternary-znaginse-zaise-qds-1--after-d2-s06-redisperse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Redispersing QDs in n-decane, toluene, hexane, chloroform, ether",
+      "evidence": [
+        {
+          "source_id": "deng2013-am403050s",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -497,7 +749,7 @@
       "sample_id": "deng2013-am403050s-quaternary-znaginse-zaise-qds-1--product",
       "source_sample_label": "quaternary Zn−Ag−In−Se (ZAISe) QDs",
       "batch_id": null,
-      "material_state_id": "deng2013-am403050s-quaternary-znaginse-zaise-qds-1--after-s03-cool",
+      "material_state_id": "deng2013-am403050s-quaternary-znaginse-zaise-qds-1--after-d2-s06-redisperse",
       "parent_sample_id": null,
       "composition": {
         "value": "ZnAgInSe3",
@@ -589,14 +841,79 @@
           "locator": "Main PDF p.5"
         }
       ]
+    },
+    {
+      "id": "deng2013-am403050s-quaternary-znaginse-zaise-qds-1--photoluminescence-peak",
+      "sample_id": "deng2013-am403050s-quaternary-znaginse-zaise-qds-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 675,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "675 nm",
+        "evidence": [
+          {
+            "source_id": "deng2013-am403050s",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "deng2013-am403050s",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    },
+    {
+      "id": "deng2013-am403050s-quaternary-znaginse-zaise-qds-1--photoluminescence-quantum-yield",
+      "sample_id": "deng2013-am403050s-quaternary-znaginse-zaise-qds-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 50,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "50 %",
+        "evidence": [
+          {
+            "source_id": "deng2013-am403050s",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "deng2013-am403050s",
+          "locator": "Main PDF p.5"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
-      "Amount of oleic acid not reported in the extracted text."
+      "Amount of oleic acid not reported in the extracted text.",
+      "Amount of 1-dodecanethiol not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "durmusoglu2019-acsanm-9b01780-pbs-ola-pmaa-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Emek G. Durmusoglu; Yurdanur Turker; Havva Yagci Acar (2019): PbS-OLA/PMAA",
   "material": {
@@ -177,7 +177,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "amount": {
+          "value": 0.4,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.4 mmol",
+          "evidence": [
+            {
+              "source_id": "durmusoglu2019-acsanm-9b01780",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -223,6 +242,63 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "durmusoglu2019-acsanm-9b01780-pbs-ola-pmaa-1--oleylic-acid-ola",
+      "name": "oleylic acid (OLA)",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "durmusoglu2019-acsanm-9b01780",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "durmusoglu2019-acsanm-9b01780-pbs-ola-pmaa-1--toluene",
+      "name": "toluene",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 17.5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "17.5 mL",
+          "evidence": [
+            {
+              "source_id": "durmusoglu2019-acsanm-9b01780",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "durmusoglu2019-acsanm-9b01780",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -233,15 +309,24 @@
       "kind": "reaction_batch",
       "parent_ids": [
         "durmusoglu2019-acsanm-9b01780-pbs-ola-pmaa-1--pbcl2",
-        "durmusoglu2019-acsanm-9b01780-pbs-ola-pmaa-1--pmaa"
+        "durmusoglu2019-acsanm-9b01780-pbs-ola-pmaa-1--pmaa",
+        "durmusoglu2019-acsanm-9b01780-pbs-ola-pmaa-1--oleylic-acid-ola"
       ]
     },
     {
-      "id": "durmusoglu2019-acsanm-9b01780-pbs-ola-pmaa-1--after-s02-quench",
+      "id": "durmusoglu2019-acsanm-9b01780-pbs-ola-pmaa-1--after-d2-s02-purge",
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
         "durmusoglu2019-acsanm-9b01780-pbs-ola-pmaa-1--after-s01-dissolve"
+      ]
+    },
+    {
+      "id": "durmusoglu2019-acsanm-9b01780-pbs-ola-pmaa-1--after-s02-quench",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "durmusoglu2019-acsanm-9b01780-pbs-ola-pmaa-1--after-d2-s02-purge"
       ]
     },
     {
@@ -264,7 +349,8 @@
       "depends_on": [],
       "inputs": [
         "durmusoglu2019-acsanm-9b01780-pbs-ola-pmaa-1--pbcl2",
-        "durmusoglu2019-acsanm-9b01780-pbs-ola-pmaa-1--pmaa"
+        "durmusoglu2019-acsanm-9b01780-pbs-ola-pmaa-1--pmaa",
+        "durmusoglu2019-acsanm-9b01780-pbs-ola-pmaa-1--oleylic-acid-ola"
       ],
       "outputs": [
         "durmusoglu2019-acsanm-9b01780-pbs-ola-pmaa-1--after-s01-dissolve"
@@ -334,9 +420,9 @@
       ]
     },
     {
-      "id": "s02-quench",
-      "action": "quench",
-      "label": "Quench reaction",
+      "id": "d2-s02-purge",
+      "action": "purge",
+      "label": "Purge solution with argon",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -345,6 +431,68 @@
       ],
       "inputs": [
         "durmusoglu2019-acsanm-9b01780-pbs-ola-pmaa-1--after-s01-dissolve"
+      ],
+      "outputs": [
+        "durmusoglu2019-acsanm-9b01780-pbs-ola-pmaa-1--after-d2-s02-purge"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 120,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "120 °C",
+          "evidence": [
+            {
+              "source_id": "durmusoglu2019-acsanm-9b01780",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "durmusoglu2019-acsanm-9b01780",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Purge solution with argon",
+      "evidence": [
+        {
+          "source_id": "durmusoglu2019-acsanm-9b01780",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s02-quench",
+      "action": "quench",
+      "label": "Quench reaction",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-purge"
+      ],
+      "inputs": [
+        "durmusoglu2019-acsanm-9b01780-pbs-ola-pmaa-1--after-d2-s02-purge"
       ],
       "outputs": [
         "durmusoglu2019-acsanm-9b01780-pbs-ola-pmaa-1--after-s02-quench"
@@ -475,7 +623,8 @@
         }
       ],
       "notes": [
-        "Reactor: three-necked round-bottom ﬂask (Main PDF p.3)."
+        "Reactor: three-necked round-bottom ﬂask (Main PDF p.3).",
+        "Reaction time: 1 min (Main PDF p.?)."
       ]
     }
   ],
@@ -511,16 +660,47 @@
           "locator": "Main PDF p.4"
         }
       ]
+    },
+    {
+      "id": "durmusoglu2019-acsanm-9b01780-pbs-ola-pmaa-1--photoluminescence-peak",
+      "sample_id": "durmusoglu2019-acsanm-9b01780-pbs-ola-pmaa-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 859,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "859 nm",
+        "evidence": [
+          {
+            "source_id": "durmusoglu2019-acsanm-9b01780",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "durmusoglu2019-acsanm-9b01780",
+          "locator": "Main PDF p.4"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Reaction temperature not reported in the extracted text.",
-      "Reaction time not reported in the extracted text.",
-      "Amount of PMAA not reported in the extracted text."
+      "Amount of oleylic acid (OLA) not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "segets2012-nn303130d-pbse-small-qds-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Segets (2012): PbSe small QDs",
   "material": {
@@ -185,6 +185,44 @@
           "locator": "Main PDF p.10"
         }
       ]
+    },
+    {
+      "id": "segets2012-nn303130d-pbse-small-qds-2--selenium",
+      "name": "selenium",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "mass": {
+          "value": 1.185,
+          "minimum": null,
+          "maximum": null,
+          "unit": "g",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1.185 g",
+          "evidence": [
+            {
+              "source_id": "segets2012-nn303130d",
+              "locator": "Main PDF p.10"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "segets2012-nn303130d",
+          "locator": "Main PDF p.10"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -200,21 +238,32 @@
       ]
     },
     {
-      "id": "segets2012-nn303130d-pbse-small-qds-2--after-s02-precipitate",
+      "id": "segets2012-nn303130d-pbse-small-qds-2--after-d2-s02-inject",
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
         "segets2012-nn303130d-pbse-small-qds-2--after-s01-heat",
+        "segets2012-nn303130d-pbse-small-qds-2--trioctylphosphine",
+        "segets2012-nn303130d-pbse-small-qds-2--selenium"
+      ]
+    },
+    {
+      "id": "segets2012-nn303130d-pbse-small-qds-2--after-s02-precipitate",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "segets2012-nn303130d-pbse-small-qds-2--after-d2-s02-inject",
         "segets2012-nn303130d-pbse-small-qds-2--pbo",
         "segets2012-nn303130d-pbse-small-qds-2--oleic-acid",
         "segets2012-nn303130d-pbse-small-qds-2--1-octadecene",
         "segets2012-nn303130d-pbse-small-qds-2--trioctylphosphine",
-        "segets2012-nn303130d-pbse-small-qds-2--diphenylphosphine"
+        "segets2012-nn303130d-pbse-small-qds-2--diphenylphosphine",
+        "segets2012-nn303130d-pbse-small-qds-2--selenium"
       ]
     },
     {
       "id": "segets2012-nn303130d-pbse-small-qds-2--after-s03-centrifuge",
-      "name": "mixture after step 3",
+      "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
         "segets2012-nn303130d-pbse-small-qds-2--after-s02-precipitate",
@@ -222,7 +271,8 @@
         "segets2012-nn303130d-pbse-small-qds-2--oleic-acid",
         "segets2012-nn303130d-pbse-small-qds-2--1-octadecene",
         "segets2012-nn303130d-pbse-small-qds-2--trioctylphosphine",
-        "segets2012-nn303130d-pbse-small-qds-2--diphenylphosphine"
+        "segets2012-nn303130d-pbse-small-qds-2--diphenylphosphine",
+        "segets2012-nn303130d-pbse-small-qds-2--selenium"
       ]
     },
     {
@@ -235,7 +285,8 @@
         "segets2012-nn303130d-pbse-small-qds-2--oleic-acid",
         "segets2012-nn303130d-pbse-small-qds-2--1-octadecene",
         "segets2012-nn303130d-pbse-small-qds-2--trioctylphosphine",
-        "segets2012-nn303130d-pbse-small-qds-2--diphenylphosphine"
+        "segets2012-nn303130d-pbse-small-qds-2--diphenylphosphine",
+        "segets2012-nn303130d-pbse-small-qds-2--selenium"
       ]
     }
   ],
@@ -321,10 +372,10 @@
       ]
     },
     {
-      "id": "s02-precipitate",
-      "action": "precipitate",
-      "label": "Precipitate with ethanol",
-      "stage": "workup",
+      "id": "d2-s02-inject",
+      "action": "inject",
+      "label": "Inject TOP-Se solution",
+      "stage": "synthesis",
       "branch": "",
       "optional": false,
       "depends_on": [
@@ -332,11 +383,76 @@
       ],
       "inputs": [
         "segets2012-nn303130d-pbse-small-qds-2--after-s01-heat",
+        "segets2012-nn303130d-pbse-small-qds-2--trioctylphosphine",
+        "segets2012-nn303130d-pbse-small-qds-2--selenium"
+      ],
+      "outputs": [
+        "segets2012-nn303130d-pbse-small-qds-2--after-d2-s02-inject"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 155,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "155 °C",
+          "evidence": [
+            {
+              "source_id": "segets2012-nn303130d",
+              "locator": "Main PDF p.10"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "argon",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "segets2012-nn303130d",
+            "locator": "Main PDF p.10"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Inject TOP-Se solution",
+      "evidence": [
+        {
+          "source_id": "segets2012-nn303130d",
+          "locator": "Main PDF p.10"
+        }
+      ]
+    },
+    {
+      "id": "s02-precipitate",
+      "action": "precipitate",
+      "label": "Precipitate with ethanol",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-inject"
+      ],
+      "inputs": [
+        "segets2012-nn303130d-pbse-small-qds-2--after-d2-s02-inject",
         "segets2012-nn303130d-pbse-small-qds-2--pbo",
         "segets2012-nn303130d-pbse-small-qds-2--oleic-acid",
         "segets2012-nn303130d-pbse-small-qds-2--1-octadecene",
         "segets2012-nn303130d-pbse-small-qds-2--trioctylphosphine",
-        "segets2012-nn303130d-pbse-small-qds-2--diphenylphosphine"
+        "segets2012-nn303130d-pbse-small-qds-2--diphenylphosphine",
+        "segets2012-nn303130d-pbse-small-qds-2--selenium"
       ],
       "outputs": [
         "segets2012-nn303130d-pbse-small-qds-2--after-s02-precipitate"
@@ -398,7 +514,8 @@
         "segets2012-nn303130d-pbse-small-qds-2--oleic-acid",
         "segets2012-nn303130d-pbse-small-qds-2--1-octadecene",
         "segets2012-nn303130d-pbse-small-qds-2--trioctylphosphine",
-        "segets2012-nn303130d-pbse-small-qds-2--diphenylphosphine"
+        "segets2012-nn303130d-pbse-small-qds-2--diphenylphosphine",
+        "segets2012-nn303130d-pbse-small-qds-2--selenium"
       ],
       "outputs": [
         "segets2012-nn303130d-pbse-small-qds-2--after-s03-centrifuge"
@@ -460,7 +577,8 @@
         "segets2012-nn303130d-pbse-small-qds-2--oleic-acid",
         "segets2012-nn303130d-pbse-small-qds-2--1-octadecene",
         "segets2012-nn303130d-pbse-small-qds-2--trioctylphosphine",
-        "segets2012-nn303130d-pbse-small-qds-2--diphenylphosphine"
+        "segets2012-nn303130d-pbse-small-qds-2--diphenylphosphine",
+        "segets2012-nn303130d-pbse-small-qds-2--selenium"
       ],
       "outputs": [
         "segets2012-nn303130d-pbse-small-qds-2--after-s04-wash"
@@ -590,7 +708,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Reaction time not reported in the extracted text.",
       "Amount of PbO not reported in the extracted text.",

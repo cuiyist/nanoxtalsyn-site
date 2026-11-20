@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "morrison2014-cm5020702-pbs-quantum-platelets-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Paul J. Morrison; Richard A. Loomis; William E. Buhro (2014): PbS quantum platelets",
   "material": {
@@ -237,12 +237,69 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "morrison2014-cm5020702-pbs-quantum-platelets-1--toluene",
+      "name": "toluene",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "morrison2014-cm5020702",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "morrison2014-cm5020702-pbs-quantum-platelets-1--methanol",
+      "name": "methanol",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "morrison2014-cm5020702",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "morrison2014-cm5020702-pbs-quantum-platelets-1--pbs-qps",
+      "name": "PbS QPs",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "morrison2014-cm5020702",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
-      "id": "morrison2014-cm5020702-pbs-quantum-platelets-1--after-s01-heat",
+      "id": "morrison2014-cm5020702-pbs-quantum-platelets-1--after-d2-s01-dissolve",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": [
@@ -252,8 +309,19 @@
       ]
     },
     {
-      "id": "morrison2014-cm5020702-pbs-quantum-platelets-1--after-s02-inject",
+      "id": "morrison2014-cm5020702-pbs-quantum-platelets-1--after-s01-heat",
       "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "morrison2014-cm5020702-pbs-quantum-platelets-1--after-d2-s01-dissolve",
+        "morrison2014-cm5020702-pbs-quantum-platelets-1--pb-oac-23h2o",
+        "morrison2014-cm5020702-pbs-quantum-platelets-1--oleic-acid",
+        "morrison2014-cm5020702-pbs-quantum-platelets-1--n-octylamine"
+      ]
+    },
+    {
+      "id": "morrison2014-cm5020702-pbs-quantum-platelets-1--after-s02-inject",
+      "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
         "morrison2014-cm5020702-pbs-quantum-platelets-1--after-s01-heat",
@@ -262,15 +330,100 @@
       ]
     },
     {
+      "id": "morrison2014-cm5020702-pbs-quantum-platelets-1--after-d2-s04-stir",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "morrison2014-cm5020702-pbs-quantum-platelets-1--after-s02-inject",
+        "morrison2014-cm5020702-pbs-quantum-platelets-1--pb-oac-23h2o",
+        "morrison2014-cm5020702-pbs-quantum-platelets-1--oleic-acid",
+        "morrison2014-cm5020702-pbs-quantum-platelets-1--n-octylamine",
+        "morrison2014-cm5020702-pbs-quantum-platelets-1--thiourea"
+      ]
+    },
+    {
       "id": "morrison2014-cm5020702-pbs-quantum-platelets-1--after-s03-precipitate",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "morrison2014-cm5020702-pbs-quantum-platelets-1--after-d2-s04-stir",
+        "morrison2014-cm5020702-pbs-quantum-platelets-1--toluene",
+        "morrison2014-cm5020702-pbs-quantum-platelets-1--methanol"
+      ]
+    },
+    {
+      "id": "morrison2014-cm5020702-pbs-quantum-platelets-1--after-d2-s06-centrifuge",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "morrison2014-cm5020702-pbs-quantum-platelets-1--after-s02-inject"
+        "morrison2014-cm5020702-pbs-quantum-platelets-1--after-s03-precipitate",
+        "morrison2014-cm5020702-pbs-quantum-platelets-1--pbs-qps"
       ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-dissolve",
+      "action": "dissolve",
+      "label": "Pb(OAc)2·3H2O dissolved in OA and n-octylamine",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "morrison2014-cm5020702-pbs-quantum-platelets-1--pb-oac-23h2o",
+        "morrison2014-cm5020702-pbs-quantum-platelets-1--oleic-acid",
+        "morrison2014-cm5020702-pbs-quantum-platelets-1--n-octylamine"
+      ],
+      "outputs": [
+        "morrison2014-cm5020702-pbs-quantum-platelets-1--after-d2-s01-dissolve"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 h",
+          "evidence": [
+            {
+              "source_id": "morrison2014-cm5020702",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "morrison2014-cm5020702",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Pb(OAc)2·3H2O dissolved in OA and n-octylamine",
+      "evidence": [
+        {
+          "source_id": "morrison2014-cm5020702",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
     {
       "id": "s01-heat",
       "action": "heat",
@@ -278,8 +431,11 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
+      "depends_on": [
+        "d2-s01-dissolve"
+      ],
       "inputs": [
+        "morrison2014-cm5020702-pbs-quantum-platelets-1--after-d2-s01-dissolve",
         "morrison2014-cm5020702-pbs-quantum-platelets-1--pb-oac-23h2o",
         "morrison2014-cm5020702-pbs-quantum-platelets-1--oleic-acid",
         "morrison2014-cm5020702-pbs-quantum-platelets-1--n-octylamine"
@@ -398,6 +554,72 @@
       ]
     },
     {
+      "id": "d2-s04-stir",
+      "action": "stir",
+      "label": "Stir the mixture",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-inject"
+      ],
+      "inputs": [
+        "morrison2014-cm5020702-pbs-quantum-platelets-1--after-s02-inject",
+        "morrison2014-cm5020702-pbs-quantum-platelets-1--pb-oac-23h2o",
+        "morrison2014-cm5020702-pbs-quantum-platelets-1--oleic-acid",
+        "morrison2014-cm5020702-pbs-quantum-platelets-1--n-octylamine",
+        "morrison2014-cm5020702-pbs-quantum-platelets-1--thiourea"
+      ],
+      "outputs": [
+        "morrison2014-cm5020702-pbs-quantum-platelets-1--after-d2-s04-stir"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 12,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "12 min",
+          "evidence": [
+            {
+              "source_id": "morrison2014-cm5020702",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "morrison2014-cm5020702",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Stir the mixture",
+      "evidence": [
+        {
+          "source_id": "morrison2014-cm5020702",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
       "id": "s03-precipitate",
       "action": "precipitate",
       "label": "PbS QPs precipitated with toluene:methanol mixture",
@@ -405,10 +627,12 @@
       "branch": "",
       "optional": false,
       "depends_on": [
-        "s02-inject"
+        "d2-s04-stir"
       ],
       "inputs": [
-        "morrison2014-cm5020702-pbs-quantum-platelets-1--after-s02-inject"
+        "morrison2014-cm5020702-pbs-quantum-platelets-1--after-d2-s04-stir",
+        "morrison2014-cm5020702-pbs-quantum-platelets-1--toluene",
+        "morrison2014-cm5020702-pbs-quantum-platelets-1--methanol"
       ],
       "outputs": [
         "morrison2014-cm5020702-pbs-quantum-platelets-1--after-s03-precipitate"
@@ -434,6 +658,45 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s06-centrifuge",
+      "action": "centrifuge",
+      "label": "Separation of QPs from unreacted precursor and solvent",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-precipitate"
+      ],
+      "inputs": [
+        "morrison2014-cm5020702-pbs-quantum-platelets-1--after-s03-precipitate",
+        "morrison2014-cm5020702-pbs-quantum-platelets-1--pbs-qps"
+      ],
+      "outputs": [
+        "morrison2014-cm5020702-pbs-quantum-platelets-1--after-d2-s06-centrifuge"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Separation of QPs from unreacted precursor and solvent",
+      "evidence": [
+        {
+          "source_id": "morrison2014-cm5020702",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -442,7 +705,7 @@
       "sample_id": "morrison2014-cm5020702-pbs-quantum-platelets-1--product",
       "source_sample_label": "PbS quantum platelets",
       "batch_id": null,
-      "material_state_id": "morrison2014-cm5020702-pbs-quantum-platelets-1--after-s03-precipitate",
+      "material_state_id": "morrison2014-cm5020702-pbs-quantum-platelets-1--after-d2-s06-centrifuge",
       "parent_sample_id": null,
       "composition": {
         "value": "PbS",
@@ -534,9 +797,12 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
-      "Phase not reported in the extracted text."
+      "Phase not reported in the extracted text.",
+      "Amount of toluene not reported in the extracted text.",
+      "Amount of methanol not reported in the extracted text.",
+      "Amount of PbS QPs not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

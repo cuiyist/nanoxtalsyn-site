@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "huynh1999-sici-1521-4095-199908-11-11-92-8-13-nm-cdse-nanocrystal-rods-p3ht-compo-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Wendy U. Huynh; Xiaogang Peng; A. Paul Alivisatos (1999): 8 × 13 nm CdSe nanocrystal rods/P3HT composite",
   "material": {
@@ -166,12 +166,69 @@
           "locator": "Main PDF p.5"
         }
       ]
+    },
+    {
+      "id": "huynh1999-sici-1521-4095-199908-11-11-92-8-13-nm-cdse-nanocrystal-rods-p3ht-compo-1--pyridine",
+      "name": "pyridine",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "huynh1999-sici-1521-4095-199908-11-11-92",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    },
+    {
+      "id": "huynh1999-sici-1521-4095-199908-11-11-92-8-13-nm-cdse-nanocrystal-rods-p3ht-compo-1--hexanes",
+      "name": "hexanes",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "huynh1999-sici-1521-4095-199908-11-11-92",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    },
+    {
+      "id": "huynh1999-sici-1521-4095-199908-11-11-92-8-13-nm-cdse-nanocrystal-rods-p3ht-compo-1--chloroform",
+      "name": "chloroform",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "huynh1999-sici-1521-4095-199908-11-11-92",
+          "locator": "Main PDF p.5"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
-      "id": "huynh1999-sici-1521-4095-199908-11-11-92-8-13-nm-cdse-nanocrystal-rods-p3ht-compo-1--after-s01-heat",
+      "id": "huynh1999-sici-1521-4095-199908-11-11-92-8-13-nm-cdse-nanocrystal-rods-p3ht-compo-1--after-d2-s01-heat",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": [
@@ -182,8 +239,20 @@
       ]
     },
     {
-      "id": "huynh1999-sici-1521-4095-199908-11-11-92-8-13-nm-cdse-nanocrystal-rods-p3ht-compo-1--after-s02-wash",
+      "id": "huynh1999-sici-1521-4095-199908-11-11-92-8-13-nm-cdse-nanocrystal-rods-p3ht-compo-1--after-s01-heat",
       "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "huynh1999-sici-1521-4095-199908-11-11-92-8-13-nm-cdse-nanocrystal-rods-p3ht-compo-1--after-d2-s01-heat",
+        "huynh1999-sici-1521-4095-199908-11-11-92-8-13-nm-cdse-nanocrystal-rods-p3ht-compo-1--dimethylcadmium",
+        "huynh1999-sici-1521-4095-199908-11-11-92-8-13-nm-cdse-nanocrystal-rods-p3ht-compo-1--selenium",
+        "huynh1999-sici-1521-4095-199908-11-11-92-8-13-nm-cdse-nanocrystal-rods-p3ht-compo-1--tributylphosphine",
+        "huynh1999-sici-1521-4095-199908-11-11-92-8-13-nm-cdse-nanocrystal-rods-p3ht-compo-1--trioctylphosphine-oxide-topo"
+      ]
+    },
+    {
+      "id": "huynh1999-sici-1521-4095-199908-11-11-92-8-13-nm-cdse-nanocrystal-rods-p3ht-compo-1--after-s02-wash",
+      "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
         "huynh1999-sici-1521-4095-199908-11-11-92-8-13-nm-cdse-nanocrystal-rods-p3ht-compo-1--after-s01-heat"
@@ -191,18 +260,20 @@
     },
     {
       "id": "huynh1999-sici-1521-4095-199908-11-11-92-8-13-nm-cdse-nanocrystal-rods-p3ht-compo-1--after-s03-dissolve",
-      "name": "mixture after step 3",
+      "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
-        "huynh1999-sici-1521-4095-199908-11-11-92-8-13-nm-cdse-nanocrystal-rods-p3ht-compo-1--after-s02-wash"
+        "huynh1999-sici-1521-4095-199908-11-11-92-8-13-nm-cdse-nanocrystal-rods-p3ht-compo-1--after-s02-wash",
+        "huynh1999-sici-1521-4095-199908-11-11-92-8-13-nm-cdse-nanocrystal-rods-p3ht-compo-1--pyridine"
       ]
     },
     {
       "id": "huynh1999-sici-1521-4095-199908-11-11-92-8-13-nm-cdse-nanocrystal-rods-p3ht-compo-1--after-s04-precipitate",
-      "name": "mixture after step 4",
+      "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
-        "huynh1999-sici-1521-4095-199908-11-11-92-8-13-nm-cdse-nanocrystal-rods-p3ht-compo-1--after-s03-dissolve"
+        "huynh1999-sici-1521-4095-199908-11-11-92-8-13-nm-cdse-nanocrystal-rods-p3ht-compo-1--after-s03-dissolve",
+        "huynh1999-sici-1521-4095-199908-11-11-92-8-13-nm-cdse-nanocrystal-rods-p3ht-compo-1--hexanes"
       ]
     },
     {
@@ -210,11 +281,70 @@
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "huynh1999-sici-1521-4095-199908-11-11-92-8-13-nm-cdse-nanocrystal-rods-p3ht-compo-1--after-s04-precipitate"
+        "huynh1999-sici-1521-4095-199908-11-11-92-8-13-nm-cdse-nanocrystal-rods-p3ht-compo-1--after-s04-precipitate",
+        "huynh1999-sici-1521-4095-199908-11-11-92-8-13-nm-cdse-nanocrystal-rods-p3ht-compo-1--chloroform"
       ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-heat",
+      "action": "heat",
+      "label": "Heating at 340 °C",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "huynh1999-sici-1521-4095-199908-11-11-92-8-13-nm-cdse-nanocrystal-rods-p3ht-compo-1--dimethylcadmium",
+        "huynh1999-sici-1521-4095-199908-11-11-92-8-13-nm-cdse-nanocrystal-rods-p3ht-compo-1--selenium",
+        "huynh1999-sici-1521-4095-199908-11-11-92-8-13-nm-cdse-nanocrystal-rods-p3ht-compo-1--tributylphosphine",
+        "huynh1999-sici-1521-4095-199908-11-11-92-8-13-nm-cdse-nanocrystal-rods-p3ht-compo-1--trioctylphosphine-oxide-topo"
+      ],
+      "outputs": [
+        "huynh1999-sici-1521-4095-199908-11-11-92-8-13-nm-cdse-nanocrystal-rods-p3ht-compo-1--after-d2-s01-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 340,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "340 °C",
+          "evidence": [
+            {
+              "source_id": "huynh1999-sici-1521-4095-199908-11-11-92",
+              "locator": "Main PDF p.5"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heating at 340 °C",
+      "evidence": [
+        {
+          "source_id": "huynh1999-sici-1521-4095-199908-11-11-92",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    },
     {
       "id": "s01-heat",
       "action": "heat",
@@ -222,8 +352,11 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
+      "depends_on": [
+        "d2-s01-heat"
+      ],
       "inputs": [
+        "huynh1999-sici-1521-4095-199908-11-11-92-8-13-nm-cdse-nanocrystal-rods-p3ht-compo-1--after-d2-s01-heat",
         "huynh1999-sici-1521-4095-199908-11-11-92-8-13-nm-cdse-nanocrystal-rods-p3ht-compo-1--dimethylcadmium",
         "huynh1999-sici-1521-4095-199908-11-11-92-8-13-nm-cdse-nanocrystal-rods-p3ht-compo-1--selenium",
         "huynh1999-sici-1521-4095-199908-11-11-92-8-13-nm-cdse-nanocrystal-rods-p3ht-compo-1--tributylphosphine",
@@ -322,7 +455,8 @@
         "s02-wash"
       ],
       "inputs": [
-        "huynh1999-sici-1521-4095-199908-11-11-92-8-13-nm-cdse-nanocrystal-rods-p3ht-compo-1--after-s02-wash"
+        "huynh1999-sici-1521-4095-199908-11-11-92-8-13-nm-cdse-nanocrystal-rods-p3ht-compo-1--after-s02-wash",
+        "huynh1999-sici-1521-4095-199908-11-11-92-8-13-nm-cdse-nanocrystal-rods-p3ht-compo-1--pyridine"
       ],
       "outputs": [
         "huynh1999-sici-1521-4095-199908-11-11-92-8-13-nm-cdse-nanocrystal-rods-p3ht-compo-1--after-s03-dissolve"
@@ -360,7 +494,8 @@
         "s03-dissolve"
       ],
       "inputs": [
-        "huynh1999-sici-1521-4095-199908-11-11-92-8-13-nm-cdse-nanocrystal-rods-p3ht-compo-1--after-s03-dissolve"
+        "huynh1999-sici-1521-4095-199908-11-11-92-8-13-nm-cdse-nanocrystal-rods-p3ht-compo-1--after-s03-dissolve",
+        "huynh1999-sici-1521-4095-199908-11-11-92-8-13-nm-cdse-nanocrystal-rods-p3ht-compo-1--hexanes"
       ],
       "outputs": [
         "huynh1999-sici-1521-4095-199908-11-11-92-8-13-nm-cdse-nanocrystal-rods-p3ht-compo-1--after-s04-precipitate"
@@ -398,7 +533,8 @@
         "s04-precipitate"
       ],
       "inputs": [
-        "huynh1999-sici-1521-4095-199908-11-11-92-8-13-nm-cdse-nanocrystal-rods-p3ht-compo-1--after-s04-precipitate"
+        "huynh1999-sici-1521-4095-199908-11-11-92-8-13-nm-cdse-nanocrystal-rods-p3ht-compo-1--after-s04-precipitate",
+        "huynh1999-sici-1521-4095-199908-11-11-92-8-13-nm-cdse-nanocrystal-rods-p3ht-compo-1--chloroform"
       ],
       "outputs": [
         "huynh1999-sici-1521-4095-199908-11-11-92-8-13-nm-cdse-nanocrystal-rods-p3ht-compo-1--after-s05-dissolve"
@@ -525,7 +661,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Reactor not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
@@ -534,7 +670,11 @@
       "Amount of dimethylcadmium not reported in the extracted text.",
       "Amount of selenium not reported in the extracted text.",
       "Amount of tributylphosphine not reported in the extracted text.",
-      "Amount of trioctylphosphine oxide (TOPO) not reported in the extracted text."
+      "Amount of trioctylphosphine oxide (TOPO) not reported in the extracted text.",
+      "Amount of CdSe not reported in the extracted text.",
+      "Amount of pyridine not reported in the extracted text.",
+      "Amount of hexanes not reported in the extracted text.",
+      "Amount of chloroform not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

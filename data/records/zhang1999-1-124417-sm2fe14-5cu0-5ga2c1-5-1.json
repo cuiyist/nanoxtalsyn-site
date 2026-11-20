@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "zhang1999-1-124417-sm2fe14-5cu0-5ga2c1-5-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Shao-ying Zhang (1999): Sm2Fe14.5Cu0.5Ga2C1.5",
   "material": {
@@ -173,15 +173,240 @@
   "stocks": [],
   "material_states": [
     {
+      "id": "zhang1999-1-124417-sm2fe14-5cu0-5ga2c1-5-1--after-d2-s01-melt",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zhang1999-1-124417-sm2fe14-5cu0-5ga2c1-5-1--fe",
+        "zhang1999-1-124417-sm2fe14-5cu0-5ga2c1-5-1--c"
+      ]
+    },
+    {
+      "id": "zhang1999-1-124417-sm2fe14-5cu0-5ga2c1-5-1--after-d2-s02-arc-melt",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zhang1999-1-124417-sm2fe14-5cu0-5ga2c1-5-1--after-d2-s01-melt",
+        "zhang1999-1-124417-sm2fe14-5cu0-5ga2c1-5-1--sm",
+        "zhang1999-1-124417-sm2fe14-5cu0-5ga2c1-5-1--fe",
+        "zhang1999-1-124417-sm2fe14-5cu0-5ga2c1-5-1--cu",
+        "zhang1999-1-124417-sm2fe14-5cu0-5ga2c1-5-1--ga",
+        "zhang1999-1-124417-sm2fe14-5cu0-5ga2c1-5-1--c"
+      ]
+    },
+    {
+      "id": "zhang1999-1-124417-sm2fe14-5cu0-5ga2c1-5-1--after-d2-s03-remelt",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zhang1999-1-124417-sm2fe14-5cu0-5ga2c1-5-1--after-d2-s02-arc-melt"
+      ]
+    },
+    {
+      "id": "zhang1999-1-124417-sm2fe14-5cu0-5ga2c1-5-1--after-d2-s04-melt-spin",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zhang1999-1-124417-sm2fe14-5cu0-5ga2c1-5-1--after-d2-s03-remelt",
+        "zhang1999-1-124417-sm2fe14-5cu0-5ga2c1-5-1--sm",
+        "zhang1999-1-124417-sm2fe14-5cu0-5ga2c1-5-1--fe",
+        "zhang1999-1-124417-sm2fe14-5cu0-5ga2c1-5-1--cu",
+        "zhang1999-1-124417-sm2fe14-5cu0-5ga2c1-5-1--ga",
+        "zhang1999-1-124417-sm2fe14-5cu0-5ga2c1-5-1--c"
+      ]
+    },
+    {
       "id": "zhang1999-1-124417-sm2fe14-5cu0-5ga2c1-5-1--after-s01-anneal",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
+        "zhang1999-1-124417-sm2fe14-5cu0-5ga2c1-5-1--after-d2-s04-melt-spin",
         "zhang1999-1-124417-sm2fe14-5cu0-5ga2c1-5-1--sm"
       ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-melt",
+      "action": "melt",
+      "label": "Fe and C melted to form Fe–C prealloy",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "zhang1999-1-124417-sm2fe14-5cu0-5ga2c1-5-1--fe",
+        "zhang1999-1-124417-sm2fe14-5cu0-5ga2c1-5-1--c"
+      ],
+      "outputs": [
+        "zhang1999-1-124417-sm2fe14-5cu0-5ga2c1-5-1--after-d2-s01-melt"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "argon",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zhang1999-1-124417",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Fe and C melted to form Fe–C prealloy",
+      "evidence": [
+        {
+          "source_id": "zhang1999-1-124417",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s02-arc-melt",
+      "action": "arc melt",
+      "label": "Sm, Fe, Cu, Ga, and Fe–C prealloy arc melted",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s01-melt"
+      ],
+      "inputs": [
+        "zhang1999-1-124417-sm2fe14-5cu0-5ga2c1-5-1--after-d2-s01-melt",
+        "zhang1999-1-124417-sm2fe14-5cu0-5ga2c1-5-1--sm",
+        "zhang1999-1-124417-sm2fe14-5cu0-5ga2c1-5-1--fe",
+        "zhang1999-1-124417-sm2fe14-5cu0-5ga2c1-5-1--cu",
+        "zhang1999-1-124417-sm2fe14-5cu0-5ga2c1-5-1--ga",
+        "zhang1999-1-124417-sm2fe14-5cu0-5ga2c1-5-1--c"
+      ],
+      "outputs": [
+        "zhang1999-1-124417-sm2fe14-5cu0-5ga2c1-5-1--after-d2-s02-arc-melt"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "argon",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zhang1999-1-124417",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Sm, Fe, Cu, Ga, and Fe–C prealloy arc melted",
+      "evidence": [
+        {
+          "source_id": "zhang1999-1-124417",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s03-remelt",
+      "action": "remelt",
+      "label": "Ingots remelted for homogeneity",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-arc-melt"
+      ],
+      "inputs": [
+        "zhang1999-1-124417-sm2fe14-5cu0-5ga2c1-5-1--after-d2-s02-arc-melt"
+      ],
+      "outputs": [
+        "zhang1999-1-124417-sm2fe14-5cu0-5ga2c1-5-1--after-d2-s03-remelt"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "argon",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zhang1999-1-124417",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Ingots remelted for homogeneity",
+      "evidence": [
+        {
+          "source_id": "zhang1999-1-124417",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s04-melt-spin",
+      "action": "melt spin",
+      "label": "Melt spinning on copper wheel",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-remelt"
+      ],
+      "inputs": [
+        "zhang1999-1-124417-sm2fe14-5cu0-5ga2c1-5-1--after-d2-s03-remelt",
+        "zhang1999-1-124417-sm2fe14-5cu0-5ga2c1-5-1--sm",
+        "zhang1999-1-124417-sm2fe14-5cu0-5ga2c1-5-1--fe",
+        "zhang1999-1-124417-sm2fe14-5cu0-5ga2c1-5-1--cu",
+        "zhang1999-1-124417-sm2fe14-5cu0-5ga2c1-5-1--ga",
+        "zhang1999-1-124417-sm2fe14-5cu0-5ga2c1-5-1--c"
+      ],
+      "outputs": [
+        "zhang1999-1-124417-sm2fe14-5cu0-5ga2c1-5-1--after-d2-s04-melt-spin"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "argon",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zhang1999-1-124417",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Melt spinning on copper wheel",
+      "evidence": [
+        {
+          "source_id": "zhang1999-1-124417",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
     {
       "id": "s01-anneal",
       "action": "anneal",
@@ -189,8 +414,11 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
+      "depends_on": [
+        "d2-s04-melt-spin"
+      ],
       "inputs": [
+        "zhang1999-1-124417-sm2fe14-5cu0-5ga2c1-5-1--after-d2-s04-melt-spin",
         "zhang1999-1-124417-sm2fe14-5cu0-5ga2c1-5-1--sm"
       ],
       "outputs": [
@@ -292,7 +520,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "zhou2011-nn2024896-zns-mn-qds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Weibin Zhou; François Baneyx (2011): ZnS:Mn QDs",
   "material": {
@@ -205,18 +205,143 @@
           "locator": "Main PDF p.5"
         }
       ]
+    },
+    {
+      "id": "zhou2011-nn2024896-zns-mn-qds-1--nh4oh",
+      "name": "NH4OH",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zhou2011-nn2024896",
+          "locator": "Main PDF p.5"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
+      "id": "zhou2011-nn2024896-zns-mn-qds-1--after-d2-s01-dissolve",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zhou2011-nn2024896-zns-mn-qds-1--zn-ch3coo-2",
+        "zhou2011-nn2024896-zns-mn-qds-1--mn-ch3coo-2"
+      ]
+    },
+    {
+      "id": "zhou2011-nn2024896-zns-mn-qds-1--after-d2-s02-adjust-ph",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zhou2011-nn2024896-zns-mn-qds-1--after-d2-s01-dissolve",
+        "zhou2011-nn2024896-zns-mn-qds-1--nh4oh"
+      ]
+    },
+    {
       "id": "zhou2011-nn2024896-zns-mn-qds-1--after-s01-incubate",
       "name": "product as isolated",
       "kind": "product",
-      "parent_ids": []
+      "parent_ids": [
+        "zhou2011-nn2024896-zns-mn-qds-1--after-d2-s02-adjust-ph"
+      ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-dissolve",
+      "action": "dissolve",
+      "label": "Dissolve",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "zhou2011-nn2024896-zns-mn-qds-1--zn-ch3coo-2",
+        "zhou2011-nn2024896-zns-mn-qds-1--mn-ch3coo-2"
+      ],
+      "outputs": [
+        "zhou2011-nn2024896-zns-mn-qds-1--after-d2-s01-dissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zhou2011-nn2024896",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dissolve",
+      "evidence": [
+        {
+          "source_id": "zhou2011-nn2024896",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    },
+    {
+      "id": "d2-s02-adjust-ph",
+      "action": "adjust ph",
+      "label": "Adjust pH",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s01-dissolve"
+      ],
+      "inputs": [
+        "zhou2011-nn2024896-zns-mn-qds-1--after-d2-s01-dissolve",
+        "zhou2011-nn2024896-zns-mn-qds-1--nh4oh"
+      ],
+      "outputs": [
+        "zhou2011-nn2024896-zns-mn-qds-1--after-d2-s02-adjust-ph"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zhou2011-nn2024896",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Adjust pH",
+      "evidence": [
+        {
+          "source_id": "zhou2011-nn2024896",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    },
     {
       "id": "s01-incubate",
       "action": "incubate",
@@ -224,8 +349,12 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s02-adjust-ph"
+      ],
+      "inputs": [
+        "zhou2011-nn2024896-zns-mn-qds-1--after-d2-s02-adjust-ph"
+      ],
       "outputs": [
         "zhou2011-nn2024896-zns-mn-qds-1--after-s01-incubate"
       ],
@@ -392,17 +521,50 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "zhou2011-nn2024896-zns-mn-qds-1--photoluminescence-peak",
+      "sample_id": "zhou2011-nn2024896-zns-mn-qds-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 590,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "590 nm",
+        "evidence": [
+          {
+            "source_id": "zhou2011-nn2024896",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "zhou2011-nn2024896",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Amount of Zn(CH3COO)2 not reported in the extracted text.",
       "Amount of Mn(CH3COO)2 not reported in the extracted text.",
       "Amount of BB-TrxA::CT43 not reported in the extracted text.",
-      "Amount of Na2S not reported in the extracted text."
+      "Amount of Na2S not reported in the extracted text.",
+      "Amount of NH4OH not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

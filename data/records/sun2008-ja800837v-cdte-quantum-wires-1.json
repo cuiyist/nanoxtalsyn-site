@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "sun2008-ja800837v-cdte-quantum-wires-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Jianwei Sun; Lin-Wang Wang; William E. Buhro (2008): CdTe quantum wires",
   "material": {
@@ -139,7 +139,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "mass": {
+          "value": 4,
+          "minimum": null,
+          "maximum": null,
+          "unit": "g",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "4 g",
+          "evidence": [
+            {
+              "source_id": "sun2008-ja800837v",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -185,6 +204,82 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "sun2008-ja800837v-cdte-quantum-wires-1--topte",
+      "name": "TOPTe",
+      "formula": null,
+      "role": "nonmetal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 0.02,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.02 mmol",
+          "evidence": [
+            {
+              "source_id": "sun2008-ja800837v",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "sun2008-ja800837v",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "sun2008-ja800837v-cdte-quantum-wires-1--toluene",
+      "name": "toluene",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "sun2008-ja800837v",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "sun2008-ja800837v-cdte-quantum-wires-1--2-propanol",
+      "name": "2-propanol",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "sun2008-ja800837v",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -200,7 +295,7 @@
       ]
     },
     {
-      "id": "sun2008-ja800837v-cdte-quantum-wires-1--after-s02-inject",
+      "id": "sun2008-ja800837v-cdte-quantum-wires-1--after-d2-s02-mix",
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
@@ -210,11 +305,31 @@
       ]
     },
     {
-      "id": "sun2008-ja800837v-cdte-quantum-wires-1--after-s03-add",
+      "id": "sun2008-ja800837v-cdte-quantum-wires-1--after-s02-inject",
       "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
-        "sun2008-ja800837v-cdte-quantum-wires-1--after-s02-inject"
+        "sun2008-ja800837v-cdte-quantum-wires-1--after-d2-s02-mix",
+        "sun2008-ja800837v-cdte-quantum-wires-1--bi-nanoparticle-stock-solution",
+        "sun2008-ja800837v-cdte-quantum-wires-1--topte-stock-solution"
+      ]
+    },
+    {
+      "id": "sun2008-ja800837v-cdte-quantum-wires-1--after-s03-add",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "sun2008-ja800837v-cdte-quantum-wires-1--after-s02-inject",
+        "sun2008-ja800837v-cdte-quantum-wires-1--toluene"
+      ]
+    },
+    {
+      "id": "sun2008-ja800837v-cdte-quantum-wires-1--after-d2-s05-precipitate",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "sun2008-ja800837v-cdte-quantum-wires-1--after-s03-add",
+        "sun2008-ja800837v-cdte-quantum-wires-1--2-propanol"
       ]
     },
     {
@@ -222,7 +337,7 @@
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "sun2008-ja800837v-cdte-quantum-wires-1--after-s03-add"
+        "sun2008-ja800837v-cdte-quantum-wires-1--after-d2-s05-precipitate"
       ]
     }
   ],
@@ -271,9 +386,9 @@
       ]
     },
     {
-      "id": "s02-inject",
-      "action": "inject",
-      "label": "Contents of the vial injected into the reaction tube",
+      "id": "d2-s02-mix",
+      "action": "mix",
+      "label": "Bi nanoparticle stock solution and TOPTe stock solution mixed in a vial",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -282,6 +397,51 @@
       ],
       "inputs": [
         "sun2008-ja800837v-cdte-quantum-wires-1--after-s01-load",
+        "sun2008-ja800837v-cdte-quantum-wires-1--bi-nanoparticle-stock-solution",
+        "sun2008-ja800837v-cdte-quantum-wires-1--topte-stock-solution"
+      ],
+      "outputs": [
+        "sun2008-ja800837v-cdte-quantum-wires-1--after-d2-s02-mix"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "sun2008-ja800837v",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Bi nanoparticle stock solution and TOPTe stock solution mixed in a vial",
+      "evidence": [
+        {
+          "source_id": "sun2008-ja800837v",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-inject",
+      "action": "inject",
+      "label": "Contents of the vial injected into the reaction tube",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-mix"
+      ],
+      "inputs": [
+        "sun2008-ja800837v-cdte-quantum-wires-1--after-d2-s02-mix",
         "sun2008-ja800837v-cdte-quantum-wires-1--bi-nanoparticle-stock-solution",
         "sun2008-ja800837v-cdte-quantum-wires-1--topte-stock-solution"
       ],
@@ -326,7 +486,8 @@
         "s02-inject"
       ],
       "inputs": [
-        "sun2008-ja800837v-cdte-quantum-wires-1--after-s02-inject"
+        "sun2008-ja800837v-cdte-quantum-wires-1--after-s02-inject",
+        "sun2008-ja800837v-cdte-quantum-wires-1--toluene"
       ],
       "outputs": [
         "sun2008-ja800837v-cdte-quantum-wires-1--after-s03-add"
@@ -359,9 +520,9 @@
       ]
     },
     {
-      "id": "s04-centrifuge",
-      "action": "centrifuge",
-      "label": "Precipitated wires collected by centrifugation",
+      "id": "d2-s05-precipitate",
+      "action": "precipitate",
+      "label": "Nanowires precipitated by adding 2-propanol",
       "stage": "workup",
       "branch": "",
       "optional": false,
@@ -369,7 +530,46 @@
         "s03-add"
       ],
       "inputs": [
-        "sun2008-ja800837v-cdte-quantum-wires-1--after-s03-add"
+        "sun2008-ja800837v-cdte-quantum-wires-1--after-s03-add",
+        "sun2008-ja800837v-cdte-quantum-wires-1--2-propanol"
+      ],
+      "outputs": [
+        "sun2008-ja800837v-cdte-quantum-wires-1--after-d2-s05-precipitate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Nanowires precipitated by adding 2-propanol",
+      "evidence": [
+        {
+          "source_id": "sun2008-ja800837v",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s04-centrifuge",
+      "action": "centrifuge",
+      "label": "Precipitated wires collected by centrifugation",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s05-precipitate"
+      ],
+      "inputs": [
+        "sun2008-ja800837v-cdte-quantum-wires-1--after-d2-s05-precipitate"
       ],
       "outputs": [
         "sun2008-ja800837v-cdte-quantum-wires-1--after-s04-centrifuge"
@@ -458,7 +658,8 @@
       ],
       "notes": [
         "Reactor: Schlenk reaction tube (Main PDF p.2).",
-        "Reaction time: 5 min (Main PDF p.2)."
+        "Reaction time: 5 min (Main PDF p.2).",
+        "Reaction temperature: 300 degC (Main PDF p.?)."
       ]
     }
   ],
@@ -499,14 +700,15 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
-      "Reaction temperature not reported in the extracted text.",
       "Amount of CdO not reported in the extracted text.",
       "Amount of ODPA not reported in the extracted text.",
-      "Amount of TOPO not reported in the extracted text.",
       "Amount of Bi nanoparticle stock solution not reported in the extracted text.",
-      "Amount of TOPTe stock solution not reported in the extracted text."
+      "Amount of TOPTe stock solution not reported in the extracted text.",
+      "Amount of TOPTe stock solution not reported in the extracted text.",
+      "Amount of toluene not reported in the extracted text.",
+      "Amount of 2-propanol not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

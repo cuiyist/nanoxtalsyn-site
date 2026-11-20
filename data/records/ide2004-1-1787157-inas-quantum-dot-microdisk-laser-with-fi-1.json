@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "ide2004-1-1787157-inas-quantum-dot-microdisk-laser-with-fi-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Toshihide Ide et al. (2004): InAs quantum-dot microdisk laser with five-stacked InAs quantum-dot active region",
   "material": {
@@ -85,7 +85,7 @@
       "id": "ide2004-1-1787157-inas-quantum-dot-microdisk-laser-with-fi-1--inas",
       "name": "InAs",
       "formula": null,
-      "role": "reagent",
+      "role": "grown_layer",
       "stage": "synthesis",
       "identity": {
         "pubchem_cid": null,
@@ -123,7 +123,7 @@
       "id": "ide2004-1-1787157-inas-quantum-dot-microdisk-laser-with-fi-1--gaas",
       "name": "GaAs",
       "formula": null,
-      "role": "reagent",
+      "role": "substrate",
       "stage": "synthesis",
       "identity": {
         "pubchem_cid": null,
@@ -216,12 +216,28 @@
     },
     {
       "id": "ide2004-1-1787157-inas-quantum-dot-microdisk-laser-with-fi-1--after-s05-grow",
-      "name": "product as isolated",
-      "kind": "product",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
       "parent_ids": [
         "ide2004-1-1787157-inas-quantum-dot-microdisk-laser-with-fi-1--after-s04-grow",
         "ide2004-1-1787157-inas-quantum-dot-microdisk-laser-with-fi-1--gaas",
         "ide2004-1-1787157-inas-quantum-dot-microdisk-laser-with-fi-1--al0-1ga0-9as"
+      ]
+    },
+    {
+      "id": "ide2004-1-1787157-inas-quantum-dot-microdisk-laser-with-fi-1--after-d2-s06-form",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "ide2004-1-1787157-inas-quantum-dot-microdisk-laser-with-fi-1--after-s05-grow"
+      ]
+    },
+    {
+      "id": "ide2004-1-1787157-inas-quantum-dot-microdisk-laser-with-fi-1--after-d2-s07-etch",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "ide2004-1-1787157-inas-quantum-dot-microdisk-laser-with-fi-1--after-d2-s06-form"
       ]
     }
   ],
@@ -475,6 +491,82 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s06-form",
+      "action": "form",
+      "label": "Form circular mesa using electron-beam lithography and etching",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s05-grow"
+      ],
+      "inputs": [
+        "ide2004-1-1787157-inas-quantum-dot-microdisk-laser-with-fi-1--after-s05-grow"
+      ],
+      "outputs": [
+        "ide2004-1-1787157-inas-quantum-dot-microdisk-laser-with-fi-1--after-d2-s06-form"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Form circular mesa using electron-beam lithography and etching",
+      "evidence": [
+        {
+          "source_id": "ide2004-1-1787157",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s07-etch",
+      "action": "etch",
+      "label": "Form disk shape and pedestal using HF etching",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s06-form"
+      ],
+      "inputs": [
+        "ide2004-1-1787157-inas-quantum-dot-microdisk-laser-with-fi-1--after-d2-s06-form"
+      ],
+      "outputs": [
+        "ide2004-1-1787157-inas-quantum-dot-microdisk-laser-with-fi-1--after-d2-s07-etch"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Form disk shape and pedestal using HF etching",
+      "evidence": [
+        {
+          "source_id": "ide2004-1-1787157",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -483,7 +575,7 @@
       "sample_id": "ide2004-1-1787157-inas-quantum-dot-microdisk-laser-with-fi-1--product",
       "source_sample_label": "InAs quantum-dot microdisk laser with five-stacked InAs quantum-dot active region",
       "batch_id": null,
-      "material_state_id": "ide2004-1-1787157-inas-quantum-dot-microdisk-laser-with-fi-1--after-s05-grow",
+      "material_state_id": "ide2004-1-1787157-inas-quantum-dot-microdisk-laser-with-fi-1--after-d2-s07-etch",
       "parent_sample_id": null,
       "composition": {
         "value": "InAs",
@@ -563,7 +655,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",

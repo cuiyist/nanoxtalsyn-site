@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "unspecified2015-cm503611q-cdse-qds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Jinkyu Han et al. (2015): CdSe QDs",
   "material": {
@@ -200,7 +200,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "mass": {
+          "value": 3.88,
+          "minimum": null,
+          "maximum": null,
+          "unit": "g",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "3.88 g",
+          "evidence": [
+            {
+              "source_id": "unspecified2015-cm503611q",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -246,6 +265,44 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "unspecified2015-cm503611q-cdse-qds-1--tributylphosphine-tbp",
+      "name": "tributylphosphine (TBP)",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "unspecified2015-cm503611q",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "unspecified2015-cm503611q-cdse-qds-1--dioctylamine-doa",
+      "name": "dioctylamine (DOA)",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "unspecified2015-cm503611q",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -256,7 +313,9 @@
       "kind": "reaction_batch",
       "parent_ids": [
         "unspecified2015-cm503611q-cdse-qds-1--cdo",
-        "unspecified2015-cm503611q-cdse-qds-1--stearic-acid"
+        "unspecified2015-cm503611q-cdse-qds-1--stearic-acid",
+        "unspecified2015-cm503611q-cdse-qds-1--trioctylphosphine-oxide-topo",
+        "unspecified2015-cm503611q-cdse-qds-1--hexadecylamine-hda"
       ]
     },
     {
@@ -264,15 +323,68 @@
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
-        "unspecified2015-cm503611q-cdse-qds-1--after-s01-heat"
+        "unspecified2015-cm503611q-cdse-qds-1--after-s01-heat",
+        "unspecified2015-cm503611q-cdse-qds-1--trioctylphosphine-oxide-topo",
+        "unspecified2015-cm503611q-cdse-qds-1--hexadecylamine-hda"
+      ]
+    },
+    {
+      "id": "unspecified2015-cm503611q-cdse-qds-1--after-d2-s03-inject",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "unspecified2015-cm503611q-cdse-qds-1--after-s02-heat",
+        "unspecified2015-cm503611q-cdse-qds-1--se",
+        "unspecified2015-cm503611q-cdse-qds-1--tributylphosphine-tbp",
+        "unspecified2015-cm503611q-cdse-qds-1--dioctylamine-doa"
       ]
     },
     {
       "id": "unspecified2015-cm503611q-cdse-qds-1--after-s03-cool",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "unspecified2015-cm503611q-cdse-qds-1--after-d2-s03-inject"
+      ]
+    },
+    {
+      "id": "unspecified2015-cm503611q-cdse-qds-1--after-d2-s05-wash",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "unspecified2015-cm503611q-cdse-qds-1--after-s03-cool"
+      ]
+    },
+    {
+      "id": "unspecified2015-cm503611q-cdse-qds-1--after-d2-s06-dissolve",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "unspecified2015-cm503611q-cdse-qds-1--after-d2-s05-wash"
+      ]
+    },
+    {
+      "id": "unspecified2015-cm503611q-cdse-qds-1--after-d2-s07-centrifuge",
+      "name": "mixture after step 7",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "unspecified2015-cm503611q-cdse-qds-1--after-d2-s06-dissolve"
+      ]
+    },
+    {
+      "id": "unspecified2015-cm503611q-cdse-qds-1--after-d2-s08-wash",
+      "name": "mixture after step 8",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "unspecified2015-cm503611q-cdse-qds-1--after-d2-s07-centrifuge"
+      ]
+    },
+    {
+      "id": "unspecified2015-cm503611q-cdse-qds-1--after-d2-s09-redisperse",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "unspecified2015-cm503611q-cdse-qds-1--after-s02-heat"
+        "unspecified2015-cm503611q-cdse-qds-1--after-d2-s08-wash"
       ]
     }
   ],
@@ -287,7 +399,9 @@
       "depends_on": [],
       "inputs": [
         "unspecified2015-cm503611q-cdse-qds-1--cdo",
-        "unspecified2015-cm503611q-cdse-qds-1--stearic-acid"
+        "unspecified2015-cm503611q-cdse-qds-1--stearic-acid",
+        "unspecified2015-cm503611q-cdse-qds-1--trioctylphosphine-oxide-topo",
+        "unspecified2015-cm503611q-cdse-qds-1--hexadecylamine-hda"
       ],
       "outputs": [
         "unspecified2015-cm503611q-cdse-qds-1--after-s01-heat"
@@ -349,7 +463,9 @@
         "s01-heat"
       ],
       "inputs": [
-        "unspecified2015-cm503611q-cdse-qds-1--after-s01-heat"
+        "unspecified2015-cm503611q-cdse-qds-1--after-s01-heat",
+        "unspecified2015-cm503611q-cdse-qds-1--trioctylphosphine-oxide-topo",
+        "unspecified2015-cm503611q-cdse-qds-1--hexadecylamine-hda"
       ],
       "outputs": [
         "unspecified2015-cm503611q-cdse-qds-1--after-s02-heat"
@@ -401,9 +517,9 @@
       ]
     },
     {
-      "id": "s03-cool",
-      "action": "cool",
-      "label": "Cooling to room temperature",
+      "id": "d2-s03-inject",
+      "action": "inject",
+      "label": "Injection of Se solution into the hot Cd precursor solution",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -411,7 +527,90 @@
         "s02-heat"
       ],
       "inputs": [
-        "unspecified2015-cm503611q-cdse-qds-1--after-s02-heat"
+        "unspecified2015-cm503611q-cdse-qds-1--after-s02-heat",
+        "unspecified2015-cm503611q-cdse-qds-1--se",
+        "unspecified2015-cm503611q-cdse-qds-1--tributylphosphine-tbp",
+        "unspecified2015-cm503611q-cdse-qds-1--dioctylamine-doa"
+      ],
+      "outputs": [
+        "unspecified2015-cm503611q-cdse-qds-1--after-d2-s03-inject"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 320,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "320 °C",
+          "evidence": [
+            {
+              "source_id": "unspecified2015-cm503611q",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 15,
+          "minimum": null,
+          "maximum": null,
+          "unit": "s",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "15 s",
+          "evidence": [
+            {
+              "source_id": "unspecified2015-cm503611q",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "unspecified2015-cm503611q",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Injection of Se solution into the hot Cd precursor solution",
+      "evidence": [
+        {
+          "source_id": "unspecified2015-cm503611q",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s03-cool",
+      "action": "cool",
+      "label": "Cooling to room temperature",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-inject"
+      ],
+      "inputs": [
+        "unspecified2015-cm503611q-cdse-qds-1--after-d2-s03-inject"
       ],
       "outputs": [
         "unspecified2015-cm503611q-cdse-qds-1--after-s03-cool"
@@ -442,6 +641,201 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "d2-s05-wash",
+      "action": "wash",
+      "label": "Washing with MeOH or acetone",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-cool"
+      ],
+      "inputs": [
+        "unspecified2015-cm503611q-cdse-qds-1--after-s03-cool"
+      ],
+      "outputs": [
+        "unspecified2015-cm503611q-cdse-qds-1--after-d2-s05-wash"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Washing with MeOH or acetone",
+      "evidence": [
+        {
+          "source_id": "unspecified2015-cm503611q",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "d2-s06-dissolve",
+      "action": "dissolve",
+      "label": "Dissolving in hexane",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s05-wash"
+      ],
+      "inputs": [
+        "unspecified2015-cm503611q-cdse-qds-1--after-d2-s05-wash"
+      ],
+      "outputs": [
+        "unspecified2015-cm503611q-cdse-qds-1--after-d2-s06-dissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "unspecified2015-cm503611q",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dissolving in hexane",
+      "evidence": [
+        {
+          "source_id": "unspecified2015-cm503611q",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "d2-s07-centrifuge",
+      "action": "centrifuge",
+      "label": "Centrifugation to collect ligand-exchanged QDs",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s06-dissolve"
+      ],
+      "inputs": [
+        "unspecified2015-cm503611q-cdse-qds-1--after-d2-s06-dissolve"
+      ],
+      "outputs": [
+        "unspecified2015-cm503611q-cdse-qds-1--after-d2-s07-centrifuge"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Centrifugation to collect ligand-exchanged QDs",
+      "evidence": [
+        {
+          "source_id": "unspecified2015-cm503611q",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "d2-s08-wash",
+      "action": "wash",
+      "label": "Washing with ethanol and MeOH",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s07-centrifuge"
+      ],
+      "inputs": [
+        "unspecified2015-cm503611q-cdse-qds-1--after-d2-s07-centrifuge"
+      ],
+      "outputs": [
+        "unspecified2015-cm503611q-cdse-qds-1--after-d2-s08-wash"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Washing with ethanol and MeOH",
+      "evidence": [
+        {
+          "source_id": "unspecified2015-cm503611q",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "d2-s09-redisperse",
+      "action": "redisperse",
+      "label": "Redispersing in MeOH",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s08-wash"
+      ],
+      "inputs": [
+        "unspecified2015-cm503611q-cdse-qds-1--after-d2-s08-wash"
+      ],
+      "outputs": [
+        "unspecified2015-cm503611q-cdse-qds-1--after-d2-s09-redisperse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Redispersing in MeOH",
+      "evidence": [
+        {
+          "source_id": "unspecified2015-cm503611q",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -450,7 +844,7 @@
       "sample_id": "unspecified2015-cm503611q-cdse-qds-1--product",
       "source_sample_label": "CdSe QDs",
       "batch_id": null,
-      "material_state_id": "unspecified2015-cm503611q-cdse-qds-1--after-s03-cool",
+      "material_state_id": "unspecified2015-cm503611q-cdse-qds-1--after-d2-s09-redisperse",
       "parent_sample_id": null,
       "composition": {
         "value": "CdSe",
@@ -495,17 +889,51 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "unspecified2015-cm503611q-cdse-qds-1--photoluminescence-peak",
+      "sample_id": "unspecified2015-cm503611q-cdse-qds-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 580,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "580 nm",
+        "evidence": [
+          {
+            "source_id": "unspecified2015-cm503611q",
+            "locator": "Main PDF p.11"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "unspecified2015-cm503611q",
+          "locator": "Main PDF p.11"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
-      "Amount of hexadecylamine (HDA) not reported in the extracted text."
+      "Amount of tributylphosphine (TBP) not reported in the extracted text.",
+      "Amount of dioctylamine (DOA) not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

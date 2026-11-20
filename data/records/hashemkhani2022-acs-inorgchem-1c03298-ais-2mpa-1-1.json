@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "hashemkhani2022-acs-inorgchem-1c03298-ais-2mpa-1-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Mahshid Hashemkhani; Marilena Loizidou; Alexander J. MacRobert; Havva Yagci Acar (2022): AIS-2MPA-1",
   "material": {
@@ -243,6 +243,25 @@
           "locator": "Main PDF p.5"
         }
       ]
+    },
+    {
+      "id": "hashemkhani2022-acs-inorgchem-1c03298-ais-2mpa-1-1--sodium-hydroxide",
+      "name": "sodium hydroxide",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "hashemkhani2022-acs-inorgchem-1c03298",
+          "locator": "Main PDF p.5"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -260,7 +279,8 @@
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
-        "hashemkhani2022-acs-inorgchem-1c03298-ais-2mpa-1-1--after-s01-dissolve"
+        "hashemkhani2022-acs-inorgchem-1c03298-ais-2mpa-1-1--after-s01-dissolve",
+        "hashemkhani2022-acs-inorgchem-1c03298-ais-2mpa-1-1--sodium-hydroxide"
       ]
     },
     {
@@ -344,7 +364,8 @@
         "s01-dissolve"
       ],
       "inputs": [
-        "hashemkhani2022-acs-inorgchem-1c03298-ais-2mpa-1-1--after-s01-dissolve"
+        "hashemkhani2022-acs-inorgchem-1c03298-ais-2mpa-1-1--after-s01-dissolve",
+        "hashemkhani2022-acs-inorgchem-1c03298-ais-2mpa-1-1--sodium-hydroxide"
       ],
       "outputs": [
         "hashemkhani2022-acs-inorgchem-1c03298-ais-2mpa-1-1--after-s02-adjust-ph"
@@ -600,11 +621,12 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
-      "Reaction time not reported in the extracted text."
+      "Reaction time not reported in the extracted text.",
+      "Amount of sodium hydroxide not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

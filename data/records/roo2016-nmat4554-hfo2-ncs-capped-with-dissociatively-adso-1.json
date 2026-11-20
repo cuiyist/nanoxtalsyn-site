@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Jonathan De Roo; Isabel Van Driessche; José C. Martins; Zeger Hens (2016): HfO2 NCs capped with dissociatively adsorbed oleic acid",
   "material": {
@@ -56,16 +56,21 @@
       "note": ""
     },
     "size": {
-      "value": null,
+      "value": 6.5,
       "minimum": null,
       "maximum": null,
       "unit": "nm",
-      "status": "not_reported",
+      "status": "reported",
       "approximate": false,
       "qualifier": "",
       "basis": "",
-      "raw_text": "not reported",
-      "evidence": [],
+      "raw_text": "6.5 nm",
+      "evidence": [
+        {
+          "source_id": "roo2016-nmat4554",
+          "locator": "Main PDF p.6"
+        }
+      ],
       "derivation": null
     },
     "morphology": {
@@ -270,30 +275,182 @@
           "locator": "Main PDF p.6"
         }
       ]
+    },
+    {
+      "id": "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--hcl",
+      "name": "HCl",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 0.05,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.05 mmol",
+          "evidence": [
+            {
+              "source_id": "roo2016-nmat4554",
+              "locator": "Main PDF p.6"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "roo2016-nmat4554",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--diethyl-ether",
+      "name": "diethyl ether",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 3,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "3 mL",
+          "evidence": [
+            {
+              "source_id": "roo2016-nmat4554",
+              "locator": "Main PDF p.6"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "roo2016-nmat4554",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--acetone",
+      "name": "acetone",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "roo2016-nmat4554",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--chloroform",
+      "name": "chloroform",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "roo2016-nmat4554",
+          "locator": "Main PDF p.6"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
-      "id": "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--after-s01-heat",
+      "id": "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--after-d2-s01-dissolve",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--hafnium-chloride",
+        "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--dibenzyl-ether",
+        "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--benzyl-alcohol"
+      ]
+    },
+    {
+      "id": "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--after-s01-heat",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--after-d2-s01-dissolve"
+      ]
     },
     {
       "id": "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--after-s02-precipitate",
-      "name": "mixture after step 2",
+      "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
         "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--after-s01-heat"
       ]
     },
     {
-      "id": "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--after-s03-redisperse",
-      "name": "mixture after step 3",
+      "id": "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--after-d2-s04-centrifuge",
+      "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
-        "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--after-s02-precipitate",
+        "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--after-s02-precipitate"
+      ]
+    },
+    {
+      "id": "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--after-d2-s05-wash",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--after-d2-s04-centrifuge"
+      ]
+    },
+    {
+      "id": "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--after-s03-redisperse",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--after-d2-s05-wash",
+        "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--oleic-acid",
+        "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--oleylamine"
+      ]
+    },
+    {
+      "id": "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--after-d2-s07-add",
+      "name": "mixture after step 7",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--after-s03-redisperse",
         "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--oleic-acid",
         "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--oleylamine"
       ]
@@ -303,11 +460,54 @@
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--after-s03-redisperse"
+        "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--after-d2-s07-add"
       ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-dissolve",
+      "action": "dissolve",
+      "label": "Dissolve hafnium chloride in dibenzyl ether and benzyl alcohol",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--hafnium-chloride",
+        "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--dibenzyl-ether",
+        "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--benzyl-alcohol"
+      ],
+      "outputs": [
+        "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--after-d2-s01-dissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "roo2016-nmat4554",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dissolve hafnium chloride in dibenzyl ether and benzyl alcohol",
+      "evidence": [
+        {
+          "source_id": "roo2016-nmat4554",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
     {
       "id": "s01-heat",
       "action": "heat",
@@ -315,8 +515,12 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s01-dissolve"
+      ],
+      "inputs": [
+        "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--after-d2-s01-dissolve"
+      ],
       "outputs": [
         "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--after-s01-heat"
       ],
@@ -423,9 +627,9 @@
       ]
     },
     {
-      "id": "s03-redisperse",
-      "action": "redisperse",
-      "label": "Redisperse in chloroform and add oleic acid and oleylamine",
+      "id": "d2-s04-centrifuge",
+      "action": "centrifuge",
+      "label": "Remove agglomerates",
       "stage": "workup",
       "branch": "",
       "optional": false,
@@ -433,7 +637,102 @@
         "s02-precipitate"
       ],
       "inputs": [
-        "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--after-s02-precipitate",
+        "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--after-s02-precipitate"
+      ],
+      "outputs": [
+        "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--after-d2-s04-centrifuge"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 2,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2 min",
+          "evidence": [
+            {
+              "source_id": "roo2016-nmat4554",
+              "locator": "Main PDF p.6"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Remove agglomerates",
+      "evidence": [
+        {
+          "source_id": "roo2016-nmat4554",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "d2-s05-wash",
+      "action": "wash",
+      "label": "With diethyl ether",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-centrifuge"
+      ],
+      "inputs": [
+        "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--after-d2-s04-centrifuge"
+      ],
+      "outputs": [
+        "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--after-d2-s05-wash"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "With diethyl ether",
+      "evidence": [
+        {
+          "source_id": "roo2016-nmat4554",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "s03-redisperse",
+      "action": "redisperse",
+      "label": "Redisperse in chloroform and add oleic acid and oleylamine",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s05-wash"
+      ],
+      "inputs": [
+        "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--after-d2-s05-wash",
         "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--oleic-acid",
         "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--oleylamine"
       ],
@@ -463,6 +762,51 @@
       ]
     },
     {
+      "id": "d2-s07-add",
+      "action": "add",
+      "label": "Oleic acid and oleylamine",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-redisperse"
+      ],
+      "inputs": [
+        "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--after-s03-redisperse",
+        "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--oleic-acid",
+        "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--oleylamine"
+      ],
+      "outputs": [
+        "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--after-d2-s07-add"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "roo2016-nmat4554",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Oleic acid and oleylamine",
+      "evidence": [
+        {
+          "source_id": "roo2016-nmat4554",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
       "id": "s04-purify",
       "action": "purify",
       "label": "Purify by adding acetone and centrifuging",
@@ -470,10 +814,10 @@
       "branch": "",
       "optional": false,
       "depends_on": [
-        "s03-redisperse"
+        "d2-s07-add"
       ],
       "inputs": [
-        "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--after-s03-redisperse"
+        "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--after-d2-s07-add"
       ],
       "outputs": [
         "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--after-s04-purify"
@@ -562,14 +906,48 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--size",
+      "sample_id": "roo2016-nmat4554-hfo2-ncs-capped-with-dissociatively-adso-1--product",
+      "property": "particle_size",
+      "technique": "not reported",
+      "value": {
+        "value": 6.5,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "6.5 nm",
+        "evidence": [
+          {
+            "source_id": "roo2016-nmat4554",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "roo2016-nmat4554",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
-      "Size not reported in the extracted text."
+      "Amount of acetone not reported in the extracted text.",
+      "Amount of chloroform not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

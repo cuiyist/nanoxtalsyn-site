@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "archer2007-nl0702362-1-0-mn2-cdse-qds-d-2-64-nm-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Paul I. Archer; Steven A. Santangelo; Daniel R. Gamelin (2007): 1.0% Mn2+:CdSe QDs (d = 2.64 nm)",
   "material": {
@@ -218,6 +218,25 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "archer2007-nl0702362-1-0-mn2-cdse-qds-d-2-64-nm-1--trioctyl-phosphine-oxide-topo",
+      "name": "trioctyl-phosphine oxide (TOPO)",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "archer2007-nl0702362",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -280,7 +299,8 @@
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "archer2007-nl0702362-1-0-mn2-cdse-qds-d-2-64-nm-1--after-s06-wash"
+        "archer2007-nl0702362-1-0-mn2-cdse-qds-d-2-64-nm-1--after-s06-wash",
+        "archer2007-nl0702362-1-0-mn2-cdse-qds-d-2-64-nm-1--trioctyl-phosphine-oxide-topo"
       ]
     }
   ],
@@ -482,6 +502,24 @@
             }
           ],
           "derivation": null
+        },
+        "duration": {
+          "value": 1.5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1.5 h",
+          "evidence": [
+            {
+              "source_id": "archer2007-nl0702362",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
         }
       },
       "environment": {
@@ -659,7 +697,8 @@
         "s06-wash"
       ],
       "inputs": [
-        "archer2007-nl0702362-1-0-mn2-cdse-qds-d-2-64-nm-1--after-s06-wash"
+        "archer2007-nl0702362-1-0-mn2-cdse-qds-d-2-64-nm-1--after-s06-wash",
+        "archer2007-nl0702362-1-0-mn2-cdse-qds-d-2-64-nm-1--trioctyl-phosphine-oxide-topo"
       ],
       "outputs": [
         "archer2007-nl0702362-1-0-mn2-cdse-qds-d-2-64-nm-1--after-s07-clean"
@@ -760,12 +799,13 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Size not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
-      "Amount of TMCl2 not reported in the extracted text."
+      "Amount of TMCl2 not reported in the extracted text.",
+      "Amount of trioctyl-phosphine oxide (TOPO) not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

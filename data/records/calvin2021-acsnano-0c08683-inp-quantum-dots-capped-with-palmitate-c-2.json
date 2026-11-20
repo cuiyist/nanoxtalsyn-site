@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "calvin2021-acsnano-0c08683-inp-quantum-dots-capped-with-palmitate-c-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Jason J. Calvin; Erin A. O’Brien; Adam B. Sedlak; Arunima D. Balan; A. Paul Alivisatos (2021): InP quantum dots capped with palmitate (C16H31O2)",
   "material": {
@@ -258,10 +258,18 @@
     },
     {
       "id": "calvin2021-acsnano-0c08683-inp-quantum-dots-capped-with-palmitate-c-2--after-s04-cool",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "calvin2021-acsnano-0c08683-inp-quantum-dots-capped-with-palmitate-c-2--after-s03-inject"
+      ]
+    },
+    {
+      "id": "calvin2021-acsnano-0c08683-inp-quantum-dots-capped-with-palmitate-c-2--after-d2-s05-wash",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "calvin2021-acsnano-0c08683-inp-quantum-dots-capped-with-palmitate-c-2--after-s03-inject"
+        "calvin2021-acsnano-0c08683-inp-quantum-dots-capped-with-palmitate-c-2--after-s04-cool"
       ]
     }
   ],
@@ -472,7 +480,26 @@
       "outputs": [
         "calvin2021-acsnano-0c08683-inp-quantum-dots-capped-with-palmitate-c-2--after-s04-cool"
       ],
-      "parameters": {},
+      "parameters": {
+        "temperature": {
+          "value": 40,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "40 °C",
+          "evidence": [
+            {
+              "source_id": "calvin2021-acsnano-0c08683",
+              "locator": "Main PDF p.10"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "environment": {
         "value": "Ar",
         "status": "reported",
@@ -498,6 +525,44 @@
           "locator": "Main PDF p.10"
         }
       ]
+    },
+    {
+      "id": "d2-s05-wash",
+      "action": "wash",
+      "label": "Wash with acetone and redisperse in tetrahydrofuran",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-cool"
+      ],
+      "inputs": [
+        "calvin2021-acsnano-0c08683-inp-quantum-dots-capped-with-palmitate-c-2--after-s04-cool"
+      ],
+      "outputs": [
+        "calvin2021-acsnano-0c08683-inp-quantum-dots-capped-with-palmitate-c-2--after-d2-s05-wash"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Wash with acetone and redisperse in tetrahydrofuran",
+      "evidence": [
+        {
+          "source_id": "calvin2021-acsnano-0c08683",
+          "locator": "Main PDF p.10"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -506,7 +571,7 @@
       "sample_id": "calvin2021-acsnano-0c08683-inp-quantum-dots-capped-with-palmitate-c-2--product",
       "source_sample_label": "InP quantum dots capped with palmitate (C16H31O2)",
       "batch_id": null,
-      "material_state_id": "calvin2021-acsnano-0c08683-inp-quantum-dots-capped-with-palmitate-c-2--after-s04-cool",
+      "material_state_id": "calvin2021-acsnano-0c08683-inp-quantum-dots-capped-with-palmitate-c-2--after-d2-s05-wash",
       "parent_sample_id": null,
       "composition": {
         "value": null,
@@ -541,7 +606,8 @@
       ],
       "notes": [
         "Reactor: 50 mL three-neck round-bottom flask (Main PDF p.10).",
-        "Reaction temperature: 230 degC (Main PDF p.10)."
+        "Reaction temperature: 230 degC (Main PDF p.10).",
+        "Reaction time: 5 min (Main PDF p.?)."
       ]
     }
   ],
@@ -549,13 +615,12 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
-      "Size not reported in the extracted text.",
-      "Reaction time not reported in the extracted text."
+      "Size not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

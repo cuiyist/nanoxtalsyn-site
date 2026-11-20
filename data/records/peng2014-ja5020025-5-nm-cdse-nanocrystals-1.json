@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "peng2014-ja5020025-5-nm-cdse-nanocrystals-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Xiaogang Peng (2014): 5 nm CdSe nanocrystals",
   "material": {
@@ -223,16 +223,31 @@
   "stocks": [],
   "material_states": [
     {
-      "id": "peng2014-ja5020025-5-nm-cdse-nanocrystals-1--after-s01-inject",
+      "id": "peng2014-ja5020025-5-nm-cdse-nanocrystals-1--after-d2-s01-degas",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
+      "parent_ids": []
+    },
+    {
+      "id": "peng2014-ja5020025-5-nm-cdse-nanocrystals-1--after-d2-s02-heat",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
       "parent_ids": [
+        "peng2014-ja5020025-5-nm-cdse-nanocrystals-1--after-d2-s01-degas"
+      ]
+    },
+    {
+      "id": "peng2014-ja5020025-5-nm-cdse-nanocrystals-1--after-s01-inject",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "peng2014-ja5020025-5-nm-cdse-nanocrystals-1--after-d2-s02-heat",
         "peng2014-ja5020025-5-nm-cdse-nanocrystals-1--se"
       ]
     },
     {
       "id": "peng2014-ja5020025-5-nm-cdse-nanocrystals-1--after-s02-cool",
-      "name": "mixture after step 2",
+      "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
         "peng2014-ja5020025-5-nm-cdse-nanocrystals-1--after-s01-inject"
@@ -249,14 +264,137 @@
   ],
   "operations": [
     {
+      "id": "d2-s01-degas",
+      "action": "degas",
+      "label": "Stir and degas with argon",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [],
+      "outputs": [
+        "peng2014-ja5020025-5-nm-cdse-nanocrystals-1--after-d2-s01-degas"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 10,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "10 min",
+          "evidence": [
+            {
+              "source_id": "peng2014-ja5020025",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "peng2014-ja5020025",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Stir and degas with argon",
+      "evidence": [
+        {
+          "source_id": "peng2014-ja5020025",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "d2-s02-heat",
+      "action": "heat",
+      "label": "Heat",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s01-degas"
+      ],
+      "inputs": [
+        "peng2014-ja5020025-5-nm-cdse-nanocrystals-1--after-d2-s01-degas"
+      ],
+      "outputs": [
+        "peng2014-ja5020025-5-nm-cdse-nanocrystals-1--after-d2-s02-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 300,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "300 °C",
+          "evidence": [
+            {
+              "source_id": "peng2014-ja5020025",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "peng2014-ja5020025",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heat",
+      "evidence": [
+        {
+          "source_id": "peng2014-ja5020025",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
       "id": "s01-inject",
       "action": "inject",
       "label": "Inject Se solution",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
+      "depends_on": [
+        "d2-s02-heat"
+      ],
       "inputs": [
+        "peng2014-ja5020025-5-nm-cdse-nanocrystals-1--after-d2-s02-heat",
         "peng2014-ja5020025-5-nm-cdse-nanocrystals-1--se"
       ],
       "outputs": [
@@ -525,7 +663,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Ligand not reported in the extracted text.",

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "tonti2008-cm071439u-cdse-ncs-method-ii-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Dino Tonti; Mona B. Mohammed; Awos Al-Salman; Philip Pattison; Majed Chergui (2008): CdSe NCs (method II)",
   "material": {
@@ -129,7 +129,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "mass": {
+          "value": 0.55,
+          "minimum": null,
+          "maximum": null,
+          "unit": "g",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.55 g",
+          "evidence": [
+            {
+              "source_id": "tonti2008-cm071439u",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -213,19 +232,69 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "tonti2008-cm071439u-cdse-ncs-method-ii-2--oleic-acid--checked-2",
+      "name": "oleic acid",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "mass": {
+          "value": 9,
+          "minimum": null,
+          "maximum": null,
+          "unit": "g",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "9 g",
+          "evidence": [
+            {
+              "source_id": "tonti2008-cm071439u",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "tonti2008-cm071439u",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
-      "id": "tonti2008-cm071439u-cdse-ncs-method-ii-2--after-s01-cool",
+      "id": "tonti2008-cm071439u-cdse-ncs-method-ii-2--after-d2-s01-dissolve",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "tonti2008-cm071439u-cdse-ncs-method-ii-2--cadmium-oxide",
+        "tonti2008-cm071439u-cdse-ncs-method-ii-2--oleic-acid",
+        "tonti2008-cm071439u-cdse-ncs-method-ii-2--1-octadecene"
+      ]
+    },
+    {
+      "id": "tonti2008-cm071439u-cdse-ncs-method-ii-2--after-s01-cool",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "tonti2008-cm071439u-cdse-ncs-method-ii-2--after-d2-s01-dissolve"
+      ]
     },
     {
       "id": "tonti2008-cm071439u-cdse-ncs-method-ii-2--after-s02-add",
-      "name": "mixture after step 2",
+      "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
         "tonti2008-cm071439u-cdse-ncs-method-ii-2--after-s01-cool",
@@ -238,11 +307,74 @@
       "kind": "product",
       "parent_ids": [
         "tonti2008-cm071439u-cdse-ncs-method-ii-2--after-s02-add",
-        "tonti2008-cm071439u-cdse-ncs-method-ii-2--oleic-acid"
+        "tonti2008-cm071439u-cdse-ncs-method-ii-2--oleic-acid",
+        "tonti2008-cm071439u-cdse-ncs-method-ii-2--oleic-acid--checked-2"
       ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-dissolve",
+      "action": "dissolve",
+      "label": "Dissolve CdO in oleic acid and ODE",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "tonti2008-cm071439u-cdse-ncs-method-ii-2--cadmium-oxide",
+        "tonti2008-cm071439u-cdse-ncs-method-ii-2--oleic-acid",
+        "tonti2008-cm071439u-cdse-ncs-method-ii-2--1-octadecene"
+      ],
+      "outputs": [
+        "tonti2008-cm071439u-cdse-ncs-method-ii-2--after-d2-s01-dissolve"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 160,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "160 °C",
+          "evidence": [
+            {
+              "source_id": "tonti2008-cm071439u",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "tonti2008-cm071439u",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dissolve CdO in oleic acid and ODE",
+      "evidence": [
+        {
+          "source_id": "tonti2008-cm071439u",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
     {
       "id": "s01-cool",
       "action": "cool",
@@ -250,8 +382,12 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s01-dissolve"
+      ],
+      "inputs": [
+        "tonti2008-cm071439u-cdse-ncs-method-ii-2--after-d2-s01-dissolve"
+      ],
       "outputs": [
         "tonti2008-cm071439u-cdse-ncs-method-ii-2--after-s01-cool"
       ],
@@ -357,7 +493,8 @@
       ],
       "inputs": [
         "tonti2008-cm071439u-cdse-ncs-method-ii-2--after-s02-add",
-        "tonti2008-cm071439u-cdse-ncs-method-ii-2--oleic-acid"
+        "tonti2008-cm071439u-cdse-ncs-method-ii-2--oleic-acid",
+        "tonti2008-cm071439u-cdse-ncs-method-ii-2--oleic-acid--checked-2"
       ],
       "outputs": [
         "tonti2008-cm071439u-cdse-ncs-method-ii-2--after-s03-add"
@@ -450,16 +587,48 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "tonti2008-cm071439u-cdse-ncs-method-ii-2--photoluminescence-peak",
+      "sample_id": "tonti2008-cm071439u-cdse-ncs-method-ii-2--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 523,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "523 nm",
+        "evidence": [
+          {
+            "source_id": "tonti2008-cm071439u",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "tonti2008-cm071439u",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Size not reported in the extracted text.",
-      "Reaction time not reported in the extracted text.",
-      "Amount of oleic acid not reported in the extracted text."
+      "Reaction time not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

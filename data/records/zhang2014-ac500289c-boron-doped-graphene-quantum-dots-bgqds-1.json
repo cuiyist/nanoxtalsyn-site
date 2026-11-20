@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "zhang2014-ac500289c-boron-doped-graphene-quantum-dots-bgqds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Li Zhang; Zhi-Yi Zhang; Ru-Ping Liang; Ya-Hua Li; Jian-Ding Qiu (2014): boron-doped graphene quantum dots (BGQDs)",
   "material": {
@@ -181,10 +181,33 @@
   "stocks": [],
   "material_states": [
     {
-      "id": "zhang2014-ac500289c-boron-doped-graphene-quantum-dots-bgqds-1--after-s01-heat",
+      "id": "zhang2014-ac500289c-boron-doped-graphene-quantum-dots-bgqds-1--after-d2-s01-reflux",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": [
+        "zhang2014-ac500289c-boron-doped-graphene-quantum-dots-bgqds-1--graphite-flakes",
+        "zhang2014-ac500289c-boron-doped-graphene-quantum-dots-bgqds-1--boron-oxide-b2o3",
+        "zhang2014-ac500289c-boron-doped-graphene-quantum-dots-bgqds-1--nitric-acid-hno3"
+      ]
+    },
+    {
+      "id": "zhang2014-ac500289c-boron-doped-graphene-quantum-dots-bgqds-1--after-d2-s02-oxidize",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zhang2014-ac500289c-boron-doped-graphene-quantum-dots-bgqds-1--after-d2-s01-reflux",
+        "zhang2014-ac500289c-boron-doped-graphene-quantum-dots-bgqds-1--graphite-flakes",
+        "zhang2014-ac500289c-boron-doped-graphene-quantum-dots-bgqds-1--boron-oxide-b2o3",
+        "zhang2014-ac500289c-boron-doped-graphene-quantum-dots-bgqds-1--sulfuric-acid-h2so4",
+        "zhang2014-ac500289c-boron-doped-graphene-quantum-dots-bgqds-1--nitric-acid-hno3"
+      ]
+    },
+    {
+      "id": "zhang2014-ac500289c-boron-doped-graphene-quantum-dots-bgqds-1--after-s01-heat",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zhang2014-ac500289c-boron-doped-graphene-quantum-dots-bgqds-1--after-d2-s02-oxidize",
         "zhang2014-ac500289c-boron-doped-graphene-quantum-dots-bgqds-1--graphite-flakes",
         "zhang2014-ac500289c-boron-doped-graphene-quantum-dots-bgqds-1--boron-oxide-b2o3",
         "zhang2014-ac500289c-boron-doped-graphene-quantum-dots-bgqds-1--sulfuric-acid-h2so4",
@@ -194,7 +217,7 @@
     },
     {
       "id": "zhang2014-ac500289c-boron-doped-graphene-quantum-dots-bgqds-1--after-s02-filter",
-      "name": "mixture after step 2",
+      "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
         "zhang2014-ac500289c-boron-doped-graphene-quantum-dots-bgqds-1--after-s01-heat"
@@ -211,14 +234,116 @@
   ],
   "operations": [
     {
+      "id": "d2-s01-reflux",
+      "action": "reflux",
+      "label": "Reflux",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "zhang2014-ac500289c-boron-doped-graphene-quantum-dots-bgqds-1--graphite-flakes",
+        "zhang2014-ac500289c-boron-doped-graphene-quantum-dots-bgqds-1--boron-oxide-b2o3",
+        "zhang2014-ac500289c-boron-doped-graphene-quantum-dots-bgqds-1--nitric-acid-hno3"
+      ],
+      "outputs": [
+        "zhang2014-ac500289c-boron-doped-graphene-quantum-dots-bgqds-1--after-d2-s01-reflux"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Reflux",
+      "evidence": [
+        {
+          "source_id": "zhang2014-ac500289c",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "d2-s02-oxidize",
+      "action": "oxidize",
+      "label": "Oxidize",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s01-reflux"
+      ],
+      "inputs": [
+        "zhang2014-ac500289c-boron-doped-graphene-quantum-dots-bgqds-1--after-d2-s01-reflux",
+        "zhang2014-ac500289c-boron-doped-graphene-quantum-dots-bgqds-1--graphite-flakes",
+        "zhang2014-ac500289c-boron-doped-graphene-quantum-dots-bgqds-1--boron-oxide-b2o3",
+        "zhang2014-ac500289c-boron-doped-graphene-quantum-dots-bgqds-1--sulfuric-acid-h2so4",
+        "zhang2014-ac500289c-boron-doped-graphene-quantum-dots-bgqds-1--nitric-acid-hno3"
+      ],
+      "outputs": [
+        "zhang2014-ac500289c-boron-doped-graphene-quantum-dots-bgqds-1--after-d2-s02-oxidize"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 17,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "17 h",
+          "evidence": [
+            {
+              "source_id": "zhang2014-ac500289c",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Oxidize",
+      "evidence": [
+        {
+          "source_id": "zhang2014-ac500289c",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
       "id": "s01-heat",
       "action": "heat",
       "label": "Heating the BGO in an autoclave",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
+      "depends_on": [
+        "d2-s02-oxidize"
+      ],
       "inputs": [
+        "zhang2014-ac500289c-boron-doped-graphene-quantum-dots-bgqds-1--after-d2-s02-oxidize",
         "zhang2014-ac500289c-boron-doped-graphene-quantum-dots-bgqds-1--graphite-flakes",
         "zhang2014-ac500289c-boron-doped-graphene-quantum-dots-bgqds-1--boron-oxide-b2o3",
         "zhang2014-ac500289c-boron-doped-graphene-quantum-dots-bgqds-1--sulfuric-acid-h2so4",
@@ -439,11 +564,44 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "zhang2014-ac500289c-boron-doped-graphene-quantum-dots-bgqds-1--photoluminescence-peak",
+      "sample_id": "zhang2014-ac500289c-boron-doped-graphene-quantum-dots-bgqds-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 440,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "440 nm",
+        "evidence": [
+          {
+            "source_id": "zhang2014-ac500289c",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "zhang2014-ac500289c",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Ligand not reported in the extracted text.",

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "petitprez2000-1-591411-inas-quantum-dot-superlattices-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "E. Petitprez et al. (2000): InAs quantum dot superlattices",
   "material": {
@@ -95,7 +95,7 @@
       "id": "petitprez2000-1-591411-inas-quantum-dot-superlattices-1--inas",
       "name": "InAs",
       "formula": null,
-      "role": "reagent",
+      "role": "grown_layer",
       "stage": "synthesis",
       "identity": {
         "pubchem_cid": null,
@@ -139,7 +139,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "amount": {
+          "value": 11,
+          "minimum": null,
+          "maximum": null,
+          "unit": "monolayer",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "11 monolayer",
+          "evidence": [
+            {
+              "source_id": "petitprez2000-1-591411",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -152,13 +171,32 @@
       "id": "petitprez2000-1-591411-inas-quantum-dot-superlattices-1--gaas-buffer-layer",
       "name": "GaAs buffer layer",
       "formula": null,
-      "role": "reagent",
+      "role": "substrate",
       "stage": "synthesis",
       "identity": {
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "concentration": {
+          "value": 0.3,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mm",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.3 mm",
+          "evidence": [
+            {
+              "source_id": "petitprez2000-1-591411",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -226,11 +264,19 @@
       ]
     },
     {
+      "id": "petitprez2000-1-591411-inas-quantum-dot-superlattices-1--after-d2-s03-lower-temperature",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "petitprez2000-1-591411-inas-quantum-dot-superlattices-1--after-s02-grow"
+      ]
+    },
+    {
       "id": "petitprez2000-1-591411-inas-quantum-dot-superlattices-1--after-s03-deposit",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "petitprez2000-1-591411-inas-quantum-dot-superlattices-1--after-s02-grow",
+        "petitprez2000-1-591411-inas-quantum-dot-superlattices-1--after-d2-s03-lower-temperature",
         "petitprez2000-1-591411-inas-quantum-dot-superlattices-1--inas",
         "petitprez2000-1-591411-inas-quantum-dot-superlattices-1--gaas"
       ]
@@ -342,9 +388,9 @@
       ]
     },
     {
-      "id": "s03-deposit",
-      "action": "deposit",
-      "label": "Deposit InAs and GaAs spacer layer",
+      "id": "d2-s03-lower-temperature",
+      "action": "lower temperature",
+      "label": "Lower temperature for QD superlattice growth",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -352,7 +398,69 @@
         "s02-grow"
       ],
       "inputs": [
-        "petitprez2000-1-591411-inas-quantum-dot-superlattices-1--after-s02-grow",
+        "petitprez2000-1-591411-inas-quantum-dot-superlattices-1--after-s02-grow"
+      ],
+      "outputs": [
+        "petitprez2000-1-591411-inas-quantum-dot-superlattices-1--after-d2-s03-lower-temperature"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 450,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "450 °C",
+          "evidence": [
+            {
+              "source_id": "petitprez2000-1-591411",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "As4 background",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "petitprez2000-1-591411",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Lower temperature for QD superlattice growth",
+      "evidence": [
+        {
+          "source_id": "petitprez2000-1-591411",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s03-deposit",
+      "action": "deposit",
+      "label": "Deposit InAs and GaAs spacer layer",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-lower-temperature"
+      ],
+      "inputs": [
+        "petitprez2000-1-591411-inas-quantum-dot-superlattices-1--after-d2-s03-lower-temperature",
         "petitprez2000-1-591411-inas-quantum-dot-superlattices-1--inas",
         "petitprez2000-1-591411-inas-quantum-dot-superlattices-1--gaas"
       ],
@@ -462,7 +570,8 @@
       ],
       "notes": [
         "Reactor: conventional molecular beam epitaxy system (Main PDF p.2).",
-        "Reaction temperature: 450 degC (Main PDF p.2)."
+        "Reaction temperature: 450 degC (Main PDF p.2).",
+        "Reaction time: 30 s (Main PDF p.?)."
       ]
     }
   ],
@@ -503,14 +612,9 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
-      "Ligand not reported in the extracted text.",
-      "Reaction time not reported in the extracted text.",
-      "Amount of GaAs not reported in the extracted text.",
-      "Amount of GaAs buffer layer not reported in the extracted text.",
-      "Amount of AlAs/GaAs superlattice not reported in the extracted text.",
-      "Amount of GaAs capping layer not reported in the extracted text."
+      "Ligand not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

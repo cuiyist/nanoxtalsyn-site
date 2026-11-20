@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "chen2014-la501692h-core-shell-microparticles-with-qd-tagged-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Yang Chen (2014): core-shell microparticles with QD-tagged polymer cores and PEG hydrogel shells",
   "material": {
@@ -88,7 +88,7 @@
       "id": "chen2014-la501692h-core-shell-microparticles-with-qd-tagged-1--cdse-zns-qds",
       "name": "CdSe/ZnS QDs",
       "formula": null,
-      "role": "reagent",
+      "role": "starting_particles",
       "stage": "synthesis",
       "identity": {
         "pubchem_cid": null,
@@ -178,6 +178,101 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "chen2014-la501692h-core-shell-microparticles-with-qd-tagged-1--hmpf",
+      "name": "HMPF",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "chen2014-la501692h",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "chen2014-la501692h-core-shell-microparticles-with-qd-tagged-1--sds",
+      "name": "SDS",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "chen2014-la501692h",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "chen2014-la501692h-core-shell-microparticles-with-qd-tagged-1--pluronic-f108",
+      "name": "Pluronic F108",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "chen2014-la501692h",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "chen2014-la501692h-core-shell-microparticles-with-qd-tagged-1--trion-x-100",
+      "name": "Trion X-100",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "chen2014-la501692h",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "chen2014-la501692h-core-shell-microparticles-with-qd-tagged-1--maa",
+      "name": "MAA",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "chen2014-la501692h",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -192,11 +287,24 @@
       ]
     },
     {
+      "id": "chen2014-la501692h-core-shell-microparticles-with-qd-tagged-1--after-d2-s02-form",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "chen2014-la501692h-core-shell-microparticles-with-qd-tagged-1--after-s01-inject",
+        "chen2014-la501692h-core-shell-microparticles-with-qd-tagged-1--peg-da",
+        "chen2014-la501692h-core-shell-microparticles-with-qd-tagged-1--hexadecane",
+        "chen2014-la501692h-core-shell-microparticles-with-qd-tagged-1--abil-em90",
+        "chen2014-la501692h-core-shell-microparticles-with-qd-tagged-1--hmpf"
+      ]
+    },
+    {
       "id": "chen2014-la501692h-core-shell-microparticles-with-qd-tagged-1--after-s02-polymerize",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "chen2014-la501692h-core-shell-microparticles-with-qd-tagged-1--after-s01-inject"
+        "chen2014-la501692h-core-shell-microparticles-with-qd-tagged-1--after-d2-s02-form",
+        "chen2014-la501692h-core-shell-microparticles-with-qd-tagged-1--hmpf"
       ]
     }
   ],
@@ -239,9 +347,9 @@
       ]
     },
     {
-      "id": "s02-polymerize",
-      "action": "polymerize",
-      "label": "UV polymerize double emulsions in situ",
+      "id": "d2-s02-form",
+      "action": "form",
+      "label": "Form O/W/O double emulsions",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -249,7 +357,50 @@
         "s01-inject"
       ],
       "inputs": [
-        "chen2014-la501692h-core-shell-microparticles-with-qd-tagged-1--after-s01-inject"
+        "chen2014-la501692h-core-shell-microparticles-with-qd-tagged-1--after-s01-inject",
+        "chen2014-la501692h-core-shell-microparticles-with-qd-tagged-1--peg-da",
+        "chen2014-la501692h-core-shell-microparticles-with-qd-tagged-1--hexadecane",
+        "chen2014-la501692h-core-shell-microparticles-with-qd-tagged-1--abil-em90",
+        "chen2014-la501692h-core-shell-microparticles-with-qd-tagged-1--hmpf"
+      ],
+      "outputs": [
+        "chen2014-la501692h-core-shell-microparticles-with-qd-tagged-1--after-d2-s02-form"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Form O/W/O double emulsions",
+      "evidence": [
+        {
+          "source_id": "chen2014-la501692h",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-polymerize",
+      "action": "polymerize",
+      "label": "UV polymerize double emulsions in situ",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-form"
+      ],
+      "inputs": [
+        "chen2014-la501692h-core-shell-microparticles-with-qd-tagged-1--after-d2-s02-form",
+        "chen2014-la501692h-core-shell-microparticles-with-qd-tagged-1--hmpf"
       ],
       "outputs": [
         "chen2014-la501692h-core-shell-microparticles-with-qd-tagged-1--after-s02-polymerize"
@@ -336,11 +487,44 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "chen2014-la501692h-core-shell-microparticles-with-qd-tagged-1--photoluminescence-peak",
+      "sample_id": "chen2014-la501692h-core-shell-microparticles-with-qd-tagged-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 558,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "558 nm",
+        "evidence": [
+          {
+            "source_id": "chen2014-la501692h",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "chen2014-la501692h",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Size not reported in the extracted text.",
@@ -351,7 +535,12 @@
       "Amount of ETPTA not reported in the extracted text.",
       "Amount of PEG-DA not reported in the extracted text.",
       "Amount of hexadecane not reported in the extracted text.",
-      "Amount of ABIL EM90 not reported in the extracted text."
+      "Amount of ABIL EM90 not reported in the extracted text.",
+      "Amount of HMPF not reported in the extracted text.",
+      "Amount of SDS not reported in the extracted text.",
+      "Amount of Pluronic F108 not reported in the extracted text.",
+      "Amount of Trion X-100 not reported in the extracted text.",
+      "Amount of MAA not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

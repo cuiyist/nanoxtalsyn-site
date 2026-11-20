@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "lu2005-jp054472h-cdse-zns-core-shell-quantum-dots-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Zhe-Xue Lu; Zhi-Ling Zhang; Ming-Xi Zhang; Hai-Yan Xie; Zhi-Quan Tian; Ping Chen; Hua Huang; Dai-Wen Pang (2005): CdSe/ZnS core/shell quantum dots",
   "material": {
@@ -88,7 +88,7 @@
       "id": "lu2005-jp054472h-cdse-zns-core-shell-quantum-dots-1--cdse-quantum-dots",
       "name": "CdSe quantum dots",
       "formula": null,
-      "role": "reagent",
+      "role": "starting_particles",
       "stage": "synthesis",
       "identity": {
         "pubchem_cid": null,
@@ -178,6 +178,82 @@
           "locator": "Main PDF p.1"
         }
       ]
+    },
+    {
+      "id": "lu2005-jp054472h-cdse-zns-core-shell-quantum-dots-1--dimethylformamide-dmf",
+      "name": "dimethylformamide (DMF)",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "lu2005-jp054472h",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "lu2005-jp054472h-cdse-zns-core-shell-quantum-dots-1--3-mercaptopropionic-acid-modified-qds",
+      "name": "3-mercaptopropionic-acid-modified QDs",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "lu2005-jp054472h",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "lu2005-jp054472h-cdse-zns-core-shell-quantum-dots-1--4-m-naoh",
+      "name": "4 M NaOH",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "lu2005-jp054472h",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "lu2005-jp054472h-cdse-zns-core-shell-quantum-dots-1--tetrahydrofuran",
+      "name": "tetrahydrofuran",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "lu2005-jp054472h",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -200,11 +276,23 @@
       ]
     },
     {
+      "id": "lu2005-jp054472h-cdse-zns-core-shell-quantum-dots-1--after-d2-s03-resuspend",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "lu2005-jp054472h-cdse-zns-core-shell-quantum-dots-1--after-s02-precipitate",
+        "lu2005-jp054472h-cdse-zns-core-shell-quantum-dots-1--dimethylformamide-dmf"
+      ]
+    },
+    {
       "id": "lu2005-jp054472h-cdse-zns-core-shell-quantum-dots-1--after-s03-precipitate",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "lu2005-jp054472h-cdse-zns-core-shell-quantum-dots-1--after-s02-precipitate"
+        "lu2005-jp054472h-cdse-zns-core-shell-quantum-dots-1--after-d2-s03-resuspend",
+        "lu2005-jp054472h-cdse-zns-core-shell-quantum-dots-1--3-mercaptopropionic-acid-modified-qds",
+        "lu2005-jp054472h-cdse-zns-core-shell-quantum-dots-1--4-m-naoh",
+        "lu2005-jp054472h-cdse-zns-core-shell-quantum-dots-1--tetrahydrofuran"
       ]
     }
   ],
@@ -304,6 +392,45 @@
       ]
     },
     {
+      "id": "d2-s03-resuspend",
+      "action": "resuspend",
+      "label": "QDs resuspended in dimethylformamide (DMF)",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-precipitate"
+      ],
+      "inputs": [
+        "lu2005-jp054472h-cdse-zns-core-shell-quantum-dots-1--after-s02-precipitate",
+        "lu2005-jp054472h-cdse-zns-core-shell-quantum-dots-1--dimethylformamide-dmf"
+      ],
+      "outputs": [
+        "lu2005-jp054472h-cdse-zns-core-shell-quantum-dots-1--after-d2-s03-resuspend"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "QDs resuspended in dimethylformamide (DMF)",
+      "evidence": [
+        {
+          "source_id": "lu2005-jp054472h",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
       "id": "s03-precipitate",
       "action": "precipitate",
       "label": "Precipitation with NaOH and tetrahydrofuran",
@@ -311,10 +438,13 @@
       "branch": "",
       "optional": false,
       "depends_on": [
-        "s02-precipitate"
+        "d2-s03-resuspend"
       ],
       "inputs": [
-        "lu2005-jp054472h-cdse-zns-core-shell-quantum-dots-1--after-s02-precipitate"
+        "lu2005-jp054472h-cdse-zns-core-shell-quantum-dots-1--after-d2-s03-resuspend",
+        "lu2005-jp054472h-cdse-zns-core-shell-quantum-dots-1--3-mercaptopropionic-acid-modified-qds",
+        "lu2005-jp054472h-cdse-zns-core-shell-quantum-dots-1--4-m-naoh",
+        "lu2005-jp054472h-cdse-zns-core-shell-quantum-dots-1--tetrahydrofuran"
       ],
       "outputs": [
         "lu2005-jp054472h-cdse-zns-core-shell-quantum-dots-1--after-s03-precipitate"
@@ -429,7 +559,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
@@ -440,7 +570,13 @@
       "Amount of hexamethyldisilathiane ((TMS)2S) not reported in the extracted text.",
       "Amount of Zn(Ac)2 not reported in the extracted text.",
       "Amount of trioctylphosphine oxide (TOPO) not reported in the extracted text.",
-      "Amount of hexadecylamine (HAD) not reported in the extracted text."
+      "Amount of hexadecylamine (HAD) not reported in the extracted text.",
+      "Amount of CdSe quantum dots not reported in the extracted text.",
+      "Amount of CdSe not reported in the extracted text.",
+      "Amount of dimethylformamide (DMF) not reported in the extracted text.",
+      "Amount of 3-mercaptopropionic-acid-modified QDs not reported in the extracted text.",
+      "Amount of 4 M NaOH not reported in the extracted text.",
+      "Amount of tetrahydrofuran not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

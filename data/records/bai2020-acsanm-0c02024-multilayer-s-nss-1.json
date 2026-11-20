@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "bai2020-acsanm-0c02024-multilayer-s-nss-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Zhuangwei Bai; Lihua Shen; Jianhang Wei; Yuangang Li; Azhar Abbas; Yinyan Li; Mengnan Qu; Dongdong Zhang; Chengxiao Zhang (2020): multilayer S-NSs",
   "material": {
@@ -250,22 +250,86 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "bai2020-acsanm-0c02024-multilayer-s-nss-1--ultrapure-water",
+      "name": "ultrapure water",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 50,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "50 mL",
+          "evidence": [
+            {
+              "source_id": "bai2020-acsanm-0c02024",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "bai2020-acsanm-0c02024",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "bai2020-acsanm-0c02024-multilayer-s-nss-1--sulfur-quantum-dots",
+      "name": "sulfur quantum dots",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "bai2020-acsanm-0c02024",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
-      "id": "bai2020-acsanm-0c02024-multilayer-s-nss-1--after-s01-treat",
+      "id": "bai2020-acsanm-0c02024-multilayer-s-nss-1--after-d2-s01-sonicate",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
+      "parent_ids": []
+    },
+    {
+      "id": "bai2020-acsanm-0c02024-multilayer-s-nss-1--after-s01-treat",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
       "parent_ids": [
+        "bai2020-acsanm-0c02024-multilayer-s-nss-1--after-d2-s01-sonicate",
         "bai2020-acsanm-0c02024-multilayer-s-nss-1--sublimed-sulfur",
         "bai2020-acsanm-0c02024-multilayer-s-nss-1--nitric-acid"
       ]
     },
     {
       "id": "bai2020-acsanm-0c02024-multilayer-s-nss-1--after-s02-centrifuge",
-      "name": "mixture after step 2",
+      "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
         "bai2020-acsanm-0c02024-multilayer-s-nss-1--after-s01-treat",
@@ -273,24 +337,88 @@
       ]
     },
     {
-      "id": "bai2020-acsanm-0c02024-multilayer-s-nss-1--after-s03-add",
-      "name": "mixture after step 3",
+      "id": "bai2020-acsanm-0c02024-multilayer-s-nss-1--after-d2-s04-dissolve",
+      "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
         "bai2020-acsanm-0c02024-multilayer-s-nss-1--after-s02-centrifuge",
+        "bai2020-acsanm-0c02024-multilayer-s-nss-1--sublimed-sulfur",
+        "bai2020-acsanm-0c02024-multilayer-s-nss-1--ultrapure-water",
+        "bai2020-acsanm-0c02024-multilayer-s-nss-1--poly-ethylene-glycol-peg-400"
+      ]
+    },
+    {
+      "id": "bai2020-acsanm-0c02024-multilayer-s-nss-1--after-d2-s05-heat",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "bai2020-acsanm-0c02024-multilayer-s-nss-1--after-d2-s04-dissolve",
+        "bai2020-acsanm-0c02024-multilayer-s-nss-1--sublimed-sulfur",
+        "bai2020-acsanm-0c02024-multilayer-s-nss-1--naoh"
+      ]
+    },
+    {
+      "id": "bai2020-acsanm-0c02024-multilayer-s-nss-1--after-s03-add",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "bai2020-acsanm-0c02024-multilayer-s-nss-1--after-d2-s05-heat",
         "bai2020-acsanm-0c02024-multilayer-s-nss-1--30-h2o2"
       ]
     },
     {
       "id": "bai2020-acsanm-0c02024-multilayer-s-nss-1--after-s04-assemble",
+      "name": "mixture after step 7",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "bai2020-acsanm-0c02024-multilayer-s-nss-1--after-s03-add",
+        "bai2020-acsanm-0c02024-multilayer-s-nss-1--sulfur-quantum-dots"
+      ]
+    },
+    {
+      "id": "bai2020-acsanm-0c02024-multilayer-s-nss-1--after-d2-s08-dialyze",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "bai2020-acsanm-0c02024-multilayer-s-nss-1--after-s03-add"
+        "bai2020-acsanm-0c02024-multilayer-s-nss-1--after-s04-assemble"
       ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-sonicate",
+      "action": "sonicate",
+      "label": "Sonication exfoliation of multilayer S-NSs",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [],
+      "outputs": [
+        "bai2020-acsanm-0c02024-multilayer-s-nss-1--after-d2-s01-sonicate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Sonication exfoliation of multilayer S-NSs",
+      "evidence": [
+        {
+          "source_id": "bai2020-acsanm-0c02024",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
     {
       "id": "s01-treat",
       "action": "treat",
@@ -298,8 +426,11 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
+      "depends_on": [
+        "d2-s01-sonicate"
+      ],
       "inputs": [
+        "bai2020-acsanm-0c02024-multilayer-s-nss-1--after-d2-s01-sonicate",
         "bai2020-acsanm-0c02024-multilayer-s-nss-1--sublimed-sulfur",
         "bai2020-acsanm-0c02024-multilayer-s-nss-1--nitric-acid"
       ],
@@ -405,9 +536,9 @@
       ]
     },
     {
-      "id": "s03-add",
-      "action": "add",
-      "label": "Add H2O2 to form sulfur quantum dots",
+      "id": "d2-s04-dissolve",
+      "action": "dissolve",
+      "label": "Dissolve sulfur in water and PEG",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -416,6 +547,143 @@
       ],
       "inputs": [
         "bai2020-acsanm-0c02024-multilayer-s-nss-1--after-s02-centrifuge",
+        "bai2020-acsanm-0c02024-multilayer-s-nss-1--sublimed-sulfur",
+        "bai2020-acsanm-0c02024-multilayer-s-nss-1--ultrapure-water",
+        "bai2020-acsanm-0c02024-multilayer-s-nss-1--poly-ethylene-glycol-peg-400"
+      ],
+      "outputs": [
+        "bai2020-acsanm-0c02024-multilayer-s-nss-1--after-d2-s04-dissolve"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 0.5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.5 h",
+          "evidence": [
+            {
+              "source_id": "bai2020-acsanm-0c02024",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dissolve sulfur in water and PEG",
+      "evidence": [
+        {
+          "source_id": "bai2020-acsanm-0c02024",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s05-heat",
+      "action": "heat",
+      "label": "Heat the mixture with NaOH",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-dissolve"
+      ],
+      "inputs": [
+        "bai2020-acsanm-0c02024-multilayer-s-nss-1--after-d2-s04-dissolve",
+        "bai2020-acsanm-0c02024-multilayer-s-nss-1--sublimed-sulfur",
+        "bai2020-acsanm-0c02024-multilayer-s-nss-1--naoh"
+      ],
+      "outputs": [
+        "bai2020-acsanm-0c02024-multilayer-s-nss-1--after-d2-s05-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 70,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "70 °C",
+          "evidence": [
+            {
+              "source_id": "bai2020-acsanm-0c02024",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 24,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "24 h",
+          "evidence": [
+            {
+              "source_id": "bai2020-acsanm-0c02024",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heat the mixture with NaOH",
+      "evidence": [
+        {
+          "source_id": "bai2020-acsanm-0c02024",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s03-add",
+      "action": "add",
+      "label": "Add H2O2 to form sulfur quantum dots",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s05-heat"
+      ],
+      "inputs": [
+        "bai2020-acsanm-0c02024-multilayer-s-nss-1--after-d2-s05-heat",
         "bai2020-acsanm-0c02024-multilayer-s-nss-1--30-h2o2"
       ],
       "outputs": [
@@ -454,7 +722,8 @@
         "s03-add"
       ],
       "inputs": [
-        "bai2020-acsanm-0c02024-multilayer-s-nss-1--after-s03-add"
+        "bai2020-acsanm-0c02024-multilayer-s-nss-1--after-s03-add",
+        "bai2020-acsanm-0c02024-multilayer-s-nss-1--sulfur-quantum-dots"
       ],
       "outputs": [
         "bai2020-acsanm-0c02024-multilayer-s-nss-1--after-s04-assemble"
@@ -517,6 +786,44 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s08-dialyze",
+      "action": "dialyze",
+      "label": "Dialyze to remove excess quantum dots",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-assemble"
+      ],
+      "inputs": [
+        "bai2020-acsanm-0c02024-multilayer-s-nss-1--after-s04-assemble"
+      ],
+      "outputs": [
+        "bai2020-acsanm-0c02024-multilayer-s-nss-1--after-d2-s08-dialyze"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dialyze to remove excess quantum dots",
+      "evidence": [
+        {
+          "source_id": "bai2020-acsanm-0c02024",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -525,7 +832,7 @@
       "sample_id": "bai2020-acsanm-0c02024-multilayer-s-nss-1--product",
       "source_sample_label": "multilayer S-NSs",
       "batch_id": null,
-      "material_state_id": "bai2020-acsanm-0c02024-multilayer-s-nss-1--after-s04-assemble",
+      "material_state_id": "bai2020-acsanm-0c02024-multilayer-s-nss-1--after-d2-s08-dialyze",
       "parent_sample_id": null,
       "composition": {
         "value": "S",
@@ -580,16 +887,50 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "bai2020-acsanm-0c02024-multilayer-s-nss-1--photoluminescence-peak",
+      "sample_id": "bai2020-acsanm-0c02024-multilayer-s-nss-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 389,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "389 nm",
+        "evidence": [
+          {
+            "source_id": "bai2020-acsanm-0c02024",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "bai2020-acsanm-0c02024",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
-      "Amount of nitric acid not reported in the extracted text."
+      "Amount of nitric acid not reported in the extracted text.",
+      "Amount of sulfur quantum dots not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

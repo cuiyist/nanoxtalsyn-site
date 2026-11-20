@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "yang2012-jp303182n-7-nm-co-nanocrystals-polycrystalline-fcc-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Zhijie Yang (2012): 7 nm-Co nanocrystals (polycrystalline fcc to hcp single-crystalline phase)",
   "material": {
@@ -155,19 +155,126 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "yang2012-jp303182n-7-nm-co-nanocrystals-polycrystalline-fcc-1--isooctane",
+      "name": "isooctane",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "yang2012-jp303182n",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "yang2012-jp303182n-7-nm-co-nanocrystals-polycrystalline-fcc-1--hexane",
+      "name": "hexane",
+      "formula": null,
+      "role": "solvent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "yang2012-jp303182n",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "yang2012-jp303182n-7-nm-co-nanocrystals-polycrystalline-fcc-1--water",
+      "name": "water",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "yang2012-jp303182n",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "yang2012-jp303182n-7-nm-co-nanocrystals-polycrystalline-fcc-1--lauric-acid",
+      "name": "lauric acid",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "yang2012-jp303182n",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "yang2012-jp303182n-7-nm-co-nanocrystals-polycrystalline-fcc-1--ethanol",
+      "name": "ethanol",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "yang2012-jp303182n",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
-      "id": "yang2012-jp303182n-7-nm-co-nanocrystals-polycrystalline-fcc-1--after-s01-add",
+      "id": "yang2012-jp303182n-7-nm-co-nanocrystals-polycrystalline-fcc-1--after-d2-s01-dissolve",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "yang2012-jp303182n-7-nm-co-nanocrystals-polycrystalline-fcc-1--cobalt-acetate",
+        "yang2012-jp303182n-7-nm-co-nanocrystals-polycrystalline-fcc-1--isooctane"
+      ]
+    },
+    {
+      "id": "yang2012-jp303182n-7-nm-co-nanocrystals-polycrystalline-fcc-1--after-s01-add",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "yang2012-jp303182n-7-nm-co-nanocrystals-polycrystalline-fcc-1--after-d2-s01-dissolve",
+        "yang2012-jp303182n-7-nm-co-nanocrystals-polycrystalline-fcc-1--water"
+      ]
     },
     {
       "id": "yang2012-jp303182n-7-nm-co-nanocrystals-polycrystalline-fcc-1--after-s02-add",
-      "name": "mixture after step 2",
+      "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
         "yang2012-jp303182n-7-nm-co-nanocrystals-polycrystalline-fcc-1--after-s01-add",
@@ -176,15 +283,16 @@
     },
     {
       "id": "yang2012-jp303182n-7-nm-co-nanocrystals-polycrystalline-fcc-1--after-s03-add",
-      "name": "mixture after step 3",
+      "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
-        "yang2012-jp303182n-7-nm-co-nanocrystals-polycrystalline-fcc-1--after-s02-add"
+        "yang2012-jp303182n-7-nm-co-nanocrystals-polycrystalline-fcc-1--after-s02-add",
+        "yang2012-jp303182n-7-nm-co-nanocrystals-polycrystalline-fcc-1--lauric-acid"
       ]
     },
     {
       "id": "yang2012-jp303182n-7-nm-co-nanocrystals-polycrystalline-fcc-1--after-s04-centrifuge",
-      "name": "mixture after step 4",
+      "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
         "yang2012-jp303182n-7-nm-co-nanocrystals-polycrystalline-fcc-1--after-s03-add"
@@ -192,7 +300,7 @@
     },
     {
       "id": "yang2012-jp303182n-7-nm-co-nanocrystals-polycrystalline-fcc-1--after-s05-heat",
-      "name": "mixture after step 5",
+      "name": "mixture after step 6",
       "kind": "reaction_batch",
       "parent_ids": [
         "yang2012-jp303182n-7-nm-co-nanocrystals-polycrystalline-fcc-1--after-s04-centrifuge",
@@ -201,7 +309,7 @@
     },
     {
       "id": "yang2012-jp303182n-7-nm-co-nanocrystals-polycrystalline-fcc-1--after-s06-add",
-      "name": "mixture after step 6",
+      "name": "mixture after step 7",
       "kind": "reaction_batch",
       "parent_ids": [
         "yang2012-jp303182n-7-nm-co-nanocrystals-polycrystalline-fcc-1--after-s05-heat",
@@ -210,10 +318,11 @@
     },
     {
       "id": "yang2012-jp303182n-7-nm-co-nanocrystals-polycrystalline-fcc-1--after-s07-centrifuge",
-      "name": "mixture after step 7",
+      "name": "mixture after step 8",
       "kind": "reaction_batch",
       "parent_ids": [
-        "yang2012-jp303182n-7-nm-co-nanocrystals-polycrystalline-fcc-1--after-s06-add"
+        "yang2012-jp303182n-7-nm-co-nanocrystals-polycrystalline-fcc-1--after-s06-add",
+        "yang2012-jp303182n-7-nm-co-nanocrystals-polycrystalline-fcc-1--ethanol"
       ]
     },
     {
@@ -221,11 +330,54 @@
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "yang2012-jp303182n-7-nm-co-nanocrystals-polycrystalline-fcc-1--after-s07-centrifuge"
+        "yang2012-jp303182n-7-nm-co-nanocrystals-polycrystalline-fcc-1--after-s07-centrifuge",
+        "yang2012-jp303182n-7-nm-co-nanocrystals-polycrystalline-fcc-1--hexane"
       ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-dissolve",
+      "action": "dissolve",
+      "label": "Dissolve cobalt acetate and NaAOT in isooctane",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "yang2012-jp303182n-7-nm-co-nanocrystals-polycrystalline-fcc-1--cobalt-acetate",
+        "yang2012-jp303182n-7-nm-co-nanocrystals-polycrystalline-fcc-1--isooctane"
+      ],
+      "outputs": [
+        "yang2012-jp303182n-7-nm-co-nanocrystals-polycrystalline-fcc-1--after-d2-s01-dissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "yang2012-jp303182n",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dissolve cobalt acetate and NaAOT in isooctane",
+      "evidence": [
+        {
+          "source_id": "yang2012-jp303182n",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
     {
       "id": "s01-add",
       "action": "add",
@@ -233,8 +385,13 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s01-dissolve"
+      ],
+      "inputs": [
+        "yang2012-jp303182n-7-nm-co-nanocrystals-polycrystalline-fcc-1--after-d2-s01-dissolve",
+        "yang2012-jp303182n-7-nm-co-nanocrystals-polycrystalline-fcc-1--water"
+      ],
       "outputs": [
         "yang2012-jp303182n-7-nm-co-nanocrystals-polycrystalline-fcc-1--after-s01-add"
       ],
@@ -320,7 +477,8 @@
         "s02-add"
       ],
       "inputs": [
-        "yang2012-jp303182n-7-nm-co-nanocrystals-polycrystalline-fcc-1--after-s02-add"
+        "yang2012-jp303182n-7-nm-co-nanocrystals-polycrystalline-fcc-1--after-s02-add",
+        "yang2012-jp303182n-7-nm-co-nanocrystals-polycrystalline-fcc-1--lauric-acid"
       ],
       "outputs": [
         "yang2012-jp303182n-7-nm-co-nanocrystals-polycrystalline-fcc-1--after-s03-add"
@@ -489,7 +647,8 @@
         "s06-add"
       ],
       "inputs": [
-        "yang2012-jp303182n-7-nm-co-nanocrystals-polycrystalline-fcc-1--after-s06-add"
+        "yang2012-jp303182n-7-nm-co-nanocrystals-polycrystalline-fcc-1--after-s06-add",
+        "yang2012-jp303182n-7-nm-co-nanocrystals-polycrystalline-fcc-1--ethanol"
       ],
       "outputs": [
         "yang2012-jp303182n-7-nm-co-nanocrystals-polycrystalline-fcc-1--after-s07-centrifuge"
@@ -527,7 +686,8 @@
         "s07-centrifuge"
       ],
       "inputs": [
-        "yang2012-jp303182n-7-nm-co-nanocrystals-polycrystalline-fcc-1--after-s07-centrifuge"
+        "yang2012-jp303182n-7-nm-co-nanocrystals-polycrystalline-fcc-1--after-s07-centrifuge",
+        "yang2012-jp303182n-7-nm-co-nanocrystals-polycrystalline-fcc-1--hexane"
       ],
       "outputs": [
         "yang2012-jp303182n-7-nm-co-nanocrystals-polycrystalline-fcc-1--after-s08-redisperse"
@@ -646,7 +806,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
@@ -655,7 +815,12 @@
       "Amount of cobalt acetate not reported in the extracted text.",
       "Amount of dodecanoic acid not reported in the extracted text.",
       "Amount of sodium borohydride not reported in the extracted text.",
-      "Amount of octyl ether not reported in the extracted text."
+      "Amount of octyl ether not reported in the extracted text.",
+      "Amount of isooctane not reported in the extracted text.",
+      "Amount of hexane not reported in the extracted text.",
+      "Amount of water not reported in the extracted text.",
+      "Amount of lauric acid not reported in the extracted text.",
+      "Amount of ethanol not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

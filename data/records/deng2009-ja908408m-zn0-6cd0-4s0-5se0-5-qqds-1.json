@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "deng2009-ja908408m-zn0-6cd0-4s0-5se0-5-qqds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Zhengtao Deng; Hao Yan; Yan Liu (2009): Zn0.6Cd0.4S0.5Se0.5 QQDs",
   "material": {
@@ -52,9 +52,14 @@
       "note": ""
     },
     "phase": {
-      "value": null,
-      "status": "not_reported",
-      "evidence": [],
+      "value": "face-centered cubic (fcc)",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "deng2009-ja908408m",
+          "locator": "Main PDF p.1"
+        }
+      ],
       "note": ""
     },
     "size": {
@@ -164,6 +169,44 @@
       "name": "2-ethylhexanoic acid (EHA)",
       "formula": null,
       "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "deng2009-ja908408m",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "deng2009-ja908408m-zn0-6cd0-4s0-5se0-5-qqds-1--s",
+      "name": "S",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "deng2009-ja908408m",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "deng2009-ja908408m-zn0-6cd0-4s0-5se0-5-qqds-1--se",
+      "name": "Se",
+      "formula": null,
+      "role": "chalcogen_precursor",
       "stage": "synthesis",
       "identity": {
         "pubchem_cid": null,
@@ -354,9 +397,14 @@
         "note": ""
       },
       "phase": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "face-centered cubic (fcc)",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "deng2009-ja908408m",
+            "locator": "Main PDF p.1"
+          }
+        ],
         "note": ""
       },
       "morphology": {
@@ -391,13 +439,45 @@
       "notes": []
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "deng2009-ja908408m-zn0-6cd0-4s0-5se0-5-qqds-1--photoluminescence-peak",
+      "sample_id": "deng2009-ja908408m-zn0-6cd0-4s0-5se0-5-qqds-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 528,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "528 nm",
+        "evidence": [
+          {
+            "source_id": "deng2009-ja908408m",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "deng2009-ja908408m",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
-      "Phase not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
@@ -407,7 +487,10 @@
       "Amount of CdO not reported in the extracted text.",
       "Amount of S/Se powder not reported in the extracted text.",
       "Amount of oleic acid (OA) not reported in the extracted text.",
-      "Amount of 2-ethylhexanoic acid (EHA) not reported in the extracted text."
+      "Amount of 2-ethylhexanoic acid (EHA) not reported in the extracted text.",
+      "Amount of S/Se powder not reported in the extracted text.",
+      "Amount of S not reported in the extracted text.",
+      "Amount of Se not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

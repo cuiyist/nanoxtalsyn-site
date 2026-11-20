@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "chang2011-c1ee02341a-cuin0-5ga0-5-s0-5se0-5-2-nanocrystals-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Shu-Hao Chang; Ming-Yi Chiang; Chien-Chih Chiang; Fang-Wei Yuan; Chia-Yu Chen; Bo-Cheng Chiu; Tzu-Lun Kao; Chi-Huang Lai; Hsing-Yu Tuan (2011): CuIn0.5Ga0.5(S0.5Se0.5)2 nanocrystals",
   "material": {
@@ -188,6 +188,25 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "chang2011-c1ee02341a-cuin0-5ga0-5-s0-5se0-5-2-nanocrystals-1--oleyamine",
+      "name": "oleyamine",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "chang2011-c1ee02341a",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -201,7 +220,8 @@
         "chang2011-c1ee02341a-cuin0-5ga0-5-s0-5se0-5-2-nanocrystals-1--incl3",
         "chang2011-c1ee02341a-cuin0-5ga0-5-s0-5se0-5-2-nanocrystals-1--gacl3",
         "chang2011-c1ee02341a-cuin0-5ga0-5-s0-5se0-5-2-nanocrystals-1--s",
-        "chang2011-c1ee02341a-cuin0-5ga0-5-s0-5se0-5-2-nanocrystals-1--se"
+        "chang2011-c1ee02341a-cuin0-5ga0-5-s0-5se0-5-2-nanocrystals-1--se",
+        "chang2011-c1ee02341a-cuin0-5ga0-5-s0-5se0-5-2-nanocrystals-1--oleyamine"
       ]
     }
   ],
@@ -219,7 +239,8 @@
         "chang2011-c1ee02341a-cuin0-5ga0-5-s0-5se0-5-2-nanocrystals-1--incl3",
         "chang2011-c1ee02341a-cuin0-5ga0-5-s0-5se0-5-2-nanocrystals-1--gacl3",
         "chang2011-c1ee02341a-cuin0-5ga0-5-s0-5se0-5-2-nanocrystals-1--s",
-        "chang2011-c1ee02341a-cuin0-5ga0-5-s0-5se0-5-2-nanocrystals-1--se"
+        "chang2011-c1ee02341a-cuin0-5ga0-5-s0-5se0-5-2-nanocrystals-1--se",
+        "chang2011-c1ee02341a-cuin0-5ga0-5-s0-5se0-5-2-nanocrystals-1--oleyamine"
       ],
       "outputs": [
         "chang2011-c1ee02341a-cuin0-5ga0-5-s0-5se0-5-2-nanocrystals-1--after-s01-heat"
@@ -362,7 +383,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
@@ -372,7 +393,8 @@
       "Amount of InCl3 not reported in the extracted text.",
       "Amount of GaCl3 not reported in the extracted text.",
       "Amount of S not reported in the extracted text.",
-      "Amount of Se not reported in the extracted text."
+      "Amount of Se not reported in the extracted text.",
+      "Amount of oleyamine not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

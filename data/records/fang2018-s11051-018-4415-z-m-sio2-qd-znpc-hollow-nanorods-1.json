@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Jingyu Si & Jianfeng Zhang & Jinyu Duan & Huajian Xu & Qunling Fang (2018): m-SiO2/QD-ZnPc hollow nanorods",
   "material": {
@@ -209,6 +209,44 @@
       "id": "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--cdte-qd",
       "name": "CdTe QD",
       "formula": null,
+      "role": "starting_particles",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "fang2018-s11051-018-4415-z",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--iron-iii-chloride",
+      "name": "iron(III) chloride",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "fang2018-s11051-018-4415-z",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--zinc-ii-phthalocyanine",
+      "name": "zinc(II) phthalocyanine",
+      "formula": null,
       "role": "reagent",
       "stage": "synthesis",
       "identity": {
@@ -228,14 +266,25 @@
   "stocks": [],
   "material_states": [
     {
-      "id": "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--after-s01-disperse",
+      "id": "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--after-d2-s01-prepare",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--iron-iii-chloride"
+      ]
+    },
+    {
+      "id": "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--after-s01-disperse",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--after-d2-s01-prepare",
+        "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--iron-iii-chloride"
+      ]
     },
     {
       "id": "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--after-s02-stir",
-      "name": "mixture after step 2",
+      "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
         "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--after-s01-disperse",
@@ -244,21 +293,44 @@
       ]
     },
     {
-      "id": "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--after-s03-heat",
-      "name": "mixture after step 3",
+      "id": "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--after-d2-s04-collect",
+      "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
         "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--after-s02-stir",
+        "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--iron-iii-chloride",
+        "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--tetraethyl-orthosilicate",
+        "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--octadecyltrimethoxysilane"
+      ]
+    },
+    {
+      "id": "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--after-s03-heat",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--after-d2-s04-collect",
+        "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--tetraethyl-orthosilicate",
+        "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--octadecyltrimethoxysilane",
+        "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--iron-iii-chloride"
+      ]
+    },
+    {
+      "id": "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--after-d2-s06-soak",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--after-s03-heat",
+        "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--iron-iii-chloride",
         "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--tetraethyl-orthosilicate",
         "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--octadecyltrimethoxysilane"
       ]
     },
     {
       "id": "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--after-s04-add",
-      "name": "mixture after step 4",
+      "name": "mixture after step 7",
       "kind": "reaction_batch",
       "parent_ids": [
-        "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--after-s03-heat",
+        "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--after-d2-s06-soak",
         "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--cdte-qd"
       ]
     },
@@ -267,11 +339,53 @@
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--after-s04-add"
+        "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--after-s04-add",
+        "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--zinc-ii-phthalocyanine"
       ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-prepare",
+      "action": "prepare",
+      "label": "Β-FeOOH nanorods",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--iron-iii-chloride"
+      ],
+      "outputs": [
+        "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--after-d2-s01-prepare"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "fang2018-s11051-018-4415-z",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Β-FeOOH nanorods",
+      "evidence": [
+        {
+          "source_id": "fang2018-s11051-018-4415-z",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
     {
       "id": "s01-disperse",
       "action": "disperse",
@@ -279,16 +393,26 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s01-prepare"
+      ],
+      "inputs": [
+        "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--after-d2-s01-prepare",
+        "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--iron-iii-chloride"
+      ],
       "outputs": [
         "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--after-s01-disperse"
       ],
       "parameters": {},
       "environment": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "fang2018-s11051-018-4415-z",
+            "locator": "Main PDF p.3"
+          }
+        ],
         "note": ""
       },
       "endpoint": {
@@ -345,9 +469,14 @@
         }
       },
       "environment": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "fang2018-s11051-018-4415-z",
+            "locator": "Main PDF p.3"
+          }
+        ],
         "note": ""
       },
       "endpoint": {
@@ -366,10 +495,10 @@
       ]
     },
     {
-      "id": "s03-heat",
-      "action": "heat",
-      "label": "Β-FeOOH@hybrid-SiO2 nanorods",
-      "stage": "synthesis",
+      "id": "d2-s04-collect",
+      "action": "collect",
+      "label": "Collect",
+      "stage": "workup",
       "branch": "",
       "optional": false,
       "depends_on": [
@@ -377,8 +506,50 @@
       ],
       "inputs": [
         "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--after-s02-stir",
+        "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--iron-iii-chloride",
         "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--tetraethyl-orthosilicate",
         "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--octadecyltrimethoxysilane"
+      ],
+      "outputs": [
+        "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--after-d2-s04-collect"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Collect",
+      "evidence": [
+        {
+          "source_id": "fang2018-s11051-018-4415-z",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s03-heat",
+      "action": "heat",
+      "label": "Β-FeOOH@hybrid-SiO2 nanorods",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-collect"
+      ],
+      "inputs": [
+        "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--after-d2-s04-collect",
+        "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--tetraethyl-orthosilicate",
+        "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--octadecyltrimethoxysilane",
+        "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--iron-iii-chloride"
       ],
       "outputs": [
         "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--after-s03-heat"
@@ -422,9 +593,14 @@
         }
       },
       "environment": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "fang2018-s11051-018-4415-z",
+            "locator": "Main PDF p.3"
+          }
+        ],
         "note": ""
       },
       "endpoint": {
@@ -443,9 +619,9 @@
       ]
     },
     {
-      "id": "s04-add",
-      "action": "add",
-      "label": "CdTe QD solution",
+      "id": "d2-s06-soak",
+      "action": "soak",
+      "label": "In diluted HCl solution",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -454,6 +630,89 @@
       ],
       "inputs": [
         "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--after-s03-heat",
+        "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--iron-iii-chloride",
+        "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--tetraethyl-orthosilicate",
+        "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--octadecyltrimethoxysilane"
+      ],
+      "outputs": [
+        "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--after-d2-s06-soak"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 100,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "100 °C",
+          "evidence": [
+            {
+              "source_id": "fang2018-s11051-018-4415-z",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 12,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "12 h",
+          "evidence": [
+            {
+              "source_id": "fang2018-s11051-018-4415-z",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "fang2018-s11051-018-4415-z",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "In diluted HCl solution",
+      "evidence": [
+        {
+          "source_id": "fang2018-s11051-018-4415-z",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s04-add",
+      "action": "add",
+      "label": "CdTe QD solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s06-soak"
+      ],
+      "inputs": [
+        "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--after-d2-s06-soak",
         "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--cdte-qd"
       ],
       "outputs": [
@@ -480,9 +739,14 @@
         }
       },
       "environment": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "fang2018-s11051-018-4415-z",
+            "locator": "Main PDF p.3"
+          }
+        ],
         "note": ""
       },
       "endpoint": {
@@ -511,7 +775,8 @@
         "s04-add"
       ],
       "inputs": [
-        "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--after-s04-add"
+        "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--after-s04-add",
+        "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--zinc-ii-phthalocyanine"
       ],
       "outputs": [
         "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1--after-s05-soak"
@@ -537,9 +802,14 @@
         }
       },
       "environment": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "fang2018-s11051-018-4415-z",
+            "locator": "Main PDF p.3"
+          }
+        ],
         "note": ""
       },
       "endpoint": {
@@ -661,10 +931,11 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
-      "Atmosphere not reported in the extracted text.",
-      "Amount of CdTe QD not reported in the extracted text."
+      "Amount of CdTe QD not reported in the extracted text.",
+      "Amount of iron(III) chloride not reported in the extracted text.",
+      "Amount of zinc(II) phthalocyanine not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

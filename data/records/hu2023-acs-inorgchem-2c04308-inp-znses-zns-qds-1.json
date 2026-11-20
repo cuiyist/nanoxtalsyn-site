@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Hui-Ling Hu; Hao Hao; Xue Ren; Zhe-Yong Chen; Meng Liu; Yi Liu; Feng-Lei Jiang (2023): InP/ZnSeS/ZnS QDs",
   "material": {
@@ -280,24 +280,195 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1--1-mercaptoctane",
+      "name": "1-mercaptoctane",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "hu2023-acs-inorgchem-2c04308",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1--zinc-acetate-dihydrate",
+      "name": "zinc acetate dihydrate",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "hu2023-acs-inorgchem-2c04308",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
-      "id": "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1--after-s01-heat",
-      "name": "product as isolated",
-      "kind": "product",
+      "id": "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1--after-d2-s01-degas",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
       "parent_ids": [
+        "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1--indium-iodide",
+        "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1--zinc-chloride",
+        "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1--oleyl-amine"
+      ]
+    },
+    {
+      "id": "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1--after-s01-heat",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1--after-d2-s01-degas",
         "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1--indium-iodide",
         "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1--zinc-chloride",
         "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1--oleyl-amine",
         "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1--tris-dimethylamino-phosphine",
         "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1--trioctylphosphine"
       ]
+    },
+    {
+      "id": "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1--after-d2-s03-cool",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1--after-s01-heat"
+      ]
+    },
+    {
+      "id": "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1--after-d2-s04-purify",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1--after-d2-s03-cool"
+      ]
+    },
+    {
+      "id": "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1--after-d2-s05-add",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1--after-d2-s04-purify",
+        "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1--1-mercaptoctane"
+      ]
+    },
+    {
+      "id": "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1--after-d2-s06-add",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1--after-d2-s05-add",
+        "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1--zinc-acetate-dihydrate"
+      ]
+    },
+    {
+      "id": "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1--after-d2-s07-purify",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1--after-d2-s06-add"
+      ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-degas",
+      "action": "degas",
+      "label": "Degassing the mixture",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1--indium-iodide",
+        "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1--zinc-chloride",
+        "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1--oleyl-amine"
+      ],
+      "outputs": [
+        "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1--after-d2-s01-degas"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 120,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "120 °C",
+          "evidence": [
+            {
+              "source_id": "hu2023-acs-inorgchem-2c04308",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 60,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "60 min",
+          "evidence": [
+            {
+              "source_id": "hu2023-acs-inorgchem-2c04308",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "hu2023-acs-inorgchem-2c04308",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Degassing the mixture",
+      "evidence": [
+        {
+          "source_id": "hu2023-acs-inorgchem-2c04308",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
     {
       "id": "s01-heat",
       "action": "heat",
@@ -305,8 +476,11 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
+      "depends_on": [
+        "d2-s01-degas"
+      ],
       "inputs": [
+        "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1--after-d2-s01-degas",
         "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1--indium-iodide",
         "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1--zinc-chloride",
         "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1--oleyl-amine",
@@ -379,6 +553,287 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s03-cool",
+      "action": "cool",
+      "label": "Cooling the reaction mixture",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-heat"
+      ],
+      "inputs": [
+        "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1--after-s01-heat"
+      ],
+      "outputs": [
+        "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1--after-d2-s03-cool"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "hu2023-acs-inorgchem-2c04308",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Cooling the reaction mixture",
+      "evidence": [
+        {
+          "source_id": "hu2023-acs-inorgchem-2c04308",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s04-purify",
+      "action": "purify",
+      "label": "Purifying the InP cores",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-cool"
+      ],
+      "inputs": [
+        "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1--after-d2-s03-cool"
+      ],
+      "outputs": [
+        "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1--after-d2-s04-purify"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Purifying the InP cores",
+      "evidence": [
+        {
+          "source_id": "hu2023-acs-inorgchem-2c04308",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s05-add",
+      "action": "add",
+      "label": "Add",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-purify"
+      ],
+      "inputs": [
+        "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1--after-d2-s04-purify",
+        "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1--1-mercaptoctane"
+      ],
+      "outputs": [
+        "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1--after-d2-s05-add"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 230,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "230 °C",
+          "evidence": [
+            {
+              "source_id": "hu2023-acs-inorgchem-2c04308",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 30,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "30 min",
+          "evidence": [
+            {
+              "source_id": "hu2023-acs-inorgchem-2c04308",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "hu2023-acs-inorgchem-2c04308",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add",
+      "evidence": [
+        {
+          "source_id": "hu2023-acs-inorgchem-2c04308",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s06-add",
+      "action": "add",
+      "label": "Adding zinc acetate dihydrate",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s05-add"
+      ],
+      "inputs": [
+        "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1--after-d2-s05-add",
+        "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1--zinc-acetate-dihydrate"
+      ],
+      "outputs": [
+        "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1--after-d2-s06-add"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 190,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "190 °C",
+          "evidence": [
+            {
+              "source_id": "hu2023-acs-inorgchem-2c04308",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 60,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "60 min",
+          "evidence": [
+            {
+              "source_id": "hu2023-acs-inorgchem-2c04308",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "hu2023-acs-inorgchem-2c04308",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Adding zinc acetate dihydrate",
+      "evidence": [
+        {
+          "source_id": "hu2023-acs-inorgchem-2c04308",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s07-purify",
+      "action": "purify",
+      "label": "Purifying the final QDs",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s06-add"
+      ],
+      "inputs": [
+        "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1--after-d2-s06-add"
+      ],
+      "outputs": [
+        "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1--after-d2-s07-purify"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Purifying the final QDs",
+      "evidence": [
+        {
+          "source_id": "hu2023-acs-inorgchem-2c04308",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -387,7 +842,7 @@
       "sample_id": "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1--product",
       "source_sample_label": "InP/ZnSeS/ZnS QDs",
       "batch_id": null,
-      "material_state_id": "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1--after-s01-heat",
+      "material_state_id": "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1--after-d2-s07-purify",
       "parent_sample_id": null,
       "composition": {
         "value": "InP",
@@ -474,14 +929,48 @@
           "locator": "Main PDF p.8"
         }
       ]
+    },
+    {
+      "id": "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1--photoluminescence-quantum-yield",
+      "sample_id": "hu2023-acs-inorgchem-2c04308-inp-znses-zns-qds-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 70,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "70 %",
+        "evidence": [
+          {
+            "source_id": "hu2023-acs-inorgchem-2c04308",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "hu2023-acs-inorgchem-2c04308",
+          "locator": "Main PDF p.1"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
-      "Ligand not reported in the extracted text."
+      "Ligand not reported in the extracted text.",
+      "Amount of 1-mercaptoctane not reported in the extracted text.",
+      "Amount of zinc acetate dihydrate not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

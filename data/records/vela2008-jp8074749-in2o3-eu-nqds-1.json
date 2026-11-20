@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "vela2008-jp8074749-in2o3-eu-nqds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Javier Vela (2008): In2O3:Eu NQDs",
   "material": {
@@ -40,9 +40,14 @@
   },
   "intended_target": {
     "composition": {
-      "value": null,
-      "status": "not_reported",
-      "evidence": [],
+      "value": "In2O3:Eu",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "vela2008-jp8074749",
+          "locator": "Main PDF p.1"
+        }
+      ],
       "note": ""
     },
     "phase": {
@@ -249,11 +254,27 @@
       "parent_ids": []
     },
     {
+      "id": "vela2008-jp8074749-in2o3-eu-nqds-1--after-d2-s02-backfill",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "vela2008-jp8074749-in2o3-eu-nqds-1--after-s01-evacuate"
+      ]
+    },
+    {
       "id": "vela2008-jp8074749-in2o3-eu-nqds-1--after-s02-precipitate",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "vela2008-jp8074749-in2o3-eu-nqds-1--after-d2-s02-backfill"
+      ]
+    },
+    {
+      "id": "vela2008-jp8074749-in2o3-eu-nqds-1--after-d2-s04-redissolve",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "vela2008-jp8074749-in2o3-eu-nqds-1--after-s01-evacuate"
+        "vela2008-jp8074749-in2o3-eu-nqds-1--after-s02-precipitate"
       ]
     }
   ],
@@ -335,10 +356,10 @@
       ]
     },
     {
-      "id": "s02-precipitate",
-      "action": "precipitate",
-      "label": "Precipitate with acetone-methanol",
-      "stage": "workup",
+      "id": "d2-s02-backfill",
+      "action": "backfill",
+      "label": "Backfill with dry argon",
+      "stage": "synthesis",
       "branch": "",
       "optional": false,
       "depends_on": [
@@ -346,6 +367,86 @@
       ],
       "inputs": [
         "vela2008-jp8074749-in2o3-eu-nqds-1--after-s01-evacuate"
+      ],
+      "outputs": [
+        "vela2008-jp8074749-in2o3-eu-nqds-1--after-d2-s02-backfill"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 290,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "290 °C",
+          "evidence": [
+            {
+              "source_id": "vela2008-jp8074749",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 10,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "10 min",
+          "evidence": [
+            {
+              "source_id": "vela2008-jp8074749",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "vela2008-jp8074749",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Backfill with dry argon",
+      "evidence": [
+        {
+          "source_id": "vela2008-jp8074749",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-precipitate",
+      "action": "precipitate",
+      "label": "Precipitate with acetone-methanol",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-backfill"
+      ],
+      "inputs": [
+        "vela2008-jp8074749-in2o3-eu-nqds-1--after-d2-s02-backfill"
       ],
       "outputs": [
         "vela2008-jp8074749-in2o3-eu-nqds-1--after-s02-precipitate"
@@ -371,6 +472,49 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s04-redissolve",
+      "action": "redissolve",
+      "label": "Redissolve in hexane",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-precipitate"
+      ],
+      "inputs": [
+        "vela2008-jp8074749-in2o3-eu-nqds-1--after-s02-precipitate"
+      ],
+      "outputs": [
+        "vela2008-jp8074749-in2o3-eu-nqds-1--after-d2-s04-redissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "vela2008-jp8074749",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Redissolve in hexane",
+      "evidence": [
+        {
+          "source_id": "vela2008-jp8074749",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -379,12 +523,17 @@
       "sample_id": "vela2008-jp8074749-in2o3-eu-nqds-1--product",
       "source_sample_label": "In2O3:Eu NQDs",
       "batch_id": null,
-      "material_state_id": "vela2008-jp8074749-in2o3-eu-nqds-1--after-s02-precipitate",
+      "material_state_id": "vela2008-jp8074749-in2o3-eu-nqds-1--after-d2-s04-redissolve",
       "parent_sample_id": null,
       "composition": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "In2O3:Eu",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "vela2008-jp8074749",
+            "locator": "Main PDF p.1"
+          }
+        ],
         "note": ""
       },
       "phase": {
@@ -423,7 +572,8 @@
         }
       ],
       "notes": [
-        "Reaction temperature: 290 degC (Main PDF p.2)."
+        "Reaction temperature: 290 degC (Main PDF p.2).",
+        "Reaction time: 7 min (Main PDF p.?)."
       ]
     }
   ],
@@ -464,11 +614,10 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
-      "Reaction time not reported in the extracted text.",
       "Amount of Eu(NO3)3·(H2O)6 not reported in the extracted text.",
       "Amount of In(OAc)3 not reported in the extracted text."
     ],

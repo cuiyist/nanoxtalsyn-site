@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "sun2024-acs-analchem-4c00951-oda-cspbbr3-cspb2br5-pqds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Ruifen Sun; Shuyun Xiong; Weiwei Zhang; Yun Huang; Jingcheng Zheng; Jiwei Shao; Yuwu Chi (2024): ODA-CsPbBr3@CsPb2Br5 PQDs",
   "material": {
@@ -301,15 +301,25 @@
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
-        "sun2024-acs-analchem-4c00951-oda-cspbbr3-cspb2br5-pqds-1--after-s01-dissolve"
+        "sun2024-acs-analchem-4c00951-oda-cspbbr3-cspb2br5-pqds-1--after-s01-dissolve",
+        "sun2024-acs-analchem-4c00951-oda-cspbbr3-cspb2br5-pqds-1--oleic-acid-oa",
+        "sun2024-acs-analchem-4c00951-oda-cspbbr3-cspb2br5-pqds-1--n-octadecyldiethanolamine-oda"
       ]
     },
     {
       "id": "sun2024-acs-analchem-4c00951-oda-cspbbr3-cspb2br5-pqds-1--after-s03-centrifuge",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "sun2024-acs-analchem-4c00951-oda-cspbbr3-cspb2br5-pqds-1--after-s02-mix"
+      ]
+    },
+    {
+      "id": "sun2024-acs-analchem-4c00951-oda-cspbbr3-cspb2br5-pqds-1--after-d2-s04-add",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "sun2024-acs-analchem-4c00951-oda-cspbbr3-cspb2br5-pqds-1--after-s02-mix"
+        "sun2024-acs-analchem-4c00951-oda-cspbbr3-cspb2br5-pqds-1--after-s03-centrifuge"
       ]
     }
   ],
@@ -363,7 +373,9 @@
         "s01-dissolve"
       ],
       "inputs": [
-        "sun2024-acs-analchem-4c00951-oda-cspbbr3-cspb2br5-pqds-1--after-s01-dissolve"
+        "sun2024-acs-analchem-4c00951-oda-cspbbr3-cspb2br5-pqds-1--after-s01-dissolve",
+        "sun2024-acs-analchem-4c00951-oda-cspbbr3-cspb2br5-pqds-1--oleic-acid-oa",
+        "sun2024-acs-analchem-4c00951-oda-cspbbr3-cspb2br5-pqds-1--n-octadecyldiethanolamine-oda"
       ],
       "outputs": [
         "sun2024-acs-analchem-4c00951-oda-cspbbr3-cspb2br5-pqds-1--after-s02-mix"
@@ -446,6 +458,44 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "d2-s04-add",
+      "action": "add",
+      "label": "Add water to induce phase transformation",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-centrifuge"
+      ],
+      "inputs": [
+        "sun2024-acs-analchem-4c00951-oda-cspbbr3-cspb2br5-pqds-1--after-s03-centrifuge"
+      ],
+      "outputs": [
+        "sun2024-acs-analchem-4c00951-oda-cspbbr3-cspb2br5-pqds-1--after-d2-s04-add"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add water to induce phase transformation",
+      "evidence": [
+        {
+          "source_id": "sun2024-acs-analchem-4c00951",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -454,7 +504,7 @@
       "sample_id": "sun2024-acs-analchem-4c00951-oda-cspbbr3-cspb2br5-pqds-1--product",
       "source_sample_label": "ODA-CsPbBr3@CsPb2Br5 PQDs",
       "batch_id": null,
-      "material_state_id": "sun2024-acs-analchem-4c00951-oda-cspbbr3-cspb2br5-pqds-1--after-s03-centrifuge",
+      "material_state_id": "sun2024-acs-analchem-4c00951-oda-cspbbr3-cspb2br5-pqds-1--after-d2-s04-add",
       "parent_sample_id": null,
       "composition": {
         "value": "CsPbBr3@CsPb2Br5",
@@ -490,9 +540,14 @@
         "note": ""
       },
       "surface": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "N-octadecyldiethanolamine (ODA)",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "sun2024-acs-analchem-4c00951",
+            "locator": "Main PDF p.1"
+          }
+        ],
         "note": ""
       },
       "recipe_link": "explicit",
@@ -537,14 +592,45 @@
           "locator": "Main PDF p.4"
         }
       ]
+    },
+    {
+      "id": "sun2024-acs-analchem-4c00951-oda-cspbbr3-cspb2br5-pqds-1--photoluminescence-peak",
+      "sample_id": "sun2024-acs-analchem-4c00951-oda-cspbbr3-cspb2br5-pqds-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 523,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "523 nm",
+        "evidence": [
+          {
+            "source_id": "sun2024-acs-analchem-4c00951",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "sun2024-acs-analchem-4c00951",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
-      "Ligand not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",

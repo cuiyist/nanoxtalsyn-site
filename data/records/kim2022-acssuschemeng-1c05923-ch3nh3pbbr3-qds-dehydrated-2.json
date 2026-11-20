@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "kim2022-acssuschemeng-1c05923-ch3nh3pbbr3-qds-dehydrated-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Jin Young Kim; Byung Gi Kim; Woongsik Jang; Dong Hwan Wang (2022): CH3NH3PbBr3 QDs (dehydrated)",
   "material": {
@@ -316,6 +316,25 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "kim2022-acssuschemeng-1c05923-ch3nh3pbbr3-qds-dehydrated-2--oleic-acid",
+      "name": "oleic acid",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "kim2022-acssuschemeng-1c05923",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -338,7 +357,8 @@
         "kim2022-acssuschemeng-1c05923-ch3nh3pbbr3-qds-dehydrated-2--pbbr2",
         "kim2022-acssuschemeng-1c05923-ch3nh3pbbr3-qds-dehydrated-2--n-octylamine",
         "kim2022-acssuschemeng-1c05923-ch3nh3pbbr3-qds-dehydrated-2--dmf",
-        "kim2022-acssuschemeng-1c05923-ch3nh3pbbr3-qds-dehydrated-2--toluene"
+        "kim2022-acssuschemeng-1c05923-ch3nh3pbbr3-qds-dehydrated-2--toluene",
+        "kim2022-acssuschemeng-1c05923-ch3nh3pbbr3-qds-dehydrated-2--oleic-acid"
       ]
     }
   ],
@@ -432,7 +452,8 @@
         "kim2022-acssuschemeng-1c05923-ch3nh3pbbr3-qds-dehydrated-2--pbbr2",
         "kim2022-acssuschemeng-1c05923-ch3nh3pbbr3-qds-dehydrated-2--n-octylamine",
         "kim2022-acssuschemeng-1c05923-ch3nh3pbbr3-qds-dehydrated-2--dmf",
-        "kim2022-acssuschemeng-1c05923-ch3nh3pbbr3-qds-dehydrated-2--toluene"
+        "kim2022-acssuschemeng-1c05923-ch3nh3pbbr3-qds-dehydrated-2--toluene",
+        "kim2022-acssuschemeng-1c05923-ch3nh3pbbr3-qds-dehydrated-2--oleic-acid"
       ],
       "outputs": [
         "kim2022-acssuschemeng-1c05923-ch3nh3pbbr3-qds-dehydrated-2--after-s02-inject"
@@ -529,7 +550,8 @@
         }
       ],
       "notes": [
-        "Reaction temperature: 25 degC (Main PDF p.2)."
+        "Reaction temperature: 25 degC (Main PDF p.2).",
+        "Reaction time: 5 min (Main PDF p.?)."
       ]
     }
   ],
@@ -565,19 +587,83 @@
           "locator": "Main PDF p.4"
         }
       ]
+    },
+    {
+      "id": "kim2022-acssuschemeng-1c05923-ch3nh3pbbr3-qds-dehydrated-2--photoluminescence-peak",
+      "sample_id": "kim2022-acssuschemeng-1c05923-ch3nh3pbbr3-qds-dehydrated-2--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 524.4,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "524.4 nm",
+        "evidence": [
+          {
+            "source_id": "kim2022-acssuschemeng-1c05923",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "kim2022-acssuschemeng-1c05923",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    },
+    {
+      "id": "kim2022-acssuschemeng-1c05923-ch3nh3pbbr3-qds-dehydrated-2--photoluminescence-quantum-yield",
+      "sample_id": "kim2022-acssuschemeng-1c05923-ch3nh3pbbr3-qds-dehydrated-2--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 92.1,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "92.1 %",
+        "evidence": [
+          {
+            "source_id": "kim2022-acssuschemeng-1c05923",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "kim2022-acssuschemeng-1c05923",
+          "locator": "Main PDF p.4"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
-      "Reaction time not reported in the extracted text.",
       "Amount of n-octylamine not reported in the extracted text.",
-      "Amount of molecular sieves not reported in the extracted text."
+      "Amount of molecular sieves not reported in the extracted text.",
+      "Amount of oleic acid not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

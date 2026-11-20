@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "shen2007-s10008-007-0293-5-nanocrystalline-zinc-coating-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Mou Cheng Li & Li Li Jiang & Wen Qi Zhang & Yu Hai Qian & Su Zhen Luo & Jia Nian Shen (2007): nanocrystalline zinc coating",
   "material": {
@@ -203,6 +203,25 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "shen2007-s10008-007-0293-5-nanocrystalline-zinc-coating-1--h2so4",
+      "name": "H2SO4",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "shen2007-s10008-007-0293-5",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -218,7 +237,8 @@
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
-        "shen2007-s10008-007-0293-5-nanocrystalline-zinc-coating-1--after-s01-grind"
+        "shen2007-s10008-007-0293-5-nanocrystalline-zinc-coating-1--after-s01-grind",
+        "shen2007-s10008-007-0293-5-nanocrystalline-zinc-coating-1--h2so4"
       ]
     },
     {
@@ -281,7 +301,8 @@
         "s01-grind"
       ],
       "inputs": [
-        "shen2007-s10008-007-0293-5-nanocrystalline-zinc-coating-1--after-s01-grind"
+        "shen2007-s10008-007-0293-5-nanocrystalline-zinc-coating-1--after-s01-grind",
+        "shen2007-s10008-007-0293-5-nanocrystalline-zinc-coating-1--h2so4"
       ],
       "outputs": [
         "shen2007-s10008-007-0293-5-nanocrystalline-zinc-coating-1--after-s02-pickling"
@@ -488,14 +509,15 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Amount of polyethylene glycol not reported in the extracted text.",
       "Amount of cetyltrimethylammonium bromide not reported in the extracted text.",
       "Amount of benzalacetone not reported in the extracted text.",
-      "Amount of thiourea not reported in the extracted text."
+      "Amount of thiourea not reported in the extracted text.",
+      "Amount of H2SO4 not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "duah2026-acsanm-5c05527-ingap-znse-zns-qds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Calem Duah; Ji-Seoung Jeong; Sun-Gi Choi; Hwanhui Yun; Taesu Kim; Bo Keun Park; Su Yeon Lee; Ji Yeon Ryu; Seon Joo Lee (2026): InGaP/ZnSe/ZnS QDs",
   "material": {
@@ -243,19 +243,107 @@
           "locator": "Main PDF p.7"
         }
       ]
+    },
+    {
+      "id": "duah2026-acsanm-5c05527-ingap-znse-zns-qds-1--oleyamine",
+      "name": "oleyamine",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 7.2,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "7.2 mL",
+          "evidence": [
+            {
+              "source_id": "duah2026-acsanm-5c05527",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "duah2026-acsanm-5c05527",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "duah2026-acsanm-5c05527-ingap-znse-zns-qds-1--tri-n-octylphosphine",
+      "name": "tri-n-octylphosphine",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 2.7,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2.7 mmol",
+          "evidence": [
+            {
+              "source_id": "duah2026-acsanm-5c05527",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "duah2026-acsanm-5c05527",
+          "locator": "Main PDF p.7"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
-      "id": "duah2026-acsanm-5c05527-ingap-znse-zns-qds-1--after-s01-heat",
+      "id": "duah2026-acsanm-5c05527-ingap-znse-zns-qds-1--after-d2-s01-load",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "duah2026-acsanm-5c05527-ingap-znse-zns-qds-1--indium-tris-bis-trimethylsilyl-amide",
+        "duah2026-acsanm-5c05527-ingap-znse-zns-qds-1--zinc-chloride",
+        "duah2026-acsanm-5c05527-ingap-znse-zns-qds-1--oleyamine"
+      ]
+    },
+    {
+      "id": "duah2026-acsanm-5c05527-ingap-znse-zns-qds-1--after-s01-heat",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "duah2026-acsanm-5c05527-ingap-znse-zns-qds-1--after-d2-s01-load"
+      ]
     },
     {
       "id": "duah2026-acsanm-5c05527-ingap-znse-zns-qds-1--after-s02-cool",
-      "name": "mixture after step 2",
+      "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
         "duah2026-acsanm-5c05527-ingap-znse-zns-qds-1--after-s01-heat"
@@ -263,7 +351,7 @@
     },
     {
       "id": "duah2026-acsanm-5c05527-ingap-znse-zns-qds-1--after-s03-purify",
-      "name": "mixture after step 3",
+      "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
         "duah2026-acsanm-5c05527-ingap-znse-zns-qds-1--after-s02-cool"
@@ -271,7 +359,7 @@
     },
     {
       "id": "duah2026-acsanm-5c05527-ingap-znse-zns-qds-1--after-s04-grow-shell",
-      "name": "mixture after step 4",
+      "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
         "duah2026-acsanm-5c05527-ingap-znse-zns-qds-1--after-s03-purify",
@@ -279,11 +367,19 @@
       ]
     },
     {
-      "id": "duah2026-acsanm-5c05527-ingap-znse-zns-qds-1--after-s05-cool",
-      "name": "mixture after step 5",
+      "id": "duah2026-acsanm-5c05527-ingap-znse-zns-qds-1--after-d2-s06-adjust-temperature",
+      "name": "mixture after step 6",
       "kind": "reaction_batch",
       "parent_ids": [
         "duah2026-acsanm-5c05527-ingap-znse-zns-qds-1--after-s04-grow-shell"
+      ]
+    },
+    {
+      "id": "duah2026-acsanm-5c05527-ingap-znse-zns-qds-1--after-s05-cool",
+      "name": "mixture after step 7",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "duah2026-acsanm-5c05527-ingap-znse-zns-qds-1--after-d2-s06-adjust-temperature"
       ]
     },
     {
@@ -297,14 +393,61 @@
   ],
   "operations": [
     {
+      "id": "d2-s01-load",
+      "action": "load",
+      "label": "Load",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "duah2026-acsanm-5c05527-ingap-znse-zns-qds-1--indium-tris-bis-trimethylsilyl-amide",
+        "duah2026-acsanm-5c05527-ingap-znse-zns-qds-1--zinc-chloride",
+        "duah2026-acsanm-5c05527-ingap-znse-zns-qds-1--oleyamine"
+      ],
+      "outputs": [
+        "duah2026-acsanm-5c05527-ingap-znse-zns-qds-1--after-d2-s01-load"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "duah2026-acsanm-5c05527",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Load",
+      "evidence": [
+        {
+          "source_id": "duah2026-acsanm-5c05527",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
       "id": "s01-heat",
       "action": "heat",
       "label": "Heat to 180 °C under N2",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s01-load"
+      ],
+      "inputs": [
+        "duah2026-acsanm-5c05527-ingap-znse-zns-qds-1--after-d2-s01-load"
+      ],
       "outputs": [
         "duah2026-acsanm-5c05527-ingap-znse-zns-qds-1--after-s01-heat"
       ],
@@ -517,9 +660,9 @@
       ]
     },
     {
-      "id": "s05-cool",
-      "action": "cool",
-      "label": "Cool to room temperature",
+      "id": "d2-s06-adjust-temperature",
+      "action": "adjust temperature",
+      "label": "Adjust temperature to 190 °C",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -528,6 +671,86 @@
       ],
       "inputs": [
         "duah2026-acsanm-5c05527-ingap-znse-zns-qds-1--after-s04-grow-shell"
+      ],
+      "outputs": [
+        "duah2026-acsanm-5c05527-ingap-znse-zns-qds-1--after-d2-s06-adjust-temperature"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 190,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "190 °C",
+          "evidence": [
+            {
+              "source_id": "duah2026-acsanm-5c05527",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 h",
+          "evidence": [
+            {
+              "source_id": "duah2026-acsanm-5c05527",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "duah2026-acsanm-5c05527",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Adjust temperature to 190 °C",
+      "evidence": [
+        {
+          "source_id": "duah2026-acsanm-5c05527",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "s05-cool",
+      "action": "cool",
+      "label": "Cool to room temperature",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s06-adjust-temperature"
+      ],
+      "inputs": [
+        "duah2026-acsanm-5c05527-ingap-znse-zns-qds-1--after-d2-s06-adjust-temperature"
       ],
       "outputs": [
         "duah2026-acsanm-5c05527-ingap-znse-zns-qds-1--after-s05-cool"
@@ -691,12 +914,76 @@
           "locator": "Main PDF p.6"
         }
       ]
+    },
+    {
+      "id": "duah2026-acsanm-5c05527-ingap-znse-zns-qds-1--photoluminescence-peak",
+      "sample_id": "duah2026-acsanm-5c05527-ingap-znse-zns-qds-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 525,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "525 nm",
+        "evidence": [
+          {
+            "source_id": "duah2026-acsanm-5c05527",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "duah2026-acsanm-5c05527",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "duah2026-acsanm-5c05527-ingap-znse-zns-qds-1--photoluminescence-quantum-yield",
+      "sample_id": "duah2026-acsanm-5c05527-ingap-znse-zns-qds-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 74,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "74 %",
+        "evidence": [
+          {
+            "source_id": "duah2026-acsanm-5c05527",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "duah2026-acsanm-5c05527",
+          "locator": "Main PDF p.1"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text."
     ],

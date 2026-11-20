@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "groeneveld2013-nn402931y-znse-nanocrystals-3-7-nm-diameter-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Groeneveld (2013): ZnSe nanocrystals (3.7 nm diameter)",
   "material": {
@@ -223,6 +223,25 @@
           "locator": "Main PDF p.15"
         }
       ]
+    },
+    {
+      "id": "groeneveld2013-nn402931y-znse-nanocrystals-3-7-nm-diameter-1--zn-oleate",
+      "name": "Zn-oleate",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "groeneveld2013-nn402931y",
+          "locator": "Main PDF p.16"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -248,10 +267,19 @@
     },
     {
       "id": "groeneveld2013-nn402931y-znse-nanocrystals-3-7-nm-diameter-1--after-s03-cool",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "groeneveld2013-nn402931y-znse-nanocrystals-3-7-nm-diameter-1--after-s02-inject"
+      ]
+    },
+    {
+      "id": "groeneveld2013-nn402931y-znse-nanocrystals-3-7-nm-diameter-1--after-d2-s04-add",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "groeneveld2013-nn402931y-znse-nanocrystals-3-7-nm-diameter-1--after-s02-inject"
+        "groeneveld2013-nn402931y-znse-nanocrystals-3-7-nm-diameter-1--after-s03-cool",
+        "groeneveld2013-nn402931y-znse-nanocrystals-3-7-nm-diameter-1--zn-oleate"
       ]
     }
   ],
@@ -460,6 +488,87 @@
           "locator": "Main PDF p.16"
         }
       ]
+    },
+    {
+      "id": "d2-s04-add",
+      "action": "add",
+      "label": "Add Zn-oleate stock solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-cool"
+      ],
+      "inputs": [
+        "groeneveld2013-nn402931y-znse-nanocrystals-3-7-nm-diameter-1--after-s03-cool",
+        "groeneveld2013-nn402931y-znse-nanocrystals-3-7-nm-diameter-1--zn-oleate"
+      ],
+      "outputs": [
+        "groeneveld2013-nn402931y-znse-nanocrystals-3-7-nm-diameter-1--after-d2-s04-add"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 270,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "270 °C",
+          "evidence": [
+            {
+              "source_id": "groeneveld2013-nn402931y",
+              "locator": "Main PDF p.16"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "5 min",
+          "evidence": [
+            {
+              "source_id": "groeneveld2013-nn402931y",
+              "locator": "Main PDF p.16"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "groeneveld2013-nn402931y",
+            "locator": "Main PDF p.15"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add Zn-oleate stock solution",
+      "evidence": [
+        {
+          "source_id": "groeneveld2013-nn402931y",
+          "locator": "Main PDF p.16"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -468,7 +577,7 @@
       "sample_id": "groeneveld2013-nn402931y-znse-nanocrystals-3-7-nm-diameter-1--product",
       "source_sample_label": "ZnSe nanocrystals (3.7 nm diameter)",
       "batch_id": null,
-      "material_state_id": "groeneveld2013-nn402931y-znse-nanocrystals-3-7-nm-diameter-1--after-s03-cool",
+      "material_state_id": "groeneveld2013-nn402931y-znse-nanocrystals-3-7-nm-diameter-1--after-d2-s04-add",
       "parent_sample_id": null,
       "composition": {
         "value": "ZnSe",
@@ -560,14 +669,47 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "groeneveld2013-nn402931y-znse-nanocrystals-3-7-nm-diameter-1--photoluminescence-quantum-yield",
+      "sample_id": "groeneveld2013-nn402931y-znse-nanocrystals-3-7-nm-diameter-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 6,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "6 %",
+        "evidence": [
+          {
+            "source_id": "groeneveld2013-nn402931y",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "groeneveld2013-nn402931y",
+          "locator": "Main PDF p.4"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
-      "Amount of TOP-Se not reported in the extracted text."
+      "Amount of TOP-Se not reported in the extracted text.",
+      "Amount of Zn-oleate not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

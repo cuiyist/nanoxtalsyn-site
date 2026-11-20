@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "maestro2014-la403435v-gncs-4",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Laura M. Maestro (2014): GNCs",
   "material": {
@@ -269,15 +269,62 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "maestro2014-la403435v-gncs-4--ethyleneglycol",
+      "name": "ethyleneglycol",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "5 mL",
+          "evidence": [
+            {
+              "source_id": "maestro2014-la403435v",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "maestro2014-la403435v",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
-      "id": "maestro2014-la403435v-gncs-4--after-s01-add",
+      "id": "maestro2014-la403435v-gncs-4--after-d2-s01-add",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": [
+        "maestro2014-la403435v-gncs-4--nahs"
+      ]
+    },
+    {
+      "id": "maestro2014-la403435v-gncs-4--after-s01-add",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "maestro2014-la403435v-gncs-4--after-d2-s01-add",
         "maestro2014-la403435v-gncs-4--haucl4"
       ]
     },
@@ -292,14 +339,90 @@
   ],
   "operations": [
     {
+      "id": "d2-s01-add",
+      "action": "add",
+      "label": "Add NaHS solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "maestro2014-la403435v-gncs-4--nahs"
+      ],
+      "outputs": [
+        "maestro2014-la403435v-gncs-4--after-d2-s01-add"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 150,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "150 °C",
+          "evidence": [
+            {
+              "source_id": "maestro2014-la403435v",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 2,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2 min",
+          "evidence": [
+            {
+              "source_id": "maestro2014-la403435v",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add NaHS solution",
+      "evidence": [
+        {
+          "source_id": "maestro2014-la403435v",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
       "id": "s01-add",
       "action": "add",
       "label": "Add HAuCl4 for Galvanic replacement",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
+      "depends_on": [
+        "d2-s01-add"
+      ],
       "inputs": [
+        "maestro2014-la403435v-gncs-4--after-d2-s01-add",
         "maestro2014-la403435v-gncs-4--haucl4"
       ],
       "outputs": [
@@ -455,7 +578,8 @@
       ],
       "notes": [
         "Reaction temperature: 150 degC (Main PDF p.3).",
-        "Reaction time: 30 min (Main PDF p.3)."
+        "Reaction time: 30 min (Main PDF p.3).",
+        "Reactor: 25-mL round-bottom flask (Main PDF p.3)."
       ]
     }
   ],
@@ -496,11 +620,10 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
-      "Reactor not reported in the extracted text.",
       "Atmosphere not reported in the extracted text."
     ],
     "conflicts": [],

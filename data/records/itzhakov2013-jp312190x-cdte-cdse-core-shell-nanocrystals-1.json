@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "itzhakov2013-jp312190x-cdte-cdse-core-shell-nanocrystals-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Stella Itzhakov (2013): CdTe/CdSe core/shell nanocrystals",
   "material": {
@@ -239,6 +239,44 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "itzhakov2013-jp312190x-cdte-cdse-core-shell-nanocrystals-1--trioctylphosphine-top",
+      "name": "trioctylphosphine (TOP)",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 0.5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.5 mL",
+          "evidence": [
+            {
+              "source_id": "itzhakov2013-jp312190x",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "itzhakov2013-jp312190x",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -282,15 +320,32 @@
       "parent_ids": [
         "itzhakov2013-jp312190x-cdte-cdse-core-shell-nanocrystals-1--after-s03-heat",
         "itzhakov2013-jp312190x-cdte-cdse-core-shell-nanocrystals-1--tellurium",
-        "itzhakov2013-jp312190x-cdte-cdse-core-shell-nanocrystals-1--1-octadecene-ode"
+        "itzhakov2013-jp312190x-cdte-cdse-core-shell-nanocrystals-1--1-octadecene-ode",
+        "itzhakov2013-jp312190x-cdte-cdse-core-shell-nanocrystals-1--trioctylphosphine-top"
       ]
     },
     {
       "id": "itzhakov2013-jp312190x-cdte-cdse-core-shell-nanocrystals-1--after-s05-cool",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "itzhakov2013-jp312190x-cdte-cdse-core-shell-nanocrystals-1--after-s04-inject"
+      ]
+    },
+    {
+      "id": "itzhakov2013-jp312190x-cdte-cdse-core-shell-nanocrystals-1--after-d2-s06-precipitate",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "itzhakov2013-jp312190x-cdte-cdse-core-shell-nanocrystals-1--after-s05-cool"
+      ]
+    },
+    {
+      "id": "itzhakov2013-jp312190x-cdte-cdse-core-shell-nanocrystals-1--after-d2-s07-redisperse",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "itzhakov2013-jp312190x-cdte-cdse-core-shell-nanocrystals-1--after-s04-inject"
+        "itzhakov2013-jp312190x-cdte-cdse-core-shell-nanocrystals-1--after-d2-s06-precipitate"
       ]
     }
   ],
@@ -513,7 +568,8 @@
       "inputs": [
         "itzhakov2013-jp312190x-cdte-cdse-core-shell-nanocrystals-1--after-s03-heat",
         "itzhakov2013-jp312190x-cdte-cdse-core-shell-nanocrystals-1--tellurium",
-        "itzhakov2013-jp312190x-cdte-cdse-core-shell-nanocrystals-1--1-octadecene-ode"
+        "itzhakov2013-jp312190x-cdte-cdse-core-shell-nanocrystals-1--1-octadecene-ode",
+        "itzhakov2013-jp312190x-cdte-cdse-core-shell-nanocrystals-1--trioctylphosphine-top"
       ],
       "outputs": [
         "itzhakov2013-jp312190x-cdte-cdse-core-shell-nanocrystals-1--after-s04-inject"
@@ -624,6 +680,82 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s06-precipitate",
+      "action": "precipitate",
+      "label": "Precipitated with acetone/methanol",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s05-cool"
+      ],
+      "inputs": [
+        "itzhakov2013-jp312190x-cdte-cdse-core-shell-nanocrystals-1--after-s05-cool"
+      ],
+      "outputs": [
+        "itzhakov2013-jp312190x-cdte-cdse-core-shell-nanocrystals-1--after-d2-s06-precipitate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Precipitated with acetone/methanol",
+      "evidence": [
+        {
+          "source_id": "itzhakov2013-jp312190x",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s07-redisperse",
+      "action": "redisperse",
+      "label": "Redispersed in toluene",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s06-precipitate"
+      ],
+      "inputs": [
+        "itzhakov2013-jp312190x-cdte-cdse-core-shell-nanocrystals-1--after-d2-s06-precipitate"
+      ],
+      "outputs": [
+        "itzhakov2013-jp312190x-cdte-cdse-core-shell-nanocrystals-1--after-d2-s07-redisperse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Redispersed in toluene",
+      "evidence": [
+        {
+          "source_id": "itzhakov2013-jp312190x",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -632,7 +764,7 @@
       "sample_id": "itzhakov2013-jp312190x-cdte-cdse-core-shell-nanocrystals-1--product",
       "source_sample_label": "CdTe/CdSe core/shell nanocrystals",
       "batch_id": null,
-      "material_state_id": "itzhakov2013-jp312190x-cdte-cdse-core-shell-nanocrystals-1--after-s05-cool",
+      "material_state_id": "itzhakov2013-jp312190x-cdte-cdse-core-shell-nanocrystals-1--after-d2-s07-redisperse",
       "parent_sample_id": null,
       "composition": {
         "value": "CdTe/CdSe",
@@ -719,7 +851,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Ligand not reported in the extracted text."

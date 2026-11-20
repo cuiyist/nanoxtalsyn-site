@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "al2010-jp909310a-cdse-msqd-family-463-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Yu et al. (2010): CdSe MSQD Family 463",
   "material": {
@@ -237,6 +237,25 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "al2010-jp909310a-cdse-msqd-family-463-1--topse",
+      "name": "TOPSe",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "al2010-jp909310a",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -271,7 +290,8 @@
         "al2010-jp909310a-cdse-msqd-family-463-1--cadmium-acetate-dihydrate",
         "al2010-jp909310a-cdse-msqd-family-463-1--myristic-acid",
         "al2010-jp909310a-cdse-msqd-family-463-1--1-octadecene",
-        "al2010-jp909310a-cdse-msqd-family-463-1--trioctylphosphine"
+        "al2010-jp909310a-cdse-msqd-family-463-1--trioctylphosphine",
+        "al2010-jp909310a-cdse-msqd-family-463-1--topse"
       ]
     },
     {
@@ -283,7 +303,8 @@
         "al2010-jp909310a-cdse-msqd-family-463-1--cadmium-acetate-dihydrate",
         "al2010-jp909310a-cdse-msqd-family-463-1--myristic-acid",
         "al2010-jp909310a-cdse-msqd-family-463-1--1-octadecene",
-        "al2010-jp909310a-cdse-msqd-family-463-1--trioctylphosphine"
+        "al2010-jp909310a-cdse-msqd-family-463-1--trioctylphosphine",
+        "al2010-jp909310a-cdse-msqd-family-463-1--topse"
       ]
     },
     {
@@ -295,7 +316,8 @@
         "al2010-jp909310a-cdse-msqd-family-463-1--cadmium-acetate-dihydrate",
         "al2010-jp909310a-cdse-msqd-family-463-1--myristic-acid",
         "al2010-jp909310a-cdse-msqd-family-463-1--1-octadecene",
-        "al2010-jp909310a-cdse-msqd-family-463-1--trioctylphosphine"
+        "al2010-jp909310a-cdse-msqd-family-463-1--trioctylphosphine",
+        "al2010-jp909310a-cdse-msqd-family-463-1--topse"
       ]
     }
   ],
@@ -460,7 +482,8 @@
         "al2010-jp909310a-cdse-msqd-family-463-1--cadmium-acetate-dihydrate",
         "al2010-jp909310a-cdse-msqd-family-463-1--myristic-acid",
         "al2010-jp909310a-cdse-msqd-family-463-1--1-octadecene",
-        "al2010-jp909310a-cdse-msqd-family-463-1--trioctylphosphine"
+        "al2010-jp909310a-cdse-msqd-family-463-1--trioctylphosphine",
+        "al2010-jp909310a-cdse-msqd-family-463-1--topse"
       ],
       "outputs": [
         "al2010-jp909310a-cdse-msqd-family-463-1--after-s03-transfer"
@@ -526,7 +549,8 @@
         "al2010-jp909310a-cdse-msqd-family-463-1--cadmium-acetate-dihydrate",
         "al2010-jp909310a-cdse-msqd-family-463-1--myristic-acid",
         "al2010-jp909310a-cdse-msqd-family-463-1--1-octadecene",
-        "al2010-jp909310a-cdse-msqd-family-463-1--trioctylphosphine"
+        "al2010-jp909310a-cdse-msqd-family-463-1--trioctylphosphine",
+        "al2010-jp909310a-cdse-msqd-family-463-1--topse"
       ],
       "outputs": [
         "al2010-jp909310a-cdse-msqd-family-463-1--after-s04-heat"
@@ -610,7 +634,8 @@
         "al2010-jp909310a-cdse-msqd-family-463-1--cadmium-acetate-dihydrate",
         "al2010-jp909310a-cdse-msqd-family-463-1--myristic-acid",
         "al2010-jp909310a-cdse-msqd-family-463-1--1-octadecene",
-        "al2010-jp909310a-cdse-msqd-family-463-1--trioctylphosphine"
+        "al2010-jp909310a-cdse-msqd-family-463-1--trioctylphosphine",
+        "al2010-jp909310a-cdse-msqd-family-463-1--topse"
       ],
       "outputs": [
         "al2010-jp909310a-cdse-msqd-family-463-1--after-s05-heat"
@@ -750,11 +775,12 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Size not reported in the extracted text.",
       "Amount of 1-octadecene not reported in the extracted text.",
-      "Amount of trioctylphosphine not reported in the extracted text."
+      "Amount of trioctylphosphine not reported in the extracted text.",
+      "Amount of TOPSe not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

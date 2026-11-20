@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "yoo2024-acsmaterialslett-3c01089-ag2s-cqds-dual-ligand-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Doheon Yoo; Sehwan Jeong; Hae Mee Ju; Woo-jin Jeong; Kyobum Kim; Min-Jae Choi (2024): Ag2S CQDs (dual-ligand)",
   "material": {
@@ -134,7 +134,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "amount": {
+          "value": 9.1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "9.1 mmol",
+          "evidence": [
+            {
+              "source_id": "yoo2024-acsmaterialslett-3c01089",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -251,11 +270,20 @@
       ]
     },
     {
-      "id": "yoo2024-acsmaterialslett-3c01089-ag2s-cqds-dual-ligand-2--after-s02-heat",
+      "id": "yoo2024-acsmaterialslett-3c01089-ag2s-cqds-dual-ligand-2--after-d2-s02-add",
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
-        "yoo2024-acsmaterialslett-3c01089-ag2s-cqds-dual-ligand-2--after-s01-dissolve"
+        "yoo2024-acsmaterialslett-3c01089-ag2s-cqds-dual-ligand-2--after-s01-dissolve",
+        "yoo2024-acsmaterialslett-3c01089-ag2s-cqds-dual-ligand-2--oleic-acid"
+      ]
+    },
+    {
+      "id": "yoo2024-acsmaterialslett-3c01089-ag2s-cqds-dual-ligand-2--after-s02-heat",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "yoo2024-acsmaterialslett-3c01089-ag2s-cqds-dual-ligand-2--after-d2-s02-add"
       ]
     },
     {
@@ -313,9 +341,9 @@
       ]
     },
     {
-      "id": "s02-heat",
-      "action": "heat",
-      "label": "Heat under nitrogen",
+      "id": "d2-s02-add",
+      "action": "add",
+      "label": "Add oleic acid",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -323,7 +351,70 @@
         "s01-dissolve"
       ],
       "inputs": [
-        "yoo2024-acsmaterialslett-3c01089-ag2s-cqds-dual-ligand-2--after-s01-dissolve"
+        "yoo2024-acsmaterialslett-3c01089-ag2s-cqds-dual-ligand-2--after-s01-dissolve",
+        "yoo2024-acsmaterialslett-3c01089-ag2s-cqds-dual-ligand-2--oleic-acid"
+      ],
+      "outputs": [
+        "yoo2024-acsmaterialslett-3c01089-ag2s-cqds-dual-ligand-2--after-d2-s02-add"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 140,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "140 °C",
+          "evidence": [
+            {
+              "source_id": "yoo2024-acsmaterialslett-3c01089",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "yoo2024-acsmaterialslett-3c01089",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add oleic acid",
+      "evidence": [
+        {
+          "source_id": "yoo2024-acsmaterialslett-3c01089",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-heat",
+      "action": "heat",
+      "label": "Heat under nitrogen",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-add"
+      ],
+      "inputs": [
+        "yoo2024-acsmaterialslett-3c01089-ag2s-cqds-dual-ligand-2--after-d2-s02-add"
       ],
       "outputs": [
         "yoo2024-acsmaterialslett-3c01089-ag2s-cqds-dual-ligand-2--after-s02-heat"
@@ -536,11 +627,10 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
-      "Amount of oleylamine not reported in the extracted text.",
       "Amount of octylamine not reported in the extracted text."
     ],
     "conflicts": [],

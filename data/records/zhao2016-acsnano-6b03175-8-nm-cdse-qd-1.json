@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "zhao2016-acsnano-6b03175-8-nm-cdse-qd-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Tianshuo Zhao; Earl D. Goodwin; Jiacen Guo; Han Wang; Benjamin T. Diroll; Christopher B. Murray; Cherie R. Kagan (2016): 8 nm CdSe QD",
   "material": {
@@ -51,16 +51,21 @@
       "note": ""
     },
     "size": {
-      "value": null,
+      "value": 8.0,
       "minimum": null,
       "maximum": null,
       "unit": "nm",
-      "status": "not_reported",
+      "status": "reported",
       "approximate": false,
       "qualifier": "",
       "basis": "",
-      "raw_text": "not reported",
-      "evidence": [],
+      "raw_text": "8 nm",
+      "evidence": [
+        {
+          "source_id": "zhao2016-acsnano-6b03175",
+          "locator": "Main PDF"
+        }
+      ],
       "derivation": null
     },
     "morphology": {
@@ -100,7 +105,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "volume": {
+          "value": 37.0,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "37 mL",
+          "evidence": [
+            {
+              "source_id": "zhao2016-acsnano-6b03175",
+              "locator": "Main PDF p.5"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -203,6 +227,63 @@
           "locator": "Main PDF p.5"
         }
       ]
+    },
+    {
+      "id": "zhao2016-acsnano-6b03175-8-nm-cdse-qd-1--cdo",
+      "name": "CdO",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zhao2016-acsnano-6b03175",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    },
+    {
+      "id": "zhao2016-acsnano-6b03175-8-nm-cdse-qd-1--octadecene--checked-2",
+      "name": "octadecene",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 4.0,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "4 mL",
+          "evidence": [
+            {
+              "source_id": "zhao2016-acsnano-6b03175",
+              "locator": "Main PDF p.5"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zhao2016-acsnano-6b03175",
+          "locator": "Main PDF p.5"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -213,7 +294,8 @@
       "kind": "reaction_batch",
       "parent_ids": [
         "zhao2016-acsnano-6b03175-8-nm-cdse-qd-1--myristic-acid",
-        "zhao2016-acsnano-6b03175-8-nm-cdse-qd-1--octadecene"
+        "zhao2016-acsnano-6b03175-8-nm-cdse-qd-1--octadecene",
+        "zhao2016-acsnano-6b03175-8-nm-cdse-qd-1--cdo"
       ]
     },
     {
@@ -253,7 +335,8 @@
       "depends_on": [],
       "inputs": [
         "zhao2016-acsnano-6b03175-8-nm-cdse-qd-1--myristic-acid",
-        "zhao2016-acsnano-6b03175-8-nm-cdse-qd-1--octadecene"
+        "zhao2016-acsnano-6b03175-8-nm-cdse-qd-1--octadecene",
+        "zhao2016-acsnano-6b03175-8-nm-cdse-qd-1--cdo"
       ],
       "outputs": [
         "zhao2016-acsnano-6b03175-8-nm-cdse-qd-1--after-s01-dissolve"
@@ -556,19 +639,51 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "zhao2016-acsnano-6b03175-8-nm-cdse-qd-1--size",
+      "sample_id": "zhao2016-acsnano-6b03175-8-nm-cdse-qd-1--product",
+      "property": "particle_size",
+      "technique": "not reported",
+      "value": {
+        "value": 8.0,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "8 nm",
+        "evidence": [
+          {
+            "source_id": "zhao2016-acsnano-6b03175",
+            "locator": "Main PDF"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "zhao2016-acsnano-6b03175",
+          "locator": "Main PDF"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
-      "Size not reported in the extracted text.",
       "Amount of myristic acid not reported in the extracted text.",
-      "Amount of octadecene not reported in the extracted text.",
-      "Amount of selenium powder not reported in the extracted text."
+      "Amount of selenium powder not reported in the extracted text.",
+      "Amount of CdO not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

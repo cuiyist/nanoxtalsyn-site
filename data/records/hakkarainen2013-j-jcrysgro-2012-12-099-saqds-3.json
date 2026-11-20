@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "hakkarainen2013-j-jcrysgro-2012-12-099-saqds-3",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "T.V. Hakkarainen (2013): SAQDs",
   "material": {
@@ -85,7 +85,7 @@
       "id": "hakkarainen2013-j-jcrysgro-2012-12-099-saqds-3--gaas-buffer",
       "name": "GaAs buffer",
       "formula": null,
-      "role": "reagent",
+      "role": "substrate",
       "stage": "synthesis",
       "identity": {
         "pubchem_cid": null,
@@ -123,7 +123,7 @@
       "id": "hakkarainen2013-j-jcrysgro-2012-12-099-saqds-3--gaas",
       "name": "GaAs",
       "formula": null,
-      "role": "reagent",
+      "role": "substrate",
       "stage": "synthesis",
       "identity": {
         "pubchem_cid": null,
@@ -142,7 +142,7 @@
       "id": "hakkarainen2013-j-jcrysgro-2012-12-099-saqds-3--inas",
       "name": "InAs",
       "formula": null,
-      "role": "reagent",
+      "role": "grown_layer",
       "stage": "synthesis",
       "identity": {
         "pubchem_cid": null,
@@ -186,6 +186,82 @@
         "pubchem_cid": null,
         "smiles": null
       },
+      "quantities": {
+        "amount": {
+          "value": 20,
+          "minimum": null,
+          "maximum": null,
+          "unit": "nm",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "20 nm",
+          "evidence": [
+            {
+              "source_id": "hakkarainen2013-j-jcrysgro-2012-12-099",
+              "locator": "Main PDF p.1"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "hakkarainen2013-j-jcrysgro-2012-12-099",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "hakkarainen2013-j-jcrysgro-2012-12-099-saqds-3--gaas-regrowth-buffer",
+      "name": "GaAs regrowth buffer",
+      "formula": null,
+      "role": "substrate",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 60,
+          "minimum": null,
+          "maximum": null,
+          "unit": "nm",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "60 nm",
+          "evidence": [
+            {
+              "source_id": "hakkarainen2013-j-jcrysgro-2012-12-099",
+              "locator": "Main PDF p.1"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "hakkarainen2013-j-jcrysgro-2012-12-099",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "hakkarainen2013-j-jcrysgro-2012-12-099-saqds-3--algaas",
+      "name": "AlGaAs",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
       "quantities": {},
       "notes": [],
       "evidence": [
@@ -209,12 +285,22 @@
       ]
     },
     {
+      "id": "hakkarainen2013-j-jcrysgro-2012-12-099-saqds-3--after-d2-s02-cap",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "hakkarainen2013-j-jcrysgro-2012-12-099-saqds-3--after-s01-deposit",
+        "hakkarainen2013-j-jcrysgro-2012-12-099-saqds-3--gaas-capping-layer"
+      ]
+    },
+    {
       "id": "hakkarainen2013-j-jcrysgro-2012-12-099-saqds-3--after-s02-grow",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "hakkarainen2013-j-jcrysgro-2012-12-099-saqds-3--after-s01-deposit",
-        "hakkarainen2013-j-jcrysgro-2012-12-099-saqds-3--gaas"
+        "hakkarainen2013-j-jcrysgro-2012-12-099-saqds-3--after-d2-s02-cap",
+        "hakkarainen2013-j-jcrysgro-2012-12-099-saqds-3--gaas",
+        "hakkarainen2013-j-jcrysgro-2012-12-099-saqds-3--algaas"
       ]
     }
   ],
@@ -277,9 +363,9 @@
       ]
     },
     {
-      "id": "s02-grow",
-      "action": "grow",
-      "label": "Grow GaAs and AlGaAs layers",
+      "id": "d2-s02-cap",
+      "action": "cap",
+      "label": "GaAs capping layer deposited",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -288,7 +374,66 @@
       ],
       "inputs": [
         "hakkarainen2013-j-jcrysgro-2012-12-099-saqds-3--after-s01-deposit",
-        "hakkarainen2013-j-jcrysgro-2012-12-099-saqds-3--gaas"
+        "hakkarainen2013-j-jcrysgro-2012-12-099-saqds-3--gaas-capping-layer"
+      ],
+      "outputs": [
+        "hakkarainen2013-j-jcrysgro-2012-12-099-saqds-3--after-d2-s02-cap"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 515,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "515 °C",
+          "evidence": [
+            {
+              "source_id": "hakkarainen2013-j-jcrysgro-2012-12-099",
+              "locator": "Main PDF p.1"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "GaAs capping layer deposited",
+      "evidence": [
+        {
+          "source_id": "hakkarainen2013-j-jcrysgro-2012-12-099",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "s02-grow",
+      "action": "grow",
+      "label": "Grow GaAs and AlGaAs layers",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-cap"
+      ],
+      "inputs": [
+        "hakkarainen2013-j-jcrysgro-2012-12-099-saqds-3--after-d2-s02-cap",
+        "hakkarainen2013-j-jcrysgro-2012-12-099-saqds-3--gaas",
+        "hakkarainen2013-j-jcrysgro-2012-12-099-saqds-3--algaas"
       ],
       "outputs": [
         "hakkarainen2013-j-jcrysgro-2012-12-099-saqds-3--after-s02-grow"
@@ -393,7 +538,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
@@ -404,7 +549,8 @@
       "Amount of GaAs buffer not reported in the extracted text.",
       "Amount of AlGaAs carrier confinement layer not reported in the extracted text.",
       "Amount of GaAs not reported in the extracted text.",
-      "Amount of GaAs capping layer not reported in the extracted text."
+      "Amount of AlGaAs carrier confinement layer not reported in the extracted text.",
+      "Amount of AlGaAs not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

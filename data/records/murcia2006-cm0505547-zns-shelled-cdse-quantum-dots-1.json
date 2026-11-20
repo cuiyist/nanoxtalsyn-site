@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "murcia2006-cm0505547-zns-shelled-cdse-quantum-dots-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Michael J. Murcia; David L. Shaw; Heather Woodruff; Christoph A. Naumann; Bruce A. Young; Eric C. Long (2006): ZnS-shelled CdSe quantum dots",
   "material": {
@@ -202,19 +202,94 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "murcia2006-cm0505547-zns-shelled-cdse-quantum-dots-1--top",
+      "name": "TOP",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "murcia2006-cm0505547",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "murcia2006-cm0505547-zns-shelled-cdse-quantum-dots-1--selenium-powder",
+      "name": "selenium powder",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "murcia2006-cm0505547",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "murcia2006-cm0505547-zns-shelled-cdse-quantum-dots-1--se-top-solution",
+      "name": "Se/TOP solution",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "murcia2006-cm0505547",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
-      "id": "murcia2006-cm0505547-zns-shelled-cdse-quantum-dots-1--after-s01-dissolve",
+      "id": "murcia2006-cm0505547-zns-shelled-cdse-quantum-dots-1--after-d2-s01-precipitate",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": []
     },
     {
-      "id": "murcia2006-cm0505547-zns-shelled-cdse-quantum-dots-1--after-s02-heat",
+      "id": "murcia2006-cm0505547-zns-shelled-cdse-quantum-dots-1--after-d2-s02-purge",
       "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "murcia2006-cm0505547-zns-shelled-cdse-quantum-dots-1--after-d2-s01-precipitate"
+      ]
+    },
+    {
+      "id": "murcia2006-cm0505547-zns-shelled-cdse-quantum-dots-1--after-s01-dissolve",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "murcia2006-cm0505547-zns-shelled-cdse-quantum-dots-1--after-d2-s02-purge",
+        "murcia2006-cm0505547-zns-shelled-cdse-quantum-dots-1--top",
+        "murcia2006-cm0505547-zns-shelled-cdse-quantum-dots-1--selenium-powder"
+      ]
+    },
+    {
+      "id": "murcia2006-cm0505547-zns-shelled-cdse-quantum-dots-1--after-s02-heat",
+      "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
         "murcia2006-cm0505547-zns-shelled-cdse-quantum-dots-1--after-s01-dissolve",
@@ -225,13 +300,14 @@
     },
     {
       "id": "murcia2006-cm0505547-zns-shelled-cdse-quantum-dots-1--after-s03-inject",
-      "name": "mixture after step 3",
+      "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
         "murcia2006-cm0505547-zns-shelled-cdse-quantum-dots-1--after-s02-heat",
         "murcia2006-cm0505547-zns-shelled-cdse-quantum-dots-1--cd-oac-2",
         "murcia2006-cm0505547-zns-shelled-cdse-quantum-dots-1--topo",
-        "murcia2006-cm0505547-zns-shelled-cdse-quantum-dots-1--hexadecylamine"
+        "murcia2006-cm0505547-zns-shelled-cdse-quantum-dots-1--hexadecylamine",
+        "murcia2006-cm0505547-zns-shelled-cdse-quantum-dots-1--se-top-solution"
       ]
     },
     {
@@ -242,11 +318,89 @@
         "murcia2006-cm0505547-zns-shelled-cdse-quantum-dots-1--after-s03-inject",
         "murcia2006-cm0505547-zns-shelled-cdse-quantum-dots-1--cd-oac-2",
         "murcia2006-cm0505547-zns-shelled-cdse-quantum-dots-1--topo",
-        "murcia2006-cm0505547-zns-shelled-cdse-quantum-dots-1--hexadecylamine"
+        "murcia2006-cm0505547-zns-shelled-cdse-quantum-dots-1--hexadecylamine",
+        "murcia2006-cm0505547-zns-shelled-cdse-quantum-dots-1--se-top-solution"
       ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-precipitate",
+      "action": "precipitate",
+      "label": "Precipitate QDs with acetone/methanol",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [],
+      "outputs": [
+        "murcia2006-cm0505547-zns-shelled-cdse-quantum-dots-1--after-d2-s01-precipitate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Precipitate QDs with acetone/methanol",
+      "evidence": [
+        {
+          "source_id": "murcia2006-cm0505547",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s02-purge",
+      "action": "purge",
+      "label": "Purge reaction vessel with argon",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s01-precipitate"
+      ],
+      "inputs": [
+        "murcia2006-cm0505547-zns-shelled-cdse-quantum-dots-1--after-d2-s01-precipitate"
+      ],
+      "outputs": [
+        "murcia2006-cm0505547-zns-shelled-cdse-quantum-dots-1--after-d2-s02-purge"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "murcia2006-cm0505547",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Purge reaction vessel with argon",
+      "evidence": [
+        {
+          "source_id": "murcia2006-cm0505547",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
     {
       "id": "s01-dissolve",
       "action": "dissolve",
@@ -254,8 +408,14 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s02-purge"
+      ],
+      "inputs": [
+        "murcia2006-cm0505547-zns-shelled-cdse-quantum-dots-1--after-d2-s02-purge",
+        "murcia2006-cm0505547-zns-shelled-cdse-quantum-dots-1--top",
+        "murcia2006-cm0505547-zns-shelled-cdse-quantum-dots-1--selenium-powder"
+      ],
       "outputs": [
         "murcia2006-cm0505547-zns-shelled-cdse-quantum-dots-1--after-s01-dissolve"
       ],
@@ -365,7 +525,8 @@
         "murcia2006-cm0505547-zns-shelled-cdse-quantum-dots-1--after-s02-heat",
         "murcia2006-cm0505547-zns-shelled-cdse-quantum-dots-1--cd-oac-2",
         "murcia2006-cm0505547-zns-shelled-cdse-quantum-dots-1--topo",
-        "murcia2006-cm0505547-zns-shelled-cdse-quantum-dots-1--hexadecylamine"
+        "murcia2006-cm0505547-zns-shelled-cdse-quantum-dots-1--hexadecylamine",
+        "murcia2006-cm0505547-zns-shelled-cdse-quantum-dots-1--se-top-solution"
       ],
       "outputs": [
         "murcia2006-cm0505547-zns-shelled-cdse-quantum-dots-1--after-s03-inject"
@@ -411,12 +572,50 @@
         "murcia2006-cm0505547-zns-shelled-cdse-quantum-dots-1--after-s03-inject",
         "murcia2006-cm0505547-zns-shelled-cdse-quantum-dots-1--cd-oac-2",
         "murcia2006-cm0505547-zns-shelled-cdse-quantum-dots-1--topo",
-        "murcia2006-cm0505547-zns-shelled-cdse-quantum-dots-1--hexadecylamine"
+        "murcia2006-cm0505547-zns-shelled-cdse-quantum-dots-1--hexadecylamine",
+        "murcia2006-cm0505547-zns-shelled-cdse-quantum-dots-1--se-top-solution"
       ],
       "outputs": [
         "murcia2006-cm0505547-zns-shelled-cdse-quantum-dots-1--after-s04-sonicate"
       ],
-      "parameters": {},
+      "parameters": {
+        "temperature": {
+          "value": 120,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "120 °C",
+          "evidence": [
+            {
+              "source_id": "murcia2006-cm0505547",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 12,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "12 min",
+          "evidence": [
+            {
+              "source_id": "murcia2006-cm0505547",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "environment": {
         "value": "Ar",
         "status": "reported",
@@ -505,16 +704,53 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "murcia2006-cm0505547-zns-shelled-cdse-quantum-dots-1--photoluminescence-quantum-yield",
+      "sample_id": "murcia2006-cm0505547-zns-shelled-cdse-quantum-dots-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 50,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "50 %",
+        "evidence": [
+          {
+            "source_id": "murcia2006-cm0505547",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "murcia2006-cm0505547",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Amount of TOPO not reported in the extracted text.",
-      "Amount of hexadecylamine not reported in the extracted text."
+      "Amount of hexadecylamine not reported in the extracted text.",
+      "Amount of TOPO not reported in the extracted text.",
+      "Amount of TOP not reported in the extracted text.",
+      "Amount of selenium powder not reported in the extracted text.",
+      "Amount of Se/TOP solution not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "fuke2010-nn101319x-cdse-nqd-topo-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Nobuhiro Fuke (2010): CdSe NQD(TOPO)",
   "material": {
@@ -151,6 +151,44 @@
           "locator": "Main PDF p.8"
         }
       ]
+    },
+    {
+      "id": "fuke2010-nn101319x-cdse-nqd-topo-1--top",
+      "name": "TOP",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "fuke2010-nn101319x",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    },
+    {
+      "id": "fuke2010-nn101319x-cdse-nqd-topo-1--meoh",
+      "name": "MeOH",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "fuke2010-nn101319x",
+          "locator": "Main PDF p.8"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -163,7 +201,8 @@
         "fuke2010-nn101319x-cdse-nqd-topo-1--cdme2",
         "fuke2010-nn101319x-cdse-nqd-topo-1--se-shot",
         "fuke2010-nn101319x-cdse-nqd-topo-1--topo",
-        "fuke2010-nn101319x-cdse-nqd-topo-1--hexane"
+        "fuke2010-nn101319x-cdse-nqd-topo-1--hexane",
+        "fuke2010-nn101319x-cdse-nqd-topo-1--top"
       ]
     },
     {
@@ -171,7 +210,8 @@
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
-        "fuke2010-nn101319x-cdse-nqd-topo-1--after-s01-dissolve"
+        "fuke2010-nn101319x-cdse-nqd-topo-1--after-s01-dissolve",
+        "fuke2010-nn101319x-cdse-nqd-topo-1--meoh"
       ]
     },
     {
@@ -187,7 +227,8 @@
       "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
-        "fuke2010-nn101319x-cdse-nqd-topo-1--after-s03-centrifuge"
+        "fuke2010-nn101319x-cdse-nqd-topo-1--after-s03-centrifuge",
+        "fuke2010-nn101319x-cdse-nqd-topo-1--meoh"
       ]
     },
     {
@@ -195,7 +236,8 @@
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "fuke2010-nn101319x-cdse-nqd-topo-1--after-s04-precipitate"
+        "fuke2010-nn101319x-cdse-nqd-topo-1--after-s04-precipitate",
+        "fuke2010-nn101319x-cdse-nqd-topo-1--meoh"
       ]
     }
   ],
@@ -212,7 +254,8 @@
         "fuke2010-nn101319x-cdse-nqd-topo-1--cdme2",
         "fuke2010-nn101319x-cdse-nqd-topo-1--se-shot",
         "fuke2010-nn101319x-cdse-nqd-topo-1--topo",
-        "fuke2010-nn101319x-cdse-nqd-topo-1--hexane"
+        "fuke2010-nn101319x-cdse-nqd-topo-1--hexane",
+        "fuke2010-nn101319x-cdse-nqd-topo-1--top"
       ],
       "outputs": [
         "fuke2010-nn101319x-cdse-nqd-topo-1--after-s01-dissolve"
@@ -274,7 +317,8 @@
         "s01-dissolve"
       ],
       "inputs": [
-        "fuke2010-nn101319x-cdse-nqd-topo-1--after-s01-dissolve"
+        "fuke2010-nn101319x-cdse-nqd-topo-1--after-s01-dissolve",
+        "fuke2010-nn101319x-cdse-nqd-topo-1--meoh"
       ],
       "outputs": [
         "fuke2010-nn101319x-cdse-nqd-topo-1--after-s02-precipitate"
@@ -350,7 +394,8 @@
         "s03-centrifuge"
       ],
       "inputs": [
-        "fuke2010-nn101319x-cdse-nqd-topo-1--after-s03-centrifuge"
+        "fuke2010-nn101319x-cdse-nqd-topo-1--after-s03-centrifuge",
+        "fuke2010-nn101319x-cdse-nqd-topo-1--meoh"
       ],
       "outputs": [
         "fuke2010-nn101319x-cdse-nqd-topo-1--after-s04-precipitate"
@@ -388,7 +433,8 @@
         "s04-precipitate"
       ],
       "inputs": [
-        "fuke2010-nn101319x-cdse-nqd-topo-1--after-s04-precipitate"
+        "fuke2010-nn101319x-cdse-nqd-topo-1--after-s04-precipitate",
+        "fuke2010-nn101319x-cdse-nqd-topo-1--meoh"
       ],
       "outputs": [
         "fuke2010-nn101319x-cdse-nqd-topo-1--after-s05-precipitate"
@@ -474,7 +520,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
@@ -484,7 +530,10 @@
       "Amount of CdMe2 not reported in the extracted text.",
       "Amount of Se shot not reported in the extracted text.",
       "Amount of TOPO not reported in the extracted text.",
-      "Amount of hexane not reported in the extracted text."
+      "Amount of hexane not reported in the extracted text.",
+      "Amount of TOPO not reported in the extracted text.",
+      "Amount of TOP not reported in the extracted text.",
+      "Amount of MeOH not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

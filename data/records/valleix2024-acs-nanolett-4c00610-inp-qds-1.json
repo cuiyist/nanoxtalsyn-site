@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "valleix2024-acs-nanolett-4c00610-inp-qds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Rodolphe Valleix; William Zhang; Abraham J. Jordan; Lilian Guillemeney; Leslie G. Castro; Bereket L. Zekarias; Sungho V. Park; Oliver Wang; Jonathan S. Owen (2024): InP QDs",
   "material": {
@@ -110,7 +110,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "equivalents": {
+          "value": 2,
+          "minimum": null,
+          "maximum": null,
+          "unit": "equiv",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2 equiv",
+          "evidence": [
+            {
+              "source_id": "valleix2024-acs-nanolett-4c00610",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -175,6 +194,63 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "valleix2024-acs-nanolett-4c00610-inp-qds-1--oleylamine--checked-2",
+      "name": "oleylamine",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "equivalents": {
+          "value": 2,
+          "minimum": null,
+          "maximum": null,
+          "unit": "equiv",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2 equiv",
+          "evidence": [
+            {
+              "source_id": "valleix2024-acs-nanolett-4c00610",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "valleix2024-acs-nanolett-4c00610",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "valleix2024-acs-nanolett-4c00610-inp-qds-1--oleyl-nh3-f",
+      "name": "[oleyl-NH3]+[F]−",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "valleix2024-acs-nanolett-4c00610",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -190,10 +266,20 @@
     },
     {
       "id": "valleix2024-acs-nanolett-4c00610-inp-qds-1--after-s02-etch",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "valleix2024-acs-nanolett-4c00610-inp-qds-1--after-s01-prepare",
+        "valleix2024-acs-nanolett-4c00610-inp-qds-1--oleyl-nh3-f"
+      ]
+    },
+    {
+      "id": "valleix2024-acs-nanolett-4c00610-inp-qds-1--after-d2-s03-isolate",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "valleix2024-acs-nanolett-4c00610-inp-qds-1--after-s01-prepare"
+        "valleix2024-acs-nanolett-4c00610-inp-qds-1--after-s02-etch",
+        "valleix2024-acs-nanolett-4c00610-inp-qds-1--oleyl-nh3-f"
       ]
     }
   ],
@@ -246,7 +332,8 @@
         "s01-prepare"
       ],
       "inputs": [
-        "valleix2024-acs-nanolett-4c00610-inp-qds-1--after-s01-prepare"
+        "valleix2024-acs-nanolett-4c00610-inp-qds-1--after-s01-prepare",
+        "valleix2024-acs-nanolett-4c00610-inp-qds-1--oleyl-nh3-f"
       ],
       "outputs": [
         "valleix2024-acs-nanolett-4c00610-inp-qds-1--after-s02-etch"
@@ -291,6 +378,45 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s03-isolate",
+      "action": "isolate",
+      "label": "Isolate QDs by precipitation",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-etch"
+      ],
+      "inputs": [
+        "valleix2024-acs-nanolett-4c00610-inp-qds-1--after-s02-etch",
+        "valleix2024-acs-nanolett-4c00610-inp-qds-1--oleyl-nh3-f"
+      ],
+      "outputs": [
+        "valleix2024-acs-nanolett-4c00610-inp-qds-1--after-d2-s03-isolate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Isolate QDs by precipitation",
+      "evidence": [
+        {
+          "source_id": "valleix2024-acs-nanolett-4c00610",
+          "locator": "Main PDF p.4"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -299,7 +425,7 @@
       "sample_id": "valleix2024-acs-nanolett-4c00610-inp-qds-1--product",
       "source_sample_label": "InP QDs",
       "batch_id": null,
-      "material_state_id": "valleix2024-acs-nanolett-4c00610-inp-qds-1--after-s02-etch",
+      "material_state_id": "valleix2024-acs-nanolett-4c00610-inp-qds-1--after-d2-s03-isolate",
       "parent_sample_id": null,
       "composition": {
         "value": "InP",
@@ -347,11 +473,44 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "valleix2024-acs-nanolett-4c00610-inp-qds-1--photoluminescence-quantum-yield",
+      "sample_id": "valleix2024-acs-nanolett-4c00610-inp-qds-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 83,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "83 %",
+        "evidence": [
+          {
+            "source_id": "valleix2024-acs-nanolett-4c00610",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "valleix2024-acs-nanolett-4c00610",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
@@ -360,10 +519,11 @@
       "Atmosphere not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
       "Amount of benzoyl fluoride not reported in the extracted text.",
-      "Amount of oleylamine not reported in the extracted text.",
       "Amount of tris(diethylamino)phosphine not reported in the extracted text.",
       "Amount of indium halides not reported in the extracted text.",
-      "Amount of zinc halides not reported in the extracted text."
+      "Amount of zinc halides not reported in the extracted text.",
+      "Amount of InP not reported in the extracted text.",
+      "Amount of [oleyl-NH3]+[F]− not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

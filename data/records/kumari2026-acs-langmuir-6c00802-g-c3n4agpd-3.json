@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "kumari2026-acs-langmuir-6c00802-g-c3n4agpd-3",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Poonam Kumari; Parul; Sunil Chhichholiya; Asha Kumawat; Mamta Devi Sharma; Rajesh Kumar Meena; Pragati Fageria (2026): g-C3N4−AgPd",
   "material": {
@@ -199,6 +199,82 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "kumari2026-acs-langmuir-6c00802-g-c3n4agpd-3--poly-vinylpyrrolidone",
+      "name": "poly(vinylpyrrolidone)",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 3.0,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "3 mL",
+          "evidence": [
+            {
+              "source_id": "kumari2026-acs-langmuir-6c00802",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "kumari2026-acs-langmuir-6c00802",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "kumari2026-acs-langmuir-6c00802-g-c3n4agpd-3--ethanol",
+      "name": "ethanol",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "kumari2026-acs-langmuir-6c00802",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "kumari2026-acs-langmuir-6c00802-g-c3n4agpd-3--water",
+      "name": "water",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "kumari2026-acs-langmuir-6c00802",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -239,18 +315,26 @@
       ]
     },
     {
-      "id": "kumari2026-acs-langmuir-6c00802-g-c3n4agpd-3--after-s05-disperse",
+      "id": "kumari2026-acs-langmuir-6c00802-g-c3n4agpd-3--after-d2-s05-dialyze",
       "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
-        "kumari2026-acs-langmuir-6c00802-g-c3n4agpd-3--after-s04-dry",
+        "kumari2026-acs-langmuir-6c00802-g-c3n4agpd-3--after-s04-dry"
+      ]
+    },
+    {
+      "id": "kumari2026-acs-langmuir-6c00802-g-c3n4agpd-3--after-s05-disperse",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "kumari2026-acs-langmuir-6c00802-g-c3n4agpd-3--after-d2-s05-dialyze",
         "kumari2026-acs-langmuir-6c00802-g-c3n4agpd-3--agno3",
         "kumari2026-acs-langmuir-6c00802-g-c3n4agpd-3--k2pdcl4"
       ]
     },
     {
       "id": "kumari2026-acs-langmuir-6c00802-g-c3n4agpd-3--after-s06-irradiate",
-      "name": "mixture after step 6",
+      "name": "mixture after step 7",
       "kind": "reaction_batch",
       "parent_ids": [
         "kumari2026-acs-langmuir-6c00802-g-c3n4agpd-3--after-s05-disperse",
@@ -263,7 +347,8 @@
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "kumari2026-acs-langmuir-6c00802-g-c3n4agpd-3--after-s06-irradiate"
+        "kumari2026-acs-langmuir-6c00802-g-c3n4agpd-3--after-s06-irradiate",
+        "kumari2026-acs-langmuir-6c00802-g-c3n4agpd-3--poly-vinylpyrrolidone"
       ]
     }
   ],
@@ -478,9 +563,9 @@
       ]
     },
     {
-      "id": "s05-disperse",
-      "action": "disperse",
-      "label": "Dispersing in 30% ethanol−water medium",
+      "id": "d2-s05-dialyze",
+      "action": "dialyze",
+      "label": "Dialyzed against deionized water",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -488,7 +573,64 @@
         "s04-dry"
       ],
       "inputs": [
-        "kumari2026-acs-langmuir-6c00802-g-c3n4agpd-3--after-s04-dry",
+        "kumari2026-acs-langmuir-6c00802-g-c3n4agpd-3--after-s04-dry"
+      ],
+      "outputs": [
+        "kumari2026-acs-langmuir-6c00802-g-c3n4agpd-3--after-d2-s05-dialyze"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 24,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "24 h",
+          "evidence": [
+            {
+              "source_id": "kumari2026-acs-langmuir-6c00802",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dialyzed against deionized water",
+      "evidence": [
+        {
+          "source_id": "kumari2026-acs-langmuir-6c00802",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s05-disperse",
+      "action": "disperse",
+      "label": "Dispersing in 30% ethanol−water medium",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s05-dialyze"
+      ],
+      "inputs": [
+        "kumari2026-acs-langmuir-6c00802-g-c3n4agpd-3--after-d2-s05-dialyze",
         "kumari2026-acs-langmuir-6c00802-g-c3n4agpd-3--agno3",
         "kumari2026-acs-langmuir-6c00802-g-c3n4agpd-3--k2pdcl4"
       ],
@@ -587,7 +729,8 @@
         "s06-irradiate"
       ],
       "inputs": [
-        "kumari2026-acs-langmuir-6c00802-g-c3n4agpd-3--after-s06-irradiate"
+        "kumari2026-acs-langmuir-6c00802-g-c3n4agpd-3--after-s06-irradiate",
+        "kumari2026-acs-langmuir-6c00802-g-c3n4agpd-3--poly-vinylpyrrolidone"
       ],
       "outputs": [
         "kumari2026-acs-langmuir-6c00802-g-c3n4agpd-3--after-s07-add"
@@ -707,18 +850,52 @@
           "locator": "Main PDF p.5"
         }
       ]
+    },
+    {
+      "id": "kumari2026-acs-langmuir-6c00802-g-c3n4agpd-3--photoluminescence-peak",
+      "sample_id": "kumari2026-acs-langmuir-6c00802-g-c3n4agpd-3--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 690,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "690 nm",
+        "evidence": [
+          {
+            "source_id": "kumari2026-acs-langmuir-6c00802",
+            "locator": "Main PDF"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "kumari2026-acs-langmuir-6c00802",
+          "locator": "Main PDF"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
       "Amount of AgNO3 not reported in the extracted text.",
-      "Amount of K2PdCl4 not reported in the extracted text."
+      "Amount of K2PdCl4 not reported in the extracted text.",
+      "Amount of ethanol not reported in the extracted text.",
+      "Amount of water not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

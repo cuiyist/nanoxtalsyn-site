@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "norberg2006-ja063425f-co2-znse-qds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Nick S. Norberg; Gregory L. Parks; G. Mackay Salley; Daniel R. Gamelin (2006): Co2+:ZnSe QDs",
   "material": {
@@ -238,6 +238,82 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "norberg2006-ja063425f-co2-znse-qds-1--selenium",
+      "name": "selenium",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 2.4,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2.4 mmol",
+          "evidence": [
+            {
+              "source_id": "norberg2006-ja063425f",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "norberg2006-ja063425f",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "norberg2006-ja063425f-co2-znse-qds-1--zn-oac-22h2o",
+      "name": "Zn(OAc)2·2H2O",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 0.4,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.4 mmol",
+          "evidence": [
+            {
+              "source_id": "norberg2006-ja063425f",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "norberg2006-ja063425f",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -253,11 +329,22 @@
       ]
     },
     {
-      "id": "norberg2006-ja063425f-co2-znse-qds-1--after-s02-heat",
+      "id": "norberg2006-ja063425f-co2-znse-qds-1--after-d2-s02-prepare",
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
         "norberg2006-ja063425f-co2-znse-qds-1--after-s01-purge",
+        "norberg2006-ja063425f-co2-znse-qds-1--selenium",
+        "norberg2006-ja063425f-co2-znse-qds-1--tributylphosphine",
+        "norberg2006-ja063425f-co2-znse-qds-1--1-octadecene"
+      ]
+    },
+    {
+      "id": "norberg2006-ja063425f-co2-znse-qds-1--after-s02-heat",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "norberg2006-ja063425f-co2-znse-qds-1--after-d2-s02-prepare",
         "norberg2006-ja063425f-co2-znse-qds-1--oleic-acid",
         "norberg2006-ja063425f-co2-znse-qds-1--1-hexadecylamine",
         "norberg2006-ja063425f-co2-znse-qds-1--1-octadecene"
@@ -265,7 +352,7 @@
     },
     {
       "id": "norberg2006-ja063425f-co2-znse-qds-1--after-s03-precipitate",
-      "name": "mixture after step 3",
+      "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
         "norberg2006-ja063425f-co2-znse-qds-1--after-s02-heat"
@@ -273,7 +360,7 @@
     },
     {
       "id": "norberg2006-ja063425f-co2-znse-qds-1--after-s04-centrifuge",
-      "name": "mixture after step 4",
+      "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
         "norberg2006-ja063425f-co2-znse-qds-1--after-s03-precipitate"
@@ -370,9 +457,9 @@
       ]
     },
     {
-      "id": "s02-heat",
-      "action": "heat",
-      "label": "Heat the Zn/Co solution to 310 °C",
+      "id": "d2-s02-prepare",
+      "action": "prepare",
+      "label": "Prepare the Se solution in a glove box",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -381,6 +468,52 @@
       ],
       "inputs": [
         "norberg2006-ja063425f-co2-znse-qds-1--after-s01-purge",
+        "norberg2006-ja063425f-co2-znse-qds-1--selenium",
+        "norberg2006-ja063425f-co2-znse-qds-1--tributylphosphine",
+        "norberg2006-ja063425f-co2-znse-qds-1--1-octadecene"
+      ],
+      "outputs": [
+        "norberg2006-ja063425f-co2-znse-qds-1--after-d2-s02-prepare"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "norberg2006-ja063425f",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Prepare the Se solution in a glove box",
+      "evidence": [
+        {
+          "source_id": "norberg2006-ja063425f",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-heat",
+      "action": "heat",
+      "label": "Heat the Zn/Co solution to 310 °C",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-prepare"
+      ],
+      "inputs": [
+        "norberg2006-ja063425f-co2-znse-qds-1--after-d2-s02-prepare",
         "norberg2006-ja063425f-co2-znse-qds-1--oleic-acid",
         "norberg2006-ja063425f-co2-znse-qds-1--1-hexadecylamine",
         "norberg2006-ja063425f-co2-znse-qds-1--1-octadecene"
@@ -650,7 +783,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Reactor not reported in the extracted text.",
       "Reaction time not reported in the extracted text."

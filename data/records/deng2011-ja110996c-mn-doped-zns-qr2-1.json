@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "deng2011-ja110996c-mn-doped-zns-qr2-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Zhengtao Deng; Ling Tong; Marco Flores; Su Lin; Ji-Xin Cheng; Hao Yan; Yan Liu (2011): Mn-doped ZnS QR2",
   "material": {
@@ -242,6 +242,25 @@
           "locator": "Main PDF p.7"
         }
       ]
+    },
+    {
+      "id": "deng2011-ja110996c-mn-doped-zns-qr2-1--oleylamine",
+      "name": "Oleylamine",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "deng2011-ja110996c",
+          "locator": "Main PDF p.7"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -251,7 +270,8 @@
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": [
-        "deng2011-ja110996c-mn-doped-zns-qr2-1--s"
+        "deng2011-ja110996c-mn-doped-zns-qr2-1--s",
+        "deng2011-ja110996c-mn-doped-zns-qr2-1--oleylamine"
       ]
     },
     {
@@ -262,19 +282,37 @@
         "deng2011-ja110996c-mn-doped-zns-qr2-1--after-s01-dissolve",
         "deng2011-ja110996c-mn-doped-zns-qr2-1--zn-no3-2",
         "deng2011-ja110996c-mn-doped-zns-qr2-1--mn-no3-2",
-        "deng2011-ja110996c-mn-doped-zns-qr2-1--1-dodecanethiol"
+        "deng2011-ja110996c-mn-doped-zns-qr2-1--1-dodecanethiol",
+        "deng2011-ja110996c-mn-doped-zns-qr2-1--oleylamine"
       ]
     },
     {
       "id": "deng2011-ja110996c-mn-doped-zns-qr2-1--after-s03-inject",
-      "name": "product as isolated",
-      "kind": "product",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
       "parent_ids": [
         "deng2011-ja110996c-mn-doped-zns-qr2-1--after-s02-dissolve",
         "deng2011-ja110996c-mn-doped-zns-qr2-1--s",
         "deng2011-ja110996c-mn-doped-zns-qr2-1--zn-no3-2",
         "deng2011-ja110996c-mn-doped-zns-qr2-1--mn-no3-2",
-        "deng2011-ja110996c-mn-doped-zns-qr2-1--1-dodecanethiol"
+        "deng2011-ja110996c-mn-doped-zns-qr2-1--1-dodecanethiol",
+        "deng2011-ja110996c-mn-doped-zns-qr2-1--oleylamine"
+      ]
+    },
+    {
+      "id": "deng2011-ja110996c-mn-doped-zns-qr2-1--after-d2-s04-cool",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "deng2011-ja110996c-mn-doped-zns-qr2-1--after-s03-inject"
+      ]
+    },
+    {
+      "id": "deng2011-ja110996c-mn-doped-zns-qr2-1--after-d2-s05-redisperse",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "deng2011-ja110996c-mn-doped-zns-qr2-1--after-d2-s04-cool"
       ]
     }
   ],
@@ -288,7 +326,8 @@
       "optional": false,
       "depends_on": [],
       "inputs": [
-        "deng2011-ja110996c-mn-doped-zns-qr2-1--s"
+        "deng2011-ja110996c-mn-doped-zns-qr2-1--s",
+        "deng2011-ja110996c-mn-doped-zns-qr2-1--oleylamine"
       ],
       "outputs": [
         "deng2011-ja110996c-mn-doped-zns-qr2-1--after-s01-dissolve"
@@ -353,7 +392,8 @@
         "deng2011-ja110996c-mn-doped-zns-qr2-1--after-s01-dissolve",
         "deng2011-ja110996c-mn-doped-zns-qr2-1--zn-no3-2",
         "deng2011-ja110996c-mn-doped-zns-qr2-1--mn-no3-2",
-        "deng2011-ja110996c-mn-doped-zns-qr2-1--1-dodecanethiol"
+        "deng2011-ja110996c-mn-doped-zns-qr2-1--1-dodecanethiol",
+        "deng2011-ja110996c-mn-doped-zns-qr2-1--oleylamine"
       ],
       "outputs": [
         "deng2011-ja110996c-mn-doped-zns-qr2-1--after-s02-dissolve"
@@ -419,7 +459,8 @@
         "deng2011-ja110996c-mn-doped-zns-qr2-1--s",
         "deng2011-ja110996c-mn-doped-zns-qr2-1--zn-no3-2",
         "deng2011-ja110996c-mn-doped-zns-qr2-1--mn-no3-2",
-        "deng2011-ja110996c-mn-doped-zns-qr2-1--1-dodecanethiol"
+        "deng2011-ja110996c-mn-doped-zns-qr2-1--1-dodecanethiol",
+        "deng2011-ja110996c-mn-doped-zns-qr2-1--oleylamine"
       ],
       "outputs": [
         "deng2011-ja110996c-mn-doped-zns-qr2-1--after-s03-inject"
@@ -487,6 +528,87 @@
           "locator": "Main PDF p.7"
         }
       ]
+    },
+    {
+      "id": "d2-s04-cool",
+      "action": "cool",
+      "label": "Cool the reaction mixture",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-inject"
+      ],
+      "inputs": [
+        "deng2011-ja110996c-mn-doped-zns-qr2-1--after-s03-inject"
+      ],
+      "outputs": [
+        "deng2011-ja110996c-mn-doped-zns-qr2-1--after-d2-s04-cool"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "deng2011-ja110996c",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Cool the reaction mixture",
+      "evidence": [
+        {
+          "source_id": "deng2011-ja110996c",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "d2-s05-redisperse",
+      "action": "redisperse",
+      "label": "Redisperse in hexane",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-cool"
+      ],
+      "inputs": [
+        "deng2011-ja110996c-mn-doped-zns-qr2-1--after-d2-s04-cool"
+      ],
+      "outputs": [
+        "deng2011-ja110996c-mn-doped-zns-qr2-1--after-d2-s05-redisperse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Redisperse in hexane",
+      "evidence": [
+        {
+          "source_id": "deng2011-ja110996c",
+          "locator": "Main PDF p.7"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -495,7 +617,7 @@
       "sample_id": "deng2011-ja110996c-mn-doped-zns-qr2-1--product",
       "source_sample_label": "Mn-doped ZnS QR2",
       "batch_id": null,
-      "material_state_id": "deng2011-ja110996c-mn-doped-zns-qr2-1--after-s03-inject",
+      "material_state_id": "deng2011-ja110996c-mn-doped-zns-qr2-1--after-d2-s05-redisperse",
       "parent_sample_id": null,
       "composition": {
         "value": "ZnS",
@@ -587,13 +709,79 @@
           "locator": "Main PDF p.7"
         }
       ]
+    },
+    {
+      "id": "deng2011-ja110996c-mn-doped-zns-qr2-1--photoluminescence-peak",
+      "sample_id": "deng2011-ja110996c-mn-doped-zns-qr2-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 585,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "585 nm",
+        "evidence": [
+          {
+            "source_id": "deng2011-ja110996c",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "deng2011-ja110996c",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    },
+    {
+      "id": "deng2011-ja110996c-mn-doped-zns-qr2-1--photoluminescence-quantum-yield",
+      "sample_id": "deng2011-ja110996c-mn-doped-zns-qr2-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 45,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "45 %",
+        "evidence": [
+          {
+            "source_id": "deng2011-ja110996c",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "deng2011-ja110996c",
+          "locator": "Main PDF p.4"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
-    "missing_fields": [],
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
+    "missing_fields": [
+      "Amount of Oleylamine not reported in the extracted text."
+    ],
     "conflicts": [],
     "requested_tasks": [],
     "experimental_outcome": "reported_product"

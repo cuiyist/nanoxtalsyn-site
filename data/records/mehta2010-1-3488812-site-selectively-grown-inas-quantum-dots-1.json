@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "mehta2010-1-3488812-site-selectively-grown-inas-quantum-dots-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "M. Mehta et al. (2010): site-selectively grown InAs quantum dots (QDs) in a p-i-n junction diode",
   "material": {
@@ -39,15 +39,25 @@
   },
   "intended_target": {
     "composition": {
-      "value": null,
-      "status": "not_reported",
-      "evidence": [],
+      "value": "InAs",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "mehta2010-1-3488812",
+          "locator": "Main PDF p.3"
+        }
+      ],
       "note": ""
     },
     "phase": {
-      "value": null,
-      "status": "not_reported",
-      "evidence": [],
+      "value": "zinc blende",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "mehta2010-1-3488812",
+          "locator": "Main PDF p.2"
+        }
+      ],
       "note": ""
     },
     "size": {
@@ -75,7 +85,7 @@
       "id": "mehta2010-1-3488812-site-selectively-grown-inas-quantum-dots-1--gaas-buffer-layer",
       "name": "GaAs buffer layer",
       "formula": null,
-      "role": "reagent",
+      "role": "substrate",
       "stage": "synthesis",
       "identity": {
         "pubchem_cid": null,
@@ -94,7 +104,7 @@
       "id": "mehta2010-1-3488812-site-selectively-grown-inas-quantum-dots-1--inas",
       "name": "InAs",
       "formula": null,
-      "role": "reagent",
+      "role": "grown_layer",
       "stage": "synthesis",
       "identity": {
         "pubchem_cid": null,
@@ -157,7 +167,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "amount": {
+          "value": 145,
+          "minimum": null,
+          "maximum": null,
+          "unit": "nm",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "145 nm",
+          "evidence": [
+            {
+              "source_id": "mehta2010-1-3488812",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -169,6 +198,101 @@
     {
       "id": "mehta2010-1-3488812-site-selectively-grown-inas-quantum-dots-1--c-doped-p-gaas",
       "name": "C-doped p-GaAs",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 145,
+          "minimum": null,
+          "maximum": null,
+          "unit": "nm",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "145 nm",
+          "evidence": [
+            {
+              "source_id": "mehta2010-1-3488812",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "mehta2010-1-3488812",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "mehta2010-1-3488812-site-selectively-grown-inas-quantum-dots-1--gaas-buffer",
+      "name": "GaAs buffer",
+      "formula": null,
+      "role": "substrate",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "mehta2010-1-3488812",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "mehta2010-1-3488812-site-selectively-grown-inas-quantum-dots-1--be2-ions",
+      "name": "Be2+ ions",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 3,
+          "minimum": null,
+          "maximum": null,
+          "unit": "1012 cm−2",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "3 1012 cm−2",
+          "evidence": [
+            {
+              "source_id": "mehta2010-1-3488812",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "mehta2010-1-3488812",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "mehta2010-1-3488812-site-selectively-grown-inas-quantum-dots-1--gaas",
+      "name": "GaAs",
       "formula": null,
       "role": "reagent",
       "stage": "synthesis",
@@ -214,20 +338,47 @@
       ]
     },
     {
-      "id": "mehta2010-1-3488812-site-selectively-grown-inas-quantum-dots-1--after-s04-grow",
+      "id": "mehta2010-1-3488812-site-selectively-grown-inas-quantum-dots-1--after-d2-s04-overgrow",
       "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
-        "mehta2010-1-3488812-site-selectively-grown-inas-quantum-dots-1--after-s03-deposit"
+        "mehta2010-1-3488812-site-selectively-grown-inas-quantum-dots-1--after-s03-deposit",
+        "mehta2010-1-3488812-site-selectively-grown-inas-quantum-dots-1--gaas"
+      ]
+    },
+    {
+      "id": "mehta2010-1-3488812-site-selectively-grown-inas-quantum-dots-1--after-s04-grow",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "mehta2010-1-3488812-site-selectively-grown-inas-quantum-dots-1--after-d2-s04-overgrow",
+        "mehta2010-1-3488812-site-selectively-grown-inas-quantum-dots-1--gaas"
       ]
     },
     {
       "id": "mehta2010-1-3488812-site-selectively-grown-inas-quantum-dots-1--after-s05-grow",
-      "name": "product as isolated",
-      "kind": "product",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
       "parent_ids": [
         "mehta2010-1-3488812-site-selectively-grown-inas-quantum-dots-1--after-s04-grow",
         "mehta2010-1-3488812-site-selectively-grown-inas-quantum-dots-1--c-doped-p-gaas"
+      ]
+    },
+    {
+      "id": "mehta2010-1-3488812-site-selectively-grown-inas-quantum-dots-1--after-d2-s07-process",
+      "name": "mixture after step 7",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "mehta2010-1-3488812-site-selectively-grown-inas-quantum-dots-1--after-s05-grow"
+      ]
+    },
+    {
+      "id": "mehta2010-1-3488812-site-selectively-grown-inas-quantum-dots-1--after-d2-s08-dope",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "mehta2010-1-3488812-site-selectively-grown-inas-quantum-dots-1--after-d2-s07-process",
+        "mehta2010-1-3488812-site-selectively-grown-inas-quantum-dots-1--be2-ions"
       ]
     }
   ],
@@ -436,9 +587,9 @@
       ]
     },
     {
-      "id": "s04-grow",
-      "action": "grow",
-      "label": "Grow undoped GaAs layer",
+      "id": "d2-s04-overgrow",
+      "action": "overgrow",
+      "label": "Overgrow QD layer with GaAs",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -446,7 +597,71 @@
         "s03-deposit"
       ],
       "inputs": [
-        "mehta2010-1-3488812-site-selectively-grown-inas-quantum-dots-1--after-s03-deposit"
+        "mehta2010-1-3488812-site-selectively-grown-inas-quantum-dots-1--after-s03-deposit",
+        "mehta2010-1-3488812-site-selectively-grown-inas-quantum-dots-1--gaas"
+      ],
+      "outputs": [
+        "mehta2010-1-3488812-site-selectively-grown-inas-quantum-dots-1--after-d2-s04-overgrow"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 515,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "515 °C",
+          "evidence": [
+            {
+              "source_id": "mehta2010-1-3488812",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "arsenic",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "mehta2010-1-3488812",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Overgrow QD layer with GaAs",
+      "evidence": [
+        {
+          "source_id": "mehta2010-1-3488812",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s04-grow",
+      "action": "grow",
+      "label": "Grow undoped GaAs layer",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-overgrow"
+      ],
+      "inputs": [
+        "mehta2010-1-3488812-site-selectively-grown-inas-quantum-dots-1--after-d2-s04-overgrow",
+        "mehta2010-1-3488812-site-selectively-grown-inas-quantum-dots-1--gaas"
       ],
       "outputs": [
         "mehta2010-1-3488812-site-selectively-grown-inas-quantum-dots-1--after-s04-grow"
@@ -540,6 +755,93 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s07-process",
+      "action": "process",
+      "label": "Process into p-i-n junction devices",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s05-grow"
+      ],
+      "inputs": [
+        "mehta2010-1-3488812-site-selectively-grown-inas-quantum-dots-1--after-s05-grow"
+      ],
+      "outputs": [
+        "mehta2010-1-3488812-site-selectively-grown-inas-quantum-dots-1--after-d2-s07-process"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "arsenic",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "mehta2010-1-3488812",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Process into p-i-n junction devices",
+      "evidence": [
+        {
+          "source_id": "mehta2010-1-3488812",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s08-dope",
+      "action": "dope",
+      "label": "Dope",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s07-process"
+      ],
+      "inputs": [
+        "mehta2010-1-3488812-site-selectively-grown-inas-quantum-dots-1--after-d2-s07-process",
+        "mehta2010-1-3488812-site-selectively-grown-inas-quantum-dots-1--be2-ions"
+      ],
+      "outputs": [
+        "mehta2010-1-3488812-site-selectively-grown-inas-quantum-dots-1--after-d2-s08-dope"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "arsenic",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "mehta2010-1-3488812",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dope",
+      "evidence": [
+        {
+          "source_id": "mehta2010-1-3488812",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -548,18 +850,28 @@
       "sample_id": "mehta2010-1-3488812-site-selectively-grown-inas-quantum-dots-1--product",
       "source_sample_label": "site-selectively grown InAs quantum dots (QDs) in a p-i-n junction diode",
       "batch_id": null,
-      "material_state_id": "mehta2010-1-3488812-site-selectively-grown-inas-quantum-dots-1--after-s05-grow",
+      "material_state_id": "mehta2010-1-3488812-site-selectively-grown-inas-quantum-dots-1--after-d2-s08-dope",
       "parent_sample_id": null,
       "composition": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "InAs",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "mehta2010-1-3488812",
+            "locator": "Main PDF p.3"
+          }
+        ],
         "note": ""
       },
       "phase": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "zinc blende",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "mehta2010-1-3488812",
+            "locator": "Main PDF p.2"
+          }
+        ],
         "note": ""
       },
       "morphology": {
@@ -591,17 +903,17 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
-      "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
       "Amount of GaAs buffer layer not reported in the extracted text.",
       "Amount of Ga+ ions not reported in the extracted text.",
-      "Amount of Si-doped n-GaAs not reported in the extracted text.",
-      "Amount of C-doped p-GaAs not reported in the extracted text."
+      "Amount of GaAs buffer layer not reported in the extracted text.",
+      "Amount of GaAs buffer not reported in the extracted text.",
+      "Amount of GaAs not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

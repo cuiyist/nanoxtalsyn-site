@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "patange2009-1-3176504-nicrxfe2xo4-x-0-01-0-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "S. M. Patange (2009): NiCrxFe2−xO4 (x=0.0–1.0)",
   "material": {
@@ -98,7 +98,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "volume": {
+          "value": 100,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "100 mL",
+          "evidence": [
+            {
+              "source_id": "patange2009-1-3176504",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -117,7 +136,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "volume": {
+          "value": 100,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "100 mL",
+          "evidence": [
+            {
+              "source_id": "patange2009-1-3176504",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -136,7 +174,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "volume": {
+          "value": 100,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "100 mL",
+          "evidence": [
+            {
+              "source_id": "patange2009-1-3176504",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -155,7 +212,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "concentration": {
+          "value": 2,
+          "minimum": null,
+          "maximum": null,
+          "unit": "M",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2 M",
+          "evidence": [
+            {
+              "source_id": "patange2009-1-3176504",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -219,10 +295,18 @@
     },
     {
       "id": "patange2009-1-3176504-nicrxfe2xo4-x-0-01-0-1--after-s04-filter",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "patange2009-1-3176504-nicrxfe2xo4-x-0-01-0-1--after-s03-heat"
+      ]
+    },
+    {
+      "id": "patange2009-1-3176504-nicrxfe2xo4-x-0-01-0-1--after-d2-s05-anneal",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "patange2009-1-3176504-nicrxfe2xo4-x-0-01-0-1--after-s03-heat"
+        "patange2009-1-3176504-nicrxfe2xo4-x-0-01-0-1--after-s04-filter"
       ]
     }
   ],
@@ -402,6 +486,81 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "d2-s05-anneal",
+      "action": "anneal",
+      "label": "Heating the samples at 873 K for 6 h",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-filter"
+      ],
+      "inputs": [
+        "patange2009-1-3176504-nicrxfe2xo4-x-0-01-0-1--after-s04-filter"
+      ],
+      "outputs": [
+        "patange2009-1-3176504-nicrxfe2xo4-x-0-01-0-1--after-d2-s05-anneal"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 873,
+          "minimum": null,
+          "maximum": null,
+          "unit": "K",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "873 K",
+          "evidence": [
+            {
+              "source_id": "patange2009-1-3176504",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 6,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "6 h",
+          "evidence": [
+            {
+              "source_id": "patange2009-1-3176504",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heating the samples at 873 K for 6 h",
+      "evidence": [
+        {
+          "source_id": "patange2009-1-3176504",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -410,7 +569,7 @@
       "sample_id": "patange2009-1-3176504-nicrxfe2xo4-x-0-01-0-1--product",
       "source_sample_label": "NiCrxFe2−xO4 (x=0.0–1.0)",
       "batch_id": null,
-      "material_state_id": "patange2009-1-3176504-nicrxfe2xo4-x-0-01-0-1--after-s04-filter",
+      "material_state_id": "patange2009-1-3176504-nicrxfe2xo4-x-0-01-0-1--after-d2-s05-anneal",
       "parent_sample_id": null,
       "composition": {
         "value": "NiCrxFe2−xO4",
@@ -493,7 +652,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
@@ -501,10 +660,6 @@
       "Atmosphere not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
-      "Amount of FeSO4·7H2O not reported in the extracted text.",
-      "Amount of NiSO4·7H2O not reported in the extracted text.",
-      "Amount of Cr(SO4)3·6H2O not reported in the extracted text.",
-      "Amount of NaOH not reported in the extracted text.",
       "Amount of H2O2 not reported in the extracted text."
     ],
     "conflicts": [],

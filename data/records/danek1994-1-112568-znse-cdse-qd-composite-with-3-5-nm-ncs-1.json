@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "danek1994-1-112568-znse-cdse-qd-composite-with-3-5-nm-ncs-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "M. Danek (1994): ZnSe/CdSe QD composite with ~3.5 nm NCs",
   "material": {
@@ -95,7 +95,7 @@
       "id": "danek1994-1-112568-znse-cdse-qd-composite-with-3-5-nm-ncs-1--cdse-nanocrystals",
       "name": "CdSe nanocrystals",
       "formula": null,
-      "role": "reagent",
+      "role": "starting_particles",
       "stage": "synthesis",
       "identity": {
         "pubchem_cid": null,
@@ -246,11 +246,22 @@
       ]
     },
     {
-      "id": "danek1994-1-112568-znse-cdse-qd-composite-with-3-5-nm-ncs-1--after-s03-electrospray",
+      "id": "danek1994-1-112568-znse-cdse-qd-composite-with-3-5-nm-ncs-1--after-d2-s03-disperse",
       "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
         "danek1994-1-112568-znse-cdse-qd-composite-with-3-5-nm-ncs-1--after-s02-exchange",
+        "danek1994-1-112568-znse-cdse-qd-composite-with-3-5-nm-ncs-1--cdse-nanocrystals",
+        "danek1994-1-112568-znse-cdse-qd-composite-with-3-5-nm-ncs-1--pyridine",
+        "danek1994-1-112568-znse-cdse-qd-composite-with-3-5-nm-ncs-1--acetonitrile"
+      ]
+    },
+    {
+      "id": "danek1994-1-112568-znse-cdse-qd-composite-with-3-5-nm-ncs-1--after-s03-electrospray",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "danek1994-1-112568-znse-cdse-qd-composite-with-3-5-nm-ncs-1--after-d2-s03-disperse",
         "danek1994-1-112568-znse-cdse-qd-composite-with-3-5-nm-ncs-1--cdse-nanocrystals",
         "danek1994-1-112568-znse-cdse-qd-composite-with-3-5-nm-ncs-1--pyridine",
         "danek1994-1-112568-znse-cdse-qd-composite-with-3-5-nm-ncs-1--acetonitrile"
@@ -356,9 +367,9 @@
       ]
     },
     {
-      "id": "s03-electrospray",
-      "action": "electrospray",
-      "label": "Dispersion delivered into ES head at reactor inlet",
+      "id": "d2-s03-disperse",
+      "action": "disperse",
+      "label": "Pyridine capped NCs dispersed in anhydrous pyridine and diluted with acetonitrile",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -367,6 +378,52 @@
       ],
       "inputs": [
         "danek1994-1-112568-znse-cdse-qd-composite-with-3-5-nm-ncs-1--after-s02-exchange",
+        "danek1994-1-112568-znse-cdse-qd-composite-with-3-5-nm-ncs-1--cdse-nanocrystals",
+        "danek1994-1-112568-znse-cdse-qd-composite-with-3-5-nm-ncs-1--pyridine",
+        "danek1994-1-112568-znse-cdse-qd-composite-with-3-5-nm-ncs-1--acetonitrile"
+      ],
+      "outputs": [
+        "danek1994-1-112568-znse-cdse-qd-composite-with-3-5-nm-ncs-1--after-d2-s03-disperse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "danek1994-1-112568",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Pyridine capped NCs dispersed in anhydrous pyridine and diluted with acetonitrile",
+      "evidence": [
+        {
+          "source_id": "danek1994-1-112568",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s03-electrospray",
+      "action": "electrospray",
+      "label": "Dispersion delivered into ES head at reactor inlet",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-disperse"
+      ],
+      "inputs": [
+        "danek1994-1-112568-znse-cdse-qd-composite-with-3-5-nm-ncs-1--after-d2-s03-disperse",
         "danek1994-1-112568-znse-cdse-qd-composite-with-3-5-nm-ncs-1--cdse-nanocrystals",
         "danek1994-1-112568-znse-cdse-qd-composite-with-3-5-nm-ncs-1--pyridine",
         "danek1994-1-112568-znse-cdse-qd-composite-with-3-5-nm-ncs-1--acetonitrile"
@@ -564,12 +621,44 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "danek1994-1-112568-znse-cdse-qd-composite-with-3-5-nm-ncs-1--photoluminescence-peak",
+      "sample_id": "danek1994-1-112568-znse-cdse-qd-composite-with-3-5-nm-ncs-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 568,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "568 nm",
+        "evidence": [
+          {
+            "source_id": "danek1994-1-112568",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "danek1994-1-112568",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Reaction time not reported in the extracted text.",
       "Amount of CdSe nanocrystals not reported in the extracted text.",

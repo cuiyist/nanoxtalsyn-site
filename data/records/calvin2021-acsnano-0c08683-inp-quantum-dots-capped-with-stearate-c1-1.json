@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "calvin2021-acsnano-0c08683-inp-quantum-dots-capped-with-stearate-c1-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Jason J. Calvin; Erin A. O’Brien; Adam B. Sedlak; Arunima D. Balan; A. Paul Alivisatos (2021): InP quantum dots capped with stearate (C18H35O2)",
   "material": {
@@ -39,15 +39,25 @@
   },
   "intended_target": {
     "composition": {
-      "value": null,
-      "status": "not_reported",
-      "evidence": [],
+      "value": "InP",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "calvin2021-acsnano-0c08683",
+          "locator": "Main PDF p.3"
+        }
+      ],
       "note": ""
     },
     "phase": {
-      "value": null,
-      "status": "not_reported",
-      "evidence": [],
+      "value": "crystal",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "calvin2021-acsnano-0c08683",
+          "locator": "Main PDF p.3"
+        }
+      ],
       "note": ""
     },
     "size": {
@@ -64,9 +74,14 @@
       "derivation": null
     },
     "morphology": {
-      "value": null,
-      "status": "not_reported",
-      "evidence": [],
+      "value": "sphere",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "calvin2021-acsnano-0c08683",
+          "locator": "Main PDF p.3"
+        }
+      ],
       "note": ""
     }
   },
@@ -270,10 +285,26 @@
     },
     {
       "id": "calvin2021-acsnano-0c08683-inp-quantum-dots-capped-with-stearate-c1-1--after-s05-cool",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "calvin2021-acsnano-0c08683-inp-quantum-dots-capped-with-stearate-c1-1--after-s04-heat"
+      ]
+    },
+    {
+      "id": "calvin2021-acsnano-0c08683-inp-quantum-dots-capped-with-stearate-c1-1--after-d2-s06-precipitate",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "calvin2021-acsnano-0c08683-inp-quantum-dots-capped-with-stearate-c1-1--after-s05-cool"
+      ]
+    },
+    {
+      "id": "calvin2021-acsnano-0c08683-inp-quantum-dots-capped-with-stearate-c1-1--after-d2-s07-wash",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "calvin2021-acsnano-0c08683-inp-quantum-dots-capped-with-stearate-c1-1--after-s04-heat"
+        "calvin2021-acsnano-0c08683-inp-quantum-dots-capped-with-stearate-c1-1--after-d2-s06-precipitate"
       ]
     }
   ],
@@ -594,6 +625,82 @@
           "locator": "Main PDF p.10"
         }
       ]
+    },
+    {
+      "id": "d2-s06-precipitate",
+      "action": "precipitate",
+      "label": "Precipitate quantum dots with acetone",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s05-cool"
+      ],
+      "inputs": [
+        "calvin2021-acsnano-0c08683-inp-quantum-dots-capped-with-stearate-c1-1--after-s05-cool"
+      ],
+      "outputs": [
+        "calvin2021-acsnano-0c08683-inp-quantum-dots-capped-with-stearate-c1-1--after-d2-s06-precipitate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Precipitate quantum dots with acetone",
+      "evidence": [
+        {
+          "source_id": "calvin2021-acsnano-0c08683",
+          "locator": "Main PDF p.10"
+        }
+      ]
+    },
+    {
+      "id": "d2-s07-wash",
+      "action": "wash",
+      "label": "Wash with acetone and redisperse in tetrahydrofuran",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s06-precipitate"
+      ],
+      "inputs": [
+        "calvin2021-acsnano-0c08683-inp-quantum-dots-capped-with-stearate-c1-1--after-d2-s06-precipitate"
+      ],
+      "outputs": [
+        "calvin2021-acsnano-0c08683-inp-quantum-dots-capped-with-stearate-c1-1--after-d2-s07-wash"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Wash with acetone and redisperse in tetrahydrofuran",
+      "evidence": [
+        {
+          "source_id": "calvin2021-acsnano-0c08683",
+          "locator": "Main PDF p.10"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -602,30 +709,50 @@
       "sample_id": "calvin2021-acsnano-0c08683-inp-quantum-dots-capped-with-stearate-c1-1--product",
       "source_sample_label": "InP quantum dots capped with stearate (C18H35O2)",
       "batch_id": null,
-      "material_state_id": "calvin2021-acsnano-0c08683-inp-quantum-dots-capped-with-stearate-c1-1--after-s05-cool",
+      "material_state_id": "calvin2021-acsnano-0c08683-inp-quantum-dots-capped-with-stearate-c1-1--after-d2-s07-wash",
       "parent_sample_id": null,
       "composition": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "InP",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "calvin2021-acsnano-0c08683",
+            "locator": "Main PDF p.3"
+          }
+        ],
         "note": ""
       },
       "phase": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "crystal",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "calvin2021-acsnano-0c08683",
+            "locator": "Main PDF p.3"
+          }
+        ],
         "note": ""
       },
       "morphology": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "sphere",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "calvin2021-acsnano-0c08683",
+            "locator": "Main PDF p.3"
+          }
+        ],
         "note": ""
       },
       "surface": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "stearate (C18H35O2)",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "calvin2021-acsnano-0c08683",
+            "locator": "Main PDF p.3"
+          }
+        ],
         "note": ""
       },
       "recipe_link": "explicit",
@@ -646,11 +773,8 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
-      "Phase not reported in the extracted text.",
-      "Shape not reported in the extracted text.",
-      "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text."
     ],
     "conflicts": [],

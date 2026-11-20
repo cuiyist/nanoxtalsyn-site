@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "nataraj2005-1-2120905-one-dimensional-gaas-channel-coupled-ina-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Devaraj Nataraj (2005): one-dimensional GaAs channel-coupled InAs quantum dot memory device",
   "material": {
@@ -192,11 +192,19 @@
       ]
     },
     {
+      "id": "nataraj2005-1-2120905-one-dimensional-gaas-channel-coupled-ina-1--after-d2-s04-heat",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "nataraj2005-1-2120905-one-dimensional-gaas-channel-coupled-ina-1--after-s03-grow"
+      ]
+    },
+    {
       "id": "nataraj2005-1-2120905-one-dimensional-gaas-channel-coupled-ina-1--after-s04-deposit",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "nataraj2005-1-2120905-one-dimensional-gaas-channel-coupled-ina-1--after-s03-grow"
+        "nataraj2005-1-2120905-one-dimensional-gaas-channel-coupled-ina-1--after-d2-s04-heat"
       ]
     }
   ],
@@ -331,9 +339,9 @@
       ]
     },
     {
-      "id": "s04-deposit",
-      "action": "deposit",
-      "label": "Deposit Ohmic contact and gate electrodes",
+      "id": "d2-s04-heat",
+      "action": "heat",
+      "label": "Increase temperature to 600 °C",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -342,6 +350,68 @@
       ],
       "inputs": [
         "nataraj2005-1-2120905-one-dimensional-gaas-channel-coupled-ina-1--after-s03-grow"
+      ],
+      "outputs": [
+        "nataraj2005-1-2120905-one-dimensional-gaas-channel-coupled-ina-1--after-d2-s04-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 600,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "600 °C",
+          "evidence": [
+            {
+              "source_id": "nataraj2005-1-2120905",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "hydrogen",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "nataraj2005-1-2120905",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Increase temperature to 600 °C",
+      "evidence": [
+        {
+          "source_id": "nataraj2005-1-2120905",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s04-deposit",
+      "action": "deposit",
+      "label": "Deposit Ohmic contact and gate electrodes",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-heat"
+      ],
+      "inputs": [
+        "nataraj2005-1-2120905-one-dimensional-gaas-channel-coupled-ina-1--after-d2-s04-heat"
       ],
       "outputs": [
         "nataraj2005-1-2120905-one-dimensional-gaas-channel-coupled-ina-1--after-s04-deposit"
@@ -476,7 +546,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",

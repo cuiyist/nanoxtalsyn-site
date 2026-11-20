@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "dong2008-ja711408t-gaas-quantum-wires-bi-catalyzed-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Angang Dong; Heng Yu; Fudong Wang; William E. Buhro (2008): GaAs quantum wires (Bi-catalyzed)",
   "material": {
@@ -294,14 +294,27 @@
   "stocks": [],
   "material_states": [
     {
-      "id": "dong2008-ja711408t-gaas-quantum-wires-bi-catalyzed-1--after-s01-cool",
+      "id": "dong2008-ja711408t-gaas-quantum-wires-bi-catalyzed-1--after-d2-s01-load",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "dong2008-ja711408t-gaas-quantum-wires-bi-catalyzed-1--topo",
+        "dong2008-ja711408t-gaas-quantum-wires-bi-catalyzed-1--top",
+        "dong2008-ja711408t-gaas-quantum-wires-bi-catalyzed-1--ode",
+        "dong2008-ja711408t-gaas-quantum-wires-bi-catalyzed-1--bi-nanoparticles"
+      ]
+    },
+    {
+      "id": "dong2008-ja711408t-gaas-quantum-wires-bi-catalyzed-1--after-s01-cool",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "dong2008-ja711408t-gaas-quantum-wires-bi-catalyzed-1--after-d2-s01-load"
+      ]
     },
     {
       "id": "dong2008-ja711408t-gaas-quantum-wires-bi-catalyzed-1--after-s02-precipitate",
-      "name": "mixture after step 2",
+      "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
         "dong2008-ja711408t-gaas-quantum-wires-bi-catalyzed-1--after-s01-cool"
@@ -309,7 +322,7 @@
     },
     {
       "id": "dong2008-ja711408t-gaas-quantum-wires-bi-catalyzed-1--after-s03-centrifuge",
-      "name": "mixture after step 3",
+      "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
         "dong2008-ja711408t-gaas-quantum-wires-bi-catalyzed-1--after-s02-precipitate"
@@ -326,14 +339,62 @@
   ],
   "operations": [
     {
+      "id": "d2-s01-load",
+      "action": "load",
+      "label": "Load TOPO, TOP, ODE, and Bi nanoparticles into reaction tube",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "dong2008-ja711408t-gaas-quantum-wires-bi-catalyzed-1--topo",
+        "dong2008-ja711408t-gaas-quantum-wires-bi-catalyzed-1--top",
+        "dong2008-ja711408t-gaas-quantum-wires-bi-catalyzed-1--ode",
+        "dong2008-ja711408t-gaas-quantum-wires-bi-catalyzed-1--bi-nanoparticles"
+      ],
+      "outputs": [
+        "dong2008-ja711408t-gaas-quantum-wires-bi-catalyzed-1--after-d2-s01-load"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "dong2008-ja711408t",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Load TOPO, TOP, ODE, and Bi nanoparticles into reaction tube",
+      "evidence": [
+        {
+          "source_id": "dong2008-ja711408t",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
       "id": "s01-cool",
       "action": "cool",
       "label": "Cool reaction tube to room temperature",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s01-load"
+      ],
+      "inputs": [
+        "dong2008-ja711408t-gaas-quantum-wires-bi-catalyzed-1--after-d2-s01-load"
+      ],
       "outputs": [
         "dong2008-ja711408t-gaas-quantum-wires-bi-catalyzed-1--after-s01-cool"
       ],
@@ -543,7 +604,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Size not reported in the extracted text.",

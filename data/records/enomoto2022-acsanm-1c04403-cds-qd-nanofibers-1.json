@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "enomoto2022-acsanm-1c04403-cds-qd-nanofibers-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Kazushi Enomoto; Kotaro Takeda; Naoto Iwata; Kiyohiro Adachi; Tomoka Kikitsu; Yasuhiro Ishida; Daisuke Hashizume; Manabu Tanaka; Hiroyoshi Kawakami; Yong-Jin Pu (2022): CdS QD nanoﬁbers",
   "material": {
@@ -151,6 +151,63 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "enomoto2022-acsanm-1c04403-cds-qd-nanofibers-1--acetone",
+      "name": "acetone",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "enomoto2022-acsanm-1c04403",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "enomoto2022-acsanm-1c04403-cds-qd-nanofibers-1--toluene",
+      "name": "toluene",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "enomoto2022-acsanm-1c04403",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "enomoto2022-acsanm-1c04403-cds-qd-nanofibers-1--cds-qds",
+      "name": "CdS QDs",
+      "formula": null,
+      "role": "starting_particles",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "enomoto2022-acsanm-1c04403",
+          "locator": "Main PDF p.1"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -171,7 +228,8 @@
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
-        "enomoto2022-acsanm-1c04403-cds-qd-nanofibers-1--after-s01-heat"
+        "enomoto2022-acsanm-1c04403-cds-qd-nanofibers-1--after-s01-heat",
+        "enomoto2022-acsanm-1c04403-cds-qd-nanofibers-1--cds-qds"
       ]
     },
     {
@@ -179,7 +237,8 @@
       "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
-        "enomoto2022-acsanm-1c04403-cds-qd-nanofibers-1--after-s02-precipitate"
+        "enomoto2022-acsanm-1c04403-cds-qd-nanofibers-1--after-s02-precipitate",
+        "enomoto2022-acsanm-1c04403-cds-qd-nanofibers-1--cds-qds"
       ]
     },
     {
@@ -261,7 +320,8 @@
         "s01-heat"
       ],
       "inputs": [
-        "enomoto2022-acsanm-1c04403-cds-qd-nanofibers-1--after-s01-heat"
+        "enomoto2022-acsanm-1c04403-cds-qd-nanofibers-1--after-s01-heat",
+        "enomoto2022-acsanm-1c04403-cds-qd-nanofibers-1--cds-qds"
       ],
       "outputs": [
         "enomoto2022-acsanm-1c04403-cds-qd-nanofibers-1--after-s02-precipitate"
@@ -299,7 +359,8 @@
         "s02-precipitate"
       ],
       "inputs": [
-        "enomoto2022-acsanm-1c04403-cds-qd-nanofibers-1--after-s02-precipitate"
+        "enomoto2022-acsanm-1c04403-cds-qd-nanofibers-1--after-s02-precipitate",
+        "enomoto2022-acsanm-1c04403-cds-qd-nanofibers-1--cds-qds"
       ],
       "outputs": [
         "enomoto2022-acsanm-1c04403-cds-qd-nanofibers-1--after-s03-redisperse"
@@ -423,7 +484,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Size not reported in the extracted text.",
@@ -433,7 +494,10 @@
       "Amount of CdO not reported in the extracted text.",
       "Amount of oleic acid not reported in the extracted text.",
       "Amount of octadecene (ODE) not reported in the extracted text.",
-      "Amount of sulfur not reported in the extracted text."
+      "Amount of sulfur not reported in the extracted text.",
+      "Amount of acetone not reported in the extracted text.",
+      "Amount of toluene not reported in the extracted text.",
+      "Amount of CdS QDs not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

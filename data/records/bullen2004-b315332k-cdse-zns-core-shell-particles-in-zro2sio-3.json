@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "bullen2004-b315332k-cdse-zns-core-shell-particles-in-zro2sio-3",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Craig Bullen (2004): CdSe@ZnS core-shell particles in ZrO2–SiO2 sol–gel film",
   "material": {
@@ -216,6 +216,44 @@
           "locator": "Main PDF p.1"
         }
       ]
+    },
+    {
+      "id": "bullen2004-b315332k-cdse-zns-core-shell-particles-in-zro2sio-3--diethylzinc",
+      "name": "diethylzinc",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "bullen2004-b315332k",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "bullen2004-b315332k-cdse-zns-core-shell-particles-in-zro2sio-3--aeaptms",
+      "name": "AEAPTMS",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "bullen2004-b315332k",
+          "locator": "Main PDF p.1"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -241,10 +279,36 @@
     },
     {
       "id": "bullen2004-b315332k-cdse-zns-core-shell-particles-in-zro2sio-3--after-s03-grow",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "bullen2004-b315332k-cdse-zns-core-shell-particles-in-zro2sio-3--after-s02-inject"
+      ]
+    },
+    {
+      "id": "bullen2004-b315332k-cdse-zns-core-shell-particles-in-zro2sio-3--after-d2-s04-cap",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "bullen2004-b315332k-cdse-zns-core-shell-particles-in-zro2sio-3--after-s03-grow",
+        "bullen2004-b315332k-cdse-zns-core-shell-particles-in-zro2sio-3--aeaptms"
+      ]
+    },
+    {
+      "id": "bullen2004-b315332k-cdse-zns-core-shell-particles-in-zro2sio-3--after-d2-s05-mix",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "bullen2004-b315332k-cdse-zns-core-shell-particles-in-zro2sio-3--after-d2-s04-cap",
+        "bullen2004-b315332k-cdse-zns-core-shell-particles-in-zro2sio-3--aeaptms"
+      ]
+    },
+    {
+      "id": "bullen2004-b315332k-cdse-zns-core-shell-particles-in-zro2sio-3--after-d2-s06-deposit",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "bullen2004-b315332k-cdse-zns-core-shell-particles-in-zro2sio-3--after-s02-inject"
+        "bullen2004-b315332k-cdse-zns-core-shell-particles-in-zro2sio-3--after-d2-s05-mix"
       ]
     }
   ],
@@ -420,6 +484,141 @@
           "locator": "Main PDF p.1"
         }
       ]
+    },
+    {
+      "id": "d2-s04-cap",
+      "action": "cap",
+      "label": "Cap nanoparticles with AEAPTMS",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-grow"
+      ],
+      "inputs": [
+        "bullen2004-b315332k-cdse-zns-core-shell-particles-in-zro2sio-3--after-s03-grow",
+        "bullen2004-b315332k-cdse-zns-core-shell-particles-in-zro2sio-3--aeaptms"
+      ],
+      "outputs": [
+        "bullen2004-b315332k-cdse-zns-core-shell-particles-in-zro2sio-3--after-d2-s04-cap"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Cap nanoparticles with AEAPTMS",
+      "evidence": [
+        {
+          "source_id": "bullen2004-b315332k",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "d2-s05-mix",
+      "action": "mix",
+      "label": "Mix capped nanoparticles with sol–gel solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-cap"
+      ],
+      "inputs": [
+        "bullen2004-b315332k-cdse-zns-core-shell-particles-in-zro2sio-3--after-d2-s04-cap",
+        "bullen2004-b315332k-cdse-zns-core-shell-particles-in-zro2sio-3--aeaptms"
+      ],
+      "outputs": [
+        "bullen2004-b315332k-cdse-zns-core-shell-particles-in-zro2sio-3--after-d2-s05-mix"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Mix capped nanoparticles with sol–gel solution",
+      "evidence": [
+        {
+          "source_id": "bullen2004-b315332k",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "d2-s06-deposit",
+      "action": "deposit",
+      "label": "Deposit sol–gel solution on substrates",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s05-mix"
+      ],
+      "inputs": [
+        "bullen2004-b315332k-cdse-zns-core-shell-particles-in-zro2sio-3--after-d2-s05-mix"
+      ],
+      "outputs": [
+        "bullen2004-b315332k-cdse-zns-core-shell-particles-in-zro2sio-3--after-d2-s06-deposit"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 150,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "150 °C",
+          "evidence": [
+            {
+              "source_id": "bullen2004-b315332k",
+              "locator": "Main PDF p.1"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Deposit sol–gel solution on substrates",
+      "evidence": [
+        {
+          "source_id": "bullen2004-b315332k",
+          "locator": "Main PDF p.1"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -428,7 +627,7 @@
       "sample_id": "bullen2004-b315332k-cdse-zns-core-shell-particles-in-zro2sio-3--product",
       "source_sample_label": "CdSe@ZnS core-shell particles in ZrO2–SiO2 sol–gel film",
       "batch_id": null,
-      "material_state_id": "bullen2004-b315332k-cdse-zns-core-shell-particles-in-zro2sio-3--after-s03-grow",
+      "material_state_id": "bullen2004-b315332k-cdse-zns-core-shell-particles-in-zro2sio-3--after-d2-s06-deposit",
       "parent_sample_id": null,
       "composition": {
         "value": "CdSe@ZnS",
@@ -486,7 +685,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Size not reported in the extracted text.",
@@ -494,7 +693,9 @@
       "Reaction time not reported in the extracted text.",
       "Amount of trioctylphosphine not reported in the extracted text.",
       "Amount of trioctylphosphine oxide not reported in the extracted text.",
-      "Amount of bis(trimethylsilyl) sulfide not reported in the extracted text."
+      "Amount of bis(trimethylsilyl) sulfide not reported in the extracted text.",
+      "Amount of diethylzinc not reported in the extracted text.",
+      "Amount of AEAPTMS not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

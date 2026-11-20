@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "kroupa2017-jacs-7b04551-ag-pbse-qds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Daniel M. Kroupa; Barbara K. Hughes; Elisa M. Miller; David T. Moore; Nicholas C. Anderson; Boris D. Chernomordik; Arthur J. Nozik; Matthew C. Beard (2017): Ag:PbSe QDs",
   "material": {
@@ -56,16 +56,21 @@
       "note": ""
     },
     "size": {
-      "value": null,
+      "value": 4.7,
       "minimum": null,
       "maximum": null,
       "unit": "nm",
-      "status": "not_reported",
+      "status": "reported",
       "approximate": false,
       "qualifier": "",
       "basis": "",
-      "raw_text": "not reported",
-      "evidence": [],
+      "raw_text": "4.7 nm",
+      "evidence": [
+        {
+          "source_id": "kroupa2017-jacs-7b04551",
+          "locator": "Main PDF"
+        }
+      ],
       "derivation": null
     },
     "morphology": {
@@ -205,6 +210,139 @@
         "pubchem_cid": null,
         "smiles": null
       },
+      "quantities": {
+        "concentration": {
+          "value": 5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "%",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "5 %",
+          "evidence": [
+            {
+              "source_id": "kroupa2017-jacs-7b04551",
+              "locator": "Main PDF p.11"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "kroupa2017-jacs-7b04551",
+          "locator": "Main PDF p.11"
+        }
+      ]
+    },
+    {
+      "id": "kroupa2017-jacs-7b04551-ag-pbse-qds-1--ode",
+      "name": "ODE",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "mass": {
+          "value": 11.586,
+          "minimum": null,
+          "maximum": null,
+          "unit": "g",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "11.586 g",
+          "evidence": [
+            {
+              "source_id": "kroupa2017-jacs-7b04551",
+              "locator": "Main PDF p.11"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "kroupa2017-jacs-7b04551",
+          "locator": "Main PDF p.11"
+        }
+      ]
+    },
+    {
+      "id": "kroupa2017-jacs-7b04551-ag-pbse-qds-1--dpp",
+      "name": "DPP",
+      "formula": null,
+      "role": "reducing_agent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "mass": {
+          "value": 0.15,
+          "minimum": null,
+          "maximum": null,
+          "unit": "g",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.15 g",
+          "evidence": [
+            {
+              "source_id": "kroupa2017-jacs-7b04551",
+              "locator": "Main PDF p.11"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "kroupa2017-jacs-7b04551",
+          "locator": "Main PDF p.11"
+        }
+      ]
+    },
+    {
+      "id": "kroupa2017-jacs-7b04551-ag-pbse-qds-1--ethanol",
+      "name": "ethanol",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "kroupa2017-jacs-7b04551",
+          "locator": "Main PDF p.11"
+        }
+      ]
+    },
+    {
+      "id": "kroupa2017-jacs-7b04551-ag-pbse-qds-1--hexane",
+      "name": "hexane",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
       "quantities": {},
       "notes": [],
       "evidence": [
@@ -223,7 +361,8 @@
       "kind": "reaction_batch",
       "parent_ids": [
         "kroupa2017-jacs-7b04551-ag-pbse-qds-1--pbo",
-        "kroupa2017-jacs-7b04551-ag-pbse-qds-1--oleic-acid"
+        "kroupa2017-jacs-7b04551-ag-pbse-qds-1--oleic-acid",
+        "kroupa2017-jacs-7b04551-ag-pbse-qds-1--ode"
       ]
     },
     {
@@ -232,7 +371,8 @@
       "kind": "reaction_batch",
       "parent_ids": [
         "kroupa2017-jacs-7b04551-ag-pbse-qds-1--after-s01-degas",
-        "kroupa2017-jacs-7b04551-ag-pbse-qds-1--top-se"
+        "kroupa2017-jacs-7b04551-ag-pbse-qds-1--top-se",
+        "kroupa2017-jacs-7b04551-ag-pbse-qds-1--dpp"
       ]
     },
     {
@@ -252,12 +392,45 @@
       ]
     },
     {
+      "id": "kroupa2017-jacs-7b04551-ag-pbse-qds-1--after-d2-s05-purify",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "kroupa2017-jacs-7b04551-ag-pbse-qds-1--after-s04-quench"
+      ]
+    },
+    {
       "id": "kroupa2017-jacs-7b04551-ag-pbse-qds-1--after-s05-dope",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "kroupa2017-jacs-7b04551-ag-pbse-qds-1--after-d2-s05-purify",
+        "kroupa2017-jacs-7b04551-ag-pbse-qds-1--agno3"
+      ]
+    },
+    {
+      "id": "kroupa2017-jacs-7b04551-ag-pbse-qds-1--after-d2-s07-purify",
+      "name": "mixture after step 7",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "kroupa2017-jacs-7b04551-ag-pbse-qds-1--after-s05-dope"
+      ]
+    },
+    {
+      "id": "kroupa2017-jacs-7b04551-ag-pbse-qds-1--after-d2-s08-centrifuge",
+      "name": "mixture after step 8",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "kroupa2017-jacs-7b04551-ag-pbse-qds-1--after-d2-s07-purify"
+      ]
+    },
+    {
+      "id": "kroupa2017-jacs-7b04551-ag-pbse-qds-1--after-d2-s09-redisperse",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "kroupa2017-jacs-7b04551-ag-pbse-qds-1--after-s04-quench",
-        "kroupa2017-jacs-7b04551-ag-pbse-qds-1--agno3"
+        "kroupa2017-jacs-7b04551-ag-pbse-qds-1--after-d2-s08-centrifuge",
+        "kroupa2017-jacs-7b04551-ag-pbse-qds-1--hexane"
       ]
     }
   ],
@@ -272,7 +445,8 @@
       "depends_on": [],
       "inputs": [
         "kroupa2017-jacs-7b04551-ag-pbse-qds-1--pbo",
-        "kroupa2017-jacs-7b04551-ag-pbse-qds-1--oleic-acid"
+        "kroupa2017-jacs-7b04551-ag-pbse-qds-1--oleic-acid",
+        "kroupa2017-jacs-7b04551-ag-pbse-qds-1--ode"
       ],
       "outputs": [
         "kroupa2017-jacs-7b04551-ag-pbse-qds-1--after-s01-degas"
@@ -353,7 +527,8 @@
       ],
       "inputs": [
         "kroupa2017-jacs-7b04551-ag-pbse-qds-1--after-s01-degas",
-        "kroupa2017-jacs-7b04551-ag-pbse-qds-1--top-se"
+        "kroupa2017-jacs-7b04551-ag-pbse-qds-1--top-se",
+        "kroupa2017-jacs-7b04551-ag-pbse-qds-1--dpp"
       ],
       "outputs": [
         "kroupa2017-jacs-7b04551-ag-pbse-qds-1--after-s02-inject"
@@ -463,7 +638,26 @@
       "outputs": [
         "kroupa2017-jacs-7b04551-ag-pbse-qds-1--after-s04-quench"
       ],
-      "parameters": {},
+      "parameters": {
+        "duration": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 min",
+          "evidence": [
+            {
+              "source_id": "kroupa2017-jacs-7b04551",
+              "locator": "Main PDF p.11"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "environment": {
         "value": "vacuum",
         "status": "reported",
@@ -491,6 +685,44 @@
       ]
     },
     {
+      "id": "d2-s05-purify",
+      "action": "purify",
+      "label": "Purifying the QDs by precipitation/centrifugation/redissolution",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-quench"
+      ],
+      "inputs": [
+        "kroupa2017-jacs-7b04551-ag-pbse-qds-1--after-s04-quench"
+      ],
+      "outputs": [
+        "kroupa2017-jacs-7b04551-ag-pbse-qds-1--after-d2-s05-purify"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Purifying the QDs by precipitation/centrifugation/redissolution",
+      "evidence": [
+        {
+          "source_id": "kroupa2017-jacs-7b04551",
+          "locator": "Main PDF p.11"
+        }
+      ]
+    },
+    {
       "id": "s05-dope",
       "action": "dope",
       "label": "Doping the QDs with AgNO3",
@@ -498,10 +730,10 @@
       "branch": "",
       "optional": false,
       "depends_on": [
-        "s04-quench"
+        "d2-s05-purify"
       ],
       "inputs": [
-        "kroupa2017-jacs-7b04551-ag-pbse-qds-1--after-s04-quench",
+        "kroupa2017-jacs-7b04551-ag-pbse-qds-1--after-d2-s05-purify",
         "kroupa2017-jacs-7b04551-ag-pbse-qds-1--agno3"
       ],
       "outputs": [
@@ -552,6 +784,140 @@
           "locator": "Main PDF p.11"
         }
       ]
+    },
+    {
+      "id": "d2-s07-purify",
+      "action": "purify",
+      "label": "Purifying the Ag:PbSe QDs by precipitation/centrifugation/redissolution",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s05-dope"
+      ],
+      "inputs": [
+        "kroupa2017-jacs-7b04551-ag-pbse-qds-1--after-s05-dope"
+      ],
+      "outputs": [
+        "kroupa2017-jacs-7b04551-ag-pbse-qds-1--after-d2-s07-purify"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Purifying the Ag:PbSe QDs by precipitation/centrifugation/redissolution",
+      "evidence": [
+        {
+          "source_id": "kroupa2017-jacs-7b04551",
+          "locator": "Main PDF p.11"
+        }
+      ]
+    },
+    {
+      "id": "d2-s08-centrifuge",
+      "action": "centrifuge",
+      "label": "Centrifugation purification",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s07-purify"
+      ],
+      "inputs": [
+        "kroupa2017-jacs-7b04551-ag-pbse-qds-1--after-d2-s07-purify"
+      ],
+      "outputs": [
+        "kroupa2017-jacs-7b04551-ag-pbse-qds-1--after-d2-s08-centrifuge"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "5 min",
+          "evidence": [
+            {
+              "source_id": "kroupa2017-jacs-7b04551",
+              "locator": "Main PDF p.11"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Centrifugation purification",
+      "evidence": [
+        {
+          "source_id": "kroupa2017-jacs-7b04551",
+          "locator": "Main PDF p.11"
+        }
+      ]
+    },
+    {
+      "id": "d2-s09-redisperse",
+      "action": "redisperse",
+      "label": "Redispersing QDs",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s08-centrifuge"
+      ],
+      "inputs": [
+        "kroupa2017-jacs-7b04551-ag-pbse-qds-1--after-d2-s08-centrifuge",
+        "kroupa2017-jacs-7b04551-ag-pbse-qds-1--hexane"
+      ],
+      "outputs": [
+        "kroupa2017-jacs-7b04551-ag-pbse-qds-1--after-d2-s09-redisperse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Redispersing QDs",
+      "evidence": [
+        {
+          "source_id": "kroupa2017-jacs-7b04551",
+          "locator": "Main PDF p.11"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -560,7 +926,7 @@
       "sample_id": "kroupa2017-jacs-7b04551-ag-pbse-qds-1--product",
       "source_sample_label": "Ag:PbSe QDs",
       "batch_id": null,
-      "material_state_id": "kroupa2017-jacs-7b04551-ag-pbse-qds-1--after-s05-dope",
+      "material_state_id": "kroupa2017-jacs-7b04551-ag-pbse-qds-1--after-d2-s09-redisperse",
       "parent_sample_id": null,
       "composition": {
         "value": "PbSe",
@@ -615,15 +981,48 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "kroupa2017-jacs-7b04551-ag-pbse-qds-1--size",
+      "sample_id": "kroupa2017-jacs-7b04551-ag-pbse-qds-1--product",
+      "property": "particle_size",
+      "technique": "not reported",
+      "value": {
+        "value": 4.7,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "4.7 nm",
+        "evidence": [
+          {
+            "source_id": "kroupa2017-jacs-7b04551",
+            "locator": "Main PDF"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "kroupa2017-jacs-7b04551",
+          "locator": "Main PDF"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
-      "Size not reported in the extracted text.",
-      "Amount of AgNO3 not reported in the extracted text."
+      "Amount of ethanol not reported in the extracted text.",
+      "Amount of hexane not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

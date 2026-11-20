@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "bhandari2014-la502764a-znxcd1xs-qdots-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Satyapriya Bhandari et al. (2014): ZnxCd1−xS Qdots",
   "material": {
@@ -287,10 +287,18 @@
     },
     {
       "id": "bhandari2014-la502764a-znxcd1xs-qdots-1--after-s06-redisperse",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "bhandari2014-la502764a-znxcd1xs-qdots-1--after-s05-wash"
+      ]
+    },
+    {
+      "id": "bhandari2014-la502764a-znxcd1xs-qdots-1--after-d2-s07-dry",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "bhandari2014-la502764a-znxcd1xs-qdots-1--after-s05-wash"
+        "bhandari2014-la502764a-znxcd1xs-qdots-1--after-s06-redisperse"
       ]
     }
   ],
@@ -560,6 +568,44 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s07-dry",
+      "action": "dry",
+      "label": "Dry sample at room temperature",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s06-redisperse"
+      ],
+      "inputs": [
+        "bhandari2014-la502764a-znxcd1xs-qdots-1--after-s06-redisperse"
+      ],
+      "outputs": [
+        "bhandari2014-la502764a-znxcd1xs-qdots-1--after-d2-s07-dry"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dry sample at room temperature",
+      "evidence": [
+        {
+          "source_id": "bhandari2014-la502764a",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -568,7 +614,7 @@
       "sample_id": "bhandari2014-la502764a-znxcd1xs-qdots-1--product",
       "source_sample_label": "ZnxCd1−xS Qdots",
       "batch_id": null,
-      "material_state_id": "bhandari2014-la502764a-znxcd1xs-qdots-1--after-s06-redisperse",
+      "material_state_id": "bhandari2014-la502764a-znxcd1xs-qdots-1--after-d2-s07-dry",
       "parent_sample_id": null,
       "composition": {
         "value": "ZnxCd1−xS",
@@ -654,12 +700,44 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "bhandari2014-la502764a-znxcd1xs-qdots-1--photoluminescence-quantum-yield",
+      "sample_id": "bhandari2014-la502764a-znxcd1xs-qdots-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 10.8,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "10.8 %",
+        "evidence": [
+          {
+            "source_id": "bhandari2014-la502764a",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "bhandari2014-la502764a",
+          "locator": "Main PDF p.4"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Reactor not reported in the extracted text.",

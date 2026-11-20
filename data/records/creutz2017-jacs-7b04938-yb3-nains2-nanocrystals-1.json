@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "creutz2017-jacs-7b04938-yb3-nains2-nanocrystals-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Sidney E. Creutz; Rachel Fainblat; Younghwan Kim; Michael C. De Siena; Daniel R. Gamelin (2017): Yb3+:NaInS2 nanocrystals",
   "material": {
@@ -249,12 +249,69 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "mass": {
+          "value": 160,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mg",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "160 mg",
+          "evidence": [
+            {
+              "source_id": "creutz2017-jacs-7b04938",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
           "source_id": "creutz2017-jacs-7b04938",
           "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "creutz2017-jacs-7b04938-yb3-nains2-nanocrystals-1--oleic-acid",
+      "name": "oleic acid",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "creutz2017-jacs-7b04938",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "creutz2017-jacs-7b04938-yb3-nains2-nanocrystals-1--oleylamine",
+      "name": "oleylamine",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "creutz2017-jacs-7b04938",
+          "locator": "Main PDF p.3"
         }
       ]
     }
@@ -283,10 +340,18 @@
     },
     {
       "id": "creutz2017-jacs-7b04938-yb3-nains2-nanocrystals-1--after-s03-cool",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "creutz2017-jacs-7b04938-yb3-nains2-nanocrystals-1--after-s02-heat"
+      ]
+    },
+    {
+      "id": "creutz2017-jacs-7b04938-yb3-nains2-nanocrystals-1--after-d2-s04-centrifuge",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "creutz2017-jacs-7b04938-yb3-nains2-nanocrystals-1--after-s02-heat"
+        "creutz2017-jacs-7b04938-yb3-nains2-nanocrystals-1--after-s03-cool"
       ]
     }
   ],
@@ -464,7 +529,44 @@
       "outputs": [
         "creutz2017-jacs-7b04938-yb3-nains2-nanocrystals-1--after-s03-cool"
       ],
-      "parameters": {},
+      "parameters": {
+        "temperature": {
+          "value": 315,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "315 °C",
+          "evidence": [
+            {
+              "source_id": "creutz2017-jacs-7b04938",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 2,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2 min",
+          "evidence": [
+            {
+              "source_id": "creutz2017-jacs-7b04938",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "environment": {
         "value": "N2",
         "status": "reported",
@@ -490,6 +592,63 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s04-centrifuge",
+      "action": "centrifuge",
+      "label": "Removing insoluble material by centrifugation",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-cool"
+      ],
+      "inputs": [
+        "creutz2017-jacs-7b04938-yb3-nains2-nanocrystals-1--after-s03-cool"
+      ],
+      "outputs": [
+        "creutz2017-jacs-7b04938-yb3-nains2-nanocrystals-1--after-d2-s04-centrifuge"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 20,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "20 min",
+          "evidence": [
+            {
+              "source_id": "creutz2017-jacs-7b04938",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Removing insoluble material by centrifugation",
+      "evidence": [
+        {
+          "source_id": "creutz2017-jacs-7b04938",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -498,7 +657,7 @@
       "sample_id": "creutz2017-jacs-7b04938-yb3-nains2-nanocrystals-1--product",
       "source_sample_label": "Yb3+:NaInS2 nanocrystals",
       "batch_id": null,
-      "material_state_id": "creutz2017-jacs-7b04938-yb3-nains2-nanocrystals-1--after-s03-cool",
+      "material_state_id": "creutz2017-jacs-7b04938-yb3-nains2-nanocrystals-1--after-d2-s04-centrifuge",
       "parent_sample_id": null,
       "composition": {
         "value": "NaInS2",
@@ -585,15 +744,48 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "creutz2017-jacs-7b04938-yb3-nains2-nanocrystals-1--photoluminescence-peak",
+      "sample_id": "creutz2017-jacs-7b04938-yb3-nains2-nanocrystals-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 993,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "993 nm",
+        "evidence": [
+          {
+            "source_id": "creutz2017-jacs-7b04938",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "creutz2017-jacs-7b04938",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
-      "Amount of sulfur powder not reported in the extracted text."
+      "Amount of oleic acid not reported in the extracted text.",
+      "Amount of oleylamine not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

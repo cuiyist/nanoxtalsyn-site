@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "rosa-cruz2003-1-1632020-zro2-er3-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "E. De la Rosa-Cruz et al. (2003): ZrO2:Er3+",
   "material": {
@@ -51,9 +51,14 @@
       "note": ""
     },
     "phase": {
-      "value": null,
-      "status": "not_reported",
-      "evidence": [],
+      "value": "monoclinic | tetragonal",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "rosa-cruz2003-1-1632020",
+          "locator": "Main PDF p.2"
+        }
+      ],
       "note": ""
     },
     "size": {
@@ -171,6 +176,25 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "rosa-cruz2003-1-1632020-zro2-er3-1--co2-free-distilled-water",
+      "name": "CO2-free distilled water",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "rosa-cruz2003-1-1632020",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -192,7 +216,8 @@
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
-        "rosa-cruz2003-1-1632020-zro2-er3-1--after-s01-mix"
+        "rosa-cruz2003-1-1632020-zro2-er3-1--after-s01-mix",
+        "rosa-cruz2003-1-1632020-zro2-er3-1--co2-free-distilled-water"
       ]
     },
     {
@@ -264,7 +289,8 @@
         "s01-mix"
       ],
       "inputs": [
-        "rosa-cruz2003-1-1632020-zro2-er3-1--after-s01-mix"
+        "rosa-cruz2003-1-1632020-zro2-er3-1--after-s01-mix",
+        "rosa-cruz2003-1-1632020-zro2-er3-1--co2-free-distilled-water"
       ],
       "outputs": [
         "rosa-cruz2003-1-1632020-zro2-er3-1--after-s02-add"
@@ -462,9 +488,14 @@
         "note": ""
       },
       "phase": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "monoclinic | tetragonal",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "rosa-cruz2003-1-1632020",
+            "locator": "Main PDF p.2"
+          }
+        ],
         "note": ""
       },
       "morphology": {
@@ -492,13 +523,45 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "rosa-cruz2003-1-1632020-zro2-er3-1--photoluminescence-peak",
+      "sample_id": "rosa-cruz2003-1-1632020-zro2-er3-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 545,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "545 nm",
+        "evidence": [
+          {
+            "source_id": "rosa-cruz2003-1-1632020",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "rosa-cruz2003-1-1632020",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
-      "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
@@ -508,7 +571,8 @@
       "Amount of ethanol not reported in the extracted text.",
       "Amount of hydrochloric acid not reported in the extracted text.",
       "Amount of nitric acid not reported in the extracted text.",
-      "Amount of erbium nitrate not reported in the extracted text."
+      "Amount of erbium nitrate not reported in the extracted text.",
+      "Amount of CO2-free distilled water not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

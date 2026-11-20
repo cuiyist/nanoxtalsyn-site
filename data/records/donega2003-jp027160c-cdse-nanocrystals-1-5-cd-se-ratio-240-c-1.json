@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "donega2003-jp027160c-cdse-nanocrystals-1-5-cd-se-ratio-240-c-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Celso de Mello Donegá; Stephen G. Hickey; Sander F. Wuister; Daniel Vanmaekelbergh; Andries Meijerink (2003): CdSe nanocrystals (1:5 Cd:Se ratio, 240 °C)",
   "material": {
@@ -223,6 +223,25 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "donega2003-jp027160c-cdse-nanocrystals-1-5-cd-se-ratio-240-c-1--anhydrous-toluene",
+      "name": "anhydrous toluene",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "donega2003-jp027160c",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -256,10 +275,18 @@
     },
     {
       "id": "donega2003-jp027160c-cdse-nanocrystals-1-5-cd-se-ratio-240-c-1--after-s04-cool",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "donega2003-jp027160c-cdse-nanocrystals-1-5-cd-se-ratio-240-c-1--after-s03-inject"
+      ]
+    },
+    {
+      "id": "donega2003-jp027160c-cdse-nanocrystals-1-5-cd-se-ratio-240-c-1--after-d2-s05-precipitate",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "donega2003-jp027160c-cdse-nanocrystals-1-5-cd-se-ratio-240-c-1--after-s03-inject"
+        "donega2003-jp027160c-cdse-nanocrystals-1-5-cd-se-ratio-240-c-1--after-s04-cool"
       ]
     }
   ],
@@ -492,6 +519,44 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s05-precipitate",
+      "action": "precipitate",
+      "label": "Precipitation for TEM analysis",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-cool"
+      ],
+      "inputs": [
+        "donega2003-jp027160c-cdse-nanocrystals-1-5-cd-se-ratio-240-c-1--after-s04-cool"
+      ],
+      "outputs": [
+        "donega2003-jp027160c-cdse-nanocrystals-1-5-cd-se-ratio-240-c-1--after-d2-s05-precipitate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Precipitation for TEM analysis",
+      "evidence": [
+        {
+          "source_id": "donega2003-jp027160c",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -500,7 +565,7 @@
       "sample_id": "donega2003-jp027160c-cdse-nanocrystals-1-5-cd-se-ratio-240-c-1--product",
       "source_sample_label": "CdSe nanocrystals (1:5 Cd:Se ratio, 240 °C)",
       "batch_id": null,
-      "material_state_id": "donega2003-jp027160c-cdse-nanocrystals-1-5-cd-se-ratio-240-c-1--after-s04-cool",
+      "material_state_id": "donega2003-jp027160c-cdse-nanocrystals-1-5-cd-se-ratio-240-c-1--after-d2-s05-precipitate",
       "parent_sample_id": null,
       "composition": {
         "value": "CdSe",
@@ -555,7 +620,8 @@
       ],
       "notes": [
         "Reactor: 250 mL three-neck, round-bottom flask (Main PDF p.2).",
-        "Reaction time: 320 min (Main PDF p.5)."
+        "Reaction time: 320 min (Main PDF p.5).",
+        "Reaction temperature: 240 degC (Main PDF p.?)."
       ]
     }
   ],
@@ -591,18 +657,50 @@
           "locator": "Main PDF p.5"
         }
       ]
+    },
+    {
+      "id": "donega2003-jp027160c-cdse-nanocrystals-1-5-cd-se-ratio-240-c-1--photoluminescence-quantum-yield",
+      "sample_id": "donega2003-jp027160c-cdse-nanocrystals-1-5-cd-se-ratio-240-c-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 90,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "90 %",
+        "evidence": [
+          {
+            "source_id": "donega2003-jp027160c",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "donega2003-jp027160c",
+          "locator": "Main PDF p.6"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Atmosphere not reported in the extracted text.",
-      "Reaction temperature not reported in the extracted text.",
       "Amount of trioctylphosphine oxide (TOPO) not reported in the extracted text.",
       "Amount of selenium powder not reported in the extracted text.",
-      "Amount of dimethylcadmium not reported in the extracted text."
+      "Amount of dimethylcadmium not reported in the extracted text.",
+      "Amount of anhydrous toluene not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

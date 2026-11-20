@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "yoshie2001-1-1377851-inas-self-assembled-quantum-dot-qd-embed-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Tomoyuki Yoshie and Axel Scherera) (2001): InAs self-assembled quantum dot (QD) embedded in 2D photonic crystal nanocavity",
   "material": {
@@ -85,7 +85,7 @@
       "id": "yoshie2001-1-1377851-inas-self-assembled-quantum-dot-qd-embed-1--inas",
       "name": "InAs",
       "formula": null,
-      "role": "reagent",
+      "role": "grown_layer",
       "stage": "synthesis",
       "identity": {
         "pubchem_cid": null,
@@ -192,11 +192,37 @@
       ]
     },
     {
+      "id": "yoshie2001-1-1377851-inas-self-assembled-quantum-dot-qd-embed-1--after-d2-s02-clad",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "yoshie2001-1-1377851-inas-self-assembled-quantum-dot-qd-embed-1--after-s01-grow",
+        "yoshie2001-1-1377851-inas-self-assembled-quantum-dot-qd-embed-1--al0-16ga0-84as",
+        "yoshie2001-1-1377851-inas-self-assembled-quantum-dot-qd-embed-1--al0-94ga0-06as"
+      ]
+    },
+    {
+      "id": "yoshie2001-1-1377851-inas-self-assembled-quantum-dot-qd-embed-1--after-d2-s03-pattern",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "yoshie2001-1-1377851-inas-self-assembled-quantum-dot-qd-embed-1--after-d2-s02-clad"
+      ]
+    },
+    {
       "id": "yoshie2001-1-1377851-inas-self-assembled-quantum-dot-qd-embed-1--after-s02-oxidize",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "yoshie2001-1-1377851-inas-self-assembled-quantum-dot-qd-embed-1--after-d2-s03-pattern"
+      ]
+    },
+    {
+      "id": "yoshie2001-1-1377851-inas-self-assembled-quantum-dot-qd-embed-1--after-d2-s05-pump",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "yoshie2001-1-1377851-inas-self-assembled-quantum-dot-qd-embed-1--after-s01-grow"
+        "yoshie2001-1-1377851-inas-self-assembled-quantum-dot-qd-embed-1--after-s02-oxidize"
       ]
     }
   ],
@@ -242,9 +268,9 @@
       ]
     },
     {
-      "id": "s02-oxidize",
-      "action": "oxidize",
-      "label": "Oxidize Al0.94Ga0.06As layer in steam",
+      "id": "d2-s02-clad",
+      "action": "clad",
+      "label": "Clad",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -252,7 +278,85 @@
         "s01-grow"
       ],
       "inputs": [
-        "yoshie2001-1-1377851-inas-self-assembled-quantum-dot-qd-embed-1--after-s01-grow"
+        "yoshie2001-1-1377851-inas-self-assembled-quantum-dot-qd-embed-1--after-s01-grow",
+        "yoshie2001-1-1377851-inas-self-assembled-quantum-dot-qd-embed-1--al0-16ga0-84as",
+        "yoshie2001-1-1377851-inas-self-assembled-quantum-dot-qd-embed-1--al0-94ga0-06as"
+      ],
+      "outputs": [
+        "yoshie2001-1-1377851-inas-self-assembled-quantum-dot-qd-embed-1--after-d2-s02-clad"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Clad",
+      "evidence": [
+        {
+          "source_id": "yoshie2001-1-1377851",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s03-pattern",
+      "action": "pattern",
+      "label": "Define photonic crystal defect cavity using electron beam lithography",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-clad"
+      ],
+      "inputs": [
+        "yoshie2001-1-1377851-inas-self-assembled-quantum-dot-qd-embed-1--after-d2-s02-clad"
+      ],
+      "outputs": [
+        "yoshie2001-1-1377851-inas-self-assembled-quantum-dot-qd-embed-1--after-d2-s03-pattern"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Define photonic crystal defect cavity using electron beam lithography",
+      "evidence": [
+        {
+          "source_id": "yoshie2001-1-1377851",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-oxidize",
+      "action": "oxidize",
+      "label": "Oxidize Al0.94Ga0.06As layer in steam",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-pattern"
+      ],
+      "inputs": [
+        "yoshie2001-1-1377851-inas-self-assembled-quantum-dot-qd-embed-1--after-d2-s03-pattern"
       ],
       "outputs": [
         "yoshie2001-1-1377851-inas-self-assembled-quantum-dot-qd-embed-1--after-s02-oxidize"
@@ -315,6 +419,44 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "d2-s05-pump",
+      "action": "pump",
+      "label": "Pump",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-oxidize"
+      ],
+      "inputs": [
+        "yoshie2001-1-1377851-inas-self-assembled-quantum-dot-qd-embed-1--after-s02-oxidize"
+      ],
+      "outputs": [
+        "yoshie2001-1-1377851-inas-self-assembled-quantum-dot-qd-embed-1--after-d2-s05-pump"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Pump",
+      "evidence": [
+        {
+          "source_id": "yoshie2001-1-1377851",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -323,7 +465,7 @@
       "sample_id": "yoshie2001-1-1377851-inas-self-assembled-quantum-dot-qd-embed-1--product",
       "source_sample_label": "InAs self-assembled quantum dot (QD) embedded in 2D photonic crystal nanocavity",
       "batch_id": null,
-      "material_state_id": "yoshie2001-1-1377851-inas-self-assembled-quantum-dot-qd-embed-1--after-s02-oxidize",
+      "material_state_id": "yoshie2001-1-1377851-inas-self-assembled-quantum-dot-qd-embed-1--after-d2-s05-pump",
       "parent_sample_id": null,
       "composition": {
         "value": "InAs",
@@ -373,7 +515,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
