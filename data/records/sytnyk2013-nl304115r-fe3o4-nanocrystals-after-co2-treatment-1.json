@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Mykhailo Sytnyk (2013): Fe3O4 nanocrystals after Co2+ treatment",
   "material": {
@@ -204,7 +204,7 @@
       "id": "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--fe3o4-nanocrystals",
       "name": "Fe3O4 nanocrystals",
       "formula": null,
-      "role": "reagent",
+      "role": "starting_particles",
       "stage": "synthesis",
       "identity": {
         "pubchem_cid": null,
@@ -275,6 +275,63 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--oleic-acid",
+      "name": "oleic acid",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "sytnyk2013-nl304115r",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--ethanol",
+      "name": "ethanol",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "sytnyk2013-nl304115r",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--acetone",
+      "name": "acetone",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "sytnyk2013-nl304115r",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -323,11 +380,20 @@
       ]
     },
     {
-      "id": "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--after-s05-heat",
+      "id": "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--after-d2-s05-inject",
       "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
         "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--after-s04-heat",
+        "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--trioctylphosphine"
+      ]
+    },
+    {
+      "id": "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--after-s05-heat",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--after-d2-s05-inject",
         "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--cocl2",
         "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--oleylamine",
         "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--fe3o4-nanocrystals",
@@ -336,7 +402,7 @@
     },
     {
       "id": "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--after-s06-cool",
-      "name": "mixture after step 6",
+      "name": "mixture after step 7",
       "kind": "reaction_batch",
       "parent_ids": [
         "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--after-s05-heat",
@@ -348,7 +414,7 @@
     },
     {
       "id": "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--after-s07-add",
-      "name": "mixture after step 7",
+      "name": "mixture after step 8",
       "kind": "reaction_batch",
       "parent_ids": [
         "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--after-s06-cool",
@@ -356,11 +422,22 @@
       ]
     },
     {
-      "id": "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--after-s08-add",
-      "name": "mixture after step 8",
+      "id": "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--after-d2-s09-aggregate",
+      "name": "mixture after step 9",
       "kind": "reaction_batch",
       "parent_ids": [
-        "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--after-s07-add"
+        "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--after-s07-add",
+        "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--ethanol",
+        "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--acetone"
+      ]
+    },
+    {
+      "id": "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--after-s08-add",
+      "name": "mixture after step 10",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--after-d2-s09-aggregate",
+        "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--oleic-acid"
       ]
     },
     {
@@ -373,7 +450,8 @@
         "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--oleylamine",
         "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--fe3o4-nanocrystals",
         "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--trioctylphosphine",
-        "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--chloroform"
+        "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--chloroform",
+        "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--oleic-acid"
       ]
     }
   ],
@@ -485,7 +563,44 @@
       "outputs": [
         "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--after-s03-degas"
       ],
-      "parameters": {},
+      "parameters": {
+        "temperature": {
+          "value": 100,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "100 °C",
+          "evidence": [
+            {
+              "source_id": "sytnyk2013-nl304115r",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 20,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "20 min",
+          "evidence": [
+            {
+              "source_id": "sytnyk2013-nl304115r",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "environment": {
         "value": "Ar",
         "status": "reported",
@@ -597,9 +712,9 @@
       ]
     },
     {
-      "id": "s05-heat",
-      "action": "heat",
-      "label": "Heat the reaction to perform cation exchange",
+      "id": "d2-s05-inject",
+      "action": "inject",
+      "label": "Inject trioctylphosphine under Ar atmosphere",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -608,6 +723,50 @@
       ],
       "inputs": [
         "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--after-s04-heat",
+        "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--trioctylphosphine"
+      ],
+      "outputs": [
+        "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--after-d2-s05-inject"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "sytnyk2013-nl304115r",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Inject trioctylphosphine under Ar atmosphere",
+      "evidence": [
+        {
+          "source_id": "sytnyk2013-nl304115r",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s05-heat",
+      "action": "heat",
+      "label": "Heat the reaction to perform cation exchange",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s05-inject"
+      ],
+      "inputs": [
+        "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--after-d2-s05-inject",
         "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--cocl2",
         "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--oleylamine",
         "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--fe3o4-nanocrystals",
@@ -754,9 +913,9 @@
       ]
     },
     {
-      "id": "s08-add",
-      "action": "add",
-      "label": "Add oleic acid to improve colloidal stability",
+      "id": "d2-s09-aggregate",
+      "action": "aggregate",
+      "label": "Aggregate nanocrystals with ethanol and acetone for washing",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -764,7 +923,53 @@
         "s07-add"
       ],
       "inputs": [
-        "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--after-s07-add"
+        "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--after-s07-add",
+        "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--ethanol",
+        "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--acetone"
+      ],
+      "outputs": [
+        "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--after-d2-s09-aggregate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "sytnyk2013-nl304115r",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Aggregate nanocrystals with ethanol and acetone for washing",
+      "evidence": [
+        {
+          "source_id": "sytnyk2013-nl304115r",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s08-add",
+      "action": "add",
+      "label": "Add oleic acid to improve colloidal stability",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s09-aggregate"
+      ],
+      "inputs": [
+        "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--after-d2-s09-aggregate",
+        "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--oleic-acid"
       ],
       "outputs": [
         "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--after-s08-add"
@@ -812,7 +1017,8 @@
         "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--oleylamine",
         "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--fe3o4-nanocrystals",
         "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--trioctylphosphine",
-        "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--chloroform"
+        "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--chloroform",
+        "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--oleic-acid"
       ],
       "outputs": [
         "sytnyk2013-nl304115r-fe3o4-nanocrystals-after-co2-treatment-1--after-s09-wash"
@@ -931,11 +1137,14 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
-      "Reaction time not reported in the extracted text."
+      "Reaction time not reported in the extracted text.",
+      "Amount of oleic acid not reported in the extracted text.",
+      "Amount of ethanol not reported in the extracted text.",
+      "Amount of acetone not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

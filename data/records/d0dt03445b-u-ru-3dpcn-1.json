@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "d0dt03445b-u-ru-3dpcn-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Pengfei An et al. (2021): U-Ru/3DpCN",
   "material": {
@@ -264,19 +264,49 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "d0dt03445b-u-ru-3dpcn-1--3dpcn",
+      "name": "3DpCN",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "d0dt03445b",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
-      "id": "d0dt03445b-u-ru-3dpcn-1--after-s01-freeze-dry",
+      "id": "d0dt03445b-u-ru-3dpcn-1--after-d2-s01-mix",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "d0dt03445b-u-ru-3dpcn-1--melamine",
+        "d0dt03445b-u-ru-3dpcn-1--cyanuric-acid"
+      ]
+    },
+    {
+      "id": "d0dt03445b-u-ru-3dpcn-1--after-s01-freeze-dry",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "d0dt03445b-u-ru-3dpcn-1--after-d2-s01-mix"
+      ]
     },
     {
       "id": "d0dt03445b-u-ru-3dpcn-1--after-s02-calcine",
-      "name": "mixture after step 2",
+      "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
         "d0dt03445b-u-ru-3dpcn-1--after-s01-freeze-dry"
@@ -284,15 +314,16 @@
     },
     {
       "id": "d0dt03445b-u-ru-3dpcn-1--after-s03-disperse",
-      "name": "mixture after step 3",
+      "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
-        "d0dt03445b-u-ru-3dpcn-1--after-s02-calcine"
+        "d0dt03445b-u-ru-3dpcn-1--after-s02-calcine",
+        "d0dt03445b-u-ru-3dpcn-1--3dpcn"
       ]
     },
     {
       "id": "d0dt03445b-u-ru-3dpcn-1--after-s04-add",
-      "name": "mixture after step 4",
+      "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
         "d0dt03445b-u-ru-3dpcn-1--after-s03-disperse",
@@ -302,7 +333,7 @@
     },
     {
       "id": "d0dt03445b-u-ru-3dpcn-1--after-s05-ultrasonicate",
-      "name": "mixture after step 5",
+      "name": "mixture after step 6",
       "kind": "reaction_batch",
       "parent_ids": [
         "d0dt03445b-u-ru-3dpcn-1--after-s04-add"
@@ -310,7 +341,7 @@
     },
     {
       "id": "d0dt03445b-u-ru-3dpcn-1--after-s06-heat",
-      "name": "mixture after step 6",
+      "name": "mixture after step 7",
       "kind": "reaction_batch",
       "parent_ids": [
         "d0dt03445b-u-ru-3dpcn-1--after-s05-ultrasonicate"
@@ -318,7 +349,7 @@
     },
     {
       "id": "d0dt03445b-u-ru-3dpcn-1--after-s07-centrifuge",
-      "name": "mixture after step 7",
+      "name": "mixture after step 8",
       "kind": "reaction_batch",
       "parent_ids": [
         "d0dt03445b-u-ru-3dpcn-1--after-s06-heat"
@@ -335,14 +366,74 @@
   ],
   "operations": [
     {
+      "id": "d2-s01-mix",
+      "action": "mix",
+      "label": "Mix melamine and cyanuric acid in deionized water",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "d0dt03445b-u-ru-3dpcn-1--melamine",
+        "d0dt03445b-u-ru-3dpcn-1--cyanuric-acid"
+      ],
+      "outputs": [
+        "d0dt03445b-u-ru-3dpcn-1--after-d2-s01-mix"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 12,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "12 h",
+          "evidence": [
+            {
+              "source_id": "d0dt03445b",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Mix melamine and cyanuric acid in deionized water",
+      "evidence": [
+        {
+          "source_id": "d0dt03445b",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
       "id": "s01-freeze-dry",
       "action": "freeze-dry",
       "label": "Freeze-dry the mixture",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s01-mix"
+      ],
+      "inputs": [
+        "d0dt03445b-u-ru-3dpcn-1--after-d2-s01-mix"
+      ],
       "outputs": [
         "d0dt03445b-u-ru-3dpcn-1--after-s01-freeze-dry"
       ],
@@ -473,7 +564,8 @@
         "s02-calcine"
       ],
       "inputs": [
-        "d0dt03445b-u-ru-3dpcn-1--after-s02-calcine"
+        "d0dt03445b-u-ru-3dpcn-1--after-s02-calcine",
+        "d0dt03445b-u-ru-3dpcn-1--3dpcn"
       ],
       "outputs": [
         "d0dt03445b-u-ru-3dpcn-1--after-s03-disperse"
@@ -866,15 +958,48 @@
           "locator": "Main PDF p.7"
         }
       ]
+    },
+    {
+      "id": "d0dt03445b-u-ru-3dpcn-1--photoluminescence-peak",
+      "sample_id": "d0dt03445b-u-ru-3dpcn-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 465,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "465 nm",
+        "evidence": [
+          {
+            "source_id": "d0dt03445b",
+            "locator": "Main PDF"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "d0dt03445b",
+          "locator": "Main PDF"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Atmosphere not reported in the extracted text.",
-      "Amount of RuCl3·3H2O not reported in the extracted text."
+      "Amount of RuCl3·3H2O not reported in the extracted text.",
+      "Amount of 3DpCN not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

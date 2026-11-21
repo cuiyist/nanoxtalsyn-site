@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "zhu2023-acs-inorgchem-3c01092-ddaf-3-cspbbr3-peqds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Xiaolin Zhu; Zhangcheng Pan; Tianyue Xu; Xiuwen Shao; Zhaoju Gao; Qingyu Xie; Yupeng Ying; Wei Pei; Hao Lin; Jia Wang; Xiaosheng Tang; Weiwei Chen; Yongfeng Liu (2023): DDAF-3 CsPbBr3 PeQDs",
   "material": {
@@ -62,16 +62,21 @@
       "note": ""
     },
     "size": {
-      "value": null,
+      "value": 9.8,
       "minimum": null,
       "maximum": null,
       "unit": "nm",
-      "status": "not_reported",
+      "status": "reported",
       "approximate": false,
       "qualifier": "",
       "basis": "",
-      "raw_text": "not reported",
-      "evidence": [],
+      "raw_text": "9.8 nm",
+      "evidence": [
+        {
+          "source_id": "zhu2023-acs-inorgchem-3c01092",
+          "locator": "Main PDF"
+        }
+      ],
       "derivation": null
     },
     "morphology": {
@@ -287,6 +292,44 @@
         "pubchem_cid": null,
         "smiles": null
       },
+      "quantities": {
+        "volume": {
+          "value": 2,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2 mL",
+          "evidence": [
+            {
+              "source_id": "zhu2023-acs-inorgchem-3c01092",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zhu2023-acs-inorgchem-3c01092",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "zhu2023-acs-inorgchem-3c01092-ddaf-3-cspbbr3-peqds-1--ddaf",
+      "name": "DDAF",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
       "quantities": {},
       "notes": [],
       "evidence": [
@@ -303,7 +346,9 @@
       "id": "zhu2023-acs-inorgchem-3c01092-ddaf-3-cspbbr3-peqds-1--after-s01-mix",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "zhu2023-acs-inorgchem-3c01092-ddaf-3-cspbbr3-peqds-1--sodium-fluoride"
+      ]
     },
     {
       "id": "zhu2023-acs-inorgchem-3c01092-ddaf-3-cspbbr3-peqds-1--after-s02-centrifuge",
@@ -314,7 +359,7 @@
       ]
     },
     {
-      "id": "zhu2023-acs-inorgchem-3c01092-ddaf-3-cspbbr3-peqds-1--after-s03-add",
+      "id": "zhu2023-acs-inorgchem-3c01092-ddaf-3-cspbbr3-peqds-1--after-d2-s03-stir",
       "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
@@ -322,8 +367,17 @@
       ]
     },
     {
-      "id": "zhu2023-acs-inorgchem-3c01092-ddaf-3-cspbbr3-peqds-1--after-s04-centrifuge",
+      "id": "zhu2023-acs-inorgchem-3c01092-ddaf-3-cspbbr3-peqds-1--after-s03-add",
       "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zhu2023-acs-inorgchem-3c01092-ddaf-3-cspbbr3-peqds-1--after-d2-s03-stir",
+        "zhu2023-acs-inorgchem-3c01092-ddaf-3-cspbbr3-peqds-1--ddaf"
+      ]
+    },
+    {
+      "id": "zhu2023-acs-inorgchem-3c01092-ddaf-3-cspbbr3-peqds-1--after-s04-centrifuge",
+      "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
         "zhu2023-acs-inorgchem-3c01092-ddaf-3-cspbbr3-peqds-1--after-s03-add"
@@ -347,7 +401,9 @@
       "branch": "",
       "optional": false,
       "depends_on": [],
-      "inputs": [],
+      "inputs": [
+        "zhu2023-acs-inorgchem-3c01092-ddaf-3-cspbbr3-peqds-1--sodium-fluoride"
+      ],
       "outputs": [
         "zhu2023-acs-inorgchem-3c01092-ddaf-3-cspbbr3-peqds-1--after-s01-mix"
       ],
@@ -436,9 +492,9 @@
       ]
     },
     {
-      "id": "s03-add",
-      "action": "add",
-      "label": "Add DDAF precursors to the reaction solution",
+      "id": "d2-s03-stir",
+      "action": "stir",
+      "label": "Stir the blended solution",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -447,6 +503,69 @@
       ],
       "inputs": [
         "zhu2023-acs-inorgchem-3c01092-ddaf-3-cspbbr3-peqds-1--after-s02-centrifuge"
+      ],
+      "outputs": [
+        "zhu2023-acs-inorgchem-3c01092-ddaf-3-cspbbr3-peqds-1--after-d2-s03-stir"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 3,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "3 min",
+          "evidence": [
+            {
+              "source_id": "zhu2023-acs-inorgchem-3c01092",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zhu2023-acs-inorgchem-3c01092",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Stir the blended solution",
+      "evidence": [
+        {
+          "source_id": "zhu2023-acs-inorgchem-3c01092",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s03-add",
+      "action": "add",
+      "label": "Add DDAF precursors to the reaction solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-stir"
+      ],
+      "inputs": [
+        "zhu2023-acs-inorgchem-3c01092-ddaf-3-cspbbr3-peqds-1--after-d2-s03-stir",
+        "zhu2023-acs-inorgchem-3c01092-ddaf-3-cspbbr3-peqds-1--ddaf"
       ],
       "outputs": [
         "zhu2023-acs-inorgchem-3c01092-ddaf-3-cspbbr3-peqds-1--after-s03-add"
@@ -634,16 +753,112 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "zhu2023-acs-inorgchem-3c01092-ddaf-3-cspbbr3-peqds-1--size",
+      "sample_id": "zhu2023-acs-inorgchem-3c01092-ddaf-3-cspbbr3-peqds-1--product",
+      "property": "diameter",
+      "technique": "TEM",
+      "value": {
+        "value": 9.8,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "9.8 nm",
+        "evidence": [
+          {
+            "source_id": "zhu2023-acs-inorgchem-3c01092",
+            "locator": "Main PDF"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "zhu2023-acs-inorgchem-3c01092",
+          "locator": "Main PDF"
+        }
+      ]
+    },
+    {
+      "id": "zhu2023-acs-inorgchem-3c01092-ddaf-3-cspbbr3-peqds-1--photoluminescence-peak",
+      "sample_id": "zhu2023-acs-inorgchem-3c01092-ddaf-3-cspbbr3-peqds-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 512,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "512 nm",
+        "evidence": [
+          {
+            "source_id": "zhu2023-acs-inorgchem-3c01092",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "zhu2023-acs-inorgchem-3c01092",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "zhu2023-acs-inorgchem-3c01092-ddaf-3-cspbbr3-peqds-1--photoluminescence-quantum-yield",
+      "sample_id": "zhu2023-acs-inorgchem-3c01092-ddaf-3-cspbbr3-peqds-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 97,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "97 %",
+        "evidence": [
+          {
+            "source_id": "zhu2023-acs-inorgchem-3c01092",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "zhu2023-acs-inorgchem-3c01092",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
-      "Size not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
-      "Amount of n-octanoic acid not reported in the extracted text."
+      "Amount of DDAF not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

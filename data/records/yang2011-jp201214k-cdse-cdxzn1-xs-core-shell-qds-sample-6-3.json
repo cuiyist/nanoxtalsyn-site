@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "yang2011-jp201214k-cdse-cdxzn1-xs-core-shell-qds-sample-6-3",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Ping Yang; Masanori Ando; Takahisa Taguchi; Norio Murase (2011): CdSe/CdxZn1-xS core-shell QDs (sample 6)",
   "material": {
@@ -283,7 +283,7 @@
       "id": "yang2011-jp201214k-cdse-cdxzn1-xs-core-shell-qds-sample-6-3--cdse-cores",
       "name": "CdSe cores",
       "formula": null,
-      "role": "reagent",
+      "role": "starting_particles",
       "stage": "synthesis",
       "identity": {
         "pubchem_cid": null,
@@ -316,6 +316,25 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "yang2011-jp201214k-cdse-cdxzn1-xs-core-shell-qds-sample-6-3--oleic-acid",
+      "name": "oleic acid",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "yang2011-jp201214k",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -327,11 +346,12 @@
       "parent_ids": [
         "yang2011-jp201214k-cdse-cdxzn1-xs-core-shell-qds-sample-6-3--cadmium-acetate-dihydrate",
         "yang2011-jp201214k-cdse-cdxzn1-xs-core-shell-qds-sample-6-3--zinc-acetate",
-        "yang2011-jp201214k-cdse-cdxzn1-xs-core-shell-qds-sample-6-3--trioctylamine"
+        "yang2011-jp201214k-cdse-cdxzn1-xs-core-shell-qds-sample-6-3--trioctylamine",
+        "yang2011-jp201214k-cdse-cdxzn1-xs-core-shell-qds-sample-6-3--oleic-acid"
       ]
     },
     {
-      "id": "yang2011-jp201214k-cdse-cdxzn1-xs-core-shell-qds-sample-6-3--after-s02-inject",
+      "id": "yang2011-jp201214k-cdse-cdxzn1-xs-core-shell-qds-sample-6-3--after-d2-s02-dissolve",
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
@@ -341,11 +361,37 @@
       ]
     },
     {
+      "id": "yang2011-jp201214k-cdse-cdxzn1-xs-core-shell-qds-sample-6-3--after-s02-inject",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "yang2011-jp201214k-cdse-cdxzn1-xs-core-shell-qds-sample-6-3--after-d2-s02-dissolve",
+        "yang2011-jp201214k-cdse-cdxzn1-xs-core-shell-qds-sample-6-3--sulfur",
+        "yang2011-jp201214k-cdse-cdxzn1-xs-core-shell-qds-sample-6-3--trioctylphosphine"
+      ]
+    },
+    {
+      "id": "yang2011-jp201214k-cdse-cdxzn1-xs-core-shell-qds-sample-6-3--after-d2-s04-cool",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "yang2011-jp201214k-cdse-cdxzn1-xs-core-shell-qds-sample-6-3--after-s02-inject"
+      ]
+    },
+    {
       "id": "yang2011-jp201214k-cdse-cdxzn1-xs-core-shell-qds-sample-6-3--after-s03-precipitate",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "yang2011-jp201214k-cdse-cdxzn1-xs-core-shell-qds-sample-6-3--after-d2-s04-cool"
+      ]
+    },
+    {
+      "id": "yang2011-jp201214k-cdse-cdxzn1-xs-core-shell-qds-sample-6-3--after-d2-s06-redisperse",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "yang2011-jp201214k-cdse-cdxzn1-xs-core-shell-qds-sample-6-3--after-s02-inject"
+        "yang2011-jp201214k-cdse-cdxzn1-xs-core-shell-qds-sample-6-3--after-s03-precipitate"
       ]
     }
   ],
@@ -361,7 +407,8 @@
       "inputs": [
         "yang2011-jp201214k-cdse-cdxzn1-xs-core-shell-qds-sample-6-3--cadmium-acetate-dihydrate",
         "yang2011-jp201214k-cdse-cdxzn1-xs-core-shell-qds-sample-6-3--zinc-acetate",
-        "yang2011-jp201214k-cdse-cdxzn1-xs-core-shell-qds-sample-6-3--trioctylamine"
+        "yang2011-jp201214k-cdse-cdxzn1-xs-core-shell-qds-sample-6-3--trioctylamine",
+        "yang2011-jp201214k-cdse-cdxzn1-xs-core-shell-qds-sample-6-3--oleic-acid"
       ],
       "outputs": [
         "yang2011-jp201214k-cdse-cdxzn1-xs-core-shell-qds-sample-6-3--after-s01-heat"
@@ -413,9 +460,9 @@
       ]
     },
     {
-      "id": "s02-inject",
-      "action": "inject",
-      "label": "Inject TOPS solution",
+      "id": "d2-s02-dissolve",
+      "action": "dissolve",
+      "label": "Dissolve sulfur in TOP",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -424,6 +471,51 @@
       ],
       "inputs": [
         "yang2011-jp201214k-cdse-cdxzn1-xs-core-shell-qds-sample-6-3--after-s01-heat",
+        "yang2011-jp201214k-cdse-cdxzn1-xs-core-shell-qds-sample-6-3--sulfur",
+        "yang2011-jp201214k-cdse-cdxzn1-xs-core-shell-qds-sample-6-3--trioctylphosphine"
+      ],
+      "outputs": [
+        "yang2011-jp201214k-cdse-cdxzn1-xs-core-shell-qds-sample-6-3--after-d2-s02-dissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "yang2011-jp201214k",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dissolve sulfur in TOP",
+      "evidence": [
+        {
+          "source_id": "yang2011-jp201214k",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-inject",
+      "action": "inject",
+      "label": "Inject TOPS solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-dissolve"
+      ],
+      "inputs": [
+        "yang2011-jp201214k-cdse-cdxzn1-xs-core-shell-qds-sample-6-3--after-d2-s02-dissolve",
         "yang2011-jp201214k-cdse-cdxzn1-xs-core-shell-qds-sample-6-3--sulfur",
         "yang2011-jp201214k-cdse-cdxzn1-xs-core-shell-qds-sample-6-3--trioctylphosphine"
       ],
@@ -477,10 +569,10 @@
       ]
     },
     {
-      "id": "s03-precipitate",
-      "action": "precipitate",
-      "label": "Precipitate with ethanol",
-      "stage": "workup",
+      "id": "d2-s04-cool",
+      "action": "cool",
+      "label": "Cool to room temperature",
+      "stage": "synthesis",
       "branch": "",
       "optional": false,
       "depends_on": [
@@ -488,6 +580,49 @@
       ],
       "inputs": [
         "yang2011-jp201214k-cdse-cdxzn1-xs-core-shell-qds-sample-6-3--after-s02-inject"
+      ],
+      "outputs": [
+        "yang2011-jp201214k-cdse-cdxzn1-xs-core-shell-qds-sample-6-3--after-d2-s04-cool"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "yang2011-jp201214k",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Cool to room temperature",
+      "evidence": [
+        {
+          "source_id": "yang2011-jp201214k",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s03-precipitate",
+      "action": "precipitate",
+      "label": "Precipitate with ethanol",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-cool"
+      ],
+      "inputs": [
+        "yang2011-jp201214k-cdse-cdxzn1-xs-core-shell-qds-sample-6-3--after-d2-s04-cool"
       ],
       "outputs": [
         "yang2011-jp201214k-cdse-cdxzn1-xs-core-shell-qds-sample-6-3--after-s03-precipitate"
@@ -513,6 +648,44 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s06-redisperse",
+      "action": "redisperse",
+      "label": "Redisperse in toluene",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-precipitate"
+      ],
+      "inputs": [
+        "yang2011-jp201214k-cdse-cdxzn1-xs-core-shell-qds-sample-6-3--after-s03-precipitate"
+      ],
+      "outputs": [
+        "yang2011-jp201214k-cdse-cdxzn1-xs-core-shell-qds-sample-6-3--after-d2-s06-redisperse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Redisperse in toluene",
+      "evidence": [
+        {
+          "source_id": "yang2011-jp201214k",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -521,7 +694,7 @@
       "sample_id": "yang2011-jp201214k-cdse-cdxzn1-xs-core-shell-qds-sample-6-3--product",
       "source_sample_label": "CdSe/CdxZn1-xS core-shell QDs (sample 6)",
       "batch_id": null,
-      "material_state_id": "yang2011-jp201214k-cdse-cdxzn1-xs-core-shell-qds-sample-6-3--after-s03-precipitate",
+      "material_state_id": "yang2011-jp201214k-cdse-cdxzn1-xs-core-shell-qds-sample-6-3--after-d2-s06-redisperse",
       "parent_sample_id": null,
       "composition": {
         "value": "CdSe/CdxZn1-xS",
@@ -602,16 +775,49 @@
           "locator": "Main PDF p.5"
         }
       ]
+    },
+    {
+      "id": "yang2011-jp201214k-cdse-cdxzn1-xs-core-shell-qds-sample-6-3--photoluminescence-peak",
+      "sample_id": "yang2011-jp201214k-cdse-cdxzn1-xs-core-shell-qds-sample-6-3--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 652,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "652 nm",
+        "evidence": [
+          {
+            "source_id": "yang2011-jp201214k",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "yang2011-jp201214k",
+          "locator": "Main PDF p.1"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
-      "Reaction time not reported in the extracted text."
+      "Reaction time not reported in the extracted text.",
+      "Amount of oleic acid not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

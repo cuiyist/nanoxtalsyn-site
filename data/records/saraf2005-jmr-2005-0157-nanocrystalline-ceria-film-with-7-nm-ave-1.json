@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "saraf2005-jmr-2005-0157-nanocrystalline-ceria-film-with-7-nm-ave-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Laxmikant Saraf (2005): nanocrystalline ceria film with 7 nm average grain size",
   "material": {
@@ -233,11 +233,19 @@
       ]
     },
     {
+      "id": "saraf2005-jmr-2005-0157-nanocrystalline-ceria-film-with-7-nm-ave-1--after-d2-s04-anneal",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "saraf2005-jmr-2005-0157-nanocrystalline-ceria-film-with-7-nm-ave-1--after-s03-add"
+      ]
+    },
+    {
       "id": "saraf2005-jmr-2005-0157-nanocrystalline-ceria-film-with-7-nm-ave-1--after-s04-anneal",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "saraf2005-jmr-2005-0157-nanocrystalline-ceria-film-with-7-nm-ave-1--after-s03-add"
+        "saraf2005-jmr-2005-0157-nanocrystalline-ceria-film-with-7-nm-ave-1--after-d2-s04-anneal"
       ]
     }
   ],
@@ -360,9 +368,9 @@
       ]
     },
     {
-      "id": "s04-anneal",
+      "id": "d2-s04-anneal",
       "action": "anneal",
-      "label": "Final coated films were subjected to rapid annealing at 723 K for 1 h",
+      "label": "Successive layers were built with 473 K annealing in-between layers",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -371,6 +379,81 @@
       ],
       "inputs": [
         "saraf2005-jmr-2005-0157-nanocrystalline-ceria-film-with-7-nm-ave-1--after-s03-add"
+      ],
+      "outputs": [
+        "saraf2005-jmr-2005-0157-nanocrystalline-ceria-film-with-7-nm-ave-1--after-d2-s04-anneal"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 473,
+          "minimum": null,
+          "maximum": null,
+          "unit": "K",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "473 K",
+          "evidence": [
+            {
+              "source_id": "saraf2005-jmr-2005-0157",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 h",
+          "evidence": [
+            {
+              "source_id": "saraf2005-jmr-2005-0157",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Successive layers were built with 473 K annealing in-between layers",
+      "evidence": [
+        {
+          "source_id": "saraf2005-jmr-2005-0157",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s04-anneal",
+      "action": "anneal",
+      "label": "Final coated films were subjected to rapid annealing at 723 K for 1 h",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-anneal"
+      ],
+      "inputs": [
+        "saraf2005-jmr-2005-0157-nanocrystalline-ceria-film-with-7-nm-ave-1--after-d2-s04-anneal"
       ],
       "outputs": [
         "saraf2005-jmr-2005-0157-nanocrystalline-ceria-film-with-7-nm-ave-1--after-s04-anneal"
@@ -527,7 +610,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "lee2022-acs-jpcc-1c09817-cspbbr3-siox-pqds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Soo Jeong Lee; You Jeong Lee; Sumi Seo; Hyeri Jeon; Donghoon Han; Hyunsik Im; Nabeen K. Shrestha; Seog Joon Yoon (2022): CsPbBr3@SiOx PQDs",
   "material": {
@@ -317,6 +317,44 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "lee2022-acs-jpcc-1c09817-cspbbr3-siox-pqds-1--1-octadecene",
+      "name": "1-octadecene",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "lee2022-acs-jpcc-1c09817",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "lee2022-acs-jpcc-1c09817-cspbbr3-siox-pqds-1--acetone",
+      "name": "acetone",
+      "formula": null,
+      "role": "solvent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "lee2022-acs-jpcc-1c09817",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -342,16 +380,26 @@
       ]
     },
     {
-      "id": "lee2022-acs-jpcc-1c09817-cspbbr3-siox-pqds-1--after-s03-centrifuge",
+      "id": "lee2022-acs-jpcc-1c09817-cspbbr3-siox-pqds-1--after-d2-s03-add",
       "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
-        "lee2022-acs-jpcc-1c09817-cspbbr3-siox-pqds-1--after-s02-mix"
+        "lee2022-acs-jpcc-1c09817-cspbbr3-siox-pqds-1--after-s02-mix",
+        "lee2022-acs-jpcc-1c09817-cspbbr3-siox-pqds-1--ethylene-glycol",
+        "lee2022-acs-jpcc-1c09817-cspbbr3-siox-pqds-1--3-aminopropyl-triethoxysilane"
+      ]
+    },
+    {
+      "id": "lee2022-acs-jpcc-1c09817-cspbbr3-siox-pqds-1--after-s03-centrifuge",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "lee2022-acs-jpcc-1c09817-cspbbr3-siox-pqds-1--after-d2-s03-add"
       ]
     },
     {
       "id": "lee2022-acs-jpcc-1c09817-cspbbr3-siox-pqds-1--after-s04-anneal",
-      "name": "mixture after step 4",
+      "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
         "lee2022-acs-jpcc-1c09817-cspbbr3-siox-pqds-1--after-s03-centrifuge"
@@ -359,10 +407,11 @@
     },
     {
       "id": "lee2022-acs-jpcc-1c09817-cspbbr3-siox-pqds-1--after-s05-wash",
-      "name": "mixture after step 5",
+      "name": "mixture after step 6",
       "kind": "reaction_batch",
       "parent_ids": [
-        "lee2022-acs-jpcc-1c09817-cspbbr3-siox-pqds-1--after-s04-anneal"
+        "lee2022-acs-jpcc-1c09817-cspbbr3-siox-pqds-1--after-s04-anneal",
+        "lee2022-acs-jpcc-1c09817-cspbbr3-siox-pqds-1--acetone"
       ]
     },
     {
@@ -464,6 +513,51 @@
       ]
     },
     {
+      "id": "d2-s03-add",
+      "action": "add",
+      "label": "Adding EG and APTES to the mixed solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-mix"
+      ],
+      "inputs": [
+        "lee2022-acs-jpcc-1c09817-cspbbr3-siox-pqds-1--after-s02-mix",
+        "lee2022-acs-jpcc-1c09817-cspbbr3-siox-pqds-1--ethylene-glycol",
+        "lee2022-acs-jpcc-1c09817-cspbbr3-siox-pqds-1--3-aminopropyl-triethoxysilane"
+      ],
+      "outputs": [
+        "lee2022-acs-jpcc-1c09817-cspbbr3-siox-pqds-1--after-d2-s03-add"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "ambient",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "lee2022-acs-jpcc-1c09817",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Adding EG and APTES to the mixed solution",
+      "evidence": [
+        {
+          "source_id": "lee2022-acs-jpcc-1c09817",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
       "id": "s03-centrifuge",
       "action": "centrifuge",
       "label": "Collecting colloidal PQDs",
@@ -471,10 +565,10 @@
       "branch": "",
       "optional": false,
       "depends_on": [
-        "s02-mix"
+        "d2-s03-add"
       ],
       "inputs": [
-        "lee2022-acs-jpcc-1c09817-cspbbr3-siox-pqds-1--after-s02-mix"
+        "lee2022-acs-jpcc-1c09817-cspbbr3-siox-pqds-1--after-d2-s03-add"
       ],
       "outputs": [
         "lee2022-acs-jpcc-1c09817-cspbbr3-siox-pqds-1--after-s03-centrifuge"
@@ -611,7 +705,8 @@
         "s04-anneal"
       ],
       "inputs": [
-        "lee2022-acs-jpcc-1c09817-cspbbr3-siox-pqds-1--after-s04-anneal"
+        "lee2022-acs-jpcc-1c09817-cspbbr3-siox-pqds-1--after-s04-anneal",
+        "lee2022-acs-jpcc-1c09817-cspbbr3-siox-pqds-1--acetone"
       ],
       "outputs": [
         "lee2022-acs-jpcc-1c09817-cspbbr3-siox-pqds-1--after-s05-wash"
@@ -743,13 +838,80 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "lee2022-acs-jpcc-1c09817-cspbbr3-siox-pqds-1--photoluminescence-peak",
+      "sample_id": "lee2022-acs-jpcc-1c09817-cspbbr3-siox-pqds-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 503,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "503 nm",
+        "evidence": [
+          {
+            "source_id": "lee2022-acs-jpcc-1c09817",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "lee2022-acs-jpcc-1c09817",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    },
+    {
+      "id": "lee2022-acs-jpcc-1c09817-cspbbr3-siox-pqds-1--photoluminescence-quantum-yield",
+      "sample_id": "lee2022-acs-jpcc-1c09817-cspbbr3-siox-pqds-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 2.0,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "2 %",
+        "evidence": [
+          {
+            "source_id": "lee2022-acs-jpcc-1c09817",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "lee2022-acs-jpcc-1c09817",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
-      "Size not reported in the extracted text."
+      "Size not reported in the extracted text.",
+      "Amount of 1-octadecene not reported in the extracted text.",
+      "Amount of acetone not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

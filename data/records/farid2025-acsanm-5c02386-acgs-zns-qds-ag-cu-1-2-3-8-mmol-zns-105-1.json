@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "farid2025-acsanm-5c02386-acgs-zns-qds-ag-cu-1-2-3-8-mmol-zns-105-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Ahsan Farid; Lvming Qiu; Xin Zhang; Bin Hu; Zhen Wu; Guojie Wang (2025): ACGS/ZnS QDs (Ag/Cu = 1/2.3, 8 mmol ZnS, 105 min)",
   "material": {
@@ -228,6 +228,25 @@
       "name": "Zinc acetate",
       "formula": null,
       "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "farid2025-acsanm-5c02386",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "farid2025-acsanm-5c02386-acgs-zns-qds-ag-cu-1-2-3-8-mmol-zns-105-1--oleic-acid-oa",
+      "name": "oleic acid (OA)",
+      "formula": null,
+      "role": "solvent",
       "stage": "synthesis",
       "identity": {
         "pubchem_cid": null,
@@ -523,19 +542,84 @@
         }
       ],
       "notes": [
-        "Reaction temperature: 240 degC (Main PDF p.3)."
+        "Reaction temperature: 240 degC (Main PDF p.3).",
+        "Reaction time: 105 min (Main PDF p.?)."
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "farid2025-acsanm-5c02386-acgs-zns-qds-ag-cu-1-2-3-8-mmol-zns-105-1--photoluminescence-peak",
+      "sample_id": "farid2025-acsanm-5c02386-acgs-zns-qds-ag-cu-1-2-3-8-mmol-zns-105-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 488,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "488 nm",
+        "evidence": [
+          {
+            "source_id": "farid2025-acsanm-5c02386",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "farid2025-acsanm-5c02386",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    },
+    {
+      "id": "farid2025-acsanm-5c02386-acgs-zns-qds-ag-cu-1-2-3-8-mmol-zns-105-1--photoluminescence-quantum-yield",
+      "sample_id": "farid2025-acsanm-5c02386-acgs-zns-qds-ag-cu-1-2-3-8-mmol-zns-105-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 56,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "56 %",
+        "evidence": [
+          {
+            "source_id": "farid2025-acsanm-5c02386",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "farid2025-acsanm-5c02386",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Size not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
-      "Reaction time not reported in the extracted text.",
       "Amount of AgI not reported in the extracted text.",
       "Amount of CuI not reported in the extracted text.",
       "Amount of Ga(acac)3 not reported in the extracted text.",
@@ -543,7 +627,8 @@
       "Amount of 1-dodecanethiol (DDT) not reported in the extracted text.",
       "Amount of Oleylamine (OAm) not reported in the extracted text.",
       "Amount of 1-octadecene (ODE) not reported in the extracted text.",
-      "Amount of Zinc acetate not reported in the extracted text."
+      "Amount of Zinc acetate not reported in the extracted text.",
+      "Amount of oleic acid (OA) not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

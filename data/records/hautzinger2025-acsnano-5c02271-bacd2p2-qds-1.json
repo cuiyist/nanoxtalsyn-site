@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "hautzinger2025-acsnano-5c02271-bacd2p2-qds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Matthew P. Hautzinger; Shaham Quadir; Benjamin Feingold; Reilly Seban; Arianna J. Thornton; Nikita S. Dutta; Andrew G. Norman; Ian A. Leahy; Muhammad Rubaiat Hasan; Kirill A. Kovnir; Obadiah G. Reid; Bryon W. Larson; Joseph M. Luther; Matthew C. Beard; Sage R. Bauers (2025): BaCd2P2 QDs",
   "material": {
@@ -173,7 +173,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "volume": {
+          "value": 8.0,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "8 mL",
+          "evidence": [
+            {
+              "source_id": "hautzinger2025-acsnano-5c02271",
+              "locator": "Main PDF p.6"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -192,7 +211,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "mass": {
+          "value": 200.0,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mg",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "200 mg",
+          "evidence": [
+            {
+              "source_id": "hautzinger2025-acsnano-5c02271",
+              "locator": "Main PDF p.6"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -277,10 +315,18 @@
     },
     {
       "id": "hautzinger2025-acsnano-5c02271-bacd2p2-qds-1--after-s03-cool",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "hautzinger2025-acsnano-5c02271-bacd2p2-qds-1--after-s02-cool"
+      ]
+    },
+    {
+      "id": "hautzinger2025-acsnano-5c02271-bacd2p2-qds-1--after-d2-s04-purify",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "hautzinger2025-acsnano-5c02271-bacd2p2-qds-1--after-s02-cool"
+        "hautzinger2025-acsnano-5c02271-bacd2p2-qds-1--after-s03-cool"
       ]
     }
   ],
@@ -416,7 +462,26 @@
       "outputs": [
         "hautzinger2025-acsnano-5c02271-bacd2p2-qds-1--after-s03-cool"
       ],
-      "parameters": {},
+      "parameters": {
+        "temperature": {
+          "value": 120,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "120 °C",
+          "evidence": [
+            {
+              "source_id": "hautzinger2025-acsnano-5c02271",
+              "locator": "Main PDF p.6"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "environment": {
         "value": "N2",
         "status": "reported",
@@ -442,6 +507,44 @@
           "locator": "Main PDF p.6"
         }
       ]
+    },
+    {
+      "id": "d2-s04-purify",
+      "action": "purify",
+      "label": "Centrifugation and washing",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-cool"
+      ],
+      "inputs": [
+        "hautzinger2025-acsnano-5c02271-bacd2p2-qds-1--after-s03-cool"
+      ],
+      "outputs": [
+        "hautzinger2025-acsnano-5c02271-bacd2p2-qds-1--after-d2-s04-purify"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Centrifugation and washing",
+      "evidence": [
+        {
+          "source_id": "hautzinger2025-acsnano-5c02271",
+          "locator": "Main PDF p.6"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -450,7 +553,7 @@
       "sample_id": "hautzinger2025-acsnano-5c02271-bacd2p2-qds-1--product",
       "source_sample_label": "BaCd2P2 QDs",
       "batch_id": null,
-      "material_state_id": "hautzinger2025-acsnano-5c02271-bacd2p2-qds-1--after-s03-cool",
+      "material_state_id": "hautzinger2025-acsnano-5c02271-bacd2p2-qds-1--after-d2-s04-purify",
       "parent_sample_id": null,
       "composition": {
         "value": "BaCd2P2",
@@ -504,17 +607,48 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "hautzinger2025-acsnano-5c02271-bacd2p2-qds-1--photoluminescence-quantum-yield",
+      "sample_id": "hautzinger2025-acsnano-5c02271-bacd2p2-qds-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 21,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "21 %",
+        "evidence": [
+          {
+            "source_id": "hautzinger2025-acsnano-5c02271",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "hautzinger2025-acsnano-5c02271",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
-      "Amount of 1-octadecene (ODE) not reported in the extracted text.",
-      "Amount of trioctylphosphine oxide (TOPO) not reported in the extracted text.",
       "Amount of oleic acid (OA) not reported in the extracted text."
     ],
     "conflicts": [],

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "lee2021-acsanm-1c02038-red-r-emitting-qds-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Heejae Lee; Seonghoon Lee (2021): Red (R)-emitting QDs",
   "material": {
@@ -350,6 +350,25 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "lee2021-acsanm-1c02038-red-r-emitting-qds-2--top",
+      "name": "TOP",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "lee2021-acsanm-1c02038",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -366,30 +385,65 @@
       ]
     },
     {
-      "id": "lee2021-acsanm-1c02038-red-r-emitting-qds-2--after-s02-inject",
+      "id": "lee2021-acsanm-1c02038-red-r-emitting-qds-2--after-d2-s02-degas",
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
         "lee2021-acsanm-1c02038-red-r-emitting-qds-2--after-s01-heat",
-        "lee2021-acsanm-1c02038-red-r-emitting-qds-2--se"
+        "lee2021-acsanm-1c02038-red-r-emitting-qds-2--soybean-oil"
+      ]
+    },
+    {
+      "id": "lee2021-acsanm-1c02038-red-r-emitting-qds-2--after-d2-s03-extract",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "lee2021-acsanm-1c02038-red-r-emitting-qds-2--after-d2-s02-degas"
+      ]
+    },
+    {
+      "id": "lee2021-acsanm-1c02038-red-r-emitting-qds-2--after-s02-inject",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "lee2021-acsanm-1c02038-red-r-emitting-qds-2--after-d2-s03-extract",
+        "lee2021-acsanm-1c02038-red-r-emitting-qds-2--se",
+        "lee2021-acsanm-1c02038-red-r-emitting-qds-2--top"
       ]
     },
     {
       "id": "lee2021-acsanm-1c02038-red-r-emitting-qds-2--after-s03-inject",
-      "name": "mixture after step 3",
+      "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
         "lee2021-acsanm-1c02038-red-r-emitting-qds-2--after-s02-inject",
-        "lee2021-acsanm-1c02038-red-r-emitting-qds-2--s"
+        "lee2021-acsanm-1c02038-red-r-emitting-qds-2--s",
+        "lee2021-acsanm-1c02038-red-r-emitting-qds-2--top"
+      ]
+    },
+    {
+      "id": "lee2021-acsanm-1c02038-red-r-emitting-qds-2--after-d2-s06-cool",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "lee2021-acsanm-1c02038-red-r-emitting-qds-2--after-s03-inject"
       ]
     },
     {
       "id": "lee2021-acsanm-1c02038-red-r-emitting-qds-2--after-s04-add",
+      "name": "mixture after step 7",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "lee2021-acsanm-1c02038-red-r-emitting-qds-2--after-d2-s06-cool",
+        "lee2021-acsanm-1c02038-red-r-emitting-qds-2--1-dodecanethiol"
+      ]
+    },
+    {
+      "id": "lee2021-acsanm-1c02038-red-r-emitting-qds-2--after-d2-s08-purify",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "lee2021-acsanm-1c02038-red-r-emitting-qds-2--after-s03-inject",
-        "lee2021-acsanm-1c02038-red-r-emitting-qds-2--1-dodecanethiol"
+        "lee2021-acsanm-1c02038-red-r-emitting-qds-2--after-s04-add"
       ]
     }
   ],
@@ -476,9 +530,9 @@
       ]
     },
     {
-      "id": "s02-inject",
-      "action": "inject",
-      "label": "Injection of Se in TOP at 280 °C",
+      "id": "d2-s02-degas",
+      "action": "degas",
+      "label": "Degassing at 130 °C for 30 min",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -487,7 +541,127 @@
       ],
       "inputs": [
         "lee2021-acsanm-1c02038-red-r-emitting-qds-2--after-s01-heat",
-        "lee2021-acsanm-1c02038-red-r-emitting-qds-2--se"
+        "lee2021-acsanm-1c02038-red-r-emitting-qds-2--soybean-oil"
+      ],
+      "outputs": [
+        "lee2021-acsanm-1c02038-red-r-emitting-qds-2--after-d2-s02-degas"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 130,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "130 °C",
+          "evidence": [
+            {
+              "source_id": "lee2021-acsanm-1c02038",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 30,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "30 min",
+          "evidence": [
+            {
+              "source_id": "lee2021-acsanm-1c02038",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "lee2021-acsanm-1c02038",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Degassing at 130 °C for 30 min",
+      "evidence": [
+        {
+          "source_id": "lee2021-acsanm-1c02038",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s03-extract",
+      "action": "extract",
+      "label": "Extracting the water layer",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-degas"
+      ],
+      "inputs": [
+        "lee2021-acsanm-1c02038-red-r-emitting-qds-2--after-d2-s02-degas"
+      ],
+      "outputs": [
+        "lee2021-acsanm-1c02038-red-r-emitting-qds-2--after-d2-s03-extract"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Extracting the water layer",
+      "evidence": [
+        {
+          "source_id": "lee2021-acsanm-1c02038",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s02-inject",
+      "action": "inject",
+      "label": "Injection of Se in TOP at 280 °C",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-extract"
+      ],
+      "inputs": [
+        "lee2021-acsanm-1c02038-red-r-emitting-qds-2--after-d2-s03-extract",
+        "lee2021-acsanm-1c02038-red-r-emitting-qds-2--se",
+        "lee2021-acsanm-1c02038-red-r-emitting-qds-2--top"
       ],
       "outputs": [
         "lee2021-acsanm-1c02038-red-r-emitting-qds-2--after-s02-inject"
@@ -550,7 +724,8 @@
       ],
       "inputs": [
         "lee2021-acsanm-1c02038-red-r-emitting-qds-2--after-s02-inject",
-        "lee2021-acsanm-1c02038-red-r-emitting-qds-2--s"
+        "lee2021-acsanm-1c02038-red-r-emitting-qds-2--s",
+        "lee2021-acsanm-1c02038-red-r-emitting-qds-2--top"
       ],
       "outputs": [
         "lee2021-acsanm-1c02038-red-r-emitting-qds-2--after-s03-inject"
@@ -566,6 +741,24 @@
           "qualifier": "",
           "basis": "",
           "raw_text": "60 s",
+          "evidence": [
+            {
+              "source_id": "lee2021-acsanm-1c02038",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        },
+        "temperature": {
+          "value": 280,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "280 °C",
           "evidence": [
             {
               "source_id": "lee2021-acsanm-1c02038",
@@ -602,9 +795,9 @@
       ]
     },
     {
-      "id": "s04-add",
-      "action": "add",
-      "label": "Addition of 1-dodecanethiol at 200 °C",
+      "id": "d2-s06-cool",
+      "action": "cool",
+      "label": "Cooling to 200 °C",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -612,7 +805,69 @@
         "s03-inject"
       ],
       "inputs": [
-        "lee2021-acsanm-1c02038-red-r-emitting-qds-2--after-s03-inject",
+        "lee2021-acsanm-1c02038-red-r-emitting-qds-2--after-s03-inject"
+      ],
+      "outputs": [
+        "lee2021-acsanm-1c02038-red-r-emitting-qds-2--after-d2-s06-cool"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 200,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "200 °C",
+          "evidence": [
+            {
+              "source_id": "lee2021-acsanm-1c02038",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "lee2021-acsanm-1c02038",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Cooling to 200 °C",
+      "evidence": [
+        {
+          "source_id": "lee2021-acsanm-1c02038",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s04-add",
+      "action": "add",
+      "label": "Addition of 1-dodecanethiol at 200 °C",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s06-cool"
+      ],
+      "inputs": [
+        "lee2021-acsanm-1c02038-red-r-emitting-qds-2--after-d2-s06-cool",
         "lee2021-acsanm-1c02038-red-r-emitting-qds-2--1-dodecanethiol"
       ],
       "outputs": [
@@ -663,6 +918,44 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "d2-s08-purify",
+      "action": "purify",
+      "label": "Precipitation and centrifugation",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-add"
+      ],
+      "inputs": [
+        "lee2021-acsanm-1c02038-red-r-emitting-qds-2--after-s04-add"
+      ],
+      "outputs": [
+        "lee2021-acsanm-1c02038-red-r-emitting-qds-2--after-d2-s08-purify"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Precipitation and centrifugation",
+      "evidence": [
+        {
+          "source_id": "lee2021-acsanm-1c02038",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -671,7 +964,7 @@
       "sample_id": "lee2021-acsanm-1c02038-red-r-emitting-qds-2--product",
       "source_sample_label": "Red (R)-emitting QDs",
       "batch_id": null,
-      "material_state_id": "lee2021-acsanm-1c02038-red-r-emitting-qds-2--after-s04-add",
+      "material_state_id": "lee2021-acsanm-1c02038-red-r-emitting-qds-2--after-d2-s08-purify",
       "parent_sample_id": null,
       "composition": {
         "value": "CdSe/Cd1−xZnxSe1−ySy/ZnS",
@@ -725,15 +1018,81 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "lee2021-acsanm-1c02038-red-r-emitting-qds-2--photoluminescence-peak",
+      "sample_id": "lee2021-acsanm-1c02038-red-r-emitting-qds-2--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 619,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "619 nm",
+        "evidence": [
+          {
+            "source_id": "lee2021-acsanm-1c02038",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "lee2021-acsanm-1c02038",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "lee2021-acsanm-1c02038-red-r-emitting-qds-2--photoluminescence-quantum-yield",
+      "sample_id": "lee2021-acsanm-1c02038-red-r-emitting-qds-2--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 79,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "79 %",
+        "evidence": [
+          {
+            "source_id": "lee2021-acsanm-1c02038",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "lee2021-acsanm-1c02038",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Size not reported in the extracted text.",
-      "Reaction time not reported in the extracted text."
+      "Reaction time not reported in the extracted text.",
+      "Amount of TOP not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

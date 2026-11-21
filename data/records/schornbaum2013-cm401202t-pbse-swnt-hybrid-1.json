@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "schornbaum2013-cm401202t-pbse-swnt-hybrid-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Julia Schornbaum (2013): PbSe-SWNT hybrid",
   "material": {
@@ -79,9 +79,14 @@
       "derivation": null
     },
     "morphology": {
-      "value": null,
-      "status": "not_reported",
-      "evidence": [],
+      "value": "half-ring",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "schornbaum2013-cm401202t",
+          "locator": "Main PDF p.1"
+        }
+      ],
       "note": ""
     }
   },
@@ -237,6 +242,120 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "schornbaum2013-cm401202t-pbse-swnt-hybrid-1--tri-n-octylphosphine",
+      "name": "tri-n-octylphosphine",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 mmol",
+          "evidence": [
+            {
+              "source_id": "schornbaum2013-cm401202t",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "schornbaum2013-cm401202t",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "schornbaum2013-cm401202t-pbse-swnt-hybrid-1--selenium-powder",
+      "name": "selenium powder",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "schornbaum2013-cm401202t",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "schornbaum2013-cm401202t-pbse-swnt-hybrid-1--topse",
+      "name": "TOPSe",
+      "formula": null,
+      "role": "nonmetal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 0.8,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.8 mL",
+          "evidence": [
+            {
+              "source_id": "schornbaum2013-cm401202t",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "schornbaum2013-cm401202t",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "schornbaum2013-cm401202t-pbse-swnt-hybrid-1--pbse-swnt-hybrid",
+      "name": "PbSe-SWNT hybrid",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "schornbaum2013-cm401202t",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -260,27 +379,39 @@
       ]
     },
     {
-      "id": "schornbaum2013-cm401202t-pbse-swnt-hybrid-1--after-s03-heat",
+      "id": "schornbaum2013-cm401202t-pbse-swnt-hybrid-1--after-d2-s03-disperse",
       "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
-        "schornbaum2013-cm401202t-pbse-swnt-hybrid-1--after-s02-heat"
+        "schornbaum2013-cm401202t-pbse-swnt-hybrid-1--after-s02-heat",
+        "schornbaum2013-cm401202t-pbse-swnt-hybrid-1--comocat-swnts",
+        "schornbaum2013-cm401202t-pbse-swnt-hybrid-1--diphenyl-ether"
+      ]
+    },
+    {
+      "id": "schornbaum2013-cm401202t-pbse-swnt-hybrid-1--after-s03-heat",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "schornbaum2013-cm401202t-pbse-swnt-hybrid-1--after-d2-s03-disperse"
       ]
     },
     {
       "id": "schornbaum2013-cm401202t-pbse-swnt-hybrid-1--after-s04-hold",
-      "name": "mixture after step 4",
+      "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
-        "schornbaum2013-cm401202t-pbse-swnt-hybrid-1--after-s03-heat"
+        "schornbaum2013-cm401202t-pbse-swnt-hybrid-1--after-s03-heat",
+        "schornbaum2013-cm401202t-pbse-swnt-hybrid-1--topse"
       ]
     },
     {
       "id": "schornbaum2013-cm401202t-pbse-swnt-hybrid-1--after-s05-centrifuge",
-      "name": "mixture after step 5",
+      "name": "mixture after step 6",
       "kind": "reaction_batch",
       "parent_ids": [
-        "schornbaum2013-cm401202t-pbse-swnt-hybrid-1--after-s04-hold"
+        "schornbaum2013-cm401202t-pbse-swnt-hybrid-1--after-s04-hold",
+        "schornbaum2013-cm401202t-pbse-swnt-hybrid-1--pbse-swnt-hybrid"
       ]
     },
     {
@@ -288,7 +419,8 @@
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "schornbaum2013-cm401202t-pbse-swnt-hybrid-1--after-s05-centrifuge"
+        "schornbaum2013-cm401202t-pbse-swnt-hybrid-1--after-s05-centrifuge",
+        "schornbaum2013-cm401202t-pbse-swnt-hybrid-1--pbse-swnt-hybrid"
       ]
     }
   ],
@@ -436,9 +568,9 @@
       ]
     },
     {
-      "id": "s03-heat",
-      "action": "heat",
-      "label": "Heat the mixture to 170 °C under argon flow",
+      "id": "d2-s03-disperse",
+      "action": "disperse",
+      "label": "Disperse SWNTs in diphenyl ether",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -446,7 +578,71 @@
         "s02-heat"
       ],
       "inputs": [
-        "schornbaum2013-cm401202t-pbse-swnt-hybrid-1--after-s02-heat"
+        "schornbaum2013-cm401202t-pbse-swnt-hybrid-1--after-s02-heat",
+        "schornbaum2013-cm401202t-pbse-swnt-hybrid-1--comocat-swnts",
+        "schornbaum2013-cm401202t-pbse-swnt-hybrid-1--diphenyl-ether"
+      ],
+      "outputs": [
+        "schornbaum2013-cm401202t-pbse-swnt-hybrid-1--after-d2-s03-disperse"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 60,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "60 °C",
+          "evidence": [
+            {
+              "source_id": "schornbaum2013-cm401202t",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "schornbaum2013-cm401202t",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Disperse SWNTs in diphenyl ether",
+      "evidence": [
+        {
+          "source_id": "schornbaum2013-cm401202t",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s03-heat",
+      "action": "heat",
+      "label": "Heat the mixture to 170 °C under argon flow",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-disperse"
+      ],
+      "inputs": [
+        "schornbaum2013-cm401202t-pbse-swnt-hybrid-1--after-d2-s03-disperse"
       ],
       "outputs": [
         "schornbaum2013-cm401202t-pbse-swnt-hybrid-1--after-s03-heat"
@@ -508,7 +704,8 @@
         "s03-heat"
       ],
       "inputs": [
-        "schornbaum2013-cm401202t-pbse-swnt-hybrid-1--after-s03-heat"
+        "schornbaum2013-cm401202t-pbse-swnt-hybrid-1--after-s03-heat",
+        "schornbaum2013-cm401202t-pbse-swnt-hybrid-1--topse"
       ],
       "outputs": [
         "schornbaum2013-cm401202t-pbse-swnt-hybrid-1--after-s04-hold"
@@ -588,7 +785,8 @@
         "s04-hold"
       ],
       "inputs": [
-        "schornbaum2013-cm401202t-pbse-swnt-hybrid-1--after-s04-hold"
+        "schornbaum2013-cm401202t-pbse-swnt-hybrid-1--after-s04-hold",
+        "schornbaum2013-cm401202t-pbse-swnt-hybrid-1--pbse-swnt-hybrid"
       ],
       "outputs": [
         "schornbaum2013-cm401202t-pbse-swnt-hybrid-1--after-s05-centrifuge"
@@ -645,7 +843,8 @@
         "s05-centrifuge"
       ],
       "inputs": [
-        "schornbaum2013-cm401202t-pbse-swnt-hybrid-1--after-s05-centrifuge"
+        "schornbaum2013-cm401202t-pbse-swnt-hybrid-1--after-s05-centrifuge",
+        "schornbaum2013-cm401202t-pbse-swnt-hybrid-1--pbse-swnt-hybrid"
       ],
       "outputs": [
         "schornbaum2013-cm401202t-pbse-swnt-hybrid-1--after-s06-redisperse"
@@ -704,9 +903,14 @@
         "note": ""
       },
       "morphology": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "half-ring",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "schornbaum2013-cm401202t",
+            "locator": "Main PDF p.1"
+          }
+        ],
         "note": ""
       },
       "surface": {
@@ -770,12 +974,13 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
-      "Shape not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
       "Amount of PbO not reported in the extracted text.",
-      "Amount of oleic acid not reported in the extracted text."
+      "Amount of oleic acid not reported in the extracted text.",
+      "Amount of selenium powder not reported in the extracted text.",
+      "Amount of PbSe-SWNT hybrid not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

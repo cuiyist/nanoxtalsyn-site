@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Hope T. Beier et al. (2009): CdSe/ZnS QDs embedded in polystyrene microspheres",
   "material": {
@@ -234,35 +234,80 @@
       ]
     },
     {
-      "id": "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--after-s03-cool",
+      "id": "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--after-d2-s03-inject",
       "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
-        "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--after-s02-cool"
+        "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--after-s02-cool",
+        "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--selenium",
+        "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--trioctyphosphine-top"
+      ]
+    },
+    {
+      "id": "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--after-s03-cool",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--after-d2-s03-inject"
+      ]
+    },
+    {
+      "id": "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--after-d2-s05-add",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--after-s03-cool",
+        "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--dimethylzinc",
+        "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--hexamethyldisilathiane",
+        "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--trioctyphosphine-top"
       ]
     },
     {
       "id": "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--after-s04-quench",
-      "name": "mixture after step 4",
+      "name": "mixture after step 6",
       "kind": "reaction_batch",
       "parent_ids": [
-        "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--after-s03-cool"
+        "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--after-d2-s05-add"
       ]
     },
     {
       "id": "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--after-s05-wash",
-      "name": "mixture after step 5",
+      "name": "mixture after step 7",
       "kind": "reaction_batch",
       "parent_ids": [
         "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--after-s04-quench"
       ]
     },
     {
-      "id": "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--after-s06-add",
-      "name": "mixture after step 6",
+      "id": "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--after-d2-s08-transfer",
+      "name": "mixture after step 8",
       "kind": "reaction_batch",
       "parent_ids": [
         "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--after-s05-wash"
+      ]
+    },
+    {
+      "id": "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--after-s06-add",
+      "name": "mixture after step 9",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--after-d2-s08-transfer"
+      ]
+    },
+    {
+      "id": "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--after-d2-s10-diffuse",
+      "name": "mixture after step 10",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--after-s06-add"
+      ]
+    },
+    {
+      "id": "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--after-d2-s11-resuspend",
+      "name": "mixture after step 11",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--after-d2-s10-diffuse"
       ]
     },
     {
@@ -270,7 +315,7 @@
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--after-s06-add"
+        "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--after-d2-s11-resuspend"
       ]
     }
   ],
@@ -390,9 +435,9 @@
       ]
     },
     {
-      "id": "s03-cool",
-      "action": "cool",
-      "label": "Solution is cooled to 140 °C.",
+      "id": "d2-s03-inject",
+      "action": "inject",
+      "label": "Selenium dissolved in TOP is injected into the solution.",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -400,7 +445,66 @@
         "s02-cool"
       ],
       "inputs": [
-        "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--after-s02-cool"
+        "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--after-s02-cool",
+        "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--selenium",
+        "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--trioctyphosphine-top"
+      ],
+      "outputs": [
+        "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--after-d2-s03-inject"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 270,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "270 °C",
+          "evidence": [
+            {
+              "source_id": "al2023-s10439-009-9713-2",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Selenium dissolved in TOP is injected into the solution.",
+      "evidence": [
+        {
+          "source_id": "al2023-s10439-009-9713-2",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s03-cool",
+      "action": "cool",
+      "label": "Solution is cooled to 140 °C.",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-inject"
+      ],
+      "inputs": [
+        "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--after-d2-s03-inject"
       ],
       "outputs": [
         "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--after-s03-cool"
@@ -447,9 +551,9 @@
       ]
     },
     {
-      "id": "s04-quench",
-      "action": "quench",
-      "label": "Reaction is quenched.",
+      "id": "d2-s05-add",
+      "action": "add",
+      "label": "Precursor solutions of dimethylzinc and hexamethyldisilathiane in TOP are added to form a ZnS shell.",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -457,7 +561,67 @@
         "s03-cool"
       ],
       "inputs": [
-        "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--after-s03-cool"
+        "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--after-s03-cool",
+        "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--dimethylzinc",
+        "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--hexamethyldisilathiane",
+        "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--trioctyphosphine-top"
+      ],
+      "outputs": [
+        "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--after-d2-s05-add"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 140,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "140 °C",
+          "evidence": [
+            {
+              "source_id": "al2023-s10439-009-9713-2",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Precursor solutions of dimethylzinc and hexamethyldisilathiane in TOP are added to form a ZnS shell.",
+      "evidence": [
+        {
+          "source_id": "al2023-s10439-009-9713-2",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s04-quench",
+      "action": "quench",
+      "label": "Reaction is quenched.",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s05-add"
+      ],
+      "inputs": [
+        "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--after-d2-s05-add"
       ],
       "outputs": [
         "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--after-s04-quench"
@@ -523,9 +687,9 @@
       ]
     },
     {
-      "id": "s06-add",
-      "action": "add",
-      "label": "QDs stored in chloroform are added to the polystyrene microspheres in butanol to a final chloroform concentration of 15% v/v.",
+      "id": "d2-s08-transfer",
+      "action": "transfer",
+      "label": "Polystyrene microspheres are transferred from water to butanol through ethanol.",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -534,6 +698,44 @@
       ],
       "inputs": [
         "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--after-s05-wash"
+      ],
+      "outputs": [
+        "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--after-d2-s08-transfer"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Polystyrene microspheres are transferred from water to butanol through ethanol.",
+      "evidence": [
+        {
+          "source_id": "al2023-s10439-009-9713-2",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s06-add",
+      "action": "add",
+      "label": "QDs stored in chloroform are added to the polystyrene microspheres in butanol to a final chloroform concentration of 15% v/v.",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s08-transfer"
+      ],
+      "inputs": [
+        "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--after-d2-s08-transfer"
       ],
       "outputs": [
         "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--after-s06-add"
@@ -561,10 +763,10 @@
       ]
     },
     {
-      "id": "s07-wash",
-      "action": "wash",
-      "label": "Microspheres are washed in ethanol to remove chloroform.",
-      "stage": "workup",
+      "id": "d2-s10-diffuse",
+      "action": "diffuse",
+      "label": "Chloroform swells the polystyrene slightly, allowing the QDs to passively diffuse into outer edges of the microspheres.",
+      "stage": "synthesis",
       "branch": "",
       "optional": false,
       "depends_on": [
@@ -572,6 +774,101 @@
       ],
       "inputs": [
         "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--after-s06-add"
+      ],
+      "outputs": [
+        "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--after-d2-s10-diffuse"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 20,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "20 min",
+          "evidence": [
+            {
+              "source_id": "al2023-s10439-009-9713-2",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Chloroform swells the polystyrene slightly, allowing the QDs to passively diffuse into outer edges of the microspheres.",
+      "evidence": [
+        {
+          "source_id": "al2023-s10439-009-9713-2",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "d2-s11-resuspend",
+      "action": "resuspend",
+      "label": "Microspheres are resuspended in butanol.",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s10-diffuse"
+      ],
+      "inputs": [
+        "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--after-d2-s10-diffuse"
+      ],
+      "outputs": [
+        "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--after-d2-s11-resuspend"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Microspheres are resuspended in butanol.",
+      "evidence": [
+        {
+          "source_id": "al2023-s10439-009-9713-2",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s07-wash",
+      "action": "wash",
+      "label": "Microspheres are washed in ethanol to remove chloroform.",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s11-resuspend"
+      ],
+      "inputs": [
+        "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--after-d2-s11-resuspend"
       ],
       "outputs": [
         "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--after-s07-wash"
@@ -648,11 +945,44 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--photoluminescence-peak",
+      "sample_id": "al2023-s10439-009-9713-2-cdse-zns-qds-embedded-in-polystyrene-mic-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 550,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "550 nm",
+        "evidence": [
+          {
+            "source_id": "al2023-s10439-009-9713-2",
+            "locator": "Main PDF"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "al2023-s10439-009-9713-2",
+          "locator": "Main PDF"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Ligand not reported in the extracted text.",

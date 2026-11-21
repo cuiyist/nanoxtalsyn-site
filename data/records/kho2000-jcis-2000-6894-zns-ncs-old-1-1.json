@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "kho2000-jcis-2000-6894-zns-ncs-old-1-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Richard Kho (2000): ZnS NCs (Old-1)",
   "material": {
@@ -170,21 +170,69 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "kho2000-jcis-2000-6894-zns-ncs-old-1-1--tris-buffer",
+      "name": "Tris buffer",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "concentration": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "M",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 M",
+          "evidence": [
+            {
+              "source_id": "kho2000-jcis-2000-6894",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "kho2000-jcis-2000-6894",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
-      "id": "kho2000-jcis-2000-6894-zns-ncs-old-1-1--after-s01-add",
+      "id": "kho2000-jcis-2000-6894-zns-ncs-old-1-1--after-d2-s01-prepare",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": [
+        "kho2000-jcis-2000-6894-zns-ncs-old-1-1--l-cysteine",
+        "kho2000-jcis-2000-6894-zns-ncs-old-1-1--tris-buffer"
+      ]
+    },
+    {
+      "id": "kho2000-jcis-2000-6894-zns-ncs-old-1-1--after-s01-add",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "kho2000-jcis-2000-6894-zns-ncs-old-1-1--after-d2-s01-prepare",
         "kho2000-jcis-2000-6894-zns-ncs-old-1-1--zinc-sulfate"
       ]
     },
     {
       "id": "kho2000-jcis-2000-6894-zns-ncs-old-1-1--after-s02-add",
-      "name": "mixture after step 2",
+      "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
         "kho2000-jcis-2000-6894-zns-ncs-old-1-1--after-s01-add",
@@ -193,7 +241,7 @@
     },
     {
       "id": "kho2000-jcis-2000-6894-zns-ncs-old-1-1--after-s03-incubate",
-      "name": "mixture after step 3",
+      "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
         "kho2000-jcis-2000-6894-zns-ncs-old-1-1--after-s02-add"
@@ -201,7 +249,7 @@
     },
     {
       "id": "kho2000-jcis-2000-6894-zns-ncs-old-1-1--after-s04-flush",
-      "name": "mixture after step 4",
+      "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
         "kho2000-jcis-2000-6894-zns-ncs-old-1-1--after-s03-incubate"
@@ -209,7 +257,7 @@
     },
     {
       "id": "kho2000-jcis-2000-6894-zns-ncs-old-1-1--after-s05-precipitate",
-      "name": "mixture after step 5",
+      "name": "mixture after step 6",
       "kind": "reaction_batch",
       "parent_ids": [
         "kho2000-jcis-2000-6894-zns-ncs-old-1-1--after-s04-flush"
@@ -217,7 +265,7 @@
     },
     {
       "id": "kho2000-jcis-2000-6894-zns-ncs-old-1-1--after-s06-centrifuge",
-      "name": "mixture after step 6",
+      "name": "mixture after step 7",
       "kind": "reaction_batch",
       "parent_ids": [
         "kho2000-jcis-2000-6894-zns-ncs-old-1-1--after-s05-precipitate"
@@ -234,14 +282,59 @@
   ],
   "operations": [
     {
+      "id": "d2-s01-prepare",
+      "action": "prepare",
+      "label": "Prepare 0.25 M cysteine solution in 1 M Tris buffer",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "kho2000-jcis-2000-6894-zns-ncs-old-1-1--l-cysteine",
+        "kho2000-jcis-2000-6894-zns-ncs-old-1-1--tris-buffer"
+      ],
+      "outputs": [
+        "kho2000-jcis-2000-6894-zns-ncs-old-1-1--after-d2-s01-prepare"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "kho2000-jcis-2000-6894",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Prepare 0.25 M cysteine solution in 1 M Tris buffer",
+      "evidence": [
+        {
+          "source_id": "kho2000-jcis-2000-6894",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
       "id": "s01-add",
       "action": "add",
       "label": "Add 1 M ZnSO4 to reach 0.125 M zinc concentration",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
+      "depends_on": [
+        "d2-s01-prepare"
+      ],
       "inputs": [
+        "kho2000-jcis-2000-6894-zns-ncs-old-1-1--after-d2-s01-prepare",
         "kho2000-jcis-2000-6894-zns-ncs-old-1-1--zinc-sulfate"
       ],
       "outputs": [
@@ -682,7 +775,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",

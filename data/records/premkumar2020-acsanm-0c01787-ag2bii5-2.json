@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "premkumar2020-acsanm-0c01787-ag2bii5-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Sellan Premkumar; Dan Liu; Yiming Zhang; Devaraj Nataraj; Subramaniam Ramya; Zhouzheng Jin; Bhekie B. Mamba; Alex T. Kuvarega; Jianzhou Gui (2020): Ag2BiI5",
   "material": {
@@ -51,9 +51,14 @@
       "note": ""
     },
     "phase": {
-      "value": null,
-      "status": "not_reported",
-      "evidence": [],
+      "value": "trigonal",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "premkumar2020-acsanm-0c01787",
+          "locator": "Main PDF p.4"
+        }
+      ],
       "note": ""
     },
     "size": {
@@ -228,6 +233,25 @@
           "locator": "Main PDF p.8"
         }
       ]
+    },
+    {
+      "id": "premkumar2020-acsanm-0c01787-ag2bii5-2--n-n-dimethylformamide",
+      "name": "N,N-dimethylformamide",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "premkumar2020-acsanm-0c01787",
+          "locator": "Main PDF p.8"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -238,7 +262,8 @@
       "kind": "reaction_batch",
       "parent_ids": [
         "premkumar2020-acsanm-0c01787-ag2bii5-2--agi",
-        "premkumar2020-acsanm-0c01787-ag2bii5-2--bii3"
+        "premkumar2020-acsanm-0c01787-ag2bii5-2--bii3",
+        "premkumar2020-acsanm-0c01787-ag2bii5-2--n-n-dimethylformamide"
       ]
     },
     {
@@ -289,7 +314,8 @@
       "depends_on": [],
       "inputs": [
         "premkumar2020-acsanm-0c01787-ag2bii5-2--agi",
-        "premkumar2020-acsanm-0c01787-ag2bii5-2--bii3"
+        "premkumar2020-acsanm-0c01787-ag2bii5-2--bii3",
+        "premkumar2020-acsanm-0c01787-ag2bii5-2--n-n-dimethylformamide"
       ],
       "outputs": [
         "premkumar2020-acsanm-0c01787-ag2bii5-2--after-s01-dissolve"
@@ -459,7 +485,26 @@
       "outputs": [
         "premkumar2020-acsanm-0c01787-ag2bii5-2--after-s04-wash"
       ],
-      "parameters": {},
+      "parameters": {
+        "duration": {
+          "value": 20,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "20 min",
+          "evidence": [
+            {
+              "source_id": "premkumar2020-acsanm-0c01787",
+              "locator": "Main PDF p.8"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "environment": {
         "value": null,
         "status": "not_reported",
@@ -498,7 +543,26 @@
       "outputs": [
         "premkumar2020-acsanm-0c01787-ag2bii5-2--after-s05-redisperse"
       ],
-      "parameters": {},
+      "parameters": {
+        "duration": {
+          "value": 20,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "20 min",
+          "evidence": [
+            {
+              "source_id": "premkumar2020-acsanm-0c01787",
+              "locator": "Main PDF p.8"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "environment": {
         "value": null,
         "status": "not_reported",
@@ -541,9 +605,14 @@
         "note": ""
       },
       "phase": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "trigonal",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "premkumar2020-acsanm-0c01787",
+            "locator": "Main PDF p.4"
+          }
+        ],
         "note": ""
       },
       "morphology": {
@@ -572,24 +641,89 @@
       ],
       "notes": [
         "Reactor: not specified (Main PDF p.2).",
-        "Reaction temperature: 40 degC (Main PDF p.8)."
+        "Reaction temperature: 40 degC (Main PDF p.8).",
+        "Reaction time: 20 min (Main PDF p.?)."
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "premkumar2020-acsanm-0c01787-ag2bii5-2--photoluminescence-peak",
+      "sample_id": "premkumar2020-acsanm-0c01787-ag2bii5-2--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 440,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "440 nm",
+        "evidence": [
+          {
+            "source_id": "premkumar2020-acsanm-0c01787",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "premkumar2020-acsanm-0c01787",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "premkumar2020-acsanm-0c01787-ag2bii5-2--photoluminescence-quantum-yield",
+      "sample_id": "premkumar2020-acsanm-0c01787-ag2bii5-2--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 12,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "12 %",
+        "evidence": [
+          {
+            "source_id": "premkumar2020-acsanm-0c01787",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "premkumar2020-acsanm-0c01787",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
-      "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
       "Size not reported in the extracted text.",
-      "Reaction time not reported in the extracted text.",
       "Amount of oleic acid not reported in the extracted text.",
       "Amount of oleylamine not reported in the extracted text.",
       "Amount of ethyl acetate not reported in the extracted text.",
-      "Amount of hexane not reported in the extracted text."
+      "Amount of hexane not reported in the extracted text.",
+      "Amount of N,N-dimethylformamide not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

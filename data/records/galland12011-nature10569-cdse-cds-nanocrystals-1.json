@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "galland12011-nature10569-cdse-cds-nanocrystals-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Christophe Galland1 (2011): CdSe/CdS nanocrystals",
   "material": {
@@ -263,6 +263,44 @@
           "locator": "Main PDF p.6"
         }
       ]
+    },
+    {
+      "id": "galland12011-nature10569-cdse-cds-nanocrystals-1--mercaptoundecanoic-acid",
+      "name": "mercaptoundecanoic acid",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "galland12011-nature10569",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "galland12011-nature10569-cdse-cds-nanocrystals-1--tetramethylammonium-hydroxide",
+      "name": "tetramethylammonium hydroxide",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "galland12011-nature10569",
+          "locator": "Main PDF p.6"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -282,7 +320,7 @@
       ]
     },
     {
-      "id": "galland12011-nature10569-cdse-cds-nanocrystals-1--after-s03-precipitate",
+      "id": "galland12011-nature10569-cdse-cds-nanocrystals-1--after-d2-s03-cool",
       "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
@@ -290,8 +328,16 @@
       ]
     },
     {
-      "id": "galland12011-nature10569-cdse-cds-nanocrystals-1--after-s04-redisperse",
+      "id": "galland12011-nature10569-cdse-cds-nanocrystals-1--after-s03-precipitate",
       "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "galland12011-nature10569-cdse-cds-nanocrystals-1--after-d2-s03-cool"
+      ]
+    },
+    {
+      "id": "galland12011-nature10569-cdse-cds-nanocrystals-1--after-s04-redisperse",
+      "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
         "galland12011-nature10569-cdse-cds-nanocrystals-1--after-s03-precipitate"
@@ -299,10 +345,28 @@
     },
     {
       "id": "galland12011-nature10569-cdse-cds-nanocrystals-1--after-s05-precipitate",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "galland12011-nature10569-cdse-cds-nanocrystals-1--after-s04-redisperse"
+      ]
+    },
+    {
+      "id": "galland12011-nature10569-cdse-cds-nanocrystals-1--after-d2-s07-add",
+      "name": "mixture after step 7",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "galland12011-nature10569-cdse-cds-nanocrystals-1--after-s05-precipitate",
+        "galland12011-nature10569-cdse-cds-nanocrystals-1--mercaptoundecanoic-acid"
+      ]
+    },
+    {
+      "id": "galland12011-nature10569-cdse-cds-nanocrystals-1--after-d2-s08-add",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "galland12011-nature10569-cdse-cds-nanocrystals-1--after-s04-redisperse"
+        "galland12011-nature10569-cdse-cds-nanocrystals-1--after-d2-s07-add",
+        "galland12011-nature10569-cdse-cds-nanocrystals-1--tetramethylammonium-hydroxide"
       ]
     }
   ],
@@ -417,6 +481,24 @@
             }
           ],
           "derivation": null
+        },
+        "duration": {
+          "value": 30,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "30 min",
+          "evidence": [
+            {
+              "source_id": "galland12011-nature10569",
+              "locator": "Main PDF p.6"
+            }
+          ],
+          "derivation": null
         }
       },
       "environment": {
@@ -446,10 +528,10 @@
       ]
     },
     {
-      "id": "s03-precipitate",
-      "action": "precipitate",
-      "label": "The solution was cooled to room temperature and CdSe nanocrystals were collected by precipitation with ethanol and centrifugation.",
-      "stage": "workup",
+      "id": "d2-s03-cool",
+      "action": "cool",
+      "label": "The temperature was lowered to 270 uC for CdSe nanocrystal growth.",
+      "stage": "synthesis",
       "branch": "",
       "optional": false,
       "depends_on": [
@@ -457,6 +539,68 @@
       ],
       "inputs": [
         "galland12011-nature10569-cdse-cds-nanocrystals-1--after-s02-heat"
+      ],
+      "outputs": [
+        "galland12011-nature10569-cdse-cds-nanocrystals-1--after-d2-s03-cool"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 270,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "270 °C",
+          "evidence": [
+            {
+              "source_id": "galland12011-nature10569",
+              "locator": "Main PDF p.6"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "argon",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "galland12011-nature10569",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "The temperature was lowered to 270 uC for CdSe nanocrystal growth.",
+      "evidence": [
+        {
+          "source_id": "galland12011-nature10569",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "s03-precipitate",
+      "action": "precipitate",
+      "label": "The solution was cooled to room temperature and CdSe nanocrystals were collected by precipitation with ethanol and centrifugation.",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-cool"
+      ],
+      "inputs": [
+        "galland12011-nature10569-cdse-cds-nanocrystals-1--after-d2-s03-cool"
       ],
       "outputs": [
         "galland12011-nature10569-cdse-cds-nanocrystals-1--after-s03-precipitate"
@@ -558,6 +702,94 @@
           "locator": "Main PDF p.6"
         }
       ]
+    },
+    {
+      "id": "d2-s07-add",
+      "action": "add",
+      "label": "Add mercaptoundecanoic acid",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s05-precipitate"
+      ],
+      "inputs": [
+        "galland12011-nature10569-cdse-cds-nanocrystals-1--after-s05-precipitate",
+        "galland12011-nature10569-cdse-cds-nanocrystals-1--mercaptoundecanoic-acid"
+      ],
+      "outputs": [
+        "galland12011-nature10569-cdse-cds-nanocrystals-1--after-d2-s07-add"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "argon",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "galland12011-nature10569",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add mercaptoundecanoic acid",
+      "evidence": [
+        {
+          "source_id": "galland12011-nature10569",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "d2-s08-add",
+      "action": "add",
+      "label": "Add tetramethylammonium hydroxide",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s07-add"
+      ],
+      "inputs": [
+        "galland12011-nature10569-cdse-cds-nanocrystals-1--after-d2-s07-add",
+        "galland12011-nature10569-cdse-cds-nanocrystals-1--tetramethylammonium-hydroxide"
+      ],
+      "outputs": [
+        "galland12011-nature10569-cdse-cds-nanocrystals-1--after-d2-s08-add"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "argon",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "galland12011-nature10569",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add tetramethylammonium hydroxide",
+      "evidence": [
+        {
+          "source_id": "galland12011-nature10569",
+          "locator": "Main PDF p.6"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -566,7 +798,7 @@
       "sample_id": "galland12011-nature10569-cdse-cds-nanocrystals-1--product",
       "source_sample_label": "CdSe/CdS nanocrystals",
       "batch_id": null,
-      "material_state_id": "galland12011-nature10569-cdse-cds-nanocrystals-1--after-s05-precipitate",
+      "material_state_id": "galland12011-nature10569-cdse-cds-nanocrystals-1--after-d2-s08-add",
       "parent_sample_id": null,
       "composition": {
         "value": "CdSe/CdS",
@@ -657,15 +889,81 @@
           "locator": "Main PDF p.6"
         }
       ]
+    },
+    {
+      "id": "galland12011-nature10569-cdse-cds-nanocrystals-1--photoluminescence-peak",
+      "sample_id": "galland12011-nature10569-cdse-cds-nanocrystals-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 620,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "620 nm",
+        "evidence": [
+          {
+            "source_id": "galland12011-nature10569",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "galland12011-nature10569",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "galland12011-nature10569-cdse-cds-nanocrystals-1--photoluminescence-quantum-yield",
+      "sample_id": "galland12011-nature10569-cdse-cds-nanocrystals-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 30,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "30 %",
+        "evidence": [
+          {
+            "source_id": "galland12011-nature10569",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "galland12011-nature10569",
+          "locator": "Main PDF p.6"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Reaction time not reported in the extracted text.",
-      "Amount of OD not reported in the extracted text."
+      "Amount of OD not reported in the extracted text.",
+      "Amount of mercaptoundecanoic acid not reported in the extracted text.",
+      "Amount of tetramethylammonium hydroxide not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "shao2010-pola-23816-cds-quantum-dot-polymer-microspheres-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "QIAN SHAO (2010): CdS quantum dot-polymer microspheres",
   "material": {
@@ -313,19 +313,69 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "shao2010-pola-23816-cds-quantum-dot-polymer-microspheres-1--n-hexane",
+      "name": "n-hexane",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "shao2010-pola-23816",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "shao2010-pola-23816-cds-quantum-dot-polymer-microspheres-1--ethanol",
+      "name": "ethanol",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "shao2010-pola-23816",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
-      "id": "shao2010-pola-23816-cds-quantum-dot-polymer-microspheres-1--after-s01-cool",
+      "id": "shao2010-pola-23816-cds-quantum-dot-polymer-microspheres-1--after-d2-s01-mix",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "shao2010-pola-23816-cds-quantum-dot-polymer-microspheres-1--cdo",
+        "shao2010-pola-23816-cds-quantum-dot-polymer-microspheres-1--oleic-acid",
+        "shao2010-pola-23816-cds-quantum-dot-polymer-microspheres-1--octadecene"
+      ]
+    },
+    {
+      "id": "shao2010-pola-23816-cds-quantum-dot-polymer-microspheres-1--after-s01-cool",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "shao2010-pola-23816-cds-quantum-dot-polymer-microspheres-1--after-d2-s01-mix"
+      ]
     },
     {
       "id": "shao2010-pola-23816-cds-quantum-dot-polymer-microspheres-1--after-s02-sonicate",
-      "name": "mixture after step 2",
+      "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
         "shao2010-pola-23816-cds-quantum-dot-polymer-microspheres-1--after-s01-cool",
@@ -333,11 +383,21 @@
       ]
     },
     {
-      "id": "shao2010-pola-23816-cds-quantum-dot-polymer-microspheres-1--after-s03-heat",
-      "name": "mixture after step 3",
+      "id": "shao2010-pola-23816-cds-quantum-dot-polymer-microspheres-1--after-d2-s04-add",
+      "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
-        "shao2010-pola-23816-cds-quantum-dot-polymer-microspheres-1--after-s02-sonicate"
+        "shao2010-pola-23816-cds-quantum-dot-polymer-microspheres-1--after-s02-sonicate",
+        "shao2010-pola-23816-cds-quantum-dot-polymer-microspheres-1--hollow-polymer-microspheres",
+        "shao2010-pola-23816-cds-quantum-dot-polymer-microspheres-1--chloroform"
+      ]
+    },
+    {
+      "id": "shao2010-pola-23816-cds-quantum-dot-polymer-microspheres-1--after-s03-heat",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "shao2010-pola-23816-cds-quantum-dot-polymer-microspheres-1--after-d2-s04-add"
       ]
     },
     {
@@ -351,14 +411,75 @@
   ],
   "operations": [
     {
+      "id": "d2-s01-mix",
+      "action": "mix",
+      "label": "Mix CdO, oleic acid, and octadecene",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "shao2010-pola-23816-cds-quantum-dot-polymer-microspheres-1--cdo",
+        "shao2010-pola-23816-cds-quantum-dot-polymer-microspheres-1--oleic-acid",
+        "shao2010-pola-23816-cds-quantum-dot-polymer-microspheres-1--octadecene"
+      ],
+      "outputs": [
+        "shao2010-pola-23816-cds-quantum-dot-polymer-microspheres-1--after-d2-s01-mix"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 220,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "220 °C",
+          "evidence": [
+            {
+              "source_id": "shao2010-pola-23816",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Mix CdO, oleic acid, and octadecene",
+      "evidence": [
+        {
+          "source_id": "shao2010-pola-23816",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
       "id": "s01-cool",
       "action": "cool",
       "label": "Cool the mixture to room temperature",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s01-mix"
+      ],
+      "inputs": [
+        "shao2010-pola-23816-cds-quantum-dot-polymer-microspheres-1--after-d2-s01-mix"
+      ],
       "outputs": [
         "shao2010-pola-23816-cds-quantum-dot-polymer-microspheres-1--after-s01-cool"
       ],
@@ -443,9 +564,9 @@
       ]
     },
     {
-      "id": "s03-heat",
-      "action": "heat",
-      "label": "Heat the mixture to 260 ˚C",
+      "id": "d2-s04-add",
+      "action": "add",
+      "label": "Add hollow polymer microspheres and chloroform",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -453,7 +574,66 @@
         "s02-sonicate"
       ],
       "inputs": [
-        "shao2010-pola-23816-cds-quantum-dot-polymer-microspheres-1--after-s02-sonicate"
+        "shao2010-pola-23816-cds-quantum-dot-polymer-microspheres-1--after-s02-sonicate",
+        "shao2010-pola-23816-cds-quantum-dot-polymer-microspheres-1--hollow-polymer-microspheres",
+        "shao2010-pola-23816-cds-quantum-dot-polymer-microspheres-1--chloroform"
+      ],
+      "outputs": [
+        "shao2010-pola-23816-cds-quantum-dot-polymer-microspheres-1--after-d2-s04-add"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 40,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "40 °C",
+          "evidence": [
+            {
+              "source_id": "shao2010-pola-23816",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add hollow polymer microspheres and chloroform",
+      "evidence": [
+        {
+          "source_id": "shao2010-pola-23816",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s03-heat",
+      "action": "heat",
+      "label": "Heat the mixture to 260 ˚C",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-add"
+      ],
+      "inputs": [
+        "shao2010-pola-23816-cds-quantum-dot-polymer-microspheres-1--after-d2-s04-add"
       ],
       "outputs": [
         "shao2010-pola-23816-cds-quantum-dot-polymer-microspheres-1--after-s03-heat"
@@ -621,15 +801,50 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "shao2010-pola-23816-cds-quantum-dot-polymer-microspheres-1--photoluminescence-peak",
+      "sample_id": "shao2010-pola-23816-cds-quantum-dot-polymer-microspheres-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 365,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "365 nm",
+        "evidence": [
+          {
+            "source_id": "shao2010-pola-23816",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "shao2010-pola-23816",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Size not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
-      "Atmosphere not reported in the extracted text."
+      "Atmosphere not reported in the extracted text.",
+      "Amount of n-hexane not reported in the extracted text.",
+      "Amount of ethanol not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

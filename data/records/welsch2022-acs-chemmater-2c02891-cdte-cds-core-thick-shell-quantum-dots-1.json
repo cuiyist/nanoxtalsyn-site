@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "welsch2022-acs-chemmater-2c02891-cdte-cds-core-thick-shell-quantum-dots-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Tory A. Welsch; Jill M. Cleveland; D. Bruce Chase; Matthew F. Doty (2022): CdTe/CdS core/thick-shell quantum dots",
   "material": {
@@ -272,6 +272,63 @@
           "locator": "Main PDF p.9"
         }
       ]
+    },
+    {
+      "id": "welsch2022-acs-chemmater-2c02891-cdte-cds-core-thick-shell-quantum-dots-1--octadecylphosphonic-acid",
+      "name": "octadecylphosphonic acid",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "mass": {
+          "value": 0.14,
+          "minimum": null,
+          "maximum": null,
+          "unit": "g",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.14 g",
+          "evidence": [
+            {
+              "source_id": "welsch2022-acs-chemmater-2c02891",
+              "locator": "Main PDF p.8"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "welsch2022-acs-chemmater-2c02891",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    },
+    {
+      "id": "welsch2022-acs-chemmater-2c02891-cdte-cds-core-thick-shell-quantum-dots-1--cdte-cores",
+      "name": "CdTe cores",
+      "formula": null,
+      "role": "starting_particles",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "welsch2022-acs-chemmater-2c02891",
+          "locator": "Main PDF p.9"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -282,7 +339,8 @@
       "kind": "reaction_batch",
       "parent_ids": [
         "welsch2022-acs-chemmater-2c02891-cdte-cds-core-thick-shell-quantum-dots-1--cadmium-oxide",
-        "welsch2022-acs-chemmater-2c02891-cdte-cds-core-thick-shell-quantum-dots-1--trioctylphosphine-oxide"
+        "welsch2022-acs-chemmater-2c02891-cdte-cds-core-thick-shell-quantum-dots-1--trioctylphosphine-oxide",
+        "welsch2022-acs-chemmater-2c02891-cdte-cds-core-thick-shell-quantum-dots-1--octadecylphosphonic-acid"
       ]
     },
     {
@@ -292,7 +350,8 @@
       "parent_ids": [
         "welsch2022-acs-chemmater-2c02891-cdte-cds-core-thick-shell-quantum-dots-1--after-s01-heat",
         "welsch2022-acs-chemmater-2c02891-cdte-cds-core-thick-shell-quantum-dots-1--cadmium-oxide",
-        "welsch2022-acs-chemmater-2c02891-cdte-cds-core-thick-shell-quantum-dots-1--trioctylphosphine-oxide"
+        "welsch2022-acs-chemmater-2c02891-cdte-cds-core-thick-shell-quantum-dots-1--trioctylphosphine-oxide",
+        "welsch2022-acs-chemmater-2c02891-cdte-cds-core-thick-shell-quantum-dots-1--octadecylphosphonic-acid"
       ]
     },
     {
@@ -321,7 +380,8 @@
       "parent_ids": [
         "welsch2022-acs-chemmater-2c02891-cdte-cds-core-thick-shell-quantum-dots-1--after-s04-heat",
         "welsch2022-acs-chemmater-2c02891-cdte-cds-core-thick-shell-quantum-dots-1--sulfur",
-        "welsch2022-acs-chemmater-2c02891-cdte-cds-core-thick-shell-quantum-dots-1--trioctylphosphine"
+        "welsch2022-acs-chemmater-2c02891-cdte-cds-core-thick-shell-quantum-dots-1--trioctylphosphine",
+        "welsch2022-acs-chemmater-2c02891-cdte-cds-core-thick-shell-quantum-dots-1--cdte-cores"
       ]
     },
     {
@@ -360,7 +420,8 @@
       "depends_on": [],
       "inputs": [
         "welsch2022-acs-chemmater-2c02891-cdte-cds-core-thick-shell-quantum-dots-1--cadmium-oxide",
-        "welsch2022-acs-chemmater-2c02891-cdte-cds-core-thick-shell-quantum-dots-1--trioctylphosphine-oxide"
+        "welsch2022-acs-chemmater-2c02891-cdte-cds-core-thick-shell-quantum-dots-1--trioctylphosphine-oxide",
+        "welsch2022-acs-chemmater-2c02891-cdte-cds-core-thick-shell-quantum-dots-1--octadecylphosphonic-acid"
       ],
       "outputs": [
         "welsch2022-acs-chemmater-2c02891-cdte-cds-core-thick-shell-quantum-dots-1--after-s01-heat"
@@ -442,7 +503,8 @@
       "inputs": [
         "welsch2022-acs-chemmater-2c02891-cdte-cds-core-thick-shell-quantum-dots-1--after-s01-heat",
         "welsch2022-acs-chemmater-2c02891-cdte-cds-core-thick-shell-quantum-dots-1--cadmium-oxide",
-        "welsch2022-acs-chemmater-2c02891-cdte-cds-core-thick-shell-quantum-dots-1--trioctylphosphine-oxide"
+        "welsch2022-acs-chemmater-2c02891-cdte-cds-core-thick-shell-quantum-dots-1--trioctylphosphine-oxide",
+        "welsch2022-acs-chemmater-2c02891-cdte-cds-core-thick-shell-quantum-dots-1--octadecylphosphonic-acid"
       ],
       "outputs": [
         "welsch2022-acs-chemmater-2c02891-cdte-cds-core-thick-shell-quantum-dots-1--after-s02-heat"
@@ -458,6 +520,24 @@
           "qualifier": "",
           "basis": "",
           "raw_text": "350 °C",
+          "evidence": [
+            {
+              "source_id": "welsch2022-acs-chemmater-2c02891",
+              "locator": "Main PDF p.9"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 h",
           "evidence": [
             {
               "source_id": "welsch2022-acs-chemmater-2c02891",
@@ -510,7 +590,26 @@
       "outputs": [
         "welsch2022-acs-chemmater-2c02891-cdte-cds-core-thick-shell-quantum-dots-1--after-s03-inject"
       ],
-      "parameters": {},
+      "parameters": {
+        "temperature": {
+          "value": 350,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "350 °C",
+          "evidence": [
+            {
+              "source_id": "welsch2022-acs-chemmater-2c02891",
+              "locator": "Main PDF p.9"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "environment": {
         "value": "Ar",
         "status": "reported",
@@ -614,7 +713,8 @@
       "inputs": [
         "welsch2022-acs-chemmater-2c02891-cdte-cds-core-thick-shell-quantum-dots-1--after-s04-heat",
         "welsch2022-acs-chemmater-2c02891-cdte-cds-core-thick-shell-quantum-dots-1--sulfur",
-        "welsch2022-acs-chemmater-2c02891-cdte-cds-core-thick-shell-quantum-dots-1--trioctylphosphine"
+        "welsch2022-acs-chemmater-2c02891-cdte-cds-core-thick-shell-quantum-dots-1--trioctylphosphine",
+        "welsch2022-acs-chemmater-2c02891-cdte-cds-core-thick-shell-quantum-dots-1--cdte-cores"
       ],
       "outputs": [
         "welsch2022-acs-chemmater-2c02891-cdte-cds-core-thick-shell-quantum-dots-1--after-s05-inject"
@@ -887,14 +987,15 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
       "Amount of oleic acid not reported in the extracted text.",
-      "Amount of sulfur not reported in the extracted text."
+      "Amount of sulfur not reported in the extracted text.",
+      "Amount of CdTe cores not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

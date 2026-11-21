@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "akin2015-acs-bioconjchem-5b00491-mpegqdots-1-10-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Mehriban Akin; Rebecca Jonczyk; Johanna-Gabriela Walter; Sergej Springer; Antonina Lavrentieva; Frank Stahl; Mark Green; Thomas Scheper (2015): mPEG−Qdots (1:10)",
   "material": {
@@ -20,7 +20,7 @@
     ],
     "architecture": "unresolved"
   },
-  "method": "Synthesis as described in the source",
+  "method": "Heat-up",
   "sources": [
     {
       "id": "akin2015-acs-bioconjchem-5b00491",
@@ -54,9 +54,14 @@
       "note": ""
     },
     "phase": {
-      "value": null,
-      "status": "not_reported",
-      "evidence": [],
+      "value": "crystal",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "akin2015-acs-bioconjchem-5b00491",
+          "locator": "Main PDF p.9"
+        }
+      ],
       "note": ""
     },
     "size": {
@@ -307,19 +312,103 @@
           "locator": "Main PDF p.9"
         }
       ]
+    },
+    {
+      "id": "akin2015-acs-bioconjchem-5b00491-mpegqdots-1-10-1--mpegthiol",
+      "name": "mPEGthiol",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "concentration": {
+          "value": 250,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mM",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "250 mM",
+          "evidence": [
+            {
+              "source_id": "akin2015-acs-bioconjchem-5b00491",
+              "locator": "Main PDF p.9"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "akin2015-acs-bioconjchem-5b00491",
+          "locator": "Main PDF p.9"
+        }
+      ]
+    },
+    {
+      "id": "akin2015-acs-bioconjchem-5b00491-mpegqdots-1-10-1--1-m-naoh",
+      "name": "1 M NaOH",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "akin2015-acs-bioconjchem-5b00491",
+          "locator": "Main PDF p.9"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
-      "id": "akin2015-acs-bioconjchem-5b00491-mpegqdots-1-10-1--after-s01-heat",
+      "id": "akin2015-acs-bioconjchem-5b00491-mpegqdots-1-10-1--after-d2-s01-adjust-ph",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "akin2015-acs-bioconjchem-5b00491-mpegqdots-1-10-1--1-m-naoh"
+      ]
+    },
+    {
+      "id": "akin2015-acs-bioconjchem-5b00491-mpegqdots-1-10-1--after-d2-s02-cool",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "akin2015-acs-bioconjchem-5b00491-mpegqdots-1-10-1--after-d2-s01-adjust-ph"
+      ]
+    },
+    {
+      "id": "akin2015-acs-bioconjchem-5b00491-mpegqdots-1-10-1--after-d2-s03-adjust-ph",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "akin2015-acs-bioconjchem-5b00491-mpegqdots-1-10-1--after-d2-s02-cool",
+        "akin2015-acs-bioconjchem-5b00491-mpegqdots-1-10-1--1-m-naoh"
+      ]
+    },
+    {
+      "id": "akin2015-acs-bioconjchem-5b00491-mpegqdots-1-10-1--after-s01-heat",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "akin2015-acs-bioconjchem-5b00491-mpegqdots-1-10-1--after-d2-s03-adjust-ph"
+      ]
     },
     {
       "id": "akin2015-acs-bioconjchem-5b00491-mpegqdots-1-10-1--after-s02-precipitate",
-      "name": "mixture after step 2",
+      "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
         "akin2015-acs-bioconjchem-5b00491-mpegqdots-1-10-1--after-s01-heat"
@@ -336,14 +425,165 @@
   ],
   "operations": [
     {
+      "id": "d2-s01-adjust-ph",
+      "action": "adjust ph",
+      "label": "Adjust pH",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "akin2015-acs-bioconjchem-5b00491-mpegqdots-1-10-1--1-m-naoh"
+      ],
+      "outputs": [
+        "akin2015-acs-bioconjchem-5b00491-mpegqdots-1-10-1--after-d2-s01-adjust-ph"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "akin2015-acs-bioconjchem-5b00491",
+            "locator": "Main PDF p.9"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Adjust pH",
+      "evidence": [
+        {
+          "source_id": "akin2015-acs-bioconjchem-5b00491",
+          "locator": "Main PDF p.9"
+        }
+      ]
+    },
+    {
+      "id": "d2-s02-cool",
+      "action": "cool",
+      "label": "Cool",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s01-adjust-ph"
+      ],
+      "inputs": [
+        "akin2015-acs-bioconjchem-5b00491-mpegqdots-1-10-1--after-d2-s01-adjust-ph"
+      ],
+      "outputs": [
+        "akin2015-acs-bioconjchem-5b00491-mpegqdots-1-10-1--after-d2-s02-cool"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 4,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "4 °C",
+          "evidence": [
+            {
+              "source_id": "akin2015-acs-bioconjchem-5b00491",
+              "locator": "Main PDF p.9"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "akin2015-acs-bioconjchem-5b00491",
+            "locator": "Main PDF p.9"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Cool",
+      "evidence": [
+        {
+          "source_id": "akin2015-acs-bioconjchem-5b00491",
+          "locator": "Main PDF p.9"
+        }
+      ]
+    },
+    {
+      "id": "d2-s03-adjust-ph",
+      "action": "adjust ph",
+      "label": "Adjust pH",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-cool"
+      ],
+      "inputs": [
+        "akin2015-acs-bioconjchem-5b00491-mpegqdots-1-10-1--after-d2-s02-cool",
+        "akin2015-acs-bioconjchem-5b00491-mpegqdots-1-10-1--1-m-naoh"
+      ],
+      "outputs": [
+        "akin2015-acs-bioconjchem-5b00491-mpegqdots-1-10-1--after-d2-s03-adjust-ph"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "akin2015-acs-bioconjchem-5b00491",
+            "locator": "Main PDF p.9"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Adjust pH",
+      "evidence": [
+        {
+          "source_id": "akin2015-acs-bioconjchem-5b00491",
+          "locator": "Main PDF p.9"
+        }
+      ]
+    },
+    {
       "id": "s01-heat",
       "action": "heat",
       "label": "Heat the solution to 65 °C and allow ZnS shell growth for 3 h.",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s03-adjust-ph"
+      ],
+      "inputs": [
+        "akin2015-acs-bioconjchem-5b00491-mpegqdots-1-10-1--after-d2-s03-adjust-ph"
+      ],
       "outputs": [
         "akin2015-acs-bioconjchem-5b00491-mpegqdots-1-10-1--after-s01-heat"
       ],
@@ -386,9 +626,14 @@
         }
       },
       "environment": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "akin2015-acs-bioconjchem-5b00491",
+            "locator": "Main PDF p.9"
+          }
+        ],
         "note": ""
       },
       "endpoint": {
@@ -503,9 +748,14 @@
         "note": ""
       },
       "phase": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "crystal",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "akin2015-acs-bioconjchem-5b00491",
+            "locator": "Main PDF p.9"
+          }
+        ],
         "note": ""
       },
       "morphology": {
@@ -538,17 +788,49 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "akin2015-acs-bioconjchem-5b00491-mpegqdots-1-10-1--photoluminescence-peak",
+      "sample_id": "akin2015-acs-bioconjchem-5b00491-mpegqdots-1-10-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 670,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "670 nm",
+        "evidence": [
+          {
+            "source_id": "akin2015-acs-bioconjchem-5b00491",
+            "locator": "Main PDF p.9"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "akin2015-acs-bioconjchem-5b00491",
+          "locator": "Main PDF p.9"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
-      "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
       "Size not reported in the extracted text.",
-      "Atmosphere not reported in the extracted text.",
-      "Reaction temperature not reported in the extracted text."
+      "Reaction temperature not reported in the extracted text.",
+      "Amount of 1 M NaOH not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "ibanez2012-ja211952z-cu2-15zn0-85gese3-9-nanocrystals-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Maria Ibáñez et al. (2012): Cu2.15Zn0.85GeSe3.9 nanocrystals",
   "material": {
@@ -324,6 +324,25 @@
           "locator": "Main PDF p.1"
         }
       ]
+    },
+    {
+      "id": "ibanez2012-ja211952z-cu2-15zn0-85gese3-9-nanocrystals-2--selenium",
+      "name": "selenium",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "ibanez2012-ja211952z",
+          "locator": "Main PDF p.1"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -332,7 +351,9 @@
       "id": "ibanez2012-ja211952z-cu2-15zn0-85gese3-9-nanocrystals-2--after-s01-inject",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
-      "parent_ids": []
+      "parent_ids": [
+        "ibanez2012-ja211952z-cu2-15zn0-85gese3-9-nanocrystals-2--selenium"
+      ]
     },
     {
       "id": "ibanez2012-ja211952z-cu2-15zn0-85gese3-9-nanocrystals-2--after-s02-hold",
@@ -360,7 +381,9 @@
       "branch": "",
       "optional": false,
       "depends_on": [],
-      "inputs": [],
+      "inputs": [
+        "ibanez2012-ja211952z-cu2-15zn0-85gese3-9-nanocrystals-2--selenium"
+      ],
       "outputs": [
         "ibanez2012-ja211952z-cu2-15zn0-85gese3-9-nanocrystals-2--after-s01-inject"
       ],
@@ -561,13 +584,15 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
-      "Amount of selenium dioxide not reported in the extracted text."
+      "Amount of selenium dioxide not reported in the extracted text.",
+      "Amount of selenium dioxide not reported in the extracted text.",
+      "Amount of selenium not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

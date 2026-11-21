@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "borgstrom2001-1-1374235-inas-quantum-dot-stacks-embedded-in-inp-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "M. Borgstrom (2001): InAs quantum dot stacks embedded in InP barriers",
   "material": {
@@ -184,6 +184,63 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "borgstrom2001-1-1374235-inas-quantum-dot-stacks-embedded-in-inp-1--gainas-si",
+      "name": "GaInAs:Si",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "borgstrom2001-1-1374235",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "borgstrom2001-1-1374235-inas-quantum-dot-stacks-embedded-in-inp-1--pdge",
+      "name": "PdGe",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "borgstrom2001-1-1374235",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "borgstrom2001-1-1374235-inas-quantum-dot-stacks-embedded-in-inp-1--aucr",
+      "name": "AuCr",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "borgstrom2001-1-1374235",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -210,18 +267,26 @@
       ]
     },
     {
-      "id": "borgstrom2001-1-1374235-inas-quantum-dot-stacks-embedded-in-inp-1--after-s03-deposit",
+      "id": "borgstrom2001-1-1374235-inas-quantum-dot-stacks-embedded-in-inp-1--after-d2-s03-ramp-temperature",
       "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
-        "borgstrom2001-1-1374235-inas-quantum-dot-stacks-embedded-in-inp-1--after-s02-grow",
+        "borgstrom2001-1-1374235-inas-quantum-dot-stacks-embedded-in-inp-1--after-s02-grow"
+      ]
+    },
+    {
+      "id": "borgstrom2001-1-1374235-inas-quantum-dot-stacks-embedded-in-inp-1--after-s03-deposit",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "borgstrom2001-1-1374235-inas-quantum-dot-stacks-embedded-in-inp-1--after-d2-s03-ramp-temperature",
         "borgstrom2001-1-1374235-inas-quantum-dot-stacks-embedded-in-inp-1--trimethyl-indium-tmi",
         "borgstrom2001-1-1374235-inas-quantum-dot-stacks-embedded-in-inp-1--arsine-ash3"
       ]
     },
     {
       "id": "borgstrom2001-1-1374235-inas-quantum-dot-stacks-embedded-in-inp-1--after-s04-grow",
-      "name": "mixture after step 4",
+      "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
         "borgstrom2001-1-1374235-inas-quantum-dot-stacks-embedded-in-inp-1--after-s03-deposit",
@@ -233,7 +298,7 @@
     },
     {
       "id": "borgstrom2001-1-1374235-inas-quantum-dot-stacks-embedded-in-inp-1--after-s05-grow",
-      "name": "mixture after step 5",
+      "name": "mixture after step 6",
       "kind": "reaction_batch",
       "parent_ids": [
         "borgstrom2001-1-1374235-inas-quantum-dot-stacks-embedded-in-inp-1--after-s04-grow",
@@ -243,15 +308,16 @@
     },
     {
       "id": "borgstrom2001-1-1374235-inas-quantum-dot-stacks-embedded-in-inp-1--after-s06-deposit",
-      "name": "mixture after step 6",
+      "name": "mixture after step 7",
       "kind": "reaction_batch",
       "parent_ids": [
-        "borgstrom2001-1-1374235-inas-quantum-dot-stacks-embedded-in-inp-1--after-s05-grow"
+        "borgstrom2001-1-1374235-inas-quantum-dot-stacks-embedded-in-inp-1--after-s05-grow",
+        "borgstrom2001-1-1374235-inas-quantum-dot-stacks-embedded-in-inp-1--pdge"
       ]
     },
     {
       "id": "borgstrom2001-1-1374235-inas-quantum-dot-stacks-embedded-in-inp-1--after-s07-etch",
-      "name": "mixture after step 7",
+      "name": "mixture after step 8",
       "kind": "reaction_batch",
       "parent_ids": [
         "borgstrom2001-1-1374235-inas-quantum-dot-stacks-embedded-in-inp-1--after-s06-deposit"
@@ -262,7 +328,8 @@
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "borgstrom2001-1-1374235-inas-quantum-dot-stacks-embedded-in-inp-1--after-s07-etch"
+        "borgstrom2001-1-1374235-inas-quantum-dot-stacks-embedded-in-inp-1--after-s07-etch",
+        "borgstrom2001-1-1374235-inas-quantum-dot-stacks-embedded-in-inp-1--aucr"
       ]
     }
   ],
@@ -376,9 +443,9 @@
       ]
     },
     {
-      "id": "s03-deposit",
-      "action": "deposit",
-      "label": "Deposit 0.3 ML InAs and anneal under arsine",
+      "id": "d2-s03-ramp-temperature",
+      "action": "ramp temperature",
+      "label": "Ramp temperature to 500 °C for dot deposition",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -386,7 +453,69 @@
         "s02-grow"
       ],
       "inputs": [
-        "borgstrom2001-1-1374235-inas-quantum-dot-stacks-embedded-in-inp-1--after-s02-grow",
+        "borgstrom2001-1-1374235-inas-quantum-dot-stacks-embedded-in-inp-1--after-s02-grow"
+      ],
+      "outputs": [
+        "borgstrom2001-1-1374235-inas-quantum-dot-stacks-embedded-in-inp-1--after-d2-s03-ramp-temperature"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 500,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "500 °C",
+          "evidence": [
+            {
+              "source_id": "borgstrom2001-1-1374235",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "arsine",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "borgstrom2001-1-1374235",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Ramp temperature to 500 °C for dot deposition",
+      "evidence": [
+        {
+          "source_id": "borgstrom2001-1-1374235",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s03-deposit",
+      "action": "deposit",
+      "label": "Deposit 0.3 ML InAs and anneal under arsine",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-ramp-temperature"
+      ],
+      "inputs": [
+        "borgstrom2001-1-1374235-inas-quantum-dot-stacks-embedded-in-inp-1--after-d2-s03-ramp-temperature",
         "borgstrom2001-1-1374235-inas-quantum-dot-stacks-embedded-in-inp-1--trimethyl-indium-tmi",
         "borgstrom2001-1-1374235-inas-quantum-dot-stacks-embedded-in-inp-1--arsine-ash3"
       ],
@@ -459,7 +588,26 @@
       "outputs": [
         "borgstrom2001-1-1374235-inas-quantum-dot-stacks-embedded-in-inp-1--after-s04-grow"
       ],
-      "parameters": {},
+      "parameters": {
+        "duration": {
+          "value": 12,
+          "minimum": null,
+          "maximum": null,
+          "unit": "s",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "12 s",
+          "evidence": [
+            {
+              "source_id": "borgstrom2001-1-1374235",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "environment": {
         "value": "arsine",
         "status": "reported",
@@ -561,12 +709,32 @@
         "s05-grow"
       ],
       "inputs": [
-        "borgstrom2001-1-1374235-inas-quantum-dot-stacks-embedded-in-inp-1--after-s05-grow"
+        "borgstrom2001-1-1374235-inas-quantum-dot-stacks-embedded-in-inp-1--after-s05-grow",
+        "borgstrom2001-1-1374235-inas-quantum-dot-stacks-embedded-in-inp-1--pdge"
       ],
       "outputs": [
         "borgstrom2001-1-1374235-inas-quantum-dot-stacks-embedded-in-inp-1--after-s06-deposit"
       ],
-      "parameters": {},
+      "parameters": {
+        "duration": {
+          "value": 12,
+          "minimum": null,
+          "maximum": null,
+          "unit": "s",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "12 s",
+          "evidence": [
+            {
+              "source_id": "borgstrom2001-1-1374235",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "environment": {
         "value": "arsine",
         "status": "reported",
@@ -647,12 +815,32 @@
         "s07-etch"
       ],
       "inputs": [
-        "borgstrom2001-1-1374235-inas-quantum-dot-stacks-embedded-in-inp-1--after-s07-etch"
+        "borgstrom2001-1-1374235-inas-quantum-dot-stacks-embedded-in-inp-1--after-s07-etch",
+        "borgstrom2001-1-1374235-inas-quantum-dot-stacks-embedded-in-inp-1--aucr"
       ],
       "outputs": [
         "borgstrom2001-1-1374235-inas-quantum-dot-stacks-embedded-in-inp-1--after-s08-deposit"
       ],
-      "parameters": {},
+      "parameters": {
+        "duration": {
+          "value": 12,
+          "minimum": null,
+          "maximum": null,
+          "unit": "s",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "12 s",
+          "evidence": [
+            {
+              "source_id": "borgstrom2001-1-1374235",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "environment": {
         "value": "arsine",
         "status": "reported",
@@ -730,7 +918,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
@@ -741,7 +929,10 @@
       "Amount of disilane (Si2H6) not reported in the extracted text.",
       "Amount of trimethyl-indium (TMI) not reported in the extracted text.",
       "Amount of trimethyl-gallium (TMG) not reported in the extracted text.",
-      "Amount of Sn-doped InP(001) not reported in the extracted text."
+      "Amount of Sn-doped InP(001) not reported in the extracted text.",
+      "Amount of GaInAs:Si not reported in the extracted text.",
+      "Amount of PdGe not reported in the extracted text.",
+      "Amount of AuCr not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

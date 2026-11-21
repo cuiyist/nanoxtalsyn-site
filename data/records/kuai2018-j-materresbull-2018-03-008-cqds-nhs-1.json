@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "kuai2018-j-materresbull-2018-03-008-cqds-nhs-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Yong Kuai; Raohao Fang; Changchang Zhang; Xiang Liu; Liang Ma (2018): CQDs-NHS",
   "material": {
@@ -198,6 +198,158 @@
           "locator": "Main PDF p.1"
         }
       ]
+    },
+    {
+      "id": "kuai2018-j-materresbull-2018-03-008-cqds-nhs-1--n-hydroxysuccinimide",
+      "name": "N-hydroxysuccinimide",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "mass": {
+          "value": 0.611,
+          "minimum": null,
+          "maximum": null,
+          "unit": "g",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.611 g",
+          "evidence": [
+            {
+              "source_id": "kuai2018-j-materresbull-2018-03-008",
+              "locator": "Main PDF p.1"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "kuai2018-j-materresbull-2018-03-008",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "kuai2018-j-materresbull-2018-03-008-cqds-nhs-1--nhs",
+      "name": "NHS",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "mass": {
+          "value": 0.611,
+          "minimum": null,
+          "maximum": null,
+          "unit": "g",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.611 g",
+          "evidence": [
+            {
+              "source_id": "kuai2018-j-materresbull-2018-03-008",
+              "locator": "Main PDF p.1"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "kuai2018-j-materresbull-2018-03-008",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "kuai2018-j-materresbull-2018-03-008-cqds-nhs-1--dcc",
+      "name": "DCC",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "mass": {
+          "value": 1.402,
+          "minimum": null,
+          "maximum": null,
+          "unit": "g",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1.402 g",
+          "evidence": [
+            {
+              "source_id": "kuai2018-j-materresbull-2018-03-008",
+              "locator": "Main PDF p.1"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "kuai2018-j-materresbull-2018-03-008",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "kuai2018-j-materresbull-2018-03-008-cqds-nhs-1--water",
+      "name": "water",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 10,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "10 mL",
+          "evidence": [
+            {
+              "source_id": "kuai2018-j-materresbull-2018-03-008",
+              "locator": "Main PDF p.1"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "kuai2018-j-materresbull-2018-03-008",
+          "locator": "Main PDF p.1"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -225,7 +377,8 @@
       "parent_ids": [
         "kuai2018-j-materresbull-2018-03-008-cqds-nhs-1--after-s02-cool",
         "kuai2018-j-materresbull-2018-03-008-cqds-nhs-1--citric-acid-monohydrate",
-        "kuai2018-j-materresbull-2018-03-008-cqds-nhs-1--tetrahydrofuran"
+        "kuai2018-j-materresbull-2018-03-008-cqds-nhs-1--tetrahydrofuran",
+        "kuai2018-j-materresbull-2018-03-008-cqds-nhs-1--n-hydroxysuccinimide"
       ]
     },
     {
@@ -238,10 +391,45 @@
     },
     {
       "id": "kuai2018-j-materresbull-2018-03-008-cqds-nhs-1--after-s05-filter",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "kuai2018-j-materresbull-2018-03-008-cqds-nhs-1--after-s04-cool"
+      ]
+    },
+    {
+      "id": "kuai2018-j-materresbull-2018-03-008-cqds-nhs-1--after-d2-s06-repeat",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "kuai2018-j-materresbull-2018-03-008-cqds-nhs-1--after-s05-filter"
+      ]
+    },
+    {
+      "id": "kuai2018-j-materresbull-2018-03-008-cqds-nhs-1--after-d2-s07-remove",
+      "name": "mixture after step 7",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "kuai2018-j-materresbull-2018-03-008-cqds-nhs-1--after-d2-s06-repeat",
+        "kuai2018-j-materresbull-2018-03-008-cqds-nhs-1--tetrahydrofuran"
+      ]
+    },
+    {
+      "id": "kuai2018-j-materresbull-2018-03-008-cqds-nhs-1--after-d2-s08-add",
+      "name": "mixture after step 8",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "kuai2018-j-materresbull-2018-03-008-cqds-nhs-1--after-d2-s07-remove",
+        "kuai2018-j-materresbull-2018-03-008-cqds-nhs-1--ethyl-acetate"
+      ]
+    },
+    {
+      "id": "kuai2018-j-materresbull-2018-03-008-cqds-nhs-1--after-d2-s09-add",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "kuai2018-j-materresbull-2018-03-008-cqds-nhs-1--after-s04-cool"
+        "kuai2018-j-materresbull-2018-03-008-cqds-nhs-1--after-d2-s08-add",
+        "kuai2018-j-materresbull-2018-03-008-cqds-nhs-1--water"
       ]
     }
   ],
@@ -340,7 +528,44 @@
       "outputs": [
         "kuai2018-j-materresbull-2018-03-008-cqds-nhs-1--after-s02-cool"
       ],
-      "parameters": {},
+      "parameters": {
+        "temperature": {
+          "value": -16,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "-16 °C",
+          "evidence": [
+            {
+              "source_id": "kuai2018-j-materresbull-2018-03-008",
+              "locator": "Main PDF p.1"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 h",
+          "evidence": [
+            {
+              "source_id": "kuai2018-j-materresbull-2018-03-008",
+              "locator": "Main PDF p.1"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "environment": {
         "value": "air",
         "status": "reported",
@@ -380,7 +605,8 @@
       "inputs": [
         "kuai2018-j-materresbull-2018-03-008-cqds-nhs-1--after-s02-cool",
         "kuai2018-j-materresbull-2018-03-008-cqds-nhs-1--citric-acid-monohydrate",
-        "kuai2018-j-materresbull-2018-03-008-cqds-nhs-1--tetrahydrofuran"
+        "kuai2018-j-materresbull-2018-03-008-cqds-nhs-1--tetrahydrofuran",
+        "kuai2018-j-materresbull-2018-03-008-cqds-nhs-1--n-hydroxysuccinimide"
       ],
       "outputs": [
         "kuai2018-j-materresbull-2018-03-008-cqds-nhs-1--after-s03-mix"
@@ -483,6 +709,24 @@
             }
           ],
           "derivation": null
+        },
+        "temperature": {
+          "value": -16,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "-16 °C",
+          "evidence": [
+            {
+              "source_id": "kuai2018-j-materresbull-2018-03-008",
+              "locator": "Main PDF p.1"
+            }
+          ],
+          "derivation": null
         }
       },
       "environment": {
@@ -548,6 +792,181 @@
           "locator": "Main PDF p.1"
         }
       ]
+    },
+    {
+      "id": "d2-s06-repeat",
+      "action": "repeat",
+      "label": "Repeated to purify the product until the solution became clear",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s05-filter"
+      ],
+      "inputs": [
+        "kuai2018-j-materresbull-2018-03-008-cqds-nhs-1--after-s05-filter"
+      ],
+      "outputs": [
+        "kuai2018-j-materresbull-2018-03-008-cqds-nhs-1--after-d2-s06-repeat"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "kuai2018-j-materresbull-2018-03-008",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Repeated to purify the product until the solution became clear",
+      "evidence": [
+        {
+          "source_id": "kuai2018-j-materresbull-2018-03-008",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "d2-s07-remove",
+      "action": "remove",
+      "label": "Removed THF solvent",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s06-repeat"
+      ],
+      "inputs": [
+        "kuai2018-j-materresbull-2018-03-008-cqds-nhs-1--after-d2-s06-repeat",
+        "kuai2018-j-materresbull-2018-03-008-cqds-nhs-1--tetrahydrofuran"
+      ],
+      "outputs": [
+        "kuai2018-j-materresbull-2018-03-008-cqds-nhs-1--after-d2-s07-remove"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "kuai2018-j-materresbull-2018-03-008",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Removed THF solvent",
+      "evidence": [
+        {
+          "source_id": "kuai2018-j-materresbull-2018-03-008",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "d2-s08-add",
+      "action": "add",
+      "label": "Added 10.0 mL ethyl acetates with a complete vibration",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s07-remove"
+      ],
+      "inputs": [
+        "kuai2018-j-materresbull-2018-03-008-cqds-nhs-1--after-d2-s07-remove",
+        "kuai2018-j-materresbull-2018-03-008-cqds-nhs-1--ethyl-acetate"
+      ],
+      "outputs": [
+        "kuai2018-j-materresbull-2018-03-008-cqds-nhs-1--after-d2-s08-add"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "kuai2018-j-materresbull-2018-03-008",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Added 10.0 mL ethyl acetates with a complete vibration",
+      "evidence": [
+        {
+          "source_id": "kuai2018-j-materresbull-2018-03-008",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "d2-s09-add",
+      "action": "add",
+      "label": "Added 10 mL water with a complete shaking to dissolve the intact CQDs",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s08-add"
+      ],
+      "inputs": [
+        "kuai2018-j-materresbull-2018-03-008-cqds-nhs-1--after-d2-s08-add",
+        "kuai2018-j-materresbull-2018-03-008-cqds-nhs-1--water"
+      ],
+      "outputs": [
+        "kuai2018-j-materresbull-2018-03-008-cqds-nhs-1--after-d2-s09-add"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "kuai2018-j-materresbull-2018-03-008",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Added 10 mL water with a complete shaking to dissolve the intact CQDs",
+      "evidence": [
+        {
+          "source_id": "kuai2018-j-materresbull-2018-03-008",
+          "locator": "Main PDF p.1"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -556,7 +975,7 @@
       "sample_id": "kuai2018-j-materresbull-2018-03-008-cqds-nhs-1--product",
       "source_sample_label": "CQDs-NHS",
       "batch_id": null,
-      "material_state_id": "kuai2018-j-materresbull-2018-03-008-cqds-nhs-1--after-s05-filter",
+      "material_state_id": "kuai2018-j-materresbull-2018-03-008-cqds-nhs-1--after-d2-s09-add",
       "parent_sample_id": null,
       "composition": {
         "value": "C",
@@ -615,11 +1034,44 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "kuai2018-j-materresbull-2018-03-008-cqds-nhs-1--photoluminescence-peak",
+      "sample_id": "kuai2018-j-materresbull-2018-03-008-cqds-nhs-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 500,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "500 nm",
+        "evidence": [
+          {
+            "source_id": "kuai2018-j-materresbull-2018-03-008",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "kuai2018-j-materresbull-2018-03-008",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Size not reported in the extracted text.",
       "Reactor not reported in the extracted text."

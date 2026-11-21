@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "remya2012-jp306736s-ag2s-nanoparticles-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Kadamkotte Puthenveetil Remya; Thumu Udayabhaskararao; Thalappil Pradeep (2012): Ag2S nanoparticles",
   "material": {
@@ -337,6 +337,25 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "remya2012-jp306736s-ag2s-nanoparticles-1--ammonium-persulphate",
+      "name": "ammonium persulphate",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "remya2012-jp306736s",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -363,20 +382,44 @@
       ]
     },
     {
-      "id": "remya2012-jp306736s-ag2s-nanoparticles-1--after-s03-reduce",
+      "id": "remya2012-jp306736s-ag2s-nanoparticles-1--after-d2-s03-stir-and-cool",
       "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
-        "remya2012-jp306736s-ag2s-nanoparticles-1--after-s02-form-gel",
+        "remya2012-jp306736s-ag2s-nanoparticles-1--after-s02-form-gel"
+      ]
+    },
+    {
+      "id": "remya2012-jp306736s-ag2s-nanoparticles-1--after-s03-reduce",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "remya2012-jp306736s-ag2s-nanoparticles-1--after-d2-s03-stir-and-cool",
         "remya2012-jp306736s-ag2s-nanoparticles-1--sodium-borohydride"
       ]
     },
     {
+      "id": "remya2012-jp306736s-ag2s-nanoparticles-1--after-d2-s05-wash",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "remya2012-jp306736s-ag2s-nanoparticles-1--after-s03-reduce"
+      ]
+    },
+    {
       "id": "remya2012-jp306736s-ag2s-nanoparticles-1--after-s04-heat",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "remya2012-jp306736s-ag2s-nanoparticles-1--after-d2-s05-wash"
+      ]
+    },
+    {
+      "id": "remya2012-jp306736s-ag2s-nanoparticles-1--after-d2-s07-centrifuge",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "remya2012-jp306736s-ag2s-nanoparticles-1--after-s03-reduce"
+        "remya2012-jp306736s-ag2s-nanoparticles-1--after-s04-heat"
       ]
     }
   ],
@@ -461,9 +504,9 @@
       ]
     },
     {
-      "id": "s03-reduce",
-      "action": "reduce",
-      "label": "Add NaBH4 to reduce Ag(I) to form clusters",
+      "id": "d2-s03-stir-and-cool",
+      "action": "stir and cool",
+      "label": "Gel kept undisturbed at room temperature and then at ice cold temperature",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -471,7 +514,64 @@
         "s02-form-gel"
       ],
       "inputs": [
-        "remya2012-jp306736s-ag2s-nanoparticles-1--after-s02-form-gel",
+        "remya2012-jp306736s-ag2s-nanoparticles-1--after-s02-form-gel"
+      ],
+      "outputs": [
+        "remya2012-jp306736s-ag2s-nanoparticles-1--after-d2-s03-stir-and-cool"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 20,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "20 min",
+          "evidence": [
+            {
+              "source_id": "remya2012-jp306736s",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Gel kept undisturbed at room temperature and then at ice cold temperature",
+      "evidence": [
+        {
+          "source_id": "remya2012-jp306736s",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s03-reduce",
+      "action": "reduce",
+      "label": "Add NaBH4 to reduce Ag(I) to form clusters",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-stir-and-cool"
+      ],
+      "inputs": [
+        "remya2012-jp306736s-ag2s-nanoparticles-1--after-d2-s03-stir-and-cool",
         "remya2012-jp306736s-ag2s-nanoparticles-1--sodium-borohydride"
       ],
       "outputs": [
@@ -537,10 +637,10 @@
       ]
     },
     {
-      "id": "s04-heat",
-      "action": "heat",
-      "label": "Heat cluster solution to decompose clusters",
-      "stage": "synthesis",
+      "id": "d2-s05-wash",
+      "action": "wash",
+      "label": "Gel washed with methanol",
+      "stage": "workup",
       "branch": "",
       "optional": false,
       "depends_on": [
@@ -548,6 +648,44 @@
       ],
       "inputs": [
         "remya2012-jp306736s-ag2s-nanoparticles-1--after-s03-reduce"
+      ],
+      "outputs": [
+        "remya2012-jp306736s-ag2s-nanoparticles-1--after-d2-s05-wash"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Gel washed with methanol",
+      "evidence": [
+        {
+          "source_id": "remya2012-jp306736s",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s04-heat",
+      "action": "heat",
+      "label": "Heat cluster solution to decompose clusters",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s05-wash"
+      ],
+      "inputs": [
+        "remya2012-jp306736s-ag2s-nanoparticles-1--after-d2-s05-wash"
       ],
       "outputs": [
         "remya2012-jp306736s-ag2s-nanoparticles-1--after-s04-heat"
@@ -610,6 +748,44 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s07-centrifuge",
+      "action": "centrifuge",
+      "label": "Solution centrifuged to obtain greenish black residue",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-heat"
+      ],
+      "inputs": [
+        "remya2012-jp306736s-ag2s-nanoparticles-1--after-s04-heat"
+      ],
+      "outputs": [
+        "remya2012-jp306736s-ag2s-nanoparticles-1--after-d2-s07-centrifuge"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Solution centrifuged to obtain greenish black residue",
+      "evidence": [
+        {
+          "source_id": "remya2012-jp306736s",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -618,7 +794,7 @@
       "sample_id": "remya2012-jp306736s-ag2s-nanoparticles-1--product",
       "source_sample_label": "Ag2S nanoparticles",
       "batch_id": null,
-      "material_state_id": "remya2012-jp306736s-ag2s-nanoparticles-1--after-s04-heat",
+      "material_state_id": "remya2012-jp306736s-ag2s-nanoparticles-1--after-d2-s07-centrifuge",
       "parent_sample_id": null,
       "composition": {
         "value": "Ag2S",
@@ -715,10 +891,11 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Atmosphere not reported in the extracted text.",
-      "Amount of N,N,N′,N′-tetramethylethylene diamine not reported in the extracted text."
+      "Amount of N,N,N′,N′-tetramethylethylene diamine not reported in the extracted text.",
+      "Amount of ammonium persulphate not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

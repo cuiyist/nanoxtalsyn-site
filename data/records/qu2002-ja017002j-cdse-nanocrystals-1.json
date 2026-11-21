@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "qu2002-ja017002j-cdse-nanocrystals-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Lianhua Qu and Xiaogang Peng (2002): CdSe nanocrystals",
   "material": {
@@ -177,7 +177,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "mass": {
+          "value": 1.94,
+          "minimum": null,
+          "maximum": null,
+          "unit": "g",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1.94 g",
+          "evidence": [
+            {
+              "source_id": "qu2002-ja017002j",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -196,7 +215,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "mass": {
+          "value": 1.94,
+          "minimum": null,
+          "maximum": null,
+          "unit": "g",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1.94 g",
+          "evidence": [
+            {
+              "source_id": "qu2002-ja017002j",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -291,7 +329,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "mass": {
+          "value": 1.681,
+          "minimum": null,
+          "maximum": null,
+          "unit": "g",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1.681 g",
+          "evidence": [
+            {
+              "source_id": "qu2002-ja017002j",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -321,21 +378,38 @@
       ]
     },
     {
-      "id": "qu2002-ja017002j-cdse-nanocrystals-1--after-s03-inject",
+      "id": "qu2002-ja017002j-cdse-nanocrystals-1--after-d2-s03-heat",
       "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
-        "qu2002-ja017002j-cdse-nanocrystals-1--after-s02-cool",
+        "qu2002-ja017002j-cdse-nanocrystals-1--after-s02-cool"
+      ]
+    },
+    {
+      "id": "qu2002-ja017002j-cdse-nanocrystals-1--after-s03-inject",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "qu2002-ja017002j-cdse-nanocrystals-1--after-d2-s03-heat",
         "qu2002-ja017002j-cdse-nanocrystals-1--se",
-        "qu2002-ja017002j-cdse-nanocrystals-1--dioctylamine"
+        "qu2002-ja017002j-cdse-nanocrystals-1--dioctylamine",
+        "qu2002-ja017002j-cdse-nanocrystals-1--tributylphosphine-tbp"
       ]
     },
     {
       "id": "qu2002-ja017002j-cdse-nanocrystals-1--after-s04-cool",
-      "name": "mixture after step 4",
+      "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
         "qu2002-ja017002j-cdse-nanocrystals-1--after-s03-inject"
+      ]
+    },
+    {
+      "id": "qu2002-ja017002j-cdse-nanocrystals-1--after-d2-s06-centrifuge",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "qu2002-ja017002j-cdse-nanocrystals-1--after-s04-cool"
       ]
     },
     {
@@ -343,7 +417,7 @@
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "qu2002-ja017002j-cdse-nanocrystals-1--after-s04-cool"
+        "qu2002-ja017002j-cdse-nanocrystals-1--after-d2-s06-centrifuge"
       ]
     }
   ],
@@ -425,7 +499,26 @@
       "outputs": [
         "qu2002-ja017002j-cdse-nanocrystals-1--after-s02-cool"
       ],
-      "parameters": {},
+      "parameters": {
+        "temperature": {
+          "value": 30,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "30 °C",
+          "evidence": [
+            {
+              "source_id": "qu2002-ja017002j",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "environment": {
         "value": "Ar",
         "status": "reported",
@@ -453,9 +546,9 @@
       ]
     },
     {
-      "id": "s03-inject",
-      "action": "inject",
-      "label": "Inject Se solution",
+      "id": "d2-s03-heat",
+      "action": "heat",
+      "label": "Heat to 320°C",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -463,9 +556,72 @@
         "s02-cool"
       ],
       "inputs": [
-        "qu2002-ja017002j-cdse-nanocrystals-1--after-s02-cool",
+        "qu2002-ja017002j-cdse-nanocrystals-1--after-s02-cool"
+      ],
+      "outputs": [
+        "qu2002-ja017002j-cdse-nanocrystals-1--after-d2-s03-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 320,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "320 °C",
+          "evidence": [
+            {
+              "source_id": "qu2002-ja017002j",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "qu2002-ja017002j",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heat to 320°C",
+      "evidence": [
+        {
+          "source_id": "qu2002-ja017002j",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s03-inject",
+      "action": "inject",
+      "label": "Inject Se solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-heat"
+      ],
+      "inputs": [
+        "qu2002-ja017002j-cdse-nanocrystals-1--after-d2-s03-heat",
         "qu2002-ja017002j-cdse-nanocrystals-1--se",
-        "qu2002-ja017002j-cdse-nanocrystals-1--dioctylamine"
+        "qu2002-ja017002j-cdse-nanocrystals-1--dioctylamine",
+        "qu2002-ja017002j-cdse-nanocrystals-1--tributylphosphine-tbp"
       ],
       "outputs": [
         "qu2002-ja017002j-cdse-nanocrystals-1--after-s03-inject"
@@ -579,9 +735,9 @@
       ]
     },
     {
-      "id": "s05-precipitate",
-      "action": "precipitate",
-      "label": "Precipitate nanocrystals with methanol or acetone",
+      "id": "d2-s06-centrifuge",
+      "action": "centrifuge",
+      "label": "Separate nanocrystals from insoluble solid",
       "stage": "workup",
       "branch": "",
       "optional": false,
@@ -590,6 +746,44 @@
       ],
       "inputs": [
         "qu2002-ja017002j-cdse-nanocrystals-1--after-s04-cool"
+      ],
+      "outputs": [
+        "qu2002-ja017002j-cdse-nanocrystals-1--after-d2-s06-centrifuge"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Separate nanocrystals from insoluble solid",
+      "evidence": [
+        {
+          "source_id": "qu2002-ja017002j",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s05-precipitate",
+      "action": "precipitate",
+      "label": "Precipitate nanocrystals with methanol or acetone",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s06-centrifuge"
+      ],
+      "inputs": [
+        "qu2002-ja017002j-cdse-nanocrystals-1--after-d2-s06-centrifuge"
       ],
       "outputs": [
         "qu2002-ja017002j-cdse-nanocrystals-1--after-s05-precipitate"
@@ -714,17 +908,46 @@
           "locator": "Main PDF p.5"
         }
       ]
+    },
+    {
+      "id": "qu2002-ja017002j-cdse-nanocrystals-1--photoluminescence-quantum-yield",
+      "sample_id": "qu2002-ja017002j-cdse-nanocrystals-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 85,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "85 %",
+        "evidence": [
+          {
+            "source_id": "qu2002-ja017002j",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "qu2002-ja017002j",
+          "locator": "Main PDF p.1"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
-      "Reaction time not reported in the extracted text.",
-      "Amount of TOPO not reported in the extracted text.",
-      "Amount of hexadecylamine not reported in the extracted text.",
-      "Amount of dioctylamine not reported in the extracted text."
+      "Reaction time not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "zhenfu2018-acs-jpcc-8b03721-mapbbr3-qds-mshss-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Zhao Zhenfu; Wu Zhihai; Cheng Jiong; Jing Liang; Hou Yafei (2018): MAPbBr3 QDs-MSHSs",
   "material": {
@@ -292,6 +292,25 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "zhenfu2018-acs-jpcc-8b03721-mapbbr3-qds-mshss-1--perovskite-precursor-solution",
+      "name": "perovskite precursor solution",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zhenfu2018-acs-jpcc-8b03721",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -314,7 +333,8 @@
       "kind": "reaction_batch",
       "parent_ids": [
         "zhenfu2018-acs-jpcc-8b03721-mapbbr3-qds-mshss-1--after-s01-dissolve",
-        "zhenfu2018-acs-jpcc-8b03721-mapbbr3-qds-mshss-1--toluene"
+        "zhenfu2018-acs-jpcc-8b03721-mapbbr3-qds-mshss-1--toluene",
+        "zhenfu2018-acs-jpcc-8b03721-mapbbr3-qds-mshss-1--perovskite-precursor-solution"
       ]
     },
     {
@@ -392,7 +412,8 @@
       ],
       "inputs": [
         "zhenfu2018-acs-jpcc-8b03721-mapbbr3-qds-mshss-1--after-s01-dissolve",
-        "zhenfu2018-acs-jpcc-8b03721-mapbbr3-qds-mshss-1--toluene"
+        "zhenfu2018-acs-jpcc-8b03721-mapbbr3-qds-mshss-1--toluene",
+        "zhenfu2018-acs-jpcc-8b03721-mapbbr3-qds-mshss-1--perovskite-precursor-solution"
       ],
       "outputs": [
         "zhenfu2018-acs-jpcc-8b03721-mapbbr3-qds-mshss-1--after-s02-drop"
@@ -497,7 +518,26 @@
       "outputs": [
         "zhenfu2018-acs-jpcc-8b03721-mapbbr3-qds-mshss-1--after-s04-centrifuge"
       ],
-      "parameters": {},
+      "parameters": {
+        "duration": {
+          "value": 5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "5 min",
+          "evidence": [
+            {
+              "source_id": "zhenfu2018-acs-jpcc-8b03721",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "environment": {
         "value": null,
         "status": "not_reported",
@@ -581,15 +621,81 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "zhenfu2018-acs-jpcc-8b03721-mapbbr3-qds-mshss-1--photoluminescence-peak",
+      "sample_id": "zhenfu2018-acs-jpcc-8b03721-mapbbr3-qds-mshss-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 519,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "519 nm",
+        "evidence": [
+          {
+            "source_id": "zhenfu2018-acs-jpcc-8b03721",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "zhenfu2018-acs-jpcc-8b03721",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    },
+    {
+      "id": "zhenfu2018-acs-jpcc-8b03721-mapbbr3-qds-mshss-1--photoluminescence-quantum-yield",
+      "sample_id": "zhenfu2018-acs-jpcc-8b03721-mapbbr3-qds-mshss-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 82,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "82 %",
+        "evidence": [
+          {
+            "source_id": "zhenfu2018-acs-jpcc-8b03721",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "zhenfu2018-acs-jpcc-8b03721",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Size not reported in the extracted text.",
-      "Amount of octylamine not reported in the extracted text."
+      "Amount of octylamine not reported in the extracted text.",
+      "Amount of perovskite precursor solution not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

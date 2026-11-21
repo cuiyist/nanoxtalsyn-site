@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "gooding2008-nn7003469-cdse-cds-zns-nanocrystals-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Ann K. Gooding (2008): CdSe/CdS/ZnS nanocrystals",
   "material": {
@@ -241,6 +241,101 @@
           "locator": "Main PDF p.7"
         }
       ]
+    },
+    {
+      "id": "gooding2008-nn7003469-cdse-cds-zns-nanocrystals-1--zinc",
+      "name": "zinc",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "gooding2008-nn7003469",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "gooding2008-nn7003469-cdse-cds-zns-nanocrystals-1--chloroform",
+      "name": "chloroform",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "gooding2008-nn7003469",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "gooding2008-nn7003469-cdse-cds-zns-nanocrystals-1--ethanol",
+      "name": "ethanol",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "gooding2008-nn7003469",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "gooding2008-nn7003469-cdse-cds-zns-nanocrystals-1--1-2-ethanedithiol",
+      "name": "1,2-ethanedithiol",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "gooding2008-nn7003469",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "gooding2008-nn7003469-cdse-cds-zns-nanocrystals-1--tetrabutylammonium-hexafluorophosphate",
+      "name": "tetrabutylammonium hexafluorophosphate",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "gooding2008-nn7003469",
+          "locator": "Main PDF p.7"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -265,21 +360,32 @@
       "kind": "reaction_batch",
       "parent_ids": [
         "gooding2008-nn7003469-cdse-cds-zns-nanocrystals-1--after-s02-heat",
-        "gooding2008-nn7003469-cdse-cds-zns-nanocrystals-1--oleic-acid"
+        "gooding2008-nn7003469-cdse-cds-zns-nanocrystals-1--oleic-acid",
+        "gooding2008-nn7003469-cdse-cds-zns-nanocrystals-1--zinc"
       ]
     },
     {
-      "id": "gooding2008-nn7003469-cdse-cds-zns-nanocrystals-1--after-s04-inject",
+      "id": "gooding2008-nn7003469-cdse-cds-zns-nanocrystals-1--after-d2-s04-anneal",
       "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
         "gooding2008-nn7003469-cdse-cds-zns-nanocrystals-1--after-s03-inject",
-        "gooding2008-nn7003469-cdse-cds-zns-nanocrystals-1--oleic-acid"
+        "gooding2008-nn7003469-cdse-cds-zns-nanocrystals-1--elemental-sulfur"
+      ]
+    },
+    {
+      "id": "gooding2008-nn7003469-cdse-cds-zns-nanocrystals-1--after-s04-inject",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "gooding2008-nn7003469-cdse-cds-zns-nanocrystals-1--after-d2-s04-anneal",
+        "gooding2008-nn7003469-cdse-cds-zns-nanocrystals-1--oleic-acid",
+        "gooding2008-nn7003469-cdse-cds-zns-nanocrystals-1--zinc"
       ]
     },
     {
       "id": "gooding2008-nn7003469-cdse-cds-zns-nanocrystals-1--after-s05-anneal",
-      "name": "mixture after step 5",
+      "name": "mixture after step 6",
       "kind": "reaction_batch",
       "parent_ids": [
         "gooding2008-nn7003469-cdse-cds-zns-nanocrystals-1--after-s04-inject"
@@ -287,10 +393,26 @@
     },
     {
       "id": "gooding2008-nn7003469-cdse-cds-zns-nanocrystals-1--after-s06-anneal",
+      "name": "mixture after step 7",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "gooding2008-nn7003469-cdse-cds-zns-nanocrystals-1--after-s05-anneal"
+      ]
+    },
+    {
+      "id": "gooding2008-nn7003469-cdse-cds-zns-nanocrystals-1--after-d2-s08-deposit",
+      "name": "mixture after step 8",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "gooding2008-nn7003469-cdse-cds-zns-nanocrystals-1--after-s06-anneal"
+      ]
+    },
+    {
+      "id": "gooding2008-nn7003469-cdse-cds-zns-nanocrystals-1--after-d2-s09-immersion",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "gooding2008-nn7003469-cdse-cds-zns-nanocrystals-1--after-s05-anneal"
+        "gooding2008-nn7003469-cdse-cds-zns-nanocrystals-1--after-d2-s08-deposit"
       ]
     }
   ],
@@ -445,7 +567,8 @@
       ],
       "inputs": [
         "gooding2008-nn7003469-cdse-cds-zns-nanocrystals-1--after-s02-heat",
-        "gooding2008-nn7003469-cdse-cds-zns-nanocrystals-1--oleic-acid"
+        "gooding2008-nn7003469-cdse-cds-zns-nanocrystals-1--oleic-acid",
+        "gooding2008-nn7003469-cdse-cds-zns-nanocrystals-1--zinc"
       ],
       "outputs": [
         "gooding2008-nn7003469-cdse-cds-zns-nanocrystals-1--after-s03-inject"
@@ -497,9 +620,9 @@
       ]
     },
     {
-      "id": "s04-inject",
-      "action": "inject",
-      "label": "Injection of zinc/TMPPA and OA",
+      "id": "d2-s04-anneal",
+      "action": "anneal",
+      "label": "Annealing the solution at 235 °C",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -508,7 +631,89 @@
       ],
       "inputs": [
         "gooding2008-nn7003469-cdse-cds-zns-nanocrystals-1--after-s03-inject",
-        "gooding2008-nn7003469-cdse-cds-zns-nanocrystals-1--oleic-acid"
+        "gooding2008-nn7003469-cdse-cds-zns-nanocrystals-1--elemental-sulfur"
+      ],
+      "outputs": [
+        "gooding2008-nn7003469-cdse-cds-zns-nanocrystals-1--after-d2-s04-anneal"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 235,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "235 °C",
+          "evidence": [
+            {
+              "source_id": "gooding2008-nn7003469",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 30,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "30 min",
+          "evidence": [
+            {
+              "source_id": "gooding2008-nn7003469",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "gooding2008-nn7003469",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Annealing the solution at 235 °C",
+      "evidence": [
+        {
+          "source_id": "gooding2008-nn7003469",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "s04-inject",
+      "action": "inject",
+      "label": "Injection of zinc/TMPPA and OA",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-anneal"
+      ],
+      "inputs": [
+        "gooding2008-nn7003469-cdse-cds-zns-nanocrystals-1--after-d2-s04-anneal",
+        "gooding2008-nn7003469-cdse-cds-zns-nanocrystals-1--oleic-acid",
+        "gooding2008-nn7003469-cdse-cds-zns-nanocrystals-1--zinc"
       ],
       "outputs": [
         "gooding2008-nn7003469-cdse-cds-zns-nanocrystals-1--after-s04-inject"
@@ -699,6 +904,111 @@
           "locator": "Main PDF p.7"
         }
       ]
+    },
+    {
+      "id": "d2-s08-deposit",
+      "action": "deposit",
+      "label": "Deposition of a gold film on a glass substrate",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s06-anneal"
+      ],
+      "inputs": [
+        "gooding2008-nn7003469-cdse-cds-zns-nanocrystals-1--after-s06-anneal"
+      ],
+      "outputs": [
+        "gooding2008-nn7003469-cdse-cds-zns-nanocrystals-1--after-d2-s08-deposit"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "gooding2008-nn7003469",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Deposition of a gold film on a glass substrate",
+      "evidence": [
+        {
+          "source_id": "gooding2008-nn7003469",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "d2-s09-immersion",
+      "action": "immersion",
+      "label": "Immersion in NC solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s08-deposit"
+      ],
+      "inputs": [
+        "gooding2008-nn7003469-cdse-cds-zns-nanocrystals-1--after-d2-s08-deposit"
+      ],
+      "outputs": [
+        "gooding2008-nn7003469-cdse-cds-zns-nanocrystals-1--after-d2-s09-immersion"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 h",
+          "evidence": [
+            {
+              "source_id": "gooding2008-nn7003469",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "gooding2008-nn7003469",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Immersion in NC solution",
+      "evidence": [
+        {
+          "source_id": "gooding2008-nn7003469",
+          "locator": "Main PDF p.7"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -707,7 +1017,7 @@
       "sample_id": "gooding2008-nn7003469-cdse-cds-zns-nanocrystals-1--product",
       "source_sample_label": "CdSe/CdS/ZnS nanocrystals",
       "batch_id": null,
-      "material_state_id": "gooding2008-nn7003469-cdse-cds-zns-nanocrystals-1--after-s06-anneal",
+      "material_state_id": "gooding2008-nn7003469-cdse-cds-zns-nanocrystals-1--after-d2-s09-immersion",
       "parent_sample_id": null,
       "composition": {
         "value": "CdSe/CdS/ZnS",
@@ -794,12 +1104,44 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "gooding2008-nn7003469-cdse-cds-zns-nanocrystals-1--photoluminescence-peak",
+      "sample_id": "gooding2008-nn7003469-cdse-cds-zns-nanocrystals-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 618,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "618 nm",
+        "evidence": [
+          {
+            "source_id": "gooding2008-nn7003469",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "gooding2008-nn7003469",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Amount of cadmium oxide not reported in the extracted text.",
@@ -809,7 +1151,12 @@
       "Amount of trioctylphosphine not reported in the extracted text.",
       "Amount of octadecylamine not reported in the extracted text.",
       "Amount of bis(2,2,4-trimethylpentyl) phosphinic acid not reported in the extracted text.",
-      "Amount of elemental sulfur not reported in the extracted text."
+      "Amount of elemental sulfur not reported in the extracted text.",
+      "Amount of zinc not reported in the extracted text.",
+      "Amount of chloroform not reported in the extracted text.",
+      "Amount of ethanol not reported in the extracted text.",
+      "Amount of 1,2-ethanedithiol not reported in the extracted text.",
+      "Amount of tetrabutylammonium hexafluorophosphate not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

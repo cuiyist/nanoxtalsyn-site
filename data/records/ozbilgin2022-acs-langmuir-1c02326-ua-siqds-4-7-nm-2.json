@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "ozbilgin2022-acs-langmuir-1c02326-ua-siqds-4-7-nm-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "İrem Nur Gamze Özbilgin; Tomohiko Yamazaki; Junpei Watanabe; Hong-Tao Sun; Nobutaka Hanagata; Naoto Shirahata (2022): UA:SiQDs (4.7 nm)",
   "material": {
@@ -198,6 +198,44 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "ozbilgin2022-acs-langmuir-1c02326-ua-siqds-4-7-nm-2--dichloromethane",
+      "name": "dichloromethane",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "ozbilgin2022-acs-langmuir-1c02326",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "ozbilgin2022-acs-langmuir-1c02326-ua-siqds-4-7-nm-2--acetonitrile",
+      "name": "acetonitrile",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "ozbilgin2022-acs-langmuir-1c02326",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -227,7 +265,8 @@
       "kind": "reaction_batch",
       "parent_ids": [
         "ozbilgin2022-acs-langmuir-1c02326-ua-siqds-4-7-nm-2--after-s02-etch",
-        "ozbilgin2022-acs-langmuir-1c02326-ua-siqds-4-7-nm-2--ethanol"
+        "ozbilgin2022-acs-langmuir-1c02326-ua-siqds-4-7-nm-2--ethanol",
+        "ozbilgin2022-acs-langmuir-1c02326-ua-siqds-4-7-nm-2--acetonitrile"
       ]
     },
     {
@@ -235,7 +274,8 @@
       "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
-        "ozbilgin2022-acs-langmuir-1c02326-ua-siqds-4-7-nm-2--after-s03-centrifuge"
+        "ozbilgin2022-acs-langmuir-1c02326-ua-siqds-4-7-nm-2--after-s03-centrifuge",
+        "ozbilgin2022-acs-langmuir-1c02326-ua-siqds-4-7-nm-2--dichloromethane"
       ]
     },
     {
@@ -253,7 +293,8 @@
       "kind": "reaction_batch",
       "parent_ids": [
         "ozbilgin2022-acs-langmuir-1c02326-ua-siqds-4-7-nm-2--after-s05-degas",
-        "ozbilgin2022-acs-langmuir-1c02326-ua-siqds-4-7-nm-2--10-undecenoic-acid"
+        "ozbilgin2022-acs-langmuir-1c02326-ua-siqds-4-7-nm-2--10-undecenoic-acid",
+        "ozbilgin2022-acs-langmuir-1c02326-ua-siqds-4-7-nm-2--dichloromethane"
       ]
     },
     {
@@ -291,10 +332,19 @@
     },
     {
       "id": "ozbilgin2022-acs-langmuir-1c02326-ua-siqds-4-7-nm-2--after-s11-dissolve",
+      "name": "mixture after step 11",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "ozbilgin2022-acs-langmuir-1c02326-ua-siqds-4-7-nm-2--after-s10-centrifuge",
+        "ozbilgin2022-acs-langmuir-1c02326-ua-siqds-4-7-nm-2--ethanol"
+      ]
+    },
+    {
+      "id": "ozbilgin2022-acs-langmuir-1c02326-ua-siqds-4-7-nm-2--after-d2-s12-evaporate",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "ozbilgin2022-acs-langmuir-1c02326-ua-siqds-4-7-nm-2--after-s10-centrifuge",
+        "ozbilgin2022-acs-langmuir-1c02326-ua-siqds-4-7-nm-2--after-s11-dissolve",
         "ozbilgin2022-acs-langmuir-1c02326-ua-siqds-4-7-nm-2--ethanol"
       ]
     }
@@ -317,9 +367,14 @@
       ],
       "parameters": {},
       "environment": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "5/95% H2/Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "ozbilgin2022-acs-langmuir-1c02326",
+            "locator": "Main PDF p.2"
+          }
+        ],
         "note": ""
       },
       "endpoint": {
@@ -376,9 +431,14 @@
         }
       },
       "environment": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "5/95% H2/Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "ozbilgin2022-acs-langmuir-1c02326",
+            "locator": "Main PDF p.2"
+          }
+        ],
         "note": ""
       },
       "endpoint": {
@@ -408,7 +468,8 @@
       ],
       "inputs": [
         "ozbilgin2022-acs-langmuir-1c02326-ua-siqds-4-7-nm-2--after-s02-etch",
-        "ozbilgin2022-acs-langmuir-1c02326-ua-siqds-4-7-nm-2--ethanol"
+        "ozbilgin2022-acs-langmuir-1c02326-ua-siqds-4-7-nm-2--ethanol",
+        "ozbilgin2022-acs-langmuir-1c02326-ua-siqds-4-7-nm-2--acetonitrile"
       ],
       "outputs": [
         "ozbilgin2022-acs-langmuir-1c02326-ua-siqds-4-7-nm-2--after-s03-centrifuge"
@@ -483,16 +544,22 @@
         "s03-centrifuge"
       ],
       "inputs": [
-        "ozbilgin2022-acs-langmuir-1c02326-ua-siqds-4-7-nm-2--after-s03-centrifuge"
+        "ozbilgin2022-acs-langmuir-1c02326-ua-siqds-4-7-nm-2--after-s03-centrifuge",
+        "ozbilgin2022-acs-langmuir-1c02326-ua-siqds-4-7-nm-2--dichloromethane"
       ],
       "outputs": [
         "ozbilgin2022-acs-langmuir-1c02326-ua-siqds-4-7-nm-2--after-s04-disperse"
       ],
       "parameters": {},
       "environment": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "5/95% H2/Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "ozbilgin2022-acs-langmuir-1c02326",
+            "locator": "Main PDF p.2"
+          }
+        ],
         "note": ""
       },
       "endpoint": {
@@ -566,9 +633,14 @@
         }
       },
       "environment": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "5/95% H2/Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "ozbilgin2022-acs-langmuir-1c02326",
+            "locator": "Main PDF p.2"
+          }
+        ],
         "note": ""
       },
       "endpoint": {
@@ -598,16 +670,22 @@
       ],
       "inputs": [
         "ozbilgin2022-acs-langmuir-1c02326-ua-siqds-4-7-nm-2--after-s05-degas",
-        "ozbilgin2022-acs-langmuir-1c02326-ua-siqds-4-7-nm-2--10-undecenoic-acid"
+        "ozbilgin2022-acs-langmuir-1c02326-ua-siqds-4-7-nm-2--10-undecenoic-acid",
+        "ozbilgin2022-acs-langmuir-1c02326-ua-siqds-4-7-nm-2--dichloromethane"
       ],
       "outputs": [
         "ozbilgin2022-acs-langmuir-1c02326-ua-siqds-4-7-nm-2--after-s06-add"
       ],
       "parameters": {},
       "environment": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "5/95% H2/Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "ozbilgin2022-acs-langmuir-1c02326",
+            "locator": "Main PDF p.2"
+          }
+        ],
         "note": ""
       },
       "endpoint": {
@@ -680,9 +758,14 @@
         }
       },
       "environment": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "5/95% H2/Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "ozbilgin2022-acs-langmuir-1c02326",
+            "locator": "Main PDF p.2"
+          }
+        ],
         "note": ""
       },
       "endpoint": {
@@ -776,9 +859,14 @@
       ],
       "parameters": {},
       "environment": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "5/95% H2/Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "ozbilgin2022-acs-langmuir-1c02326",
+            "locator": "Main PDF p.2"
+          }
+        ],
         "note": ""
       },
       "endpoint": {
@@ -872,9 +960,14 @@
       ],
       "parameters": {},
       "environment": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "5/95% H2/Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "ozbilgin2022-acs-langmuir-1c02326",
+            "locator": "Main PDF p.2"
+          }
+        ],
         "note": ""
       },
       "endpoint": {
@@ -891,6 +984,50 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s12-evaporate",
+      "action": "evaporate",
+      "label": "Evaporate ethanol with vacuum evaporator for solvent exchange",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s11-dissolve"
+      ],
+      "inputs": [
+        "ozbilgin2022-acs-langmuir-1c02326-ua-siqds-4-7-nm-2--after-s11-dissolve",
+        "ozbilgin2022-acs-langmuir-1c02326-ua-siqds-4-7-nm-2--ethanol"
+      ],
+      "outputs": [
+        "ozbilgin2022-acs-langmuir-1c02326-ua-siqds-4-7-nm-2--after-d2-s12-evaporate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "5/95% H2/Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "ozbilgin2022-acs-langmuir-1c02326",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Evaporate ethanol with vacuum evaporator for solvent exchange",
+      "evidence": [
+        {
+          "source_id": "ozbilgin2022-acs-langmuir-1c02326",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -899,7 +1036,7 @@
       "sample_id": "ozbilgin2022-acs-langmuir-1c02326-ua-siqds-4-7-nm-2--product",
       "source_sample_label": "UA:SiQDs (4.7 nm)",
       "batch_id": null,
-      "material_state_id": "ozbilgin2022-acs-langmuir-1c02326-ua-siqds-4-7-nm-2--after-s11-dissolve",
+      "material_state_id": "ozbilgin2022-acs-langmuir-1c02326-ua-siqds-4-7-nm-2--after-d2-s12-evaporate",
       "parent_sample_id": null,
       "composition": {
         "value": "Si",
@@ -952,24 +1089,91 @@
           "locator": "Main PDF p.2"
         }
       ],
-      "notes": []
+      "notes": [
+        "Reactor: custom-made vacuum furnace inside a quartz crucible (Main PDF p.2).",
+        "Reaction temperature: 1190 degC (Main PDF p.?).",
+        "Reaction time: 2 h (Main PDF p.?)."
+      ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "ozbilgin2022-acs-langmuir-1c02326-ua-siqds-4-7-nm-2--photoluminescence-peak",
+      "sample_id": "ozbilgin2022-acs-langmuir-1c02326-ua-siqds-4-7-nm-2--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 680,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "680 nm",
+        "evidence": [
+          {
+            "source_id": "ozbilgin2022-acs-langmuir-1c02326",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "ozbilgin2022-acs-langmuir-1c02326",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    },
+    {
+      "id": "ozbilgin2022-acs-langmuir-1c02326-ua-siqds-4-7-nm-2--photoluminescence-quantum-yield",
+      "sample_id": "ozbilgin2022-acs-langmuir-1c02326-ua-siqds-4-7-nm-2--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 12,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "12 %",
+        "evidence": [
+          {
+            "source_id": "ozbilgin2022-acs-langmuir-1c02326",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "ozbilgin2022-acs-langmuir-1c02326",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Size not reported in the extracted text.",
-      "Reactor not reported in the extracted text.",
-      "Atmosphere not reported in the extracted text.",
-      "Reaction temperature not reported in the extracted text.",
-      "Reaction time not reported in the extracted text.",
       "Amount of triethoxysilane not reported in the extracted text.",
       "Amount of hydrochloric acid not reported in the extracted text.",
       "Amount of ethanol not reported in the extracted text.",
-      "Amount of hydrofluoric acid not reported in the extracted text."
+      "Amount of hydrofluoric acid not reported in the extracted text.",
+      "Amount of dichloromethane not reported in the extracted text.",
+      "Amount of acetonitrile not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Chenghui Xia; Johannes D. Meeldijk; Hans C. Gerritsen; Celso de Mello Donega (2017): WZ CIS/ZnS core/shell QDs",
   "material": {
@@ -53,9 +53,14 @@
       "note": ""
     },
     "phase": {
-      "value": null,
-      "status": "not_reported",
-      "evidence": [],
+      "value": "wurtzite",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "xia2017-acs-chemmater-7b01258",
+          "locator": "Main PDF p.2"
+        }
+      ],
       "note": ""
     },
     "size": {
@@ -270,7 +275,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "amount": {
+          "value": 0.09,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.09 mmol",
+          "evidence": [
+            {
+              "source_id": "xia2017-acs-chemmater-7b01258",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -392,6 +416,25 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--deionized-water",
+      "name": "deionized water",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "xia2017-acs-chemmater-7b01258",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -407,17 +450,25 @@
       ]
     },
     {
-      "id": "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s02-inject",
+      "id": "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-d2-s02-purge",
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
-        "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s01-heat",
+        "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s01-heat"
+      ]
+    },
+    {
+      "id": "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s02-inject",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-d2-s02-purge",
         "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--1-dodecanethiol"
       ]
     },
     {
       "id": "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s03-heat",
-      "name": "mixture after step 3",
+      "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
         "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s02-inject"
@@ -425,7 +476,7 @@
     },
     {
       "id": "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s04-cool",
-      "name": "mixture after step 4",
+      "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
         "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s03-heat"
@@ -433,7 +484,7 @@
     },
     {
       "id": "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s05-dissolve",
-      "name": "mixture after step 5",
+      "name": "mixture after step 6",
       "kind": "reaction_batch",
       "parent_ids": [
         "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s04-cool"
@@ -441,7 +492,7 @@
     },
     {
       "id": "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s06-dilute",
-      "name": "mixture after step 6",
+      "name": "mixture after step 7",
       "kind": "reaction_batch",
       "parent_ids": [
         "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s05-dissolve"
@@ -449,7 +500,7 @@
     },
     {
       "id": "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s07-add",
-      "name": "mixture after step 7",
+      "name": "mixture after step 8",
       "kind": "reaction_batch",
       "parent_ids": [
         "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s06-dilute",
@@ -459,7 +510,7 @@
     },
     {
       "id": "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s08-heat",
-      "name": "mixture after step 8",
+      "name": "mixture after step 9",
       "kind": "reaction_batch",
       "parent_ids": [
         "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s07-add"
@@ -467,7 +518,7 @@
     },
     {
       "id": "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s09-degas",
-      "name": "mixture after step 9",
+      "name": "mixture after step 10",
       "kind": "reaction_batch",
       "parent_ids": [
         "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s08-heat"
@@ -475,7 +526,7 @@
     },
     {
       "id": "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s10-heat",
-      "name": "mixture after step 10",
+      "name": "mixture after step 11",
       "kind": "reaction_batch",
       "parent_ids": [
         "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s09-degas"
@@ -483,7 +534,7 @@
     },
     {
       "id": "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s11-cool",
-      "name": "mixture after step 11",
+      "name": "mixture after step 12",
       "kind": "reaction_batch",
       "parent_ids": [
         "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s10-heat"
@@ -491,7 +542,7 @@
     },
     {
       "id": "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s12-centrifuge",
-      "name": "mixture after step 12",
+      "name": "mixture after step 13",
       "kind": "reaction_batch",
       "parent_ids": [
         "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s11-cool"
@@ -499,41 +550,61 @@
     },
     {
       "id": "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s13-dissolve",
-      "name": "mixture after step 13",
+      "name": "mixture after step 14",
       "kind": "reaction_batch",
       "parent_ids": [
         "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s12-centrifuge"
       ]
     },
     {
-      "id": "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s14-heat",
-      "name": "mixture after step 14",
+      "id": "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-d2-s15-prepare",
+      "name": "mixture after step 15",
       "kind": "reaction_batch",
       "parent_ids": [
         "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s13-dissolve",
+        "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--zinc-stearate",
+        "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--elemental-sulfur",
+        "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--trioctylphosphine",
+        "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--1-octadecene"
+      ]
+    },
+    {
+      "id": "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s14-heat",
+      "name": "mixture after step 16",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-d2-s15-prepare",
         "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--zinc-stearate",
         "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--elemental-sulfur"
       ]
     },
     {
       "id": "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s15-cool",
-      "name": "mixture after step 15",
+      "name": "mixture after step 17",
       "kind": "reaction_batch",
       "parent_ids": [
         "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s14-heat"
       ]
     },
     {
-      "id": "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s16-centrifuge",
-      "name": "mixture after step 16",
+      "id": "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-d2-s18-add",
+      "name": "mixture after step 18",
       "kind": "reaction_batch",
       "parent_ids": [
         "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s15-cool"
       ]
     },
     {
+      "id": "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s16-centrifuge",
+      "name": "mixture after step 19",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-d2-s18-add"
+      ]
+    },
+    {
       "id": "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s17-dissolve",
-      "name": "mixture after step 17",
+      "name": "mixture after step 20",
       "kind": "reaction_batch",
       "parent_ids": [
         "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s16-centrifuge"
@@ -541,18 +612,37 @@
     },
     {
       "id": "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s18-repeat",
-      "name": "mixture after step 18",
+      "name": "mixture after step 21",
       "kind": "reaction_batch",
       "parent_ids": [
         "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s17-dissolve"
       ]
     },
     {
-      "id": "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s19-dissolve",
-      "name": "mixture after step 19",
+      "id": "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-d2-s22-prepare",
+      "name": "mixture after step 22",
       "kind": "reaction_batch",
       "parent_ids": [
-        "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s18-repeat"
+        "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s18-repeat",
+        "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--mercaptoundecanoic-acid",
+        "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--deionized-water"
+      ]
+    },
+    {
+      "id": "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s19-dissolve",
+      "name": "mixture after step 23",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-d2-s22-prepare"
+      ]
+    },
+    {
+      "id": "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-d2-s24-mix",
+      "name": "mixture after step 24",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s19-dissolve",
+        "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--mercaptoundecanoic-acid"
       ]
     },
     {
@@ -560,7 +650,7 @@
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s19-dissolve"
+        "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-d2-s24-mix"
       ]
     }
   ],
@@ -646,9 +736,9 @@
       ]
     },
     {
-      "id": "s02-inject",
-      "action": "inject",
-      "label": "Injection of 1-dodecanethiol",
+      "id": "d2-s02-purge",
+      "action": "purge",
+      "label": "Purge",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -656,7 +746,50 @@
         "s01-heat"
       ],
       "inputs": [
-        "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s01-heat",
+        "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s01-heat"
+      ],
+      "outputs": [
+        "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-d2-s02-purge"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "xia2017-acs-chemmater-7b01258",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Purge",
+      "evidence": [
+        {
+          "source_id": "xia2017-acs-chemmater-7b01258",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-inject",
+      "action": "inject",
+      "label": "Injection of 1-dodecanethiol",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-purge"
+      ],
+      "inputs": [
+        "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-d2-s02-purge",
         "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--1-dodecanethiol"
       ],
       "outputs": [
@@ -804,7 +937,44 @@
       "outputs": [
         "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s04-cool"
       ],
-      "parameters": {},
+      "parameters": {
+        "temperature": {
+          "value": 210,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "210 °C",
+          "evidence": [
+            {
+              "source_id": "xia2017-acs-chemmater-7b01258",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 20,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "20 min",
+          "evidence": [
+            {
+              "source_id": "xia2017-acs-chemmater-7b01258",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "environment": {
         "value": "N2",
         "status": "reported",
@@ -935,7 +1105,26 @@
       "outputs": [
         "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s07-add"
       ],
-      "parameters": {},
+      "parameters": {
+        "duration": {
+          "value": 25,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "25 min",
+          "evidence": [
+            {
+              "source_id": "xia2017-acs-chemmater-7b01258",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "environment": {
         "value": "N2",
         "status": "reported",
@@ -1069,6 +1258,24 @@
           "qualifier": "",
           "basis": "",
           "raw_text": "1 h",
+          "evidence": [
+            {
+              "source_id": "xia2017-acs-chemmater-7b01258",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "temperature": {
+          "value": 120,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "120 °C",
           "evidence": [
             {
               "source_id": "xia2017-acs-chemmater-7b01258",
@@ -1328,9 +1535,9 @@
       ]
     },
     {
-      "id": "s14-heat",
-      "action": "heat",
-      "label": "ZnS shell overgrowth",
+      "id": "d2-s15-prepare",
+      "action": "prepare",
+      "label": "Preparing the ZnS precursor solution",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -1339,6 +1546,72 @@
       ],
       "inputs": [
         "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s13-dissolve",
+        "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--zinc-stearate",
+        "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--elemental-sulfur",
+        "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--trioctylphosphine",
+        "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--1-octadecene"
+      ],
+      "outputs": [
+        "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-d2-s15-prepare"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 150,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "150 °C",
+          "evidence": [
+            {
+              "source_id": "xia2017-acs-chemmater-7b01258",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "xia2017-acs-chemmater-7b01258",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Preparing the ZnS precursor solution",
+      "evidence": [
+        {
+          "source_id": "xia2017-acs-chemmater-7b01258",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s14-heat",
+      "action": "heat",
+      "label": "ZnS shell overgrowth",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s15-prepare"
+      ],
+      "inputs": [
+        "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-d2-s15-prepare",
         "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--zinc-stearate",
         "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--elemental-sulfur"
       ],
@@ -1453,10 +1726,10 @@
       ]
     },
     {
-      "id": "s16-centrifuge",
-      "action": "centrifuge",
-      "label": "Centrifugation for purification",
-      "stage": "workup",
+      "id": "d2-s18-add",
+      "action": "add",
+      "label": "Adding acetone for purification",
+      "stage": "synthesis",
       "branch": "",
       "optional": false,
       "depends_on": [
@@ -1464,6 +1737,68 @@
       ],
       "inputs": [
         "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s15-cool"
+      ],
+      "outputs": [
+        "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-d2-s18-add"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 10,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "10 min",
+          "evidence": [
+            {
+              "source_id": "xia2017-acs-chemmater-7b01258",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "xia2017-acs-chemmater-7b01258",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Adding acetone for purification",
+      "evidence": [
+        {
+          "source_id": "xia2017-acs-chemmater-7b01258",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s16-centrifuge",
+      "action": "centrifuge",
+      "label": "Centrifugation for purification",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s18-add"
+      ],
+      "inputs": [
+        "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-d2-s18-add"
       ],
       "outputs": [
         "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s16-centrifuge"
@@ -1525,7 +1860,26 @@
       "outputs": [
         "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s17-dissolve"
       ],
-      "parameters": {},
+      "parameters": {
+        "duration": {
+          "value": 10,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "10 min",
+          "evidence": [
+            {
+              "source_id": "xia2017-acs-chemmater-7b01258",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "environment": {
         "value": "N2",
         "status": "reported",
@@ -1596,9 +1950,9 @@
       ]
     },
     {
-      "id": "s19-dissolve",
-      "action": "dissolve",
-      "label": "Dissolving CIS/ZnS QDs in chloroform",
+      "id": "d2-s22-prepare",
+      "action": "prepare",
+      "label": "Preparing the MUA solution",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -1606,7 +1960,52 @@
         "s18-repeat"
       ],
       "inputs": [
-        "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s18-repeat"
+        "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s18-repeat",
+        "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--mercaptoundecanoic-acid",
+        "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--deionized-water"
+      ],
+      "outputs": [
+        "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-d2-s22-prepare"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "xia2017-acs-chemmater-7b01258",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Preparing the MUA solution",
+      "evidence": [
+        {
+          "source_id": "xia2017-acs-chemmater-7b01258",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s19-dissolve",
+      "action": "dissolve",
+      "label": "Dissolving CIS/ZnS QDs in chloroform",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s22-prepare"
+      ],
+      "inputs": [
+        "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-d2-s22-prepare"
       ],
       "outputs": [
         "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s19-dissolve"
@@ -1639,6 +2038,69 @@
       ]
     },
     {
+      "id": "d2-s24-mix",
+      "action": "mix",
+      "label": "Mixing with MUA solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s19-dissolve"
+      ],
+      "inputs": [
+        "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s19-dissolve",
+        "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--mercaptoundecanoic-acid"
+      ],
+      "outputs": [
+        "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-d2-s24-mix"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 20,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "20 °C",
+          "evidence": [
+            {
+              "source_id": "xia2017-acs-chemmater-7b01258",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "xia2017-acs-chemmater-7b01258",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Mixing with MUA solution",
+      "evidence": [
+        {
+          "source_id": "xia2017-acs-chemmater-7b01258",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
       "id": "s20-redisperse",
       "action": "redisperse",
       "label": "Redispersing in deionized water",
@@ -1646,10 +2108,10 @@
       "branch": "",
       "optional": false,
       "depends_on": [
-        "s19-dissolve"
+        "d2-s24-mix"
       ],
       "inputs": [
-        "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s19-dissolve"
+        "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-d2-s24-mix"
       ],
       "outputs": [
         "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--after-s20-redisperse"
@@ -1697,9 +2159,14 @@
         "note": ""
       },
       "phase": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "wurtzite",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "xia2017-acs-chemmater-7b01258",
+            "locator": "Main PDF p.2"
+          }
+        ],
         "note": ""
       },
       "morphology": {
@@ -1770,16 +2237,79 @@
           "locator": "Main PDF p.4"
         }
       ]
+    },
+    {
+      "id": "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--photoluminescence-peak",
+      "sample_id": "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 820,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "820 nm",
+        "evidence": [
+          {
+            "source_id": "xia2017-acs-chemmater-7b01258",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "xia2017-acs-chemmater-7b01258",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--photoluminescence-quantum-yield",
+      "sample_id": "xia2017-acs-chemmater-7b01258-wz-cis-zns-core-shell-qds-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 75,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "75 %",
+        "evidence": [
+          {
+            "source_id": "xia2017-acs-chemmater-7b01258",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "xia2017-acs-chemmater-7b01258",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
-      "Phase not reported in the extracted text.",
       "Amount of 1-octadecene not reported in the extracted text.",
-      "Amount of trioctylphosphine not reported in the extracted text."
+      "Amount of deionized water not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "d2na00734g-inp-zns-core-shell-qds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "d2na00734g (n.d.): InP/ZnS core/shell QDs",
   "material": {
@@ -264,6 +264,177 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2na00734g-inp-zns-core-shell-qds-1--zn-oleate",
+      "name": "Zn-oleate",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 1.6,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1.6 mmol",
+          "evidence": [
+            {
+              "source_id": "d2na00734g",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "d2na00734g",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2na00734g-inp-zns-core-shell-qds-1--trioctylphosphine",
+      "name": "trioctylphosphine",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 mL",
+          "evidence": [
+            {
+              "source_id": "d2na00734g",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "d2na00734g",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2na00734g-inp-zns-core-shell-qds-1--tms-3ptop",
+      "name": "(TMS)3P–TOP",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "d2na00734g",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2na00734g-inp-zns-core-shell-qds-1--inp-qd-solution",
+      "name": "InP QD solution",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "d2na00734g",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2na00734g-inp-zns-core-shell-qds-1--acetone",
+      "name": "acetone",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "d2na00734g",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2na00734g-inp-zns-core-shell-qds-1--inp-zns-qds",
+      "name": "InP/ZnS QDs",
+      "formula": null,
+      "role": "starting_particles",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "d2na00734g",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2na00734g-inp-zns-core-shell-qds-1--dmf",
+      "name": "DMF",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "d2na00734g",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -284,7 +455,8 @@
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
-        "d2na00734g-inp-zns-core-shell-qds-1--after-s01-degas"
+        "d2na00734g-inp-zns-core-shell-qds-1--after-s01-degas",
+        "d2na00734g-inp-zns-core-shell-qds-1--tms-3ptop"
       ]
     },
     {
@@ -304,17 +476,42 @@
       ]
     },
     {
-      "id": "d2na00734g-inp-zns-core-shell-qds-1--after-s05-heat",
+      "id": "d2na00734g-inp-zns-core-shell-qds-1--after-d2-s05-mix",
       "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
         "d2na00734g-inp-zns-core-shell-qds-1--after-s04-heat",
+        "d2na00734g-inp-zns-core-shell-qds-1--inp-qd-solution",
+        "d2na00734g-inp-zns-core-shell-qds-1--1-octadecene",
         "d2na00734g-inp-zns-core-shell-qds-1--1-dodecanethiol"
       ]
     },
     {
-      "id": "d2na00734g-inp-zns-core-shell-qds-1--after-s06-cool",
+      "id": "d2na00734g-inp-zns-core-shell-qds-1--after-d2-s06-degas",
       "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "d2na00734g-inp-zns-core-shell-qds-1--after-d2-s05-mix",
+        "d2na00734g-inp-zns-core-shell-qds-1--inp-qd-solution",
+        "d2na00734g-inp-zns-core-shell-qds-1--1-dodecanethiol",
+        "d2na00734g-inp-zns-core-shell-qds-1--zn-oleate",
+        "d2na00734g-inp-zns-core-shell-qds-1--1-octadecene"
+      ]
+    },
+    {
+      "id": "d2na00734g-inp-zns-core-shell-qds-1--after-s05-heat",
+      "name": "mixture after step 7",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "d2na00734g-inp-zns-core-shell-qds-1--after-d2-s06-degas",
+        "d2na00734g-inp-zns-core-shell-qds-1--1-dodecanethiol",
+        "d2na00734g-inp-zns-core-shell-qds-1--inp-qd-solution",
+        "d2na00734g-inp-zns-core-shell-qds-1--zn-oleate"
+      ]
+    },
+    {
+      "id": "d2na00734g-inp-zns-core-shell-qds-1--after-s06-cool",
+      "name": "mixture after step 8",
       "kind": "reaction_batch",
       "parent_ids": [
         "d2na00734g-inp-zns-core-shell-qds-1--after-s05-heat"
@@ -322,27 +519,49 @@
     },
     {
       "id": "d2na00734g-inp-zns-core-shell-qds-1--after-s07-centrifuge",
-      "name": "mixture after step 7",
+      "name": "mixture after step 9",
       "kind": "reaction_batch",
       "parent_ids": [
-        "d2na00734g-inp-zns-core-shell-qds-1--after-s06-cool"
+        "d2na00734g-inp-zns-core-shell-qds-1--after-s06-cool",
+        "d2na00734g-inp-zns-core-shell-qds-1--inp-zns-qds",
+        "d2na00734g-inp-zns-core-shell-qds-1--acetone"
       ]
     },
     {
       "id": "d2na00734g-inp-zns-core-shell-qds-1--after-s08-redisperse",
-      "name": "mixture after step 8",
+      "name": "mixture after step 10",
       "kind": "reaction_batch",
       "parent_ids": [
         "d2na00734g-inp-zns-core-shell-qds-1--after-s07-centrifuge",
-        "d2na00734g-inp-zns-core-shell-qds-1--1-octadecene"
+        "d2na00734g-inp-zns-core-shell-qds-1--1-octadecene",
+        "d2na00734g-inp-zns-core-shell-qds-1--inp-zns-qds"
+      ]
+    },
+    {
+      "id": "d2na00734g-inp-zns-core-shell-qds-1--after-d2-s11-mix",
+      "name": "mixture after step 11",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "d2na00734g-inp-zns-core-shell-qds-1--after-s08-redisperse",
+        "d2na00734g-inp-zns-core-shell-qds-1--inp-zns-qds"
+      ]
+    },
+    {
+      "id": "d2na00734g-inp-zns-core-shell-qds-1--after-d2-s12-ligand-exchange",
+      "name": "mixture after step 12",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "d2na00734g-inp-zns-core-shell-qds-1--after-d2-s11-mix",
+        "d2na00734g-inp-zns-core-shell-qds-1--inp-zns-qds"
       ]
     },
     {
       "id": "d2na00734g-inp-zns-core-shell-qds-1--after-s09-centrifuge",
-      "name": "mixture after step 9",
+      "name": "mixture after step 13",
       "kind": "reaction_batch",
       "parent_ids": [
-        "d2na00734g-inp-zns-core-shell-qds-1--after-s08-redisperse"
+        "d2na00734g-inp-zns-core-shell-qds-1--after-d2-s12-ligand-exchange",
+        "d2na00734g-inp-zns-core-shell-qds-1--inp-zns-qds"
       ]
     },
     {
@@ -350,7 +569,9 @@
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "d2na00734g-inp-zns-core-shell-qds-1--after-s09-centrifuge"
+        "d2na00734g-inp-zns-core-shell-qds-1--after-s09-centrifuge",
+        "d2na00734g-inp-zns-core-shell-qds-1--inp-zns-qds",
+        "d2na00734g-inp-zns-core-shell-qds-1--dmf"
       ]
     }
   ],
@@ -447,7 +668,8 @@
         "s01-degas"
       ],
       "inputs": [
-        "d2na00734g-inp-zns-core-shell-qds-1--after-s01-degas"
+        "d2na00734g-inp-zns-core-shell-qds-1--after-s01-degas",
+        "d2na00734g-inp-zns-core-shell-qds-1--tms-3ptop"
       ],
       "outputs": [
         "d2na00734g-inp-zns-core-shell-qds-1--after-s02-heat"
@@ -677,9 +899,9 @@
       ]
     },
     {
-      "id": "s05-heat",
-      "action": "heat",
-      "label": "Heating to 240 °C",
+      "id": "d2-s05-mix",
+      "action": "mix",
+      "label": "Mixing InP QD solution with Zn-oleate and DDT",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -688,7 +910,139 @@
       ],
       "inputs": [
         "d2na00734g-inp-zns-core-shell-qds-1--after-s04-heat",
+        "d2na00734g-inp-zns-core-shell-qds-1--inp-qd-solution",
+        "d2na00734g-inp-zns-core-shell-qds-1--1-octadecene",
         "d2na00734g-inp-zns-core-shell-qds-1--1-dodecanethiol"
+      ],
+      "outputs": [
+        "d2na00734g-inp-zns-core-shell-qds-1--after-d2-s05-mix"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "d2na00734g",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Mixing InP QD solution with Zn-oleate and DDT",
+      "evidence": [
+        {
+          "source_id": "d2na00734g",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s06-degas",
+      "action": "degas",
+      "label": "Degassing of the mixture",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s05-mix"
+      ],
+      "inputs": [
+        "d2na00734g-inp-zns-core-shell-qds-1--after-d2-s05-mix",
+        "d2na00734g-inp-zns-core-shell-qds-1--inp-qd-solution",
+        "d2na00734g-inp-zns-core-shell-qds-1--1-dodecanethiol",
+        "d2na00734g-inp-zns-core-shell-qds-1--zn-oleate",
+        "d2na00734g-inp-zns-core-shell-qds-1--1-octadecene"
+      ],
+      "outputs": [
+        "d2na00734g-inp-zns-core-shell-qds-1--after-d2-s06-degas"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 230,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "230 °C",
+          "evidence": [
+            {
+              "source_id": "d2na00734g",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 20,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "20 min",
+          "evidence": [
+            {
+              "source_id": "d2na00734g",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "d2na00734g",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Degassing of the mixture",
+      "evidence": [
+        {
+          "source_id": "d2na00734g",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s05-heat",
+      "action": "heat",
+      "label": "Heating to 240 °C",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s06-degas"
+      ],
+      "inputs": [
+        "d2na00734g-inp-zns-core-shell-qds-1--after-d2-s06-degas",
+        "d2na00734g-inp-zns-core-shell-qds-1--1-dodecanethiol",
+        "d2na00734g-inp-zns-core-shell-qds-1--inp-qd-solution",
+        "d2na00734g-inp-zns-core-shell-qds-1--zn-oleate"
       ],
       "outputs": [
         "d2na00734g-inp-zns-core-shell-qds-1--after-s05-heat"
@@ -812,7 +1166,9 @@
         "s06-cool"
       ],
       "inputs": [
-        "d2na00734g-inp-zns-core-shell-qds-1--after-s06-cool"
+        "d2na00734g-inp-zns-core-shell-qds-1--after-s06-cool",
+        "d2na00734g-inp-zns-core-shell-qds-1--inp-zns-qds",
+        "d2na00734g-inp-zns-core-shell-qds-1--acetone"
       ],
       "outputs": [
         "d2na00734g-inp-zns-core-shell-qds-1--after-s07-centrifuge"
@@ -828,6 +1184,24 @@
           "qualifier": "",
           "basis": "",
           "raw_text": "10 min",
+          "evidence": [
+            {
+              "source_id": "d2na00734g",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "temperature": {
+          "value": 80,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "80 °C",
           "evidence": [
             {
               "source_id": "d2na00734g",
@@ -870,7 +1244,8 @@
       ],
       "inputs": [
         "d2na00734g-inp-zns-core-shell-qds-1--after-s07-centrifuge",
-        "d2na00734g-inp-zns-core-shell-qds-1--1-octadecene"
+        "d2na00734g-inp-zns-core-shell-qds-1--1-octadecene",
+        "d2na00734g-inp-zns-core-shell-qds-1--inp-zns-qds"
       ],
       "outputs": [
         "d2na00734g-inp-zns-core-shell-qds-1--after-s08-redisperse"
@@ -898,6 +1273,131 @@
       ]
     },
     {
+      "id": "d2-s11-mix",
+      "action": "mix",
+      "label": "Mixing QDs with MCH",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s08-redisperse"
+      ],
+      "inputs": [
+        "d2na00734g-inp-zns-core-shell-qds-1--after-s08-redisperse",
+        "d2na00734g-inp-zns-core-shell-qds-1--inp-zns-qds"
+      ],
+      "outputs": [
+        "d2na00734g-inp-zns-core-shell-qds-1--after-d2-s11-mix"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "d2na00734g",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Mixing QDs with MCH",
+      "evidence": [
+        {
+          "source_id": "d2na00734g",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s12-ligand-exchange",
+      "action": "ligand exchange",
+      "label": "Replacing PA with MCH",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s11-mix"
+      ],
+      "inputs": [
+        "d2na00734g-inp-zns-core-shell-qds-1--after-d2-s11-mix",
+        "d2na00734g-inp-zns-core-shell-qds-1--inp-zns-qds"
+      ],
+      "outputs": [
+        "d2na00734g-inp-zns-core-shell-qds-1--after-d2-s12-ligand-exchange"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 100,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "100 °C",
+          "evidence": [
+            {
+              "source_id": "d2na00734g",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 h",
+          "evidence": [
+            {
+              "source_id": "d2na00734g",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "d2na00734g",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Replacing PA with MCH",
+      "evidence": [
+        {
+          "source_id": "d2na00734g",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
       "id": "s09-centrifuge",
       "action": "centrifuge",
       "label": "Centrifugation for washing",
@@ -905,10 +1405,11 @@
       "branch": "",
       "optional": false,
       "depends_on": [
-        "s08-redisperse"
+        "d2-s12-ligand-exchange"
       ],
       "inputs": [
-        "d2na00734g-inp-zns-core-shell-qds-1--after-s08-redisperse"
+        "d2na00734g-inp-zns-core-shell-qds-1--after-d2-s12-ligand-exchange",
+        "d2na00734g-inp-zns-core-shell-qds-1--inp-zns-qds"
       ],
       "outputs": [
         "d2na00734g-inp-zns-core-shell-qds-1--after-s09-centrifuge"
@@ -965,7 +1466,9 @@
         "s09-centrifuge"
       ],
       "inputs": [
-        "d2na00734g-inp-zns-core-shell-qds-1--after-s09-centrifuge"
+        "d2na00734g-inp-zns-core-shell-qds-1--after-s09-centrifuge",
+        "d2na00734g-inp-zns-core-shell-qds-1--inp-zns-qds",
+        "d2na00734g-inp-zns-core-shell-qds-1--dmf"
       ],
       "outputs": [
         "d2na00734g-inp-zns-core-shell-qds-1--after-s10-redisperse"
@@ -1054,7 +1557,8 @@
       ],
       "notes": [
         "Reaction temperature: 300 degC (Main PDF p.2).",
-        "Reaction time: 3 min (Main PDF p.2)."
+        "Reaction time: 3 min (Main PDF p.2).",
+        "Reactor: 50 mL three-necked flask (Main PDF p.2)."
       ]
     }
   ],
@@ -1090,15 +1594,83 @@
           "locator": "Main PDF p.4"
         }
       ]
+    },
+    {
+      "id": "d2na00734g-inp-zns-core-shell-qds-1--photoluminescence-peak",
+      "sample_id": "d2na00734g-inp-zns-core-shell-qds-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 517,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "517 nm",
+        "evidence": [
+          {
+            "source_id": "d2na00734g",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "d2na00734g",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    },
+    {
+      "id": "d2na00734g-inp-zns-core-shell-qds-1--photoluminescence-quantum-yield",
+      "sample_id": "d2na00734g-inp-zns-core-shell-qds-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 70,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "70 %",
+        "evidence": [
+          {
+            "source_id": "d2na00734g",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "d2na00734g",
+          "locator": "Main PDF p.4"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
-      "Reactor not reported in the extracted text.",
-      "Amount of 1-dodecanethiol not reported in the extracted text."
+      "Amount of 1-dodecanethiol not reported in the extracted text.",
+      "Amount of (TMS)3P–TOP not reported in the extracted text.",
+      "Amount of InP QD solution not reported in the extracted text.",
+      "Amount of acetone not reported in the extracted text.",
+      "Amount of InP/ZnS QDs not reported in the extracted text.",
+      "Amount of DMF not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

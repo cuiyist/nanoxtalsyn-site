@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "dethlefsen2012-jp306915p-cdse-ln-cores-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Johannes R. Dethlefsen; Alexander A. Mikhailovsky; Peter T. Burks; Anders Døssing; Peter C. Ford (2012): CdSe(Ln) cores",
   "material": {
@@ -281,6 +281,101 @@
         "pubchem_cid": null,
         "smiles": null
       },
+      "quantities": {
+        "volume": {
+          "value": 15,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "15 mL",
+          "evidence": [
+            {
+              "source_id": "dethlefsen2012-jp306915p",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "dethlefsen2012-jp306915p",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "dethlefsen2012-jp306915p-cdse-ln-cores-1--1-butanol",
+      "name": "1-butanol",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "dethlefsen2012-jp306915p",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "dethlefsen2012-jp306915p-cdse-ln-cores-1--acetone",
+      "name": "acetone",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "dethlefsen2012-jp306915p",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "dethlefsen2012-jp306915p-cdse-ln-cores-1--methanol",
+      "name": "methanol",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "dethlefsen2012-jp306915p",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "dethlefsen2012-jp306915p-cdse-ln-cores-1--hexane",
+      "name": "hexane",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
       "quantities": {},
       "notes": [],
       "evidence": [
@@ -311,7 +406,8 @@
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
-        "dethlefsen2012-jp306915p-cdse-ln-cores-1--after-s01-heat"
+        "dethlefsen2012-jp306915p-cdse-ln-cores-1--after-s01-heat",
+        "dethlefsen2012-jp306915p-cdse-ln-cores-1--1-butanol"
       ]
     },
     {
@@ -319,7 +415,9 @@
       "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
-        "dethlefsen2012-jp306915p-cdse-ln-cores-1--after-s02-quench"
+        "dethlefsen2012-jp306915p-cdse-ln-cores-1--after-s02-quench",
+        "dethlefsen2012-jp306915p-cdse-ln-cores-1--acetone",
+        "dethlefsen2012-jp306915p-cdse-ln-cores-1--methanol"
       ]
     },
     {
@@ -332,10 +430,21 @@
     },
     {
       "id": "dethlefsen2012-jp306915p-cdse-ln-cores-1--after-s05-wash",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "dethlefsen2012-jp306915p-cdse-ln-cores-1--after-s04-centrifuge",
+        "dethlefsen2012-jp306915p-cdse-ln-cores-1--1-butanol",
+        "dethlefsen2012-jp306915p-cdse-ln-cores-1--acetone"
+      ]
+    },
+    {
+      "id": "dethlefsen2012-jp306915p-cdse-ln-cores-1--after-d2-s06-redisperse",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "dethlefsen2012-jp306915p-cdse-ln-cores-1--after-s04-centrifuge"
+        "dethlefsen2012-jp306915p-cdse-ln-cores-1--after-s05-wash",
+        "dethlefsen2012-jp306915p-cdse-ln-cores-1--hexane"
       ]
     }
   ],
@@ -434,7 +543,8 @@
         "s01-heat"
       ],
       "inputs": [
-        "dethlefsen2012-jp306915p-cdse-ln-cores-1--after-s01-heat"
+        "dethlefsen2012-jp306915p-cdse-ln-cores-1--after-s01-heat",
+        "dethlefsen2012-jp306915p-cdse-ln-cores-1--1-butanol"
       ],
       "outputs": [
         "dethlefsen2012-jp306915p-cdse-ln-cores-1--after-s02-quench"
@@ -477,7 +587,9 @@
         "s02-quench"
       ],
       "inputs": [
-        "dethlefsen2012-jp306915p-cdse-ln-cores-1--after-s02-quench"
+        "dethlefsen2012-jp306915p-cdse-ln-cores-1--after-s02-quench",
+        "dethlefsen2012-jp306915p-cdse-ln-cores-1--acetone",
+        "dethlefsen2012-jp306915p-cdse-ln-cores-1--methanol"
       ],
       "outputs": [
         "dethlefsen2012-jp306915p-cdse-ln-cores-1--after-s03-precipitate"
@@ -553,7 +665,9 @@
         "s04-centrifuge"
       ],
       "inputs": [
-        "dethlefsen2012-jp306915p-cdse-ln-cores-1--after-s04-centrifuge"
+        "dethlefsen2012-jp306915p-cdse-ln-cores-1--after-s04-centrifuge",
+        "dethlefsen2012-jp306915p-cdse-ln-cores-1--1-butanol",
+        "dethlefsen2012-jp306915p-cdse-ln-cores-1--acetone"
       ],
       "outputs": [
         "dethlefsen2012-jp306915p-cdse-ln-cores-1--after-s05-wash"
@@ -579,6 +693,45 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s06-redisperse",
+      "action": "redisperse",
+      "label": "Redissolve QDs in hexane",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s05-wash"
+      ],
+      "inputs": [
+        "dethlefsen2012-jp306915p-cdse-ln-cores-1--after-s05-wash",
+        "dethlefsen2012-jp306915p-cdse-ln-cores-1--hexane"
+      ],
+      "outputs": [
+        "dethlefsen2012-jp306915p-cdse-ln-cores-1--after-d2-s06-redisperse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Redissolve QDs in hexane",
+      "evidence": [
+        {
+          "source_id": "dethlefsen2012-jp306915p",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -587,7 +740,7 @@
       "sample_id": "dethlefsen2012-jp306915p-cdse-ln-cores-1--product",
       "source_sample_label": "CdSe(Ln) cores",
       "batch_id": null,
-      "material_state_id": "dethlefsen2012-jp306915p-cdse-ln-cores-1--after-s05-wash",
+      "material_state_id": "dethlefsen2012-jp306915p-cdse-ln-cores-1--after-d2-s06-redisperse",
       "parent_sample_id": null,
       "composition": {
         "value": "CdSe(Ln)",
@@ -636,17 +789,85 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "dethlefsen2012-jp306915p-cdse-ln-cores-1--photoluminescence-peak",
+      "sample_id": "dethlefsen2012-jp306915p-cdse-ln-cores-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 564,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "564 nm",
+        "evidence": [
+          {
+            "source_id": "dethlefsen2012-jp306915p",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "dethlefsen2012-jp306915p",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    },
+    {
+      "id": "dethlefsen2012-jp306915p-cdse-ln-cores-1--photoluminescence-quantum-yield",
+      "sample_id": "dethlefsen2012-jp306915p-cdse-ln-cores-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 0.64,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "0.64 %",
+        "evidence": [
+          {
+            "source_id": "dethlefsen2012-jp306915p",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "dethlefsen2012-jp306915p",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
-      "Amount of 1-octadecene not reported in the extracted text."
+      "Amount of 1-butanol not reported in the extracted text.",
+      "Amount of acetone not reported in the extracted text.",
+      "Amount of methanol not reported in the extracted text.",
+      "Amount of hexane not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

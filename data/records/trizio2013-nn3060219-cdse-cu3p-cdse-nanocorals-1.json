@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "trizio2013-nn3060219-cdse-cu3p-cdse-nanocorals-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Luca De Trizio (2013): CdSe/Cu3P/CdSe nanocorals",
   "material": {
@@ -288,24 +288,92 @@
           "locator": "Main PDF p.7"
         }
       ]
+    },
+    {
+      "id": "trizio2013-nn3060219-cdse-cu3p-cdse-nanocorals-1--hydrochloric-acid",
+      "name": "hydrochloric acid",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 20,
+          "minimum": null,
+          "maximum": null,
+          "unit": "µL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "20 µL",
+          "evidence": [
+            {
+              "source_id": "trizio2013-nn3060219",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "trizio2013-nn3060219",
+          "locator": "Main PDF p.7"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
-      "id": "trizio2013-nn3060219-cdse-cu3p-cdse-nanocorals-1--after-s01-inject",
+      "id": "trizio2013-nn3060219-cdse-cu3p-cdse-nanocorals-1--after-d2-s01-heat",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": [
+        "trizio2013-nn3060219-cdse-cu3p-cdse-nanocorals-1--trioctylphosphine-oxide",
+        "trizio2013-nn3060219-cdse-cu3p-cdse-nanocorals-1--cadmium-oxide",
+        "trizio2013-nn3060219-cdse-cu3p-cdse-nanocorals-1--hexylphosphonic-acid",
+        "trizio2013-nn3060219-cdse-cu3p-cdse-nanocorals-1--octadecylphosphonic-acid",
+        "trizio2013-nn3060219-cdse-cu3p-cdse-nanocorals-1--hydrochloric-acid"
+      ]
+    },
+    {
+      "id": "trizio2013-nn3060219-cdse-cu3p-cdse-nanocorals-1--after-d2-s02-add",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "trizio2013-nn3060219-cdse-cu3p-cdse-nanocorals-1--after-d2-s01-heat",
+        "trizio2013-nn3060219-cdse-cu3p-cdse-nanocorals-1--trin-octylphosphine"
+      ]
+    },
+    {
+      "id": "trizio2013-nn3060219-cdse-cu3p-cdse-nanocorals-1--after-s01-inject",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "trizio2013-nn3060219-cdse-cu3p-cdse-nanocorals-1--after-d2-s02-add",
         "trizio2013-nn3060219-cdse-cu3p-cdse-nanocorals-1--copper-phosphide-nanocrystals"
       ]
     },
     {
-      "id": "trizio2013-nn3060219-cdse-cu3p-cdse-nanocorals-1--after-s02-precipitate",
-      "name": "mixture after step 2",
+      "id": "trizio2013-nn3060219-cdse-cu3p-cdse-nanocorals-1--after-d2-s04-cool",
+      "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
         "trizio2013-nn3060219-cdse-cu3p-cdse-nanocorals-1--after-s01-inject"
+      ]
+    },
+    {
+      "id": "trizio2013-nn3060219-cdse-cu3p-cdse-nanocorals-1--after-s02-precipitate",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "trizio2013-nn3060219-cdse-cu3p-cdse-nanocorals-1--after-d2-s04-cool"
       ]
     },
     {
@@ -319,14 +387,162 @@
   ],
   "operations": [
     {
+      "id": "d2-s01-heat",
+      "action": "heat",
+      "label": "Heat under vacuum to 150 ˚C and degas",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "trizio2013-nn3060219-cdse-cu3p-cdse-nanocorals-1--trioctylphosphine-oxide",
+        "trizio2013-nn3060219-cdse-cu3p-cdse-nanocorals-1--cadmium-oxide",
+        "trizio2013-nn3060219-cdse-cu3p-cdse-nanocorals-1--hexylphosphonic-acid",
+        "trizio2013-nn3060219-cdse-cu3p-cdse-nanocorals-1--octadecylphosphonic-acid",
+        "trizio2013-nn3060219-cdse-cu3p-cdse-nanocorals-1--hydrochloric-acid"
+      ],
+      "outputs": [
+        "trizio2013-nn3060219-cdse-cu3p-cdse-nanocorals-1--after-d2-s01-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 150,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "150 °C",
+          "evidence": [
+            {
+              "source_id": "trizio2013-nn3060219",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 2,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2 h",
+          "evidence": [
+            {
+              "source_id": "trizio2013-nn3060219",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "trizio2013-nn3060219",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heat under vacuum to 150 ˚C and degas",
+      "evidence": [
+        {
+          "source_id": "trizio2013-nn3060219",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "d2-s02-add",
+      "action": "add",
+      "label": "Add trin-octylphosphine",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s01-heat"
+      ],
+      "inputs": [
+        "trizio2013-nn3060219-cdse-cu3p-cdse-nanocorals-1--after-d2-s01-heat",
+        "trizio2013-nn3060219-cdse-cu3p-cdse-nanocorals-1--trin-octylphosphine"
+      ],
+      "outputs": [
+        "trizio2013-nn3060219-cdse-cu3p-cdse-nanocorals-1--after-d2-s02-add"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 300,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "300 °C",
+          "evidence": [
+            {
+              "source_id": "trizio2013-nn3060219",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "trizio2013-nn3060219",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add trin-octylphosphine",
+      "evidence": [
+        {
+          "source_id": "trizio2013-nn3060219",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
       "id": "s01-inject",
       "action": "inject",
       "label": "Inject Cu3P NCs and TOP-Se solution",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
+      "depends_on": [
+        "d2-s02-add"
+      ],
       "inputs": [
+        "trizio2013-nn3060219-cdse-cu3p-cdse-nanocorals-1--after-d2-s02-add",
         "trizio2013-nn3060219-cdse-cu3p-cdse-nanocorals-1--copper-phosphide-nanocrystals"
       ],
       "outputs": [
@@ -397,10 +613,10 @@
       ]
     },
     {
-      "id": "s02-precipitate",
-      "action": "precipitate",
-      "label": "Precipitate with methanol",
-      "stage": "workup",
+      "id": "d2-s04-cool",
+      "action": "cool",
+      "label": "Cool to room temperature",
+      "stage": "synthesis",
       "branch": "",
       "optional": false,
       "depends_on": [
@@ -408,6 +624,49 @@
       ],
       "inputs": [
         "trizio2013-nn3060219-cdse-cu3p-cdse-nanocorals-1--after-s01-inject"
+      ],
+      "outputs": [
+        "trizio2013-nn3060219-cdse-cu3p-cdse-nanocorals-1--after-d2-s04-cool"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "trizio2013-nn3060219",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Cool to room temperature",
+      "evidence": [
+        {
+          "source_id": "trizio2013-nn3060219",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "s02-precipitate",
+      "action": "precipitate",
+      "label": "Precipitate with methanol",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-cool"
+      ],
+      "inputs": [
+        "trizio2013-nn3060219-cdse-cu3p-cdse-nanocorals-1--after-d2-s04-cool"
       ],
       "outputs": [
         "trizio2013-nn3060219-cdse-cu3p-cdse-nanocorals-1--after-s02-precipitate"
@@ -532,13 +791,12 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
       "Size not reported in the extracted text.",
-      "Reactor not reported in the extracted text.",
-      "Amount of copper phosphide nanocrystals not reported in the extracted text."
+      "Reactor not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

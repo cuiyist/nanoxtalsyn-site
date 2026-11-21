@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "muller2025-acs-inorgchem-5c02060-inp-qds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Michael A. Müller; Stephen Schulz; Kai Schwedtmann; Thorben Starzynski; René Hübner; Alexander Eychmüller; Jan J. Weigand (2025): InP-QDs",
   "material": {
@@ -308,6 +308,63 @@
           "locator": "Main PDF p.7"
         }
       ]
+    },
+    {
+      "id": "muller2025-acs-inorgchem-5c02060-inp-qds-1--in",
+      "name": "In*",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "muller2025-acs-inorgchem-5c02060",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "muller2025-acs-inorgchem-5c02060-inp-qds-1--ethanol",
+      "name": "ethanol",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "muller2025-acs-inorgchem-5c02060",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "muller2025-acs-inorgchem-5c02060-inp-qds-1--toluene",
+      "name": "toluene",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "muller2025-acs-inorgchem-5c02060",
+          "locator": "Main PDF p.7"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -361,17 +418,29 @@
       ]
     },
     {
-      "id": "muller2025-acs-inorgchem-5c02060-inp-qds-1--after-s06-add",
+      "id": "muller2025-acs-inorgchem-5c02060-inp-qds-1--after-d2-s06-degas",
       "name": "mixture after step 6",
       "kind": "reaction_batch",
       "parent_ids": [
         "muller2025-acs-inorgchem-5c02060-inp-qds-1--after-s05-add",
-        "muller2025-acs-inorgchem-5c02060-inp-qds-1--xylene"
+        "muller2025-acs-inorgchem-5c02060-inp-qds-1--zn-oac-2",
+        "muller2025-acs-inorgchem-5c02060-inp-qds-1--myristic-acid",
+        "muller2025-acs-inorgchem-5c02060-inp-qds-1--ode"
+      ]
+    },
+    {
+      "id": "muller2025-acs-inorgchem-5c02060-inp-qds-1--after-s06-add",
+      "name": "mixture after step 7",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "muller2025-acs-inorgchem-5c02060-inp-qds-1--after-d2-s06-degas",
+        "muller2025-acs-inorgchem-5c02060-inp-qds-1--xylene",
+        "muller2025-acs-inorgchem-5c02060-inp-qds-1--in"
       ]
     },
     {
       "id": "muller2025-acs-inorgchem-5c02060-inp-qds-1--after-s07-cool",
-      "name": "mixture after step 7",
+      "name": "mixture after step 8",
       "kind": "reaction_batch",
       "parent_ids": [
         "muller2025-acs-inorgchem-5c02060-inp-qds-1--after-s06-add"
@@ -379,7 +448,7 @@
     },
     {
       "id": "muller2025-acs-inorgchem-5c02060-inp-qds-1--after-s08-add",
-      "name": "mixture after step 8",
+      "name": "mixture after step 9",
       "kind": "reaction_batch",
       "parent_ids": [
         "muller2025-acs-inorgchem-5c02060-inp-qds-1--after-s07-cool",
@@ -388,14 +457,41 @@
     },
     {
       "id": "muller2025-acs-inorgchem-5c02060-inp-qds-1--after-s09-heat",
-      "name": "product as isolated",
-      "kind": "product",
+      "name": "mixture after step 10",
+      "kind": "reaction_batch",
       "parent_ids": [
         "muller2025-acs-inorgchem-5c02060-inp-qds-1--after-s08-add",
         "muller2025-acs-inorgchem-5c02060-inp-qds-1--p-ola-3",
         "muller2025-acs-inorgchem-5c02060-inp-qds-1--zn-oac-2",
         "muller2025-acs-inorgchem-5c02060-inp-qds-1--myristic-acid",
-        "muller2025-acs-inorgchem-5c02060-inp-qds-1--ode"
+        "muller2025-acs-inorgchem-5c02060-inp-qds-1--ode",
+        "muller2025-acs-inorgchem-5c02060-inp-qds-1--in"
+      ]
+    },
+    {
+      "id": "muller2025-acs-inorgchem-5c02060-inp-qds-1--after-d2-s11-purify",
+      "name": "mixture after step 11",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "muller2025-acs-inorgchem-5c02060-inp-qds-1--after-s09-heat"
+      ]
+    },
+    {
+      "id": "muller2025-acs-inorgchem-5c02060-inp-qds-1--after-d2-s12-precipitate",
+      "name": "mixture after step 12",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "muller2025-acs-inorgchem-5c02060-inp-qds-1--after-d2-s11-purify",
+        "muller2025-acs-inorgchem-5c02060-inp-qds-1--ethanol"
+      ]
+    },
+    {
+      "id": "muller2025-acs-inorgchem-5c02060-inp-qds-1--after-d2-s13-redisperse",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "muller2025-acs-inorgchem-5c02060-inp-qds-1--after-d2-s12-precipitate",
+        "muller2025-acs-inorgchem-5c02060-inp-qds-1--toluene"
       ]
     }
   ],
@@ -650,7 +746,26 @@
       "outputs": [
         "muller2025-acs-inorgchem-5c02060-inp-qds-1--after-s05-add"
       ],
-      "parameters": {},
+      "parameters": {
+        "temperature": {
+          "value": 120,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "120 °C",
+          "evidence": [
+            {
+              "source_id": "muller2025-acs-inorgchem-5c02060",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "environment": {
         "value": "N2",
         "status": "reported",
@@ -678,9 +793,9 @@
       ]
     },
     {
-      "id": "s06-add",
-      "action": "add",
-      "label": "In* in xylene is added",
+      "id": "d2-s06-degas",
+      "action": "degas",
+      "label": "Degas",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -689,7 +804,73 @@
       ],
       "inputs": [
         "muller2025-acs-inorgchem-5c02060-inp-qds-1--after-s05-add",
-        "muller2025-acs-inorgchem-5c02060-inp-qds-1--xylene"
+        "muller2025-acs-inorgchem-5c02060-inp-qds-1--zn-oac-2",
+        "muller2025-acs-inorgchem-5c02060-inp-qds-1--myristic-acid",
+        "muller2025-acs-inorgchem-5c02060-inp-qds-1--ode"
+      ],
+      "outputs": [
+        "muller2025-acs-inorgchem-5c02060-inp-qds-1--after-d2-s06-degas"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 h",
+          "evidence": [
+            {
+              "source_id": "muller2025-acs-inorgchem-5c02060",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "muller2025-acs-inorgchem-5c02060",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Degas",
+      "evidence": [
+        {
+          "source_id": "muller2025-acs-inorgchem-5c02060",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "s06-add",
+      "action": "add",
+      "label": "In* in xylene is added",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s06-degas"
+      ],
+      "inputs": [
+        "muller2025-acs-inorgchem-5c02060-inp-qds-1--after-d2-s06-degas",
+        "muller2025-acs-inorgchem-5c02060-inp-qds-1--xylene",
+        "muller2025-acs-inorgchem-5c02060-inp-qds-1--in"
       ],
       "outputs": [
         "muller2025-acs-inorgchem-5c02060-inp-qds-1--after-s06-add"
@@ -860,7 +1041,8 @@
         "muller2025-acs-inorgchem-5c02060-inp-qds-1--p-ola-3",
         "muller2025-acs-inorgchem-5c02060-inp-qds-1--zn-oac-2",
         "muller2025-acs-inorgchem-5c02060-inp-qds-1--myristic-acid",
-        "muller2025-acs-inorgchem-5c02060-inp-qds-1--ode"
+        "muller2025-acs-inorgchem-5c02060-inp-qds-1--ode",
+        "muller2025-acs-inorgchem-5c02060-inp-qds-1--in"
       ],
       "outputs": [
         "muller2025-acs-inorgchem-5c02060-inp-qds-1--after-s09-heat"
@@ -928,6 +1110,122 @@
           "locator": "Main PDF p.7"
         }
       ]
+    },
+    {
+      "id": "d2-s11-purify",
+      "action": "purify",
+      "label": "Purification is performed by precipitation/redispersion cycle",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s09-heat"
+      ],
+      "inputs": [
+        "muller2025-acs-inorgchem-5c02060-inp-qds-1--after-s09-heat"
+      ],
+      "outputs": [
+        "muller2025-acs-inorgchem-5c02060-inp-qds-1--after-d2-s11-purify"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Purification is performed by precipitation/redispersion cycle",
+      "evidence": [
+        {
+          "source_id": "muller2025-acs-inorgchem-5c02060",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "d2-s12-precipitate",
+      "action": "precipitate",
+      "label": "QDs are precipitated using ethanol",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s11-purify"
+      ],
+      "inputs": [
+        "muller2025-acs-inorgchem-5c02060-inp-qds-1--after-d2-s11-purify",
+        "muller2025-acs-inorgchem-5c02060-inp-qds-1--ethanol"
+      ],
+      "outputs": [
+        "muller2025-acs-inorgchem-5c02060-inp-qds-1--after-d2-s12-precipitate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "QDs are precipitated using ethanol",
+      "evidence": [
+        {
+          "source_id": "muller2025-acs-inorgchem-5c02060",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "d2-s13-redisperse",
+      "action": "redisperse",
+      "label": "QDs are redispersed in toluene",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s12-precipitate"
+      ],
+      "inputs": [
+        "muller2025-acs-inorgchem-5c02060-inp-qds-1--after-d2-s12-precipitate",
+        "muller2025-acs-inorgchem-5c02060-inp-qds-1--toluene"
+      ],
+      "outputs": [
+        "muller2025-acs-inorgchem-5c02060-inp-qds-1--after-d2-s13-redisperse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "QDs are redispersed in toluene",
+      "evidence": [
+        {
+          "source_id": "muller2025-acs-inorgchem-5c02060",
+          "locator": "Main PDF p.7"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -936,7 +1234,7 @@
       "sample_id": "muller2025-acs-inorgchem-5c02060-inp-qds-1--product",
       "source_sample_label": "InP-QDs",
       "batch_id": null,
-      "material_state_id": "muller2025-acs-inorgchem-5c02060-inp-qds-1--after-s09-heat",
+      "material_state_id": "muller2025-acs-inorgchem-5c02060-inp-qds-1--after-d2-s13-redisperse",
       "parent_sample_id": null,
       "composition": {
         "value": "InP",
@@ -1013,18 +1311,53 @@
           "locator": "Main PDF p.6"
         }
       ]
+    },
+    {
+      "id": "muller2025-acs-inorgchem-5c02060-inp-qds-1--photoluminescence-quantum-yield",
+      "sample_id": "muller2025-acs-inorgchem-5c02060-inp-qds-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 46,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "46 %",
+        "evidence": [
+          {
+            "source_id": "muller2025-acs-inorgchem-5c02060",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "muller2025-acs-inorgchem-5c02060",
+          "locator": "Main PDF p.6"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
       "Amount of myristic acid not reported in the extracted text.",
-      "Amount of P(OLA)3 not reported in the extracted text."
+      "Amount of P(OLA)3 not reported in the extracted text.",
+      "Amount of In* not reported in the extracted text.",
+      "Amount of ethanol not reported in the extracted text.",
+      "Amount of toluene not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

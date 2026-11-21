@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "liu2020-s12209-019-00228-5-ag2s-qds-4-5-nm-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Qing Liu; Yuan Pu; Zhijian Zhao; Jiexin Wang; Dan Wang (2020): Ag2S QDs (4.5 nm)",
   "material": {
@@ -299,6 +299,25 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "liu2020-s12209-019-00228-5-ag2s-qds-4-5-nm-1--deionized-water",
+      "name": "deionized water",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "liu2020-s12209-019-00228-5",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -316,11 +335,26 @@
     },
     {
       "id": "liu2020-s12209-019-00228-5-ag2s-qds-4-5-nm-1--after-s02-dissolve",
-      "name": "product as isolated",
-      "kind": "product",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
       "parent_ids": [
         "liu2020-s12209-019-00228-5-ag2s-qds-4-5-nm-1--after-s01-dissolve",
         "liu2020-s12209-019-00228-5-ag2s-qds-4-5-nm-1--sodium-sulfide-nonahydrate",
+        "liu2020-s12209-019-00228-5-ag2s-qds-4-5-nm-1--tween-20",
+        "liu2020-s12209-019-00228-5-ag2s-qds-4-5-nm-1--deionized-water"
+      ]
+    },
+    {
+      "id": "liu2020-s12209-019-00228-5-ag2s-qds-4-5-nm-1--after-d2-s03-emulsify",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "liu2020-s12209-019-00228-5-ag2s-qds-4-5-nm-1--after-s02-dissolve",
+        "liu2020-s12209-019-00228-5-ag2s-qds-4-5-nm-1--silver-acetate",
+        "liu2020-s12209-019-00228-5-ag2s-qds-4-5-nm-1--sodium-sulfide-nonahydrate",
+        "liu2020-s12209-019-00228-5-ag2s-qds-4-5-nm-1--octadecene",
+        "liu2020-s12209-019-00228-5-ag2s-qds-4-5-nm-1--oleyl-amine",
+        "liu2020-s12209-019-00228-5-ag2s-qds-4-5-nm-1--oleic-acid",
         "liu2020-s12209-019-00228-5-ag2s-qds-4-5-nm-1--tween-20"
       ]
     }
@@ -402,7 +436,8 @@
       "inputs": [
         "liu2020-s12209-019-00228-5-ag2s-qds-4-5-nm-1--after-s01-dissolve",
         "liu2020-s12209-019-00228-5-ag2s-qds-4-5-nm-1--sodium-sulfide-nonahydrate",
-        "liu2020-s12209-019-00228-5-ag2s-qds-4-5-nm-1--tween-20"
+        "liu2020-s12209-019-00228-5-ag2s-qds-4-5-nm-1--tween-20",
+        "liu2020-s12209-019-00228-5-ag2s-qds-4-5-nm-1--deionized-water"
       ],
       "outputs": [
         "liu2020-s12209-019-00228-5-ag2s-qds-4-5-nm-1--after-s02-dissolve"
@@ -433,6 +468,55 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s03-emulsify",
+      "action": "emulsify",
+      "label": "Pump solutions A and B into the RPB reactor and rapidly emulsify to form droplets",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-dissolve"
+      ],
+      "inputs": [
+        "liu2020-s12209-019-00228-5-ag2s-qds-4-5-nm-1--after-s02-dissolve",
+        "liu2020-s12209-019-00228-5-ag2s-qds-4-5-nm-1--silver-acetate",
+        "liu2020-s12209-019-00228-5-ag2s-qds-4-5-nm-1--sodium-sulfide-nonahydrate",
+        "liu2020-s12209-019-00228-5-ag2s-qds-4-5-nm-1--octadecene",
+        "liu2020-s12209-019-00228-5-ag2s-qds-4-5-nm-1--oleyl-amine",
+        "liu2020-s12209-019-00228-5-ag2s-qds-4-5-nm-1--oleic-acid",
+        "liu2020-s12209-019-00228-5-ag2s-qds-4-5-nm-1--tween-20"
+      ],
+      "outputs": [
+        "liu2020-s12209-019-00228-5-ag2s-qds-4-5-nm-1--after-d2-s03-emulsify"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "protective gas",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "liu2020-s12209-019-00228-5",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Pump solutions A and B into the RPB reactor and rapidly emulsify to form droplets",
+      "evidence": [
+        {
+          "source_id": "liu2020-s12209-019-00228-5",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -441,7 +525,7 @@
       "sample_id": "liu2020-s12209-019-00228-5-ag2s-qds-4-5-nm-1--product",
       "source_sample_label": "Ag2S QDs (4.5 nm)",
       "batch_id": null,
-      "material_state_id": "liu2020-s12209-019-00228-5-ag2s-qds-4-5-nm-1--after-s02-dissolve",
+      "material_state_id": "liu2020-s12209-019-00228-5-ag2s-qds-4-5-nm-1--after-d2-s03-emulsify",
       "parent_sample_id": null,
       "composition": {
         "value": "Ag2S",
@@ -531,16 +615,49 @@
           "locator": "Main PDF p.1"
         }
       ]
+    },
+    {
+      "id": "liu2020-s12209-019-00228-5-ag2s-qds-4-5-nm-1--photoluminescence-peak",
+      "sample_id": "liu2020-s12209-019-00228-5-ag2s-qds-4-5-nm-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 1270,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "1270 nm",
+        "evidence": [
+          {
+            "source_id": "liu2020-s12209-019-00228-5",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "liu2020-s12209-019-00228-5",
+          "locator": "Main PDF p.7"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Reaction temperature not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
-      "Amount of Tween 20 not reported in the extracted text."
+      "Amount of Tween 20 not reported in the extracted text.",
+      "Amount of deionized water not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

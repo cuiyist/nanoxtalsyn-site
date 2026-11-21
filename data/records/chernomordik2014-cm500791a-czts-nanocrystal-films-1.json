@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "chernomordik2014-cm500791a-czts-nanocrystal-films-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Boris D. Chernomordik et al. (2014): CZTS nanocrystal films",
   "material": {
@@ -337,7 +337,7 @@
       ]
     },
     {
-      "id": "chernomordik2014-cm500791a-czts-nanocrystal-films-1--after-s02-heat",
+      "id": "chernomordik2014-cm500791a-czts-nanocrystal-films-1--after-d2-s02-purge",
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
@@ -350,11 +350,46 @@
       ]
     },
     {
-      "id": "chernomordik2014-cm500791a-czts-nanocrystal-films-1--after-s03-precipitate",
+      "id": "chernomordik2014-cm500791a-czts-nanocrystal-films-1--after-s02-heat",
       "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
+        "chernomordik2014-cm500791a-czts-nanocrystal-films-1--after-d2-s02-purge",
+        "chernomordik2014-cm500791a-czts-nanocrystal-films-1--copper-diethyldithiocarbamate",
+        "chernomordik2014-cm500791a-czts-nanocrystal-films-1--zinc-diethyldithiocarbamate",
+        "chernomordik2014-cm500791a-czts-nanocrystal-films-1--tin-diethyldithiocarbamate",
+        "chernomordik2014-cm500791a-czts-nanocrystal-films-1--oleic-acid",
+        "chernomordik2014-cm500791a-czts-nanocrystal-films-1--1-octadecene"
+      ]
+    },
+    {
+      "id": "chernomordik2014-cm500791a-czts-nanocrystal-films-1--after-d2-s04-cool",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
         "chernomordik2014-cm500791a-czts-nanocrystal-films-1--after-s02-heat",
+        "chernomordik2014-cm500791a-czts-nanocrystal-films-1--copper-diethyldithiocarbamate",
+        "chernomordik2014-cm500791a-czts-nanocrystal-films-1--zinc-diethyldithiocarbamate",
+        "chernomordik2014-cm500791a-czts-nanocrystal-films-1--tin-diethyldithiocarbamate",
+        "chernomordik2014-cm500791a-czts-nanocrystal-films-1--oleic-acid",
+        "chernomordik2014-cm500791a-czts-nanocrystal-films-1--1-octadecene"
+      ]
+    },
+    {
+      "id": "chernomordik2014-cm500791a-czts-nanocrystal-films-1--after-d2-s05-heat",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "chernomordik2014-cm500791a-czts-nanocrystal-films-1--after-d2-s04-cool",
+        "chernomordik2014-cm500791a-czts-nanocrystal-films-1--oleylamine"
+      ]
+    },
+    {
+      "id": "chernomordik2014-cm500791a-czts-nanocrystal-films-1--after-s03-precipitate",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "chernomordik2014-cm500791a-czts-nanocrystal-films-1--after-d2-s05-heat",
         "chernomordik2014-cm500791a-czts-nanocrystal-films-1--copper-diethyldithiocarbamate",
         "chernomordik2014-cm500791a-czts-nanocrystal-films-1--zinc-diethyldithiocarbamate",
         "chernomordik2014-cm500791a-czts-nanocrystal-films-1--tin-diethyldithiocarbamate",
@@ -365,7 +400,7 @@
     },
     {
       "id": "chernomordik2014-cm500791a-czts-nanocrystal-films-1--after-s04-wash",
-      "name": "mixture after step 4",
+      "name": "mixture after step 7",
       "kind": "reaction_batch",
       "parent_ids": [
         "chernomordik2014-cm500791a-czts-nanocrystal-films-1--after-s03-precipitate",
@@ -429,6 +464,24 @@
             }
           ],
           "derivation": null
+        },
+        "duration": {
+          "value": 10,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "10 min",
+          "evidence": [
+            {
+              "source_id": "chernomordik2014-cm500791a",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
         }
       },
       "environment": {
@@ -458,9 +511,9 @@
       ]
     },
     {
-      "id": "s02-heat",
-      "action": "heat",
-      "label": "Heating precursor mixture to dissolve solids",
+      "id": "d2-s02-purge",
+      "action": "purge",
+      "label": "Purging the flask with dry nitrogen gas",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -469,6 +522,54 @@
       ],
       "inputs": [
         "chernomordik2014-cm500791a-czts-nanocrystal-films-1--after-s01-heat",
+        "chernomordik2014-cm500791a-czts-nanocrystal-films-1--copper-diethyldithiocarbamate",
+        "chernomordik2014-cm500791a-czts-nanocrystal-films-1--zinc-diethyldithiocarbamate",
+        "chernomordik2014-cm500791a-czts-nanocrystal-films-1--tin-diethyldithiocarbamate",
+        "chernomordik2014-cm500791a-czts-nanocrystal-films-1--oleic-acid",
+        "chernomordik2014-cm500791a-czts-nanocrystal-films-1--1-octadecene"
+      ],
+      "outputs": [
+        "chernomordik2014-cm500791a-czts-nanocrystal-films-1--after-d2-s02-purge"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "chernomordik2014-cm500791a",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Purging the flask with dry nitrogen gas",
+      "evidence": [
+        {
+          "source_id": "chernomordik2014-cm500791a",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-heat",
+      "action": "heat",
+      "label": "Heating precursor mixture to dissolve solids",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-purge"
+      ],
+      "inputs": [
+        "chernomordik2014-cm500791a-czts-nanocrystal-films-1--after-d2-s02-purge",
         "chernomordik2014-cm500791a-czts-nanocrystal-films-1--copper-diethyldithiocarbamate",
         "chernomordik2014-cm500791a-czts-nanocrystal-films-1--zinc-diethyldithiocarbamate",
         "chernomordik2014-cm500791a-czts-nanocrystal-films-1--tin-diethyldithiocarbamate",
@@ -489,6 +590,24 @@
           "qualifier": "",
           "basis": "",
           "raw_text": "140 °C",
+          "evidence": [
+            {
+              "source_id": "chernomordik2014-cm500791a",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 10,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "10 min",
           "evidence": [
             {
               "source_id": "chernomordik2014-cm500791a",
@@ -525,10 +644,10 @@
       ]
     },
     {
-      "id": "s03-precipitate",
-      "action": "precipitate",
-      "label": "Precipitating CZTS nanocrystals",
-      "stage": "workup",
+      "id": "d2-s04-cool",
+      "action": "cool",
+      "label": "Cooling precursor solution",
+      "stage": "synthesis",
       "branch": "",
       "optional": false,
       "depends_on": [
@@ -536,6 +655,154 @@
       ],
       "inputs": [
         "chernomordik2014-cm500791a-czts-nanocrystal-films-1--after-s02-heat",
+        "chernomordik2014-cm500791a-czts-nanocrystal-films-1--copper-diethyldithiocarbamate",
+        "chernomordik2014-cm500791a-czts-nanocrystal-films-1--zinc-diethyldithiocarbamate",
+        "chernomordik2014-cm500791a-czts-nanocrystal-films-1--tin-diethyldithiocarbamate",
+        "chernomordik2014-cm500791a-czts-nanocrystal-films-1--oleic-acid",
+        "chernomordik2014-cm500791a-czts-nanocrystal-films-1--1-octadecene"
+      ],
+      "outputs": [
+        "chernomordik2014-cm500791a-czts-nanocrystal-films-1--after-d2-s04-cool"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 75,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "75 °C",
+          "evidence": [
+            {
+              "source_id": "chernomordik2014-cm500791a",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "chernomordik2014-cm500791a",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Cooling precursor solution",
+      "evidence": [
+        {
+          "source_id": "chernomordik2014-cm500791a",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s05-heat",
+      "action": "heat",
+      "label": "Heating oleylamine",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-cool"
+      ],
+      "inputs": [
+        "chernomordik2014-cm500791a-czts-nanocrystal-films-1--after-d2-s04-cool",
+        "chernomordik2014-cm500791a-czts-nanocrystal-films-1--oleylamine"
+      ],
+      "outputs": [
+        "chernomordik2014-cm500791a-czts-nanocrystal-films-1--after-d2-s05-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 280,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "280 °C",
+          "evidence": [
+            {
+              "source_id": "chernomordik2014-cm500791a",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 10,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "10 min",
+          "evidence": [
+            {
+              "source_id": "chernomordik2014-cm500791a",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "chernomordik2014-cm500791a",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heating oleylamine",
+      "evidence": [
+        {
+          "source_id": "chernomordik2014-cm500791a",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s03-precipitate",
+      "action": "precipitate",
+      "label": "Precipitating CZTS nanocrystals",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s05-heat"
+      ],
+      "inputs": [
+        "chernomordik2014-cm500791a-czts-nanocrystal-films-1--after-d2-s05-heat",
         "chernomordik2014-cm500791a-czts-nanocrystal-films-1--copper-diethyldithiocarbamate",
         "chernomordik2014-cm500791a-czts-nanocrystal-films-1--zinc-diethyldithiocarbamate",
         "chernomordik2014-cm500791a-czts-nanocrystal-films-1--tin-diethyldithiocarbamate",
@@ -760,7 +1027,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [],
     "conflicts": [],
     "requested_tasks": [],

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "fitzmorris2012-jp3092013-css-qds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Bob C. Fitzmorris (2012): CSS QDs",
   "material": {
@@ -313,6 +313,44 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "fitzmorris2012-jp3092013-css-qds-1--se-powder",
+      "name": "Se powder",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "mass": {
+          "value": 0.063,
+          "minimum": null,
+          "maximum": null,
+          "unit": "g",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.063 g",
+          "evidence": [
+            {
+              "source_id": "fitzmorris2012-jp3092013",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "fitzmorris2012-jp3092013",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -330,7 +368,8 @@
       "parent_ids": [
         "fitzmorris2012-jp3092013-css-qds-1--after-s01-heat",
         "fitzmorris2012-jp3092013-css-qds-1--trioctylphosphine",
-        "fitzmorris2012-jp3092013-css-qds-1--octadecylamine"
+        "fitzmorris2012-jp3092013-css-qds-1--octadecylamine",
+        "fitzmorris2012-jp3092013-css-qds-1--se-powder"
       ]
     },
     {
@@ -372,10 +411,18 @@
     },
     {
       "id": "fitzmorris2012-jp3092013-css-qds-1--after-s07-cool",
+      "name": "mixture after step 7",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "fitzmorris2012-jp3092013-css-qds-1--after-s06-add"
+      ]
+    },
+    {
+      "id": "fitzmorris2012-jp3092013-css-qds-1--after-d2-s08-clean",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "fitzmorris2012-jp3092013-css-qds-1--after-s06-add"
+        "fitzmorris2012-jp3092013-css-qds-1--after-s07-cool"
       ]
     }
   ],
@@ -451,7 +498,8 @@
       "inputs": [
         "fitzmorris2012-jp3092013-css-qds-1--after-s01-heat",
         "fitzmorris2012-jp3092013-css-qds-1--trioctylphosphine",
-        "fitzmorris2012-jp3092013-css-qds-1--octadecylamine"
+        "fitzmorris2012-jp3092013-css-qds-1--octadecylamine",
+        "fitzmorris2012-jp3092013-css-qds-1--se-powder"
       ],
       "outputs": [
         "fitzmorris2012-jp3092013-css-qds-1--after-s02-inject"
@@ -778,6 +826,49 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s08-clean",
+      "action": "clean",
+      "label": "The crude reaction mixture was cleaned using a procedure involving methanol, DCM, and acetone.",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s07-cool"
+      ],
+      "inputs": [
+        "fitzmorris2012-jp3092013-css-qds-1--after-s07-cool"
+      ],
+      "outputs": [
+        "fitzmorris2012-jp3092013-css-qds-1--after-d2-s08-clean"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "argon",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "fitzmorris2012-jp3092013",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "The crude reaction mixture was cleaned using a procedure involving methanol, DCM, and acetone.",
+      "evidence": [
+        {
+          "source_id": "fitzmorris2012-jp3092013",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -786,7 +877,7 @@
       "sample_id": "fitzmorris2012-jp3092013-css-qds-1--product",
       "source_sample_label": "CSS QDs",
       "batch_id": null,
-      "material_state_id": "fitzmorris2012-jp3092013-css-qds-1--after-s07-cool",
+      "material_state_id": "fitzmorris2012-jp3092013-css-qds-1--after-d2-s08-clean",
       "parent_sample_id": null,
       "composition": {
         "value": null,
@@ -873,12 +964,76 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "fitzmorris2012-jp3092013-css-qds-1--photoluminescence-peak",
+      "sample_id": "fitzmorris2012-jp3092013-css-qds-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 589,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "589 nm",
+        "evidence": [
+          {
+            "source_id": "fitzmorris2012-jp3092013",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "fitzmorris2012-jp3092013",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    },
+    {
+      "id": "fitzmorris2012-jp3092013-css-qds-1--photoluminescence-quantum-yield",
+      "sample_id": "fitzmorris2012-jp3092013-css-qds-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 25,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "25 %",
+        "evidence": [
+          {
+            "source_id": "fitzmorris2012-jp3092013",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "fitzmorris2012-jp3092013",
+          "locator": "Main PDF p.4"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [],
     "conflicts": [],
     "requested_tasks": [],

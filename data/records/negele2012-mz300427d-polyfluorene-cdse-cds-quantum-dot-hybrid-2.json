@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "negele2012-mz300427d-polyfluorene-cdse-cds-quantum-dot-hybrid-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Carla Negele (2012): polyﬂuorene/CdSe/CdS quantum dot hybrid nanoparticles",
   "material": {
@@ -94,7 +94,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "mass": {
+          "value": 100,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mg",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "100 mg",
+          "evidence": [
+            {
+              "source_id": "negele2012-mz300427d",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -189,7 +208,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "volume": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 mL",
+          "evidence": [
+            {
+              "source_id": "negele2012-mz300427d",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -254,6 +292,25 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "negele2012-mz300427d-polyfluorene-cdse-cds-quantum-dot-hybrid-2--sds",
+      "name": "SDS",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "negele2012-mz300427d",
+          "locator": "Main PDF p.1"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -268,7 +325,8 @@
         "negele2012-mz300427d-polyfluorene-cdse-cds-quantum-dot-hybrid-2--hexadecane",
         "negele2012-mz300427d-polyfluorene-cdse-cds-quantum-dot-hybrid-2--toluene",
         "negele2012-mz300427d-polyfluorene-cdse-cds-quantum-dot-hybrid-2--naoh",
-        "negele2012-mz300427d-polyfluorene-cdse-cds-quantum-dot-hybrid-2--cdse-cds-quantum-dots"
+        "negele2012-mz300427d-polyfluorene-cdse-cds-quantum-dot-hybrid-2--cdse-cds-quantum-dots",
+        "negele2012-mz300427d-polyfluorene-cdse-cds-quantum-dot-hybrid-2--sds"
       ]
     }
   ],
@@ -287,7 +345,8 @@
         "negele2012-mz300427d-polyfluorene-cdse-cds-quantum-dot-hybrid-2--hexadecane",
         "negele2012-mz300427d-polyfluorene-cdse-cds-quantum-dot-hybrid-2--toluene",
         "negele2012-mz300427d-polyfluorene-cdse-cds-quantum-dot-hybrid-2--naoh",
-        "negele2012-mz300427d-polyfluorene-cdse-cds-quantum-dot-hybrid-2--cdse-cds-quantum-dots"
+        "negele2012-mz300427d-polyfluorene-cdse-cds-quantum-dot-hybrid-2--cdse-cds-quantum-dots",
+        "negele2012-mz300427d-polyfluorene-cdse-cds-quantum-dot-hybrid-2--sds"
       ],
       "outputs": [
         "negele2012-mz300427d-polyfluorene-cdse-cds-quantum-dot-hybrid-2--after-s01-heat"
@@ -407,20 +466,52 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "negele2012-mz300427d-polyfluorene-cdse-cds-quantum-dot-hybrid-2--photoluminescence-peak",
+      "sample_id": "negele2012-mz300427d-polyfluorene-cdse-cds-quantum-dot-hybrid-2--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 575,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "575 nm",
+        "evidence": [
+          {
+            "source_id": "negele2012-mz300427d",
+            "locator": "Main PDF"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "negele2012-mz300427d",
+          "locator": "Main PDF"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
-      "Amount of 2-(4,4,5,5-tetramethyl-1,3,2-dioxaborolan-2-yl)-7-bromo-9,9-dioctylﬂuorene not reported in the extracted text.",
-      "Amount of toluene not reported in the extracted text.",
-      "Amount of CdSe/CdS quantum dots not reported in the extracted text."
+      "Amount of CdSe/CdS quantum dots not reported in the extracted text.",
+      "Amount of SDS not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

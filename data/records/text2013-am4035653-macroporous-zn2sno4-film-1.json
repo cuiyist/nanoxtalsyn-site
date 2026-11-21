@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "text2013-am4035653-macroporous-zn2sno4-film-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Long-Bin Li et al. (2013): macroporous Zn2SnO4 film",
   "material": {
@@ -304,18 +304,167 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "text2013-am4035653-macroporous-zn2sno4-film-1--ps-spheres-solution",
+      "name": "PS spheres solution",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 16,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "16 mL",
+          "evidence": [
+            {
+              "source_id": "text2013-am4035653",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "text2013-am4035653",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
+      "id": "text2013-am4035653-macroporous-zn2sno4-film-1--after-d2-s01-stir",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": []
+    },
+    {
       "id": "text2013-am4035653-macroporous-zn2sno4-film-1--after-s01-heat",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "text2013-am4035653-macroporous-zn2sno4-film-1--after-d2-s01-stir"
+      ]
+    },
+    {
+      "id": "text2013-am4035653-macroporous-zn2sno4-film-1--after-d2-s03-rinse",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "text2013-am4035653-macroporous-zn2sno4-film-1--after-s01-heat"
+      ]
+    },
+    {
+      "id": "text2013-am4035653-macroporous-zn2sno4-film-1--after-d2-s04-disperse",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "text2013-am4035653-macroporous-zn2sno4-film-1--after-d2-s03-rinse"
+      ]
+    },
+    {
+      "id": "text2013-am4035653-macroporous-zn2sno4-film-1--after-d2-s05-drop",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "text2013-am4035653-macroporous-zn2sno4-film-1--after-d2-s04-disperse"
+      ]
+    },
+    {
+      "id": "text2013-am4035653-macroporous-zn2sno4-film-1--after-d2-s06-calcine",
       "name": "product as isolated",
       "kind": "product",
-      "parent_ids": []
+      "parent_ids": [
+        "text2013-am4035653-macroporous-zn2sno4-film-1--after-d2-s05-drop"
+      ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-stir",
+      "action": "stir",
+      "label": "Stir the solution for 30 min",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [],
+      "outputs": [
+        "text2013-am4035653-macroporous-zn2sno4-film-1--after-d2-s01-stir"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 200,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "200 °C",
+          "evidence": [
+            {
+              "source_id": "text2013-am4035653",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 30,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "30 min",
+          "evidence": [
+            {
+              "source_id": "text2013-am4035653",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Stir the solution for 30 min",
+      "evidence": [
+        {
+          "source_id": "text2013-am4035653",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
     {
       "id": "s01-heat",
       "action": "heat",
@@ -323,8 +472,12 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s01-stir"
+      ],
+      "inputs": [
+        "text2013-am4035653-macroporous-zn2sno4-film-1--after-d2-s01-stir"
+      ],
       "outputs": [
         "text2013-am4035653-macroporous-zn2sno4-film-1--after-s01-heat"
       ],
@@ -386,6 +539,195 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s03-rinse",
+      "action": "rinse",
+      "label": "Rinse the precipitates with ethanol and distilled water",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-heat"
+      ],
+      "inputs": [
+        "text2013-am4035653-macroporous-zn2sno4-film-1--after-s01-heat"
+      ],
+      "outputs": [
+        "text2013-am4035653-macroporous-zn2sno4-film-1--after-d2-s03-rinse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Rinse the precipitates with ethanol and distilled water",
+      "evidence": [
+        {
+          "source_id": "text2013-am4035653",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s04-disperse",
+      "action": "disperse",
+      "label": "Disperse the precipitates in ethanol",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-rinse"
+      ],
+      "inputs": [
+        "text2013-am4035653-macroporous-zn2sno4-film-1--after-d2-s03-rinse"
+      ],
+      "outputs": [
+        "text2013-am4035653-macroporous-zn2sno4-film-1--after-d2-s04-disperse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Disperse the precipitates in ethanol",
+      "evidence": [
+        {
+          "source_id": "text2013-am4035653",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s05-drop",
+      "action": "drop",
+      "label": "Drop the solution onto FTO glass",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-disperse"
+      ],
+      "inputs": [
+        "text2013-am4035653-macroporous-zn2sno4-film-1--after-d2-s04-disperse"
+      ],
+      "outputs": [
+        "text2013-am4035653-macroporous-zn2sno4-film-1--after-d2-s05-drop"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Drop the solution onto FTO glass",
+      "evidence": [
+        {
+          "source_id": "text2013-am4035653",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s06-calcine",
+      "action": "calcine",
+      "label": "Calcine",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s05-drop"
+      ],
+      "inputs": [
+        "text2013-am4035653-macroporous-zn2sno4-film-1--after-d2-s05-drop"
+      ],
+      "outputs": [
+        "text2013-am4035653-macroporous-zn2sno4-film-1--after-d2-s06-calcine"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 500,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "500 °C",
+          "evidence": [
+            {
+              "source_id": "text2013-am4035653",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 h",
+          "evidence": [
+            {
+              "source_id": "text2013-am4035653",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Calcine",
+      "evidence": [
+        {
+          "source_id": "text2013-am4035653",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -394,7 +736,7 @@
       "sample_id": "text2013-am4035653-macroporous-zn2sno4-film-1--product",
       "source_sample_label": "macroporous Zn2SnO4 film",
       "batch_id": null,
-      "material_state_id": "text2013-am4035653-macroporous-zn2sno4-film-1--after-s01-heat",
+      "material_state_id": "text2013-am4035653-macroporous-zn2sno4-film-1--after-d2-s06-calcine",
       "parent_sample_id": null,
       "composition": {
         "value": "Zn2SnO4",
@@ -443,7 +785,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",

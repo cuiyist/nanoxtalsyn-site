@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "yang2007-cm070798m-cdte-sio2-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Yunhua Yang; Lihong Jing; Xiaolan Yu; Dadong Yan; Mingyuan Gao (2007): CdTe@SiO2",
   "material": {
@@ -368,6 +368,101 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "yang2007-cm070798m-cdte-sio2-1--aminopropyltris-methyloxy-silane",
+      "name": "aminopropyltris(methyloxy)silane",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 2,
+          "minimum": null,
+          "maximum": null,
+          "unit": "µL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2 µL",
+          "evidence": [
+            {
+              "source_id": "yang2007-cm070798m",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "yang2007-cm070798m",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "yang2007-cm070798m-cdte-sio2-1--naoh",
+      "name": "NaOH",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "yang2007-cm070798m",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "yang2007-cm070798m-cdte-sio2-1--cdte-q-dots",
+      "name": "CdTe Q-dots",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "yang2007-cm070798m",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "yang2007-cm070798m-cdte-sio2-1--acetone",
+      "name": "acetone",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "yang2007-cm070798m",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -395,35 +490,80 @@
       "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
-        "yang2007-cm070798m-cdte-sio2-1--after-s02-add"
+        "yang2007-cm070798m-cdte-sio2-1--after-s02-add",
+        "yang2007-cm070798m-cdte-sio2-1--naoh"
+      ]
+    },
+    {
+      "id": "yang2007-cm070798m-cdte-sio2-1--after-d2-s04-reflux",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "yang2007-cm070798m-cdte-sio2-1--after-s03-adjust-ph"
       ]
     },
     {
       "id": "yang2007-cm070798m-cdte-sio2-1--after-s04-emulsify",
-      "name": "mixture after step 4",
+      "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
-        "yang2007-cm070798m-cdte-sio2-1--after-s03-adjust-ph",
+        "yang2007-cm070798m-cdte-sio2-1--after-d2-s04-reflux",
         "yang2007-cm070798m-cdte-sio2-1--ammonia-aqueous-solution",
         "yang2007-cm070798m-cdte-sio2-1--cyclohexane",
         "yang2007-cm070798m-cdte-sio2-1--n-hexanol",
-        "yang2007-cm070798m-cdte-sio2-1--tritonx-100"
+        "yang2007-cm070798m-cdte-sio2-1--tritonx-100",
+        "yang2007-cm070798m-cdte-sio2-1--cdte-q-dots"
+      ]
+    },
+    {
+      "id": "yang2007-cm070798m-cdte-sio2-1--after-d2-s06-add-teos",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "yang2007-cm070798m-cdte-sio2-1--after-s04-emulsify",
+        "yang2007-cm070798m-cdte-sio2-1--tetraethyl-orthosilicate"
       ]
     },
     {
       "id": "yang2007-cm070798m-cdte-sio2-1--after-s05-stir",
-      "name": "mixture after step 5",
+      "name": "mixture after step 7",
       "kind": "reaction_batch",
       "parent_ids": [
-        "yang2007-cm070798m-cdte-sio2-1--after-s04-emulsify"
+        "yang2007-cm070798m-cdte-sio2-1--after-d2-s06-add-teos"
       ]
     },
     {
       "id": "yang2007-cm070798m-cdte-sio2-1--after-s06-terminate",
+      "name": "mixture after step 8",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "yang2007-cm070798m-cdte-sio2-1--after-s05-stir",
+        "yang2007-cm070798m-cdte-sio2-1--acetone"
+      ]
+    },
+    {
+      "id": "yang2007-cm070798m-cdte-sio2-1--after-d2-s09-centrifuge",
+      "name": "mixture after step 9",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "yang2007-cm070798m-cdte-sio2-1--after-s06-terminate"
+      ]
+    },
+    {
+      "id": "yang2007-cm070798m-cdte-sio2-1--after-d2-s10-purify",
+      "name": "mixture after step 10",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "yang2007-cm070798m-cdte-sio2-1--after-d2-s09-centrifuge"
+      ]
+    },
+    {
+      "id": "yang2007-cm070798m-cdte-sio2-1--after-d2-s11-add-aps",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "yang2007-cm070798m-cdte-sio2-1--after-s05-stir"
+        "yang2007-cm070798m-cdte-sio2-1--after-d2-s10-purify",
+        "yang2007-cm070798m-cdte-sio2-1--aminopropyltris-methyloxy-silane"
       ]
     }
   ],
@@ -515,7 +655,8 @@
         "s02-add"
       ],
       "inputs": [
-        "yang2007-cm070798m-cdte-sio2-1--after-s02-add"
+        "yang2007-cm070798m-cdte-sio2-1--after-s02-add",
+        "yang2007-cm070798m-cdte-sio2-1--naoh"
       ],
       "outputs": [
         "yang2007-cm070798m-cdte-sio2-1--after-s03-adjust-ph"
@@ -543,9 +684,9 @@
       ]
     },
     {
-      "id": "s04-emulsify",
-      "action": "emulsify",
-      "label": "Emulsify CdTe Q-dots and ammonia solution in cyclohexane with surfactants",
+      "id": "d2-s04-reflux",
+      "action": "reflux",
+      "label": "Reflux the reaction mixture",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -553,11 +694,69 @@
         "s03-adjust-ph"
       ],
       "inputs": [
-        "yang2007-cm070798m-cdte-sio2-1--after-s03-adjust-ph",
+        "yang2007-cm070798m-cdte-sio2-1--after-s03-adjust-ph"
+      ],
+      "outputs": [
+        "yang2007-cm070798m-cdte-sio2-1--after-d2-s04-reflux"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 20,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "20 min",
+          "evidence": [
+            {
+              "source_id": "yang2007-cm070798m",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Reflux the reaction mixture",
+      "evidence": [
+        {
+          "source_id": "yang2007-cm070798m",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s04-emulsify",
+      "action": "emulsify",
+      "label": "Emulsify CdTe Q-dots and ammonia solution in cyclohexane with surfactants",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-reflux"
+      ],
+      "inputs": [
+        "yang2007-cm070798m-cdte-sio2-1--after-d2-s04-reflux",
         "yang2007-cm070798m-cdte-sio2-1--ammonia-aqueous-solution",
         "yang2007-cm070798m-cdte-sio2-1--cyclohexane",
         "yang2007-cm070798m-cdte-sio2-1--n-hexanol",
-        "yang2007-cm070798m-cdte-sio2-1--tritonx-100"
+        "yang2007-cm070798m-cdte-sio2-1--tritonx-100",
+        "yang2007-cm070798m-cdte-sio2-1--cdte-q-dots"
       ],
       "outputs": [
         "yang2007-cm070798m-cdte-sio2-1--after-s04-emulsify"
@@ -585,9 +784,9 @@
       ]
     },
     {
-      "id": "s05-stir",
-      "action": "stir",
-      "label": "Stir the reaction system in the dark at room temperature for 3 days",
+      "id": "d2-s06-add-teos",
+      "action": "add teos",
+      "label": "Add TEOS under magnetic stirring",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -595,7 +794,46 @@
         "s04-emulsify"
       ],
       "inputs": [
-        "yang2007-cm070798m-cdte-sio2-1--after-s04-emulsify"
+        "yang2007-cm070798m-cdte-sio2-1--after-s04-emulsify",
+        "yang2007-cm070798m-cdte-sio2-1--tetraethyl-orthosilicate"
+      ],
+      "outputs": [
+        "yang2007-cm070798m-cdte-sio2-1--after-d2-s06-add-teos"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add TEOS under magnetic stirring",
+      "evidence": [
+        {
+          "source_id": "yang2007-cm070798m",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s05-stir",
+      "action": "stir",
+      "label": "Stir the reaction system in the dark at room temperature for 3 days",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s06-add-teos"
+      ],
+      "inputs": [
+        "yang2007-cm070798m-cdte-sio2-1--after-d2-s06-add-teos"
       ],
       "outputs": [
         "yang2007-cm070798m-cdte-sio2-1--after-s05-stir"
@@ -652,7 +890,8 @@
         "s05-stir"
       ],
       "inputs": [
-        "yang2007-cm070798m-cdte-sio2-1--after-s05-stir"
+        "yang2007-cm070798m-cdte-sio2-1--after-s05-stir",
+        "yang2007-cm070798m-cdte-sio2-1--acetone"
       ],
       "outputs": [
         "yang2007-cm070798m-cdte-sio2-1--after-s06-terminate"
@@ -678,6 +917,121 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "d2-s09-centrifuge",
+      "action": "centrifuge",
+      "label": "Centrifuge and wash the precipitate with solvents",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s06-terminate"
+      ],
+      "inputs": [
+        "yang2007-cm070798m-cdte-sio2-1--after-s06-terminate"
+      ],
+      "outputs": [
+        "yang2007-cm070798m-cdte-sio2-1--after-d2-s09-centrifuge"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Centrifuge and wash the precipitate with solvents",
+      "evidence": [
+        {
+          "source_id": "yang2007-cm070798m",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "d2-s10-purify",
+      "action": "purify",
+      "label": "Purify particles by centrifugation and redispersion",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s09-centrifuge"
+      ],
+      "inputs": [
+        "yang2007-cm070798m-cdte-sio2-1--after-d2-s09-centrifuge"
+      ],
+      "outputs": [
+        "yang2007-cm070798m-cdte-sio2-1--after-d2-s10-purify"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Purify particles by centrifugation and redispersion",
+      "evidence": [
+        {
+          "source_id": "yang2007-cm070798m",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "d2-s11-add-aps",
+      "action": "add aps",
+      "label": "Add aminopropyltris(methyloxy)silane to graft amine groups",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s10-purify"
+      ],
+      "inputs": [
+        "yang2007-cm070798m-cdte-sio2-1--after-d2-s10-purify",
+        "yang2007-cm070798m-cdte-sio2-1--aminopropyltris-methyloxy-silane"
+      ],
+      "outputs": [
+        "yang2007-cm070798m-cdte-sio2-1--after-d2-s11-add-aps"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add aminopropyltris(methyloxy)silane to graft amine groups",
+      "evidence": [
+        {
+          "source_id": "yang2007-cm070798m",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -686,7 +1040,7 @@
       "sample_id": "yang2007-cm070798m-cdte-sio2-1--product",
       "source_sample_label": "CdTe@SiO2",
       "batch_id": null,
-      "material_state_id": "yang2007-cm070798m-cdte-sio2-1--after-s06-terminate",
+      "material_state_id": "yang2007-cm070798m-cdte-sio2-1--after-d2-s11-add-aps",
       "parent_sample_id": null,
       "composition": {
         "value": "CdTe@SiO2",
@@ -738,7 +1092,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
@@ -746,7 +1100,10 @@
       "Reactor not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
-      "Amount of tetraethyl orthosilicate not reported in the extracted text."
+      "Amount of tetraethyl orthosilicate not reported in the extracted text.",
+      "Amount of NaOH not reported in the extracted text.",
+      "Amount of CdTe Q-dots not reported in the extracted text.",
+      "Amount of acetone not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

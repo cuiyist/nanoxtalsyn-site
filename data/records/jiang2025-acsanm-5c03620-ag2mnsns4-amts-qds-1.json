@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "jiang2025-acsanm-5c03620-ag2mnsns4-amts-qds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Chang Jiang; Kazutaka Akiyoshi; Tatsuya Kameyama; Jun Kumagai; Takahisa Yamamoto; Masahiro Yamamoto; Shota Yamada; Naoki Banno; Yutaro Saito; Akira Sumiyoshi; Hiroaki Wake; Hiroshi Yukawa; Yoshinobu Baba; Tsukasa Torimoto (2025): Ag2MnSnS4 (AMTS) QDs",
   "material": {
@@ -245,7 +245,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "amount": {
+          "value": 1.0,
+          "minimum": null,
+          "maximum": null,
+          "unit": "cm3",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 cm3",
+          "evidence": [
+            {
+              "source_id": "jiang2025-acsanm-5c03620",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -291,6 +310,101 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "jiang2025-acsanm-5c03620-ag2mnsns4-amts-qds-1--thioacetamide",
+      "name": "thioacetamide",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "jiang2025-acsanm-5c03620",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "jiang2025-acsanm-5c03620-ag2mnsns4-amts-qds-1--3-mercaptopropionic-acid",
+      "name": "3-mercaptopropionic acid",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "jiang2025-acsanm-5c03620",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "jiang2025-acsanm-5c03620-ag2mnsns4-amts-qds-1--tetramethylammonium-hydroxide",
+      "name": "tetramethylammonium hydroxide",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "jiang2025-acsanm-5c03620",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "jiang2025-acsanm-5c03620-ag2mnsns4-amts-qds-1--ethanol",
+      "name": "ethanol",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "jiang2025-acsanm-5c03620",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "jiang2025-acsanm-5c03620-ag2mnsns4-amts-qds-1--pure-water",
+      "name": "pure water",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "jiang2025-acsanm-5c03620",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -334,10 +448,47 @@
     },
     {
       "id": "jiang2025-acsanm-5c03620-ag2mnsns4-amts-qds-1--after-s05-wash",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "jiang2025-acsanm-5c03620-ag2mnsns4-amts-qds-1--after-s04-centrifuge"
+      ]
+    },
+    {
+      "id": "jiang2025-acsanm-5c03620-ag2mnsns4-amts-qds-1--after-d2-s06-preheat",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "jiang2025-acsanm-5c03620-ag2mnsns4-amts-qds-1--after-s05-wash",
+        "jiang2025-acsanm-5c03620-ag2mnsns4-amts-qds-1--thioacetamide"
+      ]
+    },
+    {
+      "id": "jiang2025-acsanm-5c03620-ag2mnsns4-amts-qds-1--after-d2-s07-purify",
+      "name": "mixture after step 7",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "jiang2025-acsanm-5c03620-ag2mnsns4-amts-qds-1--after-d2-s06-preheat"
+      ]
+    },
+    {
+      "id": "jiang2025-acsanm-5c03620-ag2mnsns4-amts-qds-1--after-d2-s08-replace",
+      "name": "mixture after step 8",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "jiang2025-acsanm-5c03620-ag2mnsns4-amts-qds-1--after-d2-s07-purify",
+        "jiang2025-acsanm-5c03620-ag2mnsns4-amts-qds-1--3-mercaptopropionic-acid",
+        "jiang2025-acsanm-5c03620-ag2mnsns4-amts-qds-1--tetramethylammonium-hydroxide",
+        "jiang2025-acsanm-5c03620-ag2mnsns4-amts-qds-1--ethanol"
+      ]
+    },
+    {
+      "id": "jiang2025-acsanm-5c03620-ag2mnsns4-amts-qds-1--after-d2-s09-redisperse",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "jiang2025-acsanm-5c03620-ag2mnsns4-amts-qds-1--after-s04-centrifuge"
+        "jiang2025-acsanm-5c03620-ag2mnsns4-amts-qds-1--after-d2-s08-replace",
+        "jiang2025-acsanm-5c03620-ag2mnsns4-amts-qds-1--pure-water"
       ]
     }
   ],
@@ -359,7 +510,44 @@
       "outputs": [
         "jiang2025-acsanm-5c03620-ag2mnsns4-amts-qds-1--after-s01-add"
       ],
-      "parameters": {},
+      "parameters": {
+        "temperature": {
+          "value": 200,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "200 °C",
+          "evidence": [
+            {
+              "source_id": "jiang2025-acsanm-5c03620",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 20,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "20 min",
+          "evidence": [
+            {
+              "source_id": "jiang2025-acsanm-5c03620",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "environment": {
         "value": null,
         "status": "not_reported",
@@ -399,7 +587,44 @@
       "outputs": [
         "jiang2025-acsanm-5c03620-ag2mnsns4-amts-qds-1--after-s02-add"
       ],
-      "parameters": {},
+      "parameters": {
+        "temperature": {
+          "value": 200,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "200 °C",
+          "evidence": [
+            {
+              "source_id": "jiang2025-acsanm-5c03620",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 20,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "20 min",
+          "evidence": [
+            {
+              "source_id": "jiang2025-acsanm-5c03620",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "environment": {
         "value": null,
         "status": "not_reported",
@@ -534,6 +759,237 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "d2-s06-preheat",
+      "action": "preheat",
+      "label": "Preheat QD solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s05-wash"
+      ],
+      "inputs": [
+        "jiang2025-acsanm-5c03620-ag2mnsns4-amts-qds-1--after-s05-wash",
+        "jiang2025-acsanm-5c03620-ag2mnsns4-amts-qds-1--thioacetamide"
+      ],
+      "outputs": [
+        "jiang2025-acsanm-5c03620-ag2mnsns4-amts-qds-1--after-d2-s06-preheat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 200,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "200 °C",
+          "evidence": [
+            {
+              "source_id": "jiang2025-acsanm-5c03620",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "5 min",
+          "evidence": [
+            {
+              "source_id": "jiang2025-acsanm-5c03620",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Preheat QD solution",
+      "evidence": [
+        {
+          "source_id": "jiang2025-acsanm-5c03620",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "d2-s07-purify",
+      "action": "purify",
+      "label": "Purify ZnS-coated QDs",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s06-preheat"
+      ],
+      "inputs": [
+        "jiang2025-acsanm-5c03620-ag2mnsns4-amts-qds-1--after-d2-s06-preheat"
+      ],
+      "outputs": [
+        "jiang2025-acsanm-5c03620-ag2mnsns4-amts-qds-1--after-d2-s07-purify"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Purify ZnS-coated QDs",
+      "evidence": [
+        {
+          "source_id": "jiang2025-acsanm-5c03620",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "d2-s08-replace",
+      "action": "replace",
+      "label": "Replace surface ligands with MPA",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s07-purify"
+      ],
+      "inputs": [
+        "jiang2025-acsanm-5c03620-ag2mnsns4-amts-qds-1--after-d2-s07-purify",
+        "jiang2025-acsanm-5c03620-ag2mnsns4-amts-qds-1--3-mercaptopropionic-acid",
+        "jiang2025-acsanm-5c03620-ag2mnsns4-amts-qds-1--tetramethylammonium-hydroxide",
+        "jiang2025-acsanm-5c03620-ag2mnsns4-amts-qds-1--ethanol"
+      ],
+      "outputs": [
+        "jiang2025-acsanm-5c03620-ag2mnsns4-amts-qds-1--after-d2-s08-replace"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 70,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "70 °C",
+          "evidence": [
+            {
+              "source_id": "jiang2025-acsanm-5c03620",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 3,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "3 h",
+          "evidence": [
+            {
+              "source_id": "jiang2025-acsanm-5c03620",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Replace surface ligands with MPA",
+      "evidence": [
+        {
+          "source_id": "jiang2025-acsanm-5c03620",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "d2-s09-redisperse",
+      "action": "redisperse",
+      "label": "Redisperse in pure water",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s08-replace"
+      ],
+      "inputs": [
+        "jiang2025-acsanm-5c03620-ag2mnsns4-amts-qds-1--after-d2-s08-replace",
+        "jiang2025-acsanm-5c03620-ag2mnsns4-amts-qds-1--pure-water"
+      ],
+      "outputs": [
+        "jiang2025-acsanm-5c03620-ag2mnsns4-amts-qds-1--after-d2-s09-redisperse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Redisperse in pure water",
+      "evidence": [
+        {
+          "source_id": "jiang2025-acsanm-5c03620",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -542,7 +998,7 @@
       "sample_id": "jiang2025-acsanm-5c03620-ag2mnsns4-amts-qds-1--product",
       "source_sample_label": "Ag2MnSnS4 (AMTS) QDs",
       "batch_id": null,
-      "material_state_id": "jiang2025-acsanm-5c03620-ag2mnsns4-amts-qds-1--after-s05-wash",
+      "material_state_id": "jiang2025-acsanm-5c03620-ag2mnsns4-amts-qds-1--after-d2-s09-redisperse",
       "parent_sample_id": null,
       "composition": {
         "value": null,
@@ -594,14 +1050,18 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
-      "Amount of 1-dodecanethiol not reported in the extracted text."
+      "Amount of thioacetamide not reported in the extracted text.",
+      "Amount of 3-mercaptopropionic acid not reported in the extracted text.",
+      "Amount of tetramethylammonium hydroxide not reported in the extracted text.",
+      "Amount of ethanol not reported in the extracted text.",
+      "Amount of pure water not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

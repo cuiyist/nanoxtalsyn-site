@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "williams2015-acsami-5b02484-czts-nanocrystal-dispersion-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Bryce A. Williams; Ankit Mahajan; Michelle A. Smeaton; Collin S. Holgate; Eray S. Aydil; Lorraine F. Francis (2015): CZTS nanocrystal dispersion",
   "material": {
@@ -305,6 +305,44 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "williams2015-acsami-5b02484-czts-nanocrystal-dispersion-1--reagent-alcohol",
+      "name": "reagent alcohol",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "williams2015-acsami-5b02484",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "williams2015-acsami-5b02484-czts-nanocrystal-dispersion-1--toluene",
+      "name": "toluene",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "williams2015-acsami-5b02484",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -350,7 +388,8 @@
       "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
-        "williams2015-acsami-5b02484-czts-nanocrystal-dispersion-1--after-s04-cool"
+        "williams2015-acsami-5b02484-czts-nanocrystal-dispersion-1--after-s04-cool",
+        "williams2015-acsami-5b02484-czts-nanocrystal-dispersion-1--reagent-alcohol"
       ]
     },
     {
@@ -359,7 +398,8 @@
       "kind": "product",
       "parent_ids": [
         "williams2015-acsami-5b02484-czts-nanocrystal-dispersion-1--after-s05-dilute",
-        "williams2015-acsami-5b02484-czts-nanocrystal-dispersion-1--oleic-acid"
+        "williams2015-acsami-5b02484-czts-nanocrystal-dispersion-1--oleic-acid",
+        "williams2015-acsami-5b02484-czts-nanocrystal-dispersion-1--toluene"
       ]
     }
   ],
@@ -566,7 +606,8 @@
         "s04-cool"
       ],
       "inputs": [
-        "williams2015-acsami-5b02484-czts-nanocrystal-dispersion-1--after-s04-cool"
+        "williams2015-acsami-5b02484-czts-nanocrystal-dispersion-1--after-s04-cool",
+        "williams2015-acsami-5b02484-czts-nanocrystal-dispersion-1--reagent-alcohol"
       ],
       "outputs": [
         "williams2015-acsami-5b02484-czts-nanocrystal-dispersion-1--after-s05-dilute"
@@ -605,7 +646,8 @@
       ],
       "inputs": [
         "williams2015-acsami-5b02484-czts-nanocrystal-dispersion-1--after-s05-dilute",
-        "williams2015-acsami-5b02484-czts-nanocrystal-dispersion-1--oleic-acid"
+        "williams2015-acsami-5b02484-czts-nanocrystal-dispersion-1--oleic-acid",
+        "williams2015-acsami-5b02484-czts-nanocrystal-dispersion-1--toluene"
       ],
       "outputs": [
         "williams2015-acsami-5b02484-czts-nanocrystal-dispersion-1--after-s06-redisperse"
@@ -693,12 +735,14 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
       "Size not reported in the extracted text.",
-      "Atmosphere not reported in the extracted text."
+      "Atmosphere not reported in the extracted text.",
+      "Amount of reagent alcohol not reported in the extracted text.",
+      "Amount of toluene not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

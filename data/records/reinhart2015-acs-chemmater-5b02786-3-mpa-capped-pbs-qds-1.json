@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "reinhart2015-acs-chemmater-5b02786-3-mpa-capped-pbs-qds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Chase C. Reinhart; Erik Johansson (2015): 3-MPA capped PbS QDs",
   "material": {
@@ -129,7 +129,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "volume": {
+          "value": 18,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "18 mL",
+          "evidence": [
+            {
+              "source_id": "reinhart2015-acs-chemmater-5b02786",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -262,6 +281,139 @@
         "pubchem_cid": null,
         "smiles": null
       },
+      "quantities": {
+        "volume": {
+          "value": 8,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "8 mL",
+          "evidence": [
+            {
+              "source_id": "reinhart2015-acs-chemmater-5b02786",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "reinhart2015-acs-chemmater-5b02786",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "reinhart2015-acs-chemmater-5b02786-3-mpa-capped-pbs-qds-1--bis-trimethylsilyl-sulfide",
+      "name": "bis(trimethylsilyl)sulfide",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 2,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2 mmol",
+          "evidence": [
+            {
+              "source_id": "reinhart2015-acs-chemmater-5b02786",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "reinhart2015-acs-chemmater-5b02786",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "reinhart2015-acs-chemmater-5b02786-3-mpa-capped-pbs-qds-1--1-octadecene--checked-2",
+      "name": "1-octadecene",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "reinhart2015-acs-chemmater-5b02786",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "reinhart2015-acs-chemmater-5b02786-3-mpa-capped-pbs-qds-1--toluene",
+      "name": "toluene",
+      "formula": null,
+      "role": "solvent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 10,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "10 mL",
+          "evidence": [
+            {
+              "source_id": "reinhart2015-acs-chemmater-5b02786",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "reinhart2015-acs-chemmater-5b02786",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "reinhart2015-acs-chemmater-5b02786-3-mpa-capped-pbs-qds-1--acetone",
+      "name": "acetone",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
       "quantities": {},
       "notes": [],
       "evidence": [
@@ -288,7 +440,8 @@
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
-        "reinhart2015-acs-chemmater-5b02786-3-mpa-capped-pbs-qds-1--after-s01-heat"
+        "reinhart2015-acs-chemmater-5b02786-3-mpa-capped-pbs-qds-1--after-s01-heat",
+        "reinhart2015-acs-chemmater-5b02786-3-mpa-capped-pbs-qds-1--toluene"
       ]
     },
     {
@@ -296,7 +449,30 @@
       "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
-        "reinhart2015-acs-chemmater-5b02786-3-mpa-capped-pbs-qds-1--after-s02-redisperse"
+        "reinhart2015-acs-chemmater-5b02786-3-mpa-capped-pbs-qds-1--after-s02-redisperse",
+        "reinhart2015-acs-chemmater-5b02786-3-mpa-capped-pbs-qds-1--hexane"
+      ]
+    },
+    {
+      "id": "reinhart2015-acs-chemmater-5b02786-3-mpa-capped-pbs-qds-1--after-d2-s04-layer",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "reinhart2015-acs-chemmater-5b02786-3-mpa-capped-pbs-qds-1--after-s03-redisperse",
+        "reinhart2015-acs-chemmater-5b02786-3-mpa-capped-pbs-qds-1--hexane",
+        "reinhart2015-acs-chemmater-5b02786-3-mpa-capped-pbs-qds-1--dimethyl-sulfoxide",
+        "reinhart2015-acs-chemmater-5b02786-3-mpa-capped-pbs-qds-1--3-mercaptopropionic-acid"
+      ]
+    },
+    {
+      "id": "reinhart2015-acs-chemmater-5b02786-3-mpa-capped-pbs-qds-1--after-d2-s05-invert",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "reinhart2015-acs-chemmater-5b02786-3-mpa-capped-pbs-qds-1--after-d2-s04-layer",
+        "reinhart2015-acs-chemmater-5b02786-3-mpa-capped-pbs-qds-1--hexane",
+        "reinhart2015-acs-chemmater-5b02786-3-mpa-capped-pbs-qds-1--dimethyl-sulfoxide",
+        "reinhart2015-acs-chemmater-5b02786-3-mpa-capped-pbs-qds-1--3-mercaptopropionic-acid"
       ]
     },
     {
@@ -304,7 +480,7 @@
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "reinhart2015-acs-chemmater-5b02786-3-mpa-capped-pbs-qds-1--after-s03-redisperse",
+        "reinhart2015-acs-chemmater-5b02786-3-mpa-capped-pbs-qds-1--after-d2-s05-invert",
         "reinhart2015-acs-chemmater-5b02786-3-mpa-capped-pbs-qds-1--dimethyl-sulfoxide",
         "reinhart2015-acs-chemmater-5b02786-3-mpa-capped-pbs-qds-1--3-mercaptopropionic-acid"
       ]
@@ -378,7 +554,8 @@
         "s01-heat"
       ],
       "inputs": [
-        "reinhart2015-acs-chemmater-5b02786-3-mpa-capped-pbs-qds-1--after-s01-heat"
+        "reinhart2015-acs-chemmater-5b02786-3-mpa-capped-pbs-qds-1--after-s01-heat",
+        "reinhart2015-acs-chemmater-5b02786-3-mpa-capped-pbs-qds-1--toluene"
       ],
       "outputs": [
         "reinhart2015-acs-chemmater-5b02786-3-mpa-capped-pbs-qds-1--after-s02-redisperse"
@@ -416,7 +593,8 @@
         "s02-redisperse"
       ],
       "inputs": [
-        "reinhart2015-acs-chemmater-5b02786-3-mpa-capped-pbs-qds-1--after-s02-redisperse"
+        "reinhart2015-acs-chemmater-5b02786-3-mpa-capped-pbs-qds-1--after-s02-redisperse",
+        "reinhart2015-acs-chemmater-5b02786-3-mpa-capped-pbs-qds-1--hexane"
       ],
       "outputs": [
         "reinhart2015-acs-chemmater-5b02786-3-mpa-capped-pbs-qds-1--after-s03-redisperse"
@@ -444,10 +622,10 @@
       ]
     },
     {
-      "id": "s04-centrifuge",
-      "action": "centrifuge",
-      "label": "Centrifuge to remove agglomerates",
-      "stage": "workup",
+      "id": "d2-s04-layer",
+      "action": "layer",
+      "label": "Layer hexane and DMSO phases",
+      "stage": "synthesis",
       "branch": "",
       "optional": false,
       "depends_on": [
@@ -455,6 +633,88 @@
       ],
       "inputs": [
         "reinhart2015-acs-chemmater-5b02786-3-mpa-capped-pbs-qds-1--after-s03-redisperse",
+        "reinhart2015-acs-chemmater-5b02786-3-mpa-capped-pbs-qds-1--hexane",
+        "reinhart2015-acs-chemmater-5b02786-3-mpa-capped-pbs-qds-1--dimethyl-sulfoxide",
+        "reinhart2015-acs-chemmater-5b02786-3-mpa-capped-pbs-qds-1--3-mercaptopropionic-acid"
+      ],
+      "outputs": [
+        "reinhart2015-acs-chemmater-5b02786-3-mpa-capped-pbs-qds-1--after-d2-s04-layer"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Layer hexane and DMSO phases",
+      "evidence": [
+        {
+          "source_id": "reinhart2015-acs-chemmater-5b02786",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s05-invert",
+      "action": "invert",
+      "label": "Invert tube to transfer QDs to DMSO phase",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-layer"
+      ],
+      "inputs": [
+        "reinhart2015-acs-chemmater-5b02786-3-mpa-capped-pbs-qds-1--after-d2-s04-layer",
+        "reinhart2015-acs-chemmater-5b02786-3-mpa-capped-pbs-qds-1--hexane",
+        "reinhart2015-acs-chemmater-5b02786-3-mpa-capped-pbs-qds-1--dimethyl-sulfoxide",
+        "reinhart2015-acs-chemmater-5b02786-3-mpa-capped-pbs-qds-1--3-mercaptopropionic-acid"
+      ],
+      "outputs": [
+        "reinhart2015-acs-chemmater-5b02786-3-mpa-capped-pbs-qds-1--after-d2-s05-invert"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Invert tube to transfer QDs to DMSO phase",
+      "evidence": [
+        {
+          "source_id": "reinhart2015-acs-chemmater-5b02786",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s04-centrifuge",
+      "action": "centrifuge",
+      "label": "Centrifuge to remove agglomerates",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s05-invert"
+      ],
+      "inputs": [
+        "reinhart2015-acs-chemmater-5b02786-3-mpa-capped-pbs-qds-1--after-d2-s05-invert",
         "reinhart2015-acs-chemmater-5b02786-3-mpa-capped-pbs-qds-1--dimethyl-sulfoxide",
         "reinhart2015-acs-chemmater-5b02786-3-mpa-capped-pbs-qds-1--3-mercaptopropionic-acid"
       ],
@@ -559,7 +819,8 @@
       ],
       "notes": [
         "Reactor: 15 mL centrifuge tube (Main PDF p.2).",
-        "Reaction temperature: 120 degC (Main PDF p.2)."
+        "Reaction temperature: 120 degC (Main PDF p.2).",
+        "Reaction time: 1 min (Main PDF p.?)."
       ]
     }
   ],
@@ -567,14 +828,13 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
-      "Reaction time not reported in the extracted text.",
       "Amount of 1-octadecene not reported in the extracted text.",
-      "Amount of hexane not reported in the extracted text."
+      "Amount of acetone not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

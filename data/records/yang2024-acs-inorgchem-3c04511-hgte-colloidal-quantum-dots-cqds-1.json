@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Hao Yang; Qiong Zhang; Ruiguang Chang; Zhenghui Wu; Huaibin Shen (2024): HgTe colloidal quantum dots (CQDs)",
   "material": {
@@ -129,7 +129,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "volume": {
+          "value": 0.1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.1 mL",
+          "evidence": [
+            {
+              "source_id": "yang2024-acs-inorgchem-3c04511",
+              "locator": "Main PDF p.6"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -224,7 +243,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "volume": {
+          "value": 2,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2 mL",
+          "evidence": [
+            {
+              "source_id": "yang2024-acs-inorgchem-3c04511",
+              "locator": "Main PDF p.6"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -270,6 +308,25 @@
           "locator": "Main PDF p.6"
         }
       ]
+    },
+    {
+      "id": "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--methanol",
+      "name": "methanol",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "yang2024-acs-inorgchem-3c04511",
+          "locator": "Main PDF p.6"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -279,24 +336,59 @@
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": [
-        "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--transcinnamic-acid"
+        "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--transcinnamic-acid",
+        "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--oleylamine-ola"
       ]
     },
     {
-      "id": "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--after-s02-inject",
+      "id": "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--after-d2-s02-dissolve",
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
         "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--after-s01-heat",
-        "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--hgcl2"
+        "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--hgcl2",
+        "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--oleylamine-ola"
+      ]
+    },
+    {
+      "id": "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--after-d2-s03-add",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--after-d2-s02-dissolve",
+        "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--trioctylphosphine-telluride-top-te",
+        "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--oleylamine-ola"
+      ]
+    },
+    {
+      "id": "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--after-s02-inject",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--after-d2-s03-add",
+        "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--hgcl2",
+        "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--trioctylphosphine-telluride-top-te",
+        "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--oleylamine-ola"
       ]
     },
     {
       "id": "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--after-s03-purify",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--after-s02-inject",
+        "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--methanol"
+      ]
+    },
+    {
+      "id": "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--after-d2-s06-dry",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--after-s02-inject"
+        "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--after-s03-purify",
+        "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--oleylamine-ola",
+        "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--dodecanethiol-ddt",
+        "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--toluene"
       ]
     }
   ],
@@ -310,7 +402,8 @@
       "optional": false,
       "depends_on": [],
       "inputs": [
-        "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--transcinnamic-acid"
+        "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--transcinnamic-acid",
+        "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--oleylamine-ola"
       ],
       "outputs": [
         "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--after-s01-heat"
@@ -380,9 +473,9 @@
       ]
     },
     {
-      "id": "s02-inject",
-      "action": "inject",
-      "label": "Inject Hg precursor and TOP-Te into hot OLA",
+      "id": "d2-s02-dissolve",
+      "action": "dissolve",
+      "label": "Dissolve HgCl2 in OLA",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -391,7 +484,155 @@
       ],
       "inputs": [
         "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--after-s01-heat",
-        "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--hgcl2"
+        "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--hgcl2",
+        "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--oleylamine-ola"
+      ],
+      "outputs": [
+        "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--after-d2-s02-dissolve"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 30,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "30 °C",
+          "evidence": [
+            {
+              "source_id": "yang2024-acs-inorgchem-3c04511",
+              "locator": "Main PDF p.6"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 30,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "30 min",
+          "evidence": [
+            {
+              "source_id": "yang2024-acs-inorgchem-3c04511",
+              "locator": "Main PDF p.6"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "yang2024-acs-inorgchem-3c04511",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dissolve HgCl2 in OLA",
+      "evidence": [
+        {
+          "source_id": "yang2024-acs-inorgchem-3c04511",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "d2-s03-add",
+      "action": "add",
+      "label": "Add",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-dissolve"
+      ],
+      "inputs": [
+        "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--after-d2-s02-dissolve",
+        "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--trioctylphosphine-telluride-top-te",
+        "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--oleylamine-ola"
+      ],
+      "outputs": [
+        "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--after-d2-s03-add"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 30,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "30 °C",
+          "evidence": [
+            {
+              "source_id": "yang2024-acs-inorgchem-3c04511",
+              "locator": "Main PDF p.6"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "yang2024-acs-inorgchem-3c04511",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add",
+      "evidence": [
+        {
+          "source_id": "yang2024-acs-inorgchem-3c04511",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "s02-inject",
+      "action": "inject",
+      "label": "Inject Hg precursor and TOP-Te into hot OLA",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-add"
+      ],
+      "inputs": [
+        "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--after-d2-s03-add",
+        "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--hgcl2",
+        "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--trioctylphosphine-telluride-top-te",
+        "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--oleylamine-ola"
       ],
       "outputs": [
         "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--after-s02-inject"
@@ -453,7 +694,8 @@
         "s02-inject"
       ],
       "inputs": [
-        "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--after-s02-inject"
+        "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--after-s02-inject",
+        "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--methanol"
       ],
       "outputs": [
         "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--after-s03-purify"
@@ -479,6 +721,47 @@
           "locator": "Main PDF p.6"
         }
       ]
+    },
+    {
+      "id": "d2-s06-dry",
+      "action": "dry",
+      "label": "Dry the HgTe CQD precipitate",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-purify"
+      ],
+      "inputs": [
+        "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--after-s03-purify",
+        "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--oleylamine-ola",
+        "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--dodecanethiol-ddt",
+        "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--toluene"
+      ],
+      "outputs": [
+        "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--after-d2-s06-dry"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dry the HgTe CQD precipitate",
+      "evidence": [
+        {
+          "source_id": "yang2024-acs-inorgchem-3c04511",
+          "locator": "Main PDF p.6"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -487,7 +770,7 @@
       "sample_id": "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--product",
       "source_sample_label": "HgTe colloidal quantum dots (CQDs)",
       "batch_id": null,
-      "material_state_id": "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--after-s03-purify",
+      "material_state_id": "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--after-d2-s06-dry",
       "parent_sample_id": null,
       "composition": {
         "value": "HgTe",
@@ -531,23 +814,55 @@
         }
       ],
       "notes": [
-        "Reactor: three-neck flask (Main PDF p.6)."
+        "Reactor: three-neck flask (Main PDF p.6).",
+        "Reaction time: 10 min (Main PDF p.?)."
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--photoluminescence-peak",
+      "sample_id": "yang2024-acs-inorgchem-3c04511-hgte-colloidal-quantum-dots-cqds-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 3250,
+        "minimum": null,
+        "maximum": null,
+        "unit": "cm⁻¹",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "3250 cm⁻¹",
+        "evidence": [
+          {
+            "source_id": "yang2024-acs-inorgchem-3c04511",
+            "locator": "Main PDF"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "yang2024-acs-inorgchem-3c04511",
+          "locator": "Main PDF"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
-      "Reaction time not reported in the extracted text.",
-      "Amount of trioctylphosphine-telluride (TOP-Te) not reported in the extracted text.",
-      "Amount of dodecanethiol (DDT) not reported in the extracted text."
+      "Amount of methanol not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

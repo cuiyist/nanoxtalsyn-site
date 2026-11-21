@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Abid Alam; Yawen Li; Fuchun Ning; Tianrong Li; Yuhua Wang (2025): CsPbBr3-GPA PQDs",
   "material": {
@@ -309,6 +309,63 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--1-octadecene--checked-2",
+      "name": "1-octadecene",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "alam2025-acsami-4c21351",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--cspbbr3-gpa-pqds",
+      "name": "CsPbBr3-GPA PQDs",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "alam2025-acsami-4c21351",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--pdvb-vim",
+      "name": "PDVB-Vim",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "alam2025-acsami-4c21351",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -321,7 +378,8 @@
         "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--lead-bromide",
         "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--oleic-acid",
         "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--oleylamine",
-        "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--1-octadecene"
+        "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--1-octadecene",
+        "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--1-octadecene--checked-2"
       ]
     },
     {
@@ -334,10 +392,50 @@
     },
     {
       "id": "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--after-s03-redisperse",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--after-s02-centrifuge"
+      ]
+    },
+    {
+      "id": "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--after-d2-s04-ultrasonication",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--after-s03-redisperse",
+        "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--cspbbr3-gpa-pqds",
+        "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--pdvb-vim"
+      ]
+    },
+    {
+      "id": "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--after-d2-s05-stir",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--after-d2-s04-ultrasonication",
+        "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--cspbbr3-gpa-pqds",
+        "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--pdvb-vim"
+      ]
+    },
+    {
+      "id": "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--after-d2-s06-rinse",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--after-d2-s05-stir",
+        "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--cspbbr3-gpa-pqds",
+        "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--pdvb-vim"
+      ]
+    },
+    {
+      "id": "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--after-d2-s07-dry",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--after-s02-centrifuge"
+        "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--after-d2-s06-rinse",
+        "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--cspbbr3-gpa-pqds",
+        "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--pdvb-vim"
       ]
     }
   ],
@@ -354,7 +452,8 @@
         "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--lead-bromide",
         "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--oleic-acid",
         "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--oleylamine",
-        "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--1-octadecene"
+        "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--1-octadecene",
+        "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--1-octadecene--checked-2"
       ],
       "outputs": [
         "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--after-s01-heat"
@@ -493,6 +592,204 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s04-ultrasonication",
+      "action": "ultrasonication",
+      "label": "Ultrasonication for encapsulation",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-redisperse"
+      ],
+      "inputs": [
+        "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--after-s03-redisperse",
+        "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--cspbbr3-gpa-pqds",
+        "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--pdvb-vim"
+      ],
+      "outputs": [
+        "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--after-d2-s04-ultrasonication"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 10,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "10 min",
+          "evidence": [
+            {
+              "source_id": "alam2025-acsami-4c21351",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Ultrasonication for encapsulation",
+      "evidence": [
+        {
+          "source_id": "alam2025-acsami-4c21351",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "d2-s05-stir",
+      "action": "stir",
+      "label": "Stirring at room temperature",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s04-ultrasonication"
+      ],
+      "inputs": [
+        "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--after-d2-s04-ultrasonication",
+        "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--cspbbr3-gpa-pqds",
+        "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--pdvb-vim"
+      ],
+      "outputs": [
+        "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--after-d2-s05-stir"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 4,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "4 h",
+          "evidence": [
+            {
+              "source_id": "alam2025-acsami-4c21351",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Stirring at room temperature",
+      "evidence": [
+        {
+          "source_id": "alam2025-acsami-4c21351",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "d2-s06-rinse",
+      "action": "rinse",
+      "label": "Rinsing with cyclohexane",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s05-stir"
+      ],
+      "inputs": [
+        "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--after-d2-s05-stir",
+        "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--cspbbr3-gpa-pqds",
+        "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--pdvb-vim"
+      ],
+      "outputs": [
+        "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--after-d2-s06-rinse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Rinsing with cyclohexane",
+      "evidence": [
+        {
+          "source_id": "alam2025-acsami-4c21351",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "d2-s07-dry",
+      "action": "dry",
+      "label": "Drying under vacuum",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s06-rinse"
+      ],
+      "inputs": [
+        "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--after-d2-s06-rinse",
+        "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--cspbbr3-gpa-pqds",
+        "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--pdvb-vim"
+      ],
+      "outputs": [
+        "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--after-d2-s07-dry"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Drying under vacuum",
+      "evidence": [
+        {
+          "source_id": "alam2025-acsami-4c21351",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -501,7 +798,7 @@
       "sample_id": "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--product",
       "source_sample_label": "CsPbBr3-GPA PQDs",
       "batch_id": null,
-      "material_state_id": "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--after-s03-redisperse",
+      "material_state_id": "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--after-d2-s07-dry",
       "parent_sample_id": null,
       "composition": {
         "value": "CsPbBr3",
@@ -582,18 +879,52 @@
           "locator": "Main PDF p.5"
         }
       ]
+    },
+    {
+      "id": "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--photoluminescence-peak",
+      "sample_id": "alam2025-acsami-4c21351-cspbbr3-gpa-pqds-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 517,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "517 nm",
+        "evidence": [
+          {
+            "source_id": "alam2025-acsami-4c21351",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "alam2025-acsami-4c21351",
+          "locator": "Main PDF p.5"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
-      "Amount of 1-octadecene not reported in the extracted text."
+      "Amount of 1-octadecene not reported in the extracted text.",
+      "Amount of CsPbBr3-GPA PQDs not reported in the extracted text.",
+      "Amount of PDVB-Vim not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

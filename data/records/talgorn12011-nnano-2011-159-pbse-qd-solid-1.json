@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "talgorn12011-nnano-2011-159-pbse-qd-solid-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Elise Talgorn1† (2011): PbSe QD solid",
   "material": {
@@ -299,6 +299,101 @@
           "locator": "Main PDF p.5"
         }
       ]
+    },
+    {
+      "id": "talgorn12011-nnano-2011-159-pbse-qd-solid-1--tetrachloroethylene",
+      "name": "tetrachloroethylene",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "talgorn12011-nnano-2011-159",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    },
+    {
+      "id": "talgorn12011-nnano-2011-159-pbse-qd-solid-1--hexane",
+      "name": "hexane",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "talgorn12011-nnano-2011-159",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    },
+    {
+      "id": "talgorn12011-nnano-2011-159-pbse-qd-solid-1--1-2-ethanediamine",
+      "name": "1,2-ethanediamine",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "concentration": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "M",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 M",
+          "evidence": [
+            {
+              "source_id": "talgorn12011-nnano-2011-159",
+              "locator": "Main PDF p.5"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "talgorn12011-nnano-2011-159",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    },
+    {
+      "id": "talgorn12011-nnano-2011-159-pbse-qd-solid-1--pbse-qds",
+      "name": "PbSe QDs",
+      "formula": null,
+      "role": "starting_particles",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "talgorn12011-nnano-2011-159",
+          "locator": "Main PDF p.5"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -341,11 +436,21 @@
     },
     {
       "id": "talgorn12011-nnano-2011-159-pbse-qd-solid-1--after-s05-precipitate",
-      "name": "product as isolated",
-      "kind": "product",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
       "parent_ids": [
         "talgorn12011-nnano-2011-159-pbse-qd-solid-1--after-s04-filter",
         "talgorn12011-nnano-2011-159-pbse-qd-solid-1--butanol"
+      ]
+    },
+    {
+      "id": "talgorn12011-nnano-2011-159-pbse-qd-solid-1--after-d2-s06-dip-coat",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "talgorn12011-nnano-2011-159-pbse-qd-solid-1--after-s05-precipitate",
+        "talgorn12011-nnano-2011-159-pbse-qd-solid-1--pbse-qds",
+        "talgorn12011-nnano-2011-159-pbse-qd-solid-1--1-2-ethanediamine"
       ]
     }
   ],
@@ -510,7 +615,44 @@
       "outputs": [
         "talgorn12011-nnano-2011-159-pbse-qd-solid-1--after-s03-cool"
       ],
-      "parameters": {},
+      "parameters": {
+        "temperature": {
+          "value": 112,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "112 °C",
+          "evidence": [
+            {
+              "source_id": "talgorn12011-nnano-2011-159",
+              "locator": "Main PDF p.5"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 2,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2 min",
+          "evidence": [
+            {
+              "source_id": "talgorn12011-nnano-2011-159",
+              "locator": "Main PDF p.5"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "environment": {
         "value": "N2",
         "status": "reported",
@@ -613,6 +755,51 @@
           "locator": "Main PDF p.5"
         }
       ]
+    },
+    {
+      "id": "d2-s06-dip-coat",
+      "action": "dip-coat",
+      "label": "Dip-coat",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s05-precipitate"
+      ],
+      "inputs": [
+        "talgorn12011-nnano-2011-159-pbse-qd-solid-1--after-s05-precipitate",
+        "talgorn12011-nnano-2011-159-pbse-qd-solid-1--pbse-qds",
+        "talgorn12011-nnano-2011-159-pbse-qd-solid-1--1-2-ethanediamine"
+      ],
+      "outputs": [
+        "talgorn12011-nnano-2011-159-pbse-qd-solid-1--after-d2-s06-dip-coat"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "talgorn12011-nnano-2011-159",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dip-coat",
+      "evidence": [
+        {
+          "source_id": "talgorn12011-nnano-2011-159",
+          "locator": "Main PDF p.5"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -621,7 +808,7 @@
       "sample_id": "talgorn12011-nnano-2011-159-pbse-qd-solid-1--product",
       "source_sample_label": "PbSe QD solid",
       "batch_id": null,
-      "material_state_id": "talgorn12011-nnano-2011-159-pbse-qd-solid-1--after-s05-precipitate",
+      "material_state_id": "talgorn12011-nnano-2011-159-pbse-qd-solid-1--after-d2-s06-dip-coat",
       "parent_sample_id": null,
       "composition": {
         "value": "PbSe",
@@ -717,10 +904,13 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Reactor not reported in the extracted text.",
-      "Amount of butanol not reported in the extracted text."
+      "Amount of butanol not reported in the extracted text.",
+      "Amount of tetrachloroethylene not reported in the extracted text.",
+      "Amount of hexane not reported in the extracted text.",
+      "Amount of PbSe QDs not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

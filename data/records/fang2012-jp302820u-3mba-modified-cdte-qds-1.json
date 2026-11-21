@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "fang2012-jp302820u-3mba-modified-cdte-qds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Tan Fang; Kaiguo Ma; Lili Ma; Jinyi Bai; Xiang Li; Huihua Song; Haiqing Guo (2012): 3MBA-modified CdTe QDs",
   "material": {
@@ -16,7 +16,7 @@
     ],
     "architecture": "single_material"
   },
-  "method": "Synthesis as described in the source",
+  "method": "Hydrothermal",
   "sources": [
     {
       "id": "fang2012-jp302820u",
@@ -39,9 +39,14 @@
   },
   "intended_target": {
     "composition": {
-      "value": null,
-      "status": "not_reported",
-      "evidence": [],
+      "value": "CdTe",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "fang2012-jp302820u",
+          "locator": "Main PDF p.1"
+        }
+      ],
       "note": ""
     },
     "phase": {
@@ -246,13 +251,142 @@
   "stocks": [],
   "material_states": [
     {
+      "id": "fang2012-jp302820u-3mba-modified-cdte-qds-1--after-d2-s01-dissolve",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "fang2012-jp302820u-3mba-modified-cdte-qds-1--cdcl2",
+        "fang2012-jp302820u-3mba-modified-cdte-qds-1--na2teo3",
+        "fang2012-jp302820u-3mba-modified-cdte-qds-1--nabh4",
+        "fang2012-jp302820u-3mba-modified-cdte-qds-1--borax",
+        "fang2012-jp302820u-3mba-modified-cdte-qds-1--citric-acid"
+      ]
+    },
+    {
+      "id": "fang2012-jp302820u-3mba-modified-cdte-qds-1--after-d2-s02-heat",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "fang2012-jp302820u-3mba-modified-cdte-qds-1--after-d2-s01-dissolve"
+      ]
+    },
+    {
       "id": "fang2012-jp302820u-3mba-modified-cdte-qds-1--after-s01-cool",
       "name": "product as isolated",
       "kind": "product",
-      "parent_ids": []
+      "parent_ids": [
+        "fang2012-jp302820u-3mba-modified-cdte-qds-1--after-d2-s02-heat"
+      ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-dissolve",
+      "action": "dissolve",
+      "label": "Sequential addition of CdCl2, Na2TeO3, mercapto acid, and NaBH4 into a buffer",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "fang2012-jp302820u-3mba-modified-cdte-qds-1--cdcl2",
+        "fang2012-jp302820u-3mba-modified-cdte-qds-1--na2teo3",
+        "fang2012-jp302820u-3mba-modified-cdte-qds-1--nabh4",
+        "fang2012-jp302820u-3mba-modified-cdte-qds-1--borax",
+        "fang2012-jp302820u-3mba-modified-cdte-qds-1--citric-acid"
+      ],
+      "outputs": [
+        "fang2012-jp302820u-3mba-modified-cdte-qds-1--after-d2-s01-dissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "ambient",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "fang2012-jp302820u",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Sequential addition of CdCl2, Na2TeO3, mercapto acid, and NaBH4 into a buffer",
+      "evidence": [
+        {
+          "source_id": "fang2012-jp302820u",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s02-heat",
+      "action": "heat",
+      "label": "Incubation in an oven",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s01-dissolve"
+      ],
+      "inputs": [
+        "fang2012-jp302820u-3mba-modified-cdte-qds-1--after-d2-s01-dissolve"
+      ],
+      "outputs": [
+        "fang2012-jp302820u-3mba-modified-cdte-qds-1--after-d2-s02-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 135,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "135 °C",
+          "evidence": [
+            {
+              "source_id": "fang2012-jp302820u",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "ambient",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "fang2012-jp302820u",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Incubation in an oven",
+      "evidence": [
+        {
+          "source_id": "fang2012-jp302820u",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
     {
       "id": "s01-cool",
       "action": "cool",
@@ -260,8 +394,12 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s02-heat"
+      ],
+      "inputs": [
+        "fang2012-jp302820u-3mba-modified-cdte-qds-1--after-d2-s02-heat"
+      ],
       "outputs": [
         "fang2012-jp302820u-3mba-modified-cdte-qds-1--after-s01-cool"
       ],
@@ -302,9 +440,14 @@
       "material_state_id": "fang2012-jp302820u-3mba-modified-cdte-qds-1--after-s01-cool",
       "parent_sample_id": null,
       "composition": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "CdTe",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "fang2012-jp302820u",
+            "locator": "Main PDF p.1"
+          }
+        ],
         "note": ""
       },
       "phase": {
@@ -344,17 +487,49 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "fang2012-jp302820u-3mba-modified-cdte-qds-1--photoluminescence-quantum-yield",
+      "sample_id": "fang2012-jp302820u-3mba-modified-cdte-qds-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 71,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "71 %",
+        "evidence": [
+          {
+            "source_id": "fang2012-jp302820u",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "fang2012-jp302820u",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Amount of Na2TeO3 not reported in the extracted text.",
-      "Amount of 3-mercaptobutyric acid not reported in the extracted text.",
       "Amount of NaBH4 not reported in the extracted text."
     ],
     "conflicts": [],

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "moreels2007-cm071410q-q-pbse-3-3-nm-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Iwan Moreels (2007): Q-PbSe (3.3 nm)",
   "material": {
@@ -256,6 +256,63 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "moreels2007-cm071410q-q-pbse-3-3-nm-1--butanol",
+      "name": "butanol",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "moreels2007-cm071410q",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "moreels2007-cm071410q-q-pbse-3-3-nm-1--methanol",
+      "name": "methanol",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "moreels2007-cm071410q",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "moreels2007-cm071410q-q-pbse-3-3-nm-1--toluene",
+      "name": "toluene",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "moreels2007-cm071410q",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -307,16 +364,31 @@
       ]
     },
     {
-      "id": "moreels2007-cm071410q-q-pbse-3-3-nm-1--after-s05-quench",
+      "id": "moreels2007-cm071410q-q-pbse-3-3-nm-1--after-d2-s05-heat",
       "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
-        "moreels2007-cm071410q-q-pbse-3-3-nm-1--after-s04-heat"
+        "moreels2007-cm071410q-q-pbse-3-3-nm-1--after-s04-heat",
+        "moreels2007-cm071410q-q-pbse-3-3-nm-1--lead-acetate-trihydrate",
+        "moreels2007-cm071410q-q-pbse-3-3-nm-1--oleic-acid",
+        "moreels2007-cm071410q-q-pbse-3-3-nm-1--diphenyl-ether",
+        "moreels2007-cm071410q-q-pbse-3-3-nm-1--selenium",
+        "moreels2007-cm071410q-q-pbse-3-3-nm-1--tri-n-octyl-phosphine"
+      ]
+    },
+    {
+      "id": "moreels2007-cm071410q-q-pbse-3-3-nm-1--after-s05-quench",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "moreels2007-cm071410q-q-pbse-3-3-nm-1--after-d2-s05-heat",
+        "moreels2007-cm071410q-q-pbse-3-3-nm-1--butanol",
+        "moreels2007-cm071410q-q-pbse-3-3-nm-1--methanol"
       ]
     },
     {
       "id": "moreels2007-cm071410q-q-pbse-3-3-nm-1--after-s06-centrifuge",
-      "name": "mixture after step 6",
+      "name": "mixture after step 7",
       "kind": "reaction_batch",
       "parent_ids": [
         "moreels2007-cm071410q-q-pbse-3-3-nm-1--after-s05-quench"
@@ -324,10 +396,11 @@
     },
     {
       "id": "moreels2007-cm071410q-q-pbse-3-3-nm-1--after-s07-wash",
-      "name": "mixture after step 7",
+      "name": "mixture after step 8",
       "kind": "reaction_batch",
       "parent_ids": [
-        "moreels2007-cm071410q-q-pbse-3-3-nm-1--after-s06-centrifuge"
+        "moreels2007-cm071410q-q-pbse-3-3-nm-1--after-s06-centrifuge",
+        "moreels2007-cm071410q-q-pbse-3-3-nm-1--methanol"
       ]
     },
     {
@@ -335,7 +408,8 @@
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "moreels2007-cm071410q-q-pbse-3-3-nm-1--after-s07-wash"
+        "moreels2007-cm071410q-q-pbse-3-3-nm-1--after-s07-wash",
+        "moreels2007-cm071410q-q-pbse-3-3-nm-1--toluene"
       ]
     }
   ],
@@ -618,9 +692,9 @@
       ]
     },
     {
-      "id": "s05-quench",
-      "action": "quench",
-      "label": "Quench the reaction with butanol and methanol",
+      "id": "d2-s05-heat",
+      "action": "heat",
+      "label": "Allow the reaction to proceed at 120 °C",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -628,7 +702,94 @@
         "s04-heat"
       ],
       "inputs": [
-        "moreels2007-cm071410q-q-pbse-3-3-nm-1--after-s04-heat"
+        "moreels2007-cm071410q-q-pbse-3-3-nm-1--after-s04-heat",
+        "moreels2007-cm071410q-q-pbse-3-3-nm-1--lead-acetate-trihydrate",
+        "moreels2007-cm071410q-q-pbse-3-3-nm-1--oleic-acid",
+        "moreels2007-cm071410q-q-pbse-3-3-nm-1--diphenyl-ether",
+        "moreels2007-cm071410q-q-pbse-3-3-nm-1--selenium",
+        "moreels2007-cm071410q-q-pbse-3-3-nm-1--tri-n-octyl-phosphine"
+      ],
+      "outputs": [
+        "moreels2007-cm071410q-q-pbse-3-3-nm-1--after-d2-s05-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 120,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "120 °C",
+          "evidence": [
+            {
+              "source_id": "moreels2007-cm071410q",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 0.5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.5 min",
+          "evidence": [
+            {
+              "source_id": "moreels2007-cm071410q",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "moreels2007-cm071410q",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Allow the reaction to proceed at 120 °C",
+      "evidence": [
+        {
+          "source_id": "moreels2007-cm071410q",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s05-quench",
+      "action": "quench",
+      "label": "Quench the reaction with butanol and methanol",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s05-heat"
+      ],
+      "inputs": [
+        "moreels2007-cm071410q-q-pbse-3-3-nm-1--after-d2-s05-heat",
+        "moreels2007-cm071410q-q-pbse-3-3-nm-1--butanol",
+        "moreels2007-cm071410q-q-pbse-3-3-nm-1--methanol"
       ],
       "outputs": [
         "moreels2007-cm071410q-q-pbse-3-3-nm-1--after-s05-quench"
@@ -709,7 +870,8 @@
         "s06-centrifuge"
       ],
       "inputs": [
-        "moreels2007-cm071410q-q-pbse-3-3-nm-1--after-s06-centrifuge"
+        "moreels2007-cm071410q-q-pbse-3-3-nm-1--after-s06-centrifuge",
+        "moreels2007-cm071410q-q-pbse-3-3-nm-1--methanol"
       ],
       "outputs": [
         "moreels2007-cm071410q-q-pbse-3-3-nm-1--after-s07-wash"
@@ -747,7 +909,8 @@
         "s07-wash"
       ],
       "inputs": [
-        "moreels2007-cm071410q-q-pbse-3-3-nm-1--after-s07-wash"
+        "moreels2007-cm071410q-q-pbse-3-3-nm-1--after-s07-wash",
+        "moreels2007-cm071410q-q-pbse-3-3-nm-1--toluene"
       ],
       "outputs": [
         "moreels2007-cm071410q-q-pbse-3-3-nm-1--after-s08-redisperse"
@@ -840,11 +1003,14 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
-      "Amount of oleic acid not reported in the extracted text."
+      "Amount of oleic acid not reported in the extracted text.",
+      "Amount of butanol not reported in the extracted text.",
+      "Amount of methanol not reported in the extracted text.",
+      "Amount of toluene not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

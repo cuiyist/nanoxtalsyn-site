@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "xu2019-acsanm-9b01315-cspbbr3-quantum-dots-qds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Xiaoli Xu; Haiping He; Zhishan Fang; Haoran Lou; Chen Lin; Lingxiang Chen; Zhizhen Ye (2019): CsPbBr3 quantum dots (QDs)",
   "material": {
@@ -62,16 +62,21 @@
       "note": ""
     },
     "size": {
-      "value": null,
+      "value": 4.9,
       "minimum": null,
       "maximum": null,
       "unit": "nm",
-      "status": "not_reported",
+      "status": "reported",
       "approximate": false,
       "qualifier": "",
       "basis": "",
-      "raw_text": "not reported",
-      "evidence": [],
+      "raw_text": "4.9 nm",
+      "evidence": [
+        {
+          "source_id": "xu2019-acsanm-9b01315",
+          "locator": "Main PDF"
+        }
+      ],
       "derivation": null
     },
     "morphology": {
@@ -135,7 +140,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "volume": {
+          "value": 10,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "10 mL",
+          "evidence": [
+            {
+              "source_id": "xu2019-acsanm-9b01315",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -230,7 +254,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "volume": {
+          "value": 10,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "10 mL",
+          "evidence": [
+            {
+              "source_id": "xu2019-acsanm-9b01315",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -352,6 +395,44 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "xu2019-acsanm-9b01315-cspbbr3-quantum-dots-qds-1--cs-oleate-precursor",
+      "name": "Cs oleate precursor",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "xu2019-acsanm-9b01315",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "xu2019-acsanm-9b01315-cspbbr3-quantum-dots-qds-1--pbbr2precursor-solution",
+      "name": "PbBr2−precursor solution",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "xu2019-acsanm-9b01315",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -378,16 +459,35 @@
       ]
     },
     {
-      "id": "xu2019-acsanm-9b01315-cspbbr3-quantum-dots-qds-1--after-s03-centrifuge",
+      "id": "xu2019-acsanm-9b01315-cspbbr3-quantum-dots-qds-1--after-d2-s03-inject",
       "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
-        "xu2019-acsanm-9b01315-cspbbr3-quantum-dots-qds-1--after-s02-dissolve"
+        "xu2019-acsanm-9b01315-cspbbr3-quantum-dots-qds-1--after-s02-dissolve",
+        "xu2019-acsanm-9b01315-cspbbr3-quantum-dots-qds-1--cs-oleate-precursor",
+        "xu2019-acsanm-9b01315-cspbbr3-quantum-dots-qds-1--pbbr2precursor-solution"
+      ]
+    },
+    {
+      "id": "xu2019-acsanm-9b01315-cspbbr3-quantum-dots-qds-1--after-d2-s04-add",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "xu2019-acsanm-9b01315-cspbbr3-quantum-dots-qds-1--after-d2-s03-inject",
+        "xu2019-acsanm-9b01315-cspbbr3-quantum-dots-qds-1--acetone"
+      ]
+    },
+    {
+      "id": "xu2019-acsanm-9b01315-cspbbr3-quantum-dots-qds-1--after-s03-centrifuge",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "xu2019-acsanm-9b01315-cspbbr3-quantum-dots-qds-1--after-d2-s04-add"
       ]
     },
     {
       "id": "xu2019-acsanm-9b01315-cspbbr3-quantum-dots-qds-1--after-s04-redisperse",
-      "name": "mixture after step 4",
+      "name": "mixture after step 6",
       "kind": "reaction_batch",
       "parent_ids": [
         "xu2019-acsanm-9b01315-cspbbr3-quantum-dots-qds-1--after-s03-centrifuge",
@@ -396,7 +496,7 @@
     },
     {
       "id": "xu2019-acsanm-9b01315-cspbbr3-quantum-dots-qds-1--after-s05-add",
-      "name": "mixture after step 5",
+      "name": "mixture after step 7",
       "kind": "reaction_batch",
       "parent_ids": [
         "xu2019-acsanm-9b01315-cspbbr3-quantum-dots-qds-1--after-s04-redisperse",
@@ -541,6 +641,133 @@
       ]
     },
     {
+      "id": "d2-s03-inject",
+      "action": "inject",
+      "label": "Inject Cs oleate precursor into PbBr2−precursor solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-dissolve"
+      ],
+      "inputs": [
+        "xu2019-acsanm-9b01315-cspbbr3-quantum-dots-qds-1--after-s02-dissolve",
+        "xu2019-acsanm-9b01315-cspbbr3-quantum-dots-qds-1--cs-oleate-precursor",
+        "xu2019-acsanm-9b01315-cspbbr3-quantum-dots-qds-1--pbbr2precursor-solution"
+      ],
+      "outputs": [
+        "xu2019-acsanm-9b01315-cspbbr3-quantum-dots-qds-1--after-d2-s03-inject"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "s",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "5 s",
+          "evidence": [
+            {
+              "source_id": "xu2019-acsanm-9b01315",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "xu2019-acsanm-9b01315",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Inject Cs oleate precursor into PbBr2−precursor solution",
+      "evidence": [
+        {
+          "source_id": "xu2019-acsanm-9b01315",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s04-add",
+      "action": "add",
+      "label": "Add acetone as antisolvent",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-inject"
+      ],
+      "inputs": [
+        "xu2019-acsanm-9b01315-cspbbr3-quantum-dots-qds-1--after-d2-s03-inject",
+        "xu2019-acsanm-9b01315-cspbbr3-quantum-dots-qds-1--acetone"
+      ],
+      "outputs": [
+        "xu2019-acsanm-9b01315-cspbbr3-quantum-dots-qds-1--after-d2-s04-add"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 min",
+          "evidence": [
+            {
+              "source_id": "xu2019-acsanm-9b01315",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "xu2019-acsanm-9b01315",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add acetone as antisolvent",
+      "evidence": [
+        {
+          "source_id": "xu2019-acsanm-9b01315",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
       "id": "s03-centrifuge",
       "action": "centrifuge",
       "label": "Centrifuge the solution",
@@ -548,10 +775,10 @@
       "branch": "",
       "optional": false,
       "depends_on": [
-        "s02-dissolve"
+        "d2-s04-add"
       ],
       "inputs": [
-        "xu2019-acsanm-9b01315-cspbbr3-quantum-dots-qds-1--after-s02-dissolve"
+        "xu2019-acsanm-9b01315-cspbbr3-quantum-dots-qds-1--after-d2-s04-add"
       ],
       "outputs": [
         "xu2019-acsanm-9b01315-cspbbr3-quantum-dots-qds-1--after-s03-centrifuge"
@@ -808,16 +1035,112 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "xu2019-acsanm-9b01315-cspbbr3-quantum-dots-qds-1--size",
+      "sample_id": "xu2019-acsanm-9b01315-cspbbr3-quantum-dots-qds-1--product",
+      "property": "particle_size",
+      "technique": "not reported",
+      "value": {
+        "value": 4.9,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "4.9 nm",
+        "evidence": [
+          {
+            "source_id": "xu2019-acsanm-9b01315",
+            "locator": "Main PDF"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "xu2019-acsanm-9b01315",
+          "locator": "Main PDF"
+        }
+      ]
+    },
+    {
+      "id": "xu2019-acsanm-9b01315-cspbbr3-quantum-dots-qds-1--photoluminescence-peak",
+      "sample_id": "xu2019-acsanm-9b01315-cspbbr3-quantum-dots-qds-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 460,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "460 nm",
+        "evidence": [
+          {
+            "source_id": "xu2019-acsanm-9b01315",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "xu2019-acsanm-9b01315",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "xu2019-acsanm-9b01315-cspbbr3-quantum-dots-qds-1--photoluminescence-quantum-yield",
+      "sample_id": "xu2019-acsanm-9b01315-cspbbr3-quantum-dots-qds-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 53.2,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "53.2 %",
+        "evidence": [
+          {
+            "source_id": "xu2019-acsanm-9b01315",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "xu2019-acsanm-9b01315",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
-      "Size not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
-      "Amount of oleic acid not reported in the extracted text.",
-      "Amount of toluene not reported in the extracted text."
+      "Amount of Cs oleate precursor not reported in the extracted text.",
+      "Amount of PbBr2−precursor solution not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

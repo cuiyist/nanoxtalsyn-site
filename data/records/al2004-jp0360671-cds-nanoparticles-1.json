@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "al2004-jp0360671-cds-nanoparticles-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Kaushik Roy Choudhury et al. (2004): CdS nanoparticles",
   "material": {
@@ -252,11 +252,19 @@
       ]
     },
     {
-      "id": "al2004-jp0360671-cds-nanoparticles-1--after-s04-precipitate",
+      "id": "al2004-jp0360671-cds-nanoparticles-1--after-d2-s04-ultrasonic-treatment",
       "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
-        "al2004-jp0360671-cds-nanoparticles-1--after-s03-add",
+        "al2004-jp0360671-cds-nanoparticles-1--after-s03-add"
+      ]
+    },
+    {
+      "id": "al2004-jp0360671-cds-nanoparticles-1--after-s04-precipitate",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "al2004-jp0360671-cds-nanoparticles-1--after-d2-s04-ultrasonic-treatment",
         "al2004-jp0360671-cds-nanoparticles-1--methanol"
       ]
     },
@@ -403,6 +411,86 @@
       ]
     },
     {
+      "id": "d2-s04-ultrasonic-treatment",
+      "action": "ultrasonic treatment",
+      "label": "Ultrasonic treatment of emulsion",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-add"
+      ],
+      "inputs": [
+        "al2004-jp0360671-cds-nanoparticles-1--after-s03-add"
+      ],
+      "outputs": [
+        "al2004-jp0360671-cds-nanoparticles-1--after-d2-s04-ultrasonic-treatment"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 26,
+          "minimum": null,
+          "maximum": null,
+          "unit": "kHz",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "26 kHz",
+          "evidence": [
+            {
+              "source_id": "al2004-jp0360671",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 10,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "10 min",
+          "evidence": [
+            {
+              "source_id": "al2004-jp0360671",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "air",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "al2004-jp0360671",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Ultrasonic treatment of emulsion",
+      "evidence": [
+        {
+          "source_id": "al2004-jp0360671",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
       "id": "s04-precipitate",
       "action": "precipitate",
       "label": "Precipitate CdS nanoparticles with methanol",
@@ -410,10 +498,10 @@
       "branch": "",
       "optional": false,
       "depends_on": [
-        "s03-add"
+        "d2-s04-ultrasonic-treatment"
       ],
       "inputs": [
-        "al2004-jp0360671-cds-nanoparticles-1--after-s03-add",
+        "al2004-jp0360671-cds-nanoparticles-1--after-d2-s04-ultrasonic-treatment",
         "al2004-jp0360671-cds-nanoparticles-1--methanol"
       ],
       "outputs": [
@@ -596,7 +684,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Reactor not reported in the extracted text.",

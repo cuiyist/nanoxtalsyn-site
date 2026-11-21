@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "zhu2009-la900962t-cdse-qds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Ming-Qiang Zhu; Zheng Gu; Jun-Bing Fan; Xiao-Bo Xu; Jing Cui; Jin-Hua Liu; Feng Long (2009): CdSe QDs",
   "material": {
@@ -342,10 +342,26 @@
     },
     {
       "id": "zhu2009-la900962t-cdse-qds-1--after-s07-centrifuge",
+      "name": "mixture after step 7",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zhu2009-la900962t-cdse-qds-1--after-s06-precipitate"
+      ]
+    },
+    {
+      "id": "zhu2009-la900962t-cdse-qds-1--after-d2-s08-redisperse",
+      "name": "mixture after step 8",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zhu2009-la900962t-cdse-qds-1--after-s07-centrifuge"
+      ]
+    },
+    {
+      "id": "zhu2009-la900962t-cdse-qds-1--after-d2-s09-dry",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "zhu2009-la900962t-cdse-qds-1--after-s06-precipitate"
+        "zhu2009-la900962t-cdse-qds-1--after-d2-s08-redisperse"
       ]
     }
   ],
@@ -764,6 +780,82 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s08-redisperse",
+      "action": "redisperse",
+      "label": "Redisperse in hexane",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s07-centrifuge"
+      ],
+      "inputs": [
+        "zhu2009-la900962t-cdse-qds-1--after-s07-centrifuge"
+      ],
+      "outputs": [
+        "zhu2009-la900962t-cdse-qds-1--after-d2-s08-redisperse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Redisperse in hexane",
+      "evidence": [
+        {
+          "source_id": "zhu2009-la900962t",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s09-dry",
+      "action": "dry",
+      "label": "Dry in vacuum",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s08-redisperse"
+      ],
+      "inputs": [
+        "zhu2009-la900962t-cdse-qds-1--after-d2-s08-redisperse"
+      ],
+      "outputs": [
+        "zhu2009-la900962t-cdse-qds-1--after-d2-s09-dry"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dry in vacuum",
+      "evidence": [
+        {
+          "source_id": "zhu2009-la900962t",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -772,7 +864,7 @@
       "sample_id": "zhu2009-la900962t-cdse-qds-1--product",
       "source_sample_label": "CdSe QDs",
       "batch_id": null,
-      "material_state_id": "zhu2009-la900962t-cdse-qds-1--after-s07-centrifuge",
+      "material_state_id": "zhu2009-la900962t-cdse-qds-1--after-d2-s09-dry",
       "parent_sample_id": null,
       "composition": {
         "value": "CdSe",
@@ -835,7 +927,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Size not reported in the extracted text.",
       "Reactor not reported in the extracted text."

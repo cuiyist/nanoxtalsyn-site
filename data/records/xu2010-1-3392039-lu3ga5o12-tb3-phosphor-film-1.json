@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "xu2010-1-3392039-lu3ga5o12-tb3-phosphor-film-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "X. G. Xu (2010): Lu3Ga5O12:Tb3+ phosphor film",
   "material": {
@@ -206,6 +206,25 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "xu2010-1-3392039-lu3ga5o12-tb3-phosphor-film-1--in2o3",
+      "name": "In2O3",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "xu2010-1-3392039",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -221,10 +240,27 @@
     },
     {
       "id": "xu2010-1-3392039-lu3ga5o12-tb3-phosphor-film-1--after-s02-anneal",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "xu2010-1-3392039-lu3ga5o12-tb3-phosphor-film-1--after-s01-heat"
+      ]
+    },
+    {
+      "id": "xu2010-1-3392039-lu3ga5o12-tb3-phosphor-film-1--after-d2-s03-deposit",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "xu2010-1-3392039-lu3ga5o12-tb3-phosphor-film-1--after-s02-anneal"
+      ]
+    },
+    {
+      "id": "xu2010-1-3392039-lu3ga5o12-tb3-phosphor-film-1--after-d2-s04-mix",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "xu2010-1-3392039-lu3ga5o12-tb3-phosphor-film-1--after-s01-heat"
+        "xu2010-1-3392039-lu3ga5o12-tb3-phosphor-film-1--after-d2-s03-deposit",
+        "xu2010-1-3392039-lu3ga5o12-tb3-phosphor-film-1--in2o3"
       ]
     }
   ],
@@ -377,6 +413,102 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "d2-s03-deposit",
+      "action": "deposit",
+      "label": "Deposited on ITO glass by screen printing",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-anneal"
+      ],
+      "inputs": [
+        "xu2010-1-3392039-lu3ga5o12-tb3-phosphor-film-1--after-s02-anneal"
+      ],
+      "outputs": [
+        "xu2010-1-3392039-lu3ga5o12-tb3-phosphor-film-1--after-d2-s03-deposit"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Deposited on ITO glass by screen printing",
+      "evidence": [
+        {
+          "source_id": "xu2010-1-3392039",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "d2-s04-mix",
+      "action": "mix",
+      "label": "Mix",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-deposit"
+      ],
+      "inputs": [
+        "xu2010-1-3392039-lu3ga5o12-tb3-phosphor-film-1--after-d2-s03-deposit",
+        "xu2010-1-3392039-lu3ga5o12-tb3-phosphor-film-1--in2o3"
+      ],
+      "outputs": [
+        "xu2010-1-3392039-lu3ga5o12-tb3-phosphor-film-1--after-d2-s04-mix"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 24,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "24 h",
+          "evidence": [
+            {
+              "source_id": "xu2010-1-3392039",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Mix",
+      "evidence": [
+        {
+          "source_id": "xu2010-1-3392039",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -385,7 +517,7 @@
       "sample_id": "xu2010-1-3392039-lu3ga5o12-tb3-phosphor-film-1--product",
       "source_sample_label": "Lu3Ga5O12:Tb3+ phosphor film",
       "batch_id": null,
-      "material_state_id": "xu2010-1-3392039-lu3ga5o12-tb3-phosphor-film-1--after-s02-anneal",
+      "material_state_id": "xu2010-1-3392039-lu3ga5o12-tb3-phosphor-film-1--after-d2-s04-mix",
       "parent_sample_id": null,
       "composition": {
         "value": "Lu3Ga5O12:Tb3+",
@@ -476,7 +608,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
@@ -486,7 +618,8 @@
       "Amount of Tb4O7 not reported in the extracted text.",
       "Amount of citric acid not reported in the extracted text.",
       "Amount of polyethylene glycol not reported in the extracted text.",
-      "Amount of hydrochloric acid not reported in the extracted text."
+      "Amount of hydrochloric acid not reported in the extracted text.",
+      "Amount of In2O3 not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

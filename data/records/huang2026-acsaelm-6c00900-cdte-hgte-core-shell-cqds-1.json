@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Runze Huang; Mengxuan Yu; Xingchen Zhang; Xudong Hu; Xi Ran; Mohan Yuan; Jun Ouyan; Jungang He; Xinzheng Lan (2026): CdTe/HgTe core/shell CQDs",
   "material": {
@@ -400,15 +400,66 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--toluene-tol",
+      "name": "toluene (TOL)",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "huang2026-acsaelm-6c00900",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
-      "id": "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--after-s01-quench",
+      "id": "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--after-d2-s01-degas",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": [
+        "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--cdcl2",
+        "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--teo2",
+        "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--1-dodecanethiol-ddt"
+      ]
+    },
+    {
+      "id": "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--after-d2-s02-heat",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--after-d2-s01-degas",
+        "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--cdcl2",
+        "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--teo2",
+        "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--1-dodecanethiol-ddt"
+      ]
+    },
+    {
+      "id": "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--after-d2-s03-heat",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--after-d2-s02-heat",
+        "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--teo2",
+        "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--1-dodecanethiol-ddt"
+      ]
+    },
+    {
+      "id": "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--after-s01-quench",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--after-d2-s03-heat",
         "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--cdcl2",
         "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--teo2",
         "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--1-dodecanethiol-ddt",
@@ -417,7 +468,7 @@
     },
     {
       "id": "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--after-s02-cool",
-      "name": "mixture after step 2",
+      "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
         "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--after-s01-quench",
@@ -429,7 +480,7 @@
     },
     {
       "id": "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--after-s03-purify",
-      "name": "mixture after step 3",
+      "name": "mixture after step 6",
       "kind": "reaction_batch",
       "parent_ids": [
         "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--after-s02-cool",
@@ -441,11 +492,21 @@
       ]
     },
     {
-      "id": "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--after-s04-mix",
-      "name": "mixture after step 4",
+      "id": "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--after-d2-s07-dilute",
+      "name": "mixture after step 7",
       "kind": "reaction_batch",
       "parent_ids": [
         "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--after-s03-purify",
+        "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--cdte-cqds",
+        "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--octane-oct"
+      ]
+    },
+    {
+      "id": "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--after-s04-mix",
+      "name": "mixture after step 8",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--after-d2-s07-dilute",
         "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--hgcl2",
         "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--2-mercaptoethanol-me",
         "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--n-n-dimethylformamide-dmf",
@@ -455,7 +516,7 @@
     },
     {
       "id": "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--after-s05-purify",
-      "name": "mixture after step 5",
+      "name": "mixture after step 9",
       "kind": "reaction_batch",
       "parent_ids": [
         "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--after-s04-mix",
@@ -476,11 +537,187 @@
         "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--2-mercaptoethanol-me",
         "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--n-n-dimethylformamide-dmf",
         "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--cdte-cqds",
-        "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--octane-oct"
+        "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--octane-oct",
+        "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--toluene-tol"
       ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-degas",
+      "action": "degas",
+      "label": "Pre-degassing under nitrogen",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--cdcl2",
+        "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--teo2",
+        "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--1-dodecanethiol-ddt"
+      ],
+      "outputs": [
+        "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--after-d2-s01-degas"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Pre-degassing under nitrogen",
+      "evidence": [
+        {
+          "source_id": "huang2026-acsaelm-6c00900",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s02-heat",
+      "action": "heat",
+      "label": "Heating to dissolve CdCl2",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s01-degas"
+      ],
+      "inputs": [
+        "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--after-d2-s01-degas",
+        "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--cdcl2",
+        "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--teo2",
+        "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--1-dodecanethiol-ddt"
+      ],
+      "outputs": [
+        "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--after-d2-s02-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 200,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "200 °C",
+          "evidence": [
+            {
+              "source_id": "huang2026-acsaelm-6c00900",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 30,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "30 min",
+          "evidence": [
+            {
+              "source_id": "huang2026-acsaelm-6c00900",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heating to dissolve CdCl2",
+      "evidence": [
+        {
+          "source_id": "huang2026-acsaelm-6c00900",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s03-heat",
+      "action": "heat",
+      "label": "Heating to form DDT-Te precursor",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-heat"
+      ],
+      "inputs": [
+        "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--after-d2-s02-heat",
+        "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--teo2",
+        "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--1-dodecanethiol-ddt"
+      ],
+      "outputs": [
+        "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--after-d2-s03-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 140,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "140 °C",
+          "evidence": [
+            {
+              "source_id": "huang2026-acsaelm-6c00900",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heating to form DDT-Te precursor",
+      "evidence": [
+        {
+          "source_id": "huang2026-acsaelm-6c00900",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
     {
       "id": "s01-quench",
       "action": "quench",
@@ -488,8 +725,11 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
+      "depends_on": [
+        "d2-s03-heat"
+      ],
       "inputs": [
+        "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--after-d2-s03-heat",
         "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--cdcl2",
         "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--teo2",
         "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--1-dodecanethiol-ddt",
@@ -606,9 +846,9 @@
       ]
     },
     {
-      "id": "s04-mix",
-      "action": "mix",
-      "label": "Mixing ME-Hg precursor with CdTe CQDs solution",
+      "id": "d2-s07-dilute",
+      "action": "dilute",
+      "label": "Diluting CdTe CQDs solution with OCT",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -617,6 +857,46 @@
       ],
       "inputs": [
         "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--after-s03-purify",
+        "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--cdte-cqds",
+        "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--octane-oct"
+      ],
+      "outputs": [
+        "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--after-d2-s07-dilute"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Diluting CdTe CQDs solution with OCT",
+      "evidence": [
+        {
+          "source_id": "huang2026-acsaelm-6c00900",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s04-mix",
+      "action": "mix",
+      "label": "Mixing ME-Hg precursor with CdTe CQDs solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s07-dilute"
+      ],
+      "inputs": [
+        "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--after-d2-s07-dilute",
         "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--hgcl2",
         "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--2-mercaptoethanol-me",
         "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--n-n-dimethylformamide-dmf",
@@ -707,7 +987,8 @@
         "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--2-mercaptoethanol-me",
         "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--n-n-dimethylformamide-dmf",
         "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--cdte-cqds",
-        "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--octane-oct"
+        "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--octane-oct",
+        "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--toluene-tol"
       ],
       "outputs": [
         "huang2026-acsaelm-6c00900-cdte-hgte-core-shell-cqds-1--after-s06-precipitate"
@@ -788,7 +1069,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
@@ -797,7 +1078,8 @@
       "Atmosphere not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
-      "Amount of octane (OCT) not reported in the extracted text."
+      "Amount of octane (OCT) not reported in the extracted text.",
+      "Amount of toluene (TOL) not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

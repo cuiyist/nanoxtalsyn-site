@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "niezgoda2012-cm3021462-cuxinys2-quantum-dots-4-0-nm-2-1-ev-band-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "J. Scott Niezgoda; Melissa A. Harrison; James R. McBride; Sandra J. Rosenthal (2012): CuxInyS2 quantum dots (4.0 nm, 2.1 eV band gap)",
   "material": {
@@ -62,22 +62,32 @@
       "note": ""
     },
     "size": {
-      "value": null,
+      "value": 4.0,
       "minimum": null,
       "maximum": null,
       "unit": "nm",
-      "status": "not_reported",
+      "status": "reported",
       "approximate": false,
       "qualifier": "",
       "basis": "",
-      "raw_text": "not reported",
-      "evidence": [],
+      "raw_text": "4 nm",
+      "evidence": [
+        {
+          "source_id": "niezgoda2012-cm3021462",
+          "locator": "Main PDF p.2"
+        }
+      ],
       "derivation": null
     },
     "morphology": {
-      "value": null,
-      "status": "not_reported",
-      "evidence": [],
+      "value": "sphere",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "niezgoda2012-cm3021462",
+          "locator": "Main PDF p.2"
+        }
+      ],
       "note": ""
     }
   },
@@ -407,10 +417,26 @@
     },
     {
       "id": "niezgoda2012-cm3021462-cuxinys2-quantum-dots-4-0-nm-2-1-ev-band-1--after-s08-precipitate",
+      "name": "mixture after step 8",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "niezgoda2012-cm3021462-cuxinys2-quantum-dots-4-0-nm-2-1-ev-band-1--after-s07-centrifuge"
+      ]
+    },
+    {
+      "id": "niezgoda2012-cm3021462-cuxinys2-quantum-dots-4-0-nm-2-1-ev-band-1--after-d2-s09-dry",
+      "name": "mixture after step 9",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "niezgoda2012-cm3021462-cuxinys2-quantum-dots-4-0-nm-2-1-ev-band-1--after-s08-precipitate"
+      ]
+    },
+    {
+      "id": "niezgoda2012-cm3021462-cuxinys2-quantum-dots-4-0-nm-2-1-ev-band-1--after-d2-s10-disperse",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "niezgoda2012-cm3021462-cuxinys2-quantum-dots-4-0-nm-2-1-ev-band-1--after-s07-centrifuge"
+        "niezgoda2012-cm3021462-cuxinys2-quantum-dots-4-0-nm-2-1-ev-band-1--after-d2-s09-dry"
       ]
     }
   ],
@@ -870,6 +896,87 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s09-dry",
+      "action": "dry",
+      "label": "Drying QDs",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s08-precipitate"
+      ],
+      "inputs": [
+        "niezgoda2012-cm3021462-cuxinys2-quantum-dots-4-0-nm-2-1-ev-band-1--after-s08-precipitate"
+      ],
+      "outputs": [
+        "niezgoda2012-cm3021462-cuxinys2-quantum-dots-4-0-nm-2-1-ev-band-1--after-d2-s09-dry"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Drying QDs",
+      "evidence": [
+        {
+          "source_id": "niezgoda2012-cm3021462",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s10-disperse",
+      "action": "disperse",
+      "label": "Dispersing in nonpolar solvent",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s09-dry"
+      ],
+      "inputs": [
+        "niezgoda2012-cm3021462-cuxinys2-quantum-dots-4-0-nm-2-1-ev-band-1--after-d2-s09-dry"
+      ],
+      "outputs": [
+        "niezgoda2012-cm3021462-cuxinys2-quantum-dots-4-0-nm-2-1-ev-band-1--after-d2-s10-disperse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "argon",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "niezgoda2012-cm3021462",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dispersing in nonpolar solvent",
+      "evidence": [
+        {
+          "source_id": "niezgoda2012-cm3021462",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -878,7 +985,7 @@
       "sample_id": "niezgoda2012-cm3021462-cuxinys2-quantum-dots-4-0-nm-2-1-ev-band-1--product",
       "source_sample_label": "CuxInyS2 quantum dots (4.0 nm, 2.1 eV band gap)",
       "batch_id": null,
-      "material_state_id": "niezgoda2012-cm3021462-cuxinys2-quantum-dots-4-0-nm-2-1-ev-band-1--after-s08-precipitate",
+      "material_state_id": "niezgoda2012-cm3021462-cuxinys2-quantum-dots-4-0-nm-2-1-ev-band-1--after-d2-s10-disperse",
       "parent_sample_id": null,
       "composition": {
         "value": "Cu0.88In0.95S2",
@@ -903,9 +1010,14 @@
         "note": ""
       },
       "morphology": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "sphere",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "niezgoda2012-cm3021462",
+            "locator": "Main PDF p.2"
+          }
+        ],
         "note": ""
       },
       "surface": {
@@ -932,14 +1044,45 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "niezgoda2012-cm3021462-cuxinys2-quantum-dots-4-0-nm-2-1-ev-band-1--size",
+      "sample_id": "niezgoda2012-cm3021462-cuxinys2-quantum-dots-4-0-nm-2-1-ev-band-1--product",
+      "property": "diameter",
+      "technique": "TEM",
+      "value": {
+        "value": 4.0,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "4 nm",
+        "evidence": [
+          {
+            "source_id": "niezgoda2012-cm3021462",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "niezgoda2012-cm3021462",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
-      "Shape not reported in the extracted text.",
-      "Size not reported in the extracted text.",
       "Reactor not reported in the extracted text."
     ],
     "conflicts": [],

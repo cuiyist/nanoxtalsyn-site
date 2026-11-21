@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "altntas2016-acs-jpcc-6b01977-inpzns-alloy-zns-shell-qds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Yemliha Altıntas; Mohammad Younis Talpur; Miray Ünlü; Evren Mutlugün (2016): InPZnS alloy/ZnS shell QDs",
   "material": {
@@ -293,7 +293,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "volume": {
+          "value": 8,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "8 mL",
+          "evidence": [
+            {
+              "source_id": "altntas2016-acs-jpcc-6b01977",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -324,17 +343,25 @@
       ]
     },
     {
-      "id": "altntas2016-acs-jpcc-6b01977-inpzns-alloy-zns-shell-qds-1--after-s03-inject",
+      "id": "altntas2016-acs-jpcc-6b01977-inpzns-alloy-zns-shell-qds-1--after-d2-s03-heat",
       "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
-        "altntas2016-acs-jpcc-6b01977-inpzns-alloy-zns-shell-qds-1--after-s02-cool",
+        "altntas2016-acs-jpcc-6b01977-inpzns-alloy-zns-shell-qds-1--after-s02-cool"
+      ]
+    },
+    {
+      "id": "altntas2016-acs-jpcc-6b01977-inpzns-alloy-zns-shell-qds-1--after-s03-inject",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "altntas2016-acs-jpcc-6b01977-inpzns-alloy-zns-shell-qds-1--after-d2-s03-heat",
         "altntas2016-acs-jpcc-6b01977-inpzns-alloy-zns-shell-qds-1--tris-trimethylsilyl-phosphine"
       ]
     },
     {
       "id": "altntas2016-acs-jpcc-6b01977-inpzns-alloy-zns-shell-qds-1--after-s04-hold",
-      "name": "mixture after step 4",
+      "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
         "altntas2016-acs-jpcc-6b01977-inpzns-alloy-zns-shell-qds-1--after-s03-inject"
@@ -342,7 +369,7 @@
     },
     {
       "id": "altntas2016-acs-jpcc-6b01977-inpzns-alloy-zns-shell-qds-1--after-s05-cool",
-      "name": "mixture after step 5",
+      "name": "mixture after step 6",
       "kind": "reaction_batch",
       "parent_ids": [
         "altntas2016-acs-jpcc-6b01977-inpzns-alloy-zns-shell-qds-1--after-s04-hold"
@@ -350,7 +377,7 @@
     },
     {
       "id": "altntas2016-acs-jpcc-6b01977-inpzns-alloy-zns-shell-qds-1--after-s06-add",
-      "name": "mixture after step 6",
+      "name": "mixture after step 7",
       "kind": "reaction_batch",
       "parent_ids": [
         "altntas2016-acs-jpcc-6b01977-inpzns-alloy-zns-shell-qds-1--after-s05-cool",
@@ -492,9 +519,9 @@
       ]
     },
     {
-      "id": "s03-inject",
-      "action": "inject",
-      "label": "Injection of (TMS)3P",
+      "id": "d2-s03-heat",
+      "action": "heat",
+      "label": "Heating under Ar flow",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -502,7 +529,87 @@
         "s02-cool"
       ],
       "inputs": [
-        "altntas2016-acs-jpcc-6b01977-inpzns-alloy-zns-shell-qds-1--after-s02-cool",
+        "altntas2016-acs-jpcc-6b01977-inpzns-alloy-zns-shell-qds-1--after-s02-cool"
+      ],
+      "outputs": [
+        "altntas2016-acs-jpcc-6b01977-inpzns-alloy-zns-shell-qds-1--after-d2-s03-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 220,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "220 °C",
+          "evidence": [
+            {
+              "source_id": "altntas2016-acs-jpcc-6b01977",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 h",
+          "evidence": [
+            {
+              "source_id": "altntas2016-acs-jpcc-6b01977",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "altntas2016-acs-jpcc-6b01977",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heating under Ar flow",
+      "evidence": [
+        {
+          "source_id": "altntas2016-acs-jpcc-6b01977",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "s03-inject",
+      "action": "inject",
+      "label": "Injection of (TMS)3P",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-heat"
+      ],
+      "inputs": [
+        "altntas2016-acs-jpcc-6b01977-inpzns-alloy-zns-shell-qds-1--after-d2-s03-heat",
         "altntas2016-acs-jpcc-6b01977-inpzns-alloy-zns-shell-qds-1--tris-trimethylsilyl-phosphine"
       ],
       "outputs": [
@@ -902,10 +1009,9 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
-      "Ligand not reported in the extracted text.",
-      "Amount of 1-octadecene not reported in the extracted text."
+      "Ligand not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

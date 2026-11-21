@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "singh2018-jacs-8b07566-5-ml-cdse-nanoplatelets-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Shalini Singh; Renu Tomar; Stephanie ten Brinck; Jonathan De Roo; Pieter Geiregat; José C. Martins; Ivan Infante; Zeger Hens (2018): 5 ML CdSe nanoplatelets",
   "material": {
@@ -50,9 +50,14 @@
       "note": ""
     },
     "phase": {
-      "value": null,
-      "status": "not_reported",
-      "evidence": [],
+      "value": "zinc blende",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "singh2018-jacs-8b07566",
+          "locator": "Main PDF p.3"
+        }
+      ],
       "note": ""
     },
     "size": {
@@ -246,10 +251,26 @@
     },
     {
       "id": "singh2018-jacs-8b07566-5-ml-cdse-nanoplatelets-1--after-s06-cool",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "singh2018-jacs-8b07566-5-ml-cdse-nanoplatelets-1--after-s05-inject"
+      ]
+    },
+    {
+      "id": "singh2018-jacs-8b07566-5-ml-cdse-nanoplatelets-1--after-d2-s07-purify",
+      "name": "mixture after step 7",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "singh2018-jacs-8b07566-5-ml-cdse-nanoplatelets-1--after-s06-cool"
+      ]
+    },
+    {
+      "id": "singh2018-jacs-8b07566-5-ml-cdse-nanoplatelets-1--after-d2-s08-redisperse",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "singh2018-jacs-8b07566-5-ml-cdse-nanoplatelets-1--after-s05-inject"
+        "singh2018-jacs-8b07566-5-ml-cdse-nanoplatelets-1--after-d2-s07-purify"
       ]
     }
   ],
@@ -482,6 +503,24 @@
             }
           ],
           "derivation": null
+        },
+        "duration": {
+          "value": 6,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "6 min",
+          "evidence": [
+            {
+              "source_id": "singh2018-jacs-8b07566",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
         }
       },
       "environment": {
@@ -561,6 +600,82 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s07-purify",
+      "action": "purify",
+      "label": "Purifying the nanoplatelets using ethanol/cyclohexane",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s06-cool"
+      ],
+      "inputs": [
+        "singh2018-jacs-8b07566-5-ml-cdse-nanoplatelets-1--after-s06-cool"
+      ],
+      "outputs": [
+        "singh2018-jacs-8b07566-5-ml-cdse-nanoplatelets-1--after-d2-s07-purify"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Purifying the nanoplatelets using ethanol/cyclohexane",
+      "evidence": [
+        {
+          "source_id": "singh2018-jacs-8b07566",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s08-redisperse",
+      "action": "redisperse",
+      "label": "Redispersing the nanoplatelets in hexane",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s07-purify"
+      ],
+      "inputs": [
+        "singh2018-jacs-8b07566-5-ml-cdse-nanoplatelets-1--after-d2-s07-purify"
+      ],
+      "outputs": [
+        "singh2018-jacs-8b07566-5-ml-cdse-nanoplatelets-1--after-d2-s08-redisperse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Redispersing the nanoplatelets in hexane",
+      "evidence": [
+        {
+          "source_id": "singh2018-jacs-8b07566",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -569,7 +684,7 @@
       "sample_id": "singh2018-jacs-8b07566-5-ml-cdse-nanoplatelets-1--product",
       "source_sample_label": "5 ML CdSe nanoplatelets",
       "batch_id": null,
-      "material_state_id": "singh2018-jacs-8b07566-5-ml-cdse-nanoplatelets-1--after-s06-cool",
+      "material_state_id": "singh2018-jacs-8b07566-5-ml-cdse-nanoplatelets-1--after-d2-s08-redisperse",
       "parent_sample_id": null,
       "composition": {
         "value": "CdSe",
@@ -583,9 +698,14 @@
         "note": ""
       },
       "phase": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "zinc blende",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "singh2018-jacs-8b07566",
+            "locator": "Main PDF p.3"
+          }
+        ],
         "note": ""
       },
       "morphology": {
@@ -651,14 +771,77 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "singh2018-jacs-8b07566-5-ml-cdse-nanoplatelets-1--photoluminescence-peak",
+      "sample_id": "singh2018-jacs-8b07566-5-ml-cdse-nanoplatelets-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 547,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "547 nm",
+        "evidence": [
+          {
+            "source_id": "singh2018-jacs-8b07566",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "singh2018-jacs-8b07566",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "singh2018-jacs-8b07566-5-ml-cdse-nanoplatelets-1--photoluminescence-quantum-yield",
+      "sample_id": "singh2018-jacs-8b07566-5-ml-cdse-nanoplatelets-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 50,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "50 %",
+        "evidence": [
+          {
+            "source_id": "singh2018-jacs-8b07566",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "singh2018-jacs-8b07566",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
-      "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
       "Amount of cadmium myristate not reported in the extracted text.",

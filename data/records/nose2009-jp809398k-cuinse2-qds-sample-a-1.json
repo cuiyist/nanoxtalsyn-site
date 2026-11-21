@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "nose2009-jp809398k-cuinse2-qds-sample-a-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Katsuhiro Nose; Takahisa Omata; Shinya Otsuka-Yao-Matsuo (2009): CuInSe2 QDs (sample A)",
   "material": {
@@ -211,7 +211,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "volume": {
+          "value": 5.0,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "5 mL",
+          "evidence": [
+            {
+              "source_id": "nose2009-jp809398k",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -257,6 +276,82 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "nose2009-jp809398k-cuinse2-qds-sample-a-1--trioctylphosphite",
+      "name": "trioctylphosphite",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 210,
+          "minimum": null,
+          "maximum": null,
+          "unit": "µL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "210 µL",
+          "evidence": [
+            {
+              "source_id": "nose2009-jp809398k",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "nose2009-jp809398k",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "nose2009-jp809398k-cuinse2-qds-sample-a-1--trioctylphosphine",
+      "name": "trioctylphosphine",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 2.0,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2 mL",
+          "evidence": [
+            {
+              "source_id": "nose2009-jp809398k",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "nose2009-jp809398k",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -266,7 +361,8 @@
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": [
-        "nose2009-jp809398k-cuinse2-qds-sample-a-1--selenium"
+        "nose2009-jp809398k-cuinse2-qds-sample-a-1--selenium",
+        "nose2009-jp809398k-cuinse2-qds-sample-a-1--trioctylphosphine"
       ]
     },
     {
@@ -276,7 +372,8 @@
       "parent_ids": [
         "nose2009-jp809398k-cuinse2-qds-sample-a-1--after-s01-dissolve",
         "nose2009-jp809398k-cuinse2-qds-sample-a-1--copper-iodide",
-        "nose2009-jp809398k-cuinse2-qds-sample-a-1--1-octadecene"
+        "nose2009-jp809398k-cuinse2-qds-sample-a-1--1-octadecene",
+        "nose2009-jp809398k-cuinse2-qds-sample-a-1--trioctylphosphite"
       ]
     },
     {
@@ -285,7 +382,8 @@
       "kind": "reaction_batch",
       "parent_ids": [
         "nose2009-jp809398k-cuinse2-qds-sample-a-1--after-s02-dissolve",
-        "nose2009-jp809398k-cuinse2-qds-sample-a-1--indium-chloride"
+        "nose2009-jp809398k-cuinse2-qds-sample-a-1--indium-chloride",
+        "nose2009-jp809398k-cuinse2-qds-sample-a-1--trioctylphosphite"
       ]
     },
     {
@@ -295,7 +393,8 @@
       "parent_ids": [
         "nose2009-jp809398k-cuinse2-qds-sample-a-1--after-s03-dissolve",
         "nose2009-jp809398k-cuinse2-qds-sample-a-1--indium-chloride",
-        "nose2009-jp809398k-cuinse2-qds-sample-a-1--1-octadecene"
+        "nose2009-jp809398k-cuinse2-qds-sample-a-1--1-octadecene",
+        "nose2009-jp809398k-cuinse2-qds-sample-a-1--trioctylphosphite"
       ]
     },
     {
@@ -308,7 +407,8 @@
         "nose2009-jp809398k-cuinse2-qds-sample-a-1--indium-chloride",
         "nose2009-jp809398k-cuinse2-qds-sample-a-1--selenium",
         "nose2009-jp809398k-cuinse2-qds-sample-a-1--1-octadecene",
-        "nose2009-jp809398k-cuinse2-qds-sample-a-1--1-hexadecylamine"
+        "nose2009-jp809398k-cuinse2-qds-sample-a-1--1-hexadecylamine",
+        "nose2009-jp809398k-cuinse2-qds-sample-a-1--trioctylphosphite"
       ]
     },
     {
@@ -321,7 +421,8 @@
         "nose2009-jp809398k-cuinse2-qds-sample-a-1--indium-chloride",
         "nose2009-jp809398k-cuinse2-qds-sample-a-1--selenium",
         "nose2009-jp809398k-cuinse2-qds-sample-a-1--1-octadecene",
-        "nose2009-jp809398k-cuinse2-qds-sample-a-1--1-hexadecylamine"
+        "nose2009-jp809398k-cuinse2-qds-sample-a-1--1-hexadecylamine",
+        "nose2009-jp809398k-cuinse2-qds-sample-a-1--trioctylphosphite"
       ]
     },
     {
@@ -343,7 +444,8 @@
       "optional": false,
       "depends_on": [],
       "inputs": [
-        "nose2009-jp809398k-cuinse2-qds-sample-a-1--selenium"
+        "nose2009-jp809398k-cuinse2-qds-sample-a-1--selenium",
+        "nose2009-jp809398k-cuinse2-qds-sample-a-1--trioctylphosphine"
       ],
       "outputs": [
         "nose2009-jp809398k-cuinse2-qds-sample-a-1--after-s01-dissolve"
@@ -388,7 +490,8 @@
       "inputs": [
         "nose2009-jp809398k-cuinse2-qds-sample-a-1--after-s01-dissolve",
         "nose2009-jp809398k-cuinse2-qds-sample-a-1--copper-iodide",
-        "nose2009-jp809398k-cuinse2-qds-sample-a-1--1-octadecene"
+        "nose2009-jp809398k-cuinse2-qds-sample-a-1--1-octadecene",
+        "nose2009-jp809398k-cuinse2-qds-sample-a-1--trioctylphosphite"
       ],
       "outputs": [
         "nose2009-jp809398k-cuinse2-qds-sample-a-1--after-s02-dissolve"
@@ -469,7 +572,8 @@
       ],
       "inputs": [
         "nose2009-jp809398k-cuinse2-qds-sample-a-1--after-s02-dissolve",
-        "nose2009-jp809398k-cuinse2-qds-sample-a-1--indium-chloride"
+        "nose2009-jp809398k-cuinse2-qds-sample-a-1--indium-chloride",
+        "nose2009-jp809398k-cuinse2-qds-sample-a-1--trioctylphosphite"
       ],
       "outputs": [
         "nose2009-jp809398k-cuinse2-qds-sample-a-1--after-s03-dissolve"
@@ -551,7 +655,8 @@
       "inputs": [
         "nose2009-jp809398k-cuinse2-qds-sample-a-1--after-s03-dissolve",
         "nose2009-jp809398k-cuinse2-qds-sample-a-1--indium-chloride",
-        "nose2009-jp809398k-cuinse2-qds-sample-a-1--1-octadecene"
+        "nose2009-jp809398k-cuinse2-qds-sample-a-1--1-octadecene",
+        "nose2009-jp809398k-cuinse2-qds-sample-a-1--trioctylphosphite"
       ],
       "outputs": [
         "nose2009-jp809398k-cuinse2-qds-sample-a-1--after-s04-dilute"
@@ -599,7 +704,8 @@
         "nose2009-jp809398k-cuinse2-qds-sample-a-1--indium-chloride",
         "nose2009-jp809398k-cuinse2-qds-sample-a-1--selenium",
         "nose2009-jp809398k-cuinse2-qds-sample-a-1--1-octadecene",
-        "nose2009-jp809398k-cuinse2-qds-sample-a-1--1-hexadecylamine"
+        "nose2009-jp809398k-cuinse2-qds-sample-a-1--1-hexadecylamine",
+        "nose2009-jp809398k-cuinse2-qds-sample-a-1--trioctylphosphite"
       ],
       "outputs": [
         "nose2009-jp809398k-cuinse2-qds-sample-a-1--after-s05-mix"
@@ -666,7 +772,8 @@
         "nose2009-jp809398k-cuinse2-qds-sample-a-1--indium-chloride",
         "nose2009-jp809398k-cuinse2-qds-sample-a-1--selenium",
         "nose2009-jp809398k-cuinse2-qds-sample-a-1--1-octadecene",
-        "nose2009-jp809398k-cuinse2-qds-sample-a-1--1-hexadecylamine"
+        "nose2009-jp809398k-cuinse2-qds-sample-a-1--1-hexadecylamine",
+        "nose2009-jp809398k-cuinse2-qds-sample-a-1--trioctylphosphite"
       ],
       "outputs": [
         "nose2009-jp809398k-cuinse2-qds-sample-a-1--after-s06-heat"
@@ -872,15 +979,78 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "nose2009-jp809398k-cuinse2-qds-sample-a-1--photoluminescence-peak",
+      "sample_id": "nose2009-jp809398k-cuinse2-qds-sample-a-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 918,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "918 nm",
+        "evidence": [
+          {
+            "source_id": "nose2009-jp809398k",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "nose2009-jp809398k",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "nose2009-jp809398k-cuinse2-qds-sample-a-1--photoluminescence-quantum-yield",
+      "sample_id": "nose2009-jp809398k-cuinse2-qds-sample-a-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 5.0,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "5 %",
+        "evidence": [
+          {
+            "source_id": "nose2009-jp809398k",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "nose2009-jp809398k",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
-      "Shape not reported in the extracted text.",
-      "Amount of 1-octadecene not reported in the extracted text."
+      "Shape not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

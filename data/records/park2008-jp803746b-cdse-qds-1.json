@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "park2008-jp803746b-cdse-qds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Jeaho Park; Kwan Hyi Lee; Justin F. Galloway; Peter C. Searson (2008): CdSe QDs",
   "material": {
@@ -280,6 +280,63 @@
           "locator": "Main PDF p.1"
         }
       ]
+    },
+    {
+      "id": "park2008-jp803746b-cdse-qds-1--1-dodecanethiol",
+      "name": "1-dodecanethiol",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 8,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "8 mL",
+          "evidence": [
+            {
+              "source_id": "park2008-jp803746b",
+              "locator": "Main PDF p.1"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "park2008-jp803746b",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "park2008-jp803746b-cdse-qds-1--cd-se-precursor",
+      "name": "Cd/Se precursor",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "park2008-jp803746b",
+          "locator": "Main PDF p.1"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -295,18 +352,28 @@
       ]
     },
     {
-      "id": "park2008-jp803746b-cdse-qds-1--after-s02-combine",
+      "id": "park2008-jp803746b-cdse-qds-1--after-d2-s02-dissolve",
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
         "park2008-jp803746b-cdse-qds-1--after-s01-mix",
+        "park2008-jp803746b-cdse-qds-1--se",
+        "park2008-jp803746b-cdse-qds-1--trioctylphosphine"
+      ]
+    },
+    {
+      "id": "park2008-jp803746b-cdse-qds-1--after-s02-combine",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "park2008-jp803746b-cdse-qds-1--after-d2-s02-dissolve",
         "park2008-jp803746b-cdse-qds-1--cdo",
         "park2008-jp803746b-cdse-qds-1--se"
       ]
     },
     {
       "id": "park2008-jp803746b-cdse-qds-1--after-s03-heat",
-      "name": "mixture after step 3",
+      "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
         "park2008-jp803746b-cdse-qds-1--after-s02-combine",
@@ -316,7 +383,7 @@
     },
     {
       "id": "park2008-jp803746b-cdse-qds-1--after-s04-heat",
-      "name": "mixture after step 4",
+      "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
         "park2008-jp803746b-cdse-qds-1--after-s03-heat",
@@ -326,15 +393,16 @@
     },
     {
       "id": "park2008-jp803746b-cdse-qds-1--after-s05-inject",
-      "name": "mixture after step 5",
+      "name": "mixture after step 6",
       "kind": "reaction_batch",
       "parent_ids": [
-        "park2008-jp803746b-cdse-qds-1--after-s04-heat"
+        "park2008-jp803746b-cdse-qds-1--after-s04-heat",
+        "park2008-jp803746b-cdse-qds-1--cd-se-precursor"
       ]
     },
     {
       "id": "park2008-jp803746b-cdse-qds-1--after-s06-quench",
-      "name": "mixture after step 6",
+      "name": "mixture after step 7",
       "kind": "reaction_batch",
       "parent_ids": [
         "park2008-jp803746b-cdse-qds-1--after-s05-inject"
@@ -342,7 +410,7 @@
     },
     {
       "id": "park2008-jp803746b-cdse-qds-1--after-s07-wash",
-      "name": "mixture after step 7",
+      "name": "mixture after step 8",
       "kind": "reaction_batch",
       "parent_ids": [
         "park2008-jp803746b-cdse-qds-1--after-s06-quench"
@@ -350,7 +418,7 @@
     },
     {
       "id": "park2008-jp803746b-cdse-qds-1--after-s08-centrifuge",
-      "name": "mixture after step 8",
+      "name": "mixture after step 9",
       "kind": "reaction_batch",
       "parent_ids": [
         "park2008-jp803746b-cdse-qds-1--after-s07-wash"
@@ -361,7 +429,8 @@
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "park2008-jp803746b-cdse-qds-1--after-s08-centrifuge"
+        "park2008-jp803746b-cdse-qds-1--after-s08-centrifuge",
+        "park2008-jp803746b-cdse-qds-1--1-dodecanethiol"
       ]
     }
   ],
@@ -429,9 +498,9 @@
       ]
     },
     {
-      "id": "s02-combine",
-      "action": "combine",
-      "label": "Combine Cd and Se precursors",
+      "id": "d2-s02-dissolve",
+      "action": "dissolve",
+      "label": "Dissolve Se in trioctylphosphine",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -440,6 +509,70 @@
       ],
       "inputs": [
         "park2008-jp803746b-cdse-qds-1--after-s01-mix",
+        "park2008-jp803746b-cdse-qds-1--se",
+        "park2008-jp803746b-cdse-qds-1--trioctylphosphine"
+      ],
+      "outputs": [
+        "park2008-jp803746b-cdse-qds-1--after-d2-s02-dissolve"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 190,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "190 min",
+          "evidence": [
+            {
+              "source_id": "park2008-jp803746b",
+              "locator": "Main PDF p.1"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "park2008-jp803746b",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dissolve Se in trioctylphosphine",
+      "evidence": [
+        {
+          "source_id": "park2008-jp803746b",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "s02-combine",
+      "action": "combine",
+      "label": "Combine Cd and Se precursors",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-dissolve"
+      ],
+      "inputs": [
+        "park2008-jp803746b-cdse-qds-1--after-d2-s02-dissolve",
         "park2008-jp803746b-cdse-qds-1--cdo",
         "park2008-jp803746b-cdse-qds-1--se"
       ],
@@ -591,6 +724,24 @@
             }
           ],
           "derivation": null
+        },
+        "duration": {
+          "value": 5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "5 min",
+          "evidence": [
+            {
+              "source_id": "park2008-jp803746b",
+              "locator": "Main PDF p.1"
+            }
+          ],
+          "derivation": null
         }
       },
       "environment": {
@@ -630,7 +781,8 @@
         "s04-heat"
       ],
       "inputs": [
-        "park2008-jp803746b-cdse-qds-1--after-s04-heat"
+        "park2008-jp803746b-cdse-qds-1--after-s04-heat",
+        "park2008-jp803746b-cdse-qds-1--cd-se-precursor"
       ],
       "outputs": [
         "park2008-jp803746b-cdse-qds-1--after-s05-inject"
@@ -811,7 +963,8 @@
         "s08-centrifuge"
       ],
       "inputs": [
-        "park2008-jp803746b-cdse-qds-1--after-s08-centrifuge"
+        "park2008-jp803746b-cdse-qds-1--after-s08-centrifuge",
+        "park2008-jp803746b-cdse-qds-1--1-dodecanethiol"
       ],
       "outputs": [
         "park2008-jp803746b-cdse-qds-1--after-s09-cap"
@@ -941,14 +1094,47 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "park2008-jp803746b-cdse-qds-1--photoluminescence-quantum-yield",
+      "sample_id": "park2008-jp803746b-cdse-qds-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 11.5,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "11.5 %",
+        "evidence": [
+          {
+            "source_id": "park2008-jp803746b",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "park2008-jp803746b",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
-      "Reaction time not reported in the extracted text."
+      "Reaction time not reported in the extracted text.",
+      "Amount of Cd/Se precursor not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

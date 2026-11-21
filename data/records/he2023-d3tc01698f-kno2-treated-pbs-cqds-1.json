@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "he2023-d3tc01698f-kno2-treated-pbs-cqds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Jungang He; Xianchang Zhou; Ya Wang; Mohan Yuan; Hang Xia; Xiao Chen; You Ge; Xia Wang; Liang Gao; Jiang Tang (2023): KNO2-treated PbS CQDs",
   "material": {
@@ -247,18 +247,29 @@
       ]
     },
     {
-      "id": "he2023-d3tc01698f-kno2-treated-pbs-cqds-1--after-s02-inject",
+      "id": "he2023-d3tc01698f-kno2-treated-pbs-cqds-1--after-d2-s02-heat",
       "name": "mixture after step 2",
       "kind": "reaction_batch",
       "parent_ids": [
         "he2023-d3tc01698f-kno2-treated-pbs-cqds-1--after-s01-heat",
+        "he2023-d3tc01698f-kno2-treated-pbs-cqds-1--pbo",
+        "he2023-d3tc01698f-kno2-treated-pbs-cqds-1--oleic-acid",
+        "he2023-d3tc01698f-kno2-treated-pbs-cqds-1--1-octadecene"
+      ]
+    },
+    {
+      "id": "he2023-d3tc01698f-kno2-treated-pbs-cqds-1--after-s02-inject",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "he2023-d3tc01698f-kno2-treated-pbs-cqds-1--after-d2-s02-heat",
         "he2023-d3tc01698f-kno2-treated-pbs-cqds-1--bis-trimethylsilyl-sulfide",
         "he2023-d3tc01698f-kno2-treated-pbs-cqds-1--1-octadecene"
       ]
     },
     {
       "id": "he2023-d3tc01698f-kno2-treated-pbs-cqds-1--after-s03-precipitate",
-      "name": "mixture after step 3",
+      "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
         "he2023-d3tc01698f-kno2-treated-pbs-cqds-1--after-s02-inject",
@@ -270,7 +281,7 @@
     },
     {
       "id": "he2023-d3tc01698f-kno2-treated-pbs-cqds-1--after-s04-centrifuge",
-      "name": "mixture after step 4",
+      "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
         "he2023-d3tc01698f-kno2-treated-pbs-cqds-1--after-s03-precipitate",
@@ -282,10 +293,22 @@
     },
     {
       "id": "he2023-d3tc01698f-kno2-treated-pbs-cqds-1--after-s05-wash",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "he2023-d3tc01698f-kno2-treated-pbs-cqds-1--after-s04-centrifuge",
+        "he2023-d3tc01698f-kno2-treated-pbs-cqds-1--pbo",
+        "he2023-d3tc01698f-kno2-treated-pbs-cqds-1--oleic-acid",
+        "he2023-d3tc01698f-kno2-treated-pbs-cqds-1--1-octadecene",
+        "he2023-d3tc01698f-kno2-treated-pbs-cqds-1--bis-trimethylsilyl-sulfide"
+      ]
+    },
+    {
+      "id": "he2023-d3tc01698f-kno2-treated-pbs-cqds-1--after-d2-s07-redisperse",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "he2023-d3tc01698f-kno2-treated-pbs-cqds-1--after-s04-centrifuge",
+        "he2023-d3tc01698f-kno2-treated-pbs-cqds-1--after-s05-wash",
         "he2023-d3tc01698f-kno2-treated-pbs-cqds-1--pbo",
         "he2023-d3tc01698f-kno2-treated-pbs-cqds-1--oleic-acid",
         "he2023-d3tc01698f-kno2-treated-pbs-cqds-1--1-octadecene",
@@ -370,9 +393,9 @@
       ]
     },
     {
-      "id": "s02-inject",
-      "action": "inject",
-      "label": "TMS dissolved in degassed ODE was swiftly injected into the Pb precursor under vigorous stirring at 120 1C.",
+      "id": "d2-s02-heat",
+      "action": "heat",
+      "label": "The solution temperature was adjusted to 120 1C.",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -381,6 +404,84 @@
       ],
       "inputs": [
         "he2023-d3tc01698f-kno2-treated-pbs-cqds-1--after-s01-heat",
+        "he2023-d3tc01698f-kno2-treated-pbs-cqds-1--pbo",
+        "he2023-d3tc01698f-kno2-treated-pbs-cqds-1--oleic-acid",
+        "he2023-d3tc01698f-kno2-treated-pbs-cqds-1--1-octadecene"
+      ],
+      "outputs": [
+        "he2023-d3tc01698f-kno2-treated-pbs-cqds-1--after-d2-s02-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 120,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "120 °C",
+          "evidence": [
+            {
+              "source_id": "he2023-d3tc01698f",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 hour",
+          "evidence": [
+            {
+              "source_id": "he2023-d3tc01698f",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "The solution temperature was adjusted to 120 1C.",
+      "evidence": [
+        {
+          "source_id": "he2023-d3tc01698f",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "s02-inject",
+      "action": "inject",
+      "label": "TMS dissolved in degassed ODE was swiftly injected into the Pb precursor under vigorous stirring at 120 1C.",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s02-heat"
+      ],
+      "inputs": [
+        "he2023-d3tc01698f-kno2-treated-pbs-cqds-1--after-d2-s02-heat",
         "he2023-d3tc01698f-kno2-treated-pbs-cqds-1--bis-trimethylsilyl-sulfide",
         "he2023-d3tc01698f-kno2-treated-pbs-cqds-1--1-octadecene"
       ],
@@ -553,6 +654,48 @@
           "locator": "Main PDF p.7"
         }
       ]
+    },
+    {
+      "id": "d2-s07-redisperse",
+      "action": "redisperse",
+      "label": "Redisperse",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s05-wash"
+      ],
+      "inputs": [
+        "he2023-d3tc01698f-kno2-treated-pbs-cqds-1--after-s05-wash",
+        "he2023-d3tc01698f-kno2-treated-pbs-cqds-1--pbo",
+        "he2023-d3tc01698f-kno2-treated-pbs-cqds-1--oleic-acid",
+        "he2023-d3tc01698f-kno2-treated-pbs-cqds-1--1-octadecene",
+        "he2023-d3tc01698f-kno2-treated-pbs-cqds-1--bis-trimethylsilyl-sulfide"
+      ],
+      "outputs": [
+        "he2023-d3tc01698f-kno2-treated-pbs-cqds-1--after-d2-s07-redisperse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Redisperse",
+      "evidence": [
+        {
+          "source_id": "he2023-d3tc01698f",
+          "locator": "Main PDF p.7"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -561,7 +704,7 @@
       "sample_id": "he2023-d3tc01698f-kno2-treated-pbs-cqds-1--product",
       "source_sample_label": "KNO2-treated PbS CQDs",
       "batch_id": null,
-      "material_state_id": "he2023-d3tc01698f-kno2-treated-pbs-cqds-1--after-s05-wash",
+      "material_state_id": "he2023-d3tc01698f-kno2-treated-pbs-cqds-1--after-d2-s07-redisperse",
       "parent_sample_id": null,
       "composition": {
         "value": null,
@@ -648,7 +791,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Atmosphere not reported in the extracted text."

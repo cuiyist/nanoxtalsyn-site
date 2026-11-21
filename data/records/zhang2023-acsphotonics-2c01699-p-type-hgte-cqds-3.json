@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "zhang2023-acsphotonics-2c01699-p-type-hgte-cqds-3",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Shuo Zhang; Cheng Bi; Tianling Qin; Yanfei Liu; Jie Cao; Jiaqi Song; Yongjun Huo; Menglu Chen; Qun Hao; Xin Tang (2023): p-type HgTe CQDs",
   "material": {
@@ -189,6 +189,101 @@
           "locator": "Main PDF p.8"
         }
       ]
+    },
+    {
+      "id": "zhang2023-acsphotonics-2c01699-p-type-hgte-cqds-3--tetrabutylammonium-bromide-tbabr",
+      "name": "Tetrabutylammonium bromide (TBABr)",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zhang2023-acsphotonics-2c01699",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    },
+    {
+      "id": "zhang2023-acsphotonics-2c01699-p-type-hgte-cqds-3--hgcl2",
+      "name": "HgCl2",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zhang2023-acsphotonics-2c01699",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    },
+    {
+      "id": "zhang2023-acsphotonics-2c01699-p-type-hgte-cqds-3--n-n-dimethylformamide-dmf",
+      "name": "N,N-dimethylformamide (DMF)",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zhang2023-acsphotonics-2c01699",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    },
+    {
+      "id": "zhang2023-acsphotonics-2c01699-p-type-hgte-cqds-3--toluene",
+      "name": "Toluene",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zhang2023-acsphotonics-2c01699",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    },
+    {
+      "id": "zhang2023-acsphotonics-2c01699-p-type-hgte-cqds-3--n2",
+      "name": "N2",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zhang2023-acsphotonics-2c01699",
+          "locator": "Main PDF p.8"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -216,7 +311,8 @@
       "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
-        "zhang2023-acsphotonics-2c01699-p-type-hgte-cqds-3--after-s02-add"
+        "zhang2023-acsphotonics-2c01699-p-type-hgte-cqds-3--after-s02-add",
+        "zhang2023-acsphotonics-2c01699-p-type-hgte-cqds-3--toluene"
       ]
     },
     {
@@ -228,19 +324,39 @@
       ]
     },
     {
-      "id": "zhang2023-acsphotonics-2c01699-p-type-hgte-cqds-3--after-s05-spin-coat",
+      "id": "zhang2023-acsphotonics-2c01699-p-type-hgte-cqds-3--after-d2-s05-dissolve",
       "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
-        "zhang2023-acsphotonics-2c01699-p-type-hgte-cqds-3--after-s04-centrifuge"
+        "zhang2023-acsphotonics-2c01699-p-type-hgte-cqds-3--after-s04-centrifuge",
+        "zhang2023-acsphotonics-2c01699-p-type-hgte-cqds-3--n-n-dimethylformamide-dmf"
+      ]
+    },
+    {
+      "id": "zhang2023-acsphotonics-2c01699-p-type-hgte-cqds-3--after-s05-spin-coat",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zhang2023-acsphotonics-2c01699-p-type-hgte-cqds-3--after-d2-s05-dissolve"
+      ]
+    },
+    {
+      "id": "zhang2023-acsphotonics-2c01699-p-type-hgte-cqds-3--after-d2-s07-solid-phase-ligand-excha",
+      "name": "mixture after step 7",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zhang2023-acsphotonics-2c01699-p-type-hgte-cqds-3--after-s05-spin-coat",
+        "zhang2023-acsphotonics-2c01699-p-type-hgte-cqds-3--1-2-ethanedithiol-edt",
+        "zhang2023-acsphotonics-2c01699-p-type-hgte-cqds-3--hcl",
+        "zhang2023-acsphotonics-2c01699-p-type-hgte-cqds-3--ipa"
       ]
     },
     {
       "id": "zhang2023-acsphotonics-2c01699-p-type-hgte-cqds-3--after-s06-rinse",
-      "name": "mixture after step 6",
+      "name": "mixture after step 8",
       "kind": "reaction_batch",
       "parent_ids": [
-        "zhang2023-acsphotonics-2c01699-p-type-hgte-cqds-3--after-s05-spin-coat",
+        "zhang2023-acsphotonics-2c01699-p-type-hgte-cqds-3--after-d2-s07-solid-phase-ligand-excha",
         "zhang2023-acsphotonics-2c01699-p-type-hgte-cqds-3--ipa"
       ]
     },
@@ -249,7 +365,8 @@
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "zhang2023-acsphotonics-2c01699-p-type-hgte-cqds-3--after-s06-rinse"
+        "zhang2023-acsphotonics-2c01699-p-type-hgte-cqds-3--after-s06-rinse",
+        "zhang2023-acsphotonics-2c01699-p-type-hgte-cqds-3--n2"
       ]
     }
   ],
@@ -341,7 +458,8 @@
         "s02-add"
       ],
       "inputs": [
-        "zhang2023-acsphotonics-2c01699-p-type-hgte-cqds-3--after-s02-add"
+        "zhang2023-acsphotonics-2c01699-p-type-hgte-cqds-3--after-s02-add",
+        "zhang2023-acsphotonics-2c01699-p-type-hgte-cqds-3--toluene"
       ],
       "outputs": [
         "zhang2023-acsphotonics-2c01699-p-type-hgte-cqds-3--after-s03-precipitate"
@@ -407,9 +525,9 @@
       ]
     },
     {
-      "id": "s05-spin-coat",
-      "action": "spin-coat",
-      "label": "Spin-coat CQD solution to form films",
+      "id": "d2-s05-dissolve",
+      "action": "dissolve",
+      "label": "Dissolve CQD solids in DMF",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -417,7 +535,46 @@
         "s04-centrifuge"
       ],
       "inputs": [
-        "zhang2023-acsphotonics-2c01699-p-type-hgte-cqds-3--after-s04-centrifuge"
+        "zhang2023-acsphotonics-2c01699-p-type-hgte-cqds-3--after-s04-centrifuge",
+        "zhang2023-acsphotonics-2c01699-p-type-hgte-cqds-3--n-n-dimethylformamide-dmf"
+      ],
+      "outputs": [
+        "zhang2023-acsphotonics-2c01699-p-type-hgte-cqds-3--after-d2-s05-dissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dissolve CQD solids in DMF",
+      "evidence": [
+        {
+          "source_id": "zhang2023-acsphotonics-2c01699",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    },
+    {
+      "id": "s05-spin-coat",
+      "action": "spin-coat",
+      "label": "Spin-coat CQD solution to form films",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s05-dissolve"
+      ],
+      "inputs": [
+        "zhang2023-acsphotonics-2c01699-p-type-hgte-cqds-3--after-d2-s05-dissolve"
       ],
       "outputs": [
         "zhang2023-acsphotonics-2c01699-p-type-hgte-cqds-3--after-s05-spin-coat"
@@ -445,9 +602,9 @@
       ]
     },
     {
-      "id": "s06-rinse",
-      "action": "rinse",
-      "label": "Rinse with IPA",
+      "id": "d2-s07-solid-phase-ligand-excha",
+      "action": "solid-phase ligand exchange",
+      "label": "Exchange ligands with EDT/HCl/IPA",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -456,6 +613,66 @@
       ],
       "inputs": [
         "zhang2023-acsphotonics-2c01699-p-type-hgte-cqds-3--after-s05-spin-coat",
+        "zhang2023-acsphotonics-2c01699-p-type-hgte-cqds-3--1-2-ethanedithiol-edt",
+        "zhang2023-acsphotonics-2c01699-p-type-hgte-cqds-3--hcl",
+        "zhang2023-acsphotonics-2c01699-p-type-hgte-cqds-3--ipa"
+      ],
+      "outputs": [
+        "zhang2023-acsphotonics-2c01699-p-type-hgte-cqds-3--after-d2-s07-solid-phase-ligand-excha"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 10,
+          "minimum": null,
+          "maximum": null,
+          "unit": "s",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "10 s",
+          "evidence": [
+            {
+              "source_id": "zhang2023-acsphotonics-2c01699",
+              "locator": "Main PDF p.8"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Exchange ligands with EDT/HCl/IPA",
+      "evidence": [
+        {
+          "source_id": "zhang2023-acsphotonics-2c01699",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    },
+    {
+      "id": "s06-rinse",
+      "action": "rinse",
+      "label": "Rinse with IPA",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s07-solid-phase-ligand-excha"
+      ],
+      "inputs": [
+        "zhang2023-acsphotonics-2c01699-p-type-hgte-cqds-3--after-d2-s07-solid-phase-ligand-excha",
         "zhang2023-acsphotonics-2c01699-p-type-hgte-cqds-3--ipa"
       ],
       "outputs": [
@@ -494,7 +711,8 @@
         "s06-rinse"
       ],
       "inputs": [
-        "zhang2023-acsphotonics-2c01699-p-type-hgte-cqds-3--after-s06-rinse"
+        "zhang2023-acsphotonics-2c01699-p-type-hgte-cqds-3--after-s06-rinse",
+        "zhang2023-acsphotonics-2c01699-p-type-hgte-cqds-3--n2"
       ],
       "outputs": [
         "zhang2023-acsphotonics-2c01699-p-type-hgte-cqds-3--after-s07-dry"
@@ -571,28 +789,34 @@
           "locator": "Main PDF p.4"
         }
       ],
-      "notes": []
+      "notes": [
+        "Reaction temperature: 365 K (Main PDF p.?).",
+        "Reaction time: 10 s (Main PDF p.?)."
+      ]
     }
   ],
   "measurements": [],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
       "Size not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",
-      "Reaction temperature not reported in the extracted text.",
-      "Reaction time not reported in the extracted text.",
       "Amount of HgTe CQDs not reported in the extracted text.",
       "Amount of β-mercaptoethanol (β-ME) not reported in the extracted text.",
       "Amount of (NH4)2S not reported in the extracted text.",
       "Amount of 1,2-ethanedithiol (EDT) not reported in the extracted text.",
       "Amount of HCl not reported in the extracted text.",
-      "Amount of IPA not reported in the extracted text."
+      "Amount of IPA not reported in the extracted text.",
+      "Amount of Tetrabutylammonium bromide (TBABr) not reported in the extracted text.",
+      "Amount of HgCl2 not reported in the extracted text.",
+      "Amount of N,N-dimethylformamide (DMF) not reported in the extracted text.",
+      "Amount of Toluene not reported in the extracted text.",
+      "Amount of N2 not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],
