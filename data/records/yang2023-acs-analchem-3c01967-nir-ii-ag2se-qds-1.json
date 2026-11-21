@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "yang2023-acs-analchem-3c01967-nir-ii-ag2se-qds-1",
-  "revision": 2,
+  "revision": 3,
   "record_type": "literature_protocol",
   "title": "Ling-Ling Yang; Wei Zhao; Zhen-Ya Liu; Mengtian Ren; Juan Kong; Xia Zong; Meng-Yao Luo; Bo Tang; Jiahongyi Xie; Dai-Wen Pang; An-An Liu (2023): NIR-II Ag2Se QDs",
   "material": {
@@ -328,7 +328,26 @@
       "outputs": [
         "yang2023-acs-analchem-3c01967-nir-ii-ag2se-qds-1--after-s02-cool"
       ],
-      "parameters": {},
+      "parameters": {
+        "duration": {
+          "value": 48,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "48 h",
+          "evidence": [
+            {
+              "source_id": "yang2023-acs-analchem-3c01967",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "environment": {
         "value": null,
         "status": "not_reported",
@@ -617,7 +636,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Atmosphere not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",

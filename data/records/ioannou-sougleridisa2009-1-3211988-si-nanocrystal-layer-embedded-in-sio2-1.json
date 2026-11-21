@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "ioannou-sougleridisa2009-1-3211988-si-nanocrystal-layer-embedded-in-sio2-1",
-  "revision": 2,
+  "revision": 3,
   "record_type": "literature_protocol",
   "title": "V. Ioannou-Sougleridis et al. (2009): Si nanocrystal layer embedded in SiO2",
   "material": {
@@ -133,7 +133,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "amount": {
+          "value": 3.5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "nm",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "3.5 nm",
+          "evidence": [
+            {
+              "source_id": "ioannou-sougleridisa2009-1-3211988",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -196,7 +215,26 @@
       "outputs": [
         "ioannou-sougleridisa2009-1-3211988-si-nanocrystal-layer-embedded-in-sio2-1--after-d2-s01-grow"
       ],
-      "parameters": {},
+      "parameters": {
+        "temperature": {
+          "value": 850,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "850 °C",
+          "evidence": [
+            {
+              "source_id": "ioannou-sougleridisa2009-1-3211988",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "environment": {
         "value": "N2",
         "status": "reported",
@@ -510,11 +548,44 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "ioannou-sougleridisa2009-1-3211988-si-nanocrystal-layer-embedded-in-sio2-1--size",
+      "sample_id": "ioannou-sougleridisa2009-1-3211988-si-nanocrystal-layer-embedded-in-sio2-1--product",
+      "property": "particle_size",
+      "technique": "not reported",
+      "value": {
+        "value": 10,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "10 nm",
+        "evidence": [
+          {
+            "source_id": "ioannou-sougleridisa2009-1-3211988",
+            "locator": "Main PDF"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "ioannou-sougleridisa2009-1-3211988",
+          "locator": "Main PDF"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",

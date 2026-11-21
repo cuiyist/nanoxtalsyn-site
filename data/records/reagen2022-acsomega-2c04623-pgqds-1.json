@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "reagen2022-acsomega-2c04623-pgqds-1",
-  "revision": 2,
+  "revision": 3,
   "record_type": "literature_protocol",
   "title": "Sarah Reagen; Yingfen Wu; Rahul Shahni; Wen Sun; Jin Zhang; Qianli R. Chu; Xiaodong Hou; Colin Combs; Julia Xiaojun Zhao (2022): PGQDs",
   "material": {
@@ -216,7 +216,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "volume": {
+          "value": 15.0,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "15 mL",
+          "evidence": [
+            {
+              "source_id": "reagen2022-acsomega-2c04623",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -642,7 +661,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Amount of DI water not reported in the extracted text."

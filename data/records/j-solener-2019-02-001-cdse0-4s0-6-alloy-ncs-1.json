@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "j-solener-2019-02-001-cdse0-4s0-6-alloy-ncs-1",
-  "revision": 2,
+  "revision": 3,
   "record_type": "literature_protocol",
   "title": "Sourav Maiti et al. (2019): CdSe0.4S0.6 alloy NCs",
   "material": {
@@ -211,7 +211,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "amount": {
+          "value": 4,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "4 mmol",
+          "evidence": [
+            {
+              "source_id": "j-solener-2019-02-001",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -582,7 +601,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",

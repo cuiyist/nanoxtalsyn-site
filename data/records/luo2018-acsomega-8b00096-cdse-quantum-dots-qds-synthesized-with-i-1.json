@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "luo2018-acsomega-8b00096-cdse-quantum-dots-qds-synthesized-with-i-1",
-  "revision": 2,
+  "revision": 3,
   "record_type": "literature_protocol",
   "title": "Hongfu Luo; Bemnet A. Kebede; Emily J. McLaurin; Viktor Chikan (2018): CdSe quantum dots (QDs) synthesized with induction heating (IH)",
   "material": {
@@ -167,7 +167,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "mass": {
+          "value": 26.13,
+          "minimum": null,
+          "maximum": null,
+          "unit": "g",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "26.13 g",
+          "evidence": [
+            {
+              "source_id": "luo2018-acsomega-8b00096",
+              "locator": "Main PDF p.5"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -203,7 +222,26 @@
       "outputs": [
         "luo2018-acsomega-8b00096-cdse-quantum-dots-qds-synthesized-with-i-1--after-s01-heat"
       ],
-      "parameters": {},
+      "parameters": {
+        "duration": {
+          "value": 2,
+          "minimum": null,
+          "maximum": null,
+          "unit": "s",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2 s",
+          "evidence": [
+            {
+              "source_id": "luo2018-acsomega-8b00096",
+              "locator": "Main PDF p.5"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "environment": {
         "value": "Ar",
         "status": "reported",
@@ -318,12 +356,44 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "luo2018-acsomega-8b00096-cdse-quantum-dots-qds-synthesized-with-i-1--photoluminescence-peak",
+      "sample_id": "luo2018-acsomega-8b00096-cdse-quantum-dots-qds-synthesized-with-i-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 460,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "460 nm",
+        "evidence": [
+          {
+            "source_id": "luo2018-acsomega-8b00096",
+            "locator": "Main PDF"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "luo2018-acsomega-8b00096",
+          "locator": "Main PDF"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",

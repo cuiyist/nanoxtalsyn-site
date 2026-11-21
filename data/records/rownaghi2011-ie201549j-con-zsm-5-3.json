@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "rownaghi2011-ie201549j-con-zsm-5-3",
-  "revision": 3,
+  "revision": 4,
   "record_type": "literature_protocol",
   "title": "Ali A. Rownaghi and Jonas Hedlund (2011): Con-ZSM-5",
   "material": {
@@ -287,7 +287,26 @@
       "outputs": [
         "rownaghi2011-ie201549j-con-zsm-5-3--after-d2-s04-stir"
       ],
-      "parameters": {},
+      "parameters": {
+        "duration": {
+          "value": 30,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "30 min",
+          "evidence": [
+            {
+              "source_id": "rownaghi2011-ie201549j",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "environment": {
         "value": "air",
         "status": "reported",
@@ -453,7 +472,44 @@
       "outputs": [
         "rownaghi2011-ie201549j-con-zsm-5-3--after-d2-s07-treat"
       ],
-      "parameters": {},
+      "parameters": {
+        "temperature": {
+          "value": 100,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "100 °C",
+          "evidence": [
+            {
+              "source_id": "rownaghi2011-ie201549j",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 h",
+          "evidence": [
+            {
+              "source_id": "rownaghi2011-ie201549j",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "environment": {
         "value": "air",
         "status": "reported",
@@ -542,7 +598,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",

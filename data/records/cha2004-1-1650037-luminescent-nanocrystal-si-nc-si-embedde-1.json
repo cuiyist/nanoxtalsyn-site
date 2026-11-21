@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "cha2004-1-1650037-luminescent-nanocrystal-si-nc-si-embedde-1",
-  "revision": 2,
+  "revision": 3,
   "record_type": "literature_protocol",
   "title": "Daigil Cha (2004): luminescent nanocrystal Si (nc-Si) embedded in Si/SiO2 superlattice",
   "material": {
@@ -168,7 +168,26 @@
       "outputs": [
         "cha2004-1-1650037-luminescent-nanocrystal-si-nc-si-embedde-1--after-s01-deposit"
       ],
-      "parameters": {},
+      "parameters": {
+        "temperature": {
+          "value": 450,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "450 °C",
+          "evidence": [
+            {
+              "source_id": "cha2004-1-1650037",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "environment": {
         "value": "vacuum",
         "status": "reported",
@@ -411,7 +430,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",

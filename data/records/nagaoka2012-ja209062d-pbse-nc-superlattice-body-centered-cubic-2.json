@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "nagaoka2012-ja209062d-pbse-nc-superlattice-body-centered-cubic-2",
-  "revision": 2,
+  "revision": 3,
   "record_type": "literature_protocol",
   "title": "Yasutaka Nagaoka (2012): PbSe NC superlattice (body-centered cubic)",
   "material": {
@@ -115,7 +115,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "concentration": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "%",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 %",
+          "evidence": [
+            {
+              "source_id": "nagaoka2012-ja209062d",
+              "locator": "Main PDF p.1"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -134,7 +153,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "concentration": {
+          "value": 5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "μM",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "5 μM",
+          "evidence": [
+            {
+              "source_id": "nagaoka2012-ja209062d",
+              "locator": "Main PDF p.1"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -446,7 +484,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Size not reported in the extracted text.",
       "Reactor not reported in the extracted text.",

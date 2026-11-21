@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "aboulaich2012-am300232z-cds-zns-mpa-qds-2",
-  "revision": 2,
+  "revision": 3,
   "record_type": "literature_protocol",
   "title": "Abdelhay Aboulaich; Denis Billaud; Mouhammad Abyan; Lavinia Balan; Jean-Jacques Gaumet; Ghouti Medjadhi; Jaafar Ghanbaja; Raphaël Schneider (2012): CdS/ZnS@MPA QDs",
   "material": {
@@ -322,7 +322,26 @@
       "outputs": [
         "aboulaich2012-am300232z-cds-zns-mpa-qds-2--after-s04-heat"
       ],
-      "parameters": {},
+      "parameters": {
+        "duration": {
+          "value": 4,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "4 h",
+          "evidence": [
+            {
+              "source_id": "aboulaich2012-am300232z",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "environment": {
         "value": null,
         "status": "not_reported",
@@ -587,7 +606,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",

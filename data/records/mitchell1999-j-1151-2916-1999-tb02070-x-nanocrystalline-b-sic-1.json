@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "mitchell1999-j-1151-2916-1999-tb02070-x-nanocrystalline-b-sic-1",
-  "revision": 2,
+  "revision": 3,
   "record_type": "literature_protocol",
   "title": "Brian S. Mitchell; Haoyue Zhang; Nikica Maljkovic; Martin Ade; Dirk Kurtenbach; Eberhard Müller (1999): nanocrystalline b-SiC",
   "material": {
@@ -387,7 +387,26 @@
       "outputs": [
         "mitchell1999-j-1151-2916-1999-tb02070-x-nanocrystalline-b-sic-1--after-s02-heat"
       ],
-      "parameters": {},
+      "parameters": {
+        "duration": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 h",
+          "evidence": [
+            {
+              "source_id": "mitchell1999-j-1151-2916-1999-tb02070-x",
+              "locator": "Main PDF p.1"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "environment": {
         "value": null,
         "status": "not_reported",
@@ -507,7 +526,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Atmosphere not reported in the extracted text.",

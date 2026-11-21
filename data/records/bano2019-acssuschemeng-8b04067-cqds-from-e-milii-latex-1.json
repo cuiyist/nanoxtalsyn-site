@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "bano2019-acssuschemeng-8b04067-cqds-from-e-milii-latex-1",
-  "revision": 2,
+  "revision": 3,
   "record_type": "literature_protocol",
   "title": "Daraksha Bano; Vijay Kumar; Vikas Kumar Singh; Subhash Chandra; Devendra Kumar Singh; Pradeep Kumar Yadav; Mahe Talat; Syed Hadi Hasan (2019): CQDs from E. milii latex",
   "material": {
@@ -357,7 +357,26 @@
       "outputs": [
         "bano2019-acssuschemeng-8b04067-cqds-from-e-milii-latex-1--after-d2-s04-centrifuge"
       ],
-      "parameters": {},
+      "parameters": {
+        "duration": {
+          "value": 20,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "20 min",
+          "evidence": [
+            {
+              "source_id": "bano2019-acssuschemeng-8b04067",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "environment": {
         "value": null,
         "status": "not_reported",
@@ -395,7 +414,26 @@
       "outputs": [
         "bano2019-acssuschemeng-8b04067-cqds-from-e-milii-latex-1--after-d2-s05-dialysis"
       ],
-      "parameters": {},
+      "parameters": {
+        "duration": {
+          "value": 24,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "24 h",
+          "evidence": [
+            {
+              "source_id": "bano2019-acssuschemeng-8b04067",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "environment": {
         "value": null,
         "status": "not_reported",
@@ -548,12 +586,44 @@
           "locator": "Main PDF p.5"
         }
       ]
+    },
+    {
+      "id": "bano2019-acssuschemeng-8b04067-cqds-from-e-milii-latex-1--size",
+      "sample_id": "bano2019-acssuschemeng-8b04067-cqds-from-e-milii-latex-1--product",
+      "property": "diameter",
+      "technique": "TEM",
+      "value": {
+        "value": 3.4,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "3.4 nm",
+        "evidence": [
+          {
+            "source_id": "bano2019-acssuschemeng-8b04067",
+            "locator": "Main PDF"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "bano2019-acssuschemeng-8b04067",
+          "locator": "Main PDF"
+        }
+      ]
     }
   ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Size not reported in the extracted text.",
       "Atmosphere not reported in the extracted text."

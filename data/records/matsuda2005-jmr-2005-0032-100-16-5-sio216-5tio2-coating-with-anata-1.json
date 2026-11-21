@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "matsuda2005-jmr-2005-0032-100-16-5-sio216-5tio2-coating-with-anata-1",
-  "revision": 2,
+  "revision": 3,
   "record_type": "literature_protocol",
   "title": "Atsunori Matsuda et al. (2005): (100 −16.5)SiO2·16.5TiO2 coating with anatase nanocrystals",
   "material": {
@@ -93,7 +93,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "concentration": {
+          "value": 3.6,
+          "minimum": null,
+          "maximum": null,
+          "unit": "wt%",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "3.6 wt%",
+          "evidence": [
+            {
+              "source_id": "matsuda2005-jmr-2005-0032",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -553,7 +572,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",

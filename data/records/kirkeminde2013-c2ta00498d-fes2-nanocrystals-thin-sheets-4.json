@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "kirkeminde2013-c2ta00498d-fes2-nanocrystals-thin-sheets-4",
-  "revision": 2,
+  "revision": 3,
   "record_type": "literature_protocol",
   "title": "Alec Kirkeminde; Shenqiang Ren (2013): FeS2 nanocrystals (thin sheets)",
   "material": {
@@ -134,7 +134,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "amount": {
+          "value": 4,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "4 mmol",
+          "evidence": [
+            {
+              "source_id": "kirkeminde2013-c2ta00498d",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -153,7 +172,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "volume": {
+          "value": 5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "5 mL",
+          "evidence": [
+            {
+              "source_id": "kirkeminde2013-c2ta00498d",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -345,7 +383,26 @@
       "outputs": [
         "kirkeminde2013-c2ta00498d-fes2-nanocrystals-thin-sheets-4--after-d2-s03-cool"
       ],
-      "parameters": {},
+      "parameters": {
+        "temperature": {
+          "value": 100,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "100 °C",
+          "evidence": [
+            {
+              "source_id": "kirkeminde2013-c2ta00498d",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "environment": {
         "value": null,
         "status": "not_reported",
@@ -463,11 +520,44 @@
       "notes": []
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "kirkeminde2013-c2ta00498d-fes2-nanocrystals-thin-sheets-4--size",
+      "sample_id": "kirkeminde2013-c2ta00498d-fes2-nanocrystals-thin-sheets-4--product",
+      "property": "particle_size",
+      "technique": "not reported",
+      "value": {
+        "value": 80,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "80 nm",
+        "evidence": [
+          {
+            "source_id": "kirkeminde2013-c2ta00498d",
+            "locator": "Main PDF"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "kirkeminde2013-c2ta00498d",
+          "locator": "Main PDF"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",

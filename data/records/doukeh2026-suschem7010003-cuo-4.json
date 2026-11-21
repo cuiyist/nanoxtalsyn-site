@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "doukeh2026-suschem7010003-cuo-4",
-  "revision": 2,
+  "revision": 3,
   "record_type": "literature_protocol",
   "title": "Rami Doukeh; Cristian Nicolae Eparu; Alina Petronela Prundurel; Mihail Tudose; Gheorghe Brănoiu; Iuliana Veronica Ghețiu; Laura Ștefania Păun; Sonia Mihai; Ioana Gabriela Stan; Doru Bogdan Stoica (2026): CuO",
   "material": {
@@ -134,7 +134,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "amount": {
+          "value": 5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "N",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "5 N",
+          "evidence": [
+            {
+              "source_id": "doukeh2026-suschem7010003",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -384,11 +403,44 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "doukeh2026-suschem7010003-cuo-4--size",
+      "sample_id": "doukeh2026-suschem7010003-cuo-4--product",
+      "property": "crystallite_size",
+      "technique": "XRD",
+      "value": {
+        "value": 17,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "17 nm",
+        "evidence": [
+          {
+            "source_id": "doukeh2026-suschem7010003",
+            "locator": "Main PDF"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "doukeh2026-suschem7010003",
+          "locator": "Main PDF"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "al2005-j-jcrysgro-2005-02-051-ge-quantum-dots-with-boron-on-ge-wetting-1",
-  "revision": 2,
+  "revision": 3,
   "record_type": "literature_protocol",
   "title": "W.H. Shi et al. (2005): Ge quantum dots with boron on Ge wetting layer",
   "material": {
@@ -111,7 +111,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "amount": {
+          "value": 2.0,
+          "minimum": null,
+          "maximum": null,
+          "unit": "sccm",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2 sccm",
+          "evidence": [
+            {
+              "source_id": "al2005-j-jcrysgro-2005-02-051",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -315,7 +334,26 @@
       "outputs": [
         "al2005-j-jcrysgro-2005-02-051-ge-quantum-dots-with-boron-on-ge-wetting-1--after-s02-deposit"
       ],
-      "parameters": {},
+      "parameters": {
+        "duration": {
+          "value": 5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "s",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "5 s",
+          "evidence": [
+            {
+              "source_id": "al2005-j-jcrysgro-2005-02-051",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "environment": {
         "value": null,
         "status": "not_reported",
@@ -425,7 +463,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
