@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1",
-  "revision": 2,
+  "revision": 3,
   "record_type": "literature_protocol",
   "title": "Ho Jin; Mateusz Goryca; Michael T. Janicke; Scott A. Crooker; Victor I. Klimov (2020): Cd1−xMnxSe QDs (TOP-90b)",
   "material": {
@@ -243,7 +243,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "volume": {
+          "value": 0.3,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.3 mL",
+          "evidence": [
+            {
+              "source_id": "jin2020-jacs-0c08510",
+              "locator": "Main PDF p.11"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -666,7 +685,44 @@
       "outputs": [
         "jin2020-jacs-0c08510-cd1xmnxse-qds-top-90b-1--after-d2-s06-purification"
       ],
-      "parameters": {},
+      "parameters": {
+        "temperature": {
+          "value": 60,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "60 °C",
+          "evidence": [
+            {
+              "source_id": "jin2020-jacs-0c08510",
+              "locator": "Main PDF p.11"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 h",
+          "evidence": [
+            {
+              "source_id": "jin2020-jacs-0c08510",
+              "locator": "Main PDF p.11"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "environment": {
         "value": "N2",
         "status": "reported",
@@ -759,7 +815,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Size not reported in the extracted text.",

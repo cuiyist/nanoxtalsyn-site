@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "wang2009-s10853-008-3138-4-mps-capped-cdse-zns-core-shell-qds-1",
-  "revision": 2,
+  "revision": 3,
   "record_type": "literature_protocol",
   "title": "Qiangbin Wang (2009): MPS-capped CdSe@ZnS core/shell QDs",
   "material": {
@@ -470,7 +470,44 @@
       "outputs": [
         "wang2009-s10853-008-3138-4-mps-capped-cdse-zns-core-shell-qds-1--after-d2-s02-inject"
       ],
-      "parameters": {},
+      "parameters": {
+        "temperature": {
+          "value": 70,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "70 °C",
+          "evidence": [
+            {
+              "source_id": "wang2009-s10853-008-3138-4",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 30,
+          "minimum": null,
+          "maximum": null,
+          "unit": "s",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "30 s",
+          "evidence": [
+            {
+              "source_id": "wang2009-s10853-008-3138-4",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "environment": {
         "value": "N2",
         "status": "reported",
@@ -606,7 +643,44 @@
       "outputs": [
         "wang2009-s10853-008-3138-4-mps-capped-cdse-zns-core-shell-qds-1--after-d2-s05-add"
       ],
-      "parameters": {},
+      "parameters": {
+        "temperature": {
+          "value": 70,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "70 °C",
+          "evidence": [
+            {
+              "source_id": "wang2009-s10853-008-3138-4",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 10,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "10 h",
+          "evidence": [
+            {
+              "source_id": "wang2009-s10853-008-3138-4",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "environment": {
         "value": "N2",
         "status": "reported",
@@ -724,11 +798,44 @@
       "notes": []
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "wang2009-s10853-008-3138-4-mps-capped-cdse-zns-core-shell-qds-1--photoluminescence-peak",
+      "sample_id": "wang2009-s10853-008-3138-4-mps-capped-cdse-zns-core-shell-qds-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 540,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "540 nm",
+        "evidence": [
+          {
+            "source_id": "wang2009-s10853-008-3138-4",
+            "locator": "Main PDF"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "wang2009-s10853-008-3138-4",
+          "locator": "Main PDF"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmsi-3as-1",
-  "revision": 2,
+  "revision": 3,
   "record_type": "literature_protocol",
   "title": "Hyeong Woo Ban; Maral Vafaie; Larissa Levina; Pan Xia; Muhammad Imran; Yanjiang Liu; Amin Morteza Najarian; Edward H. Sargent (2024): InAs CQDs synthesized with (TMSi)3As",
   "material": {
@@ -177,7 +177,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "amount": {
+          "value": 2.67,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2.67 mmol",
+          "evidence": [
+            {
+              "source_id": "ban2024-jacs-4c06202",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -196,7 +215,26 @@
         "pubchem_cid": null,
         "smiles": null
       },
-      "quantities": {},
+      "quantities": {
+        "amount": {
+          "value": 0.832,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.832 mmol",
+          "evidence": [
+            {
+              "source_id": "ban2024-jacs-4c06202",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "notes": [],
       "evidence": [
         {
@@ -530,7 +568,26 @@
       "outputs": [
         "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmsi-3as-1--after-d2-s05-add"
       ],
-      "parameters": {},
+      "parameters": {
+        "duration": {
+          "value": 10,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "10 min",
+          "evidence": [
+            {
+              "source_id": "ban2024-jacs-4c06202",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "environment": {
         "value": "N2",
         "status": "reported",
@@ -575,7 +632,44 @@
       "outputs": [
         "ban2024-jacs-4c06202-inas-cqds-synthesized-with-tmsi-3as-1--after-d2-s06-inject"
       ],
-      "parameters": {},
+      "parameters": {
+        "temperature": {
+          "value": 300,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "300 °C",
+          "evidence": [
+            {
+              "source_id": "ban2024-jacs-4c06202",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 20,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "20 min",
+          "evidence": [
+            {
+              "source_id": "ban2024-jacs-4c06202",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        }
+      },
       "environment": {
         "value": "N2",
         "status": "reported",
@@ -819,7 +913,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V5. Chemical names and steps may be retained through source-quote support under that CHECK; numerical fields still require agreement between the two passes. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Amount of In(OAc)3 not reported in the extracted text.",
       "Amount of (TMSi)3As not reported in the extracted text."
