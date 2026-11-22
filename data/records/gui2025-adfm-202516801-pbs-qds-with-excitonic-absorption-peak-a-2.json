@@ -1,0 +1,650 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "gui2025-adfm-202516801-pbs-qds-with-excitonic-absorption-peak-a-2",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Zhixiang Gui; Chao Wang; Yinglin Wang; Hongbo Zhu; Hao Li; Zihan Wang; Xiaofei Li; Song Yang; Xintong Zhang; Yichun Liu (2025): PbS QDs with excitonic absorption peak at 1200 nm (4.2 nm diameter)",
+  "material": {
+    "formula": "PbS",
+    "family": "PbS nanocrystals",
+    "elements": [
+      "Pb",
+      "S"
+    ],
+    "components": [
+      "PbS"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Hot injection",
+  "sources": [
+    {
+      "id": "gui2025-adfm-202516801",
+      "doi": "10.1002/adfm.202516801",
+      "title": "Boosting Near‐Infrared Utilization in PbS Quantum Dot Solar Cells via a Back‐Interface Chemical‐Bonding Molecular Buffer",
+      "authors": "Zhixiang Gui; Chao Wang; Yinglin Wang; Hongbo Zhu; Hao Li; Zihan Wang; Xiaofei Li; Song Yang; Xintong Zhang; Yichun Liu",
+      "year": 2025,
+      "url": "https://doi.org/10.1002/adfm.202516801",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "gui2025-adfm-202516801",
+    "recipe_family": "gui2025-adfm-202516801-pbs-qds-with-excitonic-absorption-peak-a-2",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "PbS",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "gui2025-adfm-202516801",
+          "locator": "Main PDF p.7"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "crystal",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "gui2025-adfm-202516801",
+          "locator": "Main PDF p.7"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": null,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "not_reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "not reported",
+      "evidence": [],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "sphere",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "gui2025-adfm-202516801",
+          "locator": "Main PDF p.7"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "gui2025-adfm-202516801-pbs-qds-with-excitonic-absorption-peak-a-2--lead-acetate-trihydrate",
+      "name": "Lead acetate trihydrate",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "mass": {
+          "value": 0.6558,
+          "minimum": null,
+          "maximum": null,
+          "unit": "g",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.6558 g",
+          "evidence": [
+            {
+              "source_id": "gui2025-adfm-202516801",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "gui2025-adfm-202516801",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "gui2025-adfm-202516801-pbs-qds-with-excitonic-absorption-peak-a-2--oleic-acid",
+      "name": "Oleic acid",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "gui2025-adfm-202516801",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "gui2025-adfm-202516801-pbs-qds-with-excitonic-absorption-peak-a-2--tms-2s",
+      "name": "(TMS)2S",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 200,
+          "minimum": null,
+          "maximum": null,
+          "unit": "µL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "200 µL",
+          "evidence": [
+            {
+              "source_id": "gui2025-adfm-202516801",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "gui2025-adfm-202516801",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "gui2025-adfm-202516801-pbs-qds-with-excitonic-absorption-peak-a-2--after-s01-purge",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": []
+    },
+    {
+      "id": "gui2025-adfm-202516801-pbs-qds-with-excitonic-absorption-peak-a-2--after-s02-degas",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "gui2025-adfm-202516801-pbs-qds-with-excitonic-absorption-peak-a-2--after-s01-purge"
+      ]
+    },
+    {
+      "id": "gui2025-adfm-202516801-pbs-qds-with-excitonic-absorption-peak-a-2--after-s03-add",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "gui2025-adfm-202516801-pbs-qds-with-excitonic-absorption-peak-a-2--after-s02-degas",
+        "gui2025-adfm-202516801-pbs-qds-with-excitonic-absorption-peak-a-2--lead-acetate-trihydrate",
+        "gui2025-adfm-202516801-pbs-qds-with-excitonic-absorption-peak-a-2--oleic-acid"
+      ]
+    },
+    {
+      "id": "gui2025-adfm-202516801-pbs-qds-with-excitonic-absorption-peak-a-2--after-s04-inject",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "gui2025-adfm-202516801-pbs-qds-with-excitonic-absorption-peak-a-2--after-s03-add",
+        "gui2025-adfm-202516801-pbs-qds-with-excitonic-absorption-peak-a-2--tms-2s"
+      ]
+    },
+    {
+      "id": "gui2025-adfm-202516801-pbs-qds-with-excitonic-absorption-peak-a-2--after-s05-purify",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "gui2025-adfm-202516801-pbs-qds-with-excitonic-absorption-peak-a-2--after-s04-inject"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-purge",
+      "action": "purge",
+      "label": "Purge",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [],
+      "outputs": [
+        "gui2025-adfm-202516801-pbs-qds-with-excitonic-absorption-peak-a-2--after-s01-purge"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 10,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "10 min",
+          "evidence": [
+            {
+              "source_id": "gui2025-adfm-202516801",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "gui2025-adfm-202516801",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Purge",
+      "evidence": [
+        {
+          "source_id": "gui2025-adfm-202516801",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "s02-degas",
+      "action": "degas",
+      "label": "Degas",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-purge"
+      ],
+      "inputs": [
+        "gui2025-adfm-202516801-pbs-qds-with-excitonic-absorption-peak-a-2--after-s01-purge"
+      ],
+      "outputs": [
+        "gui2025-adfm-202516801-pbs-qds-with-excitonic-absorption-peak-a-2--after-s02-degas"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 120,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "120 °C",
+          "evidence": [
+            {
+              "source_id": "gui2025-adfm-202516801",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 2,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2 h",
+          "evidence": [
+            {
+              "source_id": "gui2025-adfm-202516801",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "gui2025-adfm-202516801",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Degas",
+      "evidence": [
+        {
+          "source_id": "gui2025-adfm-202516801",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "s03-add",
+      "action": "add",
+      "label": "Add lead acetate trihydrate, ODE, and oleic acid to the flask",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-degas"
+      ],
+      "inputs": [
+        "gui2025-adfm-202516801-pbs-qds-with-excitonic-absorption-peak-a-2--after-s02-degas",
+        "gui2025-adfm-202516801-pbs-qds-with-excitonic-absorption-peak-a-2--lead-acetate-trihydrate",
+        "gui2025-adfm-202516801-pbs-qds-with-excitonic-absorption-peak-a-2--oleic-acid"
+      ],
+      "outputs": [
+        "gui2025-adfm-202516801-pbs-qds-with-excitonic-absorption-peak-a-2--after-s03-add"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 120,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "120 °C",
+          "evidence": [
+            {
+              "source_id": "gui2025-adfm-202516801",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "gui2025-adfm-202516801",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add lead acetate trihydrate, ODE, and oleic acid to the flask",
+      "evidence": [
+        {
+          "source_id": "gui2025-adfm-202516801",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "s04-inject",
+      "action": "inject",
+      "label": "Inject (TMS)2S solution to initiate nucleation/growth",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-add"
+      ],
+      "inputs": [
+        "gui2025-adfm-202516801-pbs-qds-with-excitonic-absorption-peak-a-2--after-s03-add",
+        "gui2025-adfm-202516801-pbs-qds-with-excitonic-absorption-peak-a-2--tms-2s"
+      ],
+      "outputs": [
+        "gui2025-adfm-202516801-pbs-qds-with-excitonic-absorption-peak-a-2--after-s04-inject"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 min",
+          "evidence": [
+            {
+              "source_id": "gui2025-adfm-202516801",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "gui2025-adfm-202516801",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Inject (TMS)2S solution to initiate nucleation/growth",
+      "evidence": [
+        {
+          "source_id": "gui2025-adfm-202516801",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "s05-purify",
+      "action": "purify",
+      "label": "Purify the QDs via acetone precipitation and centrifugation",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-inject"
+      ],
+      "inputs": [
+        "gui2025-adfm-202516801-pbs-qds-with-excitonic-absorption-peak-a-2--after-s04-inject"
+      ],
+      "outputs": [
+        "gui2025-adfm-202516801-pbs-qds-with-excitonic-absorption-peak-a-2--after-s05-purify"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Purify the QDs via acetone precipitation and centrifugation",
+      "evidence": [
+        {
+          "source_id": "gui2025-adfm-202516801",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "gui2025-adfm-202516801-pbs-qds-with-excitonic-absorption-peak-a-2--product",
+      "source_sample_label": "PbS QDs with excitonic absorption peak at 1200 nm (4.2 nm diameter)",
+      "batch_id": null,
+      "material_state_id": "gui2025-adfm-202516801-pbs-qds-with-excitonic-absorption-peak-a-2--after-s05-purify",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "PbS",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "gui2025-adfm-202516801",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "crystal",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "gui2025-adfm-202516801",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": "sphere",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "gui2025-adfm-202516801",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": "oleic acid",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "gui2025-adfm-202516801",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "gui2025-adfm-202516801",
+          "locator": "Main PDF p.7"
+        }
+      ],
+      "notes": [
+        "Reactor: 250 mL three-necked flask (Main PDF p.7).",
+        "Reaction temperature: 120 degC (Main PDF p.7)."
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "id": "gui2025-adfm-202516801-pbs-qds-with-excitonic-absorption-peak-a-2--photoluminescence-peak",
+      "sample_id": "gui2025-adfm-202516801-pbs-qds-with-excitonic-absorption-peak-a-2--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 1200,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "1200 nm",
+        "evidence": [
+          {
+            "source_id": "gui2025-adfm-202516801",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "gui2025-adfm-202516801",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    }
+  ],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
+    "missing_fields": [
+      "Size not reported in the extracted text.",
+      "Plqy not reported in the extracted text.",
+      "Reaction time not reported in the extracted text.",
+      "Amount of Oleic acid not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

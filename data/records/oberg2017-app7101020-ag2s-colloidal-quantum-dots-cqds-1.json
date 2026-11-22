@@ -1,0 +1,739 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "oberg2017-app7101020-ag2s-colloidal-quantum-dots-cqds-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Viktor A. Öberg; Xiaoliang Zhang; Malin B. Johansson; Erik M. J. Johansson (2017): Ag2S colloidal quantum dots (CQDs)",
+  "material": {
+    "formula": "Ag2S",
+    "family": "Ag2S nanocrystals",
+    "elements": [
+      "Ag",
+      "S"
+    ],
+    "components": [
+      "Ag2S"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Heat-up",
+  "sources": [
+    {
+      "id": "oberg2017-app7101020",
+      "doi": "10.3390/app7101020",
+      "title": "Solution-Processed Environmentally Friendly Ag2S Colloidal Quantum Dot Solar Cells with Broad Spectral Absorption",
+      "authors": "Viktor A. Öberg; Xiaoliang Zhang; Malin B. Johansson; Erik M. J. Johansson",
+      "year": 2017,
+      "url": "https://doi.org/10.3390/app7101020",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "oberg2017-app7101020",
+    "recipe_family": "oberg2017-app7101020-ag2s-colloidal-quantum-dots-cqds-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "Ag2S",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "oberg2017-app7101020",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "monoclinic",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "oberg2017-app7101020",
+          "locator": "Main PDF p.5"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": 3.59,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "3.59 nm",
+      "evidence": [
+        {
+          "source_id": "oberg2017-app7101020",
+          "locator": "Main PDF p.5"
+        }
+      ],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "sphere",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "oberg2017-app7101020",
+          "locator": "Main PDF p.5"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "oberg2017-app7101020-ag2s-colloidal-quantum-dots-cqds-1--agno3",
+      "name": "AgNO3",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 4,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "4 mmol",
+          "evidence": [
+            {
+              "source_id": "oberg2017-app7101020",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "oberg2017-app7101020",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "oberg2017-app7101020-ag2s-colloidal-quantum-dots-cqds-1--dodecanethiol",
+      "name": "dodecanethiol",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 40,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "40 mL",
+          "evidence": [
+            {
+              "source_id": "oberg2017-app7101020",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "oberg2017-app7101020",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "oberg2017-app7101020-ag2s-colloidal-quantum-dots-cqds-1--after-s01-heat",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "oberg2017-app7101020-ag2s-colloidal-quantum-dots-cqds-1--agno3",
+        "oberg2017-app7101020-ag2s-colloidal-quantum-dots-cqds-1--dodecanethiol"
+      ]
+    },
+    {
+      "id": "oberg2017-app7101020-ag2s-colloidal-quantum-dots-cqds-1--after-s02-centrifuge",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "oberg2017-app7101020-ag2s-colloidal-quantum-dots-cqds-1--after-s01-heat"
+      ]
+    },
+    {
+      "id": "oberg2017-app7101020-ag2s-colloidal-quantum-dots-cqds-1--after-s03-precipitate",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "oberg2017-app7101020-ag2s-colloidal-quantum-dots-cqds-1--after-s02-centrifuge"
+      ]
+    },
+    {
+      "id": "oberg2017-app7101020-ag2s-colloidal-quantum-dots-cqds-1--after-s04-dry",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "oberg2017-app7101020-ag2s-colloidal-quantum-dots-cqds-1--after-s03-precipitate"
+      ]
+    },
+    {
+      "id": "oberg2017-app7101020-ag2s-colloidal-quantum-dots-cqds-1--after-s05-disperse",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "oberg2017-app7101020-ag2s-colloidal-quantum-dots-cqds-1--after-s04-dry"
+      ]
+    },
+    {
+      "id": "oberg2017-app7101020-ag2s-colloidal-quantum-dots-cqds-1--after-s06-centrifuge",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "oberg2017-app7101020-ag2s-colloidal-quantum-dots-cqds-1--after-s05-disperse"
+      ]
+    },
+    {
+      "id": "oberg2017-app7101020-ag2s-colloidal-quantum-dots-cqds-1--after-s07-filter",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "oberg2017-app7101020-ag2s-colloidal-quantum-dots-cqds-1--after-s06-centrifuge"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-heat",
+      "action": "heat",
+      "label": "Heating the mixture to reaction temperature",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "oberg2017-app7101020-ag2s-colloidal-quantum-dots-cqds-1--agno3",
+        "oberg2017-app7101020-ag2s-colloidal-quantum-dots-cqds-1--dodecanethiol"
+      ],
+      "outputs": [
+        "oberg2017-app7101020-ag2s-colloidal-quantum-dots-cqds-1--after-s01-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 200,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "200 °C",
+          "evidence": [
+            {
+              "source_id": "oberg2017-app7101020",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 21,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "21 min",
+          "evidence": [
+            {
+              "source_id": "oberg2017-app7101020",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heating the mixture to reaction temperature",
+      "evidence": [
+        {
+          "source_id": "oberg2017-app7101020",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s02-centrifuge",
+      "action": "centrifuge",
+      "label": "Centrifuging the CQD dispersion",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-heat"
+      ],
+      "inputs": [
+        "oberg2017-app7101020-ag2s-colloidal-quantum-dots-cqds-1--after-s01-heat"
+      ],
+      "outputs": [
+        "oberg2017-app7101020-ag2s-colloidal-quantum-dots-cqds-1--after-s02-centrifuge"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 4,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "4 min",
+          "evidence": [
+            {
+              "source_id": "oberg2017-app7101020",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Centrifuging the CQD dispersion",
+      "evidence": [
+        {
+          "source_id": "oberg2017-app7101020",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s03-precipitate",
+      "action": "precipitate",
+      "label": "Precipitating the CQDs with acetonitrile and ethanol",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-centrifuge"
+      ],
+      "inputs": [
+        "oberg2017-app7101020-ag2s-colloidal-quantum-dots-cqds-1--after-s02-centrifuge"
+      ],
+      "outputs": [
+        "oberg2017-app7101020-ag2s-colloidal-quantum-dots-cqds-1--after-s03-precipitate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Precipitating the CQDs with acetonitrile and ethanol",
+      "evidence": [
+        {
+          "source_id": "oberg2017-app7101020",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s04-dry",
+      "action": "dry",
+      "label": "Drying the nanocrystals",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-precipitate"
+      ],
+      "inputs": [
+        "oberg2017-app7101020-ag2s-colloidal-quantum-dots-cqds-1--after-s03-precipitate"
+      ],
+      "outputs": [
+        "oberg2017-app7101020-ag2s-colloidal-quantum-dots-cqds-1--after-s04-dry"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 30,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "30 min",
+          "evidence": [
+            {
+              "source_id": "oberg2017-app7101020",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Drying the nanocrystals",
+      "evidence": [
+        {
+          "source_id": "oberg2017-app7101020",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s05-disperse",
+      "action": "disperse",
+      "label": "Dispersing the dots in cyclohexane",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-dry"
+      ],
+      "inputs": [
+        "oberg2017-app7101020-ag2s-colloidal-quantum-dots-cqds-1--after-s04-dry"
+      ],
+      "outputs": [
+        "oberg2017-app7101020-ag2s-colloidal-quantum-dots-cqds-1--after-s05-disperse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dispersing the dots in cyclohexane",
+      "evidence": [
+        {
+          "source_id": "oberg2017-app7101020",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s06-centrifuge",
+      "action": "centrifuge",
+      "label": "Centrifuging the mixture again",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s05-disperse"
+      ],
+      "inputs": [
+        "oberg2017-app7101020-ag2s-colloidal-quantum-dots-cqds-1--after-s05-disperse"
+      ],
+      "outputs": [
+        "oberg2017-app7101020-ag2s-colloidal-quantum-dots-cqds-1--after-s06-centrifuge"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 4,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "4 min",
+          "evidence": [
+            {
+              "source_id": "oberg2017-app7101020",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Centrifuging the mixture again",
+      "evidence": [
+        {
+          "source_id": "oberg2017-app7101020",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s07-filter",
+      "action": "filter",
+      "label": "Filtering the final dispersion",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s06-centrifuge"
+      ],
+      "inputs": [
+        "oberg2017-app7101020-ag2s-colloidal-quantum-dots-cqds-1--after-s06-centrifuge"
+      ],
+      "outputs": [
+        "oberg2017-app7101020-ag2s-colloidal-quantum-dots-cqds-1--after-s07-filter"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Filtering the final dispersion",
+      "evidence": [
+        {
+          "source_id": "oberg2017-app7101020",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "oberg2017-app7101020-ag2s-colloidal-quantum-dots-cqds-1--product",
+      "source_sample_label": "Ag2S colloidal quantum dots (CQDs)",
+      "batch_id": null,
+      "material_state_id": "oberg2017-app7101020-ag2s-colloidal-quantum-dots-cqds-1--after-s07-filter",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "Ag2S",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "oberg2017-app7101020",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "monoclinic",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "oberg2017-app7101020",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": "sphere",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "oberg2017-app7101020",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": "dodecanethiol",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "oberg2017-app7101020",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "oberg2017-app7101020",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "notes": [
+        "Reactor: 100 mL three-necked flask (Main PDF p.2).",
+        "Reaction temperature: 200 degC (Main PDF p.3).",
+        "Reaction time: 21 min (Main PDF p.3)."
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "id": "oberg2017-app7101020-ag2s-colloidal-quantum-dots-cqds-1--size",
+      "sample_id": "oberg2017-app7101020-ag2s-colloidal-quantum-dots-cqds-1--product",
+      "property": "diameter",
+      "technique": "TEM",
+      "value": {
+        "value": 3.59,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "3.59 nm",
+        "evidence": [
+          {
+            "source_id": "oberg2017-app7101020",
+            "locator": "Main PDF p.5"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "oberg2017-app7101020",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    },
+    {
+      "id": "oberg2017-app7101020-ag2s-colloidal-quantum-dots-cqds-1--photoluminescence-peak",
+      "sample_id": "oberg2017-app7101020-ag2s-colloidal-quantum-dots-cqds-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 965,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "965 nm",
+        "evidence": [
+          {
+            "source_id": "oberg2017-app7101020",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "oberg2017-app7101020",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    }
+  ],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
+    "missing_fields": [
+      "Plqy not reported in the extracted text.",
+      "Atmosphere not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

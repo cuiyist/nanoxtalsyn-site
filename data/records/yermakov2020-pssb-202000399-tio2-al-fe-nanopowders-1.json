@@ -1,0 +1,499 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "yermakov2020-pssb-202000399-tio2-al-fe-nanopowders-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Anatoly Ye. Yermakov; Vadim R. Galakhov; Artem S. Minin; Vitaly V. Mesilov; Mikhail A. Uimin; Karsten Kuepper; Stefan Bartkowski; Leonid S. Molochnikov; Aleksandr S. Konev; Vasiliy S. Gaviko; Galina S. Zakharova (2020): TiO2:(Al, Fe) nanopowders",
+  "material": {
+    "formula": "TiO2",
+    "family": "TiO2 nanocrystals",
+    "elements": [
+      "Ti",
+      "O"
+    ],
+    "components": [
+      "TiO2"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Autoclave-assisted hydrothermal",
+  "sources": [
+    {
+      "id": "yermakov2020-pssb-202000399",
+      "doi": "10.1002/pssb.202000399",
+      "title": "Magnetic Properties, Electron Paramagnetic Resonance, and Photoelectron Spectroscopy Studies of Nanocrystalline TiO 2 Co‐Doped with Al and Fe",
+      "authors": "Anatoly Ye. Yermakov; Vadim R. Galakhov; Artem S. Minin; Vitaly V. Mesilov; Mikhail A. Uimin; Karsten Kuepper; Stefan Bartkowski; Leonid S. Molochnikov; Aleksandr S. Konev; Vasiliy S. Gaviko; Galina S. Zakharova",
+      "year": 2020,
+      "url": "https://doi.org/10.1002/pssb.202000399",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "yermakov2020-pssb-202000399",
+    "recipe_family": "yermakov2020-pssb-202000399-tio2-al-fe-nanopowders-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "TiO2",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "yermakov2020-pssb-202000399",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "anatase",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "yermakov2020-pssb-202000399",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": null,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "not_reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "not reported",
+      "evidence": [],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "sphere",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "yermakov2020-pssb-202000399",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "yermakov2020-pssb-202000399-tio2-al-fe-nanopowders-1--titanium-chloride",
+      "name": "titanium chloride",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "yermakov2020-pssb-202000399",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    },
+    {
+      "id": "yermakov2020-pssb-202000399-tio2-al-fe-nanopowders-1--aluminum-nitrate",
+      "name": "aluminum nitrate",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "yermakov2020-pssb-202000399",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    },
+    {
+      "id": "yermakov2020-pssb-202000399-tio2-al-fe-nanopowders-1--ammonium-hydroxide",
+      "name": "ammonium hydroxide",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "yermakov2020-pssb-202000399",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "yermakov2020-pssb-202000399-tio2-al-fe-nanopowders-1--after-s01-dissolve",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "yermakov2020-pssb-202000399-tio2-al-fe-nanopowders-1--aluminum-nitrate",
+        "yermakov2020-pssb-202000399-tio2-al-fe-nanopowders-1--titanium-chloride"
+      ]
+    },
+    {
+      "id": "yermakov2020-pssb-202000399-tio2-al-fe-nanopowders-1--after-s02-add",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "yermakov2020-pssb-202000399-tio2-al-fe-nanopowders-1--after-s01-dissolve",
+        "yermakov2020-pssb-202000399-tio2-al-fe-nanopowders-1--ammonium-hydroxide"
+      ]
+    },
+    {
+      "id": "yermakov2020-pssb-202000399-tio2-al-fe-nanopowders-1--after-s03-cool",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "yermakov2020-pssb-202000399-tio2-al-fe-nanopowders-1--after-s02-add"
+      ]
+    },
+    {
+      "id": "yermakov2020-pssb-202000399-tio2-al-fe-nanopowders-1--after-s04-filter",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "yermakov2020-pssb-202000399-tio2-al-fe-nanopowders-1--after-s03-cool"
+      ]
+    },
+    {
+      "id": "yermakov2020-pssb-202000399-tio2-al-fe-nanopowders-1--after-s05-dry",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "yermakov2020-pssb-202000399-tio2-al-fe-nanopowders-1--after-s04-filter"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-dissolve",
+      "action": "dissolve",
+      "label": "Al(NO3)3·9H2O dissolved in TiCl3",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "yermakov2020-pssb-202000399-tio2-al-fe-nanopowders-1--aluminum-nitrate",
+        "yermakov2020-pssb-202000399-tio2-al-fe-nanopowders-1--titanium-chloride"
+      ],
+      "outputs": [
+        "yermakov2020-pssb-202000399-tio2-al-fe-nanopowders-1--after-s01-dissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "atmospheric",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "yermakov2020-pssb-202000399",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Al(NO3)3·9H2O dissolved in TiCl3",
+      "evidence": [
+        {
+          "source_id": "yermakov2020-pssb-202000399",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    },
+    {
+      "id": "s02-add",
+      "action": "add",
+      "label": "NH4OH added dropwise",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-dissolve"
+      ],
+      "inputs": [
+        "yermakov2020-pssb-202000399-tio2-al-fe-nanopowders-1--after-s01-dissolve",
+        "yermakov2020-pssb-202000399-tio2-al-fe-nanopowders-1--ammonium-hydroxide"
+      ],
+      "outputs": [
+        "yermakov2020-pssb-202000399-tio2-al-fe-nanopowders-1--after-s02-add"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "atmospheric",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "yermakov2020-pssb-202000399",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "NH4OH added dropwise",
+      "evidence": [
+        {
+          "source_id": "yermakov2020-pssb-202000399",
+          "locator": "Main PDF p.5"
+        }
+      ]
+    },
+    {
+      "id": "s03-cool",
+      "action": "cool",
+      "label": "Cooled to room temperature",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-add"
+      ],
+      "inputs": [
+        "yermakov2020-pssb-202000399-tio2-al-fe-nanopowders-1--after-s02-add"
+      ],
+      "outputs": [
+        "yermakov2020-pssb-202000399-tio2-al-fe-nanopowders-1--after-s03-cool"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "atmospheric",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "yermakov2020-pssb-202000399",
+            "locator": "Main PDF p.6"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Cooled to room temperature",
+      "evidence": [
+        {
+          "source_id": "yermakov2020-pssb-202000399",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "s04-filter",
+      "action": "filter",
+      "label": "Filtered and washed",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-cool"
+      ],
+      "inputs": [
+        "yermakov2020-pssb-202000399-tio2-al-fe-nanopowders-1--after-s03-cool"
+      ],
+      "outputs": [
+        "yermakov2020-pssb-202000399-tio2-al-fe-nanopowders-1--after-s04-filter"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Filtered and washed",
+      "evidence": [
+        {
+          "source_id": "yermakov2020-pssb-202000399",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    },
+    {
+      "id": "s05-dry",
+      "action": "dry",
+      "label": "Dried in air",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-filter"
+      ],
+      "inputs": [
+        "yermakov2020-pssb-202000399-tio2-al-fe-nanopowders-1--after-s04-filter"
+      ],
+      "outputs": [
+        "yermakov2020-pssb-202000399-tio2-al-fe-nanopowders-1--after-s05-dry"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 320,
+          "minimum": null,
+          "maximum": null,
+          "unit": "K",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "320 K",
+          "evidence": [
+            {
+              "source_id": "yermakov2020-pssb-202000399",
+              "locator": "Main PDF p.6"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dried in air",
+      "evidence": [
+        {
+          "source_id": "yermakov2020-pssb-202000399",
+          "locator": "Main PDF p.6"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "yermakov2020-pssb-202000399-tio2-al-fe-nanopowders-1--product",
+      "source_sample_label": "TiO2:(Al, Fe) nanopowders",
+      "batch_id": null,
+      "material_state_id": "yermakov2020-pssb-202000399-tio2-al-fe-nanopowders-1--after-s05-dry",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "TiO2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "yermakov2020-pssb-202000399",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "anatase",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "yermakov2020-pssb-202000399",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": "sphere",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "yermakov2020-pssb-202000399",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "yermakov2020-pssb-202000399",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "measurements": [],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
+    "missing_fields": [
+      "Ligand not reported in the extracted text.",
+      "Size not reported in the extracted text.",
+      "Emission peak not reported in the extracted text.",
+      "Plqy not reported in the extracted text.",
+      "Reactor not reported in the extracted text.",
+      "Reaction temperature not reported in the extracted text.",
+      "Reaction time not reported in the extracted text.",
+      "Amount of titanium chloride not reported in the extracted text.",
+      "Amount of aluminum nitrate not reported in the extracted text.",
+      "Amount of ammonium hydroxide not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

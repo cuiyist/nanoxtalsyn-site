@@ -1,0 +1,757 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "wei2015-bio-3068-cdte-qds-550-nm-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Wenjun Wei; Cui Liu; Jiyan Liu; Xueqing Liu; Linling Zou; Shaojun Cai; Hong Shi; Yuan‐Cheng Cao (2015): CdTe QDs 550 nm",
+  "material": {
+    "formula": "CdTe",
+    "family": "CdTe nanocrystals",
+    "elements": [
+      "Cd",
+      "Te"
+    ],
+    "components": [
+      "CdTe"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Precipitation",
+  "sources": [
+    {
+      "id": "wei2015-bio-3068",
+      "doi": "10.1002/bio.3068",
+      "title": "Do the cations in clay and the polymer matrix affect quantum dot fluorescent properties?",
+      "authors": "Wenjun Wei; Cui Liu; Jiyan Liu; Xueqing Liu; Linling Zou; Shaojun Cai; Hong Shi; Yuan‐Cheng Cao",
+      "year": 2015,
+      "url": "https://doi.org/10.1002/bio.3068",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "wei2015-bio-3068",
+    "recipe_family": "wei2015-bio-3068-cdte-qds-550-nm-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "CdTe",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "wei2015-bio-3068",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    },
+    "size": {
+      "value": null,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "not_reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "not reported",
+      "evidence": [],
+      "derivation": null
+    },
+    "morphology": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "wei2015-bio-3068-cdte-qds-550-nm-1--cdcl22-5-h2o",
+      "name": "CdCl2·2.5 H2O",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "wei2015-bio-3068",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "wei2015-bio-3068-cdte-qds-550-nm-1--mpa",
+      "name": "MPA",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "wei2015-bio-3068",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "wei2015-bio-3068-cdte-qds-550-nm-1--nahte",
+      "name": "NaHTe",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "wei2015-bio-3068",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "wei2015-bio-3068-cdte-qds-550-nm-1--acetone",
+      "name": "Acetone",
+      "formula": null,
+      "role": "solvent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "wei2015-bio-3068",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "wei2015-bio-3068-cdte-qds-550-nm-1--after-s01-dissolve",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "wei2015-bio-3068-cdte-qds-550-nm-1--cdcl22-5-h2o"
+      ]
+    },
+    {
+      "id": "wei2015-bio-3068-cdte-qds-550-nm-1--after-s02-add",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "wei2015-bio-3068-cdte-qds-550-nm-1--after-s01-dissolve",
+        "wei2015-bio-3068-cdte-qds-550-nm-1--mpa"
+      ]
+    },
+    {
+      "id": "wei2015-bio-3068-cdte-qds-550-nm-1--after-s03-adjust-ph",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "wei2015-bio-3068-cdte-qds-550-nm-1--after-s02-add"
+      ]
+    },
+    {
+      "id": "wei2015-bio-3068-cdte-qds-550-nm-1--after-s04-degas",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "wei2015-bio-3068-cdte-qds-550-nm-1--after-s03-adjust-ph"
+      ]
+    },
+    {
+      "id": "wei2015-bio-3068-cdte-qds-550-nm-1--after-s05-add",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "wei2015-bio-3068-cdte-qds-550-nm-1--after-s04-degas",
+        "wei2015-bio-3068-cdte-qds-550-nm-1--nahte"
+      ]
+    },
+    {
+      "id": "wei2015-bio-3068-cdte-qds-550-nm-1--after-s06-precipitate",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "wei2015-bio-3068-cdte-qds-550-nm-1--after-s05-add",
+        "wei2015-bio-3068-cdte-qds-550-nm-1--acetone"
+      ]
+    },
+    {
+      "id": "wei2015-bio-3068-cdte-qds-550-nm-1--after-s07-centrifuge",
+      "name": "mixture after step 7",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "wei2015-bio-3068-cdte-qds-550-nm-1--after-s06-precipitate"
+      ]
+    },
+    {
+      "id": "wei2015-bio-3068-cdte-qds-550-nm-1--after-s08-redisperse",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "wei2015-bio-3068-cdte-qds-550-nm-1--after-s07-centrifuge"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-dissolve",
+      "action": "dissolve",
+      "label": "Dissolve CdCl2·2.5 H2O in double-distilled water",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "wei2015-bio-3068-cdte-qds-550-nm-1--cdcl22-5-h2o"
+      ],
+      "outputs": [
+        "wei2015-bio-3068-cdte-qds-550-nm-1--after-s01-dissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "wei2015-bio-3068",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dissolve CdCl2·2.5 H2O in double-distilled water",
+      "evidence": [
+        {
+          "source_id": "wei2015-bio-3068",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-add",
+      "action": "add",
+      "label": "Add MPA",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-dissolve"
+      ],
+      "inputs": [
+        "wei2015-bio-3068-cdte-qds-550-nm-1--after-s01-dissolve",
+        "wei2015-bio-3068-cdte-qds-550-nm-1--mpa"
+      ],
+      "outputs": [
+        "wei2015-bio-3068-cdte-qds-550-nm-1--after-s02-add"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 100,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "100 °C",
+          "evidence": [
+            {
+              "source_id": "wei2015-bio-3068",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "wei2015-bio-3068",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add MPA",
+      "evidence": [
+        {
+          "source_id": "wei2015-bio-3068",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s03-adjust-ph",
+      "action": "adjust ph",
+      "label": "Adjust pH to 11–12",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-add"
+      ],
+      "inputs": [
+        "wei2015-bio-3068-cdte-qds-550-nm-1--after-s02-add"
+      ],
+      "outputs": [
+        "wei2015-bio-3068-cdte-qds-550-nm-1--after-s03-adjust-ph"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "wei2015-bio-3068",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Adjust pH to 11–12",
+      "evidence": [
+        {
+          "source_id": "wei2015-bio-3068",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s04-degas",
+      "action": "degas",
+      "label": "N2 bubbling for 40min",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-adjust-ph"
+      ],
+      "inputs": [
+        "wei2015-bio-3068-cdte-qds-550-nm-1--after-s03-adjust-ph"
+      ],
+      "outputs": [
+        "wei2015-bio-3068-cdte-qds-550-nm-1--after-s04-degas"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 40,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "40 min",
+          "evidence": [
+            {
+              "source_id": "wei2015-bio-3068",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "wei2015-bio-3068",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "N2 bubbling for 40min",
+      "evidence": [
+        {
+          "source_id": "wei2015-bio-3068",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s05-add",
+      "action": "add",
+      "label": "Add NaHTe solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-degas"
+      ],
+      "inputs": [
+        "wei2015-bio-3068-cdte-qds-550-nm-1--after-s04-degas",
+        "wei2015-bio-3068-cdte-qds-550-nm-1--nahte"
+      ],
+      "outputs": [
+        "wei2015-bio-3068-cdte-qds-550-nm-1--after-s05-add"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 100,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "100 °C",
+          "evidence": [
+            {
+              "source_id": "wei2015-bio-3068",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "wei2015-bio-3068",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add NaHTe solution",
+      "evidence": [
+        {
+          "source_id": "wei2015-bio-3068",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s06-precipitate",
+      "action": "precipitate",
+      "label": "Precipitate with acetone",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s05-add"
+      ],
+      "inputs": [
+        "wei2015-bio-3068-cdte-qds-550-nm-1--after-s05-add",
+        "wei2015-bio-3068-cdte-qds-550-nm-1--acetone"
+      ],
+      "outputs": [
+        "wei2015-bio-3068-cdte-qds-550-nm-1--after-s06-precipitate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Precipitate with acetone",
+      "evidence": [
+        {
+          "source_id": "wei2015-bio-3068",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s07-centrifuge",
+      "action": "centrifuge",
+      "label": "Separate precipitate",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s06-precipitate"
+      ],
+      "inputs": [
+        "wei2015-bio-3068-cdte-qds-550-nm-1--after-s06-precipitate"
+      ],
+      "outputs": [
+        "wei2015-bio-3068-cdte-qds-550-nm-1--after-s07-centrifuge"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Separate precipitate",
+      "evidence": [
+        {
+          "source_id": "wei2015-bio-3068",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s08-redisperse",
+      "action": "redisperse",
+      "label": "Redisperse in de-ioned water",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s07-centrifuge"
+      ],
+      "inputs": [
+        "wei2015-bio-3068-cdte-qds-550-nm-1--after-s07-centrifuge"
+      ],
+      "outputs": [
+        "wei2015-bio-3068-cdte-qds-550-nm-1--after-s08-redisperse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Redisperse in de-ioned water",
+      "evidence": [
+        {
+          "source_id": "wei2015-bio-3068",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "wei2015-bio-3068-cdte-qds-550-nm-1--product",
+      "source_sample_label": "CdTe QDs 550 nm",
+      "batch_id": null,
+      "material_state_id": "wei2015-bio-3068-cdte-qds-550-nm-1--after-s08-redisperse",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "CdTe",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "wei2015-bio-3068",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "morphology": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "surface": {
+        "value": "MPA",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "wei2015-bio-3068",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "wei2015-bio-3068",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "notes": [
+        "Reactor: round-bottomed flask (Main PDF p.2).",
+        "Reaction time: 30 min (Main PDF p.3)."
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "id": "wei2015-bio-3068-cdte-qds-550-nm-1--photoluminescence-peak",
+      "sample_id": "wei2015-bio-3068-cdte-qds-550-nm-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 550,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "550 nm",
+        "evidence": [
+          {
+            "source_id": "wei2015-bio-3068",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "wei2015-bio-3068",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "wei2015-bio-3068-cdte-qds-550-nm-1--photoluminescence-quantum-yield",
+      "sample_id": "wei2015-bio-3068-cdte-qds-550-nm-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 34.22,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "34.22 %",
+        "evidence": [
+          {
+            "source_id": "wei2015-bio-3068",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "wei2015-bio-3068",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    }
+  ],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
+    "missing_fields": [
+      "Phase not reported in the extracted text.",
+      "Shape not reported in the extracted text.",
+      "Size not reported in the extracted text.",
+      "Reaction temperature not reported in the extracted text.",
+      "Amount of CdCl2·2.5 H2O not reported in the extracted text.",
+      "Amount of MPA not reported in the extracted text.",
+      "Amount of NaHTe not reported in the extracted text.",
+      "Amount of Acetone not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

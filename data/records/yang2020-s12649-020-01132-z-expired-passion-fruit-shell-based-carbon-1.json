@@ -1,0 +1,684 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "yang2020-s12649-020-01132-z-expired-passion-fruit-shell-based-carbon-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Hang Yang; Boxun Zhou; Yi Zhang; Huamin Liu; Yaowen Liu; Yong He; Shibin Xia (2020): Expired passion fruit shell based carbon quantum dots (CQDs)",
+  "material": {
+    "formula": "C, O",
+    "family": "C, O nanocrystals",
+    "elements": [
+      "C",
+      "O"
+    ],
+    "components": [
+      "C, O"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Synthesis as described in the source",
+  "sources": [
+    {
+      "id": "yang2020-s12649-020-01132-z",
+      "doi": "10.1007/s12649-020-01132-z",
+      "title": "Valorization of Expired Passion Fruit Shell by Hydrothermal Conversion into Carbon Quantum Dot: Physical and Optical Properties",
+      "authors": "Hang Yang; Boxun Zhou; Yi Zhang; Huamin Liu; Yaowen Liu; Yong He; Shibin Xia",
+      "year": 2020,
+      "url": "https://doi.org/10.1007/s12649-020-01132-z",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "yang2020-s12649-020-01132-z",
+    "recipe_family": "yang2020-s12649-020-01132-z-expired-passion-fruit-shell-based-carbon-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "C, O",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "yang2020-s12649-020-01132-z",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    },
+    "size": {
+      "value": 5.0,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "5 nm",
+      "evidence": [
+        {
+          "source_id": "yang2020-s12649-020-01132-z",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "sphere",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "yang2020-s12649-020-01132-z",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "yang2020-s12649-020-01132-z-expired-passion-fruit-shell-based-carbon-1--expired-passion-fruit-shell-epfs",
+      "name": "expired passion fruit shell (EPFS)",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "mass": {
+          "value": 2.0,
+          "minimum": null,
+          "maximum": null,
+          "unit": "g",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2 g",
+          "evidence": [
+            {
+              "source_id": "yang2020-s12649-020-01132-z",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "yang2020-s12649-020-01132-z",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "yang2020-s12649-020-01132-z-expired-passion-fruit-shell-based-carbon-1--ultra-pure-water",
+      "name": "ultra-pure water",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 40.0,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "40 mL",
+          "evidence": [
+            {
+              "source_id": "yang2020-s12649-020-01132-z",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "yang2020-s12649-020-01132-z",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "yang2020-s12649-020-01132-z-expired-passion-fruit-shell-based-carbon-1--after-s01-heat",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "yang2020-s12649-020-01132-z-expired-passion-fruit-shell-based-carbon-1--expired-passion-fruit-shell-epfs",
+        "yang2020-s12649-020-01132-z-expired-passion-fruit-shell-based-carbon-1--ultra-pure-water"
+      ]
+    },
+    {
+      "id": "yang2020-s12649-020-01132-z-expired-passion-fruit-shell-based-carbon-1--after-s02-filter",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "yang2020-s12649-020-01132-z-expired-passion-fruit-shell-based-carbon-1--after-s01-heat"
+      ]
+    },
+    {
+      "id": "yang2020-s12649-020-01132-z-expired-passion-fruit-shell-based-carbon-1--after-s03-centrifuge",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "yang2020-s12649-020-01132-z-expired-passion-fruit-shell-based-carbon-1--after-s02-filter"
+      ]
+    },
+    {
+      "id": "yang2020-s12649-020-01132-z-expired-passion-fruit-shell-based-carbon-1--after-s04-filter",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "yang2020-s12649-020-01132-z-expired-passion-fruit-shell-based-carbon-1--after-s03-centrifuge"
+      ]
+    },
+    {
+      "id": "yang2020-s12649-020-01132-z-expired-passion-fruit-shell-based-carbon-1--after-s05-dialyze",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "yang2020-s12649-020-01132-z-expired-passion-fruit-shell-based-carbon-1--after-s04-filter"
+      ]
+    },
+    {
+      "id": "yang2020-s12649-020-01132-z-expired-passion-fruit-shell-based-carbon-1--after-s06-freeze-dry",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "yang2020-s12649-020-01132-z-expired-passion-fruit-shell-based-carbon-1--after-s05-dialyze"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-heat",
+      "action": "heat",
+      "label": "Heat EPFS powder and water in reactor",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "yang2020-s12649-020-01132-z-expired-passion-fruit-shell-based-carbon-1--expired-passion-fruit-shell-epfs",
+        "yang2020-s12649-020-01132-z-expired-passion-fruit-shell-based-carbon-1--ultra-pure-water"
+      ],
+      "outputs": [
+        "yang2020-s12649-020-01132-z-expired-passion-fruit-shell-based-carbon-1--after-s01-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 180,
+          "minimum": null,
+          "maximum": null,
+          "unit": "℃",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "180 ℃",
+          "evidence": [
+            {
+              "source_id": "yang2020-s12649-020-01132-z",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 3,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "3 h",
+          "evidence": [
+            {
+              "source_id": "yang2020-s12649-020-01132-z",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heat EPFS powder and water in reactor",
+      "evidence": [
+        {
+          "source_id": "yang2020-s12649-020-01132-z",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-filter",
+      "action": "filter",
+      "label": "Filter the brown solution using polyether sulfone membrane",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-heat"
+      ],
+      "inputs": [
+        "yang2020-s12649-020-01132-z-expired-passion-fruit-shell-based-carbon-1--after-s01-heat"
+      ],
+      "outputs": [
+        "yang2020-s12649-020-01132-z-expired-passion-fruit-shell-based-carbon-1--after-s02-filter"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 15,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "15 min",
+          "evidence": [
+            {
+              "source_id": "yang2020-s12649-020-01132-z",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Filter the brown solution using polyether sulfone membrane",
+      "evidence": [
+        {
+          "source_id": "yang2020-s12649-020-01132-z",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s03-centrifuge",
+      "action": "centrifuge",
+      "label": "Centrifuge the solution at 10,000 rpm for 15 min",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-filter"
+      ],
+      "inputs": [
+        "yang2020-s12649-020-01132-z-expired-passion-fruit-shell-based-carbon-1--after-s02-filter"
+      ],
+      "outputs": [
+        "yang2020-s12649-020-01132-z-expired-passion-fruit-shell-based-carbon-1--after-s03-centrifuge"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 15,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "15 min",
+          "evidence": [
+            {
+              "source_id": "yang2020-s12649-020-01132-z",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Centrifuge the solution at 10,000 rpm for 15 min",
+      "evidence": [
+        {
+          "source_id": "yang2020-s12649-020-01132-z",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s04-filter",
+      "action": "filter",
+      "label": "Filter the supernatant using needle type syringe filter",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-centrifuge"
+      ],
+      "inputs": [
+        "yang2020-s12649-020-01132-z-expired-passion-fruit-shell-based-carbon-1--after-s03-centrifuge"
+      ],
+      "outputs": [
+        "yang2020-s12649-020-01132-z-expired-passion-fruit-shell-based-carbon-1--after-s04-filter"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Filter the supernatant using needle type syringe filter",
+      "evidence": [
+        {
+          "source_id": "yang2020-s12649-020-01132-z",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s05-dialyze",
+      "action": "dialyze",
+      "label": "Dialyze the solution using 2000 d dialysis bag for 2 days",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-filter"
+      ],
+      "inputs": [
+        "yang2020-s12649-020-01132-z-expired-passion-fruit-shell-based-carbon-1--after-s04-filter"
+      ],
+      "outputs": [
+        "yang2020-s12649-020-01132-z-expired-passion-fruit-shell-based-carbon-1--after-s05-dialyze"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 2,
+          "minimum": null,
+          "maximum": null,
+          "unit": "d",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2 days",
+          "evidence": [
+            {
+              "source_id": "yang2020-s12649-020-01132-z",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dialyze the solution using 2000 d dialysis bag for 2 days",
+      "evidence": [
+        {
+          "source_id": "yang2020-s12649-020-01132-z",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s06-freeze-dry",
+      "action": "freeze-dry",
+      "label": "Freeze-dry the solution to obtain solid CQD",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s05-dialyze"
+      ],
+      "inputs": [
+        "yang2020-s12649-020-01132-z-expired-passion-fruit-shell-based-carbon-1--after-s05-dialyze"
+      ],
+      "outputs": [
+        "yang2020-s12649-020-01132-z-expired-passion-fruit-shell-based-carbon-1--after-s06-freeze-dry"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Freeze-dry the solution to obtain solid CQD",
+      "evidence": [
+        {
+          "source_id": "yang2020-s12649-020-01132-z",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "yang2020-s12649-020-01132-z-expired-passion-fruit-shell-based-carbon-1--product",
+      "source_sample_label": "Expired passion fruit shell based carbon quantum dots (CQDs)",
+      "batch_id": null,
+      "material_state_id": "yang2020-s12649-020-01132-z-expired-passion-fruit-shell-based-carbon-1--after-s06-freeze-dry",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "C, O",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "yang2020-s12649-020-01132-z",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "morphology": {
+        "value": "sphere",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "yang2020-s12649-020-01132-z",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": "amino groups, carboxyl groups, and other oxygen-containing functional groups",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "yang2020-s12649-020-01132-z",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "yang2020-s12649-020-01132-z",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "notes": [
+        "Reactor: polytetrafluoroethylene lined reactor (Main PDF p.2).",
+        "Reaction temperature: 180 ℃ (Main PDF p.2).",
+        "Reaction time: 3 h (Main PDF p.2)."
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "id": "yang2020-s12649-020-01132-z-expired-passion-fruit-shell-based-carbon-1--size",
+      "sample_id": "yang2020-s12649-020-01132-z-expired-passion-fruit-shell-based-carbon-1--product",
+      "property": "diameter",
+      "technique": "TEM",
+      "value": {
+        "value": 5.0,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "5 nm",
+        "evidence": [
+          {
+            "source_id": "yang2020-s12649-020-01132-z",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "yang2020-s12649-020-01132-z",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "yang2020-s12649-020-01132-z-expired-passion-fruit-shell-based-carbon-1--photoluminescence-quantum-yield",
+      "sample_id": "yang2020-s12649-020-01132-z-expired-passion-fruit-shell-based-carbon-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 1.8,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "1.8 %",
+        "evidence": [
+          {
+            "source_id": "yang2020-s12649-020-01132-z",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "yang2020-s12649-020-01132-z",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
+    "missing_fields": [
+      "Phase not reported in the extracted text.",
+      "Emission peak not reported in the extracted text.",
+      "Atmosphere not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

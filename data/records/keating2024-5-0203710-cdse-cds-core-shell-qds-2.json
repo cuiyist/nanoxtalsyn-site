@@ -1,0 +1,861 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "keating2024-5-0203710-cdse-cds-core-shell-qds-2",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Logan P. Keating; Conan Huang; Moonsub Shim (2024): CdSe/CdS core/shell QDs",
+  "material": {
+    "formula": "CdSe/CdS",
+    "family": "CdSe/CdS nanocrystals",
+    "elements": [
+      "Cd",
+      "Se",
+      "S"
+    ],
+    "components": [
+      "CdSe",
+      "CdS"
+    ],
+    "architecture": "core_shell"
+  },
+  "method": "Hot injection",
+  "sources": [
+    {
+      "id": "keating2024-5-0203710",
+      "doi": "10.1063/5.0203710",
+      "title": "A high temperature in situ optical probe for colloidal nanocrystal synthesis",
+      "authors": "Logan P. Keating; Conan Huang; Moonsub Shim",
+      "year": 2024,
+      "url": "https://doi.org/10.1063/5.0203710",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "keating2024-5-0203710",
+    "recipe_family": "keating2024-5-0203710-cdse-cds-core-shell-qds-2",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "CdSe/CdS",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "keating2024-5-0203710",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "crystal",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "keating2024-5-0203710",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": null,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "not_reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "not reported",
+      "evidence": [],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "sphere",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "keating2024-5-0203710",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "keating2024-5-0203710-cdse-cds-core-shell-qds-2--cdo",
+      "name": "CdO",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 mmol",
+          "evidence": [
+            {
+              "source_id": "keating2024-5-0203710",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "keating2024-5-0203710",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "keating2024-5-0203710-cdse-cds-core-shell-qds-2--odpa",
+      "name": "ODPA",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 1.7,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1.7 mmol",
+          "evidence": [
+            {
+              "source_id": "keating2024-5-0203710",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "keating2024-5-0203710",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "keating2024-5-0203710-cdse-cds-core-shell-qds-2--top",
+      "name": "TOP",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "keating2024-5-0203710",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "keating2024-5-0203710-cdse-cds-core-shell-qds-2--top-se",
+      "name": "TOP-Se",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "keating2024-5-0203710",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "keating2024-5-0203710-cdse-cds-core-shell-qds-2--dpp",
+      "name": "DPP",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "keating2024-5-0203710",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "keating2024-5-0203710-cdse-cds-core-shell-qds-2--cdse-qds",
+      "name": "CdSe QDs",
+      "formula": null,
+      "role": "starting_particles",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "keating2024-5-0203710",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "keating2024-5-0203710-cdse-cds-core-shell-qds-2--paraffin-oil",
+      "name": "paraffin oil",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "keating2024-5-0203710",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "keating2024-5-0203710-cdse-cds-core-shell-qds-2--oa",
+      "name": "OA",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "keating2024-5-0203710",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "keating2024-5-0203710-cdse-cds-core-shell-qds-2--after-s01-add",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "keating2024-5-0203710-cdse-cds-core-shell-qds-2--cdo",
+        "keating2024-5-0203710-cdse-cds-core-shell-qds-2--odpa"
+      ]
+    },
+    {
+      "id": "keating2024-5-0203710-cdse-cds-core-shell-qds-2--after-s02-heat",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "keating2024-5-0203710-cdse-cds-core-shell-qds-2--after-s01-add"
+      ]
+    },
+    {
+      "id": "keating2024-5-0203710-cdse-cds-core-shell-qds-2--after-s03-inject",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "keating2024-5-0203710-cdse-cds-core-shell-qds-2--after-s02-heat",
+        "keating2024-5-0203710-cdse-cds-core-shell-qds-2--top",
+        "keating2024-5-0203710-cdse-cds-core-shell-qds-2--top-se"
+      ]
+    },
+    {
+      "id": "keating2024-5-0203710-cdse-cds-core-shell-qds-2--after-s04-quench",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "keating2024-5-0203710-cdse-cds-core-shell-qds-2--after-s03-inject"
+      ]
+    },
+    {
+      "id": "keating2024-5-0203710-cdse-cds-core-shell-qds-2--after-s05-redisperse",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "keating2024-5-0203710-cdse-cds-core-shell-qds-2--after-s04-quench"
+      ]
+    },
+    {
+      "id": "keating2024-5-0203710-cdse-cds-core-shell-qds-2--after-s06-add",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "keating2024-5-0203710-cdse-cds-core-shell-qds-2--after-s05-redisperse",
+        "keating2024-5-0203710-cdse-cds-core-shell-qds-2--cdse-qds",
+        "keating2024-5-0203710-cdse-cds-core-shell-qds-2--paraffin-oil"
+      ]
+    },
+    {
+      "id": "keating2024-5-0203710-cdse-cds-core-shell-qds-2--after-s07-add",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "keating2024-5-0203710-cdse-cds-core-shell-qds-2--after-s06-add",
+        "keating2024-5-0203710-cdse-cds-core-shell-qds-2--oa"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-add",
+      "action": "add",
+      "label": "Add CdO, ODPA, and TOPO to the flask",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "keating2024-5-0203710-cdse-cds-core-shell-qds-2--cdo",
+        "keating2024-5-0203710-cdse-cds-core-shell-qds-2--odpa"
+      ],
+      "outputs": [
+        "keating2024-5-0203710-cdse-cds-core-shell-qds-2--after-s01-add"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 150,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "150 °C",
+          "evidence": [
+            {
+              "source_id": "keating2024-5-0203710",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "keating2024-5-0203710",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add CdO, ODPA, and TOPO to the flask",
+      "evidence": [
+        {
+          "source_id": "keating2024-5-0203710",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s02-heat",
+      "action": "heat",
+      "label": "Heat to injection temperature",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-add"
+      ],
+      "inputs": [
+        "keating2024-5-0203710-cdse-cds-core-shell-qds-2--after-s01-add"
+      ],
+      "outputs": [
+        "keating2024-5-0203710-cdse-cds-core-shell-qds-2--after-s02-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 380,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "380 °C",
+          "evidence": [
+            {
+              "source_id": "keating2024-5-0203710",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "keating2024-5-0203710",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heat to injection temperature",
+      "evidence": [
+        {
+          "source_id": "keating2024-5-0203710",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s03-inject",
+      "action": "inject",
+      "label": "Inject TOP and TOP-Se",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-heat"
+      ],
+      "inputs": [
+        "keating2024-5-0203710-cdse-cds-core-shell-qds-2--after-s02-heat",
+        "keating2024-5-0203710-cdse-cds-core-shell-qds-2--top",
+        "keating2024-5-0203710-cdse-cds-core-shell-qds-2--top-se"
+      ],
+      "outputs": [
+        "keating2024-5-0203710-cdse-cds-core-shell-qds-2--after-s03-inject"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 380,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "380 °C",
+          "evidence": [
+            {
+              "source_id": "keating2024-5-0203710",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "keating2024-5-0203710",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Inject TOP and TOP-Se",
+      "evidence": [
+        {
+          "source_id": "keating2024-5-0203710",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s04-quench",
+      "action": "quench",
+      "label": "Quench the reaction via air jet",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-inject"
+      ],
+      "inputs": [
+        "keating2024-5-0203710-cdse-cds-core-shell-qds-2--after-s03-inject"
+      ],
+      "outputs": [
+        "keating2024-5-0203710-cdse-cds-core-shell-qds-2--after-s04-quench"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 100,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "100 °C",
+          "evidence": [
+            {
+              "source_id": "keating2024-5-0203710",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "keating2024-5-0203710",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Quench the reaction via air jet",
+      "evidence": [
+        {
+          "source_id": "keating2024-5-0203710",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s05-redisperse",
+      "action": "redisperse",
+      "label": "Redisperse the QDs in TOP",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-quench"
+      ],
+      "inputs": [
+        "keating2024-5-0203710-cdse-cds-core-shell-qds-2--after-s04-quench"
+      ],
+      "outputs": [
+        "keating2024-5-0203710-cdse-cds-core-shell-qds-2--after-s05-redisperse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Redisperse the QDs in TOP",
+      "evidence": [
+        {
+          "source_id": "keating2024-5-0203710",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s06-add",
+      "action": "add",
+      "label": "Add CdSe QDs and paraffin oil",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s05-redisperse"
+      ],
+      "inputs": [
+        "keating2024-5-0203710-cdse-cds-core-shell-qds-2--after-s05-redisperse",
+        "keating2024-5-0203710-cdse-cds-core-shell-qds-2--cdse-qds",
+        "keating2024-5-0203710-cdse-cds-core-shell-qds-2--paraffin-oil"
+      ],
+      "outputs": [
+        "keating2024-5-0203710-cdse-cds-core-shell-qds-2--after-s06-add"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 120,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "120 °C",
+          "evidence": [
+            {
+              "source_id": "keating2024-5-0203710",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "keating2024-5-0203710",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add CdSe QDs and paraffin oil",
+      "evidence": [
+        {
+          "source_id": "keating2024-5-0203710",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s07-add",
+      "action": "add",
+      "label": "Add OA",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s06-add"
+      ],
+      "inputs": [
+        "keating2024-5-0203710-cdse-cds-core-shell-qds-2--after-s06-add",
+        "keating2024-5-0203710-cdse-cds-core-shell-qds-2--oa"
+      ],
+      "outputs": [
+        "keating2024-5-0203710-cdse-cds-core-shell-qds-2--after-s07-add"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "keating2024-5-0203710",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Add OA",
+      "evidence": [
+        {
+          "source_id": "keating2024-5-0203710",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "keating2024-5-0203710-cdse-cds-core-shell-qds-2--product",
+      "source_sample_label": "CdSe/CdS core/shell QDs",
+      "batch_id": null,
+      "material_state_id": "keating2024-5-0203710-cdse-cds-core-shell-qds-2--after-s07-add",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "CdSe/CdS",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "keating2024-5-0203710",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "crystal",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "keating2024-5-0203710",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": "sphere",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "keating2024-5-0203710",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "keating2024-5-0203710",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "notes": [
+        "Reactor: 50 ml flask (Main PDF p.3).",
+        "Reaction temperature: 380 degC (Main PDF p.3).",
+        "Reaction time: 3 s (Main PDF p.6)."
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "id": "keating2024-5-0203710-cdse-cds-core-shell-qds-2--photoluminescence-peak",
+      "sample_id": "keating2024-5-0203710-cdse-cds-core-shell-qds-2--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 592.15,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "592.15 nm",
+        "evidence": [
+          {
+            "source_id": "keating2024-5-0203710",
+            "locator": "Main PDF p.8"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "keating2024-5-0203710",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    }
+  ],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
+    "missing_fields": [
+      "Ligand not reported in the extracted text.",
+      "Size not reported in the extracted text.",
+      "Plqy not reported in the extracted text.",
+      "Amount of TOP not reported in the extracted text.",
+      "Amount of TOP-Se not reported in the extracted text.",
+      "Amount of DPP not reported in the extracted text.",
+      "Amount of CdSe QDs not reported in the extracted text.",
+      "Amount of paraffin oil not reported in the extracted text.",
+      "Amount of OA not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}
