@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "steinhagen2012-jz301023c-pyrite-nanocrystals-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Chet Steinhagen (2012): pyrite nanocrystals",
   "material": {
@@ -324,20 +324,42 @@
       ]
     },
     {
-      "id": "steinhagen2012-jz301023c-pyrite-nanocrystals-1--after-s05-cool",
+      "id": "steinhagen2012-jz301023c-pyrite-nanocrystals-1--after-d2-s05-hold",
       "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
-        "steinhagen2012-jz301023c-pyrite-nanocrystals-1--after-s04-inject"
+        "steinhagen2012-jz301023c-pyrite-nanocrystals-1--after-s04-inject",
+        "steinhagen2012-jz301023c-pyrite-nanocrystals-1--iron-ii-chloride-tetrahydrate",
+        "steinhagen2012-jz301023c-pyrite-nanocrystals-1--octadecylamine",
+        "steinhagen2012-jz301023c-pyrite-nanocrystals-1--sulfur-powder",
+        "steinhagen2012-jz301023c-pyrite-nanocrystals-1--diphenyl-ether"
+      ]
+    },
+    {
+      "id": "steinhagen2012-jz301023c-pyrite-nanocrystals-1--after-s05-cool",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "steinhagen2012-jz301023c-pyrite-nanocrystals-1--after-d2-s05-hold"
       ]
     },
     {
       "id": "steinhagen2012-jz301023c-pyrite-nanocrystals-1--after-s06-add",
-      "name": "product as isolated",
-      "kind": "product",
+      "name": "mixture after step 7",
+      "kind": "reaction_batch",
       "parent_ids": [
         "steinhagen2012-jz301023c-pyrite-nanocrystals-1--after-s05-cool",
         "steinhagen2012-jz301023c-pyrite-nanocrystals-1--chloroform"
+      ]
+    },
+    {
+      "id": "steinhagen2012-jz301023c-pyrite-nanocrystals-1--after-d2-s08-purify",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "steinhagen2012-jz301023c-pyrite-nanocrystals-1--after-s06-add",
+        "steinhagen2012-jz301023c-pyrite-nanocrystals-1--toluene",
+        "steinhagen2012-jz301023c-pyrite-nanocrystals-1--ethanol"
       ]
     }
   ],
@@ -577,9 +599,9 @@
       ]
     },
     {
-      "id": "s05-cool",
-      "action": "cool",
-      "label": "Cool in water bath",
+      "id": "d2-s05-hold",
+      "action": "hold",
+      "label": "Hold at 220 °C for 3 h",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -587,7 +609,91 @@
         "s04-inject"
       ],
       "inputs": [
-        "steinhagen2012-jz301023c-pyrite-nanocrystals-1--after-s04-inject"
+        "steinhagen2012-jz301023c-pyrite-nanocrystals-1--after-s04-inject",
+        "steinhagen2012-jz301023c-pyrite-nanocrystals-1--iron-ii-chloride-tetrahydrate",
+        "steinhagen2012-jz301023c-pyrite-nanocrystals-1--octadecylamine",
+        "steinhagen2012-jz301023c-pyrite-nanocrystals-1--sulfur-powder",
+        "steinhagen2012-jz301023c-pyrite-nanocrystals-1--diphenyl-ether"
+      ],
+      "outputs": [
+        "steinhagen2012-jz301023c-pyrite-nanocrystals-1--after-d2-s05-hold"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 220,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "220 °C",
+          "evidence": [
+            {
+              "source_id": "steinhagen2012-jz301023c",
+              "locator": "Main PDF p.1"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 3,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "3 h",
+          "evidence": [
+            {
+              "source_id": "steinhagen2012-jz301023c",
+              "locator": "Main PDF p.1"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "steinhagen2012-jz301023c",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Hold at 220 °C for 3 h",
+      "evidence": [
+        {
+          "source_id": "steinhagen2012-jz301023c",
+          "locator": "Main PDF p.1"
+        }
+      ]
+    },
+    {
+      "id": "s05-cool",
+      "action": "cool",
+      "label": "Cool in water bath",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s05-hold"
+      ],
+      "inputs": [
+        "steinhagen2012-jz301023c-pyrite-nanocrystals-1--after-d2-s05-hold"
       ],
       "outputs": [
         "steinhagen2012-jz301023c-pyrite-nanocrystals-1--after-s05-cool"
@@ -681,6 +787,46 @@
           "locator": "Main PDF p.1"
         }
       ]
+    },
+    {
+      "id": "d2-s08-purify",
+      "action": "purify",
+      "label": "Solvent/antisolvent precipitation using toluene and ethanol",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s06-add"
+      ],
+      "inputs": [
+        "steinhagen2012-jz301023c-pyrite-nanocrystals-1--after-s06-add",
+        "steinhagen2012-jz301023c-pyrite-nanocrystals-1--toluene",
+        "steinhagen2012-jz301023c-pyrite-nanocrystals-1--ethanol"
+      ],
+      "outputs": [
+        "steinhagen2012-jz301023c-pyrite-nanocrystals-1--after-d2-s08-purify"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Solvent/antisolvent precipitation using toluene and ethanol",
+      "evidence": [
+        {
+          "source_id": "steinhagen2012-jz301023c",
+          "locator": "Main PDF p.1"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -689,7 +835,7 @@
       "sample_id": "steinhagen2012-jz301023c-pyrite-nanocrystals-1--product",
       "source_sample_label": "pyrite nanocrystals",
       "batch_id": null,
-      "material_state_id": "steinhagen2012-jz301023c-pyrite-nanocrystals-1--after-s06-add",
+      "material_state_id": "steinhagen2012-jz301023c-pyrite-nanocrystals-1--after-d2-s08-purify",
       "parent_sample_id": null,
       "composition": {
         "value": "FeS2",
@@ -786,7 +932,7 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Amount of iron(II) chloride tetrahydrate not reported in the extracted text.",
       "Amount of sulfur powder not reported in the extracted text.",

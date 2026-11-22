@@ -9,7 +9,7 @@ NanoXtalSyn organizes source-attributed synthesis, characterization and property
 <!-- mattersyn-generated-references:start -->
 ## Papers used in the published website
 
-Dataset **0.41.2** · **3319 primary source groups** · release `completeness-y3-v6-20261120-11`. Records are not independent experiments.
+Dataset **0.41.2** · **3319 primary source groups** · release `completeness-f6-recovered-original-tail-20261121`. Records are not independent experiments.
 
 - not reported (year unrecorded). 10.1007_s11051-010-0042-z. [10.1007/s11051-010-0042-z](https://doi.org/10.1007/s11051-010-0042-z). Review scope remains stated in the linked website records.
 

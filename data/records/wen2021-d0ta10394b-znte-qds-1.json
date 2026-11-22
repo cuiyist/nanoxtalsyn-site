@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "wen2021-d0ta10394b-znte-qds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Peng Wen; Hui Li; Xiao Ma; Renbo Lei; Xinwei Wang; Scott M. Geyer; Yejun Qiu (2021): ZnTe QDs",
   "material": {
@@ -232,18 +232,101 @@
   "stocks": [],
   "material_states": [
     {
-      "id": "wen2021-d0ta10394b-znte-qds-1--after-s01-heat",
-      "name": "product as isolated",
-      "kind": "product",
+      "id": "wen2021-d0ta10394b-znte-qds-1--after-d2-s01-heat",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
       "parent_ids": [
         "wen2021-d0ta10394b-znte-qds-1--tellurium-powder",
         "wen2021-d0ta10394b-znte-qds-1--trioctylphosphine",
         "wen2021-d0ta10394b-znte-qds-1--lithium-triethylborohydride",
         "wen2021-d0ta10394b-znte-qds-1--oleylamine"
       ]
+    },
+    {
+      "id": "wen2021-d0ta10394b-znte-qds-1--after-s01-heat",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "wen2021-d0ta10394b-znte-qds-1--after-d2-s01-heat",
+        "wen2021-d0ta10394b-znte-qds-1--tellurium-powder",
+        "wen2021-d0ta10394b-znte-qds-1--trioctylphosphine",
+        "wen2021-d0ta10394b-znte-qds-1--lithium-triethylborohydride",
+        "wen2021-d0ta10394b-znte-qds-1--oleylamine"
+      ]
+    },
+    {
+      "id": "wen2021-d0ta10394b-znte-qds-1--after-d2-s03-disperse",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "wen2021-d0ta10394b-znte-qds-1--after-s01-heat"
+      ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-heat",
+      "action": "heat",
+      "label": "Heat to 160 °C",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "wen2021-d0ta10394b-znte-qds-1--tellurium-powder",
+        "wen2021-d0ta10394b-znte-qds-1--trioctylphosphine",
+        "wen2021-d0ta10394b-znte-qds-1--lithium-triethylborohydride",
+        "wen2021-d0ta10394b-znte-qds-1--oleylamine"
+      ],
+      "outputs": [
+        "wen2021-d0ta10394b-znte-qds-1--after-d2-s01-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 160,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "160 °C",
+          "evidence": [
+            {
+              "source_id": "wen2021-d0ta10394b",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "wen2021-d0ta10394b",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heat to 160 °C",
+      "evidence": [
+        {
+          "source_id": "wen2021-d0ta10394b",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
     {
       "id": "s01-heat",
       "action": "heat",
@@ -251,8 +334,11 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
+      "depends_on": [
+        "d2-s01-heat"
+      ],
       "inputs": [
+        "wen2021-d0ta10394b-znte-qds-1--after-d2-s01-heat",
         "wen2021-d0ta10394b-znte-qds-1--tellurium-powder",
         "wen2021-d0ta10394b-znte-qds-1--trioctylphosphine",
         "wen2021-d0ta10394b-znte-qds-1--lithium-triethylborohydride",
@@ -300,9 +386,14 @@
         }
       },
       "environment": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "wen2021-d0ta10394b",
+            "locator": "Main PDF p.2"
+          }
+        ],
         "note": ""
       },
       "endpoint": {
@@ -319,6 +410,49 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "d2-s03-disperse",
+      "action": "disperse",
+      "label": "Disperse in hexane",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-heat"
+      ],
+      "inputs": [
+        "wen2021-d0ta10394b-znte-qds-1--after-s01-heat"
+      ],
+      "outputs": [
+        "wen2021-d0ta10394b-znte-qds-1--after-d2-s03-disperse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "wen2021-d0ta10394b",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Disperse in hexane",
+      "evidence": [
+        {
+          "source_id": "wen2021-d0ta10394b",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -327,7 +461,7 @@
       "sample_id": "wen2021-d0ta10394b-znte-qds-1--product",
       "source_sample_label": "ZnTe QDs",
       "batch_id": null,
-      "material_state_id": "wen2021-d0ta10394b-znte-qds-1--after-s01-heat",
+      "material_state_id": "wen2021-d0ta10394b-znte-qds-1--after-d2-s03-disperse",
       "parent_sample_id": null,
       "composition": {
         "value": null,
@@ -375,13 +509,12 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Shape not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
-      "Reactor not reported in the extracted text.",
-      "Atmosphere not reported in the extracted text."
+      "Reactor not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

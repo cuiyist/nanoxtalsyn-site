@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "traverso2023-pharmaceutics15061651-hsa-qds-2",
-  "revision": 2,
+  "revision": 3,
   "record_type": "literature_protocol",
   "title": "Agata Noelia Traverso; David José Fragale; Diego Luis Viale; Octavio Garate; Pablo Torres; Gastón Valverde; Alejandro Berra; Ana Vanesa Torbidoni; Juan Sebastián Yakisich; Mariano Grasselli; Martín Radrizzani (2023): HSA-QDs",
   "material": {
@@ -171,25 +171,6 @@
       ]
     },
     {
-      "id": "traverso2023-pharmaceutics15061651-hsa-qds-2--human-serum-albumin-hsa",
-      "name": "human serum albumin (HSA)",
-      "formula": null,
-      "role": "reagent",
-      "stage": "synthesis",
-      "identity": {
-        "pubchem_cid": null,
-        "smiles": null
-      },
-      "quantities": {},
-      "notes": [],
-      "evidence": [
-        {
-          "source_id": "traverso2023-pharmaceutics15061651",
-          "locator": "Main PDF p.2"
-        }
-      ]
-    },
-    {
       "id": "traverso2023-pharmaceutics15061651-hsa-qds-2--glutaraldehyde",
       "name": "glutaraldehyde",
       "formula": null,
@@ -262,6 +243,10 @@
         {
           "source_id": "traverso2023-pharmaceutics15061651",
           "locator": "Main PDF p.3"
+        },
+        {
+          "source_id": "traverso2023-pharmaceutics15061651",
+          "locator": "Main PDF p.2"
         }
       ]
     }
@@ -277,7 +262,7 @@
         "traverso2023-pharmaceutics15061651-hsa-qds-2--methanol",
         "traverso2023-pharmaceutics15061651-hsa-qds-2--qds",
         "traverso2023-pharmaceutics15061651-hsa-qds-2--pbs",
-        "traverso2023-pharmaceutics15061651-hsa-qds-2--human-serum-albumin-hsa",
+        "traverso2023-pharmaceutics15061651-hsa-qds-2--human-serum-albumin-hsa--checked-2",
         "traverso2023-pharmaceutics15061651-hsa-qds-2--glutaraldehyde",
         "traverso2023-pharmaceutics15061651-hsa-qds-2--h2o"
       ]
@@ -288,7 +273,6 @@
       "kind": "reaction_batch",
       "parent_ids": [
         "traverso2023-pharmaceutics15061651-hsa-qds-2--after-s01-mix",
-        "traverso2023-pharmaceutics15061651-hsa-qds-2--human-serum-albumin-hsa",
         "traverso2023-pharmaceutics15061651-hsa-qds-2--human-serum-albumin-hsa--checked-2"
       ]
     },
@@ -315,7 +299,7 @@
         "traverso2023-pharmaceutics15061651-hsa-qds-2--methanol",
         "traverso2023-pharmaceutics15061651-hsa-qds-2--qds",
         "traverso2023-pharmaceutics15061651-hsa-qds-2--pbs",
-        "traverso2023-pharmaceutics15061651-hsa-qds-2--human-serum-albumin-hsa",
+        "traverso2023-pharmaceutics15061651-hsa-qds-2--human-serum-albumin-hsa--checked-2",
         "traverso2023-pharmaceutics15061651-hsa-qds-2--glutaraldehyde",
         "traverso2023-pharmaceutics15061651-hsa-qds-2--h2o"
       ],
@@ -361,7 +345,6 @@
       ],
       "inputs": [
         "traverso2023-pharmaceutics15061651-hsa-qds-2--after-s01-mix",
-        "traverso2023-pharmaceutics15061651-hsa-qds-2--human-serum-albumin-hsa",
         "traverso2023-pharmaceutics15061651-hsa-qds-2--human-serum-albumin-hsa--checked-2"
       ],
       "outputs": [

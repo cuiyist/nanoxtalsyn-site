@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "guo2012-jp210949v-cdse-5-2cds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Yijun Guo (2012): CdSe/5.2CdS",
   "material": {
@@ -182,6 +182,120 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "guo2012-jp210949v-cdse-5-2cds-1--octyl-2nh",
+      "name": "(octyl)2NH",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "guo2012-jp210949v",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "guo2012-jp210949v-cdse-5-2cds-1--cd-oleate-2",
+      "name": "Cd(oleate)2",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 300,
+          "minimum": null,
+          "maximum": null,
+          "unit": "μmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "300 μmol",
+          "evidence": [
+            {
+              "source_id": "guo2012-jp210949v",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "guo2012-jp210949v",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "guo2012-jp210949v-cdse-5-2cds-1--cdse",
+      "name": "CdSe",
+      "formula": null,
+      "role": "starting_particles",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "guo2012-jp210949v",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "guo2012-jp210949v-cdse-5-2cds-1--hexane",
+      "name": "hexane",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "guo2012-jp210949v",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "guo2012-jp210949v-cdse-5-2cds-1--amine",
+      "name": "amine",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "guo2012-jp210949v",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -192,7 +306,8 @@
       "kind": "reaction_batch",
       "parent_ids": [
         "guo2012-jp210949v-cdse-5-2cds-1--cdo",
-        "guo2012-jp210949v-cdse-5-2cds-1--oleic-acid"
+        "guo2012-jp210949v-cdse-5-2cds-1--oleic-acid",
+        "guo2012-jp210949v-cdse-5-2cds-1--1-octadecene-ode"
       ]
     },
     {
@@ -202,66 +317,108 @@
       "parent_ids": [
         "guo2012-jp210949v-cdse-5-2cds-1--after-s01-degas",
         "guo2012-jp210949v-cdse-5-2cds-1--cdo",
-        "guo2012-jp210949v-cdse-5-2cds-1--oleic-acid"
+        "guo2012-jp210949v-cdse-5-2cds-1--oleic-acid",
+        "guo2012-jp210949v-cdse-5-2cds-1--1-octadecene-ode"
+      ]
+    },
+    {
+      "id": "guo2012-jp210949v-cdse-5-2cds-1--after-d2-s03-inject",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "guo2012-jp210949v-cdse-5-2cds-1--after-s02-heat",
+        "guo2012-jp210949v-cdse-5-2cds-1--oleyl-nh2"
       ]
     },
     {
       "id": "guo2012-jp210949v-cdse-5-2cds-1--after-s03-degas",
-      "name": "mixture after step 3",
+      "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
-        "guo2012-jp210949v-cdse-5-2cds-1--after-s02-heat"
+        "guo2012-jp210949v-cdse-5-2cds-1--after-d2-s03-inject",
+        "guo2012-jp210949v-cdse-5-2cds-1--cd-oleate-2",
+        "guo2012-jp210949v-cdse-5-2cds-1--octyl-2nh"
+      ]
+    },
+    {
+      "id": "guo2012-jp210949v-cdse-5-2cds-1--after-d2-s05-heat",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "guo2012-jp210949v-cdse-5-2cds-1--after-s03-degas",
+        "guo2012-jp210949v-cdse-5-2cds-1--cd-oleate-2",
+        "guo2012-jp210949v-cdse-5-2cds-1--octyl-2nh"
       ]
     },
     {
       "id": "guo2012-jp210949v-cdse-5-2cds-1--after-s04-degas",
-      "name": "mixture after step 4",
+      "name": "mixture after step 6",
       "kind": "reaction_batch",
       "parent_ids": [
-        "guo2012-jp210949v-cdse-5-2cds-1--after-s03-degas",
-        "guo2012-jp210949v-cdse-5-2cds-1--s8"
+        "guo2012-jp210949v-cdse-5-2cds-1--after-d2-s05-heat",
+        "guo2012-jp210949v-cdse-5-2cds-1--s8",
+        "guo2012-jp210949v-cdse-5-2cds-1--1-octadecene-ode"
       ]
     },
     {
       "id": "guo2012-jp210949v-cdse-5-2cds-1--after-s05-heat",
-      "name": "mixture after step 5",
+      "name": "mixture after step 7",
       "kind": "reaction_batch",
       "parent_ids": [
         "guo2012-jp210949v-cdse-5-2cds-1--after-s04-degas",
-        "guo2012-jp210949v-cdse-5-2cds-1--s8"
+        "guo2012-jp210949v-cdse-5-2cds-1--s8",
+        "guo2012-jp210949v-cdse-5-2cds-1--1-octadecene-ode"
+      ]
+    },
+    {
+      "id": "guo2012-jp210949v-cdse-5-2cds-1--after-d2-s08-dissolve",
+      "name": "mixture after step 8",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "guo2012-jp210949v-cdse-5-2cds-1--after-s05-heat",
+        "guo2012-jp210949v-cdse-5-2cds-1--cdse",
+        "guo2012-jp210949v-cdse-5-2cds-1--hexane"
       ]
     },
     {
       "id": "guo2012-jp210949v-cdse-5-2cds-1--after-s06-dry",
-      "name": "mixture after step 6",
+      "name": "mixture after step 9",
       "kind": "reaction_batch",
       "parent_ids": [
-        "guo2012-jp210949v-cdse-5-2cds-1--after-s05-heat"
+        "guo2012-jp210949v-cdse-5-2cds-1--after-d2-s08-dissolve",
+        "guo2012-jp210949v-cdse-5-2cds-1--cdse",
+        "guo2012-jp210949v-cdse-5-2cds-1--1-octadecene-ode",
+        "guo2012-jp210949v-cdse-5-2cds-1--amine"
       ]
     },
     {
       "id": "guo2012-jp210949v-cdse-5-2cds-1--after-s07-degas",
-      "name": "mixture after step 7",
+      "name": "mixture after step 10",
       "kind": "reaction_batch",
       "parent_ids": [
-        "guo2012-jp210949v-cdse-5-2cds-1--after-s06-dry"
+        "guo2012-jp210949v-cdse-5-2cds-1--after-s06-dry",
+        "guo2012-jp210949v-cdse-5-2cds-1--1-octadecene-ode",
+        "guo2012-jp210949v-cdse-5-2cds-1--amine"
       ]
     },
     {
       "id": "guo2012-jp210949v-cdse-5-2cds-1--after-s08-heat",
-      "name": "mixture after step 8",
+      "name": "mixture after step 11",
       "kind": "reaction_batch",
       "parent_ids": [
-        "guo2012-jp210949v-cdse-5-2cds-1--after-s07-degas"
+        "guo2012-jp210949v-cdse-5-2cds-1--after-s07-degas",
+        "guo2012-jp210949v-cdse-5-2cds-1--1-octadecene-ode",
+        "guo2012-jp210949v-cdse-5-2cds-1--amine"
       ]
     },
     {
       "id": "guo2012-jp210949v-cdse-5-2cds-1--after-s09-inject",
-      "name": "mixture after step 9",
+      "name": "mixture after step 12",
       "kind": "reaction_batch",
       "parent_ids": [
         "guo2012-jp210949v-cdse-5-2cds-1--after-s08-heat",
-        "guo2012-jp210949v-cdse-5-2cds-1--s8"
+        "guo2012-jp210949v-cdse-5-2cds-1--s8",
+        "guo2012-jp210949v-cdse-5-2cds-1--cd-oleate-2"
       ]
     },
     {
@@ -284,7 +441,8 @@
       "depends_on": [],
       "inputs": [
         "guo2012-jp210949v-cdse-5-2cds-1--cdo",
-        "guo2012-jp210949v-cdse-5-2cds-1--oleic-acid"
+        "guo2012-jp210949v-cdse-5-2cds-1--oleic-acid",
+        "guo2012-jp210949v-cdse-5-2cds-1--1-octadecene-ode"
       ],
       "outputs": [
         "guo2012-jp210949v-cdse-5-2cds-1--after-s01-degas"
@@ -366,7 +524,8 @@
       "inputs": [
         "guo2012-jp210949v-cdse-5-2cds-1--after-s01-degas",
         "guo2012-jp210949v-cdse-5-2cds-1--cdo",
-        "guo2012-jp210949v-cdse-5-2cds-1--oleic-acid"
+        "guo2012-jp210949v-cdse-5-2cds-1--oleic-acid",
+        "guo2012-jp210949v-cdse-5-2cds-1--1-octadecene-ode"
       ],
       "outputs": [
         "guo2012-jp210949v-cdse-5-2cds-1--after-s02-heat"
@@ -382,6 +541,24 @@
           "qualifier": "",
           "basis": "",
           "raw_text": "240 °C",
+          "evidence": [
+            {
+              "source_id": "guo2012-jp210949v",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 20,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "20 min",
           "evidence": [
             {
               "source_id": "guo2012-jp210949v",
@@ -418,9 +595,9 @@
       ]
     },
     {
-      "id": "s03-degas",
-      "action": "degas",
-      "label": "Degassing of Cd(oleate)2 and amine",
+      "id": "d2-s03-inject",
+      "action": "inject",
+      "label": "Injection of oleyl-NH2",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -428,7 +605,90 @@
         "s02-heat"
       ],
       "inputs": [
-        "guo2012-jp210949v-cdse-5-2cds-1--after-s02-heat"
+        "guo2012-jp210949v-cdse-5-2cds-1--after-s02-heat",
+        "guo2012-jp210949v-cdse-5-2cds-1--oleyl-nh2"
+      ],
+      "outputs": [
+        "guo2012-jp210949v-cdse-5-2cds-1--after-d2-s03-inject"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 60,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "60 °C",
+          "evidence": [
+            {
+              "source_id": "guo2012-jp210949v",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 20,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "20 min",
+          "evidence": [
+            {
+              "source_id": "guo2012-jp210949v",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "guo2012-jp210949v",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Injection of oleyl-NH2",
+      "evidence": [
+        {
+          "source_id": "guo2012-jp210949v",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s03-degas",
+      "action": "degas",
+      "label": "Degassing of Cd(oleate)2 and amine",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-inject"
+      ],
+      "inputs": [
+        "guo2012-jp210949v-cdse-5-2cds-1--after-d2-s03-inject",
+        "guo2012-jp210949v-cdse-5-2cds-1--cd-oleate-2",
+        "guo2012-jp210949v-cdse-5-2cds-1--octyl-2nh"
       ],
       "outputs": [
         "guo2012-jp210949v-cdse-5-2cds-1--after-s03-degas"
@@ -498,9 +758,9 @@
       ]
     },
     {
-      "id": "s04-degas",
-      "action": "degas",
-      "label": "Degassing of S8",
+      "id": "d2-s05-heat",
+      "action": "heat",
+      "label": "Heating to 60 °C",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -509,7 +769,90 @@
       ],
       "inputs": [
         "guo2012-jp210949v-cdse-5-2cds-1--after-s03-degas",
-        "guo2012-jp210949v-cdse-5-2cds-1--s8"
+        "guo2012-jp210949v-cdse-5-2cds-1--cd-oleate-2",
+        "guo2012-jp210949v-cdse-5-2cds-1--octyl-2nh"
+      ],
+      "outputs": [
+        "guo2012-jp210949v-cdse-5-2cds-1--after-d2-s05-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 60,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "60 °C",
+          "evidence": [
+            {
+              "source_id": "guo2012-jp210949v",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 20,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "20 min",
+          "evidence": [
+            {
+              "source_id": "guo2012-jp210949v",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "guo2012-jp210949v",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heating to 60 °C",
+      "evidence": [
+        {
+          "source_id": "guo2012-jp210949v",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s04-degas",
+      "action": "degas",
+      "label": "Degassing of S8",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s05-heat"
+      ],
+      "inputs": [
+        "guo2012-jp210949v-cdse-5-2cds-1--after-d2-s05-heat",
+        "guo2012-jp210949v-cdse-5-2cds-1--s8",
+        "guo2012-jp210949v-cdse-5-2cds-1--1-octadecene-ode"
       ],
       "outputs": [
         "guo2012-jp210949v-cdse-5-2cds-1--after-s04-degas"
@@ -590,7 +933,8 @@
       ],
       "inputs": [
         "guo2012-jp210949v-cdse-5-2cds-1--after-s04-degas",
-        "guo2012-jp210949v-cdse-5-2cds-1--s8"
+        "guo2012-jp210949v-cdse-5-2cds-1--s8",
+        "guo2012-jp210949v-cdse-5-2cds-1--1-octadecene-ode"
       ],
       "outputs": [
         "guo2012-jp210949v-cdse-5-2cds-1--after-s05-heat"
@@ -660,6 +1004,51 @@
       ]
     },
     {
+      "id": "d2-s08-dissolve",
+      "action": "dissolve",
+      "label": "Dissolving CdSe cores",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s05-heat"
+      ],
+      "inputs": [
+        "guo2012-jp210949v-cdse-5-2cds-1--after-s05-heat",
+        "guo2012-jp210949v-cdse-5-2cds-1--cdse",
+        "guo2012-jp210949v-cdse-5-2cds-1--hexane"
+      ],
+      "outputs": [
+        "guo2012-jp210949v-cdse-5-2cds-1--after-d2-s08-dissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "guo2012-jp210949v",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dissolving CdSe cores",
+      "evidence": [
+        {
+          "source_id": "guo2012-jp210949v",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
       "id": "s06-dry",
       "action": "dry",
       "label": "Drying under vacuum",
@@ -667,10 +1056,13 @@
       "branch": "",
       "optional": false,
       "depends_on": [
-        "s05-heat"
+        "d2-s08-dissolve"
       ],
       "inputs": [
-        "guo2012-jp210949v-cdse-5-2cds-1--after-s05-heat"
+        "guo2012-jp210949v-cdse-5-2cds-1--after-d2-s08-dissolve",
+        "guo2012-jp210949v-cdse-5-2cds-1--cdse",
+        "guo2012-jp210949v-cdse-5-2cds-1--1-octadecene-ode",
+        "guo2012-jp210949v-cdse-5-2cds-1--amine"
       ],
       "outputs": [
         "guo2012-jp210949v-cdse-5-2cds-1--after-s06-dry"
@@ -708,7 +1100,9 @@
         "s06-dry"
       ],
       "inputs": [
-        "guo2012-jp210949v-cdse-5-2cds-1--after-s06-dry"
+        "guo2012-jp210949v-cdse-5-2cds-1--after-s06-dry",
+        "guo2012-jp210949v-cdse-5-2cds-1--1-octadecene-ode",
+        "guo2012-jp210949v-cdse-5-2cds-1--amine"
       ],
       "outputs": [
         "guo2012-jp210949v-cdse-5-2cds-1--after-s07-degas"
@@ -788,7 +1182,9 @@
         "s07-degas"
       ],
       "inputs": [
-        "guo2012-jp210949v-cdse-5-2cds-1--after-s07-degas"
+        "guo2012-jp210949v-cdse-5-2cds-1--after-s07-degas",
+        "guo2012-jp210949v-cdse-5-2cds-1--1-octadecene-ode",
+        "guo2012-jp210949v-cdse-5-2cds-1--amine"
       ],
       "outputs": [
         "guo2012-jp210949v-cdse-5-2cds-1--after-s08-heat"
@@ -804,6 +1200,24 @@
           "qualifier": "",
           "basis": "",
           "raw_text": "200 °C",
+          "evidence": [
+            {
+              "source_id": "guo2012-jp210949v",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 20,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "20 min",
           "evidence": [
             {
               "source_id": "guo2012-jp210949v",
@@ -851,7 +1265,8 @@
       ],
       "inputs": [
         "guo2012-jp210949v-cdse-5-2cds-1--after-s08-heat",
-        "guo2012-jp210949v-cdse-5-2cds-1--s8"
+        "guo2012-jp210949v-cdse-5-2cds-1--s8",
+        "guo2012-jp210949v-cdse-5-2cds-1--cd-oleate-2"
       ],
       "outputs": [
         "guo2012-jp210949v-cdse-5-2cds-1--after-s09-inject"
@@ -1025,11 +1440,44 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "guo2012-jp210949v-cdse-5-2cds-1--photoluminescence-peak",
+      "sample_id": "guo2012-jp210949v-cdse-5-2cds-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 484,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "484 nm",
+        "evidence": [
+          {
+            "source_id": "guo2012-jp210949v",
+            "locator": "Main PDF p.7"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "guo2012-jp210949v",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Ligand not reported in the extracted text.",
       "Size not reported in the extracted text.",
@@ -1038,7 +1486,11 @@
       "Amount of oleic acid not reported in the extracted text.",
       "Amount of 1-octadecene (ODE) not reported in the extracted text.",
       "Amount of oleyl-NH2 not reported in the extracted text.",
-      "Amount of S8 not reported in the extracted text."
+      "Amount of S8 not reported in the extracted text.",
+      "Amount of (octyl)2NH not reported in the extracted text.",
+      "Amount of CdSe not reported in the extracted text.",
+      "Amount of hexane not reported in the extracted text.",
+      "Amount of amine not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

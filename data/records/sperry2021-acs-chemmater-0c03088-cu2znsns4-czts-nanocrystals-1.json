@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Breena M. Sperry; Christine K. Luscombe (2021): Cu2ZnSnS4 (CZTS) nanocrystals",
   "material": {
@@ -41,9 +41,14 @@
   },
   "intended_target": {
     "composition": {
-      "value": null,
-      "status": "not_reported",
-      "evidence": [],
+      "value": "Cu2ZnSnS4",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "sperry2021-acs-chemmater-0c03088",
+          "locator": "Main PDF p.1"
+        }
+      ],
       "note": ""
     },
     "phase": {
@@ -248,21 +253,70 @@
           "locator": "Main PDF p.2"
         }
       ]
+    },
+    {
+      "id": "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--ipa",
+      "name": "IPA",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "sperry2021-acs-chemmater-0c03088",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--toluene",
+      "name": "Toluene",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "sperry2021-acs-chemmater-0c03088",
+          "locator": "Main PDF p.2"
+        }
+      ]
     }
   ],
   "stocks": [],
   "material_states": [
     {
-      "id": "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--after-s01-heat",
+      "id": "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--after-d2-s01-seal",
       "name": "mixture after step 1",
       "kind": "reaction_batch",
       "parent_ids": [
+        "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--copper-ii-acetylacetonate",
+        "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--zinc-acetylacetonate",
+        "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--tin-iv-bis-acetylacetonate-dibromide"
+      ]
+    },
+    {
+      "id": "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--after-s01-heat",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--after-d2-s01-seal",
         "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--oleylamine"
       ]
     },
     {
       "id": "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--after-s02-degas",
-      "name": "mixture after step 2",
+      "name": "mixture after step 3",
       "kind": "reaction_batch",
       "parent_ids": [
         "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--after-s01-heat",
@@ -271,7 +325,7 @@
     },
     {
       "id": "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--after-s03-heat",
-      "name": "mixture after step 3",
+      "name": "mixture after step 4",
       "kind": "reaction_batch",
       "parent_ids": [
         "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--after-s02-degas",
@@ -280,27 +334,49 @@
       ]
     },
     {
-      "id": "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--after-s04-cool",
-      "name": "mixture after step 4",
+      "id": "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--after-d2-s05-mix",
+      "name": "mixture after step 5",
       "kind": "reaction_batch",
       "parent_ids": [
-        "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--after-s03-heat"
+        "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--after-s03-heat",
+        "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--oleylamine",
+        "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--elemental-sulfur"
+      ]
+    },
+    {
+      "id": "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--after-s04-cool",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--after-d2-s05-mix"
+      ]
+    },
+    {
+      "id": "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--after-d2-s07-add",
+      "name": "mixture after step 7",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--after-s04-cool",
+        "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--ipa",
+        "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--toluene"
       ]
     },
     {
       "id": "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--after-s05-centrifuge",
-      "name": "mixture after step 5",
+      "name": "mixture after step 8",
       "kind": "reaction_batch",
       "parent_ids": [
-        "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--after-s04-cool"
+        "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--after-d2-s07-add"
       ]
     },
     {
       "id": "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--after-s06-wash",
-      "name": "mixture after step 6",
+      "name": "mixture after step 9",
       "kind": "reaction_batch",
       "parent_ids": [
-        "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--after-s05-centrifuge"
+        "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--after-s05-centrifuge",
+        "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--ipa",
+        "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--toluene"
       ]
     },
     {
@@ -314,14 +390,60 @@
   ],
   "operations": [
     {
+      "id": "d2-s01-seal",
+      "action": "seal",
+      "label": "Sealing metal precursors in a flask",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--copper-ii-acetylacetonate",
+        "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--zinc-acetylacetonate",
+        "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--tin-iv-bis-acetylacetonate-dibromide"
+      ],
+      "outputs": [
+        "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--after-d2-s01-seal"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "sperry2021-acs-chemmater-0c03088",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Sealing metal precursors in a flask",
+      "evidence": [
+        {
+          "source_id": "sperry2021-acs-chemmater-0c03088",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
       "id": "s01-heat",
       "action": "heat",
       "label": "Heating solution to dissolve precursors",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
+      "depends_on": [
+        "d2-s01-seal"
+      ],
       "inputs": [
+        "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--after-d2-s01-seal",
         "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--oleylamine"
       ],
       "outputs": [
@@ -501,9 +623,9 @@
       ]
     },
     {
-      "id": "s04-cool",
-      "action": "cool",
-      "label": "Cooling to 80 °C",
+      "id": "d2-s05-mix",
+      "action": "mix",
+      "label": "Mixing for growth",
       "stage": "synthesis",
       "branch": "",
       "optional": false,
@@ -511,7 +633,89 @@
         "s03-heat"
       ],
       "inputs": [
-        "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--after-s03-heat"
+        "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--after-s03-heat",
+        "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--oleylamine",
+        "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--elemental-sulfur"
+      ],
+      "outputs": [
+        "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--after-d2-s05-mix"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 225,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "225 °C",
+          "evidence": [
+            {
+              "source_id": "sperry2021-acs-chemmater-0c03088",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 2,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2 h",
+          "evidence": [
+            {
+              "source_id": "sperry2021-acs-chemmater-0c03088",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "sperry2021-acs-chemmater-0c03088",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Mixing for growth",
+      "evidence": [
+        {
+          "source_id": "sperry2021-acs-chemmater-0c03088",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s04-cool",
+      "action": "cool",
+      "label": "Cooling to 80 °C",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s05-mix"
+      ],
+      "inputs": [
+        "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--after-d2-s05-mix"
       ],
       "outputs": [
         "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--after-s04-cool"
@@ -563,6 +767,51 @@
       ]
     },
     {
+      "id": "d2-s07-add",
+      "action": "add",
+      "label": "Adding IPA and toluene for precipitation",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-cool"
+      ],
+      "inputs": [
+        "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--after-s04-cool",
+        "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--ipa",
+        "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--toluene"
+      ],
+      "outputs": [
+        "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--after-d2-s07-add"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "sperry2021-acs-chemmater-0c03088",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Adding IPA and toluene for precipitation",
+      "evidence": [
+        {
+          "source_id": "sperry2021-acs-chemmater-0c03088",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
       "id": "s05-centrifuge",
       "action": "centrifuge",
       "label": "Centrifuging to separate NCs",
@@ -570,10 +819,10 @@
       "branch": "",
       "optional": false,
       "depends_on": [
-        "s04-cool"
+        "d2-s07-add"
       ],
       "inputs": [
-        "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--after-s04-cool"
+        "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--after-d2-s07-add"
       ],
       "outputs": [
         "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--after-s05-centrifuge"
@@ -630,7 +879,9 @@
         "s05-centrifuge"
       ],
       "inputs": [
-        "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--after-s05-centrifuge"
+        "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--after-s05-centrifuge",
+        "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--ipa",
+        "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--toluene"
       ],
       "outputs": [
         "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--after-s06-wash"
@@ -724,9 +975,14 @@
       "material_state_id": "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--after-s07-dry",
       "parent_sample_id": null,
       "composition": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "Cu2ZnSnS4",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "sperry2021-acs-chemmater-0c03088",
+            "locator": "Main PDF p.1"
+          }
+        ],
         "note": ""
       },
       "phase": {
@@ -803,11 +1059,13 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Shape not reported in the extracted text.",
-      "Amount of Elemental sulfur not reported in the extracted text."
+      "Amount of Elemental sulfur not reported in the extracted text.",
+      "Amount of IPA not reported in the extracted text.",
+      "Amount of Toluene not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

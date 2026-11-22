@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "ke2019-acsbiomaterials-8b01253-mos2-qds-1",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Sunkui Ke; Youlin Lai; Lihuang Li; Li Tu; Yange Wang; Lei Ren; Shefang Ye; Peiyan Yang (2019): MoS2 QDs",
   "material": {
@@ -56,16 +56,21 @@
       "note": ""
     },
     "size": {
-      "value": null,
+      "value": 3.4,
       "minimum": null,
       "maximum": null,
       "unit": "nm",
-      "status": "not_reported",
+      "status": "reported",
       "approximate": false,
       "qualifier": "",
       "basis": "",
-      "raw_text": "not reported",
-      "evidence": [],
+      "raw_text": "3.4 nm",
+      "evidence": [
+        {
+          "source_id": "ke2019-acsbiomaterials-8b01253",
+          "locator": "Main PDF"
+        }
+      ],
       "derivation": null
     },
     "morphology": {
@@ -85,7 +90,7 @@
       "id": "ke2019-acsbiomaterials-8b01253-mos2-qds-1--mos2-powder",
       "name": "MoS2 powder",
       "formula": null,
-      "role": "reagent",
+      "role": "starting_particles",
       "stage": "synthesis",
       "identity": {
         "pubchem_cid": null,
@@ -161,13 +166,163 @@
   "stocks": [],
   "material_states": [
     {
+      "id": "ke2019-acsbiomaterials-8b01253-mos2-qds-1--after-d2-s01-disperse",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "ke2019-acsbiomaterials-8b01253-mos2-qds-1--mos2-powder",
+        "ke2019-acsbiomaterials-8b01253-mos2-qds-1--sulfuric-acid"
+      ]
+    },
+    {
+      "id": "ke2019-acsbiomaterials-8b01253-mos2-qds-1--after-d2-s02-centrifuge",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "ke2019-acsbiomaterials-8b01253-mos2-qds-1--after-d2-s01-disperse"
+      ]
+    },
+    {
       "id": "ke2019-acsbiomaterials-8b01253-mos2-qds-1--after-s01-ultrafiltration",
       "name": "product as isolated",
       "kind": "product",
-      "parent_ids": []
+      "parent_ids": [
+        "ke2019-acsbiomaterials-8b01253-mos2-qds-1--after-d2-s02-centrifuge"
+      ]
     }
   ],
   "operations": [
+    {
+      "id": "d2-s01-disperse",
+      "action": "disperse",
+      "label": "Disperse MoS2 powder in sulfuric acid solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "ke2019-acsbiomaterials-8b01253-mos2-qds-1--mos2-powder",
+        "ke2019-acsbiomaterials-8b01253-mos2-qds-1--sulfuric-acid"
+      ],
+      "outputs": [
+        "ke2019-acsbiomaterials-8b01253-mos2-qds-1--after-d2-s01-disperse"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 80,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "80 °C",
+          "evidence": [
+            {
+              "source_id": "ke2019-acsbiomaterials-8b01253",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 24,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "24 h",
+          "evidence": [
+            {
+              "source_id": "ke2019-acsbiomaterials-8b01253",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Disperse MoS2 powder in sulfuric acid solution",
+      "evidence": [
+        {
+          "source_id": "ke2019-acsbiomaterials-8b01253",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "d2-s02-centrifuge",
+      "action": "centrifuge",
+      "label": "Remove large MoS2 flakes by centrifugation",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s01-disperse"
+      ],
+      "inputs": [
+        "ke2019-acsbiomaterials-8b01253-mos2-qds-1--after-d2-s01-disperse"
+      ],
+      "outputs": [
+        "ke2019-acsbiomaterials-8b01253-mos2-qds-1--after-d2-s02-centrifuge"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "h",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 h",
+          "evidence": [
+            {
+              "source_id": "ke2019-acsbiomaterials-8b01253",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Remove large MoS2 flakes by centrifugation",
+      "evidence": [
+        {
+          "source_id": "ke2019-acsbiomaterials-8b01253",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
     {
       "id": "s01-ultrafiltration",
       "action": "ultrafiltration",
@@ -175,8 +330,12 @@
       "stage": "synthesis",
       "branch": "",
       "optional": false,
-      "depends_on": [],
-      "inputs": [],
+      "depends_on": [
+        "d2-s02-centrifuge"
+      ],
+      "inputs": [
+        "ke2019-acsbiomaterials-8b01253-mos2-qds-1--after-d2-s02-centrifuge"
+      ],
       "outputs": [
         "ke2019-acsbiomaterials-8b01253-mos2-qds-1--after-s01-ultrafiltration"
       ],
@@ -277,15 +436,47 @@
       ]
     }
   ],
-  "measurements": [],
+  "measurements": [
+    {
+      "id": "ke2019-acsbiomaterials-8b01253-mos2-qds-1--size",
+      "sample_id": "ke2019-acsbiomaterials-8b01253-mos2-qds-1--product",
+      "property": "hydrodynamic_diameter",
+      "technique": "DLS",
+      "value": {
+        "value": 3.4,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "3.4 nm",
+        "evidence": [
+          {
+            "source_id": "ke2019-acsbiomaterials-8b01253",
+            "locator": "Main PDF"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "ke2019-acsbiomaterials-8b01253",
+          "locator": "Main PDF"
+        }
+      ]
+    }
+  ],
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the MatterSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Phase not reported in the extracted text.",
       "Ligand not reported in the extracted text.",
-      "Size not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
       "Atmosphere not reported in the extracted text."
     ],

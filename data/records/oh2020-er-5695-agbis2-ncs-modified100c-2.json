@@ -1,7 +1,7 @@
 {
   "schema_version": "1.3.0",
   "record_id": "oh2020-er-5695-agbis2-ncs-modified100c-2",
-  "revision": 1,
+  "revision": 2,
   "record_type": "literature_protocol",
   "title": "Jae Taek Oh; Hongjoo Cho; Sung Yong Bae; Sung Jun Lim; Jinhyeon Kang; In Hwan Jung; Hyosung Choi; Younghoon Kim (2020): AgBiS2 NCs (Modified–100°C)",
   "material": {
@@ -219,6 +219,25 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "oh2020-er-5695-agbis2-ncs-modified100c-2--1-octadecene-ode",
+      "name": "1-octadecene (ODE)",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "oh2020-er-5695",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "stocks": [],
@@ -230,15 +249,34 @@
       "parent_ids": [
         "oh2020-er-5695-agbis2-ncs-modified100c-2--bismuth-acetate",
         "oh2020-er-5695-agbis2-ncs-modified100c-2--silver-acetate",
-        "oh2020-er-5695-agbis2-ncs-modified100c-2--oleic-acid"
+        "oh2020-er-5695-agbis2-ncs-modified100c-2--oleic-acid",
+        "oh2020-er-5695-agbis2-ncs-modified100c-2--1-octadecene-ode"
       ]
     },
     {
       "id": "oh2020-er-5695-agbis2-ncs-modified100c-2--after-s02-inject",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "oh2020-er-5695-agbis2-ncs-modified100c-2--after-s01-dissolve",
+        "oh2020-er-5695-agbis2-ncs-modified100c-2--hexamethyldisilathiane-hms",
+        "oh2020-er-5695-agbis2-ncs-modified100c-2--1-octadecene-ode"
+      ]
+    },
+    {
+      "id": "oh2020-er-5695-agbis2-ncs-modified100c-2--after-d2-s03-purify",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "oh2020-er-5695-agbis2-ncs-modified100c-2--after-s02-inject"
+      ]
+    },
+    {
+      "id": "oh2020-er-5695-agbis2-ncs-modified100c-2--after-d2-s04-redisperse",
       "name": "product as isolated",
       "kind": "product",
       "parent_ids": [
-        "oh2020-er-5695-agbis2-ncs-modified100c-2--after-s01-dissolve"
+        "oh2020-er-5695-agbis2-ncs-modified100c-2--after-d2-s03-purify"
       ]
     }
   ],
@@ -254,7 +292,8 @@
       "inputs": [
         "oh2020-er-5695-agbis2-ncs-modified100c-2--bismuth-acetate",
         "oh2020-er-5695-agbis2-ncs-modified100c-2--silver-acetate",
-        "oh2020-er-5695-agbis2-ncs-modified100c-2--oleic-acid"
+        "oh2020-er-5695-agbis2-ncs-modified100c-2--oleic-acid",
+        "oh2020-er-5695-agbis2-ncs-modified100c-2--1-octadecene-ode"
       ],
       "outputs": [
         "oh2020-er-5695-agbis2-ncs-modified100c-2--after-s01-dissolve"
@@ -297,7 +336,9 @@
         "s01-dissolve"
       ],
       "inputs": [
-        "oh2020-er-5695-agbis2-ncs-modified100c-2--after-s01-dissolve"
+        "oh2020-er-5695-agbis2-ncs-modified100c-2--after-s01-dissolve",
+        "oh2020-er-5695-agbis2-ncs-modified100c-2--hexamethyldisilathiane-hms",
+        "oh2020-er-5695-agbis2-ncs-modified100c-2--1-octadecene-ode"
       ],
       "outputs": [
         "oh2020-er-5695-agbis2-ncs-modified100c-2--after-s02-inject"
@@ -328,6 +369,82 @@
           "locator": "Main PDF p.3"
         }
       ]
+    },
+    {
+      "id": "d2-s03-purify",
+      "action": "purify",
+      "label": "Purify AgBiS2 NCs by centrifugation",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-inject"
+      ],
+      "inputs": [
+        "oh2020-er-5695-agbis2-ncs-modified100c-2--after-s02-inject"
+      ],
+      "outputs": [
+        "oh2020-er-5695-agbis2-ncs-modified100c-2--after-d2-s03-purify"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Purify AgBiS2 NCs by centrifugation",
+      "evidence": [
+        {
+          "source_id": "oh2020-er-5695",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "d2-s04-redisperse",
+      "action": "redisperse",
+      "label": "Redisperse",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "d2-s03-purify"
+      ],
+      "inputs": [
+        "oh2020-er-5695-agbis2-ncs-modified100c-2--after-d2-s03-purify"
+      ],
+      "outputs": [
+        "oh2020-er-5695-agbis2-ncs-modified100c-2--after-d2-s04-redisperse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Redisperse",
+      "evidence": [
+        {
+          "source_id": "oh2020-er-5695",
+          "locator": "Main PDF p.3"
+        }
+      ]
     }
   ],
   "condition_options": [],
@@ -336,7 +453,7 @@
       "sample_id": "oh2020-er-5695-agbis2-ncs-modified100c-2--product",
       "source_sample_label": "AgBiS2 NCs (Modified–100°C)",
       "batch_id": null,
-      "material_state_id": "oh2020-er-5695-agbis2-ncs-modified100c-2--after-s02-inject",
+      "material_state_id": "oh2020-er-5695-agbis2-ncs-modified100c-2--after-d2-s04-redisperse",
       "parent_sample_id": null,
       "composition": {
         "value": "AgBiS2",
@@ -396,13 +513,15 @@
   "structure_assets": [],
   "quality": {
     "review_status": "source_extracted",
-    "review_scope": "Extracted from the paper by the NanoXtalSyn pipeline. Each value is tied to a quote found in the paper and was produced by two separate local-model extraction passes that agree. It has not been independently audited.",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
     "missing_fields": [
       "Size not reported in the extracted text.",
       "Reactor not reported in the extracted text.",
       "Reaction temperature not reported in the extracted text.",
       "Reaction time not reported in the extracted text.",
-      "Amount of oleic acid not reported in the extracted text."
+      "Amount of oleic acid not reported in the extracted text.",
+      "Amount of 1-octadecene (ODE) not reported in the extracted text.",
+      "Amount of 1-octadecene (ODE) not reported in the extracted text."
     ],
     "conflicts": [],
     "requested_tasks": [],

@@ -318560,7 +318560,7 @@
             },
             {
               "material_id": "baek2021-acs-chemmater-1c01496-pb1xbixsy-nr-2--bis-trimethylsilyl-sulfide",
-              "pointer": "/materials/8/quantities/amount",
+              "pointer": "/materials/6/quantities/amount",
               "binding_basis": "quantity of this named material",
               "quantity": {
                 "value": 0.25,
@@ -335987,7 +335987,7 @@
           "fields": [
             {
               "material_id": "boehme2023-acsnano-2c07677-5-nm-cspbbr3-qds-1--pbbr2",
-              "pointer": "/materials/1/quantities/amount",
+              "pointer": "/materials/0/quantities/amount",
               "binding_basis": "quantity of this named material",
               "quantity": {
                 "value": 0.2,
@@ -336010,7 +336010,7 @@
             },
             {
               "material_id": "boehme2023-acsnano-2c07677-5-nm-cspbbr3-qds-1--znbr2",
-              "pointer": "/materials/2/quantities/amount",
+              "pointer": "/materials/1/quantities/amount",
               "binding_basis": "quantity of this named material",
               "quantity": {
                 "value": 0.8,
@@ -336033,7 +336033,7 @@
             },
             {
               "material_id": "boehme2023-acsnano-2c07677-5-nm-cspbbr3-qds-1--mesitylene",
-              "pointer": "/materials/3/quantities/volume",
+              "pointer": "/materials/2/quantities/volume",
               "binding_basis": "quantity of this named material",
               "quantity": {
                 "value": 5,
@@ -336056,7 +336056,7 @@
             },
             {
               "material_id": "boehme2023-acsnano-2c07677-5-nm-cspbbr3-qds-1--oleylamine",
-              "pointer": "/materials/4/quantities/volume",
+              "pointer": "/materials/3/quantities/volume",
               "binding_basis": "quantity of this named material",
               "quantity": {
                 "value": 2,
@@ -336079,7 +336079,7 @@
             },
             {
               "material_id": "boehme2023-acsnano-2c07677-5-nm-cspbbr3-qds-1--cs2co3",
-              "pointer": "/materials/5/quantities/amount",
+              "pointer": "/materials/4/quantities/amount",
               "binding_basis": "quantity of this named material",
               "quantity": {
                 "value": 0.77,
@@ -336102,7 +336102,7 @@
             },
             {
               "material_id": "boehme2023-acsnano-2c07677-5-nm-cspbbr3-qds-1--oleic-acid--checked-2",
-              "pointer": "/materials/6/quantities/volume",
+              "pointer": "/materials/5/quantities/volume",
               "binding_basis": "quantity of this named material",
               "quantity": {
                 "value": 2,
@@ -336125,7 +336125,7 @@
             },
             {
               "material_id": "boehme2023-acsnano-2c07677-5-nm-cspbbr3-qds-1--didodecyldimethylammonium-bromide-ddab",
-              "pointer": "/materials/7/quantities/concentration",
+              "pointer": "/materials/6/quantities/concentration",
               "binding_basis": "quantity of this named material",
               "quantity": {
                 "value": 0.01,
@@ -383600,14 +383600,13 @@
       "documentation": {
         "category": "partial",
         "checks": {
-          "quantified_recipe_and_ordered_conditions": false,
+          "quantified_recipe_and_ordered_conditions": true,
           "reported_phase": false,
           "reported_morphology": false,
           "reported_dimensions": false,
           "reference_unit_cell_available": false
         },
         "missing_categories": [
-          "quantified_recipe_and_ordered_conditions",
           "reported_phase",
           "reported_morphology",
           "reported_dimensions",
@@ -434212,8 +434211,34 @@
         ],
         "reference_ids": [],
         "quantified_input_evidence": {
-          "material_ids": [],
-          "fields": [],
+          "material_ids": [
+            "guo2012-jp210949v-cdse-5-2cds-1--cd-oleate-2"
+          ],
+          "fields": [
+            {
+              "material_id": "guo2012-jp210949v-cdse-5-2cds-1--cd-oleate-2",
+              "pointer": "/materials/6/quantities/amount",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 300,
+                "minimum": null,
+                "maximum": null,
+                "unit": "μmol",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "300 μmol",
+                "evidence": [
+                  {
+                    "source_id": "guo2012-jp210949v",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            }
+          ],
           "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
         },
         "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
@@ -474559,8 +474584,34 @@
         ],
         "reference_ids": [],
         "quantified_input_evidence": {
-          "material_ids": [],
-          "fields": [],
+          "material_ids": [
+            "jarosz2004-physrevb-70-195327-cdse-quantum-dots-qds-with-a-diameter-of-1--tri-n-octylphosphine-selenide"
+          ],
+          "fields": [
+            {
+              "material_id": "jarosz2004-physrevb-70-195327-cdse-quantum-dots-qds-with-a-diameter-of-1--tri-n-octylphosphine-selenide",
+              "pointer": "/materials/2/quantities/concentration",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 1.5,
+                "minimum": null,
+                "maximum": null,
+                "unit": "M",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "1.5 M",
+                "evidence": [
+                  {
+                    "source_id": "jarosz2004-physrevb-70-195327",
+                    "locator": "Main PDF p.1"
+                  }
+                ],
+                "derivation": null
+              }
+            }
+          ],
           "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
         },
         "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
@@ -501389,14 +501440,13 @@
       "documentation": {
         "category": "partial",
         "checks": {
-          "quantified_recipe_and_ordered_conditions": false,
+          "quantified_recipe_and_ordered_conditions": true,
           "reported_phase": false,
           "reported_morphology": true,
           "reported_dimensions": false,
           "reference_unit_cell_available": false
         },
         "missing_categories": [
-          "quantified_recipe_and_ordered_conditions",
           "reported_phase",
           "reported_dimensions",
           "reference_unit_cell_available"
@@ -544213,7 +544263,7 @@
             },
             {
               "material_id": "li2014-am5012782-cdse-cds-cdxzn1xs-zns-qd-nanobeads-1--cd-precursor",
-              "pointer": "/materials/9/quantities/concentration",
+              "pointer": "/materials/7/quantities/concentration",
               "binding_basis": "quantity of this named material",
               "quantity": {
                 "value": 0.4,
@@ -544236,7 +544286,7 @@
             },
             {
               "material_id": "li2014-am5012782-cdse-cds-cdxzn1xs-zns-qd-nanobeads-1--zn-precursor",
-              "pointer": "/materials/10/quantities/concentration",
+              "pointer": "/materials/8/quantities/concentration",
               "binding_basis": "quantity of this named material",
               "quantity": {
                 "value": 0.4,
@@ -544259,7 +544309,7 @@
             },
             {
               "material_id": "li2014-am5012782-cdse-cds-cdxzn1xs-zns-qd-nanobeads-1--sulfur-precursor",
-              "pointer": "/materials/11/quantities/concentration",
+              "pointer": "/materials/9/quantities/concentration",
               "binding_basis": "quantity of this named material",
               "quantity": {
                 "value": 0.4,
@@ -723516,9 +723566,14 @@
       "sample_id": "sperry2021-acs-chemmater-0c03088-cu2znsns4-czts-nanocrystals-1--product",
       "source_sample_label": "Cu2ZnSnS4 (CZTS) nanocrystals",
       "composition": {
-        "value": null,
-        "status": "not_reported",
-        "evidence": [],
+        "value": "Cu2ZnSnS4",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "sperry2021-acs-chemmater-0c03088",
+            "locator": "Main PDF p.1"
+          }
+        ],
         "note": ""
       },
       "recipe_link": "explicit",
@@ -726540,14 +726595,13 @@
       "documentation": {
         "category": "partial",
         "checks": {
-          "quantified_recipe_and_ordered_conditions": false,
+          "quantified_recipe_and_ordered_conditions": true,
           "reported_phase": true,
           "reported_morphology": true,
           "reported_dimensions": true,
           "reference_unit_cell_available": false
         },
         "missing_categories": [
-          "quantified_recipe_and_ordered_conditions",
           "reference_unit_cell_available"
         ],
         "reference_ids": [],
@@ -788344,14 +788398,13 @@
       "documentation": {
         "category": "partial",
         "checks": {
-          "quantified_recipe_and_ordered_conditions": false,
+          "quantified_recipe_and_ordered_conditions": true,
           "reported_phase": true,
           "reported_morphology": false,
           "reported_dimensions": false,
           "reference_unit_cell_available": false
         },
         "missing_categories": [
-          "quantified_recipe_and_ordered_conditions",
           "reported_morphology",
           "reported_dimensions",
           "reference_unit_cell_available"
@@ -833727,19 +833780,19 @@
       "documentation": {
         "category": "partial",
         "checks": {
-          "quantified_recipe_and_ordered_conditions": false,
+          "quantified_recipe_and_ordered_conditions": true,
           "reported_phase": true,
           "reported_morphology": true,
           "reported_dimensions": true,
           "reference_unit_cell_available": false
         },
         "missing_categories": [
-          "quantified_recipe_and_ordered_conditions",
           "reference_unit_cell_available"
         ],
         "reference_ids": [],
         "quantified_input_evidence": {
           "material_ids": [
+            "zane2014-jp504755a-cdse-cds-zns-quantum-dots-qds-with-40-qu-1--3-mercaptopropionic-acid-mpa",
             "zane2014-jp504755a-cdse-cds-zns-quantum-dots-qds-with-40-qu-1--cadmium-chloride-hemipentahydrate",
             "zane2014-jp504755a-cdse-cds-zns-quantum-dots-qds-with-40-qu-1--selenium-powder",
             "zane2014-jp504755a-cdse-cds-zns-quantum-dots-qds-with-40-qu-1--sodium-borohydride",
@@ -833829,6 +833882,29 @@
                 "qualifier": "",
                 "basis": "",
                 "raw_text": "26.67 mM",
+                "evidence": [
+                  {
+                    "source_id": "zane2014-jp504755a",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "zane2014-jp504755a-cdse-cds-zns-quantum-dots-qds-with-40-qu-1--3-mercaptopropionic-acid-mpa",
+              "pointer": "/materials/5/quantities/concentration",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 5.26,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mM",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "5.26 mM",
                 "evidence": [
                   {
                     "source_id": "zane2014-jp504755a",
