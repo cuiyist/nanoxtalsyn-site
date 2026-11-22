@@ -1,5 +1,5 @@
 import { extendedReportedScene } from './reported-scene-extensions.mjs';
-import { createReportedDrawing, reportedDrawingFacts } from './reported-scene-drawing.mjs?v=0.45.0';
+import { createReportedDrawing, reportedDrawingFacts } from './reported-scene-drawing.mjs?v=0.49.0';
 import { matchProtocolCondition } from './protocol-conditions.mjs?v=0.39.1';
 import { PROTOCOL_SCENE_CAPTION,wireDrawingCallouts } from './protocol-record-fit.mjs?v=0.45.0';
 import { quantityValue } from './quantity-value.mjs';

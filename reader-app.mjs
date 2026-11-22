@@ -1,5 +1,6 @@
 import {formulaFieldText,READER_COPY} from './source-field-copy.mjs?v=0.45.0';
-import {mountMethodFamilyList,chooseMethodRecord} from './method-families.mjs?v=0.44.0';
+import {chooseMethodRecord,validateMethodFamilies} from './method-families.mjs?v=0.44.0';
+import {mountReaderMethodChooser,revealSelectedRecipe} from './compact-method-chooser.mjs?v=0.49.0';
 import {appendFigureCaptions,figureCaptionTexts} from './figure-captions.mjs?v=0.41.9';
 import {installReaderHashNavigation,applyReaderFragment} from './reader-navigation.mjs';
 import {renderPendingVariants,PENDING_BADGE,pendingVariants} from './pending-variants.mjs';
@@ -11,11 +12,11 @@ import {quantityValue} from './quantity-value.mjs';
 
 import {chemicalRegistry,chemicalEntry,chemicalImage,openChemical,hasRotatableChemicalModel,chemicalButtonLabel,chemicalDisplayCaption} from './chemical-viewer.mjs?v=0.48.0';
 
-import {mountProtocol} from './protocol-visuals.mjs?v=0.48.0';
+import {mountProtocol} from './protocol-visuals.mjs?v=0.49.0';
 
 import {mountReaderStructures} from './reader-structures.mjs?v=0.48.0';
 
-import {loadReaderPresentations} from './reader-presentation-loader.mjs?v=0.48.1';
+import {loadReaderPresentations} from './reader-presentation-loader.mjs?v=0.49.0';
 const cache=new Map();
 
 function json(path){if(path==='data/reader-presentation.json')return loadReaderPresentations(siteURL(path));if(!cache.has(path))cache.set(path,fetch(siteURL(path),{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Unavailable '+path);return r.json();}));return cache.get(path);}
@@ -68,7 +69,7 @@ export function methodBadges(r,presentation={}){
 }
 
 
-function installStyle(){if(document.querySelector('link[data-reader-css]'))return;const style=el('link');style.rel='stylesheet';style.href=siteURL('reader.css?v=0.47.1');style.dataset.readerCss='true';document.head.append(style);}
+function installStyle(){if(document.querySelector('link[data-reader-css]'))return;const style=el('link');style.rel='stylesheet';style.href=siteURL('reader.css?v=0.49.0');style.dataset.readerCss='true';document.head.append(style);}
 async function precursors(host,r,presentation={}){
 
  const [data,thumbs,stockBindings]=await Promise.all([chemicalRegistry(r.record_id),json('data/chemical-thumbnail-map.json'),json('data/reader-stock-bindings.json')]);if(!host.isConnected)return;function cardImage(entry){const img=chemicalImage(entry),item=thumbs.entries[entry.id];if(item?.thumbnail_path)img.src=siteURL(item.thumbnail_path);return img;}const chemicals=r.materials.filter(m=>!isEquipment(m)),grid=el('div',undefined,'reader-chemicals');
@@ -278,7 +279,7 @@ export async function mountReader(main,{materialId,recordId}={}){
 
  const records=(data?.records||[]).filter(r=>r.is_synthesis_route&&r.collection==='reviewed_literature');
 
- if(recordId&&!records.some(r=>r.record_id===recordId)){const r=await json('data/records/'+recordId+'.json'),manifest=await json('data/dataset-manifest.json');const meta={record_id:recordId,title:r.title,method:r.method,formula:r.material.formula,year:r.sources[0].year,review_status:r.quality?.review_status};const scoped=manifest.records.find(row=>row.record_id===recordId);if(scoped?.pending_variants)meta.pending_variants=scoped.pending_variants;records.unshift(meta);}
+ if(recordId&&!records.some(r=>r.record_id===recordId)){const r=await json('data/records/'+recordId+'.json'),manifest=await json('data/dataset-manifest.json');const meta={record_id:recordId,title:r.title,method:r.method,formula:r.material.formula,doi:r.sources[0].doi,source_citation:r.sources[0].authors+" ("+String(r.sources[0].year||"undated")+")",year:r.sources[0].year,review_status:r.quality?.review_status};const scoped=manifest.records.find(row=>row.record_id===recordId);if(scoped?.pending_variants)meta.pending_variants=scoped.pending_variants;records.unshift(meta);}
 
  if(!records.length)throw Error('No synthesis method is available.');
 
@@ -290,13 +291,15 @@ export async function mountReader(main,{materialId,recordId}={}){
 
  const heading=el('header',undefined,'reader-heading');heading.append(el('h1',baseTitle));{const name=data?.name||'Synthesis and material evidence';if(name!==baseTitle)heading.append(el('p',name));}const componentLabel=componentScopeLabel(data);if(componentLabel)heading.append(badge(componentLabel,'scope'));main.append(heading);
 
- const selector=el('section');selector.append(el('h2','Synthesis methods'));const cards=el('div',undefined,'reader-methods');let familyUI=null;
+ const selector=el('section');selector.append(el('h2','Synthesis methods'));
+ if(useGroups)validateMethodFamilies(groups,records);
+ main.append(selector);
+ const familyUI=mountReaderMethodChooser(selector,{groups:useGroups?groups:null,records,baseTitle,
+  onSelect:(id,options)=>{void select(id,options);},pendingVariants,decoratePending:card=>card.append(el('small',PENDING_BADGE))});
 
- if(useGroups){familyUI=mountMethodFamilyList(selector,{groups,records,onSelect:rid=>select(rid)});for(const card of familyUI.root.querySelectorAll('.reader-paper-card')){const ids=JSON.parse(card.dataset.recordIds);if(ids.some(rid=>pendingVariants(records.find(row=>row.record_id===rid)?.pending_variants).length))card.append(el('small',PENDING_BADGE));}}else{for(const meta of records){const card=button('',()=>select(meta.record_id),'reader-method-card');card.dataset.recordId=meta.record_id;const label=displayMethod(meta.method,presentations.records?.[meta.record_id]?.method_label||meta.method_label);if(label)card.append(el('small',label.toUpperCase()));card.append(el('strong',meta.title),el('small',String(meta.year||'')));if(pendingVariants(meta.pending_variants).length)card.append(el('small',PENDING_BADGE));cards.append(card);}selector.append(cards);if(records.length>6){[...cards.children].slice(6).forEach(x=>x.hidden=true);selector.append(button('Show all '+records.length+' methods',e=>{for(const c of cards.children)c.hidden=false;e.currentTarget.hidden=true;},'reader-chip'));}}main.append(selector);
+ const methodInfo=el('div',undefined,'reader-method-info'),nav=el('nav',undefined,'reader-nav');nav.setAttribute('aria-label','Reader sections');for(const [id,title] of [['precursors','Precursors'],['protocol','Synthesis protocol'],['structures','Final structures'],['properties','Properties'],['intuition','Chemical intuition'],['sources','Sources']])nav.append(link(title,'#'+id));const body=el('div');main.append(methodInfo,nav,familyUI.bar,body);let generation=0;
 
- const methodInfo=el('div',undefined,'reader-method-info'),nav=el('nav',undefined,'reader-nav');nav.setAttribute('aria-label','Reader sections');for(const [id,title] of [['precursors','Precursors'],['protocol','Synthesis protocol'],['structures','Final structures'],['properties','Properties'],['intuition','Chemical intuition'],['sources','Sources']])nav.append(link(title,'#'+id));const body=el('div');main.append(methodInfo,nav,body);let generation=0;
-
- async function select(rid){delete main.dataset.readerReady;const turn=++generation;active=rid;if(familyUI)familyUI.select(rid);for(const c of cards.children)c.setAttribute('aria-pressed',String(c.dataset.recordId===rid));const r=await json('data/records/'+rid+'.json');if(turn!==generation)return;const presentation=presentations.records?.[rid]||{};methodInfo.replaceChildren();const badges=methodBadges(r,presentation);methodInfo.append(badges,el('p',r.sources[0].title,'reader-citation'),dataSwitch(r));renderPendingVariants(methodInfo,records.find(meta=>meta.record_id===rid)?.pending_variants);if(data?.component_only||data&&data.formula!==r.material.formula)methodInfo.append(el('p','This method produces '+r.material.formula+'. Evidence describes the named product and its components.','reader-note'));body.replaceChildren();const content=el('div');body.append(content);const hidden=await buildMethod(content,r,presentation);if(turn!==generation)return;for(const tab of nav.children)tab.hidden=hidden.has((tab.getAttribute?.('href')||'').slice(1));{const label=displayMethod(r.method,presentation.method_label);document.title=baseTitle+(label?' · '+label:'')+' | NanoXtalSyn';}const url=new URL(location.href);url.searchParams.set('method',rid);history.replaceState(null,'',url);main.dataset.readerReady=rid;await applyReaderFragment(main);}
+ async function select(rid,{scrollToRecipe=false}={}){delete main.dataset.readerReady;const turn=++generation;active=rid;familyUI.select(rid);const r=await json('data/records/'+rid+'.json');if(turn!==generation)return;const presentation=presentations.records?.[rid]||{};methodInfo.replaceChildren();const badges=methodBadges(r,presentation);methodInfo.append(badges,el('p',r.sources[0].title,'reader-citation'),dataSwitch(r));const pending=pendingVariants(records.find(meta=>meta.record_id===rid)?.pending_variants);if(pending.length){const more=el('details',undefined,'reader-pending-disclosure');more.append(el('summary',PENDING_BADGE));renderPendingVariants(more,pending);methodInfo.append(more);}if(data?.component_only||data&&data.formula!==r.material.formula)methodInfo.append(el('p','This method produces '+r.material.formula+'. Evidence describes the named product and its components.','reader-note'));body.replaceChildren();const content=el('div');body.append(content);const hidden=await buildMethod(content,r,presentation);if(turn!==generation)return;for(const tab of nav.children)tab.hidden=hidden.has((tab.getAttribute?.('href')||'').slice(1));{const label=displayMethod(r.method,presentation.method_label);document.title=baseTitle+(label?' · '+label:'')+' | NanoXtalSyn';}const url=new URL(location.href);url.searchParams.set('method',rid);if(scrollToRecipe)url.hash='';history.replaceState(null,'',url);main.dataset.readerReady=rid;if(scrollToRecipe){revealSelectedRecipe(main,rid);}else{await applyReaderFragment(main);}}
 
  if(data?.experimental_series?.length){
   const series=el('section',undefined,'reader-section');series.id='experimental-series';series.append(el('h2','Experimental series'),el('p','Published recipe parameters and optical measurements from an additional source. These rows are part of this material collection; they do not establish row-specific particle structures or complete preparation protocols.','reader-note'));

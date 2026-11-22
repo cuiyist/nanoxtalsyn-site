@@ -277,16 +277,27 @@ function updateFittedAnnotations(drawing,svg,plot,spec,facts,options){
  overlay.setAttribute('viewBox',`0 0 ${rect.width} ${rect.height}`);
  const point=(x,y)=>({x:matrix.a*x+matrix.c*y+matrix.e-rect.left,y:matrix.b*x+matrix.d*y+matrix.f-rect.top});
  const edge=node=>{const r=node.getBoundingClientRect();return {x:(r.left+r.right)/2-rect.left,y:r.bottom-rect.top+2};};
- const line=(label,target,arrow=false)=>{if(!label)return;const start=edge(label),p=document.createElementNS('http://www.w3.org/2000/svg','path');p.setAttribute('data-part','leader-line');const elbow=Math.min(target.y-6,Math.max(start.y+6,target.y-12));p.setAttribute('d',`M${start.x} ${start.y}V${elbow}H${target.x}V${target.y}`+(arrow?`M${target.x-4} ${target.y-5}L${target.x} ${target.y}L${target.x+4} ${target.y-5}`:''));p.setAttribute('fill','none');p.setAttribute('stroke','#7899ad');p.setAttribute('stroke-width','1.2');overlay.append(p);};
+ const drawLeader=d=>{const p=document.createElementNS('http://www.w3.org/2000/svg','path');p.setAttribute('data-part','leader-line');p.setAttribute('d',d);p.setAttribute('fill','none');p.setAttribute('stroke',ink);p.setAttribute('stroke-width','1.2');overlay.append(p);return p;};
+ const line=(label,target,arrow=false)=>{if(!label)return;const start=edge(label),elbow=Math.min(target.y-6,Math.max(start.y+6,target.y-12));drawLeader(`M${start.x} ${start.y}V${elbow}H${target.x}V${target.y}`+(arrow?`M${target.x-4} ${target.y-5}L${target.x} ${target.y}L${target.x+4} ${target.y-5}`:''));};
  const sources=[...drawing.querySelectorAll('.reported-scene-source')];
  if(spec.kind==='chamber'){
   const identified=facts.sources.filter(s=>s.identified);
   sources.forEach((label,index)=>{const source=facts.sources[index],i=identified.indexOf(source);if(i<0){line(label,point(42,140));return;}const angle=identified.length===1?-Math.PI/2:-Math.PI*.82+i*(Math.PI*.64/Math.max(identified.length-1,1));line(label,point(150+107*Math.cos(angle),147+107*Math.sin(angle)));});
+  line(drawing.querySelector('.reported-scene-atmosphere'),point(215,116));
  }else{
   const port=portsFor(spec);line(drawing.querySelector('.reported-scene-inlet'),point(port.inlet[0],spec.kind==='inject'?port.inlet[1]-124:port.inlet[1]-6),spec.kind!=='inject');
   line(drawing.querySelector('.reported-scene-atmosphere'),point(port.gas[0],port.gas[1]));
  }
  const plate=drawing.querySelector('[data-heater-front="true"]');
  if(plate){const holder=svg.querySelector('[data-part="substrate-holder"]')?.getBoundingClientRect(),bounds=plate.getBoundingClientRect(),plotRect=plot.getBoundingClientRect();const anchor=point(150,205);let cy=anchor.y-(plotRect.top-rect.top);if(holder)cy=Math.max(cy,holder.bottom-plotRect.top+bounds.height/2+3);plate.style.top=cy+'px';plot.style.minHeight=Math.max(reportedDrawingViewport(spec).height*options.scale,cy+bounds.height/2+3)+'px';}
+ // A chamber may report only a substrate and no feed or flow label. Connect
+ // that existing label directly to the substrate edge, around the heater.
+ const substrateLabel=spec.kind==='chamber'?drawing.querySelector('.reported-scene-substrate'):null;
+ if(substrateLabel){
+  const label=substrateLabel.getBoundingClientRect(),target=point(185,178.5);
+  const right=Math.min(rect.width-3,Math.max(point(207,178.5).x,plate?plate.getBoundingClientRect().right-rect.left+5:0));
+  const x=(label.left+label.right)/2-rect.left,y=label.top-rect.top-2;
+  drawLeader(`M${target.x} ${target.y}H${right}V${y-4}H${x}V${y}`).setAttribute('data-label-for','substrate');
+ }
  drawing.append(overlay);
 }
