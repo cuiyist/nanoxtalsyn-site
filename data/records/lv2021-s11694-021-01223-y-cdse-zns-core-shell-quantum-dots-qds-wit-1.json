@@ -1,0 +1,983 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Yanbing Lv; Yifan Yang; Ruili Wu; Yanxia Xu; Jinjie Li; Ning Li; Huaibin Shen; Yujuan Chai; Lin Song Li (2021): CdSe/ZnS core/shell quantum dots (QDs) with PL = 623 nm",
+  "material": {
+    "formula": "CdSe/ZnS",
+    "family": "CdSe/ZnS nanocrystals",
+    "elements": [
+      "Cd",
+      "Se",
+      "Zn",
+      "S"
+    ],
+    "components": [
+      "CdSe",
+      "ZnS"
+    ],
+    "architecture": "core_shell"
+  },
+  "method": "Synthesis as described in the source",
+  "sources": [
+    {
+      "id": "lv2021-s11694-021-01223-y",
+      "doi": "10.1007/s11694-021-01223-y",
+      "title": "A CdSe/ZnS core/shell competitive quantum dot-based fluorescence-linked immunosorbent assay for the sensitive and accurate detection of aflatoxin B1 in corn sample",
+      "authors": "Yanbing Lv; Yifan Yang; Ruili Wu; Yanxia Xu; Jinjie Li; Ning Li; Huaibin Shen; Yujuan Chai; Lin Song Li",
+      "year": 2021,
+      "url": "https://doi.org/10.1007/s11694-021-01223-y",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "lv2021-s11694-021-01223-y",
+    "recipe_family": "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "CdSe/ZnS",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "lv2021-s11694-021-01223-y",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "zinc blende",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "lv2021-s11694-021-01223-y",
+          "locator": "Main PDF p.10"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": 15.08,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "15.08 nm",
+      "evidence": [
+        {
+          "source_id": "lv2021-s11694-021-01223-y",
+          "locator": "Main PDF p.4"
+        }
+      ],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "sphere",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "lv2021-s11694-021-01223-y",
+          "locator": "Main PDF p.4"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--cadmium-oxide",
+      "name": "cadmium oxide",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "mass": {
+          "value": 0.75,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mg",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.75 mg",
+          "evidence": [
+            {
+              "source_id": "lv2021-s11694-021-01223-y",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "lv2021-s11694-021-01223-y",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--zinc-oxide-zno",
+      "name": "Zinc oxide (ZnO)",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "lv2021-s11694-021-01223-y",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--selenium-se",
+      "name": "Selenium (Se)",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "lv2021-s11694-021-01223-y",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--oleic-acid-oa",
+      "name": "Oleic acid (OA)",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "lv2021-s11694-021-01223-y",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--1-octadecene-ode",
+      "name": "1-octadecene (ODE)",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "lv2021-s11694-021-01223-y",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--polymaleic-acid-n-hexadecanol-ester",
+      "name": "polymaleic acid n-hexadecanol ester",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "lv2021-s11694-021-01223-y",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--after-s01-modify",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--polymaleic-acid-n-hexadecanol-ester"
+      ]
+    },
+    {
+      "id": "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--after-s02-prepare",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--after-s01-modify",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--cadmium-oxide",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--zinc-oxide-zno",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--selenium-se",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--oleic-acid-oa",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--1-octadecene-ode"
+      ]
+    },
+    {
+      "id": "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--after-s03-activate",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--after-s02-prepare",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--cadmium-oxide",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--zinc-oxide-zno",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--selenium-se",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--oleic-acid-oa",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--1-octadecene-ode",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--polymaleic-acid-n-hexadecanol-ester"
+      ]
+    },
+    {
+      "id": "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--after-s04-centrifuge",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--after-s03-activate"
+      ]
+    },
+    {
+      "id": "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--after-s05-dissolve",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--after-s04-centrifuge",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--cadmium-oxide",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--zinc-oxide-zno",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--selenium-se",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--oleic-acid-oa",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--1-octadecene-ode",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--polymaleic-acid-n-hexadecanol-ester"
+      ]
+    },
+    {
+      "id": "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--after-s06-incubate",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--after-s05-dissolve",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--cadmium-oxide",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--zinc-oxide-zno",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--selenium-se",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--oleic-acid-oa",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--1-octadecene-ode",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--polymaleic-acid-n-hexadecanol-ester"
+      ]
+    },
+    {
+      "id": "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--after-s07-block",
+      "name": "mixture after step 7",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--after-s06-incubate",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--cadmium-oxide",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--zinc-oxide-zno",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--selenium-se",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--oleic-acid-oa",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--1-octadecene-ode",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--polymaleic-acid-n-hexadecanol-ester"
+      ]
+    },
+    {
+      "id": "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--after-s08-centrifuge",
+      "name": "mixture after step 8",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--after-s07-block"
+      ]
+    },
+    {
+      "id": "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--after-s09-redisperse",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--after-s08-centrifuge",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--cadmium-oxide",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--zinc-oxide-zno",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--selenium-se",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--oleic-acid-oa",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--1-octadecene-ode",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--polymaleic-acid-n-hexadecanol-ester"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-modify",
+      "action": "modify",
+      "label": "QDs were modified with polymaleic acid n-hexadecanol ester (PMAH) to make them water-soluble.",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--polymaleic-acid-n-hexadecanol-ester"
+      ],
+      "outputs": [
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--after-s01-modify"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "QDs were modified with polymaleic acid n-hexadecanol ester (PMAH) to make them water-soluble.",
+      "evidence": [
+        {
+          "source_id": "lv2021-s11694-021-01223-y",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-prepare",
+      "action": "prepare",
+      "label": "CdSe/ZnS QDs were synthesized using a phosphine-free method.",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-modify"
+      ],
+      "inputs": [
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--after-s01-modify",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--cadmium-oxide",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--zinc-oxide-zno",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--selenium-se",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--oleic-acid-oa",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--1-octadecene-ode"
+      ],
+      "outputs": [
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--after-s02-prepare"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "CdSe/ZnS QDs were synthesized using a phosphine-free method.",
+      "evidence": [
+        {
+          "source_id": "lv2021-s11694-021-01223-y",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s03-activate",
+      "action": "activate",
+      "label": "Activate",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-prepare"
+      ],
+      "inputs": [
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--after-s02-prepare",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--cadmium-oxide",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--zinc-oxide-zno",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--selenium-se",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--oleic-acid-oa",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--1-octadecene-ode",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--polymaleic-acid-n-hexadecanol-ester"
+      ],
+      "outputs": [
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--after-s03-activate"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 4,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "4 °C",
+          "evidence": [
+            {
+              "source_id": "lv2021-s11694-021-01223-y",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 10,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "10 min",
+          "evidence": [
+            {
+              "source_id": "lv2021-s11694-021-01223-y",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Activate",
+      "evidence": [
+        {
+          "source_id": "lv2021-s11694-021-01223-y",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s04-centrifuge",
+      "action": "centrifuge",
+      "label": "Centrifuge the mixture to remove unreacted reagents",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-activate"
+      ],
+      "inputs": [
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--after-s03-activate"
+      ],
+      "outputs": [
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--after-s04-centrifuge"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 30,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "30 min",
+          "evidence": [
+            {
+              "source_id": "lv2021-s11694-021-01223-y",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Centrifuge the mixture to remove unreacted reagents",
+      "evidence": [
+        {
+          "source_id": "lv2021-s11694-021-01223-y",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s05-dissolve",
+      "action": "dissolve",
+      "label": "Dissolve",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-centrifuge"
+      ],
+      "inputs": [
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--after-s04-centrifuge",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--cadmium-oxide",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--zinc-oxide-zno",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--selenium-se",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--oleic-acid-oa",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--1-octadecene-ode",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--polymaleic-acid-n-hexadecanol-ester"
+      ],
+      "outputs": [
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--after-s05-dissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dissolve",
+      "evidence": [
+        {
+          "source_id": "lv2021-s11694-021-01223-y",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s06-incubate",
+      "action": "incubate",
+      "label": "Incubate",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s05-dissolve"
+      ],
+      "inputs": [
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--after-s05-dissolve",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--cadmium-oxide",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--zinc-oxide-zno",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--selenium-se",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--oleic-acid-oa",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--1-octadecene-ode",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--polymaleic-acid-n-hexadecanol-ester"
+      ],
+      "outputs": [
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--after-s06-incubate"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 4,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "4 °C",
+          "evidence": [
+            {
+              "source_id": "lv2021-s11694-021-01223-y",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Incubate",
+      "evidence": [
+        {
+          "source_id": "lv2021-s11694-021-01223-y",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s07-block",
+      "action": "block",
+      "label": "Block",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s06-incubate"
+      ],
+      "inputs": [
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--after-s06-incubate",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--cadmium-oxide",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--zinc-oxide-zno",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--selenium-se",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--oleic-acid-oa",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--1-octadecene-ode",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--polymaleic-acid-n-hexadecanol-ester"
+      ],
+      "outputs": [
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--after-s07-block"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 30,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "30 min",
+          "evidence": [
+            {
+              "source_id": "lv2021-s11694-021-01223-y",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Block",
+      "evidence": [
+        {
+          "source_id": "lv2021-s11694-021-01223-y",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s08-centrifuge",
+      "action": "centrifuge",
+      "label": "Centrifuge the mixture to wash it with BS buffer",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s07-block"
+      ],
+      "inputs": [
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--after-s07-block"
+      ],
+      "outputs": [
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--after-s08-centrifuge"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 30,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "30 min",
+          "evidence": [
+            {
+              "source_id": "lv2021-s11694-021-01223-y",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Centrifuge the mixture to wash it with BS buffer",
+      "evidence": [
+        {
+          "source_id": "lv2021-s11694-021-01223-y",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s09-redisperse",
+      "action": "redisperse",
+      "label": "Redisperse",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s08-centrifuge"
+      ],
+      "inputs": [
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--after-s08-centrifuge",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--cadmium-oxide",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--zinc-oxide-zno",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--selenium-se",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--oleic-acid-oa",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--1-octadecene-ode",
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--polymaleic-acid-n-hexadecanol-ester"
+      ],
+      "outputs": [
+        "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--after-s09-redisperse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Redisperse",
+      "evidence": [
+        {
+          "source_id": "lv2021-s11694-021-01223-y",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--product",
+      "source_sample_label": "CdSe/ZnS core/shell quantum dots (QDs) with PL = 623 nm",
+      "batch_id": null,
+      "material_state_id": "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--after-s09-redisperse",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "CdSe/ZnS",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "lv2021-s11694-021-01223-y",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "zinc blende",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "lv2021-s11694-021-01223-y",
+            "locator": "Main PDF p.10"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": "sphere",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "lv2021-s11694-021-01223-y",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": "polymaleic acid n-hexadecanol ester (PMAH)",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "lv2021-s11694-021-01223-y",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "lv2021-s11694-021-01223-y",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "notes": [
+        "Reaction time: 10 min (Main PDF p.3)."
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "id": "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--size",
+      "sample_id": "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--product",
+      "property": "diameter",
+      "technique": "TEM",
+      "value": {
+        "value": 15.08,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "15.08 nm",
+        "evidence": [
+          {
+            "source_id": "lv2021-s11694-021-01223-y",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "lv2021-s11694-021-01223-y",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    },
+    {
+      "id": "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--photoluminescence-peak",
+      "sample_id": "lv2021-s11694-021-01223-y-cdse-zns-core-shell-quantum-dots-qds-wit-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 623,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "623 nm",
+        "evidence": [
+          {
+            "source_id": "lv2021-s11694-021-01223-y",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "lv2021-s11694-021-01223-y",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    }
+  ],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
+    "missing_fields": [
+      "Plqy not reported in the extracted text.",
+      "Reactor not reported in the extracted text.",
+      "Atmosphere not reported in the extracted text.",
+      "Reaction temperature not reported in the extracted text.",
+      "Amount of Zinc oxide (ZnO) not reported in the extracted text.",
+      "Amount of Selenium (Se) not reported in the extracted text.",
+      "Amount of Oleic acid (OA) not reported in the extracted text.",
+      "Amount of 1-octadecene (ODE) not reported in the extracted text.",
+      "Amount of polymaleic acid n-hexadecanol ester not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

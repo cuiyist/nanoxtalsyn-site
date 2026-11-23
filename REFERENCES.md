@@ -2,7 +2,7 @@
 
 ## Papers used in the published website
 
-Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q-20261119-isolation-repair-path-identity`. Records are not independent experiments.
+Dataset **0.41.2** · **3530 primary source groups** · release `tanjin-x-release04`. Records are not independent experiments.
 
 - not reported (year unrecorded). 10.1007_s11051-010-0042-z. [10.1007/s11051-010-0042-z](https://doi.org/10.1007/s11051-010-0042-z). Review scope remains stated in the linked website records.
 
@@ -2208,6 +2208,8 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 
 - M. Larsson, D. Wallin, and H. Q. Xua (2008). A highly tunable lateral quantum dot realized in InGaAs/InP by an etching technique. [10.1063/1.2905239](https://doi.org/10.1063/1.2905239). Review scope remains stated in the linked website records.
 
+- Juan Yan; Mei Hu; Di Li; Yao He; Rui Zhao; Xingyu Jiang; Shiping Song; Lianhui Wang; Chunhai Fan (2008). A nano- and micro- integrated protein chip based on quantum dot probes and a microfluidic network. [10.1007/s12274-008-8052-1](https://doi.org/10.1007/s12274-008-8052-1). Review scope remains stated in the linked website records.
+
 - GANHUA LU, MING LIU, KEHAN YU, and JUNHONG CHEN (2008). Absorption Properties of Hybrid SnO2 Nanocrystal-Carbon Nanotube Structures. [10.1007/s11664-008-0500-x](https://doi.org/10.1007/s11664-008-0500-x). Review scope remains stated in the linked website records.
 
 - Liping Liu; Qing Peng; Yadong Li (2008). An Effective Oxidation Route to Blue Emission CdSe Quantum Dots. [10.1021/ic702203c](https://doi.org/10.1021/ic702203c). Review scope remains stated in the linked website records.
@@ -2739,6 +2741,8 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 - Qijun Ren, Lihui Bai, Akihiro Murayama, Zhanghai Chen, Xuechu Shen (2009). Magnetic field induced charging effect in a single CdSe quantum dot. [10.1002/pssb.200880660](https://doi.org/10.1002/pssb.200880660). Review scope remains stated in the linked website records.
 
 - Hao Zhang, Yue Tang, Junhu Zhang, Minjie Li, Xi Yao, Xiao Li and Bai Yang (2009). Manipulation of semiconductor nanocrystal growth in polymer soft solids. [10.1039/b914213d](https://doi.org/10.1039/b914213d). Review scope remains stated in the linked website records.
+
+- Srabanti Ghosh; Amiya Priyam; Subhash C. Bhattacharya; Abhijit Saha (2009). Mechanistic Aspects of Quantum Dot Based Probing of Cu (II) Ions: Role of Dendrimer in Sensor Efficiency. [10.1007/s10895-009-0468-9](https://doi.org/10.1007/s10895-009-0468-9). Review scope remains stated in the linked website records.
 
 - Aaron L. Washington, II; Geoffrey F. Strouse (2009). Microwave Synthetic Route for Highly Emissive TOP/TOP-S Passivated CdS Quantum Dots. [10.1021/cm900624z](https://doi.org/10.1021/cm900624z). Review scope remains stated in the linked website records.
 
@@ -3402,6 +3406,8 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 
 - Liang Li, Anshu Pandey, Donald J. Werder, Bishnu P. Khanal, Jeffrey M. Pietryga, and Victor I. Klimov (2011). Efficient Synthesis of Highly Luminescent Copper Indium Sulfide-Based Core/Shell Nanocrystals with Surprisingly Long-Lived Emission. [10.1021/ja108261h](https://doi.org/10.1021/ja108261h). Review scope remains stated in the linked website records.
 
+- XueQing Xu; Gang Xu (2011). Electrochemical impedance spectra of CdSe quantume dots sensitized nanocrystalline TiO2 solar cells. [10.1007/s11426-010-4170-1](https://doi.org/10.1007/s11426-010-4170-1). Review scope remains stated in the linked website records.
+
 - Jinglei Xiang and Lawrence T. Drzal (2011). Electron and Phonon Transport in Au Nanoparticle Decorated Graphene Nanoplatelet Nanostructured Paper. [10.1021/am200126x](https://doi.org/10.1021/am200126x). Review scope remains stated in the linked website records.
 
 - Karel Lambert, Jolien Dendooven, Christophe Detavernier, and Zeger Hens (2011). Embedding Quantum Dot Monolayers in Al2O3 Using Atomic Layer Deposition. [10.1021/cm1027354](https://doi.org/10.1021/cm1027354). Review scope remains stated in the linked website records.
@@ -3676,6 +3682,8 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 
 - Qisui Wang; Tingting Fang; Peng Liu; Bohua Deng; Xinmin Min; Xi Li (2012). Direct Synthesis of High-Quality Water-Soluble CdTe:Zn2+ Quantum Dots. [10.1021/ic300473u](https://doi.org/10.1021/ic300473u). Review scope remains stated in the linked website records.
 
+- Kai-Liang Chou; He Meng; Yan Cen; Lei Li; Ji-Yao Chen (2012). Dopamine–quantum dot conjugate: a new kind of photosensitizers for photodynamic therapy of cancers. [10.1007/s11051-012-1348-9](https://doi.org/10.1007/s11051-012-1348-9). Review scope remains stated in the linked website records.
+
 - Angshuman Nag; Dae Sung Chung; Dmitriy S. Dolzhnikov; Nada M. Dimitrijevic; Soma Chattopadhyay; Tomohiro Shibata; Dmitri V. Talapin (2012). Effect of Metal Ions on Photoluminescence, Charge Transport, Magnetic and Catalytic Properties of All-Inorganic Colloidal Nanocrystals and Nanocrystal Solids. [10.1021/ja301285x](https://doi.org/10.1021/ja301285x). Review scope remains stated in the linked website records.
 
 - Jay L. Nadeau; Lina Carlini; Diana Suffern; Olga Ivanova; Stephen E. Bradforth (2012). Effects of β-Mercaptoethanol on Quantum Dot Emission Evaluated from Photoluminescence Decays. [10.1021/jp209832h](https://doi.org/10.1021/jp209832h). Review scope remains stated in the linked website records.
@@ -3796,11 +3804,15 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 
 - Not explicitly listed in the provided text (2012). Photoactivated Fuel Cells with Quantum Dot Photosensitizers for Ethanol Oxidation. [10.1021/jp305098m](https://doi.org/10.1021/jp305098m). Review scope remains stated in the linked website records.
 
+- Dandan Sui; Xiaohong Yin; Hongzhi Dong; Shiyue Qin; Jingshuai Chen; Wanlin Jiang (2012). Photocatalytically Reducing CO2 to Methyl Formate in Methanol Over Ag Loaded SrTiO3 Nanocrystal Catalysts. [10.1007/s10562-012-0876-3](https://doi.org/10.1007/s10562-012-0876-3). Review scope remains stated in the linked website records.
+
 - Not explicitly listed in the provided text (2012). Photoelectrochemical Properties of CdS-Sensitized TiO2 Nanotube Arrays. [10.1021/jp305388c](https://doi.org/10.1021/jp305388c). Review scope remains stated in the linked website records.
 
 - Zhigang Xu, Dongdong Wang, Min Guan, Xiaoyan Liu, Yanjie Yang, Dongfeng Wei, Chunyan Zhao, and Haixia Zhang (2012). Photoluminescent Silicon Nanocrystal-Based Multifunctional Carrier for pH-Regulated Drug Delivery. [10.1021/am300877v](https://doi.org/10.1021/am300877v). Review scope remains stated in the linked website records.
 
 - Carla Negele, Johannes Haase, Alfred Leitenstorfer, Stefan Mecking (2012). Polyﬂuorene Nanoparticles and Quantum Dot Hybrids via Miniemulsion Polymerization. [10.1021/mz300427d](https://doi.org/10.1021/mz300427d). Review scope remains stated in the linked website records.
+
+- Jie Wang; Yingke Zhou; Yuanyuan Hu; Ryan O’Hayre; Zongping Shao (2012). Porous nanocrystalline TiO2 with high lithium-ion insertion performance. [10.1007/s10853-012-7073-z](https://doi.org/10.1007/s10853-012-7073-z). Review scope remains stated in the linked website records.
 
 - Sabri Alkis, Ali K. Okyay, and Bülend Ortaç (2012). Post-Treatment of Silicon Nanocrystals Produced by Ultra-Short Pulsed Laser Ablation in Liquid: Toward Blue Luminescent Nanocrystal Generation. [10.1021/jp211521k](https://doi.org/10.1021/jp211521k). Review scope remains stated in the linked website records.
 
@@ -3855,6 +3867,8 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 - Luca De Trizio, Mirko Prato, Alessandro Genovese, Alberto Casu, Mauro Povia, Roberto Simonutti, Marcelo J. P. Alcocer, Cosimo D’Andrea, Francesco Tassone, and Liberato Manna (2012). Strongly Fluorescent Quaternary Cu–In–Zn–S Nanocrystals Prepared from Cu1-xInS2 Nanocrystals by Partial Cation Exchange. [10.1021/cm301211e](https://doi.org/10.1021/cm301211e). Review scope remains stated in the linked website records.
 
 - Yasutaka Nagaoka, Ou Chen, Zhongwu Wang, Y. Charles Cao (2012). Structural Control of Nanocrystal Superlattices Using Organic Guest Molecules. [10.1021/ja209062d](https://doi.org/10.1021/ja209062d). Review scope remains stated in the linked website records.
+
+- Ming Zuo; Shun Tan; GongPu Li; ShuYuan Zhang (2012). Structure characterization, magnetic and photoluminescence properties of Mn doped ZnS nanocrystalline. [10.1007/s11433-011-4595-3](https://doi.org/10.1007/s11433-011-4595-3). Review scope remains stated in the linked website records.
 
 - Heping Shen, Hong Lin, Yizhu Liu, Jianbao Li, Dan Oron (2012). Study of Quantum Dot/Inorganic Layer/Dye Molecule Sandwich Structure for Electrochemical Solar Cells. [10.1021/jp305050w](https://doi.org/10.1021/jp305050w). Review scope remains stated in the linked website records.
 
@@ -4086,6 +4100,8 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 
 - Rui Tan; Douglas A. Blom; Shuguo Ma; Andrew B. Greytak (2013). Probing Surface Saturation Conditions in Alternating Layer Growth of CdSe/CdS Core/Shell Quantum Dots. [10.1021/cm402148s](https://doi.org/10.1021/cm402148s). Review scope remains stated in the linked website records.
 
+- Xin Li; Bing Xue; Yang Li; YueQing Gu (2013). Protease-activated quantum dot probes based on fluorescence resonance energy transfer. [10.1007/s11434-013-5712-7](https://doi.org/10.1007/s11434-013-5712-7). Review scope remains stated in the linked website records.
+
 - A. Rath, S. Bhaumik, A. J. Pal (2013). Quantum Dot Light-Emitting Diodes in the Visible Region: Energy Level of Ligands and Their Role in Controlling Interdot Spacing and Device Performance. [10.1021/jp409937z](https://doi.org/10.1021/jp409937z). Review scope remains stated in the linked website records.
 
 - Ahissan Aimé; Nataliia Beztsinna; Amit Patwa; Alexander Pokolenko; Isabelle Bestel; Philippe Barthélémy (2013). Quantum Dot Lipid Oligonucleotide Bioconjugates: Toward a New Anti-MicroRNA Nanoplatform. [10.1021/bc400157z](https://doi.org/10.1021/bc400157z). Review scope remains stated in the linked website records.
@@ -4127,6 +4143,8 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 - Pavel Moroz; Natalia Kholmicheva; Bryan Mellott; Geethika Liyanage; Upendra Rijal; Ebin Bastola; Kyla Huband; Elena Khon; Keith McBride; Mikhail Zamkov (2013). Suppressed Carrier Scattering in CdS-Encapsulated PbS Nanocrystal Films. [10.1021/nn402844m](https://doi.org/10.1021/nn402844m). Review scope remains stated in the linked website records.
 
 - Antti Hassinen; Raquel Gomes; Kim De Nolf; Qiang Zhao; André Vantomme; José C. Martins; Zeger Hens (2013). Surface Chemistry of CdTe Quantum Dots Synthesized in Mixtures of Phosphonic Acids and Amines: Formation of a Mixed Ligand Shell. [10.1021/jp4008575](https://doi.org/10.1021/jp4008575). Review scope remains stated in the linked website records.
+
+- Abdul Razzaq; Jun Young Lee; Bhaskar Bhattacharya; Jung-Ki Park (2013). Surface treatment properties of CdS quantum dot-sensitized solar cells. [10.1007/s13204-013-0259-0](https://doi.org/10.1007/s13204-013-0259-0). Review scope remains stated in the linked website records.
 
 - Nichola M. Kinsinger, Alexander Dudchenko, Ashley Wong, and David Kisailus (2013). Synergistic Effect of pH and Phase in a Nanocrystalline Titania Photocatalyst. [10.1021/am401247h](https://doi.org/10.1021/am401247h). Review scope remains stated in the linked website records.
 
@@ -4220,6 +4238,8 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 
 - Yuzhi Han; Hui Huang; Hengchao Zhang; Yang Liu; Xiao Han; Ruihua Liu; Haitao Li; Zhenhui Kang (2014). Carbon Quantum Dots with Photoenhanced Hydrogen-Bond Catalytic Activity in Aldol Condensations. [10.1021/cs401118x](https://doi.org/10.1021/cs401118x). Review scope remains stated in the linked website records.
 
+- Prabhakar Rai; Rizwan Khan; Kyeong-Jun Ko; Jong-Heun Lee; Yeon-Tae Yu (2014). CeO2 quantum dot functionalized ZnO nanorods photoanode for DSSC applications. [10.1007/s10854-014-1954-7](https://doi.org/10.1007/s10854-014-1954-7). Review scope remains stated in the linked website records.
+
 - Minjung Cho; Elizabeth Q. Contreras; Seung Soo Lee; Christopher J. Jones; Wonhee Jang; Vicki L. Colvin (2014). Characterization and Optimization of the Fluorescence of Nanoscale Iron Oxide/Quantum Dot Complexes. [10.1021/jp502194z](https://doi.org/10.1021/jp502194z). Review scope remains stated in the linked website records.
 
 - McDaniel, H.; Fuke, N.; Makarov, N. S.; Pietryga, J. M.; Klimov, V. I. (2014). Charge Carrier Dynamics in CuInSexS2−x Quantum Dots and Their Sensitized TiO2 Films. [10.1021/jz402338b](https://doi.org/10.1021/jz402338b). Review scope remains stated in the linked website records.
@@ -4248,6 +4268,8 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 
 - Igor Coropceanu and Moungi G. Bawendi (2014). Core/Shell Quantum Dot Based Luminescent Solar Concentrators with Reduced Reabsorption and Enhanced Efficiency. [10.1021/nl501627e](https://doi.org/10.1021/nl501627e). Review scope remains stated in the linked website records.
 
+- Ruibing Wang; Zhuoyin Peng; Wen Chen; Yinghan Zhao; Keqiang Chen; Yuqing Cheng; Yueli Liu (2014). CuInS2/Mn-CdS quantum dot co-sensitized flexible solar cells based on single fibrous TiO2 nanowire arrays. [10.1007/s10854-014-2641-4](https://doi.org/10.1007/s10854-014-2641-4). Review scope remains stated in the linked website records.
+
 - Shao Su; Jinwei Fan; Bing Xue; Lihui Yuwen; Xingfen Liu; Dun Pan; Chunhai Fan; Lianhui Wang (2014). DNA-Conjugated Quantum Dot Nanoprobe for High-Sensitivity Fluorescent Detection of DNA and micro-RNA. [10.1021/am404811j](https://doi.org/10.1021/am404811j). Review scope remains stated in the linked website records.
 
 - Bo Ding, Yang Wang, Po-Shun Huang, David H. Waldeck, Jung-Kun Lee (2014). Depleted Bulk Heterojunctions in Thermally Annealed PbS Quantum Dot Solar Cells. [10.1021/jp502356d](https://doi.org/10.1021/jp502356d). Review scope remains stated in the linked website records.
@@ -4261,6 +4283,8 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 - Jianbing Zhang; Jianbo Gao; Elisa M. Miller; Joseph M. Luther; Matthew C. Beard (2014). Diffusion-Controlled Synthesis of PbS and PbSe Quantum Dots with in Situ Halide Passivation for Quantum Dot Solar Cells. [10.1021/nn405236k](https://doi.org/10.1021/nn405236k). Review scope remains stated in the linked website records.
 
 - A. N., J. D. P., S. J. R., C. L., J. P., S. J. P. (2014). Direct Electronic Property Imaging of a Nanocrystal-Based Photovoltaic Device by Electron Beam-Induced Current via Scanning Electron Microscopy. [10.1021/jz402752k](https://doi.org/10.1021/jz402752k). Review scope remains stated in the linked website records.
+
+- Ying Jiang; Yong Wang; Yu Yang Zhang; Zhengfei Zhang; Wentao Yuan; Chenghua Sun; Xiao Wei; Casey N. Brodsky; Chia-Kuang Tsung; Jixue Li; Xiaofeng Zhang; Scott X. Mao; Shengbai Zhang; Ze Zhang (2014). Direct observation of Pt nanocrystal coalescence induced by electron-excitation-enhanced van der Waals interactions. [10.1007/s12274-013-0396-5](https://doi.org/10.1007/s12274-013-0396-5). Review scope remains stated in the linked website records.
 
 - Matthias Weiß; Jörg B. Kinzel; Florian J. R. Schülein; Michael Heigl; Daniel Rudolph; Stefanie Morkötter; Markus Döblinger; Max Bichler; Gerhard Abstreiter; Jonathan J. Finley; Gregor Koblmüller; Achim Wixforth; Hubert J. Krenner (2014). Dynamic Acoustic Control of Individual Optically Active Quantum Dot-like Emission Centers in Heterostructure Nanowires. [10.1021/nl4040434](https://doi.org/10.1021/nl4040434). Review scope remains stated in the linked website records.
 
@@ -4291,6 +4315,8 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 - H.-Y. Park, I. Rhee, S. Yim, and S.-Y. Jang (2014). Fabrication and Characterization of Double Heterojunction Quantum Dot Solar Cells with In Situ Sol−Gel-Derived ZnO Electron Transport Layers. [10.1021/jp504156c](https://doi.org/10.1021/jp504156c). Review scope remains stated in the linked website records.
 
 - not reported (2014). Fabrication of CdS/CdSe@ZnO NRA photoanodes for flexible quantum dot sensitized solar cells. [10.1039/c4ta02052a](https://doi.org/10.1039/c4ta02052a). Review scope remains stated in the linked website records.
+
+- Prayas Chandra Patel; P. C. Srivastava (2014). Fe doping in ZnS for realizing nanocrystalline-diluted magnetic semiconductor phase. [10.1007/s10853-014-8321-1](https://doi.org/10.1007/s10853-014-8321-1). Review scope remains stated in the linked website records.
 
 - A. S. Kovalenko; O. A. Shilova; L. V. Morozova; M. V. Kalinina; I. A. Drozdova; M. Yu. Arsent’ev (2014). Features of the synthesis and the study of nanocrystalline cobalt-nickel spinel. [10.1134/s1087659614010131](https://doi.org/10.1134/s1087659614010131). Review scope remains stated in the linked website records.
 
@@ -4423,6 +4449,8 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 - Yi-Lun Lee, Chia-Hung Chang, and Yu-Lun Lee (2014). Performance Enhancement of Quantum-Dot-Sensitized Solar Cells by Potential-Induced Ionic Layer Adsorption and Reaction. [10.1021/am5054916](https://doi.org/10.1021/am5054916). Review scope remains stated in the linked website records.
 
 - Subhadeep Saha, Gobinda Das, Jayshri Thote, and Rahul Banerjee (2014). Photocatalytic Metal−Organic Framework from CdS Quantum Dot Incubated Luminescent Metallohydrogel. [10.1021/ja509019k](https://doi.org/10.1021/ja509019k). Review scope remains stated in the linked website records.
+
+- Priya Kush; Sasanka Deka (2014). Photoelectrical properties of surfactant-free kesterite Cu2ZnSnSe4 hydrophilic nanocrystal ink and the stability in polar solvents. [10.1007/s11051-014-2600-2](https://doi.org/10.1007/s11051-014-2600-2). Review scope remains stated in the linked website records.
 
 - Lilian Pereira Franco; Simone Aparecida Cicillini; Juliana Cristina Biazzotto; Marco A. Schiavon; Alexander Mikhailovsky; Peter Burks; John Garcia; Peter C. Ford; Roberto Santana da Silva (2014). Photoreactivity of a Quantum Dot–Ruthenium Nitrosyl Conjugate. [10.1021/jp5111218](https://doi.org/10.1021/jp5111218). Review scope remains stated in the linked website records.
 
@@ -4562,6 +4590,8 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 
 - Xuehua Shen, Jianguang Jia, Yuan Lin, Xiaowen Zhou (2015). Enhanced performance of CdTe quantum dot sensitized solar cell via anion exchanges. [10.1016/j.jpowsour.2014.12.022](https://doi.org/10.1016/j.jpowsour.2014.12.022). Review scope remains stated in the linked website records.
 
+- Hyun Chang Kim; Cheolsang Yoon; Young-Geon Song; Young-Joo Kim; Kangtaek Lee (2015). Enhancing performance of quantum dot-based light emitting diodes by using poly(methyl methacrylate)@quantum dot hybrid particles. [10.1007/s11814-015-0008-z](https://doi.org/10.1007/s11814-015-0008-z). Review scope remains stated in the linked website records.
+
 - Tridip Ranjan Chetia; Mohammad Shaad Ansari; Mohammad Qureshi (2015). Ethyl Cellulose and Cetrimonium Bromide Assisted Synthesis of Mesoporous, Hexagon Shaped ZnO Nanodisks with Exposed ±{0001} Polar Facets for Enhanced Photovoltaic Performance in Quantum Dot Sensitized Solar Cells. [10.1021/acsami.5b01039](https://doi.org/10.1021/acsami.5b01039). Review scope remains stated in the linked website records.
 
 - Chieh-Wei Chen; Dai-Ying Wu; Yung-Chieh Chan; Chun Che Lin; Po-Hsiang Chung; Michael Hsiao; Ru-Shi Liu (2015). Evaluations of the Chemical Stability and Cytotoxicity of CuInS2 and CuInS2/ZnS Core/Shell Quantum Dots. [10.1021/jp510908f](https://doi.org/10.1021/jp510908f). Review scope remains stated in the linked website records.
@@ -4640,6 +4670,8 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 
 - Sayantan Mazumdar; Muthusamy Tamilselvan; Aninda J. Bhattacharyya (2015). Optimizing Photovoltaic Response by Tuning Light-Harvesting Nanocrystal Shape Synthesized Using a Quick Liquid–Gas Phase Reaction. [10.1021/acsami.5b08595](https://doi.org/10.1021/acsami.5b08595). Review scope remains stated in the linked website records.
 
+- Jun Chen; Xiao-Quan Yang; Meng-Yao Qin; Xiao-Shuai Zhang; Yang Xuan; Yuan-Di Zhao (2015). PEG-phospholipid-encapsulated bismuth sulfide and CdSe/ZnS quantum dot core–shell nanoparticle and its computed tomography/fluorescence performance. [10.1007/s11051-015-3253-5](https://doi.org/10.1007/s11051-015-3253-5). Review scope remains stated in the linked website records.
+
 - Xudong Yao; Shangjing Liu; Yajing Chang; Guopeng Li; Longfei Mi; Xiaoming Wang; Yang Jiang (2015). PbS Quantum-Dot Depleted Heterojunction Solar Cells Employing CdS Nanorod Arrays as the Electron Acceptor with Enhanced Efficiency. *ACS Applied Materials & Interfaces*, 7, 23117–23123. [10.1021/acsami.5b06857](https://doi.org/10.1021/acsami.5b06857). [Source review and scope](https://cuiyist.github.io/nanoxtalsyn-site/paper-review.html?id=yao2015acsami).
 
 - Jong-Hoon Kim; Chang-Yeol Han; Ki-Heon Lee; Ki-Seok An; Wooseok Song; Jiwan Kim; Min Suk Oh; Young Rag Do; Heesun Yang (2015). Performance Improvement of Quantum Dot-Light-Emitting Diodes Enabled by an Alloyed ZnMgO Nanoparticle Electron Transport Layer. *Chemistry of Materials*, 27, 197–204. [10.1021/cm503756q](https://doi.org/10.1021/cm503756q). [Source review and scope](https://cuiyist.github.io/nanoxtalsyn-site/paper-review.html?id=kim2015-znmgo-cm503756q).
@@ -4679,6 +4711,8 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 - Daniela Caruntu; Taha Rostamzadeh; Tommaso Costanzo; Saman Salemizadeh Parizi; Gabriel Caruntu (2015). Solvothermal synthesis and controlled self-assembly of monodisperse titanium-based perovskite colloidal nanocrystals. [10.1039/c5nr00737b](https://doi.org/10.1039/c5nr00737b). Review scope remains stated in the linked website records.
 
 - Linjing Zhang; Ning Li; Borong Wu; Hongliang Xu; Lei Wang; Xiao-Qing Yang; Feng Wu (2015). Sphere-Shaped Hierarchical Cathode with Enhanced Growth of Nanocrystal Planes for High-Rate and Cycling-Stable Li-Ion Batteries. [10.1021/nl5041594](https://doi.org/10.1021/nl5041594). Review scope remains stated in the linked website records.
+
+- Ilwan Jang; Jiwan Kim; Chang Jun Park; Christian Ippen; Tonino Greco; Min Suk Oh; Jeongno Lee; Won Keun Kim; Armin Wedel; Chul Jong Han; Sung Kyu Park (2015). Study of ethanolamine surface treatment on the metal-oxide electron transport layer in inverted InP quantum dot light-emitting diodes. [10.1007/s13391-015-4420-7](https://doi.org/10.1007/s13391-015-4420-7). Review scope remains stated in the linked website records.
 
 - Zhewei Cai; Fumin Li; Ping Wu; Lijuan Ji; Hui Zhang; Chenxin Cai; Dominic F. Gervasio (2015). Synthesis of Nitrogen-Doped Graphene Quantum Dots at Low Temperature for Electrochemical Sensing Trinitrotoluene. [10.1021/acs.analchem.5b03201](https://doi.org/10.1021/acs.analchem.5b03201). Review scope remains stated in the linked website records.
 
@@ -4780,6 +4814,8 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 
 - Bo-Tau Liu, Kuan-Han Wu, Rong-Ho Lee (2016). Enhanced Optoelectronic Conversion Efficiency of CdSe/ZnS Quantum Dot/Graphene/Silver Nanowire Hybrid Thin Films. [10.1186/s11671-016-1606-3](https://doi.org/10.1186/s11671-016-1606-3). Review scope remains stated in the linked website records.
 
+- Xin Zhao; Yan-Lan Zhang; Xi-Xi Wang; Hong-Long Shi; Wen-Zhong Wang; Mao-Sheng Cao (2016). Enhanced microwave absorption properties of NiFe2O4 nanocrystal deposited reduced graphene oxides. [10.1007/s10854-016-5280-0](https://doi.org/10.1007/s10854-016-5280-0). Review scope remains stated in the linked website records.
+
 - Haipeng Lu, Zhaohui Zhou, Oleg V. Prezhdo, Richard L. Brutchey (2016). Exposing the Dynamics and Energetics of the N-Heterocyclic Carbene−Nanocrystal Interface. [10.1021/jacs.6b09065](https://doi.org/10.1021/jacs.6b09065). Review scope remains stated in the linked website records.
 
 - Joong Pill Park; Jae-joon Lee; Sang-Wook Kim (2016). Fabrication of GaAs, InxGa1–xAs and Their ZnSe Core/Shell Colloidal Quantum Dots. [10.1021/jacs.6b08679](https://doi.org/10.1021/jacs.6b08679). Review scope remains stated in the linked website records.
@@ -4790,6 +4826,8 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 
 - Haifeng Dong; Songsong Tang; Yansong Hao; Haizhu Yu; Wenhao Dai; Guifeng Zhao; Yu Cao; Huiting Lu; Xueji Zhang; Huangxian Ju (2016). Fluorescent MoS2 Quantum Dots: Ultrasonic Preparation, Up-Conversion and Down-Conversion Bioimaging, and Photodynamic Therapy. [10.1021/acsami.5b10459](https://doi.org/10.1021/acsami.5b10459). Review scope remains stated in the linked website records.
 
+- Dmitry V. Potapkin; Daniel Geißler; Ute Resch-Genger; Irina Yu. Goryacheva (2016). Fluorescent quantum dot hydrophilization with PAMAM dendrimer. [10.1007/s11051-016-3411-4](https://doi.org/10.1007/s11051-016-3411-4). Review scope remains stated in the linked website records.
+
 - Juwon Park; Sanghwa Jeong; Jiwon Bang; Bomi Kim; Hyunmi Doh; Seungho Cho; Sungjae Hwang; Sungjee Kim (2016). Formation and Stepwise Self-Assembly of Cadmium Chalcogenide Nanocrystals to Colloidal Supra-Quantum Dots and the Superlattices. [10.1021/acs.chemmater.6b01126](https://doi.org/10.1021/acs.chemmater.6b01126). Review scope remains stated in the linked website records.
 
 - Junjing Bai; Xiaobing Wang; Peng Fu; Zhe Cui; Qingxiang Zhao; Xinchang Pang; Minying Liu (2016). From the Unimolecuclar Template of Water-Soluble Multiarm Star Brush Copolymers to One-Dimensional Colloidal Nanocrystal Clusters: Facile Synthesis via a Combination of Magnetic Assembly with Photoinduced Cross-Linking. [10.1021/acs.jpcc.5b10100](https://doi.org/10.1021/acs.jpcc.5b10100). Review scope remains stated in the linked website records.
@@ -4797,6 +4835,10 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 - E. A. Zaboeva; S. G. Izotova; V. I. Popkov (2016). Glycine-nitrate combustion synthesis of CeFeO3-based nanocrystalline powders. [10.1134/s1070427216080036](https://doi.org/10.1134/s1070427216080036). Review scope remains stated in the linked website records.
 
 - Peipei Yang; Hai Li; Shumin Zhang; Lei Chen; Hao Zhou; Rujun Tang; Tian Zhou; Feng Bao; Qiao Zhang; Le He; Xiaohong Zhang (2016). Gram-scale synthesis of superparamagnetic Fe3O4 nanocrystal clusters with long-term charge stability for highly stable magnetically responsive photonic crystals. [10.1039/c6nr07155d](https://doi.org/10.1039/c6nr07155d). Review scope remains stated in the linked website records.
+
+- Mohammad Hasanzadeh; Ayub Karimzadeh; Sattar Sadeghi; Ahad Mokhtarzadeh; Nasrin Shadjou; Abolghasem Jouyban (2016). Graphene quantum dot as an electrically conductive material toward low potential detection: a new platform for interface science. [10.1007/s10854-016-4590-6](https://doi.org/10.1007/s10854-016-4590-6). Review scope remains stated in the linked website records.
+
+- Sandeep K. Vaishanav; Jyoti Korram; Priyanka Pradhan; Kumudini Chandraker; Rekha Nagwanshi; Kallol K. Ghosh; Manmohan L. Satnami (2016). Green Luminescent CdTe Quantum Dot Based Fluorescence Nano-Sensor for Sensitive Detection of Arsenic (III). [10.1007/s10895-016-2011-0](https://doi.org/10.1007/s10895-016-2011-0). Review scope remains stated in the linked website records.
 
 - Guohua Shen; Philippe Guyot-Sionnest (2016). HgS and HgS/CdS Colloidal Quantum Dots with Infrared Intraband Transitions and Emergence of a Surface Plasmon. [10.1021/acs.jpcc.6b04014](https://doi.org/10.1021/acs.jpcc.6b04014). Review scope remains stated in the linked website records.
 
@@ -4861,6 +4903,8 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 - Wachiraporn Maisang; Anukorn Phuruangrat; Somchai Thongtem; Titipun Thongtem (2016). Photoluminescence and photonic absorbance of Ce 2 (MoO 4 ) 3 nanocrystal synthesized by microwave–hydrothermal/solvothermal method. [10.1007/s12598-016-0714-7](https://doi.org/10.1007/s12598-016-0714-7). Review scope remains stated in the linked website records.
 
 - Darren C. J. Neo; Nanlin Zhang; Yujiro Tazawa; Haibo Jiang; Gareth M. Hughes; Chris R. M. Grovenor; Hazel E. Assender; Andrew A. R. Watt (2016). Poly(3-hexylthiophene-2,5-diyl) as a Hole Transport Layer for Colloidal Quantum Dot Solar Cells. [10.1021/acsami.5b10228](https://doi.org/10.1021/acsami.5b10228). Review scope remains stated in the linked website records.
+
+- Zhijie Zhang; Tingting Zheng; Jiayue Xu; Haibo Zeng (2016). Polythiophene/Bi2MoO6: A novel conjugated polymer/nanocrystal hybrid composite for photocatalysis. [10.1007/s10853-015-9703-8](https://doi.org/10.1007/s10853-015-9703-8). Review scope remains stated in the linked website records.
 
 - O. V. Almjasheva; V. V. Gusarov (2016). Prenucleation formations in control over synthesis of CoFe2O4 nanocrystalline powders. [10.1134/s107042721606001x](https://doi.org/10.1134/s107042721606001x). Review scope remains stated in the linked website records.
 
@@ -4936,6 +4980,8 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 
 - Pratyasha Mohapatra; Santosh Shaw; Deyny Mendivelso-Perez; Jonathan M. Bobbitt; Tiago F. Silva; Fabian Naab; Bin Yuan; Xinchun Tian; Emily A. Smith; Ludovico Cademartiri (2017). Calcination does not remove all carbon from colloidal nanocrystal assemblies. [10.1038/s41467-017-02267-9](https://doi.org/10.1038/s41467-017-02267-9). Review scope remains stated in the linked website records.
 
+- Ke Bi; Dan Wang; Peng Wang; Bin Duan; Tieqiang Zhang; Yinghui Wang; Hanzhuang Zhang; Yu Zhang (2017). Cesium lead halide perovskite quantum dot-based warm white light-emitting diodes with high color rendering index. [10.1007/s11051-017-3862-2](https://doi.org/10.1007/s11051-017-3862-2). Review scope remains stated in the linked website records.
+
 - Hongju Wang; Dapeng Wu; Kun Cao; Fujuan Wang; Zhiyong Gao; Fang Xu; Kai Jiang (2017). Co(SxSe1-x)2 Nanorods Arrays with Rhombus Cross-section Exhibiting High Catalytic Activity for Quantum dot Sensitized Solar Cells. [10.1016/j.electacta.2017.08.134](https://doi.org/10.1016/j.electacta.2017.08.134). Review scope remains stated in the linked website records.
 
 - Chase C. Reinhart; Erik Johansson (2017). Colloidal 3-Mercaptopropionic Acid Capped Lead Sulfide Quantum Dots in a Low Boiling Point Solvent. [10.1021/jacs.7b00158](https://doi.org/10.1021/jacs.7b00158). Review scope remains stated in the linked website records.
@@ -5001,6 +5047,8 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 - Yaohong Zhang; Guohua Wu; Iván Mora-Seró; Chao Ding; Feng Liu; Qingxuan Huang; Yuhei Ogomi; Shuzi Hayase; Taro Toyoda; Ruixiang Wang; Joe Otsuki; Qing Shen (2017). Improvement of Photovoltaic Performance of Colloidal Quantum Dot Solar Cells Using Organic Small Molecule as Hole-Selective Layer. [10.1021/acs.jpclett.7b00683](https://doi.org/10.1021/acs.jpclett.7b00683). Review scope remains stated in the linked website records.
 
 - Lianfeng Zhao, Yao-Wen Yeh, Nhu L. Tran, Fan Wu, Zhengguo Xiao, Ross A. Kerner, YunHui L. Lin, Gregory D. Scholes, Nan Yao, and Barry P. Rand (2017). In Situ Preparation of Metal Halide Perovskite Nanocrystal Thin Films for Improved Light-Emitting Devices. [10.1021/acsnano.7b00404](https://doi.org/10.1021/acsnano.7b00404). Review scope remains stated in the linked website records.
+
+- S. Muniyappan; T. Solaiyammal; B. Gomathi Thanga Keerthana; P. Vivek; P. Murugakoothan (2017). Influence of annealing temperature on structural, morphological and optical properties of CTAB assisted cadmium sulphide (CdS) quantum dots: promising candidate for quantum dot sensitized solar cell (QDSSC) applications. [10.1007/s10854-017-6924-4](https://doi.org/10.1007/s10854-017-6924-4). Review scope remains stated in the linked website records.
 
 - Leslie S. Hamachi; Ilan Jen-La Plante; Aidan C. Coryell; Jonathan De Roo; Jonathan S. Owen (2017). Kinetic Control over CdS Nanocrystal Nucleation Using a Library of Thiocarbonates, Thiocarbamates, and Thioureas. [10.1021/acs.chemmater.7b02861](https://doi.org/10.1021/acs.chemmater.7b02861). Review scope remains stated in the linked website records.
 
@@ -5074,6 +5122,8 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 
 - Sandra Dias; Kishan Kumawat; Shinjini Biswas; Salaru Babu Krupanidhi (2017). Solvothermal Synthesis of Cu2SnS3 Quantum Dots and Their Application in Near-Infrared Photodetectors. [10.1021/acs.inorgchem.6b02832](https://doi.org/10.1021/acs.inorgchem.6b02832). Review scope remains stated in the linked website records.
 
+- E. Thamarai Selvi; S. Meenakshi Sundar; P. Selvakumar; P. M. Ponnusamy (2017). Structural, optical and magnetic properties of SnO2 quantum dot. [10.1007/s10854-017-6465-x](https://doi.org/10.1007/s10854-017-6465-x). Review scope remains stated in the linked website records.
+
 - Hyekyoung Choi, Jong-Gun Lee, Xuan Dung Mai, Matthew C. Beard, Sam S. Yoon, Sohee Jeong (2017). Supersonically Spray-Coated Colloidal Quantum Dot Ink Solar Cells. [10.1038/s41598-017-00669-9](https://doi.org/10.1038/s41598-017-00669-9). Review scope remains stated in the linked website records.
 
 - Alexandros Stavrinadis; Santanu Pradhan; Paris Papagiorgis; Grigorios Itskos; Gerasimos Konstantatos (2017). Suppressing Deep Traps in PbS Colloidal Quantum Dots via Facile Iodide Substitutional Doping for Solar Cells with Efficiency >10%. [10.1021/acsenergylett.7b00091](https://doi.org/10.1021/acsenergylett.7b00091). Review scope remains stated in the linked website records.
@@ -5114,6 +5164,10 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 
 - Yong Kuai; Raohao Fang; Changchang Zhang; Xiang Liu; Liang Ma (2018). A convenient way of activating carbon quantum dots and the efficient isolation. [10.1016/j.materresbull.2018.03.008](https://doi.org/10.1016/j.materresbull.2018.03.008). Review scope remains stated in the linked website records.
 
+- Haixin Liu; Wenhao Shen; Xiaoquan Chen; Jean-Pierre Corriou (2018). A high-performance NH3 gas sensor based on TiO2 quantum dot clusters with ppb level detection limit at room temperature. [10.1007/s10854-018-9952-9](https://doi.org/10.1007/s10854-018-9952-9). Review scope remains stated in the linked website records.
+
+- Chang-yuan Yan; Zhi-qiang Fang; Ai-min Tang; Wang-yu Liu; Yuan Liu; Hai-zhen Shi (2018). A tunable optoelectronic nanofibrillated cellulose/CdS quantum dot film with improved transmittance and strength. [10.1007/s10570-018-1727-1](https://doi.org/10.1007/s10570-018-1727-1). Review scope remains stated in the linked website records.
+
 - Christina A. Bauer; Terianne Y. Hamada; Hyesoo Kim; Mathew R. Johnson; Matthew J. Voegtle; Matthew S. Emrick (2018). An Integrated, Multipart Experiment: Synthesis, Characterization, and Application of CdS and CdSe Quantum Dots as Sensitizers in Solar Cells. [10.1021/acs.jchemed.7b00593](https://doi.org/10.1021/acs.jchemed.7b00593). Review scope remains stated in the linked website records.
 
 - Julian Schneider; Tetiana Dudka; Yuan Xiong; Zhenguang Wang; Nikolai Gaponik; Andrey L. Rogach (2018). Aqueous-Based Cadmium Telluride Quantum Dot/Polyurethane/Polyhedral Oligomeric Silsesquioxane Composites for Color Enhancement in Display Backlights. [10.1021/acs.jpcc.7b11027](https://doi.org/10.1021/acs.jpcc.7b11027). Review scope remains stated in the linked website records.
@@ -5139,6 +5193,8 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 - David Skoda; Pavel Urbanek; Jakub Sevcik; Lukas Munster; Vojtech Nadazdy; David A. Cullen; Pavel Bazant; Jan Antos; Ivo Kuritka (2018). Colloidal cobalt-doped ZnO nanoparticles by microwave-assisted synthesis and their utilization in thin composite layers with MEH-PPV as an electroluminescent material for polymer light emitting diodes. [10.1016/j.orgel.2018.05.037](https://doi.org/10.1016/j.orgel.2018.05.037). Review scope remains stated in the linked website records.
 
 - Boris le Feber; Ferry Prins; Eva De Leo; Freddy T. Rabouw; David J. Norris (2018). Colloidal-Quantum-Dot Ring Lasers with Active Color Control. [10.1021/acs.nanolett.7b04495](https://doi.org/10.1021/acs.nanolett.7b04495). Review scope remains stated in the linked website records.
+
+- Ya Bai; Shaohua Qu; Zirui Jia; Limin Zhang; Guangyao Zhu; Ailing Feng; Guanglei Wu; Hongjing Wu (2018). Cr2O3 nanocrystal anode materials with improved cyclic stability for lithium ion batteries. [10.1007/s10854-018-9279-6](https://doi.org/10.1007/s10854-018-9279-6). Review scope remains stated in the linked website records.
 
 - Sjoerd A. Veldhuis; Yan Fong Ng; Riyas Ahmad; Annalisa Bruno; Nur Fadilah Jamaludin; Bahulayan Damodaran; Nripan Mathews; Subodh G. Mhaisalkar (2018). Crown Ethers Enable Room-Temperature Synthesis of CsPbBr3 Quantum Dots for Light-Emitting Diodes. [10.1021/acsenergylett.7b01257](https://doi.org/10.1021/acsenergylett.7b01257). Review scope remains stated in the linked website records.
 
@@ -5272,6 +5328,8 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 
 - Valeriia Grigel; Laxmi Kishore Sagar; Kim De Nolf; Qiang Zhao; André Vantomme; Jonathan De Roo; Ivan Infante; Zeger Hens (2018). The Surface Chemistry of Colloidal HgSe Nanocrystals, toward Stoichiometric Quantum Dots by Design. [10.1021/acs.chemmater.8b02908](https://doi.org/10.1021/acs.chemmater.8b02908). Review scope remains stated in the linked website records.
 
+- Xue Li; Xiaoqun Gong; Bo Zhang; Yajuan Liu; Jin Chang; Xuening Zhang (2018). Ultrasensitive lateral-flow assays based on quantum dot encapsulations with signal amplification. [10.1007/s11051-018-4241-3](https://doi.org/10.1007/s11051-018-4241-3). Review scope remains stated in the linked website records.
+
 - Andrea Castelli; Joost de Graaf; Sergio Marras; Rosaria Brescia; Luca Goldoni; Liberato Manna; Milena P. Arciniegas (2018). Understanding and tailoring ligand interactions in the self-assembly of branched colloidal nanocrystals into planar superlattices. [10.1038/s41467-018-03550-z](https://doi.org/10.1038/s41467-018-03550-z). Review scope remains stated in the linked website records.
 
 - Geoffry Laufersky; Siobhan Bradley; Elian Frécaut; Matthias Lein; Thomas Nann (2018). Unraveling aminophosphine redox mechanisms for glovebox-free InP quantum dot syntheses. [10.1039/c8nr01286e](https://doi.org/10.1039/c8nr01286e). Review scope remains stated in the linked website records.
@@ -5285,6 +5343,8 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 - Daraksha Bano; Vijay Kumar; Vikas Kumar Singh; Subhash Chandra; Devendra Kumar Singh; Pradeep Kumar Yadav; Mahe Talat; Syed Hadi Hasan (2019). A Facile and Simple Strategy for the Synthesis of Label Free Carbon Quantum Dots from the latex of Euphorbia milii and Its Peroxidase-Mimic Activity for the Naked Eye Detection of Glutathione in a Human Blood Serum. [10.1021/acssuschemeng.8b04067](https://doi.org/10.1021/acssuschemeng.8b04067). Review scope remains stated in the linked website records.
 
 - Clément Livache; Bertille Martinez; Nicolas Goubet; Charlie Gréboval; Junling Qu; Audrey Chu; Sébastien Royer; Sandrine Ithurria; Mathieu G. Silly; Benoit Dubertret; Emmanuel Lhuillier (2019). A colloidal quantum dot infrared photodetector and its use for intraband detection. [10.1038/s41467-019-10170-8](https://doi.org/10.1038/s41467-019-10170-8). Review scope remains stated in the linked website records.
+
+- Nisha Singh; Vignesh Murugadoss; Jeniffa Rajavedhanayagam; Subramania Angaiah (2019). A wide solar spectrum light harvesting Ag2Se quantum dot-sensitized porous TiO2 nanofibers as photoanode for high-performance QDSC. [10.1007/s11051-019-4619-x](https://doi.org/10.1007/s11051-019-4619-x). Review scope remains stated in the linked website records.
 
 - Baowei Zhang, Luca Goldoni, Juliette Zito, Zhiya Dang, Guilherme Almeida, Francesco Zaccaria, Jur de Wit, Ivan Infante, Luca De Trizio, Liberato Manna (2019). Alkyl Phosphonic Acids Deliver CsPbBr3 Nanocrystals with High Photoluminescence Quantum Yield and Truncated Octahedron Shape. [10.1021/acs.chemmater.9b03529](https://doi.org/10.1021/acs.chemmater.9b03529). Review scope remains stated in the linked website records.
 
@@ -5336,6 +5396,8 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 
 - Xin Tang; Matthew M. Ackerman; Menglu Chen; Philippe Guyot‐Sionnest (2019). Dual-band infrared imaging using stacked colloidal quantum dot photodiodes. [10.1038/s41566-019-0362-1](https://doi.org/10.1038/s41566-019-0362-1). Review scope remains stated in the linked website records.
 
+- Alexandra A. P. Mansur; Herman S. Mansur; Camila Tabare; Aislan Paiva; Nadia S. V. Capanema (2019). Eco-friendly AgInS2/ZnS quantum dot nanohybrids with tunable luminescent properties modulated by pH-sensitive biopolymer for potential solar energy harvesting applications. [10.1007/s10854-019-00719-0](https://doi.org/10.1007/s10854-019-00719-0). Review scope remains stated in the linked website records.
+
 - Kyeongchan Noha,1, Minsu Kimb,1, Sang-Hyun Leea, Hwang-Sik Yuna, Tae-Hyeon Lima, Yeongho Choic, Ki-Ju Kimb, Yiran Jiangd, Keonwon Beoma, Minju Kima, Young-Gwang Kima, Pilwoo Leee, Nuri Ohf, Bong Hoon Kimg, Chansun Shina, Hyun Ho Leee, Tae-Sik Yoona, Moonsub Shimd, Jaehoon Limc, Ki-Bum Kimb, Seong-Yong Choa,∗ (2019). Effect of ethanolamine passivation of ZnO nanoparticles in quantum dot light emitting diode structure. [10.1016/j.cap.2019.05.016](https://doi.org/10.1016/j.cap.2019.05.016). Review scope remains stated in the linked website records.
 
 - Sourav Maiti; Farazuddin Azlan; Yogesh Jadhav; Jayanta Dana; Pranav Anand; Santosh K. Haram; G.R. Dey; Hirendra N. Ghosh (2019). Efficient charge transport in surface engineered TiO2 nanoparticulate photoanodes leading to improved performance in quantum dot sensitized solar cells. [10.1016/j.solener.2019.02.001](https://doi.org/10.1016/j.solener.2019.02.001). Review scope remains stated in the linked website records.
@@ -5346,6 +5408,8 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 
 - Yun Cheol Kim; Sung-Doo Baek; Jae-Min Myoung (2019). Enhanced brightness of methylammonium lead tribromide perovskite microcrystal-based green light-emitting diodes by adding hydrophilic polyvinylpyrrolidone with oleic acid-modified ZnO quantum dot electron transporting layer. [10.1016/j.jallcom.2019.01.317](https://doi.org/10.1016/j.jallcom.2019.01.317). Review scope remains stated in the linked website records.
 
+- Sonali Das; Kadambinee Sa; Injamul Alam; Pitamber Mahanandia (2019). Enhancement of photocurrent in Cu2ZnSnS4 quantum dot-anchored multi-walled carbon nanotube for solar cell application. [10.1007/s10853-019-03467-y](https://doi.org/10.1007/s10853-019-03467-y). Review scope remains stated in the linked website records.
+
 - Jie Zhang; Guohua Qi; Chen Xu; Yongdong Jin (2019). Enzymatic Preparation of Plasmonic-Fluorescent Quantum Dot-Gold Hybrid Nanoprobes for Sensitive Detection of Glucose and Alkaline Phosphatase and Dual-Modality Cell Imaging. [10.1021/acs.analchem.9b03818](https://doi.org/10.1021/acs.analchem.9b03818). Review scope remains stated in the linked website records.
 
 - Jun Zhan; Rujie Peng; Sixuan Wei; Jia Chen; Xianghong Peng; Biao Xiao (2019). Ethanol-Precipitation-Assisted Highly Efficient Synthesis of Nitrogen-Doped Carbon Quantum Dots from Chitosan. [10.1021/acsomega.9b03318](https://doi.org/10.1021/acsomega.9b03318). Review scope remains stated in the linked website records.
@@ -5354,11 +5418,15 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 
 - Jayita Patwari, Harmit Joshi, Harahari Mandal, Lopamudra Roy, Chinmoy Bhattacharya, Peter Lemmens, Samir Kumar Pal (2019). Exciton dissociation in an NIR-active triohybrid nanocrystal leading to efficient generation of reactive oxygen species. [10.1039/c9cp01923e](https://doi.org/10.1039/c9cp01923e). Review scope remains stated in the linked website records.
 
+- S. V. Prabhakar Vattikuti; P. C. Nagajyothi; Jaesool Shim (2019). Fabrication of CdS quantum dot/Bi2S3 nanocomposite photocatalysts for enhanced H2 production under simulated solar light. [10.1007/s10854-019-00861-9](https://doi.org/10.1007/s10854-019-00861-9). Review scope remains stated in the linked website records.
+
 - Tapas Kumar Mondal; Shyamal K. Saha (2019). Facile Approach To Synthesize Nitrogen- and Oxygen-Rich Carbon Quantum Dots for pH Sensor, Fluorescent Indicator, and Invisible Ink Applications. [10.1021/acssuschemeng.9b04817](https://doi.org/10.1021/acssuschemeng.9b04817). Review scope remains stated in the linked website records.
 
 - Tao Chen; Joonho Bae (2019). Facile One-Pot Synthesis of LiMnO2 Nanowire-Graphene Nanoplatelet Composites and Their Applications in Battery-Like Electrodes for High Performance Electrochemical Capacitors. [10.1007/s11664-019-07169-8](https://doi.org/10.1007/s11664-019-07169-8). Review scope remains stated in the linked website records.
 
 - Zhipeng Xue, Hui Gao, Wenjing Liu, Xiaolong Li (2019). Facile Room-Temperature Synthesis of High-Chemical-Stability Nitrogen-Doped Graphene Quantum Dot/CsPbBr3 Composite. [10.1021/acsaelm.9b00460](https://doi.org/10.1021/acsaelm.9b00460). Review scope remains stated in the linked website records.
+
+- Yalin Yang; Yanhong Liu; Baodong Mao; Bifu Luo; Kewei Zhang; Wei Wei; Zhenhui Kang; Weidong Shi; Shouqi Yuan (2019). Facile Surface Engineering of Ag–In–Zn–S Quantum Dot Photocatalysts by Mixed-Ligand Passivation with Improved Charge Carrier Lifetime. [10.1007/s10562-019-02718-6](https://doi.org/10.1007/s10562-019-02718-6). Review scope remains stated in the linked website records.
 
 - Chunhe Yu; Xiaohua Jiang; Dongmiao Qin; Guichun Mo; Xiangfei Zheng; Biyang Deng (2019). Facile Syntheses of S,N-Codoped Carbon Quantum Dots and Their Applications to a Novel Off–On Nanoprobe for Detection of 6-Thioguanine and Its Bioimaging. [10.1021/acssuschemeng.9b02886](https://doi.org/10.1021/acssuschemeng.9b02886). Review scope remains stated in the linked website records.
 
@@ -5391,6 +5459,8 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 - Ji-Yi Su; Xi-Yan Zhang; Xiang Li (2019). Hydrothermal synthesis and green up-conversion luminescence of Yb3+ and Ho3+ co-doped SrGd2(WO4)2(MoO4)2 nanocrystal. [10.1063/1.5113667](https://doi.org/10.1063/1.5113667). Review scope remains stated in the linked website records.
 
 - Shuhei Ozu; Yaohong Zhang; Hironobu Yasuda; Yukiko Kitabatake; Taro Toyoda; Masayuki Hirata; Kenji Yoshino; Kenji Katayama; Shuzi Hayase; Ruixiang Wang; Qing Shen (2019). Improving Photovoltaic Performance of ZnO Nanowires Based Colloidal Quantum Dot Solar Cells via SnO2 Passivation Strategy. [10.3389/fenrg.2019.00011](https://doi.org/10.3389/fenrg.2019.00011). Review scope remains stated in the linked website records.
+
+- Srikanth Reddy Tulsani; Saptam Ganguly; Arup K. Rath (2019). Inorganic metal iodide mediated solution phase surface passivation for quantum dot solar cell. [10.1007/s10854-019-01992-9](https://doi.org/10.1007/s10854-019-01992-9). Review scope remains stated in the linked website records.
 
 - Avijit Saha; Siddhartha Sohoni; Ranjani Viswanatha (2019). Interface Modeling Leading to Giant Exchange Bias from the CoO/CoFe2O4 Quantum Dot Heterostructure. *Journal of Physical Chemistry C*, 123, 2421–2427. [10.1021/acs.jpcc.8b11124](https://doi.org/10.1021/acs.jpcc.8b11124). [Source review and scope](https://cuiyist.github.io/nanoxtalsyn-site/paper-review.html?id=saha2019).
 
@@ -5572,6 +5642,8 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 
 - Jonathan Ralph Adsetts; Salena Hoesterey; Chenjun Gao; David A. Love; Zhifeng Ding (2020). Electrochemiluminescence and Photoluminescence of Carbon Quantum Dots Controlled by Aggregation-Induced Emission, Aggregation-Caused Quenching, and Interfacial Reactions. [10.1021/acs.langmuir.0c02886](https://doi.org/10.1021/acs.langmuir.0c02886). Review scope remains stated in the linked website records.
 
+- Houman Bahmani Jalali; Sadra Sadeghi; Isinsu Baylam; Mertcan Han; Cleva W. Ow-Yang; Alphan Sennaroglu; Sedat Nizamoglu (2020). Exciton recycling via InP quantum dot funnels for luminescent solar concentrators. [10.1007/s12274-020-3207-9](https://doi.org/10.1007/s12274-020-3207-9). Review scope remains stated in the linked website records.
+
 - Ho Jin; Mateusz Goryca; Michael T. Janicke; Scott A. Crooker; Victor I. Klimov (2020). Exploiting Functional Impurities for Fast and Efficient Incorporation of Manganese into Quantum Dots. [10.1021/jacs.0c08510](https://doi.org/10.1021/jacs.0c08510). Review scope remains stated in the linked website records.
 
 - Zhangyan Ma; Yan Sun; Jingwen Xie; Peipei Li; Qiujun Lu; Meiling Liu; Peng Yin; Haitao Li; Youyu Zhang; Shouzhuo Yao (2020). Facile Preparation of MnO2 Quantum Dots with Enhanced Fluorescence via Microenvironment Engineering with the Assistance of Some Reductive Biomolecules. [10.1021/acsami.0c00917](https://doi.org/10.1021/acsami.0c00917). Review scope remains stated in the linked website records.
@@ -5579,6 +5651,8 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 - Pedro E. M. Amaral; Donald C. Hall, Jr.; Rahul Pai; Jarosław E. Król; Vibha Kalra; Garth D. Ehrlich; Hai-Feng Ji (2020). Fibrous Phosphorus Quantum Dots for Cell Imaging. [10.1021/acsanm.9b01786](https://doi.org/10.1021/acsanm.9b01786). Review scope remains stated in the linked website records.
 
 - P. K. Pandey, Hidayath Ulla, M. N. Satyanarayan, Kamla Rawat, Arpit Gaur, S. Gawali, P. A. Hassan, and H. B. Bohidar (2020). Fluorescent MoS2 Quantum Dot–DNA Nanocomposite Hydrogels for Organic Light-Emitting Diodes. [10.1021/acsanm.9b02065](https://doi.org/10.1021/acsanm.9b02065). Review scope remains stated in the linked website records.
+
+- Azam Bagheri Pebdeni; Morteza Hosseini; Mohammad Reza Ganjali (2020). Fluorescent Turn-on Aptasensor of Staphylococcus aureus Based on the FRET Between Green Carbon Quantum Dot and Gold Nanoparticle. [10.1007/s12161-020-01821-4](https://doi.org/10.1007/s12161-020-01821-4). Review scope remains stated in the linked website records.
 
 - Owen Kendall; Pierce Wainer; Steven Barrow; Joel van Embden; Enrico Della Gaspera (2020). Fluorine-Doped Tin Oxide Colloidal Nanocrystals. [10.3390/nano10050863](https://doi.org/10.3390/nano10050863). Review scope remains stated in the linked website records.
 
@@ -5599,6 +5673,8 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 - Calink I. L. Santos; Wagner S. Machado; Karl David Wegner; Leiriana A. P. Gontijo; Jefferson Bettini; Marco A. Schiavon; Peter Reiss; Dmitry Aldakov (2020). Hydrothermal Synthesis of Aqueous-Soluble Copper Indium Sulfide Nanocrystals and Their Use in Quantum Dot Sensitized Solar Cells. [10.3390/nano10071252](https://doi.org/10.3390/nano10071252). Review scope remains stated in the linked website records.
 
 - Jae Taek Oh; Hongjoo Cho; Sung Yong Bae; Sung Jun Lim; Jinhyeon Kang; In Hwan Jung; Hyosung Choi; Younghoon Kim (2020). Improved size distribution of AgBiS2 colloidal nanocrystals by optimized synthetic route enhances photovoltaic performance. [10.1002/er.5695](https://doi.org/10.1002/er.5695). Review scope remains stated in the linked website records.
+
+- Jun-Zheng Zhang; Huan Tang; Xing-Zhu Chen; Qianqian Su; Wen-Song Xi; Yuan-Yuan Liu; Yuanfang Liu; Aoneng Cao; Haifang Wang (2020). In vivo fate of Ag2Te quantum dot and comparison with other NIR-II silver chalcogenide quantum dots. [10.1007/s11051-020-04992-7](https://doi.org/10.1007/s11051-020-04992-7). Review scope remains stated in the linked website records.
 
 - Jung-Ho Jo; Dae-Yeon Jo; Sun-Hyoung Lee; Suk-Young Yoon; Han-Byule Lim; Bum-Joo Lee; Young Rag Do; Heesun Yang (2020). InP-Based Quantum Dots Having an InP Core, Composition-Gradient ZnSeS Inner Shell, and ZnS Outer Shell with Sharp, Bright Emissivity, and Blue Absorptivity for Display Devices. [10.1021/acsanm.0c00008](https://doi.org/10.1021/acsanm.0c00008). Review scope remains stated in the linked website records.
 
@@ -5754,7 +5830,11 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 
 - Pengfei An; Weihao Zhu; Luying Qiao; Shichao Sun; Yuyan Xu; Deli Jiang; Min Chen; Suci Meng (2021). 0D ultrafine ruthenium quantum dot decorated 3D porous graphitic carbon nitride with efficient charge separation and appropriate hydrogen adsorption capacity for superior photocatalytic hydrogen evolution. [10.1039/d0dt03445b](https://doi.org/10.1039/d0dt03445b). Review scope remains stated in the linked website records.
 
+- Yanbing Lv; Yifan Yang; Ruili Wu; Yanxia Xu; Jinjie Li; Ning Li; Huaibin Shen; Yujuan Chai; Lin Song Li (2021). A CdSe/ZnS core/shell competitive quantum dot-based fluorescence-linked immunosorbent assay for the sensitive and accurate detection of aflatoxin B1 in corn sample. [10.1007/s11694-021-01223-y](https://doi.org/10.1007/s11694-021-01223-y). Review scope remains stated in the linked website records.
+
 - Peng Wen; Hui Li; Xiao Ma; Renbo Lei; Xinwei Wang; Scott M. Geyer; Yejun Qiu (2021). A colloidal ZnTe quantum dot-based photocathode with a metal–insulator–semiconductor structure towards solar-driven CO 2 reduction to tunable syngas. [10.1039/d0ta10394b](https://doi.org/10.1039/d0ta10394b). Review scope remains stated in the linked website records.
+
+- Ü. Akın; F. Özel; A. Sarılmaz; Ö. F. Yüksel; N. Tuğluoğlu (2021). A new penternary semiconductor Cu2CoSn(SSe)4 nanocrystal: a study on structural, dielectric and optical properties. [10.1007/s10854-021-07041-8](https://doi.org/10.1007/s10854-021-07041-8). Review scope remains stated in the linked website records.
 
 - Jari Leemans; Kim C. Dümbgen; Matthias M. Minjauw; Qiang Zhao; André Vantomme; Ivan Infante; Christophe Detavernier; Zeger Hens (2021). Acid–Base Mediated Ligand Exchange on Near-Infrared Absorbing, Indium-Based III–V Colloidal Quantum Dots. [10.1021/jacs.0c12871](https://doi.org/10.1021/jacs.0c12871). Review scope remains stated in the linked website records.
 
@@ -5800,9 +5880,13 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 
 - Jilei Chen; Lu Zhang; Shulan Li; Feng-Lei Jiang; Peng Jiang; Yi Liu (2021). Cu-Deficient CuInSe Quantum Dots for “Turn-On” Detection of Adenosine Triphosphate in Living Cells. [10.1021/acsanm.1c00831](https://doi.org/10.1021/acsanm.1c00831). Review scope remains stated in the linked website records.
 
+- Madhulekha Gogoi; Aditya Borborah; Lakshi Saikia (2021). Development of quantum dot complex for selective detection of pyrophosphate anion with fluorescence quenching. [10.1007/s12034-021-02556-6](https://doi.org/10.1007/s12034-021-02556-6). Review scope remains stated in the linked website records.
+
 - Taewan Kim; Seongmin Park; Sohee Jeong (2021). Diffusion dynamics controlled colloidal synthesis of highly monodisperse InAs nanocrystals. [10.1038/s41467-021-23259-w](https://doi.org/10.1038/s41467-021-23259-w). Review scope remains stated in the linked website records.
 
 - Dongxu Zhang; Yanhong Liu; Baodong Mao; Haitao Li; Tianyao Jiang; Dongqi Zhang; Weixuan Dong; Weidong Shi (2021). Double-Phase Heterostructure within Fe-Doped Cu2−xS Quantum Dots with Boosted Electrocatalytic Nitrogen Reduction. [10.1021/acssuschemeng.0c08708](https://doi.org/10.1021/acssuschemeng.0c08708). Review scope remains stated in the linked website records.
+
+- Danying Zuo; Guoqiang Li; Yulong Ling; Shijie Cheng; Jing Xu; Hongwei Zhang (2021). Durable UV-blocking Property of Cotton Fabrics with Nanocomposite Coating Based on Graphene Oxide/ZnO Quantum Dot via Water-based Self-assembly. [10.1007/s12221-021-0750-2](https://doi.org/10.1007/s12221-021-0750-2). Review scope remains stated in the linked website records.
 
 - Helena Fridman; Michael Volokh; Taleb Mokari (2021). Dynamics of the nanocrystal structure and composition in growth solutions monitored by in situ lab-scale X-ray diffraction. [10.1039/d1nr05371j](https://doi.org/10.1039/d1nr05371j). Review scope remains stated in the linked website records.
 
@@ -5974,6 +6058,8 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 
 - Hai Huang; Renfu Li; Shilin Jin; Zhifang Li; Ping Huang; Jinquan Hong; Shaowu Du; Wei Zheng; Xueyuan Chen; Daqin Chen (2021). Ytterbium-Doped CsPbCl                     3                     Quantum Cutters for Near-Infrared Light-Emitting Diodes. [10.1021/acsami.1c09421](https://doi.org/10.1021/acsami.1c09421). Review scope remains stated in the linked website records.
 
+- Mohammad Zarei; Iman Mohammadzadeh; Kazem Saidi; Hassan Sheibani (2021). g-C3N4 quantum dot decorated MoS2/Fe3O4 as a novel recoverable catalyst for photodegradation of organic pollutant under visible light. [10.1007/s10854-021-06790-w](https://doi.org/10.1007/s10854-021-06790-w). Review scope remains stated in the linked website records.
+
 - J. Yang; D. H. Li; L. L. Ji (2022). A Low-Temperature Hydrothermal Synthesis of Prussian Blue Nanocrystal and Its Application in H2O2 Detection. [10.1155/2022/7593873](https://doi.org/10.1155/2022/7593873). Review scope remains stated in the linked website records.
 
 - Zhiwei Long; Mingrui Liu; Xian-gang Wu; Kai Gu; Gaoling Yang; Zhuo Chen; Yang Liu; Ronghui Liu; Haizheng Zhong (2022). A Reactivity-controlled Epitaxial Growth Strategy for Large-sized Nanocrystal Synthesis. [10.21203/rs.3.rs-1424634/v1](https://doi.org/10.21203/rs.3.rs-1424634/v1). Review scope remains stated in the linked website records.
@@ -6037,6 +6123,8 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 - Suman Bera, Avijit Patra, Sanjib Shyamal, Diptam Nasipuri, and Narayan Pradhan (2022). Lead Halide Perovskite Cube Coupled Star Nanocrystal Photocatalysts. [10.1021/acsenergylett.2c01486](https://doi.org/10.1021/acsenergylett.2c01486). Review scope remains stated in the linked website records.
 
 - Yuping Xu; Shiho Terada; Yunzi Xin; Honoka Ueda; Ken-ichi Saitow (2022). Ligand Effects on Photoluminescence and Electroluminescence of Silicon Quantum Dots for Light-Emitting Diodes. [10.1021/acsanm.2c00811](https://doi.org/10.1021/acsanm.2c00811). Review scope remains stated in the linked website records.
+
+- Hammad Younes; Mariam Mansoori; Prerna Chaturvedi; Ru Li; Safieh Almahmoud; Sang-Eui Lee; Thomas Myeongseok Koo; Young Keun Kim; Daniel Choi (2022). Magnetic spinel manganese ferrite nanocrystal carbon nanotube thin mats with improved electromagnetic shielding performance. [10.1007/s11051-022-05632-y](https://doi.org/10.1007/s11051-022-05632-y). Review scope remains stated in the linked website records.
 
 - Farnaz Jafari, Javad Saien, Alimorad Rashidi (2022). Mass transfer intensification for carbon quantum dot nanofluid drops under pulsed electric fields. [10.1038/s41598-022-16663-9](https://doi.org/10.1038/s41598-022-16663-9). Review scope remains stated in the linked website records.
 
@@ -6158,6 +6246,8 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 
 - Aritrajit Gupta; Justin C. Ondry; Kailai Lin; Yunhua Chen; Margaret H. Hudson; Min Chen; Richard D. Schaller; Aaron J. Rossini; Eran Rabani; Dmitri V. Talapin (2023). Composition-Defined Optical Properties and the Direct-to-Indirect Transition in Core–Shell In1–xGaxP/ZnS Colloidal Quantum Dots. [10.1021/jacs.3c02709](https://doi.org/10.1021/jacs.3c02709). Review scope remains stated in the linked website records.
 
+- Elsa Susan Zachariah; Raji Mary Mathew; Jasmine Jose; G. Vinitha; Vinoy Thomas; I. Rejeena (2023). Continuous wave laser-induced nonlinear optical properties of nanofluids based on graphene quantum dot. [10.1007/s10854-023-09930-6](https://doi.org/10.1007/s10854-023-09930-6). Review scope remains stated in the linked website records.
+
 - Awais Ali; Wei Jiang; Yonghyeok Choi; Boram Kim; Kangwoo Lee; Heeyeop Chae (2023). Control of the Reaction Kinetics of Monodispersed InP/ZnSeS/ZnS-Based Quantum Dots Using Organophosphorus Compounds for Electroluminescent Devices. [10.1021/acs.jpclett.2c03853](https://doi.org/10.1021/acs.jpclett.2c03853). Review scope remains stated in the linked website records.
 
 - Pascal Rusch, Stefano Toso, Yurii P. Ivanov, Sergio Marras, Giorgio Divitini, Liberato Manna (2023). CsPbBr3−PbxBiySz NC Heterostructures: A Cluster-Based Approach to Perovskite−Chalcogenide Heterostructures. [10.1021/acs.chemmater.3c02503](https://doi.org/10.1021/acs.chemmater.3c02503). Review scope remains stated in the linked website records.
@@ -6174,6 +6264,8 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 
 - Mehraneh Fakheri; Shohreh Fatemi (2023). Electrophoretic Deposition of Fluorine–Nitrogen Graphene Quantum Dots with Highly Luminescent Upconversion Properties for Solar Cell Applications. [10.1021/acs.iecr.3c00274](https://doi.org/10.1021/acs.iecr.3c00274). Review scope remains stated in the linked website records.
 
+- Wen-bo Liu; Xue-rong Du; Cheng-cheng Wang; Chun-xue Zhuo; Jin Chang; Na-na Wang; Ren-zhi Li (2023). Enhanced performance of cesium copper halide nanocrystal light-emitting diodes via post-treatment induced phase regulation. [10.1007/s11771-023-5414-5](https://doi.org/10.1007/s11771-023-5414-5). Review scope remains stated in the linked website records.
+
 - Jiarong Cai; An-An Liu; Xue-Hui Shi; Haohao Fu; Wei Zhao; Liguang Xu; Hua Kuang; Chuanlai Xu; Dai-Wen Pang (2023). Enhancing Circularly Polarized Luminescence in Quantum Dots through Chiral Coordination-Mediated Growth at the Liquid/Liquid Interface. [10.1021/jacs.3c09448](https://doi.org/10.1021/jacs.3c09448). Review scope remains stated in the linked website records.
 
 - Hal Van Ryswyk; Hanna Z. Porter; Connor K. M. Seto; Ixchel Lopez; Emma Dy (2023). Estimating Quantum Dot Size with Pulsed Field Gradient NMR. [10.1021/acs.jchemed.3c00155](https://doi.org/10.1021/acs.jchemed.3c00155). Review scope remains stated in the linked website records.
@@ -6188,6 +6280,8 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 
 - Longhai Zhong; Xin Gao; Jinchao Qiao; Yan Chen; Xueying Zhang; Zeqi Xiao; Pengwan Chen (2023). Formation of Blue-Emitting Colloidal Si Quantum Dots through Pulsed Discharge of Si Strips in Distilled Water Medium. [10.1021/acs.jpcc.2c07272](https://doi.org/10.1021/acs.jpcc.2c07272). Review scope remains stated in the linked website records.
 
+- Xia Wang; Jun Kong; Jialei Liu (2023). Ge-assisted band engineering and efficiency enhancement in panchromatic Cu2ZnSnSe4 quantum dot-sensitized solar cells. [10.1007/s10854-023-11795-8](https://doi.org/10.1007/s10854-023-11795-8). Review scope remains stated in the linked website records.
+
 - Sergio Mazzotti; Aniket S. Mulé; Andrew B. Pun; Jacob T. Held; David J. Norris (2023). Growth Synchronization and Size Control in Magic-Sized Semiconductor Nanocrystals. [10.1021/acsnano.3c00585](https://doi.org/10.1021/acsnano.3c00585). Review scope remains stated in the linked website records.
 
 - Ömer Kaan Koç; Ayşem Üzer; Reşat Apak (2023). Heteroatom-Doped Carbon Quantum Dots and Polymer Composite as Dual-Mode Nanoprobe for Fluorometric and Colorimetric Determination of Picric Acid. [10.1021/acsami.3c07938](https://doi.org/10.1021/acsami.3c07938). Review scope remains stated in the linked website records.
@@ -6199,6 +6293,8 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 - Alexander E. K. Kaplan; Chantalle J. Krajewska; Andrew H. Proppe; Weiwei Sun; Tara Šverko; David B. Berkinsky; Hendrik Utzat; Moungi G. Bawendi (2023). Hong–Ou–Mandel interference in colloidal CsPbBr3 perovskite nanocrystals. [10.1038/s41566-023-01225-w](https://doi.org/10.1038/s41566-023-01225-w). Review scope remains stated in the linked website records.
 
 - Rodrigo Schneider; Murilo H. M. Facure; Kelcilene B. R. Teodoro; Luiza A. Mercante; Daniel S. Correa (2023). Hydrothermal Synthesis of Fluorescent Functionalized MoS2 Quantum Dots for Heavy Metal Detection. [10.1021/acsanm.3c04983](https://doi.org/10.1021/acsanm.3c04983). Review scope remains stated in the linked website records.
+
+- Junwei Shi; Ben Cohen-Kleinstein; Xuliang Zhang; Chenyu Zhao; Yong Zhang; Xufeng Ling; Junjun Guo; Doo-Hyun Ko; Baomin Xu; Jianyu Yuan; Wanli Ma (2023). In Situ Iodide Passivation Toward Efficient CsPbI3 Perovskite Quantum Dot Solar Cells. [10.1007/s40820-023-01134-1](https://doi.org/10.1007/s40820-023-01134-1). Review scope remains stated in the linked website records.
 
 - Yongge Yang et al. (2023). In Situ Room-Temperature Synthesis of All-Colloidal Quantum Dot CsPbBr3-PbS Heterostructures. [10.1021/acsphotonics.3c01099](https://doi.org/10.1021/acsphotonics.3c01099). Review scope remains stated in the linked website records.
 
@@ -6354,11 +6450,15 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 
 - Ha Trang Nguyen; Thanh Tai Nguyen; Thanh Thao Tran; Jiwon Bang; Manjeet Kumar; Joondong Kim; Ju-Hyung Yun (2024). Colour-Passive radiative cooling in optoelectronics with Silver/Quantum dot decorated silica multifunctional hybrid structures. [10.1016/j.cej.2024.150840](https://doi.org/10.1016/j.cej.2024.150840). Review scope remains stated in the linked website records.
 
+- Saeedeh Souri; Maziar Marandi (2024). Composition tuning of CdSeXS1−X nanocrystals for enhancing the photovoltaic performance of CdS/CdSeXS1−X quantum dot-sensitized solar cells. [10.1007/s10853-024-09424-8](https://doi.org/10.1007/s10853-024-09424-8). Review scope remains stated in the linked website records.
+
 - Danxing Hou, Peiwen Lv, Wentao Niu, Zhongyuan Guan, Lijin Wang, Jinxing Zhao, Xu Li, Haihang Ye, and Aiwei Tang (2024). Controllable Synthesis of Cadmium-Free Blue-Emitting Cu–Ga–Zn–S-Based Nanocrystals for Solution-Processed Quantum-Dot Light-Emitting Diodes. [10.1021/acs.jpclett.4c01527](https://doi.org/10.1021/acs.jpclett.4c01527). Review scope remains stated in the linked website records.
 
 - Mawuli Degbevi; Jonathan T. Stoffel; Emily Y. Tsui (2024). Coordinated Anions Tune Z-Type Ligand Displacement from Colloidal CdSe and InP Nanocrystal Surfaces. [10.1021/acs.inorgchem.4c03534](https://doi.org/10.1021/acs.inorgchem.4c03534). Review scope remains stated in the linked website records.
 
 - Honoka Ueda; Ken-ichi Saitow (2024). Cost-Effective Ultrabright Silicon Quantum Dots and Highly Efficient LEDs from Low-Carbon Hydrogen Silsesquioxane Polymers. [10.1021/acsami.3c11120](https://doi.org/10.1021/acsami.3c11120). Review scope remains stated in the linked website records.
+
+- Sami Ur Rahman; Yong-Hui Song; Zhen-Yu Ma; Xiao-Lin Tai; Bai-Sheng Zhu; Yi-Chen Yin; Li-Zhe Feng; Jing-Ming Hao; Guan-Jie Ding; Kuang-Hui Song; Ya-Lan Hu; Tieqiang Li; Jixian Xu; Hong-Bin Yao (2024). CsPbI2Br epitaxial shell for efficient PbS quantum dot solar cells. [10.1007/s12274-024-6988-4](https://doi.org/10.1007/s12274-024-6988-4). Review scope remains stated in the linked website records.
 
 - Ekaterina V. Silina; Victor A. Stupin; Natalia E. Manturova; Elena L. Chuvilina; Akhmedali A. Gasanov; Anna A. Ostrovskaya; Olga I. Andreeva; Natalia Y. Tabachkova; Maxim A. Abakumov; Aleksey A. Nikitin; Alexey A. Kryukov; Svetlana A. Dodonova; Aleksey V. Kochura; Maksim A. Pugachevskii (2024). Development of Technology for the Synthesis of Nanocrystalline Cerium Oxide Under Production Conditions with the Best Regenerative Activity and Biocompatibility for Further Creation of Wound-Healing Agents. [10.3390/pharmaceutics16111365](https://doi.org/10.3390/pharmaceutics16111365). Review scope remains stated in the linked website records.
 
@@ -6373,6 +6473,8 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 - Bisrat Nigusie Tafese; Thothadri Ganesh; Abraham Solomon; Basker Sundararaju; Nidhi Garg; Biruk Alebachew (2024). Efficient Adsorptive Removal of Methylene Blue Dye from Aqueous Solution Using Eragrostis Teff Biomass-Derived Nitrogen and Phosphorus-Codoped Carbon Quantum Dots. [10.1021/acs.langmuir.3c01813](https://doi.org/10.1021/acs.langmuir.3c01813). Review scope remains stated in the linked website records.
 
 - Suk‐Young Yoon; Yang‐Hee Kim; Sun‐Hyoung Lee; Hyungmin Yang; Dae‐Yeon Jo; Hyun‐Min Kim; Yuri Kim; Seong Min Park; Sin Won Choi; Heesun Yang (2024). Efficient, Stable Blue Light‐Emitting Diodes Enabled by Heterostructural Alteration of ZnSeTe Quantum Dot and Functionalization of ZnMgO. [10.1002/adom.202401085](https://doi.org/10.1002/adom.202401085). Review scope remains stated in the linked website records.
+
+- Z. Kişnişci; F. Özel; S. Karadeniz; N. Tuğluoğlu; S. S. Özel; Ö. F. Yüksel (2024). Electrical properties of Al/CZTSe nanocrystal Schottky diode. [10.1007/s10854-024-12522-7](https://doi.org/10.1007/s10854-024-12522-7). Review scope remains stated in the linked website records.
 
 - M. Baravaglio; B. Sabot; F. Maddalena; M. D. Birowosuto; C. Dang; C. Dujardin; B. Mahler (2024). Energy deposition in liquid scintillators composed of CsPbBr3 colloidal nanocrystal dispersions. [10.1039/d4nr02401j](https://doi.org/10.1039/d4nr02401j). Review scope remains stated in the linked website records.
 
@@ -6394,6 +6496,8 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 
 - Adile Yagmur Hergül Bilgin; Ebru Bozkurt (2024). Fluorometric detection of β-carotene with novel green synthesis carbon quantum dot from Asphodelus. [10.1007/s11164-024-05338-x](https://doi.org/10.1007/s11164-024-05338-x). Review scope remains stated in the linked website records.
 
+- Pui Kei Ko; Jonathan E. Halpert (2024). Formadinium Cation Doping Stabilized Ultra-deep-blue Lead Halide Perovskite Nanocrystal Light-emitting Diodes. [10.1007/s40242-024-4065-x](https://doi.org/10.1007/s40242-024-4065-x). Review scope remains stated in the linked website records.
+
 - Eline Goossens; Olivia Aalling-Frederiksen; Pieter Tack; Dietger Van den Eynden; Zarah Walsh-Korb; Kirsten M. Ø. Jensen; Klaartje De Buysser; Jonathan De Roo (2024). From Gel to Crystal: Mechanism of HfO 2 and ZrO 2 Nanocrystal Synthesis in Benzyl Alcohol. [10.1021/jacs.4c00678](https://doi.org/10.1021/jacs.4c00678). Review scope remains stated in the linked website records.
 
 - Donggyu Lee; Seoryeon Jeong; Sanghyun Moon; Minjung Yang; Sol-Hee Kim; Dongeon Kim; Seo-Young Lee; In-Suh Lee; Dae-Woo Jeon; Ji-Hyeon Park; Jihyun Kim; Se-Woong Baek (2024). Giant Colloidal Quantum Dot/α-Ga2O3 Heterojunction for High Performance UV–Vis–IR Broadband Photodetector. [10.1021/acsnano.4c10960](https://doi.org/10.1021/acsnano.4c10960). Review scope remains stated in the linked website records.
@@ -6414,6 +6518,8 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 
 - G. S. Taran; E. D. Sheichenko; M. A. Popkov; K. N. Novoselova; Yu. A. Kochenkova; A. D. Filippova; A. E. Baranchikov; V. K. Ivanov (2024). Hydrothermal Synthesis of Aqueous Sols of Lactic Acid-Stabilized Nanocrystalline Hafnium Dioxide and Their Enzyme-Like Activity. [10.1134/s0036023624602927](https://doi.org/10.1134/s0036023624602927). Review scope remains stated in the linked website records.
 
+- Seon Hui Baek; Seung Jae Kim; Ho Seok Heo; Kangtaek Lee (2024). Improving Quantum Dot Stability Against Heat and Moisture with Cyclic Olefin Copolymer Matrix. [10.1007/s11814-024-00278-z](https://doi.org/10.1007/s11814-024-00278-z). Review scope remains stated in the linked website records.
+
 - Lucheng Peng; Yongjie Wang; Yurong Ren; Zhuoran Wang; Pengfei Cao; Gerasimos Konstantatos (2024). InSb/InP Core–Shell Colloidal Quantum Dots for Sensitive and Fast Short-Wave Infrared Photodetectors. [10.1021/acsnano.3c12007](https://doi.org/10.1021/acsnano.3c12007). Review scope remains stated in the linked website records.
 
 - Fulvio Bellato; Michele Ferri; Dongxu Zhu; Thi-Hong-Hanh Le; Abinaya Annamalai; Martina Rizzo; Irene Martin; Luca Goldoni; Rosaria Brescia; Mirko Prato; Luca De Trizio; Ilka Kriegel; Liberato Manna (2024). Indium Arsenide Quantum Dot Derived Catalyst for Selective CO2 Electrochemical Reduction to Formate. *ACS Energy Letters*, 9, 1097–1102. [10.1021/acsenergylett.4c00295](https://doi.org/10.1021/acsenergylett.4c00295). [Source review and scope](https://cuiyist.github.io/nanoxtalsyn-site/paper-review.html?id=bellato2024-inas-acsenergylett4c00295).
@@ -6427,6 +6533,8 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 - Se-Hoon Jang; Go-Eun Kim; Sang-Uk Byun; Kyoung-Ho Lee; Dae-Gyu Moon (2024). Inverted Red Quantum Dot Light-Emitting Diodes with ZnO Nanoparticles Synthesized Using Zinc Acetate Dihydrate and Potassium Hydroxide in Open and Closed Systems. [10.3390/mi15111297](https://doi.org/10.3390/mi15111297). Review scope remains stated in the linked website records.
 
 - Junxiang Pei; Haofeng Li; Fayi Chen; Zitao Chen; Xiaodong Yuan; Zhaoxia Han; Daqin Chen; Dechao Yu; Dawei Zhang (2024). Lanthanide Functionalized Carbon Quantum Dots for White Light Emission, pH Sensing, and Co (II) Detection. [10.1021/acsami.4c12408](https://doi.org/10.1021/acsami.4c12408). Review scope remains stated in the linked website records.
+
+- Bomi Kim; Jiwan Kim (2024). Large-Area Quantum Dot Light-Emitting Diodes Employing Sputtered Zn0.85Mg0.15O Electron Transport Material. [10.1007/s13391-023-00482-9](https://doi.org/10.1007/s13391-023-00482-9). Review scope remains stated in the linked website records.
 
 - Bhuman Gangopadhyay; J Subash; Nandan Saha; Shamima Hussain; Souvik Pal; Subhankar Mukherjee; Ranjit Hawaldar; Subhenjit Hazra; Dipankar Chattopadhyay (2024). Low-Temperature Base-Catalyzed Si-Capped ZnO Quantum Dots for pH-Switchable Dual Sensing of Amoxicillin and Cr3+. [10.1021/acsanm.4c03682](https://doi.org/10.1021/acsanm.4c03682). Review scope remains stated in the linked website records.
 
@@ -6473,6 +6581,8 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 - Li Zhao; Tianjian Sha; Yufu Liu; Qingsong Mei; Haibin Li; Pinghua Sun; Haibo Zhou; Huaihong Cai (2024). Rapid and Large-Scale Synthesis of Chiral and Fluorescent Sulfur Quantum Dots for Intracellular Temperature Monitoring. [10.1021/cbmi.4c00052](https://doi.org/10.1021/cbmi.4c00052). Review scope remains stated in the linked website records.
 
 - Hyeong Woo Ban; Maral Vafaie; Larissa Levina; Pan Xia; Muhammad Imran; Yanjiang Liu; Amin Morteza Najarian; Edward H. Sargent (2024). Resurfacing of InAs Colloidal Quantum Dots Equalizes Photodetector Performance across Synthetic Routes. [10.1021/jacs.4c06202](https://doi.org/10.1021/jacs.4c06202). Review scope remains stated in the linked website records.
+
+- Chunyan Wu; Jinpeng Yang; Shuo Ding; Tengzuo Huang; Tao Sun; Lei Qian; Chaoyu Xiang (2024). Revealing the origin of the photo-instability to improve the performance of PbS quantum dot solar. [10.1007/s12274-024-6462-3](https://doi.org/10.1007/s12274-024-6462-3). Review scope remains stated in the linked website records.
 
 - Zhenyang Liu; Chaoqi Hao; Yingying Sun; Junyu Wang; Lacie Dube; Mingjun Chen; Wei Dang; Jinxiao Hu; Xu Li; Ou Chen (2024). Rigid CuInS2/ZnS Core/Shell Quantum Dots for High Performance Infrared Light-Emitting Diodes. [10.1021/acs.nanolett.4c01249](https://doi.org/10.1021/acs.nanolett.4c01249). Review scope remains stated in the linked website records.
 
@@ -6694,6 +6804,8 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 
 - Jamshed Khan; Mshari A. Alotaibi; Israf Ud Din; Abdulrahman I. Alharthi; Tooba Saeed; Qazi Nasir; Ho Soon Min; Abdul Naeem; Md Afroz Bakht; Akil Ahmad (2025). Photocatalytic Degradation of Organophosphates Using Nanocrystalline ZnO Synthesized by Modified Sonochemical Method. [10.3390/catal15090820](https://doi.org/10.3390/catal15090820). Review scope remains stated in the linked website records.
 
+- Chenghan Li; Shanshan Wang; Yiping Li; Oxana P. Taran; Fubao Sun; Hong Yan; Fen Li (2025). Photocatalytic degradation of MB by lignin carbon quantum dot-modified BiVO4 composite materials. [10.1007/s11051-025-06480-2](https://doi.org/10.1007/s11051-025-06480-2). Review scope remains stated in the linked website records.
+
 - Shenping Yu; Jiahui Sun; Yanbing Lv; Li Wang; Tianxin Li; Xiaoquan Li; Binbin Wang; Lei Wang; Huaibin Shen; Lin Song Li; Ruili Wu (2025). Photodynamic-Driven Growth of Aqueous CdSe/ZnSe/ZnS//ZnS Quantum Dots for Inflammatory Factors Multiplexed Detection via a Ratiometric-Fluorescence Immunosensor. [10.1021/acs.inorgchem.5c02885](https://doi.org/10.1021/acs.inorgchem.5c02885). Review scope remains stated in the linked website records.
 
 - Maoz Maoz; Syed Abdul Basit Shah; Vanni Lughi (2025). Photoluminescence Enhancement in CdSe/CdS Quantum Dot Colloidal Films Induced by Gold Nanoparticles (AuNPs). [10.1021/acsomega.5c03718](https://doi.org/10.1021/acsomega.5c03718). Review scope remains stated in the linked website records.
@@ -6844,6 +6956,8 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 
 - Yuzuka Karube; Rodolphe Valleix; Lilian Guillemeney; Carlos Johnson; Courtney Stone; Jonathan S. Owen (2026). Discovering Quantum Confinement in a Safe and Convenient Synthesis of Lead Halide Perovskite Quantum Dots. [10.1021/acs.jchemed.5c01361](https://doi.org/10.1021/acs.jchemed.5c01361). Review scope remains stated in the linked website records.
 
+- Hyung Cheoul Shim (2026). Dual-Interface Stabilization Enables Mechanically Robust and Air-Stable Flexible PbS Quantum Dot Solar Cells. [10.1007/s12541-026-01566-w](https://doi.org/10.1007/s12541-026-01566-w). Review scope remains stated in the linked website records.
+
 - Tuhin Mandal; Rabi Narayan Senapati; Ashish Kumar Ghosh; Reginald Ebhin Masto; Vikram Singh (2026). Eco-Friendly Self-Passivated Fluorescent Carbon Quantum Dots for Rapid Paper-Based Nanoscale Sensing of Mercury in Water Matrices. [10.1021/acssusresmgt.6c00192](https://doi.org/10.1021/acssusresmgt.6c00192). Review scope remains stated in the linked website records.
 
 - Yifan Chen, Bin Zeng, Mengya Lu, Junchi Zhu, Qingyu Wang, Zifeng Liu, Xingyu Hu, Zhe Liu, Cong Sun, Junjie Zhang, Ning Dai, and Yang Li (2026). Elemental Nanocrystal Redox Pathway Enables Antimonide Colloidal Quantum Dots. [10.1021/jacs.5c23366](https://doi.org/10.1021/jacs.5c23366). Review scope remains stated in the linked website records.
@@ -6855,6 +6969,8 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 - Huilei Shi; Yichuan Wang; Chengjie Deng; Juntao Pi; Qiyuan Guo; Yuhan Zhang; Hao Li; Yuxuan Liu; Xing Zhou; Jianbing Zhang; Sen Li; Jing Liu; Liang Gao; Jiang Tang (2026). Facet-Selective Multidentate Passivation for Suppressing Defects in PbS Colloidal Quantum Dot Photodiodes. [10.1021/acs.jpcc.6c02911](https://doi.org/10.1021/acs.jpcc.6c02911). Review scope remains stated in the linked website records.
 
 - Mengjie Zhang; Chaoqi Hao; Liting Huang; Zhaowei Zhu; Zhisheng Li; Yuehua Li; Chuantong Cheng; Xu Zhang (2026). HgTe Quantum Dots for Short-Wave Infrared Photoconductive Detectors. [10.1021/acsanm.5c04807](https://doi.org/10.1021/acsanm.5c04807). Review scope remains stated in the linked website records.
+
+- Nan Ren; Haoyu Jin; Shuyu Zhao; Zhenhua Dong; Yizhan Chen; Xueqin Lv; Xin Li (2026). In situ photolithographic fabrication of patterned perovskite quantum dot color conversion layers on blue LED chips for ultra-wide-gamut display applications. [10.1007/s10854-026-18263-z](https://doi.org/10.1007/s10854-026-18263-z). Review scope remains stated in the linked website records.
 
 - Calem Duah; Ji-Seoung Jeong; Sun-Gi Choi; Hwanhui Yun; Taesu Kim; Bo Keun Park; Su Yeon Lee; Ji Yeon Ryu; Seon Joo Lee (2026). InGaP Alloyed Quantum Dots Enabled by Rational Indium Precursor Design for Light-Emitting Diodes. [10.1021/acsanm.5c05527](https://doi.org/10.1021/acsanm.5c05527). Review scope remains stated in the linked website records.
 
@@ -6896,6 +7012,8 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 
 - Shuchen Pei; Kangli Yan; Shaoyu Cai; Yinjun Hou; Kang Luo; Pu Xiang; Yang Peng (2026). Preparation of carbon quantum dot fluorescent probe from Caesalpinia sappan L. for the detection of ciprofloxacin and antibacterial applications. [10.1038/s41598-026-48145-7](https://doi.org/10.1038/s41598-026-48145-7). Review scope remains stated in the linked website records.
 
+- Mei Han; Yuan Yang; Yanyun Sun; Jingyi Chen; Lin Zhou; Yuhao Wang; Zhiqiang Wang; Huiyan Pan; Keliang Wu (2026). Quantum Dot-Sensitized ZnIn2S4 Composite Heterostructures for Efficient Solar-Driven Hydrogen Evolution. [10.1007/s10562-026-05481-7](https://doi.org/10.1007/s10562-026-05481-7). Review scope remains stated in the linked website records.
+
 - Yixiao Huang; Hezixuan Zhang; Yuchen Zhu; Jiaqi Hu; Zijun Zhao; Yikang Yang; Jianguo Tang; Zhonglin Du (2026). Reductant-Activated Indium Phosphide Magic-Sized Clusters for Dual-Path Synthesis of Bright Blue Emitters and Narrow-Band Quantum Dots. [10.1021/acs.nanolett.6c01798](https://doi.org/10.1021/acs.nanolett.6c01798). Review scope remains stated in the linked website records.
 
 - Abraha Tadese Gidey; Elnaz Ghahremani Rad; Katherine Latosinsky; Sunil Suresh; Alexander R. Uhl (2026). Room-Temperature Synthesis of Ultrasmall Sulfur-Free SnO 2 Quantum Dots as an Electron Transport Layer in Perovskite Solar Cells. [10.1021/acs.chemmater.6c01064](https://doi.org/10.1021/acs.chemmater.6c01064). Review scope remains stated in the linked website records.
@@ -6907,6 +7025,8 @@ Dataset **0.41.2** · **3470 primary source groups** · release `owner-website-q
 - Hyeong Woo Ban, Xubiao Li, Stefan Zeiske, Julian A. Steele, Rafael Eduardo López-Arteaga, Haijiao Lu, Yalong Zou, Moon Gyu Han, Tae-Gon Kim, Cheng Liu, Bin Chen, and Edward H. Sargent (2026). Short-Chain Acids Sustain InAs Colloidal Quantum Dot Growth during Synthesis, Extending Spectral Response into the Deep Short-Wave Infrared. [10.1021/jacs.6c03275](https://doi.org/10.1021/jacs.6c03275). Review scope remains stated in the linked website records.
 
 - Hossein Roshan; Davide Mazza; Satyaprakash Panda; Francesco de Boni; Luca De Trizio; Liberato Manna; Francesco Di Stasio (2026). Short-Wave Infrared InAs Quantum-Dot Light-Emitting Diodes with Tunable Electroluminescence beyond 1.4 μm. [10.1021/acsenergylett.5c03820](https://doi.org/10.1021/acsenergylett.5c03820). Review scope remains stated in the linked website records.
+
+- Qi Cui; Xiang Li; Xiaochuan Li; Wenjian Fang (2026). Sodion Induced Interfacial Polarization and π-π Synergy Enable Irreversible Dye Adsorption in g-C3N4 Quantum Dot-Embedded Hydrogels. [10.1007/s10924-026-03807-5](https://doi.org/10.1007/s10924-026-03807-5). Review scope remains stated in the linked website records.
 
 - Shotaro Yano; Yoshiki Iso; Tetsuhiko Isobe (2026). Sol–Gel Preparation of Transparent and Monolithic Nanocomposites with Fluorescent CuInS 2 /ZnS Quantum Dots in Silica and for Luminescent Solar Concentrators. [10.1021/acsanm.5c04795](https://doi.org/10.1021/acsanm.5c04795). Review scope remains stated in the linked website records.
 
