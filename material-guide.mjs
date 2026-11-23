@@ -1,5 +1,5 @@
 import {READER_COPY} from './source-field-copy.mjs?v=0.45.0';
-import {figureGallery} from './reader-app.mjs?v=0.49.0';
+import {figureGallery} from './reader-app.mjs?v=0.51.0';
 import {stockScope} from './stock-scope.mjs';
 import {quantityValue} from './quantity-value.mjs';
 import {sourceItemCard} from './source-evidence.mjs?v=0.41.9';
