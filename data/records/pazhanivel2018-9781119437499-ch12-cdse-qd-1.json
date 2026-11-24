@@ -1,0 +1,654 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "pazhanivel2018-9781119437499-ch12-cdse-qd-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "T. Pazhanivel; G. Bharathi; D. Nataraj; R. Ramesh; D. Navaneethan (2018): CdSe QD",
+  "material": {
+    "formula": "CdSe",
+    "family": "CdSe nanocrystals",
+    "elements": [
+      "Cd",
+      "Se"
+    ],
+    "components": [
+      "CdSe"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Hot injection",
+  "sources": [
+    {
+      "id": "pazhanivel2018-9781119437499-ch12",
+      "doi": "10.1002/9781119437499.ch12",
+      "title": "Hot Electrons Role in Biomolecule‐based Quantum Dot Hybrid Solar Cells",
+      "authors": "T. Pazhanivel; G. Bharathi; D. Nataraj; R. Ramesh; D. Navaneethan",
+      "year": 2018,
+      "url": "https://doi.org/10.1002/9781119437499.ch12",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "pazhanivel2018-9781119437499-ch12",
+    "recipe_family": "pazhanivel2018-9781119437499-ch12-cdse-qd-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "CdSe",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "pazhanivel2018-9781119437499-ch12",
+          "locator": "Main PDF p.12"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "zinc blende",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "pazhanivel2018-9781119437499-ch12",
+          "locator": "Main PDF p.28"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": null,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "not_reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "not reported",
+      "evidence": [],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "sphere",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "pazhanivel2018-9781119437499-ch12",
+          "locator": "Main PDF p.12"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "pazhanivel2018-9781119437499-ch12-cdse-qd-1--selenium-powder",
+      "name": "selenium powder",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 0.2,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.2 mmol",
+          "evidence": [
+            {
+              "source_id": "pazhanivel2018-9781119437499-ch12",
+              "locator": "Main PDF p.12"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "pazhanivel2018-9781119437499-ch12",
+          "locator": "Main PDF p.12"
+        }
+      ]
+    },
+    {
+      "id": "pazhanivel2018-9781119437499-ch12-cdse-qd-1--cdo-powder",
+      "name": "CdO powder",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "pazhanivel2018-9781119437499-ch12",
+          "locator": "Main PDF p.12"
+        }
+      ]
+    },
+    {
+      "id": "pazhanivel2018-9781119437499-ch12-cdse-qd-1--cdo",
+      "name": "CdO",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "pazhanivel2018-9781119437499-ch12",
+          "locator": "Main PDF p.12"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "pazhanivel2018-9781119437499-ch12-cdse-qd-1--after-s01-dissolve",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "pazhanivel2018-9781119437499-ch12-cdse-qd-1--selenium-powder"
+      ]
+    },
+    {
+      "id": "pazhanivel2018-9781119437499-ch12-cdse-qd-1--after-s02-dissolve",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "pazhanivel2018-9781119437499-ch12-cdse-qd-1--after-s01-dissolve",
+        "pazhanivel2018-9781119437499-ch12-cdse-qd-1--cdo-powder"
+      ]
+    },
+    {
+      "id": "pazhanivel2018-9781119437499-ch12-cdse-qd-1--after-s03-heat",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "pazhanivel2018-9781119437499-ch12-cdse-qd-1--after-s02-dissolve"
+      ]
+    },
+    {
+      "id": "pazhanivel2018-9781119437499-ch12-cdse-qd-1--after-s04-inject",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "pazhanivel2018-9781119437499-ch12-cdse-qd-1--after-s03-heat",
+        "pazhanivel2018-9781119437499-ch12-cdse-qd-1--selenium-powder",
+        "pazhanivel2018-9781119437499-ch12-cdse-qd-1--cdo-powder"
+      ]
+    },
+    {
+      "id": "pazhanivel2018-9781119437499-ch12-cdse-qd-1--after-s05-wash",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "pazhanivel2018-9781119437499-ch12-cdse-qd-1--after-s04-inject"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-dissolve",
+      "action": "dissolve",
+      "label": "Dissolve selenium powder in octadecene",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "pazhanivel2018-9781119437499-ch12-cdse-qd-1--selenium-powder"
+      ],
+      "outputs": [
+        "pazhanivel2018-9781119437499-ch12-cdse-qd-1--after-s01-dissolve"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 180,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "180 °C",
+          "evidence": [
+            {
+              "source_id": "pazhanivel2018-9781119437499-ch12",
+              "locator": "Main PDF p.12"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "pazhanivel2018-9781119437499-ch12",
+            "locator": "Main PDF p.11"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dissolve selenium powder in octadecene",
+      "evidence": [
+        {
+          "source_id": "pazhanivel2018-9781119437499-ch12",
+          "locator": "Main PDF p.12"
+        }
+      ]
+    },
+    {
+      "id": "s02-dissolve",
+      "action": "dissolve",
+      "label": "Dissolve CdO powder in oleic acid and octadecene",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-dissolve"
+      ],
+      "inputs": [
+        "pazhanivel2018-9781119437499-ch12-cdse-qd-1--after-s01-dissolve",
+        "pazhanivel2018-9781119437499-ch12-cdse-qd-1--cdo-powder"
+      ],
+      "outputs": [
+        "pazhanivel2018-9781119437499-ch12-cdse-qd-1--after-s02-dissolve"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 180,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "180 °C",
+          "evidence": [
+            {
+              "source_id": "pazhanivel2018-9781119437499-ch12",
+              "locator": "Main PDF p.12"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "pazhanivel2018-9781119437499-ch12",
+            "locator": "Main PDF p.11"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dissolve CdO powder in oleic acid and octadecene",
+      "evidence": [
+        {
+          "source_id": "pazhanivel2018-9781119437499-ch12",
+          "locator": "Main PDF p.12"
+        }
+      ]
+    },
+    {
+      "id": "s03-heat",
+      "action": "heat",
+      "label": "Heat CdO solution to 220°C",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-dissolve"
+      ],
+      "inputs": [
+        "pazhanivel2018-9781119437499-ch12-cdse-qd-1--after-s02-dissolve"
+      ],
+      "outputs": [
+        "pazhanivel2018-9781119437499-ch12-cdse-qd-1--after-s03-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 220,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "220 °C",
+          "evidence": [
+            {
+              "source_id": "pazhanivel2018-9781119437499-ch12",
+              "locator": "Main PDF p.12"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 15,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "15 min",
+          "evidence": [
+            {
+              "source_id": "pazhanivel2018-9781119437499-ch12",
+              "locator": "Main PDF p.12"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "pazhanivel2018-9781119437499-ch12",
+            "locator": "Main PDF p.11"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heat CdO solution to 220°C",
+      "evidence": [
+        {
+          "source_id": "pazhanivel2018-9781119437499-ch12",
+          "locator": "Main PDF p.12"
+        }
+      ]
+    },
+    {
+      "id": "s04-inject",
+      "action": "inject",
+      "label": "Inject selenium stock solution into CdO solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-heat"
+      ],
+      "inputs": [
+        "pazhanivel2018-9781119437499-ch12-cdse-qd-1--after-s03-heat",
+        "pazhanivel2018-9781119437499-ch12-cdse-qd-1--selenium-powder",
+        "pazhanivel2018-9781119437499-ch12-cdse-qd-1--cdo-powder"
+      ],
+      "outputs": [
+        "pazhanivel2018-9781119437499-ch12-cdse-qd-1--after-s04-inject"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 220,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "220 °C",
+          "evidence": [
+            {
+              "source_id": "pazhanivel2018-9781119437499-ch12",
+              "locator": "Main PDF p.12"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 15,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "15 min",
+          "evidence": [
+            {
+              "source_id": "pazhanivel2018-9781119437499-ch12",
+              "locator": "Main PDF p.12"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "pazhanivel2018-9781119437499-ch12",
+            "locator": "Main PDF p.11"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Inject selenium stock solution into CdO solution",
+      "evidence": [
+        {
+          "source_id": "pazhanivel2018-9781119437499-ch12",
+          "locator": "Main PDF p.12"
+        }
+      ]
+    },
+    {
+      "id": "s05-wash",
+      "action": "wash",
+      "label": "Wash QDs with ethanol",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-inject"
+      ],
+      "inputs": [
+        "pazhanivel2018-9781119437499-ch12-cdse-qd-1--after-s04-inject"
+      ],
+      "outputs": [
+        "pazhanivel2018-9781119437499-ch12-cdse-qd-1--after-s05-wash"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Wash QDs with ethanol",
+      "evidence": [
+        {
+          "source_id": "pazhanivel2018-9781119437499-ch12",
+          "locator": "Main PDF p.12"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "pazhanivel2018-9781119437499-ch12-cdse-qd-1--product",
+      "source_sample_label": "CdSe QD",
+      "batch_id": null,
+      "material_state_id": "pazhanivel2018-9781119437499-ch12-cdse-qd-1--after-s05-wash",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "CdSe",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "pazhanivel2018-9781119437499-ch12",
+            "locator": "Main PDF p.12"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "zinc blende",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "pazhanivel2018-9781119437499-ch12",
+            "locator": "Main PDF p.28"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": "sphere",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "pazhanivel2018-9781119437499-ch12",
+            "locator": "Main PDF p.12"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": "oleic acid",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "pazhanivel2018-9781119437499-ch12",
+            "locator": "Main PDF p.10"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "pazhanivel2018-9781119437499-ch12",
+          "locator": "Main PDF p.12"
+        }
+      ],
+      "notes": [
+        "Reactor: conical flask (Main PDF p.10).",
+        "Reaction temperature: 220 degC (Main PDF p.12).",
+        "Reaction time: 15 min (Main PDF p.12)."
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "id": "pazhanivel2018-9781119437499-ch12-cdse-qd-1--photoluminescence-quantum-yield",
+      "sample_id": "pazhanivel2018-9781119437499-ch12-cdse-qd-1--product",
+      "property": "photoluminescence_quantum_yield",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 47.12,
+        "minimum": null,
+        "maximum": null,
+        "unit": "%",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "47.12 %",
+        "evidence": [
+          {
+            "source_id": "pazhanivel2018-9781119437499-ch12",
+            "locator": "Main PDF p.13"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "pazhanivel2018-9781119437499-ch12",
+          "locator": "Main PDF p.13"
+        }
+      ]
+    }
+  ],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
+    "missing_fields": [
+      "Size not reported in the extracted text.",
+      "Emission peak not reported in the extracted text.",
+      "Amount of CdO powder not reported in the extracted text.",
+      "Amount of CdO not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}
