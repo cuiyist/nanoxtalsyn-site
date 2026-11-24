@@ -10,11 +10,11 @@ import {el,link,button,badge,section,disclosure,siteURL,recordURL,human,isEquipm
 
 import {quantityValue} from './quantity-value.mjs';
 
-import {chemicalRegistry,chemicalEntry,chemicalImage,openChemical,hasRotatableChemicalModel,chemicalButtonLabel,chemicalDisplayCaption} from './chemical-viewer.mjs?v=0.48.0';
+import {chemicalRegistry,chemicalEntry,chemicalImage,chemicalCardPicture,openChemical,hasRotatableChemicalModel,chemicalButtonLabel,chemicalDisplayCaption} from './chemical-viewer.mjs?v=0.52.0';
 
-import {mountProtocol} from './protocol-visuals.mjs?v=0.49.0';
+import {mountProtocol} from './protocol-visuals.mjs?v=0.52.0';
 
-import {mountReaderStructures} from './reader-structures.mjs?v=0.48.0';
+import {mountReaderStructures} from './reader-structures.mjs?v=0.52.0';
 
 import {loadReaderPresentations} from './reader-presentation-loader.mjs?v=0.49.0';
 const cache=new Map();
@@ -76,7 +76,7 @@ async function precursors(host,r,presentation={}){
 
  for(const m of chemicals){const card=el('article',undefined,'reader-chemical');card.dataset.materialId=m.id;const entry=chemicalEntry(data,r.record_id,m.id);card.append(el('small',human(m.role)),el('h3',m.name),el('div',formulaFieldText(entry?.displayFormula||entry?.formula||m.formula),'reader-formula'));
 
-  if(entry){const image=cardImage(entry);image.alt=m.name+' chemical structure';card.append(image,button(chemicalButtonLabel(entry),()=>openChemical(entry),'molecule-link'));}else card.append(el('p','Chemical identity is retained in the source record.','reader-note'));
+  if(entry){const image=chemicalCardPicture(entry,m.name+' reference drawing',()=>{const a=cardImage(entry);a.alt=m.name+' chemical structure';return a;});card.append(image,button(chemicalButtonLabel(entry),()=>openChemical(entry),'molecule-link'));}else card.append(el('p','Chemical identity is retained in the source record.','reader-note'));
 
   const qs=Object.entries(m.quantities||{}),known=qs.filter(([,q])=>quantityValue(q)!==null);known.sort(([a],[b])=>Number(/purity|grade/.test(a))-Number(/purity|grade/.test(b)));card.append(quantities(known.slice(0,3),true,r));
 

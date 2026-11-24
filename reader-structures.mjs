@@ -1,7 +1,8 @@
+import {assembleCellView} from './closed-cell-display.mjs?v=0.52.0';
 import {mountFigureMorphology} from './reader-figure-morphology.mjs?v=0.48.0';
 import {mountParticleContext} from './reader-particle.mjs?v=0.48.0';
 import {el,button,link,badge,siteURL,disclosure,recordURL} from './reader-utils.mjs?v=0.41.9';
-import {elementLegend,atomColors} from './chemical-viewer.mjs?v=0.48.0';
+import {elementLegend,atomColors} from './chemical-viewer.mjs?v=0.52.0';
 import {drawFiniteReference} from './finite-crystal-reference.mjs';
 import {defaultCrystalReferences} from './crystal-defaults.mjs?v=0.45.0';
 let registry,roles,availability;
@@ -97,9 +98,10 @@ export async function drawReference(host,ref,finite=false){
  const model=await(await fetch(siteURL('assets/crystal-references/'+(finite?ref.finiteModelPath:ref.modelPath)))).json();if(!view.isConnected)return;
  const viewer=$3Dmol.createViewer(view,{backgroundColor:'#f7fafc'}),initialView=viewer.getView();let extent=1;
  function draw(n=1){viewer.clear();viewer.setView(initialView);extent=n;if(finite){drawFiniteReference(viewer,model);caption.textContent=ref.finiteCaption||'Illustrative finite particle · reference lattice cropped to a declared envelope.';return;}
-  const v=referenceCellVectors(model),point=(i,j,k)=>({x:i*v[0][0]+j*v[1][0]+k*v[2][0],y:i*v[0][1]+j*v[1][1]+k*v[2][1],z:i*v[0][2]+j*v[1][2]+k*v[2][2]});const aa=[];
-  for(let i=0;i<n;i++)for(let j=0;j<n;j++)for(let k=0;k<n;k++){const off=point(i,j,k);for(const a of model.atoms)aa.push({serial:aa.length,elem:a.element??a.elem,x:a.x+off.x,y:a.y+off.y,z:a.z+off.z,properties:{...a.properties,display_occupancy:Object.hasOwn(a,'occupancy')?a.occupancy:1,components:a.components}});}
-  viewer.addModel().addAtoms(aa);viewer.setStyle({},{sphere:{radius:.32,colorfunc:a=>colors[a.elem]||'#8497aa'}});
+  const v=referenceCellVectors(model),point=(i,j,k)=>({x:i*v[0][0]+j*v[1][0]+k*v[2][0],y:i*v[0][1]+j*v[1][1]+k*v[2][1],z:i*v[0][2]+j*v[1][2]+k*v[2][2]});const closed=assembleCellView(model,v,n),aa=closed.atoms;
+  view.dataset.nearestLinks=String(closed.bonds.length);
+  viewer.addModel().addAtoms(aa);viewer.setStyle({},{sphere:{radius:.32,colorfunc:a=>colors[a.elem]||'#8497aa'},
+   stick:{radius:.085,colorfunc:a=>colors[a.elem]||'#8497aa'}});
   for(const a of aa){const occupancy=a.properties.display_occupancy;if(occupancy===null)viewer.setStyle({serial:a.serial},{cross:{radius:.22,linewidth:2,color:colors[a.elem]||'#966fa8'}});else if(occupancy>0&&occupancy<1)viewer.setStyle({serial:a.serial},{sphere:{radius:.32*Math.cbrt(occupancy),opacity:Math.max(.25,occupancy),color:colors[a.elem]||'#966fa8'}});}
   for(let axis=0;axis<3;axis++)for(const b of [0,n])for(const c of [0,n]){const start=[b,c];start.splice(axis,0,0);const end=[...start];end[axis]=n;viewer.addLine({start:point(...start),end:point(...end),color:'#7395a9',linewidth:1.5});}
   viewer.zoomTo();viewer.rotate(18,'y');viewer.rotate(-10,'x');viewer.zoom(.9);viewer.render();

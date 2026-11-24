@@ -1,3 +1,4 @@
+import {precursorReferencePicture} from './coordinate-still-loader.mjs?v=0.52.0';
 import {formulaFieldText} from './source-field-copy.mjs?v=0.45.0';
 import {hasReference3d, chemicalButtonLabel, viewerEntry, flatReferenceReason, chemicalDisplayCaption, chemicalModelCaption} from './chemical-reference-route.mjs?v=0.46.0';
 export {chemicalButtonLabel, chemicalDisplayCaption};
@@ -26,6 +27,12 @@ export function chemicalEntry(data,recordId,materialId){
  scoped.sourceBindingCaption=overrides.caption;return scoped;
 }
 export function chemicalImage(entry){const img=el('img',undefined,'chemical-preview');img.src=new URL(entry.svgPath+'?sha='+entry.assetHashes.svgPath,base);img.alt=entry.name+' · '+entry.depictionKind;img.loading='lazy';return img;}
+export function chemicalCardPicture(entry,label,picture2d){
+ const selected=viewerEntry(entry);
+ return precursorReferencePicture(document,selected,{chemicalBase:base,crystalBase:new URL('assets/crystal-references/',import.meta.url),
+  cellVectors:async model=>(await import('./reader-structures.mjs?v=0.52.0')).referenceCellVectors(model),
+  label},picture2d);
+}
 function atoms(model){const a=model.atoms.map((x,i)=>({index:i,serial:i,elem:x.element??x.elem,x:x.x,y:x.y,z:x.z,bonds:[],bondOrder:[]}));for(const b of model.bonds||[]){a[b.a].bonds.push(b.b);a[b.a].bondOrder.push(b.order);a[b.b].bonds.push(b.a);a[b.b].bondOrder.push(b.order);}return a;}
 const elementNames={H:'Hydrogen',He:'Helium',Li:'Lithium',Be:'Beryllium',B:'Boron',C:'Carbon',N:'Nitrogen',O:'Oxygen',F:'Fluorine',Ne:'Neon',Na:'Sodium',Mg:'Magnesium',Al:'Aluminium',Si:'Silicon',P:'Phosphorus',S:'Sulfur',Cl:'Chlorine',Ar:'Argon',K:'Potassium',Ca:'Calcium',Sc:'Scandium',Ti:'Titanium',V:'Vanadium',Cr:'Chromium',Mn:'Manganese',Fe:'Iron',Co:'Cobalt',Ni:'Nickel',Cu:'Copper',Zn:'Zinc',Ga:'Gallium',Ge:'Germanium',As:'Arsenic',Se:'Selenium',Br:'Bromine',Kr:'Krypton',Rb:'Rubidium',Sr:'Strontium',Y:'Yttrium',Zr:'Zirconium',Nb:'Niobium',Mo:'Molybdenum',Ru:'Ruthenium',Rh:'Rhodium',Pd:'Palladium',Ag:'Silver',Cd:'Cadmium',In:'Indium',Sn:'Tin',Sb:'Antimony',Te:'Tellurium',I:'Iodine',Xe:'Xenon',Cs:'Caesium',Ba:'Barium',La:'Lanthanum',Ce:'Cerium',Pr:'Praseodymium',Nd:'Neodymium',Sm:'Samarium',Eu:'Europium',Gd:'Gadolinium',Tb:'Terbium',Dy:'Dysprosium',Ho:'Holmium',Er:'Erbium',Tm:'Thulium',Yb:'Ytterbium',Lu:'Lutetium',Hf:'Hafnium',Ta:'Tantalum',W:'Tungsten',Re:'Rhenium',Os:'Osmium',Ir:'Iridium',Pt:'Platinum',Au:'Gold',Hg:'Mercury',Tl:'Thallium',Pb:'Lead',Bi:'Bismuth',Th:'Thorium',U:'Uranium'};
 export const atomColors={H:'#c3ccd8',C:'#63748b',N:'#4169d1',O:'#d5475b',F:'#72b866',P:'#e38b27',S:'#d2b128',Cl:'#54a66a',Br:'#a15b37',I:'#8757ae',Si:'#b3a18c',Se:'#db9944',Cd:'#298d9e',Pb:'#70839b',Cs:'#9878c5',Ag:'#91a4b3',Au:'#c4a446',Fe:'#bf7542',Zn:'#6d96ba',Ge:'#9484a8',Te:'#b79b57',La:'#809aad',Ce:'#aaa16d',Mo:'#738c9c',In:'#7e88b5',Co:'#4c83b5',Ni:'#5caa87',Ir:'#9d8fb5',Mn:'#be7eaf',Pt:'#a2afb9',Sn:'#718695',Al:'#b7bfc9',As:'#a48cc4',X:'#9975b3'};
@@ -40,7 +47,7 @@ export async function openChemical(entry){
  const why=flatReferenceReason(entry);if(why)dialog.append(el('p',why,'chemical-caption'));
  try{
  if(entry.readerAmbientReference){
-  const {drawReference}=await import('./reader-structures.mjs?v=0.48.0');
+  const {drawReference}=await import('./reader-structures.mjs?v=0.52.0');
   if(!dialog.open||generation!==dialogGeneration)return;
   host.classList.remove('molecule-model');host.classList.add('reader-structure-panel');host.style.height='auto';
   const mounted=await drawReference(host,entry.readerAmbientReference,false);

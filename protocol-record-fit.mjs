@@ -10,7 +10,23 @@ export function compactDrawingFacts(original,spec,conditions=[],options={}){
   if(!options.fallback)return {facts,fullFacts};
   const full=(label,value,callout)=>{if(!value)return;const marker=callout||label+' ↗',existing=fullFacts.find(x=>x.label===label&&x.value===value);if(existing){if(!existing.callouts.includes(marker))existing.callouts.push(marker);return;}fullFacts.push({label,value,callout:marker,callouts:[marker]});};
   for(const c of conditions)if(c.drawingValue&&c.drawingValue!==c.value)full(c.key.replaceAll('_',' '),c.value,c.drawingValue+' ↗');
-  facts.added=facts.added.map((item,index)=>{if(item.label.length<=24&&!options.minimalLabels)return item;const formula=spec.addedFormulas?.[item.index??index];if(formula&&formula.length<=24&&!options.minimalLabels)return {...item,label:formula};const label='Input '+(index+1);full(label,spec.added[item.index??index]||item.label);return {...item,label:label+' ↗'};});
+  function compactInlet(item,index){
+    const k=item.index??index,exact=spec.added[k]||item.label;
+    const name=exact.replace(/\s+injection stock$/i,'');
+    return [name,spec.addedFormulas?.[k]].find(value=>value&&value.length<=18);
+  }
+  facts.added=facts.added.map((item,index)=>{if(item.label.length<=24&&!options.minimalLabels)return item;const formula=spec.addedFormulas?.[item.index??index];if(formula&&formula.length<=24&&!options.minimalLabels)return {...item,label:formula};
+    const exact=spec.added[item.index??index]||item.label;
+    if(spec.kind==='inject'&&spec.syringeInput){
+      const compact=compactInlet(item,index);
+      // Distinct exact inputs must never share a callout target merely
+      // because they have the same compact name or formula.
+      const unique=compact&&!original.added.some((other,i)=>i!==index&&compactInlet(other,i)===compact);
+      if(unique){const marker=compact+(compact===exact?'':' ↗');
+        if(marker!==compact)full('Input '+(index+1),exact,marker);
+        return {...item,label:marker};}
+    }
+    const label='Input '+(index+1);full(label,exact);return {...item,label:label+' ↗'};});
   if(facts.atmosphere.length>32){full('Atmosphere',facts.atmosphere);facts.atmosphere='Atmosphere ↗';}
   facts.sources=facts.sources.map((source,index)=>{
     const short=source.label.length<=14&&facts.sources.length<8;

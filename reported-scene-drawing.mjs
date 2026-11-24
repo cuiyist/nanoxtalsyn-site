@@ -1,4 +1,4 @@
-import {compactDrawingFacts} from './protocol-record-fit.mjs?v=0.45.0';
+import {compactDrawingFacts} from './protocol-record-fit.mjs?v=0.52.0';
 // Record-derived protocol drawings. Own-field labels use textContent only.
 const ink = '#7899ad';
 let sequence = 0;
@@ -122,7 +122,7 @@ function geometry(spec, id, facts) {
     if(spec.kind==='inject')leaders+=`<path data-part="gas-label-leader" d="M${right} ${Math.min(0,ports.inlet[1]-124)}V17" fill="none" stroke="#6c93a5" stroke-width="1.4"/>`;
   }
   else if(facts.atmosphere)leaders+=`<path data-part="atmosphere-leader" d="M${right} 17V126H${Math.min(238,view.x+view.width-8)}" fill="none" stroke="${ink}" stroke-width="1.2"/>`;
-  if(spec.kind==='inject'&&facts.added.length)leaders+=`<path data-part="addition-label-leader" d="M${left} ${ports.inlet[1]-122}H${ports.inlet[0]-13}" fill="none" stroke="${ink}" stroke-width="1.2"/>`;
+  if(spec.kind==='inject'&&(facts.added.length||spec.syringeInputUnstated))leaders+=`<path data-part="addition-label-leader" d="M${left} ${ports.inlet[1]-122}H${ports.inlet[0]-13}" fill="none" stroke="${ink}" stroke-width="1.2"/>`;
   return `<defs><linearGradient id="${id}-glass"><stop stop-color="#dcecf4" stop-opacity=".8"/><stop offset=".36" stop-color="#fafdff" stop-opacity=".55"/><stop offset="1" stop-color="#c3dbe8" stop-opacity=".7"/></linearGradient><linearGradient id="${id}-metal"><stop stop-color="#d6e2e9"/><stop offset=".45" stop-color="#f3f7fa"/><stop offset="1" stop-color="#b9ccd7"/></linearGradient></defs><ellipse cx="150" cy="247" rx="${Math.min(113,view.width/2-5)}" ry="7" fill="#7193a5" fill-opacity=".1"/><g data-part="apparatus-body">${body}</g><g data-part="leader-line">${leaders}</g>`;
 }
 
@@ -231,7 +231,11 @@ export function createReportedDrawing(spec, conditions = [], options = {}) {
   if(spec.kind==='chamber'&&facts.sources.length){
     inlet=node('div');inlet.className='reported-scene-inlet';Object.assign(inlet.style,{display:'grid',gridTemplateColumns:`repeat(${facts.sources.length},minmax(0,1fr))`,gap:'7px 0',gridColumn:'1 / -1',alignItems:'end'});
     for(const source of facts.sources){const cell=annotation('reported-scene-source',source.label,source.lines,true);cell.style.padding='0 3px';cell.dataset.sourceId=source.id;cell.style.textAlign='center';inlet.append(cell);}
-  }else inlet=annotation('reported-scene-inlet',options.compact?'':'Added',options.fallback&&facts.added.length?[facts.added.map(x=>x.label).join('; ')]:facts.added.map(x=>x.label));
+  }else {
+    let labels=options.fallback&&facts.added.length?[facts.added.map(x=>x.label).join('; ')]:facts.added.map(x=>x.label);
+    if(!labels.length&&spec.kind==='inject'&&spec.syringeInputUnstated)labels=['Input not stated'];
+    inlet=annotation('reported-scene-inlet',options.compact?'':'Added',labels);
+  }
   const atmosphere=annotation('reported-scene-atmosphere','',facts.atmosphere?[facts.atmosphere]:[]);
   if(inlet)upper.append(inlet);if(atmosphere){atmosphere.style.gridColumn='2';atmosphere.style.textAlign='right';upper.append(atmosphere);}if(inlet||atmosphere)drawing.append(upper);
   const equipment=node('div');equipment.className='reported-scene-apparatus';Object.assign(equipment.style,{display:'grid',justifyItems:'center',minWidth:'0',width:'100%'});

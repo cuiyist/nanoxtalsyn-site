@@ -1,11 +1,11 @@
-import {protocolPresentationPolicy,createProtocolArtFrame,createRecordFitController} from './protocol-record-fit.mjs?v=0.45.0';
+import {protocolPresentationPolicy,createProtocolArtFrame,createRecordFitController} from './protocol-record-fit.mjs?v=0.52.0';
 import {readReactorLineNote,reactorEnvironmentText,createReactorLineDetails,reactorLineCaption,reactorDisplayRecord,reactorQuantityUnavailable} from './reactor-lines.mjs';
 import {selectProtocolArt} from './protocol-art-binding.mjs';
 import {operationKind as kind} from './protocol-operation-kind.mjs';
 import {createGenericThermalScene} from './generic-thermal-scenes.mjs?v=0.1.0';
-import {createReportedProtocolScene,REPORTED_SCENE_CAVEAT} from './reported-protocol-scenes.mjs?v=0.49.0';
+import {createReportedProtocolScene,REPORTED_SCENE_CAVEAT} from './reported-protocol-scenes.mjs?v=0.52.0';
 import {matchProtocolCondition} from './protocol-conditions.mjs?v=0.39.1';
-import {mountProtocolReferences} from './protocol-references.mjs?v=0.48.0';
+import {mountProtocolReferences} from './protocol-references.mjs?v=0.52.0';
 import {quantityValue} from './quantity-value.mjs';
 import {conditionFieldText,conditionDisclosureText} from './source-field-copy.mjs?v=0.45.0';
 import {PAPER_PROTOCOLS} from './protocol-modules.mjs?v=0.48.0';

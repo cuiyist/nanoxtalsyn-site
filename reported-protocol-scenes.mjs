@@ -1,7 +1,8 @@
+import {overlayVesselState} from './linked-vessel-drawing.mjs?v=0.52.0';
 import { extendedReportedScene } from './reported-scene-extensions.mjs';
-import { createReportedDrawing, reportedDrawingFacts } from './reported-scene-drawing.mjs?v=0.49.0';
+import { createReportedDrawing, reportedDrawingFacts } from './reported-scene-drawing.mjs?v=0.52.0';
 import { matchProtocolCondition } from './protocol-conditions.mjs?v=0.39.1';
-import { PROTOCOL_SCENE_CAPTION,wireDrawingCallouts } from './protocol-record-fit.mjs?v=0.45.0';
+import { PROTOCOL_SCENE_CAPTION,wireDrawingCallouts } from './protocol-record-fit.mjs?v=0.52.0';
 import { quantityValue } from './quantity-value.mjs';
 // Reader-only scenes. No record writes, paper/model reads or source-specific art.
 // The caller preserves handmade/per-paper handlers and calls this only at the
@@ -292,7 +293,8 @@ function baseSceneSpec(o, r = {}, options = {}, extendedKind = null) {
 
 export function reportedProtocolSceneSpec(o, r = {}, options = {}) {
   const known = baseSceneSpec(o, r, options);
-  if (known) return known;
+  if (known) return overlayVesselState(known,r,o,previous=>baseSceneSpec(previous,r,options),
+    options.formatQuantity||((value)=>value.raw_text||String(value.value)+' '+String(value.unit||'')));
   const extension = extendedReportedScene(o, r, {descriptor: baseSceneSpec, readReactorLineNote: options.readReactorLine});
   if (!extension.kind) return null;
   // Extensions cannot borrow synthesis equipment or route context for a transfer,
@@ -350,6 +352,8 @@ export function createReportedProtocolScene(o, r, options = {}) {
     dd.style.margin = '2px 0 0';
     group.append(dt, dd); labels.append(group);
   };
+  for(const item of spec.carriedDrawingNotes||[])row(item.label,item.value);
+  if(spec.syringeInput)row('Syringe input',spec.syringeInput);
   const formattedConditions = [];
   for (const {key, quantity} of spec.conditions) {
     // The existing Reader formatter retains reported qualifiers and bases.
