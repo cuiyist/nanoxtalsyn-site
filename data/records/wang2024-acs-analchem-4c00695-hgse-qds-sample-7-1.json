@@ -1,0 +1,958 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Suhui Wang; Yi Wang; Tengxiao Guo; Shuya Cao (2024): HgSe QDs (sample 7)",
+  "material": {
+    "formula": "HgSe",
+    "family": "HgSe nanocrystals",
+    "elements": [
+      "Hg",
+      "Se"
+    ],
+    "components": [
+      "HgSe"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Synthesis as described in the source",
+  "sources": [
+    {
+      "id": "wang2024-acs-analchem-4c00695",
+      "doi": "10.1021/acs.analchem.4c00695",
+      "title": "A Long Wave-Infrared Miniatured Quantum Dot Spectrometer",
+      "authors": "Suhui Wang; Yi Wang; Tengxiao Guo; Shuya Cao",
+      "year": 2024,
+      "url": "https://doi.org/10.1021/acs.analchem.4c00695",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "wang2024-acs-analchem-4c00695",
+    "recipe_family": "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    },
+    "phase": {
+      "value": "zinc blende",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "wang2024-acs-analchem-4c00695",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": null,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "not_reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "not reported",
+      "evidence": [],
+      "derivation": null
+    },
+    "morphology": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--hg-oac-2",
+      "name": "Hg(OAc)2",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "mass": {
+          "value": 2.2,
+          "minimum": null,
+          "maximum": null,
+          "unit": "g",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2.2 g",
+          "evidence": [
+            {
+              "source_id": "wang2024-acs-analchem-4c00695",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "wang2024-acs-analchem-4c00695",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--ses2",
+      "name": "SeS2",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "mass": {
+          "value": 1.5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "g",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1.5 g",
+          "evidence": [
+            {
+              "source_id": "wang2024-acs-analchem-4c00695",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "wang2024-acs-analchem-4c00695",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--oleylamine",
+      "name": "oleylamine",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 80,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "80 mL",
+          "evidence": [
+            {
+              "source_id": "wang2024-acs-analchem-4c00695",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "wang2024-acs-analchem-4c00695",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--oleic-acid",
+      "name": "oleic acid",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 40,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "40 mL",
+          "evidence": [
+            {
+              "source_id": "wang2024-acs-analchem-4c00695",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "wang2024-acs-analchem-4c00695",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--ndm",
+      "name": "NDM",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 40,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "40 mL",
+          "evidence": [
+            {
+              "source_id": "wang2024-acs-analchem-4c00695",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "wang2024-acs-analchem-4c00695",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--toluene",
+      "name": "toluene",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "wang2024-acs-analchem-4c00695",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--ethanol",
+      "name": "ethanol",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "wang2024-acs-analchem-4c00695",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--after-s01-degas",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": []
+    },
+    {
+      "id": "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--after-s02-switch-atmosphere",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--after-s01-degas"
+      ]
+    },
+    {
+      "id": "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--after-s03-prepare-precursor",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--after-s02-switch-atmosphere",
+        "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--ses2",
+        "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--oleylamine"
+      ]
+    },
+    {
+      "id": "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--after-s04-inject",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--after-s03-prepare-precursor",
+        "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--ses2",
+        "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--oleylamine"
+      ]
+    },
+    {
+      "id": "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--after-s05-heat",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--after-s04-inject"
+      ]
+    },
+    {
+      "id": "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--after-s06-quench",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--after-s05-heat",
+        "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--ndm"
+      ]
+    },
+    {
+      "id": "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--after-s07-centrifuge",
+      "name": "mixture after step 7",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--after-s06-quench"
+      ]
+    },
+    {
+      "id": "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--after-s08-filter",
+      "name": "mixture after step 8",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--after-s07-centrifuge"
+      ]
+    },
+    {
+      "id": "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--after-s09-mix",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--after-s08-filter",
+        "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--toluene",
+        "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--ethanol"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-degas",
+      "action": "degas",
+      "label": "Degass the solution under vacuum",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [],
+      "outputs": [
+        "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--after-s01-degas"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 85,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "85 °C",
+          "evidence": [
+            {
+              "source_id": "wang2024-acs-analchem-4c00695",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 15,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "15 min",
+          "evidence": [
+            {
+              "source_id": "wang2024-acs-analchem-4c00695",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "wang2024-acs-analchem-4c00695",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Degass the solution under vacuum",
+      "evidence": [
+        {
+          "source_id": "wang2024-acs-analchem-4c00695",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-switch-atmosphere",
+      "action": "switch atmosphere",
+      "label": "Switch atmosphere to N2",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-degas"
+      ],
+      "inputs": [
+        "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--after-s01-degas"
+      ],
+      "outputs": [
+        "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--after-s02-switch-atmosphere"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 80,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "80 °C",
+          "evidence": [
+            {
+              "source_id": "wang2024-acs-analchem-4c00695",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "wang2024-acs-analchem-4c00695",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Switch atmosphere to N2",
+      "evidence": [
+        {
+          "source_id": "wang2024-acs-analchem-4c00695",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s03-prepare-precursor",
+      "action": "prepare precursor",
+      "label": "Prepare Se precursor solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-switch-atmosphere"
+      ],
+      "inputs": [
+        "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--after-s02-switch-atmosphere",
+        "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--ses2",
+        "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--oleylamine"
+      ],
+      "outputs": [
+        "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--after-s03-prepare-precursor"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "wang2024-acs-analchem-4c00695",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Prepare Se precursor solution",
+      "evidence": [
+        {
+          "source_id": "wang2024-acs-analchem-4c00695",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s04-inject",
+      "action": "inject",
+      "label": "Inject Se precursor into the flask",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-prepare-precursor"
+      ],
+      "inputs": [
+        "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--after-s03-prepare-precursor",
+        "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--ses2",
+        "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--oleylamine"
+      ],
+      "outputs": [
+        "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--after-s04-inject"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "wang2024-acs-analchem-4c00695",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Inject Se precursor into the flask",
+      "evidence": [
+        {
+          "source_id": "wang2024-acs-analchem-4c00695",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s05-heat",
+      "action": "heat",
+      "label": "Heat the reaction for 10 minutes",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-inject"
+      ],
+      "inputs": [
+        "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--after-s04-inject"
+      ],
+      "outputs": [
+        "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--after-s05-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 80,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "80 °C",
+          "evidence": [
+            {
+              "source_id": "wang2024-acs-analchem-4c00695",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 10,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "10 min",
+          "evidence": [
+            {
+              "source_id": "wang2024-acs-analchem-4c00695",
+              "locator": "Main PDF p.3"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "wang2024-acs-analchem-4c00695",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heat the reaction for 10 minutes",
+      "evidence": [
+        {
+          "source_id": "wang2024-acs-analchem-4c00695",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s06-quench",
+      "action": "quench",
+      "label": "Quench the reaction with NDM",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s05-heat"
+      ],
+      "inputs": [
+        "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--after-s05-heat",
+        "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--ndm"
+      ],
+      "outputs": [
+        "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--after-s06-quench"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "wang2024-acs-analchem-4c00695",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Quench the reaction with NDM",
+      "evidence": [
+        {
+          "source_id": "wang2024-acs-analchem-4c00695",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    },
+    {
+      "id": "s07-centrifuge",
+      "action": "centrifuge",
+      "label": "Centrifuge the solution",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s06-quench"
+      ],
+      "inputs": [
+        "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--after-s06-quench"
+      ],
+      "outputs": [
+        "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--after-s07-centrifuge"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 10,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "10 min",
+          "evidence": [
+            {
+              "source_id": "wang2024-acs-analchem-4c00695",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Centrifuge the solution",
+      "evidence": [
+        {
+          "source_id": "wang2024-acs-analchem-4c00695",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s08-filter",
+      "action": "filter",
+      "label": "Filter the solution",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s07-centrifuge"
+      ],
+      "inputs": [
+        "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--after-s07-centrifuge"
+      ],
+      "outputs": [
+        "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--after-s08-filter"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Filter the solution",
+      "evidence": [
+        {
+          "source_id": "wang2024-acs-analchem-4c00695",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s09-mix",
+      "action": "mix",
+      "label": "Mix with toluene and ethanol",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s08-filter"
+      ],
+      "inputs": [
+        "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--after-s08-filter",
+        "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--toluene",
+        "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--ethanol"
+      ],
+      "outputs": [
+        "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--after-s09-mix"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "wang2024-acs-analchem-4c00695",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Mix with toluene and ethanol",
+      "evidence": [
+        {
+          "source_id": "wang2024-acs-analchem-4c00695",
+          "locator": "Main PDF p.3"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--product",
+      "source_sample_label": "HgSe QDs (sample 7)",
+      "batch_id": null,
+      "material_state_id": "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--after-s09-mix",
+      "parent_sample_id": null,
+      "composition": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "phase": {
+        "value": "zinc blende",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "wang2024-acs-analchem-4c00695",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "surface": {
+        "value": "T-dodecyl mercaptan (TDM)",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "wang2024-acs-analchem-4c00695",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "wang2024-acs-analchem-4c00695",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "notes": [
+        "Reactor: four-neck flask (Main PDF p.2).",
+        "Reaction temperature: 80 degC (Main PDF p.2).",
+        "Reaction time: 10 min (Main PDF p.3)."
+      ]
+    }
+  ],
+  "measurements": [],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
+    "missing_fields": [
+      "Shape not reported in the extracted text.",
+      "Size not reported in the extracted text.",
+      "Emission peak not reported in the extracted text.",
+      "Plqy not reported in the extracted text.",
+      "Amount of toluene not reported in the extracted text.",
+      "Amount of ethanol not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

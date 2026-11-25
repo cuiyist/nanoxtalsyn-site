@@ -2,7 +2,7 @@
 
 ## Papers used in the published website
 
-Dataset **0.41.2** · **3545 primary source groups** · release `tanjin-x05-optical-size-correction-r02`. Records are not independent experiments.
+Dataset **0.41.2** · **3551 primary source groups** · release `tanjin-x-release06`. Records are not independent experiments.
 
 - not reported (year unrecorded). 10.1007_s11051-010-0042-z. [10.1007/s11051-010-0042-z](https://doi.org/10.1007/s11051-010-0042-z). Review scope remains stated in the linked website records.
 
@@ -5720,6 +5720,8 @@ Dataset **0.41.2** · **3545 primary source groups** · release `tanjin-x05-opti
 
 - Kai-An Tsai; Ping-Yen Hsieh; Ting-Hsuan Lai; Chun-Wen Tsao; Hui Pan; Yan-Gu Lin; Yung-Jung Hsu (2020). Nitrogen-Doped Graphene Quantum Dots for Remarkable Solar Hydrogen Production. [10.1021/acsaem.0c00335](https://doi.org/10.1021/acsaem.0c00335). Review scope remains stated in the linked website records.
 
+- Guobin Mao; Yingxin Ma; Guoqiang Wu; Mingyuan Du; Songbai Tian; Siqi Huang; Xinghu Ji; Zhike He (2020). Novel Method of Clickable Quantum Dot Construction for Bioorthogonal Labeling. [10.1021/acs.analchem.0c03078](https://doi.org/10.1021/acs.analchem.0c03078). Review scope remains stated in the linked website records.
+
 - Keshvar Rahimpour, Reza Teimuri-Mofrad (2020). Novel hybrid supercapacitor based on ferrocenyl modified graphene quantum dot and polypyrrole nanocomposite. [10.1016/j.electacta.2020.136207](https://doi.org/10.1016/j.electacta.2020.136207). Review scope remains stated in the linked website records.
 
 - Muhammad Abdullah; Ruby J. Nelson; Kevin R. Kittilstved (2020). On the formation of superoxide radicals on colloidal ATiO 3 (A = Sr and Ba) nanocrystal surfaces. [10.1039/d0na00106f](https://doi.org/10.1039/d0na00106f). Review scope remains stated in the linked website records.
@@ -5741,6 +5743,8 @@ Dataset **0.41.2** · **3545 primary source groups** · release `tanjin-x05-opti
 - Julien Ramade; Junling Qu; Audrey Chu; Charlie Gréboval; Clément Livache; Nicolas Goubet; Bertille Martinez; Gregory Vincent; Emmanuel Lhuillier (2020). Potential of Colloidal Quantum Dot Based Solar Cells for Near-Infrared Active Detection. [10.1021/acsphotonics.9b01542](https://doi.org/10.1021/acsphotonics.9b01542). Review scope remains stated in the linked website records.
 
 - Antonio Aires; Marco Möller; Aitziber L. Cortajarena (2020). Protein Design for the Synthesis and Stabilization of Highly Fluorescent Quantum Dots. [10.1021/acs.chemmater.0c01484](https://doi.org/10.1021/acs.chemmater.0c01484). Review scope remains stated in the linked website records.
+
+- Wenmin Zhang; Tao Chen; Lichao Su; Xiaoguang Ge; Xiaoyuan Chen; Jibin Song; Huanghao Yang (2020). Quantum Dot-Based Sensitization System for Boosted Photon Absorption and Enhanced Second Near-Infrared Luminescence of Lanthanide-Doped Nanoparticle. [10.1021/acs.analchem.0c00529](https://doi.org/10.1021/acs.analchem.0c00529). Review scope remains stated in the linked website records.
 
 - Oleksandr Selyshchev; Yevhenii Havryliuk; Mykhailo Ya. Valakh; Volodymyr O. Yukhymchuk; Oleksandra Raievska; Oleksandr L. Stroyuk; Volodymyr Dzhagan; Dietrich R.T. Zahn (2020). Raman and X-ray Photoemission Identification of Colloidal Metal Sulfides as Potential Secondary Phases in Nanocrystalline Cu2ZnSnS4 Photovoltaic Absorbers. [10.1021/acsanm.0c00910](https://doi.org/10.1021/acsanm.0c00910). Review scope remains stated in the linked website records.
 
@@ -5779,6 +5783,8 @@ Dataset **0.41.2** · **3545 primary source groups** · release `tanjin-x05-opti
 - Hashini B. Chandrasiri; Eun Byoel Kim; Preston T. Snee (2020). Sterically Encumbered Tris(trialkylsilyl) Phosphine Precursors for Quantum Dot Synthesis. [10.1021/acs.inorgchem.0c02440](https://doi.org/10.1021/acs.inorgchem.0c02440). Review scope remains stated in the linked website records.
 
 - Raivis Eglītis; Urmas Joost; Anzelms Zukuls; Kristaps Rubenis; Reinis Ignatāns; Līga Avotiņa; Larisa Baumane; Krišjānis Šmits; Mika Hirsimäki; Tanel Käämbre; Andris Šutka (2020). Strong, Rapid, and Reversible Photochromic Response of Nb Doped TiO2 Nanocrystal Colloids in Hole Scavenging Media. [10.1021/acsami.0c17902](https://doi.org/10.1021/acsami.0c17902). Review scope remains stated in the linked website records.
+
+- R. Sagayaraj; M. Jegadheeswari; S. Aravazhi; G. Chandrasekaran; A. Dhanalakshmi (2020). Structural, Spectroscopic and Magnetic Study of Nanocrystalline Terbium–Nickel Ferrite by Oxalate Co-Precipitation Method. [10.1007/s42250-020-00153-4](https://doi.org/10.1007/s42250-020-00153-4). Review scope remains stated in the linked website records.
 
 - S. V. Bhandare; Harish Kumar Choudhary; Aroli Venkateshwara Anupama; Ramavat Vijaya Kumar; Rajeev Kumar; Vivekanand Mallappa Jali; Balaram Sahoo (2020). Structure and magnetic properties of Ni substituted Co-Mg nanocrystal line ferrites synthesized by sol-gel auto-combustion method. [10.1063/5.0009023](https://doi.org/10.1063/5.0009023). Review scope remains stated in the linked website records.
 
@@ -6406,6 +6412,8 @@ Dataset **0.41.2** · **3545 primary source groups** · release `tanjin-x05-opti
 
 - Judith Zander; Roland Marschall (2024). 1 min synthesis of phase-pure nanocrystalline high-entropy sulphides for efficient water electrolysis. [10.26434/chemrxiv-2024-n5r4n](https://doi.org/10.26434/chemrxiv-2024-n5r4n). Review scope remains stated in the linked website records.
 
+- Suhui Wang; Yi Wang; Tengxiao Guo; Shuya Cao (2024). A Long Wave-Infrared Miniatured Quantum Dot Spectrometer. [10.1021/acs.analchem.4c00695](https://doi.org/10.1021/acs.analchem.4c00695). Review scope remains stated in the linked website records.
+
 - Hao Zhang; Kerong Jiao; Yongsheng Hu; Zhigao Huang; Yuting Wu; Qingxiu Song; Van Duong Ta; Handong Sun; Hua Shen; Yue Wang (2024). A New Generation of Multimilliwatt‐Class Colloidal Quantum‐Dot Lasers at Full Colors. [10.1002/adma.202413828](https://doi.org/10.1002/adma.202413828). Review scope remains stated in the linked website records.
 
 - Anjali Kumari; Reena K. Sajwan; G. B. V. S. Lakshmi; Pratima R. Solanki (2024). A Selective Detection of Tetracycline in Animal-Derived Food Samples Using Carbon Quantum Dots as a Fluorescent Eye. [10.1021/acssusresmgt.4c00233](https://doi.org/10.1021/acssusresmgt.4c00233). Review scope remains stated in the linked website records.
@@ -6499,6 +6507,8 @@ Dataset **0.41.2** · **3545 primary source groups** · release `tanjin-x05-opti
 - Sheng Li; Wentong Fan; Qiulin Chen; Xinfeng Zhang (2024). Facile Light-Driven Synthesis of Highly Luminous Sulfur Quantum Dots for Fluorescence Sensing and Cell Imaging. [10.1021/acsami.4c05739](https://doi.org/10.1021/acsami.4c05739). Review scope remains stated in the linked website records.
 
 - Han Sol Yang; Seungyong Shin; Seyeong Lim; Dongbeom Heo; Fiza Farooq; Yun-Kun Hong; Gumin Kang; Won-Kook Choi; Soong Ju Oh; Ho Seong Jang (2024). Facile and Low-Energy Consumption Synthesis of α-CsPbI3 Perovskite Quantum Dots for Light-Emitting Diode Applications. [10.1021/acsaelm.4c01495](https://doi.org/10.1021/acsaelm.4c01495). Review scope remains stated in the linked website records.
+
+- Atefeh Karkhaneh; Maziar Marandi (2024). Facile fabrication of quantum dot–sensitized solar cells with multilayer TiO2 NCs/TiO2 HSs/CIS/CdS/CdSe(Xmin)/ZnS photoanode and modification of light scattering and co-sensitization for higher efficiencies. [10.1007/s42247-024-00705-1](https://doi.org/10.1007/s42247-024-00705-1). Review scope remains stated in the linked website records.
 
 - Maziar Marandi; Sana Alejaber; Farkhondeh Mirahmadi (2024). Facile synthesis and application of hyperbranched TiO2 hollow spheres for enhancement of power conversion efficiency of CdSeTe quantum dot-sensitized solar cells. [10.1007/s00339-024-07465-z](https://doi.org/10.1007/s00339-024-07465-z). Review scope remains stated in the linked website records.
 
@@ -6677,6 +6687,8 @@ Dataset **0.41.2** · **3545 primary source groups** · release `tanjin-x05-opti
 - Ali Mehrvar; Solmaz Ghanbari; Gökhan Söylemezoğlu; Umut Toprak (2025). Carbon Quantum Dot Nanoparticles Enhance the Efficacy of Spodoptera littoralis Nucleopolyhedrovirus Suspoemulsion. [10.1002/arch.70027](https://doi.org/10.1002/arch.70027). Review scope remains stated in the linked website records.
 
 - Gabriel Kajiyama Kuriya; Victor Magno Paiva; Sanair Massafra de Oliveira; Agnes Candido Teixeira; Clara Muniz da Silva de Almeida; Jairo Eduardo Leiva Mateus; Joyce Rodrigues de Araujo; Marcelo Eduardo Huguenin Maia da Costa; Natasha Midori Suguihiro; Eliane D’Elia (2025). Carbon Quantum Dots Derived from Garlic ( Allium sativum ) Peel as Corrosion Inhibitor for Mild Steel in HCl Solution. [10.1021/acsomega.5c03224](https://doi.org/10.1021/acsomega.5c03224). Review scope remains stated in the linked website records.
+
+- Dara M. Aziz; Sangar Ali Hassan; Shujahadeen B. Aziz; Dana A. Kader (2025). Carbon quantum dot doped NH₂-MIL-53 for sustainable atmospheric water harvesting. [10.1007/s44371-025-00374-x](https://doi.org/10.1007/s44371-025-00374-x). Review scope remains stated in the linked website records.
 
 - John C. Peterson; Philippe Guyot-Sionnest (2025). Characterization of Mid-Infrared HgTe Colloidal Quantum Dot Photodiodes. [10.1021/acsami.4c21630](https://doi.org/10.1021/acsami.4c21630). Review scope remains stated in the linked website records.
 

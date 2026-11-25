@@ -1,12 +1,12 @@
 {
   "status": "passed",
   "dataset_version": "0.41.2",
-  "records": 7780,
-  "recipe_records": 6197,
+  "records": 7790,
+  "recipe_records": 6207,
   "shared_procedures": 1018,
   "independent_experiment_count": null,
-  "source_groups": 3545,
-  "families": 1571,
+  "source_groups": 3551,
+  "families": 1574,
   "eligible_by_task": {
     "precursor_selection": 97,
     "partial_protocol": 139,
@@ -31,7 +31,7 @@
     "PbS benchmark rows are published numeric experiments, not individually reviewed complete protocols. The baseline is evaluated separately within that study.",
     "Five selected PbS failure rows are retained as evidence with null continuous targets."
   ],
-  "curated_recipes": 6097,
+  "curated_recipes": 6107,
   "contextual_observation_records": 565,
   "published_benchmark_rows": 100,
   "structure_recipe_coverage": {
@@ -53,12 +53,12 @@
     },
     "ready_record_ids": [],
     "exclusion_reason_record_counts": {
-      "audited_task_profile_missing": 7780,
+      "audited_task_profile_missing": 7790,
       "explicit_sample_recipe_link_missing": 21,
       "measured_label_not_approved": 38,
-      "no_sample_coordinate_asset": 7720,
-      "source_review_required": 4895,
-      "task_not_requested": 7755
+      "no_sample_coordinate_asset": 7730,
+      "source_review_required": 4905,
+      "task_not_requested": 7765
     }
   },
   "structure_outcome_coverage": {
@@ -74,7 +74,7 @@
   },
   "reader_collection": {
     "schema_version": "mattersyn.reader-collection/1",
-    "material_families": 1405,
+    "material_families": 1408,
     "material_family_definition": "Distinct directly synthesized material systems; component-only cross-links excluded.",
     "material_systems": [
       "(4-FPEA)4AgBiI8",
@@ -302,6 +302,7 @@
       "CIS/ZnS",
       "CQD/NiFe-LDH",
       "CQDs",
+      "CQDs/NH₂-MIL-53(Al)",
       "CQDs@ZnO:Ga/ZnO",
       "CSS",
       "Ca/P",
@@ -1060,6 +1061,7 @@
       "NaHoF4",
       "NaInS2",
       "NaY",
+      "NaY0.8F4:Yb0.18",
       "NaY78%F4 : Yb20%Er2%",
       "NaYF4",
       "NaYF4:20",
@@ -1082,6 +1084,7 @@
       "Ni0.2Zn0.4Cu0.4Fe2O4",
       "Ni0.3Zn0.3Cu0.4Fe2O4",
       "Ni0.4Zn0.2Cu0.4Fe2O4",
+      "Ni0.5Tb0.5Fe2O4",
       "Ni0.5Zn0.1Cu0.4Fe2O4",
       "Ni0.5Zn0.5Fe2O4",
       "Ni0.6Zn0.0Cu0.4Fe2O4",
@@ -1483,12 +1486,12 @@
       "γ-Fe2O3/HgS",
       "γ-Fe2O3/ZnS"
     ],
-    "contributing_papers": 3545,
+    "contributing_papers": 3551,
     "source_coverage": {
-      "total_contributing_papers": 3545,
+      "total_contributing_papers": 3551,
       "reviewed_contributing_papers": 244,
       "audited_contributing_papers": 244,
-      "machine_extracted_contributing_papers": 3301,
+      "machine_extracted_contributing_papers": 3307,
       "audited_primary_dois": [
         "10.1002/1521-4095(20021002)14:19<1405::aid-adma1405>3.0.co;2-b",
         "10.1002/adfm.200500603",
@@ -2161,9 +2164,12 @@
         "10.1007/s40684-023-00594-5",
         "10.1007/s40820-020-00448-8",
         "10.1007/s40820-023-01134-1",
+        "10.1007/s42247-024-00705-1",
         "10.1007/s42247-024-00987-5",
+        "10.1007/s42250-020-00153-4",
         "10.1007/s42250-025-01301-4",
         "10.1007/s43630-022-00256-6",
+        "10.1007/s44371-025-00374-x",
         "10.1016/j.apsusc.2010.10.092",
         "10.1016/j.apsusc.2010.11.082",
         "10.1016/j.apsusc.2024.160949",
@@ -2238,10 +2244,13 @@
         "10.1021/ac503134r",
         "10.1021/ac503791j",
         "10.1021/acs.accounts.0c00706",
+        "10.1021/acs.analchem.0c00529",
+        "10.1021/acs.analchem.0c03078",
         "10.1021/acs.analchem.0c05102",
         "10.1021/acs.analchem.1c02441",
         "10.1021/acs.analchem.3c00845",
         "10.1021/acs.analchem.3c01967",
+        "10.1021/acs.analchem.4c00695",
         "10.1021/acs.analchem.4c00951",
         "10.1021/acs.analchem.5b03201",
         "10.1021/acs.analchem.5c04255",
@@ -5040,14 +5049,14 @@
       ],
       "count_definition": "Distinct primary sources represented in regular material pages, separated by review status. Each paper counts once regardless of variants; supporting citations do not add papers. Source-extracted contributions are not independently audited or training eligible."
     },
-    "synthesis_structure_pairs": 5659,
+    "synthesis_structure_pairs": 5669,
     "audited_synthesis_structure_pairs": 864,
-    "source_extracted_record_pairs": 4795,
+    "source_extracted_record_pairs": 4805,
     "more_comprehensive_pairs": 6,
-    "partial_pairs": 5653,
+    "partial_pairs": 5663,
     "count_definition": "Audited recipe/sample rows retain their existing definition and identifiers. The display also includes one row per additional source-linked record, including supporting and assembly records. Missing product or structural details remain blank. Multiple measurements do not add rows. This display count does not grant training eligibility or establish independent physical batches.",
     "documentation_rubric": "More comprehensive means at least two source-backed quantified synthesis inputs, two source-located operations, reported temperature and duration, sample-linked phase, morphology and dimensions, and an available reference unit cell. Partial pairs lack one or more of these categories. Neither category implies a complete laboratory SOP or training readiness.",
-    "all_records": 7780,
+    "all_records": 7790,
     "experimental_series_rows": 100
   },
   "queue_count": 37,
@@ -5056,21 +5065,21 @@
     "schema": "nanoxtalsyn-record-export/1",
     "download_name": "records.jsonl",
     "encoding": "utf-8",
-    "record_count": 7780,
-    "bytes": 120830626,
-    "sha256": "ce81033db933eb71baa1647a6776232177de637f28d399be27caa28d7a9d226d",
+    "record_count": 7790,
+    "bytes": 120990613,
+    "sha256": "cc01e9a574e28e3b9caa0c6ef82405a2af97a15fdf5750e87b7f1dbfcb003e14",
     "parts": [
       {
         "path": "records.part0001.jsonl",
-        "bytes": 83874642,
+        "bytes": 83869504,
         "record_count": 5183,
-        "sha256": "36d7297635a7a712009a9704f7b4ad21a1ad341ffb1d45f438ff4afe5e0a1591"
+        "sha256": "d6e6a269328d53c79757d2af36d62354c833a7e6a950306bd0655b2f58d88896"
       },
       {
         "path": "records.part0002.jsonl",
-        "bytes": 36955984,
-        "record_count": 2597,
-        "sha256": "7c796fa2766e823783d370cf750fc7e2fa0d008050ce8dc3398e1b3af22097c8"
+        "bytes": 37121109,
+        "record_count": 2607,
+        "sha256": "a3546f2084317c42199c42045503edb3b568d33816f25a83677498c512241323"
       }
     ]
   }

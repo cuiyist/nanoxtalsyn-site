@@ -1,6 +1,6 @@
 {
   "schema_version": "mattersyn.reader-collection/1",
-  "material_families": 1405,
+  "material_families": 1408,
   "material_family_definition": "Distinct directly synthesized material systems; component-only cross-links excluded.",
   "material_systems": [
     "(4-FPEA)4AgBiI8",
@@ -228,6 +228,7 @@
     "CIS/ZnS",
     "CQD/NiFe-LDH",
     "CQDs",
+    "CQDs/NH₂-MIL-53(Al)",
     "CQDs@ZnO:Ga/ZnO",
     "CSS",
     "Ca/P",
@@ -986,6 +987,7 @@
     "NaHoF4",
     "NaInS2",
     "NaY",
+    "NaY0.8F4:Yb0.18",
     "NaY78%F4 : Yb20%Er2%",
     "NaYF4",
     "NaYF4:20",
@@ -1008,6 +1010,7 @@
     "Ni0.2Zn0.4Cu0.4Fe2O4",
     "Ni0.3Zn0.3Cu0.4Fe2O4",
     "Ni0.4Zn0.2Cu0.4Fe2O4",
+    "Ni0.5Tb0.5Fe2O4",
     "Ni0.5Zn0.1Cu0.4Fe2O4",
     "Ni0.5Zn0.5Fe2O4",
     "Ni0.6Zn0.0Cu0.4Fe2O4",
@@ -1409,12 +1412,12 @@
     "γ-Fe2O3/HgS",
     "γ-Fe2O3/ZnS"
   ],
-  "contributing_papers": 3545,
+  "contributing_papers": 3551,
   "source_coverage": {
-    "total_contributing_papers": 3545,
+    "total_contributing_papers": 3551,
     "reviewed_contributing_papers": 244,
     "audited_contributing_papers": 244,
-    "machine_extracted_contributing_papers": 3301,
+    "machine_extracted_contributing_papers": 3307,
     "audited_primary_dois": [
       "10.1002/1521-4095(20021002)14:19<1405::aid-adma1405>3.0.co;2-b",
       "10.1002/adfm.200500603",
@@ -2087,9 +2090,12 @@
       "10.1007/s40684-023-00594-5",
       "10.1007/s40820-020-00448-8",
       "10.1007/s40820-023-01134-1",
+      "10.1007/s42247-024-00705-1",
       "10.1007/s42247-024-00987-5",
+      "10.1007/s42250-020-00153-4",
       "10.1007/s42250-025-01301-4",
       "10.1007/s43630-022-00256-6",
+      "10.1007/s44371-025-00374-x",
       "10.1016/j.apsusc.2010.10.092",
       "10.1016/j.apsusc.2010.11.082",
       "10.1016/j.apsusc.2024.160949",
@@ -2164,10 +2170,13 @@
       "10.1021/ac503134r",
       "10.1021/ac503791j",
       "10.1021/acs.accounts.0c00706",
+      "10.1021/acs.analchem.0c00529",
+      "10.1021/acs.analchem.0c03078",
       "10.1021/acs.analchem.0c05102",
       "10.1021/acs.analchem.1c02441",
       "10.1021/acs.analchem.3c00845",
       "10.1021/acs.analchem.3c01967",
+      "10.1021/acs.analchem.4c00695",
       "10.1021/acs.analchem.4c00951",
       "10.1021/acs.analchem.5b03201",
       "10.1021/acs.analchem.5c04255",
@@ -4966,14 +4975,14 @@
     ],
     "count_definition": "Distinct primary sources represented in regular material pages, separated by review status. Each paper counts once regardless of variants; supporting citations do not add papers. Source-extracted contributions are not independently audited or training eligible."
   },
-  "synthesis_structure_pairs": 5659,
+  "synthesis_structure_pairs": 5669,
   "audited_synthesis_structure_pairs": 864,
-  "source_extracted_record_pairs": 4795,
+  "source_extracted_record_pairs": 4805,
   "more_comprehensive_pairs": 6,
-  "partial_pairs": 5653,
+  "partial_pairs": 5663,
   "count_definition": "Audited recipe/sample rows retain their existing definition and identifiers. The display also includes one row per additional source-linked record, including supporting and assembly records. Missing product or structural details remain blank. Multiple measurements do not add rows. This display count does not grant training eligibility or establish independent physical batches.",
   "documentation_rubric": "More comprehensive means at least two source-backed quantified synthesis inputs, two source-located operations, reported temperature and duration, sample-linked phase, morphology and dimensions, and an available reference unit cell. Partial pairs lack one or more of these categories. Neither category implies a complete laboratory SOP or training readiness.",
-  "all_records": 7780,
+  "all_records": 7790,
   "experimental_series_rows": 100,
   "pairs": [
     {
@@ -319073,6 +319082,221 @@
       }
     },
     {
+      "pair_row_id": "aziz2025-s44371-025-00374-x-cqds-nh2-mil-53-al-1::display",
+      "record_id": "aziz2025-s44371-025-00374-x-cqds-nh2-mil-53-al-1",
+      "record_page_path": "records/aziz2025-s44371-025-00374-x-cqds-nh2-mil-53-al-1.html",
+      "source_group": "aziz2025-s44371-025-00374-x",
+      "title": "Dara M. Aziz; Sangar Ali Hassan; Shujahadeen B. Aziz; Dana A. Kader (2025): CQDs/NH₂-MIL-53(Al)",
+      "doi": "10.1007/s44371-025-00374-x",
+      "year": 2025,
+      "method": "Hydrothermal",
+      "recipe_label": "Dara M. Aziz; Sangar Ali Hassan; Shujahadeen B. Aziz; Dana A. Kader (2025): CQDs/NH₂-MIL-53(Al)",
+      "sample_id": "aziz2025-s44371-025-00374-x-cqds-nh2-mil-53-al-1--product",
+      "source_sample_label": "CQDs/NH₂-MIL-53(Al)",
+      "composition": {
+        "value": "CQDs/NH₂-MIL-53(Al)",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "aziz2025-s44371-025-00374-x",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "recipe_link_evidence": [
+        {
+          "source_id": "aziz2025-s44371-025-00374-x",
+          "locator": "Main PDF p.4"
+        }
+      ],
+      "product_structure_fields": [
+        {
+          "kind": "phase",
+          "value": {
+            "value": "orthorhombic",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "aziz2025-s44371-025-00374-x",
+                "locator": "Main PDF p.7"
+              }
+            ],
+            "note": ""
+          }
+        },
+        {
+          "kind": "morphology",
+          "value": {
+            "value": "sphere",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "aziz2025-s44371-025-00374-x",
+                "locator": "Main PDF p.9"
+              }
+            ],
+            "note": ""
+          }
+        }
+      ],
+      "structural_measurements": [
+        {
+          "measurement_id": "aziz2025-s44371-025-00374-x-cqds-nh2-mil-53-al-1--size",
+          "property": "particle_size",
+          "descriptor_field": "morphology.dimensions",
+          "value": {
+            "value": 300,
+            "minimum": null,
+            "maximum": null,
+            "unit": "nm",
+            "status": "reported",
+            "approximate": false,
+            "qualifier": "",
+            "basis": "",
+            "raw_text": "300 nm",
+            "evidence": [
+              {
+                "source_id": "aziz2025-s44371-025-00374-x",
+                "locator": "Main PDF p.9"
+              }
+            ],
+            "derivation": null
+          },
+          "technique": "not reported",
+          "conditions": "",
+          "evidence": [
+            {
+              "source_id": "aziz2025-s44371-025-00374-x",
+              "locator": "Main PDF p.9"
+            }
+          ]
+        }
+      ],
+      "review_status": "source_extracted",
+      "display_pair_basis": "one_record",
+      "cross_record_sample_deduplication": "not_assessed",
+      "documentation": {
+        "category": "partial",
+        "checks": {
+          "quantified_recipe_and_ordered_conditions": true,
+          "reported_phase": true,
+          "reported_morphology": true,
+          "reported_dimensions": true,
+          "reference_unit_cell_available": false
+        },
+        "missing_categories": [
+          "reference_unit_cell_available"
+        ],
+        "reference_ids": [],
+        "quantified_input_evidence": {
+          "material_ids": [
+            "aziz2025-s44371-025-00374-x-cqds-nh2-mil-53-al-1--2-amino-benzene-1-4-dicarboxylic-acid",
+            "aziz2025-s44371-025-00374-x-cqds-nh2-mil-53-al-1--aluminum-chloride-hexahydrate",
+            "aziz2025-s44371-025-00374-x-cqds-nh2-mil-53-al-1--deionized-water",
+            "aziz2025-s44371-025-00374-x-cqds-nh2-mil-53-al-1--n-n-dimethylformamide"
+          ],
+          "fields": [
+            {
+              "material_id": "aziz2025-s44371-025-00374-x-cqds-nh2-mil-53-al-1--aluminum-chloride-hexahydrate",
+              "pointer": "/materials/0/quantities/mass",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.304,
+                "minimum": null,
+                "maximum": null,
+                "unit": "g",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.304 g",
+                "evidence": [
+                  {
+                    "source_id": "aziz2025-s44371-025-00374-x",
+                    "locator": "Main PDF p.4"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "aziz2025-s44371-025-00374-x-cqds-nh2-mil-53-al-1--2-amino-benzene-1-4-dicarboxylic-acid",
+              "pointer": "/materials/1/quantities/mass",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.224,
+                "minimum": null,
+                "maximum": null,
+                "unit": "g",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.224 g",
+                "evidence": [
+                  {
+                    "source_id": "aziz2025-s44371-025-00374-x",
+                    "locator": "Main PDF p.4"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "aziz2025-s44371-025-00374-x-cqds-nh2-mil-53-al-1--n-n-dimethylformamide",
+              "pointer": "/materials/2/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 45,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "45 mL",
+                "evidence": [
+                  {
+                    "source_id": "aziz2025-s44371-025-00374-x",
+                    "locator": "Main PDF p.4"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "aziz2025-s44371-025-00374-x-cqds-nh2-mil-53-al-1--deionized-water",
+              "pointer": "/materials/3/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 15,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "15 mL",
+                "evidence": [
+                  {
+                    "source_id": "aziz2025-s44371-025-00374-x",
+                    "locator": "Main PDF p.4"
+                  }
+                ],
+                "derivation": null
+              }
+            }
+          ],
+          "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
+        },
+        "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
+      }
+    },
+    {
       "pair_row_id": "b-b-s2011-ja1089809-zns-zn1-xcdxs-surface-alloyed-nanocrysta-1::display",
       "record_id": "b-b-s2011-ja1089809-zns-zn1-xcdxs-surface-alloyed-nanocrysta-1",
       "record_page_path": "records/b-b-s2011-ja1089809-zns-zn1-xcdxs-surface-alloyed-nanocrysta-1.html",
@@ -515114,6 +515338,233 @@
       }
     },
     {
+      "pair_row_id": "karkhaneh2024-s42247-024-00705-1-cis-qds-1::display",
+      "record_id": "karkhaneh2024-s42247-024-00705-1-cis-qds-1",
+      "record_page_path": "records/karkhaneh2024-s42247-024-00705-1-cis-qds-1.html",
+      "source_group": "karkhaneh2024-s42247-024-00705-1",
+      "title": "Atefeh Karkhaneh; Maziar Marandi (2024): CIS QDs",
+      "doi": "10.1007/s42247-024-00705-1",
+      "year": 2024,
+      "method": "Chemical precipitation",
+      "recipe_label": "Atefeh Karkhaneh; Maziar Marandi (2024): CIS QDs",
+      "sample_id": "karkhaneh2024-s42247-024-00705-1-cis-qds-1--product",
+      "source_sample_label": "CIS QDs",
+      "composition": {
+        "value": "CuInS2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "karkhaneh2024-s42247-024-00705-1",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "recipe_link_evidence": [
+        {
+          "source_id": "karkhaneh2024-s42247-024-00705-1",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "product_structure_fields": [
+        {
+          "kind": "phase",
+          "value": {
+            "value": "tetragonal chalcopyrite",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "karkhaneh2024-s42247-024-00705-1",
+                "locator": "Main PDF p.4"
+              }
+            ],
+            "note": ""
+          }
+        }
+      ],
+      "structural_measurements": [
+        {
+          "measurement_id": "karkhaneh2024-s42247-024-00705-1-cis-qds-1--size",
+          "property": "particle_size",
+          "descriptor_field": "morphology.dimensions",
+          "value": {
+            "value": 8,
+            "minimum": null,
+            "maximum": null,
+            "unit": "nm",
+            "status": "reported",
+            "approximate": false,
+            "qualifier": "",
+            "basis": "",
+            "raw_text": "8 nm",
+            "evidence": [
+              {
+                "source_id": "karkhaneh2024-s42247-024-00705-1",
+                "locator": "Main PDF p.4"
+              }
+            ],
+            "derivation": null
+          },
+          "technique": "not reported",
+          "conditions": "",
+          "evidence": [
+            {
+              "source_id": "karkhaneh2024-s42247-024-00705-1",
+              "locator": "Main PDF p.4"
+            }
+          ]
+        }
+      ],
+      "review_status": "source_extracted",
+      "display_pair_basis": "one_record",
+      "cross_record_sample_deduplication": "not_assessed",
+      "documentation": {
+        "category": "partial",
+        "checks": {
+          "quantified_recipe_and_ordered_conditions": false,
+          "reported_phase": true,
+          "reported_morphology": false,
+          "reported_dimensions": true,
+          "reference_unit_cell_available": false
+        },
+        "missing_categories": [
+          "quantified_recipe_and_ordered_conditions",
+          "reported_morphology",
+          "reference_unit_cell_available"
+        ],
+        "reference_ids": [],
+        "quantified_input_evidence": {
+          "material_ids": [
+            "karkhaneh2024-s42247-024-00705-1-cis-qds-1--cucl2",
+            "karkhaneh2024-s42247-024-00705-1-cis-qds-1--incl3",
+            "karkhaneh2024-s42247-024-00705-1-cis-qds-1--na2s",
+            "karkhaneh2024-s42247-024-00705-1-cis-qds-1--nh4oh",
+            "karkhaneh2024-s42247-024-00705-1-cis-qds-1--thioglycolic-acid"
+          ],
+          "fields": [
+            {
+              "material_id": "karkhaneh2024-s42247-024-00705-1-cis-qds-1--incl3",
+              "pointer": "/materials/0/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.3,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.3 mL",
+                "evidence": [
+                  {
+                    "source_id": "karkhaneh2024-s42247-024-00705-1",
+                    "locator": "Main PDF p.3"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "karkhaneh2024-s42247-024-00705-1-cis-qds-1--cucl2",
+              "pointer": "/materials/1/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.6,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.6 mL",
+                "evidence": [
+                  {
+                    "source_id": "karkhaneh2024-s42247-024-00705-1",
+                    "locator": "Main PDF p.3"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "karkhaneh2024-s42247-024-00705-1-cis-qds-1--thioglycolic-acid",
+              "pointer": "/materials/2/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 2,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "2 mL",
+                "evidence": [
+                  {
+                    "source_id": "karkhaneh2024-s42247-024-00705-1",
+                    "locator": "Main PDF p.3"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "karkhaneh2024-s42247-024-00705-1-cis-qds-1--nh4oh",
+              "pointer": "/materials/3/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.3,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.3 mL",
+                "evidence": [
+                  {
+                    "source_id": "karkhaneh2024-s42247-024-00705-1",
+                    "locator": "Main PDF p.3"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "karkhaneh2024-s42247-024-00705-1-cis-qds-1--na2s",
+              "pointer": "/materials/4/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.6,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.6 mL",
+                "evidence": [
+                  {
+                    "source_id": "karkhaneh2024-s42247-024-00705-1",
+                    "locator": "Main PDF p.3"
+                  }
+                ],
+                "derivation": null
+              }
+            }
+          ],
+          "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
+        },
+        "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
+      }
+    },
+    {
       "pair_row_id": "karkhaneh2025-s42247-024-00987-5-cuins2-nanocrystals-cis-ncs-synthesized-1::display",
       "record_id": "karkhaneh2025-s42247-024-00987-5-cuins2-nanocrystals-cis-ncs-synthesized-1",
       "record_page_path": "records/karkhaneh2025-s42247-024-00987-5-cuins2-nanocrystals-cis-ncs-synthesized-1.html",
@@ -617835,6 +618286,263 @@
                 "evidence": [
                   {
                     "source_id": "mao2017-acs-analchem-7b03053",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            }
+          ],
+          "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
+        },
+        "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
+      }
+    },
+    {
+      "pair_row_id": "mao2020-acs-analchem-0c03078-dbco-dna-functionalized-cdte-zn2-qds-2::display",
+      "record_id": "mao2020-acs-analchem-0c03078-dbco-dna-functionalized-cdte-zn2-qds-2",
+      "record_page_path": "records/mao2020-acs-analchem-0c03078-dbco-dna-functionalized-cdte-zn2-qds-2.html",
+      "source_group": "mao2020-acs-analchem-0c03078",
+      "title": "Guobin Mao; Yingxin Ma; Guoqiang Wu; Mingyuan Du; Songbai Tian; Siqi Huang; Xinghu Ji; Zhike He (2020): DBCO-DNA-functionalized CdTe:Zn2+ QDs",
+      "doi": "10.1021/acs.analchem.0c03078",
+      "year": 2020,
+      "method": "Synthesis as described in the source",
+      "recipe_label": "Guobin Mao; Yingxin Ma; Guoqiang Wu; Mingyuan Du; Songbai Tian; Siqi Huang; Xinghu Ji; Zhike He (2020): DBCO-DNA-functionalized CdTe:Zn2+ QDs",
+      "sample_id": "mao2020-acs-analchem-0c03078-dbco-dna-functionalized-cdte-zn2-qds-2--product",
+      "source_sample_label": "DBCO-DNA-functionalized CdTe:Zn2+ QDs",
+      "composition": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "recipe_link_evidence": [
+        {
+          "source_id": "mao2020-acs-analchem-0c03078",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "product_structure_fields": [
+        {
+          "kind": "phase",
+          "value": {
+            "value": "crystal",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "mao2020-acs-analchem-0c03078",
+                "locator": "Main PDF p.3"
+              }
+            ],
+            "note": ""
+          }
+        },
+        {
+          "kind": "morphology",
+          "value": {
+            "value": "sphere",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "mao2020-acs-analchem-0c03078",
+                "locator": "Main PDF p.3"
+              }
+            ],
+            "note": ""
+          }
+        }
+      ],
+      "structural_measurements": [
+        {
+          "measurement_id": "mao2020-acs-analchem-0c03078-dbco-dna-functionalized-cdte-zn2-qds-2--size",
+          "property": "diameter",
+          "descriptor_field": "morphology.dimensions",
+          "value": {
+            "value": 3.9,
+            "minimum": null,
+            "maximum": null,
+            "unit": "nm",
+            "status": "reported",
+            "approximate": false,
+            "qualifier": "",
+            "basis": "",
+            "raw_text": "3.9 nm",
+            "evidence": [
+              {
+                "source_id": "mao2020-acs-analchem-0c03078",
+                "locator": "Main PDF p.3"
+              }
+            ],
+            "derivation": null
+          },
+          "technique": "TEM",
+          "conditions": "",
+          "evidence": [
+            {
+              "source_id": "mao2020-acs-analchem-0c03078",
+              "locator": "Main PDF p.3"
+            }
+          ]
+        }
+      ],
+      "review_status": "source_extracted",
+      "display_pair_basis": "one_record",
+      "cross_record_sample_deduplication": "not_assessed",
+      "documentation": {
+        "category": "partial",
+        "checks": {
+          "quantified_recipe_and_ordered_conditions": false,
+          "reported_phase": true,
+          "reported_morphology": true,
+          "reported_dimensions": true,
+          "reference_unit_cell_available": false
+        },
+        "missing_categories": [
+          "quantified_recipe_and_ordered_conditions",
+          "reference_unit_cell_available"
+        ],
+        "reference_ids": [],
+        "quantified_input_evidence": {
+          "material_ids": [],
+          "fields": [],
+          "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
+        },
+        "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
+      }
+    },
+    {
+      "pair_row_id": "mao2020-acs-analchem-0c03078-n3-dna-functionalized-cdte-zn2-qds-1::display",
+      "record_id": "mao2020-acs-analchem-0c03078-n3-dna-functionalized-cdte-zn2-qds-1",
+      "record_page_path": "records/mao2020-acs-analchem-0c03078-n3-dna-functionalized-cdte-zn2-qds-1.html",
+      "source_group": "mao2020-acs-analchem-0c03078",
+      "title": "Guobin Mao; Yingxin Ma; Guoqiang Wu; Mingyuan Du; Songbai Tian; Siqi Huang; Xinghu Ji; Zhike He (2020): N3-DNA-functionalized CdTe:Zn2+ QDs",
+      "doi": "10.1021/acs.analchem.0c03078",
+      "year": 2020,
+      "method": "Solvothermal",
+      "recipe_label": "Guobin Mao; Yingxin Ma; Guoqiang Wu; Mingyuan Du; Songbai Tian; Siqi Huang; Xinghu Ji; Zhike He (2020): N3-DNA-functionalized CdTe:Zn2+ QDs",
+      "sample_id": "mao2020-acs-analchem-0c03078-n3-dna-functionalized-cdte-zn2-qds-1--product",
+      "source_sample_label": "N3-DNA-functionalized CdTe:Zn2+ QDs",
+      "composition": {
+        "value": "CdTe:Zn2+",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "mao2020-acs-analchem-0c03078",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "recipe_link_evidence": [
+        {
+          "source_id": "mao2020-acs-analchem-0c03078",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "product_structure_fields": [
+        {
+          "kind": "phase",
+          "value": {
+            "value": "crystal",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "mao2020-acs-analchem-0c03078",
+                "locator": "Main PDF p.3"
+              }
+            ],
+            "note": ""
+          }
+        },
+        {
+          "kind": "morphology",
+          "value": {
+            "value": "sphere",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "mao2020-acs-analchem-0c03078",
+                "locator": "Main PDF p.3"
+              }
+            ],
+            "note": ""
+          }
+        }
+      ],
+      "structural_measurements": [
+        {
+          "measurement_id": "mao2020-acs-analchem-0c03078-n3-dna-functionalized-cdte-zn2-qds-1--size",
+          "property": "diameter",
+          "descriptor_field": "morphology.dimensions",
+          "value": {
+            "value": 3.9,
+            "minimum": null,
+            "maximum": null,
+            "unit": "nm",
+            "status": "reported",
+            "approximate": false,
+            "qualifier": "",
+            "basis": "",
+            "raw_text": "3.9 nm",
+            "evidence": [
+              {
+                "source_id": "mao2020-acs-analchem-0c03078",
+                "locator": "Main PDF p.3"
+              }
+            ],
+            "derivation": null
+          },
+          "technique": "TEM",
+          "conditions": "",
+          "evidence": [
+            {
+              "source_id": "mao2020-acs-analchem-0c03078",
+              "locator": "Main PDF p.3"
+            }
+          ]
+        }
+      ],
+      "review_status": "source_extracted",
+      "display_pair_basis": "one_record",
+      "cross_record_sample_deduplication": "not_assessed",
+      "documentation": {
+        "category": "partial",
+        "checks": {
+          "quantified_recipe_and_ordered_conditions": false,
+          "reported_phase": true,
+          "reported_morphology": true,
+          "reported_dimensions": true,
+          "reference_unit_cell_available": false
+        },
+        "missing_categories": [
+          "quantified_recipe_and_ordered_conditions",
+          "reference_unit_cell_available"
+        ],
+        "reference_ids": [],
+        "quantified_input_evidence": {
+          "material_ids": [
+            "mao2020-acs-analchem-0c03078-n3-dna-functionalized-cdte-zn2-qds-1--ps-po-dna-n3"
+          ],
+          "fields": [
+            {
+              "material_id": "mao2020-acs-analchem-0c03078-n3-dna-functionalized-cdte-zn2-qds-1--ps-po-dna-n3",
+              "pointer": "/materials/2/quantities/amount",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 25,
+                "minimum": null,
+                "maximum": null,
+                "unit": "nmol",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "25 nmol",
+                "evidence": [
+                  {
+                    "source_id": "mao2020-acs-analchem-0c03078",
                     "locator": "Main PDF p.2"
                   }
                 ],
@@ -723452,6 +724160,222 @@
       }
     },
     {
+      "pair_row_id": "sagayaraj2020-s42250-020-00153-4-ni0-5tb0-5fe2o4-pvp-nanoparticles-1::display",
+      "record_id": "sagayaraj2020-s42250-020-00153-4-ni0-5tb0-5fe2o4-pvp-nanoparticles-1",
+      "record_page_path": "records/sagayaraj2020-s42250-020-00153-4-ni0-5tb0-5fe2o4-pvp-nanoparticles-1.html",
+      "source_group": "sagayaraj2020-s42250-020-00153-4",
+      "title": "R. Sagayaraj; M. Jegadheeswari; S. Aravazhi; G. Chandrasekaran; A. Dhanalakshmi (2020): Ni0.5Tb0.5Fe2O4/PVP nanoparticles",
+      "doi": "10.1007/s42250-020-00153-4",
+      "year": 2020,
+      "method": "Co-precipitation",
+      "recipe_label": "R. Sagayaraj; M. Jegadheeswari; S. Aravazhi; G. Chandrasekaran; A. Dhanalakshmi (2020): Ni0.5Tb0.5Fe2O4/PVP nanoparticles",
+      "sample_id": "sagayaraj2020-s42250-020-00153-4-ni0-5tb0-5fe2o4-pvp-nanoparticles-1--product",
+      "source_sample_label": "Ni0.5Tb0.5Fe2O4/PVP nanoparticles",
+      "composition": {
+        "value": "Ni0.5Tb0.5Fe2O4",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "sagayaraj2020-s42250-020-00153-4",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "recipe_link_evidence": [
+        {
+          "source_id": "sagayaraj2020-s42250-020-00153-4",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "product_structure_fields": [
+        {
+          "kind": "phase",
+          "value": {
+            "value": "inverse spinel",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "sagayaraj2020-s42250-020-00153-4",
+                "locator": "Main PDF p.1"
+              }
+            ],
+            "note": ""
+          }
+        },
+        {
+          "kind": "morphology",
+          "value": {
+            "value": "sphere",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "sagayaraj2020-s42250-020-00153-4",
+                "locator": "Main PDF p.1"
+              }
+            ],
+            "note": ""
+          }
+        }
+      ],
+      "structural_measurements": [
+        {
+          "measurement_id": "sagayaraj2020-s42250-020-00153-4-ni0-5tb0-5fe2o4-pvp-nanoparticles-1--size",
+          "property": "crystallite_size",
+          "descriptor_field": "crystal_structure.coherence_length",
+          "value": {
+            "value": 10,
+            "minimum": null,
+            "maximum": null,
+            "unit": "nm",
+            "status": "reported",
+            "approximate": false,
+            "qualifier": "",
+            "basis": "",
+            "raw_text": "10 nm",
+            "evidence": [
+              {
+                "source_id": "sagayaraj2020-s42250-020-00153-4",
+                "locator": "Main PDF p.3"
+              }
+            ],
+            "derivation": null
+          },
+          "technique": "XRD",
+          "conditions": "",
+          "evidence": [
+            {
+              "source_id": "sagayaraj2020-s42250-020-00153-4",
+              "locator": "Main PDF p.3"
+            }
+          ]
+        }
+      ],
+      "review_status": "source_extracted",
+      "display_pair_basis": "one_record",
+      "cross_record_sample_deduplication": "not_assessed",
+      "documentation": {
+        "category": "partial",
+        "checks": {
+          "quantified_recipe_and_ordered_conditions": true,
+          "reported_phase": true,
+          "reported_morphology": true,
+          "reported_dimensions": false,
+          "reference_unit_cell_available": false
+        },
+        "missing_categories": [
+          "reported_dimensions",
+          "reference_unit_cell_available"
+        ],
+        "reference_ids": [],
+        "quantified_input_evidence": {
+          "material_ids": [
+            "sagayaraj2020-s42250-020-00153-4-ni0-5tb0-5fe2o4-pvp-nanoparticles-1--ferric-sulfate-monohydrate",
+            "sagayaraj2020-s42250-020-00153-4-ni0-5tb0-5fe2o4-pvp-nanoparticles-1--nickel-sulfate-hexahydrate",
+            "sagayaraj2020-s42250-020-00153-4-ni0-5tb0-5fe2o4-pvp-nanoparticles-1--polyvinylpyrrolidone-pvp",
+            "sagayaraj2020-s42250-020-00153-4-ni0-5tb0-5fe2o4-pvp-nanoparticles-1--terbium-iii-sulfate-octahydrate"
+          ],
+          "fields": [
+            {
+              "material_id": "sagayaraj2020-s42250-020-00153-4-ni0-5tb0-5fe2o4-pvp-nanoparticles-1--nickel-sulfate-hexahydrate",
+              "pointer": "/materials/0/quantities/concentration",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.5,
+                "minimum": null,
+                "maximum": null,
+                "unit": "M",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.5 M",
+                "evidence": [
+                  {
+                    "source_id": "sagayaraj2020-s42250-020-00153-4",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "sagayaraj2020-s42250-020-00153-4-ni0-5tb0-5fe2o4-pvp-nanoparticles-1--ferric-sulfate-monohydrate",
+              "pointer": "/materials/1/quantities/concentration",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 2,
+                "minimum": null,
+                "maximum": null,
+                "unit": "M",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "2 M",
+                "evidence": [
+                  {
+                    "source_id": "sagayaraj2020-s42250-020-00153-4",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "sagayaraj2020-s42250-020-00153-4-ni0-5tb0-5fe2o4-pvp-nanoparticles-1--terbium-iii-sulfate-octahydrate",
+              "pointer": "/materials/2/quantities/concentration",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.5,
+                "minimum": null,
+                "maximum": null,
+                "unit": "M",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.5 M",
+                "evidence": [
+                  {
+                    "source_id": "sagayaraj2020-s42250-020-00153-4",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "sagayaraj2020-s42250-020-00153-4-ni0-5tb0-5fe2o4-pvp-nanoparticles-1--polyvinylpyrrolidone-pvp",
+              "pointer": "/materials/3/quantities/mass",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 1,
+                "minimum": null,
+                "maximum": null,
+                "unit": "g",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "1 g",
+                "evidence": [
+                  {
+                    "source_id": "sagayaraj2020-s42250-020-00153-4",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            }
+          ],
+          "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
+        },
+        "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
+      }
+    },
+    {
       "pair_row_id": "saha2014-ja509019k-cds-zava-gel-1::display",
       "record_id": "saha2014-ja509019k-cds-zava-gel-1",
       "record_page_path": "records/saha2014-ja509019k-cds-zava-gel-1.html",
@@ -828383,6 +829307,196 @@
       }
     },
     {
+      "pair_row_id": "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1::display",
+      "record_id": "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1",
+      "record_page_path": "records/wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1.html",
+      "source_group": "wang2024-acs-analchem-4c00695",
+      "title": "Suhui Wang; Yi Wang; Tengxiao Guo; Shuya Cao (2024): HgSe QDs (sample 7)",
+      "doi": "10.1021/acs.analchem.4c00695",
+      "year": 2024,
+      "method": "Synthesis as described in the source",
+      "recipe_label": "Suhui Wang; Yi Wang; Tengxiao Guo; Shuya Cao (2024): HgSe QDs (sample 7)",
+      "sample_id": "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--product",
+      "source_sample_label": "HgSe QDs (sample 7)",
+      "composition": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "recipe_link_evidence": [
+        {
+          "source_id": "wang2024-acs-analchem-4c00695",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "product_structure_fields": [
+        {
+          "kind": "phase",
+          "value": {
+            "value": "zinc blende",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "wang2024-acs-analchem-4c00695",
+                "locator": "Main PDF p.3"
+              }
+            ],
+            "note": ""
+          }
+        }
+      ],
+      "structural_measurements": [],
+      "review_status": "source_extracted",
+      "display_pair_basis": "one_record",
+      "cross_record_sample_deduplication": "not_assessed",
+      "documentation": {
+        "category": "partial",
+        "checks": {
+          "quantified_recipe_and_ordered_conditions": true,
+          "reported_phase": true,
+          "reported_morphology": false,
+          "reported_dimensions": false,
+          "reference_unit_cell_available": false
+        },
+        "missing_categories": [
+          "reported_morphology",
+          "reported_dimensions",
+          "reference_unit_cell_available"
+        ],
+        "reference_ids": [],
+        "quantified_input_evidence": {
+          "material_ids": [
+            "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--hg-oac-2",
+            "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--ndm",
+            "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--oleic-acid",
+            "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--oleylamine",
+            "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--ses2"
+          ],
+          "fields": [
+            {
+              "material_id": "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--hg-oac-2",
+              "pointer": "/materials/0/quantities/mass",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 2.2,
+                "minimum": null,
+                "maximum": null,
+                "unit": "g",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "2.2 g",
+                "evidence": [
+                  {
+                    "source_id": "wang2024-acs-analchem-4c00695",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--ses2",
+              "pointer": "/materials/1/quantities/mass",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 1.5,
+                "minimum": null,
+                "maximum": null,
+                "unit": "g",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "1.5 g",
+                "evidence": [
+                  {
+                    "source_id": "wang2024-acs-analchem-4c00695",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--oleylamine",
+              "pointer": "/materials/2/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 80,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "80 mL",
+                "evidence": [
+                  {
+                    "source_id": "wang2024-acs-analchem-4c00695",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--oleic-acid",
+              "pointer": "/materials/3/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 40,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "40 mL",
+                "evidence": [
+                  {
+                    "source_id": "wang2024-acs-analchem-4c00695",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "wang2024-acs-analchem-4c00695-hgse-qds-sample-7-1--ndm",
+              "pointer": "/materials/4/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 40,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "40 mL",
+                "evidence": [
+                  {
+                    "source_id": "wang2024-acs-analchem-4c00695",
+                    "locator": "Main PDF p.3"
+                  }
+                ],
+                "derivation": null
+              }
+            }
+          ],
+          "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
+        },
+        "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
+      }
+    },
+    {
       "pair_row_id": "wang2024-acs-chemmater-4c02283-wurtzite-cds-quantum-wires-qws-1::display",
       "record_id": "wang2024-acs-chemmater-4c02283-wurtzite-cds-quantum-wires-qws-1",
       "record_page_path": "records/wang2024-acs-chemmater-4c02283-wurtzite-cds-quantum-wires-qws-1.html",
@@ -902784,6 +903898,1006 @@
                   {
                     "source_id": "zhang2019-jacs-9b06932",
                     "locator": "Main PDF p.9"
+                  }
+                ],
+                "derivation": null
+              }
+            }
+          ],
+          "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
+        },
+        "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
+      }
+    },
+    {
+      "pair_row_id": "zhang2020-acs-analchem-0c00529-ag2s-qd-sensitized-er3-doped-lnp-1::display",
+      "record_id": "zhang2020-acs-analchem-0c00529-ag2s-qd-sensitized-er3-doped-lnp-1",
+      "record_page_path": "records/zhang2020-acs-analchem-0c00529-ag2s-qd-sensitized-er3-doped-lnp-1.html",
+      "source_group": "zhang2020-acs-analchem-0c00529",
+      "title": "Wenmin Zhang; Tao Chen; Lichao Su; Xiaoguang Ge; Xiaoyuan Chen; Jibin Song; Huanghao Yang (2020): Ag2S QD-sensitized Er3+-doped LNP",
+      "doi": "10.1021/acs.analchem.0c00529",
+      "year": 2020,
+      "method": "Thermal decomposition",
+      "recipe_label": "Wenmin Zhang; Tao Chen; Lichao Su; Xiaoguang Ge; Xiaoyuan Chen; Jibin Song; Huanghao Yang (2020): Ag2S QD-sensitized Er3+-doped LNP",
+      "sample_id": "zhang2020-acs-analchem-0c00529-ag2s-qd-sensitized-er3-doped-lnp-1--product",
+      "source_sample_label": "Ag2S QD-sensitized Er3+-doped LNP",
+      "composition": {
+        "value": "Ag2S, NaY0.8F4/Yb0.18/Er0.02",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zhang2020-acs-analchem-0c00529",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "recipe_link_evidence": [
+        {
+          "source_id": "zhang2020-acs-analchem-0c00529",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "product_structure_fields": [
+        {
+          "kind": "morphology",
+          "value": {
+            "value": "sphere",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "zhang2020-acs-analchem-0c00529",
+                "locator": "Main PDF p.4"
+              }
+            ],
+            "note": ""
+          }
+        }
+      ],
+      "structural_measurements": [
+        {
+          "measurement_id": "zhang2020-acs-analchem-0c00529-ag2s-qd-sensitized-er3-doped-lnp-1--size",
+          "property": "diameter",
+          "descriptor_field": "morphology.dimensions",
+          "value": {
+            "value": 32,
+            "minimum": null,
+            "maximum": null,
+            "unit": "nm",
+            "status": "reported",
+            "approximate": false,
+            "qualifier": "",
+            "basis": "",
+            "raw_text": "32 nm",
+            "evidence": [
+              {
+                "source_id": "zhang2020-acs-analchem-0c00529",
+                "locator": "Main PDF p.4"
+              }
+            ],
+            "derivation": null
+          },
+          "technique": "TEM",
+          "conditions": "",
+          "evidence": [
+            {
+              "source_id": "zhang2020-acs-analchem-0c00529",
+              "locator": "Main PDF p.4"
+            }
+          ]
+        }
+      ],
+      "review_status": "source_extracted",
+      "display_pair_basis": "one_record",
+      "cross_record_sample_deduplication": "not_assessed",
+      "documentation": {
+        "category": "partial",
+        "checks": {
+          "quantified_recipe_and_ordered_conditions": true,
+          "reported_phase": false,
+          "reported_morphology": true,
+          "reported_dimensions": true,
+          "reference_unit_cell_available": false
+        },
+        "missing_categories": [
+          "reported_phase",
+          "reference_unit_cell_available"
+        ],
+        "reference_ids": [],
+        "quantified_input_evidence": {
+          "material_ids": [
+            "zhang2020-acs-analchem-0c00529-ag2s-qd-sensitized-er3-doped-lnp-1--1-octadecene-ode",
+            "zhang2020-acs-analchem-0c00529-ag2s-qd-sensitized-er3-doped-lnp-1--er-ch3co2-3",
+            "zhang2020-acs-analchem-0c00529-ag2s-qd-sensitized-er3-doped-lnp-1--naoh",
+            "zhang2020-acs-analchem-0c00529-ag2s-qd-sensitized-er3-doped-lnp-1--nh4f",
+            "zhang2020-acs-analchem-0c00529-ag2s-qd-sensitized-er3-doped-lnp-1--oleic-acid-oa",
+            "zhang2020-acs-analchem-0c00529-ag2s-qd-sensitized-er3-doped-lnp-1--y-ch3co2-3",
+            "zhang2020-acs-analchem-0c00529-ag2s-qd-sensitized-er3-doped-lnp-1--yb-ch3co2-3"
+          ],
+          "fields": [
+            {
+              "material_id": "zhang2020-acs-analchem-0c00529-ag2s-qd-sensitized-er3-doped-lnp-1--y-ch3co2-3",
+              "pointer": "/materials/0/quantities/amount",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.8,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mmol",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.8 mmol",
+                "evidence": [
+                  {
+                    "source_id": "zhang2020-acs-analchem-0c00529",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "zhang2020-acs-analchem-0c00529-ag2s-qd-sensitized-er3-doped-lnp-1--yb-ch3co2-3",
+              "pointer": "/materials/1/quantities/amount",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.18,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mmol",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.18 mmol",
+                "evidence": [
+                  {
+                    "source_id": "zhang2020-acs-analchem-0c00529",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "zhang2020-acs-analchem-0c00529-ag2s-qd-sensitized-er3-doped-lnp-1--er-ch3co2-3",
+              "pointer": "/materials/2/quantities/amount",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.02,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mmol",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.02 mmol",
+                "evidence": [
+                  {
+                    "source_id": "zhang2020-acs-analchem-0c00529",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "zhang2020-acs-analchem-0c00529-ag2s-qd-sensitized-er3-doped-lnp-1--oleic-acid-oa",
+              "pointer": "/materials/3/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 6,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "6 mL",
+                "evidence": [
+                  {
+                    "source_id": "zhang2020-acs-analchem-0c00529",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "zhang2020-acs-analchem-0c00529-ag2s-qd-sensitized-er3-doped-lnp-1--1-octadecene-ode",
+              "pointer": "/materials/4/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 17,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "17 mL",
+                "evidence": [
+                  {
+                    "source_id": "zhang2020-acs-analchem-0c00529",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "zhang2020-acs-analchem-0c00529-ag2s-qd-sensitized-er3-doped-lnp-1--nh4f",
+              "pointer": "/materials/5/quantities/amount",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 4.0,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mmol",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "4 mmol",
+                "evidence": [
+                  {
+                    "source_id": "zhang2020-acs-analchem-0c00529",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "zhang2020-acs-analchem-0c00529-ag2s-qd-sensitized-er3-doped-lnp-1--naoh",
+              "pointer": "/materials/6/quantities/amount",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 2.5,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mmol",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "2.5 mmol",
+                "evidence": [
+                  {
+                    "source_id": "zhang2020-acs-analchem-0c00529",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            }
+          ],
+          "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
+        },
+        "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
+      }
+    },
+    {
+      "pair_row_id": "zhang2020-acs-analchem-0c00529-ag2s-qds-2::display",
+      "record_id": "zhang2020-acs-analchem-0c00529-ag2s-qds-2",
+      "record_page_path": "records/zhang2020-acs-analchem-0c00529-ag2s-qds-2.html",
+      "source_group": "zhang2020-acs-analchem-0c00529",
+      "title": "Wenmin Zhang; Tao Chen; Lichao Su; Xiaoguang Ge; Xiaoyuan Chen; Jibin Song; Huanghao Yang (2020): Ag2S QDs",
+      "doi": "10.1021/acs.analchem.0c00529",
+      "year": 2020,
+      "method": "Synthesis as described in the source",
+      "recipe_label": "Wenmin Zhang; Tao Chen; Lichao Su; Xiaoguang Ge; Xiaoyuan Chen; Jibin Song; Huanghao Yang (2020): Ag2S QDs",
+      "sample_id": "zhang2020-acs-analchem-0c00529-ag2s-qds-2--product",
+      "source_sample_label": "Ag2S QDs",
+      "composition": {
+        "value": "Ag2S",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zhang2020-acs-analchem-0c00529",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "recipe_link_evidence": [
+        {
+          "source_id": "zhang2020-acs-analchem-0c00529",
+          "locator": "Main PDF p.4"
+        }
+      ],
+      "product_structure_fields": [
+        {
+          "kind": "morphology",
+          "value": {
+            "value": "sphere",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "zhang2020-acs-analchem-0c00529",
+                "locator": "Main PDF p.4"
+              }
+            ],
+            "note": ""
+          }
+        }
+      ],
+      "structural_measurements": [
+        {
+          "measurement_id": "zhang2020-acs-analchem-0c00529-ag2s-qds-2--size",
+          "property": "diameter",
+          "descriptor_field": "morphology.dimensions",
+          "value": {
+            "value": 5,
+            "minimum": null,
+            "maximum": null,
+            "unit": "nm",
+            "status": "reported",
+            "approximate": false,
+            "qualifier": "",
+            "basis": "",
+            "raw_text": "5 nm",
+            "evidence": [
+              {
+                "source_id": "zhang2020-acs-analchem-0c00529",
+                "locator": "Main PDF p.4"
+              }
+            ],
+            "derivation": null
+          },
+          "technique": "TEM",
+          "conditions": "",
+          "evidence": [
+            {
+              "source_id": "zhang2020-acs-analchem-0c00529",
+              "locator": "Main PDF p.4"
+            }
+          ]
+        }
+      ],
+      "review_status": "source_extracted",
+      "display_pair_basis": "one_record",
+      "cross_record_sample_deduplication": "not_assessed",
+      "documentation": {
+        "category": "partial",
+        "checks": {
+          "quantified_recipe_and_ordered_conditions": false,
+          "reported_phase": false,
+          "reported_morphology": true,
+          "reported_dimensions": true,
+          "reference_unit_cell_available": false
+        },
+        "missing_categories": [
+          "quantified_recipe_and_ordered_conditions",
+          "reported_phase",
+          "reference_unit_cell_available"
+        ],
+        "reference_ids": [],
+        "quantified_input_evidence": {
+          "material_ids": [
+            "zhang2020-acs-analchem-0c00529-ag2s-qds-2--1-octanethiol",
+            "zhang2020-acs-analchem-0c00529-ag2s-qds-2--agno3",
+            "zhang2020-acs-analchem-0c00529-ag2s-qds-2--ch3cooag",
+            "zhang2020-acs-analchem-0c00529-ag2s-qds-2--ethylene-glycol-eg",
+            "zhang2020-acs-analchem-0c00529-ag2s-qds-2--ode",
+            "zhang2020-acs-analchem-0c00529-ag2s-qds-2--se",
+            "zhang2020-acs-analchem-0c00529-ag2s-qds-2--top"
+          ],
+          "fields": [
+            {
+              "material_id": "zhang2020-acs-analchem-0c00529-ag2s-qds-2--agno3",
+              "pointer": "/materials/0/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 85,
+                "minimum": null,
+                "maximum": null,
+                "unit": "µL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "85 µL",
+                "evidence": [
+                  {
+                    "source_id": "zhang2020-acs-analchem-0c00529",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "zhang2020-acs-analchem-0c00529-ag2s-qds-2--ethylene-glycol-eg",
+              "pointer": "/materials/1/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 20,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "20 mL",
+                "evidence": [
+                  {
+                    "source_id": "zhang2020-acs-analchem-0c00529",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "zhang2020-acs-analchem-0c00529-ag2s-qds-2--ch3cooag",
+              "pointer": "/materials/2/quantities/amount",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.1,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mmol",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.1 mmol",
+                "evidence": [
+                  {
+                    "source_id": "zhang2020-acs-analchem-0c00529",
+                    "locator": "Main PDF p.20"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "zhang2020-acs-analchem-0c00529-ag2s-qds-2--1-octanethiol",
+              "pointer": "/materials/3/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 286,
+                "minimum": null,
+                "maximum": null,
+                "unit": "µL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "286 µL",
+                "evidence": [
+                  {
+                    "source_id": "zhang2020-acs-analchem-0c00529",
+                    "locator": "Main PDF p.20"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "zhang2020-acs-analchem-0c00529-ag2s-qds-2--se",
+              "pointer": "/materials/4/quantities/amount",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.1,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mmol",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.1 mmol",
+                "evidence": [
+                  {
+                    "source_id": "zhang2020-acs-analchem-0c00529",
+                    "locator": "Main PDF p.20"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "zhang2020-acs-analchem-0c00529-ag2s-qds-2--top",
+              "pointer": "/materials/5/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 1.5,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "1.5 mL",
+                "evidence": [
+                  {
+                    "source_id": "zhang2020-acs-analchem-0c00529",
+                    "locator": "Main PDF p.20"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "zhang2020-acs-analchem-0c00529-ag2s-qds-2--ode",
+              "pointer": "/materials/6/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 5,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "5 mL",
+                "evidence": [
+                  {
+                    "source_id": "zhang2020-acs-analchem-0c00529",
+                    "locator": "Main PDF p.20"
+                  }
+                ],
+                "derivation": null
+              }
+            }
+          ],
+          "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
+        },
+        "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
+      }
+    },
+    {
+      "pair_row_id": "zhang2020-acs-analchem-0c00529-ag2se-qds-3::display",
+      "record_id": "zhang2020-acs-analchem-0c00529-ag2se-qds-3",
+      "record_page_path": "records/zhang2020-acs-analchem-0c00529-ag2se-qds-3.html",
+      "source_group": "zhang2020-acs-analchem-0c00529",
+      "title": "Wenmin Zhang; Tao Chen; Lichao Su; Xiaoguang Ge; Xiaoyuan Chen; Jibin Song; Huanghao Yang (2020): Ag2Se QDs",
+      "doi": "10.1021/acs.analchem.0c00529",
+      "year": 2020,
+      "method": "Synthesis as described in the source",
+      "recipe_label": "Wenmin Zhang; Tao Chen; Lichao Su; Xiaoguang Ge; Xiaoyuan Chen; Jibin Song; Huanghao Yang (2020): Ag2Se QDs",
+      "sample_id": "zhang2020-acs-analchem-0c00529-ag2se-qds-3--product",
+      "source_sample_label": "Ag2Se QDs",
+      "composition": {
+        "value": "Ag2Se",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zhang2020-acs-analchem-0c00529",
+            "locator": "Main PDF p.20"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "recipe_link_evidence": [
+        {
+          "source_id": "zhang2020-acs-analchem-0c00529",
+          "locator": "Main PDF p.20"
+        }
+      ],
+      "product_structure_fields": [
+        {
+          "kind": "morphology",
+          "value": {
+            "value": "sphere",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "zhang2020-acs-analchem-0c00529",
+                "locator": "Main PDF p.20"
+              }
+            ],
+            "note": ""
+          }
+        }
+      ],
+      "structural_measurements": [],
+      "review_status": "source_extracted",
+      "display_pair_basis": "one_record",
+      "cross_record_sample_deduplication": "not_assessed",
+      "documentation": {
+        "category": "partial",
+        "checks": {
+          "quantified_recipe_and_ordered_conditions": true,
+          "reported_phase": false,
+          "reported_morphology": true,
+          "reported_dimensions": false,
+          "reference_unit_cell_available": false
+        },
+        "missing_categories": [
+          "reported_phase",
+          "reported_dimensions",
+          "reference_unit_cell_available"
+        ],
+        "reference_ids": [],
+        "quantified_input_evidence": {
+          "material_ids": [
+            "zhang2020-acs-analchem-0c00529-ag2se-qds-3--1-octanethiol",
+            "zhang2020-acs-analchem-0c00529-ag2se-qds-3--ch3cooag",
+            "zhang2020-acs-analchem-0c00529-ag2se-qds-3--ode",
+            "zhang2020-acs-analchem-0c00529-ag2se-qds-3--se",
+            "zhang2020-acs-analchem-0c00529-ag2se-qds-3--top"
+          ],
+          "fields": [
+            {
+              "material_id": "zhang2020-acs-analchem-0c00529-ag2se-qds-3--ch3cooag",
+              "pointer": "/materials/0/quantities/amount",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.1,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mmol",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.1 mmol",
+                "evidence": [
+                  {
+                    "source_id": "zhang2020-acs-analchem-0c00529",
+                    "locator": "Main PDF p.20"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "zhang2020-acs-analchem-0c00529-ag2se-qds-3--1-octanethiol",
+              "pointer": "/materials/1/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 286,
+                "minimum": null,
+                "maximum": null,
+                "unit": "µL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "286 µL",
+                "evidence": [
+                  {
+                    "source_id": "zhang2020-acs-analchem-0c00529",
+                    "locator": "Main PDF p.20"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "zhang2020-acs-analchem-0c00529-ag2se-qds-3--ode",
+              "pointer": "/materials/2/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 5,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "5 mL",
+                "evidence": [
+                  {
+                    "source_id": "zhang2020-acs-analchem-0c00529",
+                    "locator": "Main PDF p.20"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "zhang2020-acs-analchem-0c00529-ag2se-qds-3--se",
+              "pointer": "/materials/3/quantities/amount",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.1,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mmol",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.1 mmol",
+                "evidence": [
+                  {
+                    "source_id": "zhang2020-acs-analchem-0c00529",
+                    "locator": "Main PDF p.20"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "zhang2020-acs-analchem-0c00529-ag2se-qds-3--top",
+              "pointer": "/materials/4/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 1.5,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "1.5 mL",
+                "evidence": [
+                  {
+                    "source_id": "zhang2020-acs-analchem-0c00529",
+                    "locator": "Main PDF p.20"
+                  }
+                ],
+                "derivation": null
+              }
+            }
+          ],
+          "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
+        },
+        "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
+      }
+    },
+    {
+      "pair_row_id": "zhang2020-acs-analchem-0c00529-nay0-8f4-yb0-18-er0-02-core-with-1-9-nm-4::display",
+      "record_id": "zhang2020-acs-analchem-0c00529-nay0-8f4-yb0-18-er0-02-core-with-1-9-nm-4",
+      "record_page_path": "records/zhang2020-acs-analchem-0c00529-nay0-8f4-yb0-18-er0-02-core-with-1-9-nm-4.html",
+      "source_group": "zhang2020-acs-analchem-0c00529",
+      "title": "Wenmin Zhang; Tao Chen; Lichao Su; Xiaoguang Ge; Xiaoyuan Chen; Jibin Song; Huanghao Yang (2020): NaY0.8F4:Yb0.18,Er0.02 core with ~1.9 nm NaYF4 shell",
+      "doi": "10.1021/acs.analchem.0c00529",
+      "year": 2020,
+      "method": "Solvothermal",
+      "recipe_label": "Wenmin Zhang; Tao Chen; Lichao Su; Xiaoguang Ge; Xiaoyuan Chen; Jibin Song; Huanghao Yang (2020): NaY0.8F4:Yb0.18,Er0.02 core with ~1.9 nm NaYF4 shell",
+      "sample_id": "zhang2020-acs-analchem-0c00529-nay0-8f4-yb0-18-er0-02-core-with-1-9-nm-4--product",
+      "source_sample_label": "NaY0.8F4:Yb0.18,Er0.02 core with ~1.9 nm NaYF4 shell",
+      "composition": {
+        "value": "NaY0.8F4:Yb0.18,Er0.02",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zhang2020-acs-analchem-0c00529",
+            "locator": "Main PDF p.30"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "recipe_link_evidence": [
+        {
+          "source_id": "zhang2020-acs-analchem-0c00529",
+          "locator": "Main PDF p.30"
+        }
+      ],
+      "product_structure_fields": [
+        {
+          "kind": "phase",
+          "value": {
+            "value": "hexagonal",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "zhang2020-acs-analchem-0c00529",
+                "locator": "Main PDF p.29"
+              }
+            ],
+            "note": ""
+          }
+        },
+        {
+          "kind": "morphology",
+          "value": {
+            "value": "sphere",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "zhang2020-acs-analchem-0c00529",
+                "locator": "Main PDF p.30"
+              }
+            ],
+            "note": ""
+          }
+        }
+      ],
+      "structural_measurements": [],
+      "review_status": "source_extracted",
+      "display_pair_basis": "one_record",
+      "cross_record_sample_deduplication": "not_assessed",
+      "documentation": {
+        "category": "partial",
+        "checks": {
+          "quantified_recipe_and_ordered_conditions": true,
+          "reported_phase": true,
+          "reported_morphology": true,
+          "reported_dimensions": false,
+          "reference_unit_cell_available": false
+        },
+        "missing_categories": [
+          "reported_dimensions",
+          "reference_unit_cell_available"
+        ],
+        "reference_ids": [],
+        "quantified_input_evidence": {
+          "material_ids": [
+            "zhang2020-acs-analchem-0c00529-nay0-8f4-yb0-18-er0-02-core-with-1-9-nm-4--methanol",
+            "zhang2020-acs-analchem-0c00529-nay0-8f4-yb0-18-er0-02-core-with-1-9-nm-4--naoh",
+            "zhang2020-acs-analchem-0c00529-nay0-8f4-yb0-18-er0-02-core-with-1-9-nm-4--nay0-8f4-yb0-18-er0-02-core",
+            "zhang2020-acs-analchem-0c00529-nay0-8f4-yb0-18-er0-02-core-with-1-9-nm-4--nh4f",
+            "zhang2020-acs-analchem-0c00529-nay0-8f4-yb0-18-er0-02-core-with-1-9-nm-4--ode",
+            "zhang2020-acs-analchem-0c00529-nay0-8f4-yb0-18-er0-02-core-with-1-9-nm-4--oleic-acid-oa",
+            "zhang2020-acs-analchem-0c00529-nay0-8f4-yb0-18-er0-02-core-with-1-9-nm-4--y-ch3co2-3"
+          ],
+          "fields": [
+            {
+              "material_id": "zhang2020-acs-analchem-0c00529-nay0-8f4-yb0-18-er0-02-core-with-1-9-nm-4--y-ch3co2-3",
+              "pointer": "/materials/0/quantities/amount",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.05,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mmol",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.05 mmol",
+                "evidence": [
+                  {
+                    "source_id": "zhang2020-acs-analchem-0c00529",
+                    "locator": "Main PDF p.30"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "zhang2020-acs-analchem-0c00529-nay0-8f4-yb0-18-er0-02-core-with-1-9-nm-4--oleic-acid-oa",
+              "pointer": "/materials/1/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 3,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "3 mL",
+                "evidence": [
+                  {
+                    "source_id": "zhang2020-acs-analchem-0c00529",
+                    "locator": "Main PDF p.30"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "zhang2020-acs-analchem-0c00529-nay0-8f4-yb0-18-er0-02-core-with-1-9-nm-4--ode",
+              "pointer": "/materials/2/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 7,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "7 mL",
+                "evidence": [
+                  {
+                    "source_id": "zhang2020-acs-analchem-0c00529",
+                    "locator": "Main PDF p.30"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "zhang2020-acs-analchem-0c00529-nay0-8f4-yb0-18-er0-02-core-with-1-9-nm-4--nay0-8f4-yb0-18-er0-02-core",
+              "pointer": "/materials/3/quantities/amount",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.2,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mmol",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.2 mmol",
+                "evidence": [
+                  {
+                    "source_id": "zhang2020-acs-analchem-0c00529",
+                    "locator": "Main PDF p.30"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "zhang2020-acs-analchem-0c00529-nay0-8f4-yb0-18-er0-02-core-with-1-9-nm-4--nh4f",
+              "pointer": "/materials/4/quantities/amount",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.2,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mmol",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.2 mmol",
+                "evidence": [
+                  {
+                    "source_id": "zhang2020-acs-analchem-0c00529",
+                    "locator": "Main PDF p.30"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "zhang2020-acs-analchem-0c00529-nay0-8f4-yb0-18-er0-02-core-with-1-9-nm-4--naoh",
+              "pointer": "/materials/5/quantities/amount",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.125,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mmol",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.125 mmol",
+                "evidence": [
+                  {
+                    "source_id": "zhang2020-acs-analchem-0c00529",
+                    "locator": "Main PDF p.30"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "zhang2020-acs-analchem-0c00529-nay0-8f4-yb0-18-er0-02-core-with-1-9-nm-4--methanol",
+              "pointer": "/materials/6/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 6,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "6 mL",
+                "evidence": [
+                  {
+                    "source_id": "zhang2020-acs-analchem-0c00529",
+                    "locator": "Main PDF p.30"
                   }
                 ],
                 "derivation": null
