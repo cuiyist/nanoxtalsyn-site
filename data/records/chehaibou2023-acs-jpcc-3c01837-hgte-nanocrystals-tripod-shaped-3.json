@@ -1,0 +1,495 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "chehaibou2023-acs-jpcc-3c01837-hgte-nanocrystals-tripod-shaped-3",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Bilal Chehaibou; Claire Abadie; Yoann Prado; Xiang Zhen Xu; Grégory Vincent; Bruno Gallas; Gabriel Mugny; Arthur Arnaud; Emmanuel Lhuillier; Christophe Delerue (2023): HgTe nanocrystals (tripod-shaped)",
+  "material": {
+    "formula": "HgTe",
+    "family": "HgTe nanocrystals",
+    "elements": [
+      "Hg",
+      "Te"
+    ],
+    "components": [
+      "HgTe"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Heat-up",
+  "sources": [
+    {
+      "id": "chehaibou2023-acs-jpcc-3c01837",
+      "doi": "10.1021/acs.jpcc.3c01837",
+      "title": "Modeling HgTe Complex Optical Index from Bulk to Nanocrystal Layers",
+      "authors": "Bilal Chehaibou; Claire Abadie; Yoann Prado; Xiang Zhen Xu; Grégory Vincent; Bruno Gallas; Gabriel Mugny; Arthur Arnaud; Emmanuel Lhuillier; Christophe Delerue",
+      "year": 2023,
+      "url": "https://doi.org/10.1021/acs.jpcc.3c01837",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "chehaibou2023-acs-jpcc-3c01837",
+    "recipe_family": "chehaibou2023-acs-jpcc-3c01837-hgte-nanocrystals-tripod-shaped-3",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "HgTe",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "chehaibou2023-acs-jpcc-3c01837",
+          "locator": "Main PDF p.8"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    },
+    "size": {
+      "value": null,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "not_reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "not reported",
+      "evidence": [],
+      "derivation": null
+    },
+    "morphology": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "chehaibou2023-acs-jpcc-3c01837-hgte-nanocrystals-tripod-shaped-3--hgcl2",
+      "name": "HgCl2",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 2.0,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2 mmol",
+          "evidence": [
+            {
+              "source_id": "chehaibou2023-acs-jpcc-3c01837",
+              "locator": "Main PDF p.4"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "chehaibou2023-acs-jpcc-3c01837",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    },
+    {
+      "id": "chehaibou2023-acs-jpcc-3c01837-hgte-nanocrystals-tripod-shaped-3--oleylamine",
+      "name": "oleylamine",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "chehaibou2023-acs-jpcc-3c01837",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    },
+    {
+      "id": "chehaibou2023-acs-jpcc-3c01837-hgte-nanocrystals-tripod-shaped-3--top-te-1-m",
+      "name": "TOP/Te (1 M)",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 2.0,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2 mL",
+          "evidence": [
+            {
+              "source_id": "chehaibou2023-acs-jpcc-3c01837",
+              "locator": "Main PDF p.4"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "chehaibou2023-acs-jpcc-3c01837",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    },
+    {
+      "id": "chehaibou2023-acs-jpcc-3c01837-hgte-nanocrystals-tripod-shaped-3--dodecanethiol-ddt",
+      "name": "dodecanethiol (DDT)",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 10.0,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "10 mL",
+          "evidence": [
+            {
+              "source_id": "chehaibou2023-acs-jpcc-3c01837",
+              "locator": "Main PDF p.4"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "chehaibou2023-acs-jpcc-3c01837",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    },
+    {
+      "id": "chehaibou2023-acs-jpcc-3c01837-hgte-nanocrystals-tripod-shaped-3--hgbr2",
+      "name": "HgBr2",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 0.4,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.4 mmol",
+          "evidence": [
+            {
+              "source_id": "chehaibou2023-acs-jpcc-3c01837",
+              "locator": "Main PDF p.4"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "chehaibou2023-acs-jpcc-3c01837",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    },
+    {
+      "id": "chehaibou2023-acs-jpcc-3c01837-hgte-nanocrystals-tripod-shaped-3--te",
+      "name": "Te",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "chehaibou2023-acs-jpcc-3c01837",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "chehaibou2023-acs-jpcc-3c01837-hgte-nanocrystals-tripod-shaped-3--after-s01-dissolve",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "chehaibou2023-acs-jpcc-3c01837-hgte-nanocrystals-tripod-shaped-3--hgbr2",
+        "chehaibou2023-acs-jpcc-3c01837-hgte-nanocrystals-tripod-shaped-3--oleylamine"
+      ]
+    },
+    {
+      "id": "chehaibou2023-acs-jpcc-3c01837-hgte-nanocrystals-tripod-shaped-3--after-s02-centrifuge",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "chehaibou2023-acs-jpcc-3c01837-hgte-nanocrystals-tripod-shaped-3--after-s01-dissolve"
+      ]
+    },
+    {
+      "id": "chehaibou2023-acs-jpcc-3c01837-hgte-nanocrystals-tripod-shaped-3--after-s03-redisperse",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "chehaibou2023-acs-jpcc-3c01837-hgte-nanocrystals-tripod-shaped-3--after-s02-centrifuge"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-dissolve",
+      "action": "dissolve",
+      "label": "Dissolve",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "chehaibou2023-acs-jpcc-3c01837-hgte-nanocrystals-tripod-shaped-3--hgbr2",
+        "chehaibou2023-acs-jpcc-3c01837-hgte-nanocrystals-tripod-shaped-3--oleylamine"
+      ],
+      "outputs": [
+        "chehaibou2023-acs-jpcc-3c01837-hgte-nanocrystals-tripod-shaped-3--after-s01-dissolve"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "chehaibou2023-acs-jpcc-3c01837",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Dissolve",
+      "evidence": [
+        {
+          "source_id": "chehaibou2023-acs-jpcc-3c01837",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    },
+    {
+      "id": "s02-centrifuge",
+      "action": "centrifuge",
+      "label": "Centrifugation to isolate NCs",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-dissolve"
+      ],
+      "inputs": [
+        "chehaibou2023-acs-jpcc-3c01837-hgte-nanocrystals-tripod-shaped-3--after-s01-dissolve"
+      ],
+      "outputs": [
+        "chehaibou2023-acs-jpcc-3c01837-hgte-nanocrystals-tripod-shaped-3--after-s02-centrifuge"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Centrifugation to isolate NCs",
+      "evidence": [
+        {
+          "source_id": "chehaibou2023-acs-jpcc-3c01837",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    },
+    {
+      "id": "s03-redisperse",
+      "action": "redisperse",
+      "label": "Redispersing in toluene",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-centrifuge"
+      ],
+      "inputs": [
+        "chehaibou2023-acs-jpcc-3c01837-hgte-nanocrystals-tripod-shaped-3--after-s02-centrifuge"
+      ],
+      "outputs": [
+        "chehaibou2023-acs-jpcc-3c01837-hgte-nanocrystals-tripod-shaped-3--after-s03-redisperse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Redispersing in toluene",
+      "evidence": [
+        {
+          "source_id": "chehaibou2023-acs-jpcc-3c01837",
+          "locator": "Main PDF p.4"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "chehaibou2023-acs-jpcc-3c01837-hgte-nanocrystals-tripod-shaped-3--product",
+      "source_sample_label": "HgTe nanocrystals (tripod-shaped)",
+      "batch_id": null,
+      "material_state_id": "chehaibou2023-acs-jpcc-3c01837-hgte-nanocrystals-tripod-shaped-3--after-s03-redisperse",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "HgTe",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "chehaibou2023-acs-jpcc-3c01837",
+            "locator": "Main PDF p.8"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "morphology": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "surface": {
+        "value": "dodecanethiol (DDT), oleylamine (OLA)",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "chehaibou2023-acs-jpcc-3c01837",
+            "locator": "Main PDF p.8"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "chehaibou2023-acs-jpcc-3c01837",
+          "locator": "Main PDF p.4"
+        }
+      ],
+      "notes": [
+        "Reactor: 100 mL three-neck flask (Main PDF p.4)."
+      ]
+    }
+  ],
+  "measurements": [],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
+    "missing_fields": [
+      "Phase not reported in the extracted text.",
+      "Shape not reported in the extracted text.",
+      "Size not reported in the extracted text.",
+      "Emission peak not reported in the extracted text.",
+      "Plqy not reported in the extracted text.",
+      "Reaction temperature not reported in the extracted text.",
+      "Reaction time not reported in the extracted text.",
+      "Amount of oleylamine not reported in the extracted text.",
+      "Amount of Te not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

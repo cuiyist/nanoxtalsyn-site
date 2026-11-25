@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
   "dataset_version": "0.41.2",
-  "record_count": 7790,
-  "group_count": 3551,
+  "record_count": 7813,
+  "group_count": 3567,
   "families": [
     "(CdSe)ZnS nanocrystals",
     "(CdxZn1−x)3P2 nanocrystals",
@@ -78,6 +78,7 @@
     "AgInTe2/ZnS Janus nanocrystals",
     "AgInxGa1−xS2 nanocrystals",
     "AgPd nanocrystals",
+    "AgSbSe2 nanocrystals",
     "AgSePh nanocrystals",
     "AgxSe nanocrystals",
     "Ag–Ba0.5Sr0.5TiO3 nanocrystals",
@@ -179,6 +180,9 @@
     "Bi4Ti3O12 nanocrystals",
     "Bi8TiO14 nanocrystals",
     "BiFeO3 nanocrystals",
+    "BiOCl nanocrystals",
+    "BiOCl-1 nanocrystals",
+    "BiOCl-2 nanocrystals",
     "BiSbO4 nanocrystals",
     "BiSe nanocrystals",
     "BiVO4/CQD nanocrystals",
@@ -376,6 +380,7 @@
     "CdSeS-ZnS nanocrystals",
     "CdSeS/ZnS nanocrystals",
     "CdSeTe nanocrystals",
+    "CdSeTe/CdS nanocrystals",
     "CdSeTe/ZnS nanocrystals",
     "CdSeZnS nanocrystals",
     "CdSe–Au nanocrystals",
@@ -594,6 +599,7 @@
     "Cu1.01In0.91S2 nanocrystals",
     "Cu1.0InS2 nanocrystals",
     "Cu1.12S nanocrystals",
+    "Cu1.2Zn1.4Sn1S4.7 nanocrystals",
     "Cu1.75S nanocrystals",
     "Cu1.8S nanocrystals",
     "Cu1.8Zn1.1Sn1S3.8 nanocrystals",
@@ -1049,6 +1055,7 @@
     "NaGdF4:Yb3+ nanocrystals",
     "NaHoF4 nanocrystals",
     "NaInS2 nanocrystals",
+    "NaLu/GdF4:Tb@NaYF4 nanocrystals",
     "NaY nanocrystals",
     "NaY0.8F4:Yb0.18 nanocrystals",
     "NaY78%F4 : Yb20%Er2% nanocrystals",
@@ -1363,6 +1370,7 @@
     "Y3Al5O12 nanocrystals",
     "Y3Al5O12:Ce3+ nanocrystals",
     "YAG:Ce3+ nanocrystals",
+    "YPO4 nanocrystals",
     "YVO4:Eu3+ nanocrystals",
     "Yb2O3 nanocrystals",
     "Ytterbium- and erbium-codoped lanthanum molybdate phosphors",
@@ -39285,6 +39293,84 @@
       ]
     },
     {
+      "record_id": "bertasius2016-acs-jpcc-6b02965-arenethiolate-capped-pbs-qds-1",
+      "title": "Valentas Bertasius; Rosanna Mastria; Aurora Rizzo; Giuseppe Gigli; Carlo Giansante; Vidmantas Gulbinas (2016): arenethiolate-capped PbS QDs",
+      "formula": "PbS",
+      "family": "PbS nanocrystals",
+      "method": "Hot injection",
+      "record_type": "literature_protocol",
+      "source_year": 2016,
+      "source_doi": "10.1021/acs.jpcc.6b02965",
+      "revision": 1,
+      "record_sha256": "f6d81cd7a3b8629b88879868d8f5969eb45aea1afbc68e4f974de80874a26fc1",
+      "recipe_signature": "39907fbc241380506b4a131ccbc4c42ab62d1c3ee3ebd2871e69b80cb43d42f2",
+      "group_id": "group-5733159bffb6",
+      "split": "train",
+      "eligibility": {
+        "precursor_selection": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "partial_protocol": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "size_conditioned_recipe": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "success_prediction": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "optical_outcome": {
+          "eligible": false,
+          "reason": "Published numeric optical benchmark with explicit row linkage. Failure placeholders are excluded from continuous targets."
+        },
+        "exact_structure_recipe": {
+          "eligible": false,
+          "reason": "This record has not completed source review. Exact structure–recipe training has not been requested for this record. No canonical measured-sample coordinate asset is recorded; phase/size observations and reference viewers are separate. No independently audited completeness profile defines this task’s required recipe fields. Completeness is unassessed, not established.",
+          "reason_codes": [
+            "source_review_required",
+            "task_not_requested",
+            "no_sample_coordinate_asset",
+            "audited_task_profile_missing"
+          ],
+          "reasons": [
+            {
+              "code": "source_review_required",
+              "message": "This record has not completed source review."
+            },
+            {
+              "code": "task_not_requested",
+              "message": "Exact structure–recipe training has not been requested for this record."
+            },
+            {
+              "code": "no_sample_coordinate_asset",
+              "message": "No canonical measured-sample coordinate asset is recorded; phase/size observations and reference viewers are separate."
+            },
+            {
+              "code": "audited_task_profile_missing",
+              "message": "No independently audited completeness profile defines this task’s required recipe fields. Completeness is unassessed, not established."
+            }
+          ],
+          "profile_id": null,
+          "selected_asset_ids": []
+        }
+      },
+      "record_url": "data/records/bertasius2016-acs-jpcc-6b02965-arenethiolate-capped-pbs-qds-1.json",
+      "page_url": "records/bertasius2016-acs-jpcc-6b02965-arenethiolate-capped-pbs-qds-1.html",
+      "missing_field_count": 6,
+      "collection": "reviewed_literature",
+      "review_status": "source_extracted",
+      "components": [
+        "PbS"
+      ],
+      "pair_ids": [
+        "bertasius2016-acs-jpcc-6b02965-arenethiolate-capped-pbs-qds-1::display"
+      ]
+    },
+    {
       "record_id": "bertens2020-acsmaterialslett-0c00379-fluoride-doped-pbs-colloidal-quantum-dot-1",
       "title": "Koen Bertens; James Z. Fan; Margherita Biondi; Armin Sedighian Rasouli; Seungjin Lee; Peicheng Li; Bin Sun; Sjoerd Hoogland; F. Pelayo García de Arquer; Zheng-Hong Lu; Edward H. Sargent (2020): Fluoride-doped PbS colloidal quantum dots (CQDs)",
       "formula": "PbS",
@@ -48508,6 +48594,85 @@
       ],
       "pair_ids": [
         "brazeau2009-jp907270x-thiolate-capped-pbs-nanocrystals-1::display"
+      ]
+    },
+    {
+      "record_id": "brett2023-acs-jpcc-3c03837-pbs-cds-2-1",
+      "title": "Matthew W. Brett; Liselotte C. Nass; Calum K. Gordon; Lara D. Browne; Bridget L. Stocker; Michael B. Price; Mattie S. M. Timmer; Nathaniel J. L. K. Davis (2023): PbS/CdS-2",
+      "formula": "PbS/CdS",
+      "family": "PbS/CdS nanocrystals",
+      "method": "Hot injection",
+      "record_type": "literature_protocol",
+      "source_year": 2023,
+      "source_doi": "10.1021/acs.jpcc.3c03837",
+      "revision": 1,
+      "record_sha256": "715299b5e5cccb1be3b90618025d1f34c503705b50cd0de0d203783c9b3f53a7",
+      "recipe_signature": "501de269dea3e8286b5865df56fe6a5750fb5681b99c4c667a39be77a0531f6c",
+      "group_id": "group-5d1b1c6339a5",
+      "split": "test",
+      "eligibility": {
+        "precursor_selection": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "partial_protocol": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "size_conditioned_recipe": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "success_prediction": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "optical_outcome": {
+          "eligible": false,
+          "reason": "Published numeric optical benchmark with explicit row linkage. Failure placeholders are excluded from continuous targets."
+        },
+        "exact_structure_recipe": {
+          "eligible": false,
+          "reason": "This record has not completed source review. Exact structure–recipe training has not been requested for this record. No canonical measured-sample coordinate asset is recorded; phase/size observations and reference viewers are separate. No independently audited completeness profile defines this task’s required recipe fields. Completeness is unassessed, not established.",
+          "reason_codes": [
+            "source_review_required",
+            "task_not_requested",
+            "no_sample_coordinate_asset",
+            "audited_task_profile_missing"
+          ],
+          "reasons": [
+            {
+              "code": "source_review_required",
+              "message": "This record has not completed source review."
+            },
+            {
+              "code": "task_not_requested",
+              "message": "Exact structure–recipe training has not been requested for this record."
+            },
+            {
+              "code": "no_sample_coordinate_asset",
+              "message": "No canonical measured-sample coordinate asset is recorded; phase/size observations and reference viewers are separate."
+            },
+            {
+              "code": "audited_task_profile_missing",
+              "message": "No independently audited completeness profile defines this task’s required recipe fields. Completeness is unassessed, not established."
+            }
+          ],
+          "profile_id": null,
+          "selected_asset_ids": []
+        }
+      },
+      "record_url": "data/records/brett2023-acs-jpcc-3c03837-pbs-cds-2-1.json",
+      "page_url": "records/brett2023-acs-jpcc-3c03837-pbs-cds-2-1.html",
+      "missing_field_count": 4,
+      "collection": "reviewed_literature",
+      "review_status": "source_extracted",
+      "components": [
+        "PbS",
+        "CdS"
+      ],
+      "pair_ids": [
+        "brett2023-acs-jpcc-3c03837-pbs-cds-2-1::display"
       ]
     },
     {
@@ -67040,6 +67205,240 @@
       ],
       "pair_ids": [
         "chavan2005-jmr-2005-0337-gdfeo3-propellant-ratio-1-1-66-1::display"
+      ]
+    },
+    {
+      "record_id": "chehaibou2023-acs-jpcc-3c01837-hgte-nanocrystals-rod-shaped-1",
+      "title": "Bilal Chehaibou; Claire Abadie; Yoann Prado; Xiang Zhen Xu; Grégory Vincent; Bruno Gallas; Gabriel Mugny; Arthur Arnaud; Emmanuel Lhuillier; Christophe Delerue (2023): HgTe nanocrystals (rod-shaped)",
+      "formula": "HgTe",
+      "family": "HgTe nanocrystals",
+      "method": "Heat-up",
+      "record_type": "literature_protocol",
+      "source_year": 2023,
+      "source_doi": "10.1021/acs.jpcc.3c01837",
+      "revision": 1,
+      "record_sha256": "2ae5eff505e3634c2e7b4669459deeeb32ba45cdc78f6c7b58b44305c63f91d2",
+      "recipe_signature": "03fa4b116acf81fd50e761df27e057669bf43c81f4e631b01f51e40b23100a21",
+      "group_id": "group-3fa09e1fbcca",
+      "split": "train",
+      "eligibility": {
+        "precursor_selection": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "partial_protocol": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "size_conditioned_recipe": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "success_prediction": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "optical_outcome": {
+          "eligible": false,
+          "reason": "Published numeric optical benchmark with explicit row linkage. Failure placeholders are excluded from continuous targets."
+        },
+        "exact_structure_recipe": {
+          "eligible": false,
+          "reason": "This record has not completed source review. Exact structure–recipe training has not been requested for this record. No canonical measured-sample coordinate asset is recorded; phase/size observations and reference viewers are separate. No independently audited completeness profile defines this task’s required recipe fields. Completeness is unassessed, not established.",
+          "reason_codes": [
+            "source_review_required",
+            "task_not_requested",
+            "no_sample_coordinate_asset",
+            "audited_task_profile_missing"
+          ],
+          "reasons": [
+            {
+              "code": "source_review_required",
+              "message": "This record has not completed source review."
+            },
+            {
+              "code": "task_not_requested",
+              "message": "Exact structure–recipe training has not been requested for this record."
+            },
+            {
+              "code": "no_sample_coordinate_asset",
+              "message": "No canonical measured-sample coordinate asset is recorded; phase/size observations and reference viewers are separate."
+            },
+            {
+              "code": "audited_task_profile_missing",
+              "message": "No independently audited completeness profile defines this task’s required recipe fields. Completeness is unassessed, not established."
+            }
+          ],
+          "profile_id": null,
+          "selected_asset_ids": []
+        }
+      },
+      "record_url": "data/records/chehaibou2023-acs-jpcc-3c01837-hgte-nanocrystals-rod-shaped-1.json",
+      "page_url": "records/chehaibou2023-acs-jpcc-3c01837-hgte-nanocrystals-rod-shaped-1.html",
+      "missing_field_count": 6,
+      "collection": "reviewed_literature",
+      "review_status": "source_extracted",
+      "components": [
+        "HgTe"
+      ],
+      "pair_ids": [
+        "chehaibou2023-acs-jpcc-3c01837-hgte-nanocrystals-rod-shaped-1::display"
+      ]
+    },
+    {
+      "record_id": "chehaibou2023-acs-jpcc-3c01837-hgte-nanocrystals-sphere-shaped-2",
+      "title": "Bilal Chehaibou; Claire Abadie; Yoann Prado; Xiang Zhen Xu; Grégory Vincent; Bruno Gallas; Gabriel Mugny; Arthur Arnaud; Emmanuel Lhuillier; Christophe Delerue (2023): HgTe nanocrystals (sphere-shaped)",
+      "formula": "HgTe",
+      "family": "HgTe nanocrystals",
+      "method": "Synthesis as described in the source",
+      "record_type": "literature_protocol",
+      "source_year": 2023,
+      "source_doi": "10.1021/acs.jpcc.3c01837",
+      "revision": 1,
+      "record_sha256": "0167cefb3e8daf08151521057cf96b84d3bbe5eff465c282a41c9bda32336972",
+      "recipe_signature": "142980534bdc5c2bcf828df03bf9d199feecfeac103f92f91923be3d8ff7332a",
+      "group_id": "group-3fa09e1fbcca",
+      "split": "train",
+      "eligibility": {
+        "precursor_selection": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "partial_protocol": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "size_conditioned_recipe": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "success_prediction": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "optical_outcome": {
+          "eligible": false,
+          "reason": "Published numeric optical benchmark with explicit row linkage. Failure placeholders are excluded from continuous targets."
+        },
+        "exact_structure_recipe": {
+          "eligible": false,
+          "reason": "This record has not completed source review. Exact structure–recipe training has not been requested for this record. No canonical measured-sample coordinate asset is recorded; phase/size observations and reference viewers are separate. No independently audited completeness profile defines this task’s required recipe fields. Completeness is unassessed, not established.",
+          "reason_codes": [
+            "source_review_required",
+            "task_not_requested",
+            "no_sample_coordinate_asset",
+            "audited_task_profile_missing"
+          ],
+          "reasons": [
+            {
+              "code": "source_review_required",
+              "message": "This record has not completed source review."
+            },
+            {
+              "code": "task_not_requested",
+              "message": "Exact structure–recipe training has not been requested for this record."
+            },
+            {
+              "code": "no_sample_coordinate_asset",
+              "message": "No canonical measured-sample coordinate asset is recorded; phase/size observations and reference viewers are separate."
+            },
+            {
+              "code": "audited_task_profile_missing",
+              "message": "No independently audited completeness profile defines this task’s required recipe fields. Completeness is unassessed, not established."
+            }
+          ],
+          "profile_id": null,
+          "selected_asset_ids": []
+        }
+      },
+      "record_url": "data/records/chehaibou2023-acs-jpcc-3c01837-hgte-nanocrystals-sphere-shaped-2.json",
+      "page_url": "records/chehaibou2023-acs-jpcc-3c01837-hgte-nanocrystals-sphere-shaped-2.html",
+      "missing_field_count": 8,
+      "collection": "reviewed_literature",
+      "review_status": "source_extracted",
+      "components": [
+        "HgTe"
+      ],
+      "pair_ids": [
+        "chehaibou2023-acs-jpcc-3c01837-hgte-nanocrystals-sphere-shaped-2::display"
+      ]
+    },
+    {
+      "record_id": "chehaibou2023-acs-jpcc-3c01837-hgte-nanocrystals-tripod-shaped-3",
+      "title": "Bilal Chehaibou; Claire Abadie; Yoann Prado; Xiang Zhen Xu; Grégory Vincent; Bruno Gallas; Gabriel Mugny; Arthur Arnaud; Emmanuel Lhuillier; Christophe Delerue (2023): HgTe nanocrystals (tripod-shaped)",
+      "formula": "HgTe",
+      "family": "HgTe nanocrystals",
+      "method": "Heat-up",
+      "record_type": "literature_protocol",
+      "source_year": 2023,
+      "source_doi": "10.1021/acs.jpcc.3c01837",
+      "revision": 1,
+      "record_sha256": "b56018850aa308c1381617651f0903108bc8db04b0baa766af11cbbe55148dcd",
+      "recipe_signature": "33b8e173cc1e5f8969204c657f206451ba0ffa58ed1d482c110b7f65c4d831d2",
+      "group_id": "group-3fa09e1fbcca",
+      "split": "train",
+      "eligibility": {
+        "precursor_selection": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "partial_protocol": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "size_conditioned_recipe": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "success_prediction": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "optical_outcome": {
+          "eligible": false,
+          "reason": "Published numeric optical benchmark with explicit row linkage. Failure placeholders are excluded from continuous targets."
+        },
+        "exact_structure_recipe": {
+          "eligible": false,
+          "reason": "This record has not completed source review. Exact structure–recipe training has not been requested for this record. No canonical measured-sample coordinate asset is recorded; phase/size observations and reference viewers are separate. No independently audited completeness profile defines this task’s required recipe fields. Completeness is unassessed, not established.",
+          "reason_codes": [
+            "source_review_required",
+            "task_not_requested",
+            "no_sample_coordinate_asset",
+            "audited_task_profile_missing"
+          ],
+          "reasons": [
+            {
+              "code": "source_review_required",
+              "message": "This record has not completed source review."
+            },
+            {
+              "code": "task_not_requested",
+              "message": "Exact structure–recipe training has not been requested for this record."
+            },
+            {
+              "code": "no_sample_coordinate_asset",
+              "message": "No canonical measured-sample coordinate asset is recorded; phase/size observations and reference viewers are separate."
+            },
+            {
+              "code": "audited_task_profile_missing",
+              "message": "No independently audited completeness profile defines this task’s required recipe fields. Completeness is unassessed, not established."
+            }
+          ],
+          "profile_id": null,
+          "selected_asset_ids": []
+        }
+      },
+      "record_url": "data/records/chehaibou2023-acs-jpcc-3c01837-hgte-nanocrystals-tripod-shaped-3.json",
+      "page_url": "records/chehaibou2023-acs-jpcc-3c01837-hgte-nanocrystals-tripod-shaped-3.html",
+      "missing_field_count": 9,
+      "collection": "reviewed_literature",
+      "review_status": "source_extracted",
+      "components": [
+        "HgTe"
+      ],
+      "pair_ids": [
+        "chehaibou2023-acs-jpcc-3c01837-hgte-nanocrystals-tripod-shaped-3::display"
       ]
     },
     {
@@ -121095,6 +121494,164 @@
       ]
     },
     {
+      "record_id": "fang2015-acs-jpcc-5b05890-pbs-cds-qds-monolayer-shell-1",
+      "title": "Hong-Hua Fang; Daniel M. Balazs; Loredana Protesescu; Maksym V. Kovalenko; Maria Antonietta Loi (2015): PbS/CdS QDs (monolayer shell)",
+      "formula": "PbS/CdS",
+      "family": "PbS/CdS nanocrystals",
+      "method": "Hot injection",
+      "record_type": "literature_protocol",
+      "source_year": 2015,
+      "source_doi": "10.1021/acs.jpcc.5b05890",
+      "revision": 1,
+      "record_sha256": "5f5b04917e3c5f8aee661b2a9bf90fde06f960482f1056da38d8916606249699",
+      "recipe_signature": "779d5641cbf47c318d47262c6dc11bd786e48d71ba8870920fe85e671682b0d6",
+      "group_id": "group-9ba86b247f29",
+      "split": "validation",
+      "eligibility": {
+        "precursor_selection": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "partial_protocol": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "size_conditioned_recipe": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "success_prediction": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "optical_outcome": {
+          "eligible": false,
+          "reason": "Published numeric optical benchmark with explicit row linkage. Failure placeholders are excluded from continuous targets."
+        },
+        "exact_structure_recipe": {
+          "eligible": false,
+          "reason": "This record has not completed source review. Exact structure–recipe training has not been requested for this record. No canonical measured-sample coordinate asset is recorded; phase/size observations and reference viewers are separate. No independently audited completeness profile defines this task’s required recipe fields. Completeness is unassessed, not established.",
+          "reason_codes": [
+            "source_review_required",
+            "task_not_requested",
+            "no_sample_coordinate_asset",
+            "audited_task_profile_missing"
+          ],
+          "reasons": [
+            {
+              "code": "source_review_required",
+              "message": "This record has not completed source review."
+            },
+            {
+              "code": "task_not_requested",
+              "message": "Exact structure–recipe training has not been requested for this record."
+            },
+            {
+              "code": "no_sample_coordinate_asset",
+              "message": "No canonical measured-sample coordinate asset is recorded; phase/size observations and reference viewers are separate."
+            },
+            {
+              "code": "audited_task_profile_missing",
+              "message": "No independently audited completeness profile defines this task’s required recipe fields. Completeness is unassessed, not established."
+            }
+          ],
+          "profile_id": null,
+          "selected_asset_ids": []
+        }
+      },
+      "record_url": "data/records/fang2015-acs-jpcc-5b05890-pbs-cds-qds-monolayer-shell-1.json",
+      "page_url": "records/fang2015-acs-jpcc-5b05890-pbs-cds-qds-monolayer-shell-1.html",
+      "missing_field_count": 3,
+      "collection": "reviewed_literature",
+      "review_status": "source_extracted",
+      "components": [
+        "PbS",
+        "CdS"
+      ],
+      "pair_ids": [
+        "fang2015-acs-jpcc-5b05890-pbs-cds-qds-monolayer-shell-1::display"
+      ]
+    },
+    {
+      "record_id": "fang2015-acs-jpcc-5b05890-pbs-cds-qds-thick-shell-2",
+      "title": "Hong-Hua Fang; Daniel M. Balazs; Loredana Protesescu; Maksym V. Kovalenko; Maria Antonietta Loi (2015): PbS/CdS QDs (thick shell)",
+      "formula": "PbS/CdS",
+      "family": "PbS/CdS nanocrystals",
+      "method": "SILAR",
+      "record_type": "literature_protocol",
+      "source_year": 2015,
+      "source_doi": "10.1021/acs.jpcc.5b05890",
+      "revision": 1,
+      "record_sha256": "3112d13b3825c7ae0be0e93658e3b6b7d522454ad56a81e8014853a9849e49d5",
+      "recipe_signature": "94fd66a9adf15717f8d7477dddcc6675f5c7d9df74d7f81df97097665339c2b0",
+      "group_id": "group-9ba86b247f29",
+      "split": "validation",
+      "eligibility": {
+        "precursor_selection": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "partial_protocol": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "size_conditioned_recipe": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "success_prediction": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "optical_outcome": {
+          "eligible": false,
+          "reason": "Published numeric optical benchmark with explicit row linkage. Failure placeholders are excluded from continuous targets."
+        },
+        "exact_structure_recipe": {
+          "eligible": false,
+          "reason": "This record has not completed source review. Exact structure–recipe training has not been requested for this record. No canonical measured-sample coordinate asset is recorded; phase/size observations and reference viewers are separate. No independently audited completeness profile defines this task’s required recipe fields. Completeness is unassessed, not established.",
+          "reason_codes": [
+            "source_review_required",
+            "task_not_requested",
+            "no_sample_coordinate_asset",
+            "audited_task_profile_missing"
+          ],
+          "reasons": [
+            {
+              "code": "source_review_required",
+              "message": "This record has not completed source review."
+            },
+            {
+              "code": "task_not_requested",
+              "message": "Exact structure–recipe training has not been requested for this record."
+            },
+            {
+              "code": "no_sample_coordinate_asset",
+              "message": "No canonical measured-sample coordinate asset is recorded; phase/size observations and reference viewers are separate."
+            },
+            {
+              "code": "audited_task_profile_missing",
+              "message": "No independently audited completeness profile defines this task’s required recipe fields. Completeness is unassessed, not established."
+            }
+          ],
+          "profile_id": null,
+          "selected_asset_ids": []
+        }
+      },
+      "record_url": "data/records/fang2015-acs-jpcc-5b05890-pbs-cds-qds-thick-shell-2.json",
+      "page_url": "records/fang2015-acs-jpcc-5b05890-pbs-cds-qds-thick-shell-2.html",
+      "missing_field_count": 4,
+      "collection": "reviewed_literature",
+      "review_status": "source_extracted",
+      "components": [
+        "PbS",
+        "CdS"
+      ],
+      "pair_ids": [
+        "fang2015-acs-jpcc-5b05890-pbs-cds-qds-thick-shell-2::display"
+      ]
+    },
+    {
       "record_id": "fang2018-s11051-018-4415-z-m-sio2-qd-znpc-hollow-nanorods-1",
       "title": "Jingyu Si & Jianfeng Zhang & Jinyu Duan & Huajian Xu & Qunling Fang (2018): m-SiO2/QD-ZnPc hollow nanorods",
       "formula": "CdTe",
@@ -150919,6 +151476,240 @@
       ]
     },
     {
+      "record_id": "guo2018-acs-est-8b00352-biocl-1-1",
+      "title": "Sheng-qi Guo; Xiao-he Zhu; Hai-jun Zhang; Bing-chuan Gu; Wei Chen; Lu Liu; Pedro J. J. Alvarez (2018): BiOCl-1",
+      "formula": "BiOCl-1",
+      "family": "BiOCl-1 nanocrystals",
+      "method": "Synthesis as described in the source",
+      "record_type": "literature_protocol",
+      "source_year": 2018,
+      "source_doi": "10.1021/acs.est.8b00352",
+      "revision": 1,
+      "record_sha256": "d58419acfa4f466ecf7ce4cc24c62b33893b260de86cf6d5a4c8c59fe2753657",
+      "recipe_signature": "d646da1dc3c8b33c8826ba256fdf64e17bfcf4c97ba8e73de58c2161be8cefd2",
+      "group_id": "group-afbc5a88b372",
+      "split": "train",
+      "eligibility": {
+        "precursor_selection": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "partial_protocol": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "size_conditioned_recipe": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "success_prediction": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "optical_outcome": {
+          "eligible": false,
+          "reason": "Published numeric optical benchmark with explicit row linkage. Failure placeholders are excluded from continuous targets."
+        },
+        "exact_structure_recipe": {
+          "eligible": false,
+          "reason": "This record has not completed source review. Exact structure–recipe training has not been requested for this record. No canonical measured-sample coordinate asset is recorded; phase/size observations and reference viewers are separate. No independently audited completeness profile defines this task’s required recipe fields. Completeness is unassessed, not established.",
+          "reason_codes": [
+            "source_review_required",
+            "task_not_requested",
+            "no_sample_coordinate_asset",
+            "audited_task_profile_missing"
+          ],
+          "reasons": [
+            {
+              "code": "source_review_required",
+              "message": "This record has not completed source review."
+            },
+            {
+              "code": "task_not_requested",
+              "message": "Exact structure–recipe training has not been requested for this record."
+            },
+            {
+              "code": "no_sample_coordinate_asset",
+              "message": "No canonical measured-sample coordinate asset is recorded; phase/size observations and reference viewers are separate."
+            },
+            {
+              "code": "audited_task_profile_missing",
+              "message": "No independently audited completeness profile defines this task’s required recipe fields. Completeness is unassessed, not established."
+            }
+          ],
+          "profile_id": null,
+          "selected_asset_ids": []
+        }
+      },
+      "record_url": "data/records/guo2018-acs-est-8b00352-biocl-1-1.json",
+      "page_url": "records/guo2018-acs-est-8b00352-biocl-1-1.html",
+      "missing_field_count": 7,
+      "collection": "reviewed_literature",
+      "review_status": "source_extracted",
+      "components": [
+        "BiOCl-1"
+      ],
+      "pair_ids": [
+        "guo2018-acs-est-8b00352-biocl-1-1::display"
+      ]
+    },
+    {
+      "record_id": "guo2018-acs-est-8b00352-biocl-2-2",
+      "title": "Sheng-qi Guo; Xiao-he Zhu; Hai-jun Zhang; Bing-chuan Gu; Wei Chen; Lu Liu; Pedro J. J. Alvarez (2018): BiOCl-2",
+      "formula": "BiOCl-2",
+      "family": "BiOCl-2 nanocrystals",
+      "method": "Synthesis as described in the source",
+      "record_type": "literature_protocol",
+      "source_year": 2018,
+      "source_doi": "10.1021/acs.est.8b00352",
+      "revision": 1,
+      "record_sha256": "1805217c72985c21807268bb5115675dcaebcf45ed9d5cfb982d685829eb450d",
+      "recipe_signature": "cc9c6d596855b0cc376d359ec4fbcda139076a76d97e5c9b7e0075c7990e945c",
+      "group_id": "group-afbc5a88b372",
+      "split": "train",
+      "eligibility": {
+        "precursor_selection": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "partial_protocol": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "size_conditioned_recipe": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "success_prediction": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "optical_outcome": {
+          "eligible": false,
+          "reason": "Published numeric optical benchmark with explicit row linkage. Failure placeholders are excluded from continuous targets."
+        },
+        "exact_structure_recipe": {
+          "eligible": false,
+          "reason": "This record has not completed source review. Exact structure–recipe training has not been requested for this record. No canonical measured-sample coordinate asset is recorded; phase/size observations and reference viewers are separate. No independently audited completeness profile defines this task’s required recipe fields. Completeness is unassessed, not established.",
+          "reason_codes": [
+            "source_review_required",
+            "task_not_requested",
+            "no_sample_coordinate_asset",
+            "audited_task_profile_missing"
+          ],
+          "reasons": [
+            {
+              "code": "source_review_required",
+              "message": "This record has not completed source review."
+            },
+            {
+              "code": "task_not_requested",
+              "message": "Exact structure–recipe training has not been requested for this record."
+            },
+            {
+              "code": "no_sample_coordinate_asset",
+              "message": "No canonical measured-sample coordinate asset is recorded; phase/size observations and reference viewers are separate."
+            },
+            {
+              "code": "audited_task_profile_missing",
+              "message": "No independently audited completeness profile defines this task’s required recipe fields. Completeness is unassessed, not established."
+            }
+          ],
+          "profile_id": null,
+          "selected_asset_ids": []
+        }
+      },
+      "record_url": "data/records/guo2018-acs-est-8b00352-biocl-2-2.json",
+      "page_url": "records/guo2018-acs-est-8b00352-biocl-2-2.html",
+      "missing_field_count": 7,
+      "collection": "reviewed_literature",
+      "review_status": "source_extracted",
+      "components": [
+        "BiOCl-2"
+      ],
+      "pair_ids": [
+        "guo2018-acs-est-8b00352-biocl-2-2::display"
+      ]
+    },
+    {
+      "record_id": "guo2018-acs-est-8b00352-ultrathin-biocl-nanosheets-ubn-3",
+      "title": "Sheng-qi Guo; Xiao-he Zhu; Hai-jun Zhang; Bing-chuan Gu; Wei Chen; Lu Liu; Pedro J. J. Alvarez (2018): ultrathin BiOCl nanosheets (UBN)",
+      "formula": "BiOCl",
+      "family": "BiOCl nanocrystals",
+      "method": "Synthesis as described in the source",
+      "record_type": "literature_protocol",
+      "source_year": 2018,
+      "source_doi": "10.1021/acs.est.8b00352",
+      "revision": 1,
+      "record_sha256": "2435ea99fda4ab026475a16ea19bb81d756f997bc6be7e9c6e64f77d879e1b79",
+      "recipe_signature": "976ba8d4b7d3fb1dde9d80670280f0f28a36661825a33f9782bdb1e28af28d7a",
+      "group_id": "group-afbc5a88b372",
+      "split": "train",
+      "eligibility": {
+        "precursor_selection": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "partial_protocol": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "size_conditioned_recipe": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "success_prediction": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "optical_outcome": {
+          "eligible": false,
+          "reason": "Published numeric optical benchmark with explicit row linkage. Failure placeholders are excluded from continuous targets."
+        },
+        "exact_structure_recipe": {
+          "eligible": false,
+          "reason": "This record has not completed source review. Exact structure–recipe training has not been requested for this record. No canonical measured-sample coordinate asset is recorded; phase/size observations and reference viewers are separate. No independently audited completeness profile defines this task’s required recipe fields. Completeness is unassessed, not established.",
+          "reason_codes": [
+            "source_review_required",
+            "task_not_requested",
+            "no_sample_coordinate_asset",
+            "audited_task_profile_missing"
+          ],
+          "reasons": [
+            {
+              "code": "source_review_required",
+              "message": "This record has not completed source review."
+            },
+            {
+              "code": "task_not_requested",
+              "message": "Exact structure–recipe training has not been requested for this record."
+            },
+            {
+              "code": "no_sample_coordinate_asset",
+              "message": "No canonical measured-sample coordinate asset is recorded; phase/size observations and reference viewers are separate."
+            },
+            {
+              "code": "audited_task_profile_missing",
+              "message": "No independently audited completeness profile defines this task’s required recipe fields. Completeness is unassessed, not established."
+            }
+          ],
+          "profile_id": null,
+          "selected_asset_ids": []
+        }
+      },
+      "record_url": "data/records/guo2018-acs-est-8b00352-ultrathin-biocl-nanosheets-ubn-3.json",
+      "page_url": "records/guo2018-acs-est-8b00352-ultrathin-biocl-nanosheets-ubn-3.html",
+      "missing_field_count": 8,
+      "collection": "reviewed_literature",
+      "review_status": "source_extracted",
+      "components": [
+        "BiOCl"
+      ],
+      "pair_ids": [
+        "guo2018-acs-est-8b00352-ultrathin-biocl-nanosheets-ubn-3::display"
+      ]
+    },
+    {
       "record_id": "guo2020-acssuschemeng-9b06395-mn-doped-zns-qds-gelatin-nanocomposite-2",
       "title": "Chuanhang Guo; Kaiyuan Cao; Zheng Zhang; Yanfei Xiong; Yanjun Chen; Yifeng Wang (2020): Mn-doped ZnS QDs/gelatin nanocomposite",
       "formula": "ZnS",
@@ -172134,6 +172925,85 @@
         "PbS/MAPbI3/TiO2"
       ],
       "pair_ids": []
+    },
+    {
+      "record_id": "heo2022-acs-chemmater-2c01335-qdcpicpi-1",
+      "title": "Ho Seok Heo; Joon Hee Jo; Seung Jun Lee; Chaemin Yun; Soo-Hyung Choi; Jun Hyup Lee; Kangtaek Lee (2022): QD−CPI−CPI",
+      "formula": "CdSe/ZnS",
+      "family": "CdSe/ZnS nanocrystals",
+      "method": "Hot injection",
+      "record_type": "literature_protocol",
+      "source_year": 2022,
+      "source_doi": "10.1021/acs.chemmater.2c01335",
+      "revision": 1,
+      "record_sha256": "0fc78e2730d81910c75d00fd7fba95602aaa45032cf84cf9314c5c4a7fac630c",
+      "recipe_signature": "fd5f0c55b6e99b1683e79a7d58852e31b42bee2edd4d818b501a7de0c6ad9e10",
+      "group_id": "group-dd53416f76b7",
+      "split": "train",
+      "eligibility": {
+        "precursor_selection": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "partial_protocol": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "size_conditioned_recipe": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "success_prediction": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "optical_outcome": {
+          "eligible": false,
+          "reason": "Published numeric optical benchmark with explicit row linkage. Failure placeholders are excluded from continuous targets."
+        },
+        "exact_structure_recipe": {
+          "eligible": false,
+          "reason": "This record has not completed source review. Exact structure–recipe training has not been requested for this record. No canonical measured-sample coordinate asset is recorded; phase/size observations and reference viewers are separate. No independently audited completeness profile defines this task’s required recipe fields. Completeness is unassessed, not established.",
+          "reason_codes": [
+            "source_review_required",
+            "task_not_requested",
+            "no_sample_coordinate_asset",
+            "audited_task_profile_missing"
+          ],
+          "reasons": [
+            {
+              "code": "source_review_required",
+              "message": "This record has not completed source review."
+            },
+            {
+              "code": "task_not_requested",
+              "message": "Exact structure–recipe training has not been requested for this record."
+            },
+            {
+              "code": "no_sample_coordinate_asset",
+              "message": "No canonical measured-sample coordinate asset is recorded; phase/size observations and reference viewers are separate."
+            },
+            {
+              "code": "audited_task_profile_missing",
+              "message": "No independently audited completeness profile defines this task’s required recipe fields. Completeness is unassessed, not established."
+            }
+          ],
+          "profile_id": null,
+          "selected_asset_ids": []
+        }
+      },
+      "record_url": "data/records/heo2022-acs-chemmater-2c01335-qdcpicpi-1.json",
+      "page_url": "records/heo2022-acs-chemmater-2c01335-qdcpicpi-1.html",
+      "missing_field_count": 4,
+      "collection": "reviewed_literature",
+      "review_status": "source_extracted",
+      "components": [
+        "CdSe",
+        "ZnS"
+      ],
+      "pair_ids": [
+        "heo2022-acs-chemmater-2c01335-qdcpicpi-1::display"
+      ]
     },
     {
       "record_id": "heroux2004-jp036307c-ap-mgo-with-15-9-wt-carbon-2",
@@ -226085,6 +226955,84 @@
       ]
     },
     {
+      "record_id": "knauf2016-acs-chemmater-6b01827-cdse-qds-oleate-capped-1",
+      "title": "Robin R. Knauf; J. Christian Lennox; Jillian L. Dempsey (2016): CdSe QDs (oleate-capped)",
+      "formula": "CdSe",
+      "family": "CdSe nanocrystals",
+      "method": "Heat-up",
+      "record_type": "literature_protocol",
+      "source_year": 2016,
+      "source_doi": "10.1021/acs.chemmater.6b01827",
+      "revision": 1,
+      "record_sha256": "9357abed7214e1284c3a17cfb52cd05633954bb1ae9f9dcf26bc454c24c7bdb0",
+      "recipe_signature": "4ae9b05f49702b66393df0f137b4d3a224316954a2f6790427425e65fcf8ab3e",
+      "group_id": "group-3030cd26e554",
+      "split": "test",
+      "eligibility": {
+        "precursor_selection": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "partial_protocol": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "size_conditioned_recipe": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "success_prediction": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "optical_outcome": {
+          "eligible": false,
+          "reason": "Published numeric optical benchmark with explicit row linkage. Failure placeholders are excluded from continuous targets."
+        },
+        "exact_structure_recipe": {
+          "eligible": false,
+          "reason": "This record has not completed source review. Exact structure–recipe training has not been requested for this record. No canonical measured-sample coordinate asset is recorded; phase/size observations and reference viewers are separate. No independently audited completeness profile defines this task’s required recipe fields. Completeness is unassessed, not established.",
+          "reason_codes": [
+            "source_review_required",
+            "task_not_requested",
+            "no_sample_coordinate_asset",
+            "audited_task_profile_missing"
+          ],
+          "reasons": [
+            {
+              "code": "source_review_required",
+              "message": "This record has not completed source review."
+            },
+            {
+              "code": "task_not_requested",
+              "message": "Exact structure–recipe training has not been requested for this record."
+            },
+            {
+              "code": "no_sample_coordinate_asset",
+              "message": "No canonical measured-sample coordinate asset is recorded; phase/size observations and reference viewers are separate."
+            },
+            {
+              "code": "audited_task_profile_missing",
+              "message": "No independently audited completeness profile defines this task’s required recipe fields. Completeness is unassessed, not established."
+            }
+          ],
+          "profile_id": null,
+          "selected_asset_ids": []
+        }
+      },
+      "record_url": "data/records/knauf2016-acs-chemmater-6b01827-cdse-qds-oleate-capped-1.json",
+      "page_url": "records/knauf2016-acs-chemmater-6b01827-cdse-qds-oleate-capped-1.html",
+      "missing_field_count": 3,
+      "collection": "reviewed_literature",
+      "review_status": "source_extracted",
+      "components": [
+        "CdSe"
+      ],
+      "pair_ids": [
+        "knauf2016-acs-chemmater-6b01827-cdse-qds-oleate-capped-1::display"
+      ]
+    },
+    {
       "record_id": "knauth1998-jssc-1998-7890-cu0-15ce0-85o2-x-1",
       "title": "P. Knauth; G. Schwitzgebel; A. Tschöpe; S. Villain (1998): Cu0.15Ce0.85O2-x",
       "formula": "Cu0.15Ce0.85O2-x",
@@ -229741,6 +230689,84 @@
       ],
       "pair_ids": [
         "kopcewicz1999-1-370363-fe80-5nb7b12-5-nanocrystalline-alloy-1::display"
+      ]
+    },
+    {
+      "record_id": "korala2017-acs-chemmater-7b00541-czts-nanocrystals-1",
+      "title": "Lasantha Korala; Max B. Braun; Jason M. Kephart; Zoë Tregillus; Amy L. Prieto (2017): CZTS nanocrystals",
+      "formula": "Cu1.2Zn1.4Sn1S4.7",
+      "family": "Cu1.2Zn1.4Sn1S4.7 nanocrystals",
+      "method": "Heat-up",
+      "record_type": "literature_protocol",
+      "source_year": 2017,
+      "source_doi": "10.1021/acs.chemmater.7b00541",
+      "revision": 1,
+      "record_sha256": "30b60423704d4bde93b1d410ce2654116bb256e6c74fec2416ebae60d4c11cb6",
+      "recipe_signature": "2b2b00601c9bd1ba59833fa07abd1ec1d7c423bfde259418715d351b7766a583",
+      "group_id": "group-db1faaa82b99",
+      "split": "validation",
+      "eligibility": {
+        "precursor_selection": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "partial_protocol": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "size_conditioned_recipe": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "success_prediction": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "optical_outcome": {
+          "eligible": false,
+          "reason": "Published numeric optical benchmark with explicit row linkage. Failure placeholders are excluded from continuous targets."
+        },
+        "exact_structure_recipe": {
+          "eligible": false,
+          "reason": "This record has not completed source review. Exact structure–recipe training has not been requested for this record. No canonical measured-sample coordinate asset is recorded; phase/size observations and reference viewers are separate. No independently audited completeness profile defines this task’s required recipe fields. Completeness is unassessed, not established.",
+          "reason_codes": [
+            "source_review_required",
+            "task_not_requested",
+            "no_sample_coordinate_asset",
+            "audited_task_profile_missing"
+          ],
+          "reasons": [
+            {
+              "code": "source_review_required",
+              "message": "This record has not completed source review."
+            },
+            {
+              "code": "task_not_requested",
+              "message": "Exact structure–recipe training has not been requested for this record."
+            },
+            {
+              "code": "no_sample_coordinate_asset",
+              "message": "No canonical measured-sample coordinate asset is recorded; phase/size observations and reference viewers are separate."
+            },
+            {
+              "code": "audited_task_profile_missing",
+              "message": "No independently audited completeness profile defines this task’s required recipe fields. Completeness is unassessed, not established."
+            }
+          ],
+          "profile_id": null,
+          "selected_asset_ids": []
+        }
+      },
+      "record_url": "data/records/korala2017-acs-chemmater-7b00541-czts-nanocrystals-1.json",
+      "page_url": "records/korala2017-acs-chemmater-7b00541-czts-nanocrystals-1.html",
+      "missing_field_count": 3,
+      "collection": "reviewed_literature",
+      "review_status": "source_extracted",
+      "components": [
+        "Cu1.2Zn1.4Sn1S4.7"
+      ],
+      "pair_ids": [
+        "korala2017-acs-chemmater-7b00541-czts-nanocrystals-1::display"
       ]
     },
     {
@@ -234088,6 +235114,84 @@
       ],
       "pair_ids": [
         "kuai2018-j-materresbull-2018-03-008-cqds-nhs-1::display"
+      ]
+    },
+    {
+      "record_id": "kubo2024-acs-jpcc-3c08420-cspbbr3-perovskite-nanocrystals-nc-1",
+      "title": "Naoki Kubo; Mitsuaki Yamauchi; Hiroko Yamada; Sadahiro Masuo (2024): CsPbBr3 perovskite nanocrystals (NC)",
+      "formula": "CsPbBr3",
+      "family": "CsPbBr3 nanocrystals",
+      "method": "Hot injection",
+      "record_type": "literature_protocol",
+      "source_year": 2024,
+      "source_doi": "10.1021/acs.jpcc.3c08420",
+      "revision": 1,
+      "record_sha256": "3c1915bc29437047948ff4adccc10562f288f7c33510607cacafd6d75fad1255",
+      "recipe_signature": "d6b218ef406c07d4dc11046966f1f37b45516741850881c2b520549ccb23204a",
+      "group_id": "group-37d59e354bde",
+      "split": "test",
+      "eligibility": {
+        "precursor_selection": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "partial_protocol": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "size_conditioned_recipe": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "success_prediction": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "optical_outcome": {
+          "eligible": false,
+          "reason": "Published numeric optical benchmark with explicit row linkage. Failure placeholders are excluded from continuous targets."
+        },
+        "exact_structure_recipe": {
+          "eligible": false,
+          "reason": "This record has not completed source review. Exact structure–recipe training has not been requested for this record. No canonical measured-sample coordinate asset is recorded; phase/size observations and reference viewers are separate. No independently audited completeness profile defines this task’s required recipe fields. Completeness is unassessed, not established.",
+          "reason_codes": [
+            "source_review_required",
+            "task_not_requested",
+            "no_sample_coordinate_asset",
+            "audited_task_profile_missing"
+          ],
+          "reasons": [
+            {
+              "code": "source_review_required",
+              "message": "This record has not completed source review."
+            },
+            {
+              "code": "task_not_requested",
+              "message": "Exact structure–recipe training has not been requested for this record."
+            },
+            {
+              "code": "no_sample_coordinate_asset",
+              "message": "No canonical measured-sample coordinate asset is recorded; phase/size observations and reference viewers are separate."
+            },
+            {
+              "code": "audited_task_profile_missing",
+              "message": "No independently audited completeness profile defines this task’s required recipe fields. Completeness is unassessed, not established."
+            }
+          ],
+          "profile_id": null,
+          "selected_asset_ids": []
+        }
+      },
+      "record_url": "data/records/kubo2024-acs-jpcc-3c08420-cspbbr3-perovskite-nanocrystals-nc-1.json",
+      "page_url": "records/kubo2024-acs-jpcc-3c08420-cspbbr3-perovskite-nanocrystals-nc-1.html",
+      "missing_field_count": 4,
+      "collection": "reviewed_literature",
+      "review_status": "source_extracted",
+      "components": [
+        "CsPbBr3"
+      ],
+      "pair_ids": [
+        "kubo2024-acs-jpcc-3c08420-cspbbr3-perovskite-nanocrystals-nc-1::display"
       ]
     },
     {
@@ -292066,6 +293170,84 @@
       ]
     },
     {
+      "record_id": "maciejewska2021-acs-jpcc-0c09532-ypo4-yb3-er3-1",
+      "title": "K. Maciejewska; A. Bednarkiewicz; A. Meijerink; L. Marciniak (2021): YPO4:Yb3+,Er3+",
+      "formula": "YPO4",
+      "family": "YPO4 nanocrystals",
+      "method": "Precipitation",
+      "record_type": "literature_protocol",
+      "source_year": 2021,
+      "source_doi": "10.1021/acs.jpcc.0c09532",
+      "revision": 1,
+      "record_sha256": "b674b6ad510c05eb08eb298c191c0cd0164c4e226ab6acaa9f2b37794dda35bd",
+      "recipe_signature": "1bb7623dd1bd785abf4d6fed96644b0daff863da6c8abf29547c07e3f0846214",
+      "group_id": "group-d89b989c2509",
+      "split": "train",
+      "eligibility": {
+        "precursor_selection": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "partial_protocol": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "size_conditioned_recipe": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "success_prediction": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "optical_outcome": {
+          "eligible": false,
+          "reason": "Published numeric optical benchmark with explicit row linkage. Failure placeholders are excluded from continuous targets."
+        },
+        "exact_structure_recipe": {
+          "eligible": false,
+          "reason": "This record has not completed source review. Exact structure–recipe training has not been requested for this record. No canonical measured-sample coordinate asset is recorded; phase/size observations and reference viewers are separate. No independently audited completeness profile defines this task’s required recipe fields. Completeness is unassessed, not established.",
+          "reason_codes": [
+            "source_review_required",
+            "task_not_requested",
+            "no_sample_coordinate_asset",
+            "audited_task_profile_missing"
+          ],
+          "reasons": [
+            {
+              "code": "source_review_required",
+              "message": "This record has not completed source review."
+            },
+            {
+              "code": "task_not_requested",
+              "message": "Exact structure–recipe training has not been requested for this record."
+            },
+            {
+              "code": "no_sample_coordinate_asset",
+              "message": "No canonical measured-sample coordinate asset is recorded; phase/size observations and reference viewers are separate."
+            },
+            {
+              "code": "audited_task_profile_missing",
+              "message": "No independently audited completeness profile defines this task’s required recipe fields. Completeness is unassessed, not established."
+            }
+          ],
+          "profile_id": null,
+          "selected_asset_ids": []
+        }
+      },
+      "record_url": "data/records/maciejewska2021-acs-jpcc-0c09532-ypo4-yb3-er3-1.json",
+      "page_url": "records/maciejewska2021-acs-jpcc-0c09532-ypo4-yb3-er3-1.html",
+      "missing_field_count": 10,
+      "collection": "reviewed_literature",
+      "review_status": "source_extracted",
+      "components": [
+        "YPO4"
+      ],
+      "pair_ids": [
+        "maciejewska2021-acs-jpcc-0c09532-ypo4-yb3-er3-1::display"
+      ]
+    },
+    {
       "record_id": "mackowski2004-physrevb-69-205325-cdte-qd-sample-with-2-ml-nominal-thickne-1",
       "title": "S. Mackowski (2004): CdTe QD sample with 2 ML nominal thickness",
       "formula": "CdTe",
@@ -299288,6 +300470,84 @@
       "pair_ids": [
         "massasa2024-cgd3c01472-prot-ode::prot-ode-120c",
         "massasa2024-cgd3c01472-prot-ode::prot-ode-150c"
+      ]
+    },
+    {
+      "record_id": "mastria2015-acs-jpcc-5b03761-arenethiolate-capped-pbs-qds-1",
+      "title": "Rosanna Mastria; Aurora Rizzo; Carlo Giansante; Dario Ballarini; Lorenzo Dominici; Olle Inganäs; Giuseppe Gigli (2015): arenethiolate-capped PbS QDs",
+      "formula": "PbS",
+      "family": "PbS nanocrystals",
+      "method": "Synthesis as described in the source",
+      "record_type": "literature_protocol",
+      "source_year": 2015,
+      "source_doi": "10.1021/acs.jpcc.5b03761",
+      "revision": 1,
+      "record_sha256": "f7eef1bbc9cb8293a09936f6f81ff926a957bd3455b768f065cee9f590f873db",
+      "recipe_signature": "43dc30b75b7dac66f610857103ba1351347729504725acb4519cc86885fb726e",
+      "group_id": "group-28f6634295ae",
+      "split": "test",
+      "eligibility": {
+        "precursor_selection": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "partial_protocol": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "size_conditioned_recipe": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "success_prediction": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "optical_outcome": {
+          "eligible": false,
+          "reason": "Published numeric optical benchmark with explicit row linkage. Failure placeholders are excluded from continuous targets."
+        },
+        "exact_structure_recipe": {
+          "eligible": false,
+          "reason": "This record has not completed source review. Exact structure–recipe training has not been requested for this record. No canonical measured-sample coordinate asset is recorded; phase/size observations and reference viewers are separate. No independently audited completeness profile defines this task’s required recipe fields. Completeness is unassessed, not established.",
+          "reason_codes": [
+            "source_review_required",
+            "task_not_requested",
+            "no_sample_coordinate_asset",
+            "audited_task_profile_missing"
+          ],
+          "reasons": [
+            {
+              "code": "source_review_required",
+              "message": "This record has not completed source review."
+            },
+            {
+              "code": "task_not_requested",
+              "message": "Exact structure–recipe training has not been requested for this record."
+            },
+            {
+              "code": "no_sample_coordinate_asset",
+              "message": "No canonical measured-sample coordinate asset is recorded; phase/size observations and reference viewers are separate."
+            },
+            {
+              "code": "audited_task_profile_missing",
+              "message": "No independently audited completeness profile defines this task’s required recipe fields. Completeness is unassessed, not established."
+            }
+          ],
+          "profile_id": null,
+          "selected_asset_ids": []
+        }
+      },
+      "record_url": "data/records/mastria2015-acs-jpcc-5b03761-arenethiolate-capped-pbs-qds-1.json",
+      "page_url": "records/mastria2015-acs-jpcc-5b03761-arenethiolate-capped-pbs-qds-1.html",
+      "missing_field_count": 6,
+      "collection": "reviewed_literature",
+      "review_status": "source_extracted",
+      "components": [
+        "PbS"
+      ],
+      "pair_ids": [
+        "mastria2015-acs-jpcc-5b03761-arenethiolate-capped-pbs-qds-1::display"
       ]
     },
     {
@@ -343770,6 +345030,86 @@
       ],
       "pair_ids": [
         "ou2010-jp105344b-pbse-qd-assembled-2d-islands-1::display"
+      ]
+    },
+    {
+      "record_id": "ou2019-acs-analchem-9b02166-nalu-gdf4-tb-nayf4-core-shell-nanocrysta-1",
+      "title": "Xiangyu Ou; Yanyan Chen; Lili Xie; Jie Chen; Jie Zan; Xiaofeng Chen; Zhongzhu Hong; Yu He; Juan Li; Huanghao Yang (2019): NaLu/GdF4:Tb@NaYF4 core-shell nanocrystals",
+      "formula": "NaLu/GdF4:Tb@NaYF4",
+      "family": "NaLu/GdF4:Tb@NaYF4 nanocrystals",
+      "method": "Synthesis as described in the source",
+      "record_type": "literature_protocol",
+      "source_year": 2019,
+      "source_doi": "10.1021/acs.analchem.9b02166",
+      "revision": 1,
+      "record_sha256": "9f65bdf12f365cc1d7ee72a9d94c4964090b8396c47efcbfb43b7eeb8a762567",
+      "recipe_signature": "a3f10d147233a7cd1f5a4ed4adc251b11f1b4fbedfd77ac03c37217638c49075",
+      "group_id": "group-148fb9da81eb",
+      "split": "test",
+      "eligibility": {
+        "precursor_selection": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "partial_protocol": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "size_conditioned_recipe": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "success_prediction": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "optical_outcome": {
+          "eligible": false,
+          "reason": "Published numeric optical benchmark with explicit row linkage. Failure placeholders are excluded from continuous targets."
+        },
+        "exact_structure_recipe": {
+          "eligible": false,
+          "reason": "This record has not completed source review. Exact structure–recipe training has not been requested for this record. No canonical measured-sample coordinate asset is recorded; phase/size observations and reference viewers are separate. No independently audited completeness profile defines this task’s required recipe fields. Completeness is unassessed, not established.",
+          "reason_codes": [
+            "source_review_required",
+            "task_not_requested",
+            "no_sample_coordinate_asset",
+            "audited_task_profile_missing"
+          ],
+          "reasons": [
+            {
+              "code": "source_review_required",
+              "message": "This record has not completed source review."
+            },
+            {
+              "code": "task_not_requested",
+              "message": "Exact structure–recipe training has not been requested for this record."
+            },
+            {
+              "code": "no_sample_coordinate_asset",
+              "message": "No canonical measured-sample coordinate asset is recorded; phase/size observations and reference viewers are separate."
+            },
+            {
+              "code": "audited_task_profile_missing",
+              "message": "No independently audited completeness profile defines this task’s required recipe fields. Completeness is unassessed, not established."
+            }
+          ],
+          "profile_id": null,
+          "selected_asset_ids": []
+        }
+      },
+      "record_url": "data/records/ou2019-acs-analchem-9b02166-nalu-gdf4-tb-nayf4-core-shell-nanocrysta-1.json",
+      "page_url": "records/ou2019-acs-analchem-9b02166-nalu-gdf4-tb-nayf4-core-shell-nanocrysta-1.html",
+      "missing_field_count": 2,
+      "collection": "reviewed_literature",
+      "review_status": "source_extracted",
+      "components": [
+        "NaLu",
+        "GdF4:Tb",
+        "NaYF4"
+      ],
+      "pair_ids": [
+        "ou2019-acs-analchem-9b02166-nalu-gdf4-tb-nayf4-core-shell-nanocrysta-1::display"
       ]
     },
     {
@@ -401495,6 +402835,240 @@
       ],
       "pair_ids": [
         "rizzo2014-am500110x-pbs-qds-2::display"
+      ]
+    },
+    {
+      "record_id": "roberge2020-acs-chemmater-0c02024-pbs-qds-2-77-nm-1",
+      "title": "Adam Roberge; John H. Dunlap; Fiaz Ahmed; Andrew B. Greytak (2020): PbS QDs (2.77 nm)",
+      "formula": "PbS",
+      "family": "PbS nanocrystals",
+      "method": "Heat-up",
+      "record_type": "literature_protocol",
+      "source_year": 2020,
+      "source_doi": "10.1021/acs.chemmater.0c02024",
+      "revision": 1,
+      "record_sha256": "05fa80f533ba5f05d814c0ede5bb73c88e4cc31b0931af3722f1443b6635af54",
+      "recipe_signature": "694cfdd7710def41a44950f89000c72b4e1ba5d9fec74a594d449fa45450916f",
+      "group_id": "group-bdc86e06dc5d",
+      "split": "train",
+      "eligibility": {
+        "precursor_selection": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "partial_protocol": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "size_conditioned_recipe": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "success_prediction": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "optical_outcome": {
+          "eligible": false,
+          "reason": "Published numeric optical benchmark with explicit row linkage. Failure placeholders are excluded from continuous targets."
+        },
+        "exact_structure_recipe": {
+          "eligible": false,
+          "reason": "This record has not completed source review. Exact structure–recipe training has not been requested for this record. No canonical measured-sample coordinate asset is recorded; phase/size observations and reference viewers are separate. No independently audited completeness profile defines this task’s required recipe fields. Completeness is unassessed, not established.",
+          "reason_codes": [
+            "source_review_required",
+            "task_not_requested",
+            "no_sample_coordinate_asset",
+            "audited_task_profile_missing"
+          ],
+          "reasons": [
+            {
+              "code": "source_review_required",
+              "message": "This record has not completed source review."
+            },
+            {
+              "code": "task_not_requested",
+              "message": "Exact structure–recipe training has not been requested for this record."
+            },
+            {
+              "code": "no_sample_coordinate_asset",
+              "message": "No canonical measured-sample coordinate asset is recorded; phase/size observations and reference viewers are separate."
+            },
+            {
+              "code": "audited_task_profile_missing",
+              "message": "No independently audited completeness profile defines this task’s required recipe fields. Completeness is unassessed, not established."
+            }
+          ],
+          "profile_id": null,
+          "selected_asset_ids": []
+        }
+      },
+      "record_url": "data/records/roberge2020-acs-chemmater-0c02024-pbs-qds-2-77-nm-1.json",
+      "page_url": "records/roberge2020-acs-chemmater-0c02024-pbs-qds-2-77-nm-1.html",
+      "missing_field_count": 10,
+      "collection": "reviewed_literature",
+      "review_status": "source_extracted",
+      "components": [
+        "PbS"
+      ],
+      "pair_ids": [
+        "roberge2020-acs-chemmater-0c02024-pbs-qds-2-77-nm-1::display"
+      ]
+    },
+    {
+      "record_id": "roberge2020-acs-chemmater-0c02024-pbs-qds-3-38-nm-2",
+      "title": "Adam Roberge; John H. Dunlap; Fiaz Ahmed; Andrew B. Greytak (2020): PbS QDs (3.38 nm)",
+      "formula": "PbS",
+      "family": "PbS nanocrystals",
+      "method": "Heat-up",
+      "record_type": "literature_protocol",
+      "source_year": 2020,
+      "source_doi": "10.1021/acs.chemmater.0c02024",
+      "revision": 1,
+      "record_sha256": "a22f6cbd054fc7da1d6a85aa5ac0f776d06bce262cce040fa2449105ac65925e",
+      "recipe_signature": "694cfdd7710def41a44950f89000c72b4e1ba5d9fec74a594d449fa45450916f",
+      "group_id": "group-bdc86e06dc5d",
+      "split": "train",
+      "eligibility": {
+        "precursor_selection": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "partial_protocol": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "size_conditioned_recipe": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "success_prediction": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "optical_outcome": {
+          "eligible": false,
+          "reason": "Published numeric optical benchmark with explicit row linkage. Failure placeholders are excluded from continuous targets."
+        },
+        "exact_structure_recipe": {
+          "eligible": false,
+          "reason": "This record has not completed source review. Exact structure–recipe training has not been requested for this record. No canonical measured-sample coordinate asset is recorded; phase/size observations and reference viewers are separate. No independently audited completeness profile defines this task’s required recipe fields. Completeness is unassessed, not established.",
+          "reason_codes": [
+            "source_review_required",
+            "task_not_requested",
+            "no_sample_coordinate_asset",
+            "audited_task_profile_missing"
+          ],
+          "reasons": [
+            {
+              "code": "source_review_required",
+              "message": "This record has not completed source review."
+            },
+            {
+              "code": "task_not_requested",
+              "message": "Exact structure–recipe training has not been requested for this record."
+            },
+            {
+              "code": "no_sample_coordinate_asset",
+              "message": "No canonical measured-sample coordinate asset is recorded; phase/size observations and reference viewers are separate."
+            },
+            {
+              "code": "audited_task_profile_missing",
+              "message": "No independently audited completeness profile defines this task’s required recipe fields. Completeness is unassessed, not established."
+            }
+          ],
+          "profile_id": null,
+          "selected_asset_ids": []
+        }
+      },
+      "record_url": "data/records/roberge2020-acs-chemmater-0c02024-pbs-qds-3-38-nm-2.json",
+      "page_url": "records/roberge2020-acs-chemmater-0c02024-pbs-qds-3-38-nm-2.html",
+      "missing_field_count": 10,
+      "collection": "reviewed_literature",
+      "review_status": "source_extracted",
+      "components": [
+        "PbS"
+      ],
+      "pair_ids": [
+        "roberge2020-acs-chemmater-0c02024-pbs-qds-3-38-nm-2::display"
+      ]
+    },
+    {
+      "record_id": "roberge2020-acs-chemmater-0c02024-pbs-qds-6-12-nm-3",
+      "title": "Adam Roberge; John H. Dunlap; Fiaz Ahmed; Andrew B. Greytak (2020): PbS QDs (6.12 nm)",
+      "formula": "PbS",
+      "family": "PbS nanocrystals",
+      "method": "Heat-up",
+      "record_type": "literature_protocol",
+      "source_year": 2020,
+      "source_doi": "10.1021/acs.chemmater.0c02024",
+      "revision": 1,
+      "record_sha256": "c93eb7731ed2676a28cbecb72b7334a0b644e682107c21f9ac1c5167747c1095",
+      "recipe_signature": "694cfdd7710def41a44950f89000c72b4e1ba5d9fec74a594d449fa45450916f",
+      "group_id": "group-bdc86e06dc5d",
+      "split": "train",
+      "eligibility": {
+        "precursor_selection": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "partial_protocol": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "size_conditioned_recipe": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "success_prediction": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "optical_outcome": {
+          "eligible": false,
+          "reason": "Published numeric optical benchmark with explicit row linkage. Failure placeholders are excluded from continuous targets."
+        },
+        "exact_structure_recipe": {
+          "eligible": false,
+          "reason": "This record has not completed source review. Exact structure–recipe training has not been requested for this record. No canonical measured-sample coordinate asset is recorded; phase/size observations and reference viewers are separate. No independently audited completeness profile defines this task’s required recipe fields. Completeness is unassessed, not established.",
+          "reason_codes": [
+            "source_review_required",
+            "task_not_requested",
+            "no_sample_coordinate_asset",
+            "audited_task_profile_missing"
+          ],
+          "reasons": [
+            {
+              "code": "source_review_required",
+              "message": "This record has not completed source review."
+            },
+            {
+              "code": "task_not_requested",
+              "message": "Exact structure–recipe training has not been requested for this record."
+            },
+            {
+              "code": "no_sample_coordinate_asset",
+              "message": "No canonical measured-sample coordinate asset is recorded; phase/size observations and reference viewers are separate."
+            },
+            {
+              "code": "audited_task_profile_missing",
+              "message": "No independently audited completeness profile defines this task’s required recipe fields. Completeness is unassessed, not established."
+            }
+          ],
+          "profile_id": null,
+          "selected_asset_ids": []
+        }
+      },
+      "record_url": "data/records/roberge2020-acs-chemmater-0c02024-pbs-qds-6-12-nm-3.json",
+      "page_url": "records/roberge2020-acs-chemmater-0c02024-pbs-qds-6-12-nm-3.html",
+      "missing_field_count": 10,
+      "collection": "reviewed_literature",
+      "review_status": "source_extracted",
+      "components": [
+        "PbS"
+      ],
+      "pair_ids": [
+        "roberge2020-acs-chemmater-0c02024-pbs-qds-6-12-nm-3::display"
       ]
     },
     {
@@ -537704,6 +539278,85 @@
       ]
     },
     {
+      "record_id": "yang2015-acs-jpcc-5b10546-cdsete-cds-core-shell-qds-1",
+      "title": "Junwei Yang; Jin Wang; Ke Zhao; Takuya Izuishi; Yan Li; Qing Shen; Xinhua Zhong (2015): CdSeTe/CdS core/shell QDs",
+      "formula": "CdSeTe/CdS",
+      "family": "CdSeTe/CdS nanocrystals",
+      "method": "SILAR",
+      "record_type": "literature_protocol",
+      "source_year": 2015,
+      "source_doi": "10.1021/acs.jpcc.5b10546",
+      "revision": 1,
+      "record_sha256": "3bad4f5048dcda647379c85862599b21b956eade8758a599fedb0925d16b0260",
+      "recipe_signature": "6492d6c92dcd248f0b59f0fcf2f1746cf7c73a474527da614867223521000bda",
+      "group_id": "group-124b8758e6fa",
+      "split": "train",
+      "eligibility": {
+        "precursor_selection": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "partial_protocol": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "size_conditioned_recipe": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "success_prediction": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "optical_outcome": {
+          "eligible": false,
+          "reason": "Published numeric optical benchmark with explicit row linkage. Failure placeholders are excluded from continuous targets."
+        },
+        "exact_structure_recipe": {
+          "eligible": false,
+          "reason": "This record has not completed source review. Exact structure–recipe training has not been requested for this record. No canonical measured-sample coordinate asset is recorded; phase/size observations and reference viewers are separate. No independently audited completeness profile defines this task’s required recipe fields. Completeness is unassessed, not established.",
+          "reason_codes": [
+            "source_review_required",
+            "task_not_requested",
+            "no_sample_coordinate_asset",
+            "audited_task_profile_missing"
+          ],
+          "reasons": [
+            {
+              "code": "source_review_required",
+              "message": "This record has not completed source review."
+            },
+            {
+              "code": "task_not_requested",
+              "message": "Exact structure–recipe training has not been requested for this record."
+            },
+            {
+              "code": "no_sample_coordinate_asset",
+              "message": "No canonical measured-sample coordinate asset is recorded; phase/size observations and reference viewers are separate."
+            },
+            {
+              "code": "audited_task_profile_missing",
+              "message": "No independently audited completeness profile defines this task’s required recipe fields. Completeness is unassessed, not established."
+            }
+          ],
+          "profile_id": null,
+          "selected_asset_ids": []
+        }
+      },
+      "record_url": "data/records/yang2015-acs-jpcc-5b10546-cdsete-cds-core-shell-qds-1.json",
+      "page_url": "records/yang2015-acs-jpcc-5b10546-cdsete-cds-core-shell-qds-1.html",
+      "missing_field_count": 11,
+      "collection": "reviewed_literature",
+      "review_status": "source_extracted",
+      "components": [
+        "CdSeTe",
+        "CdS"
+      ],
+      "pair_ids": [
+        "yang2015-acs-jpcc-5b10546-cdsete-cds-core-shell-qds-1::display"
+      ]
+    },
+    {
       "record_id": "yang2015-acsami-5b05372-gd-doped-cuins-zns-bqds-gcis-zns-1",
       "title": "Weitao Yang; Weisheng Guo; Xiaoqun Gong; Bingbo Zhang; Sheng Wang; Na Chen; Wentao Yang; Yu Tu; Xiangming Fang; Jin Chang (2015): Gd-doped CuInS/ZnS BQDs (GCIS/ZnS)",
       "formula": "CuInS/ZnS",
@@ -547969,6 +549622,84 @@
         "Sn"
       ],
       "pair_ids": []
+    },
+    {
+      "record_id": "yarema2020-acs-chemmater-9b05191-agsbse2-nanocrystals-1",
+      "title": "Olesya Yarema; Maksym Yarema; Annina Moser; Olivier Enger; Vanessa Wood (2020): AgSbSe2 nanocrystals",
+      "formula": "AgSbSe2",
+      "family": "AgSbSe2 nanocrystals",
+      "method": "Heat-up",
+      "record_type": "literature_protocol",
+      "source_year": 2020,
+      "source_doi": "10.1021/acs.chemmater.9b05191",
+      "revision": 1,
+      "record_sha256": "a9af7bfbca6a0a118760fc4c484d0fe5c802335058bb6b9498256c43cead8f25",
+      "recipe_signature": "51db0b3b7a08798399b0e31e7bb0fdcd79547aaf9bd93c704363258075169143",
+      "group_id": "group-d3e0dce75b16",
+      "split": "train",
+      "eligibility": {
+        "precursor_selection": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "partial_protocol": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "size_conditioned_recipe": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "success_prediction": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "optical_outcome": {
+          "eligible": false,
+          "reason": "Published numeric optical benchmark with explicit row linkage. Failure placeholders are excluded from continuous targets."
+        },
+        "exact_structure_recipe": {
+          "eligible": false,
+          "reason": "This record has not completed source review. Exact structure–recipe training has not been requested for this record. No canonical measured-sample coordinate asset is recorded; phase/size observations and reference viewers are separate. No independently audited completeness profile defines this task’s required recipe fields. Completeness is unassessed, not established.",
+          "reason_codes": [
+            "source_review_required",
+            "task_not_requested",
+            "no_sample_coordinate_asset",
+            "audited_task_profile_missing"
+          ],
+          "reasons": [
+            {
+              "code": "source_review_required",
+              "message": "This record has not completed source review."
+            },
+            {
+              "code": "task_not_requested",
+              "message": "Exact structure–recipe training has not been requested for this record."
+            },
+            {
+              "code": "no_sample_coordinate_asset",
+              "message": "No canonical measured-sample coordinate asset is recorded; phase/size observations and reference viewers are separate."
+            },
+            {
+              "code": "audited_task_profile_missing",
+              "message": "No independently audited completeness profile defines this task’s required recipe fields. Completeness is unassessed, not established."
+            }
+          ],
+          "profile_id": null,
+          "selected_asset_ids": []
+        }
+      },
+      "record_url": "data/records/yarema2020-acs-chemmater-9b05191-agsbse2-nanocrystals-1.json",
+      "page_url": "records/yarema2020-acs-chemmater-9b05191-agsbse2-nanocrystals-1.html",
+      "missing_field_count": 6,
+      "collection": "reviewed_literature",
+      "review_status": "source_extracted",
+      "components": [
+        "AgSbSe2"
+      ],
+      "pair_ids": [
+        "yarema2020-acs-chemmater-9b05191-agsbse2-nanocrystals-1::display"
+      ]
     },
     {
       "record_id": "yasseriu2006-s00339-005-3446-3-ag-nanocrystals-on-sinws-1",
@@ -574254,6 +575985,84 @@
       ],
       "pair_ids": [
         "zhang2023-d2ra07726d-bi2o3qds-biocl-heterojunction-1::display"
+      ]
+    },
+    {
+      "record_id": "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1",
+      "title": "Haozhi Zhang; John C. Peterson; Augustin Caillas; Philippe Guyot-Sionnest (2024): HgTe CQDs (14 nm diameter, 6.5% size distribution)",
+      "formula": "HgTe",
+      "family": "HgTe nanocrystals",
+      "method": "Hot injection",
+      "record_type": "literature_protocol",
+      "source_year": 2024,
+      "source_doi": "10.1021/acs.jpcc.3c07908",
+      "revision": 1,
+      "record_sha256": "78687a0f313d2333d2f10c895a928568f094cd845888dff7ff15812057e290c1",
+      "recipe_signature": "61b112cb6775e53d328d470549b2b264a2ce1dda72426d4462011567a9659024",
+      "group_id": "group-0812b9259903",
+      "split": "train",
+      "eligibility": {
+        "precursor_selection": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "partial_protocol": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "size_conditioned_recipe": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "success_prediction": {
+          "eligible": false,
+          "reason": "Source review required, or structured-data verification supports only a separately gated benchmark task."
+        },
+        "optical_outcome": {
+          "eligible": false,
+          "reason": "Published numeric optical benchmark with explicit row linkage. Failure placeholders are excluded from continuous targets."
+        },
+        "exact_structure_recipe": {
+          "eligible": false,
+          "reason": "This record has not completed source review. Exact structure–recipe training has not been requested for this record. No canonical measured-sample coordinate asset is recorded; phase/size observations and reference viewers are separate. No independently audited completeness profile defines this task’s required recipe fields. Completeness is unassessed, not established.",
+          "reason_codes": [
+            "source_review_required",
+            "task_not_requested",
+            "no_sample_coordinate_asset",
+            "audited_task_profile_missing"
+          ],
+          "reasons": [
+            {
+              "code": "source_review_required",
+              "message": "This record has not completed source review."
+            },
+            {
+              "code": "task_not_requested",
+              "message": "Exact structure–recipe training has not been requested for this record."
+            },
+            {
+              "code": "no_sample_coordinate_asset",
+              "message": "No canonical measured-sample coordinate asset is recorded; phase/size observations and reference viewers are separate."
+            },
+            {
+              "code": "audited_task_profile_missing",
+              "message": "No independently audited completeness profile defines this task’s required recipe fields. Completeness is unassessed, not established."
+            }
+          ],
+          "profile_id": null,
+          "selected_asset_ids": []
+        }
+      },
+      "record_url": "data/records/zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1.json",
+      "page_url": "records/zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1.html",
+      "missing_field_count": 12,
+      "collection": "reviewed_literature",
+      "review_status": "source_extracted",
+      "components": [
+        "HgTe"
+      ],
+      "pair_ids": [
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1::display"
       ]
     },
     {

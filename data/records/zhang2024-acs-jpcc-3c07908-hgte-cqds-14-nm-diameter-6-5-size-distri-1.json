@@ -1,0 +1,1060 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Haozhi Zhang; John C. Peterson; Augustin Caillas; Philippe Guyot-Sionnest (2024): HgTe CQDs (14 nm diameter, 6.5% size distribution)",
+  "material": {
+    "formula": "HgTe",
+    "family": "HgTe nanocrystals",
+    "elements": [
+      "Hg",
+      "Te"
+    ],
+    "components": [
+      "HgTe"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Hot injection",
+  "sources": [
+    {
+      "id": "zhang2024-acs-jpcc-3c07908",
+      "doi": "10.1021/acs.jpcc.3c07908",
+      "title": "High Mobility HgTe Quantum Dot Films with Small Energy and Dynamic Disorder",
+      "authors": "Haozhi Zhang; John C. Peterson; Augustin Caillas; Philippe Guyot-Sionnest",
+      "year": 2024,
+      "url": "https://doi.org/10.1021/acs.jpcc.3c07908",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "zhang2024-acs-jpcc-3c07908",
+    "recipe_family": "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "HgTe",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "zhang2024-acs-jpcc-3c07908",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "crystal phase",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "zhang2024-acs-jpcc-3c07908",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": null,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "not_reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "not reported",
+      "evidence": [],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "sphere",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "zhang2024-acs-jpcc-3c07908",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--hgcl2",
+      "name": "HgCl2",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 0.133,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.133 mmol",
+          "evidence": [
+            {
+              "source_id": "zhang2024-acs-jpcc-3c07908",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zhang2024-acs-jpcc-3c07908",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--hg-oac-2",
+      "name": "Hg(OAc)2",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 0.067,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.067 mmol",
+          "evidence": [
+            {
+              "source_id": "zhang2024-acs-jpcc-3c07908",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zhang2024-acs-jpcc-3c07908",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--oleyamine",
+      "name": "oleyamine",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zhang2024-acs-jpcc-3c07908",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--bis-trimethylsilyl-telluride",
+      "name": "bis(trimethylsilyl)telluride",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "amount": {
+          "value": 0.035,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mmol",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.035 mmol",
+          "evidence": [
+            {
+              "source_id": "zhang2024-acs-jpcc-3c07908",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zhang2024-acs-jpcc-3c07908",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--topte",
+      "name": "TOPTe",
+      "formula": null,
+      "role": "nonmetal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zhang2024-acs-jpcc-3c07908",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--anhydrous-toluene",
+      "name": "anhydrous toluene",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zhang2024-acs-jpcc-3c07908",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--isopropanol",
+      "name": "isopropanol",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zhang2024-acs-jpcc-3c07908",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--octane",
+      "name": "octane",
+      "formula": null,
+      "role": "solvent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zhang2024-acs-jpcc-3c07908",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--n-n-dimethylformamide-dmf",
+      "name": "N,N-dimethylformamide (DMF)",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zhang2024-acs-jpcc-3c07908",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--2-mercaptoethanol",
+      "name": "2-mercaptoethanol",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zhang2024-acs-jpcc-3c07908",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--butylamine",
+      "name": "butylamine",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zhang2024-acs-jpcc-3c07908",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--dmso",
+      "name": "DMSO",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "zhang2024-acs-jpcc-3c07908",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--after-s01-heat",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--hgcl2",
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--hg-oac-2",
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--oleyamine"
+      ]
+    },
+    {
+      "id": "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--after-s02-heat",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--after-s01-heat",
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--hgcl2",
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--hg-oac-2",
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--oleyamine"
+      ]
+    },
+    {
+      "id": "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--after-s03-inject",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--after-s02-heat",
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--bis-trimethylsilyl-telluride",
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--anhydrous-toluene"
+      ]
+    },
+    {
+      "id": "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--after-s04-inject",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--after-s03-inject",
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--topte",
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--anhydrous-toluene"
+      ]
+    },
+    {
+      "id": "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--after-s05-quench",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--after-s04-inject",
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--anhydrous-toluene"
+      ]
+    },
+    {
+      "id": "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--after-s06-precipitate",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--after-s05-quench",
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--isopropanol"
+      ]
+    },
+    {
+      "id": "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--after-s07-redisperse",
+      "name": "mixture after step 7",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--after-s06-precipitate",
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--octane"
+      ]
+    },
+    {
+      "id": "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--after-s08-transfer",
+      "name": "mixture after step 8",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--after-s07-redisperse",
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--n-n-dimethylformamide-dmf",
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--2-mercaptoethanol",
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--butylamine"
+      ]
+    },
+    {
+      "id": "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--after-s09-precipitate",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--after-s08-transfer",
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--anhydrous-toluene"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-heat",
+      "action": "heat",
+      "label": "Heating the solution to 90 °C to dissolve Hg compounds.",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--hgcl2",
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--hg-oac-2",
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--oleyamine"
+      ],
+      "outputs": [
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--after-s01-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 90,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "90 °C",
+          "evidence": [
+            {
+              "source_id": "zhang2024-acs-jpcc-3c07908",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zhang2024-acs-jpcc-3c07908",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heating the solution to 90 °C to dissolve Hg compounds.",
+      "evidence": [
+        {
+          "source_id": "zhang2024-acs-jpcc-3c07908",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-heat",
+      "action": "heat",
+      "label": "Heating the solution to 110 °C for nanocrystal growth.",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-heat"
+      ],
+      "inputs": [
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--after-s01-heat",
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--hgcl2",
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--hg-oac-2",
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--oleyamine"
+      ],
+      "outputs": [
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--after-s02-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 110,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "110 °C",
+          "evidence": [
+            {
+              "source_id": "zhang2024-acs-jpcc-3c07908",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zhang2024-acs-jpcc-3c07908",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heating the solution to 110 °C for nanocrystal growth.",
+      "evidence": [
+        {
+          "source_id": "zhang2024-acs-jpcc-3c07908",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s03-inject",
+      "action": "inject",
+      "label": "Injecting TMS2Te solution into the Hg compound solution.",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-heat"
+      ],
+      "inputs": [
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--after-s02-heat",
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--bis-trimethylsilyl-telluride",
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--anhydrous-toluene"
+      ],
+      "outputs": [
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--after-s03-inject"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 min",
+          "evidence": [
+            {
+              "source_id": "zhang2024-acs-jpcc-3c07908",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zhang2024-acs-jpcc-3c07908",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Injecting TMS2Te solution into the Hg compound solution.",
+      "evidence": [
+        {
+          "source_id": "zhang2024-acs-jpcc-3c07908",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s04-inject",
+      "action": "inject",
+      "label": "Injecting TOPTe solution dropwise over 5 minutes.",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-inject"
+      ],
+      "inputs": [
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--after-s03-inject",
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--topte",
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--anhydrous-toluene"
+      ],
+      "outputs": [
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--after-s04-inject"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "5 min",
+          "evidence": [
+            {
+              "source_id": "zhang2024-acs-jpcc-3c07908",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zhang2024-acs-jpcc-3c07908",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Injecting TOPTe solution dropwise over 5 minutes.",
+      "evidence": [
+        {
+          "source_id": "zhang2024-acs-jpcc-3c07908",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s05-quench",
+      "action": "quench",
+      "label": "Quenching the reaction with cold anhydrous toluene.",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-inject"
+      ],
+      "inputs": [
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--after-s04-inject",
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--anhydrous-toluene"
+      ],
+      "outputs": [
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--after-s05-quench"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zhang2024-acs-jpcc-3c07908",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Quenching the reaction with cold anhydrous toluene.",
+      "evidence": [
+        {
+          "source_id": "zhang2024-acs-jpcc-3c07908",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s06-precipitate",
+      "action": "precipitate",
+      "label": "Precipitating QDs with isopropanol.",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s05-quench"
+      ],
+      "inputs": [
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--after-s05-quench",
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--isopropanol"
+      ],
+      "outputs": [
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--after-s06-precipitate"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 min",
+          "evidence": [
+            {
+              "source_id": "zhang2024-acs-jpcc-3c07908",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Precipitating QDs with isopropanol.",
+      "evidence": [
+        {
+          "source_id": "zhang2024-acs-jpcc-3c07908",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s07-redisperse",
+      "action": "redisperse",
+      "label": "Redispersing QDs in octane.",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s06-precipitate"
+      ],
+      "inputs": [
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--after-s06-precipitate",
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--octane"
+      ],
+      "outputs": [
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--after-s07-redisperse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Redispersing QDs in octane.",
+      "evidence": [
+        {
+          "source_id": "zhang2024-acs-jpcc-3c07908",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s08-transfer",
+      "action": "transfer",
+      "label": "Transferring QDs to DMF with ligand exchange.",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s07-redisperse"
+      ],
+      "inputs": [
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--after-s07-redisperse",
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--n-n-dimethylformamide-dmf",
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--2-mercaptoethanol",
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--butylamine"
+      ],
+      "outputs": [
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--after-s08-transfer"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": "N2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zhang2024-acs-jpcc-3c07908",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Transferring QDs to DMF with ligand exchange.",
+      "evidence": [
+        {
+          "source_id": "zhang2024-acs-jpcc-3c07908",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s09-precipitate",
+      "action": "precipitate",
+      "label": "Precipitating QDs with antisolvent toluene.",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s08-transfer"
+      ],
+      "inputs": [
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--after-s08-transfer",
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--anhydrous-toluene"
+      ],
+      "outputs": [
+        "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--after-s09-precipitate"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 min",
+          "evidence": [
+            {
+              "source_id": "zhang2024-acs-jpcc-3c07908",
+              "locator": "Main PDF p.2"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Precipitating QDs with antisolvent toluene.",
+      "evidence": [
+        {
+          "source_id": "zhang2024-acs-jpcc-3c07908",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--product",
+      "source_sample_label": "HgTe CQDs (14 nm diameter, 6.5% size distribution)",
+      "batch_id": null,
+      "material_state_id": "zhang2024-acs-jpcc-3c07908-hgte-cqds-14-nm-diameter-6-5-size-distri-1--after-s09-precipitate",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "HgTe",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zhang2024-acs-jpcc-3c07908",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "crystal phase",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zhang2024-acs-jpcc-3c07908",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": "sphere",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zhang2024-acs-jpcc-3c07908",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": "hybrid ligand (halide ions, short organic thiols, and amines)",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zhang2024-acs-jpcc-3c07908",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "zhang2024-acs-jpcc-3c07908",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "notes": [
+        "Reactor: nitrogen glovebox (Main PDF p.2).",
+        "Reaction temperature: 110 degC (Main PDF p.2).",
+        "Reaction time: 1 min (Main PDF p.2)."
+      ]
+    }
+  ],
+  "measurements": [],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
+    "missing_fields": [
+      "Size not reported in the extracted text.",
+      "Emission peak not reported in the extracted text.",
+      "Plqy not reported in the extracted text.",
+      "Amount of oleyamine not reported in the extracted text.",
+      "Amount of TOPTe not reported in the extracted text.",
+      "Amount of anhydrous toluene not reported in the extracted text.",
+      "Amount of isopropanol not reported in the extracted text.",
+      "Amount of octane not reported in the extracted text.",
+      "Amount of N,N-dimethylformamide (DMF) not reported in the extracted text.",
+      "Amount of 2-mercaptoethanol not reported in the extracted text.",
+      "Amount of butylamine not reported in the extracted text.",
+      "Amount of DMSO not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}
