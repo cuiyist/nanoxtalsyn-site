@@ -9,7 +9,7 @@ NanoXtalSyn organizes source-attributed synthesis, characterization and property
 <!-- mattersyn-generated-references:start -->
 ## Papers used in the published website
 
-Dataset **0.41.2** · **3567 primary source groups** · release `tanjin-x07-thickness-correction`. Records are not independent experiments.
+Dataset **0.41.2** · **3571 primary source groups** · release `tanjin-x-release08`. Records are not independent experiments.
 
 - not reported (year unrecorded). 10.1007_s11051-010-0042-z. [10.1007/s11051-010-0042-z](https://doi.org/10.1007/s11051-010-0042-z). Review scope remains stated in the linked website records.
 
@@ -4917,6 +4917,8 @@ Dataset **0.41.2** · **3567 primary source groups** · release `tanjin-x07-thic
 
 - Laxmi Kishore Sagar; Willem Walravens; Qiang Zhao; André Vantomme; Pieter Geiregat; Zeger Hens (2016). PbS/CdS Core/Shell Quantum Dots by Additive, Layer-by-Layer Shell Growth. [10.1021/acs.chemmater.6b02638](https://doi.org/10.1021/acs.chemmater.6b02638). Review scope remains stated in the linked website records.
 
+- Andrea M. Munro; Caleb Chandler; Matthew Garling; Darick Chai; Victoria Popovich; Levi Lystrom; Svetlana Kilina (2016). Phenyldithiocarbamate Ligands Decompose During Nanocrystal Ligand Exchange. [10.1021/acs.jpcc.6b08247](https://doi.org/10.1021/acs.jpcc.6b08247). Review scope remains stated in the linked website records.
+
 - Wachiraporn Maisang; Anukorn Phuruangrat; Somchai Thongtem; Titipun Thongtem (2016). Photoluminescence and photonic absorbance of Ce 2 (MoO 4 ) 3 nanocrystal synthesized by microwave–hydrothermal/solvothermal method. [10.1007/s12598-016-0714-7](https://doi.org/10.1007/s12598-016-0714-7). Review scope remains stated in the linked website records.
 
 - Darren C. J. Neo; Nanlin Zhang; Yujiro Tazawa; Haibo Jiang; Gareth M. Hughes; Chris R. M. Grovenor; Hazel E. Assender; Andrew A. R. Watt (2016). Poly(3-hexylthiophene-2,5-diyl) as a Hole Transport Layer for Colloidal Quantum Dot Solar Cells. [10.1021/acsami.5b10228](https://doi.org/10.1021/acsami.5b10228). Review scope remains stated in the linked website records.
@@ -6259,6 +6261,8 @@ Dataset **0.41.2** · **3567 primary source groups** · release `tanjin-x07-thic
 
 - Fanjie Wang; Mubin He; Biao Huang; Tao Tang; Feng Liu; Ran Cui; Jun Qian; Mingxi Zhang; Taolei Sun (2023). Band Gap Engineering Improves Three-Photon Luminescence of Quantum Dots for Deep Brain Imaging. [10.1021/acs.analchem.3c00845](https://doi.org/10.1021/acs.analchem.3c00845). Review scope remains stated in the linked website records.
 
+- Swarnali Ghosh; Soumen Mukherjee; Saptarshi Mandal; Chayan K. De; Sukumar Mardanya; Arijit Saha; Prasun K. Mandal (2023). Beneficial Intrinsic Hole Trapping and Its Amplitude Variation in a Highly Photoluminescent Toxic-Metal-Free Quantum Dot. [10.1021/acs.jpclett.2c03373](https://doi.org/10.1021/acs.jpclett.2c03373). Review scope remains stated in the linked website records.
+
 - Ji Yang; Yifei Lv; Ziyang He; Binbin Wang; Shiwu Chen; Feng Xiao; Huicheng Hu; Mengxuan Yu; Huan Liu; Xinzheng Lan; Hsien-Yi Hsu; Haisheng Song; Jiang Tang (2023). Bi2S3 Electron Transport Layer Incorporation for High-Performance Heterostructure HgTe Colloidal Quantum Dot Infrared Photodetectors. [10.1021/acsphotonics.2c01145](https://doi.org/10.1021/acsphotonics.2c01145). Review scope remains stated in the linked website records.
 
 - Fatemeh Elmi; Zahra Etemadifar; Giti Emtiazi (2023). Biosynthesis of Calcite Nanocrystal by a Novel Polyextremophile Bhargavaea cecembensis-Related Strain Isolated from Sandy Soil. [10.1007/s00248-022-01977-y](https://doi.org/10.1007/s00248-022-01977-y). Review scope remains stated in the linked website records.
@@ -6630,6 +6634,8 @@ Dataset **0.41.2** · **3567 primary source groups** · release `tanjin-x07-thic
 - Shashikana Paria; Prasenjit Maity (2024). Photoluminescent MoS2 and MoSe2 Quantum Dots for the Detection of Nitro-Organic Explosives. [10.1021/acsanm.4c02542](https://doi.org/10.1021/acsanm.4c02542). Review scope remains stated in the linked website records.
 
 - Qiaocan Huang; Zunxian Yang; Yuliang Ye; Zongyi Meng; Zhiwei Zeng; Hongyi Hong; Songwei Ye; Zhiming Cheng; Qianting Lan; Bingqing Ye; Yuanqing Zhou; Zihong Shen; Wenbo Wu; Jiaxiang Wang; Ye Chen; Hui Zhang; Tailiang Guo; Fushan Li; Yongyi Chen; Zhenzhen Weng (2024). Physically Controlled Nucleation for Tunable Quantum Dots and Interface Defect Modification in Light-Emitting Diodes. [10.1021/acsanm.3c05208](https://doi.org/10.1021/acsanm.3c05208). Review scope remains stated in the linked website records.
+
+- Pritha Mondal; Subham Kumar Saha; Parna Roy; Navyashree Vasudeva; Ashwini Anshu; Guru Pratheep Rajasekar; Anshu Pandey (2024). Plasmon Mediated Single Photon Emission from a Nanocrystal Ensemble. [10.1021/acs.jpclett.4c00540](https://doi.org/10.1021/acs.jpclett.4c00540). Review scope remains stated in the linked website records.
 
 - Hyejin Lee; Dae-Hee Cho; Chanwoo Lim; Woong Kim; Yoon Hee Jang; Se-Woong Baek; Byeong Kwon Ju; Phillip Lee; Hyeonggeun Yu (2024). Pressurized Back-Junction Doping via Spray-Coating Silver Nanowires Top Electrodes for Efficient Charge Collection in Bifacial Colloidal PbS Quantum Dot Solar Cells. [10.1021/acsami.3c16468](https://doi.org/10.1021/acsami.3c16468). Review scope remains stated in the linked website records.
 
@@ -7044,6 +7050,8 @@ Dataset **0.41.2** · **3567 primary source groups** · release `tanjin-x07-thic
 - Huilei Shi; Yichuan Wang; Chengjie Deng; Juntao Pi; Qiyuan Guo; Yuhan Zhang; Hao Li; Yuxuan Liu; Xing Zhou; Jianbing Zhang; Sen Li; Jing Liu; Liang Gao; Jiang Tang (2026). Facet-Selective Multidentate Passivation for Suppressing Defects in PbS Colloidal Quantum Dot Photodiodes. [10.1021/acs.jpcc.6c02911](https://doi.org/10.1021/acs.jpcc.6c02911). Review scope remains stated in the linked website records.
 
 - L. Paillardet; M. Gromova; D. Liu; A. S. Vasenko; O. V. Prezhdo; S. Alarab; G. De Paëpe; G. Lefevre; S. Charlot; O. Gourhant; B. Mortini; P. Reiss; J.‐M. Verilhac; D. Aldakov (2026). Facet‐Specific PbS Quantum Dot Passivation Using Halide Perovskites for SWIR Photodetectors. [10.1002/admi.70575](https://doi.org/10.1002/admi.70575). Review scope remains stated in the linked website records.
+
+- Davide Zenatti; Priya Nagpal; Arnab Ghosh; Dallas P. Strandell; Dmitry Dirin; Maksym V. Kovalenko; Patanjali Kambhampati (2026). From Exciton to Tetraexciton: Final-State Doublets and 1P Addition Energies in a Weakly Confined Perovskite Quantum Dot. [10.1021/acs.jpclett.6c01392](https://doi.org/10.1021/acs.jpclett.6c01392). Review scope remains stated in the linked website records.
 
 - Mengjie Zhang; Chaoqi Hao; Liting Huang; Zhaowei Zhu; Zhisheng Li; Yuehua Li; Chuantong Cheng; Xu Zhang (2026). HgTe Quantum Dots for Short-Wave Infrared Photoconductive Detectors. [10.1021/acsanm.5c04807](https://doi.org/10.1021/acsanm.5c04807). Review scope remains stated in the linked website records.
 
