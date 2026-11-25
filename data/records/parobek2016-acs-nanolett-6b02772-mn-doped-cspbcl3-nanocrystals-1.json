@@ -1,0 +1,679 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "David Parobek; Benjamin J. Roman; Yitong Dong; Ho Jin; Elbert Lee; Matthew Sheldon; Dong Hee Son (2016): Mn-doped CsPbCl3 nanocrystals",
+  "material": {
+    "formula": "CsPbCl3:Mn",
+    "family": "CsPbCl3:Mn nanocrystals",
+    "elements": [
+      "Cs",
+      "Pb",
+      "Cl",
+      "Mn"
+    ],
+    "components": [
+      "CsPbCl3:Mn"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Synthesis as described in the source",
+  "sources": [
+    {
+      "id": "parobek2016-acs-nanolett-6b02772",
+      "doi": "10.1021/acs.nanolett.6b02772",
+      "title": "Exciton-to-Dopant Energy Transfer in Mn-Doped Cesium Lead Halide Perovskite Nanocrystals",
+      "authors": "David Parobek; Benjamin J. Roman; Yitong Dong; Ho Jin; Elbert Lee; Matthew Sheldon; Dong Hee Son",
+      "year": 2016,
+      "url": "https://doi.org/10.1021/acs.nanolett.6b02772",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "parobek2016-acs-nanolett-6b02772",
+    "recipe_family": "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "CsPbCl3:Mn",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "parobek2016-acs-nanolett-6b02772",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "orthorhombic",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "parobek2016-acs-nanolett-6b02772",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": null,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "not_reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "not reported",
+      "evidence": [],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "nanocrystal",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "parobek2016-acs-nanolett-6b02772",
+          "locator": "Main PDF p.4"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--pbcl2",
+      "name": "PbCl2",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "parobek2016-acs-nanolett-6b02772",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--mncl2-h2o-4",
+      "name": "MnCl2·(H2O)4",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "parobek2016-acs-nanolett-6b02772",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--oleylamine",
+      "name": "oleylamine",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 0.8,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.8 mL",
+          "evidence": [
+            {
+              "source_id": "parobek2016-acs-nanolett-6b02772",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "parobek2016-acs-nanolett-6b02772",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--oleic-acid",
+      "name": "oleic acid",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 0.8,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.8 mL",
+          "evidence": [
+            {
+              "source_id": "parobek2016-acs-nanolett-6b02772",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "parobek2016-acs-nanolett-6b02772",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--1-octadecene",
+      "name": "1-octadecene",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 5,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "5 mL",
+          "evidence": [
+            {
+              "source_id": "parobek2016-acs-nanolett-6b02772",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "parobek2016-acs-nanolett-6b02772",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--cs-oleate",
+      "name": "Cs-oleate",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 0.4,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "0.4 mL",
+          "evidence": [
+            {
+              "source_id": "parobek2016-acs-nanolett-6b02772",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "parobek2016-acs-nanolett-6b02772",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--after-s01-heat",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--pbcl2",
+        "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--mncl2-h2o-4",
+        "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--oleylamine",
+        "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--oleic-acid",
+        "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--1-octadecene"
+      ]
+    },
+    {
+      "id": "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--after-s02-heat",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--after-s01-heat",
+        "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--pbcl2",
+        "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--mncl2-h2o-4",
+        "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--oleylamine",
+        "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--oleic-acid",
+        "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--1-octadecene"
+      ]
+    },
+    {
+      "id": "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--after-s03-precipitate",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--after-s02-heat"
+      ]
+    },
+    {
+      "id": "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--after-s04-purify",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--after-s03-precipitate"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-heat",
+      "action": "heat",
+      "label": "Heating the solution to 165 °C for 10 minutes",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--pbcl2",
+        "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--mncl2-h2o-4",
+        "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--oleylamine",
+        "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--oleic-acid",
+        "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--1-octadecene"
+      ],
+      "outputs": [
+        "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--after-s01-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 165,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "165 °C",
+          "evidence": [
+            {
+              "source_id": "parobek2016-acs-nanolett-6b02772",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 10,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "10 min",
+          "evidence": [
+            {
+              "source_id": "parobek2016-acs-nanolett-6b02772",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heating the solution to 165 °C for 10 minutes",
+      "evidence": [
+        {
+          "source_id": "parobek2016-acs-nanolett-6b02772",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "s02-heat",
+      "action": "heat",
+      "label": "Heating the solution to 200 °C for 10 minutes",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-heat"
+      ],
+      "inputs": [
+        "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--after-s01-heat",
+        "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--pbcl2",
+        "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--mncl2-h2o-4",
+        "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--oleylamine",
+        "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--oleic-acid",
+        "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--1-octadecene"
+      ],
+      "outputs": [
+        "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--after-s02-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 200,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "200 °C",
+          "evidence": [
+            {
+              "source_id": "parobek2016-acs-nanolett-6b02772",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 10,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "10 min",
+          "evidence": [
+            {
+              "source_id": "parobek2016-acs-nanolett-6b02772",
+              "locator": "Main PDF p.7"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heating the solution to 200 °C for 10 minutes",
+      "evidence": [
+        {
+          "source_id": "parobek2016-acs-nanolett-6b02772",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "s03-precipitate",
+      "action": "precipitate",
+      "label": "Precipitation with acetone",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-heat"
+      ],
+      "inputs": [
+        "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--after-s02-heat"
+      ],
+      "outputs": [
+        "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--after-s03-precipitate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Precipitation with acetone",
+      "evidence": [
+        {
+          "source_id": "parobek2016-acs-nanolett-6b02772",
+          "locator": "Main PDF p.7"
+        }
+      ]
+    },
+    {
+      "id": "s04-purify",
+      "action": "purify",
+      "label": "Purification using gel permeation chromatography (GPC)",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-precipitate"
+      ],
+      "inputs": [
+        "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--after-s03-precipitate"
+      ],
+      "outputs": [
+        "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--after-s04-purify"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Purification using gel permeation chromatography (GPC)",
+      "evidence": [
+        {
+          "source_id": "parobek2016-acs-nanolett-6b02772",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--product",
+      "source_sample_label": "Mn-doped CsPbCl3 nanocrystals",
+      "batch_id": null,
+      "material_state_id": "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--after-s04-purify",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "CsPbCl3:Mn",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "parobek2016-acs-nanolett-6b02772",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "orthorhombic",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "parobek2016-acs-nanolett-6b02772",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": "nanocrystal",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "parobek2016-acs-nanolett-6b02772",
+            "locator": "Main PDF p.4"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": "oleylamine, oleic acid",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "parobek2016-acs-nanolett-6b02772",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "parobek2016-acs-nanolett-6b02772",
+          "locator": "Main PDF p.7"
+        }
+      ],
+      "notes": [
+        "Reactor: 25 mL three-neck round bottomed flask (Main PDF p.7).",
+        "Reaction temperature: 200 degC (Main PDF p.7).",
+        "Reaction time: 1 min (Main PDF p.7)."
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "id": "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--photoluminescence-peak",
+      "sample_id": "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--product",
+      "property": "photoluminescence_peak",
+      "technique": "photoluminescence spectroscopy",
+      "value": {
+        "value": 600,
+        "minimum": null,
+        "maximum": null,
+        "unit": "nm",
+        "status": "reported",
+        "approximate": false,
+        "qualifier": "",
+        "basis": "",
+        "raw_text": "600 nm",
+        "evidence": [
+          {
+            "source_id": "parobek2016-acs-nanolett-6b02772",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "derivation": null
+      },
+      "conditions": "",
+      "derives_from": [],
+      "evidence": [
+        {
+          "source_id": "parobek2016-acs-nanolett-6b02772",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    }
+  ],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
+    "missing_fields": [
+      "Size not reported in the extracted text.",
+      "Plqy not reported in the extracted text.",
+      "Atmosphere not reported in the extracted text.",
+      "Amount of PbCl2 not reported in the extracted text.",
+      "Amount of MnCl2·(H2O)4 not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

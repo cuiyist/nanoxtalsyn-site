@@ -1,0 +1,981 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Sang-Soo Chee; Charlie Gréboval; Debora Vale Magalhaes; Julien Ramade; Audrey Chu; Junling Qu; Prachi Rastogi; Adrien Khalili; Tung Huu Dang; Corentin Dabard; Yoann Prado; Gilles Patriarche; Julien Chaste; Michael Rosticher; Sara Bals; Christophe Delerue; Emmanuel Lhuillier (2021): HgTe nanocrystals (tripods)",
+  "material": {
+    "formula": "HgTe",
+    "family": "HgTe nanocrystals",
+    "elements": [
+      "Hg",
+      "Te"
+    ],
+    "components": [
+      "HgTe"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Synthesis as described in the source",
+  "sources": [
+    {
+      "id": "chee2021-acs-nanolett-0c04346",
+      "doi": "10.1021/acs.nanolett.0c04346",
+      "title": "Correlating Structure and Detection Properties in HgTe Nanocrystal Films",
+      "authors": "Sang-Soo Chee; Charlie Gréboval; Debora Vale Magalhaes; Julien Ramade; Audrey Chu; Junling Qu; Prachi Rastogi; Adrien Khalili; Tung Huu Dang; Corentin Dabard; Yoann Prado; Gilles Patriarche; Julien Chaste; Michael Rosticher; Sara Bals; Christophe Delerue; Emmanuel Lhuillier",
+      "year": 2021,
+      "url": "https://doi.org/10.1021/acs.nanolett.0c04346",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "chee2021-acs-nanolett-0c04346",
+    "recipe_family": "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "HgTe",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "chee2021-acs-nanolett-0c04346",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": null,
+      "status": "not_reported",
+      "evidence": [],
+      "note": ""
+    },
+    "size": {
+      "value": null,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "not_reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "not reported",
+      "evidence": [],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "tripod",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "chee2021-acs-nanolett-0c04346",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--hgcl2",
+      "name": "HgCl2",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "chee2021-acs-nanolett-0c04346",
+          "locator": "Main PDF p.9"
+        }
+      ]
+    },
+    {
+      "id": "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--te",
+      "name": "Te",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "chee2021-acs-nanolett-0c04346",
+          "locator": "Main PDF p.28"
+        }
+      ]
+    },
+    {
+      "id": "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--oleylamine",
+      "name": "oleylamine",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 50,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "50 mL",
+          "evidence": [
+            {
+              "source_id": "chee2021-acs-nanolett-0c04346",
+              "locator": "Main PDF p.9"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "chee2021-acs-nanolett-0c04346",
+          "locator": "Main PDF p.9"
+        }
+      ]
+    },
+    {
+      "id": "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--dodecanethiol-ddt",
+      "name": "dodecanethiol (DDT)",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "chee2021-acs-nanolett-0c04346",
+          "locator": "Main PDF p.28"
+        }
+      ]
+    },
+    {
+      "id": "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--toluene",
+      "name": "toluene",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 10,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "10 mL",
+          "evidence": [
+            {
+              "source_id": "chee2021-acs-nanolett-0c04346",
+              "locator": "Main PDF p.9"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "chee2021-acs-nanolett-0c04346",
+          "locator": "Main PDF p.9"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--after-s01-synthesize",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": []
+    },
+    {
+      "id": "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--after-s02-degas",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--after-s01-synthesize",
+        "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--hgcl2",
+        "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--oleylamine"
+      ]
+    },
+    {
+      "id": "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--after-s03-precipitate",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--after-s02-degas"
+      ]
+    },
+    {
+      "id": "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--after-s04-redisperse",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--after-s03-precipitate"
+      ]
+    },
+    {
+      "id": "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--after-s05-precipitate",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--after-s04-redisperse"
+      ]
+    },
+    {
+      "id": "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--after-s06-centrifuge",
+      "name": "mixture after step 6",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--after-s05-precipitate"
+      ]
+    },
+    {
+      "id": "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--after-s07-precipitate",
+      "name": "mixture after step 7",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--after-s06-centrifuge"
+      ]
+    },
+    {
+      "id": "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--after-s08-dry",
+      "name": "mixture after step 8",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--after-s07-precipitate"
+      ]
+    },
+    {
+      "id": "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--after-s09-redisperse",
+      "name": "mixture after step 9",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--after-s08-dry"
+      ]
+    },
+    {
+      "id": "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--after-s10-heat",
+      "name": "mixture after step 10",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--after-s09-redisperse",
+        "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--oleylamine"
+      ]
+    },
+    {
+      "id": "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--after-s11-inject",
+      "name": "mixture after step 11",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--after-s10-heat",
+        "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--te"
+      ]
+    },
+    {
+      "id": "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--after-s12-inject",
+      "name": "mixture after step 12",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--after-s11-inject",
+        "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--dodecanethiol-ddt",
+        "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--toluene"
+      ]
+    },
+    {
+      "id": "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--after-s13-redisperse",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--after-s12-inject"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-synthesize",
+      "action": "synthesize",
+      "label": "HgTe CQDs are synthesized following the procedure by Keuleyan et al.",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [],
+      "outputs": [
+        "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--after-s01-synthesize"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "HgTe CQDs are synthesized following the procedure by Keuleyan et al.",
+      "evidence": [
+        {
+          "source_id": "chee2021-acs-nanolett-0c04346",
+          "locator": "Main PDF p.2"
+        }
+      ]
+    },
+    {
+      "id": "s02-degas",
+      "action": "degas",
+      "label": "Degas",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-synthesize"
+      ],
+      "inputs": [
+        "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--after-s01-synthesize",
+        "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--hgcl2",
+        "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--oleylamine"
+      ],
+      "outputs": [
+        "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--after-s02-degas"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 110,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "110 °C",
+          "evidence": [
+            {
+              "source_id": "chee2021-acs-nanolett-0c04346",
+              "locator": "Main PDF p.9"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Degas",
+      "evidence": [
+        {
+          "source_id": "chee2021-acs-nanolett-0c04346",
+          "locator": "Main PDF p.9"
+        }
+      ]
+    },
+    {
+      "id": "s03-precipitate",
+      "action": "precipitate",
+      "label": "Precipitation using methanol",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-degas"
+      ],
+      "inputs": [
+        "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--after-s02-degas"
+      ],
+      "outputs": [
+        "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--after-s03-precipitate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Precipitation using methanol",
+      "evidence": [
+        {
+          "source_id": "chee2021-acs-nanolett-0c04346",
+          "locator": "Main PDF p.9"
+        }
+      ]
+    },
+    {
+      "id": "s04-redisperse",
+      "action": "redisperse",
+      "label": "Redispersing in toluene",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-precipitate"
+      ],
+      "inputs": [
+        "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--after-s03-precipitate"
+      ],
+      "outputs": [
+        "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--after-s04-redisperse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Redispersing in toluene",
+      "evidence": [
+        {
+          "source_id": "chee2021-acs-nanolett-0c04346",
+          "locator": "Main PDF p.9"
+        }
+      ]
+    },
+    {
+      "id": "s05-precipitate",
+      "action": "precipitate",
+      "label": "Precipitation using ethanol",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-redisperse"
+      ],
+      "inputs": [
+        "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--after-s04-redisperse"
+      ],
+      "outputs": [
+        "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--after-s05-precipitate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Precipitation using ethanol",
+      "evidence": [
+        {
+          "source_id": "chee2021-acs-nanolett-0c04346",
+          "locator": "Main PDF p.9"
+        }
+      ]
+    },
+    {
+      "id": "s06-centrifuge",
+      "action": "centrifuge",
+      "label": "Centrifugation to remove lamellar phase",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s05-precipitate"
+      ],
+      "inputs": [
+        "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--after-s05-precipitate"
+      ],
+      "outputs": [
+        "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--after-s06-centrifuge"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Centrifugation to remove lamellar phase",
+      "evidence": [
+        {
+          "source_id": "chee2021-acs-nanolett-0c04346",
+          "locator": "Main PDF p.9"
+        }
+      ]
+    },
+    {
+      "id": "s07-precipitate",
+      "action": "precipitate",
+      "label": "Precipitation using methanol",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s06-centrifuge"
+      ],
+      "inputs": [
+        "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--after-s06-centrifuge"
+      ],
+      "outputs": [
+        "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--after-s07-precipitate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Precipitation using methanol",
+      "evidence": [
+        {
+          "source_id": "chee2021-acs-nanolett-0c04346",
+          "locator": "Main PDF p.9"
+        }
+      ]
+    },
+    {
+      "id": "s08-dry",
+      "action": "dry",
+      "label": "Drying under vacuum",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s07-precipitate"
+      ],
+      "inputs": [
+        "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--after-s07-precipitate"
+      ],
+      "outputs": [
+        "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--after-s08-dry"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 30,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "30 min",
+          "evidence": [
+            {
+              "source_id": "chee2021-acs-nanolett-0c04346",
+              "locator": "Main PDF p.9"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Drying under vacuum",
+      "evidence": [
+        {
+          "source_id": "chee2021-acs-nanolett-0c04346",
+          "locator": "Main PDF p.9"
+        }
+      ]
+    },
+    {
+      "id": "s09-redisperse",
+      "action": "redisperse",
+      "label": "Redispersing in toluene",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s08-dry"
+      ],
+      "inputs": [
+        "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--after-s08-dry"
+      ],
+      "outputs": [
+        "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--after-s09-redisperse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Redispersing in toluene",
+      "evidence": [
+        {
+          "source_id": "chee2021-acs-nanolett-0c04346",
+          "locator": "Main PDF p.9"
+        }
+      ]
+    },
+    {
+      "id": "s10-heat",
+      "action": "heat",
+      "label": "Heat",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s09-redisperse"
+      ],
+      "inputs": [
+        "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--after-s09-redisperse",
+        "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--oleylamine"
+      ],
+      "outputs": [
+        "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--after-s10-heat"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heat",
+      "evidence": [
+        {
+          "source_id": "chee2021-acs-nanolett-0c04346",
+          "locator": "Main PDF p.28"
+        }
+      ]
+    },
+    {
+      "id": "s11-inject",
+      "action": "inject",
+      "label": "Injection of TOP:Te solution",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s10-heat"
+      ],
+      "inputs": [
+        "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--after-s10-heat",
+        "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--te"
+      ],
+      "outputs": [
+        "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--after-s11-inject"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 min",
+          "evidence": [
+            {
+              "source_id": "chee2021-acs-nanolett-0c04346",
+              "locator": "Main PDF p.28"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Injection of TOP:Te solution",
+      "evidence": [
+        {
+          "source_id": "chee2021-acs-nanolett-0c04346",
+          "locator": "Main PDF p.28"
+        }
+      ]
+    },
+    {
+      "id": "s12-inject",
+      "action": "inject",
+      "label": "Injection of DDT in toluene",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s11-inject"
+      ],
+      "inputs": [
+        "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--after-s11-inject",
+        "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--dodecanethiol-ddt",
+        "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--toluene"
+      ],
+      "outputs": [
+        "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--after-s12-inject"
+      ],
+      "parameters": {
+        "duration": {
+          "value": 3,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "3 min",
+          "evidence": [
+            {
+              "source_id": "chee2021-acs-nanolett-0c04346",
+              "locator": "Main PDF p.28"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Injection of DDT in toluene",
+      "evidence": [
+        {
+          "source_id": "chee2021-acs-nanolett-0c04346",
+          "locator": "Main PDF p.28"
+        }
+      ]
+    },
+    {
+      "id": "s13-redisperse",
+      "action": "redisperse",
+      "label": "Redispersing in toluene",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s12-inject"
+      ],
+      "inputs": [
+        "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--after-s12-inject"
+      ],
+      "outputs": [
+        "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--after-s13-redisperse"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Redispersing in toluene",
+      "evidence": [
+        {
+          "source_id": "chee2021-acs-nanolett-0c04346",
+          "locator": "Main PDF p.28"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--product",
+      "source_sample_label": "HgTe nanocrystals (tripods)",
+      "batch_id": null,
+      "material_state_id": "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--after-s13-redisperse",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "HgTe",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "chee2021-acs-nanolett-0c04346",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "morphology": {
+        "value": "tripod",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "chee2021-acs-nanolett-0c04346",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "chee2021-acs-nanolett-0c04346",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "measurements": [],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
+    "missing_fields": [
+      "Phase not reported in the extracted text.",
+      "Ligand not reported in the extracted text.",
+      "Size not reported in the extracted text.",
+      "Emission peak not reported in the extracted text.",
+      "Plqy not reported in the extracted text.",
+      "Reactor not reported in the extracted text.",
+      "Atmosphere not reported in the extracted text.",
+      "Reaction temperature not reported in the extracted text.",
+      "Reaction time not reported in the extracted text.",
+      "Amount of HgCl2 not reported in the extracted text.",
+      "Amount of Te not reported in the extracted text.",
+      "Amount of dodecanethiol (DDT) not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}

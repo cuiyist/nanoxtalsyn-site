@@ -1,6 +1,6 @@
 {
   "schema_version": "mattersyn.reader-collection/1",
-  "material_families": 1417,
+  "material_families": 1420,
   "material_family_definition": "Distinct directly synthesized material systems; component-only cross-links excluded.",
   "material_systems": [
     "(4-FPEA)4AgBiI8",
@@ -484,6 +484,7 @@
     "Cs2AgInCl6:Bi",
     "Cs2NaGdCl6:Yb3+",
     "Cs2NaYb0.99Mn0.01Cl6",
+    "Cs2PbI2Cl2",
     "Cs2SnI6",
     "Cs2ZrCl6",
     "Cs3Bi2Br9",
@@ -495,6 +496,7 @@
     "Cs4PbBr6",
     "Cs4PbBr6/CsPbBr3",
     "Cs4PbBr6:Sn",
+    "CsEuCl3",
     "CsMnBr3",
     "CsMnCl3",
     "CsPb(Br1.44I1.56)",
@@ -990,6 +992,7 @@
     "NaAlH4",
     "NaBi(1−x)F4:xEu3+",
     "NaGdF4:Eu",
+    "NaGdF4:Yb/Tm@NaYF4",
     "NaGdF4:Yb3+",
     "NaHoF4",
     "NaInS2",
@@ -1421,12 +1424,12 @@
     "γ-Fe2O3/HgS",
     "γ-Fe2O3/ZnS"
   ],
-  "contributing_papers": 3571,
+  "contributing_papers": 3583,
   "source_coverage": {
-    "total_contributing_papers": 3571,
+    "total_contributing_papers": 3583,
     "reviewed_contributing_papers": 244,
     "audited_contributing_papers": 244,
-    "machine_extracted_contributing_papers": 3327,
+    "machine_extracted_contributing_papers": 3339,
     "audited_primary_dois": [
       "10.1002/1521-4095(20021002)14:19<1405::aid-adma1405>3.0.co;2-b",
       "10.1002/adfm.200500603",
@@ -2496,6 +2499,8 @@
       "10.1021/acs.langmuir.4c01525",
       "10.1021/acs.langmuir.4c02552",
       "10.1021/acs.langmuir.5b00847",
+      "10.1021/acs.langmuir.5b01130",
+      "10.1021/acs.langmuir.5b02307",
       "10.1021/acs.langmuir.5c01176",
       "10.1021/acs.langmuir.5c01194",
       "10.1021/acs.langmuir.5c02171",
@@ -2508,12 +2513,17 @@
       "10.1021/acs.langmuir.8b02402",
       "10.1021/acs.langmuir.9b02891",
       "10.1021/acs.macromol.6b00582",
+      "10.1021/acs.nanolett.0c00692",
       "10.1021/acs.nanolett.0c01080",
+      "10.1021/acs.nanolett.0c04346",
       "10.1021/acs.nanolett.1c01223",
       "10.1021/acs.nanolett.1c02284",
       "10.1021/acs.nanolett.1c03011",
       "10.1021/acs.nanolett.2c00763",
+      "10.1021/acs.nanolett.2c01852",
       "10.1021/acs.nanolett.2c04823",
+      "10.1021/acs.nanolett.3c00299",
+      "10.1021/acs.nanolett.3c01621",
       "10.1021/acs.nanolett.3c02468",
       "10.1021/acs.nanolett.4c00610",
       "10.1021/acs.nanolett.4c00651",
@@ -2522,14 +2532,19 @@
       "10.1021/acs.nanolett.5b00199",
       "10.1021/acs.nanolett.5b00659",
       "10.1021/acs.nanolett.5b03600",
+      "10.1021/acs.nanolett.5b04959",
       "10.1021/acs.nanolett.5c00980",
+      "10.1021/acs.nanolett.5c01111",
       "10.1021/acs.nanolett.5c02239",
+      "10.1021/acs.nanolett.5c02663",
       "10.1021/acs.nanolett.5c04666",
+      "10.1021/acs.nanolett.6b02772",
       "10.1021/acs.nanolett.6b03212",
       "10.1021/acs.nanolett.6c00158",
       "10.1021/acs.nanolett.6c00209",
       "10.1021/acs.nanolett.7b00481",
       "10.1021/acs.nanolett.7b03381",
+      "10.1021/acs.nanolett.7b03735",
       "10.1021/acs.nanolett.7b03968",
       "10.1021/acs.nanolett.7b04495",
       "10.1021/acs.nanolett.7b04700",
@@ -5004,14 +5019,14 @@
     ],
     "count_definition": "Distinct primary sources represented in regular material pages, separated by review status. Each paper counts once regardless of variants; supporting citations do not add papers. Source-extracted contributions are not independently audited or training eligible."
   },
-  "synthesis_structure_pairs": 5701,
+  "synthesis_structure_pairs": 5719,
   "audited_synthesis_structure_pairs": 864,
-  "source_extracted_record_pairs": 4837,
+  "source_extracted_record_pairs": 4855,
   "more_comprehensive_pairs": 6,
-  "partial_pairs": 5695,
+  "partial_pairs": 5713,
   "count_definition": "Audited recipe/sample rows retain their existing definition and identifiers. The display also includes one row per additional source-linked record, including supporting and assembly records. Missing product or structural details remain blank. Multiple measurements do not add rows. This display count does not grant training eligibility or establish independent physical batches.",
   "documentation_rubric": "More comprehensive means at least two source-backed quantified synthesis inputs, two source-located operations, reported temperature and duration, sample-linked phase, morphology and dimensions, and an available reference unit cell. Partial pairs lack one or more of these categories. Neither category implies a complete laboratory SOP or training readiness.",
-  "all_records": 7822,
+  "all_records": 7840,
   "experimental_series_rows": 100,
   "pairs": [
     {
@@ -364276,6 +364291,360 @@
       }
     },
     {
+      "pair_row_id": "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-spheres-2::display",
+      "record_id": "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-spheres-2",
+      "record_page_path": "records/chee2021-acs-nanolett-0c04346-hgte-nanocrystals-spheres-2.html",
+      "source_group": "chee2021-acs-nanolett-0c04346",
+      "title": "Sang-Soo Chee; Charlie Gréboval; Debora Vale Magalhaes; Julien Ramade; Audrey Chu; Junling Qu; Prachi Rastogi; Adrien Khalili; Tung Huu Dang; Corentin Dabard; Yoann Prado; Gilles Patriarche; Julien Chaste; Michael Rosticher; Sara Bals; Christophe Delerue; Emmanuel Lhuillier (2021): HgTe nanocrystals (spheres)",
+      "doi": "10.1021/acs.nanolett.0c04346",
+      "year": 2021,
+      "method": "Synthesis as described in the source",
+      "recipe_label": "Sang-Soo Chee; Charlie Gréboval; Debora Vale Magalhaes; Julien Ramade; Audrey Chu; Junling Qu; Prachi Rastogi; Adrien Khalili; Tung Huu Dang; Corentin Dabard; Yoann Prado; Gilles Patriarche; Julien Chaste; Michael Rosticher; Sara Bals; Christophe Delerue; Emmanuel Lhuillier (2021): HgTe nanocrystals (spheres)",
+      "sample_id": "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-spheres-2--product",
+      "source_sample_label": "HgTe nanocrystals (spheres)",
+      "composition": {
+        "value": "HgTe",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "chee2021-acs-nanolett-0c04346",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "recipe_link_evidence": [
+        {
+          "source_id": "chee2021-acs-nanolett-0c04346",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "product_structure_fields": [],
+      "structural_measurements": [],
+      "review_status": "source_extracted",
+      "display_pair_basis": "one_record",
+      "cross_record_sample_deduplication": "not_assessed",
+      "documentation": {
+        "category": "partial",
+        "checks": {
+          "quantified_recipe_and_ordered_conditions": true,
+          "reported_phase": false,
+          "reported_morphology": false,
+          "reported_dimensions": false,
+          "reference_unit_cell_available": false
+        },
+        "missing_categories": [
+          "reported_phase",
+          "reported_morphology",
+          "reported_dimensions",
+          "reference_unit_cell_available"
+        ],
+        "reference_ids": [],
+        "quantified_input_evidence": {
+          "material_ids": [
+            "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-spheres-2--dodecanethiol-ddt",
+            "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-spheres-2--oleylamine",
+            "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-spheres-2--te",
+            "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-spheres-2--toluene"
+          ],
+          "fields": [
+            {
+              "material_id": "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-spheres-2--te",
+              "pointer": "/materials/1/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.4,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.4 mL",
+                "evidence": [
+                  {
+                    "source_id": "chee2021-acs-nanolett-0c04346",
+                    "locator": "Main PDF p.31"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-spheres-2--oleylamine",
+              "pointer": "/materials/2/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 36,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "36 mL",
+                "evidence": [
+                  {
+                    "source_id": "chee2021-acs-nanolett-0c04346",
+                    "locator": "Main PDF p.31"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-spheres-2--dodecanethiol-ddt",
+              "pointer": "/materials/3/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 3,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "3 mL",
+                "evidence": [
+                  {
+                    "source_id": "chee2021-acs-nanolett-0c04346",
+                    "locator": "Main PDF p.31"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-spheres-2--toluene",
+              "pointer": "/materials/4/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 3,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "3 mL",
+                "evidence": [
+                  {
+                    "source_id": "chee2021-acs-nanolett-0c04346",
+                    "locator": "Main PDF p.31"
+                  }
+                ],
+                "derivation": null
+              }
+            }
+          ],
+          "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
+        },
+        "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
+      }
+    },
+    {
+      "pair_row_id": "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1::display",
+      "record_id": "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1",
+      "record_page_path": "records/chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1.html",
+      "source_group": "chee2021-acs-nanolett-0c04346",
+      "title": "Sang-Soo Chee; Charlie Gréboval; Debora Vale Magalhaes; Julien Ramade; Audrey Chu; Junling Qu; Prachi Rastogi; Adrien Khalili; Tung Huu Dang; Corentin Dabard; Yoann Prado; Gilles Patriarche; Julien Chaste; Michael Rosticher; Sara Bals; Christophe Delerue; Emmanuel Lhuillier (2021): HgTe nanocrystals (tripods)",
+      "doi": "10.1021/acs.nanolett.0c04346",
+      "year": 2021,
+      "method": "Synthesis as described in the source",
+      "recipe_label": "Sang-Soo Chee; Charlie Gréboval; Debora Vale Magalhaes; Julien Ramade; Audrey Chu; Junling Qu; Prachi Rastogi; Adrien Khalili; Tung Huu Dang; Corentin Dabard; Yoann Prado; Gilles Patriarche; Julien Chaste; Michael Rosticher; Sara Bals; Christophe Delerue; Emmanuel Lhuillier (2021): HgTe nanocrystals (tripods)",
+      "sample_id": "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--product",
+      "source_sample_label": "HgTe nanocrystals (tripods)",
+      "composition": {
+        "value": "HgTe",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "chee2021-acs-nanolett-0c04346",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "recipe_link_evidence": [
+        {
+          "source_id": "chee2021-acs-nanolett-0c04346",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "product_structure_fields": [
+        {
+          "kind": "morphology",
+          "value": {
+            "value": "tripod",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "chee2021-acs-nanolett-0c04346",
+                "locator": "Main PDF p.2"
+              }
+            ],
+            "note": ""
+          }
+        }
+      ],
+      "structural_measurements": [],
+      "review_status": "source_extracted",
+      "display_pair_basis": "one_record",
+      "cross_record_sample_deduplication": "not_assessed",
+      "documentation": {
+        "category": "partial",
+        "checks": {
+          "quantified_recipe_and_ordered_conditions": true,
+          "reported_phase": false,
+          "reported_morphology": true,
+          "reported_dimensions": false,
+          "reference_unit_cell_available": false
+        },
+        "missing_categories": [
+          "reported_phase",
+          "reported_dimensions",
+          "reference_unit_cell_available"
+        ],
+        "reference_ids": [],
+        "quantified_input_evidence": {
+          "material_ids": [
+            "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--oleylamine",
+            "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--toluene"
+          ],
+          "fields": [
+            {
+              "material_id": "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--oleylamine",
+              "pointer": "/materials/2/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 50,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "50 mL",
+                "evidence": [
+                  {
+                    "source_id": "chee2021-acs-nanolett-0c04346",
+                    "locator": "Main PDF p.9"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "chee2021-acs-nanolett-0c04346-hgte-nanocrystals-tripods-1--toluene",
+              "pointer": "/materials/4/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 10,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "10 mL",
+                "evidence": [
+                  {
+                    "source_id": "chee2021-acs-nanolett-0c04346",
+                    "locator": "Main PDF p.9"
+                  }
+                ],
+                "derivation": null
+              }
+            }
+          ],
+          "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
+        },
+        "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
+      }
+    },
+    {
+      "pair_row_id": "chee2021-acs-nanolett-0c04346-quasi-spherical-hgte-nanocrystals-4::display",
+      "record_id": "chee2021-acs-nanolett-0c04346-quasi-spherical-hgte-nanocrystals-4",
+      "record_page_path": "records/chee2021-acs-nanolett-0c04346-quasi-spherical-hgte-nanocrystals-4.html",
+      "source_group": "chee2021-acs-nanolett-0c04346",
+      "title": "Sang-Soo Chee; Charlie Gréboval; Debora Vale Magalhaes; Julien Ramade; Audrey Chu; Junling Qu; Prachi Rastogi; Adrien Khalili; Tung Huu Dang; Corentin Dabard; Yoann Prado; Gilles Patriarche; Julien Chaste; Michael Rosticher; Sara Bals; Christophe Delerue; Emmanuel Lhuillier (2021): Quasi-spherical HgTe nanocrystals",
+      "doi": "10.1021/acs.nanolett.0c04346",
+      "year": 2021,
+      "method": "Synthesis as described in the source",
+      "recipe_label": "Sang-Soo Chee; Charlie Gréboval; Debora Vale Magalhaes; Julien Ramade; Audrey Chu; Junling Qu; Prachi Rastogi; Adrien Khalili; Tung Huu Dang; Corentin Dabard; Yoann Prado; Gilles Patriarche; Julien Chaste; Michael Rosticher; Sara Bals; Christophe Delerue; Emmanuel Lhuillier (2021): Quasi-spherical HgTe nanocrystals",
+      "sample_id": "chee2021-acs-nanolett-0c04346-quasi-spherical-hgte-nanocrystals-4--product",
+      "source_sample_label": "Quasi-spherical HgTe nanocrystals",
+      "composition": {
+        "value": "HgTe",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "chee2021-acs-nanolett-0c04346",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "recipe_link_evidence": [
+        {
+          "source_id": "chee2021-acs-nanolett-0c04346",
+          "locator": "Main PDF p.1"
+        }
+      ],
+      "product_structure_fields": [
+        {
+          "kind": "morphology",
+          "value": {
+            "value": "sphere",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "chee2021-acs-nanolett-0c04346",
+                "locator": "Main PDF p.1"
+              }
+            ],
+            "note": ""
+          }
+        }
+      ],
+      "structural_measurements": [],
+      "review_status": "source_extracted",
+      "display_pair_basis": "one_record",
+      "cross_record_sample_deduplication": "not_assessed",
+      "documentation": {
+        "category": "partial",
+        "checks": {
+          "quantified_recipe_and_ordered_conditions": false,
+          "reported_phase": false,
+          "reported_morphology": true,
+          "reported_dimensions": false,
+          "reference_unit_cell_available": false
+        },
+        "missing_categories": [
+          "quantified_recipe_and_ordered_conditions",
+          "reported_phase",
+          "reported_dimensions",
+          "reference_unit_cell_available"
+        ],
+        "reference_ids": [],
+        "quantified_input_evidence": {
+          "material_ids": [],
+          "fields": [],
+          "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
+        },
+        "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
+      }
+    },
+    {
       "pair_row_id": "chehaibou2023-acs-jpcc-3c01837-hgte-nanocrystals-rod-shaped-1::display",
       "record_id": "chehaibou2023-acs-jpcc-3c01837-hgte-nanocrystals-rod-shaped-1",
       "record_page_path": "records/chehaibou2023-acs-jpcc-3c01837-hgte-nanocrystals-rod-shaped-1.html",
@@ -373505,6 +373874,190 @@
                   {
                     "source_id": "chen2022-acsanm-1c04005",
                     "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            }
+          ],
+          "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
+        },
+        "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
+      }
+    },
+    {
+      "pair_row_id": "chen2023-acs-nanolett-3c01621-nagdf4-yb-tm-49-1-nayf4-coreshell-nanopa-1::display",
+      "record_id": "chen2023-acs-nanolett-3c01621-nagdf4-yb-tm-49-1-nayf4-coreshell-nanopa-1",
+      "record_page_path": "records/chen2023-acs-nanolett-3c01621-nagdf4-yb-tm-49-1-nayf4-coreshell-nanopa-1.html",
+      "source_group": "chen2023-acs-nanolett-3c01621",
+      "title": "Jiaye Chen; Liangliang Liang; Shengdong Tan; Shibo Xi; Chun-Ho Lin; Tom Wu; Qian He; Xiaogang Liu (2023): NaGdF4:Yb/Tm(49, 1%)@NaYF4 core−shell nanoparticles",
+      "doi": "10.1021/acs.nanolett.3c01621",
+      "year": 2023,
+      "method": "Heat-up",
+      "recipe_label": "Jiaye Chen; Liangliang Liang; Shengdong Tan; Shibo Xi; Chun-Ho Lin; Tom Wu; Qian He; Xiaogang Liu (2023): NaGdF4:Yb/Tm(49, 1%)@NaYF4 core−shell nanoparticles",
+      "sample_id": "chen2023-acs-nanolett-3c01621-nagdf4-yb-tm-49-1-nayf4-coreshell-nanopa-1--product",
+      "source_sample_label": "NaGdF4:Yb/Tm(49, 1%)@NaYF4 core−shell nanoparticles",
+      "composition": {
+        "value": "NaGdF4:Yb/Tm@NaYF4",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "chen2023-acs-nanolett-3c01621",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "recipe_link_evidence": [
+        {
+          "source_id": "chen2023-acs-nanolett-3c01621",
+          "locator": "Main PDF p.9"
+        }
+      ],
+      "product_structure_fields": [
+        {
+          "kind": "phase",
+          "value": {
+            "value": "crystalline",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "chen2023-acs-nanolett-3c01621",
+                "locator": "Main PDF p.2"
+              }
+            ],
+            "note": ""
+          }
+        },
+        {
+          "kind": "morphology",
+          "value": {
+            "value": "sphere",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "chen2023-acs-nanolett-3c01621",
+                "locator": "Main PDF p.3"
+              }
+            ],
+            "note": ""
+          }
+        }
+      ],
+      "structural_measurements": [],
+      "review_status": "source_extracted",
+      "display_pair_basis": "one_record",
+      "cross_record_sample_deduplication": "not_assessed",
+      "documentation": {
+        "category": "partial",
+        "checks": {
+          "quantified_recipe_and_ordered_conditions": true,
+          "reported_phase": true,
+          "reported_morphology": true,
+          "reported_dimensions": false,
+          "reference_unit_cell_available": false
+        },
+        "missing_categories": [
+          "reported_dimensions",
+          "reference_unit_cell_available"
+        ],
+        "reference_ids": [],
+        "quantified_input_evidence": {
+          "material_ids": [
+            "chen2023-acs-nanolett-3c01621-nagdf4-yb-tm-49-1-nayf4-coreshell-nanopa-1--1-octadecene",
+            "chen2023-acs-nanolett-3c01621-nagdf4-yb-tm-49-1-nayf4-coreshell-nanopa-1--gd-ch3coo-3",
+            "chen2023-acs-nanolett-3c01621-nagdf4-yb-tm-49-1-nayf4-coreshell-nanopa-1--nh4f",
+            "chen2023-acs-nanolett-3c01621-nagdf4-yb-tm-49-1-nayf4-coreshell-nanopa-1--oleic-acid"
+          ],
+          "fields": [
+            {
+              "material_id": "chen2023-acs-nanolett-3c01621-nagdf4-yb-tm-49-1-nayf4-coreshell-nanopa-1--gd-ch3coo-3",
+              "pointer": "/materials/0/quantities/concentration",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.2,
+                "minimum": null,
+                "maximum": null,
+                "unit": "M",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.2 M",
+                "evidence": [
+                  {
+                    "source_id": "chen2023-acs-nanolett-3c01621",
+                    "locator": "Main PDF p.9"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "chen2023-acs-nanolett-3c01621-nagdf4-yb-tm-49-1-nayf4-coreshell-nanopa-1--oleic-acid",
+              "pointer": "/materials/1/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 8.0,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "8 mL",
+                "evidence": [
+                  {
+                    "source_id": "chen2023-acs-nanolett-3c01621",
+                    "locator": "Main PDF p.9"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "chen2023-acs-nanolett-3c01621-nagdf4-yb-tm-49-1-nayf4-coreshell-nanopa-1--1-octadecene",
+              "pointer": "/materials/2/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 12.0,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "12 mL",
+                "evidence": [
+                  {
+                    "source_id": "chen2023-acs-nanolett-3c01621",
+                    "locator": "Main PDF p.9"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "chen2023-acs-nanolett-3c01621-nagdf4-yb-tm-49-1-nayf4-coreshell-nanopa-1--nh4f",
+              "pointer": "/materials/3/quantities/amount",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 3.5,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mmol",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "3.5 mmol",
+                "evidence": [
+                  {
+                    "source_id": "chen2023-acs-nanolett-3c01621",
+                    "locator": "Main PDF p.9"
                   }
                 ],
                 "derivation": null
@@ -387388,6 +387941,580 @@
         "quantified_input_evidence": {
           "material_ids": [],
           "fields": [],
+          "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
+        },
+        "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
+      }
+    },
+    {
+      "pair_row_id": "coopersmith2015-acs-langmuir-5b01130-ab-qd-570-1::display",
+      "record_id": "coopersmith2015-acs-langmuir-5b01130-ab-qd-570-1",
+      "record_page_path": "records/coopersmith2015-acs-langmuir-5b01130-ab-qd-570-1.html",
+      "source_group": "coopersmith2015-acs-langmuir-5b01130",
+      "title": "Kaitlin Coopersmith; Hyunjoo Han; Mathew M. Maye (2015): AB/QD(570)",
+      "doi": "10.1021/acs.langmuir.5b01130",
+      "year": 2015,
+      "method": "Hot injection",
+      "recipe_label": "Kaitlin Coopersmith; Hyunjoo Han; Mathew M. Maye (2015): AB/QD(570)",
+      "sample_id": "coopersmith2015-acs-langmuir-5b01130-ab-qd-570-1--product",
+      "source_sample_label": "AB/QD(570)",
+      "composition": {
+        "value": "CdSe/ZnS",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "coopersmith2015-acs-langmuir-5b01130",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "recipe_link_evidence": [
+        {
+          "source_id": "coopersmith2015-acs-langmuir-5b01130",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "product_structure_fields": [
+        {
+          "kind": "phase",
+          "value": {
+            "value": "zinc blende",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "coopersmith2015-acs-langmuir-5b01130",
+                "locator": "Main PDF p.1"
+              }
+            ],
+            "note": ""
+          }
+        },
+        {
+          "kind": "morphology",
+          "value": {
+            "value": "sphere",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "coopersmith2015-acs-langmuir-5b01130",
+                "locator": "Main PDF p.1"
+              }
+            ],
+            "note": ""
+          }
+        }
+      ],
+      "structural_measurements": [
+        {
+          "measurement_id": "coopersmith2015-acs-langmuir-5b01130-ab-qd-570-1--size",
+          "property": "diameter",
+          "descriptor_field": "morphology.dimensions",
+          "value": {
+            "value": 3.5,
+            "minimum": null,
+            "maximum": null,
+            "unit": "nm",
+            "status": "reported",
+            "approximate": false,
+            "qualifier": "",
+            "basis": "",
+            "raw_text": "3.5 nm",
+            "evidence": [
+              {
+                "source_id": "coopersmith2015-acs-langmuir-5b01130",
+                "locator": "Main PDF p.4"
+              }
+            ],
+            "derivation": null
+          },
+          "technique": "TEM",
+          "conditions": "",
+          "evidence": [
+            {
+              "source_id": "coopersmith2015-acs-langmuir-5b01130",
+              "locator": "Main PDF p.4"
+            }
+          ]
+        }
+      ],
+      "review_status": "source_extracted",
+      "display_pair_basis": "one_record",
+      "cross_record_sample_deduplication": "not_assessed",
+      "documentation": {
+        "category": "partial",
+        "checks": {
+          "quantified_recipe_and_ordered_conditions": true,
+          "reported_phase": true,
+          "reported_morphology": true,
+          "reported_dimensions": true,
+          "reference_unit_cell_available": false
+        },
+        "missing_categories": [
+          "reference_unit_cell_available"
+        ],
+        "reference_ids": [],
+        "quantified_input_evidence": {
+          "material_ids": [
+            "coopersmith2015-acs-langmuir-5b01130-ab-qd-570-1--cdo",
+            "coopersmith2015-acs-langmuir-5b01130-ab-qd-570-1--dda",
+            "coopersmith2015-acs-langmuir-5b01130-ab-qd-570-1--oac",
+            "coopersmith2015-acs-langmuir-5b01130-ab-qd-570-1--psma",
+            "coopersmith2015-acs-langmuir-5b01130-ab-qd-570-1--se",
+            "coopersmith2015-acs-langmuir-5b01130-ab-qd-570-1--tbp",
+            "coopersmith2015-acs-langmuir-5b01130-ab-qd-570-1--topo"
+          ],
+          "fields": [
+            {
+              "material_id": "coopersmith2015-acs-langmuir-5b01130-ab-qd-570-1--cdo",
+              "pointer": "/materials/0/quantities/amount",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.2,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mmol",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.2 mmol",
+                "evidence": [
+                  {
+                    "source_id": "coopersmith2015-acs-langmuir-5b01130",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "coopersmith2015-acs-langmuir-5b01130-ab-qd-570-1--dda",
+              "pointer": "/materials/1/quantities/amount",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 5,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mmol",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "5 mmol",
+                "evidence": [
+                  {
+                    "source_id": "coopersmith2015-acs-langmuir-5b01130",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "coopersmith2015-acs-langmuir-5b01130-ab-qd-570-1--topo",
+              "pointer": "/materials/2/quantities/mass",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.5,
+                "minimum": null,
+                "maximum": null,
+                "unit": "g",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.5 g",
+                "evidence": [
+                  {
+                    "source_id": "coopersmith2015-acs-langmuir-5b01130",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "coopersmith2015-acs-langmuir-5b01130-ab-qd-570-1--se",
+              "pointer": "/materials/3/quantities/amount",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 1.5,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mmol",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "1.5 mmol",
+                "evidence": [
+                  {
+                    "source_id": "coopersmith2015-acs-langmuir-5b01130",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "coopersmith2015-acs-langmuir-5b01130-ab-qd-570-1--tbp",
+              "pointer": "/materials/4/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 1.0,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "1 mL",
+                "evidence": [
+                  {
+                    "source_id": "coopersmith2015-acs-langmuir-5b01130",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "coopersmith2015-acs-langmuir-5b01130-ab-qd-570-1--oac",
+              "pointer": "/materials/5/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 3.0,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "3 mL",
+                "evidence": [
+                  {
+                    "source_id": "coopersmith2015-acs-langmuir-5b01130",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "coopersmith2015-acs-langmuir-5b01130-ab-qd-570-1--psma",
+              "pointer": "/materials/7/quantities/amount",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.5,
+                "minimum": null,
+                "maximum": null,
+                "unit": "μmol",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.5 μmol",
+                "evidence": [
+                  {
+                    "source_id": "coopersmith2015-acs-langmuir-5b01130",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            }
+          ],
+          "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
+        },
+        "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
+      }
+    },
+    {
+      "pair_row_id": "coopersmith2015-acs-langmuir-5b01130-b-qd-635-2::display",
+      "record_id": "coopersmith2015-acs-langmuir-5b01130-b-qd-635-2",
+      "record_page_path": "records/coopersmith2015-acs-langmuir-5b01130-b-qd-635-2.html",
+      "source_group": "coopersmith2015-acs-langmuir-5b01130",
+      "title": "Kaitlin Coopersmith; Hyunjoo Han; Mathew M. Maye (2015): B′/QD(635)",
+      "doi": "10.1021/acs.langmuir.5b01130",
+      "year": 2015,
+      "method": "Hot injection",
+      "recipe_label": "Kaitlin Coopersmith; Hyunjoo Han; Mathew M. Maye (2015): B′/QD(635)",
+      "sample_id": "coopersmith2015-acs-langmuir-5b01130-b-qd-635-2--product",
+      "source_sample_label": "B′/QD(635)",
+      "composition": {
+        "value": "CdSe/ZnS",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "coopersmith2015-acs-langmuir-5b01130",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "recipe_link_evidence": [
+        {
+          "source_id": "coopersmith2015-acs-langmuir-5b01130",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "product_structure_fields": [
+        {
+          "kind": "phase",
+          "value": {
+            "value": "zinc blende",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "coopersmith2015-acs-langmuir-5b01130",
+                "locator": "Main PDF p.1"
+              }
+            ],
+            "note": ""
+          }
+        },
+        {
+          "kind": "morphology",
+          "value": {
+            "value": "sphere",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "coopersmith2015-acs-langmuir-5b01130",
+                "locator": "Main PDF p.1"
+              }
+            ],
+            "note": ""
+          }
+        }
+      ],
+      "structural_measurements": [
+        {
+          "measurement_id": "coopersmith2015-acs-langmuir-5b01130-b-qd-635-2--size",
+          "property": "diameter",
+          "descriptor_field": "morphology.dimensions",
+          "value": {
+            "value": 5.6,
+            "minimum": null,
+            "maximum": null,
+            "unit": "nm",
+            "status": "reported",
+            "approximate": false,
+            "qualifier": "",
+            "basis": "",
+            "raw_text": "5.6 nm",
+            "evidence": [
+              {
+                "source_id": "coopersmith2015-acs-langmuir-5b01130",
+                "locator": "Main PDF p.4"
+              }
+            ],
+            "derivation": null
+          },
+          "technique": "TEM",
+          "conditions": "",
+          "evidence": [
+            {
+              "source_id": "coopersmith2015-acs-langmuir-5b01130",
+              "locator": "Main PDF p.4"
+            }
+          ]
+        }
+      ],
+      "review_status": "source_extracted",
+      "display_pair_basis": "one_record",
+      "cross_record_sample_deduplication": "not_assessed",
+      "documentation": {
+        "category": "partial",
+        "checks": {
+          "quantified_recipe_and_ordered_conditions": true,
+          "reported_phase": true,
+          "reported_morphology": true,
+          "reported_dimensions": true,
+          "reference_unit_cell_available": false
+        },
+        "missing_categories": [
+          "reference_unit_cell_available"
+        ],
+        "reference_ids": [],
+        "quantified_input_evidence": {
+          "material_ids": [
+            "coopersmith2015-acs-langmuir-5b01130-b-qd-635-2--cdo",
+            "coopersmith2015-acs-langmuir-5b01130-b-qd-635-2--dda",
+            "coopersmith2015-acs-langmuir-5b01130-b-qd-635-2--oac",
+            "coopersmith2015-acs-langmuir-5b01130-b-qd-635-2--psma",
+            "coopersmith2015-acs-langmuir-5b01130-b-qd-635-2--se",
+            "coopersmith2015-acs-langmuir-5b01130-b-qd-635-2--tbp",
+            "coopersmith2015-acs-langmuir-5b01130-b-qd-635-2--topo"
+          ],
+          "fields": [
+            {
+              "material_id": "coopersmith2015-acs-langmuir-5b01130-b-qd-635-2--cdo",
+              "pointer": "/materials/0/quantities/amount",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.2,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mmol",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.2 mmol",
+                "evidence": [
+                  {
+                    "source_id": "coopersmith2015-acs-langmuir-5b01130",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "coopersmith2015-acs-langmuir-5b01130-b-qd-635-2--dda",
+              "pointer": "/materials/1/quantities/amount",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 5,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mmol",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "5 mmol",
+                "evidence": [
+                  {
+                    "source_id": "coopersmith2015-acs-langmuir-5b01130",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "coopersmith2015-acs-langmuir-5b01130-b-qd-635-2--topo",
+              "pointer": "/materials/2/quantities/mass",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.5,
+                "minimum": null,
+                "maximum": null,
+                "unit": "g",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.5 g",
+                "evidence": [
+                  {
+                    "source_id": "coopersmith2015-acs-langmuir-5b01130",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "coopersmith2015-acs-langmuir-5b01130-b-qd-635-2--se",
+              "pointer": "/materials/3/quantities/amount",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 1.5,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mmol",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "1.5 mmol",
+                "evidence": [
+                  {
+                    "source_id": "coopersmith2015-acs-langmuir-5b01130",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "coopersmith2015-acs-langmuir-5b01130-b-qd-635-2--tbp",
+              "pointer": "/materials/4/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 1.0,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "1 mL",
+                "evidence": [
+                  {
+                    "source_id": "coopersmith2015-acs-langmuir-5b01130",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "coopersmith2015-acs-langmuir-5b01130-b-qd-635-2--oac",
+              "pointer": "/materials/5/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 3.0,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "3 mL",
+                "evidence": [
+                  {
+                    "source_id": "coopersmith2015-acs-langmuir-5b01130",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "coopersmith2015-acs-langmuir-5b01130-b-qd-635-2--psma",
+              "pointer": "/materials/7/quantities/amount",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.5,
+                "minimum": null,
+                "maximum": null,
+                "unit": "μmol",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.5 μmol",
+                "evidence": [
+                  {
+                    "source_id": "coopersmith2015-acs-langmuir-5b01130",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            }
+          ],
           "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
         },
         "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
@@ -428647,6 +429774,326 @@
       }
     },
     {
+      "pair_row_id": "freyria2017-acs-nanolett-7b03735-pbs770-1::display",
+      "record_id": "freyria2017-acs-nanolett-7b03735-pbs770-1",
+      "record_page_path": "records/freyria2017-acs-nanolett-7b03735-pbs770-1.html",
+      "source_group": "freyria2017-acs-nanolett-7b03735",
+      "title": "Francesca S. Freyria; José M. Cordero; Justin R. Caram; Sandra Doria; Amro Dodin; Yue Chen; Adam P. Willard; Moungi G. Bawendi (2017): PbS770",
+      "doi": "10.1021/acs.nanolett.7b03735",
+      "year": 2017,
+      "method": "Synthesis as described in the source",
+      "recipe_label": "Francesca S. Freyria; José M. Cordero; Justin R. Caram; Sandra Doria; Amro Dodin; Yue Chen; Adam P. Willard; Moungi G. Bawendi (2017): PbS770",
+      "sample_id": "freyria2017-acs-nanolett-7b03735-pbs770-1--product",
+      "source_sample_label": "PbS770",
+      "composition": {
+        "value": "PbS",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "freyria2017-acs-nanolett-7b03735",
+            "locator": "Main PDF p.8"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "recipe_link_evidence": [
+        {
+          "source_id": "freyria2017-acs-nanolett-7b03735",
+          "locator": "Main PDF p.8"
+        }
+      ],
+      "product_structure_fields": [
+        {
+          "kind": "phase",
+          "value": {
+            "value": "zinc blende",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "freyria2017-acs-nanolett-7b03735",
+                "locator": "Main PDF p.8"
+              }
+            ],
+            "note": ""
+          }
+        },
+        {
+          "kind": "morphology",
+          "value": {
+            "value": "sphere",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "freyria2017-acs-nanolett-7b03735",
+                "locator": "Main PDF p.3"
+              }
+            ],
+            "note": ""
+          }
+        }
+      ],
+      "structural_measurements": [],
+      "review_status": "source_extracted",
+      "display_pair_basis": "one_record",
+      "cross_record_sample_deduplication": "not_assessed",
+      "documentation": {
+        "category": "partial",
+        "checks": {
+          "quantified_recipe_and_ordered_conditions": true,
+          "reported_phase": true,
+          "reported_morphology": true,
+          "reported_dimensions": false,
+          "reference_unit_cell_available": false
+        },
+        "missing_categories": [
+          "reported_dimensions",
+          "reference_unit_cell_available"
+        ],
+        "reference_ids": [],
+        "quantified_input_evidence": {
+          "material_ids": [
+            "freyria2017-acs-nanolett-7b03735-pbs770-1--1-octadecene",
+            "freyria2017-acs-nanolett-7b03735-pbs770-1--hexamethyldisilathiane",
+            "freyria2017-acs-nanolett-7b03735-pbs770-1--lead-acetate-trihydrate"
+          ],
+          "fields": [
+            {
+              "material_id": "freyria2017-acs-nanolett-7b03735-pbs770-1--lead-acetate-trihydrate",
+              "pointer": "/materials/0/quantities/mass",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.306,
+                "minimum": null,
+                "maximum": null,
+                "unit": "g",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.306 g",
+                "evidence": [
+                  {
+                    "source_id": "freyria2017-acs-nanolett-7b03735",
+                    "locator": "Main PDF p.8"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "freyria2017-acs-nanolett-7b03735-pbs770-1--1-octadecene",
+              "pointer": "/materials/1/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 8,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "8 mL",
+                "evidence": [
+                  {
+                    "source_id": "freyria2017-acs-nanolett-7b03735",
+                    "locator": "Main PDF p.8"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "freyria2017-acs-nanolett-7b03735-pbs770-1--hexamethyldisilathiane",
+              "pointer": "/materials/4/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 105.5,
+                "minimum": null,
+                "maximum": null,
+                "unit": "µL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "105.5 µL",
+                "evidence": [
+                  {
+                    "source_id": "freyria2017-acs-nanolett-7b03735",
+                    "locator": "Main PDF p.8"
+                  }
+                ],
+                "derivation": null
+              }
+            }
+          ],
+          "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
+        },
+        "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
+      }
+    },
+    {
+      "pair_row_id": "freyria2017-acs-nanolett-7b03735-pbs980-2::display",
+      "record_id": "freyria2017-acs-nanolett-7b03735-pbs980-2",
+      "record_page_path": "records/freyria2017-acs-nanolett-7b03735-pbs980-2.html",
+      "source_group": "freyria2017-acs-nanolett-7b03735",
+      "title": "Francesca S. Freyria; José M. Cordero; Justin R. Caram; Sandra Doria; Amro Dodin; Yue Chen; Adam P. Willard; Moungi G. Bawendi (2017): PbS980",
+      "doi": "10.1021/acs.nanolett.7b03735",
+      "year": 2017,
+      "method": "Synthesis as described in the source",
+      "recipe_label": "Francesca S. Freyria; José M. Cordero; Justin R. Caram; Sandra Doria; Amro Dodin; Yue Chen; Adam P. Willard; Moungi G. Bawendi (2017): PbS980",
+      "sample_id": "freyria2017-acs-nanolett-7b03735-pbs980-2--product",
+      "source_sample_label": "PbS980",
+      "composition": {
+        "value": "PbS",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "freyria2017-acs-nanolett-7b03735",
+            "locator": "Main PDF p.8"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "recipe_link_evidence": [
+        {
+          "source_id": "freyria2017-acs-nanolett-7b03735",
+          "locator": "Main PDF p.8"
+        }
+      ],
+      "product_structure_fields": [
+        {
+          "kind": "phase",
+          "value": {
+            "value": "zinc blende",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "freyria2017-acs-nanolett-7b03735",
+                "locator": "Main PDF p.8"
+              }
+            ],
+            "note": ""
+          }
+        },
+        {
+          "kind": "morphology",
+          "value": {
+            "value": "sphere",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "freyria2017-acs-nanolett-7b03735",
+                "locator": "Main PDF p.3"
+              }
+            ],
+            "note": ""
+          }
+        }
+      ],
+      "structural_measurements": [],
+      "review_status": "source_extracted",
+      "display_pair_basis": "one_record",
+      "cross_record_sample_deduplication": "not_assessed",
+      "documentation": {
+        "category": "partial",
+        "checks": {
+          "quantified_recipe_and_ordered_conditions": true,
+          "reported_phase": true,
+          "reported_morphology": true,
+          "reported_dimensions": false,
+          "reference_unit_cell_available": false
+        },
+        "missing_categories": [
+          "reported_dimensions",
+          "reference_unit_cell_available"
+        ],
+        "reference_ids": [],
+        "quantified_input_evidence": {
+          "material_ids": [
+            "freyria2017-acs-nanolett-7b03735-pbs980-2--1-octadecene",
+            "freyria2017-acs-nanolett-7b03735-pbs980-2--hexamethyldisilathiane",
+            "freyria2017-acs-nanolett-7b03735-pbs980-2--lead-acetate-trihydrate"
+          ],
+          "fields": [
+            {
+              "material_id": "freyria2017-acs-nanolett-7b03735-pbs980-2--lead-acetate-trihydrate",
+              "pointer": "/materials/0/quantities/mass",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.306,
+                "minimum": null,
+                "maximum": null,
+                "unit": "g",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.306 g",
+                "evidence": [
+                  {
+                    "source_id": "freyria2017-acs-nanolett-7b03735",
+                    "locator": "Main PDF p.8"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "freyria2017-acs-nanolett-7b03735-pbs980-2--1-octadecene",
+              "pointer": "/materials/1/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 8,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "8 mL",
+                "evidence": [
+                  {
+                    "source_id": "freyria2017-acs-nanolett-7b03735",
+                    "locator": "Main PDF p.8"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "freyria2017-acs-nanolett-7b03735-pbs980-2--hexamethyldisilathiane",
+              "pointer": "/materials/4/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 105.5,
+                "minimum": null,
+                "maximum": null,
+                "unit": "µL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "105.5 µL",
+                "evidence": [
+                  {
+                    "source_id": "freyria2017-acs-nanolett-7b03735",
+                    "locator": "Main PDF p.8"
+                  }
+                ],
+                "derivation": null
+              }
+            }
+          ],
+          "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
+        },
+        "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
+      }
+    },
+    {
       "pair_row_id": "fridman2021-d1nr05371j-cdxzn1xs-nps-x-0-91-1::display",
       "record_id": "fridman2021-d1nr05371j-cdxzn1xs-nps-x-0-91-1",
       "record_page_path": "records/fridman2021-d1nr05371j-cdxzn1xs-nps-x-0-91-1.html",
@@ -449511,6 +450958,211 @@
         "quantified_input_evidence": {
           "material_ids": [],
           "fields": [],
+          "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
+        },
+        "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
+      }
+    },
+    {
+      "pair_row_id": "guo2025-acs-nanolett-5c01111-cs2pbi2cl2-nanocrystals-2::display",
+      "record_id": "guo2025-acs-nanolett-5c01111-cs2pbi2cl2-nanocrystals-2",
+      "record_page_path": "records/guo2025-acs-nanolett-5c01111-cs2pbi2cl2-nanocrystals-2.html",
+      "source_group": "guo2025-acs-nanolett-5c01111",
+      "title": "Huichao Guo; Fangzhou Liu; Cuncun Wu; Yan Guan; Xian Zhang; Tengyu Xu; Jiaqi Zhang; Shaogeng Cai; Jian Li; Yilin Wei; Yangyang Zhang; Shijian Zheng (2025): Cs2PbI2Cl2 nanocrystals",
+      "doi": "10.1021/acs.nanolett.5c01111",
+      "year": 2025,
+      "method": "Hot injection",
+      "recipe_label": "Huichao Guo; Fangzhou Liu; Cuncun Wu; Yan Guan; Xian Zhang; Tengyu Xu; Jiaqi Zhang; Shaogeng Cai; Jian Li; Yilin Wei; Yangyang Zhang; Shijian Zheng (2025): Cs2PbI2Cl2 nanocrystals",
+      "sample_id": "guo2025-acs-nanolett-5c01111-cs2pbi2cl2-nanocrystals-2--product",
+      "source_sample_label": "Cs2PbI2Cl2 nanocrystals",
+      "composition": {
+        "value": "Cs2PbI2Cl2",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "guo2025-acs-nanolett-5c01111",
+            "locator": "Main PDF p.11"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "recipe_link_evidence": [
+        {
+          "source_id": "guo2025-acs-nanolett-5c01111",
+          "locator": "Main PDF p.11"
+        }
+      ],
+      "product_structure_fields": [],
+      "structural_measurements": [],
+      "review_status": "source_extracted",
+      "display_pair_basis": "one_record",
+      "cross_record_sample_deduplication": "not_assessed",
+      "documentation": {
+        "category": "partial",
+        "checks": {
+          "quantified_recipe_and_ordered_conditions": true,
+          "reported_phase": false,
+          "reported_morphology": false,
+          "reported_dimensions": false,
+          "reference_unit_cell_available": false
+        },
+        "missing_categories": [
+          "reported_phase",
+          "reported_morphology",
+          "reported_dimensions",
+          "reference_unit_cell_available"
+        ],
+        "reference_ids": [],
+        "quantified_input_evidence": {
+          "material_ids": [
+            "guo2025-acs-nanolett-5c01111-cs2pbi2cl2-nanocrystals-2--cs-oleate-precursor-solution",
+            "guo2025-acs-nanolett-5c01111-cs2pbi2cl2-nanocrystals-2--lead-ii-chloride",
+            "guo2025-acs-nanolett-5c01111-cs2pbi2cl2-nanocrystals-2--lead-iodide",
+            "guo2025-acs-nanolett-5c01111-cs2pbi2cl2-nanocrystals-2--octadecene",
+            "guo2025-acs-nanolett-5c01111-cs2pbi2cl2-nanocrystals-2--oleic-acid",
+            "guo2025-acs-nanolett-5c01111-cs2pbi2cl2-nanocrystals-2--oleylamine"
+          ],
+          "fields": [
+            {
+              "material_id": "guo2025-acs-nanolett-5c01111-cs2pbi2cl2-nanocrystals-2--lead-ii-chloride",
+              "pointer": "/materials/0/quantities/mass",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.0834,
+                "minimum": null,
+                "maximum": null,
+                "unit": "g",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.0834 g",
+                "evidence": [
+                  {
+                    "source_id": "guo2025-acs-nanolett-5c01111",
+                    "locator": "Main PDF p.11"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "guo2025-acs-nanolett-5c01111-cs2pbi2cl2-nanocrystals-2--lead-iodide",
+              "pointer": "/materials/1/quantities/mass",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.1383,
+                "minimum": null,
+                "maximum": null,
+                "unit": "g",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.1383 g",
+                "evidence": [
+                  {
+                    "source_id": "guo2025-acs-nanolett-5c01111",
+                    "locator": "Main PDF p.11"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "guo2025-acs-nanolett-5c01111-cs2pbi2cl2-nanocrystals-2--octadecene",
+              "pointer": "/materials/2/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 150,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "150 mL",
+                "evidence": [
+                  {
+                    "source_id": "guo2025-acs-nanolett-5c01111",
+                    "locator": "Main PDF p.11"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "guo2025-acs-nanolett-5c01111-cs2pbi2cl2-nanocrystals-2--oleic-acid",
+              "pointer": "/materials/3/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.375,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.375 mL",
+                "evidence": [
+                  {
+                    "source_id": "guo2025-acs-nanolett-5c01111",
+                    "locator": "Main PDF p.11"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "guo2025-acs-nanolett-5c01111-cs2pbi2cl2-nanocrystals-2--oleylamine",
+              "pointer": "/materials/4/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 1.5,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "1.5 mL",
+                "evidence": [
+                  {
+                    "source_id": "guo2025-acs-nanolett-5c01111",
+                    "locator": "Main PDF p.11"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "guo2025-acs-nanolett-5c01111-cs2pbi2cl2-nanocrystals-2--cs-oleate-precursor-solution",
+              "pointer": "/materials/5/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 1.5,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "1.5 mL",
+                "evidence": [
+                  {
+                    "source_id": "guo2025-acs-nanolett-5c01111",
+                    "locator": "Main PDF p.11"
+                  }
+                ],
+                "derivation": null
+              }
+            }
+          ],
           "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
         },
         "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
@@ -476661,6 +478313,221 @@
                   {
                     "source_id": "huang2019-s11671-018-2842-5",
                     "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            }
+          ],
+          "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
+        },
+        "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
+      }
+    },
+    {
+      "pair_row_id": "huang2020-acs-nanolett-0c00692-cseucl3-nanocrystals-1::display",
+      "record_id": "huang2020-acs-nanolett-0c00692-cseucl3-nanocrystals-1",
+      "record_page_path": "records/huang2020-acs-nanolett-0c00692-cseucl3-nanocrystals-1.html",
+      "source_group": "huang2020-acs-nanolett-0c00692",
+      "title": "Jianmei Huang; Teng Lei; Martin Siron; Ye Zhang; Sunmoon Yu; Fabian Seeler; Ahmad Dehestani; Li Na Quan; Kerstin Schierle-Arndt; Peidong Yang (2020): CsEuCl3 nanocrystals",
+      "doi": "10.1021/acs.nanolett.0c00692",
+      "year": 2020,
+      "method": "Hot injection",
+      "recipe_label": "Jianmei Huang; Teng Lei; Martin Siron; Ye Zhang; Sunmoon Yu; Fabian Seeler; Ahmad Dehestani; Li Na Quan; Kerstin Schierle-Arndt; Peidong Yang (2020): CsEuCl3 nanocrystals",
+      "sample_id": "huang2020-acs-nanolett-0c00692-cseucl3-nanocrystals-1--product",
+      "source_sample_label": "CsEuCl3 nanocrystals",
+      "composition": {
+        "value": "CsEuCl3",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "huang2020-acs-nanolett-0c00692",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "recipe_link_evidence": [
+        {
+          "source_id": "huang2020-acs-nanolett-0c00692",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "product_structure_fields": [
+        {
+          "kind": "phase",
+          "value": {
+            "value": "tetragonal",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "huang2020-acs-nanolett-0c00692",
+                "locator": "Main PDF p.2"
+              }
+            ],
+            "note": ""
+          }
+        },
+        {
+          "kind": "morphology",
+          "value": {
+            "value": "sphere",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "huang2020-acs-nanolett-0c00692",
+                "locator": "Main PDF p.2"
+              }
+            ],
+            "note": ""
+          }
+        }
+      ],
+      "structural_measurements": [
+        {
+          "measurement_id": "huang2020-acs-nanolett-0c00692-cseucl3-nanocrystals-1--size",
+          "property": "diameter",
+          "descriptor_field": "morphology.dimensions",
+          "value": {
+            "value": 15,
+            "minimum": null,
+            "maximum": null,
+            "unit": "nm",
+            "status": "reported",
+            "approximate": false,
+            "qualifier": "",
+            "basis": "",
+            "raw_text": "15 nm",
+            "evidence": [
+              {
+                "source_id": "huang2020-acs-nanolett-0c00692",
+                "locator": "Main PDF p.2"
+              }
+            ],
+            "derivation": null
+          },
+          "technique": "TEM",
+          "conditions": "",
+          "evidence": [
+            {
+              "source_id": "huang2020-acs-nanolett-0c00692",
+              "locator": "Main PDF p.2"
+            }
+          ]
+        }
+      ],
+      "review_status": "source_extracted",
+      "display_pair_basis": "one_record",
+      "cross_record_sample_deduplication": "not_assessed",
+      "documentation": {
+        "category": "partial",
+        "checks": {
+          "quantified_recipe_and_ordered_conditions": true,
+          "reported_phase": true,
+          "reported_morphology": true,
+          "reported_dimensions": true,
+          "reference_unit_cell_available": false
+        },
+        "missing_categories": [
+          "reference_unit_cell_available"
+        ],
+        "reference_ids": [],
+        "quantified_input_evidence": {
+          "material_ids": [
+            "huang2020-acs-nanolett-0c00692-cseucl3-nanocrystals-1--cs2co3",
+            "huang2020-acs-nanolett-0c00692-cseucl3-nanocrystals-1--eucl3",
+            "huang2020-acs-nanolett-0c00692-cseucl3-nanocrystals-1--oleylamine-olam",
+            "huang2020-acs-nanolett-0c00692-cseucl3-nanocrystals-1--trioctylphosphine-top"
+          ],
+          "fields": [
+            {
+              "material_id": "huang2020-acs-nanolett-0c00692-cseucl3-nanocrystals-1--cs2co3",
+              "pointer": "/materials/0/quantities/mass",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.2,
+                "minimum": null,
+                "maximum": null,
+                "unit": "g",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.2 g",
+                "evidence": [
+                  {
+                    "source_id": "huang2020-acs-nanolett-0c00692",
+                    "locator": "Main PDF p.8"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "huang2020-acs-nanolett-0c00692-cseucl3-nanocrystals-1--eucl3",
+              "pointer": "/materials/1/quantities/amount",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 1,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mmol",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "1 mmol",
+                "evidence": [
+                  {
+                    "source_id": "huang2020-acs-nanolett-0c00692",
+                    "locator": "Main PDF p.8"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "huang2020-acs-nanolett-0c00692-cseucl3-nanocrystals-1--trioctylphosphine-top",
+              "pointer": "/materials/3/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.5,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.5 mL",
+                "evidence": [
+                  {
+                    "source_id": "huang2020-acs-nanolett-0c00692",
+                    "locator": "Main PDF p.8"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "huang2020-acs-nanolett-0c00692-cseucl3-nanocrystals-1--oleylamine-olam",
+              "pointer": "/materials/4/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 5,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "5 mL",
+                "evidence": [
+                  {
+                    "source_id": "huang2020-acs-nanolett-0c00692",
+                    "locator": "Main PDF p.8"
                   }
                 ],
                 "derivation": null
@@ -622102,6 +623969,177 @@
       }
     },
     {
+      "pair_row_id": "marino2023-acs-nanolett-3c00299-pbs-nanocrystals-2::display",
+      "record_id": "marino2023-acs-nanolett-3c00299-pbs-nanocrystals-2",
+      "record_page_path": "records/marino2023-acs-nanolett-3c00299-pbs-nanocrystals-2.html",
+      "source_group": "marino2023-acs-nanolett-3c00299",
+      "title": "Emanuele Marino; Daniel J. Rosen; Shengsong Yang; Esther H. R. Tsai; Christopher B. Murray (2023): PbS nanocrystals",
+      "doi": "10.1021/acs.nanolett.3c00299",
+      "year": 2023,
+      "method": "Hot injection",
+      "recipe_label": "Emanuele Marino; Daniel J. Rosen; Shengsong Yang; Esther H. R. Tsai; Christopher B. Murray (2023): PbS nanocrystals",
+      "sample_id": "marino2023-acs-nanolett-3c00299-pbs-nanocrystals-2--product",
+      "source_sample_label": "PbS nanocrystals",
+      "composition": {
+        "value": "PbS",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "marino2023-acs-nanolett-3c00299",
+            "locator": "Main PDF p.13"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "recipe_link_evidence": [
+        {
+          "source_id": "marino2023-acs-nanolett-3c00299",
+          "locator": "Main PDF p.14"
+        }
+      ],
+      "product_structure_fields": [
+        {
+          "kind": "morphology",
+          "value": {
+            "value": "sphere",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "marino2023-acs-nanolett-3c00299",
+                "locator": "Main PDF p.16"
+              }
+            ],
+            "note": ""
+          }
+        }
+      ],
+      "structural_measurements": [],
+      "review_status": "source_extracted",
+      "display_pair_basis": "one_record",
+      "cross_record_sample_deduplication": "not_assessed",
+      "documentation": {
+        "category": "partial",
+        "checks": {
+          "quantified_recipe_and_ordered_conditions": true,
+          "reported_phase": false,
+          "reported_morphology": true,
+          "reported_dimensions": false,
+          "reference_unit_cell_available": false
+        },
+        "missing_categories": [
+          "reported_phase",
+          "reported_dimensions",
+          "reference_unit_cell_available"
+        ],
+        "reference_ids": [],
+        "quantified_input_evidence": {
+          "material_ids": [
+            "marino2023-acs-nanolett-3c00299-pbs-nanocrystals-2--hexamethyldisilathiane",
+            "marino2023-acs-nanolett-3c00299-pbs-nanocrystals-2--oleic-acid",
+            "marino2023-acs-nanolett-3c00299-pbs-nanocrystals-2--pbo",
+            "marino2023-acs-nanolett-3c00299-pbs-nanocrystals-2--tms-2s"
+          ],
+          "fields": [
+            {
+              "material_id": "marino2023-acs-nanolett-3c00299-pbs-nanocrystals-2--oleic-acid",
+              "pointer": "/materials/1/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 30.0,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "30 mL",
+                "evidence": [
+                  {
+                    "source_id": "marino2023-acs-nanolett-3c00299",
+                    "locator": "Main PDF p.14"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "marino2023-acs-nanolett-3c00299-pbs-nanocrystals-2--pbo",
+              "pointer": "/materials/2/quantities/mass",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 9.0,
+                "minimum": null,
+                "maximum": null,
+                "unit": "g",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "9 g",
+                "evidence": [
+                  {
+                    "source_id": "marino2023-acs-nanolett-3c00299",
+                    "locator": "Main PDF p.14"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "marino2023-acs-nanolett-3c00299-pbs-nanocrystals-2--hexamethyldisilathiane",
+              "pointer": "/materials/3/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.42,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.42 mL",
+                "evidence": [
+                  {
+                    "source_id": "marino2023-acs-nanolett-3c00299",
+                    "locator": "Main PDF p.14"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "marino2023-acs-nanolett-3c00299-pbs-nanocrystals-2--tms-2s",
+              "pointer": "/materials/6/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.42,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.42 mL",
+                "evidence": [
+                  {
+                    "source_id": "marino2023-acs-nanolett-3c00299",
+                    "locator": "Main PDF p.14"
+                  }
+                ],
+                "derivation": null
+              }
+            }
+          ],
+          "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
+        },
+        "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
+      }
+    },
+    {
       "pair_row_id": "markovic2020-acssuschemeng-0c06260-cl-doped-carbon-quantum-dots-clcqds-2::display",
       "record_id": "markovic2020-acssuschemeng-0c06260-cl-doped-carbon-quantum-dots-clcqds-2",
       "record_page_path": "records/markovic2020-acssuschemeng-0c06260-cl-doped-carbon-quantum-dots-clcqds-2.html",
@@ -645638,6 +647676,139 @@
         "quantified_input_evidence": {
           "material_ids": [],
           "fields": [],
+          "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
+        },
+        "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
+      }
+    },
+    {
+      "pair_row_id": "nagamine2025-acs-nanolett-5c02663-cdse565-2::display",
+      "record_id": "nagamine2025-acs-nanolett-5c02663-cdse565-2",
+      "record_page_path": "records/nagamine2025-acs-nanolett-5c02663-cdse565-2.html",
+      "source_group": "nagamine2025-acs-nanolett-5c02663",
+      "title": "Gabriel Nagamine; Julian Santen; Juri G. Crimmann; Aniket S. Mule; Andrew B. Pun; David J. Norris (2025): CdSe565",
+      "doi": "10.1021/acs.nanolett.5c02663",
+      "year": 2025,
+      "method": "Synthesis as described in the source",
+      "recipe_label": "Gabriel Nagamine; Julian Santen; Juri G. Crimmann; Aniket S. Mule; Andrew B. Pun; David J. Norris (2025): CdSe565",
+      "sample_id": "nagamine2025-acs-nanolett-5c02663-cdse565-2--product",
+      "source_sample_label": "CdSe565",
+      "composition": {
+        "value": "CdSe",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "nagamine2025-acs-nanolett-5c02663",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "recipe_link_evidence": [
+        {
+          "source_id": "nagamine2025-acs-nanolett-5c02663",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "product_structure_fields": [],
+      "structural_measurements": [],
+      "review_status": "source_extracted",
+      "display_pair_basis": "one_record",
+      "cross_record_sample_deduplication": "not_assessed",
+      "documentation": {
+        "category": "partial",
+        "checks": {
+          "quantified_recipe_and_ordered_conditions": true,
+          "reported_phase": false,
+          "reported_morphology": false,
+          "reported_dimensions": false,
+          "reference_unit_cell_available": false
+        },
+        "missing_categories": [
+          "reported_phase",
+          "reported_morphology",
+          "reported_dimensions",
+          "reference_unit_cell_available"
+        ],
+        "reference_ids": [],
+        "quantified_input_evidence": {
+          "material_ids": [
+            "nagamine2025-acs-nanolett-5c02663-cdse565-2--bis-stearoyl-selenide",
+            "nagamine2025-acs-nanolett-5c02663-cdse565-2--cadmium-chloride",
+            "nagamine2025-acs-nanolett-5c02663-cdse565-2--cadmium-oleate"
+          ],
+          "fields": [
+            {
+              "material_id": "nagamine2025-acs-nanolett-5c02663-cdse565-2--cadmium-oleate",
+              "pointer": "/materials/1/quantities/amount",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.8,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mmol",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.8 mmol",
+                "evidence": [
+                  {
+                    "source_id": "nagamine2025-acs-nanolett-5c02663",
+                    "locator": "Main PDF p.12"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "nagamine2025-acs-nanolett-5c02663-cdse565-2--cadmium-chloride",
+              "pointer": "/materials/2/quantities/amount",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.4,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mmol",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.4 mmol",
+                "evidence": [
+                  {
+                    "source_id": "nagamine2025-acs-nanolett-5c02663",
+                    "locator": "Main PDF p.12"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "nagamine2025-acs-nanolett-5c02663-cdse565-2--bis-stearoyl-selenide",
+              "pointer": "/materials/3/quantities/amount",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.2,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mmol",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.2 mmol",
+                "evidence": [
+                  {
+                    "source_id": "nagamine2025-acs-nanolett-5c02663",
+                    "locator": "Main PDF p.12"
+                  }
+                ],
+                "derivation": null
+              }
+            }
+          ],
           "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
         },
         "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
@@ -677954,6 +680125,190 @@
                   {
                     "source_id": "parmar2022-acsomega-2c04668",
                     "locator": "Main PDF p.4"
+                  }
+                ],
+                "derivation": null
+              }
+            }
+          ],
+          "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
+        },
+        "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
+      }
+    },
+    {
+      "pair_row_id": "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1::display",
+      "record_id": "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1",
+      "record_page_path": "records/parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1.html",
+      "source_group": "parobek2016-acs-nanolett-6b02772",
+      "title": "David Parobek; Benjamin J. Roman; Yitong Dong; Ho Jin; Elbert Lee; Matthew Sheldon; Dong Hee Son (2016): Mn-doped CsPbCl3 nanocrystals",
+      "doi": "10.1021/acs.nanolett.6b02772",
+      "year": 2016,
+      "method": "Synthesis as described in the source",
+      "recipe_label": "David Parobek; Benjamin J. Roman; Yitong Dong; Ho Jin; Elbert Lee; Matthew Sheldon; Dong Hee Son (2016): Mn-doped CsPbCl3 nanocrystals",
+      "sample_id": "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--product",
+      "source_sample_label": "Mn-doped CsPbCl3 nanocrystals",
+      "composition": {
+        "value": "CsPbCl3:Mn",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "parobek2016-acs-nanolett-6b02772",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "recipe_link_evidence": [
+        {
+          "source_id": "parobek2016-acs-nanolett-6b02772",
+          "locator": "Main PDF p.7"
+        }
+      ],
+      "product_structure_fields": [
+        {
+          "kind": "phase",
+          "value": {
+            "value": "orthorhombic",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "parobek2016-acs-nanolett-6b02772",
+                "locator": "Main PDF p.3"
+              }
+            ],
+            "note": ""
+          }
+        },
+        {
+          "kind": "morphology",
+          "value": {
+            "value": "nanocrystal",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "parobek2016-acs-nanolett-6b02772",
+                "locator": "Main PDF p.4"
+              }
+            ],
+            "note": ""
+          }
+        }
+      ],
+      "structural_measurements": [],
+      "review_status": "source_extracted",
+      "display_pair_basis": "one_record",
+      "cross_record_sample_deduplication": "not_assessed",
+      "documentation": {
+        "category": "partial",
+        "checks": {
+          "quantified_recipe_and_ordered_conditions": true,
+          "reported_phase": true,
+          "reported_morphology": true,
+          "reported_dimensions": false,
+          "reference_unit_cell_available": false
+        },
+        "missing_categories": [
+          "reported_dimensions",
+          "reference_unit_cell_available"
+        ],
+        "reference_ids": [],
+        "quantified_input_evidence": {
+          "material_ids": [
+            "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--1-octadecene",
+            "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--cs-oleate",
+            "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--oleic-acid",
+            "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--oleylamine"
+          ],
+          "fields": [
+            {
+              "material_id": "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--oleylamine",
+              "pointer": "/materials/2/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.8,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.8 mL",
+                "evidence": [
+                  {
+                    "source_id": "parobek2016-acs-nanolett-6b02772",
+                    "locator": "Main PDF p.7"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--oleic-acid",
+              "pointer": "/materials/3/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.8,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.8 mL",
+                "evidence": [
+                  {
+                    "source_id": "parobek2016-acs-nanolett-6b02772",
+                    "locator": "Main PDF p.7"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--1-octadecene",
+              "pointer": "/materials/4/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 5,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "5 mL",
+                "evidence": [
+                  {
+                    "source_id": "parobek2016-acs-nanolett-6b02772",
+                    "locator": "Main PDF p.7"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "parobek2016-acs-nanolett-6b02772-mn-doped-cspbcl3-nanocrystals-1--cs-oleate",
+              "pointer": "/materials/5/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.4,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.4 mL",
+                "evidence": [
+                  {
+                    "source_id": "parobek2016-acs-nanolett-6b02772",
+                    "locator": "Main PDF p.7"
                   }
                 ],
                 "derivation": null
@@ -772681,6 +775036,290 @@
           "reported_phase",
           "reported_morphology",
           "reported_dimensions",
+          "reference_unit_cell_available"
+        ],
+        "reference_ids": [],
+        "quantified_input_evidence": {
+          "material_ids": [],
+          "fields": [],
+          "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
+        },
+        "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
+      }
+    },
+    {
+      "pair_row_id": "staller2022-acs-nanolett-2c01852-0-at-sn-ito-nanocrystals-5-nm-3::display",
+      "record_id": "staller2022-acs-nanolett-2c01852-0-at-sn-ito-nanocrystals-5-nm-3",
+      "record_page_path": "records/staller2022-acs-nanolett-2c01852-0-at-sn-ito-nanocrystals-5-nm-3.html",
+      "source_group": "staller2022-acs-nanolett-2c01852",
+      "title": "Corey M. Staller; Stephen L. Gibbs; Xing Yee Gan; Jay T. Bender; Karalee Jarvis; Gary K. Ong; Delia J. Milliron (2022): 0 at% Sn ITO nanocrystals, 5 nm",
+      "doi": "10.1021/acs.nanolett.2c01852",
+      "year": 2022,
+      "method": "Slow injection",
+      "recipe_label": "Corey M. Staller; Stephen L. Gibbs; Xing Yee Gan; Jay T. Bender; Karalee Jarvis; Gary K. Ong; Delia J. Milliron (2022): 0 at% Sn ITO nanocrystals, 5 nm",
+      "sample_id": "staller2022-acs-nanolett-2c01852-0-at-sn-ito-nanocrystals-5-nm-3--product",
+      "source_sample_label": "0 at% Sn ITO nanocrystals, 5 nm",
+      "composition": {
+        "value": "In2O3",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "staller2022-acs-nanolett-2c01852",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "recipe_link_evidence": [
+        {
+          "source_id": "staller2022-acs-nanolett-2c01852",
+          "locator": "Main PDF p.8"
+        }
+      ],
+      "product_structure_fields": [
+        {
+          "kind": "morphology",
+          "value": {
+            "value": "sphere",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "staller2022-acs-nanolett-2c01852",
+                "locator": "Main PDF p.1"
+              }
+            ],
+            "note": ""
+          }
+        }
+      ],
+      "structural_measurements": [
+        {
+          "measurement_id": "staller2022-acs-nanolett-2c01852-0-at-sn-ito-nanocrystals-5-nm-3--size",
+          "property": "diameter",
+          "descriptor_field": "morphology.dimensions",
+          "value": {
+            "value": 5.0,
+            "minimum": null,
+            "maximum": null,
+            "unit": "nm",
+            "status": "reported",
+            "approximate": false,
+            "qualifier": "",
+            "basis": "",
+            "raw_text": "5 nm",
+            "evidence": [
+              {
+                "source_id": "staller2022-acs-nanolett-2c01852",
+                "locator": "Main PDF p.20"
+              }
+            ],
+            "derivation": null
+          },
+          "technique": "TEM",
+          "conditions": "",
+          "evidence": [
+            {
+              "source_id": "staller2022-acs-nanolett-2c01852",
+              "locator": "Main PDF p.20"
+            }
+          ]
+        }
+      ],
+      "review_status": "source_extracted",
+      "display_pair_basis": "one_record",
+      "cross_record_sample_deduplication": "not_assessed",
+      "documentation": {
+        "category": "partial",
+        "checks": {
+          "quantified_recipe_and_ordered_conditions": false,
+          "reported_phase": false,
+          "reported_morphology": true,
+          "reported_dimensions": true,
+          "reference_unit_cell_available": false
+        },
+        "missing_categories": [
+          "quantified_recipe_and_ordered_conditions",
+          "reported_phase",
+          "reference_unit_cell_available"
+        ],
+        "reference_ids": [],
+        "quantified_input_evidence": {
+          "material_ids": [],
+          "fields": [],
+          "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
+        },
+        "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
+      }
+    },
+    {
+      "pair_row_id": "staller2022-acs-nanolett-2c01852-3-at-sn-ito-nanocrystals-15-nm-2::display",
+      "record_id": "staller2022-acs-nanolett-2c01852-3-at-sn-ito-nanocrystals-15-nm-2",
+      "record_page_path": "records/staller2022-acs-nanolett-2c01852-3-at-sn-ito-nanocrystals-15-nm-2.html",
+      "source_group": "staller2022-acs-nanolett-2c01852",
+      "title": "Corey M. Staller; Stephen L. Gibbs; Xing Yee Gan; Jay T. Bender; Karalee Jarvis; Gary K. Ong; Delia J. Milliron (2022): 3 at% Sn ITO nanocrystals, 15 nm",
+      "doi": "10.1021/acs.nanolett.2c01852",
+      "year": 2022,
+      "method": "Slow injection",
+      "recipe_label": "Corey M. Staller; Stephen L. Gibbs; Xing Yee Gan; Jay T. Bender; Karalee Jarvis; Gary K. Ong; Delia J. Milliron (2022): 3 at% Sn ITO nanocrystals, 15 nm",
+      "sample_id": "staller2022-acs-nanolett-2c01852-3-at-sn-ito-nanocrystals-15-nm-2--product",
+      "source_sample_label": "3 at% Sn ITO nanocrystals, 15 nm",
+      "composition": {
+        "value": "In2O3:Sn",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "staller2022-acs-nanolett-2c01852",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "recipe_link_evidence": [
+        {
+          "source_id": "staller2022-acs-nanolett-2c01852",
+          "locator": "Main PDF p.8"
+        }
+      ],
+      "product_structure_fields": [
+        {
+          "kind": "morphology",
+          "value": {
+            "value": "sphere",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "staller2022-acs-nanolett-2c01852",
+                "locator": "Main PDF p.1"
+              }
+            ],
+            "note": ""
+          }
+        }
+      ],
+      "structural_measurements": [],
+      "review_status": "source_extracted",
+      "display_pair_basis": "one_record",
+      "cross_record_sample_deduplication": "not_assessed",
+      "documentation": {
+        "category": "partial",
+        "checks": {
+          "quantified_recipe_and_ordered_conditions": false,
+          "reported_phase": false,
+          "reported_morphology": true,
+          "reported_dimensions": false,
+          "reference_unit_cell_available": false
+        },
+        "missing_categories": [
+          "quantified_recipe_and_ordered_conditions",
+          "reported_phase",
+          "reported_dimensions",
+          "reference_unit_cell_available"
+        ],
+        "reference_ids": [],
+        "quantified_input_evidence": {
+          "material_ids": [],
+          "fields": [],
+          "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
+        },
+        "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
+      }
+    },
+    {
+      "pair_row_id": "staller2022-acs-nanolett-2c01852-3-at-sn-ito-nanocrystals-5-nm-1::display",
+      "record_id": "staller2022-acs-nanolett-2c01852-3-at-sn-ito-nanocrystals-5-nm-1",
+      "record_page_path": "records/staller2022-acs-nanolett-2c01852-3-at-sn-ito-nanocrystals-5-nm-1.html",
+      "source_group": "staller2022-acs-nanolett-2c01852",
+      "title": "Corey M. Staller; Stephen L. Gibbs; Xing Yee Gan; Jay T. Bender; Karalee Jarvis; Gary K. Ong; Delia J. Milliron (2022): 3 at% Sn ITO nanocrystals, 5 nm",
+      "doi": "10.1021/acs.nanolett.2c01852",
+      "year": 2022,
+      "method": "Slow injection",
+      "recipe_label": "Corey M. Staller; Stephen L. Gibbs; Xing Yee Gan; Jay T. Bender; Karalee Jarvis; Gary K. Ong; Delia J. Milliron (2022): 3 at% Sn ITO nanocrystals, 5 nm",
+      "sample_id": "staller2022-acs-nanolett-2c01852-3-at-sn-ito-nanocrystals-5-nm-1--product",
+      "source_sample_label": "3 at% Sn ITO nanocrystals, 5 nm",
+      "composition": {
+        "value": "In2O3:Sn",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "staller2022-acs-nanolett-2c01852",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "recipe_link_evidence": [
+        {
+          "source_id": "staller2022-acs-nanolett-2c01852",
+          "locator": "Main PDF p.8"
+        }
+      ],
+      "product_structure_fields": [
+        {
+          "kind": "morphology",
+          "value": {
+            "value": "sphere",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "staller2022-acs-nanolett-2c01852",
+                "locator": "Main PDF p.1"
+              }
+            ],
+            "note": ""
+          }
+        }
+      ],
+      "structural_measurements": [
+        {
+          "measurement_id": "staller2022-acs-nanolett-2c01852-3-at-sn-ito-nanocrystals-5-nm-1--size",
+          "property": "diameter",
+          "descriptor_field": "morphology.dimensions",
+          "value": {
+            "value": 5.0,
+            "minimum": null,
+            "maximum": null,
+            "unit": "nm",
+            "status": "reported",
+            "approximate": false,
+            "qualifier": "",
+            "basis": "",
+            "raw_text": "5 nm",
+            "evidence": [
+              {
+                "source_id": "staller2022-acs-nanolett-2c01852",
+                "locator": "Main PDF p.20"
+              }
+            ],
+            "derivation": null
+          },
+          "technique": "TEM",
+          "conditions": "",
+          "evidence": [
+            {
+              "source_id": "staller2022-acs-nanolett-2c01852",
+              "locator": "Main PDF p.20"
+            }
+          ]
+        }
+      ],
+      "review_status": "source_extracted",
+      "display_pair_basis": "one_record",
+      "cross_record_sample_deduplication": "not_assessed",
+      "documentation": {
+        "category": "partial",
+        "checks": {
+          "quantified_recipe_and_ordered_conditions": false,
+          "reported_phase": false,
+          "reported_morphology": true,
+          "reported_dimensions": true,
+          "reference_unit_cell_available": false
+        },
+        "missing_categories": [
+          "quantified_recipe_and_ordered_conditions",
+          "reported_phase",
           "reference_unit_cell_available"
         ],
         "reference_ids": [],
@@ -869134,6 +871773,269 @@
       }
     },
     {
+      "pair_row_id": "yang2015-acs-langmuir-5b02307-3-nm-dodecyl-passivated-sincs-1::display",
+      "record_id": "yang2015-acs-langmuir-5b02307-3-nm-dodecyl-passivated-sincs-1",
+      "record_page_path": "records/yang2015-acs-langmuir-5b02307-3-nm-dodecyl-passivated-sincs-1.html",
+      "source_group": "yang2015-acs-langmuir-5b02307",
+      "title": "Zhenyu Yang; Christina M. Gonzalez; Tapas K. Purkait; Muhammad Iqbal; Al Meldrum; Jonathan G. C. Veinot (2015): 3 nm dodecyl-passivated SiNCs",
+      "doi": "10.1021/acs.langmuir.5b02307",
+      "year": 2015,
+      "method": "Radical initiated hydrosilylation",
+      "recipe_label": "Zhenyu Yang; Christina M. Gonzalez; Tapas K. Purkait; Muhammad Iqbal; Al Meldrum; Jonathan G. C. Veinot (2015): 3 nm dodecyl-passivated SiNCs",
+      "sample_id": "yang2015-acs-langmuir-5b02307-3-nm-dodecyl-passivated-sincs-1--product",
+      "source_sample_label": "3 nm dodecyl-passivated SiNCs",
+      "composition": {
+        "value": "Si",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "yang2015-acs-langmuir-5b02307",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "recipe_link_evidence": [
+        {
+          "source_id": "yang2015-acs-langmuir-5b02307",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "product_structure_fields": [
+        {
+          "kind": "phase",
+          "value": {
+            "value": "nanocrystalline",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "yang2015-acs-langmuir-5b02307",
+                "locator": "Main PDF p.3"
+              }
+            ],
+            "note": ""
+          }
+        },
+        {
+          "kind": "morphology",
+          "value": {
+            "value": "nanocrystal",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "yang2015-acs-langmuir-5b02307",
+                "locator": "Main PDF p.3"
+              }
+            ],
+            "note": ""
+          }
+        }
+      ],
+      "structural_measurements": [
+        {
+          "measurement_id": "yang2015-acs-langmuir-5b02307-3-nm-dodecyl-passivated-sincs-1--size",
+          "property": "diameter",
+          "descriptor_field": "morphology.dimensions",
+          "value": {
+            "value": 3.0,
+            "minimum": null,
+            "maximum": null,
+            "unit": "nm",
+            "status": "reported",
+            "approximate": false,
+            "qualifier": "",
+            "basis": "",
+            "raw_text": "3 nm",
+            "evidence": [
+              {
+                "source_id": "yang2015-acs-langmuir-5b02307",
+                "locator": "Main PDF p.3"
+              }
+            ],
+            "derivation": null
+          },
+          "technique": "TEM",
+          "conditions": "",
+          "evidence": [
+            {
+              "source_id": "yang2015-acs-langmuir-5b02307",
+              "locator": "Main PDF p.3"
+            }
+          ]
+        }
+      ],
+      "review_status": "source_extracted",
+      "display_pair_basis": "one_record",
+      "cross_record_sample_deduplication": "not_assessed",
+      "documentation": {
+        "category": "partial",
+        "checks": {
+          "quantified_recipe_and_ordered_conditions": true,
+          "reported_phase": true,
+          "reported_morphology": true,
+          "reported_dimensions": true,
+          "reference_unit_cell_available": false
+        },
+        "missing_categories": [
+          "reference_unit_cell_available"
+        ],
+        "reference_ids": [],
+        "quantified_input_evidence": {
+          "material_ids": [
+            "yang2015-acs-langmuir-5b02307-3-nm-dodecyl-passivated-sincs-1--1-dodecene",
+            "yang2015-acs-langmuir-5b02307-3-nm-dodecyl-passivated-sincs-1--1-octyne",
+            "yang2015-acs-langmuir-5b02307-3-nm-dodecyl-passivated-sincs-1--2-2-azobis-2-methylpropionitrile",
+            "yang2015-acs-langmuir-5b02307-3-nm-dodecyl-passivated-sincs-1--methyl-10-undecenoate",
+            "yang2015-acs-langmuir-5b02307-3-nm-dodecyl-passivated-sincs-1--phenylacetylene",
+            "yang2015-acs-langmuir-5b02307-3-nm-dodecyl-passivated-sincs-1--styrene"
+          ],
+          "fields": [
+            {
+              "material_id": "yang2015-acs-langmuir-5b02307-3-nm-dodecyl-passivated-sincs-1--2-2-azobis-2-methylpropionitrile",
+              "pointer": "/materials/0/quantities/amount",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.061,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mmol",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.061 mmol",
+                "evidence": [
+                  {
+                    "source_id": "yang2015-acs-langmuir-5b02307",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "yang2015-acs-langmuir-5b02307-3-nm-dodecyl-passivated-sincs-1--1-dodecene",
+              "pointer": "/materials/1/quantities/amount",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.018,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mol",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.018 mol",
+                "evidence": [
+                  {
+                    "source_id": "yang2015-acs-langmuir-5b02307",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "yang2015-acs-langmuir-5b02307-3-nm-dodecyl-passivated-sincs-1--1-octyne",
+              "pointer": "/materials/2/quantities/amount",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.018,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mol",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.018 mol",
+                "evidence": [
+                  {
+                    "source_id": "yang2015-acs-langmuir-5b02307",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "yang2015-acs-langmuir-5b02307-3-nm-dodecyl-passivated-sincs-1--methyl-10-undecenoate",
+              "pointer": "/materials/3/quantities/amount",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.018,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mol",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.018 mol",
+                "evidence": [
+                  {
+                    "source_id": "yang2015-acs-langmuir-5b02307",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "yang2015-acs-langmuir-5b02307-3-nm-dodecyl-passivated-sincs-1--styrene",
+              "pointer": "/materials/4/quantities/amount",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.018,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mol",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.018 mol",
+                "evidence": [
+                  {
+                    "source_id": "yang2015-acs-langmuir-5b02307",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "yang2015-acs-langmuir-5b02307-3-nm-dodecyl-passivated-sincs-1--phenylacetylene",
+              "pointer": "/materials/5/quantities/amount",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.018,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mol",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.018 mol",
+                "evidence": [
+                  {
+                    "source_id": "yang2015-acs-langmuir-5b02307",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            }
+          ],
+          "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
+        },
+        "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
+      }
+    },
+    {
       "pair_row_id": "yang2015-acsami-5b05372-gd-doped-cuins-zns-bqds-gcis-zns-1::display",
       "record_id": "yang2015-acsami-5b05372-gd-doped-cuins-zns-bqds-gcis-zns-1",
       "record_page_path": "records/yang2015-acsami-5b05372-gd-doped-cuins-zns-bqds-gcis-zns-1.html",
@@ -906739,6 +909641,190 @@
                   {
                     "source_id": "zhang2016-acs-jpcc-6b10920",
                     "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            }
+          ],
+          "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
+        },
+        "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
+      }
+    },
+    {
+      "pair_row_id": "zhang2016-acs-nanolett-5b04959-cspbbr3-nanocrystals-1::display",
+      "record_id": "zhang2016-acs-nanolett-5b04959-cspbbr3-nanocrystals-1",
+      "record_page_path": "records/zhang2016-acs-nanolett-5b04959-cspbbr3-nanocrystals-1.html",
+      "source_group": "zhang2016-acs-nanolett-5b04959",
+      "title": "Xiaoyu Zhang; Hong Lin; He Huang; Claas Reckmeier; Yu Zhang; Wallace C. H. Choy; Andrey L. Rogach (2016): CsPbBr3 nanocrystals",
+      "doi": "10.1021/acs.nanolett.5b04959",
+      "year": 2016,
+      "method": "Hot injection",
+      "recipe_label": "Xiaoyu Zhang; Hong Lin; He Huang; Claas Reckmeier; Yu Zhang; Wallace C. H. Choy; Andrey L. Rogach (2016): CsPbBr3 nanocrystals",
+      "sample_id": "zhang2016-acs-nanolett-5b04959-cspbbr3-nanocrystals-1--product",
+      "source_sample_label": "CsPbBr3 nanocrystals",
+      "composition": {
+        "value": "CsPbBr3",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "zhang2016-acs-nanolett-5b04959",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "recipe_link_evidence": [
+        {
+          "source_id": "zhang2016-acs-nanolett-5b04959",
+          "locator": "Main PDF p.5"
+        }
+      ],
+      "product_structure_fields": [
+        {
+          "kind": "phase",
+          "value": {
+            "value": "crystal",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "zhang2016-acs-nanolett-5b04959",
+                "locator": "Main PDF p.3"
+              }
+            ],
+            "note": ""
+          }
+        },
+        {
+          "kind": "morphology",
+          "value": {
+            "value": "cubic",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "zhang2016-acs-nanolett-5b04959",
+                "locator": "Main PDF p.3"
+              }
+            ],
+            "note": ""
+          }
+        }
+      ],
+      "structural_measurements": [],
+      "review_status": "source_extracted",
+      "display_pair_basis": "one_record",
+      "cross_record_sample_deduplication": "not_assessed",
+      "documentation": {
+        "category": "partial",
+        "checks": {
+          "quantified_recipe_and_ordered_conditions": true,
+          "reported_phase": true,
+          "reported_morphology": true,
+          "reported_dimensions": false,
+          "reference_unit_cell_available": false
+        },
+        "missing_categories": [
+          "reported_dimensions",
+          "reference_unit_cell_available"
+        ],
+        "reference_ids": [],
+        "quantified_input_evidence": {
+          "material_ids": [
+            "zhang2016-acs-nanolett-5b04959-cspbbr3-nanocrystals-1--1-octadecene",
+            "zhang2016-acs-nanolett-5b04959-cspbbr3-nanocrystals-1--cs2co3",
+            "zhang2016-acs-nanolett-5b04959-cspbbr3-nanocrystals-1--oleic-acid",
+            "zhang2016-acs-nanolett-5b04959-cspbbr3-nanocrystals-1--oleylamine"
+          ],
+          "fields": [
+            {
+              "material_id": "zhang2016-acs-nanolett-5b04959-cspbbr3-nanocrystals-1--cs2co3",
+              "pointer": "/materials/0/quantities/mass",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.8,
+                "minimum": null,
+                "maximum": null,
+                "unit": "g",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.8 g",
+                "evidence": [
+                  {
+                    "source_id": "zhang2016-acs-nanolett-5b04959",
+                    "locator": "Main PDF p.5"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "zhang2016-acs-nanolett-5b04959-cspbbr3-nanocrystals-1--oleic-acid",
+              "pointer": "/materials/1/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 2.5,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "2.5 mL",
+                "evidence": [
+                  {
+                    "source_id": "zhang2016-acs-nanolett-5b04959",
+                    "locator": "Main PDF p.5"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "zhang2016-acs-nanolett-5b04959-cspbbr3-nanocrystals-1--1-octadecene",
+              "pointer": "/materials/2/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 30,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "30 mL",
+                "evidence": [
+                  {
+                    "source_id": "zhang2016-acs-nanolett-5b04959",
+                    "locator": "Main PDF p.5"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "zhang2016-acs-nanolett-5b04959-cspbbr3-nanocrystals-1--oleylamine",
+              "pointer": "/materials/4/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 1,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "1 mL",
+                "evidence": [
+                  {
+                    "source_id": "zhang2016-acs-nanolett-5b04959",
+                    "locator": "Main PDF p.5"
                   }
                 ],
                 "derivation": null
