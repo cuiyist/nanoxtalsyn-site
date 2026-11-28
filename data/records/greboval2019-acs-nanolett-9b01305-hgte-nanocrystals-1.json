@@ -1,0 +1,777 @@
+{
+  "schema_version": "1.3.0",
+  "record_id": "greboval2019-acs-nanolett-9b01305-hgte-nanocrystals-1",
+  "revision": 1,
+  "record_type": "literature_protocol",
+  "title": "Charlie Gréboval; Ulrich Noumbe; Nicolas Goubet; Clément Livache; Julien Ramade; Junling Qu; Audrey Chu; Bertille Martinez; Yoann Prado; Sandrine Ithurria; Abdelkarim Ouerghi; Herve Aubin; Jean-Francois Dayen; Emmanuel Lhuillier (2019): HgTe nanocrystals",
+  "material": {
+    "formula": "HgTe",
+    "family": "HgTe nanocrystals",
+    "elements": [
+      "Hg",
+      "Te"
+    ],
+    "components": [
+      "HgTe"
+    ],
+    "architecture": "single_material"
+  },
+  "method": "Hot injection",
+  "sources": [
+    {
+      "id": "greboval2019-acs-nanolett-9b01305",
+      "doi": "10.1021/acs.nanolett.9b01305",
+      "title": "Field-Effect Transistor and Photo-Transistor of Narrow-Band-Gap Nanocrystal Arrays Using Ionic Glasses",
+      "authors": "Charlie Gréboval; Ulrich Noumbe; Nicolas Goubet; Clément Livache; Julien Ramade; Junling Qu; Audrey Chu; Bertille Martinez; Yoann Prado; Sandrine Ithurria; Abdelkarim Ouerghi; Herve Aubin; Jean-Francois Dayen; Emmanuel Lhuillier",
+      "year": 2019,
+      "url": "https://doi.org/10.1021/acs.nanolett.9b01305",
+      "main_status": "main text read by the extraction pipeline",
+      "si_status": "supporting information not read",
+      "reuse_status": "bibliographic citation and extracted values only"
+    }
+  ],
+  "lineage": {
+    "source_group": "greboval2019-acs-nanolett-9b01305",
+    "recipe_family": "greboval2019-acs-nanolett-9b01305-hgte-nanocrystals-1",
+    "parent_record_id": null,
+    "batch_id": null,
+    "duplicate_of": null
+  },
+  "intended_target": {
+    "composition": {
+      "value": "HgTe",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "greboval2019-acs-nanolett-9b01305",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "note": ""
+    },
+    "phase": {
+      "value": "crystal",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "greboval2019-acs-nanolett-9b01305",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "note": ""
+    },
+    "size": {
+      "value": null,
+      "minimum": null,
+      "maximum": null,
+      "unit": "nm",
+      "status": "not_reported",
+      "approximate": false,
+      "qualifier": "",
+      "basis": "",
+      "raw_text": "not reported",
+      "evidence": [],
+      "derivation": null
+    },
+    "morphology": {
+      "value": "tetrapod",
+      "status": "reported",
+      "evidence": [
+        {
+          "source_id": "greboval2019-acs-nanolett-9b01305",
+          "locator": "Main PDF p.3"
+        }
+      ],
+      "note": ""
+    }
+  },
+  "materials": [
+    {
+      "id": "greboval2019-acs-nanolett-9b01305-hgte-nanocrystals-1--hgcl2",
+      "name": "HgCl2",
+      "formula": null,
+      "role": "metal_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "mass": {
+          "value": 513,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mg",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "513 mg",
+          "evidence": [
+            {
+              "source_id": "greboval2019-acs-nanolett-9b01305",
+              "locator": "Main PDF p.8"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "greboval2019-acs-nanolett-9b01305",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    },
+    {
+      "id": "greboval2019-acs-nanolett-9b01305-hgte-nanocrystals-1--te",
+      "name": "Te",
+      "formula": null,
+      "role": "chalcogen_precursor",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "mass": {
+          "value": 2.54,
+          "minimum": null,
+          "maximum": null,
+          "unit": "g",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "2.54 g",
+          "evidence": [
+            {
+              "source_id": "greboval2019-acs-nanolett-9b01305",
+              "locator": "Main PDF p.8"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "greboval2019-acs-nanolett-9b01305",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    },
+    {
+      "id": "greboval2019-acs-nanolett-9b01305-hgte-nanocrystals-1--top",
+      "name": "TOP",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 20,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "20 mL",
+          "evidence": [
+            {
+              "source_id": "greboval2019-acs-nanolett-9b01305",
+              "locator": "Main PDF p.8"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "greboval2019-acs-nanolett-9b01305",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    },
+    {
+      "id": "greboval2019-acs-nanolett-9b01305-hgte-nanocrystals-1--oleylamine",
+      "name": "oleylamine",
+      "formula": null,
+      "role": "solvent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 60,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "60 mL",
+          "evidence": [
+            {
+              "source_id": "greboval2019-acs-nanolett-9b01305",
+              "locator": "Main PDF p.8"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "greboval2019-acs-nanolett-9b01305",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    },
+    {
+      "id": "greboval2019-acs-nanolett-9b01305-hgte-nanocrystals-1--dodecanethiol",
+      "name": "dodecanethiol",
+      "formula": null,
+      "role": "ligand",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {
+        "volume": {
+          "value": 1,
+          "minimum": null,
+          "maximum": null,
+          "unit": "mL",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "1 mL",
+          "evidence": [
+            {
+              "source_id": "greboval2019-acs-nanolett-9b01305",
+              "locator": "Main PDF p.8"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "greboval2019-acs-nanolett-9b01305",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    },
+    {
+      "id": "greboval2019-acs-nanolett-9b01305-hgte-nanocrystals-1--toluene",
+      "name": "toluene",
+      "formula": null,
+      "role": "reagent",
+      "stage": "synthesis",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "greboval2019-acs-nanolett-9b01305",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    },
+    {
+      "id": "greboval2019-acs-nanolett-9b01305-hgte-nanocrystals-1--ethanol",
+      "name": "ethanol",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "greboval2019-acs-nanolett-9b01305",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    },
+    {
+      "id": "greboval2019-acs-nanolett-9b01305-hgte-nanocrystals-1--chloroform",
+      "name": "chloroform",
+      "formula": null,
+      "role": "reagent",
+      "stage": "workup",
+      "identity": {
+        "pubchem_cid": null,
+        "smiles": null
+      },
+      "quantities": {},
+      "notes": [],
+      "evidence": [
+        {
+          "source_id": "greboval2019-acs-nanolett-9b01305",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    }
+  ],
+  "stocks": [],
+  "material_states": [
+    {
+      "id": "greboval2019-acs-nanolett-9b01305-hgte-nanocrystals-1--after-s01-degas",
+      "name": "mixture after step 1",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "greboval2019-acs-nanolett-9b01305-hgte-nanocrystals-1--te",
+        "greboval2019-acs-nanolett-9b01305-hgte-nanocrystals-1--top"
+      ]
+    },
+    {
+      "id": "greboval2019-acs-nanolett-9b01305-hgte-nanocrystals-1--after-s02-heat",
+      "name": "mixture after step 2",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "greboval2019-acs-nanolett-9b01305-hgte-nanocrystals-1--after-s01-degas",
+        "greboval2019-acs-nanolett-9b01305-hgte-nanocrystals-1--te",
+        "greboval2019-acs-nanolett-9b01305-hgte-nanocrystals-1--top"
+      ]
+    },
+    {
+      "id": "greboval2019-acs-nanolett-9b01305-hgte-nanocrystals-1--after-s03-quench",
+      "name": "mixture after step 3",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "greboval2019-acs-nanolett-9b01305-hgte-nanocrystals-1--after-s02-heat",
+        "greboval2019-acs-nanolett-9b01305-hgte-nanocrystals-1--dodecanethiol",
+        "greboval2019-acs-nanolett-9b01305-hgte-nanocrystals-1--toluene"
+      ]
+    },
+    {
+      "id": "greboval2019-acs-nanolett-9b01305-hgte-nanocrystals-1--after-s04-precipitate",
+      "name": "mixture after step 4",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "greboval2019-acs-nanolett-9b01305-hgte-nanocrystals-1--after-s03-quench",
+        "greboval2019-acs-nanolett-9b01305-hgte-nanocrystals-1--ethanol"
+      ]
+    },
+    {
+      "id": "greboval2019-acs-nanolett-9b01305-hgte-nanocrystals-1--after-s05-centrifuge",
+      "name": "mixture after step 5",
+      "kind": "reaction_batch",
+      "parent_ids": [
+        "greboval2019-acs-nanolett-9b01305-hgte-nanocrystals-1--after-s04-precipitate"
+      ]
+    },
+    {
+      "id": "greboval2019-acs-nanolett-9b01305-hgte-nanocrystals-1--after-s06-wash",
+      "name": "product as isolated",
+      "kind": "product",
+      "parent_ids": [
+        "greboval2019-acs-nanolett-9b01305-hgte-nanocrystals-1--after-s05-centrifuge",
+        "greboval2019-acs-nanolett-9b01305-hgte-nanocrystals-1--chloroform"
+      ]
+    }
+  ],
+  "operations": [
+    {
+      "id": "s01-degas",
+      "action": "degas",
+      "label": "Degassing of flask",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [],
+      "inputs": [
+        "greboval2019-acs-nanolett-9b01305-hgte-nanocrystals-1--te",
+        "greboval2019-acs-nanolett-9b01305-hgte-nanocrystals-1--top"
+      ],
+      "outputs": [
+        "greboval2019-acs-nanolett-9b01305-hgte-nanocrystals-1--after-s01-degas"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 100,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "100 °C",
+          "evidence": [
+            {
+              "source_id": "greboval2019-acs-nanolett-9b01305",
+              "locator": "Main PDF p.8"
+            }
+          ],
+          "derivation": null
+        },
+        "duration": {
+          "value": 20,
+          "minimum": null,
+          "maximum": null,
+          "unit": "min",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "20 min",
+          "evidence": [
+            {
+              "source_id": "greboval2019-acs-nanolett-9b01305",
+              "locator": "Main PDF p.8"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Degassing of flask",
+      "evidence": [
+        {
+          "source_id": "greboval2019-acs-nanolett-9b01305",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    },
+    {
+      "id": "s02-heat",
+      "action": "heat",
+      "label": "Heating to 275 °C",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s01-degas"
+      ],
+      "inputs": [
+        "greboval2019-acs-nanolett-9b01305-hgte-nanocrystals-1--after-s01-degas",
+        "greboval2019-acs-nanolett-9b01305-hgte-nanocrystals-1--te",
+        "greboval2019-acs-nanolett-9b01305-hgte-nanocrystals-1--top"
+      ],
+      "outputs": [
+        "greboval2019-acs-nanolett-9b01305-hgte-nanocrystals-1--after-s02-heat"
+      ],
+      "parameters": {
+        "temperature": {
+          "value": 275,
+          "minimum": null,
+          "maximum": null,
+          "unit": "degC",
+          "status": "reported",
+          "approximate": false,
+          "qualifier": "",
+          "basis": "",
+          "raw_text": "275 °C",
+          "evidence": [
+            {
+              "source_id": "greboval2019-acs-nanolett-9b01305",
+              "locator": "Main PDF p.8"
+            }
+          ],
+          "derivation": null
+        }
+      },
+      "environment": {
+        "value": "Ar",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "greboval2019-acs-nanolett-9b01305",
+            "locator": "Main PDF p.8"
+          }
+        ],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Heating to 275 °C",
+      "evidence": [
+        {
+          "source_id": "greboval2019-acs-nanolett-9b01305",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    },
+    {
+      "id": "s03-quench",
+      "action": "quench",
+      "label": "Quench the reaction",
+      "stage": "synthesis",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s02-heat"
+      ],
+      "inputs": [
+        "greboval2019-acs-nanolett-9b01305-hgte-nanocrystals-1--after-s02-heat",
+        "greboval2019-acs-nanolett-9b01305-hgte-nanocrystals-1--dodecanethiol",
+        "greboval2019-acs-nanolett-9b01305-hgte-nanocrystals-1--toluene"
+      ],
+      "outputs": [
+        "greboval2019-acs-nanolett-9b01305-hgte-nanocrystals-1--after-s03-quench"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Quench the reaction",
+      "evidence": [
+        {
+          "source_id": "greboval2019-acs-nanolett-9b01305",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    },
+    {
+      "id": "s04-precipitate",
+      "action": "precipitate",
+      "label": "Precipitate with ethanol",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s03-quench"
+      ],
+      "inputs": [
+        "greboval2019-acs-nanolett-9b01305-hgte-nanocrystals-1--after-s03-quench",
+        "greboval2019-acs-nanolett-9b01305-hgte-nanocrystals-1--ethanol"
+      ],
+      "outputs": [
+        "greboval2019-acs-nanolett-9b01305-hgte-nanocrystals-1--after-s04-precipitate"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Precipitate with ethanol",
+      "evidence": [
+        {
+          "source_id": "greboval2019-acs-nanolett-9b01305",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    },
+    {
+      "id": "s05-centrifuge",
+      "action": "centrifuge",
+      "label": "Centrifuge the nanocrystals",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s04-precipitate"
+      ],
+      "inputs": [
+        "greboval2019-acs-nanolett-9b01305-hgte-nanocrystals-1--after-s04-precipitate"
+      ],
+      "outputs": [
+        "greboval2019-acs-nanolett-9b01305-hgte-nanocrystals-1--after-s05-centrifuge"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Centrifuge the nanocrystals",
+      "evidence": [
+        {
+          "source_id": "greboval2019-acs-nanolett-9b01305",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    },
+    {
+      "id": "s06-wash",
+      "action": "wash",
+      "label": "Wash the nanocrystals",
+      "stage": "workup",
+      "branch": "",
+      "optional": false,
+      "depends_on": [
+        "s05-centrifuge"
+      ],
+      "inputs": [
+        "greboval2019-acs-nanolett-9b01305-hgte-nanocrystals-1--after-s05-centrifuge",
+        "greboval2019-acs-nanolett-9b01305-hgte-nanocrystals-1--chloroform"
+      ],
+      "outputs": [
+        "greboval2019-acs-nanolett-9b01305-hgte-nanocrystals-1--after-s06-wash"
+      ],
+      "parameters": {},
+      "environment": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "endpoint": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "retained_fraction": null,
+      "description": "Wash the nanocrystals",
+      "evidence": [
+        {
+          "source_id": "greboval2019-acs-nanolett-9b01305",
+          "locator": "Main PDF p.8"
+        }
+      ]
+    }
+  ],
+  "condition_options": [],
+  "products": [
+    {
+      "sample_id": "greboval2019-acs-nanolett-9b01305-hgte-nanocrystals-1--product",
+      "source_sample_label": "HgTe nanocrystals",
+      "batch_id": null,
+      "material_state_id": "greboval2019-acs-nanolett-9b01305-hgte-nanocrystals-1--after-s06-wash",
+      "parent_sample_id": null,
+      "composition": {
+        "value": "HgTe",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "greboval2019-acs-nanolett-9b01305",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "phase": {
+        "value": "crystal",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "greboval2019-acs-nanolett-9b01305",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "morphology": {
+        "value": "tetrapod",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "greboval2019-acs-nanolett-9b01305",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "surface": {
+        "value": "ethanedithiol",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "greboval2019-acs-nanolett-9b01305",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "link_evidence": [
+        {
+          "source_id": "greboval2019-acs-nanolett-9b01305",
+          "locator": "Main PDF p.8"
+        }
+      ],
+      "notes": [
+        "Reactor: 100 mL round flask (Main PDF p.8).",
+        "Reaction time: 3 min (Main PDF p.8)."
+      ]
+    }
+  ],
+  "measurements": [],
+  "structure_assets": [],
+  "quality": {
+    "review_status": "source_extracted",
+    "review_scope": "Processed by two separate local-model extraction passes and the owner-calibrated CHECK V6. Chemical names and steps may be retained through source-quote support under that CHECK; Only approved numeric fields can be kept from one pass with contiguous source-quote support and no conflicting value in the other pass; all other numeric fields require agreement. It has not been independently audited.",
+    "missing_fields": [
+      "Size not reported in the extracted text.",
+      "Emission peak not reported in the extracted text.",
+      "Plqy not reported in the extracted text.",
+      "Reaction temperature not reported in the extracted text.",
+      "Amount of toluene not reported in the extracted text.",
+      "Amount of ethanol not reported in the extracted text.",
+      "Amount of chloroform not reported in the extracted text."
+    ],
+    "conflicts": [],
+    "requested_tasks": [],
+    "experimental_outcome": "reported_product"
+  },
+  "context_links": [],
+  "collection": "reviewed_literature",
+  "reader_role": "synthesis_route"
+}
