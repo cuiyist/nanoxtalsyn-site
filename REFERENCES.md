@@ -2,7 +2,7 @@
 
 ## Papers used in the published website
 
-Dataset **0.41.2** · **3591 primary source groups** · release `tanjin-x18a-guard-correction`. Records are not independent experiments.
+Dataset **0.41.2** · **3595 primary source groups** · release `tanjin-x-release11`. Records are not independent experiments.
 
 - not reported (year unrecorded). 10.1007_s11051-010-0042-z. [10.1007/s11051-010-0042-z](https://doi.org/10.1007/s11051-010-0042-z). Review scope remains stated in the linked website records.
 
@@ -2668,6 +2668,8 @@ Dataset **0.41.2** · **3591 primary source groups** · release `tanjin-x18a-gua
 
 - Qinghong Yao; Indika U. Arachchige; Stephanie L. Brock (2009). Expanding the Repertoire of Chalcogenide Nanocrystal Networks: Ag2Se Gels and Aerogels by Cation Exchange Reactions. [10.1021/ja900042y](https://doi.org/10.1021/ja900042y). Review scope remains stated in the linked website records.
 
+- Chaobiao Huang; Chuanliu Wu; Yibing Zhao (2009). Extracting fluorescence signal due to direct excitation of the energy acceptor from quantum dot-based FRET. [10.1007/s11051-009-9777-9](https://doi.org/10.1007/s11051-009-9777-9). Review scope remains stated in the linked website records.
+
 - Fan Zhang and Dongyuan Zhao (2009). Fabrication of ordered magnetite-doped rare earth fluoride nanotube arrays by nanocrystal self-assembly. [10.1007/s12274-009-9027-6](https://doi.org/10.1007/s12274-009-9027-6). Review scope remains stated in the linked website records.
 
 - Keith E. Knipling, Maria Daniil, and Matthew A. Willard (2009). Fe-based nanocrystalline soft magnetic alloys for high-temperature applications. [10.1063/1.3268471](https://doi.org/10.1063/1.3268471). Review scope remains stated in the linked website records.
@@ -5072,6 +5074,8 @@ Dataset **0.41.2** · **3591 primary source groups** · release `tanjin-x18a-gua
 
 - S. Muniyappan; T. Solaiyammal; B. Gomathi Thanga Keerthana; P. Vivek; P. Murugakoothan (2017). Influence of annealing temperature on structural, morphological and optical properties of CTAB assisted cadmium sulphide (CdS) quantum dots: promising candidate for quantum dot sensitized solar cell (QDSSC) applications. [10.1007/s10854-017-6924-4](https://doi.org/10.1007/s10854-017-6924-4). Review scope remains stated in the linked website records.
 
+- Zhenwei Ren; Juan Yu; Zhenxiao Pan; Jizheng Wang; Xinhua Zhong (2017). Inorganic Ligand Thiosulfate-Capped Quantum Dots for Efficient Quantum Dot Sensitized Solar Cells. [10.1021/acsami.7b03715](https://doi.org/10.1021/acsami.7b03715). Review scope remains stated in the linked website records.
+
 - Leslie S. Hamachi; Ilan Jen-La Plante; Aidan C. Coryell; Jonathan De Roo; Jonathan S. Owen (2017). Kinetic Control over CdS Nanocrystal Nucleation Using a Library of Thiocarbonates, Thiocarbamates, and Thioureas. [10.1021/acs.chemmater.7b02861](https://doi.org/10.1021/acs.chemmater.7b02861). Review scope remains stated in the linked website records.
 
 - Yang Liu; Maixian Liu; Deqiang Yin; Wei Wei; Paras N. Prasad; Mark T. Swihart (2017). Kuramite Cu3SnS4 and Mohite Cu2SnS3 Nanoplatelet Synthesis Using Covellite CuS Templates with Sn(II) and Sn(IV) Sources. [10.1021/acs.chemmater.6b05428](https://doi.org/10.1021/acs.chemmater.6b05428). Review scope remains stated in the linked website records.
@@ -5627,6 +5631,8 @@ Dataset **0.41.2** · **3591 primary source groups** · release `tanjin-x18a-gua
 - Kyung-Hye Kim; Jung-Ho Jo; Dae-Yeon Jo; Chang-Yeol Han; Suk-Young Yoon; Yuri Kim; Yang-Hee Kim; Yun Hyuk Ko; Sung Woon Kim; Changhee Lee; Heesun Yang (2020). Cation-Exchange-Derived InGaP Alloy Quantum Dots toward Blue Emissivity. [10.1021/acs.chemmater.0c00551](https://doi.org/10.1021/acs.chemmater.0c00551). Review scope remains stated in the linked website records.
 
 - Luiziana Aparecida Gonzaga; Vinicius Tadeu Santana; Maria Inês Basso Bernardi; Jakub Hrubý; Petr Neugebauer; Alexandre Mesquita (2020). CeO 2 and CeO 2 :Pr nanocrystalline powders prepared by the polymeric precursor method: Yellow and red pigments with tunable color. [10.1111/jace.17339](https://doi.org/10.1111/jace.17339). Review scope remains stated in the linked website records.
+
+- Dae-Kyu Kim; Dongsun Choi; Mihyeon Park; Kwang Seob Jeong; Jong-Ho Choi (2020). Cesium Lead Bromide Quantum Dot Light-Emitting Field-Effect Transistors. [10.1021/acsami.0c06904](https://doi.org/10.1021/acsami.0c06904). Review scope remains stated in the linked website records.
 
 - Srabantika Ghose; Sudarshan Singh; Tara Shankar Bhattacharya (2020). Charge Transfer-Mediated Blue Luminescence in Plasmonic Ag–Cu                     2                     O Quantum Nanoheterostructures. [10.1021/acsami.9b19626](https://doi.org/10.1021/acsami.9b19626). Review scope remains stated in the linked website records.
 
@@ -7087,6 +7093,8 @@ Dataset **0.41.2** · **3591 primary source groups** · release `tanjin-x18a-gua
 - Davide Zenatti; Priya Nagpal; Arnab Ghosh; Dallas P. Strandell; Dmitry Dirin; Maksym V. Kovalenko; Patanjali Kambhampati (2026). From Exciton to Tetraexciton: Final-State Doublets and 1P Addition Energies in a Weakly Confined Perovskite Quantum Dot. [10.1021/acs.jpclett.6c01392](https://doi.org/10.1021/acs.jpclett.6c01392). Review scope remains stated in the linked website records.
 
 - Mengjie Zhang; Chaoqi Hao; Liting Huang; Zhaowei Zhu; Zhisheng Li; Yuehua Li; Chuantong Cheng; Xu Zhang (2026). HgTe Quantum Dots for Short-Wave Infrared Photoconductive Detectors. [10.1021/acsanm.5c04807](https://doi.org/10.1021/acsanm.5c04807). Review scope remains stated in the linked website records.
+
+- Shafaat Hussain; Shengyi Yang; Ayesha Zia; Muhammad Qasim; Bingsuo Zou; Yurong Jiang (2026). High-Performance Solution-Processed Quantum Dot Infrared Photodetectors via Interface Engineering with MXenes. [10.1021/acsami.5c25535](https://doi.org/10.1021/acsami.5c25535). Review scope remains stated in the linked website records.
 
 - Nan Ren; Haoyu Jin; Shuyu Zhao; Zhenhua Dong; Yizhan Chen; Xueqin Lv; Xin Li (2026). In situ photolithographic fabrication of patterned perovskite quantum dot color conversion layers on blue LED chips for ultra-wide-gamut display applications. [10.1007/s10854-026-18263-z](https://doi.org/10.1007/s10854-026-18263-z). Review scope remains stated in the linked website records.
 

@@ -1,6 +1,6 @@
 {
   "schema_version": "mattersyn.reader-collection/1",
-  "material_families": 1423,
+  "material_families": 1424,
   "material_family_definition": "Distinct directly synthesized material systems; component-only cross-links excluded.",
   "material_systems": [
     "(4-FPEA)4AgBiI8",
@@ -1289,6 +1289,7 @@
     "ZCIS/ZnS",
     "Zn",
     "Zn(Te0.77Se0.23)/ZnS",
+    "Zn0.3Cd0.7Se",
     "Zn0.44Cu0.78In0.78S2",
     "Zn0.49Cd0.51S",
     "Zn0.5Cd0.5S",
@@ -1427,12 +1428,12 @@
     "γ-Fe2O3/HgS",
     "γ-Fe2O3/ZnS"
   ],
-  "contributing_papers": 3591,
+  "contributing_papers": 3595,
   "source_coverage": {
-    "total_contributing_papers": 3591,
+    "total_contributing_papers": 3595,
     "reviewed_contributing_papers": 244,
     "audited_contributing_papers": 244,
-    "machine_extracted_contributing_papers": 3347,
+    "machine_extracted_contributing_papers": 3351,
     "audited_primary_dois": [
       "10.1002/1521-4095(20021002)14:19<1405::aid-adma1405>3.0.co;2-b",
       "10.1002/adfm.200500603",
@@ -2002,6 +2003,7 @@
       "10.1007/s10973-006-7760-6",
       "10.1007/s11051-006-9171-9",
       "10.1007/s11051-006-9177-3",
+      "10.1007/s11051-009-9777-9",
       "10.1007/s11051-010-0042-z",
       "10.1007/s11051-010-0079-z",
       "10.1007/s11051-010-0110-4",
@@ -2590,6 +2592,7 @@
       "10.1021/acsami.0c00917",
       "10.1021/acsami.0c01074",
       "10.1021/acsami.0c01744",
+      "10.1021/acsami.0c06904",
       "10.1021/acsami.0c11337",
       "10.1021/acsami.0c11651",
       "10.1021/acsami.0c15161",
@@ -2644,6 +2647,7 @@
       "10.1021/acsami.5c16396",
       "10.1021/acsami.5c17962",
       "10.1021/acsami.5c23166",
+      "10.1021/acsami.5c25535",
       "10.1021/acsami.6b02318",
       "10.1021/acsami.6b04614",
       "10.1021/acsami.6b09496",
@@ -2655,6 +2659,7 @@
       "10.1021/acsami.6c08081",
       "10.1021/acsami.7b00133",
       "10.1021/acsami.7b01644",
+      "10.1021/acsami.7b03715",
       "10.1021/acsami.7b05429",
       "10.1021/acsami.7b07100",
       "10.1021/acsami.7b09265",
@@ -5030,14 +5035,14 @@
     ],
     "count_definition": "Distinct primary sources represented in regular material pages, separated by review status. Each paper counts once regardless of variants; supporting citations do not add papers. Source-extracted contributions are not independently audited or training eligible."
   },
-  "synthesis_structure_pairs": 5728,
+  "synthesis_structure_pairs": 5734,
   "audited_synthesis_structure_pairs": 864,
-  "source_extracted_record_pairs": 4864,
+  "source_extracted_record_pairs": 4870,
   "more_comprehensive_pairs": 6,
-  "partial_pairs": 5722,
+  "partial_pairs": 5728,
   "count_definition": "Audited recipe/sample rows retain their existing definition and identifiers. The display also includes one row per additional source-linked record, including supporting and assembly records. Missing product or structural details remain blank. Multiple measurements do not add rows. This display count does not grant training eligibility or establish independent physical batches.",
   "documentation_rubric": "More comprehensive means at least two source-backed quantified synthesis inputs, two source-located operations, reported temperature and duration, sample-linked phase, morphology and dimensions, and an available reference unit cell. Partial pairs lack one or more of these categories. Neither category implies a complete laboratory SOP or training readiness.",
-  "all_records": 7849,
+  "all_records": 7855,
   "experimental_series_rows": 100,
   "pairs": [
     {
@@ -477296,6 +477301,139 @@
       }
     },
     {
+      "pair_row_id": "huang2009-s11051-009-9777-9-gsh-capped-zn0-3cd0-7se-alloyed-qdots-1::display",
+      "record_id": "huang2009-s11051-009-9777-9-gsh-capped-zn0-3cd0-7se-alloyed-qdots-1",
+      "record_page_path": "records/huang2009-s11051-009-9777-9-gsh-capped-zn0-3cd0-7se-alloyed-qdots-1.html",
+      "source_group": "huang2009-s11051-009-9777-9",
+      "title": "Chaobiao Huang; Chuanliu Wu; Yibing Zhao (2009): GSH-capped Zn0.3Cd0.7Se-alloyed Qdots",
+      "doi": "10.1007/s11051-009-9777-9",
+      "year": 2009,
+      "method": "Solvothermal",
+      "recipe_label": "Chaobiao Huang; Chuanliu Wu; Yibing Zhao (2009): GSH-capped Zn0.3Cd0.7Se-alloyed Qdots",
+      "sample_id": "huang2009-s11051-009-9777-9-gsh-capped-zn0-3cd0-7se-alloyed-qdots-1--product",
+      "source_sample_label": "GSH-capped Zn0.3Cd0.7Se-alloyed Qdots",
+      "composition": {
+        "value": "Zn0.3Cd0.7Se",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "huang2009-s11051-009-9777-9",
+            "locator": "Main PDF p.3"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "recipe_link_evidence": [
+        {
+          "source_id": "huang2009-s11051-009-9777-9",
+          "locator": "Main PDF p.4"
+        }
+      ],
+      "product_structure_fields": [],
+      "structural_measurements": [],
+      "review_status": "source_extracted",
+      "display_pair_basis": "one_record",
+      "cross_record_sample_deduplication": "not_assessed",
+      "documentation": {
+        "category": "partial",
+        "checks": {
+          "quantified_recipe_and_ordered_conditions": true,
+          "reported_phase": false,
+          "reported_morphology": false,
+          "reported_dimensions": false,
+          "reference_unit_cell_available": false
+        },
+        "missing_categories": [
+          "reported_phase",
+          "reported_morphology",
+          "reported_dimensions",
+          "reference_unit_cell_available"
+        ],
+        "reference_ids": [],
+        "quantified_input_evidence": {
+          "material_ids": [
+            "huang2009-s11051-009-9777-9-gsh-capped-zn0-3cd0-7se-alloyed-qdots-1--cadmium-chloride",
+            "huang2009-s11051-009-9777-9-gsh-capped-zn0-3cd0-7se-alloyed-qdots-1--glutathione-gsh",
+            "huang2009-s11051-009-9777-9-gsh-capped-zn0-3cd0-7se-alloyed-qdots-1--zinc-acetate"
+          ],
+          "fields": [
+            {
+              "material_id": "huang2009-s11051-009-9777-9-gsh-capped-zn0-3cd0-7se-alloyed-qdots-1--zinc-acetate",
+              "pointer": "/materials/0/quantities/amount",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.25,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mmol",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.25 mmol",
+                "evidence": [
+                  {
+                    "source_id": "huang2009-s11051-009-9777-9",
+                    "locator": "Main PDF p.3"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "huang2009-s11051-009-9777-9-gsh-capped-zn0-3cd0-7se-alloyed-qdots-1--cadmium-chloride",
+              "pointer": "/materials/1/quantities/amount",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.375,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mmol",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.375 mmol",
+                "evidence": [
+                  {
+                    "source_id": "huang2009-s11051-009-9777-9",
+                    "locator": "Main PDF p.4"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "huang2009-s11051-009-9777-9-gsh-capped-zn0-3cd0-7se-alloyed-qdots-1--glutathione-gsh",
+              "pointer": "/materials/2/quantities/amount",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.3,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mmol",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.3 mmol",
+                "evidence": [
+                  {
+                    "source_id": "huang2009-s11051-009-9777-9",
+                    "locator": "Main PDF p.3"
+                  }
+                ],
+                "derivation": null
+              }
+            }
+          ],
+          "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
+        },
+        "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
+      }
+    },
+    {
       "pair_row_id": "huang2011-bm200889k-cdse-zns-core-shell-qds-1::display",
       "record_id": "huang2011-bm200889k-cdse-zns-core-shell-qds-1",
       "record_page_path": "records/huang2011-bm200889k-cdse-zns-core-shell-qds-1.html",
@@ -481658,6 +481796,245 @@
                 "evidence": [
                   {
                     "source_id": "huo2017-acs-langmuir-7b01699",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            }
+          ],
+          "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
+        },
+        "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
+      }
+    },
+    {
+      "pair_row_id": "hussain2026-acsami-5c25535-pbs-qds-1::display",
+      "record_id": "hussain2026-acsami-5c25535-pbs-qds-1",
+      "record_page_path": "records/hussain2026-acsami-5c25535-pbs-qds-1.html",
+      "source_group": "hussain2026-acsami-5c25535",
+      "title": "Shafaat Hussain; Shengyi Yang; Ayesha Zia; Muhammad Qasim; Bingsuo Zou; Yurong Jiang (2026): PbS QDs",
+      "doi": "10.1021/acsami.5c25535",
+      "year": 2026,
+      "method": "Hot injection",
+      "recipe_label": "Shafaat Hussain; Shengyi Yang; Ayesha Zia; Muhammad Qasim; Bingsuo Zou; Yurong Jiang (2026): PbS QDs",
+      "sample_id": "hussain2026-acsami-5c25535-pbs-qds-1--product",
+      "source_sample_label": "PbS QDs",
+      "composition": {
+        "value": "PbS",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "hussain2026-acsami-5c25535",
+            "locator": "Main PDF p.2"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "recipe_link_evidence": [
+        {
+          "source_id": "hussain2026-acsami-5c25535",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "product_structure_fields": [
+        {
+          "kind": "phase",
+          "value": {
+            "value": "cubic rock-salt",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "hussain2026-acsami-5c25535",
+                "locator": "Main PDF p.3"
+              }
+            ],
+            "note": ""
+          }
+        },
+        {
+          "kind": "morphology",
+          "value": {
+            "value": "sphere",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "hussain2026-acsami-5c25535",
+                "locator": "Main PDF p.4"
+              }
+            ],
+            "note": ""
+          }
+        }
+      ],
+      "structural_measurements": [
+        {
+          "measurement_id": "hussain2026-acsami-5c25535-pbs-qds-1--size",
+          "property": "diameter",
+          "descriptor_field": "morphology.dimensions",
+          "value": {
+            "value": 3.85,
+            "minimum": null,
+            "maximum": null,
+            "unit": "nm",
+            "status": "reported",
+            "approximate": false,
+            "qualifier": "",
+            "basis": "",
+            "raw_text": "3.85 nm",
+            "evidence": [
+              {
+                "source_id": "hussain2026-acsami-5c25535",
+                "locator": "Main PDF p.4"
+              }
+            ],
+            "derivation": null
+          },
+          "technique": "TEM",
+          "conditions": "",
+          "evidence": [
+            {
+              "source_id": "hussain2026-acsami-5c25535",
+              "locator": "Main PDF p.4"
+            }
+          ]
+        }
+      ],
+      "review_status": "source_extracted",
+      "display_pair_basis": "one_record",
+      "cross_record_sample_deduplication": "not_assessed",
+      "documentation": {
+        "category": "partial",
+        "checks": {
+          "quantified_recipe_and_ordered_conditions": true,
+          "reported_phase": true,
+          "reported_morphology": true,
+          "reported_dimensions": true,
+          "reference_unit_cell_available": false
+        },
+        "missing_categories": [
+          "reference_unit_cell_available"
+        ],
+        "reference_ids": [],
+        "quantified_input_evidence": {
+          "material_ids": [
+            "hussain2026-acsami-5c25535-pbs-qds-1--1-octadecene",
+            "hussain2026-acsami-5c25535-pbs-qds-1--bis-trimethylsilyl-sulfide",
+            "hussain2026-acsami-5c25535-pbs-qds-1--lead-oxide",
+            "hussain2026-acsami-5c25535-pbs-qds-1--n-hexane",
+            "hussain2026-acsami-5c25535-pbs-qds-1--oleic-acid"
+          ],
+          "fields": [
+            {
+              "material_id": "hussain2026-acsami-5c25535-pbs-qds-1--lead-oxide",
+              "pointer": "/materials/0/quantities/mass",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 1.338,
+                "minimum": null,
+                "maximum": null,
+                "unit": "g",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "1.338 g",
+                "evidence": [
+                  {
+                    "source_id": "hussain2026-acsami-5c25535",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "hussain2026-acsami-5c25535-pbs-qds-1--1-octadecene",
+              "pointer": "/materials/1/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 10,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "10 mL",
+                "evidence": [
+                  {
+                    "source_id": "hussain2026-acsami-5c25535",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "hussain2026-acsami-5c25535-pbs-qds-1--oleic-acid",
+              "pointer": "/materials/2/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 4,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "4 mL",
+                "evidence": [
+                  {
+                    "source_id": "hussain2026-acsami-5c25535",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "hussain2026-acsami-5c25535-pbs-qds-1--bis-trimethylsilyl-sulfide",
+              "pointer": "/materials/3/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.63,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.63 mL",
+                "evidence": [
+                  {
+                    "source_id": "hussain2026-acsami-5c25535",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "hussain2026-acsami-5c25535-pbs-qds-1--n-hexane",
+              "pointer": "/materials/4/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 5,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "5 mL",
+                "evidence": [
+                  {
+                    "source_id": "hussain2026-acsami-5c25535",
                     "locator": "Main PDF p.2"
                   }
                 ],
@@ -532969,6 +533346,222 @@
                 "evidence": [
                   {
                     "source_id": "kim2020-acs-chemmater-0c01275",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            }
+          ],
+          "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
+        },
+        "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
+      }
+    },
+    {
+      "pair_row_id": "kim2020-acsami-0c06904-cspbbr3-qd-1::display",
+      "record_id": "kim2020-acsami-0c06904-cspbbr3-qd-1",
+      "record_page_path": "records/kim2020-acsami-0c06904-cspbbr3-qd-1.html",
+      "source_group": "kim2020-acsami-0c06904",
+      "title": "Dae-Kyu Kim; Dongsun Choi; Mihyeon Park; Kwang Seob Jeong; Jong-Ho Choi (2020): CsPbBr3 QD",
+      "doi": "10.1021/acsami.0c06904",
+      "year": 2020,
+      "method": "Hot injection",
+      "recipe_label": "Dae-Kyu Kim; Dongsun Choi; Mihyeon Park; Kwang Seob Jeong; Jong-Ho Choi (2020): CsPbBr3 QD",
+      "sample_id": "kim2020-acsami-0c06904-cspbbr3-qd-1--product",
+      "source_sample_label": "CsPbBr3 QD",
+      "composition": {
+        "value": "CsPbBr3",
+        "status": "reported",
+        "evidence": [
+          {
+            "source_id": "kim2020-acsami-0c06904",
+            "locator": "Main PDF p.1"
+          }
+        ],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "recipe_link_evidence": [
+        {
+          "source_id": "kim2020-acsami-0c06904",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "product_structure_fields": [
+        {
+          "kind": "phase",
+          "value": {
+            "value": "orthorhombic",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "kim2020-acsami-0c06904",
+                "locator": "Main PDF p.4"
+              }
+            ],
+            "note": ""
+          }
+        },
+        {
+          "kind": "morphology",
+          "value": {
+            "value": "sphere",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "kim2020-acsami-0c06904",
+                "locator": "Main PDF p.3"
+              }
+            ],
+            "note": ""
+          }
+        }
+      ],
+      "structural_measurements": [
+        {
+          "measurement_id": "kim2020-acsami-0c06904-cspbbr3-qd-1--size",
+          "property": "diameter",
+          "descriptor_field": "morphology.dimensions",
+          "value": {
+            "value": 11,
+            "minimum": null,
+            "maximum": null,
+            "unit": "nm",
+            "status": "reported",
+            "approximate": false,
+            "qualifier": "",
+            "basis": "",
+            "raw_text": "11 nm",
+            "evidence": [
+              {
+                "source_id": "kim2020-acsami-0c06904",
+                "locator": "Main PDF p.3"
+              }
+            ],
+            "derivation": null
+          },
+          "technique": "TEM",
+          "conditions": "",
+          "evidence": [
+            {
+              "source_id": "kim2020-acsami-0c06904",
+              "locator": "Main PDF p.3"
+            }
+          ]
+        }
+      ],
+      "review_status": "source_extracted",
+      "display_pair_basis": "one_record",
+      "cross_record_sample_deduplication": "not_assessed",
+      "documentation": {
+        "category": "partial",
+        "checks": {
+          "quantified_recipe_and_ordered_conditions": false,
+          "reported_phase": true,
+          "reported_morphology": true,
+          "reported_dimensions": true,
+          "reference_unit_cell_available": false
+        },
+        "missing_categories": [
+          "quantified_recipe_and_ordered_conditions",
+          "reference_unit_cell_available"
+        ],
+        "reference_ids": [],
+        "quantified_input_evidence": {
+          "material_ids": [
+            "kim2020-acsami-0c06904-cspbbr3-qd-1--cesium-carbonate",
+            "kim2020-acsami-0c06904-cspbbr3-qd-1--octadecene",
+            "kim2020-acsami-0c06904-cspbbr3-qd-1--oleic-acid",
+            "kim2020-acsami-0c06904-cspbbr3-qd-1--pbbr2"
+          ],
+          "fields": [
+            {
+              "material_id": "kim2020-acsami-0c06904-cspbbr3-qd-1--cesium-carbonate",
+              "pointer": "/materials/0/quantities/mass",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.163,
+                "minimum": null,
+                "maximum": null,
+                "unit": "g",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.163 g",
+                "evidence": [
+                  {
+                    "source_id": "kim2020-acsami-0c06904",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "kim2020-acsami-0c06904-cspbbr3-qd-1--oleic-acid",
+              "pointer": "/materials/1/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.5,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.5 mL",
+                "evidence": [
+                  {
+                    "source_id": "kim2020-acsami-0c06904",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "kim2020-acsami-0c06904-cspbbr3-qd-1--octadecene",
+              "pointer": "/materials/2/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 8,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "8 mL",
+                "evidence": [
+                  {
+                    "source_id": "kim2020-acsami-0c06904",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "kim2020-acsami-0c06904-cspbbr3-qd-1--pbbr2",
+              "pointer": "/materials/3/quantities/concentration",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.125,
+                "minimum": null,
+                "maximum": null,
+                "unit": "M",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.125 M",
+                "evidence": [
+                  {
+                    "source_id": "kim2020-acsami-0c06904",
                     "locator": "Main PDF p.2"
                   }
                 ],
@@ -719729,6 +720322,780 @@
                 "evidence": [
                   {
                     "source_id": "ren2014-am503517s",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            }
+          ],
+          "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
+        },
+        "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
+      }
+    },
+    {
+      "pair_row_id": "ren2017-acsami-7b03715-oam-capped-cdse-qds-3::display",
+      "record_id": "ren2017-acsami-7b03715-oam-capped-cdse-qds-3",
+      "record_page_path": "records/ren2017-acsami-7b03715-oam-capped-cdse-qds-3.html",
+      "source_group": "ren2017-acsami-7b03715",
+      "title": "Zhenwei Ren; Juan Yu; Zhenxiao Pan; Jizheng Wang; Xinhua Zhong (2017): OAm-capped CdSe QDs",
+      "doi": "10.1021/acsami.7b03715",
+      "year": 2017,
+      "method": "Hot injection",
+      "recipe_label": "Zhenwei Ren; Juan Yu; Zhenxiao Pan; Jizheng Wang; Xinhua Zhong (2017): OAm-capped CdSe QDs",
+      "sample_id": "ren2017-acsami-7b03715-oam-capped-cdse-qds-3--product",
+      "source_sample_label": "OAm-capped CdSe QDs",
+      "composition": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "recipe_link_evidence": [
+        {
+          "source_id": "ren2017-acsami-7b03715",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "product_structure_fields": [
+        {
+          "kind": "phase",
+          "value": {
+            "value": "zinc blende",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "ren2017-acsami-7b03715",
+                "locator": "Main PDF p.3"
+              }
+            ],
+            "note": ""
+          }
+        },
+        {
+          "kind": "morphology",
+          "value": {
+            "value": "sphere",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "ren2017-acsami-7b03715",
+                "locator": "Main PDF p.3"
+              }
+            ],
+            "note": ""
+          }
+        }
+      ],
+      "structural_measurements": [
+        {
+          "measurement_id": "ren2017-acsami-7b03715-oam-capped-cdse-qds-3--size",
+          "property": "diameter",
+          "descriptor_field": "morphology.dimensions",
+          "value": {
+            "value": 5.4,
+            "minimum": null,
+            "maximum": null,
+            "unit": "nm",
+            "status": "reported",
+            "approximate": false,
+            "qualifier": "",
+            "basis": "",
+            "raw_text": "5.4 nm",
+            "evidence": [
+              {
+                "source_id": "ren2017-acsami-7b03715",
+                "locator": "Main PDF p.3"
+              }
+            ],
+            "derivation": null
+          },
+          "technique": "TEM",
+          "conditions": "",
+          "evidence": [
+            {
+              "source_id": "ren2017-acsami-7b03715",
+              "locator": "Main PDF p.3"
+            }
+          ]
+        }
+      ],
+      "review_status": "source_extracted",
+      "display_pair_basis": "one_record",
+      "cross_record_sample_deduplication": "not_assessed",
+      "documentation": {
+        "category": "partial",
+        "checks": {
+          "quantified_recipe_and_ordered_conditions": true,
+          "reported_phase": true,
+          "reported_morphology": true,
+          "reported_dimensions": true,
+          "reference_unit_cell_available": false
+        },
+        "missing_categories": [
+          "reference_unit_cell_available"
+        ],
+        "reference_ids": [],
+        "quantified_input_evidence": {
+          "material_ids": [
+            "ren2017-acsami-7b03715-oam-capped-cdse-qds-3--cadmium-oxide",
+            "ren2017-acsami-7b03715-oam-capped-cdse-qds-3--cd-stock-solution",
+            "ren2017-acsami-7b03715-oam-capped-cdse-qds-3--oleylamine",
+            "ren2017-acsami-7b03715-oam-capped-cdse-qds-3--se-stock-solution",
+            "ren2017-acsami-7b03715-oam-capped-cdse-qds-3--selenium",
+            "ren2017-acsami-7b03715-oam-capped-cdse-qds-3--trioctylphosphine"
+          ],
+          "fields": [
+            {
+              "material_id": "ren2017-acsami-7b03715-oam-capped-cdse-qds-3--oleylamine",
+              "pointer": "/materials/0/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 5.0,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "5 mL",
+                "evidence": [
+                  {
+                    "source_id": "ren2017-acsami-7b03715",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "ren2017-acsami-7b03715-oam-capped-cdse-qds-3--selenium",
+              "pointer": "/materials/1/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.2,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.2 mL",
+                "evidence": [
+                  {
+                    "source_id": "ren2017-acsami-7b03715",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "ren2017-acsami-7b03715-oam-capped-cdse-qds-3--trioctylphosphine",
+              "pointer": "/materials/2/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.3,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.3 mL",
+                "evidence": [
+                  {
+                    "source_id": "ren2017-acsami-7b03715",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "ren2017-acsami-7b03715-oam-capped-cdse-qds-3--cadmium-oxide",
+              "pointer": "/materials/3/quantities/concentration",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.4,
+                "minimum": null,
+                "maximum": null,
+                "unit": "M",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.4 M",
+                "evidence": [
+                  {
+                    "source_id": "ren2017-acsami-7b03715",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "ren2017-acsami-7b03715-oam-capped-cdse-qds-3--se-stock-solution",
+              "pointer": "/materials/4/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.2,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.2 mL",
+                "evidence": [
+                  {
+                    "source_id": "ren2017-acsami-7b03715",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "ren2017-acsami-7b03715-oam-capped-cdse-qds-3--cd-stock-solution",
+              "pointer": "/materials/5/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.5,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.5 mL",
+                "evidence": [
+                  {
+                    "source_id": "ren2017-acsami-7b03715",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            }
+          ],
+          "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
+        },
+        "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
+      }
+    },
+    {
+      "pair_row_id": "ren2017-acsami-7b03715-s2-capped-cdse-qds-2::display",
+      "record_id": "ren2017-acsami-7b03715-s2-capped-cdse-qds-2",
+      "record_page_path": "records/ren2017-acsami-7b03715-s2-capped-cdse-qds-2.html",
+      "source_group": "ren2017-acsami-7b03715",
+      "title": "Zhenwei Ren; Juan Yu; Zhenxiao Pan; Jizheng Wang; Xinhua Zhong (2017): S2--capped CdSe QDs",
+      "doi": "10.1021/acsami.7b03715",
+      "year": 2017,
+      "method": "Hot injection",
+      "recipe_label": "Zhenwei Ren; Juan Yu; Zhenxiao Pan; Jizheng Wang; Xinhua Zhong (2017): S2--capped CdSe QDs",
+      "sample_id": "ren2017-acsami-7b03715-s2-capped-cdse-qds-2--product",
+      "source_sample_label": "S2--capped CdSe QDs",
+      "composition": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "recipe_link_evidence": [
+        {
+          "source_id": "ren2017-acsami-7b03715",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "product_structure_fields": [
+        {
+          "kind": "phase",
+          "value": {
+            "value": "zinc blende",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "ren2017-acsami-7b03715",
+                "locator": "Main PDF p.3"
+              }
+            ],
+            "note": ""
+          }
+        },
+        {
+          "kind": "morphology",
+          "value": {
+            "value": "sphere",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "ren2017-acsami-7b03715",
+                "locator": "Main PDF p.3"
+              }
+            ],
+            "note": ""
+          }
+        }
+      ],
+      "structural_measurements": [
+        {
+          "measurement_id": "ren2017-acsami-7b03715-s2-capped-cdse-qds-2--size",
+          "property": "diameter",
+          "descriptor_field": "morphology.dimensions",
+          "value": {
+            "value": 5.4,
+            "minimum": null,
+            "maximum": null,
+            "unit": "nm",
+            "status": "reported",
+            "approximate": false,
+            "qualifier": "",
+            "basis": "",
+            "raw_text": "5.4 nm",
+            "evidence": [
+              {
+                "source_id": "ren2017-acsami-7b03715",
+                "locator": "Main PDF p.3"
+              }
+            ],
+            "derivation": null
+          },
+          "technique": "TEM",
+          "conditions": "",
+          "evidence": [
+            {
+              "source_id": "ren2017-acsami-7b03715",
+              "locator": "Main PDF p.3"
+            }
+          ]
+        }
+      ],
+      "review_status": "source_extracted",
+      "display_pair_basis": "one_record",
+      "cross_record_sample_deduplication": "not_assessed",
+      "documentation": {
+        "category": "partial",
+        "checks": {
+          "quantified_recipe_and_ordered_conditions": true,
+          "reported_phase": true,
+          "reported_morphology": true,
+          "reported_dimensions": true,
+          "reference_unit_cell_available": false
+        },
+        "missing_categories": [
+          "reference_unit_cell_available"
+        ],
+        "reference_ids": [],
+        "quantified_input_evidence": {
+          "material_ids": [
+            "ren2017-acsami-7b03715-s2-capped-cdse-qds-2--cadmium-oxide",
+            "ren2017-acsami-7b03715-s2-capped-cdse-qds-2--cd-stock-solution",
+            "ren2017-acsami-7b03715-s2-capped-cdse-qds-2--oleylamine",
+            "ren2017-acsami-7b03715-s2-capped-cdse-qds-2--se-stock-solution",
+            "ren2017-acsami-7b03715-s2-capped-cdse-qds-2--selenium",
+            "ren2017-acsami-7b03715-s2-capped-cdse-qds-2--trioctylphosphine"
+          ],
+          "fields": [
+            {
+              "material_id": "ren2017-acsami-7b03715-s2-capped-cdse-qds-2--oleylamine",
+              "pointer": "/materials/0/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 5.0,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "5 mL",
+                "evidence": [
+                  {
+                    "source_id": "ren2017-acsami-7b03715",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "ren2017-acsami-7b03715-s2-capped-cdse-qds-2--selenium",
+              "pointer": "/materials/1/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.2,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.2 mL",
+                "evidence": [
+                  {
+                    "source_id": "ren2017-acsami-7b03715",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "ren2017-acsami-7b03715-s2-capped-cdse-qds-2--trioctylphosphine",
+              "pointer": "/materials/2/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.3,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.3 mL",
+                "evidence": [
+                  {
+                    "source_id": "ren2017-acsami-7b03715",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "ren2017-acsami-7b03715-s2-capped-cdse-qds-2--cadmium-oxide",
+              "pointer": "/materials/3/quantities/concentration",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.4,
+                "minimum": null,
+                "maximum": null,
+                "unit": "M",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.4 M",
+                "evidence": [
+                  {
+                    "source_id": "ren2017-acsami-7b03715",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "ren2017-acsami-7b03715-s2-capped-cdse-qds-2--se-stock-solution",
+              "pointer": "/materials/4/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.2,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.2 mL",
+                "evidence": [
+                  {
+                    "source_id": "ren2017-acsami-7b03715",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "ren2017-acsami-7b03715-s2-capped-cdse-qds-2--cd-stock-solution",
+              "pointer": "/materials/5/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.5,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.5 mL",
+                "evidence": [
+                  {
+                    "source_id": "ren2017-acsami-7b03715",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            }
+          ],
+          "scope": "Source-backed quantitative input fields present in the record. This does not establish that all reagent charges are known or that the recipe is complete."
+        },
+        "qualification": "Documentation categories only. A reference cell is not a measured sample structure; missing details, source conflicts and task-specific eligibility remain in the source record."
+      }
+    },
+    {
+      "pair_row_id": "ren2017-acsami-7b03715-s2o3-2-capped-cdse-qds-1::display",
+      "record_id": "ren2017-acsami-7b03715-s2o3-2-capped-cdse-qds-1",
+      "record_page_path": "records/ren2017-acsami-7b03715-s2o3-2-capped-cdse-qds-1.html",
+      "source_group": "ren2017-acsami-7b03715",
+      "title": "Zhenwei Ren; Juan Yu; Zhenxiao Pan; Jizheng Wang; Xinhua Zhong (2017): S2O3^2--capped CdSe QDs",
+      "doi": "10.1021/acsami.7b03715",
+      "year": 2017,
+      "method": "Hot injection",
+      "recipe_label": "Zhenwei Ren; Juan Yu; Zhenxiao Pan; Jizheng Wang; Xinhua Zhong (2017): S2O3^2--capped CdSe QDs",
+      "sample_id": "ren2017-acsami-7b03715-s2o3-2-capped-cdse-qds-1--product",
+      "source_sample_label": "S2O3^2--capped CdSe QDs",
+      "composition": {
+        "value": null,
+        "status": "not_reported",
+        "evidence": [],
+        "note": ""
+      },
+      "recipe_link": "explicit",
+      "recipe_link_evidence": [
+        {
+          "source_id": "ren2017-acsami-7b03715",
+          "locator": "Main PDF p.2"
+        }
+      ],
+      "product_structure_fields": [
+        {
+          "kind": "phase",
+          "value": {
+            "value": "zinc blende",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "ren2017-acsami-7b03715",
+                "locator": "Main PDF p.3"
+              }
+            ],
+            "note": ""
+          }
+        },
+        {
+          "kind": "morphology",
+          "value": {
+            "value": "sphere",
+            "status": "reported",
+            "evidence": [
+              {
+                "source_id": "ren2017-acsami-7b03715",
+                "locator": "Main PDF p.3"
+              }
+            ],
+            "note": ""
+          }
+        }
+      ],
+      "structural_measurements": [
+        {
+          "measurement_id": "ren2017-acsami-7b03715-s2o3-2-capped-cdse-qds-1--size",
+          "property": "diameter",
+          "descriptor_field": "morphology.dimensions",
+          "value": {
+            "value": 5.4,
+            "minimum": null,
+            "maximum": null,
+            "unit": "nm",
+            "status": "reported",
+            "approximate": false,
+            "qualifier": "",
+            "basis": "",
+            "raw_text": "5.4 nm",
+            "evidence": [
+              {
+                "source_id": "ren2017-acsami-7b03715",
+                "locator": "Main PDF p.3"
+              }
+            ],
+            "derivation": null
+          },
+          "technique": "TEM",
+          "conditions": "",
+          "evidence": [
+            {
+              "source_id": "ren2017-acsami-7b03715",
+              "locator": "Main PDF p.3"
+            }
+          ]
+        }
+      ],
+      "review_status": "source_extracted",
+      "display_pair_basis": "one_record",
+      "cross_record_sample_deduplication": "not_assessed",
+      "documentation": {
+        "category": "partial",
+        "checks": {
+          "quantified_recipe_and_ordered_conditions": true,
+          "reported_phase": true,
+          "reported_morphology": true,
+          "reported_dimensions": true,
+          "reference_unit_cell_available": false
+        },
+        "missing_categories": [
+          "reference_unit_cell_available"
+        ],
+        "reference_ids": [],
+        "quantified_input_evidence": {
+          "material_ids": [
+            "ren2017-acsami-7b03715-s2o3-2-capped-cdse-qds-1--cadmium-oxide",
+            "ren2017-acsami-7b03715-s2o3-2-capped-cdse-qds-1--cd-stock-solution",
+            "ren2017-acsami-7b03715-s2o3-2-capped-cdse-qds-1--oleylamine",
+            "ren2017-acsami-7b03715-s2o3-2-capped-cdse-qds-1--se-stock-solution",
+            "ren2017-acsami-7b03715-s2o3-2-capped-cdse-qds-1--selenium",
+            "ren2017-acsami-7b03715-s2o3-2-capped-cdse-qds-1--trioctylphosphine"
+          ],
+          "fields": [
+            {
+              "material_id": "ren2017-acsami-7b03715-s2o3-2-capped-cdse-qds-1--oleylamine",
+              "pointer": "/materials/0/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 5.0,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "5 mL",
+                "evidence": [
+                  {
+                    "source_id": "ren2017-acsami-7b03715",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "ren2017-acsami-7b03715-s2o3-2-capped-cdse-qds-1--selenium",
+              "pointer": "/materials/1/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.2,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.2 mL",
+                "evidence": [
+                  {
+                    "source_id": "ren2017-acsami-7b03715",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "ren2017-acsami-7b03715-s2o3-2-capped-cdse-qds-1--trioctylphosphine",
+              "pointer": "/materials/2/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.3,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.3 mL",
+                "evidence": [
+                  {
+                    "source_id": "ren2017-acsami-7b03715",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "ren2017-acsami-7b03715-s2o3-2-capped-cdse-qds-1--cadmium-oxide",
+              "pointer": "/materials/3/quantities/concentration",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.4,
+                "minimum": null,
+                "maximum": null,
+                "unit": "M",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.4 M",
+                "evidence": [
+                  {
+                    "source_id": "ren2017-acsami-7b03715",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "ren2017-acsami-7b03715-s2o3-2-capped-cdse-qds-1--se-stock-solution",
+              "pointer": "/materials/4/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.2,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.2 mL",
+                "evidence": [
+                  {
+                    "source_id": "ren2017-acsami-7b03715",
+                    "locator": "Main PDF p.2"
+                  }
+                ],
+                "derivation": null
+              }
+            },
+            {
+              "material_id": "ren2017-acsami-7b03715-s2o3-2-capped-cdse-qds-1--cd-stock-solution",
+              "pointer": "/materials/5/quantities/volume",
+              "binding_basis": "quantity of this named material",
+              "quantity": {
+                "value": 0.5,
+                "minimum": null,
+                "maximum": null,
+                "unit": "mL",
+                "status": "reported",
+                "approximate": false,
+                "qualifier": "",
+                "basis": "",
+                "raw_text": "0.5 mL",
+                "evidence": [
+                  {
+                    "source_id": "ren2017-acsami-7b03715",
                     "locator": "Main PDF p.2"
                   }
                 ],
